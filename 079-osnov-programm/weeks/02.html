@@ -3,6 +3,70 @@
 <title></title>
 </head>
 <body>
+
+
+<h3>Continue with basic structure of programs</h3>
+
+<h3>Loops and flow control</h3>
+
+<h3>String processing</h3>
+
+<a href="https://docs.python.org/3/library/stdtypes.html#string-methods">Reference</a>
+
+<pre>
+>>> s = 'Расположена на восточном побережье Балтийского моря.'
+>>> s
+'Расположена на восточном побережье Балтийского моря.'
+</pre>
+
+<pre>
+>>> s.find('о')
+4
+>>> s[4]
+'о'
+</pre>
+
+<pre>
+>>> len(s)
+52
+>>> s[52]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+</pre>
+
+<pre>
+>>> s[51]
+'.'
+>>> s[-1]
+'.'
+>>> s[50]
+'я'
+>>> s[-2]
+'я'
+</pre>
+
+<pre>
+>>> s.find(' ')
+11
+>>> s[0:11]
+'Расположена'
+</pre>
+
+<pre>
+>>> s.replace(' ', '$')
+'Расположена$на$восточном$побережье$Балтийского$моря.'
+>>> s.replace(' ', '$', 1)
+'Расположена$на восточном побережье Балтийского моря.'
+</pre>
+
+<pre>
+>>> s.split(' ')
+['Расположена', 'на', 'восточном', 'побережье', 'Балтийского', 'моря.']
+</pre>
+
+<h3> Sentence segmentation </h3>
+
 <p>
 Unless you're using a curated corpus that has been manually annotated, like the RNC, then most of the text you get
 from the web is going to be at best in lumps like this:
