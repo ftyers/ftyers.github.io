@@ -16,7 +16,8 @@
 <h3> Tokenisation </h3>
 
 <p>
-So, let's say our sentence segmenters 
+So, let's say our sentence segmenter is outputting our sentences on one per line, what is the next step we need to do 
+before we start some serious processing ?
 </p>
 <pre>
 Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья. 
@@ -24,8 +25,8 @@ So, let's say our sentence segmenters
 У 40° с. ш. Куросио переходит в Северное Тихоокеанское течение, следующее на восток к побережью Орегона. 
 </pre>
 <p>
-For downstream NLP tasks, with a few exceptions, we are mostly going to want to segment this first into sentences &mdash;
-or sentence-like chunks &mdash; and then into tokens. This task is called <b>sentence segmentation</b>.
+We need to split the text into tokens, that means treat each word as a word in its own right. This is more difficult
+than it may appear.
 </p>
 <p>
 The objective is to take output like a block of text like the one above and produce output like the following:
@@ -107,7 +108,17 @@ to the popular <a href="http://universaldependencies.org/format.html">CoNLL-U</a
 project.
 
 A simple approach, and the one we are going to first, would simply be to replace every space ' ' with 
-a newline character '\n'. Can you write a program to do that?
+a newline character '\n'. Following that you can use the <tt>replace()</tt> function to preprocess the text
+to add a space before or after certain punctuation characters like ',', ':', '(' and ')'. Can you write a program to do that?
+
+<h3> Questions </h3>
+
+<ul>
+  <li> Why should we split punctuation from the token it goes with ? </li>
+  <li> Should abbreviations with space in them be written as a single token or two tokens ? How about numerals like 134&nbsp;000 ?</li>
+  <li> If you have a case suffix following punctuation, how should it be tokenised ?</li>
+
+</ul>
 
 </body>
 </html>
