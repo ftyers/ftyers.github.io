@@ -6,6 +6,8 @@
 \usepackage{tikz-dependency}
 \usepackage{caption}
 \usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{alltt}
 \usepackage[scale=2]{ccicons}
 
 \usepackage{pgfplots}
@@ -23,6 +25,8 @@
 \newcommand{\utag}[1]{{\udfont#1}}
 \newcommand{\ufeat}[1]{{\udfont#1}}
 \newcommand{\tgl}[1]{{\em #1}}
+\setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+
 % commands from the paper
 
 
@@ -47,20 +51,23 @@
 
 \begin{frame}{Why are you taking this course?}
 
-\end{frame}
+Either:
+\begin{itemize}
+  \item You don't know programming but are eager to learn, or
+  \item It's a requirement for your degree
+\end{itemize}
 
-\begin{frame}{Structure of the course}
+Good news!
+\begin{itemize}
+  \item Programming is fun
+  \item Programming improves all aspects of human experience
+  \item Programming will make your life easier
+\end{itemize}
 
-\begin{center}
-\begin{tabular}{rlrl}
-1  &  & 7   & \emph{Project work}  \\
-2  &  & 8   &  \emph{Project work} \\
-3  &  & 9   &  \emph{Project work} \\
-4  &  & 10   &  \emph{Project work} \\
-5  &  & 11   & \emph{Project work}  \\
-6  &  & 12   & \emph{Presentations}  \\
-\end{tabular}
-\end{center}
+More good news! 
+\begin{itemize}
+  \item All the examples are based on linguistic problems
+\end{itemize}
 
 \end{frame}
 
@@ -83,6 +90,17 @@ Honestly, use something other people (programmers) you know use.
 
 \end{frame}
 
+\begin{frame}{Argh but what if I have Windows™}
+
+\begin{center}
+I have no idea about Windows
+\end{center}
+
+To be safe, install a Virtual Machine (e.g. VirtualBox) and a flavour
+of GNU/Linux, e.g. Ubuntu.
+
+\end{frame}
+
 \begin{frame}{How to get help}
 
 \begin{center}
@@ -95,23 +113,106 @@ Honestly, use something other people (programmers) you know use.
   \begin{onlyenv}<3>
   \includegraphics[width=0.6\textwidth]{graphics/CKmO8DXVAAAWl1d.png}
   \end{onlyenv}
+  \begin{onlyenv}<4>
+  \includegraphics[width=0.6\textwidth]{graphics/stackoverflow.png}
+  \end{onlyenv}
 \end{center}
 
-On your own:
+\textbf{On your own:}
 \begin{itemize}
   \item A search engine such as Google™, Yandex™ or DuckDuckGo™
-  \item The fine Python documentation at \url{http://docs.python.org}
-  \item Internet Relay Chat
-  \item Stack Overflow
+  \item The fine Python documentation: \url{http://docs.python.org}
+  \item Internet Relay Chat: \url{http://webchat.freenode.net}
+  \item Stack Overflow: \url{https://stackoverflow.com}
 \end{itemize}
 
-Ask me:
-\begin{itemize}
-  \item In class
-  \item Outside class: IRC, VK, Google Hangouts
-\end{itemize}
+\begin{center}
+\begin{tabularx}{\textwidth}{lXrl}
+   \textbf{Ask me:} &       In class & (IRL) \\
+                 & {\tt \#hseling} on {\tt irc.freenode.net} & (IRC) \\
+                 & \url{https://vk.com/id138461818} & (VK) \\
+                 & {\tt francis.tyers@gmail.com} & (Hangouts) \\ 
+\end{tabularx}
+\end{center}
 
 \end{frame}
+
+\begin{frame}{Structure of the course}
+
+\begin{center}
+\url{https://ftyers.github.io/079-osnov-programm/index.html}
+\end{center}
+~\\
+\begin{center}
+\begin{tabular}{rlrl}
+\textbf{Class} & \textbf{Topic}   & \textbf{Class} & \textbf{Topic} \\
+\hline
+1  & Command line & 7   & \emph{Project work}  \\
+2  & Segmenter & 8   &  \emph{Project work} \\
+3  & Tokeniser & 9   &  \emph{Project work} \\
+4  & Transliterator & 10   &  \emph{Project work} \\
+5  & Language model & 11   & \emph{Project work}  \\
+6  & Tagger & 12   & \emph{Presentations}  \\
+\end{tabular}
+\end{center}
+
+%I've taken one programming course in my life, 15 years ago. It was awful,
+%I've tried to design this one not to be awful
+
+\end{frame}
+
+\begin{frame}[fragile]{Pipeline}
+ 
+A typical basic NLP pipeline looks like the following:
+
+\begin{verbatim}
+     sentence segmenter | tokeniser | tagger | parser
+\end{verbatim}
+
+\begin{itemize}
+  \item segmenter: takes a paragraph and gives sentences
+  \item tokeniser: takes a sentence and gives list of tokens
+  \item tagger: gives every token a morphosyntactic tag
+  \item parser: takes a tagged sentence and gives a parse tree
+\end{itemize} 
+
+During the first six classes you will be implementing basic
+ versions of the first three modules.
+
+\end{frame}
+
+\begin{frame}{Projects}
+
+For the remaining six classes you will work on:
+\begin{itemize}
+  \item A small software project
+  \item Something that you are excited about
+\end{itemize}
+
+For inspiration, you could:
+\begin{itemize}
+  \item Perform some quantitative linguistic experiment
+  \item Implement a program to convert between formats
+  \item Write a \emph{scraper} for some online language data
+  \item Implement a simple machine learning solution to a problem
+\end{itemize}
+
+You will need to decide by the 5th class, if you are unsure, talk to me
+
+\end{frame}
+
+\begin{frame}{Marking scheme}
+
+Details on the course page.
+
+\begin{center}
+ \includegraphics[width=0.8\textwidth]{graphics/course-page-marking.png}
+\end{center}
+
+\textbf{tl;dr} Most of the final mark is from the class work and project.
+
+\end{frame}
+
 
 \begin{frame}{What we are going to do today}
 
@@ -120,14 +221,31 @@ First things first:
   \item Make sure you have Python installed
   \item Set up Github accounts
   \item Install a text editor
+  \item Work with the shell
 \end{itemize}
 
 Then second things:
 \begin{itemize}
-  \item Choose a language
+  \item Choose a language 
+  \begin{itemize}
+    \item For purposes of speed, choose one with $<= 500,000$ articles
+  \end{itemize}
   \item Download the Wikipedia in that language 
   \item Extract the text from Wikipedia
 \end{itemize}
+
+
+
+\end{frame}
+
+\begin{frame}{Text editor}
+
+% Sublime: +++
+% TextWrangler: +
+% Vim: +
+% Atom: +
+% Emacs:
+
 
 \end{frame}
 
@@ -135,12 +253,8 @@ Then second things:
 
 \end{frame}
 
-\begin{frame}{Text editor}
 
-% Sublime: +
-% Vim:
-% Emacs:
-
+\begin{frame}{Setup the directory structure}
 
 \end{frame}
 
@@ -177,7 +291,52 @@ Deliberately vague steps:
 
 \end{frame}
 
+\begin{frame}[fragile]{What next}
 
+There is an excellent introduction to the shell by Ken Church:
+
+
+For the remainder of the class we'll be going through this and
+making sure that you are able to run all of the commands.
+
+Notes:
+\begin{itemize}
+  \item We'll use our Wikipedia dump, not Genesis
+  \item Instead of {\tt tr -sc} we'll use {\tt tr -s} 
+  \item Instead of {\tt [a-z][A-Z]} we'll use {\tt [,;:!?/." ()]} 
+\end{itemize}
+
+For example for Avar:
+\begin{verbatim}
+tr -s '[,;:!?/." ()]' '[\n*]' < wiki.txt | 
+sort | grep '[а-яА-Я]' |
+uniq -c > wiki.hist
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}
+
+You can get the same output in many different ways:
+
+\begin{alltt}
+\$ head -n 5 wiki.hist   \\
+      2 100\% магӀарулал  \\
+      1 10-го  \\
+      1 11-абилеб  \\
+      1 1250 км  \\
+      1 1369-леб  \\
+~  \\
+\$ sed 5q wiki.hist   \\
+      2 100\% магӀарулал  \\
+      1 10-го  \\
+      1 11-абилеб  \\
+      1 1250 км  \\
+      1 1369-леб  \\
+~\\
+\end{alltt}
+
+\end{frame}
 
 
 
