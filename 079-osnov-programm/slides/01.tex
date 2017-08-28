@@ -259,14 +259,35 @@ If you don't already have an account:
  \item Go to \url{https://github.com/join}
  \item Fill in the information
  \item Click ``Create an account''
+ \item Choose ``Unlimited public repositories for free.''
+ \item Skip the next part.
 \end{itemize}
-
-
 
 \end{frame}
 
+\begin{frame}[fragile]{Setup the directory structure}
 
-\begin{frame}{Setup the directory structure}
+In your browser:
+\begin{itemize}
+  \item First make a repository, call it {\tt 2017-osnov-programm}
+  \item Choose `Initialise this repository with a README'
+  \item Click `Clone or download' and copy the link
+\end{itemize}
+
+In the terminal:
+
+\begin{verbatim}
+$ git clone https://github.com/XXXXXX/2017-osnov-programm.git
+
+$ cd 2017-osnov-programm
+
+$ mkdir corpus project
+
+\end{verbatim}
+
+Where {\tt XXXXXX} is your GitHub username.
+
+
 
 \end{frame}
 
