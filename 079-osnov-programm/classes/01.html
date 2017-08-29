@@ -7,16 +7,17 @@
 </head>
 <body>
 <div class="page">
-
+<p>
 <div style="color:grey">[This page is adapted from the wonderful Unix for Poets by Ken Church
  which introduced a generation of researchers to NLP. I have adjusted it for use with languages
  which may use multibyte encodings such as UTF-8 and as such are not supported by standard
  utilities like <tt>tr</tt> -FMT]</div>
+</p>
 
 <h1>Unix for Poets</h1>
 <p>
-Kenneth Ward Church
-AT&T Research
+Kenneth Ward Church<br/>
+AT&T Research<br/>
 <tt>kwc@research.att.com</tt>
 </p>
 <p>
@@ -112,10 +113,12 @@ This program produces the following output:
 ...
 </pre>
 
+<p>
 <div style="color:grey">
-WARNING: In some Unix™ environments you should use <tt>gsed</tt> instead of <tt>sed</tt>. If you are
+<b>WARNING:</b> In some Unix™ environments you should use <tt>gsed</tt> instead of <tt>sed</tt>. If you are
 getting strange output try this.
 </div>
+</p>
 
 The less than symbol "&lt;" indicates that the input should be taken from the file named "wiki.txt", and the
 greater than symbol "&gt;" indicates that the output should be redirected to a file named "wiki.hist". By
@@ -351,17 +354,91 @@ easy it was to modify the counting program to</p>
 <li>count</li>
 </ol>
 
-<p>The second step makes use of two new Unix commands, tail and paste. Tail is usually used to output the
+<p>The second step makes use of two new Unix commands, <tt>tail</tt> and <tt>paste</tt>. Tail is usually used to output the
 last few lines of a file, but it can be used to output all but the first few lines with the ''+2'' option. The
 following code uses tail in this way to generate the files genesis.words and genesis.nextwords which
-correspond to <em>word_i</em> and <em>word_i+1</em> .</p>
+correspond to <em>word</em><sub>i</sub> and <em>word</em><sub><em>i</em>+1</sub> .</p>
+
+<pre>
+sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt > wiki.words
+tail -n +2 wiki.words > wiki.nextwords
+</pre>
+
+<p>Paste takes two files and prints them side by side on the same line. Pasting wiki.words and
+wiki.nextwords together produces the appropriate input for the counting step.</p>
+
+<pre>
+paste wiki.words wiki.nextwords
+
+...
+гьениб	букIун
+букIун	буго
+буго	кIудияб
+кIудияб	лагъзал
+лагъзал	ричулеб
+ричулеб	базар
+базар	Гьениса
+Гьениса	ричун
+ричун	росулел
+...
+</pre>
+
+<p>Combining the pieces, we end up with the following four line program for counting bigrams:</p>
+
+<pre>
+sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt > wiki.words
+tail -n +2 wiki.words > wiki.nextwords
+paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
+</pre>
+
+<p>The ten most frequent bigrams in the Avar Wikipedia are:</p>
+
+<pre>
+sort -nr < wiki.bigrams | sed 10q
+   3888 	
+    382 къо	
+    371 	абилеб
+    365 хутIула	къо
+    365 сверизе	хутIула
+    365 ЛъагIел	сверизе
+    359 абилеб	къо
+    356 лъагIалил	абилеб
+    349 къо	високоснияб
+    349 високоснияб	соналъ
+</pre>
+
+<p>Exercise: count trigrams. The solution can be found in the appendix.</p>
+
+<p>I have presented this material in quite a number of tutorials over the years. The students almost always
+come up with a big ''aha'' reaction at this point. Counting words seems easy enough, but for some reason,
+students are almost always pleasantly surprised to discover that counting ngrams (bigrams, trigrams, 50-grams) 
+is just as easy as counting words. It is just a matter of how you tokenise the text. We can tokenise
+the text into words or into ngrams; it makes little difference as far as the counting step is concerned.</p>
+
+<h3>Shell scripts</h3>
+
+Suppose that you found that you were often computing trigrams of different things, and you found it
+inconvenient to keep typing the same five lines over and over. If you put the following into a file called
+''trigram.sh'',
+
+<pre>
+
+</pre>
+
+then you could count trigrams with a single line:
+
+The shell script introduced several new symbols. The ''#'' symbol is used for comments. The ''$$''
+syntax encodes a long number (the process id) into the names of the temporary files. It is a good idea to use
+the ''$$'' syntax in this way so that two users (or two processes) can run the shell script at the same time,
+and there won't be any confusion about which temporary file belongs to which process. (If you don't know
+what a process is, don't worry about it. A process is a job, an instance of a program that is assigned
+resources by the scheduler, the time sharing system.)
+
+<h3>grep & egrep: An Example of a Filter</h3>
 
 
 
 </div>
-
-
-
 </body>
 </html>
 
