@@ -8,9 +8,217 @@
 <body>
 <div class="page">
 
+<h1>Unix for Poets</h1>
+<p>
+Kenneth Ward Church
+AT&T Research
+<tt>kwc@research.att.com</tt>
+</p>
+<p>
+Text is available like never before. Data collection efforts such as the Association for Computational
+Linguistics’ Data Collection Initiative (ACL/DCI), the Consortium for Lexical Research (CLR), the
+European Corpus Initiative (ECI), ICAME, the British National Corpus (BNC), the Linguistic Data
+Consortium (LDC), Electronic Dictionary Research (EDR) and many others have done a wonderful job in
+acquiring and distributing dictionaries and corpora. 1 In addition, there are vast quantities of so-called
+Information Super Highway Roadkill: email, bboards, faxes. We now has access to billions and billions of
+words, and even more pixels.
+</p>
+<p>
+What can we do with it all? Now that data collection efforts have done such a wonderful service to the
+community, many researchers have more data than they know what to do with. Electronic bboards are
+beginning to fill up with requests for word frequency counts, ngram statistics, and so on. Many researchers
+believe that they don’t have sufficient computing resources to do these things for themselves. Over the
+years, I’ve spent a fair bit of time designing and coding a set of fancy corpus tools for very large corpora
+(eg, billions of words), but for a mere million words or so, it really isn’t worth the effort. You can almost
+certainly do it yourself, even on a modest PC. People used to do these kinds of calculations on a PDP-11,
+which is much more modest in almost every respect than whatever computing resources you are currently
+using.
+</p>
+<p>I wouldn’t bring out the big guns (fancy machines, fancy algorithms, data collection committees, bigtime
+favors) unless you have a lot of text (e.g., hundreds of million words or more), or you are trying to count
+really long ngrams (e.g., 50-grams). This chapter will describe a set of simple Unix-based tools that should
+be more than adequate for counting trigrams on a corpus the size of the Brown Corpus. I’d recommend that
+you do it yourself for basically the same reason that home repair stores like DIY and Home Depot are as
+popular as they are. You can always hire a pro to fix your home for you, but a lot of people find that it is
+better not to, unless they are trying to do something moderately hard. Hamming used to say it is much
+better to solve the right problem naively than the wrong problem expertly.
+</p>
+<p>
+I am very much a believer in teaching by examples. George Miller (personal communication) has observed
+that dictionary definitions are often not as helpful as example sentences. Definitions make a lot of sense if
+you already basically know what the word means, but they can be hard going if you have never seen the
+word before. Following this spirit, this chapter will focus on examples and avoid definitions whenever
+possible. In some cases, I will deliberately use new options and even new commands without defining
+them first. The reader is encouraged to try the examples themselves, and when all else fails consult the
+documentation. (But hopefully, that shouldn’t be necessary too often, since we all know how boring the
+documentation can be.)</p>
+
+We will show how to solve the following exercises using only very simple utilities.
+
+<ol>
+<li>Count words in a text</li>
+<li>
+Sort a list of words in various ways
+<ul>
+<li>ascii order</li>
+<li>dictionary order</li>
+<li>‘‘rhyming’’ order</li>
+</ul></li>
+<li>Compute ngram statistics</li>
+<li> Make a Concordance</li>
+</ol>
+
+The code fragments in this chapter were developed and tested on a Sun computer running Berkeley Unix.
+The code ought to work on more or less as is in any Unix system, and even in many PC environments,
+running various compatibility packages such as the MKS toolkit.
+
+<h3>1. Exercise 1: Count words in a text</h3>
+
+The problem is to input a text file, say Genesis (a good place to start), 2 and output a list of words in the file
+along with their frequency counts. The algorithm consists of three steps:
+
+<ol>
+<li>Tokenize the text into a sequence of words (tr),</li>
+<li>Sort the words (sort), and</li>
+<li>Count duplicates (uniq -c).</li>
+</ol>
+
+The algorithm can be implemented in just three lines of Unix code:
+
+<div style="color:grey">
+<pre>
+tr -sc ’[A-Z][a-z]’ ’[\012*]’ < genesis |
+sort |
+uniq -c > genesis.hist
+</pre>
+</div>
+
+<pre>
+tr -s '[,;:!?/." ()]' '[\n*]' < wiki.txt | 
+sort -r | grep '[а-яА-Я]' |
+uniq -c > wiki.hist
+</pre>
+
+This program produces the following output:
+
+<pre>
+      5 Яшар
+      7 яшав
+      1 ячӀуней
+      1 ячуна
+      1 Ячун
+      1 ячӀун
+      6 ячун
+      1 ячула
+      1 ячинчIого
+      1 ячинчIей
+</pre>
+
+WARNING: in some Unix environments, the arguments to tr should be
+
+<pre>
+tr -sc ’A-Za-z’ ’\012’ < genesis
+</pre>
+
+We will try to avoid confusing the reader with the details of all the different dialects of Unix, but
+periodically, we’ll mention some things to try if one of the examples doesn’t happen to work in your
+environment.
+
+The less than symbol ‘‘<’’ indicates that the input should be taken from the file named ‘‘genesis,’’ and the
+greater than symbol ‘‘>’’ indicates taht the output should be redirected to a file named ‘‘genesis.hist.’’ By
+default, input is read from stdin (standard input) and written to stdout (standard output). Standard input is
+usually the keyboard and standard output is usually the active window.
+
+The pipe symbol ‘‘|’’ is used to connect the output of one program to the input of the next. In this case, tr
+outputs a sequence of tokens (words) which are then piped into sort. Sort outputs a sequence of sorted
+tokens which are then piped into uniq, which counts up the runs, producing the desired result.
+
+We can understand this program better by breaking it up into smaller pieces. Lets start by looking at the
+beginning of the input file. The Unix program ‘‘sed’’ can be used as follows to show the first five lines of
+the <s>genesis</s> wiki file:
+
+<pre>
+$ sed 5q < wiki.txt 
+
+География:
+
+Гъизляр:
+Гъизляр яги БагIаршагьар () — Туркияб мацIалдаса магIарул мацIалде буссине гьабуни "Ясшагьар". Цебе заманалда гьениб букIун буго кIудияб лагъзал ричулеб базар. Гьениса ричун росулел (яги рикъулел) рукIун руго руччабиги, хIалтIухъабиги. 
+</pre>
+
+In the same way, we can use sed to verify that the first few tokens generated by tr do indeed correspond to
+the first few words in the <s>genesis</s> wiki file.
+
+<pre>
+$ tr -s '[,;:!?/." () ]' '[\n*]' < wiki.txt | sed 5q
+
+География
+Гъизляр
+Гъизляр
+яги
+</pre>
+
+FMT: As we're working with Wiki text which has a lot of tokens in other alphabets, we use grep to take those which are only in Cyrillic:
+
+<pre>
+$ tr -s '[,;:!?/." () ]' '[\n*]' < wiki.txt | grep '[а-яА-Я]'  | sed 5q
+География
+Гъизляр
+Гъизляр
+яги
+БагIаршагьар
+</pre>
+
+Similarly, we can verify that the output of the sort step produces a sequence of (not necessarily distinct)
+tokens in lexicographic order.
+
+<pre>
+$ tr -s '[,;:!?/." () ]' '[\n*]' < wiki.txt | grep '[а-яА-Я]' | sort -r | sed 5q
+Яшар
+Яшар
+Яшар
+Яшар
+Яшар
+</pre>
+
+Finally, the uniq step counts up the repeated tokens.
+
+<pre>
+$ tr -s '[,;:!?/." () ]' '[\n*]' < wiki.txt | grep '[а-яА-Я]' | sort -r | uniq -c | sed 5q
+      5 Яшар
+      7 яшав
+      1 ячӀуней
+      1 ячуна
+      1 Ячун
+</pre>
+
+<h3>More Counting Exercises</h3>
+
+<p>This section will show three variants of the counting program above to illustrate just how easy it is to count
+a wide variety of (possibly) useful things. The details of the examples aren’t all that important. The point
+is to realize that pipelines are so powerful that they can be easily extended to count words (by almost any
+definition one can imagine), ngrams, and much more.</p>
+
+<p>The examples in this section will discuss various (weird) definitions of what is a ‘‘word.’’ Some students
+get distracted at this point by these weird definitions and lose sight of the point – that pipelines make it
+relatively easy to mix and match a small number of simple programs in very powerful ways. But even
+these students usually come around when they see how these very same techiques can be used to count
+ngrams, which is really nothing other than yet another weird definition of what is a word/token.</p>
+
+<p>The first of the three examples shows that a straightforward one-line modification to the counting program
+can be used to merge the counts for upper and lower case. The first line in the new program below
+collapses the case distinction by translating lower case to upper case:</p>
+
+<pre>
+
+
+
 
 
 </div>
+
+
+
 </body>
 </html>
 
