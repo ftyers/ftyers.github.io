@@ -8,6 +8,11 @@
 <body>
 <div class="page">
 
+<div style="color:grey">[This page is adapted from the wonderful Unix for Poets by Ken Church
+ which introduced a generation of researchers to NLP. I have adjusted it for use with languages
+ which may use multibyte encodings such as UTF-8 and as such are not supported by standard
+ utilities like <tt>tr</tt> -FMT]</div>
+
 <h1>Unix for Poets</h1>
 <p>
 Kenneth Ward Church
@@ -16,7 +21,7 @@ AT&T Research
 </p>
 <p>
 Text is available like never before. Data collection efforts such as the Association for Computational
-Linguistics’ Data Collection Initiative (ACL/DCI), the Consortium for Lexical Research (CLR), the
+Linguistics' Data Collection Initiative (ACL/DCI), the Consortium for Lexical Research (CLR), the
 European Corpus Initiative (ECI), ICAME, the British National Corpus (BNC), the Linguistic Data
 Consortium (LDC), Electronic Dictionary Research (EDR) and many others have done a wonderful job in
 acquiring and distributing dictionaries and corpora. 1 In addition, there are vast quantities of so-called
@@ -27,17 +32,17 @@ words, and even more pixels.
 What can we do with it all? Now that data collection efforts have done such a wonderful service to the
 community, many researchers have more data than they know what to do with. Electronic bboards are
 beginning to fill up with requests for word frequency counts, ngram statistics, and so on. Many researchers
-believe that they don’t have sufficient computing resources to do these things for themselves. Over the
-years, I’ve spent a fair bit of time designing and coding a set of fancy corpus tools for very large corpora
-(eg, billions of words), but for a mere million words or so, it really isn’t worth the effort. You can almost
+believe that they don't have sufficient computing resources to do these things for themselves. Over the
+years, I've spent a fair bit of time designing and coding a set of fancy corpus tools for very large corpora
+(eg, billions of words), but for a mere million words or so, it really isn't worth the effort. You can almost
 certainly do it yourself, even on a modest PC. People used to do these kinds of calculations on a PDP-11,
 which is much more modest in almost every respect than whatever computing resources you are currently
 using.
 </p>
-<p>I wouldn’t bring out the big guns (fancy machines, fancy algorithms, data collection committees, bigtime
+<p>I wouldn't bring out the big guns (fancy machines, fancy algorithms, data collection committees, bigtime
 favors) unless you have a lot of text (e.g., hundreds of million words or more), or you are trying to count
 really long ngrams (e.g., 50-grams). This chapter will describe a set of simple Unix-based tools that should
-be more than adequate for counting trigrams on a corpus the size of the Brown Corpus. I’d recommend that
+be more than adequate for counting trigrams on a corpus the size of the Brown Corpus. I'd recommend that
 you do it yourself for basically the same reason that home repair stores like DIY and Home Depot are as
 popular as they are. You can always hire a pro to fix your home for you, but a lot of people find that it is
 better not to, unless they are trying to do something moderately hard. Hamming used to say it is much
@@ -50,7 +55,7 @@ you already basically know what the word means, but they can be hard going if yo
 word before. Following this spirit, this chapter will focus on examples and avoid definitions whenever
 possible. In some cases, I will deliberately use new options and even new commands without defining
 them first. The reader is encouraged to try the examples themselves, and when all else fails consult the
-documentation. (But hopefully, that shouldn’t be necessary too often, since we all know how boring the
+documentation. (But hopefully, that shouldn't be necessary too often, since we all know how boring the
 documentation can be.)</p>
 
 We will show how to solve the following exercises using only very simple utilities.
@@ -62,7 +67,7 @@ Sort a list of words in various ways
 <ul>
 <li>ascii order</li>
 <li>dictionary order</li>
-<li>‘‘rhyming’’ order</li>
+<li>''rhyming'' order</li>
 </ul></li>
 <li>Compute ngram statistics</li>
 <li> Make a Concordance</li>
@@ -72,9 +77,9 @@ The code fragments in this chapter were developed and tested on a Sun computer r
 The code ought to work on more or less as is in any Unix system, and even in many PC environments,
 running various compatibility packages such as the MKS toolkit.
 
-<h3>1. Exercise 1: Count words in a text</h3>
+<h3>Count words in a text</h3>
 
-The problem is to input a text file, say Genesis (a good place to start), 2 and output a list of words in the file
+The problem is to input a text file, say Wikipedia (a good place to start), and output a list of words in the file
 along with their frequency counts. The algorithm consists of three steps:
 
 <ol>
@@ -84,14 +89,6 @@ along with their frequency counts. The algorithm consists of three steps:
 </ol>
 
 The algorithm can be implemented in just three lines of Unix code:
-
-<div style="color:grey">
-<pre>
-tr -sc ’[A-Z][a-z]’ ’[\012*]’ < genesis |
-sort |
-uniq -c > genesis.hist
-</pre>
-</div>
 
 <pre>
 sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt |
@@ -116,29 +113,22 @@ This program produces the following output:
 </pre>
 
 <div style="color:grey">
-WARNING: in some Unix environments, the arguments to tr should be
-
-<pre>
-tr -sc ’A-Za-z’ ’\012’ < genesis
-</pre>
-
-We will try to avoid confusing the reader with the details of all the different dialects of Unix, but
-periodically, we’ll mention some things to try if one of the examples doesn’t happen to work in your
-environment.
+WARNING: In some Unix™ environments you should use <tt>gsed</tt> instead of <tt>sed</tt>. If you are
+getting strange output try this.
 </div>
 
-The less than symbol ‘‘<’’ indicates that the input should be taken from the file named ‘‘genesis,’’ and the
-greater than symbol ‘‘>’’ indicates taht the output should be redirected to a file named ‘‘genesis.hist.’’ By
-default, input is read from stdin (standard input) and written to stdout (standard output). Standard input is
+The less than symbol "&lt;" indicates that the input should be taken from the file named "wiki.txt", and the
+greater than symbol "&gt;" indicates that the output should be redirected to a file named "wiki.hist". By
+default, input is read from <tt>stdin</tt> (standard input) and written to <tt>stdout</tt> (standard output). Standard input is
 usually the keyboard and standard output is usually the active window.
 
-The pipe symbol ‘‘|’’ is used to connect the output of one program to the input of the next. In this case, tr
-outputs a sequence of tokens (words) which are then piped into sort. Sort outputs a sequence of sorted
-tokens which are then piped into uniq, which counts up the runs, producing the desired result.
+The pipe symbol "|" is used to connect the output of one program to the input of the next. In this case, tr
+outputs a sequence of tokens (words) which are then piped into <tt>sort</tt>. Sort outputs a sequence of sorted
+tokens which are then piped into <tt>uniq</tt>, which counts up the runs, producing the desired result.
 
 We can understand this program better by breaking it up into smaller pieces. Lets start by looking at the
-beginning of the input file. The Unix program ‘‘sed’’ can be used as follows to show the first five lines of
-the <s>genesis</s> wiki file:
+beginning of the input file. The Unix program <tt>sed</tt> can be used as follows to show the first five lines of
+the wiki file:
 
 <pre>
 $ sed 5q < wiki.txt 
@@ -149,8 +139,8 @@ $ sed 5q < wiki.txt
 Гъизляр яги БагIаршагьар () — Туркияб мацIалдаса магIарул мацIалде буссине гьабуни "Ясшагьар". Цебе заманалда гьениб букIун буго кIудияб лагъзал ричулеб базар. Гьениса ричун росулел (яги рикъулел) рукIун руго руччабиги, хIалтIухъабиги. 
 </pre>
 
-In the same way, we can use sed to verify that the first few tokens generated by tr do indeed correspond to
-the first few words in the <s>genesis</s> wiki file.
+In the same way, we can use the same command, <tt>sed</tt>, to verify that the first few tokens generated by <tt>sed</tt> do indeed correspond to
+the first few words in the wiki file.
 
 <pre>
 $ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | sed 5q
@@ -162,39 +152,50 @@ $ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | sed 5q
 
 </pre>
 
-Similarly, we can verify that the output of the sort step produces a sequence of (not necessarily distinct)
+Similarly, we can verify that the output of the <tt>sort</tt> step produces a sequence of (not necessarily distinct)
 tokens in lexicographic order.
 
 <pre>
-$ | sort -r | sed 5q
+$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | 
+sort -r | 
+sed 10q
+
 Яшар
 Яшар
 Яшар
 Яшар
 Яшар
+яшавалда
+яшав
+яшав
+яшав
+яшав
 </pre>
 
-Finally, the uniq step counts up the repeated tokens.
+Finally, the <tt>uniq</tt> step counts up the repeated tokens.
 
 <pre>
-$ cat wiki.txt | sed 's/[^а-яА-ЯI]\+/\n/g' | sort -r | uniq -c | sed 5q
+$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | 
+sort -r | 
+uniq -c | 
+sed 5q
+
       5 Яшар
       1 яшавалда
      17 яшав
       1 ячуна
       1 Ячун
-
 </pre>
 
 <h3>More counting exercises</h3>
 
 <p>This section will show three variants of the counting program above to illustrate just how easy it is to count
-a wide variety of (possibly) useful things. The details of the examples aren’t all that important. The point
+a wide variety of (possibly) useful things. The details of the examples aren't all that important. The point
 is to realize that pipelines are so powerful that they can be easily extended to count words (by almost any
 definition one can imagine), ngrams, and much more.</p>
 
-<p>The examples in this section will discuss various (weird) definitions of what is a ‘‘word.’’ Some students
-get distracted at this point by these weird definitions and lose sight of the point – that pipelines make it
+<p>The examples in this section will discuss various (weird) definitions of what is a "word". Some students
+get distracted at this point by these weird definitions and lose sight of the point &mdash; that pipelines make it
 relatively easy to mix and match a small number of simple programs in very powerful ways. But even
 these students usually come around when they see how these very same techiques can be used to count
 ngrams, which is really nothing other than yet another weird definition of what is a word/token.</p>
@@ -204,25 +205,35 @@ can be used to merge the counts for upper and lower case. The first line in the 
 collapses the case distinction by translating lower case to upper case:</p>
 
 <pre>
-$ uconv -x upper < wiki.txt | sed 's/[^А-ЯI]\+/\n/g' | sort -r | uniq -c | sed 5q
+$ uconv -x upper < wiki.txt | 
+sed 's/[^А-Яа-яI]\+/\n/g' | 
+sort -r | 
+uniq -c | 
+sed 5q
 </pre>
 
-Small changes to the tokenizing rule are easy to make, and can have a dramatic impact. The second
-example shows that we can count vowel sequences instead of words by changing the tokenizing rule
-(second tr line) to emit sequences of vowels rather than sequences of alphabetic characters.
+Small changes to the tokenising rule are easy to make, and can have a dramatic impact. The second
+example shows that we can count vowel sequences instead of words by changing the tokenising rule
+(the <tt>sed</tt> line) to emit sequences of vowels rather than sequences of alphabetic characters.
 
 <pre>
-$ uconv -x upper < wiki.txt | sed 's/[^АЭИОУЯЕЫЁЮ]\+/\n/g' | sort -r | uniq -c 
+$ uconv -x upper < wiki.txt | 
+sed 's/[^АЭИОУЯЕЫЁЮ]\+/\n/g' | 
+sort -r | 
+uniq -c 
 </pre>
 
 <pre>
-$ uconv -x upper < wiki.txt | sed 's/[^БВГДЖЗЙКЛМНПРСТФХЦЧШЩЪЬ]\+/\n/g' | sort -r | uniq -c 
+$ uconv -x upper < wiki.txt | 
+sed 's/[^БВГДЖЗЙКЛМНПРСТФХЦЧШЩЪЬ]\+/\n/g' | 
+sort -r | 
+uniq -c 
 </pre>
 
 <p>These three examples are intended to show how easy it is to change the definition of what counts as a word.
-Sometimes you want to distinguish between upper and lower case, and sometimes you don’t. Sometimes
+Sometimes you want to distinguish between upper and lower case, and sometimes you don't. Sometimes
 you want to collapse morphological variants (does hostage = hostages). Different languages use different
-character sets. Sometimes I get email from Sweden, for example, where ‘‘y’’ is a vowel. The tokenizer
+character sets. Sometimes I get email from Sweden, for example, where "y" is a vowel. The tokeniser
 depends on what you are trying to do. The same basic counting program can be used to count a variety of
 different things, depending on how you implement the definition of thing (=token).</p>
 
@@ -232,55 +243,31 @@ different things, depending on how you implement the definition of thing (=token
 $ man sort
 </pre>
 
-<p>If you want to see the document for some other command, simply replace the ’sort’ with the name of that
+<p>If you want to see the document for some other command, simply replace the <tt>sort</tt> with the name of that
 other command.</p>
 
-<p>The man page for tr explains that tr inputs a character at a time and outputs a translation of the character,
-depending on the options. In a simple case like
+<p>The man page for <tt>sed</tt> explains that it inputs a stream and applies various transformations depending 
+on an expression, in
 
 <pre>
-tr ’[a-z]’ ’[A-Z]’
+sed 's/а/б/g'
 </pre>
 
-<p>tr translates lowercase characters to uppercase characters. The first argument, ‘‘[a-z],’’ specifies lowercase
-characters and the second argument, ‘‘[A-Z],’’ specifies uppercase characters. The specification of
-characters is more or less standard across most Unix commands (though be warned that there are more
-surprises than there should be). The notation, ‘‘[x-y],’’ denotes a character between ‘‘x’’ and ‘‘y’’ in ascii
-order. Ascii order is a generalization of alphabetic order, including not only the standard English
-characters, a-z, in both upper and lower case, but also digits, 0-9, puctuation and white space. It is
-important to mention, though, that ascii is an American standard and does not generalize well to European
-character sets, let alone Asian characters. Some (but not all) Unix systems support
-European/Asian/wordwide standards such as Latin1, EUC and Unicode.</p>
-
-<p>Some characters are difficult to input (because they mean different things to different programs). One of
-the worst of these is the newline character, since newline is also used to terminate the end of a
-line/command (depending on the context). To get around some of these annoyances, you can specify a
-character by referring to its ascii code in octal (base 8). If this sounds cryptic, don’t worry about it; it is.
-All you need to know is that ‘‘[\012*]’’ is a newline.</p>
-
-<p>The optional flag, ‘‘–c,’’ complements the translation, so that</p>
+<p><tt>sed</tt> changes all instances of 'а' to 'б'. The 's' means match a pattern in the stream and replace
+it with something else. The pattern and replacement are put between '/' characters, and the final 'g' means 
+do this to all instances of the pattern you see in the stream. The <tt>sed</tt> command,
 
 <pre>
-tr -c ’[a-z][A-Z]’ ’[\012*]’
+sed 's/[^А-Яа-яI]\+/\n/g'
 </pre>
 
 <p>translates any non-alphabetic character to newline. Non-alphabetic characters include puctuation, white
 space, control characters, etc. It is easier to refer to non-alphabetic characters by referring to their
 complement because many of them (like newline) are hard to refer to (without knowing the context).</p>
 
-<p>The optional flag, ‘‘–s,’’ squeezes out multiple instances of the translation, so that</p>
-
-<pre>
-tr -c ’[a-z][A-Z]’ ’[\012*]’
-</pre>
-
-<p>won’t output more than one newline in a row. I probably shouldn’t have used this fancy option in the first
-example, because it doesn’t change the results very much (and I wanted to establish the principle that it is
-ok to use fancy options without explaining them first).</p>
-
 <h3>Sort</h3>
 
-<p>The sorting step can also be modified in a variety of different ways. The man page for sort describes a
+<p>The sorting step can also be modified in a variety of different ways. The man page for <tt>sort</tt> describes a
 number of options or flags such as:</p>
 
 <table>
@@ -299,20 +286,20 @@ number of options or flags such as:</p>
 These options can be used in straightforward ways to solve the following exercises:
 
 <ol>
-<li>Sort the words in Genesis by frequency</li>
-<pre>tr -sc ’[A-Z][a-z]’ ’[\012*]’ < genesis |
+<li>Sort the words in Wikipedia by frequency</li>
+<pre> sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt |
 sort |
 uniq -c |
-sort –nr
+sort -nr
 </pre>
 <li>Sort them by folding case.</li>
-<li>Sort them by ‘‘rhyming’’ order.</li>
+<li>Sort them by ''rhyming'' order.</li>
 </ol>
 
-The last two examples above are left as exercises for the reader, but unlike most ‘‘exercises for the reader,’’
+The last two examples above are left as exercises for the reader, but unlike most ''exercises for the reader,''
 the solutions can be found in the appendix of this chapter.
 
-By ‘‘rhyming’’ order, we mean that the words should be sorted from the right rather than the left, as
+By ''rhyming'' order, we mean that the words should be sorted from the right rather than the left, as
 illustrated below:
 
 <pre>
@@ -330,11 +317,11 @@ illustrated below:
 ...
 </pre>
 
-<p>‘‘freely’’ comes before ‘‘sorely’’ because ‘‘yleerf’’ (‘‘freely’’ spelled backwards) comes before ‘‘yleros’’
-(‘‘sorely’’ spelled backwords) in lexicographic order. Rhyming dictionaries are often used to help poets
-(and linguists who are interested in morphology).</p>
+<p>''севералда'' comes before ''къиблаялда'' because ''адларевес'' (''севералда'' spelled backwards) comes before ''адляалбиък''
+(''къиблаялда'' spelled backwords) in lexicographic order. Rhyming dictionaries are often used to help poets
+(and linguists who are interested in suffixing morphology).</p>
 
-<p>Hint: There is a Unix command ‘‘rev,’’ which reverses the letters on a line:</p>
+<p>Hint: There is a Unix command <tt>rev</tt>, which reverses the letters on a line:</p>
 
 <pre>
 $ echo "МагIарул мацI" | rev 
@@ -344,13 +331,13 @@ $ echo "МагIарул мацI" | rev  | rev
 МагIарул мацI
 </pre>
 
-<p>Thus far, we have seen how Unix commands such as tr, sort, uniq, sed and rev can be combined into
-pipelines with the ‘‘|’’, ‘‘<,’’ and ‘‘>’’ operators in simple yet powerful ways. All of the examples were
+<p>Thus far, we have seen how Unix commands such as <tt>sort</tt>, <tt>uniq</tt>, <tt>sed</tt> and <tt>rev</tt> can be combined into
+pipelines with the ''|'', ''<,'' and ''>'' operators in simple yet powerful ways. All of the examples were
 based on counting words in a text. The flexibility of the pipeline approach was illustrated by showing how
 easy it was to modify the counting program to</p>
 
 <ul>
-<li>tokenize by vowel, merge upper and lower case</li>
+<li>tokenise by vowel, merge upper and lower case</li>
 <li>sort by frequency, rhyming order</li>
 </ul>
 
@@ -365,7 +352,7 @@ easy it was to modify the counting program to</p>
 </ol>
 
 <p>The second step makes use of two new Unix commands, tail and paste. Tail is usually used to output the
-last few lines of a file, but it can be used to output all but the first few lines with the ‘‘+2’’ option. The
+last few lines of a file, but it can be used to output all but the first few lines with the ''+2'' option. The
 following code uses tail in this way to generate the files genesis.words and genesis.nextwords which
 correspond to <em>word_i</em> and <em>word_i+1</em> .</p>
 
