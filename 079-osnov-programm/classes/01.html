@@ -440,6 +440,114 @@ After completing the trigram exercise, you will have discovered that ‘‘’�
 the two most frequent trigrams in Genesis. Suppose that you wanted to count trigrams separately for verses
 that contain just the phrase ‘‘the land of.’’
 
+Grep (<b>g</b>eneral <b>r</b>egular <b>e</b>xpression <b>p</b>attern matcher) can be used as follows 
+to extract lines containing ‘‘the land of.’’
+
+<pre>
+grep ’the land of’ genesis | sed 5q
+</pre>
+
+Grep can be combined in straightforward ways with the trigram shell script to count trigrams for lines
+matching any regular expression including ‘‘the land of’’ and ‘‘And he said.’’
+
+<pre>
+grep ’the land of’ genesis |
+sh trigram | sort -nr | sed 5q
+</pre>
+
+<pre>
+grep ’And he said’ genesis |
+sh trigram | sort -nr | sed 5q
+</pre>
+
+
+The syntax for regular expressions can be fairly elaborate. The simplest case is like the ‘‘the land of’’
+example above, where we are looking for lines containing a string. In more ellaborate cases, matches can
+be anchored at the beginning or end of lines by using the ‘‘ˆ’’ and ‘‘$’’ symbols.
+
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>grep gh</tt></td><td>find lines containing ‘‘gh’’</td></tr>
+<tr><td><tt>grep '^con'</tt></td><td>find lines starting with ‘‘con’’</td></tr>
+<tr><td><tt>grep 'ing$'</tt></td><td>find lines ending with ‘‘ing’’</td></tr>
+</table>
+
+With the <tt>-v</tt> option, instead of printing the lines that match, grep prints lines that do not match. In other
+words, matching lines are filtered out or deleted from the output.
+
+The <tt>-c</tt> options counts the matches instead of printing them.
+
+Case distinctions are ignored with the <tt>-i</tt> option, so that
+
+<pre>
+grep ’[аэиоуАЭИОУ]’
+</pre>
+
+is equivalent to
+
+<pre>
+grep -i ’[аэиоу]’
+</pre>
+
+Grep also allows ranges of characters:
+
+
+
+Warning: the ‘‘ˆ’’ can be confusing. Inside square brackets as in ‘‘[ˆa-zA-Z],’’ it no longer refers to the
+beginning of the line, but rather, it complements the set of characters. Thus, ‘‘[ˆa-zA-Z]’’ denotes any
+non-alphabetic character.
+
+Regular expressions can be combined recursively in ellaborate ways. For example,
+
+<h4>Exercises with <tt>grep</tt></h4>
+
+<ol>
+ <li>1. How many uppercase words are there in Genesis? Lowercase? Hint: wc -l or grep -c</li>
+ <li>How many 4-letter words?</li>
+ <li>Are there any words with no vowels?</li>
+ <li>Find ‘‘1-syllable’’ words (words with exactly one vowel)</li>
+ <li>Find ‘‘2-syllable’’ words (words with exactly two vowels)</li>
+</ol>
+
+<h3><tt>sed</tt> (stream editor)</h3>
+
+We have been using
+
+<pre>
+sed 5q < genesis
+</pre>
+
+to print the first 5 lines. Actually, this means quit after the fifth line. We could have also quit after the first
+instance of a regular expression
+
+<pre>
+sed ’/light/q’ genesis
+</pre>
+
+As we saw before, <tt>sed</tt> also used to substitute regions matching a regular expression with a second string. For example:
+
+<pre>
+sed ’s/light/dark/g’
+</pre>
+
+will replace all instances of light with dark. The first argument can be a regular expression. For example,
+as part of a simple morphology program, we might insert a hyphen into words ending with ‘‘ly.’’
+
+<pre>
+sed ’s/ly$/–ly/g’
+</pre>
+
+The substitution operator can also be used to select the first field on each line by replacing everything after
+the first white space with nothing. (Note: the square brackets contain a space followed by a tab.)
+
+<h4>Exercises with <tt>sed</tt></h4>
+
+<ol>
+  <li>Count word initial consonant sequences: tokenize by word, delete the vowel and the rest of the word,
+and count</li>
+  <li>Count word final consonant sequences</li>
+</ol>  
+
 </div>
 </body>
 </html>
