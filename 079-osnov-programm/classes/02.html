@@ -17,7 +17,7 @@
 
 import sys
 
-print('Привет свобода!');
+print('Привет свобода!')
 
 </pre>
 
@@ -25,19 +25,33 @@ print('Привет свобода!');
 
 import sys
 
-sys.stdout.write('Привет свобода!');
+sys.stdout.write('Привет свобода!')
 
 </pre>
 
 What is the difference between using <tt>print()</tt> and <tt>sys.stdout.write()</tt> ?
 
 <pre>
+import sys
 
-text = sys.stdin.read();
+text = sys.stdin.read()
 
-sys.stdout.write(text);
+sys.stdout.write(text)
 
 </pre>
+
+Save this in a file called <tt>cat.py</tt> and try running it like this:
+
+<pre>
+$ echo "Привет свобода" | python3 cat.py
+</pre>
+
+Compare the output with the Unix command <tt>cat</tt>:
+
+<pre>
+$ echo "Привет свобода" | cat
+</pre>
+
 
 <h3>Loops and flow control</h3>
 
