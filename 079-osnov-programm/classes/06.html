@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title></title>
+
+</head>
+<body>
+<div class="page">
+
+
+<h3>Regular expressions</h3>
+
+<h3>Screenscraping</h3>
+
+<h3>Libraries in Python</h3>
+
+<p>
+</p>
+
+<pre>
+# sent_id = 482
+# text = Часть его положений отменена Конституционным судом в 2013 году.
+1	Часть	_	_	_	_
+2	его	_	_	_	_
+3	положений	_	_	_	_
+4	отменена	_	_	_	_
+5	Конституционным	_	_	_	_
+6	судом	_	_	_	_
+7	в	_	_	_	_
+8	2013	_	_	_	_
+9	году	_	_	_	_
+10	.	_	_	_	_
+
+</pre>
+
+Output:
+
+<pre>
+# sent_id = 482
+# text = Часть его положений отменена Конституционным судом в 2013 году.
+1	Часть	_	NOUN	_	_
+2	его	_	NOUN	_	_
+3	положений	_	NOUN	_	_
+4	отменена	_	NOUN	_	_
+5	Конституционным	_	NOUN	_	_
+6	судом	_	NOUN	_	_
+7	в	_	ADP	_	_
+8	2013	_	NOUN	_	_
+9	году	_	NOUN	_	_
+10	.	_	PUNCT	_	_
+</pre> <!-- 70% correct -->
+
+<h3> Questions </h3>
+
+<ul>
+  <li> How accurate is the tagger ?</li>
+  <li> How could you improve performance without incorporating context ?</li>
+  <li> 
+</ul>
+
+</div>
+
+</body>
+</html>
