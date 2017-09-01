@@ -15,8 +15,23 @@
 
 <h3>Libraries in Python</h3>
 
+<h3>Unigram tagger</h3>
+
 <p>
+A unigram tagger works by assiging the most frequent tag seen for a given
+surface form. It may additionally <em>back-off</em> to the most frequent
+tag in general. Our unigram language model has all of this information, we 
+just need to apply it to our input stream.
 </p>
+
+<p>
+The first thing your program will need to do is load the language model and 
+calculate the most frequent tag per word and most frequent tag in general. You
+can use a <tt>dict</tt> for the word → tag mapping and a simple variable
+for the most frequent tag.
+</p>
+
+Example input:
 
 <pre>
 # sent_id = 482
