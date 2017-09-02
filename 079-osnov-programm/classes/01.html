@@ -78,7 +78,7 @@ The code fragments in this chapter were developed and tested on a Sun computer r
 The code ought to work on more or less as is in any Unix system, and even in many PC environments,
 running various compatibility packages such as the MKS toolkit.
 
-<h3>Count words in a text</h3>
+<h3>1. Count words in a text</h3>
 
 The problem is to input a text file, say Wikipedia (a good place to start), and output a list of words in the file
 along with their frequency counts. The algorithm consists of three steps:
@@ -200,7 +200,7 @@ sed 5q
       1 Ячун
 </pre>
 
-<h3>More counting exercises</h3>
+<h3>2. More counting exercises</h3>
 
 <p>This section will show three variants of the counting program above to illustrate just how easy it is to count
 a wide variety of (possibly) useful things. The details of the examples aren't all that important. The point
@@ -278,7 +278,7 @@ sed 's/[^А-Яа-яI]\+/\n/g'
 space, control characters, etc. It is easier to refer to non-alphabetic characters by referring to their
 complement because many of them (like newline) are hard to refer to (without knowing the context).</p>
 
-<h3>Sort</h3>
+<h3>3. Sort</h3>
 
 <p>The sorting step can also be modified in a variety of different ways. The man page for <tt>sort</tt> describes a
 number of options or flags such as:</p>
@@ -356,7 +356,7 @@ easy it was to modify the counting program to</p>
 <li>sort by frequency, rhyming order</li>
 </ul>
 
-<h3>Bigrams</h3>
+<h3>4. Bigrams</h3>
 
 <p>The same basic counting program can be modified to count bigrams (pairs of words), using the algorithm:</p>
 
@@ -428,7 +428,7 @@ students are almost always pleasantly surprised to discover that counting ngrams
 is just as easy as counting words. It is just a matter of how you tokenise the text. We can tokenise
 the text into words or into ngrams; it makes little difference as far as the counting step is concerned.</p>
 
-<h3>Shell scripts</h3>
+<h3>5. Shell scripts</h3>
 
 Suppose that you found that you were often computing bigrams of different things, and you found it
 inconvenient to keep typing the same five lines over and over. If you put the following into a file called
@@ -456,7 +456,7 @@ what a process is, don't worry about it. A process is a job, an instance of a pr
 resources by the scheduler, the time sharing system.) Put more simply, <tt>$$hargle</tt> is a temporary file 
 created with a name unique to the currently running process.
 
-<h3>grep: An Example of a Filter</h3>
+<h3>6. grep: An Example of a Filter</h3>
 
 After completing the bigram exercise, you will have discovered that ''латиназул	мацӀалда'' and ''жамагӀаталде гъорлъе'' are
 the two most frequent bigrams in the Avar Wikipedia. Suppose that you wanted to count bigrams separately for verses
@@ -599,7 +599,7 @@ should be!
  <li>Find ''2-syllable'' words (words with exactly two vowels)</li>
 </ol>
 
-<h3><tt>sed</tt> (stream editor)</h3>
+<h3>7. <tt>sed</tt> (stream editor)</h3>
 
 We have been using
 
