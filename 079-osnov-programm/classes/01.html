@@ -66,7 +66,7 @@ We will show how to solve the following exercises using only very simple utiliti
 <li>
 Sort a list of words in various ways
 <ul>
-<li>ascii order</li>
+<li>numerical order</li>
 <li>dictionary order</li>
 <li>''rhyming'' order</li>
 </ul></li>
@@ -84,9 +84,9 @@ The problem is to input a text file, say Wikipedia (a good place to start), and 
 along with their frequency counts. The algorithm consists of three steps:
 
 <ol>
-<li>Tokenise the text into a sequence of words (tr),</li>
-<li>Sort the words (sort), and</li>
-<li>Count duplicates (uniq -c).</li>
+<li>Tokenise the text into a sequence of words (<tt>sed</tt>),</li>
+<li>Sort the words (<tt>sort -r</tt>), and</li>
+<li>Count duplicates (<tt>uniq -c</tt>).</li>
 </ol>
 
 The algorithm can be implemented in just three lines of Unix code:
@@ -125,7 +125,7 @@ greater than symbol "&gt;" indicates that the output should be redirected to a f
 default, input is read from <tt>stdin</tt> (standard input) and written to <tt>stdout</tt> (standard output). Standard input is
 usually the keyboard and standard output is usually the active window.
 
-The pipe symbol "|" is used to connect the output of one program to the input of the next. In this case, tr
+The pipe symbol "|" is used to connect the output of one program to the input of the next. In this case, <tt>sed</tt>
 outputs a sequence of tokens (words) which are then piped into <tt>sort</tt>. Sort outputs a sequence of sorted
 tokens which are then piped into <tt>uniq</tt>, which counts up the runs, producing the desired result.
 

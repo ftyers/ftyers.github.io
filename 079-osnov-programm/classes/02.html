@@ -92,7 +92,7 @@ Traceback (most recent call last):
 IndexError: string index out of range
 </pre>
 
-What do you need to type to get the last character in a <span title="строка"><underline>string</underline></span> ? What relation does
+What do you need to type to get the last character in a <span title="строка"><u>string</u></span> ? What relation does
 this have with the length of the string ?
 
 <pre>
@@ -124,6 +124,28 @@ this have with the length of the string ?
 >>> s.split(' ')
 ['Расположена', 'на', 'восточном', 'побережье', 'Балтийского', 'моря.']
 </pre>
+
+<pre>
+>>> ss = s.split(' ')
+>>> ss
+['Расположена', 'на', 'восточном', 'побережье', 'Балтийского', 'моря.']
+>>> '|'.join(ss)
+'Расположена|на|восточном|побережье|Балтийского|моря.'
+</pre>
+
+What are two ways of getting from the string:
+
+<pre>
+Расположена на восточном побережье Балтийского моря.
+</pre>
+
+to the string:
+
+<pre>
+Расположена|на|восточном|побережье|Балтийского|моря.
+</pre>
+
+?
 
 <h3> Sentence segmentation </h3>
 
