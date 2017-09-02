@@ -617,11 +617,11 @@ sed '/руго/q' < wiki.txt
 As we saw before, <tt>sed</tt> also used to substitute regions matching a regular expression with a second string. For example:
 
 <pre>
-sed 's/\([рбв]уго\|йиго\)/<COP>/g' < wiki.txt
+sed 's/\([рбв]уго\|йиго\)/[COP]/g' < wiki.txt
 </pre>
 
 will replace all instances of <em>руго</em>, <em>буго</em>, <em>вуго</em> or <em>йиго</em> 
-with '<COP>'. The first argument can be a regular expression. For example,
+with '[COP]'. The first argument can be a regular expression. For example,
 as part of a simple morphology program, we might insert a hash symbol before words ending with ''да.''
 
 <pre>
