@@ -92,10 +92,13 @@ along with their frequency counts. The algorithm consists of three steps:
 The algorithm can be implemented in just three lines of Unix code:
 
 <pre>
-sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt |
+$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt |
 sort -r |
 uniq -c > wiki.hist
 </pre>
+
+Note: When the <tt>$</tt> symbol appears at the beginning of a line, it means that this line
+is a command that you should write into your terminal, do not type the <tt>$</tt> symbol.
 
 This program produces the following output:
 
