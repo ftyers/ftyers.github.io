@@ -59,9 +59,24 @@ $ echo "Привет мир" | cat
 
 <h4> <tt>for</tt> loop </h4>
 
+<pre>
+import sys
+
+for c in sys.stdin.read():
+	print(c)
+</pre>
+
 
 <h4> <tt>while</tt> loop </h4>
 
+<pre>
+import sys
+
+c = sys.stdin.read(1)
+while c: 
+	print(c)
+	c = sys.stdin.read(1)
+</pre>
 
 
 <h3>String processing</h3>
