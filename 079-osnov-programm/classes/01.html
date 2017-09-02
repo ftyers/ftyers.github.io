@@ -395,7 +395,7 @@ paste wiki.words wiki.nextwords
 ...
 </pre>
 
-<p>Combining the pieces, we end up with the following four line program for counting bigrams:</p>
+<p>Combining the pieces, we end up with the following three line program for counting bigrams:</p>
 
 <pre>
 sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > $$words
@@ -445,7 +445,7 @@ rm $$words $$nextwords
 
 then you could count bigrams with a single line:
 <pre>
-sh bigram.sh < wiki.txt > wiki.bigrams
+$ sh bigram.sh < wiki.txt > wiki.bigrams
 
 </pre>
 The shell script introduced several new symbols. The ''#'' symbol is used for comments. The ''$$''
@@ -455,42 +455,60 @@ and there won't be any confusion about which temporary file belongs to which pro
 what a process is, don't worry about it. A process is a job, an instance of a program that is assigned
 resources by the scheduler, the time sharing system.)
 
-<h3>grep & egrep: An Example of a Filter</h3>
+<h3>grep: An Example of a Filter</h3>
 
-After completing the bigram exercise, you will have discovered that ‘‘’’ and ‘‘’’ are
-the two most frequent trigrams in Genesis. Suppose that you wanted to count trigrams separately for verses
-that contain just the phrase ‘‘the land of.’’
+After completing the bigram exercise, you will have discovered that ''латиназул	мацӀалда'' and ''жамагӀаталде гъорлъе'' are
+the two most frequent bigrams in the Avar Wikipedia. Suppose that you wanted to count bigrams separately for verses
+that contain just the phrase ''латиназул мацӀалда.''
 
 Grep (<b>g</b>eneral <b>r</b>egular <b>e</b>xpression <b>p</b>attern matcher) can be used as follows 
-to extract lines containing ‘‘the land of.’’
+to extract lines containing ''латиназул мацӀалда''.
 
 <pre>
-grep ’the land of’ genesis | sed 5q
+$ grep 'латиназул мацӀалда' wiki.txt | sed 5q
+
+Чараналъул гъветӀ (латиназул мацӀалда "Populus nigra" var. "piramidalis ")
+Хъарчигъа (латиназул мацӀалда "Accipiter gentilis"), хӀинчӀ.
+Маймалак ялъуни Маймун (латиназул мацӀалда "Primates ex Homo") — гӀалхул кӀудияб ялъуни гьитӀинаб хӀайван.
+Антилопа (латиназул мацӀалда "Antilopinae" etc. sufamilies) — хӀайван.
+ТӀавус (латиназул мацӀалда "Pavo") — гӀалхул ва рукъалъул хӀинчӀ.
 </pre>
 
-Grep can be combined in straightforward ways with the trigram shell script to count trigrams for lines
-matching any regular expression including ‘‘the land of’’ and ‘‘And he said.’’
+Grep can be combined in straightforward ways with the bigram shell script to count bigrams for lines
+matching any regular expression including ''латиназул мацӀалда'' and ''жамагӀаталде гъорлъе.''
 
 <pre>
-grep ’the land of’ genesis |
-sh trigram | sort -nr | sed 5q
+$ grep 'латиназул мацӀалда' wiki.txt |
+sh bigram.sh | sort -nr | sed 5q
+
+    236 латиназул	мацӀалда
+    140 мацӀалда	хъизан
+    122 хъизан	гӀалхул
+     85 мацӀалда	гӀадамасул
+     85 лага	черх
 </pre>
 
 <pre>
-grep ’And he said’ genesis |
-sh trigram | sort -nr | sed 5q
+$ grep 'жамагӀаталде гъорлъе' wiki.txt |
+sh bigram.sh | sort -nr | sed 5q
+
+    166 жамагӀаталде	гъорлъе
+     85 гъорлъе	унеб
+     81 уна	жибго
+     81 гъорлъе	уна
+     63 росулъ	гӀумру
 </pre>
 
 
-The syntax for regular expressions can be fairly elaborate. The simplest case is like the ‘‘the land of’’
+The syntax for regular expressions can be fairly elaborate. The simplest case is like the ''the land of''
 example above, where we are looking for lines containing a string. In more elaborate cases, matches can
-be anchored at the beginning or end of lines by using the ‘‘ˆ’’ and ‘‘$’’ symbols.
+be anchored at the beginning or end of lines by using the ''ˆ'' and ''$'' symbols.
 
 <table>
 <tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
-<tr><td><tt>grep gh</tt></td><td>find lines containing ‘‘gh’’</td></tr>
-<tr><td><tt>grep '^con'</tt></td><td>find lines starting with ‘‘con’’</td></tr>
-<tr><td><tt>grep 'ing$'</tt></td><td>find lines ending with ‘‘ing’’</td></tr>
+<tr><td><tt>grep gh</tt></td><td>find lines containing ''gh''</td></tr>
+<tr><td><tt>grep '^con'</tt></td><td>find lines starting with ''con''</td></tr>
+<tr><td><tt>grep 'ing$'</tt></td><td>find lines ending with ''ing''</td></tr>
 </table>
 
 With the <tt>-v</tt> option, instead of printing the lines that match, grep prints lines that do not match. In other
@@ -501,20 +519,20 @@ The <tt>-c</tt> options counts the matches instead of printing them.
 Case distinctions are ignored with the <tt>-i</tt> option, so that
 
 <pre>
-grep ’[аэиоуАЭИОУ]’
+grep '[аэиоуАЭИОУ]'
 </pre>
 
 is equivalent to
 
 <pre>
-grep -i ’[аэиоу]’
+grep -i '[аэиоу]'
 </pre>
 
 Grep also allows ranges of characters:
 
 
-Warning: the ‘‘ˆ’’ can be confusing. Inside square brackets as in ‘‘[ˆa-zA-Z],’’ it no longer refers to the
-beginning of the line, but rather, it complements the set of characters. Thus, ‘‘[ˆa-zA-Z]’’ denotes any
+Warning: the ''ˆ'' can be confusing. Inside square brackets as in ''[ˆa-zA-Z],'' it no longer refers to the
+beginning of the line, but rather, it complements the set of characters. Thus, ''[ˆa-zA-Z]'' denotes any
 non-alphabetic character.
 
 Regular expressions can be combined recursively in elaborate ways. For example,
@@ -525,8 +543,8 @@ Regular expressions can be combined recursively in elaborate ways. For example,
  <li>1. How many uppercase words are there in Genesis? Lowercase? Hint: wc -l or grep -c</li>
  <li>How many 4-letter words?</li>
  <li>Are there any words with no vowels?</li>
- <li>Find ‘‘1-syllable’’ words (words with exactly one vowel)</li>
- <li>Find ‘‘2-syllable’’ words (words with exactly two vowels)</li>
+ <li>Find ''1-syllable'' words (words with exactly one vowel)</li>
+ <li>Find ''2-syllable'' words (words with exactly two vowels)</li>
 </ol>
 
 <h3><tt>sed</tt> (stream editor)</h3>
@@ -541,20 +559,20 @@ to print the first 5 lines. Actually, this means quit after the fifth line. We c
 instance of a regular expression
 
 <pre>
-sed ’/light/q’ genesis
+sed '/light/q' genesis
 </pre>
 
 As we saw before, <tt>sed</tt> also used to substitute regions matching a regular expression with a second string. For example:
 
 <pre>
-sed ’s/light/dark/g’
+sed 's/light/dark/g'
 </pre>
 
 will replace all instances of light with dark. The first argument can be a regular expression. For example,
-as part of a simple morphology program, we might insert a hyphen into words ending with ‘‘ly.’’
+as part of a simple morphology program, we might insert a hyphen into words ending with ''ly.''
 
 <pre>
-sed ’s/ly$/–ly/g’
+sed 's/ly$/–ly/g'
 </pre>
 
 The substitution operator can also be used to select the first field on each line by replacing everything after
