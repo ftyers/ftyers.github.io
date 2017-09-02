@@ -561,6 +561,33 @@ Regular expressions can be combined recursively in elaborate ways. For example,
 </table>
 </div>
 
+A quick summary of the syntax of regular expressions is given in the table below.
+
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>ц</tt></td><td>match the letter 'ц'</td></tr>
+<tr><td><tt>[а-я]</tt></td><td>match any lowercase letter</td></tr>
+<tr><td><tt>[А-Я]</tt></td><td>match any uppercase letter</td></tr>
+<tr><td><tt>[0-9]</tt></td><td>match any digit</td></tr>
+<tr><td><tt>[0123456789]</tt></td><td>match any digit</td></tr>
+<tr><td><tt>[аэиоуяеыёюАЭИОУЯЕЫЁЮ]</tt></td><td>match any vowel</td></tr>
+<tr><td><tt>[^аэиоуяеыёюАЭИОУЯЕЫЁЮ]</tt></td><td>match any character that is not a vowel</td></tr>
+<tr><td><tt>.</tt></td><td>match any character</td></tr>
+<tr><td><tt>^</tt></td><td>beginning of line</td></tr>
+<tr><td><tt>$</tt></td><td>end of line</td></tr>
+<tr><td><tt><em>pattern</em>*</tt></td><td>match zero or more instances of <em>pattern</em></td></tr>
+<tr><td><tt><em>pattern</em>\+</tt></td><td>match one or more instances of <em>pattern</em></td></tr>
+</table>
+</div>
+
+<div style="color:grey">
+<p>
+<b>TIP:</b> If you are using GNU <tt>grep</tt> then you can run it with <tt>grep --colour</tt> to 
+get the matched pattern coloured in your terminal.
+</p>
+</div>
+
 <h4>Exercises with <tt>grep</tt></h4>
 
 <ol>
