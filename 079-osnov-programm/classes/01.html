@@ -92,13 +92,15 @@ along with their frequency counts. The algorithm consists of three steps:
 The algorithm can be implemented in just three lines of Unix code:
 
 <pre>
-$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt |
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt |
 sort -r |
 uniq -c > wiki.hist
 </pre>
 
 Note: When the <tt>$</tt> symbol appears at the beginning of a line, it means that this line
 is a command that you should write into your terminal, do not type the <tt>$</tt> symbol.
+
+Warning: You should copy/paste both `I' and `Ӏ'. 
 
 This program produces the following output:
 
@@ -149,7 +151,7 @@ In the same way, we can use the same command, <tt>sed</tt>, to verify that the f
 the first few words in the wiki file.
 
 <pre>
-$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | sed 5q
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt | sed 5q
 
 География
 
@@ -276,6 +278,7 @@ complement because many of them (like newline) are hard to refer to (without kno
 <p>The sorting step can also be modified in a variety of different ways. The man page for <tt>sort</tt> describes a
 number of options or flags such as:</p>
 
+<div style="align:center">
 <table>
 <tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
 <tr><td><tt>sort -d</tt></td><td>dictionary order</td></tr>
@@ -288,6 +291,7 @@ number of options or flags such as:</p>
 <tr><td><tt>sort +0.50</tt></td><td>start with 50th character</td></tr>
 <tr><td><tt>sort +1.5</tt></td><td>start with 5th character of field 1</td></tr>
 </table>
+</div>
 
 These options can be used in straightforward ways to solve the following exercises:
 
@@ -302,8 +306,8 @@ sort -nr
 <li>Sort them by ''rhyming'' order.</li>
 </ol>
 
-The last two examples above are left as exercises for the reader, but unlike most ''exercises for the reader,''
-the solutions can be found in the appendix of this chapter.
+<!--The last two examples above are left as exercises for the reader, but unlike most ''exercises for the reader,''
+the solutions can be found in the appendix of this chapter.-->
 
 By ''rhyming'' order, we mean that the words should be sorted from the right rather than the left, as
 illustrated below:
@@ -353,12 +357,12 @@ easy it was to modify the counting program to</p>
 
 <ol>
 <li>tokenise by word</li>
-<li>print <em>word_i</em> and <em>word_i+1</em> on the same line</li>
+<li>print <em>word</em><sub><em>i</em></sub> and <em>word</em><sub><em>i</em>+1</sub> on the same line</li>
 <li>count</li>
 </ol>
 
 <p>The second step makes use of two new Unix commands, <tt>tail</tt> and <tt>paste</tt>. Tail is usually used to output the
-last few lines of a file, but it can be used to output all but the first few lines with the ''+2'' option. The
+last few lines of a file, but it can be used to output all but the first few lines with the ''-n +2'' option. The
 following code uses tail in this way to generate the files genesis.words and genesis.nextwords which
 correspond to <em>word</em><sub>i</sub> and <em>word</em><sub><em>i</em>+1</sub> .</p>
 
@@ -367,8 +371,8 @@ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt > wiki.words
 tail -n +2 wiki.words > wiki.nextwords
 </pre>
 
-<p>Paste takes two files and prints them side by side on the same line. Pasting wiki.words and
-wiki.nextwords together produces the appropriate input for the counting step.</p>
+<p>Paste takes two files and prints them side by side on the same line. Pasting <tt>wiki.words</tt> and
+<tt>wiki.nextwords</tt> together produces the appropriate input for the counting step.</p>
 
 <pre>
 paste wiki.words wiki.nextwords
@@ -389,7 +393,7 @@ paste wiki.words wiki.nextwords
 <p>Combining the pieces, we end up with the following four line program for counting bigrams:</p>
 
 <pre>
-sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt > wiki.words
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > $$words
 tail -n +2 wiki.words > wiki.nextwords
 paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
 </pre>
@@ -398,19 +402,20 @@ paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
 
 <pre>
 sort -nr < wiki.bigrams | sed 10q
-   3888 	
-    382 къо	
-    371 	абилеб
-    365 хутIула	къо
-    365 сверизе	хутIула
-    365 ЛъагIел	сверизе
-    359 абилеб	къо
-    356 лъагIалил	абилеб
-    349 къо	високоснияб
-    349 високоснияб	соналъ
+
+    236 латиназул	мацӀалда
+    174 жамагӀаталде	гъорлъе
+    140 мацӀалда	хъизан
+    122 хъизан	гӀалхул
+     94 гъорлъе	уна
+     90 уна	жибго
+     89 гъорлъе	унеб
+     86 лага	черх
+     86 гӀадамасул	лага
+     85 мацӀалда	гӀадамасул
 </pre>
 
-<p>Exercise: count trigrams. The solution can be found in the appendix.</p>
+<!--<p>Exercise: count trigrams. The solution can be found in the appendix.</p>-->
 
 <p>I have presented this material in quite a number of tutorials over the years. The students almost always
 come up with a big ''aha'' reaction at this point. Counting words seems easy enough, but for some reason,
@@ -420,16 +425,24 @@ the text into words or into ngrams; it makes little difference as far as the cou
 
 <h3>Shell scripts</h3>
 
-Suppose that you found that you were often computing trigrams of different things, and you found it
+Suppose that you found that you were often computing bigrams of different things, and you found it
 inconvenient to keep typing the same five lines over and over. If you put the following into a file called
-''trigram.sh'',
+<tt>bigram.sh</tt>,
 
 <pre>
-
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > $$words
+tail -n +2 $$words > $$nextwords
+paste $$words $$nextwords |
+sort | uniq -c
+# remove the temporary files
+rm $$words $$nextwords 
 </pre>
 
-then you could count trigrams with a single line:
+then you could count bigrams with a single line:
+<pre>
+sh bigram.sh < wiki.txt > wiki.bigrams
 
+</pre>
 The shell script introduced several new symbols. The ''#'' symbol is used for comments. The ''$$''
 syntax encodes a long number (the process id) into the names of the temporary files. It is a good idea to use
 the ''$$'' syntax in this way so that two users (or two processes) can run the shell script at the same time,
@@ -439,7 +452,7 @@ resources by the scheduler, the time sharing system.)
 
 <h3>grep & egrep: An Example of a Filter</h3>
 
-After completing the trigram exercise, you will have discovered that ‘‘’’ and ‘‘’’ are
+After completing the bigram exercise, you will have discovered that ‘‘’’ and ‘‘’’ are
 the two most frequent trigrams in Genesis. Suppose that you wanted to count trigrams separately for verses
 that contain just the phrase ‘‘the land of.’’
 
