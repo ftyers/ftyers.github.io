@@ -446,14 +446,15 @@ rm $$words $$nextwords
 then you could count bigrams with a single line:
 <pre>
 $ sh bigram.sh < wiki.txt > wiki.bigrams
-
 </pre>
-The shell script introduced several new symbols. The ''#'' symbol is used for comments. The ''$$''
-syntax encodes a long number (the process id) into the names of the temporary files. It is a good idea to use
+
+The shell script introduced several new symbols. The ''#'' symbol is used for comments. 
+The ''$$'' syntax encodes a long number (the process id) into the names of the temporary files. It is a good idea to use
 the ''$$'' syntax in this way so that two users (or two processes) can run the shell script at the same time,
 and there won't be any confusion about which temporary file belongs to which process. (If you don't know
 what a process is, don't worry about it. A process is a job, an instance of a program that is assigned
-resources by the scheduler, the time sharing system.)
+resources by the scheduler, the time sharing system.) Put more simply, <tt>$$hargle</tt> is a temporary file 
+created with a name unique to the currently running process.
 
 <h3>grep: An Example of a Filter</h3>
 
@@ -552,7 +553,13 @@ non-alphabetic character.
 
 Regular expressions can be combined recursively in elaborate ways. For example,
 
-
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>grep -i '[аэиоуяеыёю].*[аэиоуяеыёю]'</tt></td><td>lines with two or more vowels</td></tr>
+<tr><td><tt>grep -i '^[^аэиоуяеыёю]*[аэиоуяеыёю][^аэиоуяеыёю]*$'</tt></td><td>lines with exactly one vowel</td></tr>
+</table>
+</div>
 
 <h4>Exercises with <tt>grep</tt></h4>
 
