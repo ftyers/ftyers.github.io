@@ -165,7 +165,7 @@ Similarly, we can verify that the output of the <tt>sort</tt> step produces a se
 tokens in lexicographic order.
 
 <pre>
-$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | 
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt | 
 sort -r | 
 sed 10q
 
@@ -184,7 +184,7 @@ sed 10q
 Finally, the <tt>uniq</tt> step counts up the repeated tokens.
 
 <pre>
-$ sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt | 
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt | 
 sort -r | 
 uniq -c | 
 sed 5q
@@ -298,7 +298,7 @@ These options can be used in straightforward ways to solve the following exercis
 
 <ol>
 <li>Sort the words in Wikipedia by frequency</li>
-<pre> sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt |
+<pre> sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt |
 sort |
 uniq -c |
 sort -nr
@@ -368,7 +368,7 @@ following code uses tail in this way to generate the files genesis.words and gen
 correspond to <em>word</em><sub>i</sub> and <em>word</em><sub><em>i</em>+1</sub> .</p>
 
 <pre>
-sed 's/[^а-яА-ЯI]\+/\n/g' < wiki.txt > wiki.words
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt > wiki.words
 tail -n +2 wiki.words > wiki.nextwords
 </pre>
 
