@@ -104,6 +104,9 @@ in a string.
 
 <h4> <tt>for</tt> loop </h4>
 
+The <tt>for</tt> loop is probably the most basic way of looping in Python. Whenever you
+want to do the same thing for a number of items, you will probably use a <tt>for</tt> loop.
+
 <pre>
 import sys
 
@@ -123,8 +126,11 @@ for c in text:
 
 How about this program ?
 
-
 <h4> <tt>while</tt> loop </h4>
+
+Your computer has a limited amount of memory, if we read in all the text in the input
+before processing it then we could easily run out of memory if we are processing large
+corpora. The <tt>while</tt> loop allows us to read in part of the data
 
 <pre>
 import sys
@@ -134,6 +140,17 @@ while c:
 	print(c)
 	c = sys.stdin.read(1)
 </pre>
+
+<pre>
+import sys
+
+line = sys.stdin.readline()
+while line: 
+	print(line)
+	line = sys.stdin.readline()
+</pre>
+
+
 
 <h3>Flow control</h3>
 
