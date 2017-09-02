@@ -499,17 +499,18 @@ sh bigram.sh | sort -nr | sed 5q
      63 росулъ	гӀумру
 </pre>
 
-
 The syntax for regular expressions can be fairly elaborate. The simplest case is like the ''the land of''
 example above, where we are looking for lines containing a string. In more elaborate cases, matches can
 be anchored at the beginning or end of lines by using the ''ˆ'' and ''$'' symbols.
 
+<div style="align:center">
 <table>
 <tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
 <tr><td><tt>grep gh</tt></td><td>find lines containing ''gh''</td></tr>
 <tr><td><tt>grep '^con'</tt></td><td>find lines starting with ''con''</td></tr>
 <tr><td><tt>grep 'ing$'</tt></td><td>find lines ending with ''ing''</td></tr>
 </table>
+</div>
 
 With the <tt>-v</tt> option, instead of printing the lines that match, grep prints lines that do not match. In other
 words, matching lines are filtered out or deleted from the output.
