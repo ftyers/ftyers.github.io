@@ -16,22 +16,18 @@
 Try typing (or copypasta) this program into a text file called <tt>privet.py</tt>:
 
 <pre>
-
 import sys
 
-print('Привет свобода!')
-
+print('Привет мир!')
 </pre>
 
 Then run it using <tt>python3 privet.py</tt>. After that, try replacing the above 
 with:
 
 <pre>
-
 import sys
 
-sys.stdout.write('Привет свобода!')
-
+sys.stdout.write('Привет мир!')
 </pre>
 
 What is the difference between using <tt>print()</tt> and <tt>sys.stdout.write()</tt> ?
@@ -45,19 +41,18 @@ import sys
 text = sys.stdin.read()
 
 sys.stdout.write(text)
-
 </pre>
 
 Save this in a file called <tt>cat.py</tt> and try running it like this:
 
 <pre>
-$ echo "Привет свобода" | python3 cat.py
+$ echo "Привет мир" | python3 cat.py
 </pre>
 
 Compare the output with the Unix command <tt>cat</tt>:
 
 <pre>
-$ echo "Привет свобода" | cat
+$ echo "Привет мир" | cat
 </pre>
 
 <h3>Loops and flow control</h3>
