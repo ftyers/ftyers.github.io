@@ -398,7 +398,7 @@ paste wiki.words wiki.nextwords
 <p>Combining the pieces, we end up with the following three line program for counting bigrams:</p>
 
 <pre>
-sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > $$words
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > wiki.words
 tail -n +2 wiki.words > wiki.nextwords
 paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
 </pre>
@@ -535,14 +535,24 @@ Grep also allows ranges of characters:
 <table>
 <tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
 <tr><td><tt>grep '[A-Я]'</tt></td><td>lines with an uppercase character</td></tr>
+<tr><td><tt>grep '^[A-Я]'</tt></td><td>lines starting with an uppercase character</td></tr>
+<tr><td><tt>grep '[A-Я]$'</tt></td><td>lines ending with an uppercase character</td></tr>
+<tr><td><tt>grep '^[A-Я]\+$'</tt></td><td>lines with all uppercase character</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><tt>grep '[аэиоуяеыёюАЭИОУЯЕЫЁЮ]'</tt></td><td>lines with a vowel</td></tr>
+<tr><td><tt>grep '^[аэиоуяеыёюАЭИОУЯЕЫЁЮ]'</tt></td><td>lines starting with a vowel</td></tr>
+<tr><td><tt>grep '[аэиоуяеыёюАЭИОУЯЕЫЁЮ]$'</tt></td><td>lines ending with a vowel</td></tr>
 </table>
 </div>
 
-Warning: the ''ˆ'' can be confusing. Inside square brackets as in ''[ˆa-zA-Z],'' it no longer refers to the
-beginning of the line, but rather, it complements the set of characters. Thus, ''[ˆa-zA-Z]'' denotes any
+Warning: the ''^'' (<em>circumflex</em>) can be confusing. Inside square brackets as 
+in ''[^а-яА-Я],'' it no longer refers to the beginning of the line, but rather, it 
+complements the set of characters. Thus, ''[^а-яА-Я]'' denotes any
 non-alphabetic character.
 
 Regular expressions can be combined recursively in elaborate ways. For example,
+
+
 
 <h4>Exercises with <tt>grep</tt></h4>
 
