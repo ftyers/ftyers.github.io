@@ -95,9 +95,9 @@ You can do simple arithmetic in the Python shell.
 2.5
 </pre>
 
-Try out the operators <tt>+</tt>, <tt>/</tt>, <tt>*</tt> and <tt>-</tt>.
+Try out the operators <tt>+</tt>, <tt>/</tt>, <tt>*</tt> and <tt>-</tt>. 
 
-<h3>Loops and flow control</h3>
+<h3>Loops</h3>
 
 <h4> <tt>for</tt> loop </h4>
 
@@ -118,6 +118,32 @@ c = sys.stdin.read(1)
 while c: 
 	print(c)
 	c = sys.stdin.read(1)
+</pre>
+
+<h3>Flow control</h3>
+
+<h4> <tt>if</tt> statement</h4>
+
+The <tt>if</tt> statement allows you to put conditions in your program,
+for example, in the following program we read the input character by 
+character and if the character is 'и', we increment the counter by one.
+
+<pre>
+import sys
+
+counter = 0 
+
+for c in sys.stdin.read():
+	if c == 'и': 
+		counter = counter + 1
+print(counter)
+</pre>
+
+Save this program in a file called <tt>counter.py</tt> and run it with the 
+input "Привет мир", what does it do ?
+
+<pre>
+echo "Привет мир" | python3 counter.py
 </pre>
 
 
