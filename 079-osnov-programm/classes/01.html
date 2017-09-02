@@ -604,31 +604,35 @@ should be!
 We have been using
 
 <pre>
-sed 5q < genesis
+sed 5q < wiki.txt
 </pre>
 
 to print the first 5 lines. Actually, this means quit after the fifth line. We could have also quit after the first
 instance of a regular expression
 
 <pre>
-sed '/light/q' genesis
+sed '/руго/q' < wiki.txt 
 </pre>
 
 As we saw before, <tt>sed</tt> also used to substitute regions matching a regular expression with a second string. For example:
 
 <pre>
-sed 's/light/dark/g'
+sed 's/\([рбв]уго\|йиго\)/<COP>/g' < wiki.txt
 </pre>
 
-will replace all instances of light with dark. The first argument can be a regular expression. For example,
-as part of a simple morphology program, we might insert a hyphen into words ending with ''ly.''
+will replace all instances of <em>руго</em>, <em>буго</em>, <em>вуго</em> or <em>йиго</em> 
+with '<COP>'. The first argument can be a regular expression. For example,
+as part of a simple morphology program, we might insert a hash symbol before words ending with ''да.''
 
 <pre>
-sed 's/ly$/–ly/g'
+sed 's/да[^а-я]/#&/g' < wiki.txt
 </pre>
 
-The substitution operator can also be used to select the first field on each line by replacing everything after
-the first white space with nothing. (Note: the square brackets contain a space followed by a tab.)
+The <tt>&</tt> symbol here refers to the pattern matched, so here it would match да followed by anything
+that wasn't a lowercase alphabetic character and output a hash symbol followed by the matched pattern.
+
+<!--The substitution operator can also be used to select the first field on each line by replacing everything after
+the first white space with nothing. (Note: the square brackets contain a space followed by a tab.)-->
 
 <h4>Exercises with <tt>sed</tt></h4>
 
