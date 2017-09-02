@@ -55,6 +55,34 @@ Compare the output with the Unix command <tt>cat</tt>:
 $ echo "Привет мир" | cat
 </pre>
 
+<h3>Variables</h3>
+
+<p>
+When we did
+
+<pre>
+text = sys.stdin.read()
+</pre>
+
+above, we were assigning the result of a function (more on this later) to a variable
+called <tt>text</tt>. The outcome was that the program read all of the available
+input and stored it in the variable <tt>text</tt> before outputting it with the <tt>write()</tt>
+function.
+</p>
+<p>
+We can store anything in a variable.
+
+<pre>
+>>> a = 5
+>>> a
+5
+</pre>
+
+This code stores the value <tt>5</tt> in a variable <tt>a</tt>. What happens if you
+assign something else to the same variable ?
+
+
+
 <h3>Loops and flow control</h3>
 
 <h4> <tt>for</tt> loop </h4>
