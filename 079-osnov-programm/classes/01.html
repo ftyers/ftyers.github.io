@@ -531,6 +531,12 @@ grep -i '[аэиоу]'
 
 Grep also allows ranges of characters:
 
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>grep '[A-Я]'</tt></td><td>lines with an uppercase character</td></tr>
+</table>
+</div>
 
 Warning: the ''ˆ'' can be confusing. Inside square brackets as in ''[ˆa-zA-Z],'' it no longer refers to the
 beginning of the line, but rather, it complements the set of characters. Thus, ''[ˆa-zA-Z]'' denotes any
