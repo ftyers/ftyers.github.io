@@ -95,9 +95,12 @@ You can do simple arithmetic in the Python shell.
 2.5
 </pre>
 
-Try out the operators <tt>+</tt>, <tt>/</tt>, <tt>*</tt> and <tt>-</tt>. 
+Try out the operators <tt>+</tt>, <tt>/</tt>, <tt>*</tt> and <tt>-</tt>, what do they do?
 
 <h3>Loops</h3>
+
+In computer programs we very often want to iterate over items, for example characters
+in a string. 
 
 <h4> <tt>for</tt> loop </h4>
 
@@ -107,6 +110,18 @@ import sys
 for c in sys.stdin.read():
 	print(c)
 </pre>
+
+What does this program do ?
+
+<pre>
+import sys
+
+text = sys.stdin.read()
+for c in text:
+	print(c)
+</pre>
+
+How about this program ?
 
 
 <h4> <tt>while</tt> loop </h4>
