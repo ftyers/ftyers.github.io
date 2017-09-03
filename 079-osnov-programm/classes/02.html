@@ -11,6 +11,21 @@
 
 <h2> Class 2 </h2>
 
+<h3>The Python console</h3>
+
+Try typing <tt>python3</tt> into your terminal and pressing return ⏎,
+
+<pre>
+$ python3
+Python 3.5.2+ (default, Aug  5 2016, 08:07:14) 
+[GCC 6.1.1 20160724] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+</pre>
+
+This is the <em>Python shell</em>, any time you see <tt>&gt;&gt;&gt;</tt> in the examples
+it means run this code in the Python shell.
+
 <h3>Basic structure of programs</h3>
 
 Try typing (or copypasta) this program into a text file called <tt>privet.py</tt>:
@@ -30,10 +45,16 @@ import sys
 sys.stdout.write('Привет мир!')
 </pre>
 
+<p>
 What is the difference between using <tt>print()</tt> and <tt>sys.stdout.write()</tt> ?
 
 Now try adding <tt>\n</tt> after the exclamation mark. What do you think <tt>\n</tt> might
 mean ?
+</p>
+
+<p>
+Now try the following code:
+</p>
 
 <pre>
 import sys
@@ -43,7 +64,7 @@ text = sys.stdin.read()
 sys.stdout.write(text)
 </pre>
 
-Save this in a file called <tt>cat.py</tt> and try running it like this:
+Save it in a file called <tt>cat.py</tt> and try running it like this:
 
 <pre>
 $ echo "Привет мир" | python3 cat.py
