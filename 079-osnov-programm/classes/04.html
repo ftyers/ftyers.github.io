@@ -23,56 +23,55 @@
 <pre>
 # sent_id = 1
 # text = Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья.
-1	Это	_	_	_	_
-2	течение	_	_	_	_
-3	следует	_	_	_	_
-4	на	_	_	_	_
-5	север	_	_	_	_
-6	до	_	_	_	_
-7	Японского	_	_	_	_
-8	побережья	_	_	_	_
-9	,	_	_	_	_
-10	оказывая	_	_	_	_
-11	заметное	_	_	_	_
-12	влияние	_	_	_	_
-13	на	_	_	_	_
-14	климат	_	_	_	_
-15	японского	_	_	_	_
-16	побережья	_	_	_	_
-17	.	_	_	_	_
+1	Это	_	_	_	_	_	_	_	_
+2	течение	_	_	_	_	_	_	_	_
+3	следует	_	_	_	_	_	_	_	_
+4	на	_	_	_	_	_	_	_	_
+5	север	_	_	_	_	_	_	_	_
+6	до	_	_	_	_	_	_	_	_
+7	Японского	_	_	_	_	_	_	_	_
+8	побережья	_	_	_	_	_	_	_	_
+9	,	_	_	_	_	_	_	_	_
+10	оказывая	_	_	_	_	_	_	_	_
+11	заметное	_	_	_	_	_	_	_	_
+12	влияние	_	_	_	_	_	_	_	_
+13	на	_	_	_	_	_	_	_	_
+14	климат	_	_	_	_	_	_	_	_
+15	японского	_	_	_	_	_	_	_	_
+16	побережья	_	_	_	_	_	_	_	_
+17	.	_	_	_	_	_	_	_	_
 
 </pre>
 
-Output: 
+We can use the <tt>MISC</tt> (Miscellaneous) column for storing the transliteration, 
 
 <pre>
 # sent_id = 1
 # text = Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья.
-1	Это	_	_	_	_	Translit=Eto
-2	течение	_	_	_	_	Translit=tječjenije
-3	следует	_	_	_	_	Translit=sljedujet
-4	на	_	_	_	_	Translit=na
-5	север	_	_	_	_	Translit=sjevjer
-6	до	_	_	_	_	Translit=do
-7	Японского	_	_	_	_	Translit=Japonskogo
-8	побережья	_	_	_	_	Translit=pobjerjež'ja
-9	,	_	_	_	_		Translit=,
-10	оказывая	_	_	_	_	Translit=okazıvaja
-11	заметное	_	_	_	_	Translit=zamjetnoje
-12	влияние	_	_	_	_		Translit=vlijanije
-13	на	_	_	_	_		Translit=na
-14	климат	_	_	_	_		Translit=klimat
-15	японского	_	_	_	_	Translit=japonskogo
-16	побережья	_	_	_	_	Translit=pobjerjež'ja
-17	.	_	_	_	_		Translit=.
-
+1	Это	_	_	_	_	_	_	_	Translit=Eto
+2	течение	_	_	_	_	_	_	_	Translit=tječjenije
+3	следует	_	_	_	_	_	_	_	Translit=sljedujet
+4	на	_	_	_	_	_	_	_	Translit=na
+5	север	_	_	_	_	_	_	_	Translit=sjevjer
+6	до	_	_	_	_	_	_	_	Translit=do
+7	Японского	_	_	_	_	_	_	_	Translit=Japonskogo
+8	побережья	_	_	_	_	_	_	_	Translit=pobjerjež'ja
+9	,	_	_	_	_		_	_	_	Translit=,
+10	оказывая	_	_	_	_	_	_	_	Translit=okazıvaja
+11	заметное	_	_	_	_	_	_	_	Translit=zamjetnoje
+12	влияние	_	_	_	_		_	_	_	Translit=vlijanije
+13	на	_	_	_	_		_	_	_	Translit=na
+14	климат	_	_	_	_		_	_	_	Translit=klimat
+15	японского	_	_	_	_	_	_	_	Translit=japonskogo
+16	побережья	_	_	_	_	_	_	_	Translit=pobjerjež'ja
+17	.	_	_	_	_		_	_	_	Translit=.
 </pre>
 
 
 <h3> Questions </h3>
 
 <ul>
-  <li> What to do with ambiguous letters? </li>
+  <li> What to do with ambiguous letters ? For example, Cyrillic `е' could be either \emph{je} or \emph{e}.</li>
 </ul>
 
 </div>
