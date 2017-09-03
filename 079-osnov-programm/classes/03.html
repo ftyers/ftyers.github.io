@@ -21,8 +21,41 @@ the function returned a list of strings.
 However, lists can include more than just strings.
 </p>
 
+<!-- stack -->
 
-<h3> Formatting strings with <tt>print()</tt> </h3>
+
+<h3> Formatting output with <tt>print()</tt> </h3>
+
+<pre>
+>>> index = 1
+>>> print('# sent_id = %d' % (index))
+# sent_id = 1
+</pre>
+
+<pre>
+>>> text = 'Привет мир!'
+>>> print('# text = %s' % (text))
+# text = Привет мир!
+</pre>
+
+<pre>
+>>> print('# text = %s' % (index))
+# text = 1
+>>> print('# text = %d' % (text))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: %d format: a number is required, not str
+</pre>
+
+<pre>
+>>> p = 1/3
+>>> p
+0.3333333333333333
+>>> print('p = %.2f' % (p))
+p = 0.33
+>>> print('p = %.4f' % (p))
+p = 0.3333
+</pre>
 
 <h3> Tokenisation </h3>
 
