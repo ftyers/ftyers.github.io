@@ -332,7 +332,7 @@ Wikipedia makes a great\footnote{Well, great in some respects} corpus:
 Deliberately vague steps:
 
 \begin{itemize}
-  \item Use your search engine to find where Wikipedia keeps it's `dumps'.
+  \item Use your search engine to find where Wikipedia keeps its `dumps'.
   \item Find the language code of the language you are interested in
   \item Download the dump for the language you are interested in
   \begin{itemize}
@@ -345,32 +345,32 @@ Deliberately vague steps:
 
 \end{frame}
 
-\begin{frame}[fragile]{What next}
+%%\begin{frame}[fragile]{What next}
+%%
+%%There is an excellent introduction to the shell by Ken Church:
+%%
+%%{\small
+%%\url{https://ftyers.github.io/079-osnov-programm/materials/UnixForPoets.pdf}
+%%}
+%%
+%%For the remainder of the class we'll be going through this and
+%%making sure that you are able to run all of the commands.
+%%
+%%Notes:
+%%\begin{itemize}
+%%  \item We'll use our Wikipedia dump, not Genesis
+%%  \item Instead of {\tt tr -sc} we'll use {\tt tr -s} 
+%%  \item Instead of {\tt [a-z][A-Z]} we'll use {\tt [,;:!?/." ()]} 
+%%\end{itemize}
+%%
+%%For example for Avar:
+%%\begin{verbatim}
+%%tr -s '[,;:!?/." ()]' '[\n*]' < wiki.txt | 
+%%sort | grep '[а-яА-Я]' |
+%%uniq -c > wiki.hist
+%%\end{verbatim}
 
-There is an excellent introduction to the shell by Ken Church:
-
-{\small
-\url{https://ftyers.github.io/079-osnov-programm/materials/UnixForPoets.pdf}
-}
-
-For the remainder of the class we'll be going through this and
-making sure that you are able to run all of the commands.
-
-Notes:
-\begin{itemize}
-  \item We'll use our Wikipedia dump, not Genesis
-  \item Instead of {\tt tr -sc} we'll use {\tt tr -s} 
-  \item Instead of {\tt [a-z][A-Z]} we'll use {\tt [,;:!?/." ()]} 
-\end{itemize}
-
-For example for Avar:
-\begin{verbatim}
-tr -s '[,;:!?/." ()]' '[\n*]' < wiki.txt | 
-sort | grep '[а-яА-Я]' |
-uniq -c > wiki.hist
-\end{verbatim}
-
-\end{frame}
+%% \end{frame}
 %%
 %%\begin{frame}
 %%
