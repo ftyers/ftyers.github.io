@@ -51,6 +51,12 @@
 
 
 \begin{frame}{Introduction}
+% SemEval (Semantic Evaluation) is an ongoing series of evaluations of computational semantic analysis systems; it evolved from the Senseval word sense evaluation series. The evaluations are intended to explore the nature of meaning in language. While meaning is intuitive to humans, transferring those intuitions to computational analysis has proved elusive.
+
+What is SemEval ?
+\begin{itemize}
+  \item International competition for semantic analysis systems
+\end{itemize}
 
 
 \end{frame}
@@ -59,17 +65,20 @@
 
 \begin{frame}{History}
 
-\begin{itemize}
-  \item Senseval-1
-  \item Senseval-2
-  \item Senseval-3
-  \item SemEval-2007
-  \item SemEval-2010
-  \item SemEval-2012
-  \item SemEval-2013
-  \item SemEval-2014
-  \item SemEval-2015
-\end{itemize}
+\begin{tabular}{lrl}
+Senseval-1  & 	1998    & Sussex   \\
+Senseval-2  & 	2001    & Toulouse   \\
+Senseval-3  & 	2004    & Barcelona   \\
+SemEval-2007  & 	2007    & Prague   \\
+SemEval-2010  & 	2010    & Uppsala   \\
+SemEval-2012  & 	2012    & Montreal   \\
+SemEval-2013  & 	2013    & Atlanta   \\
+SemEval-2014  & 	2014    & Dublin   \\
+SemEval-2015  & 	2015    & Denver   \\
+SemEval-2016  & 	2016    & San Diego   \\
+SemEval-2017  & 	2017    & Vancouver   \\
+SemEval-2018  & 	2018    & TBA   \\
+\end{tabular}
 
 \end{frame}
 
@@ -82,12 +91,24 @@
 
 \begin{itemize}
   \item Twelve tasks in five main areas
+  \begin{itemize}
+     \item  Affect and creative language in tweets
+     \item  Coreference
+     \item  Information extraction
+     \item  Lexical semantics
+     \item  Reading comprehension and reasoning
+  \end{itemize}
   \item SemEval-2018 will be the 12th workshop on semantic evaluation and will be located at [TBD]. 
   \item Languages represented:
   \begin{itemize} 
-    \item English (12), Spanish (XX), Italian (XX), Arabic (XX), 
+    \item English (12), Spanish (3), Italian (1), Arabic (1)
   \end{itemize}
 \end{itemize}
+%
+%eng	xxxxxxxxxxxx
+%spa	xxx
+%ita	x
+%ara	x
 
 \end{frame}
 
@@ -122,7 +143,7 @@ Why participate in a shared task ?
 
 What next ? 
 \begin{itemize}
-  \item Describe this year's tasks 
+  \item Describe (most of) this year's tasks 
   \item See if any of them look interesting
   \item Check out some of the baseline systems 
 \end{itemize}
@@ -277,6 +298,18 @@ Two tasks:
 
 \begin{frame}{Task 5: Counting events and participants in the long tail}
 
+Given a question, find news articles that correspond to the question.
+
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{graphics/events-task5-infographic.png}
+\end{center}
+
+Difficulty:
+\begin{itemize}
+  \item For each correct article, there are 674 incorrect articles with overlapping context 
+\end{itemize}
+
+\textbf{Languages}: English
 
 \end{frame}
 
@@ -286,37 +319,37 @@ Two tasks:
 
 %\end{frame}
 
-\section{Information extraction}
-
-\begin{frame}{Task 6: Parsing time normalisations}
-
-
-\end{frame}
-
-%\begin{frame}{Possible approaches}
-
-
-%\end{frame}
-
-\begin{frame}{Task 7: Semantic relation extraction and classification in scientific papers}
-
-
-\end{frame}
-
-%\begin{frame}{Possible approaches}
-
-
-%\end{frame}
-
-\begin{frame}{Task 8: Semantic extraction from cybersecurity reports (SecureNLP)}
-
-
-\end{frame}
-
-%\begin{frame}{Possible approaches}
-
-
-%\end{frame}
+%% \section{Information extraction}
+%% 
+%% \begin{frame}{Task 6: Parsing time normalisations}
+%% 
+%% 
+%% \end{frame}
+%% 
+%% %\begin{frame}{Possible approaches}
+%% 
+%% 
+%% %\end{frame}
+%% 
+%% \begin{frame}{Task 7: Semantic relation extraction and classification in scientific papers}
+%% 
+%% 
+%% \end{frame}
+%% 
+%% %\begin{frame}{Possible approaches}
+%% 
+%% 
+%% %\end{frame}
+%% 
+%% \begin{frame}{Task 8: Semantic extraction from cybersecurity reports (SecureNLP)}
+%% 
+%% 
+%% \end{frame}
+%% 
+%% %\begin{frame}{Possible approaches}
+%% 
+%% 
+%% %\end{frame}
 
 \section{Lexical semantics}
 
@@ -435,9 +468,26 @@ The task:
 
 Given an argument, with a reason and a claim, the goal is to choose the correct implicit reasoning from two options.
 
+% warrant0|||	warrant1	correctLabelW0orW1	reason	claim	debateTitle	debateInfo
+%Australians are nothing like Americans	||| Australians are like Americans|||	1|||	It works for Australia.	Voting should be mandatory|||	Should Voting Be Mandatory?|||	Or are there already too many people casting ballots?
+
+%scholarships would give women a chance to study	scholarships would take women from the home	0	Miss America gives honors and education scholarships.	Miss America is good for women	There She Is, Miss America	In 1968, feminists gathered in Atlantic City to protest the Miss America pageant, calling it racist and sexist. Is this beauty contest bad for women?
+
+\framebox{\parbox{\textwidth}{
+\textbf{Topic:} Should voting be mandatory?
+
+\textbf{Additional info:} Or are there already too many people casting ballots?
+
+\textbf{Argument:} It works for Australia. And since [\ldots] voting should be mandatory.
+\begin{itemize}
+  \item[(a)] Australians are nothing like Americans
+  \item[(b)] Australians are like Americans
+\end{itemize}
+}}
 
 
-\textbf{Languages}: English
+
+\textbf{Languages}: US~English
 
 \end{frame}
 
