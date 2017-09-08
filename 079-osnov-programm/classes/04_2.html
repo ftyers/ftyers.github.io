@@ -73,11 +73,21 @@ that looks like this:
 </table>
 </center>
 
-But how do you do that in Python ? We can use the <tt>dict</tt> datastructure
+But how do you do that in Python ? We can use the <tt>dict</tt> datastructure, and embed 
+one dict in another dict. Here is how you might set up / initialise a matrix for the table
+above:
 
 <pre>
-m = {};
+rus = ['бы', 'вас', 'видит', 'всего', 'вы']
+eng = ['a', 'absorbed', 'all', 'and', 'another']
 
+m = {}
+
+for w1 in rus: 
+	if w1 not in m: 
+		m[w1] = {}
+	for w2 in eng:
+		m[w1][w2] = 0
 </pre>
 
 
