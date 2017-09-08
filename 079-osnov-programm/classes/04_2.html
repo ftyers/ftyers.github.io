@@ -12,6 +12,55 @@
 
 
 <h3> Implementing <em>n</em> dimensional matrices with <tt>dict</tt> </h3>
+
+If you're doing any kind of statistics or machine learning in Python, 
+at some point you are going to come across the problem of storing a matrix. For
+example, let's say you are writing a program to find translations in a parallel 
+corpus. Your parallel corpus might look something like this:
+
+<!--
+Однажды Пушкин написал письмо Рабиндранату Тагору. 
+“Дорогой далекий друг, – писал он, – я Вас не знаю, и Вы меня не знаете.
+Очень хотелось бы познакомиться. 
+Всего хорошего. 
+Саша”.
+Когда письмо принесли, Тагор предавался самосозерцанию. 
+Так погрузился, хоть режь его. 
+Жена толкала, толкала, письмо подсовывала – не видит. 
+Он, правда, по-русски читать не умел. 
+Так и не познакомились.
+-->
+
+<table>
+<tr><td><b>Russian</b></td><td><b>English</b></td></tr>
+<tr><td>Однажды Пушкин написал письмо Рабиндранату Тагору.</td><td>Once upon a time Pushkin wrote a letter to Rabindranath Tagore.</td></tr>
+<tr><td>Дорогой далекий друг, – писал он, – я Вас не знаю, и Вы меня не знаете.</td><td>Dear distant friend, – he wrote, – I don't know you, and you don't know me.</td></tr>
+<tr><td>Очень хотелось бы познакомиться.</td><td>I would really like to get to know you.</td></tr>
+<tr><td>Всего хорошего.</td><td>All the best.</td></tr>
+<tr><td>Когда письмо принесли, Тагор предавался самосозерцанию.</td><td>When they received the letter, Tagore steeped himself in self-contemplation.</td></tr>
+<tr><td>Так погрузился, хоть режь его.</td><td></td></tr>
+<tr><td>Жена толкала, толкала, письмо подсовывала – не видит.</td><td></td></tr>
+<tr><td>Он, правда, по-русски читать не умел.</td><td>He, in fact, just didn't know how to read Russian.</td></tr>
+<tr><td>Так и не познакомились.</td><td>So because of that they didn't get to know each other.</td></tr>
+</table>
+
+In order to find translations, you might think that it would be a good idea to
+count how many times you see one word with another one in the same sentence. You'd
+be right, this is a simplified version of IBM model 1. So, you set up a matrix
+that looks like this:
+
+<table>
+
+</table>
+
+But how do you do that in Python ? We can use the <tt>dict</tt> datastructure
+
+<pre>
+m = {};
+
+</pre>
+
+
 <h3> Passing arguments from the command line </h3>
 <h3> Type conversion </h3>
 <h3> Sorting <tt>list</tt>s and <tt>dict</tt>s </h3>
