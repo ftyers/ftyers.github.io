@@ -76,6 +76,40 @@ Compare the output with the Unix command <tt>cat</tt>:
 $ echo "Привет мир" | cat
 </pre>
 
+<h3>Comments</h3>
+
+In Python you can litter your code with comments. This is good, comments make it easier
+for other programmers to understand your code, and they remind you of what you were 
+thinking when you wrote a particularly complicated sequence of statements. In Python
+comments are preceded by the <span title="решётка"><u>hash symbol</u></span> <tt>#</tt>
+
+<pre>
+import sys
+
+# Read in everything from standard input
+text = sys.stdin.read()
+
+# Output everything to standard output
+sys.stdout.write(text)
+</pre>
+
+If you want your comments to span more than one line, you can either put a hash at the 
+beginning of each line, or you can use <tt>"""</tt> as follows:
+
+<pre>
+"""
+This is my program that acts just like 
+the Unix 'cat' command
+"""
+import sys
+
+# Read in everything from standard input
+text = sys.stdin.read()
+
+# Output everything to standard output
+sys.stdout.write(text)
+</pre>
+
 <h3>Variables</h3>
 
 <p>
