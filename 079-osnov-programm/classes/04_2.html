@@ -78,6 +78,8 @@ one dict in another dict. Here is how you might set up / initialise a matrix for
 above:
 
 <pre>
+import sys
+
 rus = ['бы', 'вас', 'видит', 'всего', 'вы']
 eng = ['a', 'absorbed', 'all', 'and', 'another']
 
@@ -90,8 +92,26 @@ for w1 in rus:
 		m[w1][w2] = 0
 </pre>
 
+The following code will print out the matrix in a human readable form:
+
+<pre>
+print('\t' + '\t'.join(eng))
+for w1 in m:
+        print('%s\t' % (w1), end='')
+        for w2 in m[w1]:
+                print('%d\t' % (m[w1][w2]), end='')
+        print('')
+</pre>
+
+Why do we need <tt>end=''</tt> passed to the <tt>print()</tt> statement ? What would happen 
+if we didn't have it ? 
 
 <h3> Passing arguments from the command line </h3>
+
+At some point you're going to want to pass information from the command line to your script. For 
+example, let's say you are writing a program that needs to use information in a file. One option
+is just to hardcode the filename in your program.
+
 <h3> Type conversion </h3>
 <h3> Sorting <tt>list</tt>s and <tt>dict</tt>s </h3>
 <h3> Tuples </h3>
