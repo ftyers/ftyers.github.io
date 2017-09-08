@@ -11,6 +11,42 @@
 
 <h3> Character encoding and special characters </h3>
 
+On your computer, characters are stored as numbers, for example the word <em>cat</em>
+is stored as <tt>0x63 0x61 0x74</tt> and the word <em>мир</em> is stored 
+as <tt>0x43c 0x438 0x440</tt>. Try the following:
+
+<pre>
+>>> hex(ord(u'q'))
+'0x71'
+>>> hex(ord(u'я'))
+'0x44f'
+</pre>
+
+Now open up your character map (for example <tt>gucharmap</tt>) and search for <tt>044f</tt>,
+what do you find ? Now try:
+
+<pre>
+>>> hex(ord(u'е'))
+'0x435'
+>>> hex(ord(u'e'))
+'0x65'
+</pre>
+
+What do you notice, what can you say about these two symbols ?
+
+Why is all this important ? Well, there are a couple of instances when you need to know about
+this stuff. One is when you are processing text from the web and there is the wrong 
+encoding for some symbol. This can have various reasons:
+<ul>
+  <li> Misconfigured optical-character recognition (OCR) software that detects Cyrillic characters
+    as Latin characters </li>
+  <li> Misconfigured keyboards that output Latin characters instead of Cyrillic ones </li>
+</ul>
+Sometimes when you get some text and your program is not behaving properly, for example the tokenisation
+messes up or your morphological analyser doesn't find the word but it is in the dictionary, it could
+be because of this. 
+
+
 <h3> Lists </h3>
 <p>
 You have already come across lists in the second class, a string is a kind of list, that you
