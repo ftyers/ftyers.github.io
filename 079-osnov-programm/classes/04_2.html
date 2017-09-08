@@ -39,7 +39,7 @@ corpus. Your parallel corpus might look something like this:
 <tr><td>Всего хорошего.</td><td>All the best.</td></tr>
 <tr><td>Когда письмо принесли, Тагор предавался самосозерцанию.</td><td>When they received the letter, Tagore immersed himself in contemplation.</td></tr>
 <tr><td>Так погрузился, хоть режь его.</td><td>So absorbed was he that he lost all sense of himself.</td></tr>
-<tr><td>Жена толкала, толкала, письмо подсовывала – не видит.</td><td>His wife kept pushing and prodding him and showing him the letter – but he couldn't see.</td></tr>
+<tr><td>Жена толкала, толкала, письмо подсовывала – не видит.</td><td>His wife kept pushing and prodding him and showing him the letter – but he didn't notice.</td></tr>
 <tr><td>Он, правда, по-русски читать не умел.</td><td>He, in fact, just didn't know how to read Russian.</td></tr>
 <tr><td>Так и не познакомились.</td><td>So because of that they didn't get to know each other.</td></tr>
 </table>
@@ -48,8 +48,25 @@ In order to find translations, you might think that it would be a good idea to
 count how many times you see one word with another one in the same sentence. You'd
 be right, this is a simplified version of IBM model 1. So, you set up a matrix
 that looks like this:
-
 <table>
+<tr><td>-</td><td>a</td><td>absorbed</td><td>all</td><td>and</td><td>another</td><td>because</td><td>but</td><td>contemplation</td><td>could</td><td>dear</td><td>did</td><td>distant</td><td>do</td><td>each</td><td>fact</td><td>...</td></tr>
+<tr><td>бы</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>вас</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>видит</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>всего</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>вы</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>далекий</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>дорогой</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>друг</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>его</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>жена</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>знаете</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>знаю</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>и</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>когда</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>меня</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>написал</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 
 </table>
 
