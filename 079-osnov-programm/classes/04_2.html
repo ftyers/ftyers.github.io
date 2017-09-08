@@ -108,9 +108,28 @@ if we didn't have it ?
 
 <h3> Passing arguments from the command line </h3>
 
-At some point you're going to want to pass information from the command line to your script. For 
+<p>At some point you're going to want to pass information from the command line to your script. For 
 example, let's say you are writing a program that needs to use information in a file. One option
-is just to hardcode the filename in your program.
+is just to hardcode the filename in your program. That is unsatisfying because it means that
+every time you want to change the filename you have to edit your code. </p>
+
+<p>A better solution is to pass the filename to your program on the command line, for example,
+let's say you wanted to save the matrix you made above to a file called <tt>rus-eng.tsv</tt>, perhaps
+you want to call your program like:</p>
+
+<pre>
+$ python3 train.py rus-eng.tsv
+</pre>
+
+<p>So, how do you get from that command line to having the filename as a variable you can use 
+in your program?</p>
+
+<pre>
+import sys
+
+print(sys.argv)
+</pre>
+
 
 <h3> Type conversion </h3>
 <h3> Sorting <tt>list</tt>s and <tt>dict</tt>s </h3>
