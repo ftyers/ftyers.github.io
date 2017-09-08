@@ -286,12 +286,17 @@ this have with the length of the string ?
 'я'
 </pre>
 
+We can extract substrings from the string using the <em>slice</em> notation.
+
 <pre>
 >>> s.find(' ')
 11
 >>> s[0:11]
 'Расположена'
 </pre>
+
+Here we get the first token by taking a slice from the beginning of the string to
+the first space.
 
 <pre>
 >>> s.replace(' ', '$')
@@ -304,6 +309,8 @@ this have with the length of the string ?
 >>> s.split(' ')
 ['Расположена', 'на', 'восточном', 'побережье', 'Балтийского', 'моря.']
 </pre>
+
+What would you need to type to get the output <tt>'восточном'</tt> ?
 
 <pre>
 >>> ss = s.split(' ')
