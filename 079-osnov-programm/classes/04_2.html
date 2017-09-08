@@ -1,0 +1,84 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 5</title>
+
+</head>
+<body>
+<div class="page">
+<h2> Class 5 </h2>
+
+
+
+<h3> Implementing <em>n</em> dimensional matrices with <tt>dict</tt> </h3>
+<h3> Passing arguments from the command line </h3>
+<h3> Type conversion </h3>
+<h3> Sorting <tt>list</tt>s and <tt>dict</tt>s </h3>
+<h3> Tuples </h3>
+
+<h3> Unigram language model </h3>
+
+<p>
+</p>
+<pre>
+# sent_id = 1
+# text = Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья.
+1	Это	_	DET	_	_	_	_	_	Translit=Eto
+2	течение	_	NOUN	_	_	_	_	_	Translit=tječjenije
+3	следует	_	VERB	_	_	_	_	_	Translit=sljedujet
+4	на	_	ADP	_	_	_	_	_	Translit=na
+5	север	_	NOUN	_	_	_	_	_	Translit=sjevjer
+6	до	_	ADP	_	_	_	_	_	Translit=do
+7	Японского	_	ADJ	_	_	_	_	_	Translit=Japonskogo
+8	побережья	_	NOUN	_	_	_	_	_	Translit=pobjerjež'ja
+9	,	_	PUNCT	_	_		_	_	_	Translit=,
+10	оказывая	_	VERB	_	_	_	_	_	Translit=okazıvaja
+11	заметное	_	ADJ	_	_	_	_	_	Translit=zamjetnoje
+12	влияние	_	NOUN	_	_		_	_	_	Translit=vlijanije
+13	на	_	ADP	_	_		_	_	_	Translit=na
+14	климат	_	NOUN	_	_		_	_	_	Translit=klimat
+15	японского	_	ADJ	_	_	_	_	_	Translit=japonskogo
+16	побережья	_	NOUN	_	_	_	_	_	Translit=pobjerjež'ja
+17	.	_	PUNCT	_	_		_	_	_	Translit=.
+
+</pre>
+
+Output:
+
+<pre>
+# P	count	tag	form
+0.18	3	ADP	_
+0.12	2	VERB	_
+0.06	1	DET	_
+0.12	2	PUNCT	_
+0.35	6	NOUN	_
+0.18	3	ADJ	_
+1.00	1	VERB	следует
+1.00	1	NOUN	течение
+1.00	1	NOUN	влияние
+1.00	1	ADJ	Японского
+1.00	1	ADP	до
+1.00	1	ADJ	заметное
+1.00	1	VERB	оказывая
+1.00	1	ADJ	японского
+1.00	1	DET	Это
+1.00	1	PUNCT	.
+1.00	2	NOUN	побережья
+1.00	1	NOUN	север
+1.00	1	PUNCT	,
+1.00	2	ADP	на
+1.00	1	NOUN	климат
+
+</pre>
+
+<h3> Questions </h3>
+
+<ul>
+  <li> ... ?</li>
+</ul>
+
+</div>
+
+</body>
+</html>
