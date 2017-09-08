@@ -33,18 +33,47 @@ what do you find ? Now try:
 </pre>
 
 What do you notice, what can you say about these two symbols ?
-
+<p>
 Why is all this important ? Well, there are a couple of instances when you need to know about
 this stuff. One is when you are processing text from the web and there is the wrong 
-encoding for some symbol. This can have various reasons:
+encoding for some symbol (e.g. the character looks ok, but has the wrong underlying numerical
+representation). This can have various reasons:</p>
 <ul>
   <li> Misconfigured <span title="Оптическое распознавание символов"><u>optical-character recognition</u></span> (OCR) software that detects Cyrillic characters
     as Latin characters </li>
   <li> Misconfigured keyboards that output Latin characters instead of Cyrillic ones </li>
 </ul>
-Sometimes when you get some text and your program is not behaving properly, for example the tokenisation
+<p>Sometimes when you get some text and your program is not behaving properly, for example the tokenisation
 messes up or your morphological analyser doesn't find the word but it is in the dictionary, it could
-be because of this. 
+be because of this. </p>
+<p>
+If that wasn't enough, you may also come across the issue of pre-composed versus composed 
+characters. For example if you see the character \emph{ё} it could be encoded in two ways,
+either with the single character <tt>0x451</tt> or with two characters <tt>0x435 0x308</tt>.
+The character <tt>0x308</tt> is a <em>combining character</tt> which means that it combines
+with the previous character to make a new character.
+
+<pre>
+>>> hex(ord(u'ё'))
+'0x451'
+>>> hex(ord(u'ё'))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: ord() expected a character, but string of length 2 found
+</pre>
+
+You will see this when you try and look up the numerical value of the character, it throws
+and error because the function expects a single character string, but you give it two characters (the 
+letter \emph{е} and the combining diaeresis).
+
+Now try:
+
+<pre>
+>>> [hex(ord(c)) for c in u'ё']
+['0x435', '0x308']
+</pre>
+
+When you process each character in the string separately, it works.
 
 
 <h3> Lists </h3>
