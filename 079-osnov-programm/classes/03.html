@@ -94,6 +94,27 @@ However, lists can include more than just strings.
 </p>
 
 <!-- stack -->
+<p>You can also use a list as a <span title="стек (стопка)"><u>stack</u></span>, a stack is a 
+datastructure where you have some storage and two operations, <tt>push()</tt> and <tt>pop()</tt>.
+When you <tt>push</tt> something onto the stack it goes on top of anything that is already there,
+when you <tt>pop</tt> something, it takes the value from the top of the stack and removes it.</p>
+
+<pre>
+import sys
+
+c = sys.stdin.read(1)
+buffer = []
+while c:
+        if c == '\n':
+                while buffer != []:
+                        sys.stdout.write(buffer.pop())
+                sys.stdout.write(c)
+                c = sys.stdin.read(1)
+                continue
+        buffer.append(c)
+        c = sys.stdin.read(1)
+</pre>
+
 
 
 <h3> Formatting output with <tt>print()</tt> </h3>
