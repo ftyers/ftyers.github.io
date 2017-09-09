@@ -12,7 +12,67 @@
 
 <h3> The <tt>dict</tt> datastructure </h3>
 
-The <tt>dict</tt> datastructure is a way of storing a mapping from <em>a</em> → <em>b</em>. 
+The <tt>dict</tt> datastructure is a way of storing a mapping from a key, for example <em>a</em> to
+a value, for example <em>b</em>. 
+
+<pre>
+>>> map = {}
+>>> map['a'] = 'b'
+>>> map
+{'a': 'b'}
+>>> map['a']
+'b'
+</pre>
+
+We can also check if a key is in the map.
+
+<pre>
+>>> 'a' in map
+True
+>>> 'b' in map
+False
+>>> 'c' in map
+False
+</pre>
+
+What could we possibly use that for ? Well, one application could be for making a frequency list. 
+Let's assume that we're processing the output from our tokeniser. The input stream looks like:
+
+<pre>
+1       Это     _       _       _       _       _       _       _       _
+2       течение _       _       _       _       _       _       _       _
+3       следует _       _       _       _       _       _       _       _
+...
+</pre>
+
+So, what would the general algorithm be ? First read line by line, check if the line has 
+ten columns. If the line has ten columns then take the second column and see if it is in the 
+map. If it is not in the map, add it to the map with the counter value <tt>0</tt>. Then increment
+the counter.
+
+<pre>
+import sys
+
+vocab = {}
+
+for line in sys.stdin.readlines(): 
+	if '\t' not in line:
+		continue
+	row = line.split('\t')
+	if len(row) != 10:
+		continue
+	form = row[1]
+	if form not in vocab:
+		vocab[form] = 0
+	vocab[form] = vocab[form] + 1
+
+for w in vocab:
+	print('%d\t%s' % (vocab[w], w))
+
+</pre>
+
+You'll note that the code does not print out the frequency list in order. Which Unix
+command might you use to order the output ? 
 
 <h3> Integers and floats </h3>
 
