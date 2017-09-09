@@ -25,6 +25,10 @@ For example, let's say we
 <h3> Transliterator </h3>
 
 <p>
+The idea of a transliterator is to take a string written in one writing system and transliterate
+it to another. For example, let's take the output from our tokeniser. We can all read Cyrillic, but 
+imagine if the text was in a writing system that wasn't so easy to read. It might be useful to have
+a transliteration of the string. 
 </p>
 <pre>
 # sent_id = 1
@@ -73,13 +77,17 @@ We can use the <tt>MISC</tt> (Miscellaneous) column for storing the transliterat
 17	.	_	_	_	_		_	_	_	Translit=.
 </pre>
 
+If the language you are working on is already written in Latin, then there are two options, the first
+would be to convert it into a Cyrillic transcription. Alternatively you could convert it into a rough
+approximation of IPA.
 
 <h3> Questions </h3>
 
 <ul>
   <li> What to do with ambiguous letters ? For example, Cyrillic `е' could be either <em>je</em> or <em>e</em>.</li>
+  <li> Can you think of a way that you could provide mappings from many characters to one character ? For example <em>sh</em> → ш ? </li>
+  <li> How might you make different mapping rules for characters at the beginning or end of the string ? </li>
 </ul>
-
 </div>
 
 </body>
