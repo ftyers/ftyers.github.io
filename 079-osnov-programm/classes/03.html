@@ -119,6 +119,10 @@ Lists can also contain other lists, which are addressed in the same way as tuple
 [['а', 'б', 'в'], ['a', 'b', 'v']]
 </pre>
 
+When you are embedding lists within other lists it can be easy to get confused about the indexing, so
+note how <tt>append()</tt> works differently when applied to the outer list <tt>l.append('г')</tt> and 
+the inner list <tt>l[0].append('г')</tt>.
+
 <pre>
 >>> l[0].append('г')
 >>> l
