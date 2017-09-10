@@ -126,8 +126,12 @@ such as read-only or append mode. </p>
 
 <p> </p>
 
+<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
 <h3> Functions </h3>
+
+<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
+
 
 <h3> Transliterator </h3>
 
@@ -184,9 +188,21 @@ We can use the <tt>MISC</tt> (Miscellaneous) column for storing the transliterat
 17	.	_	_	_	_		_	_	_	Translit=.
 </pre>
 
-If the language you are working on is already written in Latin, then there are two options, the first
+<p>If the language you are working on is already written in Latin, then there are two options, the first
 would be to convert it into a Cyrillic transcription. Alternatively you could convert it into a rough
-approximation of IPA.
+approximation of IPA.</p>
+
+<p>Your transliteration/transcription table should be stored in a file that is loaded before use. The file
+format could look like:</p>
+
+<pre>
+а	a
+б	b
+в	v
+...
+</pre>
+
+That is, two columns, separated by a tab <tt>\t</tt> character.
 
 <h3> Questions </h3>
 
