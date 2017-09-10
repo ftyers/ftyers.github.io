@@ -124,9 +124,46 @@ and the way to open it. We used <tt>w+</tt> which means "open the file in write 
 and overwrite the file if it already exists otherwise create it". There are other modes,
 such as read-only or append mode. </p>
 
-<p> </p>
+<p>Now we've stored the frequency list in the file, let's try loading it and doing something
+interesting. We're going to read the sorted file and then give each token a rank in addition to 
+its frequency. </p>
 
-<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
+First read in the file:
+
+<pre>
+import sys
+
+freq = []
+
+fd = open('freq.txt', 'r')
+for line in fd.readlines():
+	line = line.strip()
+	(f, w) = line.split('\t')
+	freq.append((int(f), w))
+</pre>
+
+<p>This gives us a list of tuples of frequency and word form. Notice that we used <tt>int()</tt> to convert
+the input string to an integer. And how we used the <tt>(f, w) = line.split('\t')</tt> to change the 
+return type of <tt>split()</tt> to a tuple instead of a list.</p>
+
+<p>We can use the algorithm below to find the rank of a word in the frequency list. You loop through the list
+keeping track of the lowest frequency you have seen in the variable <tt>min</tt> and the current rank in the 
+variable <tt>rank</tt>. Any time you see a frequency lower than the last lowest one you've seen, you increase
+the rank and set the last lowest to the one you just saw. </p>
+	
+<pre>
+rank = 1
+min = freq[0][0]
+ranks = []
+for i in range(0, len(freq)): 
+	if freq[i][0] < min: 
+		rank = rank + 1
+		min = freq[i][0]
+	ranks.append((rank, freq[i][0], freq[i][1]))
+</pre>
+
+Now create a script called <tt>ranks.py</tt> which takes a frequency list as input
+and outputs a ranked frequency list. Do you notice anything interesting in the data ?
 
 <h3> Functions </h3>
 
