@@ -83,18 +83,49 @@ When you process each character in the string separately, it works. The most imp
 thing to remember about character encoding when corpus processing is that what you see
 might not have the same underlying representation to that which you expect.
 
-<h3> Lists </h3>
+<h3> Lists and tuples </h3>
 <p>
 You have already come across lists in the second class, a string is a kind of list, that you
 can iterate over and address by index. Furthermore, when we split the string using <tt>split()</tt>
 the function returned a list of strings.
 </p>
 <p>
-However, lists can include more than just strings.
+However, lists can include more than just strings. For example, lists can store fixed-length lists
+of values that we call <em>tuples</em>. 
 </p>
 
 <pre>
+>>> l = []
+>>> l.append((1, 'а'))
+>>> l.append((2, 'б'))
+>>> l.append((3, 'в'))
+>>> l
+[(1, 'а'), (2, 'б'), (3, 'в')]
+>>> l[1]
+(2, 'б')
+>>> l[1][0]
+2
+>>> l[1][1]
+'б'
+</pre>
 
+Lists can also contain other lists, which are addressed in the same way as tuples:
+
+<pre>
+>>> l = []
+>>> l.append(['а', 'б', 'в'])
+>>> l.append(['a', 'b', 'v'])
+>>> l
+[['а', 'б', 'в'], ['a', 'b', 'v']]
+</pre>
+
+<pre>
+>>> l[0].append('г')
+>>> l
+[['а', 'б', 'в', 'г'], ['a', 'b', 'v']]
+>>> l.append('г')
+>>> l
+[['а', 'б', 'в', 'г'], ['a', 'b', 'v'], 'г']
 
 </pre>
 
