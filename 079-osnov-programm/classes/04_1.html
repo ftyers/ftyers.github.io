@@ -79,9 +79,23 @@ search on the internet for "python sort a dict by value").
 
 <h3> File input/output </h3>
 
-Files... if you're like me, you probably have too many of them. As programmers
+<p>Files... if you're like me, you probably have too many of them. As programmers
 we need to store stuff in files so we don't clutter up our programs with lots of data. 
-For example, let's say we 
+For example, let's say we want to store the frequency list that we've made above 
+in a file instead of outputting it to standard output.</p>
+
+<pre>
+fd = open('freq.txt', 'w+')
+for w in vocab:
+	print('%d\t%s' % (vocab[w], w))
+fd.close()	
+</pre>
+
+<p>The <tt>open()</tt> function opens a file, it has two arguments, the name of the file
+and the way to open it. We used <tt>w+</tt> which means "open the file in write mode
+and overwrite the file if it already exists otherwise create it". There are other modes,
+such as read-only or append mode. </p>
+
 
 <h3> Functions </h3>
 
