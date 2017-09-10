@@ -68,12 +68,40 @@ for line in sys.stdin.readlines():
 
 for w in vocab:
 	print('%d\t%s' % (vocab[w], w))
-
 </pre>
 
-You'll note that the code does not print out the frequency list in order. Which Unix
-command might you use to order the output ? How might you do that inside Python? (tip:
-search on the internet for "python sort a dict by value").
+<p>You'll note that the code does not print out the frequency list in order. Which Unix
+command might you use to sort the output in frequency order ? </p>
+
+<p>If you want to sort your frequency list in Python, there are a number of ways to do 
+it. You can search on the internet for "python3 sort a dict by value" and there are 
+some good one liners, but they introduce a lot of new syntax. So, I'm going to suggest 
+that you do it like this. The <tt>dict</tt> datastructure is not sortable, so we need
+to change it to something that is, for example the <tt>list</tt> datastructure.</p>
+
+<pre>
+freq = []
+
+for w in vocab:
+	freq.append((vocab[w], w))
+
+freq.sort(reverse=True)
+</pre>
+
+This code takes the <tt>dict</tt> and puts it in a list of value:key tuples. For example,
+if we print out the top-5 items in the list:
+
+<pre>
+print(freq[0:4])
+</pre>
+
+After running the code on the SynTagRus corpus We would get:
+
+<pre>
+[(70049, ','), (45598, '.'), (22727, 'в'), (21083, 'и')]
+</pre>
+
+What do you think we would get if we set the argument <tt>reverse</tt> to <tt>False</tt> ?
 
 <h3> Integers and floats </h3>
 
@@ -95,6 +123,8 @@ fd.close()
 and the way to open it. We used <tt>w+</tt> which means "open the file in write mode
 and overwrite the file if it already exists otherwise create it". There are other modes,
 such as read-only or append mode. </p>
+
+<p> </p>
 
 
 <h3> Functions </h3>
