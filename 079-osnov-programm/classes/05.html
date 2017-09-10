@@ -13,16 +13,36 @@
 
 <h3>Regular expressions</h3>
 
-<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
+You've got a bit familiar with regular expressions in the tutorial on the command line with <tt>sed</tt> and
+<tt>grep</tt>. If you enjoyed that, you will be pleasantly surprised that it's also possible to use
+regular expressions in Python! There is a nice tutorial on the Python site <a href="https://docs.python.org/3/library/re.html">here</a>,
+but here are the highlights:
 
+You can find a matching part of a string using <tt>search()</tt>:
+
+<pre>
+>>> import re 
+
+>>> s = 'Привет мир!'
+
+>>> re.search(r'м[а-я]+', s)
+</pre>
+
+If you want to replace parts of a string, you can use <tt>sub()</tt> which works a bit like <tt>sed</tt>:
+
+<pre>
+>>> re.sub('[а-я]', 'x', s)
+'Пxxxxx xxx!'
+</pre>
+
+<h3>Libraries in Python</h3>
+
+<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
 <h3>Screenscraping</h3>
 
 <div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
-<h3>Libraries in Python</h3>
-
-<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
 <h3>Unigram tagger</h3>
 
