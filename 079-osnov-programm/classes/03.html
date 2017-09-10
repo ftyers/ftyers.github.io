@@ -205,6 +205,8 @@ what someone elses code is doing.</p>
 
 <h3> Formatting output with <tt>print()</tt> </h3>
 
+
+
 <pre>
 >>> index = 1
 >>> print('# sent_id = %d' % (index))
@@ -217,6 +219,9 @@ what someone elses code is doing.</p>
 # text = Привет мир!
 </pre>
 
+If you try and print a string as a numeral you will get an error. But note that you won't get 
+the same error if you try and print a numeral as a string.
+
 <pre>
 >>> print('# text = %s' % (index))
 # text = 1
@@ -225,6 +230,11 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: %d format: a number is required, not str
 </pre>
+
+Numeral values are stored to a certain amount of precision in Python, but usually you don't
+want to print them out to such a high precision. A rule of thumb is to think very hard before
+giving more than four decimals. A better rule is to think about what you are measuring and
+try and report as few decimal points as is informative.
 
 <pre>
 >>> p = 1/3
@@ -235,6 +245,9 @@ p = 0.33
 >>> print('p = %.4f' % (p))
 p = 0.3333
 </pre>
+
+In Python, to report decimal points use the above syntax. The dot stands for the decimal point
+then the number of decimals and finally the <tt>f</tt> stands for "<span title="число с плавающей запятой"><u>float</u></span>".
 
 <div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
