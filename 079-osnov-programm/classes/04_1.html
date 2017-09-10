@@ -164,12 +164,63 @@ for i in range(0, len(freq)):
 
 Now create a script called <tt>ranks.py</tt> which takes a reads in a frequency list from a file 
 and outputs a ranked frequency list (either to a file or to standard output). Do you notice anything interesting 
-in the data ? Do you think you could make the code more efficient ? (hint: you are looping through the data
+in the data ? Do you think you could make the code more efficient ? (hint: we are looping through the data
 twice)
 
 <h3> Functions </h3>
 
-<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
+One way of reducing the amount of repetition in your code is to use functions. A function takes some arguments
+and returns a value. For example, suppose we wanted to find all the palindromes in our frequency list.
+
+<pre>
+for i in freq:
+	palindrome = False
+	rev = ''
+	if len(i[1]) == 1:
+		continue
+	for j in range(1, len(i[1]) + 1):
+		rev = rev + i[1][-j]
+	if i[1] == rev: 
+		palindrome = True 
+
+	if palindrome:
+		print('%d\t%s' % (i[0], i[1]))
+</pre>
+
+<p>This would print out all the palindromes, but what if we wanted to use this palindrome finding code somewhere
+else ? It would be convenient to have a single function you could use anywhere. </p>
+
+<p>In Python you can define functions as follows:</p>
+
+<pre>
+def palindrome(s): 
+	return False
+</pre>
+
+This function for finding palindromes is pretty bad, it always returns <tt>False</tt>. We can improve it by
+using the code from our <tt>for</tt> loop above:
+
+<pre>
+def is_palindrome(s):
+	rev = ''
+	if len(s) == 1:
+		return False
+	for j in range(1, len(s) + 1):
+		rev = rev + s[-j]
+	if s == rev:
+		return True
+	return False
+</pre>
+
+We can now integrate that function into our loop as follows:
+
+<pre>
+for i in freq:
+	if is_palindrome(i[1]):
+		print('%d\t%s' % (i[0], i[1]))
+</pre>
+
+Which makes the logic easier to follow.
 
 
 <h3> Transliterator </h3>
