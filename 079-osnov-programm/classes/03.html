@@ -128,6 +128,35 @@ What does this code do ? How does it work ? Can you think of a Unix command that
 similar ? Can you think of a simpler way to implement the same thing in Python ? (tip: try looking 
 on StackOverflow)
 
+<h3> Tracing program flow </h3>
+
+<p>As your programs get more complicated, it will become increasingly more challenging to visualise what
+they are doing mentally. A simple way to see what your program is doing is to use <tt>print</tt> 
+statements which print to standard error, or <tt>stderr</tt>. </p>
+
+<p>Take the program above and add print statements to the main loop as follows:</p>
+
+<pre>
+while c:
+        if c == '\n':
+                print('+', buffer, file=sys.stderr)
+                while buffer != []:
+                        sys.stdout.write(buffer.pop())
+                sys.stdout.write(c)
+                c = sys.stdin.read(1)
+                continue
+        buffer.append(c)
+        c = sys.stdin.read(1)
+</pre>
+
+Now call the program (here called <tt>prog.py</tt>) from the command line like,
+
+<pre>
+$ head wiki.txt | python3 prog.py > wiki.output
+</pre>
+
+What do you see ? Now try adding some more print statements to find out what the program is doing. 
+
 <h3> Formatting output with <tt>print()</tt> </h3>
 
 <pre>
