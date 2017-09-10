@@ -132,12 +132,20 @@ print(sys.argv)
 
 
 <h3> Type conversion </h3>
-<h3> Sorting <tt>list</tt>s and <tt>dict</tt>s </h3>
-<h3> Tuples </h3>
+<!--<h3> Sorting <tt>list</tt>s and <tt>dict</tt>s </h3>-->
+<!--<h3> Tuples </h3>-->
 
 <h3> Unigram language model </h3>
 
 <p>
+A unigram language model is a language model that only models a single word context. It is probably
+the simplest kind of language model, although has been widely used. We're going to make a model
+that models both word probability (e.g. the relative frequency of the word) and also part-of-speech tag probability (e.g.
+relative frequency of the part-of-speech tag).
+</p>
+<p>
+The input to the program is going to be our tagged corpus of sentences (you should annotate at least 10 sentences)
+before starting.
 </p>
 <pre>
 # sent_id = 1
@@ -162,7 +170,18 @@ print(sys.argv)
 
 </pre>
 
-Output:
+<p>The general algorithm will be to read the file line by line, keep a counter for the total number of tokens
+and make a matrix of <em>word</em> → <em>tag</em> and a separate frequency list for tags (you can use the <tt>dict</tt> datatype
+as described above). </p>
+<p>
+After you've done that, you can print the model to a file in the following format. Calculate the <em>P</em> 
+column for tags by diving the frequency of the tag by the total number of tokens, and calculate the <em>P</em>
+column for the <em>word</em> → <em>tag</em> by dividing the frequency of a <em>word = tag</em> pair
+by the total number of instances of the word.</p>
+<p>
+For example, the the <tt>ADP</tt> tag appears three times and there are 17 tokens, so the probability is <math>3/17 = 0.176...</math>. The 
+word <em>побережья</em> appears twice and both times as a noun, so the probability of <em>побережья</em> being
+a noun is <math>2/2 = 1.0</math> 
 
 <pre>
 # P	count	tag	form
