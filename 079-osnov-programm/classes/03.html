@@ -130,10 +130,18 @@ the inner list <tt>l[0].append('г')</tt>.
 >>> l.append('г')
 >>> l
 [['а', 'б', 'в', 'г'], ['a', 'b', 'v'], 'г']
-
 </pre>
 
-<div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
+<p>List slicing works the same way as string slicing. So you can also refer to the end of the list with <tt>-1</tt></p>
+
+<pre>
+>>> l
+[['а', 'б', 'в'], ['a', 'b', 'v']]
+>>> l[-1]
+['a', 'b', 'v']
+>>> l[-1][-1]
+'v'
+</pre>
 
 <!-- stack -->
 <p>You can also use a list as a <span title="стек (стопка)"><u>stack</u></span>, a stack is a 
