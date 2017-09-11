@@ -45,6 +45,26 @@ If you want to replace parts of a string, you can use <tt>sub()</tt> which works
 
 <h3>Screenscraping</h3>
 
+Screenscraping (or web scraping) is the task of pulling human-readable data from the web and turning it 
+into machine-readable form.
+
+Run this command:
+
+<pre>
+$ wget -q -O - "http://ru.wiktionary.org/wiki/страх" 
+</pre>
+
+The output is pretty terrifying right ? A tonne of HTML code, very difficult to find the structure or data. But if 
+we go to the page <a href="http://ru.wiktionary.org/wiki/страх">страх</a> there is a lot of useful data. What kind
+of data might we be interested in ? 
+
+<ul>
+<li> The inflection table </li>
+<li> The inflection code </li>
+<li> The definitions </li>
+<li> The translations </li>
+</ul>
+
 <div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
 
