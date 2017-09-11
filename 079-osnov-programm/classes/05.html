@@ -162,7 +162,30 @@ for line in sys.stdin.readlines():
                 ipa = '_'
 </pre>
 
-And try running it on your <tt>страх.html</tt> file.
+And try running it on your <tt>страх.html</tt> file. You should get output something like:
+
+<pre>
+$ cat страх.html | python3 wiktionary.py
+ -страх-	3a	strax
+</pre>
+
+Great! But there is a chance our code is a bit fragile, so we should try it with a 
+few more pages. Let's try it with the page <a href="https://ru.wiktionary.org/wiki/%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D0%BE">дерево</a>.
+
+<pre>
+$ cat дерево.html | python3 wiktionary.py 
+ -дерев-; окончание	1a^	ˈdʲerʲɪvə
+ --	по	ˈd̪ɛ.rɛ̝.wɔ
+</pre>
+
+Uh oh, this isn't exactly what we were looking for. There are two main issues:
+
+<ul>
+  <li> In this particular page there is more information regarding the stem, you also get the ending.</li>
+  <li> It also picks up the information from the Ukrainian section of the page. </li>
+</ul>
+
+
 
 <div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
