@@ -126,6 +126,18 @@ Now let's see what we get:
 Существительное, неодушевлённое, мужской род, 2-е склонение (тип склонения 3a по классификации А.&amp;#160;А.&amp;#160;Зализняка).
 </pre>
 
+Ok, this is clearer, let's come up with some heuristics:
+
+<ul>
+  <li> The stem is found on the line that starts with 'Корень' and appears after the ':' and
+before the '.'</li>
+  <li> The pronunciation is found on the line that contains 'МФА' and comes between '[' and ']'. </li>
+  <li> The declension type is on the line that contains 'тип склонения' and appears immediately after that.</li>
+</ul>
+
+If we read through the file line-by-line we can use these heuristics to identify where the information
+is that we want to extract and how to extract it.
+
 <div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
 
