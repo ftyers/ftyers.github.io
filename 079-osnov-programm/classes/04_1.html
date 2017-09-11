@@ -115,7 +115,7 @@ in a file instead of outputting it to standard output.</p>
 <pre>
 fd = open('freq.txt', 'w+')
 for w in vocab:
-	print('%d\t%s' % (vocab[w], w))
+	fd.write('%d\t%s' % (vocab[w], w))
 fd.close()	
 </pre>
 
@@ -146,7 +146,7 @@ for line in fd.readlines():
 the input string to an integer. And how we used the <tt>(f, w) = line.split('\t')</tt> to change the 
 return type of <tt>split()</tt> to a tuple instead of a list.</p>
 
-<p>We can use the algorithm below to find the rank of a word in the frequency list. You loop through the list
+<p>We can use the algorithm below to find the rank of a word in the <em>sorted</em> frequency list. You loop through the list
 keeping track of the lowest frequency you have seen in the variable <tt>min</tt> and the current rank in the 
 variable <tt>rank</tt>. Any time you see a frequency lower than the last lowest one you've seen, you increase
 the rank and set the last lowest to the one you just saw. </p>
@@ -162,7 +162,7 @@ for i in range(0, len(freq)):
 	ranks.append((rank, freq[i][0], freq[i][1]))
 </pre>
 
-Now create a script called <tt>ranks.py</tt> which takes a reads in a frequency list from a file 
+Now create a script called <tt>ranks.py</tt> which takes a command line argument and reads in a frequency list from a file 
 and outputs a ranked frequency list (either to a file or to standard output). Do you notice anything interesting 
 in the data ? Do you think you could make the code more efficient ? (hint: we are looping through the data
 twice)
@@ -194,14 +194,16 @@ else ? It would be convenient to have a single function you could use anywhere. 
 
 <pre>
 def is_palindrome(s): 
+	"""Return True if the given string is a palindrome."""
 	return False
 </pre>
 
 This function for finding palindromes is pretty bad, it always returns <tt>False</tt>. We can improve it by
-using the code from our <tt>for</tt> loop above:
+using the code from our <tt>for</tt> loop above: 
 
 <pre>
 def is_palindrome(s):
+	"""Return True if the given string is a palindrome."""
 	rev = ''
 	if len(s) == 1:
 		return False
