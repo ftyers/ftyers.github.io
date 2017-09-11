@@ -138,6 +138,32 @@ before the '.'</li>
 If we read through the file line-by-line we can use these heuristics to identify where the information
 is that we want to extract and how to extract it.
 
+Take a look at the following code:
+
+<pre>
+tem = '_'
+zkod = '_'
+ipa = '_'
+for line in sys.stdin.readlines(): 
+        line = line.strip()
+        text = strip_html(line);
+
+        if text.count('Корень:') > 0:
+                stem = text.split(':')[1].strip('.')
+        if text.count('МФА') > 0:
+                ipa = text.split('[')[1].split(']')[0]
+        if text.count('тип склонения') > 0:
+                zkod = text.split('тип склонения')[1].strip().split(' ')[0]
+
+        if stem != '_' and zkod != '_' and ipa != '_':
+                print('%s\t%s\t%s' % (stem, zkod, ipa))
+                stem = '_'
+                zkod = '_'
+                ipa = '_'
+</pre>
+
+And try running it on your <tt>страх.html</tt> file.
+
 <div style="background-color:red; width:100%;text-align:center"><span style="color: white"><b>TODO: Expand</b></span></div>
 
 
