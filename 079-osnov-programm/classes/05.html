@@ -200,7 +200,7 @@ variable to track what heading we're in and skip the section if it isn't Russian
 <pre>
 h1 = '_';
 for line in sys.stdin.readlines(): 
-	if line.count('<h1>') > 0: 
+	if line.count('&lt;h1&gt;') > 0: 
 		h1 = strip_html(line)
 
 	if h1 != 'Русский': 
