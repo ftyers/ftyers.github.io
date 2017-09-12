@@ -286,7 +286,12 @@ $ git clone https://github.com/XXXXXX/2017-osnov-programm.git
 
 $ cd 2017-osnov-programm
 
-$ mkdir corpus project
+$ mkdir corpus project homework
+$ touch corpus/README.md project/README.md homework/README.md
+
+$ git add corpus project homework
+$ git commit -a -m "Initialise stuff"
+$ git push
 \end{verbatim}
 
 Where {\tt XXXXXX} is your GitHub username.
