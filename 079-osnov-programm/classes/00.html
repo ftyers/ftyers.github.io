@@ -1,0 +1,105 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 2</title>
+
+</head>
+<body>
+<div class="page">
+
+<h2> Class 1 </h2>
+
+<h3> Working with the virtual machine </h3>
+
+<pre>
+sudo apt-get update
+</pre>
+
+It will ask you for a password. The password is the same as the username. Note 
+that when you type the password you won't see anything on the console. Just keep
+typing and when you are finished press return.
+
+<pre>
+sudo apt-get install git
+</pre>
+
+This will install <tt>git</tt>. It will ask you if you want to continue. You need
+to type <tt>Y</tt> and then press return.
+
+<h3> Checking out your repository </h3>
+
+First check out your repository, replace <tt>XXXXXX</tt> with your username on GitHub.
+
+<pre>
+$ git clone https://github.com/XXXXXX/2017-osnov-programm.git
+</pre>
+
+Change directory into the repository you just cloned:
+
+<pre>
+$ cd 2017-osnov-programm
+</pre>
+
+And make three directories:
+
+<pre>
+$ mkdir corpus project homework
+</pre>
+
+The <tt>corpus</tt> directory will store your corpus so you don't lose it. The <tt>project</tt>
+directory will be for your project work and the <tt>homework</tt> directory is for any 
+homework you need to submit that isn't related to classwork.
+
+<pre>
+$ touch corpus/README.md project/README.md homework/README.md
+</pre>
+
+This <tt>touch</tt> command makes a new empty file called <tt>README.md</tt> in each of the
+directories. We need to do this because <tt>git</tt> does not allow us to add empty directories.
+
+<pre>
+$ git add corpus project homework
+</pre>
+
+Here we add the directories that we have created to our <tt>git</tt> repository.
+
+<pre>
+$ git commit -a -m "Initialise stuff"
+</pre>
+
+And this "commits" them. Any time you make a change in your repository you should commit
+the change.
+
+Note that now you might need to do something extra like set your email address:
+
+<pre>
+$ git config --global user.email "email@example.com"
+</pre>
+
+Where <tt>email@example.com</tt> is your email address.
+
+<pre>
+$ git push
+</pre>
+
+When you push, you send your local changes to the GitHub server. You will need to enter 
+your username and password.
+
+
+<h3> Navigating directories </h3>
+
+
+<h3> Extracting your corpus </h3>
+
+
+
+<h3> Adding your corpus to <tt>git</tt> </h3>
+
+First check how big the corpus is. If it's more than a 2-3M then you want to make
+a smaller corpus.
+
+
+</div>
+</body>
+</html>
