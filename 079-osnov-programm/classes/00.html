@@ -66,20 +66,32 @@ $ git add corpus project homework
 
 Here we add the directories that we have created to our <tt>git</tt> repository.
 
+Note that now you might need to do something extra like set your email address:
+
+<pre>
+$ git config --global user.email "email@example.com"
+$ git config --global user.name "Your Name"
+</pre>
+
+Where <tt>email@example.com</tt> is your email address and <tt>Your Name</tt> is your name.
+
+Then run the command:
+
 <pre>
 $ git commit -a -m "Initialise stuff"
 </pre>
 
 And this "commits" them. Any time you make a change in your repository you should commit
-the change.
-
-Note that now you might need to do something extra like set your email address:
+the change. You should get the following output:
 
 <pre>
-$ git config --global user.email "email@example.com"
+$ git commit -a -m "stuff"
+[master 03e817a] stuff
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 corpus/README.md
+ create mode 100644 homework/README.md
+ create mode 100644 project/README.md
 </pre>
-
-Where <tt>email@example.com</tt> is your email address.
 
 <pre>
 $ git push
