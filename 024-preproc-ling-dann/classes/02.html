@@ -1,0 +1,389 @@
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 2</title>
+
+</head>
+<body>
+<div class="page">
+
+<h2> Class 2 </h2>
+
+<h3>The Python shell</h3>
+
+Try typing <tt>python3</tt> into your terminal and pressing return ⏎,
+
+<pre>
+$ python3
+Python 3.5.2+ (default, Aug  5 2016, 08:07:14) 
+[GCC 6.1.1 20160724] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+</pre>
+
+This is the <em>Python shell</em> (or <em>console</em>), any time you see <tt>&gt;&gt;&gt;</tt> in the examples
+it means "run this code in the Python shell". You can use the shell to execute Python statements one by one.
+
+<h3>Basic structure of programs</h3>
+
+Try typing (or copypasta) this program into a text file called <tt>privet.py</tt>:
+
+<pre>
+import sys
+
+print('Привет мир!')
+</pre>
+
+Then run it using <tt>python3 privet.py</tt>. After that, try replacing the above 
+with:
+
+<pre>
+import sys
+
+sys.stdout.write('Привет мир!')
+</pre>
+
+<p>
+What is the difference between using <tt>print()</tt> and <tt>sys.stdout.write()</tt> ?
+
+Now try adding <tt>\n</tt> after the exclamation mark. What do you think <tt>\n</tt> might
+mean ?
+</p>
+
+<p>
+Now try the following code:
+</p>
+
+<pre>
+import sys
+
+text = sys.stdin.read()
+
+sys.stdout.write(text)
+</pre>
+
+Save it in a file called <tt>cat.py</tt> and try running it like this:
+
+<pre>
+$ echo "Привет мир" | python3 cat.py
+</pre>
+
+Compare the output with the Unix command <tt>cat</tt>:
+
+<pre>
+$ echo "Привет мир" | cat
+</pre>
+
+<h3>Comments</h3>
+
+In Python you can litter your code with comments. This is good, comments make it easier
+for other programmers to understand your code, and they remind you of what you were 
+thinking when you wrote a particularly complicated sequence of statements. In Python
+comments are preceded by the <span title="решётка"><u>hash symbol</u></span> <tt>#</tt>
+
+<pre>
+import sys
+
+# Read in everything from standard input
+text = sys.stdin.read()
+
+# Output everything to standard output
+sys.stdout.write(text)
+</pre>
+
+If you want your comments to span more than one line, you can either put a hash at the 
+beginning of each line, or you can use <tt>"""</tt> as follows:
+
+<pre>
+"""
+This is my program that acts like 
+the Unix 'cat' command
+"""
+import sys
+
+# Read in everything from standard input
+text = sys.stdin.read()
+
+# Output everything to standard output
+sys.stdout.write(text)
+</pre>
+
+In your practical work or homework, if your code doesn't work, but you have comments that
+say what it is supposed to do, you will get more marks than if your code doesn't work and
+you have no comments.
+
+<h3>Variables</h3>
+
+<p>
+When we did
+
+<pre>
+text = sys.stdin.read()
+</pre>
+
+above, we were assigning the result of a function (more on this later) to a variable
+called <tt>text</tt>. The outcome was that the program read all of the available
+input and stored it in the variable <tt>text</tt> before outputting it with the <tt>write()</tt>
+function.
+</p>
+<p>
+We can store anything in a variable.
+
+<pre>
+>>> a = 5
+>>> a
+5
+</pre>
+
+This code stores the value <tt>5</tt> in a variable <tt>a</tt>. What happens if you
+assign something else to the same variable ?
+
+<h3>Simple arithmetic</h3>
+
+You can do simple arithmetic in the Python shell. 
+
+<pre>
+>>> a
+5
+>>> a/2
+2.5
+>>> b = a/2
+>>> b
+2.5
+</pre>
+
+Try out the operators <tt>+</tt>, <tt>/</tt>, <tt>*</tt> and <tt>-</tt>, what do they do?
+
+<h3>Loops</h3>
+
+In computer programs we very often want to iterate over items (i.e. do the same thing to all
+or some of the items in a series), for example characters
+in a string. In Python we can use <span title="циклы"><u>loops</u></span> to accomplish this.
+
+<h4> <tt>for</tt> loop </h4>
+
+The <tt>for</tt> loop is probably the most basic way of looping in Python. Whenever you
+want to do the same thing for a number of items, you will probably use a <tt>for</tt> loop.
+
+<pre>
+import sys
+
+for c in sys.stdin.read():
+	print(c)
+</pre>
+
+What does this program do ?
+
+<pre>
+import sys
+
+text = sys.stdin.read()
+for c in text:
+	print(c)
+</pre>
+
+How about this program ?
+
+<h4> <tt>while</tt> loop </h4>
+
+Your computer has a limited amount of memory, if we read in all the text in the input
+before processing it then we could easily run out of memory if we are processing large
+corpora. The <tt>while</tt> loop allows us to read in part of the data.
+
+<pre>
+import sys
+
+c = sys.stdin.read(1)
+while c: 
+	print(c)
+	c = sys.stdin.read(1)
+</pre>
+
+We can read in one character at a time.
+
+<pre>
+import sys
+
+line = sys.stdin.readline()
+while line: 
+	print(line)
+	line = sys.stdin.readline()
+</pre>
+
+Or we can read in one line at a time.
+
+<h3>Flow control</h3>
+
+<h4> <tt>if</tt> statement</h4>
+
+The <tt>if</tt> statement allows you to put conditions in your program,
+for example, in the following program we read the input character by 
+character and if the character is 'и', we increment the counter by one.
+
+<pre>
+import sys
+
+counter = 0 
+
+for c in sys.stdin.read():
+	if c == 'и': 
+		counter = counter + 1
+print(counter)
+</pre>
+
+Save this program in a file called <tt>counter.py</tt> and run it with the 
+input "Привет мир", what does it do ?
+
+<pre>
+echo "Привет мир" | python3 counter.py
+</pre>
+
+How would we change the program to count any vowel ? 
+
+<h3>String processing</h3>
+
+A <span title="строка"><u>string</u></span> is a sequence of characters (or more accurately bytes),
+you can find a good general reference to processing strings in Python 
+<a href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a>.
+
+<pre>
+>>> s = 'Расположена на восточном побережье Балтийского моря.'
+>>> s
+'Расположена на восточном побережье Балтийского моря.'
+</pre>
+
+<pre>
+>>> s.find('о')
+4
+>>> s[4]
+'о'
+</pre>
+
+What does <tt>find()</tt> do ?
+
+<pre>
+>>> len(s)
+52
+>>> s[52]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+</pre>
+
+What do you need to type to get the last character in a string ? What relation does
+this have with the length of the string ?
+
+<pre>
+>>> s[51]
+'.'
+>>> s[-1]
+'.'
+>>> s[50]
+'я'
+>>> s[-2]
+'я'
+</pre>
+
+We can extract substrings from the string using the <em>slice</em> notation.
+
+<pre>
+>>> s.find(' ')
+11
+>>> s[0:11]
+'Расположена'
+</pre>
+
+Here we get the first token by taking a slice from the beginning of the string to
+the first space.
+
+<pre>
+>>> s.replace(' ', '$')
+'Расположена$на$восточном$побережье$Балтийского$моря.'
+>>> s.replace(' ', '$', 1)
+'Расположена$на восточном побережье Балтийского моря.'
+</pre>
+
+<pre>
+>>> s.split(' ')
+['Расположена', 'на', 'восточном', 'побережье', 'Балтийского', 'моря.']
+</pre>
+
+What would you need to type to get the output <tt>'восточном'</tt> ?
+
+<pre>
+>>> ss = s.split(' ')
+>>> ss
+['Расположена', 'на', 'восточном', 'побережье', 'Балтийского', 'моря.']
+>>> '|'.join(ss)
+'Расположена|на|восточном|побережье|Балтийского|моря.'
+</pre>
+
+In Python, what are two ways of getting from the string:
+
+<pre>
+Расположена на восточном побережье Балтийского моря.
+</pre>
+
+to the string:
+
+<pre>
+Расположена|на|восточном|побережье|Балтийского|моря.
+</pre>
+
+?
+
+<h3> Sentence segmentation </h3>
+
+<p>
+Unless you're using a curated corpus that has been manually annotated, like the RNC, then most of the text you 
+manage to pull off the web is going to be at best in lumps like this:
+</p>
+<pre>
+Общую схему течений Тихого океана определяют закономерности общей циркуляции атмосферы. Северо-восточный пассат северного полушария способствует возникновению Северо-Пассатного течения, пересекающего океан от Центрально-американского побережья до Филиппинских островов. Далее течение разделяется на два рукава: один отклоняется к югу и частью питает Экваториальное противотечение, а частью растекается по бассейнам индонезийских морей. Северный рукав следует в Восточно-Китайское море и, выходя из него южнее острова Кюсю, даёт начало мощному тёплому течению Куросио. Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья. У 40° с. ш. Куросио переходит в Северное Тихоокеанское течение, следующее на восток к побережью Орегона. Сталкиваясь с Северной Америкой, оно разделяется на северную ветвь тёплого Аляскинского течения (проходящего вдоль материка до полуострова Аляска) и южную — холодного Калифорнийского течения (вдоль Калифорнийского полуострова, вливаясь в Северо-Пассатное течение, замыкая круг). В южном полушарии Юго-восточный пассат формирует Южное Пассатное течение, которое пересекает Тихий океан от берегов Колумбии до Молуккских островов. Между островами Лайн и Туамоту оно образует ответвление, следующее в Коралловое море и далее на юг вдоль берега Австралии, образуя Восточно-Австралийское течение. Основные массы Южного Пассатного течения восточнее Молуккских островов сливаются с южной ветвью Северо-Пассатного течения и совместно образуют Экваториальное противотечение. Восточно-австралийское течение южнее Новой Зеландии вливается в мощное Антарктическое циркумполярное течение, идущее из Индийского океана, пересекающее Тихий океан с запада на восток. У южного окончания Южной Америки это течение ответвляется на север в виде Перуанского течения, которое в тропиках вливается в Южное Пассатное течение, замыкая южный круг течений. Другая ветвь течения Западных ветров огибает Южную Америку под названием течения мыса Горн и уходит в Атлантический океан. Важная роль в циркуляции вод Тихого океана принадлежит холодному подповерхностному течению Кромвелла, протекающему под Южным Пассатным течением от 154° з. д. до района Галапагосских островов. Летом в восточной экваториальной части океана наблюдается Эль-Ниньо, когда тёплое слабосолёное течение оттесняет холодное Перуанское течение от берегов Южной Америки. При этом прекращается поступление кислорода в подповерхностные слои, что приводит к гибели планктона, рыб и питающихся ими птиц, а на обычно засушливое побережье обрушиваются обильные дожди, вызывающие катастрофические наводнения.
+
+</pre>
+<p>
+For downstream NLP tasks, with a few exceptions, we are mostly going to want to segment this first into sentences &mdash;
+or sentence-like chunks &mdash; and then into tokens. The first task is called <b>sentence segmentation</b>.
+</p>
+<p>
+The objective is to take output like a block of text like the one above and produce output like the following:
+</p>
+
+<pre>
+Общую схему течений Тихого океана определяют закономерности общей циркуляции атмосферы. 
+Северо-восточный пассат северного полушария способствует возникновению Северо-Пассатного течения, пересекающего океан от Центрально-американского побережья до Филиппинских островов. 
+Далее течение разделяется на два рукава: один отклоняется к югу и частью питает Экваториальное противотечение, а частью растекается по бассейнам индонезийских морей. 
+Северный рукав следует в Восточно-Китайское море и, выходя из него южнее острова Кюсю, даёт начало мощному тёплому течению Куросио. 
+Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья. 
+У 40° с. ш. Куросио переходит в Северное Тихоокеанское течение, следующее на восток к побережью Орегона. 
+Сталкиваясь с Северной Америкой, оно разделяется на северную ветвь тёплого Аляскинского течения (проходящего вдоль материка до полуострова Аляска) и южную — холодного Калифорнийского течения (вдоль Калифорнийского полуострова, вливаясь в Северо-Пассатное течение, замыкая круг). 
+В южном полушарии Юго-восточный пассат формирует Южное Пассатное течение, которое пересекает Тихий океан от берегов Колумбии до Молуккских островов. 
+Между островами Лайн и Туамоту оно образует ответвление, следующее в Коралловое море и далее на юг вдоль берега Австралии, образуя Восточно-Австралийское течение. 
+Основные массы Южного Пассатного течения восточнее Молуккских островов сливаются с южной ветвью Северо-Пассатного течения и совместно образуют Экваториальное противотечение. 
+Восточно-австралийское течение южнее Новой Зеландии вливается в мощное Антарктическое циркумполярное течение, идущее из Индийского океана, пересекающее Тихий океан с запада на восток. 
+У южного окончания Южной Америки это течение ответвляется на север в виде Перуанского течения, которое в тропиках вливается в Южное Пассатное течение, замыкая южный круг течений. 
+Другая ветвь течения Западных ветров огибает Южную Америку под названием течения мыса Горн и уходит в Атлантический океан. 
+Важная роль в циркуляции вод Тихого океана принадлежит холодному подповерхностному течению Кромвелла, протекающему под Южным Пассатным течением от 154° з. д. до района Галапагосских островов. 
+Летом в восточной экваториальной части океана наблюдается Эль-Ниньо, когда тёплое слабосолёное течение оттесняет холодное Перуанское течение от берегов Южной Америки. 
+При этом прекращается поступление кислорода в подповерхностные слои, что приводит к гибели планктона, рыб и питающихся ими птиц, а на обычно засушливое побережье обрушиваются обильные дожди, вызывающие катастрофические наводнения.
+</pre>
+
+Here each sentence has been separated onto its own line.
+
+A simple approach, and the one we are going to first, would simply be to replace every full stop '.' followed by a space ' ' with 
+a full stop and a newline character '\n'. Can you write a program to do that?
+
+<h3> Questions </h3>
+
+<ul>
+<li>How should you segment sentences with semi-colon? As a single sentence or as two sentences? Should it depend on context?
+<li>Should sentences with ellipsis... be treated as a single sentence or as several sentences?
+<li>If there is an exclamation after the first word in the sentence should it be a separate sentence? How about if there is a comma?
+<li>Can you think of some hard tasks for the segmenter?</li>
+</ul>
+</div>
+</body>
+</html>

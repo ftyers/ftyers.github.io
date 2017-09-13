@@ -1,0 +1,284 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 3</title>
+
+</head>
+<body>
+<div class="page">
+<h2> Class 3 </h2>
+
+<h3> Character encoding and special characters </h3>
+
+On your computer, characters are stored as numbers, for example the word <em>cat</em>
+is stored as <tt>0x63 0x61 0x74</tt> and the word <em>мир</em> is stored 
+as <tt>0x43c 0x438 0x440</tt>. Try the following:
+
+<pre>
+>>> hex(ord(u'q'))
+'0x71'
+>>> hex(ord(u'я'))
+'0x44f'
+</pre>
+
+Now open up your character map (for example <tt>gucharmap</tt>) and search for <tt>044f</tt>,
+what do you find ? Now try:
+
+<pre>
+>>> hex(ord(u'е'))
+'0x435'
+>>> hex(ord(u'e'))
+'0x65'
+</pre>
+
+What do you notice, what can you say about these two symbols ?
+<p>
+Why is all this important ? Well, there are a couple of instances when you need to know about
+this stuff. One is when you are processing text from the web and there is the wrong 
+encoding for some symbol (e.g. the character looks ok, but has the wrong underlying numerical
+representation). This can have various reasons:</p>
+<ul>
+  <li> Misconfigured <span title="Оптическое распознавание символов"><u>optical-character recognition</u></span> (OCR) software that detects 
+    Cyrillic characters as Latin characters </li>
+  <li> Misconfigured keyboards that output the wrong characters </li>
+</ul>
+<p>Sometimes when you get some text and your program is not behaving properly, for example the tokenisation
+messes up or your morphological analyser doesn't find the word but it is in the dictionary, it could
+be because of this. </p>
+<p>
+It is also worth noting that this applies to spacing symbols in addition to characters. For 
+example, there is a character <em>non-breaking space</em>. The normal spacing character 
+is <tt>0x20</tt>, but non-breaking space is <tt>0xa0</tt>. Depending on the program or library
+you use these may be treated as different characters or not.
+</p>
+<p>
+If that wasn't enough, you may also come across the issue of pre-composed versus composed 
+characters. For example if you see the character <em>ё</em> it could be encoded in two ways,
+either with the single character <tt>0x451</tt> or with two characters <tt>0x435 0x308</tt>.
+The character <tt>0x308</tt> is a <em>combining character</em> which means that it combines
+with the previous character to make a new character.
+
+<pre>
+>>> hex(ord(u'ё'))
+'0x451'
+>>> hex(ord(u'ё'))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: ord() expected a character, but string of length 2 found
+</pre>
+
+You will see this when you try and look up the numerical value of the character, it throws
+and error because the function expects a single character string, but you give it two characters (the 
+letter <em>е</em> and the combining diaeresis).
+
+Now try:
+
+<pre>
+>>> [hex(ord(c)) for c in u'ё']
+['0x435', '0x308']
+</pre>
+
+When you process each character in the string separately, it works. The most important
+thing to remember about character encoding when corpus processing is that what you see
+might not have the same underlying representation to that which you expect.
+
+<h3> Lists </h3>
+<p>
+You have already come across lists in the second class, a string is a kind of list, that you
+can iterate over and address by index. Furthermore, when we split the string using <tt>split()</tt>
+the function returned a list of strings.
+</p>
+<p>
+However, lists can include more than just strings.
+</p>
+
+<pre>
+
+
+</pre>
+
+<!-- stack -->
+<p>You can also use a list as a <span title="стек (стопка)"><u>stack</u></span>, a stack is a 
+datastructure where you have some storage and two operations, <tt>push()</tt> and <tt>pop()</tt>.
+When you <tt>push</tt> something onto the stack it goes on top of anything that is already there,
+when you <tt>pop</tt> something, it takes the value from the top of the stack and removes it.</p>
+
+<pre>
+import sys
+
+c = sys.stdin.read(1)
+buffer = []
+while c:
+        if c == '\n':
+                while buffer != []:
+                        sys.stdout.write(buffer.pop())
+                sys.stdout.write(c)
+                c = sys.stdin.read(1)
+                continue
+        buffer.append(c)
+        c = sys.stdin.read(1)
+</pre>
+
+Note: In Python, the <tt>push()</tt> operator is called <tt>append()</tt>
+
+What does this code do ? How does it work ? Can you think of a Unix command that does something 
+similar ? Can you think of a simpler way to implement the same thing in Python ? (tip: try looking 
+on StackOverflow)
+
+<h3> Formatting output with <tt>print()</tt> </h3>
+
+<pre>
+>>> index = 1
+>>> print('# sent_id = %d' % (index))
+# sent_id = 1
+</pre>
+
+<pre>
+>>> text = 'Привет мир!'
+>>> print('# text = %s' % (text))
+# text = Привет мир!
+</pre>
+
+<pre>
+>>> print('# text = %s' % (index))
+# text = 1
+>>> print('# text = %d' % (text))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: %d format: a number is required, not str
+</pre>
+
+<pre>
+>>> p = 1/3
+>>> p
+0.3333333333333333
+>>> print('p = %.2f' % (p))
+p = 0.33
+>>> print('p = %.4f' % (p))
+p = 0.3333
+</pre>
+
+<h3> Tokenisation </h3>
+
+<p>
+So, let's say our sentence segmenter is outputting our sentences on one per line, what is the next step we need to do 
+before we start some serious processing ?
+</p>
+<pre>
+Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья. 
+Далее течение разделяется на два рукава: один отклоняется к югу и частью питает Экваториальное противотечение, а частью растекается по бассейнам индонезийских морей. 
+У 40° с. ш. Куросио переходит в Северное Тихоокеанское течение, следующее на восток к побережью Орегона. 
+</pre>
+<p>
+We need to split the text into tokens, that means treat each word as a word in its own right. This is more difficult
+than it may appear. 
+</p>
+<p>
+The objective is to take output like a block of text like the one above and produce output like the following:
+</p>
+
+<pre>
+# sent_id = 1
+# text = Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья.
+1	Это	_	_	_	_	_	_	_	_
+2	течение	_	_	_	_	_	_	_	_
+3	следует	_	_	_	_	_	_	_	_
+4	на	_	_	_	_	_	_	_	_
+5	север	_	_	_	_	_	_	_	_
+6	до	_	_	_	_	_	_	_	_
+7	Японского	_	_	_	_	_	_	_	_
+8	побережья	_	_	_	_	_	_	_	_
+9	,	_	_	_	_	_	_	_	_
+10	оказывая	_	_	_	_	_	_	_	_
+11	заметное	_	_	_	_	_	_	_	_
+12	влияние	_	_	_	_	_	_	_	_
+13	на	_	_	_	_	_	_	_	_
+14	климат	_	_	_	_	_	_	_	_
+15	японского	_	_	_	_	_	_	_	_
+16	побережья	_	_	_	_	_	_	_	_
+17	.	_	_	_	_	_	_	_	_
+
+# sent_id = 2
+# text = Далее течение разделяется на два рукава: один отклоняется к югу и частью питает Экваториальное противотечение, а частью растекается по бассейнам индонезийских морей.
+1	Далее	_	_	_	_	_	_	_	_
+2	течение	_	_	_	_	_	_	_	_
+3	разделяется	_	_	_	_	_	_	_	_
+4	на	_	_	_	_	_	_	_	_
+5	два	_	_	_	_	_	_	_	_
+6	рукава	_	_	_	_	_	_	_	_
+7	:	_	_	_	_	_	_	_	_
+8	один	_	_	_	_	_	_	_	_
+9	отклоняется	_	_	_	_	_	_	_	_
+10	к	_	_	_	_	_	_	_	_
+11	югу	_	_	_	_	_	_	_	_
+12	и	_	_	_	_	_	_	_	_
+13	частью	_	_	_	_	_	_	_	_
+14	питает	_	_	_	_	_	_	_	_
+15	Экваториальное	_	_	_	_	_	_	_	_
+16	противотечение	_	_	_	_	_	_	_	_
+17	,	_	_	_	_	_	_	_	_
+18	а	_	_	_	_	_	_	_	_
+19	частью	_	_	_	_	_	_	_	_
+20	растекается	_	_	_	_	_	_	_	_
+21	по	_	_	_	_	_	_	_	_
+22	бассейнам	_	_	_	_	_	_	_	_
+23	индонезийских	_	_	_	_	_	_	_	_
+24	морей	_	_	_	_	_	_	_	_
+25	.	_	_	_	_	_	_	_	_
+
+# sent_id = 3
+# text = У 40° с. ш. Куросио переходит в Северное Тихоокеанское течение, следующее на восток к побережью Орегона.
+1	У	_	_	_	_	_	_	_	_
+2	40°	_	_	_	_	_	_	_	_
+3	с. ш.	_	_	_	_	_	_	_	_
+4	Куросио	_	_	_	_	_	_	_	_
+5	переходит	_	_	_	_	_	_	_	_
+6	в	_	_	_	_	_	_	_	_
+7	Северное	_	_	_	_	_	_	_	_
+8	Тихоокеанское	_	_	_	_	_	_	_	_
+9	течение	_	_	_	_	_	_	_	_
+10	,	_	_	_	_	_	_	_	_
+11	следующее	_	_	_	_	_	_	_	_
+12	на	_	_	_	_	_	_	_	_
+13	восток	_	_	_	_	_	_	_	_
+14	к	_	_	_	_	_	_	_	_
+15	побережью	_	_	_	_	_	_	_	_
+16	Орегона	_	_	_	_	_	_	_	_
+17	.	_	_	_	_	_	_	_	_
+
+</pre>
+<p>
+Here every token has been separated onto its own line and numbered. This kind of formatting for text is a subset of the 
+popular <a href="http://universaldependencies.org/format.html">CoNLL-U</a> format used by the Universal Dependencies
+project. There are ten <span title="столбцы"><u>columns</u></span> in total.
+</p>
+<div style="text-align:center">
+<table>
+
+<tr><td><b>Index</b></td><td><b>Surface form</b></td><td><b>Lemma</b></td><td><b>UPOS</b></td><td><b>XPOS</b></td><td><b>Morph. features</b></td><td><b>Head</b></td><td><b>Relation</b></td><td><b>Secondary dependencies</b></td><td><b>Miscellaneous</b></td></tr>
+<tr><td><tt>1</tt></td><td><tt>У</tt></td><td><tt>_</tt></td><td><tt>_</tt></td><td><tt>_</tt></td><td><tt>_</tt></td><td><tt>_</tt></td><td><tt>_</tt></td><td><tt>_</tt></td><td><tt>_</tt></td></tr>
+</table>
+</div>
+</pre>
+<p>
+A simple approach, and the one we are going to first, would simply be to replace every space ' ' with 
+a newline character '\n'. Following that you can use the <tt>replace()</tt> function to preprocess the text
+to add a space before or after certain punctuation characters like ',', ':', '(' and ')'. Can you write a program to do that?
+</p>
+<h3> Questions </h3>
+
+<ul>
+  <li> Why should we split punctuation from the token it goes with ? </li>
+  <li> Should abbreviations with space in them be written as a single token or two tokens ?  </li>
+  <ul>
+    <li>How about numerals like 134&nbsp;000 ?</li>
+  </ul> 
+  <li> If you have a case suffix following punctuation, how should it be tokenised ?</li>
+  <li> Should contractions and clitics be a single token or two (or more) tokens ?</li>
+</ul>
+
+</div>
+
+</body>
+</html>

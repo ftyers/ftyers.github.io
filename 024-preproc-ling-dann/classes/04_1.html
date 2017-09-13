@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 4 / 1 </title>
+
+</head>
+<body>
+<div class="page">
+
+<h2> Class 4 / 1</h2>
+
+<h3> The <tt>dict</tt> datastructure </h3>
+
+<h3> Integers and floats </h3>
+
+<h3> File input/output </h3>
+
+Files... if you're like me, you probably have too many of them. As programmers
+we need to store stuff in files so we don't clutter up our programs with lots of data. 
+For example, let's say we 
+
+<h3> Functions </h3>
+
+<h3> Transliterator </h3>
+
+<p>
+</p>
+<pre>
+# sent_id = 1
+# text = Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья.
+1	Это	_	_	_	_	_	_	_	_
+2	течение	_	_	_	_	_	_	_	_
+3	следует	_	_	_	_	_	_	_	_
+4	на	_	_	_	_	_	_	_	_
+5	север	_	_	_	_	_	_	_	_
+6	до	_	_	_	_	_	_	_	_
+7	Японского	_	_	_	_	_	_	_	_
+8	побережья	_	_	_	_	_	_	_	_
+9	,	_	_	_	_	_	_	_	_
+10	оказывая	_	_	_	_	_	_	_	_
+11	заметное	_	_	_	_	_	_	_	_
+12	влияние	_	_	_	_	_	_	_	_
+13	на	_	_	_	_	_	_	_	_
+14	климат	_	_	_	_	_	_	_	_
+15	японского	_	_	_	_	_	_	_	_
+16	побережья	_	_	_	_	_	_	_	_
+17	.	_	_	_	_	_	_	_	_
+
+</pre>
+
+We can use the <tt>MISC</tt> (Miscellaneous) column for storing the transliteration, 
+
+<pre>
+# sent_id = 1
+# text = Это течение следует на север до Японского побережья, оказывая заметное влияние на климат японского побережья.
+1	Это	_	_	_	_	_	_	_	Translit=Eto
+2	течение	_	_	_	_	_	_	_	Translit=tječjenije
+3	следует	_	_	_	_	_	_	_	Translit=sljedujet
+4	на	_	_	_	_	_	_	_	Translit=na
+5	север	_	_	_	_	_	_	_	Translit=sjevjer
+6	до	_	_	_	_	_	_	_	Translit=do
+7	Японского	_	_	_	_	_	_	_	Translit=Japonskogo
+8	побережья	_	_	_	_	_	_	_	Translit=pobjerjež'ja
+9	,	_	_	_	_		_	_	_	Translit=,
+10	оказывая	_	_	_	_	_	_	_	Translit=okazıvaja
+11	заметное	_	_	_	_	_	_	_	Translit=zamjetnoje
+12	влияние	_	_	_	_		_	_	_	Translit=vlijanije
+13	на	_	_	_	_		_	_	_	Translit=na
+14	климат	_	_	_	_		_	_	_	Translit=klimat
+15	японского	_	_	_	_	_	_	_	Translit=japonskogo
+16	побережья	_	_	_	_	_	_	_	Translit=pobjerjež'ja
+17	.	_	_	_	_		_	_	_	Translit=.
+</pre>
+
+
+<h3> Questions </h3>
+
+<ul>
+  <li> What to do with ambiguous letters ? For example, Cyrillic `е' could be either <em>je</em> or <em>e</em>.</li>
+</ul>
+
+</div>
+
+</body>
+</html>

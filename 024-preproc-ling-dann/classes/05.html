@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 5</title>
+
+</head>
+<body>
+<div class="page">
+
+<h2> Class 5 </h2>
+
+
+<h3>Regular expressions</h3>
+
+<h3>Screenscraping</h3>
+
+<h3>Libraries in Python</h3>
+
+<h3>Unigram tagger</h3>
+
+<p>
+A unigram tagger works by assiging the most frequent tag seen for a given
+surface form. It may additionally <em>back-off</em> to the most frequent
+tag in general. Our unigram language model has all of this information, we 
+just need to apply it to our input stream.
+</p>
+
+<p>
+The first thing your program will need to do is load the language model and 
+calculate the most frequent tag per word and most frequent tag in general. You
+can use a <tt>dict</tt> for the word → tag mapping and a simple variable
+for the most frequent tag.
+</p>
+
+Example input:
+
+<pre>
+# sent_id = 482
+# text = Часть его положений отменена Конституционным судом в 2013 году.
+1	Часть	_	_	_	_	_	_	_	_
+2	его	_	_	_	_	_	_	_	_
+3	положений	_	_	_	_	_	_	_	_
+4	отменена	_	_	_	_	_	_	_	_
+5	Конституционным	_	_	_	_	_	_	_	_
+6	судом	_	_	_	_	_	_	_	_
+7	в	_	_	_	_	_	_	_	_
+8	2013	_	_	_	_	_	_	_	_
+9	году	_	_	_	_	_	_	_	_
+10	.	_	_	_	_	_	_	_	_
+
+</pre>
+
+Output:
+
+<pre>
+# sent_id = 482
+# text = Часть его положений отменена Конституционным судом в 2013 году.
+1	Часть	_	NOUN	_	_	_	_	_	_
+2	его	_	NOUN	_	_	_	_	_	_
+3	положений	_	NOUN	_	_	_	_	_	_
+4	отменена	_	NOUN	_	_	_	_	_	_
+5	Конституционным	_	NOUN	_	_	_	_	_	_
+6	судом	_	NOUN	_	_	_	_	_	_
+7	в	_	ADP	_	_	_	_	_	_
+8	2013	_	NOUN	_	_	_	_	_	_
+9	году	_	NOUN	_	_	_	_	_	_
+10	.	_	PUNCT	_	_	_	_	_	_
+</pre> <!-- 70% correct -->
+
+<h3> Questions </h3>
+
+<ul>
+  <li> How accurate is the tagger ?</li>
+  <li> How could you improve performance without incorporating context ...</li>
+  <ul>
+    <li> using Python string functions ? </li>
+    <li> using regular expressions ? </li>
+  </ul>
+  <li> Could you store other single-word features in your unigram model ? Which features might you like to store ?</li>
+</ul>
+
+</div>
+
+</body>
+</html>
