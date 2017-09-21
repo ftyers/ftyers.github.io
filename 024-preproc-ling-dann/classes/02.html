@@ -24,7 +24,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 </pre>
 
 This is the <em>Python shell</em> (or <em>console</em>), any time you see <tt>&gt;&gt;&gt;</tt> in the examples
-it means "run this code in the Python shell". You can use the shell to execute Python statements one by one.
+it means "run this code in the Python shell". You can use the shell to execute Python statements one by one. As before, when you see <tt>$</tt> it means
+run this command in your terminal on the command line.
 
 <h3>Basic structure of programs</h3>
 
@@ -36,8 +37,13 @@ import sys
 print('Привет мир!')
 </pre>
 
-Then run it using <tt>python3 privet.py</tt>. After that, try replacing the above 
-with:
+Then run it using:
+
+<pre>
+$ python3 privet.py
+</pre>
+
+After that, try replacing the above with:
 
 <pre>
 import sys
@@ -69,6 +75,10 @@ Save it in a file called <tt>cat.py</tt> and try running it like this:
 <pre>
 $ echo "Привет мир" | python3 cat.py
 </pre>
+
+The <tt>echo</tt> command displays a line of text, and the <tt>|</tt> 
+<span title="палочка"><u>pipe</u></span> symbol redirects the output
+of one command into the input of another.
 
 Compare the output with the Unix command <tt>cat</tt>:
 
@@ -108,6 +118,12 @@ text = sys.stdin.read()
 
 # Output everything to standard output
 sys.stdout.write(text)
+</pre>
+
+Now you can run this command in the same way as the one above:
+
+<pre>
+$ echo "Привет мир" | python3 cat.py
 </pre>
 
 In your practical work or homework, if your code doesn't work, but you have comments that
@@ -184,7 +200,8 @@ for c in text:
 	print(c)
 </pre>
 
-How about this program ?
+How about this program ? How might you make the program output the 
+text without a newline after each character ?
 
 <h4> <tt>while</tt> loop </h4>
 
@@ -237,10 +254,37 @@ Save this program in a file called <tt>counter.py</tt> and run it with the
 input "Привет мир", what does it do ?
 
 <pre>
-echo "Привет мир" | python3 counter.py
+$ echo "Привет мир" | python3 counter.py
 </pre>
 
-How would we change the program to count any vowel ? 
+<p>
+Now we could make the program count any vowel by giving
+a string containing the list of vowels to the <tt>if</tt> statement, 
+</p>
+
+<pre>
+	if c in 'аэиоу':
+		counter = counter + 1
+</pre>
+
+Change your program, save it and run the previous command again.
+
+<p>
+In the first homework you found out that the Unix program <tt>wc</tt> 
+can be used to count the number of lines, tokens and characters in 
+the input. Now write a program called <tt>wc.py</tt> that counts the 
+number of lines,
+tokens and characters in your corpus. (Hint: by counting the 
+number of <span title="прабил"><u>space</u></span> characters you 
+can count the number of tokens)</p> 
+<p>
+Compare the output of this program to the <tt>wc</tt> command. Then write
+a program to count the number of consonants and vowels in your corpus. 
+Assuming that you can approximate the number of syllables by counting
+the number of orthographic vowels, extend the program to compute the 
+average number of syllables per word in your corpus. What do you think
+are some potential drawbacks or inaccuracies of this method ?
+</p>
 
 <h3>String processing</h3>
 
@@ -248,11 +292,15 @@ A <span title="строка"><u>string</u></span> is a sequence of characters (o
 you can find a good general reference to processing strings in Python 
 <a href="https://docs.python.org/3/library/stdtypes.html#string-methods">here</a>.
 
+Assign a string to a variable, <tt>s</tt>
+
 <pre>
 >>> s = 'Расположена на восточном побережье Балтийского моря.'
 >>> s
 'Расположена на восточном побережье Балтийского моря.'
 </pre>
+
+Then write the following in the Python shell:
 
 <pre>
 >>> s.find('о')
@@ -349,7 +397,7 @@ For downstream NLP tasks, with a few exceptions, we are mostly going to want to 
 or sentence-like chunks &mdash; and then into tokens. The first task is called <b>sentence segmentation</b>.
 </p>
 <p>
-The objective is to take output like a block of text like the one above and produce output like the following:
+The objective is to take input like a block of text like the one above and produce output like the following:
 </p>
 
 <pre>
@@ -373,8 +421,9 @@ The objective is to take output like a block of text like the one above and prod
 
 Here each sentence has been separated onto its own line.
 
-A simple approach, and the one we are going to first, would simply be to replace every full stop '.' followed by a space ' ' with 
-a full stop and a newline character '\n'. Can you write a program to do that?
+A simple approach, and the one we are going to try first, would simply be to replace every full stop '.' followed by a space ' ' with 
+a full stop and a newline character '\n'. Can you write a program to do that? The program should be called <b><tt>segmenter.py</tt></b> and you should add it 
+to your GitHub repository.
 
 <h3> Questions </h3>
 
@@ -384,6 +433,14 @@ a full stop and a newline character '\n'. Can you write a program to do that?
 <li>If there is an exclamation after the first word in the sentence should it be a separate sentence? How about if there is a comma?
 <li>Can you think of some hard tasks for the segmenter?</li>
 </ul>
+
+
+<h3> Further reading </h3>
+
+<ul>
+ <li>§4.2.4 "Sentences" in Manning and Schütze (2000) <em>Foundations of Statistical Natural Language Processing</em> (MIT Press)
+</ul>
+
 </div>
 </body>
 </html>
