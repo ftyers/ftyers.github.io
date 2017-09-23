@@ -9,6 +9,40 @@
 <div class="page">
 <h2> Class 3 </h2>
 
+<h3> Tracing program flow </h3>
+
+<p>As your programs get more complicated, it will become increasingly more challenging to visualise what
+they are doing mentally. A simple way to see what your program is doing is to use <tt>print</tt> 
+statements which print to standard error, or <tt>stderr</tt>. </p>
+
+<p>Take the program from the last class and add print statements as follows:</p>
+
+<pre>
+import sys
+
+a = 0 # This is a variable for counting the number of vowels
+
+for c in sys.stdin.read():
+	print('Main loop:', a, c, file=sys.stderr)
+	if c in 'аэиоуяеыёю':
+		print('Found a vowel!', c, file=sys.stderr)
+		a = a + 1
+
+print(a)
+</pre>
+
+Now call the program (here called <tt>prog.py</tt>) from the command line like,
+
+<pre>
+$ head wiki.txt | python3 prog.py &gt; wiki.output
+</pre>
+
+<p>What do you see ? </p>
+
+<p>Adding <tt>print</tt> statements like this for "debugging" is common and is also a good way to find out
+what someone elses code is doing.</p>
+
+
 <h3> Character encoding and special characters </h3>
 
 On your computer, characters are stored as numbers, for example the word <em>cat</em>
@@ -143,7 +177,7 @@ the inner list <tt>l[0].append('г')</tt>.
 'v'
 </pre>
 
-<!-- stack -->
+<!-- stack 
 <p>You can also use a list as a <span title="стек (стопка)"><u>stack</u></span>. A stack is a 
 datastructure where you have some storage and two operations, <tt>push()</tt> and <tt>pop()</tt>.
 When you <tt>push</tt> something onto the stack it goes on top of anything that is already there,
@@ -170,38 +204,7 @@ Note: In Python, the <tt>push()</tt> operator is called <tt>append()</tt>
 What does this code do ? How does it work ? Can you think of a Unix command that does something 
 similar ? Can you think of a simpler way to implement the same thing in Python ? (tip: try looking 
 on StackOverflow)
-
-<h3> Tracing program flow </h3>
-
-<p>As your programs get more complicated, it will become increasingly more challenging to visualise what
-they are doing mentally. A simple way to see what your program is doing is to use <tt>print</tt> 
-statements which print to standard error, or <tt>stderr</tt>. </p>
-
-<p>Take the program above and add print statements to the main loop as follows:</p>
-
-<pre>
-while c:
-        if c == '\n':
-                print('+', buffer, file=sys.stderr)
-                while buffer != []:
-                        sys.stdout.write(buffer.pop())
-                sys.stdout.write(c)
-                c = sys.stdin.read(1)
-                continue
-        buffer.append(c)
-        c = sys.stdin.read(1)
-</pre>
-
-Now call the program (here called <tt>prog.py</tt>) from the command line like,
-
-<pre>
-$ head wiki.txt | python3 prog.py > wiki.output
-</pre>
-
-<p>What do you see ? Now try adding some more print statements to find out what the program is doing. </p>
-
-<p>Adding <tt>print</tt> statements like this for "debugging" is common and is also a good way to find out
-what someone elses code is doing.</p>
+-->
 
 <h3> Formatting output with <tt>print()</tt> </h3>
 
