@@ -131,9 +131,22 @@ by doing a search for the node type:
 <!--<tier id="n" type="odin" alignment="c" state="normalized">-->
 
 <pre>
-
+for tier in root.findall('.//tier'):
+        if tier.attrib['id'] == 'n':
+                for item in tier.findall('.//item'):
+                        print(item.text)
 </pre>
 
+If you save this into a file called <tt>gloss.py</tt>, you should get the output:
+
+<pre>
+$ python3 gloss.py 
+(Þau) Jón og María eru vinir.
+they.NEUT Jón og María are friends
+Jón and María are friends.
+</pre>
+
+How would you get just the Icelandic line and the gloss line ? 
 
 <!--<h4> </h4> -->
 
