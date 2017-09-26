@@ -98,12 +98,38 @@ plt.show()
 <a href="https://docs.python.org/3/library/xml.etree.elementtree.html">ElementTree</a> is a Python module for parsing XML. XML is a file format that is widely 
 used for storing structured data. The <a href="http://depts.washington.edu/uwcl/odin/">ODIN
 project</a> is a project which aims to collect and encode interlinear glossed text
-in very many languages. You can find an example file 
+in very many languages. You can find an example file for Icelandic
 <a href="http://depts.washington.edu/uwcl/odin/isl-ex.xml">here</a>.
 
-<pre>
+There is a lot of data there, but let's say we just wanted to pull out part of it, for 
+example the normalised gloss. First download the file:
 
+<pre>
+$ wget "http://depts.washington.edu/uwcl/odin/isl-ex.xml"
 </pre>
+
+One way to get the information would be to just do string processing, but a better way
+is to use the structure and an XML parser. The first thing to do is to import
+ElementTree and use the <tt>parse()</tt> function to parse the XML.
+
+<pre>
+import xml.etree.ElementTree as ET
+
+tree = ET.parse('isl-ex.xml')
+</pre>
+
+The first thing we can do is look at the tag of the root node in the tree:
+
+<pre>
+root = tree.getroot()
+
+print(root.tag)
+</pre>
+
+We can also pull out nodes in the tree that have a specific 
+
+<!--<tier id="n" type="odin" alignment="c" state="normalized">-->
+
 
 
 <!--<h4> </h4> -->
