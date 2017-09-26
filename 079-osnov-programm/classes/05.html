@@ -44,6 +44,54 @@ If you want to replace parts of a string, you can use <tt>sub()</tt> which works
 One really cool library in Python is <a href="https://matplotlib.org"><tt>matplotlib</tt></a>, this
 is a library for visualising data and plotting graphs.
 
+In your virtual machine you can install it as follows:
+
+<pre>
+$ sudo apt-get install python3-matplotlib
+</pre>
+
+Now you can try making a small program to take the frequency/rank list that you had earlier 
+and plot it on a graph.
+
+First make sure that you have the ranks file:
+
+<pre>
+$ head ranks.txt 
+1	11324	.
+2	11221	,
+3	3972	æмæ
+4	3121	:
+5	2745	)
+6	2732	(
+7	2616	у
+8	1708	азы
+9	1646	йæ
+10	1301	"
+</pre>
+
+Then try this program:
+
+<pre>
+import sys
+import matplotlib.pyplot as plt
+
+x = []
+y = []
+
+fd = open('ranks.txt', 'r')
+for line in fd.readlines():
+        line = line.strip()
+        if line == '':
+                continue
+	
+        row = line.split('\t')
+        x.append(int(row[0]))
+        y.append(int(row[1]))
+
+plt.plot(x, y, 'ro')
+plt.show()
+</pre>
+
 <!--<h4> <tt>numpy</tt> </h4> -->
 <!--<h4> ElementTree </h4> -->
 <!--<h4> </h4> -->
