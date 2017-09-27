@@ -12,19 +12,168 @@
 
 <h3> The <tt>dict</tt> datastructure </h3>
 
-<h3> Integers and floats </h3>
+The <tt>dict</tt> datastructure is a way of storing a mapping from a key, for example <em>a</em> to
+a value, for example <em>b</em>. 
+
+<pre>
+>>> map = {}
+>>> map['a'] = 'b'
+>>> map
+{'a': 'b'}
+>>> map['a']
+'b'
+</pre>
+
+We can also check if a key is in the map.
+
+<pre>
+>>> 'a' in map
+True
+>>> 'b' in map
+False
+>>> 'c' in map
+False
+</pre>
+
+What could we possibly use that for ? Well, one application could be for making a frequency list. 
+Let's assume that we're processing the output from our tokeniser. The input stream looks like:
+
+<pre>
+1       Это     _       _       _       _       _       _       _       _
+2       течение _       _       _       _       _       _       _       _
+3       следует _       _       _       _       _       _       _       _
+...
+</pre>
+
+So, what would the general algorithm be ? First read line by line, check if the line has 
+ten columns. If the line has ten columns then take the second column and see if it is in the 
+map. If it is not in the map, add it to the map with the counter value <tt>0</tt>. Then increment
+the counter.
+
+<pre>
+import sys
+
+vocab = {}
+
+for line in sys.stdin.readlines(): 
+	if '\t' not in line:
+		continue
+	row = line.split('\t')
+	if len(row) != 10:
+		continue
+	form = row[1]
+	if form not in vocab:
+		vocab[form] = 0
+	vocab[form] = vocab[form] + 1
+
+for w in vocab:
+	print('%d\t%s' % (vocab[w], w))
+</pre>
+
+<p>You'll note that the code does not print out the frequency list in order. Which Unix
+command might you use to sort the output in frequency order ? </p>
+
+<p>If you want to sort your frequency list in Python, there are a number of ways to do 
+it. You can search on the internet for "python3 sort a dict by value" and there are 
+some good one liners, but they introduce a lot of new syntax. So, I'm going to suggest 
+that you do it like this. The <tt>dict</tt> datastructure is not sortable, so we need
+to change it to something that is, for example the <tt>list</tt> datastructure.</p>
+
+<pre>
+freq = []
+
+for w in vocab:
+	freq.append((vocab[w], w))
+
+freq.sort(reverse=True)
+</pre>
+
+This code takes the <tt>dict</tt> and puts it in a list of value:key tuples. For example,
+if we print out the top-5 items in the list:
+
+<pre>
+print(freq[0:4])
+</pre>
+
+After running the code on the SynTagRus corpus We would get:
+
+<pre>
+[(70049, ','), (45598, '.'), (22727, 'в'), (21083, 'и')]
+</pre>
+
+What do you think we would get if we set the argument <tt>reverse</tt> to <tt>False</tt> ?
+
+<!--<h3> Integers and floats </h3>-->
 
 <h3> File input/output </h3>
 
-Files... if you're like me, you probably have too many of them. As programmers
+<p>Files... if you're like me, you probably have too many of them. As programmers
 we need to store stuff in files so we don't clutter up our programs with lots of data. 
-For example, let's say we 
+For example, let's say we want to store the frequency list that we've made above 
+in a file instead of outputting it to standard output.</p>
 
-<h3> Functions </h3>
+<pre>
+fd = open('freq.txt', 'w+')
+for w in vocab:
+	fd.write('%d\t%s' % (vocab[w], w))
+fd.close()	
+</pre>
+
+<p>The <tt>open()</tt> function opens a file, it has two arguments, the name of the file
+and the way to open it. We used <tt>w+</tt> which means "open the file in write mode
+and overwrite the file if it already exists otherwise create it". There are other modes,
+such as read-only or append mode. </p>
+
+<p>Now we've stored the frequency list in the file, let's try loading it and doing something
+interesting. We're going to read the sorted file and then give each token a rank in addition to 
+its frequency. </p>
+
+First read in the file:
+
+<pre>
+import sys
+
+freq = []
+
+fd = open('freq.txt', 'r')
+for line in fd.readlines():
+	line = line.strip()
+	(f, w) = line.split('\t')
+	freq.append((int(f), w))
+</pre>
+
+<p>This gives us a list of tuples of frequency and word form. Notice that we used <tt>int()</tt> to convert
+the input string to an integer. And how we used the <tt>(f, w) = line.split('\t')</tt> to change the 
+return type of <tt>split()</tt> to a tuple instead of a list.</p>
+
+<p>We can use the algorithm below to find the rank of a word in the <em>sorted</em> frequency list. You loop through the list
+keeping track of the lowest frequency you have seen in the variable <tt>min</tt> and the current rank in the 
+variable <tt>rank</tt>. Any time you see a frequency lower than the last lowest one you've seen, you increase
+the rank and set the last lowest to the one you just saw. </p>
+	
+<pre>
+rank = 1
+min = freq[0][0]
+ranks = []
+for i in range(0, len(freq)): 
+	if freq[i][0] < min: 
+		rank = rank + 1
+		min = freq[i][0]
+	ranks.append((rank, freq[i][0], freq[i][1]))
+</pre>
+
+Now create a script called <tt>rank.py</tt> which takes a command line argument and reads in a frequency list from a file 
+and outputs a ranked frequency list (either to a file or to standard output). Do you notice anything interesting 
+in the data ? Do you think you could make the code more efficient ? (hint: we are looping through the data
+twice)
 
 <h3> Transliterator </h3>
 
 <p>
+The idea of a transliterator is to take a string written in one writing system and transliterate
+it to another. For example, let's take the output from our tokeniser. We can all read Cyrillic, but 
+imagine if the text was in a writing system that wasn't so easy to read. It might be useful to have
+a transliteration of the string. 
 </p>
 <pre>
 # sent_id = 1
@@ -73,13 +222,32 @@ We can use the <tt>MISC</tt> (Miscellaneous) column for storing the transliterat
 17	.	_	_	_	_		_	_	_	Translit=.
 </pre>
 
+<p>If the language you are working on is already written in Latin, then there are two options, the first
+would be to convert it into a Cyrillic transcription. Alternatively you could convert it into a rough
+approximation of IPA.</p>
+
+<p>Your transliteration/transcription table should be stored in a file that is loaded before use. The file
+format could look like:</p>
+
+<pre>
+а	a
+б	b
+в	v
+...
+</pre>
+
+That is, two columns, separated by a tab <tt>\t</tt> character. The program should be called <tt><b>transliterate.py</b></tt>
 
 <h3> Questions </h3>
 
 <ul>
   <li> What to do with ambiguous letters ? For example, Cyrillic `е' could be either <em>je</em> or <em>e</em>.</li>
+  <li> Can you think of a way that you could provide mappings from many characters to one character ? </li>
+  <ul>
+    <li> For example <em>sh</em> → ш or <em>дж</em> → c ? </li>
+  </ul>
+  <li> How might you make different mapping rules for characters at the beginning or end of the string ? </li>
 </ul>
-
 </div>
 
 </body>
