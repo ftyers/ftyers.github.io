@@ -129,51 +129,51 @@ of values that we call <em>tuples</em>.
 </p>
 
 <pre>
->>> l = []
->>> l.append((1, 'а'))
->>> l.append((2, 'б'))
->>> l.append((3, 'в'))
->>> l
+>>> spisok = []
+>>> spisok.append((1, 'а'))
+>>> spisok.append((2, 'б'))
+>>> spisok.append((3, 'в'))
+>>> spisok
 [(1, 'а'), (2, 'б'), (3, 'в')]
->>> l[1]
+>>> spisok[1]
 (2, 'б')
->>> l[1][0]
+>>> spisok[1][0]
 2
->>> l[1][1]
+>>> spisok[1][1]
 'б'
 </pre>
 
 Lists can also contain other lists, which are addressed in the same way as tuples:
 
 <pre>
->>> l = []
->>> l.append(['а', 'б', 'в'])
->>> l.append(['a', 'b', 'v'])
->>> l
+>>> spisok = []
+>>> spisok.append(['а', 'б', 'в'])
+>>> spisok.append(['a', 'b', 'v'])
+>>> spisok
 [['а', 'б', 'в'], ['a', 'b', 'v']]
 </pre>
 
 When you are embedding lists within other lists it can be easy to get confused about the indexing, so
-note how <tt>append()</tt> works differently when applied to the outer list <tt>l.append('г')</tt> and 
-the inner list <tt>l[0].append('г')</tt>.
+note how <tt>append()</tt> works differently when applied to the outer list <tt>spisok.append('г')</tt> and 
+the inner list <tt>spisok[0].append('г')</tt>.
 
 <pre>
->>> l[0].append('г')
->>> l
+>>> spisok[0].append('г')
+>>> spisok
 [['а', 'б', 'в', 'г'], ['a', 'b', 'v']]
->>> l.append('г')
->>> l
+>>> spisok.append('г')
+>>> spisok
 [['а', 'б', 'в', 'г'], ['a', 'b', 'v'], 'г']
 </pre>
 
 <p>List slicing works the same way as string slicing. So you can also refer to the end of the list with <tt>-1</tt></p>
 
 <pre>
->>> l
+>>> spisok
 [['а', 'б', 'в'], ['a', 'b', 'v']]
->>> l[-1]
+>>> spisok[-1]
 ['a', 'b', 'v']
->>> l[-1][-1]
+>>> spisok[-1][-1]
 'v'
 </pre>
 
@@ -217,8 +217,8 @@ on StackOverflow)
 </pre>
 
 <pre>
->>> text = 'Привет мир!'
->>> print('# text = %s' % (text))
+>>> tekst = 'Привет мир!'
+>>> print('# text = %s' % (tekst))
 # text = Привет мир!
 </pre>
 
@@ -228,7 +228,7 @@ the same error if you try and print a numeral as a string.
 <pre>
 >>> print('# text = %s' % (index))
 # text = 1
->>> print('# text = %d' % (text))
+>>> print('# text = %d' % (tekst))
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: %d format: a number is required, not str
@@ -357,7 +357,7 @@ project. There are ten <span title="столбцы"><u>columns</u></span> in tot
 <p>
 A simple approach, and the one we are going to first, would simply be to replace every space ' ' with 
 a newline character '\n'. Following that you can use the <tt>replace()</tt> function to preprocess the text
-to add a space before or after certain punctuation characters like ',', ':', '(' and ')'. Can you write a program to do that? The program should be called <tt><b>tokeniser.py</b></tt>
+to add a space before or after certain punctuation characters like ',', ':', '(' and ')'. Can you write a program to do that? The program should be called <tt><b>tokeniser.py</b></tt> and you should upload it to your GitHub.
 </p>
 <h3> Questions </h3>
 
