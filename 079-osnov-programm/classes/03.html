@@ -359,6 +359,14 @@ A simple approach, and the one we are going to first, would simply be to replace
 a newline character '\n'. Following that you can use the <tt>replace()</tt> function to preprocess the text
 to add a space before or after certain punctuation characters like ',', ':', '(' and ')'. Can you write a program to do that? The program should be called <tt><b>tokeniser.py</b></tt> and you should upload it to your GitHub.
 </p>
+<p>
+It should be possible to run your segmenter and tokeniser in a pipeline as follows:
+
+<pre>
+$ cat corpus/wiki.txt | python3 segmenter.py | python3 tokeniser.py
+</pre>
+</p>
+
 <h3> Questions </h3>
 
 <ul>
