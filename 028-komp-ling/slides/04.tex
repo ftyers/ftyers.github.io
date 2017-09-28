@@ -26,6 +26,7 @@
 \newcommand{\ufeat}[1]{{\udfont#1}}
 \newcommand{\tgl}[1]{{\em #1}}
 \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+\setmainfont[Scale=MatchLowercase]{DejaVu Sans}
 
 % commands from the paper
 
@@ -510,16 +511,57 @@ Given an argument, with a reason and a claim, the goal is to choose the correct 
   \item Choose a task
   \item Read the description
   \item Look at the provided data
-  \item Run the baseline system
+\end{itemize}
+
+\begin{itemize}
+  \item Run the baseline system (Irony detection, argument reasoning)
 % Irony detection
 % argument reasoning
-  \item Write your own simple baseline
+  \item Write your own simple baseline (Everything else)
+\end{itemize}
+
+\begin{itemize}
   \item Run the evaluation script on the baseline
   \item Think of ways to improve the baseline
 \end{itemize}
 
 \end{frame}
 
+\begin{frame}{Surface realisation}
+
+Given an unordered dependency tree of (lemma, tag) pairs, predict
+the surface form and linear order of the final sentence.
+
+\begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+%            1           2          3          4         5        6           7    8
+           бионика \& рассуждать \& именно \& образ \& такой \& специалист \& . \& по  \\
+%           Специалисты \& по \& бионике \& рассуждают \& именно \& таким \& образом \& . \\
+        \end{deptext}
+        \depedge{1}{8}{case}
+        \depedge{2}{7}{punct}
+        \depedge{2}{6}{nsubj}
+        \depedge{4}{5}{amod}
+        \depedge{5}{3}{advmod}
+        \depedge{6}{1}{nmod}
+\end{dependency}
+
+\begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+	   Специалисты \& по \& бионике \& рассуждают \& именно \& таким \& образом \& . \\
+            1   \& 2 \& 3 \& 4 \& 5 \& 6 \& 7 \& 8 \\
+        \end{deptext}
+        \depedge{4}{1}{nsubj}
+        \depedge{3}{2}{case}
+        \depedge{1}{3}{nmod}
+        \depedge{6}{5}{nsubj}
+        \depedge{4}{7}{obl}
+        \depedge{4}{8}{punct}
+        \depedge{7}{6}{amod}
+\end{dependency}
+
+
+\end{frame}
 
 
 \end{document}

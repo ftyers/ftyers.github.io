@@ -26,7 +26,19 @@ You can find a matching part of a string using <tt>search()</tt>:
 >>> s = 'Привет мир!'
 
 >>> re.search(r'м[а-я]+', s)
+<_sre.SRE_Match object; span=(7, 10), match='мир'>
+
+>>> m = re.search(r'м[а-я]+', s)
+>>> m.group()
+'мир'
+>>> m.span()
+(7, 10)
 </pre>
+
+The <tt>re.search()</tt> function takes a regular expression and a string returns a match object if it finds a matching part of the string. The match
+object contains two important functions, <tt>group()</tt> gives you the part
+of the string that matches the expression, while <tt>span()</tt> gives you 
+the beginning and ending index of the match.
 
 If you want to replace parts of a string, you can use <tt>sub()</tt> which works a bit like <tt>sed</tt>:
 
