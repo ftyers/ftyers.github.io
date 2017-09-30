@@ -221,9 +221,62 @@ We could generate this kind of data fairly easily from the pages on Wiktionary (
 1	#явка#	[ˈjafkə]	1,0,0,0,0,1,0,0
 </pre>
 
-Save this data into a file called <tt>pronunciation_training.tsv</tt>
+Save this data into a file called <tt>pronunciation_training.tsv</tt>, each column separated by a tab character <tt>\t</tt>.
+Now make a new file called <tt>pronunciation.py</tt>:
 
+<pre>
+import sys
+from sklearn.linear_model import perceptron
 
+words = []    # The word, correct label and pronunciation
+data = []     # Training examples, e.g. feature vectors
+labels = []   # Correct labels
+</pre>
+
+Here we import the classifier from the <tt>scikit learn</tt> package and set up some variables.
+
+<pre>
+for line in open('pronunciation_training.py').readlines():
+	row = line.strip().split('\t')
+	for i in row[3].split(','):
+		data.append(int(i))
+	labels.append(int(row[0]))
+	words.append((row[1], row[2], int(row[0])))
+</pre>
+
+This part parses the <tt>pronunciation_training.tsv</tt> file and puts the data into a form 
+that the classifier can understand.
+
+<pre>
+net = perceptron.Perceptron(n_iter=100, verbose=0, random_state=None, fit_intercept=True, eta0=0.002)
+net.fit(data,labels)
+</pre>
+
+To train the classifier we just need to create a new <tt>Perceptron</tt> object and then run
+the training procedure <tt>fit()</tt>
+
+<pre>
+result = net.predict(data)
+</pre>
+
+We can then run the classifier on the training data to see how accurate it is, and print out the 
+accuracy:
+
+<pre>
+total = 0
+correct = 0
+for i in range(0, len(words)):
+	if res[i] == words[i][2]:
+		print('+', res[i], words[i]);
+		correct = correct + 1
+	else:
+		print('-', res[i], words[i]);
+	total = total + 1
+print(correct/total)
+</pre>
+
+An exercise for the reader is to split the data in two randomly and train on one half and test
+on the other half.
 
 <!--<h4> </h4> -->
 
