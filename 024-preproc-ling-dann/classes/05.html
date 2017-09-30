@@ -238,8 +238,10 @@ Here we import the classifier from the <tt>scikit learn</tt> package and set up 
 <pre>
 for line in open('pronunciation_training.py').readlines():
 	row = line.strip().split('\t')
-	for i in row[3].split(','):
-		data.append(int(i))
+        vec = []
+        for i in row[3].split(','):
+                vec.append(int(i))
+        data.append(vec)
 	labels.append(int(row[0]))
 	words.append((row[1], row[2], int(row[0])))
 </pre>
