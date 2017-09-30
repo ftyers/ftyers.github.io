@@ -236,7 +236,7 @@ labels = []   # Correct labels
 Here we import the classifier from the <tt>scikit learn</tt> package and set up some variables.
 
 <pre>
-for line in open('pronunciation_training.py').readlines():
+for line in open('pronunciation_training.tsv').readlines():
 	row = line.strip().split('\t')
         vec = []
         for i in row[3].split(','):
@@ -275,6 +275,10 @@ for i in range(0, len(words)):
 		print('-', res[i], words[i]);
 	total = total + 1
 print(correct/total)
+</pre>
+
+<pre>
+$ python3 pronunciation.py
 </pre>
 
 An exercise for the reader is to split the data in two randomly and train on one half and test
