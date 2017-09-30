@@ -205,16 +205,16 @@ Let's suppose we had training data that looked like the following, where <tt>#</
 <table>
 <!--	# -1.isVowel -1.isUnvoiced -1.isVoiced -1.isBoundary 1.isVowel 1.isUnvoiced 1.isVoiced 1.isBoundary-->
 
-  <tr><td><b>Word</b></td><td><b>IPA</b></td><td></td><td colspan="4"><b><span style="color:#3f704d">Previous character</span></b></td><td colspan="4"><b>Next character</b></td><td><b>Label</b></td></tr>
+  <tr><td><b>Word</b></td><td><b>IPA</b></td><td></td><td colspan="4"><b><span style="color:#3f704d">Previous character</span></b></td><td colspan="4"><b><span style="color:#014666">Next character</span></b></td><td><b>Label</b></td></tr>
   <tr><td></td>    <td></td>   <td></td>                <td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td><td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td></td>
-  <tr><td>#пог<span style="color:#3f704d">о</span>ворка#</td><td>[pəɡɐˈvorkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
-  <tr><td>#<span style="color:#3f704d">т</span>ворец#</td><td>[tvɐˈrʲet͡s]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
-<tr><td>#резе<span style="color:#3f704d">р</span>в#</td><td>[rʲɪˈzʲerf]</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
-<tr><td>#ры<span style="color:#3f704d">т</span>вина#</td><td>[ˈrɨtvʲɪnə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
-<tr><td>#пьянс<span style="color:#3f704d">т</span>во#</td><td>[ˈpʲjanstvə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
-<tr><td>#розл<span style="color:#3f704d">и</span>в#</td><td>[ˈroz⁽ʲ⁾lʲɪf]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
-<tr><td>#<span style="color:#3f704d">с</span>варка#</td><td>[ˈsvarkə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
-<tr><td>#<span style="color:#3f704d">я</span>вка#</td><td>[ˈjafkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>/f/</td></tr>
+  <tr><td>#пог<span style="color:#3f704d">о</span>в<span style="color:#014666">о</span>рка#</td><td>[pəɡɐˈvorkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+  <tr><td>#<span style="color:#3f704d">т</span>в<span style="color:#014666">о</span>рец#</td><td>[tvɐˈrʲet͡s]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#резе<span style="color:#3f704d">р</span>в<span style="color:#014666">#</span></td><td>[rʲɪˈzʲerf]</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
+<tr><td>#ры<span style="color:#3f704d">т</span>в<span style="color:#014666">и</span>на#</td><td>[ˈrɨtvʲɪnə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#пьянс<span style="color:#3f704d">т</span>в<span style="color:#014666">о</span>#</td><td>[ˈpʲjanstvə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#розл<span style="color:#3f704d">и</span>в<span style="color:#014666">#</span></td><td>[ˈroz⁽ʲ⁾lʲɪf]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
+<tr><td>#<span style="color:#3f704d">с</span>в<span style="color:#014666">а</span>рка#</td><td>[ˈsvarkə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#<span style="color:#3f704d">я</span>в<span style="color:#014666">к</span>а#</td><td>[ˈjafkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>/f/</td></tr>
 <tr><td></td><td></td><td></td><td></td><td>
 
 </table>
