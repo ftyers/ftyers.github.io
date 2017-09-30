@@ -159,6 +159,125 @@ Jón and María are friends.
 
 How would you get just the Icelandic line and the gloss line ? 
 
+<h4> <tt>scikit learn</tt></h4>
+
+There are many packages for <span title="машинное обучение"><u>machine learning</u></span> in Python, but one popular one is <tt>scikit learn</tt>. It contains a lot of different machine learning algorithms. 
+
+You can install it by using the following command:
+<pre>
+$ sudo apt-get install python3-sklearn
+</pre>
+
+The example we're going to work through here is going to use the <span title="перцептрон"><u>perceptron</u></span>, one of the simplest (and in my opinion most beautiful) machine learning algorithms. The perceptron is like a single neuron, it has one or more inputs, weights, 
+a step function and a single output.
+ 
+The perceptron takes training examples with the following form:
+
+<ul>
+  <li>feature vector of binary (0, 1) numbers, and </li>
+  <li>an output label</li>
+</ul>
+
+and builds up a weight vector where each weight corresponds to a cell in
+the feature vector. 
+
+For example, let's suppose we want to build a classifier to determine 
+the pronunciation of <em>в</em> in Russian, the output label from the classifier
+should be either /f/ or /v/. The feature vector might contain 
+features such as "is the previous letter a vowel?", "is it at the beginning
+of the word?", etc.
+
+Let's suppose we had training data that looked like the following:
+
+<center>
+<table>
+<!--	# -1.isVowel -1.isUnvoiced -1.isVoiced -1.isBoundary 1.isVowel 1.isUnvoiced 1.isVoiced 1.isBoundary-->
+
+  <tr><td><b>Word</b></td><td><b>IPA</b></td><td></td><td colspan="4"><b>Previous character</b></td><td colspan="4"><b>Next character</b></td><td><b>Label</b></td></tr>
+  <tr><td></td>    <td></td>   <td></td>                <td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td><td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td></td>
+  <tr><td>#поговорка#</td><td>[pəɡɐˈvorkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+  <tr><td>#творец#</td><td>[tvɐˈrʲet͡s]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#резерв#</td><td>[rʲɪˈzʲerf]</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
+<tr><td>#рытвина#</td><td>[ˈrɨtvʲɪnə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#пьянство#</td><td>[ˈpʲjanstvə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#розлив#</td><td>[ˈroz⁽ʲ⁾lʲɪf]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
+<tr><td>#сварка#</td><td>[ˈsvarkə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+<tr><td>#явка#</td><td>[ˈjafkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>/f/</td></tr>
+<tr><td></td><td></td><td></td><td></td><td>
+
+</table>
+</center>
+
+We could generate this kind of data fairly easily from the pages on Wiktionary (see the section on "Screenscraping" below).
+
+<pre>
+0	#поговорка#	[pəɡɐˈvorkə]	1,0,0,0,1,0,0,0
+0	#творец#	[tvɐˈrʲet͡s]	0,1,0,0,1,0,0,0
+1	#резерв#	[rʲɪˈzʲerf]	0,0,0,0,0,0,0,1
+0	#рытвина#	[ˈrɨtvʲɪnə]	0,1,0,0,1,0,0,0
+0	#пьянство#	[ˈpʲjanstvə]	0,1,0,0,1,0,0,0
+1	#розлив#	[ˈroz⁽ʲ⁾lʲɪf]	1,0,0,0,0,0,0,1
+0	#сварка#	[ˈsvarkə]	0,1,0,0,1,0,0,0
+1	#явка#	[ˈjafkə]	1,0,0,0,0,1,0,0
+</pre>
+
+Save this data into a file called <tt>pronunciation_training.tsv</tt>, each column separated by a tab character <tt>\t</tt>.
+Now make a new file called <tt>pronunciation.py</tt>:
+
+<pre>
+import sys
+from sklearn.linear_model import perceptron
+
+words = []    # The word, correct label and pronunciation
+data = []     # Training examples, e.g. feature vectors
+labels = []   # Correct labels
+</pre>
+
+Here we import the classifier from the <tt>scikit learn</tt> package and set up some variables.
+
+<pre>
+for line in open('pronunciation_training.py').readlines():
+	row = line.strip().split('\t')
+	for i in row[3].split(','):
+		data.append(int(i))
+	labels.append(int(row[0]))
+	words.append((row[1], row[2], int(row[0])))
+</pre>
+
+This part parses the <tt>pronunciation_training.tsv</tt> file and puts the data into a form 
+that the classifier can understand.
+
+<pre>
+net = perceptron.Perceptron(n_iter=100, verbose=0, random_state=None, fit_intercept=True, eta0=0.002)
+net.fit(data,labels)
+</pre>
+
+To train the classifier we just need to create a new <tt>Perceptron</tt> object and then run
+the training procedure <tt>fit()</tt>
+
+<pre>
+result = net.predict(data)
+</pre>
+
+We can then run the classifier on the training data to see how accurate it is, and print out the 
+accuracy:
+
+<pre>
+total = 0
+correct = 0
+for i in range(0, len(words)):
+	if res[i] == words[i][2]:
+		print('+', res[i], words[i]);
+		correct = correct + 1
+	else:
+		print('-', res[i], words[i]);
+	total = total + 1
+print(correct/total)
+</pre>
+
+An exercise for the reader is to split the data in two randomly and train on one half and test
+on the other half.
+
 <!--<h4> </h4> -->
 
 <h3>Screenscraping</h3>
