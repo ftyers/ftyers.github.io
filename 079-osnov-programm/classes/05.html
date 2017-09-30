@@ -193,10 +193,10 @@ Let's suppose we had training data that looked like the following:
 <table>
 <!--	# -1.isVowel -1.isUnvoiced -1.isVoiced -1.isBoundary 1.isVowel 1.isUnvoiced 1.isVoiced 1.isBoundary-->
 
-  <tr><td>Word</td><td>IPA</td><td></td><td colspan="4">Previous character</td><td colspan="4">Next character</td><td>Label</td></tr>
+  <tr><td><b>Word</b></td><td><b>IPA</b></td><td></td><td colspan="4"><b>Previous character</b></td><td colspan="4"><b>Next character</b></td><td><b>Label</b></td></tr>
   <tr><td></td>    <td></td>   <td></td>                <td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td><td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td></td>
   <tr><td>#поговорка#</td><td>[pəɡɐˈvorkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
-  <tr><td>#творец#</td><td>[tvɐˈrʲet͡s]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+  <tr><td>#творец#</td><td>[tvɐˈrʲet͡s]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
 <tr><td>#резерв#</td><td>[rʲɪˈzʲerf]</td><td></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>/f/</td></tr>
 <tr><td>#рытвина#</td><td>[ˈrɨtvʲɪnə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
 <tr><td>#пьянство#</td><td>[ˈpʲjanstvə]</td><td></td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
@@ -207,6 +207,22 @@ Let's suppose we had training data that looked like the following:
 
 </table>
 </center>
+
+We could generate this kind of data fairly easily from the pages on Wiktionary (see the section on "Screenscraping" below).
+
+<pre>
+0	#поговорка#	[pəɡɐˈvorkə]	1,0,0,0,1,0,0,0
+0	#творец#	[tvɐˈrʲet͡s]	0,1,0,0,1,0,0,0
+1	#резерв#	[rʲɪˈzʲerf]	0,0,0,0,0,0,0,1
+0	#рытвина#	[ˈrɨtvʲɪnə]	0,1,0,0,1,0,0,0
+0	#пьянство#	[ˈpʲjanstvə]	0,1,0,0,1,0,0,0
+1	#розлив#	[ˈroz⁽ʲ⁾lʲɪf]	1,0,0,0,0,0,0,1
+0	#сварка#	[ˈsvarkə]	0,1,0,0,1,0,0,0
+1	#явка#	[ˈjafkə]	1,0,0,0,0,1,0,0
+</pre>
+
+Save this data into a file called <tt>pronunciation_training.tsv</tt>
+
 
 
 <!--<h4> </h4> -->
