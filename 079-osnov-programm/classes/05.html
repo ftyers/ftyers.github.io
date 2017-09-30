@@ -159,6 +159,56 @@ Jón and María are friends.
 
 How would you get just the Icelandic line and the gloss line ? 
 
+<h4> <tt>scikit learn</tt></h4>
+
+There are many packages for <span title="машинное обучение"><u>machine learning</u></span> in Python, but one popular one is <tt>scikit learn</tt>. It contains a lot of different machine learning algorithms. 
+
+You can install it by using the following command:
+<pre>
+$ sudo apt-get install python3-sklearn
+</pre>
+
+The example we're going to work through here is going to use the <span title="перцептрон"><u>perceptron</u></span>, one of the simplest (and in my opinion
+most beautiful) machine learning algorithms. 
+ 
+The perceptron takes training examples with the following form:
+
+<ul>
+  <li>feature vector of binary (0, 1) numbers, and </li>
+  <li>an output label</li>
+</ul>
+
+and builds up a weight vector where each weight corresponds to a cell in
+the feature vector. 
+
+For example, let's suppose we want to build a classifier to determine 
+the pronunciation of <em>в</em> in Russian, the output label from the classifier
+should be either /f/ or /v/. The feature vector might contain 
+features such as "is the previous letter a vowel?", "is it at the beginning
+of the word?", etc.
+
+Let's suppose we had training data that looked like the following:
+
+<table>
+<!--	# -1.isVowel -1.isUnvoiced -1.isVoiced -1.isBoundary 1.isVowel 1.isUnvoiced 1.isVoiced 1.isBoundary-->
+
+  <tr><td>Word</td><td>IPA</td><td></td><td colspan="4">Previous character</td><td colspan="4">Next character</td><td>Label</td></tr>
+  <tr><td></td>    <td></td>   <td></td>                <td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td><td>Vowel</td><td>Unvoiced</td><td>Voiced</td><td>#</td></td>
+  <tr><td>#поговорка#</td><td>[pəɡɐˈvorkə]</td><td></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>/v/</td></tr>
+</table>
+
+<!--
+0	#поговорка#	[pəɡɐˈvorkə]	1,0,0,0,1,0,0,0
+0	#творец#	[tvɐˈrʲet͡s]	0,1,0,0,1,0,0,0
+1	#резерв#	[rʲɪˈzʲerf]	0,0,0,0,0,0,0,1
+0	#рытвина#	[ˈrɨtvʲɪnə]	0,1,0,0,1,0,0,0
+0	#пьянство#	[ˈpʲjanstvə]	0,1,0,0,1,0,0,0
+1	#розлив#	[ˈroz⁽ʲ⁾lʲɪf]	1,0,0,0,0,0,0,1
+0	#сварка#	[ˈsvarkə]	0,1,0,0,1,0,0,0
+1	#явка#	[ˈjafkə]	1,0,0,0,0,1,0,0
+-->
+
+
 <!--<h4> </h4> -->
 
 <h3>Screenscraping</h3>
