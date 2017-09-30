@@ -243,7 +243,7 @@ labels = []   # Correct labels
 Here we import the classifier from the <tt>scikit learn</tt> package and set up some variables.
 
 <pre>
-for line in open('pronunciation_training.tsv').readlines():
+for line in open('pronunciation_data.tsv').readlines():
 	row = line.strip().split('\t')
         vec = []
         for i in row[3].split(','):
@@ -253,7 +253,7 @@ for line in open('pronunciation_training.tsv').readlines():
 	words.append((row[1], row[2], int(row[0])))
 </pre>
 
-This part parses the <tt>pronunciation_training.tsv</tt> file and puts the data into a form 
+This part parses the <tt>pronunciation_data.tsv</tt> file and puts the data into a form 
 that the classifier can understand.
 
 <pre>
