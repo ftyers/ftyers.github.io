@@ -221,7 +221,14 @@ We could generate this kind of data fairly easily from the pages on Wiktionary (
 1	#явка#	[ˈjafkə]	1,0,0,0,0,1,0,0
 </pre>
 
-Save this data into a file called <tt>pronunciation_training.tsv</tt>, each column separated by a tab character <tt>\t</tt>.
+There is a full set of training data (based on the Russian words with <em>в</em> in them in the SynTagRus corpus) 
+available for download <a href="http://xixona.dlsi.ua.es/~fran/pronunciation_data.tsv">here</a>. Download
+it using <tt>wget</tt>:
+
+<pre>
+$ wget "http://xixona.dlsi.ua.es/~fran/pronunciation_data.tsv"
+</pre>
+
 Now make a new file called <tt>pronunciation.py</tt>:
 
 <pre>
