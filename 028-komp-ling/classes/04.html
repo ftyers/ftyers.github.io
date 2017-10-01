@@ -11,7 +11,15 @@
 
 <h3>Practical</h3>
 
-<h4> Irony detection </h4>
+<h4>Task 1: Affect in Tweets </h4> [<a href="https://competitions.codalab.org/competitions/17333">Task page</a>]
+
+There is a baseline system, which you can find <a href="https://competitions.codalab.org/competitions/17333#learn_the_details-resources">here</a>
+
+<h4>Task 2: Multilingual Emoji Prediction</h4> [<a href="https://competitions.codalab.org/competitions/17344">Task page</a>]
+
+No baseline system, build your own! :)
+
+<h4>Task 3 Irony detection in English tweets </h4> [<a href="https://competitions.codalab.org/competitions/17468">Task page</a>]
 
 The baseline is very simple to run and just relies on TF/IDF and SVM:
 
@@ -32,7 +40,45 @@ Possibilities for extending it:
   <li>Try some optimisation strategy</li>
 </ul>
 
-<h4> Other tasks </h4>
+<h4>Task 4: Character Identification on Multiparty Dialogues</h4> [<a href="https://competitions.codalab.org/competitions/17310">Task page</a>]
+
+No baseline system, build your own! :)
+
+<h4>Task 5: Counting Events and Participants within Highly Ambiguous Data covering a very long tail</h4> [<a href="https://competitions.codalab.org/competitions/17285">Task page</a>]
+
+No baseline system [yet], build your own! :)
+
+<h4>Task 9: Hypernym Discovery</h4> [<a href="https://competitions.codalab.org/competitions/17119">Task page</a>]
+
+No baseline system, build your own! :)
+
+<h4>Task 10: Capturing Discriminative Attributes</h4> [<a href="https://competitions.codalab.org/competitions/17326">Task page</a>]
+
+No baseline system, build your own! :)
+
+<h4>Task 11: Machine Comprehension using Commonsense Knowledge</h4> [<a href="https://competitions.codalab.org/competitions/17184">Task page</a>]
+
+No baseline system, build your own! :)
+
+<h4>Task 12: Argument Reasoning Comprehension Task</h4> [<a href="https://competitions.codalab.org/competitions/17327">Task page</a>]
+
+A baseline system is available:
+
+<pre>
+$ git clone https://github.com/habernal/semeval2018-task12
+
+$ cd baseline-system
+
+$ mvn package 
+
+$ wget https://raw.githubusercontent.com/UKPLab/argument-reasoning-comprehension-task/master/mturk/annotation-task/data/exported-SemEval2018-train-dev-test/train-full.txt
+
+$ wget https://raw.githubusercontent.com/UKPLab/argument-reasoning-comprehension-task/master/mturk/annotation-task/data/exported-SemEval2018-train-dev-test/dev-only-data.txt
+
+$ java -jar target/baseline-system-1.0-SNAPSHOT.jar train-full.txt dev-only-data.txt /tmp/pred.txt
+</pre>
+
+The results will be in <tt>/tmp/pred.txt</tt>.
 
 </div>
 </body>
