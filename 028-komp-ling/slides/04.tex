@@ -57,6 +57,9 @@
 What is SemEval ?
 \begin{itemize}
   \item International competition for semantic analysis systems
+  \item 20-years old
+  \item Started because evaluating semantics was hard and systems
+     weren't really comparable
 \end{itemize}
 
 
@@ -66,19 +69,23 @@ What is SemEval ?
 
 \begin{frame}{History}
 
-\begin{tabular}{lrl}
-Senseval-1  & 	1998    & Sussex   \\
-Senseval-2  & 	2001    & Toulouse   \\
-Senseval-3  & 	2004    & Barcelona   \\
-SemEval-2007  & 	2007    & Prague   \\
-SemEval-2010  & 	2010    & Uppsala   \\
-SemEval-2012  & 	2012    & Montreal   \\
-SemEval-2013  & 	2013    & Atlanta   \\
-SemEval-2014  & 	2014    & Dublin   \\
-SemEval-2015  & 	2015    & Denver   \\
-SemEval-2016  & 	2016    & San Diego   \\
-SemEval-2017  & 	2017    & Vancouver   \\
-SemEval-2018  & 	2018    & TBA   \\
+\begin{tabular}{lrlr}
+           &   \textbf{Year}            & \textbf{Location} & \textbf{Tasks} \\
+\hline
+Senseval-1  & 	1998    & Sussex  & -- \\
+Senseval-2  & 	2001    & Toulouse  & -- \\
+Senseval-3  & 	2004    & Barcelona  & -- \\
+\hline
+SemEval-2007  & 	2007    & Prague & 19  \\
+SemEval-2010  & 	2010    & Uppsala & 18  \\
+SemEval-2012  & 	2012    & Montreal & 8  \\
+SemEval-2013  & 	2013    & Atlanta & 14 \\
+SemEval-2014  & 	2014    & Dublin & 10 \\
+SemEval-2015  & 	2015    & Denver  & 18 \\
+SemEval-2016  & 	2016    & San Diego & 14  \\
+SemEval-2017  & 	2017    & Vancouver  & 12 \\
+SemEval-2018  & 	2018    & TBA  & 12 \\
+\hline
 \end{tabular}
 
 \end{frame}
@@ -135,7 +142,10 @@ Why participate in a shared task ?
 
 \begin{itemize}
   \item Great learning experience
-  \item All participants get to send a system description paper
+  \item All participants get to send a system description paper 
+  \begin{itemize}
+    \item Co-located with a high-level conference (NAACL, ACL, COLING, \ldots)
+  \end{itemize}
   \item Looks good on CV --- both ``participated'' and ``was best in $x$''
   \begin{itemize}
     \item Especially if you're planning on applying for PhD positions
@@ -162,7 +172,7 @@ What next ?
 % http://www.saifmohammad.com/WebDocs/AIT-2018/AIT.pdf
 % Background and Significance: Existing emotion and sentiment datasets are mainly annotated categorically without an indication of degree of emotion. Further, the tasks are almost always framed as classification tasks (identify 1 among n affect categories for this sentence). In contrast, it is often useful for applications to know the degree to which an affect category is expressed in text. In this task systems have to automatically determine the intensity of affect in tweets.
 
-Previous datasets / tasks have focussed on simple binary classification of emotion
+Previous datasets / tasks have focussed on simple binary classification of emotion.
 This task looks at how much of each emotion is felt.
 
 For example, given a tweet:
@@ -187,6 +197,24 @@ For example, given a tweet:
 \end{columns}
 %
 \textbf{Languages:} English, Arabic, Spanish
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data}
+
+Tweet ID, Tweet text, emotion, intensity
+
+{\small
+\begin{verbatim}
+11615   I'm much to full of resentment      anger      0.688
+11570   Blood is boiling      anger      0.729
+11571   why aggravate me on purpose?      anger      0.604
+11572   @DonnyMurray I'm just no offended by stuff.      anger      0.479
+11574   @Matt_Lat fuming ain't the word      anger      0.646
+...
+\end{verbatim}
+}
 
 \end{frame}
 
@@ -234,6 +262,37 @@ $\rightarrow$
 
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Data}
+
+\emph{Only available after registering}
+
+\url{https://github.com/fvancesco/Semeval2018-Task2-Emoji-Detection/}
+
+{\small
+\textbf{Training data:}
+\begin{verbatim}
+0    A little throwback with my favourite person @ Water Wall
+2    Who never... @ A Galaxy Far Far Away
+9    Birthday Kisses @ Madison, Wisconsin
+\end{verbatim}
+}
+
+\textbf{Labels:}
+{\small
+\begin{verbatim}
+0      ❤      _red_heart_      
+1      😍      _smiling_face_with_hearteyes_      
+2      😂      _face_with_tears_of_joy_      
+...
+9      😘      _face_blowing_a_kiss_      
+...
+\end{verbatim}
+}
+
+
+\end{frame}
+
 %\begin{frame}{Possible approaches}
 
 
@@ -248,14 +307,47 @@ Two tasks:
   \item Binary classification ironic/not ironic
   \item Four-way classification: 
   \begin{itemize}
-     \item Polarity contrast: {\tt I love waking up with migraines \#not :'(}
-     \item Situational: {\tt Event technology session is having Internet problems. \#irony}
-     \item Other: {\tt @someuser Yeah keeping cricket clean, that's what he wants \#Sarcasm}
-     \item Non-ironic: {\tt \ldots And it's payday. THIS IS A GOOD FRIDAY}
+     \item[0)] Non-ironic: {\tt \ldots And it's payday. THIS IS A GOOD FRIDAY}
+     \item[1)] Polarity contrast: {\tt I love waking up with migraines \#not :'(}
+     \item[2)] Situational: {\tt Event technology session is having Internet problems. \#irony}
+     \item[3)] Other: {\tt @someuser Yeah keeping cricket clean, that's what he wants \#Sarcasm}
   \end{itemize}
 \end{itemize}
 
 \textbf{Languages}: English
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Data}
+
+\textbf{Task A:} (Binary)
+
+{\small
+\begin{verbatim}
+1907    0       It's  #cute to be awake right now
+2415    1       Wishing my relationship was that real 
+1454    1       Good thing y days not ruined.... 
+2493    0       Not this room please I don't want this
+2725    0       @ajb_16 shouldn't you's be in school??
+1294    0       I'm so ready to get drunk tonight
+2480    1       Dead supportive family I've got. 
+\end{verbatim}
+}
+
+\textbf{Task B:} (4-way)
+{\small
+\begin{verbatim}
+1907    0       It's  #cute to be awake right now
+2993    2      Spilled milk onto my boob. Oh the .
+3527    2      I cant even watch anime in japan... 
+3504    3      On a small diet  http://t.co/UsLZOgYmEx
+2198    3      @torrentfreak We should monitor them... 
+2480    1       Dead supportive family I've got. 
+\end{verbatim}
+}
+
+
 
 \end{frame}
 
@@ -300,6 +392,7 @@ Two tasks:
 %\end{frame}
 
 \begin{frame}{Task 5: Counting events and participants in the long tail}
+% The data (texts and answers) are prepared in such a way that the task deliberately exhibits large ambiguity and variation, as well as coverage of long tail phenomena by including a substantial amount of low-frequent, local events and entities.
 
 Given a question, find news articles that correspond to the question.
 
@@ -316,6 +409,12 @@ Difficulty:
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Data}
+
+\emph{Only available after registering}
+
+\end{frame}
 
 %\begin{frame}{Possible approaches}
 
@@ -373,6 +472,30 @@ Difficulty:
 
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Data}
+
+\textbf{Input:}
+{\small
+\begin{verbatim}
+pollution        Concept
+\end{verbatim}
+}
+
+\textbf{Output:}
+{\small
+\begin{verbatim}
+dirtiness
+dirtying
+environmental condition
+impurity
+sanitary condition
+uncleanness
+\end{verbatim}
+}
+
+\end{frame}
+
 %\begin{frame}{Possible approaches}
 
 
@@ -416,6 +539,14 @@ The task:
 \textbf{Languages}: English
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Data}
+
+\emph{Only available after registering}
+
+\end{frame}
+
 
 %\begin{frame}{Possible approaches}
 
@@ -461,6 +592,15 @@ The task:
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Data}
+
+\emph{Only available after registering}
+
+\end{frame}
+
+
+
 %\begin{frame}{Possible approaches}
 
 
@@ -494,6 +634,30 @@ Given an argument, with a reason and a claim, the goal is to choose the correct 
 
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Data}
+
+\url{https://github.com/habernal/semeval2018-task12}
+
+% warrant0|||	warrant1	correctLabelW0orW1	reason	claim	debateTitle	debateInfo
+%Australians are nothing like Americans	||| Australians are like Americans|||	1|||	It works for Australia.	Voting should be mandatory|||	Should Voting Be Mandatory?|||	Or are there already too many people casting ballots?
+
+\textbf{TSV file}:
+
+{\small
+\begin{verbatim}
+warrant0        Australians are nothing like Americans
+warrant1        Australians are like Americans
+correctLabel    1
+reason          It works for Australia. 
+claim           Voting should be mandatory
+debateTitle     Should Voting Be Mandatory?
+debateInfo      Or are there already too many people casting ballots?
+\end{verbatim}
+}
+
+\end{frame}
+
 %\begin{frame}{Possible approaches}
 
 
@@ -524,42 +688,6 @@ Given an argument, with a reason and a claim, the goal is to choose the correct 
   \item Run the evaluation script on the baseline
   \item Think of ways to improve the baseline
 \end{itemize}
-
-\end{frame}
-
-\begin{frame}{Surface realisation}
-
-Given an unordered dependency tree of (lemma, tag) pairs, predict
-the surface form and linear order of the final sentence.
-
-\begin{dependency}
-      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
-%            1           2          3          4         5        6           7    8
-           бионика \& рассуждать \& именно \& образ \& такой \& специалист \& . \& по  \\
-%           Специалисты \& по \& бионике \& рассуждают \& именно \& таким \& образом \& . \\
-        \end{deptext}
-        \depedge{1}{8}{case}
-        \depedge{2}{7}{punct}
-        \depedge{2}{6}{nsubj}
-        \depedge{4}{5}{amod}
-        \depedge{5}{3}{advmod}
-        \depedge{6}{1}{nmod}
-\end{dependency}
-
-\begin{dependency}
-      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
-	   Специалисты \& по \& бионике \& рассуждают \& именно \& таким \& образом \& . \\
-            1   \& 2 \& 3 \& 4 \& 5 \& 6 \& 7 \& 8 \\
-        \end{deptext}
-        \depedge{4}{1}{nsubj}
-        \depedge{3}{2}{case}
-        \depedge{1}{3}{nmod}
-        \depedge{6}{5}{nsubj}
-        \depedge{4}{7}{obl}
-        \depedge{4}{8}{punct}
-        \depedge{7}{6}{amod}
-\end{dependency}
-
 
 \end{frame}
 
