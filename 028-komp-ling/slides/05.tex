@@ -5,6 +5,7 @@
 
 \usepackage{tikz-dependency}
 \usepackage{caption}
+\usepackage{polyglossia}
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{alltt}
@@ -17,6 +18,8 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 % commands from the paper
+%\setmainfont[Scale=1.0]{Fira Sans Light}
+
 \newfontfamily\gtfont[Scale=1.1,Letters=SmallCaps]{Linux Libertine O}
 \newcommand{\udtag}[1]{{\ll \textsc{#1}}}
 \newcommand{\gtlabel}[1]{{\gtfont #1}}
@@ -49,55 +52,156 @@
 
 \maketitle
 
+\begin{frame}{Information extraction}
 
-\begin{frame}{Introduction}
+
+\end{frame}
+
+
+\begin{frame}{Named-entity recognition}
 
 
 \end{frame}
 
-%% Problem
+\begin{frame}{Named-entity types}
 
-\begin{frame}
-
-\end{frame}
-
-%% Approaches 
-
-\begin{frame}{Gazeteers}
 
 \end{frame}
 
-\begin{frame}{Lists}
+\begin{frame}{Ambiguity}
 
 \end{frame}
 
-\begin{frame}{Rule-based systems}
-%% https://aclweb.org/anthology/D/D13/D13-1079.pdf
-\end{frame}
-
-\begin{frame}{BIO tagging}
-
-\end{frame}
 
 \begin{frame}{Sequence labelling}
 
-\end{frame}
-
-\begin{frame}{Practical approaches}
 
 \end{frame}
 
-%% Evaluation 
+\begin{frame}{Example}
 
-%% Shared tasks
-%%% MUC
-%%% CoNLL 2003
-%%% https://github.com/dialogue-evaluation/factRuEval-2016
-
-%% Practical
+\end{frame}
 
 
-%%% Make a NER corpus for a language using Wikipedia ?
+\begin{frame}{Typical features}
+
+\end{frame}
+
+
+\begin{frame}{Gazetteers}
+
+
+\end{frame}
+
+\begin{frame}{Domains}
+
+
+\end{frame}
+
+
+\begin{frame}{Evaluation}
+
+
+\end{frame}
+
+\begin{frame}{Producing training data}
+
+
+\end{frame}
+
+\begin{frame}{Manually annotated}
+
+
+\end{frame}
+
+\begin{frame}{Wikipedia/1}
+% also manually annotated, kindof
+
+
+\end{frame}
+
+\begin{frame}{Wikipedia/2}
+
+% Члены организации «[[Ирландские добровольцы]]», которых возглавил учитель и поэт [[Пирс, Патрик|Патрик Пирс]], объединившись с [[Ирландская гражданская армия|Ирландской Гражданской Армией]] [[Коннолли, Джеймс|Джеймса Коннолли]] и двумястами членами организации [[Совет ирландских женщин|Cumann na mBan]], захватили несколько ключевых мест в [[Дублин]]е и провозгласили независимость Ирландской Республики. 
+
+\end{frame}
+
+\begin{frame}{Wikipedia/3}
+ % Cats
+
+
+\end{frame}
+
+\begin{frame}{Wikipedia/4}
+
+% Ирландские добровольцы
+% Пирс, Патрик
+% Ирландская гражданская армия
+% Коннолли, Джеймс
+% Совет ирландских женщин
+% Дублин
+
+\end{frame}
+
+\begin{frame}{Wikipedia/5}
+
+% Члены организации «[ORG Ирландские добровольцы]», которых возглавил учитель и поэт [PER Патрик Пирс], объединившись с [ORG Ирландской Гражданской Армией] [PER Джеймса Коннолли] и двумястами членами организации Cumann na mBan, захватили несколько ключевых мест в [LOC Дублине] и провозгласили независимость Ирландской Республики. 
+
+\end{frame}
+
+\begin{frame}{Wikipedia/6}
+
+\begin{itemize}
+  \item Nothman, J. (2008) ``Transforming Wikipedia into Named Entity Training Data''. \emph{Proceedings of the Australasian Language Technology Association Workshop}
+  \item Hahm, Y. et al. (2014) ``Named Entity Corpus Construction using Wikipedia and DBpedia Ontology''. \emph{LREC 2014}
+  \item Сысоев, А. А. and Андрианов, И. А. (2016) ``Named entity recognition in Russian: The power of a Wiki-based approach''. \emph{Proceedings of the International Conference “Dialogue 2016”}
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}[standout]
+Shared tasks
+\end{frame}
+
+\begin{frame}{CoNLL 2003}
+
+
+\end{frame}
+
+\begin{frame}{FactRuEval 2016}
+
+
+\end{frame}
+
+\begin{frame}{First track}
+
+\end{frame}
+
+
+\begin{frame}{Layered annotation model}
+
+
+\end{frame}
+
+\begin{frame}{Data}
+
+\end{frame}
+
+\begin{frame}{Participants}
+
+\end{frame}
+
+\begin{frame}{Results}
+
+\end{frame}
+
+\begin{frame}[standout]
+Practical
+\end{frame}
+
+
 
 
 \end{document}
