@@ -65,36 +65,195 @@
 
 \begin{frame}{Named-entity types}
 
+\begin{onlyenv}<1>
+\begin{tabular}{llll}
+  \textbf{Type} & \textbf{Tag} & \textbf{Categories} & \\
+  People & {\sc per} & people, characters & \\
+  Organisation & {\sc org} & companies, teams & \\
+  Location & {\sc loc} & regions, mountains, seas & \\
+  Geo.pol. entity & {\sc gpe} & countries, states, provinces & \\
+  Facility & {\sc fac} & bridges, airports, buildings & \\
+  Vehicles & {\sc veh} & planes, trains, cars & \\
+\end{tabular}
+\end{onlyenv}
+\begin{onlyenv}<2->
+\begin{tabular}{rl}
+  \textbf{Tag} & \textbf{Example} \\
+  {\sc per} & В возрасте 16 лет, \alert<3>{Тьюринг} ознакомился с работой \alert<3>{Эйнштейна}. \\
+  {\sc org} & Бюджет \alert<3>{ЮНЕСКО} утверждается каждые два года. \\
+  {\sc loc} &  \\
+  {\sc gpe} &  \\
+  {\sc fac} &  \\
+  {\sc veh} &  \\
+\end{tabular}
+\end{onlyenv}
 
 \end{frame}
 
-\begin{frame}{Ambiguity}
+\begin{frame}{Ambiguity/1}
+
+\begin{center}
+\includegraphics[width=0.65\textwidth]{graphics/kirov-all.jpg}
+\end{center}
+
+5 декабря 1934 года в память о [{\sc per} С. М. Кирове] президиум [{\sc org} ВЦИК] принял постановление о переименовании города [{\sc loc} Вятки] в город [{\sc loc} Киров] и образовании [{\sc loc} Кировского края], с центром в городе [{\sc loc} Кирове].
 
 \end{frame}
+
+\begin{frame}{Ambiguity/2}
+
+\begin{itemize}
+\item 5 декабря 1934 года в память о [{\sc per} С. М. Кирове] президиум [{\sc org} ВЦИК] принял постановление о переименовании города [{\sc loc} Вятки] в город [{\sc loc} Киров] и образовании [{\sc loc} Кировского края], с центром в городе [{\sc loc} Кирове].
+~\\
+~\\
+\item 5 декабря 1934 года в память о [{\sc per} С. М. Кирове] [{\sc org} \alert<2>{президиум} ВЦИК] принял постановление о переименовании [{\sc loc} \alert<2>{города} Вятки] в [{\sc loc} \alert<2>{город} Киров] и образовании [{\sc loc} Кировского края], с центром в [{\sc loc} \alert<2>{городе} Кирове].
+\end{itemize}
+
+\end{frame}
+
 
 
 \begin{frame}{Sequence labelling}
 
+~\\
+
+\begin{columns}
+\begin{column}{0.48\textwidth}
+Typical classifiers:
+\begin{itemize}
+\item CRF
+\item MEMM
+\end{itemize}
+
+Each token gets a label:
+\begin{itemize}
+\item [{\tt B}] Begin NE
+\item [{\tt I}] Inside NE
+\item [{\tt O}] Outside NE
+\end{itemize}
+\end{column}
+\begin{column}{0.48\textwidth}
+{\small 
+\begin{tabular}{lll}
+\textbf{Word} & \textbf{BIO label} \\
+\hline
+Доклад & {\tt O} \\
+директора & {\tt O} \\
+федерального & {\tt O} \\
+Института & {\tt B-ORG} \\
+национальных & {\tt I-ORG} \\
+школ & {\tt I-ORG} \\
+Светланы & {\tt B-PER} \\
+Семёновой & {\tt I-PER} \\
+был & {\tt O} \\
+посвящён & {\tt O} \\
+изучению & {\tt O} \\
+якутского & {\tt O} \\
+языка & {\tt O} \\
+на & {\tt O} \\
+современном & {\tt O} \\
+этапе & {\tt O} \\
+. & {\tt O} \\
+\end{tabular}
+}
+\end{column}
+
+\end{columns}
+\end{frame}
+
+%\begin{frame}{Example}
+
+%\end{frame}
+
+
+\begin{frame}{Typical features/1}
+
+\begin{tabular}{ll}
+identity of $w_i$  &  \\
+identity of neighbouring words  &  \\
+part of speech of $w_i$  &  \\
+part of speech of neighbouring words  &  \\
+presence of $w_i$ in a gazetteer &  \\
+$w_i$ is all uppercase &  \\
+prefix of $w_i$ for length $\le 4$ &  \\
+suffix of $w_i$ for length $\le 4$ &  \\
+word shape of $w_i$ &  \\
+word shape of neighbouring words &  \\
+short word shape of $w_i$ \\
+short word shape of neighbouring words &  \\
+presence of hyphen &  \\
+
+\end{tabular}
 
 \end{frame}
 
-\begin{frame}{Example}
+\begin{frame}{Typical features/1}
+
+\begin{tabular}{ll}
+\textbf{Feature} & \textbf{Value} \\ 
+identity of $w_i$  & Роскомнадзор \\
+$w_i$ is all uppercase & False \\
+prefix of $w_i$ & Р \\
+prefix of $w_i$ & Ро \\
+prefix of $w_i$ & Рос \\
+prefix of $w_i$ & Роск \\
+suffix of $w_i$ & дзор \\
+suffix of $w_i$ & зор \\
+suffix of $w_i$ & ор \\
+suffix of $w_i$ & р \\
+word shape of $w_i$ & Xxxxxxxxxxxx \\
+short word shape of $w_i$ & Xx \\
+presence of hyphen & False  \\
+
+\end{tabular}
 
 \end{frame}
 
+\begin{frame}{Gazetteers (рус. Географический справочник)}
 
-\begin{frame}{Typical features}
+What are gazetteers?
+\begin{itemize}
+  \item List of place names 
+  \item Can include millions of entries
+  \item Also other information (population size, etc.)
+\end{itemize}
 
-\end{frame}
+Similarly, lists can be found of:
+\begin{itemize}
+  \item Person names (e.g. ФИО)
+  \item Corporations
+  \item Product names
+\end{itemize}
 
+Usefulness varies depending on the class of named entity.
 
-\begin{frame}{Gazetteers}
+% A gazetteer is a list of place names, and they can offer millions of entries for gazetteer
+% all  manner  of  locations  along  with  detailed  geographical,  geologic,  and  political
+% information. In addition to gazeteers, the United States Census Bureau provides
+% extensive lists of first names and surnames derived from its decadal census in the U.S.
+% Similar lists of corporations, commercial products, and all manner of things
+% biological and mineral are also available from a variety of sources. Gazeteer features
+% are typically implemented as a binary feature for each name list. Unfortunately, such
+% lists can be difficult to create and maintain, and their usefulness varies considerably
+% depending on the named entity class.  It appears that gazetteers can be quite effec-
+% tive, while extensive lists of persons and organizations are not nearly as beneficial
+% (Mikheev et al., 1999)
+
 
 
 \end{frame}
 
 \begin{frame}{Domains}
 
+\begin{center}
+  \includegraphics[width=\textwidth]{graphics/kfe-mak.png}
+\end{center}
+
+\begin{itemize}
+  \item Effectiveness of features can vary by domain
+  \item Features good for newswire text might not work for social media
+  
+\end{itemize}
 
 \end{frame}
 
