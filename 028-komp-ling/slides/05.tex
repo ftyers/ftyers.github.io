@@ -301,11 +301,11 @@ Usefulness varies depending on the class of named entity.
 %sponses to the total that should have been labeled; precision is the ratio of the num-
 %ber of correctly labeled responses to the total labeled; and F -measure is the harmonic mean
 
-Standard evaluation:
+\textbf{Standard evaluation:}
 \begin{itemize}
-  \item Precision 
-  \item Recall 
-  \item $F_1$
+  \item Precision: ratio of the number of correctly labelled responses to the total labelled;
+  \item Recall:  ratio of the number of correctly labelled responses to the total that should have been labelled
+  \item $F_1$: harmonic mean of precision and recall
 \end{itemize}
 
 % The fact that named entity tagging has a segmentation component which is not
@@ -316,12 +316,19 @@ Standard evaluation:
 % the unit of training means that there is a mismatch between the training and test
 % conditions.
 
-% @@@ TODO @@@
+Note that the unit of response is the \textbf{entity} not the \textbf{token}.
 
+\begin{itemize}
+  \item[REF]: Доклад директора федерального \alert<2>{[ORG Института национальных школ] [PER Светланы Семёновой]} был посвящён изучению якутского языка на современном этапе .
+  \item[TST]: Доклад директора федерального \alert<2>{[ORG Института национальных школ] [PER Светланы]} Семёновой был посвящён изучению якутского языка на современном этапе .
+\end{itemize}
+
+1/2 correct, not 4/5.
 
 \end{frame}
 
-\begin{frame}{Producing training data}
+\begin{frame}[standout]
+Producing training data
 
 
 
@@ -333,6 +340,12 @@ Standard evaluation:
   \includegraphics[width=0.9\textwidth]{graphics/factru-anno.png}
 %  \includegraphics[width=0.9\textwidth]{graphics/esp.train-doc-536-small.png}
 \end{center}
+
+\begin{itemize}
+  \item Human annotators annotate spans with types
+  \item Inter-annotator agreement $>70\%$ (crowd), $>90\%$ (expert)
+  \item Often combined with other annotation (e.g. co-reference) 
+\end{itemize}
 
 \end{frame}
 
