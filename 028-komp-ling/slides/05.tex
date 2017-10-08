@@ -83,7 +83,7 @@
 \end{onlyenv}
 \begin{onlyenv}<2>
 \begin{framed}
-\alert<2>{[PER Саули Вяйнямё Нийнистё]} (24 августа 1948 года, \alert<2>{[LOC Сало, Финляндия]}) — финский 
+\alert<2>{[PER Саули Вяйнямё Нийнистё]} (24 августа 1948 года, \alert<2>{[LOC Сало], [LOC Финляндия]}) — финский 
 государственный деятель, политик, юрист, действующий президент \alert<2>{[LOC Финляндии]} с 1 марта 2012 года. 
 \end{framed}
 \end{onlyenv}
@@ -97,7 +97,6 @@
 \end{frame}
 
 \begin{frame}{Named-entity types}
-
 
 \begin{onlyenv}<1>
 \vspace{60pt}
@@ -317,7 +316,7 @@ Standard evaluation:
 % the unit of training means that there is a mismatch between the training and test
 % conditions.
 
-
+% @@@ TODO @@@
 
 
 \end{frame}
@@ -426,18 +425,25 @@ Shared tasks
 
 \begin{frame}{Data}
 
+\begin{center}
 \url{https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003}
+\end{center}
 
 Form, Tag, Chunk, BIO label
 
 \begin{alltt}
 
-Australia NNP I-NP I-LOC
-will MD I-VP O
-defend VB I-VP O
-the DT I-NP O
-Ashes NNP I-NP I-MISC
-in IN I-PP O
+Australia NNP I-NP I-LOC  \\ 
+will MD I-VP O \\ 
+defend VB I-VP O \\ 
+the DT I-NP O \\ 
+Ashes NNP I-NP I-MISC \\ 
+against IN I-PP O \\
+England NNP I-NP I-LOC \\
+during IN I-PP O \\ 
+a DT I-NP O \\ 
+four-month JJ I-NP O \\ 
+tour NN I-NP O \\ 
 
 \end{alltt}
 
@@ -445,10 +451,17 @@ in IN I-PP O
 
 \begin{frame}{FactRuEval 2016}
 
+\begin{itemize}
+  \item Three tracks: Two for named entities and one for fact extraction
+  \item First track (named entities) most popular
+  \item Anonymous
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}{First track}
+
+Classic named-entity recognition for Russian.
 
 \end{frame}
 
