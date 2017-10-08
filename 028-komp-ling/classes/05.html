@@ -11,7 +11,7 @@
 
 <h3>Practical</h3>
 
-<h4>Install <tt>natasha</tt></h4>
+<h4>Install <tt>natasha</tt> and run it on the <tt>factRuEval</tt> data</h4>
 
 Natasha (<a href="https://github.com/natasha/natasha">GitHub</a>) is a rule-based named entity extraction toolkit for 
 Russian. You can find some excellent documentation on how to install it <a href="http://natasha.readthedocs.io/ru/latest/#id1">here</a>.
@@ -66,6 +66,12 @@ for p in doc.findall('.//mediawiki:page', ns):
 	if pars != []:
 		print(t + '\t' + '/'.join(pars) + '\t' + '/'.join(incat));
 </pre>
+
+After this you will need to find a way of annotating the spans in the text with these types. Some notes:
+
+<ul>
+  <li>Skip ambiguities, e.g. if something can be PER/LOC then leave it.</li>
+</ul>
 
 </div>
 </body>
