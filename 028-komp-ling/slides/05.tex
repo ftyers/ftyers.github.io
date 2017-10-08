@@ -7,6 +7,7 @@
 \usepackage{caption}
 \usepackage{polyglossia}
 \usepackage{booktabs}
+\usepackage{listings}
 \usepackage{tabularx}
 \usepackage{alltt}
 \usepackage{framed}
@@ -508,15 +509,90 @@ Tokenised text $\rightarrow$ Spans $\rightarrow$ Named entities $\rightarrow$ \l
 \begin{itemize}
   \item[.txt] The raw text in paragraph form
   \item[.tokens] Space separated columns indicating the beginning/end of tokens as character indices
-  \item[.spans] Space separated columns indicating the 
-  \item[.objects]
+  \item[.spans] Space separated columns indicating the low-level entities
+  \item[.objects] Space separated columns indicating the named entities
 \end{itemize}
 
 \end{frame}
 
 \begin{frame}{Data}
 
+\begin{onlyenv}<1>
+\begin{center}
+\texttt{.txt}
+\end{center}
+%\lstset{breaklines=true} 
+{\small 
+\begin{alltt}
+В понедельник 28 июня у здания мэрии Москвы на Тверской площади состоялась очередная несанкционированная акция протеста «День гнева», в этот раз \\
+направленная, главным образом, против политики московских и подмосковных властей. Среди требований, выдвигаемых организаторами акции: «немедленная отставка мэра Москвы Юрия Лужкова, расследование итогов его деятельности», «созыв московского общественного форума для обсуждения путей реформирования основных сфер жизнедеятельности в Москве», «восстановление прямых выборов глав регионов России», «роспуск нелегитимной Мосгордумы», отставка \\
+подмосковного губернатора Бориса Громова и др. Участникам акции предлагалось принести с собой лист бумаги или кусок ткани чёрного цвета, \ldots
+\end{alltt}
+}
+
+\end{onlyenv}
+\begin{onlyenv}<2>
+\begin{center}
+\texttt{.tokens}
+\end{center}
+{\small 
+\begin{alltt}
+143783 0 1 В \\
+143784 2 11 понедельник \\
+143785 14 2 28 \\
+143786 17 4 июня \\
+143787 22 1 у \\
+143788 24 6 здания \\
+143789 31 5 мэрии \\
+143790 37 6 Москвы \\
+143791 44 2 на \\
+143792 47 8 Тверской \\
+\end{alltt}
+}
+\end{onlyenv}
+\begin{onlyenv}<3>
+\begin{center}
+\texttt{.spans}
+\end{center}
+{\small 
+\begin{alltt}
+22763 loc\_name 37 6 143790 1  \# 143790 Москвы \\
+22764 org\_descr 31 5 143789 1  \# 143789 мэрии \\
+22765 loc\_name 47 8 143792 1  \# 143792 Тверской \\
+22766 loc\_descr 56 7 143793 1  \# 143793 площади \\
+22767 name 313 4 143831 1  \# 143831 Юрия \\
+22768 surname 318 7 143832 1  \# 143832 Лужкова \\
+22769 loc\_name 306 6 143830 1  \# 143830 Москвы \\
+22770 loc\_name 477 6 143853 1  \# 143853 Москве \\
+22771 loc\_name 531 6 143862 1  \# 143862 России \\
+22772 org\_name 562 10 143868 1  \# 143868 Мосгордумы \\
+\end{alltt}
+}
+\end{onlyenv}
+\begin{onlyenv}<4>
+\begin{center}
+\texttt{.objects}
+\end{center}
+{\small 
+\begin{alltt}
+10433 Org 22763 22764 \# Москвы мэрии \\
+10547 LocOrg 22763 \# Москвы \\
+10434 Location 22765 22766 \# Тверской площади \\
+10435 Person 22767 22768 \# Юрия Лужкова \\
+10436 LocOrg 22769 \# Москвы \\
+10437 Location 22770 \# Москве \\
+10438 LocOrg 22771 \# России \\
+10439 Org 22772 \# Мосгордумы \\
+10440 Person 22773 22774 \# Бориса Громова \\
+10441 Person 22775 22776 \# Юрия Лужкова \\
+\end{alltt}
+}
+\end{onlyenv}
+
+
+
 \end{frame}
+
 
 \begin{frame}{Participants}
 
