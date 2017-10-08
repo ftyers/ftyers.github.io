@@ -464,11 +464,23 @@ tour NN I-NP O \\
 
 \begin{frame}{FactRuEval 2016}
 
+Overview:
 \begin{itemize}
   \item Three tracks: Two for named entities and one for fact extraction
   \item First track (named entities) most popular
-  \item Anonymous
+  \item Anonymous submission
 \end{itemize}
+
+Corpus collected from:
+\begin{itemize}
+  \item Private Correspondent (\url{http://www.chaskor.ru/})
+  \item Wikinews (\url{https://ru.wikinews.org})
+\end{itemize}
+
+Final report:
+\begin{center}
+\url{http://www.dialog-21.ru/media/3430/starostinaetal.pdf}
+\end{center}
 
 \end{frame}
 
@@ -486,9 +498,19 @@ Classic named-entity recognition for Russian.
 
 \end{frame}
 
-
 \begin{frame}{Layered annotation model}
 
+\begin{center}
+Tokenised text $\rightarrow$ Spans $\rightarrow$ Named entities $\rightarrow$ \ldots
+\end{center}
+
+\textbf{Files:}
+\begin{itemize}
+  \item[.txt]
+  \item[.spans]
+  \item[.tokens]
+  \item[.objects]
+\end{itemize}
 
 \end{frame}
 
