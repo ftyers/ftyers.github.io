@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{alltt}
+\usepackage{framed}
 \usepackage[scale=2]{ccicons}
 
 \usepackage{pgfplots}
@@ -54,37 +55,74 @@
 
 \begin{frame}{Information extraction}
 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/inform-extract.png}
+\end{center}
+
+% background
+
+\begin{itemize}
+  \item Take unstructured text and produce structured data
+  \item Used in question answering 
+\end{itemize}
+
+\begin{center}
+``Who is the president of Finland?''
+\end{center}
 
 \end{frame}
 
 
 \begin{frame}{Named-entity recognition}
 
+\begin{onlyenv}<1>
+\begin{framed}
+Саули Вяйнямё Нийнистё (24 августа 1948 года, Сало, Финляндия) — финский 
+государственный деятель, политик, юрист, действующий президент Финляндии с 1 марта 2012 года. 
+\end{framed}
+\end{onlyenv}
+\begin{onlyenv}<2>
+\begin{framed}
+\alert<2>{[PER Саули Вяйнямё Нийнистё]} (24 августа 1948 года, \alert<2>{[LOC Сало, Финляндия]}) — финский 
+государственный деятель, политик, юрист, действующий президент \alert<2>{[LOC Финляндии]} с 1 марта 2012 года. 
+\end{framed}
+\end{onlyenv}
+
+\begin{itemize}
+  \item First step in information extraction
+  \item Find each mention of a \textbf{named entity} and label it with \textbf{type}
+\end{itemize}
+
 
 \end{frame}
 
 \begin{frame}{Named-entity types}
 
+
 \begin{onlyenv}<1>
+\vspace{60pt}
 \begin{tabular}{llll}
   \textbf{Type} & \textbf{Tag} & \textbf{Categories} & \\
   People & {\sc per} & people, characters & \\
   Organisation & {\sc org} & companies, teams & \\
   Location & {\sc loc} & regions, mountains, seas & \\
-  Geo.pol. entity & {\sc gpe} & countries, states, provinces & \\
+  Geopolitical entity & {\sc gpe} & countries, states, provinces & \\
   Facility & {\sc fac} & bridges, airports, buildings & \\
   Vehicles & {\sc veh} & planes, trains, cars & \\
 \end{tabular}
 \end{onlyenv}
 \begin{onlyenv}<2->
+\begin{center}
+\includegraphics[width=\textwidth]{graphics/ner-banner.png}
+\end{center}
 \begin{tabular}{rl}
   \textbf{Tag} & \textbf{Example} \\
   {\sc per} & В возрасте 16 лет, \alert<3>{Тьюринг} ознакомился с работой \alert<3>{Эйнштейна}. \\
   {\sc org} & Бюджет \alert<3>{ЮНЕСКО} утверждается каждые два года. \\
-  {\sc loc} &  \\
-  {\sc gpe} &  \\
-  {\sc fac} &  \\
-  {\sc veh} &  \\
+  {\sc loc} & А прчему б в \alert<3>{Финляндию} не поехать? \\
+  {\sc gpe} & \alert<3>{Дагестан} получит поддержку из федерального бюджета. \\
+  {\sc fac} & В \alert<3>{аэропорту Кызыла} пройдет реконструкция. \\
+  {\sc veh} & В центре Владимира перевернулся \alert<3>{КАМАЗ} с землёй. \\
 \end{tabular}
 \end{onlyenv}
 
@@ -127,9 +165,9 @@ Typical classifiers:
 
 Each token gets a label:
 \begin{itemize}
-\item [{\tt B}] Begin NE
-\item [{\tt I}] Inside NE
-\item [{\tt O}] Outside NE
+\item [{\tt B}] Begin NE + type
+\item [{\tt I}] Inside NE + type
+\item [{\tt O}] Outside NE + type
 \end{itemize}
 \end{column}
 \begin{column}{0.48\textwidth}
@@ -173,7 +211,7 @@ identity of $w_i$  &  \\
 identity of neighbouring words  &  \\
 part of speech of $w_i$  &  \\
 part of speech of neighbouring words  &  \\
-presence of $w_i$ in a gazetteer &  \\
+presence of $w_i$ in a \emph{gazetteer} &  \\
 $w_i$ is all uppercase &  \\
 prefix of $w_i$ for length $\le 4$ &  \\
 suffix of $w_i$ for length $\le 4$ &  \\
@@ -259,6 +297,27 @@ Usefulness varies depending on the class of named entity.
 
 
 \begin{frame}{Evaluation}
+%The familiar metrics of recall, precision, and F1 measure
+%are used to evaluate NER systems.  Remember that recall is the ratio of the number of correctly labeled re-
+%sponses to the total that should have been labeled; precision is the ratio of the num-
+%ber of correctly labeled responses to the total labeled; and F -measure is the harmonic mean
+
+Standard evaluation:
+\begin{itemize}
+  \item Precision 
+  \item Recall 
+  \item $F_1$
+\end{itemize}
+
+% The fact that named entity tagging has a segmentation component which is not
+% present in tasks like text categorization or part-of-speech tagging causes some prob-
+% lems with evaluation. For example, a system that labeled American but not American Airlines
+% as an organization would cause two errors, a false positive for O and a false
+% negative for I-ORG. In addition, using entities as the unit of response but words as
+% the unit of training means that there is a mismatch between the training and test
+% conditions.
+
+
 
 
 \end{frame}
@@ -266,10 +325,15 @@ Usefulness varies depending on the class of named entity.
 \begin{frame}{Producing training data}
 
 
+
 \end{frame}
 
 \begin{frame}{Manually annotated}
 
+\begin{center}
+  \includegraphics[width=0.9\textwidth]{graphics/factru-anno.png}
+%  \includegraphics[width=0.9\textwidth]{graphics/esp.train-doc-536-small.png}
+\end{center}
 
 \end{frame}
 
@@ -284,7 +348,7 @@ Usefulness varies depending on the class of named entity.
 
 {\tt
 Члены организации «[[Ирландские добровольцы]]», которых возглавил учитель 
-и поэт [[Пирс, Патрик|Патрик Пирс]], объединившись с [[Ирландская гражданская армия|Ирландской Гражданской Армией]] [[Коннолли, Джеймс|Джеймса Коннолли]] и двумястами членами организации [[Совет ирландских женщин|Cumann na mBan]], захватили несколько ключевых мест в [[Дублин]]е и провозгласили независимость Ирландской Республики. 
+и поэт [[Пирс, Патрик|Патрик Пирс]], объединившись с [[Ирландская гражданская армия|Ирландской Гражданской Армией]] [[Коннолли, Джеймс|Джеймса Коннолли]] и двумястами членами организации [[Совет ирландских женщин|Cumann na mBan]], захватили несколько ключевых мест в \alert<2>{[[Дублин]]е} и провозгласили независимость Ирландской Республики. 
 }
 \end{frame}
 
@@ -297,12 +361,32 @@ Usefulness varies depending on the class of named entity.
 
 \begin{frame}{Wikipedia/4}
 
-% Ирландские добровольцы
-% Пирс, Патрик
-% Ирландская гражданская армия
-% Коннолли, Джеймс
-% Совет ирландских женщин
-% Дублин
+\begin{itemize}
+\item \textbf{Ирландские добровольцы}
+  \begin{itemize}
+    \item История Ирландии; \alert<2>{Организации, основанные в 1913 году}; Ирландский национализм
+  \end{itemize}
+\item \textbf{Пирс, Патрик}
+  \begin{itemize}
+    \item \alert<2>{Персоналии по алфавиту}; Родившиеся 10 ноября; \alert<2>{Политики Ирландии}; \alert<2>{Революционеры Ирландии}; \ldots
+  \end{itemize}
+\item \textbf{Ирландская гражданская армия}
+\begin{itemize}
+  \item \alert<2>{Боевые организации политических партий}; Дублин; Ирландия; \alert<2>{Леворадикальные организации}
+\end{itemize}
+\item \textbf{Коннолли, Джеймс}
+\begin{itemize}
+  \item \alert<2>{Персоналии по алфавиту}; \alert<2>{Политики по алфавиту}; \alert<2>{Революционеры Ирландии}; \alert<2>{Синдикалисты}; \alert<2>{Эсперантисты}; \ldots
+\end{itemize}
+\item \textbf{Совет ирландских женщин}
+\begin{itemize}
+  \item Совет ирландских женщин; Ирландский национализм
+\end{itemize}
+\item \textbf{Дублин}
+\begin{itemize}
+  \item \alert<2>{Населённые пункты по алфавиту}; \alert<2>{Столицы европейских государств}; Дублин; \alert<2>{Города Ирландии}; \ldots
+\end{itemize}
+\end{itemize}
 
 \end{frame}
 
@@ -337,6 +421,26 @@ Shared tasks
 \begin{frame}{CoNLL 2003}
 
 
+
+\end{frame}
+
+\begin{frame}{Data}
+
+\url{https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003}
+
+Form, Tag, Chunk, BIO label
+
+\begin{alltt}
+
+Australia NNP I-NP I-LOC
+will MD I-VP O
+defend VB I-VP O
+the DT I-NP O
+Ashes NNP I-NP I-MISC
+in IN I-PP O
+
+\end{alltt}
+
 \end{frame}
 
 \begin{frame}{FactRuEval 2016}
@@ -360,9 +464,22 @@ Shared tasks
 
 \begin{frame}{Participants}
 
+\begin{center}
+\includegraphics[width=\textwidth]{graphics/factrueval-participants.png}
+\end{center}
+
 \end{frame}
 
 \begin{frame}{Results}
+
+\begin{center}
+\includegraphics[width=\textwidth]{graphics/factrueval-results.png}
+\end{center}
+
+\begin{itemize}
+  \item Similar performance to systems for English
+\end{itemize}
+
 
 \end{frame}
 
@@ -370,6 +487,16 @@ Shared tasks
 Practical
 \end{frame}
 
+\begin{frame}
+
+\begin{itemize}
+ \item Create a NER system for the CoNLL-2003 shared task for English using
+   whatever classifier stuff you want
+ \item Run a known NER system on the FactRuEval data
+ \item Produce a corpus for NER using Wikipedia for a given language
+\end{itemize}
+
+\end{frame}
 
 
 
