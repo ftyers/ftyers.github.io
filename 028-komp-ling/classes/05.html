@@ -23,6 +23,49 @@ https://sklearn-crfsuite.readthedocs.io/en/latest/tutorial.html#let-s-use-conll-
 
 <h4>Make an corpus annotated with named entities from Wikipedia</h4>
 
+Example code to categorise pages by type of named entity for the Gagauz Wikipedia. Other 
+Wikipedias should function similarly.
+
+<pre>
+import sys, re
+import xml.etree.ElementTree as ET
+
+def guess_prop_cats(t, s): 
+	cats = []
+	for c in s: 
+		if c.count('Baş kasabalar') > 0: cats.append('LOC')
+		if c.count('Kasabalar') > 0: cats.append('LOC')
+		if c.count(' kasabalari') > 0: cats.append('LOC')
+		if c.count('Kişiler') > 0: cats.append('PER')
+		if c.count(' Devletläri') > 0: cats.append('LOC')
+		if c.count(' devletläri') > 0: cats.append('LOC')
+		if c.count('Provinția ') > 0: cats.append('LOC')
+		if c.count('Küüler') > 0: cats.append('LOC')
+	
+	if 'LOC' in cats and (t.count('lista') > 0 or t.count('liste') > 0): cats.remove('LOC')
+	if t.split(' ')[-1] == 'vilâyeti': cats.append('LOC')
+	if t.split(' ')[-1] == 'vilâyeti)': cats.append('LOC')
+	return list(set(cats))
+
+doc = ET.parse(sys.argv[1])
+
+ns = {'mediawiki': 'http://www.mediawiki.org/xml/export-0.10/'}
+
+cats = re.compile('(\[\[Kategoriya:[^|\]]+\]\]|\[\[Category:[^|\]]+\]\])')
+
+for p in doc.findall('.//mediawiki:page', ns): 
+	t = p.findall('.//mediawiki:title', ns)[0].text
+
+	if t.count(':') > 0: continue
+	if re.match('^[0-9]+$', t): continue;	
+
+	tekst = str(p.findall('.//mediawiki:text', ns)[0].text)
+
+	incat = cats.findall(tekst)
+	pars = guess_prop_cats(t, incat)
+	if pars != []:
+		print(t + '\t' + '/'.join(pars) + '\t' + '/'.join(incat));
+</pre>
 
 </div>
 </body>
