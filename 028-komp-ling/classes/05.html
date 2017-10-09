@@ -39,35 +39,40 @@ import xml.etree.ElementTree as ET
 def guess_prop_cats(t, s): 
 	cats = []
 	for c in s: 
-		if c.count('Baş kasabalar') > 0: cats.append('LOC')
-		if c.count('Kasabalar') > 0: cats.append('LOC')
-		if c.count(' kasabalari') > 0: cats.append('LOC')
-		if c.count('Kişiler') > 0: cats.append('PER')
-		if c.count(' Devletläri') > 0: cats.append('LOC')
-		if c.count(' devletläri') > 0: cats.append('LOC')
-		if c.count('Provinția ') > 0: cats.append('LOC')
-		if c.count('Küüler') > 0: cats.append('LOC')
+		if c.count('Baş kasabalar') > 0: cats.append('LOC') # столица
+		if c.count('Kasabalar') > 0: cats.append('LOC') # города
+		if c.count(' kasabalari') > 0: cats.append('LOC') # города
+		if c.count('Kişiler') > 0: cats.append('PER') # люди
+		if c.count(' Devletläri') > 0: cats.append('LOC') # страны
+		if c.count(' devletläri') > 0: cats.append('LOC') # страны
+		if c.count('Provinția ') > 0: cats.append('LOC') # провинции
+		if c.count('Küüler') > 0: cats.append('LOC') # деревни
 	
 	if 'LOC' in cats and (t.count('lista') > 0 or t.count('liste') > 0): cats.remove('LOC')
-	if t.split(' ')[-1] == 'vilâyeti': cats.append('LOC')
-	if t.split(' ')[-1] == 'vilâyeti)': cats.append('LOC')
+	if t.split(' ')[-1] == 'vilâyeti': cats.append('LOC')  # провинции
+	if t.split(' ')[-1] == 'vilâyeti)': cats.append('LOC')  # провинции
 	return list(set(cats))
 
 doc = ET.parse(sys.argv[1])
-
 ns = {'mediawiki': 'http://www.mediawiki.org/xml/export-0.10/'}
-
 cats = re.compile('(\[\[Kategoriya:[^|\]]+\]\]|\[\[Category:[^|\]]+\]\])')
 
+# For each of the pages
 for p in doc.findall('.//mediawiki:page', ns): 
+	# Find the title
 	t = p.findall('.//mediawiki:title', ns)[0].text
 
+	# If the title is outside the main namespace
 	if t.count(':') > 0: continue
+	# If the title only consists of numerals
 	if re.match('^[0-9]+$', t): continue;	
 
+	# Pull out the text
 	tekst = str(p.findall('.//mediawiki:text', ns)[0].text)
 
+	# Find all the categories
 	incat = cats.findall(tekst)
+	# Classify the categories into named-entities
 	pars = guess_prop_cats(t, incat)
 	if pars != []:
 		print(t + '\t' + '/'.join(pars) + '\t' + '/'.join(incat));
