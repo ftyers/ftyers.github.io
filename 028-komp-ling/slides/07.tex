@@ -4,9 +4,13 @@
 \usepackage{appendixnumberbeamer}
 
 \usepackage{tikz-dependency}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
 \usepackage{caption}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{multicol}
 \usepackage{alltt}
 \usepackage[scale=2]{ccicons}
 
@@ -53,6 +57,619 @@
 
 % Что сделал кто кому ?
 
+\begin{center}
+\begin{tabular}{cccc}
+  Кто ?      &   сделал что ? & кому ? & где ? \\
+{\Large Маша} & {\Large продала книгу} & {\Large Даше} & {\Large в метро} \\
+ \emph{Maša} & \emph{sold the book} & \emph{to Daša} & \emph{on the metro} \\
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+  \item Что кто-то сделал ?
+  \item Кто продал книгу? 
+  \item Кому продала Маша книгу ?
+  \item Где Маша продала книгу ?
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+  \item Question answering 
+  \item Machine translation
+\end{itemize} 
+
+\end{frame}
+
+\begin{frame}{Syntax/1}
+% Isn't this solved by dependency parsing ?
+
+\begin{onlyenv}<1>
+\begin{center}
+\Tree [.S [.NP Маша ] [.VP [.VP [.VP [.V продала ] [.NP книгу ] ] [.AdvP Даше ] ] [.PP [.Prep в ] [.NP метро ] ] ] ]
+\end{center}
+\end{onlyenv}
+\begin{onlyenv}<2>
+\begin{center}
+\Tree [.S [.VP [.PP [.Prep В ] [.NP метро ] ] [.VP [.V продала ] [.NP книгу ] ] ] [.NP Маша ] [.AdvP Даше ] ]
+\end{center}
+\end{onlyenv}
+
+\end{frame}
+
+
+\begin{frame}{Syntax/2}
+
+Doesn't dependency parsing solve this ? 
+
+\begin{center}
+
+    \begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+			Маша \& продала \& книгу \& Даше \& в \& метро \\  
+        \end{deptext}
+        \depedge{2}{1}{nsubj}
+        \depedge{2}{3}{obj}
+        \depedge{2}{4}{obl}
+        \depedge{6}{5}{case}
+        \depedge{2}{6}{obl}
+    \end{dependency}
+
+    \begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+			В \& метро \& продала \& Маша \& книгу \& Даше \\
+        \end{deptext}
+        \depedge{3}{4}{nsubj}
+        \depedge{3}{5}{obj}
+        \depedge{3}{6}{obl}
+        \depedge{2}{1}{case}
+        \depedge{3}{2}{obl}
+    \end{dependency}
+
+\end{center}
+
+
+\end{frame}
+
+\begin{frame}{}
+
+\begin{center}
+
+\begin{columns}
+
+\begin{column}{0.5\textwidth}
+
+\scalebox{0.8}{
+    \begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+			Маша \& продала \& книгу \& Даше \& в \& метро \\  
+        \end{deptext}
+        \depedge{2}{1}{nsubj}
+        \depedge{2}{3}{obj}
+        \depedge{2}{4}{obl}
+        \depedge{6}{5}{case}
+        \depedge{2}{6}{obl}
+    \end{dependency}
+}
+\scalebox{0.8}{
+    \begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+			Книга \& была \& продана \& Машей \& Даше \& в \& метро \\  
+        \end{deptext}
+        \depedge{3}{1}{nsubj}
+        \depedge{3}{2}{aux}
+        \depedge{3}{4}{obl}
+        \depedge{3}{5}{obl}
+        \depedge{7}{6}{obl}
+        \depedge{3}{7}{obl}
+    \end{dependency}
+}
+
+\end{column}
+\begin{column}{0.5\textwidth}
+\scalebox{0.8}{
+    \begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+			Даша \& купила \& книгу \& из \& Даши \& в \& метро \\  
+        \end{deptext}
+        \depedge{2}{1}{nsubj}
+        \depedge{2}{3}{obj}
+        \depedge{2}{5}{obl}
+        \depedge{2}{7}{obl}
+        \depedge{5}{4}{case}
+        \depedge{7}{6}{case}
+    \end{dependency}
+}
+
+
+\scalebox{0.8}{
+    \begin{dependency}
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+			Продажа \& книги \& Машей \& в  \& метро \& \ldots \\
+        \end{deptext}
+        \depedge{1}{2}{nmod}
+        \depedge{1}{3}{nmod}
+        \depedge{1}{5}{nmod}
+        \depedge{5}{4}{case}
+    \end{dependency}
+}
+
+\end{column}
+\end{columns}
+
+\end{center}
+
+%{\Large Википедия была прочитана Машей в метро.}
+%{\Large Прочтение Википедии Машей в метро \ldots}
+
+\end{frame}
+
+\begin{frame}[standout]
+  Semantic roles
+\end{frame}
+
+
+\begin{frame}{Shallow representation}
+
+Predicates (like продать, купить) represent an \textbf{event}.
+
+Semantic roles (like Agent, Theme) express the abstract role of the arguments of the predicate.
+
+% Reader     Agent     Proto-Agent
+
+\begin{center}
+\begin{tabular}{cccccc}
+              & {\Large Buyer}        &  {\Large Agent} & {\Large Proto-Agent}      &   \\
+              & $ {\Large \leftarrow}$ &                 & $ {\Large \rightarrow} $  &  \\
+              & \textbf{More specific} &                  &  \textbf{More general}   &
+  
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Deep roles}
+
+Specific for a predicate,
+
+\begin{itemize}
+  \item Maša broke the window 
+  \item Saša opened the door
+\end{itemize}
+
+Subjects of \emph{break} and \emph{open}: {\bf Breaker} and {\bf Opener}
+
+The objects are: {\bf BrokenThing} and {\bf OpenedThing}
+
+Hard to reason with for applications
+
+\end{frame}
+
+
+\begin{frame}{Thematic roles/1}
+
+But both \textbf{Breaker} and \textbf{Opener} have something in common:
+\begin{itemize}
+  \item Volitional actors
+  \item Often animate
+  \item Direct causal responsibility for their events
+\end{itemize} 
+
+Thematic roles capture this similarity,
+\begin{itemize}
+\item \textbf{Breaker} and \textbf{Opener} are both {\sc agents}
+\begin{itemize}
+  \item Volitional actors with causal responsibility for an event
+\end{itemize}
+\item \textbf{BrokenThing} and \textbf{OpenedThing} are both {\sc themes}
+\begin{itemize}
+  \item Inanimate objects affected in some way by an action
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Thematic roles/2}
+
+One of the first linguistic models:
+\begin{itemize}
+  \item Introduced by the grammarian Pāṇini between the 7th and 4th centuries BCE
+  \item Called \emph{karaka} in Sanskrit/Indo-Aryan linguistics
+\end{itemize}
+
+Modern formulation by Fillmore (1966):
+\begin{itemize}
+  \item Influenced by Tesnière (1959)'s dependency syntax
+  \item Called first \emph{actants} (following Tesnière) and then later \emph{case}
+\end{itemize}
+
+The terminology is confusing.
+
+\end{frame}
+
+\begin{frame}{Thematic roles/3}
+
+\begin{center}
+\begin{small}
+\begin{tabular}{ll}
+  \textbf{Role} & \textbf{Definition} \\
+ \hline
+  {\sc agent}  & The volitional causer of an event \\
+               & \textbf{Маша} разбила окно \\
+  {\sc experiencer} & The experiencer of an event  \\
+                    & \textbf{Саше} болеет голова \\
+  {\sc force} & Non-volitional causer of an event  \\
+              & \textbf{Ветер} сдувал снег \\ 
+  {\sc theme} & Participant most directly affected by an event  \\
+              & Маша продала \textbf{книгу} \\
+  {\sc instrument} & An instrument used in an event \\
+                 & Она написала письмо \textbf{ручкой} \\
+  {\sc beneficiary} & The beneficiary of an event \\
+                 & Я купил \textbf{тебе} кофе \\
+  {\sc source} & Origin of a transfer event \\
+              & Ты не приехала \textbf{из Кызыла?} \\
+  {\sc goal} & The destination of a transfer event \\
+               & Я хочу \textbf{в Якутск} \\
+ \hline
+\end{tabular} 
+\end{small}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Thematic «grid»}
+~\\
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\emph{разбить}:
+\begin{itemize}
+  \item {\sc agent}
+  \item {\sc theme}
+  \item {\sc instrument}
+\end{itemize}
+\end{column}
+\begin{column}{0.75\textwidth}
+Realisations:
+\begin{itemize}
+\item {\sc agent}/Subject {\sc theme}/Object
+\item {\sc agent}/Subject {\sc theme}/Object {\sc instrument}/NP$_{\sc ins}$
+\item {\sc theme}/Subject
+\end{itemize}
+\end{column}
+\end{columns}
+
+\begin{center}
+\begin{small}
+\begin{tabular}{llll}
+ \hline
+  \emph{Маша}        & \emph{разбила}  & \emph{окно} & \\
+  {\sc agent} &          & {\sc theme} & \\
+ \hline
+  \emph{Маша}  & \emph{разбила}  & \emph{окно}  & \emph{молотом} \\
+  {\sc agent} & & {\sc theme} & {\sc instrument} \\
+ \hline
+  \emph{Молот}  & \emph{разбил}  & \emph{окно}  &  \\
+  {\sc instrument} & & {\sc theme} & \\
+ \hline
+  \emph{Окно}  & \emph{разбилось}  &  &  \\
+  {\sc theme } & & &  \\
+ \hline
+  \emph{Окно}  & \emph{было}  & \emph{разбито}  & \emph{Машей} \\
+  {\sc theme } & & & {\sc agent} \\
+ \hline
+%  \emph{Окно}  & \emph{было}  & \emph{разбито}  & \emph{молотом} \\
+%  {\sc theme } & & & {\sc instrument} \\
+\end{tabular}
+\end{small}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Problems}
+
+Very hard to create a standard set of roles or formally define them.
+
+For example for {\sc instrument},
+\begin{itemize}
+\item \textbf{intermediary instruments} can appear as subjects:
+  \begin{itemize}
+     \item The cook opened the jar with the new gadget
+     \item The new gadget opened the jar
+  \end{itemize}
+\item \textbf{enabling instruments} cannot:
+  \begin{itemize}
+    \item They ate rice with chopsticks
+    \item *The chopsticks ate rice
+  \end{itemize}
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Alternatives}
+
+\begin{center}
+\begin{tabular}{cccccc}
+              & {\Large Buyer}        &  {\Large Agent} & {\Large Proto-Agent}      &   \\
+              & $ {\Large \leftarrow}$ &                 & $ {\Large \rightarrow} $  &  \\
+FrameNet      & \textbf{More roles} &                  &  \textbf{Fewer roles}   & PropBank
+\end{tabular}
+\end{center}
+
+\textbf{PropBank:}
+\begin{itemize}
+  \item Generalised roles defined as prototypes
+\end{itemize}
+
+\textbf{FrameNet:}
+\begin{itemize}
+  \item Define roles specific to a group of predicates
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[standout]
+  PropBank and FrameNet
+\end{frame}
+
+
+\begin{frame}{PropBank/1}
+
+A \textbf{PropBank}\footnote{Martha Palmer, Daniel Gildea and Paul Kingsbury (2005) ``The Proposition Bank: An Annotated Corpus of Semantic Roles''. \emph{Computational Linguistics} 31(1):71--106} is a corpus annotated with predicates and arguments
+
+The English PropBank:
+\begin{itemize}
+  \item Annotated on top of the Penn Treebank
+  \item Not freely available 
+\end{itemize}
+
+Uses numbered arguments:
+  \begin{itemize}
+    \item Arg0: {\sc proto-agent}
+    \item Arg1: {\sc proto-patient}
+    \item Arg2: {\sc benefactive}, {\sc instrument}, {\sc attribute} {\sc end state}
+    \item \ldots
+  \end{itemize}  
+
+PropBanks exist for: English*, Chinese*, Arabic*, Finnish, Russian$^?$
+
+\end{frame}
+
+\begin{frame}{PropBank/2}
+  
+\textbf{Proto-Agent}:
+\begin{itemize}
+ \item Volitional involvement in event or state
+ \item Sentience (and/or perception)
+ \item Causes an event or change of state in another participant 
+ \item Movement (relative to position of another participant)
+\end{itemize}
+
+\textbf{Proto-Patient}:
+\begin{itemize}
+ \item Undergoes change of state
+ \item Causally affected by another participant 
+ \item Stationary relative to movement of another participant
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{PropBank/3}
+
+PropBank comes with \textbf{frame files} which contain predicates and their argument structure.
+
+\begin{center}
+\begin{onlyenv}<1>
+\includegraphics[width=0.8\textwidth]{graphics/finn-propbank.png}
+\end{onlyenv}
+\begin{onlyenv}<2>
+\includegraphics[width=0.8\textwidth]{graphics/finn-propbank2.png}
+\end{onlyenv}
+\end{center}
+
+\begin{itemize}
+  \item Finnish PropBank is freely available
+  \item \url{https://github.com/TurkuNLP/Finnish_PropBank} (data branch)
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}{PropBank/4}
+
+PropBank-style annotation allows us to see commonalities:
+
+\scalebox{0.8}{
+    \begin{dependency}[edge style={black,very thick}]
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+                        Maša \& myi \& kirjan \& Dašalle \& metrossa \\
+                    \emph{ Маша }\&\emph{ продала }\&\emph{ книгу }\&\emph{ Даше }\&\emph{ в метро} \\
+        \end{deptext}
+        \depedge{2}{1}{nsubj}
+        \depedge{2}{3}{obj}
+        \depedge{2}{4}{obl}
+        \depedge{2}{5}{obl}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{1}{{\sc arg2}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{3}{{\sc arg1}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{4}{{\sc arg0}}
+    \end{dependency}
+}
+
+\scalebox{0.8}{
+    \begin{dependency}[edge style={black,very thick}]
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+                        Daša \& osti \& kirjan \& Mašalta \& metrossa \\
+                    \emph{ Даша}\&\emph{ купила}\&\emph{ книгу }\&\emph{ из Маши }\&\emph{ в метро} \\
+        \end{deptext}
+        \depedge{2}{1}{nsubj}
+        \depedge{2}{3}{obj}
+        \depedge{2}{4}{obl}
+        \depedge{2}{5}{obl}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{1}{{\sc arg0}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{3}{{\sc arg1}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{4}{{\sc arg2}}
+    \end{dependency}
+}
+
+\end{frame}
+
+\begin{frame}{PropBank/5}
+
+Summary:
+
+\begin{itemize}
+  \item A propbank is a corpus annotated with predicate--argument structure
+  \item Predicate--argument structure generalises over syntax
+  \item There is a free PropBank for Finnish
+\end{itemize}
+
+But how about Russian?
+
+\begin{itemize}
+  \item There is a semantically-annotated corpus based on FrameNet
+  \item It could be converted into a PropBank 
+  \item For more info ask Olya Lyashevskaya
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{FrameNet/1}
+
+FrameNet is very popular:
+
+\begin{itemize}
+  \item Semantically-annotated database/electronic resource
+\end{itemize}
+
+It contains (for English):
+\begin{itemize}
+  \item 1,200 frames
+  \item 13,000 lexical units (word--meaning correspondence)
+  \item 202,000 example sentences
+\end{itemize}
+
+
+\end{frame}
+
+
+
+\begin{frame}{FrameNet/2}
+
+\textbf{Frames:}
+\begin{itemize}
+  \item Conceptual structure involving participants, events and background knowledge
+  \item Extremely specific, e.g. 
+  \begin{itemize}
+    \item \texttt{Commerce\_goods-transfer}
+    \item \texttt{Being\_born}
+    \item \texttt{Criminal\_process}
+  \end{itemize}
+\end{itemize}
+
+\textbf{Frame elements:}
+\begin{itemize}
+  \item \textbf{Core:} essential to the meaning of the Frame
+  \begin{itemize}
+    \item \texttt{Seller}, \texttt{Buyer}, \texttt{Goods} 
+  \end{itemize}
+  
+  \item \textbf{Non-core:} descriptive, e.g. time, place, manner 
+  \begin{itemize}
+     \item \texttt{Place}, \texttt{Purpose} 
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{vs. PropBank}
+
+\textbf{PropBank:}
+
+\begin{center}
+\scalebox{0.8}{
+    \begin{dependency}[edge style={black,very thick}]
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+                    \emph{ Маша }\&\emph{ продала }\&\emph{ книгу }\&\emph{ Даше }\&\emph{ в метро} \\
+        \end{deptext}
+        \depedge{2}{1}{nsubj}
+        \depedge{2}{3}{obj}
+        \depedge{2}{4}{obl}
+        \depedge{2}{5}{obl}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{1}{{\sc arg2}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{3}{{\sc arg1}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{4}{{\sc arg0}}
+    \end{dependency}
+}
+\end{center}
+
+\textbf{FrameNet:}
+\begin{center}
+\begin{tabular}{ccccc}
+\emph{ Маша }&\emph{ продала }&\emph{ книгу }&\emph{ Даше }&\emph{ в метро} \\
+\texttt{Seller} &      ~    & \texttt{Goods}  & \texttt{Buyer} & \\
+~              & продать.1 & ~                 & ~  & ~ \\
+~              &     \texttt{Commerce\_goods-transfer}    & ~ & ~ & \\
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[standout]
+ Semantic role labelling
+\end{frame}
+
+\begin{frame}{Semantic role labelling}
+
+A generic algorithm:
+\includegraphics[width=\textwidth]{graphics/srl-parsing-algo.png}
+
+How do we decide what is a predicate ?
+\begin{itemize}
+  \item \textbf{PropBank}: Use the verbs 
+  \item \textbf{FrameNet}: Use what was labelled as such in the training data
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Features}
+
+\begin{center}
+\scalebox{0.7}{
+    \begin{dependency}[edge style={black,very thick}]
+      \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
+            Rippeitä \& syötiin \& seuraavinakin \& päivinä \& , \& mutta \& se \& riitti \& minulle \\
+            \emph{Leftovers} \& \emph{we ate} \& \emph{also following} \& \emph{days} \& \& \emph{but} \& \emph{that} \& \emph{sufficed} \& \emph{for me} \\
+            \texttt{NOUN} \& \texttt{VERB} \& \texttt{ADJ} \& \texttt{NOUN} \& \& \texttt{CCONJ} \& \texttt{PRON} \& \texttt{VERB} \& \texttt{PRON} \\
+              ~      \& {\sc syöda.1}         \& ~                      \& ~            \&  \&         \&             \& {\sc riittää.1} \&  \\
+        \end{deptext}
+        \depedge{2}{1}{obj}
+        \depedge{2}{4}{obl}
+        \depedge{4}{3}{amod}
+        \depedge{8}{6}{cc}
+        \depedge{8}{7}{nsubj}
+        \depedge[edge unit distance=1.8ex]{2}{8}{conj}
+        \depedge{8}{9}{obl}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{1}{{\sc Arg1}}
+        \depedge[edge below=true,edge style={red,very thick}]{2}{4}{{\sc ArgM\_tmp}}
+        \depedge[edge below=true,edge style={red,very thick}]{8}{7}{{\sc Arg1}}
+        \depedge[edge below=true,edge style={red,very thick}]{8}{9}{{\sc Arg2}}
+    \end{dependency}
+}
+\end{center}
+
+\begin{tabular}{ll}
+\hline
+Headword of constituent & Rippeitä \\
+Headword POS & NOUN \\
+Headword Morph. features & Case=Par \\
+Voice of clause & Active \\
+Linear position (wrt. predicate) & before \\
+\hline
+\end{tabular}
+
+
 \end{frame}
 
 % Uusi elämä myös tuoksuu uudelta! :)
@@ -60,5 +677,20 @@
 
 % Rippeitä syötiin seuraavinakin päivinä, mutta se riitti minulle.
 % We ate leftovers the next days too, but that was good enough for me
+
+\begin{frame}{Practical}
+  
+\begin{itemize}
+  \item Download Finnish PropBank
+  \begin{itemize}
+     \item \url{https://github.com/TurkuNLP/Finnish_PropBank} (data branch)
+  \end{itemize}
+  \item Write a semantic role labeller
+
+\end{itemize}
+
+\end{frame}
+
+
 
 \end{document}
