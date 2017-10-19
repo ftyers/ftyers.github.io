@@ -48,7 +48,7 @@
 
 
 \title{Class 07: Semantic roles and PropBank}
-
+\date{}
 \begin{document}
 
 \maketitle
@@ -272,11 +272,13 @@ Thematic roles capture this similarity,
 \end{frame}
 
 \begin{frame}{Thematic roles/2}
-
+\begin{flushright}
+\includegraphics[width=0.3\textwidth]{graphics/panini.jpg}
+\end{flushright}
 One of the first linguistic models:
 \begin{itemize}
   \item Introduced by the grammarian Pāṇini between the 7th and 4th centuries BCE
-  \item Called \emph{karaka} in Sanskrit/Indo-Aryan linguistics
+  \item Called \emph{kāraka} in Sanskrit/Indo-Aryan linguistics
 \end{itemize}
 
 Modern formulation by Fillmore (1966):
@@ -347,10 +349,10 @@ Realisations:
   \emph{Маша}        & \emph{разбила}  & \emph{окно} & \\
   {\sc agent} &          & {\sc theme} & \\
  \hline
-  \emph{Маша}  & \emph{разбила}  & \emph{окно}  & \emph{молотом} \\
+  \emph{Маша}  & \emph{разбила}  & \emph{окно}  & \emph{молотком} \\
   {\sc agent} & & {\sc theme} & {\sc instrument} \\
  \hline
-  \emph{Молот}  & \emph{разбил}  & \emph{окно}  &  \\
+$^?$ \emph{Молоток}  & \emph{разбил}  & \emph{окно}  &  \\
   {\sc instrument} & & {\sc theme} & \\
  \hline
   \emph{Окно}  & \emph{разбилось}  &  &  \\
@@ -359,8 +361,8 @@ Realisations:
   \emph{Окно}  & \emph{было}  & \emph{разбито}  & \emph{Машей} \\
   {\sc theme } & & & {\sc agent} \\
  \hline
-%  \emph{Окно}  & \emph{было}  & \emph{разбито}  & \emph{молотом} \\
-%  {\sc theme } & & & {\sc instrument} \\
+  \emph{Окно}  & \emph{было}  & \emph{разбито}  & \emph{молотком} \\
+  {\sc theme } & & & {\sc instrument} \\
 \end{tabular}
 \end{small}
 \end{center}
@@ -407,6 +409,14 @@ FrameNet      & \textbf{More roles} &                  &  \textbf{Fewer roles}  
   \item Define roles specific to a group of predicates
 \end{itemize}
 
+\textbf{Pause for thought:}
+\begin{itemize}
+  \item If we want to use this in a practical NLP system, does the label matter
+     or does the distribution matter? 
+  \item If we can generalise over different things that look different but refer to
+     the same event (buy, sell; kick, is kicked) does the precise formalism matter?
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}[standout]
@@ -438,7 +448,7 @@ PropBanks exist for: English*, Chinese*, Arabic*, Finnish, Russian$^?$
 
 \begin{frame}{PropBank/2}
   
-\textbf{Proto-Agent}:
+\textbf{Proto-Agent}:\footnote{David Dowty (1991) ``Thematic Proto-Roles and Argument Selection''. \emph{Language}, 67(3) pp. 547--619.}
 \begin{itemize}
  \item Volitional involvement in event or state
  \item Sentience (and/or perception)
@@ -452,6 +462,7 @@ PropBanks exist for: English*, Chinese*, Arabic*, Finnish, Russian$^?$
  \item Causally affected by another participant 
  \item Stationary relative to movement of another participant
 \end{itemize}
+
 
 \end{frame}
 
