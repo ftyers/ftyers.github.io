@@ -57,6 +57,8 @@
 
 % Что сделал кто кому ?
 
+The grand quest of NLP: \\
+~\\
 \begin{center}
 \begin{tabular}{cccc}
   Кто ?      &   сделал что ? & кому ? & где ? \\
@@ -66,9 +68,9 @@
 \end{center}
 
 \begin{itemize}
-  \item Что кто-то сделал ?
+  \item Что было сделано ?
   \item Кто продал книгу? 
-  \item Кому продала Маша книгу ?
+  \item Кому продала Маша книгу ? / Кому Маша продала книгу ?
   \item Где Маша продала книгу ?
 \end{itemize}
 
@@ -183,7 +185,7 @@ Doesn't dependency parsing solve this ?
 \scalebox{0.8}{
     \begin{dependency}
       \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
-			Даша \& купила \& книгу \& из \& Даши \& в \& метро \\  
+			Даша \& купила \& книгу \& у \& Даши \& в \& метро \\  
         \end{deptext}
         \depedge{2}{1}{nsubj}
         \depedge{2}{3}{obj}
@@ -350,7 +352,7 @@ The terminology is confusing.
   {\sc agent}  & The volitional causer of an event \\
                & \textbf{Маша} разбила окно \\
   {\sc experiencer} & The experiencer of an event  \\
-                    & \textbf{Саше} болеет голова \\
+                    & \textbf{У Саши} болит голова \\
   {\sc force} & Non-volitional causer of an event  \\
               & \textbf{Ветер} сдувал снег \\ 
   {\sc theme} & Participant most directly affected by an event  \\
@@ -581,7 +583,7 @@ PropBank-style annotation allows us to see commonalities:
     \begin{dependency}[edge style={black,very thick}]
       \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
                         Daša \& osti \& kirjan \& Mašalta \& metrossa \\
-                    \emph{ Даша}\&\emph{ купила}\&\emph{ книгу }\&\emph{ из Маши }\&\emph{ в метро} \\
+                    \emph{ Даша}\&\emph{ купила}\&\emph{ книгу }\&\emph{ у Маши }\&\emph{ в метро} \\
         \end{deptext}
         \depedge{2}{1}{nsubj}
         \depedge{2}{3}{obj}
