@@ -161,7 +161,7 @@ Doesn't dependency parsing solve this ?
         \depedge{2}{6}{obl}
     \end{dependency}
 }
-\scalebox{0.8}{
+\scalebox{0.7}{
     \begin{dependency}
       \begin{deptext}[column sep=1mm,column 1/.style={anchor=base west}]
 			Книга \& была \& продана \& Машей \& Даше \& в \& метро \\  
@@ -207,6 +207,8 @@ Doesn't dependency parsing solve this ?
 \end{column}
 \end{columns}
 
+Could these refer to the same event ? 
+
 \end{center}
 
 %{\Large Википедия была прочитана Машей в метро.}
@@ -221,9 +223,11 @@ Doesn't dependency parsing solve this ?
 
 \begin{frame}{Shallow representation}
 
-Predicates (like продать, купить) represent an \textbf{event}.
+Predicates and arguments/roles. \\
 
-Semantic roles (like Agent, Theme) express the abstract role of the arguments of the predicate.
+Predicates (like продать, купить) represent an \textbf{event}. \\
+
+Semantic roles (like Agent, Theme) express the abstract role of the arguments of the predicate. \\
 
 % Reader     Agent     Proto-Agent
 
@@ -301,6 +305,36 @@ The terminology is confusing.
 
 \begin{frame}{Thematic roles/3}
 
+\begin{onlyenv}<1>
+\begin{center}
+\begin{small}
+\begin{tabular}{ll}
+  \textbf{Role} & \textbf{Definition} \\
+ \hline
+  {\sc agent}  & The volitional causer of an event \\
+               & \ldots \\
+  {\sc experiencer} & The experiencer of an event  \\
+                    & \ldots \\
+  {\sc force} & Non-volitional causer of an event  \\
+              & \ldots \\
+  {\sc theme} & Participant most directly affected by an event  \\
+              & \ldots \\
+  {\sc instrument} & An instrument used in an event \\
+                 & \ldots \\
+  {\sc beneficiary} & The beneficiary of an event \\
+                 & \ldots \\
+  {\sc source} & Origin of a transfer event \\
+              & \ldots \\
+  {\sc goal} & The destination of a transfer event \\
+               & \ldots \\
+ \hline
+\end{tabular} 
+\end{small}
+\end{center}
+\end{onlyenv}
+
+
+\begin{onlyenv}<2>
 \begin{center}
 \begin{small}
 \begin{tabular}{ll}
@@ -326,8 +360,10 @@ The terminology is confusing.
 \end{tabular} 
 \end{small}
 \end{center}
+\end{onlyenv}
 
 \end{frame}
+
 
 \begin{frame}{Thematic «grid»}
 ~\\
@@ -698,6 +734,7 @@ How do we decide what is a predicate ?
 }
 \end{center}
 
+\begin{onlyenv}<2>
 \begin{tabular}{ll}
 \hline
 Headword of constituent & Rippeitä \\
@@ -705,11 +742,131 @@ Headword POS & NOUN \\
 Headword Morph. features & Case=Par \\
 Voice of clause & Active \\
 Linear position (wrt. predicate) & before \\
+Path features & ... \\
+First and last words in constituent & ... \\
 \hline
 \end{tabular}
+\end{onlyenv}
 
 
 \end{frame}
+
+
+\begin{frame}{One step or three step}
+
+\textbf{One step}:
+\begin{itemize}
+  \item Classify argument type
+\end{itemize}
+
+
+\textbf{Three step}:
+\begin{itemize}
+  \item Prune unlikely nodes
+  \item Identify if a node is an argument or not
+  \item Classify argument type
+\end{itemize}
+
+Why add pruning and identification steps?
+
+\end{frame}
+
+\begin{frame}{Why add pruning and identification steps?}
+
+\begin{itemize}
+\item Algorithm is looking at one predicate at a time
+\item Very few of the nodes in the tree could possible be arguments 
+of that one predicate
+\item Imbalance between: 
+\begin{itemize}
+\item (+) positive samples (constituents/nodes that are arguments of predicate)
+\item (-) negative samples (constituents/nodes that are not arguments of predicate)
+\end{itemize}
+\item Imbalanced data can be hard for many classifiers
+\item So we prune the very unlikely constituents first, and then use a classifier to get rid of the rest.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Joint inference/1}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/srl-parsing-algo.png}
+\end{center}
+
+\begin{itemize}
+\item The algorithm so far classifies everything  locally  -- each decision  about a constituent is made independently of all others
+\item But: Lots of  global or joint interactions between arguments and constraints
+\begin{itemize}
+  \item e.g. PropBank does    not    allow    multiple    identical   arguments, so
+  \item Labelling one constituent as Arg0 should increase the probability of another being Arg1
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Joint inference/2}
+
+\textbf{Reranking}:
+\begin{itemize}
+\item The first stage SRL system produces multiple possible labels for each constituent
+\begin{itemize}
+ \item The second stage classifier the best  global label for  all constituents
+ \item Often a classifier that takes all the inputs along with other features (sequences of labels)
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Summary}
+
+\textbf{Semantic Role Labelling}:
+\begin{itemize}
+\item A level of shallow semantics for representing \textbf{events} and their \textbf{participants}
+\item Intermediate between parses and full semantics
+\item Two common architectures, for various languages
+\begin{itemize}
+\item FrameNet: frame-specific roles
+\item PropBank: Proto-roles
+\end{itemize}
+\item Current systems extract by 
+\begin{itemize}
+\item parsing sentence
+\item Finding predicates in the sentence
+\item For each one, classify each parse tree constituent
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[standout]
+
+Practical
+
+\end{frame}
+
+\begin{frame}{Practical}
+  
+\textbf{Option 1:}
+\begin{itemize}
+  \item Download Finnish PropBank
+  \begin{itemize}
+     \item \url{https://github.com/TurkuNLP/Finnish_PropBank} 
+     \item \url{https://github.com/TurkuNLP/Finnish_PropBank/tree/data} 
+     \item \url{https://github.com/TurkuNLP/Finnish_PropBank/tree/data/gen_lemmas}
+  \end{itemize}
+  \item Write a semantic role labeller
+  \item Train on {\tt train}, find good feature combination on {\tt dev} and test on {\tt test}.
+\end{itemize}
+
+\textbf{Option 2:}
+\begin{itemize}
+  \item Olya Lyaševskaya has given me a file with semantically annotated sentences for Russian
+  \item Combination of TSV + XML
+  \item Produce something approximating the PropBank style annotation.
+\end{itemize} 
+
+\end{frame}
+
 
 \begin{frame}{Data format}
 \emph{ Uusi elämä myös tuoksuu uudelta! :)} \\
@@ -747,29 +904,35 @@ tuoksua|1|2|Attribute of arg1|NULL|Mille tuoksuu|NULL
 % Rippeitä syötiin seuraavinakin päivinä, mutta se riitti minulle.
 % We ate leftovers the next days too, but that was good enough for me
 
-\begin{frame}{Practical}
-  
-\textbf{Option 1:}
-\begin{itemize}
-  \item Download Finnish PropBank
-  \begin{itemize}
-     \item \url{https://github.com/TurkuNLP/Finnish_PropBank} 
-     \item \url{https://github.com/TurkuNLP/Finnish_PropBank/tree/data} 
-     \item \url{https://github.com/TurkuNLP/Finnish_PropBank/tree/data/gen_lemmas}
-  \end{itemize}
-  \item Write a semantic role labeller
-  \item Train on {\tt train}, find good feature combination on {\tt dev} and test on {\tt test}.
-\end{itemize}
+\begin{frame}
 
-\textbf{Option 2:}
-\begin{itemize}
-  \item Olya Lyaševskaya has given me a file with semantically annotated sentences for Russian
-  \item Combination of TSV + XML
-  \item Produce something approximating the PropBank style annotation.
-\end{itemize}
+Combination of TSV + XML
+
+\begin{tiny}
+\begin{alltt}
+\# new FrameAnno<br />\\
+\# FrameAnchor = беречься<br />\\
+\# ConstrID = 11655<br />\\
+\# ConstrName = 1.5\_Берегись, чтобы не упасть.<br />\\
+\# ConstrPattern = Snom V чтобы + CL<br />\\
+\# ExampleID = 43401<br />\\
+\# SentType = sp<br />\\
+\# SentXml =     <p class="verse"><se><w><ana lex="плакать" gr="V,2p,act,imper,ipf,norm,sg" sem="ca:noncaus t:physiol d:root" sem2="ca:noncaus d:root"/>Плачь</w>, <w><ana lex="но" gr="CONJ,norm"/>но</w> <w><ana lex="беречься" gr="V,2p,act,imper,ipf,norm,sg" sem="ca:noncaus" sem2="ca:noncaus"/>берегись</w>, <w><ana lex="чтобы" gr="CONJ,norm"/>чтобы</w> <w><ana lex="хоть" gr="PART,norm"/>хоть</w> <w><ana lex="один" gr="APRO,f,nom,norm,sg" sem2="r:indet"/>одна</w> <w><ana lex="твой" gr="APRO,f,nom,norm,sg" sem="r:poss"/>твоя</w> ... \\
+\# SentText =  <u>Плачь, но <b>берегись</b>, чтобы хоть одна твоя слеза скатилась по острию пера и примешалась к чернилам. </u>Ренар <br />\\
+\# FEtable:FE\_ID	"Word"	Role	FE\_Status	SyntRank	Morph	LexClass	"Group"<br />\\
+21184	""	агенс	Core	Не выражен			""<br />\\
+21185	"берегись"	-	Core	Предикат	беречься	-	"-"<br />\\
+21186	"что / скатилась"	потенциальная угроза	Core	Клауза	чтобы + CL	-	"чтобы хоть одна твоя слеза скатилась по острию пера и примешалась к чернилам"<br /><br /><br />\\
+\end{alltt}
+\end{tiny}
+
+
+Ženya: ``How was it born like that?'' 
 
 \end{frame}
 
 
-
 \end{document}
+
+%  Tensions have not eased between the Catalan and Spanish governments following the vote.
+%  Following the vote tensions in 
