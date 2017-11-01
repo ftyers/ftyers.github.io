@@ -9,7 +9,7 @@
 <div class="page">
 <p>
 Tagging text is the task of assigning a part-of-speech tag for each of the tokens in a 
-sentence. For example, suppose we had the sentence: "В том институте все уехали.", we would first tokenise it
+sentence by hand. For example, suppose we had the sentence: "В том институте все уехали.", we would first tokenise it
 using our tokeniser:
 </p>
 <pre>
@@ -23,7 +23,7 @@ using our tokeniser:
 6	.	_	_	_	_	_	_	_	_
 </pre>
 <p>
-Then we would go through the text line by line, and give each line a part-of-speech tag in the fourth column. The
+Then we would go through the text line by line, and write a part-of-speech tag in the fourth column of every line. The
 part-of-speech tags are from the <a href="http://universaldependencies.org/">Universal Dependencies</a> project
 and can be found with full definitions <a href="http://universaldependencies.org/u/pos/all.html">here</a>.
 </p>
@@ -94,9 +94,13 @@ The final result should look something like this:
 5	уехали	_	VERB	_	_	_	_	_	_
 6	.	_	PUNCT	_	_	_	_	_	_
 </pre>
-
+<p>
 If you would like a graphical interface for adding the tags, I can recommend <a href="https://github.com/jonorthwash/ud-annotatrix">UD Annotatrix</a>,
 which can be tried out online <a href="https://ftyers.github.io/ud-annotatrix/standalone/annotator.html">here</a>.
+</p>
+<p>
+You should annotate at least 10 sentences of text, or 100 tokens, whichever is lower.
+</p>
 
 </div>
 
