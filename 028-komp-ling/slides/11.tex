@@ -14,6 +14,7 @@
 \usepgfplotslibrary{dateplot}
 
 \usepackage{xspace}
+\usepgflibrary{shapes.arrows}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 
@@ -30,6 +31,14 @@
 
 % commands from the paper
 
+\newcommand*{\mystrut}{\rule[0.2\baselineskip]{0pt}{0.2\baselineskip}}
+\newcommand{\redbox}[1]{\fcolorbox{red}{white}{\mystrut #1}}
+\newcommand{\bluebox}[1]{\fcolorbox{ProcessBlue}{white}{\mystrut #1}}
+\newcommand{\greenbox}[1]{\fcolorbox{YellowGreen}{white}{\mystrut #1}}
+\newcommand{\redfillbox}[1]{\colorbox{red}{\textcolor{white}{{\bf #1}}}}
+\newcommand{\bluefillbox}[1]{\colorbox{ProcessBlue}{\textcolor{white}{{\bf #1}}}}
+\newcommand{\greenfillbox}[1]{\colorbox{YellowGreen}{\textcolor{white}{{\bf #1}}}}
+%\newcommand*{\mybox}[1]{\framebox{\strut #1}}
 
 \newcommand{\myarrow}[1][-45]{%
   \mathrel{%
@@ -47,6 +56,7 @@
 \title{Class 11: Anaphora and co-reference resolution}
 \date{}
 \begin{document}
+\tikzstyle{side arrow} = [draw=black!75, very thick, double arrow, minimum height=5.0cm, shape border rotate =#1, fill=gray!10]
 
 \maketitle
 
@@ -89,15 +99,15 @@ my gross incompetence.’
 \includegraphics[width=0.4\textwidth]{graphics/priti-patel.jpg}
 \end{center}
 \colorbox{ProcessBlue}{\textcolor{white}{{\bf THE prime minister}}} has fired secretary of state Priti Patel while telling 
-her \colorbox{ProcessBlue}{\textcolor{white}{{\bf she}}} wishes with all her heart it was the other way around. 
+her \colorbox{ProcessBlue}{\textcolor{white}{{\bf she}}} wishes with all \bluebox{her} heart it was the other way around. 
 
 \colorbox{ProcessBlue}{\textcolor{white}{{\bf May}}} confessed to Patel that although having secret meetings with the Israelis 
-was a sackable offence, it paled in comparison to her own dire 
+was a sackable offence, it paled in comparison to \bluebox{her} own dire 
 performance but “sadly nobody’s willing to pull the trigger.” 
 
 Patel said: “It was so awkward. \colorbox{ProcessBlue}{\textcolor{white}{{\bf She}}} said ‘You don’t know how often \colorbox{ProcessBlue}{\textcolor{white}{{\bf I}}}’ve dreamt of 
 sitting on your side of the desk, finally being summarily dismissed for 
-my gross incompetence.’ 
+\bluebox{my} gross incompetence.’ 
 \end{onlyenv}
 
 \begin{onlyenv}<4>
@@ -112,51 +122,151 @@ May confessed to \colorbox{red}{\textcolor{white}{{\bf Patel}}} that although ha
 was a sackable offence, it paled in comparison to her own dire 
 performance but “sadly nobody’s willing to pull the trigger.” 
 
-\colorbox{red}{\textcolor{white}{{\bf Patel}}} said: “It was so awkward. She said ‘You don’t know how often I’ve dreamt of 
-sitting on your side of the desk, finally being summarily dismissed for 
+\redfillbox{Patel} said: “It was so awkward. She said ‘\colorbox{red}{\textcolor{white}{{\bf You}}} don’t know how often I’ve dreamt of 
+sitting on \redbox{your} side of the desk, finally being summarily dismissed for 
 my gross incompetence.’ 
 \end{onlyenv}
+
+\begin{onlyenv}<5>
+\begin{center}
+\includegraphics[width=0.4\textwidth]{graphics/theresa-may.jpg}
+\includegraphics[width=0.4\textwidth]{graphics/priti-patel.jpg}
+\end{center}
+\bluefillbox{THE prime minister} has fired \colorbox{red}{\textcolor{white}{{\bf secretary of state}}} \colorbox{red}{\textcolor{white}{{\bf Priti Patel}}} while telling 
+\colorbox{red}{\textcolor{white}{{\bf her}}} \bluefillbox{she} wishes with all \bluebox{her} heart it was the other way around. 
+
+\bluefillbox{May} confessed to \colorbox{red}{\textcolor{white}{{\bf Patel}}} that although having secret meetings with the Israelis 
+was a sackable offence, it paled in comparison to \bluebox{her} own dire 
+performance but “sadly nobody’s willing to pull the trigger.” 
+
+\redfillbox{Patel} said: “It was so awkward. \bluefillbox{She} said ‘\colorbox{red}{\textcolor{white}{{\bf You}}} don’t know how often \bluefillbox{I}’ve dreamt of 
+sitting on \redbox{your} side of the desk, finally being summarily dismissed for 
+\bluebox{my} gross incompetence.’ 
+\end{onlyenv}
+
 
 \end{frame}
 
 \begin{frame}{Noun phrases and reference}
 
-% NPs usually refer to entities in the world
-% NPs may co-refer, meaning they refer to the same entity
-% They may also be nested
+\begin{itemize}
+\item NPs usually refer to entities in the world
+\item NPs may co-refer, meaning they refer to the same entity
+\item They may also be nested
+\end{itemize}
+
+Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
+«\redfillbox{Дорогой далекий друг}, — писал \bluefillbox{он}, — \bluefillbox{я} \redfillbox{Вас} не знаю, и \redfillbox{Вы} \bluefillbox{меня} не знаете.
+Очень хотелось бы познакомиться. Всего хорошего. \bluefillbox{Саша}».
+Когда письмо принесли, \redfillbox{Тагор} предавался самосозерцанию. 
+Так погрузился, хоть режь его. 
+\greenfillbox{\redbox{\textcolor{black}{Его}} жена} толкала, толкала, письмо подсовывала — не видит. 
+\redfillbox{Он}, правда, по-русски читать не умел. Так и не познакомились.
+
+
 
 \end{frame}
 
 \begin{frame}{Kinds of reference}
 
-% Referring expressions 
+\begin{columns}
+
+\column{0.2\textwidth}
+
+\begin{tikzpicture}[overlay]
+\node[draw] at (1,3.0) {Easier};
+\node[draw] at (1,-3.0) {Harder};
+\node at (1,0) [side arrow=90] {\rotatebox{90}{~}};
+\end{tikzpicture}
+
+
+\column{0.8\textwidth}
+\begin{tabular}{ll}
+
+\textbf{Bound variables} & She hurt \emph{herself} \\
+                         & Я имею \emph{свой} баян \\
+% Bound variables [She hurt herself]
+
+%% Only possible analysis is coreferent with the subject
 
 % Free variables [She saw her pay increase] -- [Она видела ее/свой]
+~ & ~ \\
+\textbf{Free variables} & Maša read \emph{her} book \\
+                        & \emph{Она} очень нравилась. \\
 
-% Bound variables [She hurt herself]
+%% Might be coreferent with the subject or not
+
+% Referring expressions 
+~ & ~ \\
+
+\textbf{Referring expressions} & Carles Puigdemont \\
+                               & Catalan president \\
+                               & Puigdemont \\ 
+                               & president of Catalonia \\
+                               & President Puigdemont \\
+%% 
+\end{tabular}
+
+\end{columns}
 
 \end{frame}
 
 \begin{frame}{Coreference, anaphora, cataphora}
+
+\begin{itemize}
+  \item  \textbf{Coreference} 
+  \begin{itemize}  
+    \item Two \emph{mentions} (NPs) refer to the same entity 
+    \item May be identical or completely different
+  \end{itemize}
+  \item \textbf{Anaphora, Cataphora} 
+  \begin{itemize}
+    \item Interpretation is in some way dependent on an antecedent
+    \item Traditionally the antecedent came first, but not always the case.
+  \end{itemize}
+\end{itemize}
 
 \end{frame}
 
 
 \begin{frame}{Cataphora}
 
+% С покрытого персидскими чепраками дивана, на котором лежал лорд Генри Уоттон, куря, как всегда, одну за другой бесчисленные папиросы, был виден только куст ракитника -- его золотые и душистые, как мед, цветы жарко пылали на солнце, а трепещущие ветви, казалось, едва выдерживали тяжесть этого сверкающего великолепия \ldots
+
+С покрытого персидскими чепраками дивана, на котором он лежал, куря, как всегда, одну за другой бесчисленные папиросы, лорд Генри Уоттон видел только куст ракитника -- его золотые и душистые, как мед, цветы жарко пылали на солнце, а трепещущие ветви, казалось, едва выдерживали тяжесть этого сверкающего великолепия \ldots
+
+(Oscar Wilde -- The Picture of Dorian Grey)
+
 \end{frame}
 
 \begin{frame}{Two different things}
 
-Anaphora resolution:
 
-% Text 
-% World
+\begin{tikzpicture}[overlay]
+\node at (7,3.0) {\textbf{Anaphora resolution}};
+\node at (1,2.0) {\textbf{Text}};
+\node at (1,0.5) {\textbf{World}};
+\node[draw] at (5,2.0) {~};
+\node[draw] at (9,2.0) {~};
+\node[draw] at (5,0.5) {~};
+%\node[draw=black!75, thin, double arrow, minimum height=3.0cm, fill=gray!10] at (7,2.0) {~~~~} ;
+%\node[draw=black!75, thin, double arrow, shape border rotate=90, minimum height=1.0cm, fill=gray!10] at (5,1.0) {~~~~} ;
+\draw[<->,line width=1pt] (5.5,2.0) to (8.5,2.0);
+\draw[<->,line width=1pt] (5.0,1.6) to (5.0,0.8);
+\end{tikzpicture}
 
-Co-reference resolution:
+~\\
 
-% Text 
-% World
+\begin{tikzpicture}[overlay]
+\node at (7,0.5) {\textbf{Co-reference resolution}};
+\node at (1,-0.5) {\textbf{Text}};
+\node at (1,-2.0) {\textbf{World}};
+\node[draw] at (5,-0.5) {~};
+\node[draw] at (9,-0.5) {~};
+\node[draw] at (7,-2.0) {~};
+\draw[<->,line width=1pt] (5.5,-0.75) to (6.8,-1.8);
+\draw[<->,line width=1pt] (8.5,-0.75) to (7.2,-1.8);
+\end{tikzpicture}
 
 \end{frame}
 
