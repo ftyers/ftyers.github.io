@@ -1,12 +1,12 @@
-\documentclass[10pt, compress]{beamer}
+\documentclass[dvipsnames, 10pt, compress]{beamer}
 
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
 
 \usepackage{tikz-dependency}
 \usepackage{caption}
-\usepackage{booktabs}
-\usepackage{tabularx}
+%\usepackage{booktabs}
+%\usepackage{tabularx}
 \usepackage{alltt}
 \usepackage[scale=2]{ccicons}
 
@@ -15,6 +15,7 @@
 
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
 
 % commands from the paper
 \newfontfamily\gtfont[Scale=1.1,Letters=SmallCaps]{Linux Libertine O}
@@ -49,8 +50,125 @@
 
 \maketitle
 
+\begin{frame}{What is co-reference resolution?}
 
-\begin{frame}{Introduction}
+\begin{onlyenv}<1>
+THE prime minister has fired secretary of state Priti Patel while telling 
+her she wishes with all her heart it was the other way around. 
+
+May confessed to Patel that although having secret meetings with the Israelis 
+was a sackable offence, it paled in comparison to her own dire 
+performance but “sadly nobody’s willing to pull the trigger.” 
+
+Patel said: “It was so awkward. She said ‘You don’t know how often I’ve dreamt of 
+sitting on your side of the desk, finally being summarily dismissed for 
+my gross incompetence.’ 
+\end{onlyenv}
+
+\begin{onlyenv}<2>
+\begin{center}
+\includegraphics[width=0.4\textwidth]{graphics/theresa-may.jpg}
+\includegraphics[width=0.4\textwidth]{graphics/priti-patel.jpg}
+\end{center}
+THE prime minister has fired secretary of state Priti Patel while telling 
+her she wishes with all her heart it was the other way around. 
+
+May confessed to Patel that although having secret meetings with the Israelis 
+was a sackable offence, it paled in comparison to her own dire 
+performance but “sadly nobody’s willing to pull the trigger.” 
+
+Patel said: “It was so awkward. She said ‘You don’t know how often I’ve dreamt of 
+sitting on your side of the desk, finally being summarily dismissed for 
+my gross incompetence.’ 
+\end{onlyenv}
+
+
+\begin{onlyenv}<3>
+\begin{center}
+\includegraphics[width=0.4\textwidth]{graphics/theresa-may.jpg}
+\includegraphics[width=0.4\textwidth]{graphics/priti-patel.jpg}
+\end{center}
+\colorbox{ProcessBlue}{\textcolor{white}{{\bf THE prime minister}}} has fired secretary of state Priti Patel while telling 
+her \colorbox{ProcessBlue}{\textcolor{white}{{\bf she}}} wishes with all her heart it was the other way around. 
+
+\colorbox{ProcessBlue}{\textcolor{white}{{\bf May}}} confessed to Patel that although having secret meetings with the Israelis 
+was a sackable offence, it paled in comparison to her own dire 
+performance but “sadly nobody’s willing to pull the trigger.” 
+
+Patel said: “It was so awkward. \colorbox{ProcessBlue}{\textcolor{white}{{\bf She}}} said ‘You don’t know how often \colorbox{ProcessBlue}{\textcolor{white}{{\bf I}}}’ve dreamt of 
+sitting on your side of the desk, finally being summarily dismissed for 
+my gross incompetence.’ 
+\end{onlyenv}
+
+\begin{onlyenv}<4>
+\begin{center}
+\includegraphics[width=0.4\textwidth]{graphics/theresa-may.jpg}
+\includegraphics[width=0.4\textwidth]{graphics/priti-patel.jpg}
+\end{center}
+THE prime minister has fired \colorbox{red}{\textcolor{white}{{\bf secretary of state}}} \colorbox{red}{\textcolor{white}{{\bf Priti Patel}}} while telling 
+\colorbox{red}{\textcolor{white}{{\bf her}}} she wishes with all her heart it was the other way around. 
+
+May confessed to \colorbox{red}{\textcolor{white}{{\bf Patel}}} that although having secret meetings with the Israelis 
+was a sackable offence, it paled in comparison to her own dire 
+performance but “sadly nobody’s willing to pull the trigger.” 
+
+\colorbox{red}{\textcolor{white}{{\bf Patel}}} said: “It was so awkward. She said ‘You don’t know how often I’ve dreamt of 
+sitting on your side of the desk, finally being summarily dismissed for 
+my gross incompetence.’ 
+\end{onlyenv}
+
+\end{frame}
+
+\begin{frame}{Noun phrases and reference}
+
+% NPs usually refer to entities in the world
+% NPs may co-refer, meaning they refer to the same entity
+% They may also be nested
+
+\end{frame}
+
+\begin{frame}{Kinds of reference}
+
+% Referring expressions 
+
+% Free variables [She saw her pay increase] -- [Она видела ее/свой]
+
+% Bound variables [She hurt herself]
+
+\end{frame}
+
+\begin{frame}{Coreference, anaphora, cataphora}
+
+\end{frame}
+
+
+\begin{frame}{Cataphora}
+
+\end{frame}
+
+\begin{frame}{Two different things}
+
+Anaphora resolution:
+
+% Text 
+% World
+
+Co-reference resolution:
+
+% Text 
+% World
+
+\end{frame}
+
+
+
+\begin{frame}{Applications}
+
+Machine translation:
+
+Text summarisation:
+
+Information extraction:
 
 
 \end{frame}
