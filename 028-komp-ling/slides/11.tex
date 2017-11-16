@@ -10,6 +10,8 @@
 \usepackage{alltt}
 \usepackage[scale=2]{ccicons}
 
+\usepackage{tikz-qtree}
+\usepackage[linguistics]{forest}
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
 
@@ -59,6 +61,12 @@
 \tikzstyle{side arrow} = [draw=black!75, very thick, double arrow, minimum height=5.0cm, shape border rotate =#1, fill=gray!10]
 
 \maketitle
+
+\begin{frame}{Things and naming things}
+
+
+
+\end{frame}
 
 \begin{frame}{What is co-reference resolution?}
 
@@ -149,11 +157,12 @@ sitting on \redbox{your} side of the desk, finally being summarily dismissed for
 
 \begin{frame}{Noun phrases and reference}
 
+\fbox{\parbox{\textwidth}{
 \begin{itemize}
 \item NPs usually refer to entities in the world
 \item NPs may co-refer, meaning they refer to the same entity
 \item They may also be nested
-\end{itemize}
+\end{itemize}}}
 
 Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
 «\redfillbox{Дорогой далекий друг}, — писал \bluefillbox{он}, — \bluefillbox{я} \redfillbox{Вас} не знаю, и \redfillbox{Вы} \bluefillbox{меня} не знаете.
@@ -249,6 +258,19 @@ More frequent
 
 \end{frame}
 
+\begin{frame}{Anaphora vs. coreference}
+
+We went to a concert last night. The tickets were really expensive
+
+\begin{itemize}
+  \item Not all anaphoric relations are coreferential, e.g. bridging anaphora
+  \item Multiple identical NP matches are often coreferential but not anaphoric
+\end{itemize}
+
+\end{frame}
+
+% example
+
 \begin{frame}{Two different things}
 
 
@@ -280,8 +302,6 @@ More frequent
 
 \end{frame}
 
-
-
 \begin{frame}{Applications}
 
 Machine translation:
@@ -295,8 +315,261 @@ Information extraction:
 
 % ALGORITHMS
 
+\section{Pronominal anaphora resolution}
+
+\begin{frame}
+
+
+\end{frame}
+
+\begin{frame}{Hobbs' (1978) algorithm/1}
+
+\begin{itemize}
+  \item Simple syntax-based algorithm for 3rd person anaphoric pronouns
+  \item Requires:
+  \begin{itemize}
+     \item Constituency parser
+     \item Gender and number `checker'
+     \begin{itemize}
+        \item Parsers for English rarely include gender information for nouns
+     \end{itemize}
+  \end{itemize}
+  \item Searches current and preceding sentences in a breadth-first, left-to-right
+     manner, stops when it finds a matching NP
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Hobbs' (1978) algorithm/2}
+
+\begin{itemize}
+  \item Right to left search in current sentence 
+  \item If not valid antecedent fine, try previous sentence
+  \begin{itemize}
+    \item Left to right breadth-first search
+  \end{itemize}
+ 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Hobbs' (1978) algorithm/3}
+
+\begin{onlyenv}<1>
+\includegraphics[width=\textwidth]{graphics/drone-training-2x.png}
+\end{onlyenv}
+\begin{onlyenv}<2>
+\includegraphics[width=\textwidth]{graphics/drone-training-2x-2.png}
+\end{onlyenv}
+
+
+\end{frame}
+
+\begin{frame}{Hobbs' (1978) algorithm/4}
+%My drone keeps flying into the wrong rooms.
+%Do you have anything to discourage it?
+
+\begin{columns}
+
+\column{0.6\textwidth}
+%\begin{tikzpicture}
+%\Tree [.S [.DP My [.NP drone]] [.VP [.V keeps] [.Comp flying [.PP into [.DP the [.NP [.AP [.A wrong] [.N rooms]]]]]]]]
+%\end{tikzpicture}
+\scalebox{0.8}{
+\begin{forest}
+[S$_1$ [NP$_1$ [My drone]] [VP [V [keeps flying]] [PP [into] [NP$_2$ [the wrong rooms]]]]]
+%[S 
+%  [NP [My drone] ]
+%  [VP [keeps 
+%        flying [PP [into] [the [NP [wrong] [rooms]]]]]]
+%]
+\end{forest}
+}
+~\\
+~\\
+\begin{itemize}
+   \item Start search in NP$_5$ in S$_2$
+   \item Reject NP$_4$, no intervening NP
+   \item Reject NP$_3$, feature mismatch
+   \item Move to S$_1$
+   \item Accept NP$_1$
+\end{itemize}
+\column{0.4\textwidth}
+\scalebox{0.8}{
+\begin{forest}
+[S$_2$ [Do] [S$_3$ [NP$_3$ [You]] [VP [have] [SC [NP$_4$ [anything]] [Inf [to] [VP [discourage] [NP$_5$ [it]]]]]]]]
+\end{forest}
+}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Log-linear model/1} % General idea
+
+\begin{itemize}
+  \item Supervised machine learning approach
+  \item Requires corpus where each pronoun has been linked with its antecedent
+\end{itemize}
+
+\begin{itemize}
+  \item Extract positive and negative examples
+  \item Train binary classifier 
+  \begin{itemize}
+     \item True: is co-referent
+     \item False: is not co-referent
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Log-linear model/2} % Positive and negative examples
+%My drone keeps flying into the wrong rooms.
+%Do you have anything to discourage it?
+
+Let's take our previous example:
+
+Positive example:
+\begin{itemize}
+ \item (it, my drone)
+\end{itemize}
+
+Negative examples:
+\begin{itemize}
+ \item (it, anything)
+ \item (it, you)
+ \item (it, the wrong rooms)
+\end{itemize}
+
+
+
+
+\end{frame}
+
+\begin{frame}{Log-linear model/3} % Features
+
+\begin{itemize}
+  \item \textbf{strict gender} [true, false]
+  \item \textbf{compatible gender} [true, false]
+  \item \textbf{strict number} [true, false]
+  \item \textbf{compatible number} [true, false]
+  \item \textbf{sentence distance} [0, 1, 2, \ldots]
+  \item \textbf{Hobbs distance} [0, 1, 2, \ldots] 
+  \item \textbf{grammatical role} [subject, object, \ldots] 
+  \item \textbf{linguistic form} [proper, def, indef, pronoun]
+\end{itemize}
+
+Can you think of some other useful features ? 
+
+\end{frame}
+
+\begin{frame}{Log-linear model/4} % Applying the model
+
+\begin{itemize}
+  \item For each pronoun,
+  \begin{itemize}
+     \item For each NP we have seen so far,
+     \begin{itemize}
+       \item Classify if NP is an antecedent of the pronoun
+     \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+
+\end{frame}
+
+\section{Co-reference resolution}
+
+
+\begin{frame}
+
+
+\end{frame}
+
+
+\begin{frame}{Co-reference chains}
+
+Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
+«\redfillbox{Дорогой далекий друг}, — писал \bluefillbox{он}, — \bluefillbox{я} \redfillbox{Вас} не знаю, и \redfillbox{Вы} \bluefillbox{меня} не знаете.
+Очень хотелось бы познакомиться. Всего хорошего. \bluefillbox{Саша}».
+Когда письмо принесли, \redfillbox{Тагор} предавался самосозерцанию. 
+Так погрузился, хоть режь \redfillbox{его}. 
+\greenfillbox{Его жена} толкала, толкала, письмо подсовывала — не видит. 
+\redfillbox{Он}, правда, по-русски читать не умел. Так и не познакомились.
+
+\begin{tabular}{l}
+{ Пушкин, он$_1$, я$_1$, меня$_1$ } \\ 
+{ Рабиндранату Тагору, Дорогой далекий друг, Вас$_1$, Вы$_1$, Тагор, его$_1$, Он} \\
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}{General algorithm}
+
+\end{frame}
+
+
+\begin{frame}{Additional features}
+
+\end{frame}
+
+
+\begin{frame}{Rule-based models} % xrenner
+
+Input is a dependency tree.
+
+Constraint-based, rules like:
+
+$C = <ANA,  ANT,  DIR, DIST, PROP>$
+
+\begin{itemize}
+  \item ANA, ANT = constraints on the anaphor and antecedent
+  \item DIR = direction (e.g. forward, backwards)
+  \item DIST = how far to look (in sentences)
+  \item PROP = should features (e.g. gender) be propagated?
+\end{itemize}
+
+\end{frame}
+
+\section{Evaluation}
+
 % EVALUATION
 
+\begin{frame}{Model-Theoretic coreference scoring}
+
+
+\end{frame}
+
+\begin{frame}{Other metrics}
+
+
+\end{frame}
+
+\begin{frame}{Tools and resources}
+
+% ruCoRef http://rucoref.maimbava.net/
+
+\end{frame}
+
+\begin{frame}{xrenner}
+
+\end{frame}
+
+\begin{frame}{Stanford CoreNLP}
+
+\end{frame}
+
+
+\section{Shared tasks}
 % SHARED TASK(S)
+
+\begin{frame}{RuEval-2014}
+
+\end{frame}
+
+\section{Practical}
+
+% PRACTICAL
+
+
 
 \end{document}
