@@ -31,11 +31,34 @@ This will take ages, you can also download a pretrained model here:
 <pre>
 $ git clone https://github.com/amir-zeldes/xrenner.git
 $ cd xrenner
+$ git checkout develop
 $ python3 setup.py install [--prefix=PREFIX]
-
+$ cd xrenner/models
+$ cp eng.xrm eng/
+$ cd eng/
+$ unzip -n eng.xrm
+$ cd ../../
+$ python3 xrenner.py -t 
 </pre>
 
 Where <tt>PREFIX</tt> is your preferred install prefix (it defaults to <tt>/usr/local</tt>)
+
+If the tests pass you should be able to load the module in Python:
+
+<pre>
+$ python3
+Python 3.5.4 (default, Aug 12 2017, 14:08:14) 
+[GCC 7.1.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; import xrenner
+&gt;&gt;&gt; x = xrenner.Xrenner()
+&gt;&gt;&gt; f = open('example_in.conll10').read()
+&gt;&gt;&gt; res = x.analyze(f, "conll")
+&gt;&gt;&gt; print(res)
+
+</pre>
+
+If the tests do not pass, then file an issue on the <a href="https://github.com/amir-zeldes/xrenner/issues">GitHub issues page</a>
 
 <h4>Write rules </h4>
 
