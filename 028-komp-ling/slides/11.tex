@@ -161,7 +161,7 @@ sitting on \redbox{your} side of the desk, finally being summarily dismissed for
 \begin{itemize}
 \item NPs usually refer to entities in the world
 \item NPs may co-refer, meaning they refer to the same entity
-\item They may also be nested
+\item They may also be nested or discontinuous % Peter came there with Masha. They...
 \end{itemize}}}
 
 Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
@@ -559,14 +559,14 @@ Example rules:
 
 \begin{frame}{Other metrics}
 
+\begin{itemize}
+   \item B$^3$ scoring
+    \item CEAF
+\end{itemize}
 
 \end{frame}
 
 \section{Tools and resources}
-
-\begin{frame}[standout]
-Tools and resources
-\end{frame}
 
 \begin{frame}{Stanford CoreNLP}
 
@@ -628,6 +628,16 @@ Tools and resources
 \end{frame}
 
 \begin{frame}{RuEval-2014}
+
+Two tracks:
+\begin{itemize}
+  \item Pronominal anaphora resolution (8 teams)
+  \begin{itemize}
+     \item personal, possessive, relative and reflexive pronouns
+     \item antecedent should be in the gold-standard coreference chain
+  \end{itemize}
+  \item Co-reference resolution (3 teams)
+\end{itemize}
 
 \end{frame}
 
