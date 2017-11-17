@@ -1,0 +1,44 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 11: Anaphora and co-reference</title>
+</head>
+
+<body>
+<div class="page">
+
+<h3>Practical</h3>
+
+<h4>Install <tt>udpipe</tt> and train a parsing model</h4>
+
+<pre>
+$ git clone https://github.com/ufal/udpipe.git
+$ cd udpipe/src
+$ make
+$ sudo cp udpipe /usr/local/bin/
+$ cd ../../
+$ git clone https://github.com/UniversalDependencies/UD_Russian-SynTagRus
+$ cd UD_Russian-SynTagRus
+$ udpipe --train ru_syntagrus-ud.udpipe < ru_syntagrus-ud-train.conllu 
+</pre>
+
+This will take ages, you can also download a pretrained model here:
+
+<h4>Install <tt>xrenner</tt>
+
+<pre>
+$ git clone https://github.com/amir-zeldes/xrenner.git
+$ cd xrenner
+$ python3 setup.py install [--prefix=PREFIX]
+
+</pre>
+
+Where <tt>PREFIX</tt> is your preferred install prefix (it defaults to <tt>/usr/local</tt>)
+
+<h4>Write rules </h4>
+
+</div>
+</body>
+</html>
