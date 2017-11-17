@@ -205,7 +205,7 @@ Interesting linguistics
 % Free variables [She saw her pay increase] -- [Она видела ее/свой]
 ~ & ~ \\
 \textbf{Free variables} & Maša read \emph{her} book \\
-                        & \emph{Она} очень нравилась. \\
+                        & \emph{Ей} очень нравилась. \\
 
 %% Might be coreferent with the subject or not
 
@@ -258,9 +258,19 @@ More frequent
 
 \end{frame}
 
-\begin{frame}{Anaphora vs. coreference}
+\begin{frame}{Other types of anaphora}
 
-We went to a concert last night. The tickets were really expensive
+\begin{itemize}
+  \item Bridging Anaphora: 
+  \item "Other" Anaphora: 
+  \item Non-NP Anaphora (e.g. events, propositions)
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Anaphora vs. coreference}
 
 \begin{itemize}
   \item Not all anaphoric relations are coreferential, e.g. bridging anaphora
@@ -440,9 +450,6 @@ Negative examples:
  \item (it, the wrong rooms)
 \end{itemize}
 
-
-
-
 \end{frame}
 
 \begin{frame}{Log-linear model/3} % Features
@@ -486,7 +493,9 @@ Can you think of some other useful features ?
 \end{frame}
 
 
-\begin{frame}{Co-reference chains}
+\begin{frame}{Reference models}
+
+% chains , entity-mention , 
 
 Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
 «\redfillbox{Дорогой далекий друг}, — писал \bluefillbox{он}, — \bluefillbox{я} \redfillbox{Вас} не знаю, и \redfillbox{Вы} \bluefillbox{меня} не знаете.
@@ -553,23 +562,70 @@ Example rules:
 
 \end{frame}
 
-\begin{frame}{Tools and resources}
+\section{Tools and resources}
 
-% ruCoRef http://rucoref.maimbava.net/
+\begin{frame}[standout]
+Tools and resources
+\end{frame}
+
+\begin{frame}{Stanford CoreNLP}
+
+\begin{center}
+\includegraphics[width=\textwidth]{graphics/Xi-Jinping.png} \\
+\url{https://stanfordnlp.github.io/CoreNLP/index.html}
+\end{center}
+
+\begin{itemize}
+ \item includes coreference for English + Chinese
+ \item rule-based, statistical and neural models
+ \item based on Java
+ \item very ``heavy'' ($>$ 1G for code + model)
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}{xrenner}
 
+\begin{center}
+\includegraphics[width=\textwidth]{graphics/xrenner.png} \\
+   e\textbf{X}ternally configurable \textbf{RE}ference and \textbf{N}on \textbf{N}amed \textbf{E}ntity \textbf{R}ecogniser \\
+\url{https://github.com/amir-zeldes/xrenner}
+
+\end{center}
+
+\begin{itemize}
+  \item based on Python
+  \item Rule-based (constraints)
+  \item Functioning model for English
+  \item (relatively) small footprint ($<$ 100M)
+\end{itemize}
+
+% model for English
+
 \end{frame}
 
-\begin{frame}{Stanford CoreNLP}
 
-\end{frame}
-
+% ruCoRef http://rucoref.maimbava.net/
+% OntoNotes
 
 \section{Shared tasks}
 % SHARED TASK(S)
+
+\begin{frame}{SemEval 2010}
+
+%The SemEval-2010 task is of special interest for us in the following respect:
+%it is the task task on Coreference Resolution in Multiple Languages (six languages
+%such as Catalan, Dutch, English, German, Italian and Spanish). Besides the well-stud-
+%ied languages, the under-resourced languages took part in the anaphora resolution
+%procedure. Some of the participants used small training and testing data sets (e.g.
+%80 texts for Italian as a training set and 46 texts as a test set). The other issue of inter-
+%est is that four different metrics were used in evaluation. The corpora were annotated
+%with morphological, syntactic and partial semantic tags. One of the aims of the event
+%was to learn out what was the impact of different levels of linguistic information.
+
+
+
+\end{frame}
 
 \begin{frame}{RuEval-2014}
 
@@ -577,11 +633,15 @@ Example rules:
 
 \section{Practical}
 
+\begin{frame}{Practical}
+
 For the practical, select a short paragraph or document and write some coreference rules 
 using Xrenner.
 
 Further instructions:
 
 \url{https://ftyers.github.io/028-komp-ling/classes/11.html}
+
+\end{frame}
 
 \end{document}
