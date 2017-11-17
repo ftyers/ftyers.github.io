@@ -43,7 +43,7 @@ $ python3 xrenner.py -t
 
 Where <tt>PREFIX</tt> is your preferred install prefix (it defaults to <tt>/usr/local</tt>)
 
-If the tests pass you should be able to load the module in Python:
+If the tests pass you should be able to load the module in Python. If the tests do not pass, then file an issue on the <a href="https://github.com/amir-zeldes/xrenner/issues">GitHub issues page</a>
 
 <pre>
 $ python3
@@ -55,10 +55,22 @@ Type "help", "copyright", "credits" or "license" for more information.
 &gt;&gt;&gt; f = open('example_in.conll10').read()
 &gt;&gt;&gt; res = x.analyze(f, "conll")
 &gt;&gt;&gt; print(res)
-
 </pre>
 
-If the tests do not pass, then file an issue on the <a href="https://github.com/amir-zeldes/xrenner/issues">GitHub issues page</a>
+Different output formats are supported, you can also try <tt>html</tt> which will make an HTML file with cool
+hover-over highlighting:
+
+<pre>
+&gt;&gt;&gt; res = x.analyze(f, "html")
+&gt;&gt;&gt; open('/tmp/coref.html', 'w+').write(res)
+</pre>
+
+Then just open <tt>file:///tmp/coref.html</tt> in your web browser.
+
+
+<h4>Set up a new language directory</h4>
+
+In order to set up a new language directory, you need to make a new 3-letter code directory in 
 
 <h4>Write rules </h4>
 
