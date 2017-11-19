@@ -91,7 +91,11 @@ sub-directory <tt>xrenner/models</tt>, for example <tt>xrenner/models/rus</tt>.
 The <a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html">description</a> in the <a href="https://corpling.uis.georgetown.edu/xrenner/doc/index.html">documentation</a> of Xrenner is good, check it out. But at minimum you need five files in 
 your model directory:
 <ul>
-<li><tt>config.ini</tt>: The main configuration file for the model. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/config.html">more</a>]</li>
+<li><tt>config.ini</tt>: The main configuration file for the model. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/config.html">more</a>]
+<ul>
+  <li><b>Tip:</b> To make debugging easier, make sure you turn on singleton mentions with the following statement: <tt>remove_singletons=False</tt></li>
+</ul>
+</li>
 <li><tt>coref_rules.tab</tt>: A cascade of coreference matching rules. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#coref-rules-tab">more</a>]</li>
 <li><tt>pronouns.tab</tt>: A table containing all pronoun forms in the language and their possible agreement classes. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#pronouns-tab">more</a>]</li>
 <li><tt>entities.tab</tt>: The full text entity list file. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#entities-tab">more</a>]</li>
