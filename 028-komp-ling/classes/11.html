@@ -112,6 +112,18 @@ The idea of the practical is to write at least one simple rule, for example:
   <li> Co-refer two pronouns that agree for 1st/2nd person and number in the same sentence</li>
 </ul>
 
+<h4> Run the system </h4>
+
+Take the <tt>paragraph.conllu</tt> file you produced earlier and run:
+
+<pre>
+$ python3 xrenner.py -m rus -o html paragraph.conllu &gt; /tmp/paragraph.html
+</pre>
+
+or replace <tt>-m rus</tt> with the 3 letter code of the language you are working with.
+
+You can now browse to <tt>file:///tmp/paragraph.html</tt> in your browser and check to see how well your rules worked.
+
 </div>
 </body>
 </html>
