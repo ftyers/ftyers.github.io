@@ -27,9 +27,22 @@ $ cd UD_Russian-SynTagRus
 $ udpipe --train ru_syntagrus-ud.udpipe < ru_syntagrus-ud-train.conllu 
 </pre>
 
-This will take ages, you can also download a pretrained model here:
+This will take ages, you can also download a pretrained model <a href="http://ilazki.thinkgeek.co.uk/ru_syntagrus-ud.udpipe">here</a>.
+
+Once you have trained the model you can analyse some short text paragraph of your 
+choosing using UDpipe. If you don't want to work with your own text you can use
+<a href="pushkin.conllu">this example</a>.
+
+<pre>
+$ cat paragraph.txt | udpipe --tokenize --tag --parse &gt; paragraph.conllu
+</pre>
+
+This should segment the text into sentences and tokens and tag/dependency parse
+it. Once you have a <tt>.conllu</tt> file you can viewing it in <a href="http://ftyers.github.io/ud-annotatrix/">Annotatrix</a>.
 
 <h4>Install <tt>xrenner</tt></h4>
+
+Next up install the co-reference resolution system.
 
 <pre>
 $ git clone https://github.com/amir-zeldes/xrenner.git
@@ -92,7 +105,7 @@ The idea of the practical is to write at least one simple rule, for example:
   <li> Co-refer mentions that exactly match </li>
   <li> Co-refer mentions that partially match </li>
   <li> Co-refer a reflexive pronoun with the subject in the same sentence </li>
-  <li> Co-refer two pronouns that agree for person/number in the same sentence</li>
+  <li> Co-refer two pronouns that agree for 1st/2nd person and number in the same sentence</li>
 </ul>
 
 </div>
