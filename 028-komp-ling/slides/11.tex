@@ -481,7 +481,6 @@ Negative examples:
   \item \textbf{compatible number} [true, false]
   \item \textbf{sentence distance} [0, 1, 2, \ldots]
   \item \textbf{Hobbs distance} [0, 1, 2, \ldots] 
-  \item \textbf{grammatical role} [subject, object, \ldots] 
   \item \textbf{linguistic form} [proper, def, indef, pronoun]
 \end{itemize}
 
@@ -489,7 +488,24 @@ Can you think of some other useful features ?
 
 \end{frame}
 
-\begin{frame}{Log-linear model/4} % Applying the model
+\begin{frame}{Log-linear model/4}
+
+\begin{itemize}
+ \item \textbf{Recency:} More recently mentioned entities are more likely to be referred to 
+ \item \textbf{Grammatical Role:} Entities in the subject position is 
+more likely to be referred to than entities in the object 
+position 
+ \item \textbf{Parallelism:}
+ \item \textbf{Verb Semantics:} Certain verbs seem to bias whether 
+the subsequent pronouns should be referring to their 
+subjects or objects 
+ \item \textbf{Selectional Restrictions:} Restrictions because of 
+semantics 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Log-linear model/5} % Applying the model
 
 \includegraphics[width=\textwidth]{graphics/classifier-coref-2.eps}
 
@@ -578,9 +594,49 @@ Example rules:
 
 % EVALUATION
 
-\begin{frame}{Model-Theoretic coreference scoring}
+\begin{frame}{Model-Theoretic coreference scoring/1}
 
+Used in the MUC series of shared tasks
 
+Requires:
+\begin{itemize}
+  \item A KEY (the gold standard)
+  \item A RESPONSE (system output)
+\end{itemize} 
+
+\end{frame}
+
+\begin{frame}{Model-Theoretic coreference scoring/2}
+
+Given that A,B,C and D are part of a coreference 
+chain in the KEY, treat as equivalent the two 
+responses: 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/coref-eval-1.png}
+\end{center}
+
+And as superior to: 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{graphics/coref-eval-2.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Model-Theoretic coreference scoring/3}
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{graphics/coref-scoring-1.png}
+\end{center}
+
+\begin{itemize}
+  \item KEY: [A, B, C, D]
+  \item RESPONSE: [A, B] [C, D]
+\end{itemize}
+
+\begin{itemize}
+  \item Recall = $\frac{4 - 2}{3} = 0.66$
+  \item Precision = $\frac{4 - 1}{4 - 1} = 1.0$
+  \item F-score = $\frac{2 . \frac{2}{3} * 1}{\frac{2}{3} . 1} = 0.79$
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Other metrics}
@@ -630,12 +686,44 @@ Example rules:
 
 \end{frame}
 
+\begin{frame}{RuCor}
+
+\begin{center}
+\includegraphics[width=\textwidth]{graphics/rucoref-pic.png} \\
+\url{http://ant1.compling.net/res03/ant1.php}
+\end{center}
+
+
+\begin{itemize}
+  \item Corpus of Russian annotated for co-reference
+  \item 156,636 tokens
+
+\end{itemize}
+
+\end{frame}
 
 % ruCoRef http://rucoref.maimbava.net/
 % OntoNotes
 
 \section{Shared tasks}
 % SHARED TASK(S)
+
+\begin{frame}{Message Understanding Conference (MUC)}
+
+%One of the first evaluation events for the tasks under discussion took place within
+%the Message Understanding Conferences (MUCs). The following definition for the
+%coreference relations was suggested: “The coreference ‘layer’ links together multiple
+%expressions designating a given entity”. Only links between noun phrases were con-
+%sidered. The main criteria for the task definition were the good interannotator agree-
+%ment, the simplicity and speed of text annotation, the objective to create a corpus for
+%independent research of coreference. The MUC project is the best-known example
+%of coreference annotation, on which much subsequent work is based. The various
+%systems results on the test sets from MUC-6 (1995) and MUC-7 (1998) coreference
+%corpora are widely discussed in the literature (c.f. [Mitkov 1999], [Van Deemter, K., &
+%Kibble, R. 2000] and others). The main principle for data annotation was the referen-
+%tial NP identity. We followed the basic MUC data annotation principles
+
+\end{frame}
 
 \begin{frame}{SemEval 2010}
 
