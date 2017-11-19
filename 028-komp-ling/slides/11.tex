@@ -295,8 +295,8 @@ More frequent
 \node[draw] at (5,0.5) {~};
 %\node[draw=black!75, thin, double arrow, minimum height=3.0cm, fill=gray!10] at (7,2.0) {~~~~} ;
 %\node[draw=black!75, thin, double arrow, shape border rotate=90, minimum height=1.0cm, fill=gray!10] at (5,1.0) {~~~~} ;
-\draw[<->,line width=1pt] (5.5,2.0) to (8.5,2.0);
-\draw[<->,line width=1pt] (5.0,1.6) to (5.0,0.8);
+\draw[<-,line width=1pt] (5.5,2.0) to (8.5,2.0);
+\draw[->,line width=1pt] (5.0,1.6) to (5.0,0.8);
 \end{tikzpicture}
 
 ~\\
@@ -308,8 +308,8 @@ More frequent
 \node[draw] at (5,-0.5) {~};
 \node[draw] at (9,-0.5) {~};
 \node[draw] at (7,-2.0) {~};
-\draw[<->,line width=1pt] (5.5,-0.75) to (6.8,-1.8);
-\draw[<->,line width=1pt] (8.5,-0.75) to (7.2,-1.8);
+\draw[->,line width=1pt] (5.5,-0.75) to (6.8,-1.8);
+\draw[->,line width=1pt] (8.5,-0.75) to (7.2,-1.8);
 \end{tikzpicture}
 
 \end{frame}
@@ -434,6 +434,8 @@ More frequent
 
 \begin{frame}{Log-linear model/1} % General idea
 
+\includegraphics[width=\textwidth]{graphics/classifier-coref-2.eps}
+
 \begin{itemize}
   \item Supervised machine learning approach
   \item Requires corpus where each pronoun has been linked with its antecedent
@@ -454,7 +456,7 @@ More frequent
 %My drone keeps flying into the wrong rooms.
 %Do you have anything to discourage it?
 
-Let's take our previous example:
+\includegraphics[width=\textwidth]{graphics/classifier-coref-2.eps}
 
 Positive example:
 \begin{itemize}
@@ -488,6 +490,8 @@ Can you think of some other useful features ?
 \end{frame}
 
 \begin{frame}{Log-linear model/4} % Applying the model
+
+\includegraphics[width=\textwidth]{graphics/classifier-coref-2.eps}
 
 \begin{itemize}
   \item For each pronoun,
@@ -542,7 +546,7 @@ Can you think of some other useful features ?
 
 \begin{frame}{Rule-based models/1} % xrenner
 
-Input is a dependency tree.
+Input is a sequence of dependency trees representing the document.
 
 Constraint-based, rules like:
 
@@ -561,7 +565,11 @@ $C = <ANA,  ANT, DIST, PROP>$
 
 Example rules:
 
-
+\begin{itemize}
+  \item Mark full-text matches as coreferent
+  \item Two 1st person pronouns in the same quoted speech corefer
+  \item A surname matching a previous firstname + surname corefers
+\end{itemize}
 
 \end{frame}
 
