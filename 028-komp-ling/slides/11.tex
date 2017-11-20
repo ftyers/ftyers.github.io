@@ -62,11 +62,14 @@
 
 \maketitle
 
-\begin{frame}{Things and naming things}
-
-
-
-\end{frame}
+%\begin{frame}{Entities, things and naming things}
+%
+%\begin{itemize}
+%   \item 
+%
+%\end{itemize}
+%
+%\end{frame}
 
 \begin{frame}{What is co-reference resolution?}
 
@@ -485,12 +488,10 @@ Negative examples:
 \begin{frame}{Log-linear model/3} % Features
 
 \begin{itemize}
-  \item \textbf{strict gender} [true, false]
-  \item \textbf{compatible gender} [true, false]
+  \item \textbf{strict gender} [true, false], e.g. Masc + Masc
+  \item \textbf{compatible gender} [true, false], e.g. Masc Pro + Unknown NP
   \item \textbf{strict number} [true, false]
   \item \textbf{compatible number} [true, false]
-  \item \textbf{sentence distance} [0, 1, 2, \ldots]
-  \item \textbf{Hobbs distance} [0, 1, 2, \ldots] 
   \item \textbf{linguistic form} [proper, def, indef, pronoun]
 \end{itemize}
 
@@ -502,20 +503,49 @@ Can you think of some other useful features ?
 
 \begin{itemize}
  \item \textbf{Recency:} More recently mentioned entities are more likely to be referred to 
+ \begin{itemize}
+   \item \redfillbox{Anja} dyed her hair blue. \bluefillbox{Saša} did too. \bluefillbox{She} really liked anime.
+  \item \textbf{sentence distance} [0, 1, 2, \ldots]
+  \item \textbf{Hobbs distance} [0, 1, 2, \ldots] 
+ \end{itemize}
  \item \textbf{Grammatical Role:} Entities in the subject position is 
 more likely to be referred to than entities in the object 
 position 
+  \begin{itemize}
+    \item Maša conducted scientific experiments with Daša. She was completely absorbed in her work.
+  \end{itemize}
  \item \textbf{Parallelism:}
- \item \textbf{Verb Semantics:} Certain verbs seem to bias whether 
-the subsequent pronouns should be referring to their 
-subjects or objects 
- \item \textbf{Selectional Restrictions:} Restrictions because of 
-semantics 
+  \begin{itemize}
+    \item Maša played D\&D with \bluefillbox{Daša}. Saša played table tennis with \bluefillbox{her}.
+  \end{itemize}
 \end{itemize}
+
+Are these cross-linguistically applicable ? 
 
 \end{frame}
 
-\begin{frame}{Log-linear model/5} % Applying the model
+\begin{frame}{Log-linear model/5}
+
+\begin{itemize}
+ \item \textbf{Verb Semantics:} Certain verbs seem to bias whether 
+the subsequent pronouns should be referring to their 
+subjects or objects 
+ \begin{itemize}
+   \item Maša sternly rebuked Daša. She broke her keyboard.
+   \item[?] Maša phoned Daša. She had lost her laptop.
+ \end{itemize}
+ \item \textbf{Selectional Restrictions:} Restrictions because of 
+semantics 
+ \begin{itemize}
+   \item Maša got bored of \redfillbox{Wikipedia} on the \redfillbox{train} after \underline{reading} \bluefillbox{it} for hours. 
+ \end{itemize}
+\end{itemize}
+
+Are these cross-linguistically applicable ? 
+
+\end{frame}
+
+\begin{frame}{Log-linear model/6} % Applying the model
 
 \includegraphics[width=\textwidth]{graphics/classifier-coref-2.eps}
 
@@ -537,6 +567,12 @@ semantics
 
 \begin{frame}
 
+Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
+«\redfillbox{Дорогой далекий друг}, — писал \bluefillbox{он}, — \bluefillbox{я} \redfillbox{Вас} не знаю, и \redfillbox{Вы} \bluefillbox{меня} не знаете. Очень хотелось бы познакомиться. Всего хорошего. \bluefillbox{Саша}».
+Когда письмо принесли, \redfillbox{Тагор} предавался самосозерцанию. 
+Так погрузился, хоть режь \redfillbox{его}. 
+\greenfillbox{Его жена} толкала, толкала, письмо подсовывала — не видит. 
+\redfillbox{Он}, правда, по-русски читать не умел. Так и не познакомились.
 
 \end{frame}
 
@@ -545,27 +581,53 @@ semantics
 
 % chains , entity-mention , 
 
-Однажды \bluefillbox{Пушкин} написал письмо \redfillbox{Рабиндранату Тагору}. 
-«\redfillbox{Дорогой далекий друг}, — писал \bluefillbox{он}, — \bluefillbox{я} \redfillbox{Вас} не знаю, и \redfillbox{Вы} \bluefillbox{меня} не знаете.
-Очень хотелось бы познакомиться. Всего хорошего. \bluefillbox{Саша}».
-Когда письмо принесли, \redfillbox{Тагор} предавался самосозерцанию. 
-Так погрузился, хоть режь \redfillbox{его}. 
-\greenfillbox{Его жена} толкала, толкала, письмо подсовывала — не видит. 
-\redfillbox{Он}, правда, по-русски читать не умел. Так и не познакомились.
+\textbf{Chains:} (which bits corefer with other bits)\\
+\begin{tabular}{p{0.8\textwidth}}
+Пушкин $\leftarrow$ он$_1$, Пушкин $\leftarrow$ я$_1$, Пушкин $\leftarrow$ меня$_1$, Пушкин $\leftarrow$ Саша \\
+Рабиндранату Тагору $\leftarrow$ Дорогой далекий друг, Дорогой далекий друг $\leftarrow$ Вас$_1$, Дорогой далекий друг $\leftarrow$ Вы$_1$, Рабиндранату Тагору $\leftarrow$ Тагор, Тагор $\leftarrow$ его$_1$, Тагор $\leftarrow$ Он \\
+\end{tabular}
+%{ Рабиндранату Тагору, Дорогой далекий друг, Вас$_1$, Вы$_1$, Тагор, его$_1$, Он} \\
 
-\begin{tabular}{l}
-{ Пушкин, он$_1$, я$_1$, меня$_1$ } \\ 
-{ Рабиндранату Тагору, Дорогой далекий друг, Вас$_1$, Вы$_1$, Тагор, его$_1$, Он} \\
+~\\
+
+\textbf{Entity mention:} (which bits refer to the same real-world entity)\\
+\begin{tabular}{lcp{0.5\textwidth}}
+Александр Пушкин & $\leftarrow$  & Пушкин, он$_1$, я$_1$, меня$_1$, Саша  \\
+Рабиндранат Тагор & $\leftarrow$ & Рабиндранату Тагору, Дорогой далекий друг, Вас$_1$, Вы$_1$, Тагор, его$_1$, Он \\ 
 \end{tabular}
 
 \end{frame}
 
 \begin{frame}{General algorithm}
 
+\includegraphics[width=\textwidth]{graphics/classifier-coref-2.eps}
+
+We can use the same basic algorithm that we used for anaphora resolution.
+
+\begin{itemize}
+  \item For each NP,
+  \begin{itemize}
+     \item For each other NP we have seen so far,
+     \begin{itemize}
+       \item Classify if NP is coreferent
+     \end{itemize}
+  \end{itemize}
+\end{itemize}
+
 \end{frame}
 
 
 \begin{frame}{Additional features}
+
+We can use all the same features that we use for pronominal anaphora resolution, 
+but some others may be helpful
+
+\begin{itemize}
+  \item Gazeteers (giving semantic classes --- {\tt abstract}, {\tt person}, etc.)
+  \item Name correspondence classes (e.g. Маша--Мария)
+  \item \ldots
+\end{itemize}
+
 
 \end{frame}
 
@@ -580,7 +642,6 @@ $C = <ANA,  ANT, DIST, PROP>$
 
 \begin{itemize}
   \item ANA, ANT = constraints on the anaphor and antecedent
-  \item DIR = direction (e.g. forward, backwards)
   \item DIST = how far to look (in sentences)
   \item PROP = should features (e.g. gender) be propagated?
 \end{itemize}
@@ -592,9 +653,15 @@ $C = <ANA,  ANT, DIST, PROP>$
 Example rules:
 
 \begin{itemize}
-  \item Mark full-text matches as coreferent
+  \item Mark full-text proper noun matches as coreferent
   \item Two 1st person pronouns in the same quoted speech corefer
+  \begin{itemize}
+    \item \redfillbox{я} Вас не знаю и Вы \redfillbox{меня} не знаешь.
+  \end{itemize}  
   \item A surname matching a previous firstname + surname corefers
+  \begin{itemize}
+     \item Рабиндранату Тагору \ldots Тагор
+  \end{itemize}
 \end{itemize}
 
 \end{frame}
@@ -647,6 +714,9 @@ And as superior to:
   \item Precision = $\frac{4 - 1}{4 - 1} = 1.0$
   \item F-score = $\frac{2 . \frac{2}{3} * 1}{\frac{2}{3} . 1} = 0.79$
 \end{itemize}
+
+Where does the $2$ come from ? The number of partitions of the key in the response.
+
 \end{frame}
 
 \begin{frame}{Other metrics}
@@ -696,6 +766,15 @@ And as superior to:
 
 \end{frame}
 
+\begin{frame}{Other stuff}
+
+\begin{itemize}
+   \item ruCoref, \url{https://github.com/max-ionov/rucoref}
+   \item ... 
+\end{itemize}
+
+\end{frame}
+
 \begin{frame}{RuCor}
 
 \begin{center}
@@ -719,6 +798,18 @@ And as superior to:
 % SHARED TASK(S)
 
 \begin{frame}{Message Understanding Conference (MUC)}
+
+\begin{itemize}
+  \item Run by ARPA in the US, 1992--1997
+  \item First big initiative in Information Extraction 
+  \item Important in NLP for:
+  \begin{itemize}
+    \item Datasets for named-entity extraction and coreference.
+    \item Size of dataset (318 full WSJ) made it possible to apply ML methods
+  \end{itemize}
+  \item Developed first methods for evaluating anaphora resolution systems 
+  \item Subsequent work based on this
+\end{itemize}
 
 %One of the first evaluation events for the tasks under discussion took place within
 %the Message Understanding Conferences (MUCs). The following definition for the
@@ -753,7 +844,7 @@ And as superior to:
 
 \begin{frame}{RuEval-2014}
 
-Two tracks:
+\textbf{Two tracks:}
 \begin{itemize}
   \item Pronominal anaphora resolution (8 teams)
   \begin{itemize}
@@ -763,9 +854,43 @@ Two tracks:
   \item Co-reference resolution (3 teams)
 \end{itemize}
 
+\textbf{Teams:}
+\begin{itemize}
+  \item ABBYY, rule-based
+  \item \texttt{mail.ru}, rule-based + ML
+\end{itemize}
+
 
 
 \end{frame}
+
+\begin{frame}{SemEval 2016: Character identification on multiparty dialogues}
+%% Character Identification is an entity linking task that identifies each mention as a certain character in multiparty dialogue. Let a mention be a nominal referring to a person (e.g., she, mom, Judy), and an entity be a character in a dialogue. The goal is to assign each mention to its entity, who may or may not participate in the dialogue. For the following example, the mention "mom" is not one of the speakers; nonetheless, it clearly refers to the specific person, Judy, that could appear in some other dialogue. Identifying such mentions as real characters requires cross-document entity resolution, which makes this task challenging.
+
+\begin{center}
+  \includegraphics[width=0.5\textwidth]{graphics/coref-friends.png}
+\end{center}
+
+
+{\scriptsize
+\begin{tabular}{lllllllllll} 
+   &   &    &     &             &     &  &   & \textbf{Speaker}  &   & \textbf{Entity ID} \\
+  \hline
+ 0 & 0 & He & PRP & (TOP(S(NP*) & he & - & - & Monica\_Geller & * & (284) \\
+  0 & 1 & 's & VBZ & (VP* & be & - & - & Monica\_Geller & * & - \\
+  0 & 2 & just & RB & (ADVP*) & just & - & - & Monica\_Geller & * & - \\
+  0 & 3 & some & DT & (NP(NP* & some & - & - & Monica\_Geller & * & - \\
+  0 & 4 & guy & NN & *) & guy & - & - & Monica\_Geller & * & (284) \\
+  0 & 5 & I & PRP & (SBAR(S(NP*) & I & - & - & Monica\_Geller & * & (248) \\
+  0 & 6 & work & VBP & (VP* & work & - & - & Monica\_Geller & * & - \\
+  0 & 7 & with & IN & (PP*)))))) & with & - & - & Monica\_Geller & * & - \\
+  0 & 8 & ! & . & *)) & ! & - & - & Monica\_Geller & * & - \\
+\end{tabular}
+}
+
+
+\end{frame}
+
 
 \section{Practical}
 
