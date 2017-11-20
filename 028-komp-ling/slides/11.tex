@@ -722,8 +722,9 @@ Where does the $2$ come from ? The number of partitions of the key in the respon
 \begin{frame}{Other metrics}
 
 \begin{itemize}
-   \item B$^3$ scoring
-    \item CEAF
+  \item Standard precision/recall (for anaphora resolution)
+   \item B$^3$ scoring: compute averages for precision and recall for each pair, and then use these averaged values
+    \item CEAF: requires aligning the chains in the KEY and RESPONSE.
 \end{itemize}
 
 \end{frame}
@@ -770,7 +771,8 @@ Where does the $2$ come from ? The number of partitions of the key in the respon
 
 \begin{itemize}
    \item ruCoref, \url{https://github.com/max-ionov/rucoref}
-   \item ... 
+   \item BART, \url{http://www.bart-coref.org/index.html}
+
 \end{itemize}
 
 \end{frame}
@@ -847,7 +849,7 @@ Where does the $2$ come from ? The number of partitions of the key in the respon
 \item    How much language-specific tuning is necessary?
 \item    Are there significant differences between Germanic and Romance languages? And between languages of the same family?
 \end{itemize}
-  \item Used non-free OntoNotes corpus
+  \item Used non-free OntoNotes corpus, approx. 120k tokens (English)
 \end{itemize}
 
 
