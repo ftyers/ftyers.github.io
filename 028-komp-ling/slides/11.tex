@@ -9,6 +9,7 @@
 %\usepackage{tabularx}
 \usepackage{alltt}
 \usepackage[scale=2]{ccicons}
+\usepackage{alltt}
 
 \usepackage{tikz-qtree}
 \usepackage[linguistics]{forest}
@@ -634,7 +635,9 @@ but some others may be helpful
 
 \begin{frame}{Rule-based models/1} % xrenner
 
-Input is a sequence of dependency trees representing the document.
+\begin{center}
+\includegraphics[width=0.65\textwidth]{graphics/coref-dep-0.png}
+\end{center}
 
 Constraint-based, rules like:
 
@@ -650,7 +653,7 @@ $C = <ANA,  ANT, DIST, PROP>$
 
 \begin{frame}{Rule-based models/2} % xrenner
 
-Example rules:
+\textbf{Example rules:}
 
 \begin{itemize}
   \item Mark full-text proper noun matches as coreferent
@@ -747,7 +750,7 @@ Where does the $2$ come from ? The number of partitions of the key in the respon
 
 \end{frame}
 
-\begin{frame}{xrenner}
+\begin{frame}{xrenner/1}
 
 \begin{center}
 \includegraphics[width=\textwidth]{graphics/xrenner.png} \\
@@ -764,6 +767,26 @@ Where does the $2$ come from ? The number of partitions of the key in the respon
 \end{itemize}
 
 % model for English
+
+\end{frame}
+
+\begin{frame}{xrenner/2}
+
+\textbf{An example rule:} \\
+
+\begin{alltt}
+  \# ANA,        ANT,                      DIST, PROP  \\
+  form="proper"; form="proper"\&lemma=\$1; 100; nopropagate
+\end{alltt}
+
+\textbf{Constraints:}
+\begin{itemize}
+  \item Anaphor must be a proper name
+  \item Antecedent must be a proper name with the same lemma as the anaphor
+  \item Search up to 100 sentences backwards
+  \item Do not propagate features from the antecedent to the anaphor.
+\end{itemize}
+
 
 \end{frame}
 
