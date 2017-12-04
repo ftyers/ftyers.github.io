@@ -11,12 +11,12 @@
 <h3>Why make a finite-state transducer?</h3>
 
 <h3>A simple lexical transducer</h3>
-
+<p>
 The most basic lexical transducer can be made with a Multichar_Symbols definition and a Root lexicon. These
 are two parts that are necessary for the transducer to compile. In the Multichar_Symbols section we 
 define our grammatical tags that we are going to use, and we can use the Root lexicon to store a few lexemes.
 For example,
-
+</p>
 <pre>
 Multichar_Symbols
 
@@ -26,67 +26,75 @@ LEXICON Root
 
 хула%<n%>:хула # ; ! "город"
 </pre>
-
-In Multichar_Symbols we define a grammatical tag for noun and leave a comment (the part after the ! symbol) to indicate
+<p>
+In <tt>Multichar_Symbols</tt> we define a grammatical tag for noun and leave a comment (the part after the ! symbol) to indicate
 what the symbol stands for. Tags can take any form, but my preference is for grammatical tags to appear
-between less than < and greater than > symbols. The Multichar_Symbols section ends when the first 
-LEXICON appears. Other things that go in the Multichar_Symbols section include archiphonemes and helper symbols 
+between less than &lt; and greater than &gt; symbols. The <tt>Multichar_Symbols</tt> section ends when the first 
+LEXICON appears. Other things that go in the <tt>Multichar_Symbols</tt> section include archiphonemes and helper symbols 
 for the phonological rules (often called "diacritic symbols" in the literature).
-
+</p>
+<p>
 The remainder of the transducer is made up of a set of "continuation lexica", these have unique names and
-are prefixed with the line "LEXICON". These lexica are read from Root and may call each other, including 
-recursively. There is a special lexicon which is pre-defined and called "#" which indicates the end of the 
+are prefixed with the line "<tt>LEXICON</tt>". These lexica are read from Root and may call each other, including 
+recursively. There is a special lexicon which is pre-defined and called "<tt>#</tt>" which indicates the end of the 
 string. 
-
+</p>
+<p>
+The remainder of the transducer is made up of a set of "continuation lexica", these have unique names and
 There are two sides which are separated by a semicolon. These two sides may be referred to 
 in different ways in the literature. Get used to working out which side is being referred to. This is 
 complicated by the fact that some ways of referring to them are ambiguous:
-
-* left side, upper side, lexical side, lower side
-* right side, lower side, morphotactic side, upper side, surface side
-
+<ul>
+<li> left side, upper side, lexical side, lower side</li>
+<li> right side, lower side, morphotactic side, upper side, surface side</li>
+</ul>
 I will try and be consistent and use the following:
-
-* lexical form/side, to refer to the lemma + tags
-* morphotactic form/side, to refer to the stem + suffixes
-* surface form/side, to refer to the final surface form
-
+<ul>
+<li> lexical form/side, to refer to the lemma + tags</li>
+<li> morphotactic form/side, to refer to the stem + suffixes</li>
+<li> surface form/side, to refer to the final surface form</li>
+</ul>
+</p>
+<p>
 So, now we've gone through that explanation, let's try compiling our lexicon file. You should open a new file
 with your favourite text editor and type in the code above. Save it as <tt>chv.lexc</tt> in a new directory and navigate there 
 on the command line. Give the following command:
-
+</p>
 <pre>
 $ hfst-lexc chv.lexc -o chv.lexc.hfst
 </pre>
-
+<p>
 This command says to use the HFST lexc compiler to convert the lexicon file, <tt>chv.lexc</tt> into a binary 
 representation and store the output in <tt>chv.lexc.hfst</tt>. The command should give the following output:
-
+</p>
 <pre>
 hfst-lexc: warning: Defaulting to OpenFst tropical type
 Root...
 </pre>
-
+<p>
 and you should get a file called <tt>chv.lexc.hfst</tt>:
+</p>
 <pre>
 $ ls -l chv.lexc.hfst 
 -rw-r--r-- 1 fran fran 491 des  3 19:57 chv.lexc.hfst
 </pre>
-
+<p>
 As we didn't tell the compiler what kind of transducer we wanted to produce it has defaulted to OpenFst (a backend
 transducer library) and the tropical weight transducer (a way of distributing weights over an FST).
-
+</p>
+<p>
 There are a few things we need to get used to doing with the lexical transducer. The first is printing it out,
 we can do this in a couple of ways. First we can print out the strings that the transducer covers, using 
 the <tt>hfst-fst2strings</tt> command,
+</p>
 
 <pre>
 $ hfst-fst2strings chv.lexc.hfst 
-хула<n>:хула
+хула&lt;n&gt;:хула
 </pre>
-
+<p>
 Our fairly limited transducer only recognises one string pair so far. We can also print out the FST that was produced:
-
+</p>
 <pre>
 $ hfst-fst2txt chv.lexc.hfst 
 0	1	х	х	0.000000
@@ -96,16 +104,17 @@ $ hfst-fst2txt chv.lexc.hfst
 4	5	<n>	@0@	0.000000
 5	0.000000
 </pre>
-
+<p>
 Here the first column is the input state, the second column is the output state, the third and fourth columns 
 are the input and output symbols respectively and the fifth column is the weight of the transition. The @0@ is 
 the default symbol for epsilon &mdash; that is no input/output and final states have only two columns
 the first being the state id and the second being the weight.
-
+</p>
+<p>
 As you can imagine it is fairly easy to write a program to turn this tabular format into a format appropriate for
 visualising with GraphViz or some other graph visualisation library. Feel free to write your own visualisation
 method using your preferred library, or use this one I prepared earlier:
-
+</p>
 <pre>
 import sys
 
@@ -122,17 +131,17 @@ for line in sys.stdin.readlines():
 print('}')
 </pre>
 
-You can save it in a file called <tt>fst2dot.py</tt> and run it as follows:
+You can save it in a file called <tt>att2dot.py</tt> and run it as follows:
 <pre>
-$ hfst-fst2txt chv.lexc.hfst | python3 fst2dot.py  | dot -Tpng -ochv.lexc.png
+$ hfst-fst2txt chv.lexc.hfst | python3 att2dot.py  | dot -Tpng -ochv.lexc.png
 </pre>
-
+<p>
 Being able to visualise the transducer and see which strings it accepts is vital for being
 able to debug your code. Finally, go back to your <tt>chv.lexc</tt> file and add some more 
 stems, for example <em>пахча</em> "сад, garden", <em>урам</em> "улица, street" 
 and <em>канаш</em> "союз, union". Then recompile and rerun the other steps up to 
 visualisation.
-
+</p>
 <h3>Morphotactics</h3>
 
 The morphotactics of a language is the way that morphemes combine to make surface forms. If you
