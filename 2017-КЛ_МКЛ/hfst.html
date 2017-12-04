@@ -251,6 +251,8 @@ might be, try making two new files called <tt>good.lexc</tt> and <tt>bad.lexc</t
 
 In <tt>good.lexc</tt> put, 
 
+<div class="container">
+<div class="row">
 <pre>
 Multichar_Symbols 
 
@@ -261,8 +263,9 @@ LEXICON Root
 
 хула%&lt;n%&gt;%&lt;nom%&gt;:хула # ;
 </pre>
-
-And in <tt>bad.lexc</tt> put,
+</div>
+<!--And in <tt>bad.lexc</tt> put,-->
+<div class="row">
 
 <pre>
 Multichar_Symbols 
@@ -273,6 +276,8 @@ LEXICON Root
 
 хула%&lt;n%&gt;%&lt;nom%&gt;:хула # ;
 </pre>
+</div>
+</div>
 
 Now run the following commands to compile them and print out the transducers.
 
