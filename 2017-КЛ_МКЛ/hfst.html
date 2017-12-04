@@ -113,9 +113,9 @@ print('digraph G {')
 for line in sys.stdin.readlines():
 	line = line.strip()
 	row = line.split('\t')
-	if len(row) >= 4:
+	if len(row) &gt;= 4:
 		print('%s [label="%s"];' % (row[0], row[0]))
-		print('%s -> %s [label="%s:%s"];' % (row[0], row[1], row[2], row[3]))
+		print('%s -&gt; %s [label="%s:%s"];' % (row[0], row[1], row[2], row[3]))
 	elif len(row) == 2: # Final state
 		print('%s [label="%s"];' % (row[0], row[0]))
 
@@ -155,18 +155,15 @@ that we do for now).
 
 It would also be possible to express this in table form:
 
-    урам<n><nom> :  урам 
-    урам<n><gen> :  урамӑн 
-    урам<n><dat> :  урама 
-    урам<n><loc> :  урамта
-    урам<n><abl> :  урамтан
-    урам<n><ins> :  урампа 
-    урам<n><pl><nom> :  урамсем 
-    урам<n><pl><gen> :  урамсен 
-    урам<n><pl><dat> :  урамсене 
-    урам<n><pl><loc> :  урамсенче 
-    урам<n><pl><abl> :  урамсенчен 
-    урам<n><pl><ins> :  урамсемпе 
+<table>
+<th><td></td><td>Singular</td><td>Plural</td></th>
+<tr><td>Nom</td><td>урам</td><td>урамсем</td></tr>
+<tr><td>Gen</td><td>урамӑн</td><td>урамсен</td></tr>
+<tr><td>Dat</td><td>урама</td><td>урамсене</td></tr>
+<tr><td>Loc</td><td>урамра</td><td>урамсенче</td></tr>
+<tr><td>Abl</td><td>урамран</td><td>урамсенчен</td></tr>
+<tr><td>Ins</td><td>урампа</td><td>урамсемпе</td></tr>
+</table>
 
 So, from this table we can see that there are a number of suffixes that we can group into 
 three main groups: case suffixes in the singular, plural suffix and case suffixes in the 
@@ -176,11 +173,11 @@ longest substring from left to right,
 <pre>
 Multichar_Symbols 
 
-%<n%>                ! Имя существительное
+%&lt;n%&gt;                ! Имя существительное
 
 ! Define your multicharacter symbols here.
 
-%>                   ! Граница морфемы
+%&gt;                   ! Граница морфемы
 
 LEXICON Root
 
@@ -188,37 +185,37 @@ Nouns ;
 
 LEXICON CASE-SG 
 
-%<nom%>: # ;
-%<gen%>:%>ӑн # ;
-%<dat%>:%>а # ;
-%<loc%>:%>та # ;
-%<abl%>:%>тан # ;
-%<ins%>:%>па # ;
+%&lt;nom%&gt;: # ;
+%&lt;gen%&gt;:%&gt;ӑн # ;
+%&lt;dat%&gt;:%&gt;а # ;
+%&lt;loc%&gt;:%&gt;ра # ;
+%&lt;abl%&gt;:%&gt;ран # ;
+%&lt;ins%&gt;:%&gt;па # ;
 
 LEXICON CASE-PL
 
-%<gen%>: # ;
-%<dat%>:%>е # ;
-%<loc%>:%>че # ;
-%<abl%>:%>чен # ;
-%<ins%>:%>пе # ;
+%&lt;gen%&gt;: # ;
+%&lt;dat%&gt;:%&gt;е # ;
+%&lt;loc%&gt;:%&gt;че # ;
+%&lt;abl%&gt;:%&gt;чен # ;
+%&lt;ins%&gt;:%&gt;пе # ;
 
 LEXICON PLURAL
 
 CASE-SG ; 
-%<pl%>%<nom%>:%>сем # ; 
-%<pl%>:%>сен CASE-PL ; 
+%&lt;pl%&gt;%&lt;nom%&gt;:%&gt;сем # ; 
+%&lt;pl%&gt;:%&gt;сен CASE-PL ; 
 
 LEXICON N
 
-%<n%>: PLURAL ;
+%&lt;n%&gt;: PLURAL ;
 
 LEXICON Nouns
 
 урам:урам N ; ! "улица"
 </pre>
 
-The greater than symbol, >, indicates the morpheme boundary, we put this between
+The greater than symbol, &gt;, indicates the morpheme boundary, we put this between
 morphemes to indicate to the phonological rules where the morpheme boundaries are. This is 
 because often phonological changes happen at morpheme boundaries so it's useful to know 
 where they are. In addition they can be used to produce an FST that can be used for 
@@ -236,12 +233,12 @@ In <tt>good.lexc</tt> put,
 <pre>
 Multichar_Symbols 
 
-%<n%>                ! Имя существительное
-%<nom%>              ! Именительный падеж
+%&lt;n%&gt;                ! Имя существительное
+%&lt;nom%&gt;              ! Именительный падеж
 
 LEXICON Root
 
-хула%<n%>%<nom%>:хула # ;
+хула%&lt;n%&gt;%&lt;nom%&gt;:хула # ;
 </pre>
 
 And in <tt>bad.lexc</tt> put,
@@ -249,11 +246,11 @@ And in <tt>bad.lexc</tt> put,
 <pre>
 Multichar_Symbols 
 
-%<n%>                ! Имя существительное
+%&lt;n%&gt;                ! Имя существительное
 
 LEXICON Root
 
-хула%<n%>%<nom%>:хула # ;
+хула%&lt;n%&gt;%&lt;nom%&gt;:хула # ;
 </pre>
 
 Now run the following commands to compile them and print out the transducers.
@@ -266,8 +263,8 @@ Root...
 1	2	у	у	0.000000
 2	3	л	л	0.000000
 3	4	а	а	0.000000
-4	5	<n>	@0@	0.000000
-5	6	<nom>	@0@	0.000000
+4	5	&lt;n&gt;	@0@	0.000000
+5	6	&lt;nom&gt;	@0@	0.000000
 6	0.000000
 
 $ hfst-lexc bad.lexc | hfst-fst2txt 
@@ -277,16 +274,16 @@ Root...
 1	2	у	у	0.000000
 2	3	л	л	0.000000
 3	4	а	а	0.000000
-4	5	<n>	@0@	0.000000
-5	6	<	@0@	0.000000
+4	5	&lt;n&gt;	@0@	0.000000
+5	6	&lt;	@0@	0.000000
 6	7	n	@0@	0.000000
 7	8	o	@0@	0.000000
 8	9	m	@0@	0.000000
-9	10	>	@0@	0.000000
+9	10	&gt;	@0@	0.000000
 10	0.000000
 </pre>
 
-As you can see with <tt>bad.lexc</tt> the tag <nom> is treated as normal character symbols, which means
+As you can see with <tt>bad.lexc</tt> the tag &lt;nom&gt; is treated as normal character symbols, which means
 that it might not be treated as a tag by other programs. Fortunately it's possible to write a nice 
 script to sanity check our lexicon:
 
@@ -294,7 +291,7 @@ script to sanity check our lexicon:
 IN=$1 # Input file
 HEAD=`grep -nH 'LEXICON Root' $IN  | cut -f2 -d':'` # Find the limit of the header
 # For each of the symbols we find in the whole file 
-for i in `cat $IN | grep -o '%<[^>]\+%>' | sort -u`; do 
+for i in `cat $IN | grep -o '%&lt;[^&gt;]\+%&gt;' | sort -u`; do 
 	# Run through the header and see if it is there
 	cat $IN | head -n $HEAD | grep "$i" | wc -l | sed "s/$/\t$i/g" | grep "^0"; 
 done 
@@ -304,13 +301,13 @@ You can save this in a file called something like <tt>validate.sh</tt> and run i
 
 <pre>
 $ sh validate.sh chv.lexc
-0	%<abl%>
-0	%<dat%>
-0	%<gen%>
-0	%<ins%>
-0	%<loc%>
-0	%<nom%>
-0	%<pl%>
+0	%&lt;abl%&gt;
+0	%&lt;dat%&gt;
+0	%&lt;gen%&gt;
+0	%&lt;ins%&gt;
+0	%&lt;loc%&gt;
+0	%&lt;nom%&gt;
+0	%&lt;pl%&gt;
 </pre>
 
 And it will show you which tags you have forgotten to define.
@@ -322,42 +319,7 @@ the output of our transducer.
 $ hfst-lexc chv.lexc | hfst-fst2strings 
 hfst-lexc: warning: Defaulting to OpenFst tropical type
 Root...1 CASE-SG...6 CASE-PL...5 PLURAL...3 N...1 Nouns...
-урам<n><nom>:урам
-урам<n><pl><gen>:урам>сен
-урам<n><pl><ins>:урам>сен>пе
-урам<n><pl><dat>:урам>сен>е
-урам<n><pl><abl>:урам>сен>чен
-урам<n><pl><loc>:урам>сен>че
-урам<n><pl><nom>:урам>сем
-урам<n><gen>:урам>ӑн
-урам<n><dat>:урам>а
-урам<n><abl>:урам>тан
-урам<n><loc>:урам>та
-урам<n><ins>:урам>па
-хула<n><nom>:хула
-хула<n><pl><gen>:хула>сен
-хула<n><pl><ins>:хула>сен>пе
-хула<n><pl><dat>:хула>сен>е
-хула<n><pl><abl>:хула>сен>чен
-хула<n><pl><loc>:хула>сен>че
-хула<n><pl><nom>:хула>сем
-хула<n><gen>:хула>ӑн
-хула<n><dat>:хула>а
-хула<n><abl>:хула>тан
-хула<n><loc>:хула>та
-хула<n><ins>:хула>па
-канаш<n><nom>:канаш
-канаш<n><pl><gen>:канаш>сен
-канаш<n><pl><ins>:канаш>сен>пе
-канаш<n><pl><dat>:канаш>сен>е
-канаш<n><pl><abl>:канаш>сен>чен
-канаш<n><pl><loc>:канаш>сен>че
-канаш<n><pl><nom>:канаш>сем
-канаш<n><gen>:канаш>ӑн
-канаш<n><dat>:канаш>а
-канаш<n><abl>:канаш>тан
-канаш<n><loc>:канаш>та
-канаш<n><ins>:канаш>па
+
 </pre>
 
 Now, this doesn't look half bad, but as linguists we might feel like complaining about
@@ -365,8 +327,8 @@ a couple of things in terms of the representation:
 
 * We have different continuation classes for singular and plural case affixes, but
    they look like they could be treated as a single class
-* The concatenation of some case suffixes with vowel stems doesn't look like it's 
-/   going to produce the right form. 
+<!--* The concatenation of some case suffixes with vowel stems doesn't look like it's 
+   going to produce the right form. -->
 
 Problem (2) is more serious &mdash; we'll come to that shortly, but problem (1) is more
 philosophical and deserves some thinking about. As linguists
@@ -408,14 +370,14 @@ for these suffixes would be,
 
 * The т in the locative and ablative turns to a ч after a nasal. 
 
-- archiphonemes
+<h4>Archiphonemes</h4>
 
-phonological rules
+<h3>Phonological rules</h3>
 
 - epenthesis
 - vowel harmony
 
-more on morphotactics
+<h3>More on morphotactics</h3>
 
 - templatic morphology
 - compounding
@@ -424,7 +386,7 @@ more on morphotactics
   - with twol constraints
   - with flag diacritics
 
-lexicon construction
+<h3>Lexicon construction</h3>
 
 more on morphotactics
 
@@ -432,6 +394,7 @@ more on morphotactics
 
 unit testing
 
+<h3>Evaluation</h3>
 evaluating coverage 
 
 evaluating precision/recall
