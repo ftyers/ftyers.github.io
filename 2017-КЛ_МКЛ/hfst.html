@@ -6,6 +6,7 @@
     <title>Finite-state transducers with HFSTs</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/local.css" rel="stylesheet">
 </head>
 <body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -32,36 +33,44 @@ Multichar_Symbols
 
 LEXICON Root
 
-хула%&lt;n%&gt;:хула # ; ! "город"
+урам%&lt;n%&gt;:урам # ;   ! "улица"
 </pre>
 <p>
-In <tt>Multichar_Symbols</tt> we define a grammatical tag for noun and leave a comment (the part after the ! symbol) to indicate
+In <tt>Multichar_Symbols</tt> we define a grammatical tag for noun and leave a comment (the part after the <tt>!</tt> symbol) to indicate
 what the symbol stands for. Tags can take any form, but my preference is for grammatical tags to appear
-between less than &lt; and greater than &gt; symbols. The <tt>Multichar_Symbols</tt> section ends when the first 
-LEXICON appears. Other things that go in the <tt>Multichar_Symbols</tt> section include archiphonemes and helper symbols 
+between less than &lt; and greater than &gt; symbols, which need to be escaped with the symbol <tt>%</tt>. The <tt>Multichar_Symbols</tt> 
+section ends when the first <tt>LEXICON</tt> appears. Other things that go in the <tt>Multichar_Symbols</tt> section include 
+archiphonemes and helper symbols 
 for the phonological rules (often called "diacritic symbols" in the literature).
 </p>
 <p>
 The remainder of the transducer is made up of a set of "continuation lexica", these have unique names and
-are prefixed with the line "<tt>LEXICON</tt>". These lexica are read from Root and may call each other, including 
+are prefixed with the line "<tt>LEXICON</tt>". These lexica are read from <tt>Root</tt> and may call each other, including 
 recursively. There is a special lexicon which is pre-defined and called "<tt>#</tt>" which indicates the end of the 
 string. 
 </p>
 <p>
 The remainder of the transducer is made up of a set of "continuation lexica", these have unique names and
-There are two sides which are separated by a semicolon. These two sides may be referred to 
+There are two sides which are separated by a colon, <tt>:</tt>. These two sides may be referred to 
 in different ways in the literature. Get used to working out which side is being referred to. This is 
 complicated by the fact that some ways of referring to them are ambiguous:
 <ul>
 <li> left side, upper side, lexical side, lower side</li>
 <li> right side, lower side, morphotactic side, upper side, surface side</li>
 </ul>
+<p>
 I will try and be consistent and use the following:
+</p>
 <ul>
 <li> lexical form/side, to refer to the lemma + tags</li>
 <li> morphotactic form/side, to refer to the stem + suffixes</li>
 <li> surface form/side, to refer to the final surface form</li>
 </ul>
+</p>
+<p>
+A pair of lexical/morphotactic strings should be followed by an obligatory continuation class, which may be <tt>#</tt> for 
+end of string and then a semicolon, <tt>;</tt>. Comments may be included anywhere in the file by using a <tt>!</tt> symbol
+which applies to the end of the line.
 </p>
 <p>
 So, now we've gone through that explanation, let's try compiling our lexicon file. You should open a new file
@@ -98,23 +107,23 @@ the <tt>hfst-fst2strings</tt> command,
 
 <pre>
 $ hfst-fst2strings chv.lexc.hfst 
-хула&lt;n&gt;:хула
+урам&lt;n&gt;:урам
 </pre>
 <p>
 Our fairly limited transducer only recognises one string pair so far. We can also print out the FST that was produced:
 </p>
 <pre>
 $ hfst-fst2txt chv.lexc.hfst 
-0	1	х	х	0.000000
-1	2	у	у	0.000000
-2	3	л	л	0.000000
-3	4	а	а	0.000000
+0	1	у	у	0.000000
+1	2	р	р	0.000000
+2	3	а	а	0.000000
+3	4	м	м	0.000000
 4	5	<n>	@0@	0.000000
 5	0.000000
 </pre>
 <p>
 Here the first column is the input state, the second column is the output state, the third and fourth columns 
-are the input and output symbols respectively and the fifth column is the weight of the transition. The @0@ is 
+are the input and output symbols respectively and the fifth column is the weight of the transition. The <tt>@0@</tt> is 
 the default symbol for epsilon &mdash; that is no input/output and final states have only two columns
 the first being the state id and the second being the weight.
 </p>
@@ -123,290 +132,366 @@ As you can imagine it is fairly easy to write a program to turn this tabular for
 visualising with GraphViz or some other graph visualisation library. Feel free to write your own visualisation
 method using your preferred library, or use this one I prepared earlier:
 </p>
-<pre>
-import sys
+<pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">import</span> <span style="color: #00aaaa;">sys</span>
 
-import sys
+<span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;digraph G { rankdir=&quot;LR&quot;&#39;</span>)
+<span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;node [fontname=&quot;Tahoma&quot;,shape=circle,fontsize=14,fixedsize=true,fillcolor=&quot;grey&quot;,style=filled]&#39;</span>)
+<span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;edge [fontname=&quot;FreeMono&quot;,fontsize=14]&#39;</span>)
+<span style="color: #0000aa">for</span> line <span style="color: #0000aa">in</span> sys.stdin.readlines():
+        line = line.strip()
+        row = line.split(<span style="color: #aa5500">&#39;\t&#39;</span>)
+        <span style="color: #0000aa">if</span> <span style="color: #00aaaa">len</span>(row) &gt;= <span style="color: #009999">4</span>:
+                <span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;%s [label=&quot;%s&quot;];&#39;</span> % (row[<span style="color: #009999">0</span>], row[<span style="color: #009999">0</span>]))
+                <span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;%s -&gt; %s [label=&quot;%s:%s&quot;];&#39;</span> % (row[<span style="color: #009999">0</span>], row[<span style="color: #009999">1</span>], row[<span style="color: #009999">2</span>], row[<span style="color: #009999">3</span>]))
+        <span style="color: #0000aa">elif</span> <span style="color: #00aaaa">len</span>(row) == <span style="color: #009999">2</span>: <span style="color: #aaaaaa; font-style: italic"># Final state</span>
+                <span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;%s [label=&quot;%s&quot;,shape=doublecircle];&#39;</span> % (row[<span style="color: #009999">0</span>], row[<span style="color: #009999">0</span>]))
 
-print('digraph G { rankdir="LR"')
-print('node [fontname="Tahoma",shape=circle,fontsize=14,fixedsize=true,fillcolor="grey",style=filled]')
-print('edge [fontname="FreeMono",fontsize=14]')
-for line in sys.stdin.readlines():
-	line = line.strip()
-	row = line.split('\t')
-	if len(row) &gt;= 4:
-		print('%s [label="%s"];' % (row[0], row[0]))
-		print('%s -&gt; %s [label="%s:%s"];' % (row[0], row[1], row[2], row[3]))
-	elif len(row) == 2: # Final state
-		print('%s [label="%s",shape=doublecircle];' % (row[0], row[0]))
-
-print('}')
-
+<span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;}&#39;</span>)
 </pre>
-
+<p>
 You can save it in a file called <tt>att2dot.py</tt> and run it as follows:
+</p>
 <pre>
 $ hfst-fst2txt chv.lexc.hfst | python3 att2dot.py  | dot -Tpng -ochv.lexc.png
 </pre>
 <p>
+You should get an output file that looks something like:
+</p>
+<div align="center"><img src="graphics/chv.lexc.1.png"/></div>
+<p>
 Being able to visualise the transducer and see which strings it accepts is vital for being
-able to debug your code. Finally, go back to your <tt>chv.lexc</tt> file and add some more 
-stems, for example <em>пахча</em> "сад, garden", <em>урам</em> "улица, street" 
+able to debug your code. Now, go back to your <tt>chv.lexc</tt> file and add some more 
+stems, for example <em>пахча</em> "сад, garden", <em>хула</em> "город, city" 
 and <em>канаш</em> "союз, union". Then recompile and rerun the other steps up to 
 visualisation.
 </p>
-<h3>Morphotactics</h3>
 
+<h3>Morphotactics</h3>
+<p>
 The morphotactics of a language is the way that morphemes combine to make surface forms. If you
 are one of those people that believes in morphemes then you probably also believe that they
 can be combined and that there are language-specific constraints on their combination, for example 
-in Russian if the plural locative morpheme is -ах then you should have городах and not *ахгород.
-
+in Russian if the plural locative morpheme is -ах then applying it to a stem should
+result in <em>городах</em> and not <em>*ахгород</em>.
+</p>
 <h4>Continuation classes</h4>
-
+<p>
 In finite-state transducers the the morphotactic ordering constraints are implemented by means
-of continuation classes. These are sets of suffixes which can appear in the same position. For 
-example let's imagine a simplified Chuvash noun with a stem, a plural suffix
-and a case suffix. We might build up a model of Chuvash inflectional morphology for nouns as follows:
-
-STEM + (PLURAL)? + CASE
-
-That is, a stem, followed optionally by a plural
-suffix and finally an obligatory case suffix (if we consider 0 to be a case suffix, let's assume
-that we do for now).
-
-It would also be possible to express this in table form:
-
-<table class="table">
-<thead>
-<tr><th>Case</th><th>Singular</th><th>Plural</th></tr>
-</thead>
-<tbody>
-<tr><td>Nom</td><td>урам</td><td>урамсем</td></tr>
-<tr><td>Gen</td><td>урамӑн</td><td>урамсен</td></tr>
-<tr><td>Dat</td><td>урама</td><td>урамсене</td></tr>
-<tr><td>Loc</td><td>урамра</td><td>урамсенче</td></tr>
-<tr><td>Abl</td><td>урамран</td><td>урамсенчен</td></tr>
-<tr><td>Ins</td><td>урампа</td><td>урамсемпе</td></tr>
-</tbody>
-</table>
-
-So, from this table we can see that there are a number of suffixes that we can group into 
-three main groups: case suffixes in the singular, plural suffix and case suffixes in the 
-plural. We could then proceed to build up a series of continuation classes by taking the 
-longest substring from left to right,
+of continuation classes. These are sets of suffixes which can appear in the same position. For
+example let's suppose we want to add the plural suffix in Chuvash, which in the nominative
+is invariant. 
+</p>
 
 <pre>
-Multichar_Symbols 
+Multichar_Symbols
 
 %&lt;n%&gt;                ! Имя существительное
-
-! Define your multicharacter symbols here.
+%&lt;pl%&gt;               ! Множественное число
 
 %&gt;                   ! Граница морфемы
 
 LEXICON Root
 
-Nouns ;
-
-LEXICON CASE-SG 
-
-%&lt;nom%&gt;: # ;
-%&lt;gen%&gt;:%&gt;ӑн # ;
-%&lt;dat%&gt;:%&gt;а # ;
-%&lt;loc%&gt;:%&gt;ра # ;
-%&lt;abl%&gt;:%&gt;ран # ;
-%&lt;ins%&gt;:%&gt;па # ;
-
-LEXICON CASE-PL
-
-%&lt;gen%&gt;: # ;
-%&lt;dat%&gt;:%&gt;е # ;
-%&lt;loc%&gt;:%&gt;че # ;
-%&lt;abl%&gt;:%&gt;чен # ;
-%&lt;ins%&gt;:%&gt;пе # ;
+Nouns ; 
 
 LEXICON PLURAL
 
-CASE-SG ; 
-%&lt;pl%&gt;%&lt;nom%&gt;:%&gt;сем # ; 
-%&lt;pl%&gt;:%&gt;сен CASE-PL ; 
+             # ; 
+%&lt;pl%&gt;:%&gt;сем # ;
 
-LEXICON N
+LEXICON N 
 
 %&lt;n%&gt;: PLURAL ;
 
 LEXICON Nouns
 
-урам:урам N ; ! "улица"
+урам:урам N ;     ! "улица"
+пакча:пакча N ;   ! "сад"
+хула:хула N ;     ! "город"
+канаш:канаш N ;   ! "союз"
 </pre>
-
-The greater than symbol, &gt;, indicates the morpheme boundary, we put this between
-morphemes to indicate to the phonological rules where the morpheme boundaries are. This is 
-because often phonological changes happen at morpheme boundaries so it's useful to know 
-where they are. In addition they can be used to produce an FST that can be used for 
-morphological segmentation.
-
-In the above code I have left a comment indicating where to define your multicharacter
-symbols. About 50% of all bugs you will find when developing FSTs will be related to 
-not defining multicharacter symbols or tags. The reason being that some tools automatically
-determine them and some don't, so you might not immediately see the effects of not defining
-them until your processing reaches a tool that does. To get an idea of what the problem 
-might be, try making two new files called <tt>good.lexc</tt> and <tt>bad.lexc</tt>:
-
-In <tt>good.lexc</tt> put, 
-
-<div class="container">
-<div class="row">
+<p>
+This <tt>lexc</tt> file defines three new continuation classes:
+</p>
+<ul>
+<li><tt>Nouns</tt>: This is used for our list of stems, usually there is one continuation 
+        class per major lexical category (part of speech)</li>
+<li><tt>N</tt>: This is our continuation lexicon for nouns, here we give a part of speech tag 
+        and pointers to the set of suffixes that can attach directly to the stem.</li>
+<li><tt>PLURAL</tt>: Here we define the plural suffix and say that this is (for now) the end
+        of the word. Note that we could also put a tag for singular here if were linguistically expedient.</li>
+</ul>
+<p>
+The exact way you lay out the continuation classes will be different depending on the language
+you are working on. For fusional languages you might like to divide words according to stem
+class and then have a separate continuation class for each stem class. 
+</p>
+<p>
+It's also worth noting that we can plot the graph of continuation classes in a similar way to the letter
+transducer we plotted before. There is <a href="scripts/lexc2dot.py">a script</a> that will produce a 
+GraphViz file from a <tt>.lexc</tt> file. For example if you run:
+</p>
 <pre>
-Multichar_Symbols 
-
-%&lt;n%&gt;                ! Имя существительное
-%&lt;nom%&gt;              ! Именительный падеж
-
-LEXICON Root
-
-хула%&lt;n%&gt;%&lt;nom%&gt;:хула # ;
+cat chv.lexc | python3 lexc2dot.py | dot -Tpng -ochv.lexc.png
 </pre>
-</div>
-<!--And in <tt>bad.lexc</tt> put,-->
-<div class="row">
-
+<p>
+Then you should get the following result:
+</p>
+<div align="center"><img src="graphics/chv.lexc.2.png"/></div>
+<p>
+We can also, as before compile and list the accepted strings. Let's do that to make sure that everything
+идёт по плану.
+</p>
 <pre>
-Multichar_Symbols 
-
-%&lt;n%&gt;                ! Имя существительное
-
-LEXICON Root
-
-хула%&lt;n%&gt;%&lt;nom%&gt;:хула # ;
-</pre>
-</div>
-</div>
-
-Now run the following commands to compile them and print out the transducers.
-
-<pre>
-$ hfst-lexc good.lexc | hfst-fst2txt 
+$ hfst-lexc examples/chv.2.lexc -o chv.lexc.hfst
 hfst-lexc: warning: Defaulting to OpenFst tropical type
-Root...
-0	1	х	х	0.000000
-1	2	у	у	0.000000
-2	3	л	л	0.000000
-3	4	а	а	0.000000
-4	5	&lt;n&gt;	@0@	0.000000
-5	6	&lt;nom&gt;	@0@	0.000000
-6	0.000000
+Root...1 PLURAL...2 N...1 Nouns...
 
-$ hfst-lexc bad.lexc | hfst-fst2txt 
-hfst-lexc: warning: Defaulting to OpenFst tropical type
-Root...
-0	1	х	х	0.000000
-1	2	у	у	0.000000
-2	3	л	л	0.000000
-3	4	а	а	0.000000
-4	5	&lt;n&gt;	@0@	0.000000
-5	6	&lt;	@0@	0.000000
-6	7	n	@0@	0.000000
-7	8	o	@0@	0.000000
-8	9	m	@0@	0.000000
-9	10	&gt;	@0@	0.000000
-10	0.000000
+$ hfst-fst2strings chv.lexc.hfst 
+урам&lt;n&gt;:урам
+урам&lt;n&gt;&lt;pl&gt;:урам&gt;сем
+пакча&lt;n&gt;:пакча
+пакча&lt;n&gt;&lt;pl&gt;:пакча&gt;сем
+канаш&lt;n&gt;:канаш
+канаш&lt;n&gt;&lt;pl&gt;:канаш&gt;сем
+хула&lt;n&gt;:хула
+хула&lt;n&gt;&lt;pl&gt;:хула&gt;сем
 </pre>
+<p>
+And now run it through <tt>hfst-fst2txt</tt> to visualise the resulting transducer.
+</p>
 
-As you can see with <tt>bad.lexc</tt> the tag &lt;nom&gt; is treated as normal character symbols, which means
-that it might not be treated as a tag by other programs. Fortunately it's possible to write a nice 
-script to sanity check our lexicon:
-
+<h4>Archiphonemes</h4>
+<p>
+Now let's try and add a case. We can start with one of the easier ones, the instrumental, which 
+is <tt>-пA</tt>, that is <em>-па</em> with back vowels and <em>-пе</em> with 
+front vowels. At this point we have two choices, we can either make two continuation
+classes for the cases, one for back vowel contexts and one for front vowel contexts,
+for example:
+</p>
 <pre>
-IN=$1 # Input file
-HEAD=`grep -nH 'LEXICON Root' $IN  | cut -f2 -d':'` # Find the limit of the header
-# For each of the symbols we find in the whole file 
-for i in `cat $IN | grep -o '%&lt;[^&gt;]\+%&gt;' | sort -u`; do 
-	# Run through the header and see if it is there
-	cat $IN | head -n $HEAD | grep "$i" | wc -l | sed "s/$/\t$i/g" | grep "^0"; 
-done 
+LEXICON CASES-BACK
+
+%&lt;ins%&gt;:%&gt;па # ; 
+
+LEXICON CASES-FRONT
+
+%&lt;ins%&gt;:%&gt;пе # ; 
 </pre>
-
-You can save this in a file called something like <tt>validate.sh</tt> and run it like,
-
+<p>
+The advantage with this is it makes for easier debugging in some respects because all information
+is in one place. The disadvantage is that it means you have to duplicate all continuation classes
+into those which have front and those which have back vowels. If you imagine you have to split
+for every phonological process (elision, vowel harmony, lenition, voicing, etc.) then you can 
+see that it could produce a very large number of continuation classes. For example, in 
+one implementation of Finnish splitting the classes by phonological process resulted in 516 noun
+classes, where an unsplit implementation had five.
+</p>
+<p>
+So instead, what we do is provide a placeholder (archiphoneme) instead. I usually write these placeholders
+inbetween curly brackets/braces, <tt>{...}</tt>. For example we could write:
+</p>
 <pre>
-$ sh validate.sh chv.lexc
-0	%&lt;abl%&gt;
-0	%&lt;dat%&gt;
-0	%&lt;gen%&gt;
-0	%&lt;ins%&gt;
-0	%&lt;loc%&gt;
-0	%&lt;nom%&gt;
-0	%&lt;pl%&gt;
+LEXICON CASES 
+
+%&lt;ins%&gt;:%&gt;п%{A%} # ;
+
+LEXICON PLURAL
+
+             CASES ;
+%&lt;pl%&gt;:%&gt;сем CASES ;
+
+LEXICON N
+
+%&lt;n%&gt;: PLURAL ;
 </pre>
-
-And it will show you which tags you have forgotten to define.
-
-Ok, so now we've defined all our tags and added our continuation classes we can look at 
-the output of our transducer.
-
+<p>
+<b>WARNING!</b> don't forget to define <tt>%{A%}</tt> as a multicharacter symbol. And go back and 
+update the validation script to check for multicharacter symbols between <tt>%{...%}</tt> as well 
+as <tt>%&lt;...%&gt;</tt>.
+</p>
+<p>
+So, if we save this into our file and recompile, we should get the following output:
+</p>
 <pre>
 $ hfst-lexc chv.lexc | hfst-fst2strings 
 hfst-lexc: warning: Defaulting to OpenFst tropical type
-Root...1 CASE-SG...6 CASE-PL...5 PLURAL...3 N...1 Nouns...
-
+Root...1 CASES...1 PLURAL...2 N...1 Nouns...
+пакча&lt;n&gt;&lt;ins&gt;:пакча&gt;п{A}
+пакча&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:пакча&gt;сем&gt;п{A}
+урам&lt;n&gt;&lt;ins&gt;:урам&gt;п{A}
+урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урам&gt;сем&gt;п{A}
+канаш&lt;n&gt;&lt;ins&gt;:канаш&gt;п{A}
+канаш&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:канаш&gt;сем&gt;п{A}
+хула&lt;n&gt;&lt;ins&gt;:хула&gt;п{A}
+хула&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:хула&gt;сем&gt;п{A}
 </pre>
-
-Now, this doesn't look half bad, but as linguists we might feel like complaining about
-a couple of things in terms of the representation:
-
-* We have different continuation classes for singular and plural case affixes, but
-   they look like they could be treated as a single class
-<!--* The concatenation of some case suffixes with vowel stems doesn't look like it's 
-   going to produce the right form. -->
-
-Problem (2) is more serious &mdash; we'll come to that shortly, but problem (1) is more
-philosophical and deserves some thinking about. As linguists
-we would like the most elegant, linguistically-motivated solution. But as engineers
-we would like something that works. If a solution is inelegant but solves the problem
-should it immediately be discarded? And the counter-question, if an elegant solution
-is possible and doesn't require substantially more engineering work, should it be discarded?
-
-These are the kind of tradeoffs that need to be taken into account when designing and developing a morphological
-transducer. We are trying to optimise two things, simplicity of representation (engineering) and beauty of 
-representation (linguistics). The answers will not always be easy and the answers will almost 
-never be given to us.
-
-<h4>Archiphonemes</h4>
-
-So, we've got to the point where we have modelled part of the morphology of the language
-in a fairly brute-force way. Let's revisit our decisions and see if we can figure out 
-some ways of making better ones. 
-
-First of all, those case suffixes look pretty similar, 
-	
-nom	-	-
-gen	-ӑн	-н
-dat	-а	-е
-loc	-та	-че
-abl	-тан	-чен
-ins	-па	-пе
-
-If we look at a Chuvash grammar, or happen to have heard anything about Chuvash we might be aware
-that Chuvash has vowel harmony, which is a process whereby in principle vowels with the 
-same feature should go together. For example back vowels should go with back vowels 
-and front vowels should go with front vowels. So, we might posit the following rule,
-
-* The instrumental suffix is -пV, where the vowel V is either а or е depending on the 
-    backness of the vowel in the previous syllable.
-
-We might also look at the locative and ablative suffixes and think that a possible rule
-for these suffixes would be,
-
-* The т in the locative and ablative turns to a ч after a nasal. 
-
-<h4>Archiphonemes</h4>
+<p>
+There are two things remaining to make these morphotactic forms (on the right) into legit surface
+forms: 1) We need to make sure to output <tt>{A}</tt> as -а- or -е- depending on context, and (2) we need 
+to remove the morpheme boundary, <tt>&gt;</tt>. Both of these can be taken care of using 
+phonological rules using the <tt>twol</tt> formalism.
+</p>
 
 <h3>Phonological rules</h3>
+<p>
+Before we get started with writing rules in <tt>twol</tt> it is worth giving some background information. First
+of all <tt>twol</tt> rules are not Chomsky-Halle style ordered rewrite rules. There is no ordering in the rules, they
+may look similar, but the way they are applied is very different. Consider the following two rulesets, (a) 
+presents ordered rewrite rules, while (b) presents two-level constraint style rules.
+</p>
+<div class="container">
+  <div class="col-xs-1">
+(a)
+  </div>
+  <div class="col-xs-5">
+<pre style="width:30%">
+ a → b / c _ ;
+ b → d / c _ ;
+</pre>
 
-- epenthesis
+acaca → acbcb → acdcd
+
+  </div>
+  <div class="col-xs-1">
+(b)
+  </div>
+  <div class="col-xs-5">
+<pre style="width:30%">
+a:b &lt;=&gt; c _ ;
+b:d &lt;=&gt; c _ ;
+</pre>
+
+acaca → acbcb 
+  </div>
+</div>
+<p>
+They both look superficially very similar, but the result is quite different, this is because <tt>twol</tt> rules
+are not applied in order, the output of one rule is not piped into another rule. All rules are applied at the same
+time. If it's not clear now, don't worry, it's just something to bear in mind.
+</p>
+<p>
+Let's look at a real example, make a new text file called <tt>chv.twol</tt> and type in the Chuvash alphabet,
+including our <tt>{A}</tt> archiphoneme as follows:
+</p>
+<pre>
+Alphabet
+  а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+  А Ӑ Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ 
+ %{A%}:а %{A%}:е
+;
+</pre>
+<p>
+The alphabet determines the set of possible output strings. The morphotactic side of the transducer (e.g. 
+the strings that look like <tt>урам&gt;сем&gt;п{A}</tt>) is multiplied by this alphabet into the set 
+of forms on which the constraint rules apply. For example, given the string <tt>урам&gt;сем&gt;п{A}</tt>
+after running through the alphabet expansion, the result would be the following string pairs:
+</p>
+<pre>
+урам&gt;сем&gt;п{A}:урам&gt;сем&gt;па
+урам&gt;сем&gt;п{A}:урам&gt;сем&gt;пе
+</pre>
+<p>
+We can now write our first rule, a simple one to remove the morpheme boundary:
+</p>
+<pre>
+Rules 
+
+"Remove morpheme boundary"
+%&gt;:0 &lt;=&gt; _ ;
+</pre>
+<p>
+A rule is composed of a one-line description in between double quotes, <tt>"..."</tt> followed by a constraint
+in the form:
+</p>
+<pre>
+a:b   ARROW   LEFT_CONTEXT   _   RIGHT_CONTEXT ; 
+</pre>
+<p>
+Where <tt>a</tt> is an alphabetic symbol on the morphotactic side, <tt>b</tt> is an alphabetic symbol on the 
+surface side and <tt>a:b</tt> is the <em>centre</em> of the rule; <tt>ARROW</tt> is an arrow defining the 
+constraint type (more on that later); <tt>LEFT_CONTEXT</tt> is the context to the left and <tt>RIGHT_CONTEXT</tt>
+is the context to the right.
+</p>
+<p>
+So this rule means "constrain the surface representation of <tt>&gt;</tt> to be <tt>0</tt>, that is empty
+in all contexts". We can now try compiling the rule and our alphabet to see the results:
+</p>
+<pre>
+$ hfst-twolc chv.twol -o chv.twol.hfst
+Reading input from chv.twol.
+Writing output to chv.twol.hfst.
+Reading alphabet.
+Reading rules and compiling their contexts and centers.
+Compiling rules.
+Storing rules.
+</pre>
+<p>
+In order to apply our ruleset to our compiled lexicon we use the <tt>hfst-compose-intersect</tt> program. 
+This takes as input two arguments, our compiled lexicon, <tt>chv.lexc.hfst</tt> and our compiled twol file, 
+<tt>chv.twol.hfst</tt>. It might be convenient at this point that we set up a <tt>Makefile</tt> to make the 
+compilation turnaround faster, so open a new file called <tt>Makefile</tt>, and write in:
+</p>
+<pre>
+all:
+	hfst-lexc chv.lexc -o chv.lexc.hfst
+	hfst-twolc chv.twol -o chv.twol.hfst
+	hfst-compose-intersect -1 chv.lexc.hfst -2 chv.twol.hfst -o chv.gen.hfst
+</pre>
+<p>
+Then go to the command line and type <tt>make</tt>,
+</p>
+<pre>
+$ make
+hfst-lexc chv.lexc -o chv.lexc.hfst
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...1 CASES...1 PLURAL...2 N...1 Nouns...
+hfst-twolc chv.twol -o chv.twol.hfst
+Reading input from chv.twol.
+Writing output to chv.twol.hfst.
+Reading alphabet.
+Reading rules and compiling their contexts and centers.
+Compiling rules.
+Storing rules.
+hfst-compose-intersect -1 chv.lexc.hfst -2 chv.twol.hfst -o chv.gen.hfst
+</pre>
+<p>
+This compiles the lexical transducer, then the two-level rules and finally composes the lexicon
+with the rules. We can see the output of the process by using <tt>hfst-fst2strings</tt> as before,
+</p>
+<pre>
+$ hfst-fst2strings chv.gen.hfst 
+канаш&lt;n&gt;&lt;ins&gt;:канашпа
+канаш&lt;n&gt;&lt;ins&gt;:канашпе
+канаш&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:канашсемпа
+канаш&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:канашсемпе
+пакча&lt;n&gt;&lt;ins&gt;:пакчапа
+пакча&lt;n&gt;&lt;ins&gt;:пакчапе
+пакча&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:пакчасемпа
+пакча&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:пакчасемпе
+урам&lt;n&gt;&lt;ins&gt;:урампа
+урам&lt;n&gt;&lt;ins&gt;:урампе
+урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урамсемпа
+урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урамсемпе
+хула&lt;n&gt;&lt;ins&gt;:хулапа
+хула&lt;n&gt;&lt;ins&gt;:хулапе
+хула&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:хуласемпа
+хула&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:хуласемпе
+</pre>
+<p>
+As you can see, now we have all of the possible forms, this is the <u>key</u> to <tt>twol</tt>, we 
+first expand all the possibilities and then constrain them. So, if we want to write a constraint
+for vowel harmony, what might it look like ? First we have to define what vowel harmony means.
+</p>
+<p>
+
+</p>
+
+
+<!--
 - vowel harmony
+- epenthesis
+-->
 
 <h3>More on morphotactics</h3>
 
@@ -421,18 +506,22 @@ for these suffixes would be,
 
 more on morphotactics
 
+- loan words
 - numerals and abbreviations
+
+<h3>More on phonology</h3>
 
 unit testing
 
 <h3>Evaluation</h3>
-evaluating coverage 
 
-evaluating precision/recall
+<h4>Coverage</h4>
+
+<h4>Precision and recall</h4>
+
+
 
 extracting sub-fsts
-
-
 
 weighting
 
