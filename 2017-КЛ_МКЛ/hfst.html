@@ -744,7 +744,79 @@ $ hfst-fst2strings chv.gen.hfst | grep урам | grep gen
 урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемнӗн
 </pre>
 <p>
-I leave the rule for <tt>%{н%}</tt> as an exercise for the reader. In the end the result should be:
+That's better, what should we try and tackle next ? How about constraining <tt>%{A%}</tt> to be <tt>0</tt>
+when following <tt>%{м%}</tt> and <tt>%{н%}</tt>?
+</p>
+<pre>
+"{Ã} doesn't surface in plural genitive"
+%{Ă%}:0 <=> %{м%}: %&gt;: %{н%}: _ н ; 
+</pre>
+<p>
+And let's compile:
+</p>
+<pre>
+$ make
+hfst-lexc chv.lexc -o chv.lexc.hfst
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...1 CASES...3 PLURAL...2 N...1 Nouns...
+hfst-twolc chv.twol -o chv.twol.hfst
+Reading input from chv.twol.
+Writing output to chv.twol.hfst.
+Reading alphabet.
+Reading sets.
+Reading rules and compiling their contexts and centers.
+<b>There is a &lt;=-rule conflict between "Back vowel harmony for archiphoneme {Ă}" and "Non surface {Ã} in plural genitive".
+E.g. in context __HFST_TWOLC_.#.:__HFST_TWOLC_.#. ё:ё ҫ:ҫ {м}:м &gt;: {н}:н _ н:н __HFST_TWOLC_.#.:__HFST_TWOLC_.#. </b>
+
+Compiling rules.
+Storing rules.
+hfst-compose-intersect -1 chv.lexc.hfst -2 chv.twol.hfst -o chv.gen.hfst
+</pre>
+<p>
+Argghhh! What happened ? Well, the problem is that we have two rules that say conflicting things:
+</p>
+<div class="container">
+  <div class="col-xs-8">
+(a)<pre style="width:80%">
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ &lt;=&gt; BackVow: [ ArchiCns: | Cns: | %&gt;: ]+ _ ;
+</pre>
+  </div>
+  <div class="col-xs-8">
+(b)<pre style="width:80%">
+"Non surface {Ã} in plural genitive"
+%{Ă%}:0 &lt;=&gt; %{м%}: %&gt;: %{н%}: _ н ; 
+</pre>
+  </div>
+</div>
+<p>
+So let's take a look at the string pairs:
+</p>
+<pre>
+(a)    у р а м &gt; с е {м} &gt; {н} {Ă} н
+       у р а м 0 с е  0  0  0   ӗ  н
+                   ^------------^
+
+(b)
+       у р а м &gt; с е {м} &gt; {н} {Ă} н
+       у р а м 0 с е  0  0  0   0  н
+                      ^---------^
+</pre>
+<p>
+So the easiest way to fix this is with an <tt>except</tt> clause to the rule. These are written
+as follows:
+</p>
+<pre>
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ &lt;=&gt; BackVow: [ ArchiCns: | Cns: | %&gt;: ]+ _ ;
+        except
+                               %{м%}: %&gt;: %{н%}: _ н ; 
+</pre>
+<p>
+We basically limit the rule to work in all contexts apart from those in the <tt>except</tt> clause.
+</p>
+<p>
+I leave the rules for <tt>%{м%}</tt> and <tt>%{н%}</tt> as an exercise for the reader. In the end the result should be:
 </p>
 <pre>
 $ hfst-fst2strings chv.gen.hfst |grep gen
@@ -770,6 +842,46 @@ If it looks a bit different try running:
 $ hfst-minimise chv.gen.hfst  | hfst-fst2txt
 </pre>
 What does minimisation do ?
+
+<h4>Some more rule syntax</h4>
+
+
+<h5>Multiple environments</h5>
+<p>
+You can use list multiple environments
+</p>
+<pre>
+"x is constrained to be y before a and after b"
+x:y <=>    _ :a ;
+        :b _ ;
+</pre>
+<p>
+The rule above maps x to y before an output a and after an output b. 
+</p>
+<h5>Matched correspondences</h5>
+<p>
+You can do a whole bunch of pairs of symbols in the same environment using a single rule, like this:
+</p>
+<pre>
+"{A} must correspond to the vowel before it"
+%{A%}:Vy <=> :Vx _ ;
+      where Vx in ( a e o )
+            Vy in ( a e o )
+      matched ;
+</pre>
+<p>
+This rule turns <tt>%{A%}</tt> into either a, e, or o to match the character before it.
+</p>
+<p>
+A similar rule:
+</p>
+<pre>
+"Vowels raise after a null-realised {x}"
+Vx:Vy <=> %{x%}:0 _ ;
+      where Vx in ( a e o )
+            Vy in ( ə i u )
+      matched ;
+</pre>
 
 <h3>More on morphotactics</h3>
 
@@ -816,6 +928,26 @@ using the stuffs in python
 
 final thoughts 
 
+<h3>Troubleshooting</h3>
+<p>
+If you are not getting any error messages (like rule conflicts or compile errors) and your 
+code looks like it should work, but it still isn't working, try checking the following:
+</p>
+<ul>
+  <li> Check that you have defined all of your multicharacter symbols. </li>
+  <li> Check that you are looking at the right unicode codepoints. Some characters look 
+       the same, but are represented differently by your computer. For example,
+    <ul>
+      <li>«ă» → <tt>U+0103 LATIN SMALL LETTER A WITH BREVE (ă)</tt></li>
+      <li>«ӑ» → <tt>U+04D1 CYRILLIC SMALL LETTER A WITH BREVE (ӑ)</tt></li>
+    </ul>
+  </li>
+  <li> Check to make sure you don't have any weird non-printing space characters like,
+    <ul> 
+      <li>«&nbsp;» → <tt>U+00A0 NO-BREAK SPACE</tt>
+    </ul>
+  </li>
+</ul>
 
 <h3>Further reading</h3>
 
