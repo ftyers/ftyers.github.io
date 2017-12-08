@@ -925,8 +925,22 @@ spell relax
 orthographic errors
 
 using the stuffs in python
+<h3>Python bindings</h3>
+<p>
+It's completely possible to use HFST transducers in Python by using the Python bindings, the
+following code loads a transducer. There is also a nice <a href="https://hfst.github.io/python/3.12.1/QuickStart.html">quick
+start guide</a> on the HFST site.
+</p>
+<pre>
+import hfst
 
-final thoughts 
+ifs = hfst.HfstInputStream('chv.gen.hfst') # set up an input stream
+transducer = ifs.read()                    # read the first transducer
+transducer.invert()                        # invert the transducer
+transducer.lookup('урамӑн')                # analyse a token
+</pre>
+
+<h3>Final thoughts </h3>
 
 <h3>Troubleshooting</h3>
 <p>
@@ -950,6 +964,11 @@ code looks like it should work, but it still isn't working, try checking the fol
 </ul>
 
 <h3>Further reading</h3>
+
+<ul>
+  <li>Kimmo Koskenniemi (1983) <em>Two-level morphology : a general computational model for word-form recognition and production</em>. Publications (Helsingin yliopisto. Yleisen kieliteteen laitos 11)</li>
+  <li>Kenneth R. Beesley and Lauri Karttunen (2003) <em>Finite State Morphology</em> (CLSI: Stanford)
+</ul>
 
 </div>
 </div>
