@@ -19,11 +19,17 @@
 
 <h3>Why make a finite-state transducer?</h3>
 
+<!-- analysis and generation in the same model -->
+<!-- test your grammar, find new and underdescribed phenomena -->
+<!-- still relevant, måns huldén "There is still a need for gold standard reference implementations of morphology for training and testing statistical models", -->
+<!-- write a morphology for a new language, get a paper -->
+<!-- instant spellchecker for an under-resourced language -->
+
 <h3>A simple lexical transducer</h3>
 <p>
-The most basic lexical transducer can be made with a Multichar_Symbols definition and a Root lexicon. These
+The most basic lexical transducer can be made with a <tt>Multichar_Symbols</tt> definition and a <tt>Root</tt> lexicon. These
 are two parts that are necessary for the transducer to compile. In the Multichar_Symbols section we 
-define our grammatical tags that we are going to use, and we can use the Root lexicon to store a few lexemes.
+define our grammatical tags that we are going to use, and we can use the <tt>Root</tt> lexicon to store a few lexemes.
 For example,
 </p>
 <pre>
@@ -289,7 +295,7 @@ classes, where an unsplit implementation had five.
 </p>
 <p>
 So instead, what we do is provide a placeholder (archiphoneme) instead. I usually write these placeholders
-inbetween curly brackets/braces, <tt>{...}</tt>. For example we could write:
+inbetween <span class="tooltip" title="фигурные скобки">curly brackets/braces</span>, <tt>{...}</tt>. For example we could write:
 </p>
 <pre>
 LEXICON CASES 
@@ -405,13 +411,14 @@ A rule is composed of a one-line description in between double quotes, <tt>"..."
 in the form:
 </p>
 <pre>
-a:b   ARROW   LEFT_CONTEXT   _   RIGHT_CONTEXT ; 
+a:b   CONSTRAINT_OPERATOR   LEFT_CONTEXT   _   RIGHT_CONTEXT ; 
 </pre>
 <p>
 Where <tt>a</tt> is an alphabetic symbol on the morphotactic side, <tt>b</tt> is an alphabetic symbol on the 
-surface side and <tt>a:b</tt> is the <em>centre</em> of the rule; <tt>ARROW</tt> is an arrow defining the 
+surface side and <tt>a:b</tt> is the <em>centre</em> of the rule; <tt>CONSTRAINT_OPERATOR</tt> is an arrow defining the 
 constraint type (more on that later); <tt>LEFT_CONTEXT</tt> is the context to the left and <tt>RIGHT_CONTEXT</tt>
-is the context to the right.
+is the context to the right. Both left and right contexts are represented by regular expressions over symbol
+pairs.
 </p>
 <p>
 So this rule means "constrain the surface representation of <tt>&gt;</tt> to be <tt>0</tt>, that is empty
@@ -483,15 +490,286 @@ As you can see, now we have all of the possible forms, this is the <u>key</u> to
 first expand all the possibilities and then constrain them. So, if we want to write a constraint
 for vowel harmony, what might it look like ? First we have to define what vowel harmony means.
 </p>
+<ul>
+<li>The archiphoneme <tt>%{A%}</tt> should be -а- after a back vowel and any number of consonants,
+      and it should be -е- after a front vowel and any number of consonants.</li>
+</ul>
 <p>
+The first thing we should do is define some sets for what back vowel, front vowel and consonant 
+mean:
+</p>
+<pre>
+Sets 
 
+BackVow = ӑ а ы о у я ё ю ;
+
+FrontVow = ӗ э и ӳ ; 
+
+Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ ; 
+
+</pre>
+<p>
+This code should go between the end of the <tt>Alphabet</tt> and the beginning of <tt>Rules</tt>. Once
+we have done that we can go on to define our first phonological rule:
+</p>
+<pre>
+"Back vowel harmony for archiphoneme {A}"
+%{A%}:а &lt;=&gt; BackVow: [ Cns: | %&gt;: ]+ _ ; 
+</pre>
+<p>
+This rule says that the symbol pair <tt>%{A%}:а</tt> should only be considered valid if 
+there is a previous back vowel followed by one or more consonants. Go and save this and compile
+it and look at the output.
+</p>
+<pre>
+$ hfst-fst2strings chv.gen.hfst 
+канаш&lt;n&gt;&lt;ins&gt;:канашпа
+канаш&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:канашсемпе
+пакча&lt;n&gt;&lt;ins&gt;:пакчапа
+пакча&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:пакчасемпе
+урам&lt;n&gt;&lt;ins&gt;:урампа
+урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урамсемпе
+хула&lt;n&gt;&lt;ins&gt;:хулапа
+хула&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:хуласемпе
+</pre>
+<p>
+Note that we haven't said anything about <tt>%{A%}:е</tt>, so why are the front vowels
+after back vowels removed as well as the back vowels after front vowels ? The answer
+lies in the type of operator. What the <tt>&lt;=&gt;</tt> operator says is that:
+</p>
+<ol>
+  <li>If the symbol pair <tt>%{A%}:а</tt> appears it must be in the context
+       <tt>BackVow: [ Cns: | %&gt;: ]+ _</tt> </li>
+  <li>If the lexical/morphotactic <tt>%{A%}:</tt> appears in the context <tt>BackVow: [ Cns: | %&gt;: ]+ _</tt>
+       then it must correspond on the surface to "<tt>а</tt>" </li>
+</ol>
+<p>
+So, (1) constrains the correspondence of <tt>%{A%}:а</tt> to only be in the context we have specified
+and (2) constrains the correspondence of <tt>%{A%}:</tt> to only be "<tt>а</tt>" in the context
+we have specified. There are three other operators (or arrows):
+</p>
+<div class="container">
+<table class="table" style="width:60%">
+<thead>
+  <tr><th>Rule type</th><th>Interpretation</th></tr>
+</thead>
+<tbody>
+  <tr><td><tt>a:b =&gt; _ ;</tt></td><td>If the symbol pair <tt>a:b</tt> appears it must be in context <tt>_</tt></td></tr>
+  <tr><td><tt>a:b &lt;= _ ;</tt></td><td>If lexical <tt>a</tt> appears in the context <tt>_</tt> then it must correspond to surface <tt>b</tt> </td></tr>
+  <tr><td><tt>a:b /&lt;= _ ;</tt></td><td>Lexical <tt>a</tt> never corresponds to <tt>b</tt> in context <tt>_</tt> </td></tr>
+</tbody>
+</table>
+</div>
+<p>
+Now try out the other arrows with your rule, recompile and look at the output.
 </p>
 
+<h4>Rule interactions</h4>
+<p>
+You might be wondering at this point how we can do complex transformations if we can only work
+with changing a single symbol at once and have no concept of rule ordering. Let's take a look
+at the Chuvash genitive to get an idea of how rules can interact. 
+</p>
+<div class="container">
+<table class="table" style="width:60%">
+<thead>
+  <tr><th>Context</th><th>Form</th></tr>
+</thead>
+<tbody>
+  <tr><td><tt>-а, -е</tt></td><td>-нӑн, -нӗн<br/>-н</td></tr>
+  <tr><td><tt>-и</tt></td><td>-йӗн<br/>-н</td></tr>
+  <tr><td><tt>-C</tt></td><td>-ӑн, -ӗн</td></tr>
+  <tr><td><tt>-Cӑ, -Cӗ</tt></td><td>-CCӑн, -CCӗн</td></tr>
+  <tr><td><tt>-Cу, -Cӳ</tt></td><td>-Cӑвӑн, -Cӗвӗн</td></tr>
+  <tr><td><tt>-сен</tt></td><td>-сем, -сенӗн</td></tr>
+</tbody>
+</table>
+</div>
+<p>
+The actual story is a bit more complicated, but this is enough to get our teeth into for now. So,
+let's remember that our current <tt>.lexc</tt> file looks like:
+</p>
+<pre>
+Multichar_Symbols
 
-<!--
-- vowel harmony
-- epenthesis
--->
+%&lt;n%&gt;                ! Имя существительное
+%&lt;pl%&gt;               ! Множественное число
+%&lt;nom%&gt;              ! Именительный падеж
+%&lt;ins%&gt;              ! Творительный падеж
+
+%{A%}                ! Архифонема [а] или [е]
+
+%&gt;                   ! Граница морфемы
+
+LEXICON Root
+
+Nouns ;
+
+LEXICON CASES 
+
+%&lt;ins%&gt;:%&gt;п%{A%} # ;
+
+LEXICON PLURAL
+
+             CASES ;
+%&lt;pl%&gt;:%&gt;сем CASES ;
+
+LEXICON N
+
+%&lt;n%&gt;: PLURAL ;
+
+LEXICON Nouns
+
+урам:урам N ;     ! "улица"
+пакча:пакча N ;   ! "сад"
+хула:хула N ;     ! "город"
+канаш:канаш N ;   ! "союз"
+</pre>
+<p>
+Let's assume for simplicity that we are dealing with just the stems that we have in the file, 
+we need to generate the following forms:
+</p>
+<div class="container">
+<table class="table" style="width:60%">
+<thead>
+  <tr><th>Stem</th><th>Singular</th><th>Plural</th></tr>
+</thead>
+<tbody>
+  <tr><td>урам</td><td><tt>урамӑн</tt></td><td>урамсен</td></tr>
+  <tr><td>канаш</td><td><tt>канашӑн</tt></td><td>канашсен</td></tr>
+  <tr><td>пакча</td><td><tt>пакчанӑн</tt></td><td>пакчасен</td></tr>
+  <tr><td>хула</td><td><tt>хуланӑн</tt></td><td>хуласен</td></tr>
+</tbody>
+</table>
+</div>
+<p>
+So what are the possible options? Well, first of all, the <em>-м</em> at the end of the plural
+morpheme looks special, because it changes to <em>-н</em> in the plural genitive. So we should change
+our plural morpheme to <tt>%&gt;се%{м%}</tt>. The next question is what do we do with that?
+</p>
+<ol>
+  <li>The genitive morpheme will be <tt>%&gt;%{н%}%{Ǎ%}н</tt> after both singular and plural
+  <ul>
+    <li><tt>%{м%}:0</tt> if there is a following <tt>%{н%}</tt> </li>
+    <li><tt>%{н%}:0</tt> if there is a preceding <tt>%{м%}</tt> </li>
+    <li><tt>%{Ӑ%}:0</tt> if previous <tt>%{н%}</tt> corresponds to <tt>0</tt> 
+    <li><tt>%{Ă%}:ӑ</tt> or <tt>%{Ã%}:ӗ</tt> according to vowel harmony if previous consonant</li>
+    <li><tt>%{н%}:н</tt> if there is a preceding vowel </li>
+  </ul></li>
+  <li>The genitive morpheme will be <tt>%&gt;%{н%}</tt> in plural and <tt>%&gt;%{н%}%{Ǎ%}н</tt> in singular
+  <ul>
+    <li><tt>%{н%}:0</tt> if it is the end of the string</li>
+    <li><tt>%{м%}:н</tt> if there is a following <tt>%{н%}:0</tt></li>
+    <li><tt>%{Ӑ%}:0</tt> if previous <tt>%{н%}</tt> corresponds to <tt>0</tt> 
+    <li><tt>%{Ă%}:ӑ</tt> or <tt>%{Ã%}:ӗ</tt> according to vowel harmony if previous consonant</li>
+  </ul></li>
+</ol>
+<p>
+Does it matter which variant we choose? Well, that depends on the task(s) we're planning to use 
+the transducer for. If we are just interested in morphological analysis then it is really a matter
+of personal taste or belief (what is more convenient computationally?). However, if you
+are also planning to use the transducer for morphological segmentation, then you should perhaps
+think about what kind of segments you want and what is going on linguistically.
+</p>
+<p>
+Now implement option (1) above in your <tt>.lexc</tt> file, you should end up with the following
+output: 
+</p>
+<pre>
+$ hfst-fst2strings chv.lexc.hfst | grep урам | grep gen
+урам&lt;n&gt;&lt;gen&gt;:урам&gt;{н}{Ă}н
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урам&gt;се{м}&gt;{н}{Ă}н
+</pre>
+<p>
+If you are having problems doing it, then ask for help. Remember to declare your archiphonemes! When 
+you have updated your <tt>.lexc</tt> file, add the following lines to the alphabet of your <tt>.twol</tt>
+file:
+</p>
+<pre>
+ %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0
+ %{н%}:н %{н%}:0
+ %{м%}:м %{м%}:0
+</pre>
+<p>
+Then compile and look at the output,
+</p>
+<pre>
+$ hfst-fst2strings chv.gen.hfst | grep урам | grep gen
+урам&lt;n&gt;&lt;gen&gt;:урамн
+урам&lt;n&gt;&lt;gen&gt;:урамӑн
+урам&lt;n&gt;&lt;gen&gt;:урамӗн
+урам&lt;n&gt;&lt;gen&gt;:урамнн
+урам&lt;n&gt;&lt;gen&gt;:урамнӑн
+урам&lt;n&gt;&lt;gen&gt;:урамнӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсен
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсеӑн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсеӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсенн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсенӑн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсенӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемӑн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемнн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемнӑн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемнӗн
+</pre>
+<p>
+As you can see we have a rather large number of invalid forms generated by our alphabet expansion this
+time. 
+</p>
+<p>
+So the first thing we can take care of would be vowel harmony. We can quite easily get rid of the 
+surface forms with invalid vowel harmony by taking our previous rule and adapting it for <tt>%{Ă%}</tt>,
+</p>
+<pre>
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ &lt;=&gt; BackVow: [ ArchiCns: | Cns: | %&gt;: ]+ _ ;
+</pre>
+<p>
+I've added one new set here, <tt>ArchiCns = %{н%} %{м%} ;</tt> to represent the archiphonemes for 
+consonant that can be <tt>0</tt> on the surface. Save the rule and recompile and test,
+</p>
+<pre>
+$ hfst-fst2strings chv.gen.hfst | grep урам | grep gen
+урам&lt;n&gt;&lt;gen&gt;:урамӑн
+урам&lt;n&gt;&lt;gen&gt;:урамнӑн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсен
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсеӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсенн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсенӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемӗн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемнн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсемнӗн
+</pre>
+<p>
+I leave the rule for <tt>%{н%}</tt> as an exercise for the reader. In the end the result should be:
+</p>
+<pre>
+$ hfst-fst2strings chv.gen.hfst |grep gen
+канаш&lt;n&gt;&lt;gen&gt;:канашӑн
+канаш&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:канашсен
+пакча&lt;n&gt;&lt;gen&gt;:пакчанӑн
+пакча&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:пакчасен
+урам&lt;n&gt;&lt;gen&gt;:урамӑн
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсен
+хула&lt;n&gt;&lt;gen&gt;:хуланӑн
+хула&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:хуласен
+</pre>
+<p>
+And the transducer should look something like:
+</p>
+<p>
+<img src="graphics/chv.gen.3.png" style="width:100%"/>
+</p>
+<p>
+If it looks a bit different try running:
+</p>
+<pre>
+$ hfst-minimise chv.gen.hfst  | hfst-fst2txt
+</pre>
+What does minimisation do ?
 
 <h3>More on morphotactics</h3>
 
