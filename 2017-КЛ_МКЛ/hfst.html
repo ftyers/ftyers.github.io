@@ -1142,28 +1142,42 @@ but Finnish doesn't. You can make a new lexicon called <tt>fin.lexc</tt>,
 <p>
 
 </p>
+<div style="align:center"><img src="graphics/fin.lexc.1.png" width="100%"/></div>
 <pre>
 $ hfst-fst2strings fin.lexc.hfst 
 hfst-fst2strings: Transducer is cyclic. Use one or more of these options: -n, -N, -r, -l, -L, -c
 </pre>
-- compounding
 
-- derivation
+<h4>Productive derivation</h4>
+
+...
+
 
 <!-- - templatic morphology-->
 
 <h3>Lexicon construction</h3>
 
-more on morphotactics
+...
 
-- loan words
-- numerals and abbreviations
+<h3>More on morphotactics</h3>
+
+...
+
+<h4>Loan words</h4>
+
+...
+
+<h4>Numerals and abbreviations</h4>
+
+...
 
 <h3>More on phonology</h3>
 
 unit testing
 
 <h3>Evaluation</h3>
+
+...
 
 <h4>Coverage</h4>
 
@@ -1194,14 +1208,15 @@ It's completely possible to use HFST transducers in Python by using the Python b
 following code loads a transducer. There is also a nice <a href="https://hfst.github.io/python/3.12.1/QuickStart.html">quick
 start guide</a> on the HFST site.
 </p>
-<pre>
-import hfst
 
-ifs = hfst.HfstInputStream('chv.gen.hfst') # set up an input stream
-transducer = ifs.read()                    # read the first transducer
-transducer.invert()                        # invert the transducer
-transducer.lookup('урамӑн')                # analyse a token
+<pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">import</span> <span style="color: #00aaaa; text-decoration: underline">hfst</span>
+
+ifs = hfst.HfstInputStream(<span style="color: #aa5500">&#39;chv.gen.hfst&#39;</span>) <span style="color: #aaaaaa; font-style: italic"># set up an input stream</span>
+transducer = ifs.read()                    <span style="color: #aaaaaa; font-style: italic"># read the first transducer</span>
+transducer.invert()                        <span style="color: #aaaaaa; font-style: italic"># invert the transducer</span>
+transducer.lookup(<span style="color: #aa5500">&#39;урамӑн&#39;</span>)                <span style="color: #aaaaaa; font-style: italic"># analyse a token</span>
 </pre>
+
 
 <h3>Final thoughts </h3>
 
