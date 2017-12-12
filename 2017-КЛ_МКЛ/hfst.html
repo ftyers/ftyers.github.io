@@ -464,7 +464,13 @@ hfst-compose-intersect -1 chv.lexc.hfst -2 chv.twol.hfst -o chv.gen.hfst
 </pre>
 <p>
 This compiles the lexical transducer, then the two-level rules and finally composes the lexicon
-with the rules. We can see the output of the process by using <tt>hfst-fst2strings</tt> as before,
+with the rules. Composition basically means that we take the output of the first transducer 
+and we give it as input to the second transducer, then we throw away the intermediate part. So,
+</p><p>
+<tt>a:b</tt> ∘ <tt>b:c</tt> → <tt>a:c</tt>. 
+</p><p>
+We can see the output of the process by 
+using <tt>hfst-fst2strings</tt> as before,
 </p>
 <pre>
 $ hfst-fst2strings chv.gen.hfst 
@@ -845,10 +851,9 @@ What does minimisation do ?
 
 <h4>Some more rule syntax</h4>
 
-
 <h5>Multiple environments</h5>
 <p>
-You can use list multiple environments
+You can use list multiple environments by just putting them one after another,
 </p>
 <pre>
 "x is constrained to be y before a and after b"
@@ -856,11 +861,11 @@ x:y <=>    _ :a ;
         :b _ ;
 </pre>
 <p>
-The rule above maps x to y before an output a and after an output b. 
+The rule above maps <tt>x</tt> to <tt>y</tt> before a surface <tt>a</tt> and after a surface <tt>b</tt>. 
 </p>
 <h5>Matched correspondences</h5>
 <p>
-You can do a whole bunch of pairs of symbols in the same environment using a single rule, like this:
+You can do pairs of symbols in the same environment using a single rule, like this:
 </p>
 <pre>
 "{A} must correspond to the vowel before it"
@@ -870,7 +875,7 @@ You can do a whole bunch of pairs of symbols in the same environment using a sin
       matched ;
 </pre>
 <p>
-This rule turns <tt>%{A%}</tt> into either a, e, or o to match the character before it.
+This rule turns <tt>%{A%}</tt> into either <tt>a</tt>, <tt>e</tt>, or <tt>o</tt> to match the character before it.
 </p>
 <p>
 A similar rule:
@@ -885,7 +890,19 @@ Vx:Vy <=> %{x%}:0 _ ;
 
 <h3>More on morphotactics</h3>
 
-- templatic morphology
+<h4>Prefixes</h4>
+<p>
+What we have looked at so far has been limited to suffixing morphology, but languages
+exhibit inflection in different ways. Either with suffixes, with prefixes, both, or 
+circumfixes. However, when coming to implementing this kind of stuff in a finite-state
+transducer we are often presented with the problem that we would like the inflection
+on the left, but the morphological tag on the right. Let's take Avar for example,
+</p>
+
+<h4>Compounding</h4>
+
+
+<!-- - templatic morphology-->
 - compounding
 - derivation
 - prefixes
@@ -971,8 +988,10 @@ code looks like it should work, but it still isn't working, try checking the fol
 <ul>
   <li>Kimmo Koskenniemi (1983) <em>Two-level morphology : a general computational model for word-form recognition and production</em>. Publications (Helsingin yliopisto. Yleisen kieliteteen laitos 11)</li>
   <li>Kenneth R. Beesley and Lauri Karttunen (2003) "<a href="https://web.stanford.edu/~laurik/.book2software/twolc.pdf">Two-level morphology</a>" in <em>Finite State Morphology</em> (CLSI: Stanford)
+  <li>HFST Team (2017) <a href="https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstTwolC"> hfst-twolc − A Two-Level Grammar Compiler </a>
 </ul>
 
+<hr/>
 </div>
 </div>
 
