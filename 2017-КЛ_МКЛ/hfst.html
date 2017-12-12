@@ -839,7 +839,7 @@ $ hfst-fst2strings chv.gen.hfst |grep gen
 And the transducer should look something like:
 </p>
 <p>
-<img src="graphics/chv.gen.3.png" style="width:100%"/>
+<div style="align:center"><img src="graphics/chv.gen.3.png" style="width:100%"/>
 </p>
 <p>
 If it looks a bit different try running:
@@ -890,24 +890,267 @@ Vx:Vy <=> %{x%}:0 _ ;
 
 <h3>More on morphotactics</h3>
 
-<h4>Prefixes</h4>
+<h4>Morphotactic constraints</h4>
 <p>
 What we have looked at so far has been limited to suffixing morphology, but languages
 exhibit inflection in different ways. Either with suffixes, with prefixes, both, or 
 circumfixes. However, when coming to implementing this kind of stuff in a finite-state
 transducer we are often presented with the problem that we would like the inflection
-on the left, but the morphological tag on the right. Let's take Avar for example,
+on the left, but the morphological tag on the right. Let's take Avar for example, some
+classes of verbs inflect for agreement using a prefix and for tense etc. using suffixes. Check
+out this example of the aorist of the verb <em>бицине</em> "to say":
+</p>
+<div class="container">
+<table class="table" style="width:60%">
+<thead>
+  <tr><th>Form</th><th>Morphemes</th><th>Analysis</th></tr>
+</thead>
+<tbody>
+  <tr><td><em>бицуна</em></td><td>б-иц-уна</td><td><tt>бицине</tt>, Aorist, Neuter</td></tr>
+  <tr><td><em>йицуна</em></td><td>й-иц-уна</td><td><tt>бицине</tt>, Aorist, Feminine</td></tr>
+  <tr><td><em>вицуна</em></td><td>в-иц-уна</td><td><tt>бицине</tt>, Aorist, Masculine</td></tr>
+  <tr><td><em>рицуна</em></td><td>р-иц-уна</td><td><tt>бицине</tt>, Aorist, Plural</td></tr>
+</tbody>
+</table>
+</div>
+<p>
+To represent this in the lexicon we have to decide a number of things,
+<ul>
+  <li>Where do we want the tag representing the agreement morpheme ?
+    <ul>
+       <li>Before the stem or after the stem ?</li>
+    </ul>
+  </li>
+  <li>If we want the tag before the stem should we use constraints or flag diacritics ? 
+    <ul>
+       <li> Constraints work like constraints in <tt>twol</tt>, they disallow certain paths
+          at compile time.</li>
+       <li> Flag diacritics maintain all the forms in the final transducer but have symbols
+          which are evaluated at runtime to discard paths. </li>
+    </ul>
+  </li>
+</ul>
+The first approach we are going to take is to mark strings with special symbols and then 
+use <tt>twol</tt>-style constraints to disallow the strings that have conflicting symbols. Make
+a new file called <tt>ava.lexc</tt> and add the following code:
+</p>
+<pre>
+Multichar_Symbols
+
+%&lt;v%&gt;                ! Имя существительное
+%&lt;tv%&gt;               ! Переходный
+%&lt;aor%&gt;              ! Аорист
+%&lt;m%&gt;                ! Мужский род
+%&lt;f%&gt;                ! Женский род
+%&lt;nt%&gt;               ! Средный род
+%&lt;pl%&gt;               ! Множественное число
+
+%[+в%]               ! Префикс в-
+%[+й%]               ! Префикс й-
+%[+б%]               ! Префикс б-
+%[+р%]               ! Префикс р-
+
+%[+msc%]             ! Согласование мужского рода
+%[+fem%]             ! Согласование женского рода
+%[+neu%]             ! Согласование средного рода
+%[+plu%]             ! Согласование множественного падежа
+
+%&gt;                   ! Граница морфемы
+
+LEXICON Root
+
+Prefixes ;
+
+LEXICON Prefixes
+
+%[+в%]:в%&lt; Verbs ;
+%[+й%]:й Verbs ;
+%[+б%]:б Verbs ;
+%[+р%]:р Verbs ;
+
+LEXICON AGR
+
+%&lt;m%&gt;%[%+msc%]: # ;
+%&lt;f%&gt;%[%+fem%]: # ;
+%&lt;nt%&gt;%[%+neu%]: # ;
+%&lt;pl%&gt;%[%+plu%]: # ;
+
+LEXICON V-TV
+
+%&lt;v%&gt;%&lt;tv%&gt;%&lt;aor%&gt;:%&gt;уна AGR ;
+
+LEXICON Verbs
+
+бицине:иц V-TV ; ! "говорить"
+</pre>
+<p>
+The tags within square brackets, <tt>[</tt> and <tt>]</tt> are constraints that we can use in writing
+<tt>twol</tt> rules, for example we might want to say that <tt>[+в]</tt> symbol must have <tt>[+msc]</tt>
+symbol somewhere later in the string. Note that we need to define all of these constraint symbols as multicharacter
+symbols in the header of the file. When we compile the transducer and view it, it should look like this:
+</p>
+<div style="align:center"><img src="graphics/ava.lexc.1.png" style="width:100%"/></div>
+<p>
+And we should get the following output from <tt>hfst-fst2strings</tt>,
+</p>
+<pre>
+[+в]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;pl&gt;[+plu]:виц&gt;уна
+[+в]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;nt&gt;[+neu]:виц&gt;уна
+[+в]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;f&gt;[+fem]:виц&gt;уна
+[+в]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;m&gt;[+msc]:виц&gt;уна
+[+й]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;pl&gt;[+plu]:йиц&gt;уна
+[+й]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;nt&gt;[+neu]:йиц&gt;уна
+[+й]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;f&gt;[+fem]:йиц&gt;уна
+[+й]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;m&gt;[+msc]:йиц&gt;уна
+[+б]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;pl&gt;[+plu]:биц&gt;уна
+[+б]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;nt&gt;[+neu]:биц&gt;уна
+[+б]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;f&gt;[+fem]:биц&gt;уна
+[+б]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;m&gt;[+msc]:биц&gt;уна
+[+р]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;pl&gt;[+plu]:риц&gt;уна
+[+р]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;nt&gt;[+neu]:риц&gt;уна
+[+р]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;f&gt;[+fem]:риц&gt;уна
+[+р]бицине&lt;v&gt;&lt;tv&gt;&lt;aor&gt;&lt;m&gt;[+msc]:риц&gt;уна
+</pre>
+<p>
+We can then go ahead and write a constraint rule in a new file, <tt>ava.twoc</tt>:
+</p>
+<pre>
+Alphabet
+
+%[%+б%]:0 %[%+в%]:0 %[%+й%]:0 %[%+р%]:0 %[%+neu%]:0 %[%+msc%]:0 %[%+fem%]:0 %[%+plu%]:0 ;
+
+Rules
+
+"Match agreement prefixes with agreement tags"
+Sx:0 /&lt;= _ ;
+   except
+       _ ( : )* Sy:0 ;
+   where Sx in ( %[%+б%]   %[%+в%]   %[%+й%]   %[%+р%]  )
+         Sy in ( %[%+neu%] %[%+msc%] %[%+fem%] %[%+plu%] )
+   matched ;
+</pre>
+<p>
+We can use the following commands to compile this rule and apply it to our lexical transducer:
+</p>
+<pre>
+hfst-lexc ava.lexc -o ava.lexc.hfst
+hfst-twolc ava.twoc -o ava.twoc.hfst
+hfst-invert ava.lexc.hfst | hfst-compose-intersect -1 - -2 ava.twoc.hfst | hfst-invert -o ava.gen.hfst
+</pre>
+<p>
+The first two commands are fairly straightforward, the third command is slightly different. This
+time we are applying constraints on the <em>morphotactic</em> side, not on the surface side, so we
+need to first <tt>invert</tt> the transducer before we apply the constraints. The <tt>-1 -</tt> means
+take the first transducer from standard input.
+</p>
+<p>
+A downside of this approach is that it involves spelling out all intermediate strings, as you will
+see in the following graphic,
+</p>
+<p>
+<div style="align:center"><img src="graphics/ava.lexc.2.png" width="100%"/></div>
+</p>
+<p>
+This means that the compiled transducer may get large and difficult to manage. However, depending on 
+the exact linguistic data, it may not matter that much.
+</p>
+<h4>Flag diacritics</h4>
+<p>
+An alternative approach is to use <em>flag diacritics</em>, these are "invisible" symbols which allow
+the expression of constraints between non-consecutive parts of words. They have the following format:
+</p>
+<pre>
+    @FLAGTYPE.FEATURE.VALUE@ 
+</pre>
+<p>
+The flag values and features are arbitrary strings, and up to the user to decide. During application 
+of a transducer, the runtime will decide whether or not a word is to be accepted depending on 
+which flags co-occur in the same word. Note that when we define flag diacritics they <b>must</b> appear
+on both the lexical side and on the morphotactic side of the transducer.
+</p>
+<pre>
+Multichar_Symbols
+
+%&lt;v%&gt;                ! Имя существительное
+%&lt;tv%&gt;               ! Переходный
+%&lt;aor%&gt;              ! Аорист
+%&lt;m%&gt;                ! Мужский род
+%&lt;f%&gt;                ! Женский род
+%&lt;nt%&gt;               ! Средный род
+%&lt;pl%&gt;               ! Множественное число
+
+@P.Gender.Msc@       ! Согласование мужского рода
+@P.Gender.Fem@       ! Согласование женского рода
+@P.Gender.Neu@       ! Согласование средного рода
+@P.Gender.Plu@       ! Согласование множественного падежа
+
+@R.Gender.Msc@       ! Согласование мужского рода
+@R.Gender.Fem@       ! Согласование женского рода
+@R.Gender.Neu@       ! Согласование средного рода
+@R.Gender.Plu@       ! Согласование множественного падежа
+
+LEXICON Root
+
+Prefixes ;
+
+LEXICON Prefixes
+
+@P.Gender.Msc@:@P.Gender.Msc@в Verbs ;
+@P.Gender.Fem@:@P.Gender.Fem@й Verbs ;
+@P.Gender.Neu@:@P.Gender.Neu@б Verbs ;
+@P.Gender.Plu@:@P.Gender.Plu@р Verbs ;
+
+LEXICON AGR
+
+@R.Gender.Msc@%&lt;m%&gt;:@R.Gender.Msc@ # ;
+@R.Gender.Fem@%&lt;f%&gt;:@R.Gender.Fem@ # ;
+@R.Gender.Neu@%&lt;nt%&gt;:@R.Gender.Neu@ # ;
+@R.Gender.Plu@%&lt;pl%&gt;:@R.Gender.Plu@ # ;
+
+LEXICON V-TV
+
+%&lt;v%&gt;%&lt;tv%&gt;%&lt;aor%&gt;:%&gt;уна AGR ;
+
+LEXICON Verbs
+
+бицине:иц V-TV ; ! "говорить"
+</pre>
+<p>
+Now try compiling and running the following commands,
+</p>
+<pre>
+$ hfst-fst2strings ava.lexc.hfst 
+$ hfst-fst2strings -X obey-flags ava.lexc.hfst 
+</pre>
+<p>
+What difference do you note ? 
+</p>
+<p>
+<div style="align:center"><img src="graphics/ava.lexc.3.png" width="100%"/></div>
 </p>
 
 <h4>Compounding</h4>
+<p>
+So far all of our transducers have been acyclic &mdash; containing no cycles &mdash;
+but many languages have productive compounding which entains cyclic relations 
+between items in the lexicon. Many languages in Russia write compound words separately,
+but Finnish doesn't. You can make a new lexicon called <tt>fin.lexc</tt>,
+</p>
+<pre>
 
+</pre>
+<p>
+
+</p>
+<pre>
+$ hfst-fst2strings fin.lexc.hfst 
+hfst-fst2strings: Transducer is cyclic. Use one or more of these options: -n, -N, -r, -l, -L, -c
+</pre>
+- compounding
+
+- derivation
 
 <!-- - templatic morphology-->
-- compounding
-- derivation
-- prefixes
-  - with twol constraints
-  - with flag diacritics
 
 <h3>Lexicon construction</h3>
 
