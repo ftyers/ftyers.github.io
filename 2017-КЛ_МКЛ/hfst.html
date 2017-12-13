@@ -1219,11 +1219,87 @@ Note that this is not a full model of Finnish compounding, there is a difference
 from nominative and any model of compounding, especially such a simplistic model is likely to severely overgenerate/overanalyse.
 </p>
 <h4>Productive derivation</h4>
+<p>
+Next up productive derivation, for this we can go back to Chuvash. In Chuvash there is a derivational
+suffix <em>-лӐх</em> which attaches to nouns to make new nouns or adjectives with abstract meaning, for example:
+<ul>
+   <li><em>тӗс</em> "aspect", <em>тӗслӗх</em> "example" </li>
+   <li><em>патша</em> "king, tsar", <em>патшалӑх</em> "state" </li>
+   <li><em>куç</em> "eye", <em>куç</em> "glasses" </li>
+</ul>
+The typical way of dealing with this is to just add it with another continuation class, for example,
+try adding this snippet to your <tt>chv.lexc</tt> file:
+</p>
+<pre>
+LEXICON SUBST 
 
-Next up productive derivation, for this we can go back to Chuvash. 
-...
+PLURAL ;
 
+LEXICON DER-N
 
+%&lt;der_лӑх%&gt;:%&gt;л%{Ă%}х SUBST ;
+
+LEXICON N
+
+%&lt;n%&gt;: SUBST ;
+%&lt;n%&gt;: DER-N ;
+
+LEXICON Nouns
+
+урам:урам N ;     ! "улица"
+пакча:пакча N ;   ! "сад"
+хула:хула N ;     ! "город"
+канаш:канаш N ;   ! "союз"
+тӗс:тӗс N ;       ! "вид"
+патша:патша N ;   ! "царь"
+куҫ:куҫ N ;       ! "глаз"
+</pre>
+<p>
+<b>Note:</b> Remember to define the new multicharacter symbols! 
+</p>
+<p>
+However, what do we do in the case that we already have the derived word in the lexicon, for example
+for some applications we may want the derived analysis, but for others we may want the lexicalised 
+analysis. Add <em>патшалӑх</em> "государство" to the noun lexicon and see what happens:
+</p>
+<pre>
+$ echo патшалӑх | hfst-lookup -qp chv.mor.hfst 
+патшалӑх	патшалӑх&lt;n&gt;&lt;nom&gt;	0,000000
+патшалӑх	патша&lt;n&gt;&lt;der_лӑх&gt;&lt;nom&gt;	0,000000
+</pre>
+<p>
+To get around this problem we can start working with weights. In a weighted finite-state transducer
+each arc and consequently each path is assigned a weight. The weight of a path is usually some 
+combination of the weights of the arcs (addition or multiplication). In <tt>lexc</tt> we can 
+define weights for specific arcs in a special section after the continuation class, for example:
+</p>
+<pre>
+LEXICON DER-N
+
+%&lt;der_лӑх%&gt;:%&gt;л%{Ă%}х SUBST "weight: 1.0" ; 
+</pre>
+<p>
+This sets the weight of the <em>-лĂх</em> morpheme to be 1.0. Normally if we are working with 
+probabilities we work with negative probabilities (so that a lower value ... e.g. <tt>-0.001</tt>
+is "heigher weight" than a higher value, e.g. <tt>-0.1</tt>). But if we are working with arbitrary
+manually specified weights we work with positive numbers and try and ensure that the less desirable
+analyses (typically derived and compound analyses if we want to favour lexicalisation) are 
+higher weight, thus "worse".
+</p>
+<pre>
+$ echo патшалӑх | hfst-lookup -qp chv.mor.hfst 
+патшалӑх	патшалӑх&lt;n&gt;&lt;nom&gt;	0,000000
+патшалӑх	патша&lt;n&gt;&lt;der_лӑх&gt;&lt;nom&gt;	1,000000
+
+$ echo патшалӑх | hfst-lookup -qp -b 0 chv.mor.hfst 
+патшалӑх	патшалӑх&lt;n&gt;&lt;nom&gt;	0,000000
+</pre>
+<p>
+The <tt>-b 0</tt> option means for the analyser to return only those analyses which are the same
+weight as the best scoring analysis. For the programmatically inclined, the <tt>-b</tt> stands 
+for <em>beam search</em>. Later on in the tutorial we will learn how to learn analysis weights
+automatically from corpora.
+</p>
 <!-- - templatic morphology-->
 
 <h3>Lexicon construction</h3>
