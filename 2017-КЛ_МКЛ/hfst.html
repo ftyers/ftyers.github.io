@@ -1137,7 +1137,42 @@ between items in the lexicon. Many languages in Russia write compound words sepa
 but Finnish doesn't. You can make a new lexicon called <tt>fin.lexc</tt>,
 </p>
 <pre>
+Multichar_Symbols
 
+%&lt;n%&gt;                   ! Nimisana
+%&lt;cmp%&gt;                 ! Yhdyssana
+%&lt;nom%&gt;                 ! Nominatiivi
+%&lt;gen%&gt;                 ! Genetiivi
+
+%&gt;                      ! Morfeemiraja
+%+                      ! Yhdyssanaraja (leksikaalinen sivu)
+%#                      ! Yhdyssanaraja 
+
+LEXICON Root 
+
+Nouns  ; 
+
+LEXICON Cmp 
+
+           # ;
+%&lt;cmp%&gt;%+:%# Nouns ;
+
+LEXICON 9  ! kala
+
+%&lt;nom%&gt;:    # ; 
+%&lt;gen%&gt;:%&gt;n Cmp ;
+
+LEXICON 10 ! koira
+
+%&lt;nom%&gt;:    # ; 
+%&lt;gen%&gt;:%&gt;n Cmp ;
+
+LEXICON Nouns 
+
+kissa%&lt;n%&gt;:kissa 9 ;  ! "кошка"
+kala%&lt;n%&gt;:kala 9 ;    ! "рыба"
+korva%&lt;n%&gt;:korva 10 ; ! "ухо"
+koira%&lt;n%&gt;:koira 10 ; ! "собака"
 </pre>
 <p>
 
@@ -1147,7 +1182,34 @@ but Finnish doesn't. You can make a new lexicon called <tt>fin.lexc</tt>,
 $ hfst-fst2strings fin.lexc.hfst 
 hfst-fst2strings: Transducer is cyclic. Use one or more of these options: -n, -N, -r, -l, -L, -c
 </pre>
+<p>
+The main options are:
+<ul>
+  <li><tt>-n</tt> <em>n</em> give the first <em>n</em> strings</li>
+  <li><tt>-N</tt> <em>n</em> give the first <em>n</em> best strings (by weight)</li>
+  <li><tt>-r</tt> <em>n</em> give <em>n</em> random strings</li>
+  <li><tt>-c</tt> <em>n</em> follow at most <em>n</em> cycles</li>
+</ul>
+The options <tt>-l</tt> and <tt>-L</tt> limit the length of the input and output string respectively.
+</p>
+<pre>
+$ hfst-fst2strings -n 5 fin.lexc.hfst 
+kissa&lt;n&gt;&lt;gen&gt;:kissa&gt;n
+kissa&lt;n&gt;&lt;gen&gt;&lt;cmp&gt;+kala&lt;n&gt;&lt;nom&gt;:kissa&gt;n#kala
+kissa&lt;n&gt;&lt;gen&gt;&lt;cmp&gt;+kala&lt;n&gt;&lt;gen&gt;:kissa&gt;n#kala&gt;n
+kissa&lt;n&gt;&lt;gen&gt;&lt;cmp&gt;+kala&lt;n&gt;&lt;gen&gt;&lt;cmp&gt;+koira&lt;n&gt;&lt;nom&gt;:kissa&gt;n#kala&gt;n#koira
+kissa&lt;n&gt;&lt;gen&gt;&lt;cmp&gt;+kala&lt;n&gt;&lt;gen&gt;&lt;cmp&gt;+koira&lt;n&gt;&lt;gen&gt;:kissa&gt;n#kala&gt;n#koira&gt;n
 
+$ hfst-fst2strings -r 5 fin.lexc.hfst 
+kala&lt;n&gt;&lt;gen&gt;:kala&gt;n
+kala&lt;n&gt;&lt;nom&gt;:kala
+kissa&lt;n&gt;&lt;gen&gt;:kissa&gt;n
+koira&lt;n&gt;&lt;nom&gt;:koira
+korva&lt;n&gt;&lt;gen&gt;:korva&gt;n
+</pre>
+<p>
+So we can easily analyse productive compounds like <em>kissankala</em> "cat fish" and <em>kissankalankoira</em> "cat fish dog".
+</p>
 <h4>Productive derivation</h4>
 
 ...
@@ -1157,6 +1219,8 @@ hfst-fst2strings: Transducer is cyclic. Use one or more of these options: -n, -N
 
 <h3>Lexicon construction</h3>
 
+<!-- coverage -->
+<!-- finding stems -->
 ...
 
 <h3>More on morphotactics</h3>
@@ -1187,11 +1251,14 @@ unit testing
 
 extracting sub-fsts
 
+- paradigms
 
 guessers
 
 weighting
 
+- surface forms , -n, -nǎn
+- analyses given form
 
 transliteration
 
@@ -1201,7 +1268,6 @@ spell relax
 
 orthographic errors
 
-using the stuffs in python
 <h3>Python bindings</h3>
 <p>
 It's completely possible to use HFST transducers in Python by using the Python bindings, the
