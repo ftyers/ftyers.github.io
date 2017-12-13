@@ -1179,12 +1179,17 @@ If you compile this and try running it through <tt>att2dot.py</tt> then you shou
 transducer:
 </p>
 <div style="align:center"><img src="graphics/fin.lexc.1.png" width="100%"/></div>
+<p>
+But note that if you try and print out this transducer you will get an error.
+</p>
 <pre>
 $ hfst-fst2strings fin.lexc.hfst 
 hfst-fst2strings: Transducer is cyclic. Use one or more of these options: -n, -N, -r, -l, -L, -c
 </pre>
 <p>
-The main options are:
+The reason for this error is that printing out all of the strings in a cyclic transducer would
+take forever, in terms of never terminate, so it asks you to specify what you actually want to
+do. The main options are:
 <ul>
   <li><tt>-n</tt> <em>n</em> give the first <em>n</em> strings</li>
   <li><tt>-N</tt> <em>n</em> give the first <em>n</em> best strings (by weight)</li>
