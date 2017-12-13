@@ -1273,9 +1273,19 @@ transliteration
 
 - ngram models
 
-spell relax
+<h3>Dealing with noisy input</h3>
 
-orthographic errors
+<h4>Encoding errors</h4>
+<!-- spellrelax -->
+
+<h4>Orthographic errors</h4>
+
+<p>
+It is also possible to deal with orthographic errors within the same transducer. For this 
+we are going to take advantage of a number of features of finite-state calculus, specifically
+<tt>intersection</tt>, <tt>union</tt> and <tt>subtraction</tt>.
+</p>
+
 
 <h3>Python bindings</h3>
 <p>
