@@ -1437,12 +1437,78 @@ Which would result in the right vowel harmony variant being chosen by our harmon
 <p>
 Similar examples can be found in other languages, for example in some languages consonant 
 clusters may be simplified, Kazakh <em>съезд-GA</em> → <em>съезге</em> or epenthetic vowels
-may be inserted or Kyrgyz, <em>диалект-DA</em> → <em>диалектиде</em>.
+may be inserted or Kyrgyz, <em>диалект-DA</em> → <em>диалектиде</em>. 
 </p>
 <h4>Numerals and abbreviations</h4>
+<p>
+Numerals and abbreviations present a similar problem to loan words, but unlike loan words they
+do not (necessarily) provide us with any information at all about how the word should be 
+pronounced. Take a look at these following example:
+</p>
+<div class="container">
+<table class="table" style="width:100%">
+  <tr><td>Сӑмах</td><td>май,</td><td>«СУМ»</td><td>электрон</td><td>лавккара</td><td>чӑвашла</td><td>открыткӑсен</td><td>йышӗ</td><td>18-тан</td><td>та</td><td>иртрӗ</td><td>ӗнтӗ.</td></tr>
+  <tr><td>Word</td><td>by,</td><td>«SUM»</td><td>electronic</td><td>shop-LOC</td><td>Chuvash</td><td>greeting.card-PL-GEN</td><td>amount</td><td>18-ABL</td><td>and</td><td>pass</td><td>already.</td></tr>
+  <tr><td colspan="12">"By the way, in the «SUM» online shop more than 18 greetings cards have already come out in Chuvash."</td></tr>
+</table>
+</div>
+<p>
+Let's consider the ablative morpheme, <em>-TAн</em>. After a stem, this can appear as
+<em>-тан</em>, <em>-тен</em>, <em>-ран</em>, <em>-рен</em> depending on the phonology of the stem.
+<ul>
+  <li><em>-ран</em>, <em>-рен</em> after a vowel or consonant excluding <em>-н</em>, <em>-л</em>, and <em>-р</em> </li>
+  <li><em>-тан</em>, <em>-тен</em> after the consonants <em>-н</em>, <em>-л</em>, or <em>-р</em> </li>
+</ul>
+So, what tells us that it should be <em>-тан</em> after 18 ? Well, basically the way that
+the numeral is pronounced, <em>вун саккӑр</em> is "eighteen" in Chuvash (lit. ten eight).  How do we deal with
+this? Well, the way is to create a set of symbols, similar to the back vowel symbol that cover all the 
+possible cases. We need at least: 
+<ul>
+  <li> Front vowel, back vowel </li>
+  <li> <em>-н</em>, <em>-л</em>, or <em>-р</em> consonant, other consonant </li>
+</ul>
+Thus we could have <tt>%{э%}</tt> for front vowel and <tt>%{а%}</tt> for back vowel and <tt>%{л%}</tt>
+for <em>-н</em>, <em>-л</em>, or <em>-р</em> and <tt>%{с%}</tt> for other. Here is an excerpt 
+from a transducer in <tt>lexc</tt> that handles numeral expressions:
+</p>
+<pre>
+LEXICON NUM-DIGIT
 
-...
+%&lt;num%&gt;:%- CASE ;
 
+LEXICON LAST-DIGIT
+
+1:1%{э%}%{л%}    NUM-DIGIT ; ! "пӗр" 
+2:2%{с%}%{э%}    NUM-DIGIT ; ! "иккӗ" 
+3:3%{с%}%{э%}    NUM-DIGIT ; ! "виҫҫӗ" 
+4:4%{с%}%{а%}    NUM-DIGIT ; ! "тӑваттӑ" 
+5:5%{э%}%{с%}    NUM-DIGIT ; ! "пиллӗк" 
+6:6%{с%}%{а%}    NUM-DIGIT ; ! "улттӑ" 
+7:7%{с%}%{э%}    NUM-DIGIT ; ! "ҫиччӗ" 
+8:8%{э%}%{л%}    NUM-DIGIT ; ! "саккӑр" 
+9:9%{э%}%{л%}    NUM-DIGIT ; ! "тӑххӑр" 
+
+LEXICON LOOP
+
+                 LAST-DIGIT ; 
+                 DIGITLEX ; 
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ;
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;
+</pre>
+<p>
+It is not complete but it should give you enough pointers to be able to implement it. 
+</p>
 <h3>More on phonology</h3>
 
 unit testing
