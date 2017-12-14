@@ -1459,14 +1459,18 @@ Let's consider the ablative morpheme, <em>-TAн</em>. After a stem, this can app
   <li><em>-ран</em>, <em>-рен</em> after a vowel or consonant excluding <em>-н</em>, <em>-л</em>, and <em>-р</em> </li>
   <li><em>-тан</em>, <em>-тен</em> after the consonants <em>-н</em>, <em>-л</em>, or <em>-р</em> </li>
 </ul>
+</p>
+<p>
 So, what tells us that it should be <em>-тан</em> after 18 ? Well, basically the way that
 the numeral is pronounced, <em>вун саккӑр</em> is "eighteen" in Chuvash (lit. ten eight).  How do we deal with
 this? Well, the way is to create a set of symbols, similar to the back vowel symbol that cover all the 
 possible cases. We need at least: 
+</p>
 <ul>
   <li> Front vowel, back vowel </li>
   <li> <em>-н</em>, <em>-л</em>, or <em>-р</em> consonant, other consonant </li>
 </ul>
+<p>
 Thus we could have <tt>%{э%}</tt> for front vowel and <tt>%{а%}</tt> for back vowel and <tt>%{л%}</tt>
 for <em>-н</em>, <em>-л</em>, or <em>-р</em> and <tt>%{с%}</tt> for other. Here is an excerpt 
 from a transducer in <tt>lexc</tt> that handles numeral expressions:
@@ -1526,7 +1530,7 @@ Alphabet
 <p>
 This saves you writing rules to make them correspond with nothing on the surface.
 </p>
-<h3>More on phonology</h3>
+<h3>Unit testing</h3>
 <p>
 Once you have got to this stage, you will probably have noticed that it gets increasingly difficult
 to write rules without knowing what you are breaking. It becomes increasingly useful to have a way
@@ -1548,18 +1552,115 @@ _	урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;	урамсен
 <p>
 Where the first column is an indication of direction restriction (e.g. should we test this for analysis,
 <tt>&gt;</tt>, generation <tt>&lt;</tt> or both <tt>_</tt>), the second column is the lexical
-form of the word and the third column is the surface form of the word.
+form of the word and the third column is the surface form of the word. You can use the Python bindings (see
+below) to write a script that runs the file through your analyser and checks that you get the right 
+results.
 </p>
 <h3>Evaluation</h3>
-
-...
+<p>
+As with all tasks, there are various ways to evaluate morphological transducers. Two of the 
+most popular are:
+</p>
 
 <h4>Coverage</h4>
+<p>
+The typical way to evaluate coverage as you are developing the transducer is by calculating
+the <em>naïve</em> coverage. That is we calculate the percentage of tokens in our corpus
+that receive at least one analysis from our morphological analyser. We can do this easily 
+in <tt>bash</tt>, for example:
+</p>
+<pre>
 
+</pre>
+<p>
+Alternatively it would be possible to write a Python script. A good rule of thumb is that given
+an an average sized corpus (under one million tokens) for averagely inflected language (from English 
+to Finnish) 500 of the most frequenct stems should get you around 50% coverage, 1,000 should get 
+you around 70% coverage, and 10,000 should get you around 80% coverage. Getting 90% coverage will
+mean adding around 20,000 stems.
+</p>
 <h4>Precision and recall</h4>
-
-
+<p>
+The second way is to calculate precision, recall and F-measure like with other NLP tasks. To calculate
+this you need a <em>gold standard</em>, that is a collection of words annotated by a linguist and 
+native speaker which contain all and only the valid analyses of the word. Given the gold standard, 
+we can calculate the precision and recall as follows:
+</p>
+<ul>
+  <li>Precision, <em>P</em> = number of analyses which were found in both the output from the morphological analyser and the gold standard, divided by the total number of analyses output by the morphological analyser</li>
+  <li>Recall, <em>R</em> = number of analyses found in both the output from the morphological analyser and the gold standard, divided by the number of analyses found in the morphological analyser plus the number of analyses found in the gold standard but not in the morphological analyser. </li>
+</ul>
+<p>
+As these kind of collections are hard to come by &mdash; they require careful hand annotation &mdash; 
+some people resort to producing a <em>pseudo-</em>gold standard using an annotated corpus. However,
+note that this may not contain all of the possible analyses so may misjudge the quality of the analyser 
+by penalising or not giving credit to analyses which are possible but not found in the corpus.
+</p>
+<p>
+In all cases a random sample should be used to ensure coverage of cases from across the frequency range.
+</p>
 <h3>Generating paradigms</h3>
+<p>
+A finite-state transducer can be used in addition to produce either paradigm tables or all the forms 
+of a given word.  First we produce a transducer which accepts the stem we are interested in plus
+the lexical category and any number of other tags, <tt>?*</tt>:
+</p>
+<pre>
+$ echo "у р а м %&lt;n%&gt; ?*" | hfst-regexp2fst -o uram.hfst
+</pre>
+<p>
+Then we compose intersect the whole morphological generator with this transducer to find only those 
+paths which start with that prefix:
+</p>
+<pre>
+$ hfst-compose-intersect -2 chv.gen.hfst -1 uram.hfst | hfst-fst2strings 
+hfst-compose-intersect: warning: 
+урам&lt;n&gt;&lt;nom&gt;:урам
+урам&lt;n&gt;&lt;gen&gt;:урамӑн
+урам&lt;n&gt;&lt;ins&gt;:урампа
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсен
+урам&lt;n&gt;&lt;pl&gt;&lt;nom&gt;:урамсем
+урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урамсемпе
+урам&lt;n&gt;&lt;der_лӑх&gt;&lt;nom&gt;:урамлӑх
+урам&lt;n&gt;&lt;der_лӑх&gt;&lt;gen&gt;:урамлӑхӗн
+урам&lt;n&gt;&lt;der_лӑх&gt;&lt;ins&gt;:урамлӑхпе
+урам&lt;n&gt;&lt;der_лӑх&gt;&lt;pl&gt;&lt;gen&gt;:урамлӑхсен
+урам&lt;n&gt;&lt;der_лӑх&gt;&lt;pl&gt;&lt;nom&gt;:урамлӑхсем
+урам&lt;n&gt;&lt;der_лӑх&gt;&lt;pl&gt;&lt;ins&gt;:урамлӑхсемпе
+</pre>
+<p>
+This is less useful than it may appear because it also produces all of the derived 
+forms. If we want to just include the inflected forms we can just list the forms we want to 
+generate for a given part of speech in a file, for example:
+</p>
+<pre>
+$ cat noun-paradigm.txt 
+%&lt;n%&gt; %&lt;nom%&gt;
+%&lt;n%&gt; %&lt;gen%&gt;
+%&lt;n%&gt; %&lt;ins%&gt;
+%&lt;n%&gt; %&lt;pl%&gt; %&lt;gen%&gt;
+%&lt;n%&gt; %&lt;pl%&gt; %&lt;nom%&gt;
+%&lt;n%&gt; %&lt;pl%&gt; %&lt;ins%&gt;
+</pre>
+<p>
+Then compile this file into a transducer in the same way:
+</p>
+<pre>
+$ cat noun-paradigm.txt | sed "s/^/у р а м /g"  | hfst-regexp2fst -j &gt; uram.hfst 
+</pre>
+<p>
+Then finally compose and intersect with our transducer:
+</p>
+<pre>
+$ hfst-compose-intersect -2 chv.gen.hfst -1 uram.hfst | hfst-fst2strings 
+урам&lt;n&gt;&lt;nom&gt;:урам
+урам&lt;n&gt;&lt;gen&gt;:урамӑн
+урам&lt;n&gt;&lt;ins&gt;:урампа
+урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;:урамсен
+урам&lt;n&gt;&lt;pl&gt;&lt;nom&gt;:урамсем
+урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урамсемпе
+</pre>
+
 <!-- extracting sub-fsts-->
 
 <!--
@@ -1568,6 +1669,13 @@ form of the word and the third column is the surface form of the word.
 guessers
 
 weighting
+
+<!--
+$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr | sed 's/^ //g' | sed 's/ /:/g' > chv.freq.txt
+$ total=`cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | wc -l`
+$ for i in `cat chv.freq.txt`; do n=`echo $i | cut -f1 -d':'`; p=`echo "-l($n/$total)" | bc -l`; printf "%.4f:$i\n" $p; done > chv.prob.txt
+
+-->
 
 - surface forms , -n, -nǎn
 - analyses given form
