@@ -1507,12 +1507,47 @@ LEXICON DIGITLEX
 9:9   LOOP ;
 </pre>
 <p>
-It is not complete but it should give you enough pointers to be able to implement it. 
+It is not complete but it should give you enough pointers to be able to implement it.  Note
+that in the <tt>Alphabet</tt> in your <tt>twol</tt> file you can specify these kind of symbols
+as always going to <tt>0</tt>:
+</p>
+<pre>
+Alphabet
+   а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+   А Ӑ Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ
+
+ %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0
+
+ %{A%}:а %{A%}:е
+ %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0
+ %{н%}:н %{н%}:0
+ %{м%}:м %{м%}:0
+</pre>
+<p>
+This saves you writing rules to make them correspond with nothing on the surface.
 </p>
 <h3>More on phonology</h3>
-
-unit testing
-
+<p>
+Once you have got to this stage, you will probably have noticed that it gets increasingly difficult
+to write rules without knowing what you are breaking. It becomes increasingly useful to have a way
+of testing rules as you are writing, and possibly even to focus on working by doing <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D1%87%D0%B5%D1%80%D0%B5%D0%B7_%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">test-driven
+development</a>.
+</p>
+<p>
+There are no pre-made testing frameworks for finite-state transducers to my knowledge, but it is 
+fairly easy to come up with one of your own using a combination of <tt>.tsv</tt> files and a 
+script written in the Python programming language. A sample <tt>.tsv</tt> file might look like:
+</p>
+<pre>
+_	урам<n><nom>	урам	
+_	урам<n><gen>	урамӑн
+&gt;	урам<n><gen>	урамǎн
+_	урам<n><pl><nom>	урамсем	
+_	урам<n><pl><gen>	урамсен
+</pre>
+<p>
+Where the first column is an indication of 
+</p>
 <h3>Evaluation</h3>
 
 ...
