@@ -1294,12 +1294,19 @@ $ echo патшалӑх | hfst-lookup -qp chv.mor.hfst
 
 $ echo патшалӑх | hfst-lookup -qp -b 0 chv.mor.hfst 
 патшалӑх	патшалӑх&lt;n&gt;&lt;nom&gt;	0,000000
+
+$ echo "тӗслӗх" | hfst-lookup -qp -b 0 chv.mor.hfst 
+тӗслӗх	тӗс&lt;n&gt;&lt;der_лӑх&gt;&lt;nom&gt;	1,000000
 </pre>
 <p>
 The <tt>-b 0</tt> option means for the analyser to return only those analyses which are the same
 weight as the best scoring analysis. For the programmatically inclined, the <tt>-b</tt> stands 
 for <em>beam search</em>. Later on in the tutorial we will learn how to learn analysis weights
-automatically from corpora.
+automatically from corpora. 
+</p>
+<p>
+Note that if the lower weight analysis is <em>not</em> available then the higher weight analysis
+will be returned anyway.
 </p>
 <!-- - templatic morphology-->
 
