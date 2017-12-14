@@ -1314,19 +1314,131 @@ will be returned in any case.
 
 <!-- coverage -->
 <!-- finding stems -->
-
+<p>
 So, you've got your morphotactics more or less sorted out, and you've made a good start on your 
-morphophonological rules
-
+morphophonological rules. Where are you going to get the lexemes ? Depending on the language
+you choose you may already have a beautifully prepared list of stems with declension categories,
+for example for Russian there is Zaliznyak's system and for Finnish there is the Kotus categorisation.
+For other languages there might be a dictionary with less elaborate systems of declension classes,
+perhaps traditional ones that underspecify the morphology, or perhaps ones that don't specify
+the morphology at all. In the worst case you may have to just rely on a Swadesh list or a simple
+list of inflected forms from a corpus.
+</p>
+<p>
+In any case, whether you have a complete system or just a list of inflected forms, the best idea
+is to work adding words to the lexicon by <b>frequency</b> of appearance in whichever corpus you 
+have. You might have easy access to a corpus, if not you can use a <a href="https://dumps.wikimedia.org/backup-index.html">
+Wikipedia database backup dump</a> or you can write a webcrawler for some online newspaper. Here
+is a simple <tt>bash</tt> line to make a frequency list 
+</p>
+<pre>
+$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr
+</pre>
+<p>
+The output will look something like the list on the left. The column in the middle gives the part of 
+speech and gloss in English. While the column on the right shows a graphical representation of Zipf's law.
+</p>
+<div class="container">
+  <div class="col-xs-2">
+<br/>
+<pre>
+   4175 те
+   3212 тата
+   2876 та
+   1833 вӑл
+   1669 пирки
+   1441 уйӑхӗн
+   1404 мӗшӗнче
+   1360 тӑрӑх
+   1323 мар
+   1291 пулнӑ
+   1273 ҫул
+   1133 май
+   1062 пӗр
+   1055 мӗш
+   1020 тесе
+    973 Вӑл
+    967 пӗлтернӗ
+</pre>
+</div>
+  <div class="col-xs-3">
+<br/>
+<pre>
+CCONJ "and"
+CCONJ "and"
+CCONJ "and"
+PRON  "it, she, he"
+ADP   "about"
+NOUN  "of month"
+NUM   "on the Nth"
+NOUN  "zone, region"
+ADV   "not"
+VERB  "was"
+NOUN  "year"
+NOUN  "possibility"
+NUM   "one"
+NUM   "th"
+VERB  "saying"
+PRON  "it, she, he"
+VERB  "happened"
+</pre>  
+</div>
+  <div class="col-xs-5">
+<br/>
+<img src="graphics/Zipf_30wiki_en_labels.png" width="100%"/>
+</div>
+</div>
+<p>
+As you can see the most frequent words are unsurprising for a text from a newspaper, words 
+about time and place, closed category words like conjunctions, adpositions and pronouns
+and copula verbs. This was from a corpus of around 367,168 tokens, so the list won't be 
+so representative for the language as a whole, but the bigger and more balanced the 
+corpus the more legit the frequency list is going to be and the better it is going to 
+represent the language that your analyser is likely to be asked to process.
+</p>
 
 <h3>More on morphotactics</h3>
-
-...
-
+<p>
+When moving from making a morphological model of a few words from a grammar to making one
+that covers a whole corpus you are bound to come across some examples of things that are 
+either underdescribed or not described at all in the extant grammars. For example, how 
+loan words are treated and how to deal with numerals or abbreviations which take 
+affixes according to how the words are pronounced and not how they are written.
+</p>
 <h4>Loan words</h4>
-
-...
-
+<p>
+Let's take the example of the French → Russian → Chuvash loan word <em>специалист</em> "specialist".
+In Chuvash this takes back harmony affixes for genitive and other cases instead of the front
+harmony ones it should orthographically take going by the last vowel <em>-и-</em>. For example,
+the genitive form is <em>специалистӑн</em> and not <em>*специалистӗн</em>.
+</p>
+<p>
+So, how do we deal with this? The easiest way is to come up with some symbols to let the phonological
+rules know that the word should be treated differently. These will not show up in the surface form
+but will be available in the morphotactic form. For example, we might define the multicharacter
+symbol <tt>%{ъ%}</tt> to force back harmony, and then use it next to the morphotactic side in the lexicon:
+</p>
+<pre>
+специалист:специалист%{ъ%} N ; ! "специалист"
+</pre>
+<p>
+We could then in our phonological rules add this symbol to our <tt>BackVow</tt> set:
+</p>
+<pre>
+BackVow = ӑ а ы о у я ё ю %{ъ%} ;
+</pre>
+<p>
+Which would result in the right vowel harmony variant being chosen by our harmony rule:
+</p>
+<pre>
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ &lt;=&gt; BackVow: [ ArchiCns: | Cns: | %&gt;: ]+ _ ;
+</pre>
+<p>
+Similar examples can be found in other languages, for example in some languages consonant 
+clusters may be simplified, Kazakh <em>съезд-GA</em> → <em>съезге</em> or epenthetic vowels
+may be inserted or Kyrgyz, <em>диалект-DA</em> → <em>диалектиде</em>.
+</p>
 <h4>Numerals and abbreviations</h4>
 
 ...
