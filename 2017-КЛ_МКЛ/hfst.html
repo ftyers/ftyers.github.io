@@ -168,7 +168,7 @@ You should get an output file that looks something like:
 Being able to visualise the transducer and see which strings it accepts is vital for being
 able to debug your code. Now, go back to your <tt>chv.lexc</tt> file and add some more 
 stems, for example <em>пахча</em> "сад, garden", <em>хула</em> "город, city" 
-and <em>канаш</em> "союз, union". Then recompile and rerun the other steps up to 
+and <em>канаш</em> "совет, council". Then recompile and rerun the other steps up to 
 visualisation.
 </p>
 
@@ -214,7 +214,7 @@ LEXICON Nouns
 урам:урам N ;     ! "улица"
 пакча:пакча N ;   ! "сад"
 хула:хула N ;     ! "город"
-канаш:канаш N ;   ! "союз"
+канаш:канаш N ;   ! "совет"
 </pre>
 <p>
 This <tt>lexc</tt> file defines three new continuation classes:
@@ -629,7 +629,7 @@ LEXICON Nouns
 урам:урам N ;     ! "улица"
 пакча:пакча N ;   ! "сад"
 хула:хула N ;     ! "город"
-канаш:канаш N ;   ! "союз"
+канаш:канаш N ;   ! "совет"
 </pre>
 <p>
 Let's assume for simplicity that we are dealing with just the stems that we have in the file, 
@@ -1249,7 +1249,7 @@ LEXICON Nouns
 урам:урам N ;     ! "улица"
 пакча:пакча N ;   ! "сад"
 хула:хула N ;     ! "город"
-канаш:канаш N ;   ! "союз"
+канаш:канаш N ;   ! "совет"
 тӗс:тӗс N ;       ! "вид"
 патша:патша N ;   ! "царь"
 куҫ:куҫ N ;       ! "глаз"
@@ -1539,14 +1539,16 @@ fairly easy to come up with one of your own using a combination of <tt>.tsv</tt>
 script written in the Python programming language. A sample <tt>.tsv</tt> file might look like:
 </p>
 <pre>
-_	урам<n><nom>	урам	
-_	урам<n><gen>	урамӑн
-&gt;	урам<n><gen>	урамǎн
-_	урам<n><pl><nom>	урамсем	
-_	урам<n><pl><gen>	урамсен
+_	урам&lt;n&gt;&lt;nom&gt;	урам	
+_	урам&lt;n&gt;&lt;gen&gt;	урамӑн
+&gt;	урам&lt;n&gt;&lt;gen&gt;	урамǎн
+_	урам&lt;n&gt;&lt;pl&gt;&lt;nom&gt;	урамсем	
+_	урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;	урамсен
 </pre>
 <p>
-Where the first column is an indication of 
+Where the first column is an indication of direction restriction (e.g. should we test this for analysis,
+<tt>&gt;</tt>, generation <tt>&lt;</tt> or both <tt>_</tt>), the second column is the lexical
+form of the word and the third column is the surface form of the word.
 </p>
 <h3>Evaluation</h3>
 
