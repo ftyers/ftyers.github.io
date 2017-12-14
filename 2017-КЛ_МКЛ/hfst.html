@@ -1280,8 +1280,9 @@ LEXICON DER-N
 </pre>
 <p>
 This sets the weight of the <em>-лĂх</em> morpheme to be 1.0. Normally if we are working with 
-probabilities we work with negative probabilities (so that a lower value ... e.g. <tt>-0.001</tt>
-is "heigher weight" than a higher value, e.g. <tt>-0.1</tt>). But if we are working with arbitrary
+probabilities (for example from a corpus)  we work with negative log probabilities (so that a lower 
+value ... e.g. <tt>5/100 = 0.05</tt> and <tt>-log(0.05) = 2.99</tt> is "heigher weight" than 
+a higher value, e.g. <tt>50/100 = 0.5</tt>, <tt>-log(0.5) = 0.69</tt>). But if we are working with arbitrary
 manually specified weights we work with positive numbers and try and ensure that the less desirable
 analyses (typically derived and compound analyses if we want to favour lexicalisation) are 
 higher weight, thus "worse".
@@ -1306,7 +1307,10 @@ automatically from corpora.
 
 <!-- coverage -->
 <!-- finding stems -->
-...
+
+So, you've got your morphotactics more or less sorted out, and you've made a good start on your 
+morphophonological rules
+
 
 <h3>More on morphotactics</h3>
 
