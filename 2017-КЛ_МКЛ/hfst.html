@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Finite-state transducers with HFSTs</title>
+        <link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/local.css" rel="stylesheet">
 </head>
 <body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+<!--    <script src="js/bootstrap.min.js"></script>-->
 
       <div class="container">
 <div class="mx-auto" style="width: 80%;">
@@ -312,9 +313,13 @@ LEXICON N
 %&lt;n%&gt;: PLURAL ;
 </pre>
 <p>
-<b>WARNING!</b> don't forget to define <tt>%{A%}</tt> as a multicharacter symbol. And go back and 
+ <div class="panel panel-default">
+<div class="panel-body">
+<span class="fa fa-warning"></span> <b>WARNING!</b> don't forget to define <tt>%{A%}</tt> as a multicharacter symbol. And go back and 
 update the validation script to check for multicharacter symbols between <tt>%{...%}</tt> as well 
 as <tt>%&lt;...%&gt;</tt>.
+</div>
+</div>
 </p>
 <p>
 So, if we save this into our file and recompile, we should get the following output:
