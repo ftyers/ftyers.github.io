@@ -1759,9 +1759,54 @@ $ echo "ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;" | hfst-lookup -qp chv.lexc_guesse
 ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;	ва&gt;п{A}	0,000000
 </pre>
 <p>
-As you can see, afterwards we get a guessed stem.
+As you can see, afterwards we get a guessed stem. The next step is to compose our lexicon 
+including the guesser with the phonological rules. You probably know how to do that by now:
 </p>
-
+<pre>
+$ hfst-compose-intersect -1 chv.lexc_guesser.hfst -2 chv.twol.hfst -o chv.gen_guesser.hfst
+</pre>
+<p>
+We can try it out by trying to generate something that isn't in our lexicon, for example a 
+form of the Chuvash word <em>лайк</em> "like":
+</p>
+<pre>
+$ echo "лайк&lt;guess&gt;&lt;n&gt;&lt;pl&gt;&lt;ins&gt;" | hfst-lookup -qp chv.gen_guesser.hfst 
+лайк&lt;guess&gt;&lt;n&gt;&lt;pl&gt;&lt;ins&gt;	лайксемпе	0,000000
+</pre>
+<p>
+The next step is to restrict remove the ability to predict nominative singular and to reorder
+the <tt>&lt;guess&gt;</tt> tag to the end. Make a new file called <tt>chv.restrict.regex</tt>,
+</p>
+<pre>
+~[?* "&lt;guess&gt;" "&lt;n&gt;" "&lt;nom&gt;" ] .o. [  [..] -&gt; "&lt;guess&gt;" || "&lt;guess&gt;" ?* _ .#. .o. "&lt;guess&gt;" -&gt; 0 || _ ?* "&lt;guess&gt;" .#. ];
+</pre>
+<p>
+This is a pretty gnarly piece of code. The first line rejects any string that contains the 
+tag sequence <tt>&lt;guess&gt;&lt;n&gt;&lt;nom&gt;</tt>. This is then composed with a regex
+which takes the <tt>&lt;guess&gt;</tt> tag and moves it to the end. We can compile this as
+follows:
+</p>
+<pre>
+$ hfst-regexp2fst chv.restrict.regex -o chv.restrict.hfst
+</pre>
+<p>
+And now prepare our morphological analyser by first inverting the generator and then applying
+the restrictions:
+</p>
+<pre>
+$ hfst-invert chv.gen_guesser.hfst | hfst-compose -1 - -2 chv.restrict.hfst -o chv.mor_guesser.hfst
+</pre>
+<p>
+And finally we can test it:
+</p>
+<pre>
+$ echo "лайксемпе" | hfst-lookup -qp chv.mor_guesser.hfst 
+лайксемпе	лайк&lt;n&gt;&lt;pl&gt;&lt;ins&gt;&lt;guess&gt;	0,000000
+</pre>
+<p>
+You will note how it will generate a guess analysis even if the stem is in the lexicon. How do you think
+you might be able to avoid this analysis ?
+</p>
 <h3>Weighting</h3>
 
 
