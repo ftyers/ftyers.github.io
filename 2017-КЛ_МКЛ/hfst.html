@@ -1660,20 +1660,104 @@ $ hfst-compose-intersect -2 chv.gen.hfst -1 uram.hfst | hfst-fst2strings
 урам&lt;n&gt;&lt;pl&gt;&lt;nom&gt;:урамсем
 урам&lt;n&gt;&lt;pl&gt;&lt;ins&gt;:урамсемпе
 </pre>
+<p>
+This kind of full-form paradigm is useful for debugging, and also for generating 
+training data for fancy machine-learningy type things. It can also help with 
+low-resource dependency parsing (systems like <a href="https://github.com/ufal/udpipe">UDpipe</a> allow
+the use of external dictionaries at training time).
+</p>
 
-<!-- extracting sub-fsts-->
+<h3>Guessers</h3>
+<p>
+A finite-state guesser can also be integrated fairly easily into our transducer. A guesser 
+can have two uses, if you are at an early stage of development, you can use the guesser to get 
+stem candidates from a corpus. If you are at an advanced stage of development you can use the 
+guesser to boost the coverage of your transducer at the expense of accuracy.
+</p>
+<p>
+To make the guesser work we need three parts:
+</p>
+<ul>
+  <li> A regular expression defining the pattern of symbols that can be considered a stem </li>
+  <li> A pattern restricting which morphological forms should not be guessed (often those where there 
+     is no inflection) &mdash; in Turkic languages often the nominative singular for nouns and 2nd person singular
+     imperative for verbs.</li>
+  <li> An special symbol in the <tt>.lexc</tt> file that we are going to inject our stem regular expression into </li>
+</ul>
+<p>
+Let's take a look. Start out with the stem regular expression. The format for defining this is a little
+different from what we have seen so far, but it should be fairly familiar. Make a new file called <tt>chv.stem.regex</tt>
+</p>
+<pre>
+define Vow [ ӑ | а | ы | о | у | я | ё | ю | ӗ | э | и | ӳ ] ;
 
-<!--
-- paradigms -->
+define Cns [ б | в | г | д | ж | з | к | л | м | н | п | р | с | ҫ | т | ф | х | ц | ч | ш | щ | й | ь | ъ ] ;
 
-guessers
+define Syll [ Cns+ Vow Cns* ] ;
 
-weighting
+define Stem [ Syll+ ]  ;
+
+regex Stem ;
+</pre>
+<p>
+Now compile it using the following command:
+</p>
+<pre>
+$ echo -e "source chv.stem.regex\nsave stack chv.stem.hfst\nhyvästi" | hfst-xfst 
+hfst[0]: source chv.stem.regex
+ Defined
+ 'Vow'
+Defined
+ 'Cns'
+Defined
+ 'Syll'
+Defined
+ 'Stem'
+? bytes. 4 states, 120 arcs, ? paths
+hfst[1]: save stack chv.stem.hfst
+hfst[1]: hyvästi
+.
+</pre>
+<p>
+This opens the regex, compiles it, saves it then quits the <tt>hfst-xfst</tt> interface. Like 
+all good computer programs, <tt>hfst-xfst</tt> understands some Finnish. The word <em>hyvästi</em>
+means "farewell". The transducer should look something like:
+</p>
+
+<p>
+The next step is to edit your Chuvash <tt>.lexc</tt> file, and add the following
+lines:
+</p>
+<pre>
+LEXICON Root
+
+Guesser ;
+
+
+LEXICON Guesser
+
+🂡  # ;
+</pre>
+<p>
+This defines a symbol, 🂡 , which we are going to replace with our stem regex. The symbol is 
+arbitrary, I chose a playing card because it's kind of guessing, but you can choose any symbol
+that will only be found once in your transducer. Now compile your <tt>.lexc</tt> file and
+then run the following command:
+</p>
+<pre>
+hfst-substitute -i chv.lexc.hfst -o chv.lexc_guesser.hfst  -f '🂡:🂡' -T chv.stem.hfst
+</pre>
+
+<h3>Weighting</h3>
+
 
 <!--
 $ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr | sed 's/^ //g' | sed 's/ /:/g' > chv.freq.txt
 $ total=`cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | wc -l`
 $ for i in `cat chv.freq.txt`; do n=`echo $i | cut -f1 -d':'`; p=`echo "-l($n/$total)" | bc -l`; printf "%.4f:$i\n" $p; done > chv.prob.txt
+$ cat chv.prob.txt  | awk -F':' '{print $3"\t"$1}' | hfst-strings2fst -j > chv.prob.hfst
+$ oovweight=`echo "-l(0.9/$total)" | bc -l`
+$ hfst-reweight -e -a $oovweight  chv.gen.hfst > 
 
 -->
 
