@@ -18,8 +18,21 @@
       <div class="container">
 <div class="mx-auto" style="width: 80%;">
 
-<h3>Why make a finite-state transducer?</h3>
+<h2>Modelling morphology with finite-state transducers using HFST</h2>
 
+<h3>Why make a finite-state transducer?</h3>
+<p>
+Finite-state transducers are amazing, they allow for both analysis and generation in a single model,
+you can use them for testing your morphological rules and find errors in how you analyse morphology.
+</p>
+<p>
+You might be really into neural networks because you can just take some manually annotated data
+and produce a wonderful model with a lot of weights that gets really high F-score. But where does that
+data come from and how can you evaluate your model? Well, one way to generate lots of data instead of 
+manually annotating it &mdash; think of the poor annotators ;( &mdash; is to build a finite-state model.
+</p>
+<p>
+</p>
 <!-- analysis and generation in the same model -->
 <!-- test your grammar, find new and underdescribed phenomena -->
 <!-- still relevant, måns huldén "There is still a need for gold standard reference implementations of morphology for training and testing statistical models", -->
