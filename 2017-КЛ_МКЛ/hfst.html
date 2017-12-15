@@ -1723,7 +1723,7 @@ This opens the regex, compiles it, saves it then quits the <tt>hfst-xfst</tt> in
 all good computer programs, <tt>hfst-xfst</tt> understands some Finnish. The word <em>hyvästi</em>
 means "farewell". The transducer should look something like:
 </p>
-
+<div style="text-align:center"><img src="graphics/guess_stem.png"/></div>
 <p>
 The next step is to edit your Chuvash <tt>.lexc</tt> file, and add the following
 lines:
@@ -1736,7 +1736,7 @@ Guesser ;
 
 LEXICON Guesser
 
-🂡  # ;
+🂡%&lt;guess%&gt;:🂡 N ;
 </pre>
 <p>
 This defines a symbol, 🂡 , which we are going to replace with our stem regex. The symbol is 
@@ -1745,8 +1745,22 @@ that will only be found once in your transducer. Now compile your <tt>.lexc</tt>
 then run the following command:
 </p>
 <pre>
-hfst-substitute -i chv.lexc.hfst -o chv.lexc_guesser.hfst  -f '🂡:🂡' -T chv.stem.hfst
+$ hfst-substitute -i chv.lexc.hfst -o chv.lexc_guesser.hfst  -f '🂡:🂡' -T chv.stem.hfst
 </pre>
+<p>
+This substitutes the arc transition <tt>🂡:🂡</tt> with the whole stem regex. You can try it out 
+by comparing the transducer files before and after:
+</p>
+<pre>
+$ echo "ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;" | hfst-lookup -qp chv.lexc.hfst 
+ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;	ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;+?	inf
+
+$ echo "ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;" | hfst-lookup -qp chv.lexc_guesser.hfst 
+ва&lt;guess&gt;&lt;n&gt;&lt;ins&gt;	ва&gt;п{A}	0,000000
+</pre>
+<p>
+As you can see, afterwards we get a guessed stem.
+</p>
 
 <h3>Weighting</h3>
 
