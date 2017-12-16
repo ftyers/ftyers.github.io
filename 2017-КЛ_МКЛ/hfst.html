@@ -1627,8 +1627,44 @@ Thus, suppose we had the following:
 We would get:
 </p>
 <ul>
-  <li><em>P</em> = 3/4 = 0.75</li>
-  <li><em>R</em> = 3/(4+2) = 0.6</li>
+  <li><math>P = 3/4 = 0.75</math></li>
+  <li><math>R = 3/(4+2) = 0.6</math></li>
+  <li>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>F</mi>
+	<mn>1</mn>
+	<mo>=</mo>
+	<mn>2</mn>
+	<mfrac linethickness="1">
+		<mrow>
+			<mi>P</mi>
+			<mi>R</mi>
+		</mrow>
+		<mrow>
+			<mi>P</mi>
+			<mo>+</mo>
+			<mi>R</mi>
+		</mrow>
+	</mfrac>
+	<mo>=</mo>
+	<mn>2</mn>
+	<mfrac linethickness="1">
+		<mrow>
+			<mn>0.75</mn>
+			<mo>·</mo>
+			<mn>0.6</mn>
+		</mrow>
+		<mrow>
+			<mn>0.75</mn>
+			<mo>+</mo>
+			<mn>0.6</mn>
+		</mrow>
+	</mfrac>
+	<mo>=</mo>
+	<mn>0.66</mn>
+</mrow>
+</math></li>
 </ul>
 <p>
 There is a script <a href="scripts/evaluate-morph.py">evaluate-morph</a> that will calculate precision, recall
