@@ -1890,25 +1890,72 @@ you might be able to avoid this analysis ?
 <h3>Weighting</h3>
 
 <h4>Surface forms</h4>
-- surface forms , -n, -nǎn
 <p>
+An unannotated machine-readable text corpus of a language is usually fairly easy to come 
+by... given the language has some kind of orthography. So, what can you use it for ? Well, you
+could use it to arbitrate which form is better to generate in the case of having free variation.
+For example, in Chuvash the <em>-сть</em> in Russian loanwords in the nominative singular 
+can be written as <em>-ҫ</em> or <em>-сть</em>. 
+</p>
+<p>
+One possibility would be to have a lexicon like:
+</p>
+<pre>
+LEXICON N/сть
 
+%&lt;n%&gt;:ҫ SUBST "weight: 0.5" ;
+%&lt;n%&gt;%&lt;nom%&gt;:сть # "weight: 1.0" ;
+</pre>
+<p>
+Which would always prefer the form with <em>-ҫ</em>. But perhaps it is lexicalised or depends on 
+some other factors. 
 </p>
 <!--
-$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr | sed 's/^ //g' | sed 's/ /:/g' > chv.freq.txt
-$ total=`cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | wc -l`
+$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr | sed 's/^ *//g' | sed 's/ /:/g' > chv.freq.txt
+$ total=`cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | grep -v '^$' | wc -l`
 $ for i in `cat chv.freq.txt`; do n=`echo $i | cut -f1 -d':'`; p=`echo "-l($n/$total)" | bc -l`; printf "%.4f:$i\n" $p; done > chv.prob.txt
 $ cat chv.prob.txt  | awk -F':' '{print $3"\t"$1}' | hfst-strings2fst -j > chv.prob.hfst
 $ oovweight=`echo "-l(0.9/$total)" | bc -l`
-$ hfst-reweight -e -a $oovweight  chv.gen.hfst > 
-
+$ echo "?::$oovweight" | hfst-regexp2fst | hfst-repeat -o chv.maxweight.hfst
+$ hfst-union -1 chv.prob.hfst -2 chv.maxweight.hfst -o chv.weights.hfst
+$ hfst-compose -1 chv.gen.hfst -2 chv.weights.hfst -o chv.weighted.hfst
 -->
 
 <h4>Analyses</h4>
-- analyses given form
 <p>
-
+Let's imagine for a second that we have a massive gold standard annotated corpus of Chuvash. We could use 
+that to assign different weights to the different analyses of our surface forms. For example our generator
+might look like:
 </p>
+<pre>
+$ hfst-fst2strings chv.lexc.hfst 
+парӑм&lt;n&gt;&lt;nom&gt;:парӑм
+пар&lt;n&gt;&lt;px1sg&gt;&lt;nom&gt;:парӑм
+</pre>
+<p>
+Let's say that we saw <em>парӑм</em> as "duty" 150 times in our corpus and <em>парӑм</em> as "my pair" 3 times.
+It would be fairly straightforward to write a Python script to convert these into a file with weights:
+</p>
+<pre>
+парӑм&lt;n&gt;&lt;nom&gt;:парӑм	0.01980
+пар&lt;n&gt;&lt;px1sg&gt;&lt;nom&gt;:парӑм	3.9318
+</pre>
+<p>
+Remember we define weights as negative log probabilities, e.g. <math>w = -log(r)</math> where <em>r</em> is the
+relative frequency in the corpus.
+</p>
+<pre>
+$ cat chv.weights | hfst-strings2fst -j -m chv.symbols -o chv.strweights.hfst
+$ echo "?::5.13579" | hfst-regexp2fst | hfst-repeat -o chv.maxweight.hfst
+$ hfst-union -1 chv.strweights.hfst -2 chv.maxweight.hfst -o chv.weights.hfst
+</pre>
+<p>
+The file <tt>chv.symbols</tt> is a file with a list of multicharacter symbols (e.g. <tt>&lt;n&gt;</tt>) specified
+one per line.
+</p>
+<pre>
+$ hfst-invert chv.lexc.hfst | hfst-compose -2 chv.weights.hfst | hfst-invert | hfst-fst2txt
+</pre>
 
 <!--
 transliteration
@@ -1946,7 +1993,9 @@ transducer.lookup(<span style="color: #aa5500">&#39;урамӑн&#39;</span>)   
 
 
 <h3>Final thoughts </h3>
-
+<p>
+Congratulations if you got this far! <span class="fa fa-heart"></span> FSTs
+</p>
 <h3>Troubleshooting</h3>
 <p>
 If you are not getting any error messages (like rule conflicts or compile errors) and your 
