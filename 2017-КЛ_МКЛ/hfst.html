@@ -1609,6 +1609,32 @@ we can calculate the precision and recall as follows:
   <li>Recall, <em>R</em> = number of analyses found in both the output from the morphological analyser and the gold standard, divided by the number of analyses found in the morphological analyser plus the number of analyses found in the gold standard but not in the morphological analyser. </li>
 </ul>
 <p>
+Thus, suppose we had the following:
+</p>
+<div class="container">
+<table class="table" style="width:60%">
+<thead>
+  <tr><th>Form</th><th>Gold standard</th><th>Analyser output</tr>
+</thead>
+<tbody>
+  <tr><td>парӑм</td><td><tt>пар&lt;n&gt;&lt;px1sg&gt;&lt;nom&gt;</tt> "my pair"<br/><tt>парӑм&lt;n&gt;&lt;nom&gt;</tt> "duty"</td><td><tt>парӑм&lt;n&gt;&lt;nom&gt;</tt></td></tr>
+  <tr><td>урамсен</td><td><tt>урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;</tt> "the streets'"</td><td><tt>урам&lt;n&gt;&lt;pl&gt;&lt;gen&gt;</tt><br/><tt>ура&lt;n&gt;&lt;px1sg&gt;&lt;pl&gt;&lt;gen&gt;</tt></td></tr>
+  <tr><td>ҫулӑм</td><td><tt>ҫулӑм&lt;n&gt;&lt;nom&gt;</tt> "flame"<br/><tt>ҫул&lt;n&gt;&lt;px1sg&gt;&lt;nom&gt;</tt> "my way"</td><td><tt>ҫул&lt;n&gt;&lt;px1sg&gt;&lt;nom&gt;</tt></td></tr>
+</tbody>
+</table>
+</div>
+<p>
+We would get:
+</p>
+<ul>
+  <li><em>P</em> = 3/4 = 0.75</li>
+  <li><em>R</em> = 3/(4+2) = 0.6</li>
+</ul>
+<p>
+There is a script <a href="scripts/evaluate-morph.py">evaluate-morph</a> that will calculate precision, recall
+and F-score for output from an analyser for a set of surface forms.
+</p>
+<p>
 As these kind of collections are hard to come by &mdash; they require careful hand annotation &mdash; 
 some people resort to producing a <em>pseudo-</em>gold standard using an annotated corpus. However,
 note that this may not contain all of the possible analyses so may misjudge the quality of the analyser 
