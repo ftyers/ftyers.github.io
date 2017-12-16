@@ -1908,13 +1908,65 @@ LEXICON N/сть
 </pre>
 <p>
 Which would always prefer the form with <em>-ҫ</em>. But perhaps it is lexicalised or depends on 
-some other factors. 
+some other factors. Let's start by making a frequency list:
 </p>
+<pre>
+$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr  &gt; chv.freq.txt
+</pre>
+<p>
+We can convert this frequency list into a format suitable for building a weighted transducer using 
+the following Python code:
+</p>
+<pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">import</span> <span style="color: #00aaaa; text-decoration: underline">sys</span>, <span style="color: #00aaaa; text-decoration: underline">math</span> <span style="color: #0000aa">as</span> <span style="color: #00aaaa; text-decoration: underline">maths</span>
+f = {}; fs = []
+total = <span style="color: #009999">0</span>
+<span style="color: #0000aa">for</span> line <span style="color: #0000aa">in</span> sys.stdin.readlines():
+	row = line.strip().split(<span style="color: #aa5500">&#39; &#39;</span>)
+	<span style="color: #0000aa">if</span> <span style="color: #00aaaa">len</span>(row) &lt; <span style="color: #009999">2</span>: <span style="color: #0000aa">continue</span>
+	form = row[<span style="color: #009999">1</span>]
+	freq = <span style="color: #00aaaa">int</span>(row[<span style="color: #009999">0</span>])
+	fs.append(form)
+	f[form] = freq
+	total += freq
+<span style="color: #0000aa">for</span> form <span style="color: #0000aa">in</span> fs: 
+	<span style="color: #0000aa">print</span>(<span style="color: #aa5500">&#39;%s\t%.4f&#39;</span> % (form, -maths.log(f[form]/total)))
+</pre>
+<p>
+If we call this <tt>freq2prob.py</tt> we can call it as follows:
+</p>
+<pre>
+$ cat chv.freq.txt | python3 freq2prob.py | hfst-strings2fst -j -o chv.surweights.hfst
+</pre>
+<p>
+Check that it works:
+</p>
+<pre>
+$ echo "область" | hfst-lookup -qp chv.surweights.hfst
+область	область	11,393500
+
+$ echo "облаç" | hfst-lookup -qp chv.surweights.hfst
+облаҫ	облаҫ	9,977600
+</pre>
+<p>
+The next thing we need to do is add a path in the weight transducer for unknown words (those 
+words that are not found in the corpus). This should be the maximum weight of any word in the 
+transducer. 
+</p>
+<pre>
+$ echo "?::0" | hfst-regexp2fst | hfst-repeat | hfst-reweight -e -a 15.0 | hfst-minimise -o chv.maxweight.hfst
+</pre>
+<p>
+Then we union the max weight transducer with the surface weights:
+</p>
+<pre>
+$ hfst-union -1 chv.surweights.hfst -2 chv.maxweight.hfst -o chv.weights.hfst
+</pre>
+And compose this all with the surface side of the generator:
+<pre>
+$ hfst-compose -1 chv.gen.hfst -2 chv.weights.hfst -o chv.gen_weighted.hfst
+</pre>
 <!--
-$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr | sed 's/^ *//g' | sed 's/ /:/g' > chv.freq.txt
-$ total=`cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçА-ЯӐӖĂĔҪÇ]\+/ /g' | tr ' ' '\n' | grep -v '^$' | wc -l`
-$ for i in `cat chv.freq.txt`; do n=`echo $i | cut -f1 -d':'`; p=`echo "-l($n/$total)" | bc -l`; printf "%.4f:$i\n" $p; done > chv.prob.txt
-$ cat chv.prob.txt  | awk -F':' '{print $3"\t"$1}' | hfst-strings2fst -j > chv.prob.hfst
+
 $ oovweight=`echo "-l(0.9/$total)" | bc -l`
 $ echo "?::$oovweight" | hfst-regexp2fst | hfst-repeat -o chv.maxweight.hfst
 $ hfst-union -1 chv.prob.hfst -2 chv.maxweight.hfst -o chv.weights.hfst
@@ -1962,10 +2014,12 @@ transliteration
 
 - ngram models-->
 
+<!--
 <h3>Dealing with noisy input</h3>
 
 <h4>Encoding errors</h4>
-<!-- spellrelax -->
+
+<em>TODO</em>
 
 <h4>Orthographic errors</h4>
 
@@ -1974,6 +2028,7 @@ It is also possible to deal with orthographic errors within the same transducer.
 we are going to take advantage of a number of features of finite-state calculus, specifically
 <tt>intersection</tt>, <tt>union</tt> and <tt>subtraction</tt>.
 </p>
+-->
 
 
 <h3>Python bindings</h3>
