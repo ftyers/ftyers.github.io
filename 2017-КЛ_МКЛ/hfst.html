@@ -677,14 +677,14 @@ our plural morpheme to <tt>%&gt;се%{м%}</tt>. The next question is what do we
     <li><tt>%{Ӑ%}:0</tt> if there is a surface vowel before the morpheme boundary</tt> 
     <li><tt>%{Ӑ%}:0</tt> if there is previous <tt>%{м%}:0</tt></tt> 
     <li><tt>%{м%}:0</tt> if there is a following <tt>%{Ă%}:</tt> followed by <tt>н</tt></li>
-    <li><tt>%{Ă%}:ӑ</tt> or <tt>%{Ã%}:ӗ</tt> according to vowel harmony if previous consonant</li>
+    <li><tt>%{Ă%}:ӑ</tt> or <tt>%{Ă%}:ӗ</tt> according to vowel harmony if previous consonant</li>
   </ul></li>
   <li>The genitive morpheme will be <tt>%&gt;%{н%}</tt> in plural and <tt>%&gt;%{Ă%}н</tt> in singular
   <ul>
     <li><tt>%{н%}:н</tt> if it is the end of the string</li>
     <li><tt>%{м%}:0</tt> if there is a following <tt>%{н%}:н</tt></li>
     <li><tt>%{Ӑ%}:0</tt> if there is a surface vowel before the morpheme boundary</tt> 
-    <li><tt>%{Ă%}:ӑ</tt> or <tt>%{Ã%}:ӗ</tt> according to vowel harmony if previous consonant</li>
+    <li><tt>%{Ă%}:ӑ</tt> or <tt>%{Ă%}:ӗ</tt> according to vowel harmony if previous consonant</li>
   </ul></li>
 </ol>
 <p>
@@ -756,7 +756,7 @@ That's better, what should we try and tackle next ? How about constraining <tt>%
 when following <tt>%{м%}</tt> ?
 </p>
 <pre>
-"Non surface {Ã} in plural genitive"
+"Non surface {Ă} in plural genitive"
 %{Ă%}:0 &lt;=&gt; %{м%}: %&gt;: _ н ; 
 </pre>
 <p>
@@ -782,7 +782,7 @@ Writing output to chv.twol.hfst.
 Reading alphabet.
 Reading sets.
 Reading rules and compiling their contexts and centers.
-<b>There is a <=-rule conflict between "Back vowel harmony for archiphoneme {Ă}" and "Non surface {Ã} in plural genitive".
+<b>There is a <=-rule conflict between "Back vowel harmony for archiphoneme {Ă}" and "Non surface {Ă} in plural genitive".
 E.g. in context __HFST_TWOLC_.#.:__HFST_TWOLC_.#. ё:ё ҫ:ҫ {м}:м >: _ н:н __HFST_TWOLC_.#.:__HFST_TWOLC_.#. </b>
 
 Compiling rules.
@@ -801,7 +801,7 @@ Argghhh! What happened ? Well, the problem is that we have two rules that say co
   </div>
   <div class="col-xs-8">
 (b)<pre style="width:80%">
-"Non surface {Ã} in plural genitive"
+"Non surface {Ă} in plural genitive"
 %{Ă%}:0 &lt;=&gt; %{м%}: %&gt;: _ н ; 
 </pre>
   </div>
