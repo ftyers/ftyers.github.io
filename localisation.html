@@ -148,6 +148,40 @@ from Amir Aharoni.
 Signal, like Telegram uses Transifex to do translations. Their project is <a href="https://www.transifex.com/projects/p/signal-android/">signal-android</a>.
 
 <h2>CLDR</h2>
+<p>
+CLDR is super important because it forms the basis of a lot of other localisation efforts (e.g. Google, Android, ...). It 
+should really be one of the first places you start when thinking of localisation.
+</p>
+<p>
+Go to the <a href="http://www.unicode.org/reporting.html">reporting page</a> and register for an account. Make sure that 
+it is of the type "Request for CLDR Survey Tool Submitter ID". You should give the following information: Which language
+you are interested in working with.
+</p>
+
+<!--
+ If you would like to add data for a new locale, please File a Ticket requesting the addition. You should also notify your CLDR contact (see Survey Tool Accounts).
+
+    Make sure that you pick the right locale code for the new data. See Picking the Right Language Code
+    A new locale is only added if someone commits to supplying Core Data for New Locales.
+    In special cases, XML files in LDML format can be supplied. See Bulk Data Upload.
+-->
+
+<!--
+
+This data is to be entered using the Survey Tool except as noted.
+
+    (44+) 4 main Date/Time formats, 12 long&abbreviated, format&stand-alone month-names, 7 long&abbreviated day-names, 2 long day periods.
+    (01) Name of the language in the language.
+    (N) For any country locales, name of the country in the language, name/symbol for that country's currency. Must be at least one, for the default content locale.
+    (02) Datetime pattern, intervalFormatFallback
+    (05) (for Latn) decimal and grouping separators; decimal, currency, percent formats
+    (N) Names of countries (territories) with that language as official.
+    (M) Names of exemplarCities in multizone countries with that language as official
+    (05) Timezone patterns [http://cldr.unicode.org/translation/timezones]
+    (02) localePattern/Separator [http://cldr.unicode.org/translation/localepattern]
+    (03) key names 
+    (14) long/short unit names (time intervals)
+-->
 
 <h2>Nice stories and random links</h2>
 
@@ -158,3 +192,4 @@ Signal, like Telegram uses Transifex to do translations. Their project is <a hre
 
 </body>
 </html>
+
