@@ -1041,6 +1041,8 @@ VERB            & 0.8  & 0    & 0    & 0 &  0 & 0 & 0 \\
     \end{tabular}
   }
 \end{onlyenv}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{onlyenv}<2>
 
@@ -1081,6 +1083,261 @@ VERB            & 0.8  & 0    & 0    & 0 &  0 & 0 & 0 \\
 \end{onlyenv}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{onlyenv}<3>
+
+  \scalebox{0.7}{
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+           \multicolumn{8}{c}{{\large $\rightarrow$}}  \\
+    \hline
+    $q_F$ &   &   &   &   &   &   &    \\
+    \hline
+    VERB & 0.15, $q_0$ &   &   &   &   &   &    \\
+    \hline
+    NOUN  & 0.0, $q_0$ &   &   &   &   &   &    \\
+    \hline
+    DET &   &   &   &   &   &   &    \\
+    \hline
+    PRON  &   &   &   &   &   &   &    \\
+    \hline
+    ADP &   & 0.06, VERB  &   &   &   &   &    \\
+    \hline
+    ADJ  &   &   &   &   &   &   &    \\
+    \hline
+    PUNCT  &   &   &   &   &   &   &   \\
+    \hline
+          & VERB/NOUN & ADP & DET/PRON/VERB & NOUN/VERB & ADJ & PUNCT & \\
+    \hline
+          & \emph{Vino} & \emph{a} & \emph{una} & \emph{casa} & \emph{grande} & . & \\
+    \hline
+    \end{tabular}
+  }
+
+{\small
+\begin{itemize}
+  \item = P(ADP,VERB) * P(ADP, ADP) * P(PATH) = 0.4 * 1.0 * 0.15 = 0.06
+  \item = P(ADP,NOUN) * P(ADP, ADP) * P(PATH) = 0.16 * 1.0 * 0.0 = 0
+\end{itemize}
+}
+
+\end{onlyenv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{onlyenv}<4>
+
+  \scalebox{0.7}{
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+           \multicolumn{8}{c}{{\large $\rightarrow$}}  \\
+    \hline
+    $q_F$   &             &             &   &   &   &   &    \\
+    \hline
+    VERB    & 0.15, $q_0$ &             & 0.0, ADP  &   &   &   &    \\
+    \hline
+    NOUN    & 0.0, $q_0$  &             &   &   &   &   &    \\
+    \hline
+    DET     &             &             & 0.009, ADP   &   &   &   &    \\
+    \hline
+    PRON    &             &             & 0.0, ADP  &   &   &   &    \\
+    \hline
+    ADP     &             & 0.06, VERB  &   &   &   &   &    \\
+    \hline
+    ADJ     &             &             &   &   &   &   &    \\
+    \hline
+    PUNCT   &             &             &   &   &   &   &   \\
+    \hline
+          & VERB/NOUN & ADP & DET/PRON/VERB & NOUN/VERB & ADJ & PUNCT & \\
+    \hline
+          & \emph{Vino} & \emph{a} & \emph{una} & \emph{casa} & \emph{grande} & . & \\
+    \hline
+    \end{tabular}
+  }
+
+{\tiny
+\begin{itemize}
+  \item = P(DET,ADP) * P(DET, DET/PRON/VERB) * P(PATH) = 0.6 * 0.25 * 0.06 = 0.009
+  \item = P(PRON,ADP) * P(PRON, DET/PRON/VERB) * P(PATH) = 0.0 * 0.0 * 0.06 = 0.0
+  \item = P(VERB,ADP) * P(VERB, DET/PRON/VERB) * P(PATH) = 0.0 * 0.0 * 0.06 = 0.0
+\end{itemize}
+}
+
+\end{onlyenv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{onlyenv}<5>
+
+  \scalebox{0.7}{
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+           \multicolumn{8}{c}{{\large $\rightarrow$}}  \\
+    \hline
+    $q_F$   &             &             &   &   &   &   &    \\
+    \hline
+    VERB    & 0.15, $q_0$ &             & 0.0, ADP  & 0.0, DET*  &   &   &    \\
+    \hline
+    NOUN    & 0.0, $q_0$  &             &           & 0.006, DET   &   &  &    \\
+    \hline
+    DET     &             &             & 0.009, ADP   &   &   &   &    \\
+    \hline
+    PRON    &             &             & 0.0, ADP  &   &   &   &    \\
+    \hline
+    ADP     &             & 0.06, VERB  &   &   &   &   &    \\
+    \hline
+    ADJ     &             &             &   &   &   &   &    \\
+    \hline
+    PUNCT   &             &             &   &   &   &   &   \\
+    \hline
+          & VERB/NOUN & ADP & DET/PRON/VERB & NOUN/VERB & ADJ & PUNCT & \\
+    \hline
+          & \emph{Vino} & \emph{a} & \emph{una} & \emph{casa} & \emph{grande} & . & \\
+    \hline
+    \end{tabular}
+  }
+
+{\tiny
+\begin{itemize}
+  \item = P(NOUN,VERB) * P(NOUN, NOUN/VERB) * P(PATH) = 0.2 * 0.67 * 0.009 = 0.001
+  \item = P(VERB,VERB) * P(VERB, NOUN/VERB) * P(PATH) = 0.0 * 0.2  * 0.009 = 0.0
+  \item = P(NOUN,DET) * P(NOUN, NOUN/VERB) * P(PATH) =  1.0 * 0.67 * 0.009 = 0.006
+  \item = P(VERB,DET) * P(VERB, NOUN/VERB) * P(PATH) =  0.0 * 0.2  * 0.009 = 0.0
+  \item = P(NOUN,PRON) * P(NOUN, NOUN/VERB) * P(PATH) = 0.0 * 0.67 * 0.009 = 0.0 
+  \item = P(VERB,PRON) * P(VERB, NOUN/VERB) * P(PATH) = 0.0 * 0.67 * 0.009 = 0.0
+\end{itemize}
+}
+
+\end{onlyenv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{onlyenv}<6>
+
+  \scalebox{0.7}{
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+           \multicolumn{8}{c}{{\large $\rightarrow$}}  \\
+    \hline
+    $q_F$   &             &             &   &   &   &   &    \\
+    \hline
+    VERB    & 0.15, $q_0$ &             & 0.0, ADP  & 0.0, DET*  &   &   &    \\
+    \hline
+    NOUN    & 0.0, $q_0$  &             &           & 0.006, DET   &   &  &    \\
+    \hline
+    DET     &             &             & 0.009, ADP   &   &   &   &    \\
+    \hline
+    PRON    &             &             & 0.0, ADP  &   &   &   &    \\
+    \hline
+    ADP     &             & 0.06, VERB  &   &   &   &   &    \\
+    \hline
+    ADJ     &             &             &   &   &    0.001, NOUN &  &    \\
+    \hline
+    PUNCT   &             &             &   &   &   &   &   \\
+    \hline
+          & VERB/NOUN & ADP & DET/PRON/VERB & NOUN/VERB & ADJ & PUNCT & \\
+    \hline
+          & \emph{Vino} & \emph{a} & \emph{una} & \emph{casa} & \emph{grande} & . & \\
+    \hline
+    \end{tabular}
+  }
+
+{\tiny
+\begin{itemize}
+  \item = P(ADJ,NOUN) * P(ADJ, ADJ) * P(PATH) = 0.16 * 1.0 * 0.006 = 0.00096
+  \item = P(ADJ,VERB) * P(ADJ, ADJ) * P(PATH) = 0.2 * 1.0 * 0.0 = 0.0
+\end{itemize}
+}
+
+\end{onlyenv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{onlyenv}<7>
+
+  \scalebox{0.7}{
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+           \multicolumn{8}{c}{{\large $\rightarrow$}}  \\
+    \hline
+    $q_F$   &             &             &   &   &   &   &    \\
+    \hline
+    VERB    & 0.15, $q_0$ &             & 0.0, ADP  & 0.0, DET*  &   &   &    \\
+    \hline
+    NOUN    & 0.0, $q_0$  &             &           & 0.006, DET   &   &  &    \\
+    \hline
+    DET     &             &             & 0.009, ADP   &   &   &   &    \\
+    \hline
+    PRON    &             &             & 0.0, ADP  &   &   &   &    \\
+    \hline
+    ADP     &             & 0.06, VERB  &   &   &   &   &    \\
+    \hline
+    ADJ     &             &             &   &   &    0.001, NOUN &  &    \\
+    \hline
+    PUNCT   &             &             &   &   &   & 0.001, ADJ  &   \\
+    \hline
+          & VERB/NOUN & ADP & DET/PRON/VERB & NOUN/VERB & ADJ & PUNCT & \\
+    \hline
+          & \emph{Vino} & \emph{a} & \emph{una} & \emph{casa} & \emph{grande} & . & \\
+    \hline
+    \end{tabular}
+  }
+
+{\tiny
+\begin{itemize}
+  \item = P(PUNCT,ADJ) * P(PUNCT, PUNCT) * P(PATH) = 1.0 * 1.0 * 0.001 = 0.001
+\end{itemize}
+}
+
+\end{onlyenv}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{onlyenv}<8->
+
+  \scalebox{0.7}{
+    \begin{tabular}{|l|r|r|r|r|r|r|r|}
+           \multicolumn{8}{c}{{\large $\rightarrow$}}  \\
+    \hline
+    $q_F$   &             &             &   &   &   &   &    \\
+    \hline
+    VERB    & 0.15, \alert<14>{$q_0$} &             & 0.0, ADP  & 0.0, DET*  &   &   &    \\
+    \hline
+    NOUN    & 0.0, $q_0$  &             &           & 0.006, \alert<11>{DET}   &   &  &    \\
+    \hline
+    DET     &             &             & 0.009, \alert<12>{ADP}   &   &   &   &    \\
+    \hline
+    PRON    &             &             & 0.0, ADP  &   &   &   &    \\
+    \hline
+    ADP     &             & 0.06, \alert<13>{VERB}  &   &   &   &   &    \\
+    \hline
+    ADJ     &             &             &   &   &    0.001, \alert<10>{NOUN} &  &    \\
+    \hline
+    PUNCT   &             &             &   &   &   & 0.001, \alert<9>{ADJ}  &   \\
+    \hline
+          & VERB/NOUN & ADP & DET/PRON/VERB & NOUN/VERB & ADJ & PUNCT & \\
+    \hline
+          & \emph{Vino} & \emph{a} & \emph{una} & \emph{casa} & \emph{grande} & . & \\
+    \hline
+    \end{tabular}
+  }
+\end{onlyenv}
+
+\begin{onlyenv}<8>
+PUNCT
+\end{onlyenv}
+\begin{onlyenv}<9>
+ADJ PUNCT
+\end{onlyenv}
+\begin{onlyenv}<10>
+NOUN ADJ PUNCT
+\end{onlyenv}
+\begin{onlyenv}<11>
+DET NOUN ADJ PUNCT
+\end{onlyenv}
+\begin{onlyenv}<12>
+ADP DET NOUN ADJ PUNCT
+\end{onlyenv}
+\begin{onlyenv}<13->
+VERB ADP DET NOUN ADJ PUNCT
+\end{onlyenv}
+
 \end{center}
 
 
@@ -1089,6 +1346,11 @@ VERB            & 0.8  & 0    & 0    & 0 &  0 & 0 & 0 \\
 \end{frame}
 
 \begin{frame}{Other features}
+
+\begin{itemize}
+  \item 
+
+\end{itemize}
 
 \end{frame}
 
