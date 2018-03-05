@@ -61,6 +61,11 @@
 
 \end{frame}
 
+\begin{frame}{Motivating example}
+
+
+\end{frame}
+
 \begin{frame}{Applications}
 % aside from being a stage in the pipeline, what can use POS tagging directly ? 
 
@@ -160,14 +165,45 @@
 \begin{onlyenv}<3>
 \begin{center}
 \textbf{Positional tags} 
+~\\
+~\\
+
+\includegraphics[width=0.7\textwidth]{images/12-Figure5-1.png}
 \end{center}
+
+\begin{itemize}
+ \item[+] Compact
+ \item[-] Hard to read 
+ \item[-] No support for derivational morphology
+\end{itemize}
 
 \end{onlyenv}
 
 \begin{onlyenv}<4>
 \begin{center}
 \textbf{Mnemonic tags} 
+
 \end{center}
+{\tiny
+\begin{alltt}
+Sápmelaččas	[sápmelaš] N Sg Loc \\
+leai	[leat] V IV Ind Prt Sg3 \\
+dakkár	[dakkár] Pron Dem Attr \\
+luondu	[luondu] N Sg Nom \\
+,	[,] CLB \\
+ahte	[ahte] CS \\
+son	[son] Pron Pers Sg3 Nom \\
+háliidišgođii	[háliidit] V TV Der/goahti Ind Prt Sg3 \\
+gottiid	[goddi] N Pl Acc \\
+.	[.] CLB \\
+\end{alltt}
+}
+\begin{itemize}
+  \item[+] Easily handle derivations
+  \item[+] Implicit morphological structure
+  \item[-] Number of tags can explode
+  \item[-] Modelling derivation is less language-independent
+\end{itemize}
 
 \end{onlyenv}
 
@@ -177,18 +213,21 @@
 \end{center}
 \begin{center}
 \scalebox{0.7}{
-\begin{tabular}{llllllllll}
-1  & Польша & \_& PROPN & \_& Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing & \_& \_& \_& \_ \\
-2  & является & \_& VERB & \_& Aspect=Imp|Number=Sing|Person=3|Tense=Pres & \_& \_& \_& \_ \\
-3  & безъядерной & \_& ADJ & \_& Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing & \_& \_& \_& \_ \\
-4  & страной & \_& NOUN & \_& Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing & \_& \_& \_& \_ \\
-5  & . & \_& PUNCT & \_& \_& \_& \_& \_& \_ \\
+\begin{tabular}{lllllll}
+1  & Польша & \_& PROPN & \_& Animacy=Inan|Case=Nom|Gender=Fem|Number=Sing & \_   \\
+2  & является & \_& VERB & \_& Aspect=Imp|Number=Sing|Person=3|Tense=Pres & \_   \\
+3  & безъядерной & \_& ADJ & \_& Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing & \_ \\
+4  & страной & \_& NOUN & \_& Animacy=Inan|Case=Ins|Gender=Fem|Number=Sing & \_ \\
+5  & . & \_& PUNCT & \_& \_ & \_ \\
 \end{tabular}
 }
 \end{center}
 
 \begin{itemize}
- \item +/-
+ \item[+] Easy to read
+ \item[-] No support for derivational morphology
+ \item[-] No implicit morphological structure
+ \item[-] Takes up a lot of space 
 \end{itemize}
 
 \end{onlyenv}
@@ -198,6 +237,30 @@
 % Tagset considerations morph<-->syntax
 
 \begin{frame}{Tagset design}
+
+\begin{columns}
+
+\begin{column}{0.6\textwidth}
+
+\textbf{Examples:}
+\begin{itemize}
+  \item Splitting: Participles from adjectives 
+  \item Merging:  One class for all nominals
+\end{itemize}
+\textbf{Questions:}
+\begin{itemize}
+  \item Can the ambiguity be resolved? 
+  \item Does the distinction help downstream applications?
+\end{itemize}
+
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/tagset.eps}
+\end{center}
+
+\end{column}
+\end{columns}
 
 % Ambiguity
 % 
@@ -218,30 +281,47 @@ reindeer-catch-finish-{\sc pl3}
 \begin{frame}{Scale of the problem}
 % scale of the problem (how many words are ambiguous?) types/tokens
 
-%UD_Arabic	28.028665680809915 26373 7392 | 69.72739248682645 282384 26373
-%UD_Basque	11.47344353236628 26679 3061 | 38.47978063783009 121443 26679
-%UD_Catalan	8.31324959596246 35269 2932 | 66.49986559417712 531971 35269
-%UD_Czech	18.095502113798602 144290 26110 | 47.17003300400137 1506484 144290
-%UD_English	14.200772535914242 23041 3272 | 52.3405891794105 254829 23041
-%UD_Erzya	9.736123748862601 1099 107 | 41.37931034482759 2001 1099
-%UD_Finnish	3.460714099011972 57387 1986 | 18.091922833148473 201952 57387
-%UD_German	20.17361442335209 52415 10574 | 56.528450943344566 292152 52415
-%UD_Hebrew	15.560653536257835 17872 2781 | 71.62094330385638 161369 17872
-%UD_Hindi	36.2884775374376 19232 6979 | 86.84376634897527 351704 19232
-%UD_Irish	11.885844008431977 6167 733 | 43.5778668002003 23964 6167
-%UD_Japanese	1.488317951276295 24054 358 | 21.677209237334136 186071 24054
-%UD_Kazakh	5.49213870342451 4643 255 | 14.739939255884584 10536 4643
-%UD_Korean	0.07787295583490933 35956 28 | 8.918388207445664 74352 35956
-%UD_Kurmanji	9.357118815213733 2971 278 | 36.72514619883041 10260 2971
-%UD_Latin	16.095792386222687 10481 1687 | 61.373464204818454 29138 10481
-%UD_Latvian	6.842492746091551 23091 1580 | 19.42334521779569 90314 23091
-%UD_Lithuanian	4.405104981473857 2429 107 | 15.814040328603435 5356 2429
-%UD_Norwegian-Nynorsk	8.280614214856396 33669 2788 | 43.78652278225204 301353 33669
-%UD_Persian	8.810746740418807 15186 1338 | 36.46678001569448 152920 15186
-%UD_Portuguese	13.192239858906527 28350 3740 | 64.51148416098897 227792 28350
-%UD_Russian-SynTagRus	13.502656781952973 125716 16975 | 40.9461209547306 1105736 125716
-%UD_Turkish	4.293419633225459 18540 796 | 17.44324147546345 58097 18540
+\begin{columns}
+\begin{column}{0.4\textwidth}
 
+\begin{itemize}
+  \item UD corpora
+  \item Percentage of tokens and types that receive more than
+    one analysis 
+  \item Underestimation, e.g. Turkish \emph{için}:
+  \begin{itemize}
+    \item[+] for.{\sc POST} 
+    \item[+] inside.{\sc GEN}
+    \item[-] inside.{\sc 2SG.NOM}
+    \item[-] drink.{\sc IMP.2PL}
+  \end{itemize}
+\end{itemize}
+
+\end{column}
+\begin{column}{0.6\textwidth}
+    \begin{tabular}{lrrr}
+    \textbf{Language} & \textbf{Tokens} & \textbf{/type} & \textbf{/token} \\
+    \hline
+    Turkish   & 58k &  4.29    &  17.44 \\
+    Finnish   & 201k &  3.46   &  18.09 \\
+    Kurmanji   & 10k&  9.35    &  36.72 \\
+    Basque   & 121k&  11.47    &  38.47 \\
+    Russian  & 1.1M &  13.50    &  40.94 \\
+    Erzya   & 2k &  9.73   &   41.37 \\
+    Norwegian  & 301k &  8.28    &  43.78 \\
+    Czech   & 1.5M &  18.09   &   47.17 \\
+    English   & 254k &  14.20    &  52.34 \\
+    German   & 292k &  20.17    &  56.52 \\
+    Portuguese  & 227k&  13.19    &  64.51 \\
+    Catalan   & 531k &  8.31   &  66.49 \\
+    Hebrew   & 161k &  15.56   &  71.62 \\
+    Hindi   & 351k &  36.28   &  86.84 \\
+    \hline
+    \end{tabular}
+    
+\end{column}
+
+\end{columns}
 
 \end{frame}
 
@@ -1519,6 +1599,16 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 %% Chris Manning (2011) "Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?"
 
 %\includegraphics[width=\textwidth]{images/manning-errors.png}
+
+%% At first glance, current part-of-speech taggers work rapidly and reliably, with
+%per-token accuracies of slightly over 97% [1–4]. Looked at more carefully, the
+%story is not quite so rosy. This evaluation measure is easy both beca
+%use it is measured per-token and because you get points for every punctuation mark and
+%other tokens that are not ambiguous. It is perhaps more realistic to look at the
+%rate of getting whole sentences right, since a single bad mistake in a sentence
+%can greatly throw off the usefulness of a tagger to downstream tasks such as
+%dependency parsing. Current good taggers have sentence accuracies around 55–
+%57%, which is a much more modest score.
 
 \end{frame}
 
