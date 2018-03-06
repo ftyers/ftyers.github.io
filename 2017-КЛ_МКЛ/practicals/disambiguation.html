@@ -11,15 +11,39 @@
 
 
 <h2>Improve perceptron tagger</h2>
-
+<p>
+The objective of this task is to download and run a very basic averaged perceptron tagger (less than 300 lines of 
+Python). After successfully running it, try and improve it by changing the feature specifications.
+</p>
+<p>
+First download the code:
+</p>
 <pre>
 $ git clone https://github.com/ftyers/conllu-perceptron-tagger.git
+</pre>
+<p>
+Then download some data, feel free to replace <tt>UD_Portuguese</tt> with any language in UD.
+</p>
+<pre>
 $ git clone https://github.com/UniversalDependencies/UD_Portuguese.git
+</pre>
+<p>
+Then download the CoNLL shared task 2017 official evaluation script and unzip it:
+</p>
+<pre>
 $ wget http://universaldependencies.org/conll17/eval.zip
 $ unzip eval.zip
+</pre>
+<p>
+Finally enter the directory of the perceptron tagger:
+</p>
+<pre>
 $ cd conllu-perceptron-tagger
 </pre>
 
+<p>
+You can train the tagger using the following command:
+</p>
 <pre>
 $ cat ../UD_Portuguese/pt-ud-train.conllu | python3 tagger.py -t pt-ud.dat
 222070
