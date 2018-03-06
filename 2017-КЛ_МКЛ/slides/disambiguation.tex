@@ -1743,6 +1743,18 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 
 \begin{frame}{Averaging}
 
+\textbf{Problem:}
+\begin{itemize}
+  \item In later iterations it changes the weights a lot for the last few
+    samples it is getting wrong
+  \item \ldots overfitting
+\end{itemize}
+
+\textbf{Solution:}
+\begin{itemize}
+  \item Average the weights over the iterations
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Dictionary}
@@ -1765,8 +1777,8 @@ Given the amount of unambiguous words:
 \end{center}
 
 \begin{itemize}
-  \item 
- 
+  \item For each class (POS), add the weights of the features we've seen
+  \item Take the class with the maximum weight
 \end{itemize}
 
 \end{frame}
