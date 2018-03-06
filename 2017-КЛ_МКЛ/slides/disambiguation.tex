@@ -1597,7 +1597,12 @@ VERB ADP DET NOUN ADJ PUNCT
 \end{frame}
 
 \begin{frame}{Implementation}
-
+\begin{center}
+\url{https://paste2.org/HMgn7amd}
+~\\
+~\\
+\includegraphics[width=\textwidth]{images/viterbi-wp.png}
+\end{center}
 
 \end{frame}
 
@@ -1605,9 +1610,21 @@ VERB ADP DET NOUN ADJ PUNCT
 
 \begin{itemize}
   \item Trigrams
-  \item Backoff 
+  \begin{itemize}
+     \item Instead of conditioning on previous tag, condition on previous two
+  \end{itemize}
   \item Unknown words
+  \begin{itemize}
+     \item Incorporate suffixes into the tags
+  \end{itemize} 
+  \item Backoff 
+  \begin{itemize}
+    \item If the bi-/tri-gram hasn't been seen, backoff to lower order model
+  \end{itemize}
   \item Capitalisation
+  \begin{itemize}
+    \item Use capitalisation features 
+  \end{itemize}
 \end{itemize}
 
 % downsides
@@ -1627,6 +1644,20 @@ VERB ADP DET NOUN ADJ PUNCT
 % discriminative model
 % beautifully simple
 
+\textbf{A binary perceptron:}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{images/perceptron.png}
+\end{center}
+
+\begin{itemize}
+  \item Discriminative model ... find the category, not the distribution
+  \item Beautifully simple
+\end{itemize}
+
+\begin{center}
+ \url{github.com/ftyers/conllu-perceptron-tagger}
+\end{center}
+
 \end{frame}
 
 \begin{frame}{Training}
@@ -1635,6 +1666,13 @@ VERB ADP DET NOUN ADJ PUNCT
 \includegraphics[width=\textwidth]{images/perceptron-train.png}
 \end{center}
 
+\begin{itemize}
+  \item We iterate through the whole training data $n$ times
+  \item For each tag we try and predict the value
+  \begin{itemize}
+    \item If we get it wrong, we increase the weight of the features for the correct class
+  \end{itemize}
+\end{itemize}
 
 % loop
 % averaging
@@ -1665,9 +1703,22 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 \end{tabular}
 \end{center} 
 ~\\
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+
+\begin{itemize}
+  \item Specify whatever features you want,
+  \item Easy to add new ones!
+\end{itemize}
+
+\end{column}
+\begin{column}{0.5\textwidth}
+
 \scalebox{0.9}{
   \centering
-  \begin{tabular}{lll}
+  \begin{tabular}{|lll|}
+  \hline
   $i$  & Trigram suffix  & una \\
   $i$  & Unigram prefix  & u \\
   $i-1$ & Tag & ADP \\
@@ -1681,8 +1732,11 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
   $i+1$ & Word  & casa \\
   $i+1$ & Trigram suffix  & asa \\
   $i+2$ &  Word  & grande \\
+  \hline
   \end{tabular}
 }
+\end{column}
+\end{columns}
 
 
 \end{frame}
@@ -1693,6 +1747,14 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 
 \begin{frame}{Dictionary}
 
+Given the amount of unambiguous words:
+\begin{itemize}
+  \item Make a dictionary
+  \item When you see the word, output it
+  \item But have a frequency threshold, e.g. 20
+\end{itemize}
+%, it also makes sense to make a dictionary
+%of those and when we see them just output that tag.
 
 \end{frame}
 
@@ -1701,6 +1763,11 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 \begin{center}
 \includegraphics[width=\textwidth]{images/perceptron-predict.png}
 \end{center}
+
+\begin{itemize}
+  \item 
+ 
+\end{itemize}
 
 \end{frame}
 
