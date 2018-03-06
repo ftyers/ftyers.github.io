@@ -1620,7 +1620,14 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 
 \begin{frame}{Comparison of approaches}
 
-% CG -- can start from scratch, but tagsets can be a problem
+
+\begin{tabular}{lll}
+   & \textbf{+} & \textbf{-}  \\
+CG & Start from scratch & Tagset not learnt \\
+HMM & Model distribution & Hard to incorporate feats \\
+Perceptron & Easy to incorporate feats & No $n$-best  \\
+\end{tabular}
+% CG -- can start from scratch, but tagsets can be a problem, no explicit lexical info
 % HMM -- can make n-best list
 % perceptron -- more robust, easier to add features to
 
@@ -1684,17 +1691,18 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 % specifically for russian:
 %pymorphy2, pymystem3?
 
-\begin{Russian:}
+\textbf{Russian:}
 \begin{itemize}
   \item {\tt pymorphy2}
   \item {\tt mystem3}
 \end{itemize}
 
-\begin{Trainable:}
+\textbf{Trainable:}
 \begin{itemize}
-  \item HunPos (HMM)
-  \item UDPipe/MorphoDiTa (Av. Perceptron)
-  \item MarMot (CRF)
+  \item HunPos (HMM, OCaml)
+  \item UDPipe/MorphoDiTa (Av. Perceptron, C++)
+  \item MarMot (CRF, Java)
+  \item NLTK (various, Python)
 \end{itemize}
 
 
@@ -1707,17 +1715,16 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 %\end{frame}
 
 \begin{frame}{Practicals}
-
-\url{https://ftyers.github.io/2017-КЛ_МКЛ/practicals/disambiguation.html}
+\url{https://ftyers.github.io/2017-КЛ\_МКЛ/practicals/disambiguation.html}
 
 \begin{itemize}
   \item \textbf{Tagger comparison}:
   \begin{itemize}
-     \item Compare three taggers on a language of your choice
+     \item Compare three taggers on a language/domain of your choice
   \end{itemize}
   \item \textbf{Constraint grammar}: 
   \begin{itemize}
-     \item Select a small text (500 tokens) in a language of your choice
+     \item Select a small text (one paragraph) in a language of your choice
      \item Analyse it with a morphological analyser
      \item Resolve as much of the ambiguity as you can
   \end{itemize}

@@ -10,7 +10,92 @@ Choose three part of speech taggers of your choice (from wherever) and compare t
 data set. 
 </p>
 <h2>Constraint Grammar</h2>
-
+<p>
+The objective of this task is to write some constraint grammar rules to disambiguate a sentence. You can
+use your own morphological analyser to analyse the sentence, or you can use one I wrote that makes an analyser
+from a UD corpus. Get that code:
+</p>
+<pre>
+$ git clone https://github.com/ftyers/ud-scripts.git
+</pre>
+<p>
+Now get a UD corpus:
+</p>
+<pre>
+$ git clone https://github.com/UniversalDependencies/UD_Russian-SynTagRus
+</pre>
+<p>
+Make the morphological analyser:
+</p>
+<pre>
+$ cat UD_Russian-SynTagRus/*.conllu | python3 ud-scripts/conllu-analyser.py -t ru-analyser.tsv
+</pre>
+<p>
+And you can analyse new sentences as follows:
+</p>
+<pre>
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." | python3 ud-scripts/conllu-analyser.py ru-analyser.tsv 
+"&lt;Однако&gt;"
+	"однако" ADV Degree=Pos
+"&lt;стиль&gt;"
+	"стиль" NOUN Animacy=Inan Case=Nom Gender=Masc Number=Sing
+	"стиль" NOUN Animacy=Inan Case=Acc Gender=Masc Number=Sing
+"&lt;работы&gt;"
+	"работа" NOUN Animacy=Inan Case=Gen Gender=Fem Number=Sing
+	"работа" NOUN Animacy=Inan Case=Nom Gender=Fem Number=Plur
+	"работа" NOUN Animacy=Inan Case=Acc Gender=Fem Number=Plur
+"&lt;Семена&gt;"
+	"семен" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+	"семен" PROPN Animacy=Anim Case=Acc Gender=Masc Number=Sing
+"&lt;Еремеевича&gt;"
+	"еремеевич" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+"&lt;заключался&gt;"
+	"заключаться" VERB Aspect=Imp Gender=Masc Mood=Ind Number=Sing Tense=Past VerbForm=Fin Voice=Mid
+"&lt;в&gt;"
+	"в" ADP 
+"&lt;том&gt;"
+	"тот" DET Case=Loc Gender=Neut Number=Sing
+	"то" PRON Animacy=Inan Case=Loc Gender=Neut Number=Sing
+	"тот" DET Case=Loc Gender=Masc Number=Sing
+"&lt;,&gt;"
+	"," PUNCT 
+"&lt;чтобы&gt;"
+	"чтобы" SCONJ Mood=Cnd
+"&lt;принимать&gt;"
+	"принимать" VERB Aspect=Imp VerbForm=Inf Voice=Act
+"&lt;всех&gt;"
+	"весь" DET Case=Gen Number=Plur
+	"весь" DET Case=Loc Number=Plur
+	"весь" DET Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Gen Number=Plur
+"&lt;желающих&gt;"
+	"желать" VERB Aspect=Imp Case=Gen Number=Plur Tense=Pres VerbForm=Part Voice=Act
+"&lt;и&gt;"
+	"и" CCONJ 
+	"и" PART 
+"&lt;лично&gt;"
+	"лично" ADV Degree=Pos
+"&lt;вникать&gt;"
+	"*вникать"
+"&lt;в&gt;"
+	"в" ADP 
+"&lt;дело&gt;"
+	"дело" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing
+	"дело" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing
+"&lt;.&gt;"
+	"." PUNCT 
+</pre>
+<p>
+Next you'll need to install CG:
+</p>
+<pre>
+$ wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+$ sudo apt-get install cg3
+</pre>
+<p>
+If you're using some non-Linux operating system you can try the <a href="https://visl.sdu.dk/cg3ide.html">CG3 IDE</a>.
+</p>
 
 
 <h2>Improve perceptron tagger</h2>
