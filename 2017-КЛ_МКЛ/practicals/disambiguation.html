@@ -8,12 +8,15 @@
 
 <h2>Constraint Grammar</h2>
 
+
+
 <h2>Improve perceptron tagger</h2>
 
 <pre>
 $ git clone https://github.com/ftyers/conllu-perceptron-tagger.git
 $ git clone https://github.com/UniversalDependencies/UD_Portuguese.git
 $ wget http://universaldependencies.org/conll17/eval.zip
+$ unzip eval.zip
 $ cd conllu-perceptron-tagger
 </pre>
 
@@ -37,9 +40,29 @@ Now you can run the tagger
 $ cat ../UD_Portuguese/pt-ud-test.conllu | python3 tagger.py pt-ud.dat &gt; pt-ud-test.out
 </pre>
 
+And evaluate:
+<pre>
+$ python3 ../evaluation_script/conll17_ud_eval.py --verbose ../UD_Portuguese/pt-ud-test.conllu pt-ud-test.out 
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     95.73 |     95.73 |     95.73 |     95.73
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     95.73 |     95.73 |     95.73 |     95.73
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+</pre>
+<p>
+Note that the interesting value here is the <tt>UPOS</tt> column as that is the only one we have changed. 
+</p>
 <p>
 In the code, feature extraction is done by <tt>_get_features()</tt> in <tt>tagger.py</tt>. Try
-playing around with this and see if you can improve the performance. 
+playing around with this and see if you can improve the performance. Remember to try and improve
+your features on the <tt>pt-ud-dev.conllu</tt> file, not on the <tt>pt-ud-test.conllu</tt> file.
 </p>
 </body>
 
