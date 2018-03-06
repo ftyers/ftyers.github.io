@@ -5,7 +5,10 @@
 <body>
 
 <h2>Tagger comparison</h2>
-
+<p>
+Choose three part of speech taggers of your choice (from wherever) and compare them on the same 
+data set. 
+</p>
 <h2>Constraint Grammar</h2>
 
 
@@ -81,7 +84,8 @@ UAS        |    100.00 |    100.00 |    100.00 |    100.00
 LAS        |    100.00 |    100.00 |    100.00 |    100.00
 </pre>
 <p>
-Note that the interesting value here is the <tt>UPOS</tt> column as that is the only one we have changed. 
+<b>Note:</b> The interesting value here is the <tt>UPOS</tt> column as that is the only one we have changed. The other
+  columns are 100% because the script hasn't changed them.
 </p>
 <p>
 In the code, feature extraction is done by <tt>_get_features()</tt> in <tt>tagger.py</tt>. Try
