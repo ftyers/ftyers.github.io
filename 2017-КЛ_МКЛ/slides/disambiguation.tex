@@ -72,20 +72,52 @@
 
 \begin{frame}{Motivating example}
 
+\begin{onlyenv}<1>
+\begin{center}
+{\LARGE {\bf при}}
+\end{center}
+\end{onlyenv}
 
+% This I knew already from '46, when I started to write, and maybe even earlier -- and this
+% fact more than once amazed me and left me in bewilderment about the usefulness of art
+% inspite of the visibility of its impotence 
+\begin{onlyenv}<3>
+Это я знал еще с 46-го года, когда начал писать, а может быть и раньше,
+-- и факт этот не раз поражал меня и ставил меня в  недоумение  о  полезности
+искусства \textbf{при} таком видимом его бессилии.\\
+~\\
+\end{onlyenv}
+\begin{onlyenv}<2->
+\textbf{при:}  \\
+\begin{itemize}
+\item	\emph{при} ~ pr 
+\item	\emph{пря} ~  n f nn sg gen 
+\item	\emph{пря} ~  n f nn pl nom 
+\item	\emph{пря} ~  n f nn pl acc 
+\item	\emph{переть} ~  vblex impf tv imp p2 sg
+\item	\emph{переть} ~  vblex impf iv imp p2 sg 
+\end{itemize}
+\end{onlyenv}
 \end{frame}
 
 \begin{frame}{Applications}
-% aside from being a stage in the pipeline, what can use POS tagging directly ? 
+
+Aside from being a stage in the pipeline, what can use POS tagging directly ? 
 
 \begin{itemize}
   \item \textbf{Speech synthesis}: How to pronounce a word in context, e.g. \emph{conduct}
   \begin{itemize}
      \item NOUN: /'kondukt/, VERB /kon'dukt/
   \end{itemize}
-  \item \textbf{Disambiguation of meaning}: 
-  \item \textbf{Features for parsing}:
+  \item \textbf{Disambiguation of meaning}:  
+  \begin{itemize}
+     \item lie NOUN vs. lie VERB
+  \end{itemize}
   \item \textbf{Corpus linguistics}:
+  \begin{itemize}
+    \item Find sequences of lexical categories
+    \item Limit searches for a wordform to a particular category
+  \end{itemize}
 
 \end{itemize}
 
@@ -292,13 +324,28 @@ gottiid	[goddi] N Pl Acc \\
 
 % Tagset considerations morph<-->syntax
 
-\begin{frame}
+\begin{frame}{Limitations}
 
-They finished catching reindeer.
+\begin{center}
+\fbox{
+  \begin{minipage}[t]{0.7\textwidth}
+\dgmk{ӄорагыркиплыткогъат} 
+\begin{itemize}
+  \item \dgmk{ӄора-гырки-плыткогъат} \\
+  \item reindeer-catch-finish-{\sc 3PL} \\
+  \item \emph{They finished catching reindeer.}
+\end{itemize}
+\end{minipage}
+}
+\end{center}
 
-ӄорагыркиплыткогъат
-ӄора-гырки-плыткогъат
-reindeer-catch-finish-{\sc pl3}
+\begin{itemize}
+  \item Does \texttt{VERB} really capture what this is ?
+  \item We can represent morphology easily, maybe even derivation
+  \item But what about the incorporation ?
+\end{itemize}
+
+
 
 \end{frame}
 
@@ -352,18 +399,31 @@ reindeer-catch-finish-{\sc pl3}
 \begin{frame}{Types of ambiguity}
 % Morphological ambiguity ... types
 
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/ambig-types.png}
+\end{center}
+
 \begin{itemize}
-  \item Intraparadigmatic
-  \item Morphosyntactically incongruent
-  \item Morphosyntactically congruent
+  \item Intraparadigmatic:
+  \begin{itemize}
+    \item 'тела (SG.GEN) vs. тел'а (PL.NOM)
+  \end{itemize}
+  \item Morphosyntactically incongruent:
+  \begin{itemize}
+    \item до'рога (NOUN) vs. дорог'а (ADJ)
+  \end{itemize}
+  \item Morphosyntactically congruent:
+  \begin{itemize}
+    \item 'замок (SG.NOM) vs. зам'ок (SG.NOM)
+  \end{itemize}
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{A baseline}
+%\begin{frame}{A baseline}
 % most freq. class baseline
 
-\end{frame}
+%\end{frame}
 
 % what POS tagging is not... tokenisation/multiwords
 
@@ -374,9 +434,9 @@ reindeer-catch-finish-{\sc pl3}
 % Approaches
 
 \begin{itemize}
-   \item \textbf{Rule-based}:
-   \item \textbf{HMM-based}:
-   \item \textbf{Averaged perceptron}:
+   \item \textbf{Rule-based} 
+   \item \textbf{HMM-based} 
+   \item \textbf{Averaged perceptron}
 \end{itemize}
 
 \end{frame}
@@ -946,33 +1006,33 @@ Exercise: Can we safely remove the dative reading?
 \end{columns}
 
 \end{frame}
-
-\begin{frame}{Rule application}
-
-
-\end{frame}
-
-\begin{frame}{Effort}
-
-% Trosterud: 
-% Huldén:
-% Tyers (Breton)
-% Tyers (Russian)
-% Voutilainen:
-
-\end{frame}
-
-\begin{frame}{Cost / benefit}
-
 %
-%% no need for annotated corpus
-%% more interesting than manually annotating a tonne of text
-
-% 
-%% problems with tagset changes
-
-
-\end{frame}
+%\begin{frame}{Rule application}
+%
+%
+%\end{frame}
+%
+%\begin{frame}{Effort}
+%
+%% Trosterud: 
+%% Huldén:
+%% Tyers (Breton)
+%% Tyers (Russian)
+%% Voutilainen:
+%
+%\end{frame}
+%
+%\begin{frame}{Cost / benefit}
+%
+%%
+%%% no need for annotated corpus
+%%% more interesting than manually annotating a tonne of text
+%
+%% 
+%%% problems with tagset changes
+%
+%
+%\end{frame}
 
 \begin{frame}{Examples}
 
@@ -1000,9 +1060,22 @@ Languages with constraint grammars:
 % generative model
 \begin{frame}
 
-% predict hidden states from observed states
-% hidden states = sequence of part of speech tags
-% observed states = ambiguity classes or surface forms
+
+Predict hidden states from observed events
+\begin{itemize}
+\item hidden states = sequence of part of speech tags
+\item observed events = ambiguity classes or surface forms
+\end{itemize}
+~\\
+\begin{center}
+{\Large $M = (A, B, \pi)$}
+\end{center}
+~\\
+\begin{itemize}
+  \item $A$ = transition probabilities
+  \item $B$ = emission probabilities
+  \item $\pi$ = initial probabilities
+\end{itemize}
 
 \end{frame}
 
@@ -1012,8 +1085,23 @@ Languages with constraint grammars:
 
 \begin{frame}{Visible events}
 
-% ambiguity classes
-% surface forms
+The visible events can be either:
+
+\begin{itemize}
+  \item \textbf{Surface forms:} In many traditional HMM-based taggers, the visible events are 
+    surface forms
+  \item \textbf{Ambiguity classes:} Generalisation over types of ambiguity e.g. NOUN/VERB, DET/PRON
+\end{itemize}
+
+Example:
+\begin{center}
+\scalebox{0.9}{
+\begin{tabular}{llllll}
+Surface forms: &   This &  is &  a &  test & .  \\
+Ambig. classes: & PRON/DET & VERB/AUX & DET & VERB/NOUN & PUNCT \\
+\end{tabular}
+}
+\end{center}
 
 \end{frame}
 
@@ -1023,20 +1111,20 @@ Languages with constraint grammars:
 
 \textbf{Analysed:} \\
 \begin{tabular}{ll}
-& Vino/NOUN/VERB a/ADP la/DET/PRON playa/NOUN ./PUNCT \\
-& Voy/VERB a/ADP la/DET/PRON casa/NOUN/VERB ./PUNCT \\
-& Bebe/VERB vino/NOUN/VERB en/ADP casa/NOUN/VERB ./PUNCT \\
-& La/DET/PRON casa/NOUN/VERB es/VERB grande/ADJ ./PUNCT \\
-& Es/VERB una/DET/PRON/VERB ciudad/NOUN grande/ADJ ./PUNCT \\
+& Vino/\textcolor{gray}{NOUN}/\textcolor{gray}{VERB} a/\textcolor{gray}{ADP} la/\textcolor{gray}{DET}/\textcolor{gray}{PRON} playa/\textcolor{gray}{NOUN} ./\textcolor{gray}{PUNCT} \\
+& Voy/\textcolor{gray}{VERB} a/\textcolor{gray}{ADP} la/\textcolor{gray}{DET}/\textcolor{gray}{PRON} casa/\textcolor{gray}{NOUN}/\textcolor{gray}{VERB} ./\textcolor{gray}{PUNCT} \\
+& Bebe/\textcolor{gray}{VERB} vino/\textcolor{gray}{NOUN}/\textcolor{gray}{VERB} en/\textcolor{gray}{ADP} casa/\textcolor{gray}{NOUN}/\textcolor{gray}{VERB} ./\textcolor{gray}{PUNCT} \\
+& La/\textcolor{gray}{DET}/\textcolor{gray}{PRON} casa/\textcolor{gray}{NOUN}/\textcolor{gray}{VERB} es/\textcolor{gray}{VERB} grande/\textcolor{gray}{ADJ} ./\textcolor{gray}{PUNCT} \\
+& Es/\textcolor{gray}{VERB} una/\textcolor{gray}{DET}/\textcolor{gray}{PRON}/\textcolor{gray}{VERB} ciudad/\textcolor{gray}{NOUN} grande/\textcolor{gray}{ADJ} ./\textcolor{gray}{PUNCT} \\
 \end{tabular} 
 
 \textbf{Tagged:} \\
 \begin{tabular}{ll}
-& Vino/VERB a/ADP la/DET playa/NOUN ./PUNCT \\
-& Voy/VERB a/ADP la/DET casa/NOUN ./PUNCT \\
-& Bebe/VERB vino/NOUN en/ADP casa/NOUN ./PUNCT \\
-& La/DET casa/NOUN es/VERB grande/ADJ ./PUNCT \\
-& Es/VERB una/DET ciudad/NOUN grande/ADJ ./PUNCT \\
+& Vino/\textcolor{gray}{VERB} a/\textcolor{gray}{ADP} la/\textcolor{gray}{DET} playa/\textcolor{gray}{NOUN} ./\textcolor{gray}{PUNCT} \\
+& Voy/\textcolor{gray}{VERB} a/\textcolor{gray}{ADP} la/\textcolor{gray}{DET} casa/\textcolor{gray}{NOUN} ./\textcolor{gray}{PUNCT} \\
+& Bebe/\textcolor{gray}{VERB} vino/\textcolor{gray}{NOUN} en/\textcolor{gray}{ADP} casa/\textcolor{gray}{NOUN} ./\textcolor{gray}{PUNCT} \\
+& La/\textcolor{gray}{DET} casa/\textcolor{gray}{NOUN} es/\textcolor{gray}{VERB} grande/\textcolor{gray}{ADJ} ./\textcolor{gray}{PUNCT} \\
+& Es/\textcolor{gray}{VERB} una/\textcolor{gray}{DET} ciudad/\textcolor{gray}{NOUN} grande/\textcolor{gray}{ADJ} ./\textcolor{gray}{PUNCT} \\
 \end{tabular}
 
 \end{frame}
@@ -1618,24 +1706,43 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{frame}
+
+\centering
+{\LARGE {\bf Discussion} }
+
+\end{frame}
+
 \begin{frame}{Comparison of approaches}
 
 
+\begin{onlyenv}<1>
+\begin{center}
 \begin{tabular}{lll}
    & \textbf{+} & \textbf{-}  \\
-CG & Start from scratch & Tagset not learnt \\
-HMM & Model distribution & Hard to incorporate feats \\
-Perceptron & Easy to incorporate feats & No $n$-best  \\
+\textbf{CG} & Start from scratch & Tagset not learnt \\
+\textbf{HMM} & Model distribution & Hard to incorporate feats \\
+\textbf{Perceptron} & Easy to incorporate feats & No $n$-best  \\
 \end{tabular}
+\end{center}
 % CG -- can start from scratch, but tagsets can be a problem, no explicit lexical info
 % HMM -- can make n-best list
 % perceptron -- more robust, easier to add features to
 
+All techniques can reach 97\% token accuracy.
+\begin{itemize}
+  \item Great ... but 57\% full-sentence accuracy.
+\end{itemize}
+\end{onlyenv}
+\begin{onlyenv}<2>
 % all taggers report around 97% accuracy [refs]
 % getting beyond 97% ?
 %% Chris Manning (2011) "Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?"
 
-%\includegraphics[width=\textwidth]{images/manning-errors.png}
+\includegraphics[width=\textwidth]{images/manning-errors.png}
+~\\
+Chris Manning (2011) ``Part-of-Speech Tagging from 97\% to 100\%: Is It Time for Some Linguistics?"
+\end{onlyenv}
 
 %% At first glance, current part-of-speech taggers work rapidly and reliably, with
 %per-token accuracies of slightly over 97% [1–4]. Looked at more carefully, the
@@ -1654,12 +1761,25 @@ Perceptron & Easy to incorporate feats & No $n$-best  \\
 
 % How much data ?
 
-\begin{frame}{How much data ?}
+\begin{frame}{How much time and effort ?}
 
-\end{frame}
+\begin{center}
+ Annotation time vs. rule-writing time
+\end{center}
 
-\begin{frame}{Time comparison}
+\begin{itemize}
+   \item Hand annotation: 8000--10000 tokens/month 
+   \begin{itemize}
+     \item 50--100k tokens = 6--12 months
+   \end{itemize}
+   \item Rule-based:
+   \begin{itemize}
+    \item  Morphological analyser: 3--6 months
+    \item  Constraint grammar: 3--6 months
+   \end{itemize}
+\end{itemize}
 
+Approaching a new language, depends on what you like doing more.
 % annotation time vs. rule-writing time
 
 % Huldén 20 hours / 148 rules / 113 generic, 35 for wordforms [working from a devel. corpus]
