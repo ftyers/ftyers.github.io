@@ -1797,11 +1797,14 @@ Given the amount of unambiguous words:
 
 \begin{onlyenv}<1>
 \begin{center}
-\begin{tabular}{lll}
-   & \textbf{+} & \textbf{-}  \\
+\begin{tabular}{|l|c|c|}
+ \hline
+   & {\Large \textbf{+}} & {\Large \textbf{-}}  \\
+ \hline
 \textbf{CG} & Start from scratch & Tagset not learnt \\
 \textbf{HMM} & Model distribution & Hard to incorporate feats \\
 \textbf{Perceptron} & Easy to incorporate feats & No $n$-best  \\
+ \hline
 \end{tabular}
 \end{center}
 % CG -- can start from scratch, but tagsets can be a problem, no explicit lexical info
