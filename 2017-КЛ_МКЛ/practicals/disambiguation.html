@@ -34,7 +34,8 @@ $ cat UD_Russian-SynTagRus/*.conllu | python3 ud-scripts/conllu-analyser.py -t r
 And you can analyse new sentences as follows:
 </p>
 <pre>
-$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." | python3 ud-scripts/conllu-analyser.py ru-analyser.tsv 
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |\
+  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv 
 "&lt;Однако&gt;"
 	"однако" ADV Degree=Pos
 "&lt;стиль&gt;"
@@ -117,7 +118,8 @@ REMOVE DET IF (1C PUNCT) ;
 Now you can run the rules on your input as follows:
 </p>
 <pre>
-$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." | python3 ~/source/ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |\
+  python3 ~/source/ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 
 "&lt;Однако&gt;"
 	"однако" ADV Degree=Pos
 "&lt;стиль&gt;"
