@@ -94,9 +94,84 @@ $ wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
 $ sudo apt-get install cg3
 </pre>
 <p>
-If you're using some non-Linux operating system you can try the <a href="https://visl.sdu.dk/cg3ide.html">CG3 IDE</a>.
+<b>Note:</b> If you're using some non-Linux operating system you can try the <a href="https://visl.sdu.dk/cg3ide.html">CG3 IDE</a>.
 </p>
+<p>
+Next we can try to write a simple rule:
+<ul>
+<li>Remove <tt>DET</tt> if the following token is <tt>PUNCT</tt>
+</ul>
+Make a new file called <tt>rus.cg3</tt> and paste the following in:
+</p>
+<pre>
+DELIMITERS = "." ;
 
+LIST DET = DET ;
+LIST PUNCT = PUNCT ;
+
+SECTION
+
+REMOVE DET IF (1C PUNCT) ;
+</pre>
+<p>
+Now you can run the rules on your input as follows:
+</p>
+<pre>
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." | python3 ~/source/ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 
+"&lt;Однако&gt;"
+	"однако" ADV Degree=Pos
+"&lt;стиль&gt;"
+	"стиль" NOUN Animacy=Inan Case=Nom Gender=Masc Number=Sing
+	"стиль" NOUN Animacy=Inan Case=Acc Gender=Masc Number=Sing
+"&lt;работы&gt;"
+	"работа" NOUN Animacy=Inan Case=Gen Gender=Fem Number=Sing
+	"работа" NOUN Animacy=Inan Case=Nom Gender=Fem Number=Plur
+	"работа" NOUN Animacy=Inan Case=Acc Gender=Fem Number=Plur
+"&lt;Семена&gt;"
+	"семен" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+	"семен" PROPN Animacy=Anim Case=Acc Gender=Masc Number=Sing
+"&lt;Еремеевича&gt;"
+	"еремеевич" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+"&lt;заключался&gt;"
+	"заключаться" VERB Aspect=Imp Gender=Masc Mood=Ind Number=Sing Tense=Past VerbForm=Fin Voice=Mid
+"&lt;в&gt;"
+	"в" ADP
+"&lt;том&gt;"
+	"то" PRON Animacy=Inan Case=Loc Gender=Neut Number=Sing
+;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:6
+;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:6
+"&lt;,&gt;"
+	"," PUNCT
+"&lt;чтобы&gt;"
+	"чтобы" SCONJ Mood=Cnd
+"&lt;принимать&gt;"
+	"принимать" VERB Aspect=Imp VerbForm=Inf Voice=Act
+"&lt;всех&gt;"
+	"весь" DET Case=Gen Number=Plur
+	"весь" DET Case=Loc Number=Plur
+	"весь" DET Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Gen Number=Plur
+"&lt;желающих&gt;"
+	"желать" VERB Aspect=Imp Case=Gen Number=Plur Tense=Pres VerbForm=Part Voice=Act
+"&lt;и&gt;"
+	"и" CCONJ
+	"и" PART
+"&lt;лично&gt;"
+	"лично" ADV Degree=Pos
+"&lt;вникать&gt;"
+	"*вникать"
+"&lt;в&gt;"
+	"в" ADP
+"&lt;дело&gt;"
+	"дело" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing
+	"дело" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing
+"&lt;.&gt;"
+	"." PUNCT
+</pre>
+<p>
+Note how the rule has applied (search for <tt>REMOVE:6</tt>).
+</p>
 
 <h2>Improve perceptron tagger</h2>
 <p>
