@@ -46,7 +46,16 @@
 % Orientation
 % Tagsets 
 
-
+\begin{itemize}
+ \item Introduction, tagsets
+ \item Approaches
+ \begin{itemize}
+    \item Rule-based
+    \item HMM-based
+    \item Averaged perceptron
+ \end{itemize}
+ \item Discussion
+\end{itemize}
 
 \end{frame}
 
@@ -70,9 +79,13 @@
 % aside from being a stage in the pipeline, what can use POS tagging directly ? 
 
 \begin{itemize}
-  \item \textbf{Speech synthesis}: How to pronounce a word in context, e.g. 
-  \item \textbf{Disambiguation of meaning}:
+  \item \textbf{Speech synthesis}: How to pronounce a word in context, e.g. \emph{conduct}
+  \begin{itemize}
+     \item NOUN: /'kondukt/, VERB /kon'dukt/
+  \end{itemize}
+  \item \textbf{Disambiguation of meaning}: 
   \item \textbf{Features for parsing}:
+  \item \textbf{Corpus linguistics}:
 
 \end{itemize}
 
@@ -112,7 +125,50 @@
 
 \end{frame}
 
+\begin{frame}
+\centering
+\includegraphics[width=0.7\textwidth]{images/language-nerd-2x.png}
+\end{frame}
+
 \begin{frame}{What is a tagset?}
+
+\begin{itemize}
+  \item Lemmas generalise over sets of inflectional forms
+  \item Part-of-speech tags generalise over sets of lexemes/lemmas that have 
+    similar syntactic distribution
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Tagset design}
+
+\begin{columns}
+
+\begin{column}{0.6\textwidth}
+
+\textbf{Examples:}
+\begin{itemize}
+  \item Splitting: Participles from adjectives 
+  \item Merging:  One class for all nominals
+\end{itemize}
+\textbf{Questions:}
+\begin{itemize}
+  \item Can the ambiguity be resolved? 
+  \item Does the distinction help downstream applications?
+\end{itemize}
+
+\end{column}
+\begin{column}{0.4\textwidth}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{images/tagset.eps}
+\end{center}
+
+\end{column}
+\end{columns}
+
+% Ambiguity
+% 
+% Morphological complexity % Language complexity tagging eng vs. chukchi
 
 \end{frame}
 
@@ -235,38 +291,6 @@ gottiid	[goddi] N Pl Acc \\
 \end{frame}
 
 % Tagset considerations morph<-->syntax
-
-\begin{frame}{Tagset design}
-
-\begin{columns}
-
-\begin{column}{0.6\textwidth}
-
-\textbf{Examples:}
-\begin{itemize}
-  \item Splitting: Participles from adjectives 
-  \item Merging:  One class for all nominals
-\end{itemize}
-\textbf{Questions:}
-\begin{itemize}
-  \item Can the ambiguity be resolved? 
-  \item Does the distinction help downstream applications?
-\end{itemize}
-
-\end{column}
-\begin{column}{0.4\textwidth}
-\begin{center}
-\includegraphics[width=0.7\textwidth]{images/tagset.eps}
-\end{center}
-
-\end{column}
-\end{columns}
-
-% Ambiguity
-% 
-% Morphological complexity % Language complexity tagging eng vs. chukchi
-
-\end{frame}
 
 \begin{frame}
 
@@ -1133,6 +1157,12 @@ VERB            & 0.8  & 0    & 0    & 0 &  0 & 0 & 0 \\
 \includegraphics[width=\textwidth]{images/viterbi-2.eps}
 \end{onlyenv}
 
+\begin{itemize}
+  \item Dynamic programming algorithm
+  \item Find the most likely sequence of hidden states given 
+    observed sequence
+  \item e.g. Find POS tag sequence given words or ambiguity classes
+\end{itemize}
 
 \end{frame}
 
@@ -1637,6 +1667,13 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 \begin{frame}{Tagger combination}
 
 
+\includegraphics[width=0.49\textwidth]{images/mans-huldren-tagger-chart.png}
+\includegraphics[width=0.49\textwidth]{images/fran-rob-tagger-graph.png}
+
+\begin{itemize}
+  \item Voting systems 
+  \item Combine systems that make complementary errors
+\end{itemize}
 
 \end{frame}
 
@@ -1645,12 +1682,20 @@ $i-2$ & $i-1$ & $i$ & $i+1$ & $i+2$ & $i+3$ \\
 % some state of the art systems
 
 % specifically for russian:
-% pymorphy
+%pymorphy2, pymystem3?
 
-% trainable:
-% hunpos
-% udpipe
-% marmot
+\begin{Russian:}
+\begin{itemize}
+  \item {\tt pymorphy2}
+  \item {\tt mystem3}
+\end{itemize}
+
+\begin{Trainable:}
+\begin{itemize}
+  \item HunPos (HMM)
+  \item UDPipe/MorphoDiTa (Av. Perceptron)
+  \item MarMot (CRF)
+\end{itemize}
 
 
 \end{frame}

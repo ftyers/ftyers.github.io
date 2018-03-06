@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Practical: Morphological disambiguation</title>
+</head>
+<body>
+
+<h2>Tagger comparison</h2>
+
+<h2>Constraint Grammar</h2>
+
+<h2>Improve perceptron tagger</h2>
+
+<pre>
+$ git clone https://github.com/ftyers/conllu-perceptron-tagger.git
+$ git clone https://github.com/UniversalDependencies/UD_Portuguese.git
+$ wget http://universaldependencies.org/conll17/eval.zip
+$ cd conllu-perceptron-tagger
+</pre>
+
+<pre>
+$ cat ../UD_Portuguese/pt-ud-train.conllu | python3 tagger.py -t pt-ud.dat
+222070
+Iter 0: 200635/222070=90.3476381321205
+222063
+Iter 1: 209720/222070=94.43869050299455
+222033
+Iter 2: 212814/222070=95.83194488224433
+222068
+Iter 3: 214833/222070=96.74111766560094
+222021
+Iter 4: 215973/222070=97.25446931147836
+</pre>
+<p>
+Now you can run the tagger 
+</p>
+<pre>
+$ cat ../UD_Portuguese/pt-ud-test.conllu | python3 tagger.py pt-ud.dat &gt; pt-ud-test.out
+</pre>
+
+<p>
+In the code, feature extraction is done by <tt>_get_features()</tt> in <tt>tagger.py</tt>. Try
+playing around with this and see if you can improve the performance. 
+</p>
+</body>
+
+</html>
