@@ -1,0 +1,73 @@
+<html>
+<head><title>Installing and training DeepSpeech</title>
+</head>
+<body>
+
+<h3>Download DeepSpeech code:</h3>
+
+<pre>
+$ git clone --depth 1 https://github.com/mozilla/DeepSpeech.git
+</pre>
+
+<h3>Setup a virtualenv:</h3>
+
+<pre>
+$ virtualenv -p python3 $HOME/tmp/deepspeech-venv/
+
+$ source $HOME/tmp/deepspeech-venv/bin/activate
+</pre>
+
+<h3>Install DeepSpeech python bindings:</h3>
+<pre>
+$ pip3 install deepspeech
+$ cd native_client 
+$ python3 ../util/taskcluster.py --target .
+$ cd ..
+</pre>
+
+<h3>Install a tonne of requirements for training</h3>
+<pre>
+$ pip3 install -r requirements.txt
+</pre>
+
+
+<h3>Install kenlm:</h3>
+<pre>
+$ wget -O - https://kheafield.com/code/kenlm.tar.gz |tar xz
+$ sudo apt-get install libboost-program-options1.63-dev libboost-system1.63-dev libboost-thread1.63-dev libboost-test1.63-dev libeigen3-dev
+$ mkdir kenlm/build
+$ cd kenlm/build
+$ cmake ..
+$ make -j2
+</pre>
+
+<h3>Setup the data</h3>
+<pre>
+$ mkdir data/chv_digits
+$ python3 bin/import_digits.py ~/source/Turkic_TTS/corpus/chv/speakers/digits/ chv
+$ mv vocab.txt alphabet.txt chv_* data/chv_digits
+$ cd data/chv_digits
+$ cat vocab.txt | ~/source/kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa vocab.arpa
+$ ~/source/kenlm/build/bin/build_binary -T -s vocab.arpa lm.binary
+$ ../../native_client/generate_trie alphabet.txt lm.binary vocab.txt trie
+$ wc -l *
+   23 alphabet.txt
+    7 chv_digits.dev.csv
+    7 chv_digits.test.csv
+   49 chv_digits.train.csv
+   31 lm.binary
+ 1004 trie
+  557 vocab.arpa
+   48 vocab.txt
+ 1726 total
+</pre>
+
+<h3> Train the model </h3>
+<pre>
+$ python3 DeepSpeech.py --train_files data/chv_digits/chv_digits.train.csv --dev_files data/chv_digits/chv_digits.dev.csv --test_files data/chv_digits/chv_digits.test.csv --alphabet_config_path data/chv_digits/alphabet.txt --lm_binary_path data/chv_digits/lm.binary --lm_trie_path data/chv_digits/trie 
+</pre>
+
+</body>
+
+
+</html>
