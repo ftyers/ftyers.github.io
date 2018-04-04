@@ -66,8 +66,65 @@ $ mkdir models
 
 <h3> Train the model </h3>
 <pre>
-$ python3 DeepSpeech.py --train_files data/chv_digits/chv_digits.train.csv --dev_files data/chv_digits/chv_digits.dev.csv --test_files data/chv_digits/chv_digits.test.csv --alphabet_config_path data/chv_digits/alphabet.txt --lm_binary_path data/chv_digits/lm.binary --lm_trie_path data/chv_digits/trie --validation_step 1 --train_batch_size 20 --test_batch_size 5 --dev_batch_size 15 --early_stop True --export_dir models/digits --epoch 100 --report_count 100 --n_hidden 494 --learning_rate 0.00095  --dropout_rate 0.22 --max_to_keep 2 --log_level 0 --lm_weight 5 --word_count_weight 1.0 --valid_word_count_weight 1.0 
+$ time python3 DeepSpeech.py --train_files data/chv_digits/chv_digits.train.csv --dev_files data/chv_digits/chv_digits.dev.csv --test_files data/chv_digits/chv_digits.test.csv --alphabet_config_path data/chv_digits/alphabet.txt --lm_binary_path data/chv_digits/lm.binary --lm_trie_path data/chv_digits/trie --validation_step 1 --train_batch_size 20 --test_batch_size 5 --dev_batch_size 15 --early_stop True --export_dir models/digits --epoch 100 --report_count 100 --n_hidden 494 --learning_rate 0.00095  --dropout_rate 0.22 --max_to_keep 2 --log_level 0 --lm_weight 5 --word_count_weight 1.0 --valid_word_count_weight 1.0 
 </pre>
+
+<h3> Troubleshooting </h3>
+
+<h4> Check your data </h4>
+
+Amplitude difference is too low:
+<pre>
+$ sox 0001.wav -n stat
+Samples read:            610816
+Length (seconds):     13.850703
+Scaled by:         2147483647.0
+Maximum amplitude:     0.037994
+Minimum amplitude:    -0.048950
+Midline amplitude:    -0.005478
+Mean    norm:          0.002312
+Mean    amplitude:     0.000000
+RMS     amplitude:     0.005450
+Maximum delta:         0.010834
+Minimum delta:         0.000000
+Mean    delta:         0.000222
+RMS     delta:         0.000594
+Rough   frequency:          765
+Volume adjustment:       20.429
+</pre>
+
+Amplitude difference is ok:
+<pre>
+$ sox 0001.wav -n stat
+Samples read:            610816
+Length (seconds):     13.850703
+Scaled by:         2147483647.0
+Maximum amplitude:     0.785187
+Minimum amplitude:    -1.000000
+Midline amplitude:    -0.107407
+Mean    norm:          0.047779
+Mean    amplitude:     0.000002
+RMS     amplitude:     0.112630
+Maximum delta:         0.223907
+Minimum delta:         0.000000
+Mean    delta:         0.004599
+RMS     delta:         0.012279
+Rough   frequency:          765
+Volume adjustment:        1.000
+</pre>
+
+<!--
+
+<elpimous_robot> sox /home/nvidia/DeepSpeech/data/chv_digits/0240.wav /home/nvidia/DeepSpeech/test_wav.wav gain -n 0.1
+<elpimous_robot> avec un gain de 0.1, meilleure courbe d'amplitude
+
+<spectie> et le delta doit être ?
+<elpimous_robot> amplitude moyenne +- 0.5
+<elpimous_robot> ici, il y a 0.99, du a la 1ere wave haute
+<elpimous_robot> mais cette config me parait bonne !
+-->
+
+
 
 </body>
 
