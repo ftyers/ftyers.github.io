@@ -73,6 +73,9 @@ $ time python3 DeepSpeech.py --train_files data/chv_digits/chv_digits.train.csv 
 
 <h4> Check your data </h4>
 
+Sometimes your data might be too quiet, or there might be too little amplitude difference between the 
+speech parts and the silence parts. You can check this using <tt>sox</tt>:
+
 Amplitude difference is too low:
 <pre>
 $ sox 0001.wav -n stat
@@ -93,7 +96,9 @@ Rough   frequency:          765
 Volume adjustment:       20.429
 </pre>
 
-Amplitude difference is ok:
+Note the small difference between the maximum amplitude and the minimum.
+
+In this example the amplitude difference is ok:
 <pre>
 $ sox 0001.wav -n stat
 Samples read:            610816
@@ -112,6 +117,8 @@ RMS     delta:         0.012279
 Rough   frequency:          765
 Volume adjustment:        1.000
 </pre>
+
+You can increase the gain using <tt>sox 0001.wav gain -n 0.1</tt>.
 
 <!--
 
