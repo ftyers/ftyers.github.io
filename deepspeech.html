@@ -6,7 +6,7 @@
 <h3>Download DeepSpeech code:</h3>
 
 <pre>
-$ git clone ##depth 1 https://github.com/mozilla/DeepSpeech.git
+$ git clone --depth 1 https://github.com/mozilla/DeepSpeech.git
 </pre>
 
 <h3>Setup a virtualenv:</h3>
@@ -21,7 +21,7 @@ $ source $HOME/tmp/deepspeech-venv/bin/activate
 <pre>
 $ pip3 install deepspeech
 $ cd native_client 
-$ python3 ../util/taskcluster.py ##target .
+$ python3 ../util/taskcluster.py --target .
 $ cd ..
 </pre>
 
@@ -47,7 +47,7 @@ $ mkdir data/chv_digits
 $ python3 bin/import_digits.py ~/source/Turkic_TTS/corpus/chv/speakers/digits/ chv
 $ mv vocab.txt alphabet.txt chv_* data/chv_digits
 $ cd data/chv_digits
-$ cat vocab.txt | ~/source/kenlm/build/bin/lmplz ##discount_fallback -o 3 ##arpa vocab.arpa
+$ cat vocab.txt | ~/source/kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa vocab.arpa
 $ ~/source/kenlm/build/bin/build_binary -T -s vocab.arpa lm.binary
 $ ../../native_client/generate_trie alphabet.txt lm.binary vocab.txt trie
 $ wc -l *
