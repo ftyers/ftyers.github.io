@@ -47,28 +47,25 @@ $ cd ../../
 <h3>Setup the data</h3>
 <!-- $ python3 bin/import_digits.py ~/source/Turkic_TTS/corpus/chv/speakers/digits/ chv -->
 <pre>
-$ mkdir data/chv_digits
-
+$ cd data
+$ wget http://ilazki.thinkgeek.co.uk/~spectre/chv_digits.tar.gz
+$ tar -xzvf chv_digits.tar.gz
+$ cd chv_digits
+$ mv deepspeech/* .
 </pre>
 
-Now get some Chuvash <a href="http://ilazki.thinkgeek.co.uk/~spectre/chv_digits.tar.gz">Chuvash data</a>.
+Now edit the <code>.csv</code> files and put the right paths.
+
+If you want to set up the language model yourself you can use:
+<pre>
+$ cat vocab.txt | ~/source/kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa vocab.arpa
+$ ../../kenlm/build/bin/build_binary -T -s vocab.arpa lm.binary
+$ ../../native_client/generate_trie alphabet.txt lm.binary vocab.txt trie
+</pre>
+
+Otherwise continue:
 
 <pre>
-$ mv vocab.txt alphabet.txt chv_* data/chv_digits
-$ cd data/chv_digits
-$ cat vocab.txt | ~/source/kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa vocab.arpa
-$ ~/source/kenlm/build/bin/build_binary -T -s vocab.arpa lm.binary
-$ ../../native_client/generate_trie alphabet.txt lm.binary vocab.txt trie
-$ wc -l *
-   23 alphabet.txt
-    7 chv_digits.dev.csv
-    7 chv_digits.test.csv
-   49 chv_digits.train.csv
-   31 lm.binary
- 1004 trie
-  557 vocab.arpa
-   48 vocab.txt
- 1726 total
 $ cd ../../
 $ mkdir models
 </pre>
