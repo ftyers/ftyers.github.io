@@ -41,12 +41,19 @@ $ mkdir kenlm/build
 $ cd kenlm/build
 $ cmake ..
 $ make -j2
+$ cd ../../
 </pre>
 
 <h3>Setup the data</h3>
+<!-- $ python3 bin/import_digits.py ~/source/Turkic_TTS/corpus/chv/speakers/digits/ chv -->
 <pre>
 $ mkdir data/chv_digits
-$ python3 bin/import_digits.py ~/source/Turkic_TTS/corpus/chv/speakers/digits/ chv
+
+</pre>
+
+Now get some Chuvash <a href="http://ilazki.thinkgeek.co.uk/~spectre/chv_digits.tar.gz">Chuvash data</a>.
+
+<pre>
 $ mv vocab.txt alphabet.txt chv_* data/chv_digits
 $ cd data/chv_digits
 $ cat vocab.txt | ~/source/kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa vocab.arpa
