@@ -37,6 +37,13 @@ $ pip3 install -r requirements.txt
 <pre>
 $ wget -O - https://kheafield.com/code/kenlm.tar.gz |tar xz
 $ sudo apt-get install libboost-program-options1.63-dev libboost-system1.63-dev libboost-thread1.63-dev libboost-test1.63-dev libeigen3-dev
+</pre>
+
+If version 1.63 of all the boost stuff isn't available on your system, try 1.58.
+
+Then: 
+
+<pre>
 $ mkdir kenlm/build
 $ cd kenlm/build
 $ cmake ..
