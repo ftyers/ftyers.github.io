@@ -68,9 +68,10 @@ $ wget http://ilazki.thinkgeek.co.uk/~spectre/chv_digits.tar.gz
 $ tar -xzvf chv_digits.tar.gz
 $ cd chv_digits
 $ mv deepspeech/* .
-</pre>
 
-Now edit the <code>.csv</code> files and put the right paths.
+# rename the paths to the audio files
+$ sed -Ei 's/\/frans\/home\/path\//\/YOUR\/ABS\/PATH\/g' *.csv
+</pre>
 
 If you want to set up the language model yourself you can use:
 <pre>
