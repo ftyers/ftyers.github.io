@@ -11,13 +11,13 @@
 <center>
 <table>
 <tr><td>Number of people:</td><td>  <input type="range" min="1" max="100" value="1" class="slider" id="folk"> </td><td> <span id="n_folk"/></td></tr>
-<tr><td>Minutes/day: </td><td> <input type="range" min="0" max="59" value="0" step="5" class="slider" id="mins"> </td><td> <span id="n_mins"/></td></tr>
+<tr><td>Minutes/day: </td><td> <input type="range" min="0" max="59" value="0" step="5" class="slider" id="mins"> </td><td> <span id="n_mins"></span> (<span id="n_recordings"></span> clips)</td></tr>
 <tr><td>Number of months: </td><td> <input type="range" min="1" max="12" value="1" class="slider" id="months"> </td><td> <span id="n_months"/></td></tr>
 </table>
 </center>
 <br/>
 <center>
-<span id="g_folk"/> <span id="g_mins"/> <span id="g_months"/>
+<span id="g_folk"></span> <span id="g_mins"></span> <span id="g_months"></span>
 </center>
 
 <script>
@@ -49,7 +49,7 @@ var d_mins = {
 30:"",
 35:"",
 40:"",
-45:"",
+45:"half a football match",
 50:"",
 55:"",
 60:"",
@@ -61,7 +61,7 @@ var d_months = {
 4:"",
 5:"",
 6:"",
-7:"the time it takes to build a house",
+7:"for the time it takes to build a house",
 8:"",
 9:"",
 10:"",
@@ -80,6 +80,7 @@ var months_slider = document.getElementById("months");
 var folk_output = document.getElementById("n_folk");
 var mins_output = document.getElementById("n_mins");
 var months_output = document.getElementById("n_months");
+var recordings_output = document.getElementById("n_recordings");
 
 var folk_group = document.getElementById("g_folk");
 var mins_group = document.getElementById("g_mins");
@@ -100,16 +101,18 @@ folk_slider.oninput = function() {
 	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
 
 	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+	recordings_output.innerHTML = 10 * CURRENT_MINS;
 } 
 mins_slider.oninput = function() { 
 	CURRENT_MINS = parseInt(this.value);
-	if(CURRENT_MINS == 0) { CURRENT_MINS = 1 } 
+	if(CURRENT_MINS == 0) { CURRENT_MINS = 1; } 
 	mins_output.innerHTML = CURRENT_MINS ; 
 	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
 	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
 	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
 
 	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+	recordings_output.innerHTML = 10 * CURRENT_MINS;
 } 
  
 months_slider.oninput = function() { 
@@ -120,6 +123,7 @@ months_slider.oninput = function() {
 	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
 
 	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+	recordings_output.innerHTML = 10 * CURRENT_MINS;
 } 
 
 
