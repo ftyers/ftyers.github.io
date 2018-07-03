@@ -5,7 +5,7 @@
 </head>
 <body>
 <center>
-<span style="font-size: 150%" id="g_hours"/>
+<span style="font-size: 150%" id="g_hours"></span> 
 </center>
 <br/>
 <center>
@@ -44,12 +44,12 @@ var d_mins = {
 5:"brushing teeth",
 10:"",
 15:"",
-20:"",
-25:"a typical commute",
-30:"",
+20:"reciting the rosary",
+25:"on a typical commute",
+30:"getting a haircut",
 35:"",
 40:"",
-45:"half a football match",
+45:"playing half a football match",
 50:"",
 55:"",
 60:"",
@@ -100,7 +100,7 @@ folk_slider.oninput = function() {
 	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
 	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
 
-	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours of training data";
 	recordings_output.innerHTML = 10 * CURRENT_MINS;
 } 
 mins_slider.oninput = function() { 
@@ -111,7 +111,7 @@ mins_slider.oninput = function() {
 	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
 	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
 
-	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours of training data";
 	recordings_output.innerHTML = 10 * CURRENT_MINS;
 } 
  
@@ -122,7 +122,7 @@ months_slider.oninput = function() {
 	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
 	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
 
-	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours of training data";
 	recordings_output.innerHTML = 10 * CURRENT_MINS;
 } 
 
