@@ -1,0 +1,133 @@
+<html>
+
+<head>
+  <title>Sliders for speech</title>
+</head>
+<body>
+<center>
+<span style="font-size: 150%" id="g_hours"/>
+</center>
+<br/>
+<center>
+<table>
+<tr><td>Number of people:</td><td>  <input type="range" min="1" max="100" value="1" class="slider" id="folk"> </td><td> <span id="n_folk"/></td></tr>
+<tr><td>Minutes/day: </td><td> <input type="range" min="0" max="59" value="0" step="5" class="slider" id="mins"> </td><td> <span id="n_mins"/></td></tr>
+<tr><td>Number of months: </td><td> <input type="range" min="1" max="12" value="1" class="slider" id="months"> </td><td> <span id="n_months"/></td></tr>
+</table>
+</center>
+<br/>
+<center>
+<span id="g_folk"/> <span id="g_mins"/> <span id="g_months"/>
+</center>
+
+<script>
+
+var d_folk= {
+1:"You",
+2:"You and a mate",
+3:"A few friends",
+4:"A barbershop quartet",
+5:"A few friends",
+6:"The crew of the ISS", 
+7:"",
+8:"",
+9:"",
+10:"",
+11:"A football team",
+12:"The twelve disciples",
+15:"A rugby team",
+20:"The crew of a 747",
+56:"The crew of the HMS Bounty",
+};
+var d_mins = {
+1:"tying shoelaces",
+5:"brushing teeth",
+10:"",
+15:"",
+20:"",
+25:"a typical commute",
+30:"",
+35:"",
+40:"",
+45:"",
+50:"",
+55:"",
+60:"",
+};
+var d_months = {
+1:"",
+2:"",
+3:"",
+4:"",
+5:"",
+6:"",
+7:"the time it takes to build a house",
+8:"",
+9:"",
+10:"",
+11:"",
+12:"a year",
+}
+
+var CURRENT_FOLK = 1;
+var CURRENT_MINS = 1;
+var CURRENT_MONTHS = 1;
+
+var folk_slider = document.getElementById("folk");
+var mins_slider = document.getElementById("mins");
+var months_slider = document.getElementById("months");
+
+var folk_output = document.getElementById("n_folk");
+var mins_output = document.getElementById("n_mins");
+var months_output = document.getElementById("n_months");
+
+var folk_group = document.getElementById("g_folk");
+var mins_group = document.getElementById("g_mins");
+var months_group = document.getElementById("g_months");
+
+
+var hours_output = document.getElementById("g_hours");
+
+folk_output.innerHTML = folk_slider.value; // Display the default slider value
+mins_output.innerHTML = mins_slider.value; // Display the default slider value
+months_output.innerHTML = months_slider.value; // Display the default slider value
+
+folk_slider.oninput = function() { 
+	CURRENT_FOLK = this.value; 
+	folk_output.innerHTML = CURRENT_FOLK ;
+	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
+	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
+	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
+
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+} 
+mins_slider.oninput = function() { 
+	CURRENT_MINS = parseInt(this.value);
+	if(CURRENT_MINS == 0) { CURRENT_MINS = 1 } 
+	mins_output.innerHTML = CURRENT_MINS ; 
+	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
+	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
+	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
+
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+} 
+ 
+months_slider.oninput = function() { 
+	CURRENT_MONTHS = this.value;
+	months_output.innerHTML = CURRENT_MONTHS ; 
+	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
+	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
+	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
+
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours";
+} 
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
