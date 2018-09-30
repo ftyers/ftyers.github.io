@@ -8,11 +8,37 @@
 <p>
 Extract 50 paragraphs of text at random from a Wikipedia dump of a language of your choice and compare two sentence segmenters, 
 for example the <a href="https://github.com/diasks2/pragmatic_segmenter">pragmatic segmenter</a>
-and NLTK's <a href="https://kite.com/python/docs/nltk.tokenize.punkt">Punkt</a>.
+and NLTK's <a href="https://kite.com/python/docs/nltk.tokenize.punkt">Punkt</a>. You may also compare either of those against
+a segmenter that you have written yourself.
+</p>
+<p>
+You will need the file called <tt>-pages-articles.xml.bz2</tt>. You can find it on the <a href="http://dumps.wikimedia.org">WikiMedia
+dumps site</a>. To extract the text, you can use WikiExtractor. Then use the segmenters to segment the raw text output
+into sentences.
+</p>
+<p>
+The comparison should include: 
+<ul>
+  <li>Quantitative evaluation: Accuracy percentage (how many sentence boundaries were detected correctly)</li>
+  <li>Qualitative evaluation: What kind of mistakes does each segmenter make?</li>
+</ul>
 </p>
 
-
 <h2>Tokenisation</h2>
+<p>
+First download the UD treebank for Japanese (<tt>UD_Japanese-GSD</tt>) from the Universal dependencies GitHub repository.
+Then implement the left-to-right longest-match algorithm (also known as <tt>maxmatch</tt>). For a description of the 
+algorithm see Section 3.9.1 in Jurafsky and Martin. 
+</p>
+<p>
+<ul>
+<li>Extract a dictionary of segmented surface forms from <tt>UD_Japanese-GSD/ja_gsd-ud-train.conllu</tt>. The dictionary should contain 15,326 forms.</li>
+<li>Test how well the left-to-right longest match algorithm is capable of segmenting the text in <tt>UD_Japanese-GSD/ja_gsd-ud-test.conllu</tt>
+</ul>
+</p>
+<p>
+If you have time, test the algorithm with other treebanks for languages which do not use word separators, e.g. Chinese, Thai.
+</p>
 
 </body>
 </html>
