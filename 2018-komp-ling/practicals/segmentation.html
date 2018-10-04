@@ -23,6 +23,56 @@ The comparison should include:
   <li>Qualitative evaluation: What kind of mistakes does each segmenter make?</li>
 </ul>
 </p>
+<p>
+To install pragmatic_segmenter, do the following:
+
+<pre>
+$ git clone https://github.com/diasks2/pragmatic_segmenter
+</pre>
+
+This will check out the code.
+
+<pre>
+$ cd pragmatic_segmenter/lib
+</pre>
+
+You will need to put this code into a file, call it <tt>segmenter.rb</tt>:
+
+<pre>
+require 'pragmatic_segmenter'
+
+lang = "en"
+if ARGV[0]
+    lang=ARGV[0]
+end
+
+STDIN.each_with_index do |line, idx|
+    ps = PragmaticSegmenter::Segmenter.new(text: line, language: lang)
+    ps.segment
+    for i in ps.segment
+        print(i,"\n")
+    end
+end
+</pre>
+
+You can then run it like this:
+
+<pre>
+$ echo "This is a test.This is a test. This is a test." | ruby -I . segmenter.rb 
+This is a test.
+This is a test.
+This is a test.
+</pre>
+
+If you get errors like <tt>cannot load such file -- unicode (LoadError)</tt>, then you
+need to install <tt>ruby-unicode</tt>, on apt-based systems, you can use:
+
+<pre>
+$ sudo apt-get install ruby-unicode
+</pre>
+
+</p>
+
 
 <h2>Tokenisation</h2>
 <p>
