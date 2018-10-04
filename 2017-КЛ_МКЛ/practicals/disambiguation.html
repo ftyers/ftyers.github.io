@@ -9,6 +9,66 @@
 Choose three part of speech taggers of your choice (from wherever) and compare them on the same 
 data set. 
 </p>
+<p>
+For example, let's say we want to test the performance of <a href="https://github.com/ufal/udpipe">UDPipe</a> for Finnish:
+</p>
+<p>
+First checkout UDPipe:
+
+<pre>
+$ git clone https://github.com/ufal/udpipe
+$ cd udpipe/src
+$ make
+</pre>
+</p>
+<p>
+This will compile UDPipe, now put it (<tt>cp</tt>) somewhere in your <tt>$PATH</tt>, e.g. <tt>/usr/local/bin</tt>. You can
+find out what directories are in your <tt>$PATH</tt> by doing: <tt>echo $PATH</tt>.
+</p>
+Now download the <tt>UD_Finnish-TDT</tt> treebank. 
+
+<pre>
+$ git clone https://github.com/UniversalDependencies/UD_Finnish-TDT
+</pre>
+
+If you go into the directory <tt>UD_Finnish-TDT</tt>, you will be able to train UDPipe with the following command:
+<pre>
+$ cat fi_tdt-ud-train.conllu | udpipe --tokenizer=none --parser=none --train fi.udpipe
+</pre>
+
+This will produce a model file <tt>fi.udpipe</tt> which you can then use for tagging:
+
+<pre>
+$ cat fi_tdt-ud-test.conllu | udpipe --tag fi.udpipe &gt; fi_tdt-ud-test_output.conllu
+</pre>
+
+</p>
+
+<p>
+You can use the <a href="http://universaldependencies.org/conll17/eval.zip">CoNLL-2017 evaluation script</a> 
+to evaluate the tagger performance:
+
+<pre>
+$ python3 conll17_ud_eval.py --verbose fi_tdt-ud-test.conllu fi_tdt-ud-test_output.conllu
+</pre>
+
+You're interested in the row, <tt>UPOS</tt>.
+
+</p>
+
+<p>
+Now process the same dataset with some other tagger, for example:
+<ul>
+  <li><a href="https://code.google.com/archive/p/hunpos">hunpos</a> trigram HMM tagger</li>
+  <li><a href="http://cistern.cis.lmu.de/marmot/">MarMot</a> CRF-based tagger </li>
+   <ul>
+     <li><a href="https://github.com/ftyers/cistern">Fran's fork</a> supports CoNLL-U natively.</li>
+   </ul>
+  <li>There are also a number of taggers in NLTK.</li>
+</ul>
+</p>
+
+
 <h2>Constraint Grammar</h2>
 <p>
 The objective of this task is to write some constraint grammar rules to disambiguate a sentence. You can
