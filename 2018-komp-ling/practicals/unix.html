@@ -1,0 +1,39 @@
+<p>vim: tw=70 SPDX-License-Identifier: (CC-BY-SA-4.0 OR GFDL-1.3-or-later) Copyright 2018 Nick Howell</p>
+<h1 id="introduction">Introduction</h1>
+<p>These rough notes are designed to help you get a working set of unix tools and become familiar with them. If you already run GNU/Linux, you can skip to the next section.</p>
+<ol style="list-style-type: decimal">
+<li>GNU / BSD</li>
+</ol>
+<p>Modern GNU (most Linux distributions) tools all have good unicode support. BSD?</p>
+<p>You can install the vm too, if you like linux-inside-linux; install virtualbox.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Macintosh</li>
+</ol>
+<p>Apple ships tools, but they are not reasonable. Install homebrew by navigating to https://brew.sh and following their instructions. We will use the &quot;brew&quot; command to install modern tools.</p>
+<p>$ brew install gnu-sed icu4c # what others? $ echo 'export PATH=$PATH:/usr/local/opt/icu4c/bin' &gt;&gt; ~/.bash_profile (discuss path?)</p>
+<p>Or install the vm. Visit https://www.virtualbox.org</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Windows</li>
+</ol>
+<p>Who knows, install the vm. Visit https://www.virtualbox.org</p>
+<h1 id="get-started">Get Started</h1>
+<p>Follow the unicode adaptation of Unix for Poets:</p>
+<p>https://ftyers.github.io/079-osnov-programm/classes/01.html</p>
+<h1 id="appendix">Appendix</h1>
+<p>Old computers consisted of rooms filled with equipment. You interacted with them by typing on (what is essentially) a typewriter connected to a phoneline. The computers response would be printed after your command. The connection was very slow, so you would not be able to transfer much data. It was important that commands and responses were brief.</p>
+<p>This is still the most efficient way to perform many tasks on the computer; unfortunately many modern computers do not give you access to such interfaces, and use of these interfaces is limited to a small community, even amongst computer specialists.</p>
+<p>We will learn how to gain access to and use these interfaces in the context of natural language processing. If we do our job correctly, you will begin to hate mice, media, and javascript. (Probably we won't do our job correctly.)</p>
+<ol start="0" style="list-style-type: decimal">
+<li>What is a terminal</li>
+</ol>
+<p>A terminal (more properly, &quot;teletype emulator&quot;) is a piece of software which emulates the telephone-typewriter. It runs a program, called a &quot;shell&quot;; you type commands into the shell, and the shell executes them and displays their results.</p>
+<ol style="list-style-type: decimal">
+<li>Getting Help If you want to learn more about a command, you have a few options:</li>
+</ol>
+<p>$ man $command</p>
+<p>$ $command --help</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Matching Text</li>
+</ol>
+<p>Regex - basic, extended, perl, other</p>
+<p>$ man 3 regex $ man 7 regex $ man grep $ man pcrepattern</p>
