@@ -3,7 +3,7 @@ pages:
   stage: deploy
   script:
   - mkdir public
-  - cp -r * public/
+  - cp $(ls -d * | grep -v public) public/
   artifacts:
     paths:
     - public
