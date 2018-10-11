@@ -83,7 +83,12 @@ algorithm see Section 3.9.1 in Jurafsky and Martin.
 <p>
 <ul>
 <li>Extract a dictionary of segmented surface forms from <tt>UD_Japanese-GSD/ja_gsd-ud-train.conllu</tt>. The dictionary should contain 15,326 forms.</li>
-<li>Test how well the left-to-right longest match algorithm is capable of segmenting the text in <tt>UD_Japanese-GSD/ja_gsd-ud-test.conllu</tt>
+<li>Test how well the left-to-right longest match algorithm is capable of segmenting the text in <tt>UD_Japanese-GSD/ja_gsd-ud-test.conllu</tt> To perform the evaluation, you can use some Word Error Rate calculating code that you find online, e.g. 
+<ul>
+  <li><a href="https://github.com/zszyellow/WER-in-python">WER in python</a></li>
+  <li><a href="http://svn.code.sf.net/p/apertium/svn/trunk/apertium-eval-translator/">apertium-eval-translator</a></li>
+</ul> 
+</li>
 </ul>
 </p>
 <p>
