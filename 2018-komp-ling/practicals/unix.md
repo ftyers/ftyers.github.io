@@ -1,46 +1,96 @@
+<!--
 vim: tw=70
 SPDX-License-Identifier: (CC-BY-SA-4.0 OR GFDL-1.3-or-later)
 Copyright 2018 Nick Howell
+-->
+
+# Introduction to Unix Terminal
+
+<div style="column-width: 30em">
 
 Introduction
 ==========
 
 These rough notes are designed to help you get a working set of unix
-tools and become familiar with them. If you already run GNU/Linux, you
-can skip to the next section.
+tools and become familiar with them. If you already run GNU/Linux, or
+have a compatible set of command-line tools, you can skip to the next
+section.
+
+1. Unix-like
+
+   a) GNU
+
+      Modern GNU (most Linux distributions) make it easy to install a
+      friendly command-line environment. Make sure you have:
+      > bash, python, git, gcc, icu
 
 
-1. GNU / BSD
+   b) BSD
 
-Modern GNU (most Linux distributions) tools all have good unicode
-support. BSD?
+      Modern BSDs might not come with good unicode-supporting
+      utilities.  Make sure you have 1. a) tools for GNU systems,
+      plus the following GNU tools:
+      > coreutils, sed, awk
 
-You can install the vm too, if you like linux-inside-linux; install
-virtualbox.
+   c) Plan9
 
-2. Macintosh
+      Plan 9 distributions are few and far between; if you're running
+      plan9, you probably know what you need.
 
-Apple ships tools, but they are not reasonable. Install homebrew by
-navigating to https://brew.sh and following their instructions. We
-will use the "brew" command to install modern tools.
+2. Apple
 
-$ brew install gnu-sed icu4c # what others?
-$ echo 'export PATH=$PATH:/usr/local/opt/icu4c/bin' >> ~/.bash_profile
-(discuss path?)
+   Apple ships tools, but out of legal fear the tools they choose are
+   outdated.
 
-Or install the vm. Visit https://www.virtualbox.org
+   a) [homebrew][homebrew] is an unofficial Unix-style package
+      manager for OS X.
+
+      Install it, and use it to install the tools from 1. a) and 1.
+      b).  Keep in mind that homebrew, in order to avoid interfering
+      with Apple's tools, might install packages where they are
+      inaccessible. Read carefully the messages produced by `brew
+      install`.
+
+      *Note that we cannot provide support for homebrew in this
+      class.*
+
+   b) [virtualbox][virtualbox] is a virtual machine which will
+      allow you to install a copy of GNU/Linux that runs inside of
+      your computer.
+
+      Download an ISO for [Debian][debian] and use virtualbox to
+      install it.
+
+      *Note that support **will** be provided for virtualbox in this
+      class.*
 
 3. Windows
 
-Who knows, install the vm. Visit https://www.virtualbox.org
+   a) Windows 10 includes a Linux virtual machine; this should
+      work.
+
+      *Note that we cannot provide support for Windows 10 Linux in
+      this class.*
+
+   b) [Cygwin][cygwin] is a Unix-compatibility layer for Windows.
+
+      *Note that we cannot provide support for Cygwin in this
+      class.*
+
+   c) [virtualbox][virtualbox] is a virtual machine wihich will
+      allow you to install a copy of GNU/Linux that runs inside of
+      your computer.  Download an ISO for [Debian][debian] and use
+      virtualbox to install it.
+
+      *Note that support **will** be provided for virtualbox in this
+      class.*
+
 
 Get Started
 ===========
 
-Follow the unicode adaptation of Unix for Poets:
-
-https://ftyers.github.io/079-osnov-programm/classes/01.html
-
+See the appendix for some terminology, and a brief explanation of why
+a command-line environment is useful.
 
 Appendix
 ===========
@@ -62,28 +112,78 @@ context of natural language processing. If we do our job correctly,
 you will begin to hate mice, media, and javascript. (Probably we won't
 do our job correctly.)
 
-0. What is a terminal
+0. Glossary
 
-A terminal (more properly, "teletype emulator") is a piece of software
-which emulates the telephone-typewriter. It runs a program, called a
-"shell"; you type commands into the shell, and the shell executes them
-and displays their results.
+   a) Terminal: a piece of software that emulates the physical
+      telephone-typewriter. It runs a shell. Common terminals are "xfce
+      Terminal", "urxvt", "xterm", "konsole", "GNOME Terminal", "(Apple)
+      Terminal".
+
+   b) Shell: a call-response program that runs in the terminal. The shell
+      is a program that loops, prompting you to enter commands, and
+      displaying their output. Common shells are "bash", "zsh".
+
+      sample prompt:
+      ```
+      nlhowell@mercury ~ $ _
+      ```
+
+      Prompts typically include username, hostname (the name of the computer
+      the shell is running on), the current working directory, and the
+      end-of-prompt delimiter $.
+
+      sample prompt-command-output:
+      ```
+      nlhowell@mercury $ echo hi
+      hi
+      ```
+
+   c) Command: a program, or pipeline of programs, together with their
+      arguments.
+
+      command with program "echo" and argument "hi"
+      ```
+      $ echo hi
+      ```
+
+      pipeline of two subcommands: program "echo" with argument "hi", and
+      program "tr" with arguments "a-z" and "A-Z"; output of "echo" command
+      is fed as input to "tr" command
+      ```
+      $ echo hi | tr a-z A-Z
+      HI
+      ```
+
+   d) Pipeline: a chain of programs (with arguments) which are hooked
+      together, so that the output of a program is fed to the next program
+      in the chain.
+
+   e) Arguments: a small collection of configuration data provided to a
+      program on the commandline.
+
 
 1. Getting Help
-If you want to learn more about a command, you have a few options:
+   If you want to learn more about a command, you have a few options:
 
-$ man $command
+   ```
+   $ man $command
 
-$ $command --help
+   $ $command --help
+   ```
 
 2. Matching Text
 
-Regex - basic, extended, perl, other
+   Regex - basic, extended, perl, other
 
-$ man 3 regex
-$ man 7 regex
-$ man grep
-$ man pcrepattern
+   $ man 3 regex
+   $ man 7 regex
+   $ man grep
+   $ man pcrepattern
 
 
+[homebrew]:    https://brew.sh
+[debian]:      https://debian.org
+[virtualbox]:  https://virtualbox.org
+[cygwin]:      https://cygwin.org
 
+</div>
