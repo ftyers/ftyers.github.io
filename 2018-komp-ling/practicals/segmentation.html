@@ -2,28 +2,32 @@
 <head>
 <title>Practical: Segmentation and tokenisation</title>
 </head>
-<body>
+<body style="column-width: 40em">
 
 <h2>Segmentation</h2>
-<p>
-Extract 50 paragraphs of text at random from a Wikipedia dump of a language of your choice and compare two sentence segmenters, 
-for example the <a href="https://github.com/diasks2/pragmatic_segmenter">pragmatic segmenter</a>
-and NLTK's <a href="https://kite.com/python/docs/nltk.tokenize.punkt">Punkt</a>. You may also compare either of those against
-a segmenter that you have written yourself.
-</p>
+
+<p> Extract 50 paragraphs of text at random from a
+Wikipedia dump of a language of your choice and compare two sentence
+segmenters. You can choose any two segmenters you like (including segmenters
+you've written yourself!).  </p>
+
+<h3>Data</h3>
 <p>
 You will need the file called <tt>-pages-articles.xml.bz2</tt>. You can find it on the <a href="http://dumps.wikimedia.org">WikiMedia
-dumps site</a>. To extract the text, you can use WikiExtractor. Then use the segmenters to segment the raw text output
+dumps site</a>. For better service, use <a href="https://ftp.acc.umu.se/mirror/wikimedia.org/dumps/">this Swedish mirror</a>; choose an XXwiki folder, where XX is the 2-letter language code.
+</p>
+
+<p>To extract the text, you can use <a href="https://github.com/apertium/WikiExtractor">WikiExtractor</a>. Then use the segmenters to segment the raw text output
 into sentences.
 </p>
-<p>
-The comparison should include: 
+
+<h3>Suggested segmenters:</h3>
 <ul>
-  <li>Quantitative evaluation: Accuracy percentage (how many sentence boundaries were detected correctly)</li>
-  <li>Qualitative evaluation: What kind of mistakes does each segmenter make?</li>
-</ul>
-</p>
+<li>
+<a href="https://github.com/diasks2/pragmatic_segmenter">pragmatic segmenter</a>
+
 <p>
+Requires ruby, which you should install using your package manager.
 To install pragmatic_segmenter, do the following:
 
 <pre>
@@ -72,13 +76,47 @@ $ sudo apt-get install ruby-unicode
 </pre>
 
 </p>
+</li>
 
+<li>
+NLTK's <a href="https://kite.com/python/docs/nltk.tokenize.punkt">Punkt</a>
+
+<p>Install with your package manager; debian and ubuntu "sudo apt-get install python3-nltk".</p>
+
+<p>For example usage, see <a href="https://textminingonline.com/dive-into-nltk-part-ii-sentence-tokenize-and-word-tokenize">this tutorial</a> starting at "How to use sentence tokenize in NLTK?"
+</p></li></ul>
+
+<h3>Report</h3>
+<p>
+The comparison should include: 
+<ul>
+  <li>Brief description of each segmenter used.</li>
+  <li>Quantitative evaluation: Accuracy percentage (how many sentence boundaries were detected correctly)</li>
+  <li>Qualitative evaluation: What kind of mistakes does each segmenter make?</li>
+</ul>
+</p>
 
 <h2>Tokenisation</h2>
 <p>
 First download the UD treebank for Japanese (<tt>UD_Japanese-GSD</tt>) from the <a href="http://github.com/UniversalDependencies/">Universal dependencies</a> GitHub repository.
 Then implement the left-to-right longest-match algorithm (also known as <tt>maxmatch</tt>). For a description of the 
-algorithm see Section 3.9.1 in Jurafsky and Martin. 
+algorithm see Section 3.9.1 in Jurafsky and Martin.  
+</p>
+<p>
+Hints: you might write a python program which <ul> <li> reads sentences to tokenize from standard input</li> <li>reads the dictionary from a file specified as an argument;</li> <li> writes each word separated by newlines to standard output</li> </ul> so tokenization looks like:
+<pre>
+$ cat > dictionary-file
+sentence
+to
+tokenize
+^D
+
+$ echo 'sentence to tokenize.' | python maxmatch.py dictionary-file
+sentence
+to
+tokenize
+.
+</pre>
 </p>
 <p>
 <ul>
@@ -89,6 +127,17 @@ algorithm see Section 3.9.1 in Jurafsky and Martin.
 <p>
 If you have time, test the algorithm with other treebanks for languages which do not use word separators, e.g. Chinese, Thai.
 </p>
+
+<h3>
+Report
+</h3>
+
+Submit
+<ol>
+<li> your implementation of maxmatch,</li>
+<li> instructions on how to use it,</li>
+<li> brief description of its performance, with examples to support your findings</li>
+</ol>
 
 </body>
 </html>
