@@ -14,7 +14,7 @@
 
 #### 3. The text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?
 
-**Answer**: \
+**Answer**: 
 + machine learning tecniques require a large dataset in order to train a good enough segmentating model; although, even then the model would have a hard time catching all of the cases for segmentation.
 + rule-based, however, is easier to control as a person can observe the data to write a comprehensive set of rules for out-of-ordinary cases. 
 
