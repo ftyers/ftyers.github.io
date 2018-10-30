@@ -10,7 +10,7 @@
  "either/or" -> "either / or"\
  "1/2"       -> "1/2"
 
-**Answer**: sed -i -E "s/[a-z]+/[a-z]+/[a-z]+\s/\s[a-z]+" file.txt
+**Answer**: sed -e 's/\([a-z]\+\)\/\([a-z]\+\)/\1 \/ \2/g'
 
 #### 3. The text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?
 
