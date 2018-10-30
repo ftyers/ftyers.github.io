@@ -11,7 +11,7 @@
 	* Usually, machine learning algorithms have to be supplemented with rules concerning difficult cases.
 	* There will always be an error rate (even if it will be very small).
 
-4. "Не будет ли монеты квас купить" "Небу дет лимон е тыква скупить"
+4. "Не будет ли монеты квас купить" "Небу дет лимоне тыква скупить"
 
 5. Problems for sentence segmentation - [.!?] are not always the enf of the sentence.
 	a) <и т.д. и т.п.>, <И.И. Иванов>, <С. Петербург>
