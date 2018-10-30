@@ -14,6 +14,18 @@ My maxmatch has been implemented as python function which get line to be tokeniz
 
 If there is no any word inside the line in question matching any word inside the dictionary, we assume that the first symbol in the line should be parsed as a separate unit. We append this unit to our tokenized list and recursively call maxmatch with the line shortened by the first symbol
 
+I tried to evaluate results using WER in python but faced some problems and report them here according to instructions from telegram
+
+I did like that
+
+python wer.py sentences_test_correctly_parsed.txt sentence_test_parsed.txt
+
+But process didnt want to stop. that is why I put some prints to the file and saved it as wer_logged.py
+
+python wer_logged.py sentences_test_correctly_parsed.txt sentence_test_parsed.txt
+
+This let me know that editDistance function of the script goes into endless loop, so I have not been able to evaluate toenization quality using given tool.
+
 \section{Instructions }
 We need to open the file using "with" operator. iterate over each line and run our maxmatch function with it. The results can be appended to the list.
 
