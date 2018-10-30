@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Tokenisation}
+\author{Nikolay Babakov }
+\date{October 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Implementation of maxmatch and description of its performance}
+My maxmatch has been implemented as python function which get line to be tokenized as a variable. The algo logic is recursive iteration from the whole line to the first symbol in its beginning. When we find symbol/s which is/are in our pre-compiled dictionary we add this compiled element to tokenized list and recursively call the same function but with the line without parsed element. \newline
+
+If there is no any word inside the line in question matching any word inside the dictionary, we assume that the first symbol in the line should be parsed as a separate unit. We append this unit to our tokenized list and recursively call maxmatch with the line shortened by the first symbol
+
+\section{Instructions }
+We need to open the file using "with" operator. iterate over each line and run our maxmatch function with it. The results can be appended to the list.
+
+\end{document}
