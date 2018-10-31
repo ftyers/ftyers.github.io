@@ -27,9 +27,15 @@
    example in English or Russian for each that applies.
 
       a) ambiguous abbrevations with punctuation
+      
         *"... и т.п. случаи"*
+        
       b) sentences containing symbols '!' and '?'
-
+      
+        "Are you O.K.?!"
+        
+        "Here ```!condition ? do_this_if_inverted_condition_is_true : do_that_if_inverted_condition_is_false``` is the ternary operator usage example"
+        
       c) sentences lacking separating punctuation
 
       d) sentences not separated by whitespace
