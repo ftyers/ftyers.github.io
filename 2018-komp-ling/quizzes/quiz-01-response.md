@@ -16,14 +16,16 @@ d) constructs non-grammatical sentences
 
 Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2":
 
-Answer: sed -e 's/\([a-z]\+\)\/\([a-z]\+\)/\1 \/ \2/g'
+Answer:
+
+sed -e 's/\([a-z]\+\)\/\([a-z]\+\)/\1 \/ \2/g'
 
 ## Question 3
 
 The text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?
 
-1) Machine learning techniques usually need much data to be trained.
-2) Training data can be messy.
+1) Machine learning approaches usually need much data to be trained and training data for its part can be messy.
+2) Maching learning approaches often work like a "black box" and their results can be difficult to interpret.
 
 ## Question 4
 
@@ -33,11 +35,11 @@ Answer:
 
 "арозаупаланалапуазора"
 
-Верно: "а роза упала на лапу азора"
+Right segmentation: "а роза упала на лапу азора"
 
 vs.
 
-Неверно: "ар о за упала на лапу азора"
+Wrong maxmatch segmentation: "ар о за упала на лапу азора"
 
 ## Question 5
 
@@ -47,11 +49,11 @@ Answer:
 
 a) ambiguous abbrevations with punctuation
 
-	Путин В.В. -- президент РФ.
+	Путин В.В. был президентом РФ в 2000-2008 гг. и является президентом РФ с 2012 г. по н. вр.
 
 b) sentences containing symbols '!' and '?'
 
-	"Это ты сделал, Иванов? Выйди вон!", -- воскликнул преподаватель.
+	"Это ты сделал, Иванов? Немедленно выйди вон!" -- воскликнул преподаватель.
 
 c) sentences lacking separating punctuation
 
@@ -59,4 +61,4 @@ c) sentences lacking separating punctuation
 
 d) sentences not separated by whitespace
 
-	тыктотакойдавайдосвидания (this should be 2 different sentences "ты кто такой" and "давай до свидания")
+	ты кто такой?давай до свидания! (this should be 2 different sentences "ты кто такой" and "давай до свидания")
