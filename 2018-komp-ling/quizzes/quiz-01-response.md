@@ -12,17 +12,14 @@ Copyright 2018 Nick Howell
    Answers: a, d
 
       a) requires comprehensive dictionary
-   
-      b) is computationally expensive
-   
-      c) is difficult to program
-   
       d) constructs non-grammatical sentences
 
 2. Write a perl/sed substitution with regular expressions that
    adds whitespace for segmentation around "/" in "either/or"
    expressions but not around fractions "1/2":
-   Answer: I don't know
+   
+   
+   Answer: sed 's/\([^0-9]\+\)\/\([^0-9]\+\)/\1 \/ \2/g'
 
         "either/or" -> "either / or"
         "1/2"       -> "1/2"
