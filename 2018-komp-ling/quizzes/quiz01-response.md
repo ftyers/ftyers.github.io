@@ -4,7 +4,7 @@
 
 2. sed -e 's/\([a-zA-Z]\+\)\/\([a-zA-Z]\+\)/\1 \/ \2/g'
 
-3. We can't fully understand how ML-approaches work, so it's difficult to interpret the results, while rule-based methods are easier to debug. Another ML-techniques' downside is that it requires a large annotated corpora to train on. For most of the languages it's not possible to build. Moreover, our results depend on the data, so it need to be representative enough.    
+3. We can't fully understand how ML-algorythms work, so it's difficult to interpret the results, while rule-based methods are easier to debug. Another ML-techniques' downside is that it requires a large annotated corpora to train on. For most of the languages it's not possible to build. Moreover, our results completely depend on the data, so it has to be representative enough.    
 4.  "Романамореходитпотурам"
     Correct: *Рома на море ходит по утрам* 
     Maxmatch: *Романа мореход и т по утрам*
@@ -22,4 +22,4 @@
       надеюсь верую вовеки не придет  
       ко мне позорное благоразумие*
 
-  d) *Привет!Какдела?Что нового?*
+    d) *Привет!Какдела?Что нового?*
