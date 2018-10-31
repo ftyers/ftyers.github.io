@@ -1,33 +1,40 @@
 # Test 1
-### Tsvetkova Victoria
+##### Tsvetkova Victoria
 
-###### Question 1:
-*Which problems does maxmatch suffer from? (Choose all that apply.)*
+
+##### Question 1:
+Which problems does maxmatch suffer from? (Choose all that apply.)
+
 a) and d)
 
-###### Question 2:
-*Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2":*
+
+##### Question 2:
+Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2":
 
 ```sh
 $ sed -i 's/\([[:alpha:]][[:alpha:]]*\)\/\([[:alpha:]][[:alpha:]]*\)/\1\ \/ \2/g' test.txt
 ```
-###### Question 3:
-*the text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?*
+
+
+##### Question 3:
+the text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?
 
 1) We need lots of preprocessed data which have to be marked up to build a ML model. It takes some considerable time (though sometiemes rule-based system can take some time too, of course);
 2) ML models can skip some cunning and complicated examples as there might be not enough data (meanwhile if we use a rule-based system we can add this as a rule);
 3) An ML model is often a black box while rule-based systems are easy to be interpreted;
 4) Probably training an ML model takes a lot of time, but I am not sure, I haven't built one yet.
 
-###### Question 4:
-*write a sentence (in English or in Russian) which maxmatch segments incorrectly.*
+
+##### Question 4:
+write a sentence (in English or in Russian) which maxmatch segments incorrectly.
 
 > He hid his wealth under that tree. ->
 > Hehidhiswealthunderthattree. ->
 > he hid his weal thunder that tree.
 
-###### Question 5:
-*what are problems for sentence segmentation? provide one example in English or Russian for each that applies.*
+
+##### Question 5:
+what are problems for sentence segmentation? provide one example in English or Russian for each that applies.
 
 Basically all the answers can become a problem for sentence segmentation. 
 
