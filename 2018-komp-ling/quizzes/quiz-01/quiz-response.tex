@@ -18,7 +18,7 @@ d) constructs non-grammatical sentences
 
 \section{Question 2}
 Q: Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2"\newline
-A: sed -e 's/([a-z]+)/([a-z]+)/\1 / \2/g'
+A: sed -e 's/\([a-z]\+\)\/\([a-z]\+\)/\1 \/ \2/g'
 
 \section{Question 3}
 Q: the text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?\newline
