@@ -7,6 +7,8 @@ a) requires comprehensive dictionary
 
 d) constructs non-grammatical sentences
 
+On the performance: MaxMatch looks to be slow (*O(len(sentence) + sum(len(entry) for entry in vocabulary))*) on the worst case, but it's hard to construct such case and to meet such example in the natural language text.
+
 ---
 ## 2. Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2":
 
@@ -26,7 +28,7 @@ An ambigous example from the school textbook: "наполеонсеялрожь"
 
 ---
 ## 5. what are problems for sentence segmentation? provide one example in English or Russian for each that applies.
-
+Depends on the segmentation algorithm. 
 ### a) ambiguous abbrevations with punctuation
 
 "... и т.п. случаи."
