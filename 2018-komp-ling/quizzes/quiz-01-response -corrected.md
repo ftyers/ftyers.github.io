@@ -1,4 +1,4 @@
-I don't know why but my sed is still written wring here I typed a different expression ('s/\([^0-9]\+\)\/\([^0-9]\+\)/\1 \/ \2/g')
+<br />I don't know why but my sed is still written wring here I typed a different expression <br />
 1.a), d)
 <br /> 2. sed 's/\([^0-9]\+\)\/\([^0-9]\+\)/\1 \/ \2/g' <br />
 <br /> 3. ML is barely interpretable and applicable only to a particular dataset while the rules can be applied to several types of data and can help to manipulate the result more conciously. <br />
