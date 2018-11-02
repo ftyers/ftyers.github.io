@@ -11,7 +11,8 @@ for line in sys.stdin:
     for sentence in sent_tokenize(line):
         # for word in nltk.tokenize.WordPunctTokenizer().tokenize(sent):
         my_file.write(sentence)
-        print(sentence)```
+        print(sentence) ```
+        
 **Comparison**
 <br />After executing<br />
 ```$ diff -U0 segmented-nltk segmented-pragmatic | sed -n '/^@@ /p'```
