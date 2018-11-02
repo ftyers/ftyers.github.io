@@ -6,8 +6,11 @@
 <h3>Download DeepSpeech code:</h3>
 
 <pre>
-$ apt-get install git-lfs # Need git large file storage for deepspeech
-$ git clone --depth 1 https://github.com/mozilla/DeepSpeech.git
+# Need git Large File Storage for deepspeech
+$ apt-get install git-lfs
+# you only need to do this once to initialize git LFS
+$ git lfs install
+$ git lfs clone --depth 1 https://github.com/mozilla/DeepSpeech.git
 </pre>
 
 <h3>Setup a virtualenv:</h3>
@@ -46,10 +49,8 @@ so you'll probably have to fill in some NVidia spam form.
 <h3>Install kenlm:</h3>
 <pre>
 $ wget -O - https://kheafield.com/code/kenlm.tar.gz |tar xz
-$ sudo apt-get install libboost-program-options1.63-dev libboost-system1.63-dev libboost-thread1.63-dev libboost-test1.63-dev libeigen3-dev zlib1g-dev
+$ sudo apt-get install libboost-all-dev libeigen3-dev zlib1g-dev
 </pre>
-
-If version 1.63 of all the boost stuff isn't available on your system, try 1.58.
 
 Then: 
 
