@@ -15,7 +15,9 @@ Github](https://github.com/ftyers/ftyers.github.io) and use the Github
 web interface to fork (requires a github account). Clone your fork.
 
 All your work will be submitted by committing files in the
-`2018-komp-ling` folder, and then pushing to your github account.
+`2018-komp-ling` folder, and then pushing to your github account. Make
+then a "pull-request" using the github web interface; this registers
+your submission.
 
 ## Practicals
 
