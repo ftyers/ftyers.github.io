@@ -1,7 +1,7 @@
 # Practical 1
 ##### Tsvetkova Victoria 
 
-### Tokenisation
+### Tokenization
 
 My maxmatch takes three arguments: a dictionary file, sentences and tokens (which = 0 and implemented in the script). First it prepare the sentences deleting all Japanese punctuation. Then it tokenizes them line by line and write them in a file. The tokenize proccess is the following:
 First we iterate over the given sentence from the end to the beginning. When we find a word matching a word from the dictionary, we add the word to the list of tokens and then cut the last len(word) symbols from the sentence. Then, the process starts again.
