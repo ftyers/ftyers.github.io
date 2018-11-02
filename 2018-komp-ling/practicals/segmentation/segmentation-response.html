@@ -1,6 +1,6 @@
 <html>
 <body>
-
+<head><meta charset="utf-8"></head>
 <h2>Segmentation</h2>
 
 <p>Comparison of Pragmatic Segmenter and NLTK's Punkt.</p>
@@ -27,6 +27,22 @@
 <p>Bash command: <xmp>$ python sent_tokenize.py <random50.txt >nltk_results.txt</xmp></p>
 
 <h3>Evaluation</h3>
+<p>Amount of sentences segmented by hand is 101.</p>
+<p>Accuracy<br>
+	- for Pragmatic Segmenter: 0.99;<br>
+	- for NLTK's Punkt: 0.98.</p>
+<p>Well, the data was not really interesting and both segmenters dealed with it equally good.</p>
+<p>However, the mistakes were different. For Pragmatic Segmenter it was basic abbreviation in <b>"Церковь Св. Иоанна Крестителя"</b>,<br>
+the point was incorrectly recognized as the end of a sentence. Punkt processed this sentence correctly, but made mistakes
+when segmenting sentences <b>"Провёл испытания самолётов «С» (лето .) и СПБ (18.02.1940 г.). <br>
+Испытывал серийные ТБ-3 (1936 — 1938 гг.), СБ (1936 — 1941 гг.), Ар-2 (.), Пе-2 (.) и их модификации."</b><br>
+Punkt made 5 sentences out of 2:<br>
+<b>Провёл испытания самолётов «С» (лето .)<br>
+и СПБ (18.02.1940 г.).<br>
+Испытывал серийные ТБ-3 (1936 — 1938 гг.), СБ (1936 — 1941 гг.), Ар-2 (.<br>
+), Пе-2 (.)<br>
+и их модификации.</b></p>
+<p>Although this is quite a difficult case, Pragmatic Segmenter processed it right.</p>
 
 <h2>Tokenization</h2>
 
