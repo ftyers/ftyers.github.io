@@ -1,0 +1,47 @@
+<!--
+SPDX-License-Identifier: (CC-BY-SA-4.0 OR GFDL-1.3-or-later)
+Copyright 2018 Nick Howell
+-->
+<div style="column-width: 30em">
+<h1>Quiz 2</h1>
+<ol>
+<li>
+<p>Draw a diagram of a finite-state transducer which implements
+the simple rewrite &quot;'s&quot; -&gt; &quot; is&quot;.</p>
+</li>
+<li>
+<p>Give an example where your transducer expands &quot;'s&quot; when it
+shouldn't. What information could you incorporate to fix it?</p>
+</li>
+<li>
+<p>Which of the following are advantages of the two-level
+formalism for describing morphotactic rules? (Choose all that
+apply.)</p>
+<p>a) Declarative rather than procedural</p>
+<p>b) Parallel application rather than sequential</p>
+<p>c) More expressive than rewrite rules</p>
+<p>d) Simpler notation than rewrite rules</p>
+</li>
+<li>
+<p>What strategies typically allow the rewriting of sequential
+rewrite rules into parallel two-level rules? Provide an
+example for each working strategy, and a counterexample for
+each non-working strategy.</p>
+<p>a) Using the rewrite rules without changes.</p>
+<p>b) Underspecifying the rewrite rules</p>
+<p>c) Subtracting the context of the more general rule from the
+more specific</p>
+<p>d) Subtracting the context of the more specific rule from the
+more general</p>
+</li>
+<li>
+<p>Draw a diagram of a finite-state transducer implementing the simple English
+pluralization model
+SOFT = ch sh tz _s _x
+[SOFT]<PL>:[SOFT]es
+__<PL>:__s</p>
+<p>Implement your model in python, reading line-by-line from standard input and
+writing output line-by-line.</p>
+</li>
+</ol>
+</div>
