@@ -58,4 +58,6 @@ end
 +Augustus (63 v. Chr.–14 n. Chr.), der Großneffe und Erbe Gaius Iulius Caesars, war von 31 v.
 + Chr.
 ```
-<br />Consequently, pragmatic segmenter doesn't seem to solve the dates issues and abbreviations<br />
+<br />Consequently, pragmatic segmenter doesn't seem to solve the dates issues and some abbreviations in which case nltk segmenter turned put to be more useful.<br />
+
+##### Tokenisation
