@@ -1,5 +1,5 @@
 1. a, d
-2. sed "s/\([^0-9]\)\/\([^0-9]\)/\1 \/ \2/"
+2. ```sed "s/\([^0-9]\)\/\([^0-9]\)/\1 \/ \2/"```
 3. Their mistakes are harder to correct.
 If an ML algorithm generalizes, upon a specific corpus with a specific language, a rule that's not applicable to some other data you work with, you can't really convince it to change its mind other than initializing it from stratch (and if you don't see the root of the mistake in your data, even that won't help). Some people would like their systems to be a bit prone to errors as long as they can influence the system's decisions.
 4. I would suggest "cудначалсявполдень" (correct: суд начался в полдень, maxmatch: судна чал Cяв полдень)
