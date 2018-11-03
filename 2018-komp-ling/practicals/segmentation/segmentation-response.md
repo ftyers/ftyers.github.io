@@ -7,7 +7,7 @@ sed 5000q < wiki.txt | sort -R | sed 50q > wiki1.txt
 ```
 in Linux Terminal.  
 ## 1.1 Chosen Segmenters	
-To compare segmenters, I have chosen a Pragmatic Segmenter (1), NLTK’s function sent_tokenize() from nltk.tokenize (3) and NLTK’s Punkt. 
+To compare segmenters, I have chosen a Pragmatic Segmenter, NLTK’s function sent_tokenize() from nltk.tokenize and NLTK’s Punkt. 
 
 1. Pragmatic Segmenter is a rule-based sentence boundary detection gem that works across many languages. It returns a copy of text, divided into sentences, 1 per line. 
  
@@ -147,7 +147,7 @@ The program tells, that there are 18248 tokens in 558 sentences.
 
 ### 2.4 Word Error Rate
 
-I used the test set of test sentences to count the WER of my MaxMatch algorithm. 
+I used a set of test sentences to count the WER of my MaxMatch algorithm. 
 
 At first I got a list of correctly detected tokens:
 ```
@@ -157,7 +157,7 @@ And then l deleted blank lines in the file with MaxMatch-tokenized sentences:
 ```
 >>> sed '/^$/d' tokenized_sentences.txt > tokenized_sentences-nospaces.txt
 ```
-Then I implemented the WER algorithm from https://github.com/zszyellow/WER-in-python and ran it on first 10 sentences from the test set as follows:
+Then I ran the WER algorithm from https://github.com/zszyellow/WER-in-python on first 10 sentences from the test set as follows:
 ```
 >>> python2 WER.py wer-test-correct.txt wer-test-maxmatched1.txt
 WER: 65.50%
