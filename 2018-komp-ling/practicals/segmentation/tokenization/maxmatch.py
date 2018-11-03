@@ -4,7 +4,7 @@ final_list=[]
 def maxmatch(sentence, dictionary):
     global final_list
     if len(sentence) == 0:
-        return 'list is empty'
+        return 'Empty list.'
     for i in range(len(sentence), -1, -1):
         firstword = sentence[0:i]
         remainder = sentence[i:]
