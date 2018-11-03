@@ -1,4 +1,5 @@
 Quiz 1
+Mikhailov Vladislav MKL181
 
 1. a) requires comprehensive dictionary
    d) constructs non-grammatical sentences
