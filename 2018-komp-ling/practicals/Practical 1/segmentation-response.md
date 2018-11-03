@@ -28,7 +28,7 @@ NLTK's segmenter managed that task but also had troubles with abbreviation. For 
 >Демчог) и Вишуддха Херука (тиб.  
 >Яндаг Херука).
 
-While pragmatic_segmenter got ot right.
+While pragmatic_segmenter got it right.
 >Херуками, например, являются тантрические божества Чакрасамвара (тиб. Демчог) и Вишуддха Херука (тиб. Яндаг Херука).
 
 ## Evaluation
