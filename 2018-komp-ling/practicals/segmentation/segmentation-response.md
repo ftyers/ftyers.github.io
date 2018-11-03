@@ -44,6 +44,7 @@ So, 108 sentences (=92,3%) were detected correctly by the Pragmatic Segmenter.
 For the qualitative evaluation I used the diff command. Pragmatic Segmenter didn’t see the name abbreviation:
 
 > На 1950-ті роки припадає величезна робота з редагування та підготовки до друку творів М.
+
 > Лисенка, яку було успішно виконано.
 
 The correct sentence: 
