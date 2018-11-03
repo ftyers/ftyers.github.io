@@ -11,14 +11,14 @@ It seems that it was not a good idea to take texts from Wikipedia dump, because 
 However, I've got 1069927 lines of extracted dump, then I took a sample of 100 items (`randomLines.py`) and then hand-picked only well-formed ones, it was 46 excerpts.
 
 All excerpts were joined into one big text, which was segmented via NLTK, TextBlob, and  Spacy (`sent.py`). None of the segmentators was  trained or customized to deal with the dataset (models or abbreviations dictionary). Then I run the code
-Results are like this: NLTK – 122 sentences, TextBlob – 122, Spacy – 165.
+Results are like this: NLTK вЂ“ 122 sentences, TextBlob вЂ“ 122, Spacy вЂ“ 165.
 
 ## Discussion
 
-As it is stated on the home page of TextBlob, «TextBlob stands on the giant shoulders of NLTK and pattern». So, I guess, it shares code base with NLTK, that's why results are same for both frameworks.  Diff for textblob.txt and nltk.txt  produces empty output. **Nltk** produced mostly reasonable results. It mostly had not cases when sentences remained joint, only one is complex one:
- *Даследуе дзейнасць польскага антысавецкага падполля на Беларусі ў 1940-я г. Флаўэрз узяў узнагароды ад часопіса «NME» як «Найлепш апрануты» і «Самы прывабны».*
-First sentence was ended up with abbreviation "г." (year) and second one was started with proper noun.  However, it's systemic issue that it's stumbled in was one of abbreviations with dot it was not aware about (like "тыс.", "т.б.", "стст.", "літ."), so they were treated as normal words and dot as end-of-a-sentence marker. 
+As it is stated on the home page of TextBlob, В«TextBlob stands on the giant shoulders of NLTK and patternВ». So, I guess, it shares code base with NLTK, that's why results are same for both frameworks.  Diff for textblob.txt and nltk.txt  produces empty output. **Nltk** produced mostly reasonable results. It mostly had not cases when sentences remained joint, only one is complex one:
+ *Р”Р°СЃР»РµРґСѓРµ РґР·РµР№РЅР°СЃС†СЊ РїРѕР»СЊСЃРєР°РіР° Р°РЅС‚С‹СЃР°РІРµС†РєР°РіР° РїР°РґРїРѕР»Р»СЏ РЅР° Р‘РµР»Р°СЂСѓСЃС– Сћ 1940-СЏ Рі. Р¤Р»Р°СћСЌСЂР· СѓР·СЏСћ СѓР·РЅР°РіР°СЂРѕРґС‹ Р°Рґ С‡Р°СЃРѕРїС–СЃР° В«NMEВ» СЏРє В«РќР°Р№Р»РµРїС€ Р°РїСЂР°РЅСѓС‚С‹В» С– В«РЎР°РјС‹ РїСЂС‹РІР°Р±РЅС‹В».*
+First sentence was ended up with abbreviation "Рі." (year) and second one was started with proper noun.  However, it's systemic issue that it's stumbled in was one of abbreviations with dot it was not aware about (like "С‚С‹СЃ.", "С‚.Р±.", "СЃС‚СЃС‚.", "Р»С–С‚."), so they were treated as normal words and dot as end-of-a-sentence marker. 
  If one provides abbreviation dictionary, the much better results are expected.
- **Spacy** completely mishandled «» and produced some odd splittings, however, it's good that it managed to correctly segment at least some cases (about 10 sentences from the sample). It works on some language-independent pretrained model (with code xx), so it would be miracle if it produced results closer to ideal.
+ **Spacy** completely mishandled В«В» and produced some odd splittings, however, it's good that it managed to correctly segment at least some cases (about 10 sentences from the sample). It works on some language-independent pretrained model (with code xx), so it would be miracle if it produced results closer to ideal.
  
  
