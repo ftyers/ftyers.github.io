@@ -63,11 +63,13 @@ end
 ##### Tokenisation
 <br />At first we create a dictionary<br />
 ```cd UD_Japanese-GSD
-   cat ja_gsd-ud-train.conllu  | grep '^[0-9]' | cut -f2 | sort -f | sort -u | uniq -c | sort -gr > sortedforms.txt```
+   cat ja_gsd-ud-train.conllu  | grep '^[0-9]' | cut -f2 | sort -f | sort -u | uniq -c | sort -gr > sortedforms.txt
+```
 <br />It contains 22313 sortedforms<br />   
 <br />Than we get the sentences from the dataset and correct tokenisation in order to be able to evaluate the results of the algorithm later<br /> 
 ```sed -n '/^# text =/p' ja_gsd-ud-test.conllu | sed 's/^# text =//'g > sentences
 cat sentences
-sed '/^#/d' ja_gsd-ud-test.conllu | cut -f2 -d'     ' > correct-tokenization```
+sed '/^#/d' ja_gsd-ud-test.conllu | cut -f2 -d'     ' > correct-tokenization
+```
 <br />Implementing the algorithm (the python code is in ...segmentation/maxmatch.py<br />
 ```python3 maxmatch.py sortedforms <sentences > maxmatch-tokenization```
