@@ -37,7 +37,7 @@
 ||*н. э.*| -- |split :( |
 ||*г.*| split :( | -- |
 ||*тыс. человек*| -- |split :(|
-||*др*| -- | split :(|
+||*др.*| -- | split :(|
 
 It is noticeable that Pragmatic Segmenter is not aware of some abbreviations, names and unconventional punktuation combination. However, its adnavtage is that it can treat one quotation as an inseparable segment.
 Punkt doen't split names or most abbreviations, however there are some abbr. that are very popular, but Punkt still splits them.
