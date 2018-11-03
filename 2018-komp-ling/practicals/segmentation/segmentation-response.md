@@ -41,7 +41,7 @@ To know the correct number of sentences detected by Pragmatic Segmenter, I have 
 ```
 So, 108 sentences (=92,3%) were detected correctly by the Pragmatic Segmenter.
 
-For the qualitative evaluation I used the <diff> command. Pragmatic Segmenter didn’t see the name abbreviation:
+For the qualitative evaluation I used the diff command. Pragmatic Segmenter didn’t see the name abbreviation:
 
 > На 1950-ті роки припадає величезна робота з редагування та підготовки до друку творів М.
 > Лисенка, яку було успішно виконано.
@@ -66,9 +66,9 @@ The correct sentence:
 
 ### 1.2.2 A function sent_tokenize() 
 
-For the quantitative evaluation of the NLTK tokenizer I have used the same <comm> command, as for the Pragmatic Segmenter. As a result, sent_tokenize() detected 107 (=91.5%) sentences correctly. 
+For the quantitative evaluation of the NLTK tokenizer I have used the same comm command, as for the Pragmatic Segmenter. As a result, sent_tokenize() detected 107 (=91.5%) sentences correctly. 
 
-However, when I used the <diff> command and looked into the segmented text file, I saw, that the <comm> command regards the sentences with inserted spaces, but with the same boundaries, as different sentences. (The deal is that sent_tokenize() insert additional spaces after name abbreviations).  It means, that sent_tokenize() works much better, than 91,5%. (I wonder, whether there are commands in Linux Terminal, which look only at sentence boundaries, but not inside sentences, and be grateful for the answer.)
+However, when I used the diff command and looked into the segmented text file, I saw, that the comm command regards the sentences with inserted spaces, but with the same boundaries, as different sentences. (The deal is that sent_tokenize() insert additional spaces after name abbreviations).  It means, that sent_tokenize() works much better, than 91,5%. (I wonder, whether there are commands in Linux Terminal, which look only at sentence boundaries, but not inside sentences, and be grateful for the answer.)
 
 If we look at the differences between a manually segmented text and the nltk-segmented text, we can see, that only 6 sentences were detected incorrectly. Thus, the accuracy rate is actually not 91,5%, but 94,9% (=111 correctly detected sentences), and, thus, it works better with Ukrainian texts, than Pragmatic Segmenter.   
 
