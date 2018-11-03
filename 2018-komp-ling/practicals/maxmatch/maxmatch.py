@@ -267,11 +267,11 @@ def main():
                 wers.append(now_wer)
             print("Mean WER: {:.2%}".format(numpy.mean(wers)))
 
-            reference = sum(golden[:100], list())
-            hypothesis = sum(real[:100], tuple())
-            wer_100 = wer(reference, hypothesis)
+            #reference = sum(golden[:100], list())
+            #hypothesis = sum(real[:100], tuple())
+            #wer_100 = wer(reference, hypothesis)
 
-            sys.stdout.write("Wer of first 100 sentences: {:.2%}\n".format(wer_100))
+            #sys.stdout.write("Wer of first 100 sentences: {:.2%}\n".format(wer_100))
 
 if __name__ == "__main__":
     main()
