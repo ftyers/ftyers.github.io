@@ -71,7 +71,8 @@ end
 cat sentences
 sed '/^#/d' ja_gsd-ud-test.conllu | cut -f2 -d' ' > correct-tokenization
 ```
-<br />Implementing the algorithm (the python code is in ...segmentation/maxmatch.py<br />
+<br />Implementing the algorithm (the python code is in ...segmentation/maxmatch.py)<br />
 
-```python3 maxmatch.py sortedforms <sentences > maxmatch-tokenization
+```
+python3 maxmatch.py sortedforms <sentences > maxmatch-tokenization
 ```
