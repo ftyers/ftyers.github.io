@@ -1,6 +1,6 @@
 #### Practical 1
 ##### Segmentation
-<br /> I compared nltk and pragmatic_segmenter segmenters <br />
+<br /> I compared nltk and pragmatic_segmenter segmenters on the German language <br />
 <br /> my nltk segmenter looked like this: <br />
 
 ```import nltk
@@ -61,3 +61,4 @@ end
 <br />Consequently, pragmatic segmenter doesn't seem to solve the dates issues and some abbreviations in which case nltk segmenter turned put to be more useful.<br />
 
 ##### Tokenisation
+<br />To be continued<br />
