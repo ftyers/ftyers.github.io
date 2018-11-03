@@ -26,3 +26,7 @@ First, the conllu files need to be parsed. I used the following terminal command
     python3 maxmatch.py train-dictionary < test-sentences > maxmatch-results
     ```
     We need to use the dictionary as an argument, and then feed the sentences to the maxmatch algorithm. Tokenized sentences are written to ```maxmatch-results.txt```
+    
+### Performance
+
+The maxmatch algorithm I have written have found 19362 tokens instead of 12635 correct ones. Thus, the accuracy of the tokenizer is 65%.
