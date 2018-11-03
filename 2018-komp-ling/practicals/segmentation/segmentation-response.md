@@ -50,7 +50,9 @@ The correct sentence:
 > На 1950-ті роки припадає величезна робота з редагування та підготовки до друку творів М.Лисенка, яку було успішно виконано.
 
 > Т.
+
 >  Г.
+
 >  Шевченко називав археологію «матір'ю історії»
 
 The correct sentence: 
@@ -59,6 +61,7 @@ The correct sentence:
 It didn’t detect the abbreviation of ‘century’ ("ст".) as well:
 
 > Одними з перших археологічних розкопок в Україні можна вважати розкопки Десятинної церкви в Києві (зруйнована татаро-монголами 1240), що були здійснені Петром Могилою в 30-х роках 17 ст.
+
 > з метою будівництва на її місці нової церкви під тією ж назвою.
 
 The correct sentence:
@@ -75,6 +78,7 @@ If we look at the differences between a manually segmented text and the nltk-seg
 As for qualitative evaluation, the sent_tokenize() function can deal with name abbreviation in comparison with the first parser, but still doesn’t see the ‘century’ abbreviation, as well as the Pragmatic Segmenter:
 
 > Проза Франка початку ХХ ст.
+
 > виявляє потужну тенденцію до пошуку новітніх художньо-естетичних засобів та форм моделювання художньої дійсності; тенденцію, що бере свій початок наприкінці попереднього століття, все більше вияскравлюючись та міцніючи.
 
 The correct sentence: 
@@ -83,8 +87,11 @@ The correct sentence:
 Also the sent_tokenize() function didn’t recognize the abbreviation ‘англ.’ (English) and couldn’t parse the long composite sentence correctly, especially having trouble with ‘!’and parenthesis:
 
 > Слухаючи доповіді Міріама (З. Пшесмицького), полемізуючи з «Молодою Музою», читаючи твори молодших письменників (В. Винниченка, В. Стефаника, Марка Черемшини, Л. Мартовича та ін.)
+
 > і захоплюючись ними, Франко у своєму творчому єстві відчуває напругу між старим і новим у літературі (його «Хлопська комісія» стара у порівнянні зі «Злодієм» В.
+
 > Стефаника!
+
 > ), прагне «йти за віком», встигати за молодшими, «модернішими» письменниками, тому шукає нових способів «оброблювання» тем і сюжетів, прагне заглянути в «сутінки» людської душі, в оту «нижню свідомість», яка, виявляється, є значно глибшою, багатшою на збережені враження, ніж свідомість «верхня» (власне свідомість). 
 
 ---  all of this text must be recognized as one sentence. 
