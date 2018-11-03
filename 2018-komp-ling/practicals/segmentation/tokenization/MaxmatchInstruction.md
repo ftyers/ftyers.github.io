@@ -29,4 +29,6 @@ First, the conllu files need to be parsed. I used the following terminal command
     
 ### Performance
 
-The maxmatch algorithm I have written have found 19362 tokens instead of 12635 correct ones. Thus, the accuracy of the tokenizer is 65%.
+The maxmatch algorithm I have written have found 19362 tokens instead of 12635 correct ones.
+
+The results of the WER on 1000 sentences 14%
