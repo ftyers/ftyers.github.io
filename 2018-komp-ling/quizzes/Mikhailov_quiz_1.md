@@ -3,7 +3,7 @@ Quiz 1
 1. a) requires comprehensive dictionary
    d) constructs non-grammatical sentences
 
-2. echo "either/neither", "1/2" | sed 's/\([^0-9]\+\)\/\([^0-9]\+\)/\1 \/ \2/g'
+2. ```echo "either/neither", "1/2" | sed 's/\([^0-9]\+\)\/\([^0-9]\+\)/\1 \/ \2/g'```
 
 3. Large data and time requirements
 Building machine learning  algorithms requires for a huge amount of collected tagged data. Though there are many corpora available to use, there is no such data for some specific languages. Collecting and tagging specific language data needs plenty of time and other resources. 
