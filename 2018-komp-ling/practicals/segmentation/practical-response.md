@@ -76,3 +76,4 @@ sed '/^#/d' ja_gsd-ud-test.conllu | cut -f2 -d' ' > correct-tokenization
 ```
 python3 maxmatch.py sortedforms <sentences > maxmatch-tokenization
 ```
+<br />We get 13172 correct-tokenization and 23511 of maxmatch-tokenization which already indicates that it's not good<br />
