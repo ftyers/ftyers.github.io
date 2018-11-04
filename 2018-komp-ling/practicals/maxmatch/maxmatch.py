@@ -202,7 +202,7 @@ def readfile(filename):
 
 
 def extract_dictionary(filename):
-    result = tuple()
+    result = list()
     for tokenlist in readfile(filename):
         for token in tokenlist:
             if len(token["form"]) > 1:
