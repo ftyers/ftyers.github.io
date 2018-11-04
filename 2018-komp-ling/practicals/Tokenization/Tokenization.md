@@ -52,18 +52,18 @@
     ‘’’
     def maxmatch(line):
         if len(line) == 0:
-            return []
+            return '\n'
         try:
             word = next(w for w in new_dictionary if line.startswith(w))
         except StopIteration:
             word = line[0]
-        return [word] + maxmatch(line[len(word):])
+        return (word+ ' ' + maxmatch(line[len(word):]))
 
     list = lines_sent
 
     for line in list:
         sentences_tokenized = maxmatch(line)
-            print(sentences_tokenized)
+        print(sentences_tokenized)
             
 В итоге мы получаем файл с предложениями, разбитыми на токены. 
             
