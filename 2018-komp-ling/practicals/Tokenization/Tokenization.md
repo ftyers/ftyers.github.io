@@ -62,20 +62,16 @@
     list = lines_sent
 
     for line in list:
-        for word in maxmatch(line):
-            print(word)
+        sentences_tokenized = maxmatch(line)
+            print(sentences_tokenized)
+            
+В итоге мы получаем файл с предложениями, разбитыми на токены. 
             
 Чтобы иметь возможность вводить предложения из командной строки, в программу нужно импортировать sys, а также добавить следующее:   
 
     for line in sys.stdin:
         for word in maxmatch(line):
             print(word)
-
-Применив команду  
-
-    $ python3 maxmatch.py > sentences_tokenized.txt
-
-получаем (18248 + 1) токенов, на которые разбились наши японские предложения.
 
 С помощью команды 
 
