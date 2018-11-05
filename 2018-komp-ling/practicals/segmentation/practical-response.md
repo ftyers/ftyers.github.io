@@ -78,4 +78,6 @@ python3 maxmatch.py sortedforms <sentences > maxmatch-tokenization
 ```
 <br />We get 13172 correct-tokenization and 23511 of maxmatch-tokenization which already indicates that it's not good<br />
 The calculation of WER was made with the gelp of the following (but slightly changed for python 3) code:
-https://github.com/zszyellow/WER-in-python
+https://github.com/zszyellow/WER-in-python <br />
+<br /> The WER turned out to be 50%. After an observation it turned out that maxmatch fails on digits and some English words, probably because they were not in the dictionary. In other cases it was impossible to interprete the results but these particular situations can be improved with additional lines to maxmatch like checking if a character can be an integer.
+<br /> 
