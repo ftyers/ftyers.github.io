@@ -69,7 +69,7 @@ and UNIX-like operating systems, and to be capable of answering simple
 questions through the use of search engines, documentation, chat systems, etc.
 
 ## Practicals
-
+  0. ### [UNIX] and [git] (both tracks)
   1. ### [Segmentation & Tokenization] (both tracks)
   2. ### [Finite-state Morphology] / [Transliteration]
   3. ### [Morphological disambiguation] / [Unigram model]
@@ -80,6 +80,8 @@ See [submission guidelines].
 [submission guidelines]:         submission.html
 
 
+[UNIX]:                          practicals/unix.html
+[git]:                           appendix/git.html
 [Segmentation & Tokenization]:   practicals/segmentation.html
 [Finite-state Morphology]:       ../2017-КЛ_МКЛ/hfst.html
 [Transliteration]:               ../079-osnov-programm/classes/04_1.html
