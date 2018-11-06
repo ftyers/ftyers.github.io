@@ -160,8 +160,7 @@ Co-work on practical 2, [Finite-state Morphology] (algorithms) or
 Morphological disambiguation ([slides][morph-disam-slides],
 [video][morph-disam-video]).
 
-Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][morph-disam-quiz] due
-<!-- FIXME --> no earlier than Nov 27.
+Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][morph-disam-quiz] due <!-- FIXME --> no earlier than Nov 27.
 
 Due: practical 2, [Finite-state Morphology] (algorithms) or
 [Transliteration] (engineering), [quiz-02][morphology-quiz].
