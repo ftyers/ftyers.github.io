@@ -1,377 +1,173 @@
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <title>Компьютерная лингвистика</title>
-</head>
-
-<body>
-<div class="page">
-<h2>Компьютерная лингвистика</h2>
-
-<h3> Description </h3>
-<p>
-This course is an introduction to the pipeline approach to natural language processing. In a pipeline
-approach, raw text goes through a sequence of steps (or tasks) to process it into a form more useful
-for end-user applications. The steps we will cover are sentence segmentation, word tokenisation, 
-morphological analysis and disambiguation and dependency parsing. This should give you all of the 
-details you need in order to approach more complex tasks such as co-reference resolution, relation
-extraction, etc.
-</p>
-<h3> Course objectives </h3>
-
-By the end of this course you should be:
+<!--
+vim: tw=70
+SPDX-License-Identifier: (CC-BY-SA-4.0 OR GFDL-1.3-or-later)
+Copyright 2018 Francis Tyers, Nick Howell
+-->
+<h1>Компьютерная лингвистика</h1>
+<div style="column-width:30em">
+<h2>Description</h2>
+<p>This course is an introduction to the pipeline approach to natural
+language processing. In a pipeline approach, raw text goes through a
+sequence of steps (or tasks) to process it into a form more useful for
+end-user applications. The steps we will cover are sentence
+segmentation, word tokenisation, morphological analysis and
+disambiguation and dependency parsing. This should give you all of the
+details you need in order to approach more complex tasks such as
+co-reference resolution, relation extraction, etc.</p>
+<h2>Organization</h2>
+<p>The course is organized into two tracks, known as <em>algorithms</em> (for
+those comfortable with introductory NLP engineering techniques) and
+<em>engineering</em> (for those unfamiliar with these techniques).
+<em>Algorithms</em>-track students have the option of completing a course
+project.</p>
+<p>The <em>algorithms</em> track will study the algorithms and ideas used in
+scientific research in natural language processing. Students will be
+asked to use software produced as the result of scientific research,
+write their own implementations of important algorithms, and compare
+methodologies through a series of small projects called &quot;practicals.&quot;</p>
+<p>The <em>engineering</em> track will focus on the tools and techniques used in
+software design, analysis, and distribution in the context of natural
+language processing. The main topics of study will be Python and UNIX
+environment in the context of natural language processing. The course is
+completed through a serious of small projects called &quot;practicals.&quot;</p>
+<p><em>Algorithms</em>-track students may propose an <em>optional</em> project in groups
+or on their own. Instructors can provide suggestions for project ideas.
+See the <a href="projects/rfp.html">request for project proposals</a> for more details.</p>
+<h2>Objectives</h2>
+<p>By the end of this course, <em>algorithms</em>-track students will:</p>
 <ul>
-<li> Understand issues in segmentation and tokenisation of texts and implement solutions </li>
-<li> Use two-level morphology to model morphological phenomena </li>
-<li> Describe and use three approaches to morphological disambiguation </li>
-<li> Understand the principles behind transition-based and graph-based dependency parsing </li>
-<li> Know the steps to be able to go from raw text to dependency trees for any language </li>
+<li>Understand issues in segmentation and tokenisation of texts and implement
+solutions</li>
+<li>Use two-level morphology to model morphological phenomena</li>
+<li>Describe and use three approaches to morphological disambiguation</li>
+<li>Understand the principles behind transition-based and graph-based dependency
+parsing</li>
+<li>Know the steps to be able to go from raw text to dependency trees for any
+language</li>
 </ul>
-
-<h3> Prior experience </h3>
-<p>
-You are expected to have knowledge of programming in Python and some experience with Unix-based operating 
-systems. In addition you should be comfortable with using popular search engines to answer simple
-questions about other programming languages and operating-system based issues. 
-</p>
-<p>
-You need not have any experience in natural language processing.
-</p>
-<h3>Syllabus overview</h3>
-
+<p>while <em>engineering</em>-track students will:</p>
 <ul>
-  <li> Introduction </li>
-  <ul>
-     <li> Get necessary software installed </li>
-     <li> Get familiar with the Unix command line </li>
-  </ul>
-  <li> Segmentation and tokenisation </li>
-  <ul>
-     <li> Ambiguities in segmentation and tokenisation </li>
-     <li> The <tt>maxmatch</tt> algorithm </li>
-     <li> Word segmentation as a graph </li>
-  </ul>
-  <li> Morphological analysis with finite-state transducers </li>
-  <ul>
-     <li> Morphological processes (inflection, derivation, ...)</li>
-     <li> Representing lexicons as finite-state automata </li>
-     <li> Phonological rules </li>
-  </ul>
-  <li> Morphological disambigution </li>
-  <ul>
-    <li> Rule-based disambiguation using constraint grammar </li>
-    <li> Hidden Markov Models for disambiguation (generative model) </li>
-    <li> Averaged perceptron for disambiguation (discriminative model) </li>
-  </ul>
-  <li> Dependency parsing </li>
-  <ul>
-    <li> Dependency grammar </li>
-    <li> Transition-based parsing </li>
-    <li> Graph-based parsing </li>
-  </ul>
-</ul> 
-
-
-<h3> Lectures and practicals </h3>
-
-<div style="padding: 3px; border-style: solid; border-color: grey; background-color: grey; color: white; width: 100%"><b>Module 1</b></div>
-
-<!--<h4>[02.10] Class 0: Introduction</h4>-->
-
-<h4>[09.10] Class 0: Introduction</h4>
-
-In this class we will give an introduction to the syllabus and help with installing the 
-requisite software.
-
-<h4>[09.10] Practical 0</h4>
-
-<p>
-<b>Practical:</b> Familiarise yourself with modern Unix-like tools for text manipulation. See <a href="practicals/unix.html">details</a>.
-</p>
-
-
-<h4>[16.10] Class 1: Segmentation and tokenisation</h4> 
-
-<i>Slides</i>: <a href="slides/segmentation.pdf">Sentence segmentation</a> and <a href="slides/tokenisation.pdf">Tokenisation and word segmentation</a>
-
-<p>
-<b>Preparation:</b> 
-<ul>
-<li>Read Chapter 3.9 <i>Word and Sentence Tokenisation</i> (pp. 69&mdash;72) in Jurafsky and Martin.
-<li>Read Section 4.2.4 <i>Sentences</i> (pp. 134&mdash;136) in Manning and Schütze.
+<li>Be familiar with the syntax of the Python programming language</li>
+<li>Be able to navigate the filesystem using the UNIX shell</li>
+<li>Be capable of efficiently using online resources to guide their own learning</li>
+<li>Be able to use Python to process corpora from the web</li>
+<li>Be able to use Python to implement a simple NLP pipeline from scratch</li>
 </ul>
-</p>
-
-<p>
-<b>Lectures:</b>
-
-<ul>
-<li>Video: <a href="https://peertube.xyz/videos/watch/55348c29-1f15-4e8b-a02a-5c7fb21b6acd">Sentence segmentation</a></li>
-<li>Video: <a href="https://peertube.xyz/videos/watch/772d548b-e04c-49ae-9c60-7134fc1ba098">Tokenisation and word segmentation</a> </li>
-</ul>
-</p>
-
-<p>
-<b>Test:</b>
-
-<ul>
-<li><a href="quizzes/quiz-01.html">Segmentation and tokenisation</a> (see <a href="submission.html">submission guidelines</a>) <br /> due 23:59:59 Tue Oct 30 <abbr title="anywhere on earth">AOE</abbr></li>
-</ul>
-</p>
-
-<h4>[23.10] Practical 1</h4>
-
-<!-- download + extract wikipedia, process with a segmenter and a tokeniser -->
-
-<p>
-<b>Practical:</b> Download and extract a Wikipedia dump, segment it and tokenise it. See <a href="practicals/segmentation.html">details</a>.
-(see <a href="submission.html">submission guidelines</a>) <br /> due 23:59 Fri Nov 2 <abbr title="anywhere on earth">AOE</abbr>
-</p>
-
-<em><strong>Notice:</strong> deadline extended to Fri 2018-11-02 <abbr title="anywhere on earth">AOE</abbr></em>
-
-<h4>[30.10] Co-working</h4>
-
-<p>
-
-We will have an in-classroom working session on
-<a href="practicals/segmentation.html">Practical 1</a>.
-Attendence is optional. Students who have already completed the assignment may
-work on any NLP project. Instructors will be available to answer questions.
-
-</p>
-
-<h4>[02.11] Project Proposals</h4>
-
-<ul>
-<li>optional projects</li>
-<li>can be in groups or solo</li>
-<li>let instructors know if you want suggestions</li>
-<li>see the <a href="projects/rfp.html">request for proposals</a>; proposals are due Friday Nov 02 <abbr title="anywhere on earth">AOE</abbr></li>
-</ul>
-
-</p>
-
-<em><strong>Notice:</strong> deadline extended to Fri 2018-11-02 <abbr title="anywhere on earth">AOE</abbr></em>
-
-
-<h4>[02.11] Class 2: Morphological modelling with finite-state transducers</h4>
-
-<i>Slides</i>: <a href="slides/morphology.pdf">Morphological modelling</a> 
-
-<p>
-<b>Preparation:</b> 
-<ul>
-<li>Read Chapters 3.2&mdash;3.7 (pp. 53&mdash;67) of Jurafsky and Martin.</li>
-<li>Read Karttunen's <a href="https://web.stanford.edu/~laurik/publications/fsc-91/fsc91.html"><i>Finite-State Constraints</i></a>, paying particular attention to Section 4.</li>
-</ul>
-</p>
-
-<p>
-<b>Lectures:</b>
-
-
-<ul>
-<li><a href="https://peertube.xyz/videos/watch/5811dfa7-9984-4c02-97e2-90934810fe9e">Morphological modelling</a></li>
-</ul>
-</p>
-
-<p>
-<b>Test:</b>
-
-<ul>
-<li><a href="quizzes/quiz-02.html">Morphology and transducers</a> (see <a href="submission.html">submission guidelines</a>) <br /> due 23:59 xxx XX Nov <abbr title="anywhere on earth">AOE</abbr></li>
-</ul>
-
-</p>
-
-<p>
-
-<h4>[02.11] Practical 2</h4>
-
-<p>
-<b>Practical:</b> Go through the <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">tutorial on HFST</a> (see <a href="submission.html">submission guidelines</a>) <br /> due 23:59 xxx XX Nov <abbr title="anywhere on earth">AOE</abbr>
-</p>
-
-<h4>[06.11] Co-working</h4>
-
-<p>
-
-We will have an in-classroom working session on
-<a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">Practical 2</a>.
-Attendence is optional. Students who have already completed the assignment may
-work on any NLP project. Instructors will be available to answer questions.
-
-</p>
-
-
-<h4>[XX.11] Class 3: Morphological disambiguation</h4>
-
-<i>Slides</i>: <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/slides/disambiguation.pdf">Morphological disambiguation</a>
-
-<p>
-<b>Preparation:</b> 
-<ul>
-<li>Read Sections 5.1&mdash;5.8 <i>Part-Of-Speech Tagging</i> (pp. 123&mdash;163) in Jurafsky and Martin.</li>
-</ul>
-</p>
-
-<p>
-<b>Lectures:</b>
-
-
-<ul>
-<li></li>
-</ul>
-</p>
-
-<p>
-<b>Test:</b>
-
-<ul>
+<h2>Prior experience</h2>
+<p><em>Algorithms</em>-track students are expected to have basic proficiency with Python
+and UNIX-like operating systems, and to be capable of answering simple
+questions through the use of search engines, documentation, chat systems, etc.</p>
+<h2>Practicals</h2>
+<ol start="0">
 <li>
-(see <a href="submission.html">submission guidelines</a>)
+<h3><a href="practicals/unix.html">UNIX</a> and <a href="appendix/git.html">git</a> (both tracks)</h3>
 </li>
-</ul>
-</p>
-
-<h4>[XX.11] Practical 3</h4>
-
-<p>
-<b>Practical:</b> Go through the <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">practical notes on disambiguation</a>.
-(see <a href="submission.html">submission guidelines</a>)
-</p>
-
-<h4>[XX.11] Co-working</h4>
-
-<p>
-
-We will have an in-classroom working session on
-<a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">Practical 3</a>.
-Attendence is optional. Students who have already completed the assignment may
-work on any NLP project. Instructors will be available to answer questions.
-
-</p>
-
-<h4>[XX.12] Class 4: Dependency grammar and dependency parsing</h4>
-
-<i>Slides</i>: <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/slides/dependency.pdf">Dependency grammar and dependency parsing</a>
-
-<p>
-<b>Preparation:</b> 
-<ul>
-<li>Read through the Chapter on <i><a href="https://web.stanford.edu/~jurafsky/slp3/13.pdf">Dependency parsing</a></i> in the new Jurafsky and Martin book.</li>
-</ul>
-</p>
-
-<p>
-<b>Lectures:</b>
-
-<ul>
-<li></li>
-</ul>
-</p>
-
-<p>
-<b>Test:</b>
-
-<ul>
 <li>
-(see <a href="submission.html">submission guidelines</a>)
+<h3><a href="practicals/segmentation.html">Segmentation &amp; Tokenization</a> (both tracks)</h3>
 </li>
-</ul>
-</p>
-<h4>[XX.12] Practical 4</h4>
-
-<p>
-<b>Practical:</b> Go through the <a href="https://ftyers.github.io/2018-komp-ling/dependency.html">Dependency parsing practical</a>
-(see <a href="submission.html">submission guidelines</a>)
-</p>
-
-
-<h4>[XX.12] Co-working</h4>
-
-<p>
-
-We will have an in-classroom working session on
-<a href="https://ftyers.github.io/2018-komp-ling/dependency.html">Practical 4</a>.
-Attendence is optional. Students who have already completed the assignment may
-work on any NLP project. Instructors will be available to answer questions.
-
-</p>
-
-<h4>[XX.12] Project Presentations</h4>
-
-<p>
-
-Students will give presentations on their projects. We tentatively expect 30min
-presentations; more information will be provided.
-
-</p>
-
-
-
-
+<li>
+<h3><a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">Finite-state Morphology</a> / <a href="../079-osnov-programm/classes/04_1.html">Transliteration</a></h3>
+</li>
+<li>
+<h3><a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">Morphological disambiguation</a> / <a href="../079-osnov-programm/classes/04_2.html">Unigram model</a></h3>
+</li>
+<li>
+<h3><a href="practicals/dependency.html">Dependency parsing</a> / <a href="../079-osnov-programm/classes/05.html">Unigram part-of-speech tagger</a></h3>
+</li>
+</ol>
+<p>See <a href="submission.html">submission guidelines</a>.</p>
+<h2>Schedule</h2>
+<p>We are scheduled to meet every Tuesday 18.10-21.00 MSK. Generally
+we will alternate between classes with new material and
+co-working.</p>
+<p>Co-working classes are optional, and are an opportunity to work
+together on NLP projects (even those not part of the class) and
+ask questions of peers and instructors.</p>
+<h3>Oct 9</h3>
+<p>In this class we will give an introduction to the syllabus and help with
+installing the requisite software.</p>
+<h3>Oct 16</h3>
+<p>Sentence segmentation (<a href="slides/segmentation.pdf">slides</a>,
+<a href="https://peertube.xyz/videos/watch/55348c29-1f15-4e8b-a02a-5c7fb21b6acd">video</a>) and tokenization &amp; word segmentation
+(<a href="slides/tokenisation.pdf">slides</a>, <a href="https://peertube.xyz/videos/watch/772d548b-e04c-49ae-9c60-7134fc1ba098">video</a>).</p>
+<p>Read §3.9 <em>Word and Sentence Tokenisation</em> in <a href="http://www.cs.colorado.edu/%7Emartin/slp.html">Jurafsky-Martin 2ed</a> and
+§4.2.4 <em>Sentences</em> in <a href="https://nlp.stanford.edu/fsnlp/">Manning-Schütze</a>. <a href="quizzes/quiz-01.html">Reading quiz</a> due
+Tue Oct 30.</p>
+<p>Start <a href="practicals/segmentation.html">practical 1</a>.</p>
+<h3>Oct 23</h3>
+<p>Exam week, no class.</p>
+<h3>Oct 30</h3>
+<p>Co-work on <a href="practicals/segmentation.html">Segmentation &amp; Tokenization</a>.</p>
+<p>Due: <a href="quizzes/quiz-01.html">quiz 1</a>.</p>
+<h3>Nov 2 (<strong>Friday</strong>)</h3>
+<p>Finite-state morphology (<a href="slides/morphology.pdf">slides</a>,
+<a href="https://peertube.xyz/videos/watch/5811dfa7-9984-4c02-97e2-90934810fe9e">video</a>).</p>
+<p>Read §3.2-3.7 of <a href="http://www.cs.colorado.edu/%7Emartin/slp.html">Jurafsky-Martin 2ed</a>, and all (but especially §4) of
+<a href="https://web.stanford.edu/%7Elaurik/publications/fsc-91/fsc91.html">Karttunen</a>. <a href="quizzes/quiz-02.html">Reading quiz</a> due <!-- FIXME: --> no
+earlier than Nov 13.</p>
+<p>Due: <a href="practicals/segmentation.html">practical 1 Segmentation &amp; Tokenization</a>, <a href="projects/rfp.html">project proposals</a>.</p>
+<p>Start practical 2, <a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">Finite-state Morphology</a> (algorithms) or
+<a href="../079-osnov-programm/classes/04_1.html">Transliteration</a> (engineering).</p>
+<h3>Nov 6</h3>
+<p>Co-work on practical 2, <a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">Finite-state Morphology</a> (algorithms) or
+<a href="../079-osnov-programm/classes/04_1.html">Transliteration</a> (engineering).</p>
+<h3>Nov 13</h3>
+<p>Morphological disambiguation ([slides][morph-disam-slides],
+[video][morph-disam-video]).</p>
+<p>Read §5.1-5.8 in <a href="http://www.cs.colorado.edu/%7Emartin/slp.html">Jurafsky-Martin 2ed</a>. [Reading quiz][morph-disam-quiz] due <!-- FIXME --> no earlier than Nov 27.</p>
+<p>Due: practical 2, <a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">Finite-state Morphology</a> (algorithms) or
+<a href="../079-osnov-programm/classes/04_1.html">Transliteration</a> (engineering), <a href="quizzes/quiz-02.html">quiz-02</a>.</p>
+<p>Start practical 3, <a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">Morphological disambiguation</a> (algorithms) or
+<a href="../079-osnov-programm/classes/04_2.html">Unigram model</a> (engineering).</p>
+<h3>Nov 20</h3>
+<p>Co-work on practical 3, <a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">Morphological disambiguation</a> (algorithms) or
+<a href="../079-osnov-programm/classes/04_2.html">Unigram model</a> (engineering).</p>
+<h3>Nov 27</h3>
+<p>Dependency parsing ([slides][dep-parse-slides],
+[video][dep-parse-video]).</p>
+<p>Read Chapter 13 <em>Dependency parsing</em> in <a href="https://web.stanford.edu/%7Ejurafsky/slp3/">Jurafsky-Martin 3ed</a>. [Reading
+quiz][dep-parse-quiz] due <!-- FIXME --> no earlier than Dec 11.</p>
+<p>Due: practical 3, <a href="../2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">Morphological disambiguation</a> (algorithms) or
+<a href="../079-osnov-programm/classes/04_2.html">Unigram model</a> (engineering), [quiz-03][morph-disam-quiz].</p>
+<p>Start practical 4, <a href="practicals/dependency.html">Dependency parsing</a> (algorithms) or <a href="../079-osnov-programm/classes/05.html">Unigram
+part-of-speech tagger</a> (engineering).</p>
+<h3>Dec 4</h3>
+<p>Co-work on practical 4, <a href="practicals/dependency.html">Dependency parsing</a> (algorithms) or <a href="../079-osnov-programm/classes/05.html">Unigram
+part-of-speech tagger</a> (engineering).</p>
+<h3>Further</h3>
+<p>To be decided.</p>
+<h2>Details</h2>
+<h3>Submission</h3>
+<p>All submissions are carried out through pull-requests on
+[Github][github.com]. See <a href="submission.html">submission guidelines</a> for details.</p>
+<p>Deadlines are all 23:59:59 <a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth">anywhere on
+earth</a>.</p>
 <h3>Marking</h3>
-
 <ul>
-<li>60% Practicals</li>
-<li>20% Exam</li>
-<li>10% Tests</li>
+<li>70% Practicals</li>
+<li>20% Reading Quizzes</li>
 <li>10% Active participation</li>
 </ul>
-
-<p>
-<!--<p>
-<b>Exam:</b> There will be a short exam to test you on what you have learnt in the course. There will be a number of 
-  multiple choice questions and a programming assignment to complete on paper. As programming is a subject that is 
-  more suited to practical evaluation the exam has a concomitantly low contribution to your final mark.
-</p>-->
-<p>
-<b>Practicals:</b> Most of the course will be made up of practical sessions. Practical sessions will take up
-all of the allotted time and you will be expected to finish them as homework. They should be submitted a day
-before the date of the next practical session <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere on Earth</a>.
-</p>
-<p>
-<b>Exam:</b>  There will be an end of course exam which will consist of ten questions. The exam will be a take home
-exam.
-</p>
-<p>
-<b>Tests:</b> Each class will have a test attached to it. The test will consist of up to 10 questions which you will
-be expected to answer and return before the subsequent class. Submission of these tests will be done by forking
-using <tt>git</tt>.
-</p>
-<p>
-<b>Active participation:</b> Beyond simply showing up, I encourage you to contribute to discussions by 
-asking questions, answering questions, making relevant comments, helping classmates and asking for help with in-class 
-activities, etc. There are no stupid questions &mdash; I want to make sure everyone grasps the concepts, and many 
-are not as straightforward as they may first seem (or as I think they are). You are also expected to have read 
-any assigned readings before class.
-</p>
-
+<h3>Quizzes</h3>
+<p>Each lecture will have a short reading quiz attached.</p>
+<h3>Active participation</h3>
+<p>Beyond simply showing up, I encourage you to contribute to
+discussions by asking questions, answering questions, making
+relevant comments, helping classmates and asking for help with
+in-class activities, etc. There are no stupid questions — I
+want to make sure everyone grasps the concepts, and many are not
+as straightforward as they may first seem (or as I think they
+are). You are also expected to have read any assigned readings
+before class.</p>
 <h3>In the classroom</h3>
-
-<!--<p>
-This course is taught mostly on computers, so we will be using computers in every class. This 
-brings about the potential for a number of distractions, so please use the computer 
-only for relevant classroom activities. In other words, please refrain from any 
-non-class-related activities, including messaging (e-mail, social media, etc.), homework 
-for other courses, etc.
-</p>-->
-<p>
-Note on pronouns: If you'd like to be referred to by a pronoun that you think we might not
-guess correctly or if you notice us referring to you by some other pronoun than what you'd prefer, 
-please let me know so that we can get it right.
-</p>
-<p>
-Note on language: If we are talking too fast, or if we use an expression that you do not understand
-and you think it is having an effect on your learning, please ask us to slow down. You are 
-welcome to come and talk to us at any time about issues relating to language. We will be happy 
-to discuss them.
-</p>
+<p>Note on pronouns: If you'd like to be referred to by a pronoun
+that you think we might not guess correctly or if you notice us
+referring to you by some other pronoun than what you'd prefer,
+please let me know so that we can get it right.</p>
+<p>Note on language: If we are talking too fast, or if we use an
+expression that you do not understand and you think it is having
+an effect on your learning, please ask us to slow down. You are
+welcome to come and talk to us at any time about issues relating
+to language. We will be happy to discuss them.</p>
+<!-- References -->
 </div>
-</body>
-</html>
-
