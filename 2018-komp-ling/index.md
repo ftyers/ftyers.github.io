@@ -109,6 +109,7 @@ ask questions of peers and instructors.
 [morphology-slides]:   slides/morphology.pdf
 [morphology-video]:    https://peertube.xyz/videos/watch/5811dfa7-9984-4c02-97e2-90934810fe9e
 [morphology-quiz]:     quizzes/quiz-02.html
+[disambiguation-slides]: slides/disambiguation.pdf
 
 ### Oct 9
 
@@ -159,10 +160,10 @@ Co-work on practical 2, [Finite-state Morphology] (algorithms) or
 
 ### Nov 13
 
-Morphological disambiguation ([slides][morph-disam-slides],
-[video][morph-disam-video]).
+Morphological disambiguation ([slides][disambiguation-slides],
+[video][disambiguation-video]).
 
-Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][morph-disam-quiz] due <!-- FIXME --> no earlier than Nov 27.
+Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][disambiguation-quiz] due <!-- FIXME --> no earlier than Nov 27.
 
 Due: practical 2, [Finite-state Morphology] (algorithms) or
 [Transliteration] (engineering), [quiz-02][morphology-quiz].
