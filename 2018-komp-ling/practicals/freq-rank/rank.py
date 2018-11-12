@@ -33,4 +33,6 @@ for r in ranks:
 	ylist.append(r[1])
 
 pylab.plot (xlist, ylist)
+pylab.xlabel('rank')
+pylab.ylabel('frequency')
 pylab.show()
