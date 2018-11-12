@@ -48,7 +48,7 @@ For the qualitative evaluation I used the diff command. Pragmatic Segmenter didn
 > Лисенка, яку було успішно виконано.
 
 The correct sentence: 
-> На 1950-ті роки припадає величезна робота з редагування та підготовки до друку творів М.Лисенка, яку було успішно виконано.
+> На 1950-ті роки припадає величезна робота з редагування та підготовки до друку творів М. Лисенка, яку було успішно виконано.
 
 > Т.
 
@@ -57,7 +57,7 @@ The correct sentence:
 >  Шевченко називав археологію «матір'ю історії»
 
 The correct sentence: 
-> Т.Г.Шевченко називав археологію «матір'ю історії»
+> Т. Г. Шевченко називав археологію «матір'ю історії»
 
 It didn’t detect the abbreviation of ‘century’ ("ст".) as well:
 
@@ -67,6 +67,16 @@ It didn’t detect the abbreviation of ‘century’ ("ст".) as well:
 
 The correct sentence:
 > Одними з перших археологічних розкопок в Україні можна вважати розкопки Десятинної церкви в Києві (зруйнована татаро-монголами 1240), що були здійснені Петром Могилою в 30-х роках 17 ст. з метою будівництва на її місці нової церкви під тією ж назвою.
+
+## ADDITION 12/11/2018
+
+When I segmented the Ukrainian paragraphs by Pragmatic Segmenter, I forgot to change the language in segmenter.rb to Russian (the closest one to Ukrainian). After I changed the language, Pragmatic Segmenter gave a little bit better results: the 'diff' command in Linux Terminal showed that 109 sentences were detected correctly. 
+
+It recognized the name abbreviation, if there was only one capital letter before the family name (as 'М. Лисенка'), but it still couldn't detect a sentence boundary correctly in the case of abbreviations such as 'Т. Г. Шевченко' and the 'century' abbreviation. 
+
+As we can see, the sent_tokenize() function still works better for segmenting the Ukrainian text into sentences (see below).  
+
+* By the way, on Github repository page the Russian language is not included in the list of languages despite English, which Pragmatic Segmenter supports with regards to sentence boundary punctuation (but there are still some examples of how Pragmatic Segmenter works with Russian, so I tried it).
 
 ### 1.2.2 A function sent_tokenize() 
 
