@@ -1,5 +1,5 @@
-1. A simple lexical transducer
-"Now, go back to your chv.lexc file and add some more stems, for example пахча "сад, garden", хула "город, city" and канаш "совет, council". 
+п»ї1. A simple lexical transducer
+"Now, go back to your chv.lexc file and add some more stems, for example РїР°С…С‡Р° "СЃР°Рґ, garden", С…СѓР»Р° "РіРѕСЂРѕРґ, city" and РєР°РЅР°С€ "СЃРѕРІРµС‚, council". 
 Then recompile and rerun the other steps up to visualisation."
 &
 2. Continuation classes
@@ -11,63 +11,63 @@ Then recompile and rerun the other steps up to visualisation."
 "Now try out the other arrows with your rule, recompile and look at the output."
 
 1) output for =>
-канаш<n><ins>:канашпа
-канаш<n><ins>:канашпе
-канаш<n><pl><ins>:канашсемпе
-пакча<n><ins>:пакчапа
-пакча<n><ins>:пакчапе
-пакча<n><pl><ins>:пакчасемпе
-урам<n><ins>:урампа
-урам<n><ins>:урампе
-урам<n><pl><ins>:урамсемпе
-хула<n><ins>:хулапа
-хула<n><ins>:хулапе
-хула<n><pl><ins>:хуласемпе
+РєР°РЅР°С€<n><ins>:РєР°РЅР°С€РїР°
+РєР°РЅР°С€<n><ins>:РєР°РЅР°С€РїРµ
+РєР°РЅР°С€<n><pl><ins>:РєР°РЅР°С€СЃРµРјРїРµ
+РїР°РєС‡Р°<n><ins>:РїР°РєС‡Р°РїР°
+РїР°РєС‡Р°<n><ins>:РїР°РєС‡Р°РїРµ
+РїР°РєС‡Р°<n><pl><ins>:РїР°РєС‡Р°СЃРµРјРїРµ
+СѓСЂР°Рј<n><ins>:СѓСЂР°РјРїР°
+СѓСЂР°Рј<n><ins>:СѓСЂР°РјРїРµ
+СѓСЂР°Рј<n><pl><ins>:СѓСЂР°РјСЃРµРјРїРµ
+С…СѓР»Р°<n><ins>:С…СѓР»Р°РїР°
+С…СѓР»Р°<n><ins>:С…СѓР»Р°РїРµ
+С…СѓР»Р°<n><pl><ins>:С…СѓР»Р°СЃРµРјРїРµ
 
 In this case we have no (2) constrain, so in the context of the rule %{A%} correspond to either a or e.
 
 2) output for <=
-канаш<n><ins>:канашпа
-канаш<n><pl><ins>:канашсемпа
-канаш<n><pl><ins>:канашсемпе
-пакча<n><ins>:пакчапа
-пакча<n><pl><ins>:пакчасемпа
-пакча<n><pl><ins>:пакчасемпе
-урам<n><ins>:урампа
-урам<n><pl><ins>:урамсемпа
-урам<n><pl><ins>:урамсемпе
-хула<n><ins>:хулапа
-хула<n><pl><ins>:хуласемпа
-хула<n><pl><ins>:хуласемпе
+РєР°РЅР°С€<n><ins>:РєР°РЅР°С€РїР°
+РєР°РЅР°С€<n><pl><ins>:РєР°РЅР°С€СЃРµРјРїР°
+РєР°РЅР°С€<n><pl><ins>:РєР°РЅР°С€СЃРµРјРїРµ
+РїР°РєС‡Р°<n><ins>:РїР°РєС‡Р°РїР°
+РїР°РєС‡Р°<n><pl><ins>:РїР°РєС‡Р°СЃРµРјРїР°
+РїР°РєС‡Р°<n><pl><ins>:РїР°РєС‡Р°СЃРµРјРїРµ
+СѓСЂР°Рј<n><ins>:СѓСЂР°РјРїР°
+СѓСЂР°Рј<n><pl><ins>:СѓСЂР°РјСЃРµРјРїР°
+СѓСЂР°Рј<n><pl><ins>:СѓСЂР°РјСЃРµРјРїРµ
+С…СѓР»Р°<n><ins>:С…СѓР»Р°РїР°
+С…СѓР»Р°<n><pl><ins>:С…СѓР»Р°СЃРµРјРїР°
+С…СѓР»Р°<n><pl><ins>:С…СѓР»Р°СЃРµРјРїРµ
 
 In this case we have no (1) constrain, so %{A%} correspond to either a or e out of context.
 
 3) output for /<=
-канаш<n><ins>:канашпе
-канаш<n><pl><ins>:канашсемпа
-канаш<n><pl><ins>:канашсемпе
-пакча<n><ins>:пакчапе
-пакча<n><pl><ins>:пакчасемпа
-пакча<n><pl><ins>:пакчасемпе
-урам<n><ins>:урампе
-урам<n><pl><ins>:урамсемпа
-урам<n><pl><ins>:урамсемпе
-хула<n><ins>:хулапе
-хула<n><pl><ins>:хуласемпа
-хула<n><pl><ins>:хуласемпе
+РєР°РЅР°С€<n><ins>:РєР°РЅР°С€РїРµ
+РєР°РЅР°С€<n><pl><ins>:РєР°РЅР°С€СЃРµРјРїР°
+РєР°РЅР°С€<n><pl><ins>:РєР°РЅР°С€СЃРµРјРїРµ
+РїР°РєС‡Р°<n><ins>:РїР°РєС‡Р°РїРµ
+РїР°РєС‡Р°<n><pl><ins>:РїР°РєС‡Р°СЃРµРјРїР°
+РїР°РєС‡Р°<n><pl><ins>:РїР°РєС‡Р°СЃРµРјРїРµ
+СѓСЂР°Рј<n><ins>:СѓСЂР°РјРїРµ
+СѓСЂР°Рј<n><pl><ins>:СѓСЂР°РјСЃРµРјРїР°
+СѓСЂР°Рј<n><pl><ins>:СѓСЂР°РјСЃРµРјРїРµ
+С…СѓР»Р°<n><ins>:С…СѓР»Р°РїРµ
+С…СѓР»Р°<n><pl><ins>:С…СѓР»Р°СЃРµРјРїР°
+С…СѓР»Р°<n><pl><ins>:С…СѓР»Р°СЃРµРјРїРµ
 
 As said in the interpretation of the rule type, %{A%} never correspond to a in the context
 and correspond to either a or e out of context.
 
 4. Rule interactions
 
-Added rules for %{м%} and %{A%}:0 after vowel in .twol:
+Added rules for %{Рј%} and %{A%}:0 after vowel in .twol:
 
 "Non surface {A} after vowel"
 %{A%}:0 <=> [ BackVow: | FrontVow: ] %>: _ ;
 
-"Non surface {м} in plural genitive" 
-%{м%}:0 <=> _ %>: %{A%}: н ;
+"Non surface {Рј} in plural genitive" 
+%{Рј%}:0 <=> _ %>: %{A%}: РЅ ;
 
 Transducer is on the picture "chv.gen.png", minimazed by command:
 $ hfst-minimise chv.gen.hfst  | hfst-fst2txt| python3 att2dot.py  | dot -Tpng -o chv.gen.png.
@@ -82,15 +82,15 @@ Command to get .mor file:  hfst-invert chv.gen.hfst -o chv.mor.hfst
 
 7. Lexicon construction
 Fisrt 10 most frequient words from wiki texts:
- 33356 Юханшыв
-  30359 кeрет
-  30343 шыв
-  29671 Шыв
-  27039 км
-  26485 бассейнe
-  25745 Раccей
-  25276 юханшыв
-  22810 хыпарeпе
+ 33356 Р®С…Р°РЅС€С‹РІ
+  30359 РєeСЂРµС‚
+  30343 С€С‹РІ
+  29671 РЁС‹РІ
+  27039 РєРј
+  26485 Р±Р°СЃСЃРµР№РЅe
+  25745 Р Р°ccРµР№
+  25276 СЋС…Р°РЅС€С‹РІ
+  22810 С…С‹РїР°СЂeРїРµ
 It seems there were a lot of texts about rivers..........
 
 8. Evaluation
@@ -100,12 +100,12 @@ $ python3 evaluate-morph.py test.txt ref.txt
 
 P = 3/4 = 0.75
 R = 3/(4+2) = 0.6
-F 1 = 2 P R P + R = 2 0.75 · 0.6 0.75 + 0.6 = 0.66
+F 1 = 2 P R P + R = 2 0.75 В· 0.6 0.75 + 0.6 = 0.66
 
 9. Weighting
-$ echo "область" | hfst-lookup -qp chv.surweights.hfst
-область	область	11,377200
+$ echo "РѕР±Р»Р°СЃС‚СЊ" | hfst-lookup -qp chv.surweights.hfst
+РѕР±Р»Р°СЃС‚СЊ	РѕР±Р»Р°СЃС‚СЊ	11,377200
 
-$ echo "облаc" | hfst-lookup -qp chv.surweights.hfst
-обла?	обла?	10,050300
+$ echo "РѕР±Р»Р°c" | hfst-lookup -qp chv.surweights.hfst
+РѕР±Р»Р°?	РѕР±Р»Р°?	10,050300
 
