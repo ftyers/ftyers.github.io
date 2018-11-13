@@ -14,7 +14,7 @@
 <h3>Pragmatic Segmenter</h3>
 
 <p>A rule-based Ruby package for sentence segmentation, works out-of-the-box across many languages.</p>
-<p>Segmentation of wiki paragraphs using pragmatic segmenter:<br> 
+<p>Segmentation of wiki paragraphs using pragmatic segmenter (the value of the argument "lang" was changed to 'ru'):<br> 
 	<xmp>$ ruby -I . segmenter.rb <random50.txt >pragmsegm_results.txt</xmp></p>
 <p>Results are in <i>'pragmsegm_results.txt'</i> file.</p>
 
