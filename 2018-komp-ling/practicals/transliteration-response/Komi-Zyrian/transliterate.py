@@ -28,7 +28,7 @@ for line in sys.stdin.readlines():
         else:
             translit += letter
 
-#3. change the transliteration to provide mappings from many characters to one character
+#3. change the transliteration to provide correct mappings / mappings from many characters to one character
     if re.search('(.*)?dz.*', translit):
         translit = re.sub("(.*?)dz(.*?)", r"\1dž'\2", translit)
     if re.search('Dz.*', translit):
