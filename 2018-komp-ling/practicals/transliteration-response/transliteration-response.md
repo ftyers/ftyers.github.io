@@ -32,15 +32,18 @@ My program takes two arguments: the source file (kpv_lattice-ud-test.conllu) and
 5. The answers to the questions after the practical:
 
 - What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
+
 The answer: I think we could write a context rule in our code (using the condition 'íf') that says in which positions - inside or between words - 'je' occurs or 'e' occurs. For example, if it is the beginning of the word or the previous letter is a vowel, we transliterate 'e' as 'je'. Also we could include this constraint in FST phonological rules. Or we can use ranking, if, for example, the difference of pronounciation depends on the the area where native speakers live.   
 To conclude, I think there is a plenty of ways to write such rules, depending on our purpose. Maybe for some tasks such division of transliteration is not necessary. 
 
 - Can you think of a way that you could provide mappings from many characters to one character ? For example sh → ш or дж → c ?
+
 The answer. I thought on that a lot. My first idea is to use regular expressions to change the wrong transliteration to the correct one before writing it in a file, and I used this method in my code. 
 The other possible way is as follows. In case of 'sh', when the program checks if 's' in the dictionary, it should also check, if the next symbol is 'h'. If yes, the program should search the key 'sh' in the dictionary. In my opinion, it's more elabotare, than writing regular expressions. I would like to know other ways to provide such mappings. 
 
 - How might you make different mapping rules for characters at the beginning or end of the string ?
-I cannot imagine the purpose of that, but apparantly we may create another dictionary for special cases and use the "if" condition and some methods, such as str.startswhith(...) or str.endswith(...): depending on trueness or falseness the program would choose the right dictionary to refer. 
+
+The answer. I cannot imagine the purpose of that, but apparantly we may create another dictionary for special cases and use the "if" condition and some methods, such as str.startswhith(...) or str.endswith(...): depending on trueness or falseness the program would choose the right dictionary to refer. 
 
 
 
