@@ -1,0 +1,318 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Компьютерная лингвистика</title>
+</head>
+
+<body>
+<div class="page">
+<h2>Компьютерная лингвистика</h2>
+
+<h3> Description </h3>
+<p>
+This course is an introduction to the pipeline approach to natural language processing. In a pipeline
+approach, raw text goes through a sequence of steps (or tasks) to process it into a form more useful
+for end-user applications. The steps we will cover are sentence segmentation, word tokenisation, 
+morphological analysis and disambiguation and dependency parsing. This should give you all of the 
+details you need in order to approach more complex tasks such as co-reference resolution, relation
+extraction, etc.
+</p>
+<h3> Course objectives </h3>
+
+By the end of this course you should be:
+<ul>
+<li> Understand issues in segmentation and tokenisation of texts and implement solutions </li>
+<li> Use two-level morphology to model morphological phenomena </li>
+<li> Describe and use three approaches to morphological disambiguation </li>
+<li> Understand the principles behind transition-based and graph-based dependency parsing </li>
+<li> Know the steps to be able to go from raw text to dependency trees for any language </li>
+</ul>
+
+<h3> Prior experience </h3>
+<p>
+You are expected to have knowledge of programming in Python and some experience with Unix-based operating 
+systems. In addition you should be comfortable with using popular search engines to answer simple
+questions about other programming languages and operating-system based issues. 
+</p>
+<p>
+You need not have any experience in natural language processing.
+</p>
+<h3>Syllabus overview</h3>
+
+<ul>
+  <li> Introduction </li>
+  <ul>
+     <li> Get necessary software installed </li>
+     <li> Get familiar with the Unix command line </li>
+  </ul>
+  <li> Segmentation and tokenisation </li>
+  <ul>
+     <li> Ambiguities in segmentation and tokenisation </li>
+     <li> The <tt>maxmatch</tt> algorithm </li>
+     <li> Word segmentation as a graph </li>
+  </ul>
+  <li> Morphological analysis with finite-state transducers </li>
+  <ul>
+     <li> Morphological processes (inflection, derivation, ...)</li>
+     <li> Representing lexicons as finite-state automata </li>
+     <li> Phonological rules </li>
+  </ul>
+  <li> Morphological disambigution </li>
+  <ul>
+    <li> Rule-based disambiguation using constraint grammar </li>
+    <li> Hidden Markov Models for disambiguation (generative model) </li>
+    <li> Averaged perceptron for disambiguation (discriminative model) </li>
+  </ul>
+  <li> Dependency parsing </li>
+  <ul>
+    <li> Dependency grammar </li>
+    <li> Transition-based parsing </li>
+    <li> Graph-based parsing </li>
+  </ul>
+</ul> 
+
+
+<h3> Lectures and practicals </h3>
+
+<div style="padding: 3px; border-style: solid; border-color: grey; background-color: grey; color: white; width: 100%"><b>Module 1</b></div>
+
+<!--<h4>[02.10] Class 0: Introduction</h4>-->
+
+<h4>[09.10] Class 0: Introduction</h4>
+
+In this class we will give an introduction to the syllabus and help with installing the 
+requisite software.
+
+<h4>[09.10] Practical 0</h4>
+
+<p>
+<b>Practical:</b> Familiarise yourself with modern Unix-like tools for text manipulation. See <a href="practicals/unix.html">details</a>.
+</p>
+
+
+<h4>[16.10] Class 1: Segmentation and tokenisation</h4> 
+
+<i>Slides</i>: <a href="slides/segmentation.pdf">Sentence segmentation</a> and <a href="slides/tokenisation.pdf">Tokenisation and word segmentation</a>
+
+<p>
+<b>Preparation:</b> 
+<ul>
+<li>Read Chapter 3.9 <i>Word and Sentence Tokenisation</i> (pp. 69&mdash;72) in Jurafsky and Martin.
+<li>Read Section 4.2.4 <i>Sentences</i> (pp. 134&mdash;136) in Manning and Schütze.
+</ul>
+</p>
+
+<p>
+<b>Lectures:</b>
+
+<ul>
+<li>Video: <a href="https://peertube.xyz/videos/watch/55348c29-1f15-4e8b-a02a-5c7fb21b6acd">Sentence segmentation</a></li>
+<li>Video: <a href="https://peertube.xyz/videos/watch/772d548b-e04c-49ae-9c60-7134fc1ba098">Tokenisation and word segmentation</a> </li>
+</ul>
+</p>
+
+<p>
+<b>Test:</b>
+
+<ul>
+<li><a href="quizzes/quiz-01.html">Segmentation and tokenisation</a> (see <a href="submission.html">submission guidelines</a>)</li>
+</ul>
+</p>
+
+<h4>[23.10] Practical 1</h4>
+
+<!-- download + extract wikipedia, process with a segmenter and a tokeniser -->
+
+<p>
+<b>Practical:</b> Download and extract a Wikipedia dump, segment it and tokenise it. See <a href="practicals/segmentation.html">details</a>.
+(see <a href="submission.html">submission guidelines</a>)
+</p>
+
+
+<h4>[30.10] Class 2: Morphological modelling with finite-state transducers</h4> 
+
+<i>Slides</i>: <a href="slides/morphology.pdf">Morphological modelling</a> 
+
+<p>
+<b>Preparation:</b> 
+<ul>
+<li>Read Chapters 3.2&mdash;3.7 (pp. 53&mdash;67) of Jurafsky and Martin.</li>
+<li>Read Karttunen's <a href="https://web.stanford.edu/~laurik/publications/fsc-91/fsc91.html"><i>Finite-State Constraints</i></a>, paying particular attention to Section 4.</li>
+</ul>
+</p>
+
+<p>
+<b>Lectures:</b>
+
+
+<ul>
+<li></li>
+</ul>
+</p>
+
+<p>
+<b>Test:</b>
+
+<ul>
+<li>(see <a href="submission.html">submission guidelines</a>)</li>
+</ul>
+
+</p>
+
+<p>
+<b>Projects:</b>
+
+<ul>
+<li>optional projects</li>
+<li>can be in groups or solo</li>
+<li>let instructors know if you want suggestions</li>
+<li>see the <a href="projects/rfp.html">request for proposals</a>; proposals are due Tuesday Oct 30</li>
+</ul>
+</p>
+
+<h4>[06.11] Practical 2</h4>
+
+<p>
+<b>Practical:</b> Go through the <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/hfst.html">tutorial on HFST</a> (see <a href="submission.html">submission guidelines</a>)
+</p>
+
+
+<h4>[XX.11] Class 3: Morphological disambiguation</h4> 
+
+<i>Slides</i>: <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/slides/disambiguation.pdf">Morphological disambiguation</a>
+
+<p>
+<b>Preparation:</b> 
+<ul>
+<li>Read Sections 5.1&mdash;5.8 <i>Part-Of-Speech Tagging</i> (pp. 123&mdash;163) in Jurafsky and Martin.</li>
+</ul>
+</p>
+
+<p>
+<b>Lectures:</b>
+
+
+<ul>
+<li></li>
+</ul>
+</p>
+
+<p>
+<b>Test:</b>
+
+<ul>
+<li>
+(see <a href="submission.html">submission guidelines</a>)
+</li>
+</ul>
+</p>
+
+<h4>[XX.11] Practical 3</h4>
+
+<p>
+<b>Practical:</b> Go through the <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/practicals/disambiguation.html">practical notes on disambiguation</a>.
+(see <a href="submission.html">submission guidelines</a>)
+</p>
+
+<h4>[XX.11] Class 4: Dependency grammar and dependency parsing</h4> 
+
+<i>Slides</i>: <a href="https://ftyers.github.io/2017-%D0%9A%D0%9B_%D0%9C%D0%9A%D0%9B/slides/dependency.pdf">Dependency grammar and dependency parsing</a>
+
+<p>
+<b>Preparation:</b> 
+<ul>
+<li>Read through the Chapter on <i><a href="https://web.stanford.edu/~jurafsky/slp3/13.pdf">Dependency parsing</a></i> in the new Jurafsky and Martin book.</li>
+</ul>
+</p>
+
+<p>
+<b>Lectures:</b>
+
+<ul>
+<li></li>
+</ul>
+</p>
+
+<p>
+<b>Test:</b>
+
+<ul>
+<li>
+(see <a href="submission.html">submission guidelines</a>)
+</li>
+</ul>
+</p>
+<h4>[XX.11] Practical 4</h4>
+
+<p>
+<b>Practical:</b> Go through the <a href="https://ftyers.github.io/2018-komp-ling/dependency.html">Dependency parsing practical</a>
+(see <a href="submission.html">submission guidelines</a>)
+</p>
+
+
+
+
+
+<h3>Marking</h3>
+
+<ul>
+<li>60% Practicals</li>
+<li>20% Exam</li>
+<li>10% Tests</li>
+<li>10% Active participation</li>
+</ul>
+
+<p>
+<!--<p>
+<b>Exam:</b> There will be a short exam to test you on what you have learnt in the course. There will be a number of 
+  multiple choice questions and a programming assignment to complete on paper. As programming is a subject that is 
+  more suited to practical evaluation the exam has a concomitantly low contribution to your final mark.
+</p>-->
+<p>
+<b>Practicals:</b> Most of the course will be made up of practical sessions. Practical sessions will take up
+all of the allotted time and you will be expected to finish them as homework. They should be submitted a day
+before the date of the next practical session <a href="https://www.timeanddate.com/time/zones/aoe">Anywhere on Earth</a>.
+</p>
+<p>
+<b>Exam:</b>  There will be an end of course exam which will consist of ten questions. The exam will be a take home
+exam.
+</p>
+<p>
+<b>Tests:</b> Each class will have a test attached to it. The test will consist of up to 10 questions which you will
+be expected to answer and return before the subsequent class. Submission of these tests will be done by forking
+using <tt>git</tt>.
+</p>
+<p>
+<b>Active participation:</b> Beyond simply showing up, I encourage you to contribute to discussions by 
+asking questions, answering questions, making relevant comments, helping classmates and asking for help with in-class 
+activities, etc. There are no stupid questions &mdash; I want to make sure everyone grasps the concepts, and many 
+are not as straightforward as they may first seem (or as I think they are). You are also expected to have read 
+any assigned readings before class.
+</p>
+
+<h3>In the classroom</h3>
+
+<!--<p>
+This course is taught mostly on computers, so we will be using computers in every class. This 
+brings about the potential for a number of distractions, so please use the computer 
+only for relevant classroom activities. In other words, please refrain from any 
+non-class-related activities, including messaging (e-mail, social media, etc.), homework 
+for other courses, etc.
+</p>-->
+<p>
+Note on pronouns: If you'd like to be referred to by a pronoun that you think we might not
+guess correctly or if you notice us referring to you by some other pronoun than what you'd prefer, 
+please let me know so that we can get it right.
+</p>
+<p>
+Note on language: If we are talking too fast, or if we use an expression that you do not understand
+and you think it is having an effect on your learning, please ask us to slow down. You are 
+welcome to come and talk to us at any time about issues relating to language. We will be happy 
+to discuss them.
+</p>
+</div>
+</body>
+</html>
+
