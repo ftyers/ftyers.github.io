@@ -42,9 +42,11 @@ Copyright 2018 Nick Howell
 
 5. Draw a diagram of a finite-state transducer implementing the simple English
    pluralization model
+```
        SOFT = ch sh tz _s _x
        [SOFT]<PL>:[SOFT]es 
        __<PL>:__s
+```
 
    Implement your model in python, reading line-by-line from standard input and
    writing output line-by-line.
