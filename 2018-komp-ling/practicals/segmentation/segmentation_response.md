@@ -1,22 +1,22 @@
 # Segmentation report
 ##### *Anastasia Nikiforova*
 
+**UPDATE** - Pragmatic Segmenter lang is set to "ru". Correcting the report below...
 
 * Brief description of each segmenter used
   * I used two segmenters: **Pragmatic Segmenter** and **NLTK's Puntk**. 
   
-  I definitely enjoyed the performance of NLTK's Puntk more: it seems to be way more accurate.
-  The problem with Pragmatic Segmenter is that it doesn't cover difficult cases, such as abbreviations or internal ".", "?", "!".
-  Punkt solves this ambiguous cases better, but, again, not perfectly. NLTK works best with English, performance on other languages is lower.
+  I definitely enjoyed the performance of NLTK's Puntk more, but in some cases Pragmatic Segmenter works better (see the table below).
+  The noticeable problem with Pragmatic Segmenter is that it segments names when it shouldn't (like: A. C. Пушкин).
+  Punkt solves this case better. NLTK works best with English, performance on other languages is lower.
+  The advantage of Pragmatic Segmenter is that is really easy to add new exceptions to segmentation rules (just add them to the library in the *Languages* folder). I'm sure it is possible to add rules to Punkt as well, but it seems to me it requires a bit more of a hustle :)
 
 * Quantitative evaluation
 
   * First 1000 paragraphs - Punkt: 2531 sentences; Pragmatic Segmenter: 2869 sentences.
   * On average, Pragmatic Segmenter's result contains 12% more sentences than Punkt's.
   * Accuracy rate for Punkt: 0.86;
-  * Accuracy rate for Pragmatic Segmenter: 0.79;
-    ** (Tested on a mini corpus of 56 sentences, where Punkt founв 65 segments, and Pragmatic Segmenter found 71 sentences)
-  
+  * Accuracy rate for Pragmatic Segmenter: 0.89;  
   
 
 * Qualitative evaluation: Comparing performance on ambiguous cases.
@@ -39,5 +39,9 @@
 ||*тыс. человек*| -- |split :(|
 ||*др.*| -- | split :(|
 
-It is noticeable that Pragmatic Segmenter is not aware of some abbreviations, names and unconventional punktuation combination. However, its adnavtage is that it can treat one quotation as an inseparable segment.
+It is noticeable that both Pragmatic Segmenter and Puntk are not aware of some abbreviations, and unconventional punktuation combination.
+
+NLTK Punkt works perfectly with contracted names. 
+
+**Interesting:** I noticed that Pragmatic Segmenter does one very interesting thing. It treats one quotation as an inseparable segment. How cool is that!
 Punkt doen't split names or most abbreviations, however there are some abbr. that are very popular, but Punkt still splits them.
