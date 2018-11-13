@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+
+\title{Finite-state Morphology}
+\author{Nikolay Babakov }
+\date{November 2018}
+
+\begin{document}
+
+\maketitle  Tasks overview
+
+\section{Archiphonemes}
+On this stage we should apply new Case to our lexc file. I made these changes
+
+Multichar_Symbols
+%<ins%>              ! Творительный падеж
+%{A%}                ! Архифонема а/е
+
+This let me receive necessary output
+$ hfst-lexc chv.lexc | hfst-fst2strings 
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...1 CASES...1 PLURAL...2 N...1 Nouns...
+пакча<n><ins>:пакча>п{A}
+пакча<n><pl><ins>:пакча>сем>п{A}
+урам<n><ins>:урам>п{A}
+урам<n><pl><ins>:урам>сем>п{A}
+канаш<n><ins>:канаш>п{A}
+канаш<n><pl><ins>:канаш>сем>п{A}
+хула<n><ins>:хула>п{A}
+хула<n><pl><ins>:хула>сем>п{A}
+
+
+\section{Phonological rules}
+Tried different rules, exported them to corresponding files (left_right_rule,left_rule etc) , pasted original text and marked changed examples with “!!!” for better visualization
+
+\section{Phonological rules}
+Changed lexc file according to the instructions
+
+LEXICON CASES
+
+%<ins%>:%>п%{A%} # ;
+%<gen%>:%>%{Ă%}н # ;
+
+Multichar_Symbols
+%<gen%>              ! Дательный падеж
+
+This let me get necessary output
+Received necessary result
+
+$ hfst-fst2strings chv.lexc.hfst | grep урам | grep gen
+урам<n><gen>:урам>{Ă}н
+урам<n><pl><gen>:урам>се{м}>{Ă}н
+
+After modifying lexc file I also added %{м%} archyphonem and implemented the rule for deletion
+
+"Case for deletion {м} arcyphoneme"
+%{м%}:0 <=> _ %>: %{Ă%}: н ;
+
+And here is my implementation of Back vowel harmony with exceptions
+
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ <=> BackVow: [ ArchiCns: | Cns: | %>: ]+ _ ;
+        except
+                                   %{м%}: %>:  _ н ;
+                                     Vow: %>:  _ н ;
+                                     
+\section{Productive derivation}
+I am finally stuck on this stage
+I have updated my chv.lexc as instructed and run the following makefile
+all:
+    ./hfst-lexc chv.lexc.txt -o chv.lexc.hfst
+    ./hfst-twolc chv.twol -o chv.twol.hfst
+    ./hfst-compose-intersect -1 chv.lexc.hfst -2 chv.twol.hfst -o chv.gen.hfst
+    ./hfst-invert chv.gen.hfst -o chv.mor.hfst
+
+Every time I try to run recommended command I get very strange output and I was not able to do anything with that even though I acted upon telegram's instructions
+echo патшалӑх | hfst-lookup -qp chv.mor.hfst
+патшалӑх патшалӑх+? inf
+
+All related files in their final state can be found in the same folder where this report is located
+
+\end{document}
