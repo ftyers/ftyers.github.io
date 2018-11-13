@@ -19,9 +19,28 @@ for line in sys.stdin.readlines():
 		vocab[form] = 0
 	vocab[form] = vocab[form] + 1
 
-# print out the frequency list
+
+# Downloaded two parsed sentences files from https://github.com/UniversalDependencies:
+# - ru_pud-ud-test.conllu (1,5 Mb)
+# - ru_syntagrus-ud-dev.conllu (10 Mb)
+
+# cat ru_pud-ud-test.conllu | python3 transliteration.py
+# python3 transliteration.py < ru_pud-ud-test.conllu > text.txt
+# to get a list sorted by frequency:
+# python3 transliteration.py < ru_pud-ud-test.conllu | sort -nr  > text.txt
+# or it's also possible to use the for loop you advised, but I had
+# difficulty using your code as I kept warning  'list indices must be integers or slices, not tuple'
+# so I wrote the same with the format function
+
+
+freq = []
+
 for w in vocab:
-	print('%d\t%s' % (vocab[w], w))
+	freq.append((vocab[w], w))
 
-# get tokenization file for russian (test)
+# freq.sort(reverse=True)
 
+for i in freq:
+	print ('{}\t{}'.format(i[0], i[1]))
+
+# now I have a unique word list arranged by frequency
