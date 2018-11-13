@@ -12,11 +12,13 @@ Punkt Sentence Tokenizer делит текст на предложения, ис
 **Punkt Sentence Tokenizer** допустил четыре ошибки. Не справился с несколькими аббревиатурами: i.e., et al., e.g. С другой стороны с инициалами, прямой речью и оставшейся частью аббревиатур все корректно. Пример ошибки:
 
 > The visit of the three pilgrim "Scots" (i.e.
+
 > Irish) to Alfred in 891 is undoubtedly authentic.
 
 **SpaCy** допустил две одинаковые ошибки. Не справился с et al., также как и Punkt Sentence Tokenizer. Пример:
 
 > The excitation methodology is described by Itano et al.
+
 > and the time needed for it is given by the Rabi flopping formula.
 
 [Подробный код исследования](Segmentation.md)
