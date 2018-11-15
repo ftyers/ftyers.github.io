@@ -29,17 +29,19 @@ for i in ranks:
 
 # Let's make one loop!
 
-rank = 1
+min = 0
 ranks = []
-for line in fd.readlines():
-    line = line.strip('\n')
+text = fd.readlines()
+for i in range(len(text)):
+    line = text[i].strip('\n')
     f, w = line.split('\t')
-
     f = int(f)
-    if
+    if i == 0:
+        min = f
+        rank = 1
     if f < min:
         rank += 1
-        min = rank
+        min = f
     freq.append((rank, f, w))
 
 
