@@ -6,30 +6,30 @@
 There were added the following lines and sections:
 
 * Multichar_Symbols [Added]
-** %<ins%>, %<gen%>, %<der_лӑх%>, %<guess%> - new cases
-** %{м%}, %{ъ%}, %{э%}, %{л%}, %{с%}, %{а%} - new multichar characters
+	* ```%<ins%>, %<gen%>, %<der_лӑх%>, %<guess%>``` - new cases
+	* ```%{м%}, %{ъ%}, %{э%}, %{л%}, %{с%}, %{а%}``` - new multichar characters
 
 * Lexicon Roots [Added]
-** Guesser - for morphological predictions
+	* ```Guesser``` - for morphological predictions
 
 * LEXICON Guesser [New]
-** This lexicon allows us to analyse word morphology (if it's in our dictionary)
+	* This lexicon allows us to analyse word morphology (if it's in our dictionary)
 
 * LEXICON N/сть [New]
-** This section was added to see the difference between *сть* and *ҫ* usages (how frequent each is). The results are below in **Weighing. Surface forms** section of this report.
+	* This section was added to see the difference between *сть* and *ҫ* usages (how frequent each is). The results are below in 	*Weighing. Surface forms* section of this report.
 
 * LEXICON CASES [Added]
-** %<nom%>:%> # ; - added to display %<der_лӑх%> correctly
-** %<gen%>:%>%{Ă%}н # ; - added to see genitive forms
+	* ```%<nom%>:%> # ;``` - added to display ```%<der_лӑх%>``` correctly
+	* ```%<gen%>:%>%{Ă%}н # ;``` - added to see genitive forms
 
 * LEXICON DER-N [New]
-** Added to display %<der_лӑх%> forms
+	* Added to display ```%<der_лӑх%>``` forms
 
 * LEXICON N [Added]
-** %<n%>: SUBST and %<n%>: DER-N added for the corresponding forms
+	* ```%<n%>: SUBST``` and ```%<n%>: DER-N``` added for the corresponding forms
 
 * LEXICON NUM-DIGIT, LAST-DIGIT, LOOP, DIGITLEX [New]
-** added to analyse morphology of compound digits and their forms
+	* added to analyse morphology of compound digits and their forms
 
 ## Changes to *chv.lexc.twol*:
 
@@ -42,14 +42,14 @@ The following changes were made:
 
 * Sets [Added]
 
-** New Set is added: *Vowels* (*FrontVow* + *BackVow*).
+	* New Set is added: ```Vowels``` (*FrontVow* + *BackVow*).
 
 NB! **е** was originally missing in *FrontVow* (if an alrtness quest, it was quite a tricky and unexpected one), so it had to be added later.
 
 * Rules [Added]
-** Three more rules were added (see chv.lexc.twol).
-** I combined two rules into one *"%{Ă%}:0 if there is previous %{м%}: or a vowel and, optionally, a following н"*
-** Two exceptions had to be added to the last rule
+	* Three more rules were added (see chv.lexc.twol).
+	* I combined two rules into one ```"%{Ă%}:0 if there is previous %{м%}: or a vowel and, optionally, a following н"```
+	* Two exceptions had to be added to the last rule
 
 ## Changes to *Makefile*:
 
@@ -70,10 +70,10 @@ $ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | t
 Overall corpus size (word tokens): **2,458,544**
 Word types (unique tokens): **172,336**
 
-The results were written to *freq.txt* file:
+The results were written to *freq.txt* file
 
 ```
-$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr > freq.txt
+[Command above] > freq.txt
 ```
 
 
@@ -82,8 +82,7 @@ $ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | t
 $ calc "(($total-$unknown)/$total)*100"
 	~0.13394403330576701513
 ```
-=> So it surns out that my current analyzer has a coverage of oevr 13%, which is just a bit higher than in our HFST tutorial.
-
+=> It surns out that my current analyzer has a coverage of over 13%, which is just a bit higher than in our HFST tutorial.
 
 
 ## Weighing. Surface forms
@@ -106,5 +105,5 @@ Anyway, it's interesting that despite the corpora are different (mine is a Wikip
 
 I have used the script that was mentioned in the tutorial, but I added two modifications:
 * Encoding. Without mentioning the encoding, the script wouldn't work.
-* ```sys.stdin```, so that we don't have to modify the .py file all the time.
+* ```sys.stdin```, so that we don't have to modify the ```.py``` file all the time.
 
