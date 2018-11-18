@@ -1,25 +1,3 @@
-## Lexicon construction
-
-I noticed that one letter of Chuvash alphabet is missing in the HFST tutorial: **ӳӲ** (*luckily I am a native Chuvash language speaker :)* ). I added then to the command, so that the words containing this letter would not be omitted:
-
-```
-$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr
-```
-
-*I counted differences that this modification made with ```wc -l``` , but it didn't make any difference. I expected that the amount of words will be increased. For some reasons, it didn't.*
-
-**NB!** As a corpus (to count word frequencies) I used Chuvash wikipedia damp (lang code: **cv**). To extract texts, WikiExtractor was used.
-
-Overall corpus size (word tokens): **2,458,544**
-Word types (unique tokens): **172,336**
-
-The results were written to *freq.txt* file:
-
-```
-$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr > freq.txt
-```
-
-
 # Practical #2 - HFST
 #### *Anastasia Nikiforova*
 
@@ -76,6 +54,28 @@ NB! **е** was originally missing in *FrontVow* (if an alrtness quest, it was qu
 ## Changes to *Makefile*:
 
 * Added one line: **hfst-invert chv.gen.hfst -o chv.mor.hfst** to create a *.mor.hfst file
+
+## Lexicon construction
+
+I noticed that one letter of Chuvash alphabet is missing in the HFST tutorial: **ӳӲ** (*luckily I am a native Chuvash language speaker :)* ). I added then to the command, so that the words containing this letter would not be omitted:
+
+```
+$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr
+```
+
+*I counted differences that this modification made with ```wc -l``` , but it didn't make any difference. I expected that the amount of words will be increased. For some reasons, it didn't.*
+
+**NB!** As a corpus (to count word frequencies) I used Chuvash wikipedia damp (lang code: **cv**). To extract texts, WikiExtractor was used.
+
+Overall corpus size (word tokens): **2,458,544**
+Word types (unique tokens): **172,336**
+
+The results were written to *freq.txt* file:
+
+```
+$ cat chv.crp.txt  | sed 's/[^а-яӑӗăĕҫçӳА-ЯӐӖĂĔҪÇӲ]\+/ /g' | tr ' ' '\n' | sort -f | uniq -c | sort -gr > freq.txt
+```
+
 
 ## Coverage Results
 ```
