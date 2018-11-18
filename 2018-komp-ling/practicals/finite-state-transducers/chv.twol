@@ -1,12 +1,13 @@
 Alphabet
   а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
   А Ă Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ 
-%{A%}:а %{A%}:е %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0 %{м%}:м %{м%}:0
+ %{A%}:а %{A%}:е %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0 %{м%}:м %{м%}:0
+ %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0 %{ъ%}
 ;
 
 Sets
 
-BackVow = ӑ а ы о у я ё ю ;
+BackVow = ӑ а ы о у я ё ю %{ъ%};
 
 FrontVow = е ӗ э и ӳ ; 
 
@@ -25,7 +26,7 @@ Rules
 "Back vowel harmony for archiphoneme {A}"
 %{A%}:а <=> BackVow: [ Cns: | %>: ]+ _ ;
 
-"%{Ă%}:0 if there is previous %{м%}:0"
+"%{Ă%}:0 if there is previous %{м%}: or a vowel and, optionally, a following н"
 
 %{Ă%}:0 <=> %{м%}: %>:  _ н ;
 	    Vowels: %>: _ ; 
