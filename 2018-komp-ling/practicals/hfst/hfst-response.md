@@ -96,12 +96,6 @@ It seems there were a lot of texts about rivers..........
 8. Evaluation
 Coverage: also 0.12% :(
 
-$ python3 evaluate-morph.py test.txt ref.txt
-
-P = 3/4 = 0.75
-R = 3/(4+2) = 0.6
-F 1 = 2 P R P + R = 2 0.75 · 0.6 0.75 + 0.6 = 0.66
-
 9. Weighting
 $ echo "область" | hfst-lookup -qp chv.surweights.hfst
 область	область	11,377200
@@ -109,3 +103,4 @@ $ echo "область" | hfst-lookup -qp chv.surweights.hfst
 $ echo "облаc" | hfst-lookup -qp chv.surweights.hfst
 обла?	обла?	10,050300
 
+All the files I've got doing this practical are in this folder.
