@@ -191,3 +191,45 @@ LEXICON Nouns
 
 II. chv.twol
 
+# ADDED ALL POSSIBLE OUTPUTS FOR NEW ARCHIFONEMES
+Alphabet
+  а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+  А Ӑ Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ 
+ %{A%}:а %{A%}:е
+ %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0
+ %{м%}:м %{м%}:0
+ %{ъ%}:0
+ %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0
+;
+
+# ADDED SOME SPECIAL ARCHIFONEMES TO SETS
+Sets 
+
+BackVow = ӑ а ы о у я ё ю %{ъ%} %{а%} ;
+FrontVow = ӗ э и ӳ %{э%} ; 
+Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ %{л%} %{с%};
+ArchiCns = %{м%} ;
+
+# ADDED SOME RULES (SEE ABOVE)
+Rules 
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+"Back vowel harmony for archiphoneme {A}"
+%{A%}:а <=> BackVow: [ Cns: | %>: ]+ _ ;
+
+"Non surface {Ă} after vowel"
+%{Ă%}:0 <=> [ BackVow: | FrontVow: ] %>: _ ;
+
+"Non surface {Ă} in plural genitive"
+%{Ă%}:0 <=> %{м%}: %>: _ н ;
+
+"Non surface {м} in plural genitive" 
+%{м%}:0 <=> _ %>: %{Ă%}: н ;
+
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ <=> BackVow: [ ArchiCns: | Cns: | %>: ]+ _ ;
+        except
+                                     %{м%}: %>:  _ н ;
+									 BackVow: %>: _ ;
