@@ -1,0 +1,54 @@
+\documentclass{report}
+\usepackage[euler]{textgreek}
+\usepackage{pifont}
+\usepackage{moreverb}
+\title{Lorenzo Tosi, Test 2} 
+\begin{document}
+\maketitle
+\paragraph{Draw a diagram of a finite-state transducer which implements the simple rewrite "'s" -\textgreater " is"}
+(0) ‘: -\textgreater (1) s:i –\textgreater (2) \textepsilon:s –\textgreater (3)
+\paragraph{Give an example where your transducer expands "'s" when it shouldn't. What information could you incorporate to fix it?}
+‘s can be expanded as “is” \textit{It’s great}, “has”\textit{ he’s gone missing}, “us” \textit{let’s go}, or it can represent the Saxon genitive with no need to be expanded \textit{Niko’s car}. We can implement for example “’s” to be expanded as “us” before “let” as \textit{let is} is ungrammatical, but in other cases it can be expanded in 2 or more ways depending on the context and needs to be considered after POS tagging in morphological disambiguation. \\
+(0) l:l -\textgreater (1) e:e -\textgreater (2) t:t -\textgreater (3) ‘: -\textgreater (4) s:u –\textgreater (5) \textepsilon:s –\textgreater (6) \\
+(0) ‘: -\textgreater (7) s:i –\textgreater (8) \textepsilon:s –\textgreater (6)
+\paragraph{Which of the following are advantages of the two-level formalism for describing morphotactic rules? (Choose all that apply.)}
+Declarative rather than procedural. \\ 
+Parallel application rather than sequential.
+\paragraph{What strategies typically allow the rewriting of sequential rewrite rules into parallel two-level rules? Provide an example for each working strategy, and a counterexample for each non-working strategy.}
+\subparagraph{Using the rewrite rules without changes:} 
+It will not work as the context in two level rules is a two way constraint, that implies that every occurrence specified in the right context should be rendered into the form in the left part of the expression. It is possible to change the arrow direction but this would mean changing the rule while rewriting. Example in Karttunen 2.2, figure 6: \\
+\\
+N stands for an underspecified nasal that is realized as a labial (N:m) or as a dental (N:n) depending on the environment.\\
+(a) N -\textgreater m / \_ p; elsewhere, n. \\
+(b) p -\textgreater m / m \_ \\
+is blocking the realization of kaNton as kamton.
+\subparagraph{Underspecifying the rewrite rules:}
+It works as we decompose a complex rule in different parts that can be linked to each other and do not need to be ordered as the system acts simultaneously. Example in Karttunen 4.2: \\
+\\
+Intervocalic “k” appearing only between u\_u \\
+(a) k:v \textless=\textgreater  u \_ u C [\#: \ding{120} C] (specific context) \\
+(b) k:[epsilon] \ding{120} k:v \textless= V \_ V C [\#: \ding{120} C] (general context with both representation made possible) \\
+\\
+The last two points fall into this explanation. Underspecifying means subtracting the more specific context of a rule in a general one, and then running it in parallel with the more specific rule.
+\paragraph{Draw a diagram of a finite-state transducer implementing the simple English pluralization model}
+Twol rules are in form of regular language and not context\textendash free language (as per Karttunen), so they can be expressed in Python through regular expression (re module). The program add the ending \textendash es in five different cases as per below diagram (\textbackslash indicates word boundary expressed as \textbackslash b in re)
+(0) s:s -\textgreater (1) s:s -\textgreater (1) \textbackslash:e -\textgreater (7) \textepsilon:s -\textgreater (8)\\
+(0) s:s -\textgreater (1) h:h -\textgreater (2) \textbackslash:e -\textgreater (7) \textepsilon:s -\textgreater (8)\\
+(0) c:c -\textgreater (3) h:h -\textgreater (2) \textbackslash:e -\textgreater (7) \textepsilon:s -\textgreater (8)\\
+(0) t:t -\textgreater (4) z:z -\textgreater (5) \textbackslash:e -\textgreater (7) \textepsilon:s -\textgreater (8)\\
+(0) x:x -\textgreater (6) x:x -\textgreater (6) \textbackslash:e -\textgreater (7) \textepsilon:s -\textgreater (8)\\
+\\
+\begin{verbatimtab}[4]
+import re
+
+f = input("Write sentence here, type END to escape: ")
+while "END" not in f:
+	f = f + "\n" + input("")
+f = f.rstrip(" END")
+f = f.split("\n")
+l = []
+for line in f:
+	l.append(re.sub("\\b([a-zA-Z]+)(ch|sh|tz|s|x)\\b", "\\1\\2es", line))
+print("\n".join(l))
+\end{verbatimtab}
+\end{document}
