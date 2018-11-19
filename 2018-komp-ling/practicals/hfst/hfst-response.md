@@ -103,4 +103,91 @@ $ echo "область" | hfst-lookup -qp chv.surweights.hfst
 $ echo "облаc" | hfst-lookup -qp chv.surweights.hfst
 обла?	обла?	10,050300
 
-All the files I've got doing this practical are in this folder.
+All the files I've got doing this practical are in this folder. As I understood there should be a description of changes I've done
+in the files so I'll comment some parts of chv.lexc and chv.twol.
+
+I. chv.lexc
+
+# ADDED SOME NECESSERY MULTICHAR SYMBOLS
+Multichar_Symbols
+
+%<n%>                ! Имя существительное
+%<pl%>               ! Множественное число
+%<nom%>              ! Именительный падеж
+%<ins%>              ! Творительный падеж
+%<gen%>              ! Родительный падеж
+
+%<num%>              ! Число
+
+%{A%}                ! Архифонема [а] или [е]
+%{Ă%}                ! Архифонема [ӑ] или [ӗ] или 0
+%{м%}                ! Архифонема [м] или 0
+%{с%}                ! Несонорные согласные
+%{л%}                ! -н, -л, или -р
+%{э%}                ! Передние гласные
+%{а%}                ! Задние гласные
+
+%{ъ%}                ! Для заимствованных слов
+
+%<der_лӑх%>          ! Суффикс -лӐх
+
+%>                   ! Граница морфемы
+
+# ADDED LEXICON GUESSER TO THE ROOT
+LEXICON Root
+
+Nouns ; 
+Guesser ;
+
+# ADDED GENETIVE AND NOMINATIVE TO THE CASES LEXICON
+LEXICON CASES 
+
+%<nom%>:%> # ;
+%<ins%>:%>п%{A%} # ;
+%<gen%>:%>%{Ă%}н # ;
+
+# EDITES PLURAL RULE TO WORK WITH GENITIVE PLURAL
+LEXICON PLURAL
+
+             CASES ; 
+%<pl%>:%>се%{м%} CASES ;
+
+# ADDED LEXICONS SUBST AND DER-N TO WORK WITH PRODUCTIVE DERIVATION
+LEXICON SUBST 
+
+PLURAL ;
+
+LEXICON DER-N
+
+%<der_лӑх%>:%>л%{Ă%}х SUBST "weight: 1.0" ;
+
+# ADDED THEM INTO LEXICON N
+LEXICON N
+
+%<n%>: PLURAL ;
+%<n%>: SUBST ;
+%<n%>: DER-N ;
+
+# *ADDED THE PART TO HANDLE WITH NUMERAL EXPRESSIONS*
+
+# ADDED LEXICON N/СТЬ TO WORK WITH WEIGHTING OF DIFFERENT SURFACE FORMS
+LEXICON N/сть
+
+%<n%>:ҫ SUBST "weight: 0.5" ;
+%<n%>%<nom%>:сть # "weight: 1.0" ;
+
+# ADDED SOME WORDS TO NOUNS
+LEXICON Nouns
+
+урам:урам N ;     ! "улица"
+пакча:пакча N ;   ! "сад"
+хула:хула N ;     ! "город"
+канаш:канаш N ;   ! "совет"
+тӗс:тӗс N ;       ! "вид"
+патша:патша N ;   ! "царь"
+куҫ:куҫ N ;       ! "глаз"
+патшалӑх:патшалӑх N ; ! "государство"
+специалист:специалист%{ъ%} N ; ! "специалист"
+
+II. chv.twol
+
