@@ -9,6 +9,6 @@ First one clears UD-corpus-like objects to prepare test data, the second one ope
 
 Q&A: 
 Replacing two characters with one letter is implemented using dict and tuples in Python.
-Intial and finishing characters were detected using string indexes.
+Initial and finishing characters were detected using string indexes.
 
 To use it you can write a command like this: *"python3 Translit.py ud_russian.txt symbol_dict.txt"* where *Translit.py* is a script, *ud_russian.txt* - test sentences to transliterate and *symbol_dict.txt* is a symbols-pair dictionary. In the file *result.txt* you can see cleared Ud sentences and result of transliteration in the last column.
