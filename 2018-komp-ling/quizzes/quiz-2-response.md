@@ -59,6 +59,8 @@ def replace_all(text, dic):
     text = re.sub('<PL>', 's', text)
     return text
 
-data = replace_all(sys.stdin.read(), dictn)
-print(data)
+for data in sys.stdin:
+	res = replace_all(data, dictn)
+
+print(res)
 ```
