@@ -1,6 +1,6 @@
 # Quiz 2 by Nikolaeva Anna
 
-1. See fst1.jpg. "<n>" stands for a noun, ">" stands for the morpheme boundary, "0" stands for nothing on the surface. In this transducer we have some input noun with suffix "'s", and in the output we have a surface space in the place of the morpheme boundary and the apostrophe becomes "i".
+1. See fst1.jpg. "n" stands for a noun, ">" stands for the morpheme boundary, "0" stands for nothing on the surface. In this transducer we have some input noun with suffix "'s", and in the output we have a surface space in the place of the morpheme boundary and the apostrophe becomes "i".
 2. Examples:
 - geese's → geese is (incorrect)
 - Cate's house → Cate is house (incorrect)
