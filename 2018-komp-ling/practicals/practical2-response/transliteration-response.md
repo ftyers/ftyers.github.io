@@ -1,7 +1,7 @@
 Mikhailov Vladislav
 MKL181
 
-#Report on Transliteration
+# Report on Transliteration
 
 **Data**
 The data to be processed is ru_syntagrus-ud-train.conllu file from  https://github.com/UniversalDependencies/UD_Russian-SynTagRus
@@ -10,8 +10,6 @@ The data to be processed is ru_syntagrus-ud-train.conllu file from  https://gith
 The data has been processed with the python algorithm provided:
 '''
 import sys
-
-
 vocab = {}
 for line in sys.stdin.readlines(): 
     if '\t' not in line:
@@ -32,8 +30,7 @@ for w in vocab:
 We can sort the output in frequency order and save changes into a new file with the help of sort command and -nr argument:
 '''
 $ sort freqList -nr > freqListSorted
-
-# to check whether everything works fine
+#to check whether everything works fine
 $ head freqListSorted
 70048	,
 45571	.
@@ -54,11 +51,8 @@ $ head freqListSorted
 If we set the argument reverse to False, as here:
 '''
 import sys
-
-
 vocab = {}
 freq = []
-
 for line in sys.stdin.readlines():
     if '\t' not in line:
         continue
@@ -69,7 +63,6 @@ for line in sys.stdin.readlines():
     if form not in vocab:
         vocab[form] = 0
     vocab[form] = vocab[form] + 1
-
 for w in vocab:
     freq.append((vocab[w], w))
 freq.sort(reverse=False)
@@ -84,12 +77,8 @@ $ python3 dictFreq.py < ru_syntagrus-ud-train.conllu
 The provided python code segments have been modified so that to implement a python script that allows to get a frequency list from a .conllu file, taking a command line argument and outputing a sorted frequency list to a text file (dictFreq.py file is in the practical folder):
 '''
 import sys
-
-
 vocab = {}
 freq = []
-
-
 def get_frequency():
     for line in sys.stdin.readlines():
         if '\t' not in line:
@@ -104,20 +93,14 @@ def get_frequency():
     for w in vocab:
         freq.append((vocab[w], w))
     freq.sort(reverse=True)
-
-
 def results():
     with open('freq.txt', 'w+', encoding='utf-8') as f:
         for w in freq:
             f.write('%d\t%s\n' % (w[0], w[1]))
         f.close()
-
-
 def main():
     get_frequency()
     results()
-
-
 if __name__ == '__main__':
     main()
 '''
@@ -134,12 +117,8 @@ The provided python code segments have been modified so that to implement the fr
 
 '''
 import sys
-
-
 freq = []
 ranks = []
-
-
 def frequency():
     with open(sys.argv[1], 'r') as file:
         for line in file.readlines():
@@ -147,8 +126,6 @@ def frequency():
             (f, w) = line.split('\t')
             freq.append((int(f), w))
     return freq
-
-
 def ranking(freq):
     rank = 1
     min = freq[0][0]
@@ -158,19 +135,13 @@ def ranking(freq):
             min = freq[i][0]
         ranks.append((rank, freq[i][0], freq[i][1]))
     return ranks
-
-
 def output():
     for w in ranks:
         print('%d\t%d\t%s' % (w[0], w[1], w[2]))
-
-
 def main():
     frequency()
     ranking(freq)
     output()
-
-
 if __name__ == '__main__':
     main()
 '''
@@ -193,17 +164,13 @@ Here is my transliterator implementation:
 '''
 import sys
 import re
-
-
 v = {} # to create an empty dictionary
-
 # to create a dictionary from a table given as the first command line argument 
 with open(sys.argv[1], 'r') as f:
     for line in f.readlines():
         line = line.strip('\n')
         items = line.split('\t')
         key, v[key] = items[0], items[1]
-
 # to read in a conllu file as the second command line argument
 with open(sys.argv[2], 'r') as c:
     for line in c.readlines():
@@ -240,7 +207,6 @@ $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu
 I saved the transliterated conllu file into a new text file with the help of the terminal (first 7000 lines):
 '''
 $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7000 > syntagrus_transliterated.conllu 
-
 '''
 
 #Questions
