@@ -38,6 +38,7 @@ def trans_sent(k,transdict):
             translit='y'+translit
         if len(translit)!=0 and translit[0]=='E':
             translit='Y'+translit
+        translit = translit.replace('*',"")
         line[-1] = translit
     return sent
 
