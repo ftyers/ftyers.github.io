@@ -266,6 +266,7 @@ transliterated = re.sub('([^aoeiuyAOEIU′″])je', r'\1e', transliterated)
 ```
 transliterated = re.sub('sh', 'ш', transliterated)
 ```
+
 	* Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х':
 ```
 transliterated = re.sub('s', 'с', transliterated)
@@ -281,12 +282,15 @@ transliterated = re.sub('h', 'х', transliterated)
 ```
 transliterated = re.sub('^е', 'je', transliterated)
 ```
+
 	единственное -> edinstvennoe -> jedinstvennoe
 
 	2) When preceeded by a vowel, "'" and "''":
+
 ```
 transliterated = re.sub('(a|o|e|i|u|y|′|″)e', r'\1je', transliterated)
 ```
+
 	jedinstvennoe -> jedinstvennoje
 
 	Thus we get a sequence of changes:
