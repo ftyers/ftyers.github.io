@@ -256,23 +256,21 @@ $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7
 	* To provide mappings on ambigous Cyrillic letter 'e' - 'e'|'je': 
 	'e' is transliterated to 'je' when in the beginning of a token or when preceeded by a vowel, "'" and "''". 
 	Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens when 'je' is preceeded by a consonant:
-```
-transliterated = re.sub('([^aoeiuyAOEIU′″])je', r'\1e', transliterated)
-```
+
+*transliterated = re.sub('([^aoeiuyAOEIU′″])je', r'\1e', transliterated)*
 
 * Can you think of a way that you could provide mappings from many characters to one character ? (For example sh → ш or дж → c ? )
 	* Firstly, I guess we do not need to store the letters 's' and 'h' in our transliteration table. We implement the transliteration of all the letters in the tokens except for 's' and 'h'.
 	* Secondly, we use re.sub to provide mappings from the consonant cluster 'sh' →  ш
-```
-transliterated = re.sub('sh', 'ш', transliterated)
-```
+
+*transliterated = re.sub('sh', 'ш', transliterated)*
 
 	* Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х':
 
-```
-transliterated = re.sub('s', 'с', transliterated)
-transliterated = re.sub('h', 'х', transliterated)
-```
+
+*transliterated = re.sub('s', 'с', transliterated)*
+*transliterated = re.sub('h', 'х', transliterated)*
+
 
 * How might you make different mapping rules for characters at the beginning or end of the string ? 
 	* (Almost the same as of Question 1) One way to do it is to implement the transliteration table so that to meet our needs (as I did). There is a key-value pair 'е : je' in the dictionary. Thus, we provide correct mapping rules for Cyrillic 'e' in the beginning of a token (e.g. 'ему' -> 'jemu'). Then, we only need to implement substitution of 'je' to 'e' in the certain context (after a consonant):
@@ -281,20 +279,15 @@ transliterated = re.sub('h', 'х', transliterated)
 
 	* Another way to do that (when there is a key-value pair 'е : e' in the dictionary) is to implement substitution of 'e' to 'je' in the transliterated tokens:
 	1) When in the beginning of the token:
-```
-transliterated = re.sub('^е', 'je', transliterated)
-```
+
+*transliterated = re.sub('^е', 'je', transliterated)*
 
 
 	единственное -> edinstvennoe -> jedinstvennoe
 
 	2) When preceeded by a vowel, "'" and "''":
 
-
-```
-transliterated = re.sub('(a|o|e|i|u|y|′|″)e', r'\1je', transliterated)
-```
-
+*transliterated = re.sub('(a|o|e|i|u|y|′|″)e', r'\1je', transliterated)*
 
 	jedinstvennoe -> jedinstvennoje
 
