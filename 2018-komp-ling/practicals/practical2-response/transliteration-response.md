@@ -251,7 +251,7 @@ I saved the transliterated .conllu file into a new text file with the help of th
 $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7000 > syntagrus_transliterated.conllu 
 ```
 
-#Questions
+**Questions**
 * What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
 	* To provide mappings on ambigous Cyrillic letter 'e' - 'e'|'je': 
 	'e' is transliterated to 'je' when in the beginning of a token or when preceeded by a vowel, "'" and "''". 
@@ -265,10 +265,12 @@ $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7
 
 *transliterated = re.sub('sh', 'ш', transliterated)*
 
-	* Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х':
+	* Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х'
 
 
 *transliterated = re.sub('s', 'с', transliterated)*
+
+
 *transliterated = re.sub('h', 'х', transliterated)*
 
 
@@ -285,7 +287,7 @@ $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7
 
 	единственное -> edinstvennoe -> jedinstvennoe
 
-	2) When preceeded by a vowel, "'" and "''":
+	2) When preceeded by a vowel, "'" and "''"
 
 *transliterated = re.sub('(a|o|e|i|u|y|′|″)e', r'\1je', transliterated)*
 
