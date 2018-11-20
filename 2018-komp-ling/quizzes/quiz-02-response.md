@@ -1,7 +1,7 @@
 <html>
 <body>
 <br>
-1.<br> <img src="./is.png" width="500" height="40"><br>
+1.<br> <img src="./is.png" width="500" height="100"><br>
 <br>
 <br>2.
  I suppose it will expand "'s" when it actually represents the possessive form. 
