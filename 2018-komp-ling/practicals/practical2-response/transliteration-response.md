@@ -251,6 +251,8 @@ $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7
 
 **Questions**
 * What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
+
+
 To provide mappings on ambigous Cyrillic letter 'e' - 'e'|'je': 
 'e' is transliterated to 'je' when in the beginning of a token or when preceeded by a vowel, "'" and "''" (ь and ъ). 
 Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens when 'je' is preceeded by a consonant:
@@ -258,6 +260,8 @@ Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens
 ```transliterated = re.sub('([^aoeiuyAOEIU′″])je', r'\1e', transliterated)```
 
 * Can you think of a way that you could provide mappings from many characters to one character ? (For example sh → ш or дж → c ? )
+
+
   Firstly, I guess we do not need to store the letters 's' and 'h' in our transliteration table. We implement the transliteration of all the letters in the tokens except for 's' and 'h'.
   Secondly, we use re.sub to provide mappings from the consonant cluster 'sh' →  ш
 
@@ -271,6 +275,8 @@ Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens
 ```transliterated = re.sub('h', 'х', transliterated)```
 
 * How might you make different mapping rules for characters at the beginning or end of the string ? 
+
+
   (Almost the same as of Question 1) One way to do it is to implement the transliteration table so that to meet our needs (as I did). There is a key-value pair 'е : je' in the dictionary. Thus, we provide correct mapping rules for Cyrillic 'e' in the beginning of a token (e.g. 'ему' -> 'jemu'). Then, we only need to implement substitution of 'je' to 'e' in the certain context (after a consonant):
 
 ```распоряжение -> rasporjažjenije -> rasporjaženije```
