@@ -4,7 +4,8 @@
 
 2. Give an example where your transducer expands "'s" when it shouldn't. What information could you incorporate to fix it?
 
-The transducer expands "'s" in such cases as "Mike's" or "Ana's". To avoid this situation, we should specify that the change should only be happening when this "'s" does not state the posessive case.
+The transducer expands "'s" in such cases as "Mike's" or "Ana's". To avoid this situation, we should specify that the change should only be happening when this "'s" does not state the posessive case.\
+There is also the case of 's meaning such things as was and has. For such occasions, the meaning of 's should be mentioned also, which verbs and what tense should only be changed to is.
 
 3. Which of the following are advantages of the two-level formalism for describing morphotactic rules? (Choose all that apply.)
 
