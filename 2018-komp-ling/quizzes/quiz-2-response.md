@@ -18,7 +18,7 @@ The transducer expands "'s" in such cases as "Mike's" or "Ana's". To avoid this 
 
 4. What strategies typically allow the rewriting of sequential rewrite rules into parallel two-level rules? Provide an example for each working strategy, and a counterexample for each non-working strategy.
 
-    a) Using the rewrite rules without changes and d) Subtracting the context of the more specific rule from the more general*. **Counterexample**:   
+    a) *Using the rewrite rules without changes and d) Subtracting the context of the more specific rule from the more general*. **Counterexample**:   
 * Rewrite rules:   
   a → b / c _ ;   
   b → d / c _ ;   
