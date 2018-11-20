@@ -131,6 +131,7 @@ $ python3 dictFreq.py < ru_syntagrus-ud-train.conllu
 
 **File input/output**
 *Now create a script called rank.py which takes a command line argument and reads in a frequency list from a file and outputs a ranked frequency list (either to a file or to standard output).*
+
 The provided python code segments have been modified so that to implement the frequency ranking algorithm (rank.py file is in the practical folder):
 
 
