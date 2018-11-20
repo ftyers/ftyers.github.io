@@ -4,9 +4,11 @@ MKL181
 # Report on Transliteration
 
 **Data**
+
 The data to be processed is ru_syntagrus-ud-train.conllu file from  https://github.com/UniversalDependencies/UD_Russian-SynTagRus
 
 **The dict datastructure**
+
 The data has been processed with the python algorithm provided:
 ```
 import sys
@@ -130,6 +132,7 @@ $ python3 dictFreq.py < ru_syntagrus-ud-train.conllu
 ```
 
 **File input/output**
+
 *Now create a script called rank.py which takes a command line argument and reads in a frequency list from a file and outputs a ranked frequency list (either to a file or to standard output).*
 
 The provided python code segments have been modified so that to implement the frequency ranking algorithm (rank.py file is in the practical folder):
@@ -252,7 +255,6 @@ $ python3 transliterate.py translit_table ru_syntagrus-ud-train.conllu | head -7
 **Questions**
 * What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
 
-
 To provide mappings on ambigous Cyrillic letter 'e' - 'e'|'je': 
 'e' is transliterated to 'je' when in the beginning of a token or when preceeded by a vowel, "'" and "''" (ь and ъ). 
 Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens when 'je' is preceeded by a consonant:
@@ -262,12 +264,14 @@ Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens
 * Can you think of a way that you could provide mappings from many characters to one character ? (For example sh → ш or дж → c ? )
 
 
-  Firstly, I guess we do not need to store the letters 's' and 'h' in our transliteration table. We implement the transliteration of all the letters in the tokens except for 's' and 'h'.
-  Secondly, we use re.sub to provide mappings from the consonant cluster 'sh' →  ш
+Firstly, I guess we do not need to store the letters 's' and 'h' in our transliteration table. We implement the transliteration of all the letters in the tokens except for 's' and 'h'.
+
+Secondly, we use re.sub to provide mappings from the consonant cluster 'sh' →  ш
 
 ```transliterated = re.sub('sh', 'ш', transliterated)```
 
-  Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х'
+
+Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х'
 
 ```transliterated = re.sub('s', 'с', transliterated)```
 
@@ -277,17 +281,16 @@ Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens
 * How might you make different mapping rules for characters at the beginning or end of the string ? 
 
 
-  (Almost the same as of Question 1) One way to do it is to implement the transliteration table so that to meet our needs (as I did). There is a key-value pair 'е : je' in the dictionary. Thus, we provide correct mapping rules for Cyrillic 'e' in the beginning of a token (e.g. 'ему' -> 'jemu'). Then, we only need to implement substitution of 'je' to 'e' in the certain context (after a consonant):
+One way to do it is to implement the transliteration table so that to meet our needs (as I did). There is a key-value pair 'е : je' in the dictionary. Thus, we provide correct mapping rules for Cyrillic 'e' in the beginning of a token (e.g. 'ему' -> 'jemu'). Then, we only need to implement substitution of 'je' to 'e' in the certain context (after a consonant):
 
 ```распоряжение -> rasporjažjenije -> rasporjaženije```
 
-  Another way to do that (when there is a key-value pair 'е : e' in the dictionary) is to implement substitution of 'e' to 'je' in the transliterated tokens:
+Another way to do that (when there is a key-value pair 'е : e' in the dictionary) is to implement substitution of 'e' to 'je' in the transliterated tokens:
 1) When in the beginning of the token:
 
 ```transliterated = re.sub('^е', 'je', transliterated)```
 
-
-единственное -> edinstvennoe -> jedinstvennoe
+```единственное -> edinstvennoe -> jedinstvennoe```
 
 2) When preceeded by a vowel, "'" and "''" (ь and ъ)
 
