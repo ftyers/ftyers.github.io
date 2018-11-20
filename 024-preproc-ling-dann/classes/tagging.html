@@ -1,0 +1,113 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Tagging text in CoNLL-U format</title>
+
+</head>
+<body>
+<div class="page">
+<h2>Hand-annotating parts of speech</h2>
+<p>
+Tagging text is the task of assigning a part-of-speech tag for each of the tokens in a 
+sentence by hand. For example, suppose we had the sentence: "В том институте все уехали.", we would first tokenise it
+using our tokeniser:
+</p>
+<pre>
+# sent_id = 1
+# text = В том институте все уехали.
+1	В	_	_	_	_	_	_	_	_
+2	том	_	_	_	_	_	_	_	_
+3	институте	_	_	_	_	_	_	_	_
+4	все	_	_	_	_	_	_	_	_
+5	уехали	_	_	_	_	_	_	_	_
+6	.	_	_	_	_	_	_	_	_
+</pre>
+<p>
+Then we would go through the text line by line, and write a part-of-speech tag in the fourth column of every line. The
+part-of-speech tags are from the <a href="http://universaldependencies.org/">Universal Dependencies</a> project
+and can be found with full definitions <a href="http://universaldependencies.org/u/pos/all.html">here</a>.
+</p>
+<p>
+Here is a brief overview:
+
+<table class="normal">
+  <thead>
+    <tr>
+      <th>Open class words</th>
+      <th>Closed class words</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><tt>ADJ</tt> (Adjective)</td>
+      <td><tt>ADP</tt> (Adposition)</td>
+      <td><tt>PUNCT</tt> (Punctuation)</td>
+    </tr>
+    <tr>
+      <td><tt>ADV</tt> (Adverb)</td>
+      <td><tt>AUX</tt> (Auxiliary)</td>
+      <td><tt>SYM</tt> (Symbol)</td>
+    </tr>
+    <tr>
+      <td><tt>INTJ</tt> (Interjection)</td>
+      <td><tt>CCONJ</tt> (Co-ordinating conjunction)</td>
+      <td><tt>X</tt> (Other)</td>
+    </tr>
+    <tr>
+      <td><tt>NOUN</tt> (Noun)</td>
+      <td><tt>DET</tt> (Determiner)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><tt>PROPN</tt> (Proper noun)</td>
+      <td><tt>NUM</tt> (Numeral)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><tt>VERB</tt> (Verb)</td>
+      <td><tt>PART</tt> («<i>Particle</i>»)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><tt>PRON</tt> (Pronoun)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><tt>SCONJ</tt> (Subordinating conjunction)</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+The final result should look something like this:
+</p>
+<pre>
+# sent_id = 1
+# text = В том институте все уехали.
+1	В	_	ADP	_	_	_	_	_	_
+2	том	_	DET	_	_	_	_	_	_
+3	институте	_	NOUN	_	_	_	_	_	_
+4	все	_	PRON	_	_	_	_	_	_
+5	уехали	_	VERB	_	_	_	_	_	_
+6	.	_	PUNCT	_	_	_	_	_	_
+</pre>
+<p>
+If you would like a graphical interface for adding the tags, I can recommend <a href="https://github.com/jonorthwash/ud-annotatrix">UD Annotatrix</a>,
+which can be tried out online <a href="https://ftyers.github.io/ud-annotatrix/standalone/annotator.html">here</a>. Note that
+your CoNLL-U should we well formed if you are planning to use the interface!
+</p>
+<p>
+You should annotate at least 10 sentences of text, or 100 tokens, whichever is lower.
+</p>
+
+</div>
+
+
+
+</body>
+</html>
+

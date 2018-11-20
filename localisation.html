@@ -1,0 +1,234 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+<body>
+<p>
+On this page I want to make a list of instructions for language communities who want to get their
+language onto their desktops and mobile devices. What is the motivation behind this? Well,
+kids are always on their phones, and so are continually exposed to whatever language those 
+phones are in. As David Crystal says in his book <em>Language Death</em>: "An endangered language will progress if its speakers
+can make use of electronic technology".
+</p>
+<p>
+So the idea of this page is to give pointers to how people can make the most visible parts 
+of their online experience be in their language.
+</p>
+<h2>Mozilla/Firefox</h2>
+<p>
+Mozilla products (for example Firefox, Thunderbird, etc.) are localised 
+through a system called <a href="https://pontoon.mozilla.org/">Pontoon</a>. This
+is a web-based system for localising strings.
+</p>
+<p>
+In order to get localising, you need to first go to <a href="https://pontoon.mozilla.org/">Pontoon</a>, 
+and check if your language is in the list at the top left. If it is in the list then great, you can skip
+the next sections. If it is not in the list, then go to the <a href="https://groups.google.com/forum/#!forum/mozilla.dev.l10n.new-locales">Mozilla
+localisation list</a> and register.
+</p>
+<p>
+After you have registered, post a message to the list (in English) asking for your language
+to be added to Pontoon and answering the following questions:
+
+<pre>
+
+1) What Mozilla product are you hoping to localise? Keep in mind that
+Firefox desktop is a rather large project which can potentially take a long
+time for a full localisation to ship.
+2) Which language code should be used? (ISO-639-1, ISO-639-3, country code).
+3) How many plural forms are in the language? To give an example,
+how would you translate the following phrases:
+
+   - *0 rocks*
+   - *1 rock*
+   - *2 rocks*
+   - *3 rocks*
+   - *4 rocks *
+   - *5 rocks*
+   - *10 rocks*
+   - *20 rocks*
+   - *100 rocks*
+   - *1000 rocks*
+   - *I see 0 rocks on the ground*
+   - *I see 1 rock on the ground*
+   - *I see 10 rock on the ground*
+   - *I see rocks on the ground*
+
+4) Are you hoping to localise alone or do you have friends that will join
+you? For sustainability of the localisation (because we're always releasing
+new versions of Firefox products that will need localising), we'd prefer to
+only ship new locales that have more than one person sustaining them.
+</pre>
+<p>
+Note that the list is moderated so you may have to wait for your request to go through.
+</p>
+<p>
+In the meantime you can create a Firefox account at their <a href="https://accounts.firefox.com/signup">signup page</a>,
+reply to the verification email, and log into <a href="https://pontoon.mozilla.org/">Pontoon</a>. There are some very
+useful <a href="https://mozilla-l10n.github.io/localizer-documentation/tools/pontoon/users.html">instructions</a>.
+</p>
+<p>
+After you have got access, you can use the Pontoon interface to translate what you want. 
+The localised version will only be released when there is enough of the interface translated.
+Here is some information from Mozilla about the process:
+
+<pre>
+1) We enable Pontoon and start with an unofficial repo (not hosted on hg.mozilla.org). Once the 
+   locale has reached a good level of translation and participation we move to #2
+
+2) We add an official Mercurial repository and start building Nightly for this language. There's a 
+   lot of technical details to fix at this point, like creating a Bugzilla component, 
+   setting up searchplugins, build system, etc. That's also the reason we introduced the first step 
+   for new locales.
+
+   At this point we also ask localisation teams to start localising mozilla.org. While it's not 
+   mandatory to complete the localisation, at least some key pages should be completed to 
+   promote the localised build.
+
+3) Locale stays on Nightly for at least 1 or 2 cycles after completing key parts. It can move to 
+   Beta and Release only if it a) keeps up with localisation and b) builds a group of users on the 
+   Nightly channel.
+
+4) Once in release, localisation needs to be kept up to date. That's the most boring part of the work, 
+   but also the most important. That's also the main reason we try to avoid individual efforts, and 
+   prefer a group of volunteers working on the localisation.
+
+We realise that's a lot to ask for, and that not everybody will be comfortable with it, but these 
+are the standards we have to meet to serve an audience of hundreds of millions of people aroung the world.
+</pre>
+
+Good luck! :)
+
+<h2>WhatsApp</h2>
+<p>
+Localisation of WhatsApp can be done <a href="https://translate.whatsapp.com/">online</a>. If your language
+isn't listed, you can contact WhatsApp support on <a href="mailto:translate@support.whatsapp.com">translate@support.whatsapp.com</a>,
+but they might not reply. You should also try contacting <a href="mailto:android_web@support.whatsapp.com">android_web@support.whatsapp.com</a>.
+</p>
+<h2>Telegram</h2>
+<p>
+Localisation of Telegram is done through <a href="https://www.transifex.com/telegram/public/">Transifex</a>,
+there are 3,715 strings to translate for the Android client, so it's not that much.
+</p>
+<p>
+You will need to <a href="https://www.transifex.com/signup/?join_project=telegram">log in</a>. After completing
+the login form, you can go to the <a href="https://www.transifex.com/telegram/telegram/">Android client</a> and
+click on "Join team". You will need to wait to be approved.
+</p>
+<p>
+While you are waiting, you can also download an XML file from <a href="https://tlgrm.ru/locales/list#android">their site</a> and start translating.
+You can then take the XML file, send it to yourself in Telegram and then click on it to "apply localisation". There are
+approximately 1,800 strings
+</p>
+<h2>Google</h2>
+
+<h3>Main page</h3>
+
+<h3>Chrome</h3>
+
+<h3>Gmail</h3>
+
+<h2>YouTube</h2>
+
+<h3>Getting the language in the list of languages for which subtitles can be added</h3>
+
+<h2>FaceBook</h2>
+
+<h2>VKontakte</h2>
+
+<h2>Android</h2>
+
+<h2>MediaWiki/Wikipedia</h2>
+<p>
+For translating MediaWiki/Wikipedia there are some wonderful <a href="https://blog.wikimedia.org/2017/10/26/translating-mediawiki/">instructions </a>
+from Amir Aharoni.
+</p>
+
+<h2>Signal</h2>
+
+Signal, like Telegram uses Transifex to do translations. Their project is <a href="https://www.transifex.com/projects/p/signal-android/">signal-android</a>.
+
+If your language isn't there, you should request it. It can take up to a month for it to be enabled.
+
+<h2>CLDR</h2>
+<p>
+CLDR is super important because it forms the basis of a lot of other localisation efforts (e.g. Google, Android, ...). It 
+should really be one of the first places you start when thinking of localisation.
+</p>
+<p>
+Go to the <a href="http://www.unicode.org/reporting.html">reporting page</a> and register for an account. Make sure that 
+it is of the type "Request for CLDR Survey Tool Submitter ID". You should give the following information: Which language
+you are interested in working with.
+</p>
+<p>
+Join the <a href="http://unicode.org/mailman/listinfo/cldr-users">mailing list</a>.
+</p>
+<p>
+You can file bugs to open new locales at any point during the year, but in order to get your data into an official
+release you need to enter the data via the "Survey Tool" between April&mdash;August or between October&mdash;February.
+</p>
+<p>
+<table>
+<tr><td>Stage</td><td>1nd</td><td>2nd</td></tr>
+<tr><td>Start Tool/Data Preparation </td><td>April</td><td>October</td></tr>
+<tr><td>Start Shakedown Submission</td>  <td>May</td><td>November</td></tr>
+<tr><td>Start General Submission</td>    <td>June</td><td>December</td></tr>
+<tr><td>Start Vetting</td>               <td>July</td><td>January</td></tr>
+<tr><td>Data freeze</td>                 <td>August</td><td>February</td></tr>
+<tr><td>Final</td>                       <td>September</td><td>March</td></tr>
+</table>
+</p>
+
+<p>
+For an idea of how to file a bug look at <a href="https://unicode.org/cldr/trac/ticket/10536">this issue</a> which is a good example.
+</p>
+
+<!--
+  Go to: https://unicode.org/cldr/trac/newticket
+
+
+  Make a new ticket, you can use this one as a template: 
+     https://unicode.org/cldr/trac/ticket/10940
+
+http://cldr.unicode.org/index/cldr-spec/minimaldata/form
+--> 
+
+<!--
+ If you would like to add data for a new locale, please File a Ticket requesting the addition. You should also notify your CLDR contact (see Survey Tool Accounts).
+
+    Make sure that you pick the right locale code for the new data. See Picking the Right Language Code
+    A new locale is only added if someone commits to supplying Core Data for New Locales.
+    In special cases, XML files in LDML format can be supplied. See Bulk Data Upload.
+-->
+
+<!--  	Craig Cornelius (ᏇᎩ)
+0. Are these language communities aware of and engaged with the Common Locale Data Repository (CLDR) project? Having the basic data for their languages is extremely useful for all kinds of future work.
+-->
+
+<!--
+
+This data is to be entered using the Survey Tool except as noted.
+
+    (44+) 4 main Date/Time formats, 12 long&abbreviated, format&stand-alone month-names, 7 long&abbreviated day-names, 2 long day periods.
+    (01) Name of the language in the language.
+    (N) For any country locales, name of the country in the language, name/symbol for that country's currency. Must be at least one, for the default content locale.
+    (02) Datetime pattern, intervalFormatFallback
+    (05) (for Latn) decimal and grouping separators; decimal, currency, percent formats
+    (N) Names of countries (territories) with that language as official.
+    (M) Names of exemplarCities in multizone countries with that language as official
+    (05) Timezone patterns [http://cldr.unicode.org/translation/timezones]
+    (02) localePattern/Separator [http://cldr.unicode.org/translation/localepattern]
+    (03) key names 
+    (14) long/short unit names (time intervals)
+-->
+
+<h2>Nice stories and random links</h2>
+
+<ul>
+  <li><a href="https://www.google.com/url?q=https://www.npr.org/2012/11/20/165571584/gmail-sends-message-in-cherokee&sa=D&ust=1518550964406000&usg=AFQjCNFoeR7oNfCImxiG5sgmWpfZqnMY2g">Gmail Sends Message In Cherokee</a>
+</ul>
+<h2>
+
+</body>
+</html>
+

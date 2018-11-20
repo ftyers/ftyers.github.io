@@ -1,0 +1,194 @@
+<html>
+<head><title>Installing and training DeepSpeech</title>
+</head>
+<body>
+
+<h3>Download DeepSpeech code:</h3>
+
+<pre>
+$ apt-get install git-lfs # Need git large file storage for deepspeech
+$ git clone --depth 1 https://github.com/mozilla/DeepSpeech.git
+</pre>
+
+<h3>Setup a virtualenv:</h3>
+
+<pre>
+$ virtualenv -p python3 $HOME/tmp/deepspeech-venv/
+
+$ source $HOME/tmp/deepspeech-venv/bin/activate
+</pre>
+
+<h3>Install DeepSpeech python bindings:</h3>
+<pre>
+$ pip3 install deepspeech
+$ pip3 install six
+$ cd DeepSpeech
+$ cd native_client 
+$ python3 ../util/taskcluster.py --target .
+$ cd ..
+</pre>
+
+<h3>Install a tonne of requirements for training</h3>
+<pre>
+$ pip3 install -r requirements.txt
+</pre>
+
+Do you have a GPU ? If so run:
+
+<pre>
+pip3 uninstall tensorflow
+pip3 install 'tensorflow-gpu==1.6.0'
+</pre>
+
+You'll also need to install version 9.0 of CUDA and version 7.1 of CUDNN... note that this isn't free software
+so you'll probably have to fill in some NVidia spam form.
+
+<h3>Install kenlm:</h3>
+<pre>
+$ wget -O - https://kheafield.com/code/kenlm.tar.gz |tar xz
+$ sudo apt-get install libboost-program-options1.63-dev libboost-system1.63-dev libboost-thread1.63-dev libboost-test1.63-dev libeigen3-dev zlib1g-dev
+</pre>
+
+If version 1.63 of all the boost stuff isn't available on your system, try 1.58.
+
+Then: 
+
+<pre>
+$ mkdir kenlm/build
+$ cd kenlm/build
+$ cmake ..
+$ make -j2
+$ cd ../../
+</pre>
+
+<h3>Setup the data</h3>
+<!-- $ python3 bin/import_digits.py ~/source/Turkic_TTS/corpus/chv/speakers/digits/ chv -->
+<pre>
+$ cd data
+$ wget http://ilazki.thinkgeek.co.uk/~spectre/chv_digits.tar.gz
+$ tar -xzvf chv_digits.tar.gz
+$ cd chv_digits
+$ mv deepspeech/* .
+
+# rename the paths to the audio files
+$ sed -Ei 's/\/frans\/home\/path\//\/YOUR\/ABS\/PATH\/g' *.csv
+</pre>
+
+If you want to set up the language model yourself you can use:
+<pre>
+$ cat vocab.txt | ~/source/kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa vocab.arpa
+$ ../../kenlm/build/bin/build_binary -T -s vocab.arpa lm.binary
+$ ../../native_client/generate_trie alphabet.txt lm.binary vocab.txt trie
+</pre>
+
+Otherwise continue:
+
+<pre>
+$ cd ../../
+$ mkdir models
+</pre>
+
+<h3> Train the model </h3>
+<pre>
+$ time python3 DeepSpeech.py --train_files data/chv_digits/chv_digits.train.csv --dev_files data/chv_digits/chv_digits.dev.csv --test_files data/chv_digits/chv_digits.test.csv --alphabet_config_path data/chv_digits/alphabet.txt --lm_binary_path data/chv_digits/lm.binary --lm_trie_path data/chv_digits/trie --validation_step 1 --test_batch_size 5 --dev_batch_size 15 --early_stop True --export_dir models/digits --epoch 100 --report_count 100 --n_hidden 494 --learning_rate 0.00095  --dropout_rate 0.22 --max_to_keep 2 --log_level 0 --lm_weight 5 --word_count_weight 1.0 --valid_word_count_weight 1.0 
+</pre>
+
+<h3> Troubleshooting </h3>
+
+<h4> Check your data </h4>
+
+Sometimes your data might be too quiet, or there might be too little amplitude difference between the 
+speech parts and the silence parts. You can check this using <tt>sox</tt>:
+
+Amplitude difference is too low:
+<pre>
+$ sox 0001.wav -n stat
+Samples read:            610816
+Length (seconds):     13.850703
+Scaled by:         2147483647.0
+Maximum amplitude:     0.037994
+Minimum amplitude:    -0.048950
+Midline amplitude:    -0.005478
+Mean    norm:          0.002312
+Mean    amplitude:     0.000000
+RMS     amplitude:     0.005450
+Maximum delta:         0.010834
+Minimum delta:         0.000000
+Mean    delta:         0.000222
+RMS     delta:         0.000594
+Rough   frequency:          765
+Volume adjustment:       20.429
+</pre>
+
+Note the small difference between the maximum amplitude and the minimum.
+
+In this example the amplitude difference is ok:
+<pre>
+$ sox 0001.wav -n stat
+Samples read:            610816
+Length (seconds):     13.850703
+Scaled by:         2147483647.0
+Maximum amplitude:     0.785187
+Minimum amplitude:    -1.000000
+Midline amplitude:    -0.107407
+Mean    norm:          0.047779
+Mean    amplitude:     0.000002
+RMS     amplitude:     0.112630
+Maximum delta:         0.223907
+Minimum delta:         0.000000
+Mean    delta:         0.004599
+RMS     delta:         0.012279
+Rough   frequency:          765
+Volume adjustment:        1.000
+</pre>
+
+You can increase the gain using <tt>sox 0001.wav gain -n 0.1</tt>.
+
+<!--
+
+<elpimous_robot> sox /home/nvidia/DeepSpeech/data/chv_digits/0240.wav /home/nvidia/DeepSpeech/test_wav.wav gain -n 0.1
+<elpimous_robot> avec un gain de 0.1, meilleure courbe d'amplitude
+
+<spectie> et le delta doit être ?
+<elpimous_robot> amplitude moyenne +- 0.5
+<elpimous_robot> ici, il y a 0.99, du a la 1ere wave haute
+<elpimous_robot> mais cette config me parait bonne !
+-->
+
+
+
+</body>
+
+
+</html>
+<!--
+
+python -u DeepSpeech.py \
+  ##train_files /home/nvidia/DeepSpeech/data/alfred/train/train.csv \
+  ##dev_files /home/nvidia/DeepSpeech/data/alfred/dev/dev.csv \
+  ##test_files /home/nvidia/DeepSpeech/data/alfred/test/test.csv \
+  ##train_batch_size 90 \
+  ##dev_batch_size 80 \
+  ##test_batch_size 70 \
+  ##n_hidden 375 \
+  ##epoch 400 \
+  ##validation_step 1 \
+  ##early_stop True \  # early stop activated
+  ##earlystop_nsteps 8 \ # if validation stop doesn't shut down after 8, stop
+  ##estop_mean_thresh 0.001 \ # thin params for early stop nsteps, to knowthe loss position
+  ##estop_std_thresh 0.001 \ # same
+  ##dropout_rate 0.012 \ # a param to avoid overfitting. (works for me)
+  ##learning_rate 0.001 \ # learning speed (too small = too long ; to high = we'll perhaps miss the best loss point value
+  ##beam_width 1024 \ # number of probabilities to keep in memory, to choose the best result (hughter = more memory
+  ##lm_weight 5 \ # params for LM/trie integration in model creation
+  ##word_count_weight 1.0 \ # same
+  ##valid_word_count_weight 1.0 \ same
+  ##export_dir /home/nvidia/DeepSpeech/data/alfred/results/model_export/ \
+  ##checkpoint_dir /home/nvidia/DeepSpeech/data/alfred/results/checkout/ \
+  ##decoder_library_path /home/nvidia/tensorflow/bazel-bin/native_client/libctc_decoder_with_kenlm.so \
+  ##alphabet_config_path /home/nvidia/DeepSpeech/data/alphabet.txt \
+  ##lm_binary_path /home/nvidia/DeepSpeech/data/lm.binary \
+  ##lm_trie_path /home/nvidia/DeepSpeech/data/trie \
+  "$@"
+
+-->

@@ -1,0 +1,447 @@
+
+why make an fst ?
+
+<h3>a simple lexical transducer</h3>
+
+The most basic lexical transducer can be made with a Multichar_Symbols definition and a Root lexicon. These
+are two parts that are necessary for the transducer to compile. In the Multichar_Symbols section we 
+define our grammatical tags that we are going to use, and we can use the Root lexicon to store a few lexemes.
+For example,
+
+<pre>
+Multichar_Symbols
+
+%<n%>                ! Имя существительное
+
+LEXICON Root
+
+хула%<n%>:хула # ; ! "город"
+</pre>
+
+In Multichar_Symbols we define a grammatical tag for noun and leave a comment (the part after the ! symbol) to indicate
+what the symbol stands for. Tags can take any form, but my preference is for grammatical tags to appear
+between less than < and greater than > symbols. The Multichar_Symbols section ends when the first 
+LEXICON appears. Other things that go in the Multichar_Symbols section include archiphonemes and helper symbols 
+for the phonological rules (often called "diacritic symbols" in the literature).
+
+The remainder of the transducer is made up of a set of "continuation lexica", these have unique names and
+are prefixed with the line "LEXICON". These lexica are read from Root and may call each other, including 
+recursively. There is a special lexicon which is pre-defined and called "#" which indicates the end of the 
+string. 
+
+There are two sides which are separated by a semicolon. These two sides may be referred to 
+in different ways in the literature. Get used to working out which side is being referred to. This is 
+complicated by the fact that some ways of referring to them are ambiguous:
+
+* left side, upper side, lexical side, lower side
+* right side, lower side, morphotactic side, upper side, surface side
+
+I will try and be consistent and use the following:
+
+* lexical form/side, to refer to the lemma + tags
+* morphotactic form/side, to refer to the stem + suffixes
+* surface form/side, to refer to the final surface form
+
+So, now we've gone through that explanation, let's try compiling our lexicon file. You should open a new file
+with your favourite text editor and type in the code above. Save it as <tt>chv.lexc</tt> in a new directory and navigate there 
+on the command line. Give the following command:
+
+<pre>
+$ hfst-lexc chv.lexc -o chv.lexc.hfst
+</pre>
+
+This command says to use the HFST lexc compiler to convert the lexicon file, <tt>chv.lexc</tt> into a binary 
+representation and store the output in <tt>chv.lexc.hfst</tt>. The command should give the following output:
+
+<pre>
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...
+</pre>
+
+and you should get a file called <tt>chv.lexc.hfst</tt>:
+<pre>
+$ ls -l chv.lexc.hfst 
+-rw-r--r-- 1 fran fran 491 des  3 19:57 chv.lexc.hfst
+</pre>
+
+As we didn't tell the compiler what kind of transducer we wanted to produce it has defaulted to OpenFst (a backend
+transducer library) and the tropical weight transducer (a way of distributing weights over an FST).
+
+There are a few things we need to get used to doing with the lexical transducer. The first is printing it out,
+we can do this in a couple of ways. First we can print out the strings that the transducer covers, using 
+the <tt>hfst-fst2strings</tt> command,
+
+<pre>
+$ hfst-fst2strings chv.lexc.hfst 
+хула<n>:хула
+</pre>
+
+Our fairly limited transducer only recognises one string pair so far. We can also print out the FST that was produced:
+
+<pre>
+$ hfst-fst2txt chv.lexc.hfst 
+0	1	х	х	0.000000
+1	2	у	у	0.000000
+2	3	л	л	0.000000
+3	4	а	а	0.000000
+4	5	<n>	@0@	0.000000
+5	0.000000
+</pre>
+
+Here the first column is the input state, the second column is the output state, the third and fourth columns 
+are the input and output symbols respectively and the fifth column is the weight of the transition. The @0@ is 
+the default symbol for epsilon &mdash; that is no input/output and final states have only two columns
+the first being the state id and the second being the weight.
+
+As you can imagine it is fairly easy to write a program to turn this tabular format into a format appropriate for
+visualising with GraphViz or some other graph visualisation library. Feel free to write your own visualisation
+method using your preferred library, or use this one I prepared earlier:
+
+<pre>
+import sys
+
+print('digraph G {')
+for line in sys.stdin.readlines():
+	line = line.strip()
+	row = line.split('\t')
+	if len(row) >= 4:
+		print('%s [label="%s"];' % (row[0], row[0]))
+		print('%s -> %s [label="%s:%s"];' % (row[0], row[1], row[2], row[3]))
+	elif len(row) == 2: # Final state
+		print('%s [label="%s"];' % (row[0], row[0]))
+
+print('}')
+</pre>
+
+You can save it in a file called <tt>fst2dot.py</tt> and run it as follows:
+<pre>
+$ hfst-fst2txt chv.lexc.hfst | python3 fst2dot.py  | dot -Tpng -ochv.lexc.png
+</pre>
+
+Being able to visualise the transducer and see which strings it accepts is vital for being
+able to debug your code. Finally, go back to your <tt>chv.lexc</tt> file and add some more 
+stems, for example <em>пахча</em> "сад, garden", <em>урам</em> "улица, street" 
+and <em>канаш</em> "союз, union". Then recompile and rerun the other steps up to 
+visualisation.
+
+<h3>Morphotactics</h3>
+
+The morphotactics of a language is the way that morphemes combine to make surface forms. If you
+are one of those people that believes in morphemes then you probably also believe that they
+can be combined and that there are language-specific constraints on their combination, for example 
+in Russian if the plural locative morpheme is -ах then you should have городах and not *ахгород.
+
+<h4>Continuation classes</h4>
+
+In finite-state transducers the the morphotactic ordering constraints are implemented by means
+of continuation classes. These are sets of suffixes which can appear in the same position. For 
+example let's imagine a simplified Chuvash noun with a stem, a plural suffix
+and a case suffix. We might build up a model of Chuvash inflectional morphology for nouns as follows:
+
+STEM + (PLURAL)? + CASE
+
+That is, a stem, followed optionally by a plural
+suffix and finally an obligatory case suffix (if we consider 0 to be a case suffix, let's assume
+that we do for now).
+
+It would also be possible to express this in table form:
+
+    урам<n><nom> :  урам 
+    урам<n><gen> :  урамӑн 
+    урам<n><dat> :  урама 
+    урам<n><loc> :  урамта
+    урам<n><abl> :  урамтан
+    урам<n><ins> :  урампа 
+    урам<n><pl><nom> :  урамсем 
+    урам<n><pl><gen> :  урамсен 
+    урам<n><pl><dat> :  урамсене 
+    урам<n><pl><loc> :  урамсенче 
+    урам<n><pl><abl> :  урамсенчен 
+    урам<n><pl><ins> :  урамсемпе 
+
+So, from this table we can see that there are a number of suffixes that we can group into 
+three main groups: case suffixes in the singular, plural suffix and case suffixes in the 
+plural. We could then proceed to build up a series of continuation classes by taking the 
+longest substring from left to right,
+
+<pre>
+Multichar_Symbols 
+
+%<n%>                ! Имя существительное
+
+! Define your multicharacter symbols here.
+
+%>                   ! Граница морфемы
+
+LEXICON Root
+
+Nouns ;
+
+LEXICON CASE-SG 
+
+%<nom%>: # ;
+%<gen%>:%>ӑн # ;
+%<dat%>:%>а # ;
+%<loc%>:%>та # ;
+%<abl%>:%>тан # ;
+%<ins%>:%>па # ;
+
+LEXICON CASE-PL
+
+%<gen%>: # ;
+%<dat%>:%>е # ;
+%<loc%>:%>че # ;
+%<abl%>:%>чен # ;
+%<ins%>:%>пе # ;
+
+LEXICON PLURAL
+
+CASE-SG ; 
+%<pl%>%<nom%>:%>сем # ; 
+%<pl%>:%>сен CASE-PL ; 
+
+LEXICON N
+
+%<n%>: PLURAL ;
+
+LEXICON Nouns
+
+урам:урам N ; ! "улица"
+</pre>
+
+The greater than symbol, >, indicates the morpheme boundary, we put this between
+morphemes to indicate to the phonological rules where the morpheme boundaries are. This is 
+because often phonological changes happen at morpheme boundaries so it's useful to know 
+where they are. In addition they can be used to produce an FST that can be used for 
+morphological segmentation.
+
+In the above code I have left a comment indicating where to define your multicharacter
+symbols. About 50% of all bugs you will find when developing FSTs will be related to 
+not defining multicharacter symbols or tags. The reason being that some tools automatically
+determine them and some don't, so you might not immediately see the effects of not defining
+them until your processing reaches a tool that does. To get an idea of what the problem 
+might be, try making two new files called <tt>good.lexc</tt> and <tt>bad.lexc</tt>:
+
+In <tt>good.lexc</tt> put, 
+
+<pre>
+Multichar_Symbols 
+
+%<n%>                ! Имя существительное
+%<nom%>              ! Именительный падеж
+
+LEXICON Root
+
+хула%<n%>%<nom%>:хула # ;
+</pre>
+
+And in <tt>bad.lexc</tt> put,
+
+<pre>
+Multichar_Symbols 
+
+%<n%>                ! Имя существительное
+
+LEXICON Root
+
+хула%<n%>%<nom%>:хула # ;
+</pre>
+
+Now run the following commands to compile them and print out the transducers.
+
+<pre>
+$ hfst-lexc good.lexc | hfst-fst2txt 
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...
+0	1	х	х	0.000000
+1	2	у	у	0.000000
+2	3	л	л	0.000000
+3	4	а	а	0.000000
+4	5	<n>	@0@	0.000000
+5	6	<nom>	@0@	0.000000
+6	0.000000
+
+$ hfst-lexc bad.lexc | hfst-fst2txt 
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...
+0	1	х	х	0.000000
+1	2	у	у	0.000000
+2	3	л	л	0.000000
+3	4	а	а	0.000000
+4	5	<n>	@0@	0.000000
+5	6	<	@0@	0.000000
+6	7	n	@0@	0.000000
+7	8	o	@0@	0.000000
+8	9	m	@0@	0.000000
+9	10	>	@0@	0.000000
+10	0.000000
+</pre>
+
+As you can see with <tt>bad.lexc</tt> the tag <nom> is treated as normal character symbols, which means
+that it might not be treated as a tag by other programs. Fortunately it's possible to write a nice 
+script to sanity check our lexicon:
+
+<pre>
+IN=$1 # Input file
+HEAD=`grep -nH 'LEXICON Root' $IN  | cut -f2 -d':'` # Find the limit of the header
+# For each of the symbols we find in the whole file 
+for i in `cat $IN | grep -o '%<[^>]\+%>' | sort -u`; do 
+	# Run through the header and see if it is there
+	cat $IN | head -n $HEAD | grep "$i" | wc -l | sed "s/$/\t$i/g" | grep "^0"; 
+done 
+</pre>
+
+You can save this in a file called something like <tt>validate.sh</tt> and run it like,
+
+<pre>
+$ sh validate.sh chv.lexc
+0	%<abl%>
+0	%<dat%>
+0	%<gen%>
+0	%<ins%>
+0	%<loc%>
+0	%<nom%>
+0	%<pl%>
+</pre>
+
+And it will show you which tags you have forgotten to define.
+
+Ok, so now we've defined all our tags and added our continuation classes we can look at 
+the output of our transducer.
+
+<pre>
+$ hfst-lexc chv.lexc | hfst-fst2strings 
+hfst-lexc: warning: Defaulting to OpenFst tropical type
+Root...1 CASE-SG...6 CASE-PL...5 PLURAL...3 N...1 Nouns...
+урам<n><nom>:урам
+урам<n><pl><gen>:урам>сен
+урам<n><pl><ins>:урам>сен>пе
+урам<n><pl><dat>:урам>сен>е
+урам<n><pl><abl>:урам>сен>чен
+урам<n><pl><loc>:урам>сен>че
+урам<n><pl><nom>:урам>сем
+урам<n><gen>:урам>ӑн
+урам<n><dat>:урам>а
+урам<n><abl>:урам>тан
+урам<n><loc>:урам>та
+урам<n><ins>:урам>па
+хула<n><nom>:хула
+хула<n><pl><gen>:хула>сен
+хула<n><pl><ins>:хула>сен>пе
+хула<n><pl><dat>:хула>сен>е
+хула<n><pl><abl>:хула>сен>чен
+хула<n><pl><loc>:хула>сен>че
+хула<n><pl><nom>:хула>сем
+хула<n><gen>:хула>ӑн
+хула<n><dat>:хула>а
+хула<n><abl>:хула>тан
+хула<n><loc>:хула>та
+хула<n><ins>:хула>па
+канаш<n><nom>:канаш
+канаш<n><pl><gen>:канаш>сен
+канаш<n><pl><ins>:канаш>сен>пе
+канаш<n><pl><dat>:канаш>сен>е
+канаш<n><pl><abl>:канаш>сен>чен
+канаш<n><pl><loc>:канаш>сен>че
+канаш<n><pl><nom>:канаш>сем
+канаш<n><gen>:канаш>ӑн
+канаш<n><dat>:канаш>а
+канаш<n><abl>:канаш>тан
+канаш<n><loc>:канаш>та
+канаш<n><ins>:канаш>па
+</pre>
+
+Now, this doesn't look half bad, but as linguists we might feel like complaining about
+a couple of things in terms of the representation:
+
+* We have different continuation classes for singular and plural case affixes, but
+   they look like they could be treated as a single class
+* The concatenation of some case suffixes with vowel stems doesn't look like it's 
+/   going to produce the right form. 
+
+Problem (2) is more serious &mdash; we'll come to that shortly, but problem (1) is more
+philosophical and deserves some thinking about. As linguists
+we would like the most elegant, linguistically-motivated solution. But as engineers
+we would like something that works. If a solution is inelegant but solves the problem
+should it immediately be discarded? And the counter-question, if an elegant solution
+is possible and doesn't require substantially more engineering work, should it be discarded?
+
+These are the kind of tradeoffs that need to be taken into account when designing and developing a morphological
+transducer. We are trying to optimise two things, simplicity of representation (engineering) and beauty of 
+representation (linguistics). The answers will not always be easy and the answers will almost 
+never be given to us.
+
+<h4>Archiphonemes</h4>
+
+So, we've got to the point where we have modelled part of the morphology of the language
+in a fairly brute-force way. Let's revisit our decisions and see if we can figure out 
+some ways of making better ones. 
+
+First of all, those case suffixes look pretty similar, 
+	
+nom	-	-
+gen	-ӑн	-н
+dat	-а	-е
+loc	-та	-че
+abl	-тан	-чен
+ins	-па	-пе
+
+If we look at a Chuvash grammar, or happen to have heard anything about Chuvash we might be aware
+that Chuvash has vowel harmony, which is a process whereby in principle vowels with the 
+same feature should go together. For example back vowels should go with back vowels 
+and front vowels should go with front vowels. So, we might posit the following rule,
+
+* The instrumental suffix is -пV, where the vowel V is either а or е depending on the 
+    backness of the vowel in the previous syllable.
+
+We might also look at the locative and ablative suffixes and think that a possible rule
+for these suffixes would be,
+
+* The т in the locative and ablative turns to a ч after a nasal. 
+
+- archiphonemes
+
+phonological rules
+
+- epenthesis
+- vowel harmony
+
+more on morphotactics
+
+- templatic morphology
+- compounding
+- derivation
+- prefixes
+  - with twol constraints
+  - with flag diacritics
+
+lexicon construction
+
+more on morphotactics
+
+- numerals and abbreviations
+
+unit testing
+
+evaluating coverage 
+
+evaluating precision/recall
+
+extracting sub-fsts
+
+
+
+weighting
+
+
+transliteration
+
+- ngram models
+
+spell relax
+
+orthographic errors
+
+
+final thoughts 
+

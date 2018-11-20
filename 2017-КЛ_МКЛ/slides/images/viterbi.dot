@@ -1,0 +1,36 @@
+digraph G {
+	rankdir = "LR";
+        node [shape="rectangle"];
+
+node1 [ label="q0" ] ; 
+node2 [ label="NOUN" ] ; 
+node3 [ label="VERB" ] ; 
+node4 [ label="ADP" ] ; 
+node5 [ label="VERB" ] ; 
+node6 [ label="PRON" ] ; 
+node7 [ label="DET" ] ; 
+node8 [ label="NOUN" ] ; 
+node9 [ label="VERB" ] ; 
+node10 [ label="ADJ" ] ; 
+node11 [ label="PUNCT" ] ; 
+node12 [ label="qF" ] ; 
+
+node1 -> node2 [ color="lightgrey" ]; 
+node1 -> node3 ; 
+node2 -> node4 [ color="lightgrey" ] ;
+node3 -> node4 ;
+node4 -> node5 [ color="lightgrey" ];
+node4 -> node6 [ color="lightgrey" ];
+node4 -> node7 ;
+node5 -> node8 [ color="lightgrey" ];
+node5 -> node9 [ color="lightgrey" ];
+node6 -> node8 [ color="lightgrey" ];
+node6 -> node9 [ color="lightgrey" ];
+node7 -> node8 ;
+node7 -> node9 [ color="lightgrey" ];
+node8 -> node10 ;
+node9 -> node10 [ color="lightgrey" ];
+node10 -> node11 ;
+node11 -> node12 ;
+
+}

@@ -1,0 +1,222 @@
+<html>
+
+<head>
+  <title>Sliders for speech</title>
+</head>
+<body>
+<center>
+<span style="font-size: 150%" id="g_hours"></span> 
+</center>
+<br/>
+<center>
+<table>
+<tr><td>Number of people:</td><td>  <input type="range" min="1" max="100" value="1" class="slider" id="folk"> </td><td> <span id="n_folk"/></td></tr>
+<tr><td>Minutes/day: </td><td> <input type="range" min="0" max="59" value="1" step="5" class="slider" id="mins"> </td><td> <span id="n_mins"></span> (<span id="n_recordings"></span> clips/day)</td></tr>
+<tr><td>Number of months: </td><td> <input type="range" min="1" max="12" value="1" class="slider" id="months"> </td><td> <span id="n_months"/></td></tr>
+</table>
+</center>
+<br/>
+<center>
+<span id="g_folk"></span> <span id="g_mins"></span> <span id="g_months"></span>
+</center>
+
+<script>
+
+var d_folk= {
+1:"You",
+2:"You and a mate",
+3:"A few friends",
+4:"A barbershop quartet",
+5:"5 people",
+6:"The crew of the ISS", 
+7:"The seven samurai",
+8:"A small mixed choir",
+9:"9 people",
+10:"10 people",
+11:"A football team",
+12:"The twelve disciples",
+13:"13 people",
+14:"14 people",
+15:"A rugby team",
+16:"16 people",
+17:"17 people",
+18:"18 people",
+19:"19 people",
+20:"The crew of a 747",
+21:"21 people",
+22:"22 people",
+23:"23 people",
+24:"24 people",
+25:"25 people",
+26:"26 people",
+27:"27 people",
+28:"28 people",
+29:"29 people",
+30:"30 people",
+31:"31 people",
+32:"32 people",
+33:"33 people",
+34:"34 people",
+35:"35 people",
+36:"36 people",
+37:"37 people",
+38:"38 people",
+39:"39 people",
+40:"40 people",
+41:"41 people",
+42:"42 people",
+43:"43 people",
+44:"44 people",
+45:"45 people",
+46:"46 people",
+47:"47 people",
+48:"48 people",
+49:"49 people",
+50:"50 people",
+51:"51 people",
+52:"52 people",
+53:"53 people",
+54:"54 people",
+55:"55 people",
+56:"The crew of the HMS Bounty",
+57:"57 people",
+58:"58 people",
+59:"59 people",
+60:"60 people",
+61:"61 people",
+62:"62 people",
+63:"Every member of the Icelandic Parliament",
+64:"64 people",
+65:"65 people",
+66:"66 people",
+67:"67 people",
+68:"68 people",
+69:"69 people",
+70:"70 people",
+71:"71 people",
+72:"72 people",
+73:"73 people",
+74:"74 people",
+75:"75 people",
+76:"76 people",
+77:"77 people",
+78:"78 people",
+79:"79 people",
+80:"80 people",
+81:"81 people",
+82:"82 people",
+83:"83 people",
+84:"84 people",
+85:"85 people",
+86:"86 people",
+87:"87 people",
+88:"88 people",
+89:"89 people",
+90:"90 people",
+91:"91 people",
+92:"92 people",
+93:"93 people",
+94:"94 people",
+95:"95 people",
+96:"96 people",
+97:"97 people",
+98:"98 people",
+99:"99 people",
+100:"100 people",
+};
+var d_mins = {
+1:"tying shoelaces",
+5:"brushing teeth",
+10:"taking a shower",
+15:"learning JavaScript",
+20:"reciting the rosary",
+25:"on a typical commute",
+30:"getting a haircut",
+35:"waiting for thirty-five minutes",
+40:"waiting for forty minutes",
+45:"playing half a football match",
+50:"waiting for fifty minutes",
+55:"in an average business meeting",
+60:"compiling Mozilla Firefox",
+};
+var d_months = {
+1:"for the lifespan of a mosquito",
+2:"for two months",
+3:"for a summer holiday",
+4:"for four months",
+5:"for five months",
+6:"for half a year",
+7:"for the time it takes to build a house",
+8:"for eight months",
+9:"for an academic year",
+10:"for ten months",
+11:"for eleven months",
+12:"for a year",
+}
+
+var CURRENT_FOLK = 1;
+var CURRENT_MINS = 1;
+var CURRENT_MONTHS = 1;
+
+var folk_slider = document.getElementById("folk");
+var mins_slider = document.getElementById("mins");
+var months_slider = document.getElementById("months");
+
+var folk_output = document.getElementById("n_folk");
+var mins_output = document.getElementById("n_mins");
+var months_output = document.getElementById("n_months");
+var recordings_output = document.getElementById("n_recordings");
+
+var folk_group = document.getElementById("g_folk");
+var mins_group = document.getElementById("g_mins");
+var months_group = document.getElementById("g_months");
+
+
+var hours_output = document.getElementById("g_hours");
+
+folk_output.innerHTML = folk_slider.value; // Display the default slider value
+mins_output.innerHTML = mins_slider.value; // Display the default slider value
+months_output.innerHTML = months_slider.value; // Display the default slider value
+
+folk_slider.oninput = function() { 
+	CURRENT_FOLK = this.value; 
+	folk_output.innerHTML = CURRENT_FOLK ;
+	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
+	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
+	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
+
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours of training data";
+	recordings_output.innerHTML = 12 * CURRENT_MINS;
+} 
+mins_slider.oninput = function() { 
+	CURRENT_MINS = parseInt(this.value);
+	if(CURRENT_MINS == 0) { CURRENT_MINS = 1; } 
+	mins_output.innerHTML = CURRENT_MINS ; 
+	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
+	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
+	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
+
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours of training data";
+	recordings_output.innerHTML = 12 * CURRENT_MINS;
+} 
+ 
+months_slider.oninput = function() { 
+	CURRENT_MONTHS = this.value;
+	months_output.innerHTML = CURRENT_MONTHS ; 
+	folk_group.innerHTML = d_folk[CURRENT_FOLK]; 
+	mins_group.innerHTML = d_mins[CURRENT_MINS]; 
+	months_group.innerHTML = d_months[CURRENT_MONTHS]; 
+
+	hours_output.innerHTML = (CURRENT_FOLK * CURRENT_MINS * (CURRENT_MONTHS*30))/60 + " hours of training data";
+	recordings_output.innerHTML = 12 * CURRENT_MINS;
+} 
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

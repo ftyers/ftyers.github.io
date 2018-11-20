@@ -1,0 +1,226 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 1</title>
+
+</head>
+<body>
+<div class="page">
+
+<h2> Class 1 </h2>
+
+<p>On this page you will find a lot of commands, commands are instructions for your computer. You
+can use them to tell your computer what to do. You will recognise commands because
+they are prefixed with a dollar sign <tt>$</tt>. It is not necessary to type the dollar in order
+to issue the command. </p>
+
+<p>In order to give commands to your computer you need to open up a terminal (also called "shell",
+"console" and a number of other things). It will be called "Terminal" or "Терминаль". To open it,
+double click the icon. Or find it in the menu system.</p>
+
+<p>Commands generally have the following basic form: A short mostly vowel-less sequence of letters
+followed by a <span title="прабил"><u>space</u></span> and then the arguments to the command.</p>
+
+<h3> Working with the virtual machine </h3>
+
+Start with updating the virtual machine:
+
+<pre>
+$ sudo apt-get update
+</pre>
+
+It will ask you for a password. The password is the same as the username. Note 
+that when you type the password you won't see anything on the console. Just keep
+typing and when you are finished press return ⏎.
+
+<pre>
+$ sudo apt-get install git
+</pre>
+
+This will install <tt>git</tt>. It will ask you if you want to continue. You need
+to type <tt>Y</tt> and then press return ⏎.
+
+<h3> Checking out your repository </h3>
+
+First check out your repository, replace <tt>XXXXXX</tt> with your username on GitHub.
+
+<pre>
+$ git clone https://github.com/XXXXXX/2017-osnov-programm.git
+</pre>
+
+Change directory into the repository you just cloned:
+
+<pre>
+$ cd 2017-osnov-programm
+</pre>
+
+And make three <span title="каталогы, папки"><u>directories</u></span>:
+
+<pre>
+$ mkdir corpus project homework
+</pre>
+
+The <tt>corpus</tt> directory will store your corpus so you don't lose it. The <tt>project</tt>
+directory will be for your project work and the <tt>homework</tt> directory is for any 
+homework you need to submit that isn't related to classwork.
+
+<pre>
+$ touch corpus/README.md project/README.md homework/README.md
+</pre>
+
+This <tt>touch</tt> command makes a new empty file called <tt>README.md</tt> in each of the
+directories. We need to do this because <tt>git</tt> does not allow us to add empty directories.
+
+<pre>
+$ git add corpus project homework
+</pre>
+
+Here we add the directories that we have created to our <tt>git</tt> repository.
+
+Note that now you might need to do something extra like set your email address:
+
+<pre>
+$ git config --global user.email "email@example.com"
+$ git config --global user.name "Your Name"
+</pre>
+
+Where <tt>email@example.com</tt> is your email address and <tt>Your Name</tt> is your name.
+
+Then run the command:
+
+<pre>
+$ git commit -a -m "Initialise stuff"
+</pre>
+
+And this "commits" them. Any time you make a change in your repository you should commit
+the change. You should get the following output:
+
+<pre>
+$ git commit -a -m "stuff"
+[master 03e817a] stuff
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 corpus/README.md
+ create mode 100644 homework/README.md
+ create mode 100644 project/README.md
+</pre>
+
+<pre>
+$ git push
+</pre>
+
+When you push, you send your local changes to the GitHub server. You will need to enter 
+your username and password.
+
+
+<h3> Navigating directories </h3>
+
+When you download something on the virtual machine, it will often go in a subdirectory
+of your home directory called something like <tt>Downloads</tt> (or <tt>Baixades</tt> if your
+computer is in Catalan). To find that directory in the terminal you can try the following commands
+
+<pre>
+$ pwd
+</pre>
+
+This tells you which is your current location in the file system. The letters <tt>pwd</tt> stand
+for "present working directory". If you are in <tt>2017-osnov-programm</tt> you probably want to start
+to look in your home directory. So type:
+
+<pre>
+$ cd ..
+</pre>
+
+The <tt>cd</tt> command stands for "change directory". This particular command will take you 
+one directory up in the hierarchy. Now do <tt>ls</tt> which stands for "list". You will see
+a list of contents in your home directory. In order to change to the <tt>Downloads</tt> directory
+run the following command:
+
+<pre>
+$ cd Downloads
+</pre>
+
+Now do <tt>ls</tt> again and see what you have there. If you have a file called <tt>WikiExtractor.py</tt>
+and a file that ends with <tt>-pages-articles.xml.bz2</tt> then you can proceed to the next step. Otherwise
+you need to make sure you downloaded those two files in your web browser.
+
+<h3> Extracting your corpus </h3>
+
+You can follow the <a href="http://wiki.apertium.org/wiki/WikiExtractor">instructions</a> to extract 
+your corpus. When it is extracted you will have a file called <tt>wiki.txt</tt>
+
+<h3> Adding your corpus to <tt>git</tt> </h3>
+
+First check how big the corpus is. If it's more than a 2-3M then you want to make
+a smaller corpus.
+
+You can check how big the corpus is using the command:
+
+<pre>
+$ ls -lh wiki.txt 
+-rw-r--r-- 1 fran fran 634K set  2 13:07 wiki.txt
+</pre>
+
+The <tt>-lh</tt> means list the files in long form and with their size in human-readable form. This
+file is of a reasonable size. This one would not be:
+
+<pre>
+$ ls -lh wiki.txt 
+-rw-r--r-- 1 fran fran 3,3G nov 12  2014 wiki.txt
+</pre>
+
+If your <tt>wiki.txt</tt> file is too big you can make a smaller version by taking the top 100,000 lines.
+The command to do that is:
+
+<pre>
+$ head -n 100000 wiki.txt > wiki.100k.txt
+</pre>
+
+This will make a new file with only 100,000 lines called <tt>wiki.100k.txt</tt>. Check how big it is:
+
+<pre>
+$ ls -lh wiki.100k.txt 
+-rw-r--r-- 1 fran fran 40M set 12 22:04 wiki.100k.txt
+</pre>
+
+If it's still to big (40M is still to big) then try 10,000 lines:
+
+<pre>
+$ head -n 10000 wiki.txt > wiki.10k.txt
+</pre>
+
+This looks fine, 5.4M is doable:
+
+<pre>
+$ ls -lh wiki.10k.txt 
+-rw-r--r-- 1 fran fran 5,4M set 12 22:04 wiki.10k.txt
+</pre>
+
+Now once you've made a reasonable size file you can add it to your repository. First
+ you need to copy the file to the directory <tt>2017-osnov-programm/corpus</tt>. You can
+do this either on the command line with the <tt>cp</tt> command or using the graphical
+user interface. Then:
+
+<pre>
+$ cd ../2017-osnov-programm/corpus
+</pre>
+
+To change directory back to your repository, and:
+
+<pre>
+$ git add wiki.txt
+$ git commit -a -m "add wiki corpus"
+</pre>
+
+To add the file and commit it and
+
+<pre>
+$ git push
+</pre>
+
+To push it to the GitHub server.
+
+
+</div>
+</body>
+</html>

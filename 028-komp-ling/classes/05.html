@@ -1,0 +1,89 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 5: Named-entity recognition</title>
+</head>
+
+<body>
+<div class="page">
+
+<h3>Practical</h3>
+
+Choose one of the options below:
+
+<h4>Install <tt>natasha</tt> and run it on the <tt>factRuEval</tt> data</h4>
+
+Natasha (<a href="https://github.com/natasha/natasha">GitHub</a>) is a rule-based named entity extraction toolkit for 
+Russian. You can find some excellent documentation on how to install it <a href="http://natasha.readthedocs.io/ru/latest/#id1">here</a>.
+
+<h4>Build a NER system for the CoNLL-2003 data</h4>
+
+<a href="https://sklearn-crfsuite.readthedocs.io/en/latest/tutorial.html#let-s-use-conll-2002-data-to-build-a-ner-system">Instructions here</a>
+
+<h4>Create a model for Russian using Stanford NER</h4>
+
+<a href="https://nlp.stanford.edu/software/crf-faq.html#a">Instructions here</a>
+
+<h4>Make an corpus annotated with named entities from Wikipedia</h4>
+
+Example code to categorise pages by type of named entity for the Gagauz Wikipedia. Other 
+Wikipedias should function similarly. You run the code on the <tt>pages-articles.xml</tt> from the 
+Wikipedia dumps page.
+
+<pre>
+import sys, re
+import xml.etree.ElementTree as ET
+
+def guess_prop_cats(t, s): 
+	cats = []
+	for c in s: 
+		if c.count('Baş kasabalar') > 0: cats.append('LOC') # столица
+		if c.count('Kasabalar') > 0: cats.append('LOC') # города
+		if c.count(' kasabalari') > 0: cats.append('LOC') # города
+		if c.count('Kişiler') > 0: cats.append('PER') # люди
+		if c.count(' Devletläri') > 0: cats.append('LOC') # страны
+		if c.count(' devletläri') > 0: cats.append('LOC') # страны
+		if c.count('Provinția ') > 0: cats.append('LOC') # провинции
+		if c.count('Küüler') > 0: cats.append('LOC') # деревни
+	
+	if 'LOC' in cats and (t.count('lista') > 0 or t.count('liste') > 0): cats.remove('LOC')
+	if t.split(' ')[-1] == 'vilâyeti': cats.append('LOC')  # провинции
+	if t.split(' ')[-1] == 'vilâyeti)': cats.append('LOC')  # провинции
+	return list(set(cats))
+
+doc = ET.parse(sys.argv[1])
+ns = {'mediawiki': 'http://www.mediawiki.org/xml/export-0.10/'}
+cats = re.compile('(\[\[Kategoriya:[^|\]]+\]\]|\[\[Category:[^|\]]+\]\])')
+
+# For each of the pages
+for p in doc.findall('.//mediawiki:page', ns): 
+	# Find the title
+	t = p.findall('.//mediawiki:title', ns)[0].text
+
+	# If the title is outside the main namespace
+	if t.count(':') > 0: continue
+	# If the title only consists of numerals
+	if re.match('^[0-9]+$', t): continue;	
+
+	# Pull out the text
+	tekst = str(p.findall('.//mediawiki:text', ns)[0].text)
+
+	# Find all the categories
+	incat = cats.findall(tekst)
+	# Classify the categories into named-entities
+	pars = guess_prop_cats(t, incat)
+	if pars != []:
+		print(t + '\t' + '/'.join(pars) + '\t' + '/'.join(incat));
+</pre>
+
+After this you will need to find a way of annotating the spans in the text with these types. Some notes:
+
+<ul>
+  <li>Skip ambiguities, e.g. if something can be PER/LOC then leave it.</li>
+</ul>
+
+</div>
+</body>
+</html>

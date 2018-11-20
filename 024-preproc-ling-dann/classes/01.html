@@ -1,0 +1,648 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 1: Unix™ for Poets</title>
+
+</head>
+<body>
+<div class="page">
+<p>
+<div style="color:grey; align:justify">[This page is adapted from the wonderful Unix™ for Poets by Ken Church
+ which introduced a generation of researchers to NLP. I have adjusted it for use with languages
+ which may use multibyte encodings such as UTF-8 and as such are not supported by standard
+ utilities like <tt>tr</tt>. To read the original, please click <a href="https://www.cs.upc.edu/~padro/Unixforpoets.pdf">here</a> -FMT]</div>
+</p>
+
+<h1>Unix™ for Poets</h1>
+<p>
+Kenneth Ward Church<br/>
+AT&T Research<br/>
+<tt>kwc@research.att.com</tt>
+</p>
+<p>
+Text is available like never before. Data collection efforts such as the Association for Computational
+Linguistics' Data Collection Initiative (ACL/DCI), the Consortium for Lexical Research (CLR), the
+European Corpus Initiative (ECI), ICAME, the British National Corpus (BNC), the Linguistic Data
+Consortium (LDC), Electronic Dictionary Research (EDR) and many others have done a wonderful job in
+acquiring and distributing dictionaries and corpora. In addition, there are vast quantities of so-called
+Information Super Highway Roadkill: email, bboards, faxes. We now has access to billions and billions of
+words, and even more pixels.
+</p>
+<p>
+What can we do with it all? Now that data collection efforts have done such a wonderful service to the
+community, many researchers have more data than they know what to do with. Electronic bboards are
+beginning to fill up with requests for word frequency counts, ngram statistics, and so on. Many researchers
+believe that they don't have sufficient computing resources to do these things for themselves. Over the
+years, I've spent a fair bit of time designing and coding a set of fancy corpus tools for very large corpora
+(eg, billions of words), but for a mere million words or so, it really isn't worth the effort. You can almost
+certainly do it yourself, even on a modest PC. People used to do these kinds of calculations on a PDP-11,
+which is much more modest in almost every respect than whatever computing resources you are currently
+using.
+</p>
+<p>I wouldn't bring out the big guns (fancy machines, fancy algorithms, data collection committees, bigtime
+favours) unless you have a lot of text (e.g., hundreds of million words or more), or you are trying to count
+really long ngrams (e.g., 50-grams). This chapter will describe a set of simple Unix-based tools that should
+be more than adequate for counting trigrams on a corpus the size of the Brown Corpus. I'd recommend that
+you do it yourself for basically the same reason that home repair stores like DIY and Home Depot are as
+popular as they are. You can always hire a pro to fix your home for you, but a lot of people find that it is
+better not to, unless they are trying to do something moderately hard. Hamming used to say it is much
+better to solve the right problem naively than the wrong problem expertly.
+</p>
+<p>
+I am very much a believer in teaching by examples. George Miller (personal communication) has observed
+that dictionary definitions are often not as helpful as example sentences. Definitions make a lot of sense if
+you already basically know what the word means, but they can be hard going if you have never seen the
+word before. Following this spirit, this chapter will focus on examples and avoid definitions whenever
+possible. In some cases, I will deliberately use new options and even new commands without defining
+them first. The reader is encouraged to try the examples themselves, and when all else fails consult the
+documentation. (But hopefully, that shouldn't be necessary too often, since we all know how boring the
+documentation can be.)</p>
+
+We will show how to solve the following exercises using only very simple utilities.
+
+<ol>
+<li>Count words in a text</li>
+<li>
+Sort a list of words in various ways
+<ul>
+<li>numerical order</li>
+<li>dictionary order</li>
+<li>''rhyming'' order</li>
+</ul></li>
+<li>Compute ngram statistics</li>
+<li> Make a Concordance</li>
+</ol>
+
+The code fragments in this chapter were developed and tested on a Sun computer running Berkeley Unix.
+The code ought to work on more or less as is in any Unix system, and even in many PC environments,
+running various compatibility packages such as the MKS toolkit.
+
+<h3>1. Count words in a text</h3>
+
+The problem is to input a text file, say Wikipedia (a good place to start), and output a list of words in the file
+along with their frequency counts. The algorithm consists of three steps:
+
+<ol>
+<li>Tokenise the text into a sequence of words (<tt>sed</tt>),</li>
+<li>Sort the words (<tt>sort -r</tt>), and</li>
+<li>Count duplicates (<tt>uniq -c</tt>).</li>
+</ol>
+
+The algorithm can be implemented in just three lines of Unix code:
+
+<pre>
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt |
+sort -r |
+uniq -c > wiki.hist
+</pre>
+<p>
+<div style="color:grey">
+<b>NOTE:</b> When the <tt>$</tt> symbol appears at the beginning of a line, it means that this line
+is a command that you should write into your terminal, do not type the <tt>$</tt> symbol.
+</div>
+</p>
+<p>
+<div style="color:grey">
+<b>WARNING:</b> You should copy/paste both `I' and `Ӏ'. 
+</div>
+</p>
+This program produces the following output:
+
+<pre>
+      5 Яшар
+      1 яшавалда
+     17 яшав
+      1 ячуна
+      1 Ячун
+      6 ячун
+      1 ячула
+      1 ячинчIого
+      1 ячинчIей
+      2 ячине
+...
+</pre>
+
+<p>
+<div style="color:grey">
+<b>WARNING:</b> In some Unix™ environments you should use <tt>gsed</tt> instead of <tt>sed</tt>. If you are
+getting strange output try this.
+</div>
+</p>
+
+The less than symbol "&lt;" indicates that the input should be taken from the file named "wiki.txt", and the
+greater than symbol "&gt;" indicates that the output should be redirected to a file named "wiki.hist". By
+default, input is read from <tt>stdin</tt> (standard input) and written to <tt>stdout</tt> (standard output). Standard input is
+usually the keyboard and standard output is usually the active window.
+
+The pipe symbol "|" is used to connect the output of one program to the input of the next. In this case, <tt>sed</tt>
+outputs a sequence of tokens (words) which are then piped into <tt>sort</tt>. Sort outputs a sequence of sorted
+tokens which are then piped into <tt>uniq</tt>, which counts up the runs, producing the desired result.
+
+We can understand this program better by breaking it up into smaller pieces. Lets start by looking at the
+beginning of the input file. The Unix program <tt>sed</tt> can be used as follows to show the first five lines of
+the wiki file:
+
+<pre>
+$ sed 5q < wiki.txt 
+
+География:
+
+Гъизляр:
+Гъизляр яги БагIаршагьар () — Туркияб мацIалдаса магIарул мацIалде буссине гьабуни "Ясшагьар". Цебе заманалда гьениб букIун буго кIудияб лагъзал ричулеб базар. Гьениса ричун росулел (яги рикъулел) рукIун руго руччабиги, хIалтIухъабиги. 
+</pre>
+
+In the same way, we can use the same command, <tt>sed</tt>, to verify that the first few tokens generated by <tt>sed</tt> do indeed correspond to
+the first few words in the wiki file.
+
+<pre>
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt | sed 5q
+
+География
+
+
+Гъизляр
+
+</pre>
+
+Similarly, we can verify that the output of the <tt>sort</tt> step produces a sequence of (not necessarily distinct)
+tokens in lexicographic order.
+
+<pre>
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt | 
+sort -r | 
+sed 10q
+
+Яшар
+Яшар
+Яшар
+Яшар
+Яшар
+яшавалда
+яшав
+яшав
+яшав
+яшав
+</pre>
+
+Finally, the <tt>uniq</tt> step counts up the repeated tokens.
+
+<pre>
+$ sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt | 
+sort -r | 
+uniq -c | 
+sed 5q
+
+      5 Яшар
+      1 яшавалда
+     17 яшав
+      1 ячуна
+      1 Ячун
+</pre>
+
+<h3>2. More counting exercises</h3>
+
+<p>This section will show three variants of the counting program above to illustrate just how easy it is to count
+a wide variety of (possibly) useful things. The details of the examples aren't all that important. The point
+is to realise that pipelines are so powerful that they can be easily extended to count words (by almost any
+definition one can imagine), ngrams, and much more.</p>
+
+<p>The examples in this section will discuss various (weird) definitions of what is a "word". Some students
+get distracted at this point by these weird definitions and lose sight of the point &mdash; that pipelines make it
+relatively easy to mix and match a small number of simple programs in very powerful ways. But even
+these students usually come around when they see how these very same techiques can be used to count
+ngrams, which is really nothing other than yet another weird definition of what is a word/token.</p>
+
+<p>The first of the three examples shows that a straightforward one-line modification to the counting program
+can be used to merge the counts for upper and lower case. The first line in the new program below
+collapses the case distinction by translating lower case to upper case:</p>
+
+<pre>
+$ uconv -x upper < wiki.txt | 
+sed 's/[^А-Яа-яI]\+/\n/g' | 
+sort -r | 
+uniq -c | 
+sed 5q
+</pre>
+
+Small changes to the tokenising rule are easy to make, and can have a dramatic impact. The second
+example shows that we can count vowel sequences instead of words by changing the tokenising rule
+(the <tt>sed</tt> line) to emit sequences of vowels rather than sequences of alphabetic characters.
+
+<pre>
+$ uconv -x upper < wiki.txt | 
+sed 's/[^АЭИОУЯЕЫЁЮ]\+/\n/g' | 
+sort -r | 
+uniq -c 
+</pre>
+
+<pre>
+$ uconv -x upper < wiki.txt | 
+sed 's/[^БВГДЖЗЙКЛМНПРСТФХЦЧШЩЪЬ]\+/\n/g' | 
+sort -r | 
+uniq -c 
+</pre>
+
+<p>These three examples are intended to show how easy it is to change the definition of what counts as a word.
+Sometimes you want to distinguish between upper and lower case, and sometimes you don't. Sometimes
+you want to collapse morphological variants (does hostage = hostages). Different languages use different
+character sets. Sometimes I get email from Sweden, for example, where "y" is a vowel. The tokeniser
+depends on what you are trying to do. The same basic counting program can be used to count a variety of
+different things, depending on how you implement the definition of thing (=token).</p>
+
+<p>You can find the documentation for the <tt>sort</tt> command (and many other commands as well) by saying</p>
+
+<pre>
+$ man sort
+</pre>
+
+<p>If you want to see the document for some other command, simply replace the <tt>sort</tt> with the name of that
+other command.</p>
+
+<p>The man page for <tt>sed</tt> explains that it inputs a stream and applies various transformations depending 
+on an expression, in
+
+<pre>
+sed 's/а/б/g'
+</pre>
+
+<p><tt>sed</tt> changes all instances of 'а' to 'б'. The 's' means match a pattern in the stream and replace
+it with something else. The pattern and replacement are put between '/' characters, and the final 'g' means 
+do this to all instances of the pattern you see in the stream. The <tt>sed</tt> command,
+
+<pre>
+sed 's/[^А-Яа-яI]\+/\n/g'
+</pre>
+
+<p>translates any non-alphabetic character to newline. Non-alphabetic characters include puctuation, white
+space, control characters, etc. It is easier to refer to non-alphabetic characters by referring to their
+complement because many of them (like newline) are hard to refer to (without knowing the context).</p>
+
+<h3>3. Sort</h3>
+
+<p>The sorting step can also be modified in a variety of different ways. The man page for <tt>sort</tt> describes a
+number of options or flags such as:</p>
+
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>sort -d</tt></td><td>dictionary order</td></tr>
+<tr><td><tt>sort -f</tt></td><td>fold case</td></tr>
+<tr><td><tt>sort -n</tt></td><td>numeric order</td></tr>
+<tr><td><tt>sort -r</tt></td><td>reverse order</td></tr>
+<tr><td><tt>sort -nr</tt></td><td>reverse numeric order</td></tr>
+<tr><td><tt>sort -u</tt></td><td>remove duplicates</td></tr>
+<tr><td><tt>sort +1</tt></td><td>start with field 1 (starting from 0)</td></tr>
+<tr><td><tt>sort +0.50</tt></td><td>start with 50th character</td></tr>
+<tr><td><tt>sort +1.5</tt></td><td>start with 5th character of field 1</td></tr>
+</table>
+</div>
+
+These options can be used in straightforward ways to solve the following exercises:
+
+<ol>
+<li>Sort the words in Wikipedia by frequency</li>
+<pre> sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt |
+sort |
+uniq -c |
+sort -nr
+</pre>
+<li>Sort them by folding case.</li>
+<li>Sort them by ''rhyming'' order.</li>
+</ol>
+
+<!--The last two examples above are left as exercises for the reader, but unlike most ''exercises for the reader,''
+the solutions can be found in the appendix of this chapter.-->
+
+By ''rhyming'' order, we mean that the words should be sorted from the right rather than the left, as
+illustrated below:
+
+<pre>
+Гьезда
+мацIалда
+округалда
+заманалда
+Шагьаралда
+севералда
+къиблаялда
+Федерациялда
+бакъбаккуда
+Бакъда
+МахIачхъала
+...
+</pre>
+
+<p>''севералда'' comes before ''къиблаялда'' because ''адларевес'' (''севералда'' spelled backwards) comes before ''адляалбиък''
+(''къиблаялда'' spelled backwords) in lexicographic order. Rhyming dictionaries are often used to help poets
+(and linguists who are interested in suffixing morphology).</p>
+
+<p>Hint: There is a Unix command <tt>rev</tt>, which reverses the letters on a line:</p>
+
+<pre>
+$ echo "МагIарул мацI" | rev 
+Iцам лураIгаМ
+
+$ echo "МагIарул мацI" | rev  | rev 
+МагIарул мацI
+</pre>
+
+<p>Thus far, we have seen how Unix commands such as <tt>sort</tt>, <tt>uniq</tt>, <tt>sed</tt> and <tt>rev</tt> can be combined into
+pipelines with the ''|'', ''<,'' and ''>'' operators in simple yet powerful ways. All of the examples were
+based on counting words in a text. The flexibility of the pipeline approach was illustrated by showing how
+easy it was to modify the counting program to</p>
+
+<ul>
+<li>tokenise by vowel, merge upper and lower case</li>
+<li>sort by frequency, rhyming order</li>
+</ul>
+
+<h3>4. Bigrams</h3>
+
+<p>The same basic counting program can be modified to count bigrams (pairs of words), using the algorithm:</p>
+
+<ol>
+<li>tokenise by word</li>
+<li>print <em>word</em><sub><em>i</em></sub> and <em>word</em><sub><em>i</em>+1</sub> on the same line</li>
+<li>count</li>
+</ol>
+
+<p>The second step makes use of two new Unix commands, <tt>tail</tt> and <tt>paste</tt>. Tail is usually used to output the
+last few lines of a file, but it can be used to output all but the first few lines with the ''-n +2'' option. The
+following code uses tail in this way to generate the files genesis.words and genesis.nextwords which
+correspond to <em>word</em><sub>i</sub> and <em>word</em><sub><em>i</em>+1</sub> .</p>
+
+<pre>
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' < wiki.txt > wiki.words
+tail -n +2 wiki.words > wiki.nextwords
+</pre>
+
+<p>Paste takes two files and prints them side by side on the same line. Pasting <tt>wiki.words</tt> and
+<tt>wiki.nextwords</tt> together produces the appropriate input for the counting step.</p>
+
+<pre>
+paste wiki.words wiki.nextwords
+
+...
+гьениб	букIун
+букIун	буго
+буго	кIудияб
+кIудияб	лагъзал
+лагъзал	ричулеб
+ричулеб	базар
+базар	Гьениса
+Гьениса	ричун
+ричун	росулел
+...
+</pre>
+
+<p>Combining the pieces, we end up with the following three line program for counting bigrams:</p>
+
+<pre>
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > wiki.words
+tail -n +2 wiki.words > wiki.nextwords
+paste wiki.words wiki.nextwords | sort | uniq -c > wiki.bigrams
+</pre>
+
+<p>The ten most frequent bigrams in the Avar Wikipedia are:</p>
+
+<pre>
+sort -nr < wiki.bigrams | sed 10q
+
+    236 латиназул	мацӀалда
+    174 жамагӀаталде	гъорлъе
+    140 мацӀалда	хъизан
+    122 хъизан	гӀалхул
+     94 гъорлъе	уна
+     90 уна	жибго
+     89 гъорлъе	унеб
+     86 лага	черх
+     86 гӀадамасул	лага
+     85 мацӀалда	гӀадамасул
+</pre>
+
+<!--<p>Exercise: count trigrams. The solution can be found in the appendix.</p>-->
+
+<p>I have presented this material in quite a number of tutorials over the years. The students almost always
+come up with a big ''aha'' reaction at this point. Counting words seems easy enough, but for some reason,
+students are almost always pleasantly surprised to discover that counting ngrams (bigrams, trigrams, 50-grams) 
+is just as easy as counting words. It is just a matter of how you tokenise the text. We can tokenise
+the text into words or into ngrams; it makes little difference as far as the counting step is concerned.</p>
+
+<h3>5. Shell scripts</h3>
+
+Suppose that you found that you were often computing bigrams of different things, and you found it
+inconvenient to keep typing the same five lines over and over. If you put the following into a file called
+<tt>bigram.sh</tt>,
+
+<pre>
+sed 's/[^а-яА-ЯIӀ]\+/\n/g' | grep -v '^$' > $$words
+tail -n +2 $$words > $$nextwords
+paste $$words $$nextwords |
+sort | uniq -c
+# remove the temporary files
+rm $$words $$nextwords 
+</pre>
+
+then you could count bigrams with a single line:
+<pre>
+$ sh bigram.sh < wiki.txt > wiki.bigrams
+</pre>
+
+The shell script introduced several new symbols. The ''#'' symbol is used for comments. 
+The ''$$'' syntax encodes a long number (the process id) into the names of the temporary files. It is a good idea to use
+the ''$$'' syntax in this way so that two users (or two processes) can run the shell script at the same time,
+and there won't be any confusion about which temporary file belongs to which process. (If you don't know
+what a process is, don't worry about it. A process is a job, an instance of a program that is assigned
+resources by the scheduler, the time sharing system.) Put more simply, <tt>$$hargle</tt> is a temporary file 
+created with a name unique to the currently running process.
+
+<h3>6. grep: An Example of a Filter</h3>
+
+After completing the bigram exercise, you will have discovered that ''латиназул	мацӀалда'' and ''жамагӀаталде гъорлъе'' are
+the two most frequent bigrams in the Avar Wikipedia. Suppose that you wanted to count bigrams separately for verses
+that contain just the phrase ''латиназул мацӀалда.''
+
+Grep (<b>g</b>eneral <b>r</b>egular <b>e</b>xpression <b>p</b>attern matcher) can be used as follows 
+to extract lines containing ''латиназул мацӀалда''.
+
+<pre>
+$ grep 'латиназул мацӀалда' wiki.txt | sed 5q
+
+Чараналъул гъветӀ (латиназул мацӀалда "Populus nigra" var. "piramidalis ")
+Хъарчигъа (латиназул мацӀалда "Accipiter gentilis"), хӀинчӀ.
+Маймалак ялъуни Маймун (латиназул мацӀалда "Primates ex Homo") — гӀалхул кӀудияб ялъуни гьитӀинаб хӀайван.
+Антилопа (латиназул мацӀалда "Antilopinae" etc. sufamilies) — хӀайван.
+ТӀавус (латиназул мацӀалда "Pavo") — гӀалхул ва рукъалъул хӀинчӀ.
+</pre>
+
+Grep can be combined in straightforward ways with the bigram shell script to count bigrams for lines
+matching any regular expression including ''латиназул мацӀалда'' and ''жамагӀаталде гъорлъе.''
+
+<pre>
+$ grep 'латиназул мацӀалда' wiki.txt |
+sh bigram.sh | sort -nr | sed 5q
+
+    236 латиназул	мацӀалда
+    140 мацӀалда	хъизан
+    122 хъизан	гӀалхул
+     85 мацӀалда	гӀадамасул
+     85 лага	черх
+</pre>
+
+<pre>
+$ grep 'жамагӀаталде гъорлъе' wiki.txt |
+sh bigram.sh | sort -nr | sed 5q
+
+    166 жамагӀаталде	гъорлъе
+     85 гъорлъе	унеб
+     81 уна	жибго
+     81 гъорлъе	уна
+     63 росулъ	гӀумру
+</pre>
+
+The syntax for regular expressions can be fairly elaborate. The simplest case is like the ''the land of''
+example above, where we are looking for lines containing a string. In more elaborate cases, matches can
+be anchored at the beginning or end of lines by using the ''ˆ'' and ''$'' symbols.
+
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>grep gh</tt></td><td>find lines containing ''gh''</td></tr>
+<tr><td><tt>grep '^con'</tt></td><td>find lines starting with ''con''</td></tr>
+<tr><td><tt>grep 'ing$'</tt></td><td>find lines ending with ''ing''</td></tr>
+</table>
+</div>
+
+With the <tt>-v</tt> option, instead of printing the lines that match, grep prints lines that do not match. In other
+words, matching lines are filtered out or deleted from the output.
+
+The <tt>-c</tt> options counts the matches instead of printing them.
+
+Case distinctions are ignored with the <tt>-i</tt> option, so that
+
+<pre>
+grep '[аэиоуАЭИОУ]'
+</pre>
+
+is equivalent to
+
+<pre>
+grep -i '[аэиоу]'
+</pre>
+
+Grep also allows ranges of characters:
+
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>grep '[A-Я]'</tt></td><td>lines with an uppercase character</td></tr>
+<tr><td><tt>grep '^[A-Я]'</tt></td><td>lines starting with an uppercase character</td></tr>
+<tr><td><tt>grep '[A-Я]$'</tt></td><td>lines ending with an uppercase character</td></tr>
+<tr><td><tt>grep '^[A-Я]\+$'</tt></td><td>lines with all uppercase character</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td><tt>grep '[аэиоуяеыёюАЭИОУЯЕЫЁЮ]'</tt></td><td>lines with a vowel</td></tr>
+<tr><td><tt>grep '^[аэиоуяеыёюАЭИОУЯЕЫЁЮ]'</tt></td><td>lines starting with a vowel</td></tr>
+<tr><td><tt>grep '[аэиоуяеыёюАЭИОУЯЕЫЁЮ]$'</tt></td><td>lines ending with a vowel</td></tr>
+</table>
+</div>
+
+Warning: the ''^'' (<em>circumflex</em>) can be confusing. Inside square brackets as 
+in ''[^а-яА-Я],'' it no longer refers to the beginning of the line, but rather, it 
+complements the set of characters. Thus, ''[^а-яА-Я]'' denotes any
+non-alphabetic character.
+
+Regular expressions can be combined recursively in elaborate ways. For example,
+
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>grep -i '[аэиоуяеыёю].*[аэиоуяеыёю]'</tt></td><td>lines with two or more vowels</td></tr>
+<tr><td><tt>grep -i '^[^аэиоуяеыёю]*[аэиоуяеыёю][^аэиоуяеыёю]*$'</tt></td><td>lines with exactly one vowel</td></tr>
+</table>
+</div>
+
+A quick summary of the syntax of regular expressions is given in the table below.
+
+<div style="align:center">
+<table>
+<tr><td><b>Example</b></td><td><b>Explanation</b></td></tr>
+<tr><td><tt>ц</tt></td><td>match the letter 'ц'</td></tr>
+<tr><td><tt>[а-я]</tt></td><td>match any lowercase letter</td></tr>
+<tr><td><tt>[А-Я]</tt></td><td>match any uppercase letter</td></tr>
+<tr><td><tt>[0-9]</tt></td><td>match any digit</td></tr>
+<tr><td><tt>[0123456789]</tt></td><td>match any digit</td></tr>
+<tr><td><tt>[аэиоуяеыёюАЭИОУЯЕЫЁЮ]</tt></td><td>match any vowel</td></tr>
+<tr><td><tt>[^аэиоуяеыёюАЭИОУЯЕЫЁЮ]</tt></td><td>match any character that is not a vowel</td></tr>
+<tr><td><tt>.</tt></td><td>match any character</td></tr>
+<tr><td><tt>^</tt></td><td>beginning of line</td></tr>
+<tr><td><tt>$</tt></td><td>end of line</td></tr>
+<tr><td><tt><em>pattern</em>*</tt></td><td>match zero or more instances of <em>pattern</em></td></tr>
+<tr><td><tt><em>pattern</em>\+</tt></td><td>match one or more instances of <em>pattern</em></td></tr>
+</table>
+</div>
+
+<div style="color:grey">
+<p>
+<b>TIP:</b> If you are using GNU <tt>grep</tt> then you can run it with <tt>grep --colour</tt> to 
+get the matched pattern coloured in your terminal. &mdash; if you aren't using GNU <tt>grep</tt> you
+should be!
+</p>
+</div>
+
+<h4>Exercises with <tt>grep</tt></h4>
+
+<ol>
+ <li>How many uppercase words are there in the Avar Wikipedia? Lowercase? Hint: <tt>wc -l</tt> or <tt>grep -c</tt></li>
+ <li>How many 4-letter words?</li>
+ <li>Are there any words with no vowels?</li>
+ <li>Find ''1-syllable'' words (words with exactly one vowel)</li>
+ <li>Find ''2-syllable'' words (words with exactly two vowels)</li>
+</ol>
+
+<h3>7. <tt>sed</tt> (stream editor)</h3>
+
+We have been using
+
+<pre>
+sed 5q < wiki.txt
+</pre>
+
+to print the first 5 lines. Actually, this means quit after the fifth line. We could have also quit after the first
+instance of a regular expression
+
+<pre>
+sed '/руго/q' < wiki.txt 
+</pre>
+
+As we saw before, <tt>sed</tt> also used to substitute regions matching a regular expression with a second string. For example:
+
+<pre>
+sed 's/\([рбв]уго\|йиго\)/[COP]/g' < wiki.txt
+</pre>
+
+will replace all instances of <em>руго</em>, <em>буго</em>, <em>вуго</em> or <em>йиго</em> 
+with '[COP]'. The first argument can be a regular expression. For example,
+as part of a simple morphology program, we might insert a hash symbol before words ending with ''да.''
+
+<pre>
+sed 's/да[^а-я]/#&/g' < wiki.txt
+</pre>
+
+The <tt>&</tt> symbol here refers to the pattern matched, so here it would match да followed by anything
+that wasn't a lowercase alphabetic character and output a hash symbol followed by the matched pattern.
+
+<!--The substitution operator can also be used to select the first field on each line by replacing everything after
+the first white space with nothing. (Note: the square brackets contain a space followed by a tab.)-->
+
+<h4>Exercises with <tt>sed</tt></h4>
+
+<ol>
+  <li>Count word initial consonant sequences: tokenise by word, delete the vowel and the rest of the word,
+and count</li>
+  <li>Count word final consonant sequences</li>
+</ol>  
+
+</div>
+</body>
+</html>
+

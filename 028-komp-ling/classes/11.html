@@ -1,0 +1,129 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 11: Anaphora and co-reference</title>
+</head>
+
+<body>
+<div class="page">
+
+<h3>Practical</h3>
+
+In this practical you will install a functioning system for coreference resolution and write a simple
+coreference rule.
+
+<h4>Install <tt>udpipe</tt> and train a parsing model</h4>
+
+<pre>
+$ git clone https://github.com/ufal/udpipe.git
+$ cd udpipe/src
+$ make
+$ sudo cp udpipe /usr/local/bin/
+$ cd ../../
+$ git clone https://github.com/UniversalDependencies/UD_Russian-SynTagRus
+$ cd UD_Russian-SynTagRus
+$ udpipe --train ru_syntagrus-ud.udpipe < ru_syntagrus-ud-train.conllu 
+</pre>
+
+This will take ages, you can also download a pretrained model <a href="http://ilazki.thinkgeek.co.uk/ru_syntagrus-ud.udpipe">here</a>.
+
+Once you have trained the model you can analyse some short text paragraph of your 
+choosing using UDpipe. If you don't want to work with your own text you can use
+<a href="pushkin.conllu">this example</a>.
+
+<pre>
+$ cat paragraph.txt | udpipe --tokenize --tag --parse &gt; paragraph.conllu
+</pre>
+
+This should segment the text into sentences and tokens and tag/dependency parse
+it. Once you have a <tt>.conllu</tt> file you can viewing it in <a href="http://ftyers.github.io/ud-annotatrix/">Annotatrix</a>.
+
+<h4>Install <tt>xrenner</tt></h4>
+
+Next up install the co-reference resolution system.
+
+<pre>
+$ git clone https://github.com/amir-zeldes/xrenner.git
+$ cd xrenner
+$ git checkout develop
+$ python3 setup.py install [--prefix=PREFIX]
+$ cd xrenner/models
+$ cp eng.xrm eng/
+$ cd eng/
+$ unzip -n eng.xrm
+$ cd ../../
+$ python3 xrenner.py -t 
+</pre>
+
+Where <tt>PREFIX</tt> is your preferred install prefix (it defaults to <tt>/usr/local</tt>)
+
+If the tests pass you should be able to load the module in Python. If the tests do not pass, then file an issue on the <a href="https://github.com/amir-zeldes/xrenner/issues">GitHub issues page</a>
+
+<pre>
+$ python3
+Python 3.5.4 (default, Aug 12 2017, 14:08:14) 
+[GCC 7.1.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; import xrenner
+&gt;&gt;&gt; x = xrenner.Xrenner()
+&gt;&gt;&gt; f = open('example_in.conll10').read()
+&gt;&gt;&gt; res = x.analyze(f, "conll")
+&gt;&gt;&gt; print(res)
+</pre>
+
+Different output formats are supported, you can also try <tt>html</tt> which will make an HTML file with cool
+hover-over highlighting:
+
+<pre>
+&gt;&gt;&gt; res = x.analyze(f, "html")
+&gt;&gt;&gt; open('/tmp/coref.html', 'w+').write(res)
+</pre>
+
+Then just open <tt>file:///tmp/coref.html</tt> in your web browser.
+
+<h4>Set up a new language directory</h4>
+
+In order to set up a new language directory, you need to make a new 3-letter code directory in the
+sub-directory <tt>xrenner/models</tt>, for example <tt>xrenner/models/rus</tt>.
+
+The <a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html">description</a> in the <a href="https://corpling.uis.georgetown.edu/xrenner/doc/index.html">documentation</a> of Xrenner is good, check it out. But at minimum you need five files in 
+your model directory:
+<ul>
+<li><tt>config.ini</tt>: The main configuration file for the model. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/config.html">more</a>]
+<ul>
+  <li><b>Tip:</b> To make debugging easier, make sure you turn on singleton mentions with the following statement: <tt>remove_singletons=False</tt></li>
+</ul>
+</li>
+<li><tt>coref_rules.tab</tt>: A cascade of coreference matching rules. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#coref-rules-tab">more</a>]</li>
+<li><tt>pronouns.tab</tt>: A table containing all pronoun forms in the language and their possible agreement classes. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#pronouns-tab">more</a>]</li>
+<li><tt>entities.tab</tt>: The full text entity list file. [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#entities-tab">more</a>]</li>
+<li><tt>entity_heads.tab</tt>: Single token entities (backoff file if not found in <tt>entities.tab</tt>) [<a href="https://corpling.uis.georgetown.edu/xrenner/doc/models.html#entity-heads-tab">more</a>]</li>
+</ul>
+
+<h4>Write rules </h4>
+
+The idea of the practical is to write at least one simple rule, for example:
+<ul>
+  <li> Co-refer mentions that exactly match </li>
+  <li> Co-refer mentions that partially match </li>
+  <li> Co-refer a reflexive pronoun with the subject in the same sentence </li>
+  <li> Co-refer two pronouns that agree for 1st/2nd person and number in the same sentence</li>
+</ul>
+
+<h4> Run the system </h4>
+
+Take the <tt>paragraph.conllu</tt> file you produced earlier and run:
+
+<pre>
+$ python3 xrenner.py -m rus -o html paragraph.conllu &gt; /tmp/paragraph.html
+</pre>
+
+or replace <tt>-m rus</tt> with the 3 letter code of the language you are working with.
+
+You can now browse to <tt>file:///tmp/paragraph.html</tt> in your browser and check to see how well your rules worked.
+
+</div>
+</body>
+</html>

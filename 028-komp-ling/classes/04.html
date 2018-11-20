@@ -1,0 +1,88 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <title>Class 4: Shared tasks</title>
+</head>
+
+<body>
+<div class="page">
+
+<h3>Practical</h3>
+
+The practical (and homework) is to write a simple baseline for one of the tasks from SemEval, and upload it to your GitHub along 
+with the results you get (evaluated by the evaluation script provided). 
+
+<h4>Task 1: Affect in Tweets </h4> [<a href="https://competitions.codalab.org/competitions/17333">Task page</a>]
+<p>
+There is a baseline system, which you can find <a href="https://competitions.codalab.org/competitions/17333#learn_the_details-resources">here</a>
+</p>
+<h4>Task 2: Multilingual Emoji Prediction</h4> [<a href="https://competitions.codalab.org/competitions/17344">Task page</a>]
+<p>
+No baseline system, build your own! :)
+</p>
+<h4>Task 3 Irony detection in English tweets </h4> [<a href="https://competitions.codalab.org/competitions/17468">Task page</a>]
+<p>
+The baseline is very simple to run and just relies on TF/IDF and SVM:
+</p>
+<pre>
+$ git clone https://github.com/Cyvhee/SemEval2018-Task3.git
+
+$ cd SemEval2018-Task3/benchmark_system
+
+$ python3 example.py 
+
+[[0, 1923], [1, 1911]]
+F1-score Task A 0.626344086022
+</pre>
+
+Possibilities for extending it:
+<ul>
+  <li>Add more features</li>
+  <li>Try some optimisation strategy</li>
+</ul>
+
+<h4>Task 4: Character Identification on Multiparty Dialogues</h4> [<a href="https://competitions.codalab.org/competitions/17310">Task page</a>]
+<p>
+No baseline system, build your own! :)
+</p>
+<h4>Task 5: Counting Events and Participants within Highly Ambiguous Data covering a very long tail</h4> [<a href="https://competitions.codalab.org/competitions/17285">Task page</a>]
+<p>
+No baseline system [yet], build your own! :)
+</p>
+<h4>Task 9: Hypernym Discovery</h4> [<a href="https://competitions.codalab.org/competitions/17119">Task page</a>]
+<p>
+No baseline system, build your own! :)
+</p>
+<h4>Task 10: Capturing Discriminative Attributes</h4> [<a href="https://competitions.codalab.org/competitions/17326">Task page</a>]
+<p>
+No baseline system, build your own! :)
+</p>
+<h4>Task 11: Machine Comprehension using Commonsense Knowledge</h4> [<a href="https://competitions.codalab.org/competitions/17184">Task page</a>]
+<p>
+No baseline system, build your own! :)
+</p>
+<h4>Task 12: Argument Reasoning Comprehension Task</h4> [<a href="https://competitions.codalab.org/competitions/17327">Task page</a>]
+<p>
+A baseline system is available:
+</p>
+<pre>
+$ git clone https://github.com/habernal/semeval2018-task12
+
+$ cd baseline-system
+
+$ mvn package 
+
+$ wget https://raw.githubusercontent.com/UKPLab/argument-reasoning-comprehension-task/master/mturk/annotation-task/data/exported-SemEval2018-train-dev-test/train-full.txt
+
+$ wget https://raw.githubusercontent.com/UKPLab/argument-reasoning-comprehension-task/master/mturk/annotation-task/data/exported-SemEval2018-train-dev-test/dev-only-data.txt
+
+$ java -jar target/baseline-system-1.0-SNAPSHOT.jar train-full.txt dev-only-data.txt /tmp/pred.txt
+</pre>
+
+The results will be in <tt>/tmp/pred.txt</tt>.
+
+</div>
+</body>
+</html>

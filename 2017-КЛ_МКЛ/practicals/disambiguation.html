@@ -1,0 +1,319 @@
+<html>
+<head>
+<title>Practical: Morphological disambiguation</title>
+</head>
+<body>
+
+<h2>Tagger comparison</h2>
+<p>
+Choose three part of speech taggers of your choice (from wherever) and compare them on the same 
+data set. 
+</p>
+<p>
+For example, let's say we want to test the performance of <a href="https://github.com/ufal/udpipe">UDPipe</a> for Finnish:
+</p>
+<p>
+First checkout UDPipe:
+
+<pre>
+$ git clone https://github.com/ufal/udpipe
+$ cd udpipe/src
+$ make
+</pre>
+</p>
+<p>
+This will compile UDPipe, now put it (<tt>cp</tt>) somewhere in your <tt>$PATH</tt>, e.g. <tt>/usr/local/bin</tt>. You can
+find out what directories are in your <tt>$PATH</tt> by doing: <tt>echo $PATH</tt>.
+</p>
+Now download the <tt>UD_Finnish-TDT</tt> treebank. 
+
+<pre>
+$ git clone https://github.com/UniversalDependencies/UD_Finnish-TDT
+</pre>
+
+If you go into the directory <tt>UD_Finnish-TDT</tt>, you will be able to train UDPipe with the following command:
+<pre>
+$ cat fi_tdt-ud-train.conllu | udpipe --tokenizer=none --parser=none --train fi.udpipe
+</pre>
+
+This will produce a model file <tt>fi.udpipe</tt> which you can then use for tagging:
+
+<pre>
+$ cat fi_tdt-ud-test.conllu | udpipe --tag fi.udpipe &gt; fi_tdt-ud-test_output.conllu
+</pre>
+
+</p>
+
+<p>
+You can use the <a href="http://universaldependencies.org/conll17/eval.zip">CoNLL-2017 evaluation script</a> 
+to evaluate the tagger performance:
+
+<pre>
+$ python3 conll17_ud_eval.py --verbose fi_tdt-ud-test.conllu fi_tdt-ud-test_output.conllu
+</pre>
+
+You're interested in the row, <tt>UPOS</tt>.
+
+</p>
+
+<p>
+Now process the same dataset with some other tagger, for example:
+<ul>
+  <li><a href="https://code.google.com/archive/p/hunpos">hunpos</a> trigram HMM tagger</li>
+  <li><a href="http://cistern.cis.lmu.de/marmot/">MarMot</a> CRF-based tagger </li>
+   <ul>
+     <li><a href="https://github.com/ftyers/cistern">Fran's fork</a> supports CoNLL-U natively.</li>
+   </ul>
+  <li>There are also a number of taggers in NLTK.</li>
+</ul>
+</p>
+
+
+<h2>Constraint Grammar</h2>
+<p>
+The objective of this task is to write some constraint grammar rules to disambiguate a sentence. You can
+use your own morphological analyser to analyse the sentence, or you can use one I wrote that makes an analyser
+from a UD corpus. Get that code:
+</p>
+<pre>
+$ git clone https://github.com/ftyers/ud-scripts.git
+</pre>
+<p>
+Now get a UD corpus:
+</p>
+<pre>
+$ git clone https://github.com/UniversalDependencies/UD_Russian-SynTagRus
+</pre>
+<p>
+Make the morphological analyser:
+</p>
+<pre>
+$ cat UD_Russian-SynTagRus/*.conllu | python3 ud-scripts/conllu-analyser.py -t ru-analyser.tsv
+</pre>
+<p>
+And you can analyse new sentences as follows:
+</p>
+<pre>
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |\
+  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv 
+"&lt;Однако&gt;"
+	"однако" ADV Degree=Pos
+"&lt;стиль&gt;"
+	"стиль" NOUN Animacy=Inan Case=Nom Gender=Masc Number=Sing
+	"стиль" NOUN Animacy=Inan Case=Acc Gender=Masc Number=Sing
+"&lt;работы&gt;"
+	"работа" NOUN Animacy=Inan Case=Gen Gender=Fem Number=Sing
+	"работа" NOUN Animacy=Inan Case=Nom Gender=Fem Number=Plur
+	"работа" NOUN Animacy=Inan Case=Acc Gender=Fem Number=Plur
+"&lt;Семена&gt;"
+	"семен" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+	"семен" PROPN Animacy=Anim Case=Acc Gender=Masc Number=Sing
+"&lt;Еремеевича&gt;"
+	"еремеевич" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+"&lt;заключался&gt;"
+	"заключаться" VERB Aspect=Imp Gender=Masc Mood=Ind Number=Sing Tense=Past VerbForm=Fin Voice=Mid
+"&lt;в&gt;"
+	"в" ADP 
+"&lt;том&gt;"
+	"тот" DET Case=Loc Gender=Neut Number=Sing
+	"то" PRON Animacy=Inan Case=Loc Gender=Neut Number=Sing
+	"тот" DET Case=Loc Gender=Masc Number=Sing
+"&lt;,&gt;"
+	"," PUNCT 
+"&lt;чтобы&gt;"
+	"чтобы" SCONJ Mood=Cnd
+"&lt;принимать&gt;"
+	"принимать" VERB Aspect=Imp VerbForm=Inf Voice=Act
+"&lt;всех&gt;"
+	"весь" DET Case=Gen Number=Plur
+	"весь" DET Case=Loc Number=Plur
+	"весь" DET Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Gen Number=Plur
+"&lt;желающих&gt;"
+	"желать" VERB Aspect=Imp Case=Gen Number=Plur Tense=Pres VerbForm=Part Voice=Act
+"&lt;и&gt;"
+	"и" CCONJ 
+	"и" PART 
+"&lt;лично&gt;"
+	"лично" ADV Degree=Pos
+"&lt;вникать&gt;"
+	"*вникать"
+"&lt;в&gt;"
+	"в" ADP 
+"&lt;дело&gt;"
+	"дело" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing
+	"дело" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing
+"&lt;.&gt;"
+	"." PUNCT 
+</pre>
+<p>
+Next you'll need to install CG:
+</p>
+<pre>
+$ wget http://apertium.projectjj.com/apt/install-nightly.sh -O - | sudo bash
+$ sudo apt-get install cg3
+</pre>
+<p>
+<b>Note:</b> If you're using some non-Linux operating system you can try the <a href="https://visl.sdu.dk/cg3ide.html">CG3 IDE</a>.
+</p>
+<p>
+Next we can try to write a simple rule:
+<ul>
+<li>Remove <tt>DET</tt> if the following token is <tt>PUNCT</tt>
+</ul>
+Make a new file called <tt>rus.cg3</tt> and paste the following in:
+</p>
+<pre>
+DELIMITERS = "." ;
+
+LIST DET = DET ;
+LIST PUNCT = PUNCT ;
+
+SECTION
+
+REMOVE DET IF (1C PUNCT) ;
+</pre>
+<p>
+Now you can run the rules on your input as follows:
+</p>
+<pre>
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |\
+  python3 ~/source/ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 
+"&lt;Однако&gt;"
+	"однако" ADV Degree=Pos
+"&lt;стиль&gt;"
+	"стиль" NOUN Animacy=Inan Case=Nom Gender=Masc Number=Sing
+	"стиль" NOUN Animacy=Inan Case=Acc Gender=Masc Number=Sing
+"&lt;работы&gt;"
+	"работа" NOUN Animacy=Inan Case=Gen Gender=Fem Number=Sing
+	"работа" NOUN Animacy=Inan Case=Nom Gender=Fem Number=Plur
+	"работа" NOUN Animacy=Inan Case=Acc Gender=Fem Number=Plur
+"&lt;Семена&gt;"
+	"семен" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+	"семен" PROPN Animacy=Anim Case=Acc Gender=Masc Number=Sing
+"&lt;Еремеевича&gt;"
+	"еремеевич" PROPN Animacy=Anim Case=Gen Gender=Masc Number=Sing
+"&lt;заключался&gt;"
+	"заключаться" VERB Aspect=Imp Gender=Masc Mood=Ind Number=Sing Tense=Past VerbForm=Fin Voice=Mid
+"&lt;в&gt;"
+	"в" ADP
+"&lt;том&gt;"
+	"то" PRON Animacy=Inan Case=Loc Gender=Neut Number=Sing
+;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:6
+;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:6
+"&lt;,&gt;"
+	"," PUNCT
+"&lt;чтобы&gt;"
+	"чтобы" SCONJ Mood=Cnd
+"&lt;принимать&gt;"
+	"принимать" VERB Aspect=Imp VerbForm=Inf Voice=Act
+"&lt;всех&gt;"
+	"весь" DET Case=Gen Number=Plur
+	"весь" DET Case=Loc Number=Plur
+	"весь" DET Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Acc Number=Plur
+	"все" PRON Animacy=Anim Case=Gen Number=Plur
+"&lt;желающих&gt;"
+	"желать" VERB Aspect=Imp Case=Gen Number=Plur Tense=Pres VerbForm=Part Voice=Act
+"&lt;и&gt;"
+	"и" CCONJ
+	"и" PART
+"&lt;лично&gt;"
+	"лично" ADV Degree=Pos
+"&lt;вникать&gt;"
+	"*вникать"
+"&lt;в&gt;"
+	"в" ADP
+"&lt;дело&gt;"
+	"дело" NOUN Animacy=Inan Case=Nom Gender=Neut Number=Sing
+	"дело" NOUN Animacy=Inan Case=Acc Gender=Neut Number=Sing
+"&lt;.&gt;"
+	"." PUNCT
+</pre>
+<p>
+Note how the rule has applied (search for <tt>REMOVE:6</tt>).
+</p>
+
+<h2>Improve perceptron tagger</h2>
+<p>
+The objective of this task is to download and run a very basic averaged perceptron tagger (less than 300 lines of 
+Python). After successfully running it, try and improve it by changing the feature specifications.
+</p>
+<p>
+First download the code:
+</p>
+<pre>
+$ git clone https://github.com/ftyers/conllu-perceptron-tagger.git
+</pre>
+<p>
+Then download some data, feel free to replace <tt>UD_Portuguese</tt> with any language in UD.
+</p>
+<pre>
+$ git clone https://github.com/UniversalDependencies/UD_Portuguese.git
+</pre>
+<p>
+Then download the CoNLL shared task 2017 official evaluation script and unzip it:
+</p>
+<pre>
+$ wget http://universaldependencies.org/conll17/eval.zip
+$ unzip eval.zip
+</pre>
+<p>
+Finally enter the directory of the perceptron tagger:
+</p>
+<pre>
+$ cd conllu-perceptron-tagger
+</pre>
+
+<p>
+You can train the tagger using the following command:
+</p>
+<pre>
+$ cat ../UD_Portuguese/pt-ud-train.conllu | python3 tagger.py -t pt-ud.dat
+222070
+Iter 0: 200635/222070=90.3476381321205
+222063
+Iter 1: 209720/222070=94.43869050299455
+222033
+Iter 2: 212814/222070=95.83194488224433
+222068
+Iter 3: 214833/222070=96.74111766560094
+222021
+Iter 4: 215973/222070=97.25446931147836
+</pre>
+<p>
+Now you can run the tagger 
+</p>
+<pre>
+$ cat ../UD_Portuguese/pt-ud-test.conllu | python3 tagger.py pt-ud.dat &gt; pt-ud-test.out
+</pre>
+
+And evaluate:
+<pre>
+$ python3 ../evaluation_script/conll17_ud_eval.py --verbose ../UD_Portuguese/pt-ud-test.conllu pt-ud-test.out 
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     95.73 |     95.73 |     95.73 |     95.73
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     95.73 |     95.73 |     95.73 |     95.73
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+</pre>
+<p>
+<b>Note:</b> The interesting value here is the <tt>UPOS</tt> column as that is the only one we have changed. The other
+  columns are 100% because the script hasn't changed them.
+</p>
+<p>
+In the code, feature extraction is done by <a href="https://github.com/ftyers/conllu-perceptron-tagger/blob/master/tagger.py#L154"><tt>_get_features()</tt></a> in <a href="https://github.com/ftyers/conllu-perceptron-tagger/blob/master/tagger.py"><tt>tagger.py</tt></a>. Try
+playing around with this and see if you can improve the performance. Remember to try and improve
+your features on the <tt>pt-ud-dev.conllu</tt> file, not on the <tt>pt-ud-test.conllu</tt> file.
+</p>
+</body>
+
+</html>

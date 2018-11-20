@@ -1,0 +1,11 @@
+image: alpine:latest
+pages:
+  stage: deploy
+  script:
+  - mkdir public
+  - cp -r $(ls -d * | grep -v public) public/
+  artifacts:
+    paths:
+    - public
+  only:
+  - gitlab-public
