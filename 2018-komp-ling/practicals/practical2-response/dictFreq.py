@@ -18,7 +18,7 @@ def get_frequency():
         vocab[form] = vocab[form] + 1
     for w in vocab:
         freq.append((vocab[w], w))
-    freq.sort(reverse=True)
+    return freq.sort(reverse=True)
 
 
 def results():
