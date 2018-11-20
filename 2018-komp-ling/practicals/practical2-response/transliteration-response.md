@@ -268,10 +268,12 @@ transliterated = re.sub('sh', 'ш', transliterated)
 ```
 
 	* Thirdly, we use re.sub to map 's' to 'с' and 'h' to 'х':
+
 ```
 transliterated = re.sub('s', 'с', transliterated)
 transliterated = re.sub('h', 'х', transliterated)
 ```
+
 * How might you make different mapping rules for characters at the beginning or end of the string ? 
 	* (Almost the same as of Question 1) One way to do it is to implement the transliteration table so that to meet our needs (as I did). There is a key-value pair 'е : je' in the dictionary. Thus, we provide correct mapping rules for Cyrillic 'e' in the beginning of a token (e.g. 'ему' -> 'jemu'). Then, we only need to implement substitution of 'je' to 'e' in the certain context (after a consonant):
 
@@ -283,13 +285,16 @@ transliterated = re.sub('h', 'х', transliterated)
 transliterated = re.sub('^е', 'je', transliterated)
 ```
 
+
 	единственное -> edinstvennoe -> jedinstvennoe
 
 	2) When preceeded by a vowel, "'" and "''":
 
+
 ```
 transliterated = re.sub('(a|o|e|i|u|y|′|″)e', r'\1je', transliterated)
 ```
+
 
 	jedinstvennoe -> jedinstvennoje
 
