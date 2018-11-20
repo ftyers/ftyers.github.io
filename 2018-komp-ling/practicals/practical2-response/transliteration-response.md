@@ -183,10 +183,8 @@ $ python3 rank.py freq.txt
 ```
 
 *Do you notice anything interesting in the data?*
-There are plenty of words at the same rank. Further possible script implementation is grouping the words by the same rank and dividing them, for example, by words / non-words or (and) by lexical classes for particular needs.
 
-*Do you think you could make the code more efficient?*
----------------
+There are plenty of words at the same rank. Further possible script implementation is grouping the words by the same rank and dividing them, for example, by words / non-words or (and) by lexical classes for particular needs.
 
 **Transliterator**
 
@@ -275,7 +273,7 @@ Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens
 * How might you make different mapping rules for characters at the beginning or end of the string ? 
   (Almost the same as of Question 1) One way to do it is to implement the transliteration table so that to meet our needs (as I did). There is a key-value pair 'е : je' in the dictionary. Thus, we provide correct mapping rules for Cyrillic 'e' in the beginning of a token (e.g. 'ему' -> 'jemu'). Then, we only need to implement substitution of 'je' to 'e' in the certain context (after a consonant):
 
-распоряжение -> rasporjažjenije -> rasporjaženije
+```распоряжение -> rasporjažjenije -> rasporjaženije```
 
   Another way to do that (when there is a key-value pair 'е : e' in the dictionary) is to implement substitution of 'e' to 'je' in the transliterated tokens:
 1) When in the beginning of the token:
@@ -289,12 +287,12 @@ Thus, we only need to implement 'je' -> 'e' mapping in the transliterated tokens
 
 ```transliterated = re.sub('(a|o|e|i|u|y|′|″)e', r'\1je', transliterated)```
 
-jedinstvennoe -> jedinstvennoje
+```jedinstvennoe -> jedinstvennoje```
 
 Thus we get a sequence of changes:
-единственное -> edinstvennoe -> jedinstvennoe -> jedinstvennoje
+```единственное -> edinstvennoe -> jedinstvennoe -> jedinstvennoje```
 
 All in all, the main idea is to implement a transliteration table so that to meet the application needs and to perform some changes in the results. To do the latter, we need to find out the context for the letter substitution and write rules with the help of regular expressions.
 
-Attached are the files: dictFreq.py, rank.py, freq.txt, translit_table, transliterate.py, syntagrus_transliteraded.conllu.
+Attached are the files: *dictFreq.py, rank.py, freq.txt, translit_table, transliterate.py, syntagrus_transliteraded.conllu*
 
