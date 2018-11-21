@@ -1,0 +1,9 @@
+define Vow [ ӑ | а | ы | о | у | я | ё | ю | ӗ | э | и | ӳ ] ;
+
+define Cns [ б | в | г | д | ж | з | к | л | м | н | п | р | с | ҫ | т | ф | х | ц | ч | ш | щ | й | ь | ъ ] ;
+
+define Syll [ Cns+ Vow Cns* ] ;
+
+define Stem [ Syll+ ]  ;
+
+regex Stem ;
