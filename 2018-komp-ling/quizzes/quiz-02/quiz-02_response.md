@@ -1,5 +1,3 @@
-<html>
-<body>
 <p>1. <img src='s_to_is.png'></p>
 <p>2. When "'s" is used in posessive case (<i>Julia's response</i>).<br>
 I can incorporate context morphological rule that states that "'s" should never<br>
@@ -8,7 +6,7 @@ correspond to "is" when followed by a noun, because phrases like <i>"Julia is da
 are okay.</p>
 <p>3. b, c.</p>
 <p>4. b, d.</p>
-<p>5. <img src='pluralization.png'><br>
+<p>5. <img src='pluralization.png'></p>
 Python implementation <b>(2-5_pl.py)</b>:<br>
 ```python
 import sys
@@ -23,6 +21,5 @@ for line in sys.stdin.readlines():
 	else:
 		line = line.replace('<PL>','s')
 		print(line)
-```</p>
-</body>
-<html>
+```
+
