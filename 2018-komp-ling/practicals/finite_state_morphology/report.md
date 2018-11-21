@@ -47,3 +47,40 @@ $ hfst-fst2strings -X obey-flags ava.lexc.hfst
 бицине<v><tv><aor><f>:йиц>уна
 бицине<v><tv><aor>%<m%>:виц>уна
 ```
+
+# fin
+This is devoted to working with cyclic transducers. It will help later when we work with (obviously infinite) numerals.
+```
+$ hfst-fst2strings -r 5 fin.lex
+c.hfst
+kala<n><gen>:kala>n
+kissa<n><gen>:kissa>n
+kissa<n><nom>:kissa
+koira<n><nom>:koira
+korva<n><nom>:korva
+```
+
+# chv2
+This part is devoted to derivation and weights of various ways of interpreting words; those weights are defined in the lexicon:
+```
+$ echo патшалӑх | hfst-lookup -qp chv.mor.hfst 
+патшалӑх	патшалӑх<n><nom>	0,000000
+патшалӑх	патша<n><der_лӑх><nom>	1,000000
+
+$ echo патшалӑх | hfst-lookup -qp -b 0 chv.mor.hfst 
+патшалӑх	патшалӑх<n><nom>	0,000000
+
+$ echo "тӗслӗх" | hfst-lookup -qp -b 0 chv.mor.hfst 
+тӗслӗх	тӗс<n><der_лӑх><nom>	1,000000
+```
+
+Then, we take care of the morphotactics with loan words:
+```
+$ hfst-fst2strings -r 1000 chv.gen.hfst |grep gen | grep специалист
+специалист<n><gen>:специалистсӑ
+специалист<n><pl><gen>:специалистсемсӗ
+специалист<n><der_лӑх><gen>:специалистлӑхсӗ
+специалист<n><der_лӑх><pl><gen>:специалистлӑхсемсӗ
+```
+(We take a thousand random words because this transducer is cyclic due to the numerals stored in the same directory.)
+
