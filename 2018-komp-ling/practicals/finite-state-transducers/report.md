@@ -36,9 +36,11 @@ There were added the following lines and sections:
 The following changes were made:
 
 *  Alphabet [Added]
-
-%{A%}:а %{A%}:е %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0 %{м%}:м %{м%}:0
- %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0 %{ъ%}
+```
+ %{A%}:а %{A%}:е %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0 %{м%}:м %{м%}:0
+ %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0 %{ъ%} %{Т%}:т %{Т%}:р
+ %{л%}:н %{л%}:л %{л%}:р
+ ```
 
 * Sets [Added]
 
@@ -50,7 +52,7 @@ NB! **е** was originally missing in *FrontVow* (if an alrtness quest, it was qu
 	* Three more rules were added (see chv.lexc.twol).
 	* I combined two rules into one ```"%{Ă%}:0 if there is previous %{м%}: or a vowel and, optionally, a following н"```
 	* Two exceptions had to be added to the %{Ă%}: vowel harmony rule
-	* A rule is added to handle ablative. I specified only %{Т%} assomilaton, as vowel harmony has been added previously
+	* A rule is added to handle ablative. I specified only ```%{Т%}``` assomilaton, as vowel harmony has been added previously
 
 ## Changes to *Makefile*:
 
