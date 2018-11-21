@@ -9,7 +9,20 @@ are okay.</p>
 <p>3. b, c.</p>
 <p>4. b, d.</p>
 <p>5. <img src='pluralization.png'><br>
-Python implementation:<br>
-`python code`</p>
+Python implementation <b>(2-5_pl.py)</b>:<br>
+```
+import sys
+import re
+
+soft = ['ch', 'sh', 'tz', 's', 'x']
+
+for line in sys.stdin.readlines():
+	if re.search(str([i for i in soft])+'<PL>', line):
+		line = line.replace('<PL>','es')
+		print(line)
+	else:
+		line = line.replace('<PL>','s')
+		print(line)
+```</p>
 </body>
 <html>
