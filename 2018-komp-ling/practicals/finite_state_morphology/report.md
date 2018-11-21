@@ -41,6 +41,7 @@ $ hfst-fst2strings ava.lexc.hfst
 бицине<v><tv><aor><nt>:виц>уна
 бицине<v><tv><aor><f>:виц>уна
 бицине<v><tv><aor>%<m%>:виц>уна
+
 $ hfst-fst2strings -X obey-flags ava.lexc.hfst
 бицине<v><tv><aor><pl>:риц>уна
 бицине<v><tv><aor><nt>:биц>уна
@@ -83,4 +84,23 @@ $ hfst-fst2strings -r 1000 chv.gen.hfst |grep gen | grep специалист
 специалист<n><der_лӑх><pl><gen>:специалистлӑхсемсӗ
 ```
 (We take a thousand random words because this transducer is cyclic due to the numerals stored in the same directory.)
+
+Taking care of numerals required a bit of manual work.
+I added DIGITLEX to Root:
+
+```
+LEXICON Root
+
+Nouns ;
+DIGITLEX ;
+```
+
+And I had to define these rules:
+```
+"Consonant assimilation for {Т}"
+%{Т%}:т <=> [Sons | %{л%}:] %- %>: _ ;
+
+"Vowel harmony for {A} in numerals"
+%{А%}:е <=> %{э%}: [%{л%}: | %{с%}: ]* %- %>: [%{Т%}:р | %{Т%}:т] _;
+```
 
