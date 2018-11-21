@@ -1,0 +1,45 @@
+Multichar_Symbols
+
+%<v%>                ! Имя существительное
+%<tv%>               ! Переходный
+%<aor%>              ! Аорист
+%<m%>                ! Мужский род
+%<f%>                ! Женский род
+%<nt%>               ! Средный род
+%<pl%>               ! Множественное число
+
+@P.Gender.Msc@       ! Согласование мужского рода
+@P.Gender.Fem@       ! Согласование женского рода
+@P.Gender.Neu@       ! Согласование средного рода
+@P.Gender.Plu@       ! Согласование множественного падежа
+
+@R.Gender.Msc@       ! Согласование мужского рода
+@R.Gender.Fem@       ! Согласование женского рода
+@R.Gender.Neu@       ! Согласование средного рода
+@R.Gender.Plu@       ! Согласование множественного падежа
+
+LEXICON Root
+
+Prefixes ;
+
+LEXICON Prefixes
+
+@P.Gender.Msc@:@P.Gender.Msc@в Verbs ;
+@P.Gender.Fem@:@P.Gender.Fem@й Verbs ;
+@P.Gender.Neu@:@P.Gender.Neu@б Verbs ;
+@P.Gender.Plu@:@P.Gender.Plu@р Verbs ;
+
+LEXICON AGR
+
+@R.Gender.Msc@%<m%>:@R.Gender.Msc@ # ;
+@R.Gender.Fem@%<f%>:@R.Gender.Fem@ # ;
+@R.Gender.Neu@%<nt%>:@R.Gender.Neu@ # ;
+@R.Gender.Plu@%<pl%>:@R.Gender.Plu@ # ;
+
+LEXICON V-TV
+
+%<v%>%<tv%>%<aor%>:%>уна AGR ;
+
+LEXICON Verbs
+
+бицине:иц V-TV ; ! "говорить"
