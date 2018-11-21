@@ -2,6 +2,8 @@
 
 1. Draw a diagram of a finite-state transducer which implements the simple rewrite "'s" -> " is".
 
+*Task_1.png*
+
 2. Give an example where your transducer expands "'s" when it shouldn't. What information could you incorporate to fix it?
 
 The transducer expands "'s" in such cases as "Mike's" or "Ana's". To avoid this situation, we should specify that the change should only be happening when this "'s" does not state the posessive case.\
@@ -42,6 +44,8 @@ There is also the case of 's meaning such things as was and has. For such occasi
 
 5. Draw a diagram of a finite-state transducer implementing the simple English pluralization model
    
+*Task_5.jpg*
+
 ```
        SOFT = ch sh tz _s _x
        [SOFT]<PL>:[SOFT]es 
