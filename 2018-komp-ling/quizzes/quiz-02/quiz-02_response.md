@@ -7,8 +7,9 @@ are okay.</p>
 <p>3. b, c.</p>
 <p>4. b, d.</p>
 <p>5. <img src='pluralization.png'></p>
-Python implementation <b>(2-5_pl.py)</b>:<br>
-```python
+Python implementation <b>(2-5_pl.py)</b>:
+
+``` 
 import sys
 import re
 
