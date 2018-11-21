@@ -160,23 +160,30 @@ Co-work on practical 2, [Finite-state Morphology] (algorithms) or
 
 ### Nov 13
 
+Co-work on practical 2, [Finite-state Morphology] (algorithms) or
+[Transliteration] (engineering).
+
+### Nov 20
+
 Morphological disambiguation ([slides][disambiguation-slides],
 [video][disambiguation-video]).
 
-Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][disambiguation-quiz] due <!-- FIXME --> no earlier than Nov 27.
-
-Due: practical 2, [Finite-state Morphology] (algorithms) or
-[Transliteration] (engineering), [quiz-02][morphology-quiz].
+Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][disambiguation-quiz] due <!-- FIXME --> no earlier than Dec 4.
 
 Start practical 3, [Morphological disambiguation] (algorithms) or
 [Unigram model] (engineering).
 
-### Nov 20
+### Nov 25 (Sunday)
+
+Due: practical 2, [Finite-state Morphology] (algorithms) or
+[Transliteration] (engineering), [quiz-02][morphology-quiz].
+
+### Nov 27
 
 Co-work on practical 3, [Morphological disambiguation] (algorithms) or
 [Unigram model] (engineering).
 
-### Nov 27
+### Dec 4
 
 Dependency parsing ([slides][dep-parse-slides],
 [video][dep-parse-video]).
@@ -190,7 +197,7 @@ Due: practical 3, [Morphological disambiguation] (algorithms) or
 Start practical 4, [Dependency parsing] (algorithms) or [Unigram
 part-of-speech tagger] (engineering).
 
-### Dec 4
+### Dec 11
 
 Co-work on practical 4, [Dependency parsing] (algorithms) or [Unigram
 part-of-speech tagger] (engineering).
