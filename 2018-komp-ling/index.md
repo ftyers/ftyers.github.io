@@ -185,8 +185,12 @@ Due: practical 2, [Finite-state Morphology] (algorithms) or
 
 ### Nov 27
 
-Co-work on practical 3, [Morphological disambiguation] (algorithms) or
-[Unigram model] (engineering).
+Keysigning party; co-work on practical 3, [Morphological
+disambiguation] (algorithms) or [Unigram model] (engineering).
+
+*Keysigning party*: create a pgp identity, and publish it to a
+keyserver. Bring a notecard or piece of paper with your uid and
+fingerprint. See [PGP tutorial][pgp] for details.
 
 ### Dec 4
 
