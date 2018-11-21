@@ -101,6 +101,14 @@ And I had to define these rules:
 %{Т%}:т <=> [Sons | %{л%}:] %- %>: _ ;
 
 "Vowel harmony for {A} in numerals"
-%{А%}:е <=> %{э%}: [%{л%}: | %{с%}: ]* %- %>: [%{Т%}:р | %{Т%}:т] _;
+%{А%}:е <=> %{э%}: [%{л%}: | %{с%}: ]* %- %>: [%{Т%}:р | %{Т%}:т] _ ;
 ```
+
+# chv2/unittests
+I have written a python program that takes in a tsv-file and performs the tests. It's a bit raw as I had weird problems with the Python binding, but it must be either ready or few small steps from that.
+
+# chv2
+The part about generating paradigms is really following the manual, I didn't add anything.
+After that, we implement guessers.
+
 
