@@ -8,7 +8,7 @@ are okay.</p>
 <p>4. b, d.</p>
 <p>5. <img src='pluralization.png'></p>
 Python implementation <b>(2-5_pl.py)</b>:<br>
-```
+```python
 import sys
 import re
 
@@ -22,4 +22,3 @@ for line in sys.stdin.readlines():
 		line = line.replace('<PL>','s')
 		print(line)
 ```
-
