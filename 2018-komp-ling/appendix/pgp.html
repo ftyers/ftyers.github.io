@@ -1,0 +1,530 @@
+<!--
+vim: tw=70
+SPDX-License-Identifier: (CC-BY-SA-4.0 OR GFDL-1.3-or-later)
+Copyright 2018 Nick Howell
+-->
+<h1>Intro to OpenPGP</h1>
+<h3><a name="Abstract">Abstract</a></h3>
+<p>We will introduce the OpenPGP (Pretty Good Privacy) specification for
+cryptographically secure communications, with an emphasis on informed
+use of the <code>gnupg</code> suite of command-line utilities.</p>
+<div style="column-width:30em">
+<h2><a name="Introduction">Introduction</a></h2>
+<p>Computers essentially operate based on the results of communications:
+the software you run, the people you know, the amount of money in your
+bank account, how to <em>use</em> the money in your bank account, is all in
+essence digital communications. The authenticity and security of all
+of this is dependent on software cryptosystems, and in particular, on
+the notion of <strong>asymmetric cryptography</strong>.</p>
+<h3>Symmetric cryptography</h3>
+<p>You might know cryptography in the sense of <strong>symmetric ciphers</strong>:
+there is a secret <code>SEC</code>. To encrypt a message <code>M</code>, called the
+<em>cleartext</em>, you apply a mathematical operation <code>enc(SEC, M)</code>. The
+result is the <em>ciphertext</em> <code>X</code>.</p>
+<p>Anyone who knows the same secret <code>SEC</code> can apply a mathematical
+operation <code>dec(SEC, X)</code> to recreate the message, that is,</p>
+<pre><code>dec(SEC, X) = dec(SEC, enc(SEC, M)) = M
+</code></pre>
+<p><strong>Exercise</strong>: implement the Caesar cipher in python, which advances
+each letter of 'M' by 'SEC = n': <code>enc(1, &quot;a&quot;) = &quot;b&quot;</code>, etc.</p>
+<h3>Asymmetric cryptography</h3>
+<p>Asymmetric cryptography works differently: there is a pair of related
+keys (numbers), for now call them <code>A</code> and <code>B</code>. Just like with
+symmetric cryptography, there is a mathematical operation <code>RSA(key, x)</code>.
+The keys <code>A</code> and <code>B</code> have a special relationship: if a message is
+encrypted with <code>A</code>, it is decrypted by <code>B</code>, and vice-versa:</p>
+<pre><code>RSA(A, RSA(B, M)) = M
+RSA(B, RSA(A, M)) = M
+</code></pre>
+<p>Without <code>B</code>, <code>RSA(A, x)</code> cannot be decrypted, <em>even with <code>A</code></em>.</p>
+<p>The first system for constructing such <code>A</code>, <code>B</code>, and <code>RSA</code> is called the
+[Rivest-Shamir-Adelman algorithm], after the three authors. Now there
+are many such systems, not all of which can properly be called RSA.</p>
+<h3>Applications to trust</h3>
+<p>Using this system, we can develop a trust system: call <code>A</code> the
+&quot;public&quot; key; it is made available to all. The other key, <code>B</code>, is
+kept secret by the owner, never revealed to anyone.</p>
+<p>Anyone who wishes to send a message <code>M</code> to the key owner can compute
+<code>RSA(A, M)</code>; only the matching secret key will be able to decrypt.</p>
+<pre><code>      enc  &gt;---------&gt;---------&gt;  dec
+         / RSA(A, -)   RSA(B, -) \
+ A  You                            Me  A,B
+
+</code></pre>
+<p>Similarly, if the owner wishes to publish a message which has their
+approval indisputably, they may compute a hash <code>H = H(M)</code> of the
+message, and encrypt it with their secret key <code>B</code> to get the
+<em>digital signature</em> <code>S = RSA(B, H)</code>; they send this alongside
+their message.</p>
+<p>Anyone who doubts the authenticity of the message can hash the message
+to get <code>H(M)</code> and compute <code>RSA(A, S) = RSA(A, RSA(B, H)) = H</code>; if they
+match, then the owner <em>must</em> have approved the message: the key <code>A</code>
+can only decrypt messages encrypted by <code>B</code>, so the sender must have
+<code>B</code>.</p>
+<pre><code> A  You                            Me    A,B
+         \ RSA(A, -)   RSA(B, -) /
+   verify  &lt;---------&lt;---------&lt;  sign
+
+</code></pre>
+<p><strong>Exercise</strong> Who can verify the signature? Who can decrypt the
+message? Why?</p>
+<h3>PGP</h3>
+<p>Pretty Good Privacy is a specification for the use of asymmetric
+cryptography in the ways described above.</p>
+<p>In PGP every user has a <strong>PGP id</strong>, which consists of several
+components:</p>
+<ol>
+<li>List of user ids
+A list of identities for the user; these are typically of the form
+<code>Full Name &lt;handle@domain.com&gt;</code>, though you can have urls,
+pictures, or any other (small) identifying data.</li>
+<li>Master keypair
+The keypair which binds subkeypairs, and performs Certify
+operations.</li>
+<li>Subkeypairs
+Keypairs for encryption and authentication</li>
+<li>Certifications
+A list of certifications (frequently called &quot;key signatures&quot;).</li>
+</ol>
+<p>A PGP identity</p>
+<pre><code>          PGP id ...FFFF0000
+ |----------------------------------|
+ |          master keypair [CS__]   |
+ |----------------------------------|
+ |             user ids             |
+ | Nick Howell &lt;nlhowell@gmail.com&gt; | -- certifications    :)
+ | Nick Howell &lt;nlhowell@yandex.ru&gt; | -- no certifications :(
+ |----------------------------------|
+ |    authenticate keypair [___A]   |
+ |----------------------------------|
+ |         encrypt keypair [__E_]   |
+ |----------------------------------|
+ |         certifications           |
+ | Nick Howell &lt;nlhowell@gmail.com&gt; |
+ | by ....EEEE1111                  |
+ |                                  |
+ | Nick Howell &lt;nlhowell@gmail.com&gt; |
+ | by ....DDDD2222                  |
+ |----------------------------------|
+
+</code></pre>
+<p>PGP identities are referred to by the SHA1 hash of the master public
+key, called the <strong>fingerprint</strong>; this is a sequence of 40 hexadecimal
+(0-9A-F) digits, usually displayed in 10 blocks of 4 digits:</p>
+<pre><code>   0123 4567 89AB CDEF 0123 4567 89AB CDEF FFFF 0000
+</code></pre>
+<p>If you want to know whether two PGP identities are the same, you
+compare the <strong>fingerprints</strong>. A nickname for the PGP identity is the
+<strong>handle</strong>, the last two blocks: <code>FFFF0000</code>.</p>
+<p>As hinted above, each keypair has some <strong>capabilities</strong>; these are one
+or more of:</p>
+<ol>
+<li>Certify (master only)
+used to certify (private) or verify the certification (public) of
+the owner of another PGP id</li>
+<li>Sign
+used to sign (private) or verify the signature (public) of messages</li>
+<li>Encrypt
+used to decrypt (private) or encrypt (public) messages to this PGP
+id</li>
+<li>Authenticate
+used to login to websites or other computers</li>
+</ol>
+<h3>GnuPG</h3>
+<p>GNU Privacy Guard is a libre software implementation of the PGP
+specification.</p>
+<p>The main way of interacting with GnuPG is with the command-line tool
+<code>gpg</code>. Please check that you have a modern version of <code>gpg</code>:</p>
+<pre><code>$ gpg --version
+
+gpg (GnuPG) 2.2.8
+libgcrypt 1.8.3
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later &lt;https://gnu.org/licenses/gpl.html&gt;
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Home: /home/nlhowell/.gnupg
+Supported algorithms:
+Pubkey: RSA, ELG, DSA, ECDH, ECDSA, EDDSA
+Cipher: IDEA, 3DES, CAST5, BLOWFISH, AES, AES192, AES256, TWOFISH,
+        CAMELLIA128, CAMELLIA192, CAMELLIA256
+Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
+Compression: Uncompressed, ZIP, ZLIB, BZIP2
+</code></pre>
+<p>Versions of <code>gpg</code> older than <code>2.1.0</code> have serious design limitations,
+and are not supported. If your <code>gpg</code> version is below <code>2.0.0</code> you may
+try using <code>gpg2</code> instead.</p>
+<h4>Generating a PGP identity</h4>
+<p>To generate a new PGP identity, run</p>
+<pre><code>$ gpg --gen-key
+gpg (GnuPG) 2.2.8; Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+gpg: keybox '/tmp/test/pubring.kbx' created
+Note: Use &quot;gpg --full-generate-key&quot; for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: Nick Howell
+Email address: nlhowell@gmail.com
+You selected this USER-ID:
+    &quot;Nick Howell &lt;nlhowell@gmail.com&gt;&quot;
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+
+&lt;PASSPHRASE DIALOG&gt;
+
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: /tmp/test/trustdb.gpg: trustdb created
+gpg: key 31496C2CC0FD482F marked as ultimately trusted
+gpg: directory '/tmp/test/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/tmp/test/openpgp-revocs.d/1C27E72BE87CF18EF76DF12131496C2CC0FD482F.rev'
+public and secret key created and signed.
+
+pub   rsa2048 2018-11-14 [SC] [expires: 2020-11-13]
+      1C27E72BE87CF18EF76DF12131496C2CC0FD482F
+uid                      Nick Howell &lt;nlhowell@gmail.com&gt;
+sub   rsa2048 2018-11-14 [E] [expires: 2020-11-13]
+
+
+</code></pre>
+<p>For me, this command generated pgp id</p>
+<pre><code>      1C27 E72B E87C F18E F76D F121 3149 6C2C C0FD 482F
+</code></pre>
+<p>or <code>c0fd482f</code> for short.</p>
+<h4>Publishing PGP identities</h4>
+<p>We can publish this key to a network of keyservers (to aid
+distribution of certifications):</p>
+<pre><code>$ gpg --send-keys c0fd482f # use your own handle
+</code></pre>
+<p>You can also export them in plaintext:</p>
+<pre><code>$ gpg --armor --export c0fd482f # use your own handle
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQENBFvr2AsBCADQ1OxX5bQf5ebpI4a6fXxiL7PggyYk8sc49uCYYOgndleauMkv
+Uqjn/w5SWxk04yzaIHwPdu+d31cxD//Cf/njpfEJ0DGsTrnWpArl6OpB37QG4ju4
+dD4bRkEYrdYNWsyRju2HK+865ZblpOR05LPDTUnvTeE6gOd3xxFJKTQEVJpa6Zao
+fAFXSuvpt59uuP2jCZX/7mwD+jornVC0hM0SI9pe+fYPBNuz4lc/+xo/0J022L1A
+4ZsdBSq7C1p8EQAgWAWhTjc5dTYlvA/CqfEYD1lTr1cPlxGd+jYOqTsKiAT3fxVv
+ACScMCUhyduALBnvGr3JeSrJwEnitSs079CZABEBAAG0IE5pY2sgSG93ZWxsIDxu
+bGhvd2VsbEBnbWFpbC5jb20+iQFUBBMBCAA+FiEEHCfnK+h88Y73bfEhMUlsLMD9
+SC8FAlvr2AsCGwMFCQPCZwAFCwkIBwIGFQoJCAsCBBYCAwECHgECF4AACgkQMUls
+LMD9SC8XBwf8CtD5khIAIUA8EVXSZI/TJJUTTwYDg5t79hQZumnAvo20O8MPCIuv
+EeBaFSalpvYIGR7sSKtyfyK286N1EjH6qnVb5I4vnFugR5ASrVoTG5c603uFPcf7
+XOGEgs/Zbc4X9A1o2vqQeOt40Qp5rWP5zb9cUHIlslk68PMfv4EWOQPKdHoxysqb
+6SWwTGkQbbkHGzoaTLXSC4hUSDlTJMC1L+J5+W++wdUj6rcEKIyYAMjUjFMoAaBq
+CMZckI7VIMtanbky+EP7M3wWu51iLcdl9911cKCMLAIsoyphRgOjD8JEKY2I2Z2K
+TSBlUAdFw4YmkVyq0Uw05TmWXhB5d3rjbrkBDQRb69gLAQgAxy/8KUALAEaXrLk4
+X1iNX+9nOC2Bf2SyVP7t/GLO4HhYcDabO6o3qzYTtP0RmTqOok9UY4q0Bb1qBmvI
+tUfcU8ijoS1egux23o2QQjaNudzd7L8psYZ7MZn08I48badBP9w5OWcA9KUPnQI7
+GTTo8Hc8mkiHf4qa2HmEMXCWJdoQpjsR4+fEv5g+3Mcn7jTPydanx3my4FqKCg0c
+u3B1CA7TP2rU+RCBffwvPwZQim3TmXA7VopDcPioiycsM+dKaKmgOsV+Zd/hplmK
+Q/TYMhp3WQ36dvNhgZ4NgXEzgZgnmaKme2+XneiUFbRXRAxlTzBIa1Kcm8o1f0xD
+Dl7A1QARAQABiQE8BBgBCAAmFiEEHCfnK+h88Y73bfEhMUlsLMD9SC8FAlvr2AsC
+GwwFCQPCZwAACgkQMUlsLMD9SC930gf/cIJaOUS/rDlBDohMXWcPW/WrG3bLnDKi
+5VUkbMBR6uz7c3SXERp/xd5tBHYzTfLWn3r4TVEmlmo5tyWhkG/K+MWJMVm5BO1P
+GAxSYYL0z8RxvwrZs6SJHs3TIzQicjJDuMXQglJu/aaUPQt4j85iH062Oye5zO5L
+vydT5+FNerdQQpJ3lPPAjAKDXSNSUUPqp8By1bM4yOmk/F16VMhMKNQc5ijcuuaw
+dlO4iIkV+NThFdIiIZ5A0EYnKgftLXSFC9u/BHAMfOIuDDM89FJN43ZzCIMtM5R1
+aTxeSQdi0a0QDnccajR1oX+TgvafSd80u7dAwnFetkMNCLcP6kWmVA==
+=S+dY
+-----END PGP PUBLIC KEY BLOCK-----
+</code></pre>
+<h4>Finding (untrusted!) PGP identities</h4>
+<p>You can find other PGP identities on keyservers using <code>gpg --search-keys &lt;search-terms&gt;</code> where valid search terms are
+fingerprints, handles, or parts of the uid attached to the identity.
+You can download my identity with</p>
+<pre><code>$ gpg --search-keys B86F7896F8768A1A173AA4EDD5A47E58DAFAAF95
+</code></pre>
+<p>You can also read them directly:</p>
+<pre><code>$ gpg --import # paste a public key block, e.g. mine:
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEW73OzBYJKwYBBAHaRw8BAQdA4DvMXScQ4YghxzAHbPz9kMIoTFg4WNRBCNdy
+2uA/+Em0IE5pY2sgSG93ZWxsIDxubGhvd2VsbEBnbWFpbC5jb20+iJAEExYIADgW
+IQS4b3iW+HaKGhc6pO3VpH5Y2vqvlQUCW73OzAIbAwULCQgHAgYVCgkICwIEFgID
+AQIeAQIXgAAKCRDVpH5Y2vqvlQlvAQCK92HibpdMnQAnzwWQpD3N7bxvAjOAv8yf
+6eys2/4T+AEAvdXBU15fiSjLuoH5ZpSTqUTEeUSs+Kevuy92Pa69JgCIuQQQEwoA
+HRYhBKWfJjCTy0krRHntrm6FXe5I6KnRBQJb1/3qAAoJEG6FXe5I6KnRdlECCQEL
+YgXYnLbdOtmfNnCBcXBESR8rW2P8OAk+rfmxbI6VDKM+ZHSnKJ9KoPSm0YYyJTv5
+4/n1zqENnVoBVXNFqHw2kAIJATwk7+e5Wte45cwXfapwUxvxUWO9lDIvBno+RSRe
+zJZRYpteGOvnC1LAnPmDmkh882Aua0K6bGB5xv5rtW5cqo65uQENBFu9zswBCAC8
+UH2iRAUQ1hRALhEKLsLXB/3O/QSECWBMCUd4/dN0dINrrMuTm6GH0Vyc5c4VgDD9
+sGjvUoIf1ecN8433hYxkEtC3goN9AgD6ctkYsYojK4jRLrdhCOgGEE9raXDLkihz
++7MQDoQc75XXLpnAoILGoiV8/Z66GgeDi8eUDy3zzW3Xr+L+KjA73oq+AUMMmeZr
+zksRFiXlhVfQA3el9J9dHKGOUG1ATTMTM9GVHErFtmajheodZgqELkyCd0WiSEGw
+UhS5y6+cjgCdkMCvHAcXaZWR/gIkTtZXJXVymcxxiE+01vnBCWvt2OM1zDwI8NCa
+Hw2KgWQkuz340SSz428fABEBAAGIeAQYFggAIBYhBLhveJb4dooaFzqk7dWkflja
++q+VBQJbvc7MAhsgAAoJENWkflja+q+VwsIA/A6nbSwjRcMxcr9lmIJixMzryhQE
+2ShdECZoNiRGhdnQAP9pWk5X562Qlp9XPrcTwGxKFFc+1JYHQ3fwDY4pWvQGBLg4
+BFu9zswSCisGAQQBl1UBBQEBB0D9k4JAo0ofntSQyfeJJxGGMkA3uqPzndxbOje5
+/N0magMBCAeIeAQYFggAIBYhBLhveJb4dooaFzqk7dWkflja+q+VBQJbvc7MAhsM
+AAoJENWkflja+q+VAZQA/3Q4hRv0c8sLk8bzl/9qbko3BxNhnEma67WaTTyEcomk
+AQDS7Gbs7InpYKHMIeYtpcIkxAvfh0C6w5xHz1Nu/PfACw==
+=uLQW
+-----END PGP PUBLIC KEY BLOCK-----
+^D
+gpg: key D5A47E58DAFAAF95: 1 signature not checked due to a missing
+key
+gpg: key D5A47E58DAFAAF95: public key &quot;Nick Howell
+&lt;nlhowell@gmail.com&gt;&quot; imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2020-11-13
+</code></pre>
+<p>A list of PGP identities known to <code>gpg</code> can be found with</p>
+<pre><code>$ gpg --list-keys
+pub   rsa2048 2018-11-14 [SC] [expires: 2020-11-13]
+      1C27E72BE87CF18EF76DF12131496C2CC0FD482F
+uid           [ultimate] Nick Howell &lt;nlhowell@gmail.com&gt;
+sub   rsa2048 2018-11-14 [E] [expires: 2020-11-13]
+
+pub   ed25519 2018-10-10 [SC]
+      B86F7896F8768A1A173AA4EDD5A47E58DAFAAF95
+uid           [ unknown] Nick Howell &lt;nlhowell@gmail.com&gt;
+sub   rsa2048 2018-10-10 [A]
+sub   cv25519 2018-10-10 [E]
+</code></pre>
+<h3>Signing and Encrypting</h3>
+<h4>Signing and verifying</h4>
+<p>You can create a signed message using <code>gpg --armor --sign</code>:</p>
+<pre><code>$ gpg --armor --clearsign
+Hello
+^D
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Hello
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEHCfnK+h88Y73bfEhMUlsLMD9SC8FAlvr77cACgkQMUlsLMD9
+SC8mawf9GCw8b2y0HOOhSGcZhniHJQHgXiRYNTyjSaX5Pv7IqJRaltJM6N3HVFf5
+s2xn+sS+DhebiTqLziL3ypmNfWIqVubLqTagOs435HYX8ERfyygXNxA6udRFzb+q
+9r0Dp9Q8l8/KPnAr1KEKQZ7Y5b4RL6j3oIuha0tePX8qp8v2h5u0PirRSG/qN5pY
+t3XyuUETP3JmjPV/w1H2z5RewqMtf5W05yiZvFm2oG9wdjeBq07Nxe65AlZacbYv
+lM5HkY8AmrSjukVF5KyfnwGhYhyLuKtuYcAerxofyEjdBDTNi22K+gIQeoQhR7wt
+LNR5MbdYH5uhxiAitit2KnnDis1dwA==
+=Di92
+-----END PGP SIGNATURE-----
+</code></pre>
+<p>Anyone with your key can verify that message; paste the message:</p>
+<pre><code>$ gpg --verify
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Hello
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEHCfnK+h88Y73bfEhMUlsLMD9SC8FAlvr77cACgkQMUlsLMD9
+SC8mawf9GCw8b2y0HOOhSGcZhniHJQHgXiRYNTyjSaX5Pv7IqJRaltJM6N3HVFf5
+s2xn+sS+DhebiTqLziL3ypmNfWIqVubLqTagOs435HYX8ERfyygXNxA6udRFzb+q
+9r0Dp9Q8l8/KPnAr1KEKQZ7Y5b4RL6j3oIuha0tePX8qp8v2h5u0PirRSG/qN5pY
+t3XyuUETP3JmjPV/w1H2z5RewqMtf5W05yiZvFm2oG9wdjeBq07Nxe65AlZacbYv
+lM5HkY8AmrSjukVF5KyfnwGhYhyLuKtuYcAerxofyEjdBDTNi22K+gIQeoQhR7wt
+LNR5MbdYH5uhxiAitit2KnnDis1dwA==
+=Di92
+-----END PGP SIGNATURE-----
+gpg: Signature made Wed 14 Nov 2018 12:49:43 PM MSK
+gpg:                using RSA key
+1C27E72BE87CF18EF76DF12131496C2CC0FD482F
+gpg: Good signature from &quot;Nick Howell &lt;nlhowell@gmail.com&gt;&quot; [ultimate]
+</code></pre>
+<h4>Encrypting and decrypting</h4>
+<p>Anybody with your key can now encrypt a message to you using <code>gpg --armor --recipient $HANDLE --encrypt</code>; $HANDLE can be a PGP identity
+handle, fingerprint, or part of uid (e-mail or name).</p>
+<pre><code>$ gpg --armor --recipient c0fd482f --encrypt
+Hello
+-----BEGIN PGP MESSAGE-----
+
+hQEMA2S2sG7AbkxzAQf+ObRvB7CwN02RMXZqb3nNV+Pw3zjh1Y+8LFSl0IjFly+M
+xAj4Qp3Qk4u26mbn2e1FKNrlVkP2P2dynJPYC5dxWcuHAab3KwKBnooWiHeRf1Tn
+UdEi4nTkQxgN10r+fK8gjlGu4LLV7aWt5oYokcBLnbr60qhCDfLtL5N5qtjulzmV
+ORCWhVVZTP4ZDZMrpm9yZ3jZzzvEmLKJ5GNKLQP4uWfxBh6Hx9wMMHNdfM5ZR6CK
+GtrZ8xoErWyh3Mx9iuMT+wUs+iTVdo2L8FKOM1ueXCJyKR/JAF/VWERhbvC6wvcu
+HzMQ+kWBRkZs+Dg2qNlHin/lGmRqHd1tfiu6lWA9xdJBAUgFSimvfLu5UDrn6irQ
+82FAYcuCjgvEHLSTiOxz1LBVw0/QrG5dknr75fNmwWRZf+cN01GUq7YT+ie+WfL6
+TQs=
+=Ln2j
+-----END PGP MESSAGE-----
+</code></pre>
+<p>To decrypt, paste the PGP message into <code>gpg --decrypt</code>:</p>
+<pre><code>$ gpg --decrypt
+-----BEGIN PGP MESSAGE-----
+
+hQEMA2S2sG7AbkxzAQf+ObRvB7CwN02RMXZqb3nNV+Pw3zjh1Y+8LFSl0IjFly+M
+xAj4Qp3Qk4u26mbn2e1FKNrlVkP2P2dynJPYC5dxWcuHAab3KwKBnooWiHeRf1Tn
+UdEi4nTkQxgN10r+fK8gjlGu4LLV7aWt5oYokcBLnbr60qhCDfLtL5N5qtjulzmV
+ORCWhVVZTP4ZDZMrpm9yZ3jZzzvEmLKJ5GNKLQP4uWfxBh6Hx9wMMHNdfM5ZR6CK
+GtrZ8xoErWyh3Mx9iuMT+wUs+iTVdo2L8FKOM1ueXCJyKR/JAF/VWERhbvC6wvcu
+HzMQ+kWBRkZs+Dg2qNlHin/lGmRqHd1tfiu6lWA9xdJBAUgFSimvfLu5UDrn6irQ
+82FAYcuCjgvEHLSTiOxz1LBVw0/QrG5dknr75fNmwWRZf+cN01GUq7YT+ie+WfL6
+TQs=
+=Ln2j
+-----END PGP MESSAGE-----
+gpg: encrypted with 2048-bit RSA key, ID 64B6B06EC06E4C73, created 2018-11-14
+      &quot;Nick Howell &lt;nlhowell@gmail.com&gt;&quot;
+Hello
+</code></pre>
+<h3>Key validity</h3>
+<p>The major problem in asymmetric cryptosystems is called <strong>validity</strong>:
+how to trust that you have the correct PGP identity for a given uid;
+i.e., if a PGP id claims to have <code>Nick Howell &lt;nlhowell@gmail.com&gt;</code> as
+a uid, is Nick Howell the real owner of the secret keys?</p>
+<p>A major strategy in attacking asymmetric cryptosystems is to convince
+the target to use a public keypair for which the attacker holds the secret
+part. They can do this by stealing the secret keys, or they can do it
+by tricking the target into using a public key with a forged identity.</p>
+<h4>Key security</h4>
+<p>The former problem can be solved by keeping your secret keys secure;
+this is the purpose of the passphrase, which keeps your secret keys
+encrypted when your computer is off. In the extreme, security means
+secret keys are kept on an &quot;energy-gapped&quot; computer, and all
+decryption and signing occurs there.</p>
+<p>A more modest improvement in security is the use of a hardware
+&quot;cryptotoken&quot; or &quot;smartcard;&quot; this is a small microcontroller which
+holds your secret keys and lives on a usb stick. Secret keys are not
+made accessible to the main computer, so malware and hackers will not
+be able to steal your keys (though they <em>will</em> be able to mess with
+the data sent to the token).</p>
+<p>See <a href="https://blog.dan.drown.org/gnuk-open-source-gpg-ssh-hardware-key-storage/">Gnuk on Blue Pill</a> for how to make your own cryptotokens from
+200₽ microcontrollers.</p>
+<h4>Key certification</h4>
+<p>The latter problem is solved by face-to-face verification.</p>
+<p>If Alice and Bob wish to have secure communication, the solution is
+for them to meet face-to-face and compare the fingerprints of their
+PGP identities. So that they don't forget the results of this, <strong>after
+comparison</strong> they <strong>Certify</strong> each-others identities. This uses the
+master keypair to produce a signature of the uid+fingerprint of the
+identity. (Typically all uids are signed, but in some circumstances
+you want only to sign one of many uids.)</p>
+<p>If Alice and Bob don't know each-other well, they may wish to see some
+evidence that the uids they are signing are &quot;real&quot; in some sense:
+common practices involve</p>
+<ul>
+<li>an e-mail exchange, &quot;proving&quot; control of the uid's e-mail address</li>
+<li>presentation of government-issued identification, &quot;proving&quot;
+&quot;ownership&quot; of the uid's Full Name.</li>
+</ul>
+<p>To certify a key with <code>gpg</code>, you use the <code>gpg --sign-key</code> command.
+<strong>Verify the fingerprints face-to-face</strong> and then type <code>y</code>.</p>
+<pre><code>$ gpg --sign-key $HANDLE # handle you want to certify
+pub  ed25519/D5A47E58DAFAAF95
+     created: 2018-10-10  expires: never       usage: SC
+     trust: unknown       validity: unknown
+sub  rsa2048/EB5F5719CCBFEE45
+     created: 2018-10-10  expires: never       usage: A
+sub  cv25519/8244BE89B2B04368
+     created: 2018-10-10  expires: never       usage: E
+[ unknown] (1). Nick Howell &lt;nlhowell@gmail.com&gt;
+
+
+pub  ed25519/D5A47E58DAFAAF95
+     created: 2018-10-10  expires: never       usage: SC
+     trust: unknown       validity: unknown
+ Primary key fingerprint: B86F 7896 F876 8A1A 173A  A4ED D5A4 7E58 DAFA AF95
+
+     Nick Howell &lt;nlhowell@gmail.com&gt;
+
+Are you sure that you want to sign this key with your
+key &quot;Nick Howell &lt;nlhowell@gmail.com&gt;&quot; (31496C2CC0FD482F)
+
+Really sign? (y/N)
+</code></pre>
+<p>Afterwards, <code>gpg --list-keys</code> will show the key with &quot;full&quot; validity,
+instead of &quot;unknown.&quot;</p>
+<p>You can upload your signature to the keyservers by sending the
+<em>target key</em>: <code>gpg --send-keys dafaaf95</code>.</p>
+<h4>Web of Trust</h4>
+<p>You can build a graph in which nodes are PGP identities and edges are
+certifications. If you have some faith in the people you have
+certified, you might be willing to assign validity to PGP identities
+which you haven't personally certified, but which others have.</p>
+<pre><code>           (Nick) -------- (Danya)
+	   /
+	  /
+	 /
+      (Fran)
+
+</code></pre>
+<p>This happens in the real world constantly: you choose businesses,
+doctors, friends, schools, books, all based on the recommendations of
+others.</p>
+<p>In PGP, a <em>trusted identity</em> is one which you trust to make valid
+certifications; any identity which is certified by a trusted identity
+<code>X</code> is valid for your identity. A <em>marginally trusted identity</em> is one
+which you partly trust to make valid certifications; if enough
+marginally trusted identities have certified an identity <code>X</code>, then you
+consider <code>X</code> as valid.</p>
+<p>Here, Fran's PGP id has assigned my PGP id <em>full trust</em>; since I have
+certified Danya's PGP id, Fran's also considers Danya's to have full
+validity.</p>
+<pre><code>                  cert
+         (Nick) --------- (Danya)
+  trust  /              .
+  cert  /          .
+       /      .    valid (no cert)
+    (Fran) 
+</code></pre>
+<p>(note that technically these edges should be directed; it is possible
+for such relationships to be asymmetric)</p>
+<p>To assign trust with <code>gpg --edit-key $HANDLE</code>, use the <code>trust</code>
+command. In the default configuration:</p>
+<ol>
+<li>unknown trust is the default</li>
+<li>untrusted marks an identity as explicitly not trusted</li>
+<li>marginal trust
+you consider a certification by this identity valid only if it is
+also certified by at least two other marginally trusted identities</li>
+<li>full trust
+you consider any certification by this identity valid</li>
+<li>ultimate trust is reserved for identities <em>you</em> control (i.e. for
+which you have access to the secret keys)</li>
+</ol>
+<pre><code>$ gpg --edit-key $HANDLE
+gpg (GnuPG) 2.2.10; Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+pub  ed25519/D5A47E58DAFAAF95
+     created: 2018-10-10  expires: never       usage: SC
+     trust: unknown       validity: unknown
+sub  rsa2048/EB5F5719CCBFEE45
+     created: 2018-10-10  expires: never       usage: A
+sub  cv25519/8244BE89B2B04368
+     created: 2018-10-10  expires: never       usage: E
+[ unknown] (1). Nick Howell &lt;nlhowell@gmail.com&gt;
+
+gpg&gt; trust
+pub  ed25519/D5A47E58DAFAAF95
+     created: 2018-10-10  expires: never       usage: SC
+     trust: unknown       validity: unknown
+sub  rsa2048/EB5F5719CCBFEE45
+     created: 2018-10-10  expires: never       usage: A
+sub  cv25519/8244BE89B2B04368
+     created: 2018-10-10  expires: never       usage: E
+[ unknown] (1). Nick Howell &lt;nlhowell@gmail.com&gt;
+
+Please decide how far you trust this user to correctly verify other users' keys
+(by looking at passports, checking fingerprints from different sources, etc.)
+
+  1 = I don't know or won't say
+  2 = I do NOT trust
+  3 = I trust marginally
+  4 = I trust fully
+  5 = I trust ultimately
+  m = back to the main menu
+
+Your decision?
+</code></pre>
+</div>
