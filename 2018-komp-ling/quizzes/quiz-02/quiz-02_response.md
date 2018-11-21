@@ -1,4 +1,5 @@
-<p>1. <img src='s_to_is.png'></p>
+<p>1.<br>
+<img src='s_to_is.png'></p>
 <p>2. When "'s" is used in posessive case (<i>Julia's response</i>).<br>
 I can incorporate context morphological rule that states that "'s" should never<br>
 correspond to "is" when followed by a noun, because phrases like <i>"Julia is dancing",<br>
