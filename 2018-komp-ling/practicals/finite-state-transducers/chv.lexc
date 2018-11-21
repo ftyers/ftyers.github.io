@@ -6,6 +6,8 @@ Multichar_Symbols
 %<ins%>              ! Творительный падеж
 %<gen%>		     ! Родительный падеж
 %<der_лӑх%>	     ! Существительное (~собирательное)
+%<num%>            ! Numeral
+%<abl%>            ! Ablative case
 %<guess%>    	     ! Guesser
 
 %{A%}                ! Архифонема [а] или [е] (па-пе)
@@ -16,13 +18,16 @@ Multichar_Symbols
 %{л%}		     ! Phonemes [н], [л], or [р]
 %{с%}      	     ! Other consonant
 %{а%}		     ! Back vowel
+%{Т%}        ! Phonemes [т] or [р]
 
 %>                   ! Граница морфемы
 
 LEXICON Root
 
 Nouns ;
+DIGITLEX ;
 Guesser ;
+
 
 LEXICON Guesser
 
@@ -38,6 +43,7 @@ LEXICON CASES
 %<nom%>:%> # ;
 %<gen%>:%>%{Ă%}н # ;
 %<ins%>:%>п%{A%} # ;
+%<abl%>:%>%{Т%}%{А%}н # ;
 
 LEXICON PLURAL
 
