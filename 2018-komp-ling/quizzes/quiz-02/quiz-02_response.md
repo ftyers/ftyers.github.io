@@ -10,7 +10,7 @@ are okay.</p>
 <p>4. b, d.</p>
 <p>5. <img src='pluralization.png'><br>
 Python implementation <b>(2-5_pl.py)</b>:<br>
-```
+```python
 import sys
 import re
 
