@@ -1,0 +1,36 @@
+Multichar_Symbols
+
+%<n%>                   ! Nimisana
+%<cmp%>                 ! Yhdyssana
+%<nom%>                 ! Nominatiivi
+%<gen%>                 ! Genetiivi
+
+%>                      ! Morfeemiraja
+%+                      ! Yhdyssanaraja (leksikaalinen puoli)
+%#                      ! Yhdyssanaraja 
+
+LEXICON Root 
+
+Nouns  ; 
+
+LEXICON Cmp 
+
+           # ;
+%<cmp%>%+:%# Nouns ;
+
+LEXICON 9  ! kala
+
+%<nom%>:    # ; 
+%<gen%>:%>n Cmp ;
+
+LEXICON 10 ! koira
+
+%<nom%>:    # ; 
+%<gen%>:%>n Cmp ;
+
+LEXICON Nouns 
+
+kissa%<n%>:kissa 9 ;  ! "кошка"
+kala%<n%>:kala 9 ;    ! "рыба"
+korva%<n%>:korva 10 ; ! "ухо"
+koira%<n%>:koira 10 ; ! "собака"
