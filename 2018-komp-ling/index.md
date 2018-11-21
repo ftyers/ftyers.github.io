@@ -75,6 +75,10 @@ questions through the use of search engines, documentation, chat systems, etc.
   3. ### [Morphological disambiguation] / [Unigram model]
   4. ### [Dependency parsing] / [Unigram part-of-speech tagger]
 
+## Appendices
+  0. [`git` revision control system][git] and associated tools
+  1. [Pretty Good Privacy][pgp] and associated tools
+
 See [submission guidelines].
 
 [submission guidelines]:         submission.html
@@ -82,6 +86,7 @@ See [submission guidelines].
 
 [UNIX]:                          practicals/unix.html
 [git]:                           appendix/git.html
+[pgp]:				 appendix/pgp.html
 [Segmentation & Tokenization]:   practicals/segmentation.html
 [Finite-state Morphology]:       ../2017-КЛ_МКЛ/hfst.html
 [Transliteration]:               ../079-osnov-programm/classes/04_1.html
