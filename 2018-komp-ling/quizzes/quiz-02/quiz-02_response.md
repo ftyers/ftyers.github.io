@@ -9,13 +9,13 @@ are okay.</p>
 <p>4. b, d.<br>
 a) Using the rewrite rules without changes<br>
 Contrexample: Won't work because parallel rules are applied at the same time. There is no order like in rewrite rules.<br>
-> a → b / c _ ;
-> b → d / c _ ;
+a → b / c _ ;<br>
+b → d / c _ ;<br>
 acaca → acbcb → acdcd<br>
-vs.
-> a:b <=> c _ ;
-> b:d <=> c _ ;
-acaca → acbcb<br>
+vs.<br>
+a:b <=> c _ ;__
+b:d <=> c _ ;__
+acaca → acbcb__
 b) Underspecifying the rewrite rules<br>
 Example:<br>
 c) Subtracting the context of the more general rule from the more specific<br>
