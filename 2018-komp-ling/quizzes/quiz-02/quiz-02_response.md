@@ -6,7 +6,11 @@ correspond to "is" when followed by a noun, because phrases like <i>"Julia is da
 "Julia is a cat", "Julia is (not so) smart"</i>, when it's followed by verb, article, adjective or negation,
 are okay.</p>
 <p>3. b, c.</p>
-<p>4. b, d.</p>
+<p>4. b, d.<br>
+a) Contrexample:<br>
+b) Example:<br>
+c) Contrexample:<br>
+d) Example:</p>
 <p>5.<br>
 <img src='pluralization.png'></p>
 Python implementation <b>(2-5_pl.py)</b>:
