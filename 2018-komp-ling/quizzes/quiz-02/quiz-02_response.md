@@ -7,10 +7,21 @@ correspond to "is" when followed by a noun, because phrases like <i>"Julia is da
 are okay.</p>
 <p>3. b, c.</p>
 <p>4. b, d.<br>
-a) Contrexample:<br>
-b) Example:<br>
-c) Contrexample:<br>
-d) Example:</p>
+a) Using the rewrite rules without changes<br>
+Contrexample: Won't work because parallel rules are applied at the same time. There is no order like in rewrite rules.<br>
+> a → b / c _ ;
+> b → d / c _ ;
+acaca → acbcb → acdcd<br>
+vs.
+> a:b <=> c _ ;
+> b:d <=> c _ ;
+acaca → acbcb<br>
+b) Underspecifying the rewrite rules<br>
+Example:<br>
+c) Subtracting the context of the more general rule from the more specific<br>
+Contrexample:<br>
+d) Subtracting the context of the more specific rule from the more general<br>
+Example:</p>
 <p>5.<br>
 <img src='pluralization.png'></p>
 Python implementation <b>(2-5_pl.py)</b>:
