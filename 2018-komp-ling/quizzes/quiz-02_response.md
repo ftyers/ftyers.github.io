@@ -1,4 +1,5 @@
-##Quiz-02_response
+## Quiz-02_response
+#### *Anastasia Nikiforova*
 
 1. Draw a diagram of a finite-state transducer which implements the simple rewrite "'s" -> " is".
 
@@ -16,9 +17,9 @@ Also, there are probably some names like O'Hara that definitely shouldn't be rew
 
 The easiest one is with names. There must be either a restriction that "s" in "'s" must be lowercase, or that "'s" must be followed by the end of the word. I believe the latter is a much better choice.
 
-In case of a possessive case, we could check whether the previous word is capitalized. But! This would not solve the problem completely, as 
-in case *"My friend Mike's kinda weird."* or *"She's super smart"* (*She* is capitalized as it's the beginning of a word.). We could also 
-restrict rewriting depending on morphological characteristics of the following word. 
+In case of a possessive case, we could check whether the previous word is capitalized. But! This would not solve the problem completely, as in case *"My friend Mike's kinda weird."* or *"She's super smart"* (*She* is capitalized as it's the beginning of a word.). 
+
+We could also restrict rewriting depending on morphological characteristics of the following word. 
 
 If it's a posessive case, it will be followed by a [noun] or an [adjective+noun]. 
 
