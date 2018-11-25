@@ -89,6 +89,7 @@ import sys
 
 
 soft = {'ch<PL>':'ches', 'sh<PL>':'shes', 'tz<PL>':'tzes', 's<PL>':'ses', 'x<PL>':'xes'}
+
 for line in sys.stdin.readlines():
     lines = line.strip()
     for key, value in soft.items():
