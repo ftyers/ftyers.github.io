@@ -109,6 +109,12 @@ And I had to define these rules:
 I have written a python program that takes in a tsv-file and performs the tests. It's a bit raw as I had weird problems with the Python binding, but it must be either ready or few small steps from that.
 
 # chv2
+The coverage of our analizer upon our corpus is around 0.21%:
+```
+$ calc "(($total-$unknown)/$total)*100"
+	~0.21300064660910577764
+
+```
 The part about generating paradigms is really following the manual, I didn't add anything.
 After that, we implement guessers.
 
