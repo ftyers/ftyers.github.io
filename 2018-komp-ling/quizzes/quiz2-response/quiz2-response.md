@@ -44,7 +44,7 @@ k -> n / _ i ;
 
 n -> m / _ i ;
 
-**kikik -> ninin -> mimim**
+kikik -> ninin -> mimim
 ```
 * twol:
 ```
@@ -52,7 +52,7 @@ k:n <=> _ i ;
 
 n:m <=> _ i ;
 
-**kikik -> mimim**
+kikik -> mimim
 ```
 **b) Underspecifying the rewrite rules and d) Subtracting the context of the more specific rule from the more general**
 
