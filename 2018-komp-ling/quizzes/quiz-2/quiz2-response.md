@@ -1,17 +1,19 @@
 # Quiz 2 by Nikolaeva Anna
 
-1. See fst1.jpg. "n" stands for a noun, ">" stands for the morpheme boundary, "0" stands for nothing on the surface. In this transducer we have some input noun with suffix "'s", and in the output we have a surface space in the place of the morpheme boundary and the apostrophe becomes "i".
+1. See fst1.jpg. 
+
 2. Examples:
 - geese's → geese is (incorrect)
 - Cate's house → Cate is house (incorrect)
+- Cate's already done her homework → Cate is already gone (incorrect, must be "Cate has already done")
 
-For fixings the mistakes of the second type, we should look at the morphological disambiguation level, and that, as far as I understand, cannot be done within FSTs or it is rather elaborate. 
+For fixings the mistakes of the second and third type, we should look at the morphological disambiguation or even syntax level, and that, as far as I understand, cannot be done within FSTs or it is rather elaborate. 
 
-But we can deal with the first type of mistakes (geese's → geese is). Apparently we should make some changes on the morphotactic side of our transducer in a way that we expand "'s" only when it goes after the noun in a singular form. Then the transducer might look like fst2.jpg. 
+But maybe we can deal with the first type of mistakes (geese's → geese is). Apparently we should make some changes on the morphotactic side of our transducer in a way that we expand "'s" only when it goes after a noun in a singular form. 
 
 3. a, b, c 
 4. 
-a) To my mind, it's not possible to rewrite rewrite rules into parallel two-level rules without changing them, as in FSTs there is not only input (lexical) level, but also a surface level, so there will always be the difference in a way the rule looks like (in two-level rules there is a ":" used to show the transducer from lexical side to surface, and two-level rules have more operators, than rewrite rules). For example, for the following two rewrite rules, which convert the lexical string "kaNpan" to the surface string "kamman":  
+a) To my mind, it's not possible to rewrite rewrite rules into parallel two-level rules without changing them, as in FSTs there is not only input (lexical) level, but also a surface level, so there will always be the difference in a way the rule looks like (in two-level rules there is a ":" used to show the transducer from lexical side to surface, and two-level rules have more operators, than rewrite rules). For example, for the following two rewrite rules, which convert the lexical string 'kaNpan' to the surface string 'kamman', :  
 ```
 (a)	N -> m / _ p; elsewhere, n.
 (b)	p -> m / m _
@@ -38,6 +40,12 @@ because they will get in conflict with one another. But we can use a symbol "|" 
 (a)	k:v <=> u _ u C [#: | C]	
 (b)	k:[epsilon] | k:v <= V _ V C [#: | C]	
 ```
+Also we can use archiphonemes to underspecify rules, as they can stand in for several surface symbols.   For example, if we have archiphoneme "Ă" (= the surface "ӑ" or "e"), the following rule combines two rewrite rules at once: "Ă" becomes "ӑ" after back vowels and "Ă" becomes "e" in all other cases:
+```
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ <=> BackVow: _ ; 
+```
+
 c) I don't understand the meaning of subtracting the context of the more general rule from the more specific. 
 For example, the rewrite rule from the answer (b) 
 ```
@@ -47,7 +55,7 @@ is already specific. In two-level rules we cannot write anything like
 ```
 k:[epsilon]  <=> [u - V] _ [u - V] C [#: | C]	
 ```
-in order to get 'maun' from 'maku', but 'puvun' from 'puku'.  "[u - V]" seems to be nonsence. 
+in order to get 'maun' from 'maku', but 'puvun' from 'puku'.  [u - V] seems to be nonsence. 
 
 d) Theoretically we may subtract the context of the more specific rule from the more general rule to make the general two-level rule more specific, but it is not an optimal solution. We can try to rewrite the rewrite rules from the answer (b) as:
 ```
@@ -59,7 +67,7 @@ But it looks complicated. In this case we may always resort to underspecificatio
 
 Or maybe we can use the 'except' syntax in a twol file to subtract the context of the specific rule, that contradicts to our general rule. 
 
-5. See fst3.jpg. I have tried to draw it as I understand it. Again, > stands for a morpheme boundary. "Other" stands for all other cases not included in SOFT. 
+5. See fst2.jpg. I have tried to draw it as I understand it. "?" stands for all other cases not included in SOFT. 
 My code can be seen in plural.py. It will work with input as in nouns.txt. 
 
 
