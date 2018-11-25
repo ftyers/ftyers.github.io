@@ -77,14 +77,12 @@ k:[epsilon] | k:v <= V _ V C [#: | C]
 
 5. *Draw a diagram of a finite-state transducer implementing the simple English pluralization model*
 
+*I have a problem with the U+025B*
+
 ![5](2quiz2.jpg?raw=true)
 
-How to use:
-```
-$ python3 quiz2.py < <filename>
-```
+**Implement your model in python, reading line-by-line from standard input and writing output line-by-line.**
 
-Implementation:
 ```
 import re
 import sys
@@ -97,6 +95,11 @@ for line in sys.stdin.readlines():
         lines = lines.replace(key, value)
     lines = re.sub('<PL>', 's', lines)
     print(lines)
+```
+
+How to use:
+```
+$ python3 quiz2.py < <filename>
 ```
 
 Example:
