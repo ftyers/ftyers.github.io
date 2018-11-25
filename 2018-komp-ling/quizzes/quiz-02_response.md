@@ -31,7 +31,7 @@ If it is a contracted form of *has* we can see morphological characteristics of 
 
 **NB!** If a previous word is a pronoun (*He's kind.*) and the following (or a word after) word is not a 3rd Participle or "-ed" ending (*He's done it. = 'has'*; *He's kindly offerED me a cup of tea.*),"'s" should be replaced by "is".
 
-It's a bit more difficult with adjectives, for instance: "*Mike's kind and generous*" VS "*Mike's kind sister offered me tea*". Here we should ckeck whether there are any nouns ahead that our adjective relates to.
+It's a bit more difficult with adjectives, for instance: "*Mike's kind and generous*" VS "*Mike's kind sister offered me tea*". Here we should check whether there are any nouns ahead that our adjective relates to.
 
 3. *Which of the following are advantages of the two-level formalism for describing morphotactic rules? (Choose all that apply.)*
 
