@@ -3,7 +3,7 @@
 
 1. Draw a diagram of a finite-state transducer which implements the simple rewrite "'s" -> " is".
 
-*See quiz_02-1.png*
+![Task_1](quiz02-5.jpg?raw=true)
 
 2. *Give an example where your transducer expands "'s" when it shouldn't. What information could you incorporate to fix it?*
 
@@ -86,7 +86,7 @@ Here kaNpan can't be realized as kampton
 ```
 5. Draw a diagram of a finite-state transducer implementing the simple English pluralization model
 
-*See quiz_02-5.png*
+![Task_5](quiz02-1.jpg?raw=true)
 
 *Implement your model in python, reading line-by-line from standard input and writing output line-by-line.*
 ```
