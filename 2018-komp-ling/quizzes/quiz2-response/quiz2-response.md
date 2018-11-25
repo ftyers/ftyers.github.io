@@ -39,12 +39,19 @@ The transducer should expand "'s" when:
 *Contrexample:* doesn't work, since parallel rules are applied at the same time.
 
 * rewrite rules:
+
 k -> n / _ i ;
+
 n -> m / _ i ;
+
 **kikik -> ninin -> mimim**
+
 * twol:
+
 k:n <=> _ i ;
+
 n:m <=> _ i ;
+
 **kikik -> mimim**
 
 **b) Underspecifying the rewrite rules and d) Subtracting the context of the more specific rule from the more general**
