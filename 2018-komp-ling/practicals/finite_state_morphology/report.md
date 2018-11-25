@@ -74,6 +74,7 @@ $ echo патшалӑх | hfst-lookup -qp -b 0 chv.mor.hfst
 $ echo "тӗслӗх" | hfst-lookup -qp -b 0 chv.mor.hfst 
 тӗслӗх	тӗс<n><der_лӑх><nom>	1,000000
 ```
+We then construct a frequency dictionary chv.frc.txt with a corpus chv.crp.txt.
 
 Then, we take care of the morphotactics with loan words:
 ```
