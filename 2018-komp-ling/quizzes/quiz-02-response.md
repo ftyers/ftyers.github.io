@@ -51,8 +51,8 @@ into
 ```
 (a)	k:v <=> u _ u C [#: | C]
 (b)	k:[epsilon] <= V _ V C [#: | C]
-       			[V - u]	_ u C [#: | C]
-			      u	_ [V - u] C [#: | C]
+       		 [V - u] _ u C [#: | C]
+		       u _ [V - u] C [#: | C]
 ```
 
 d - working, e. g. for Finnish:
