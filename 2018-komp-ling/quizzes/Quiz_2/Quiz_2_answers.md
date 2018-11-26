@@ -22,11 +22,11 @@ There are certainly other options when such transducer expands «’s» in a wro
 To cope with the problem, having all these possibilities, we can only with the help of morphological/syntactical disambiguation and even semantical analysis — all of that, as far as I know, is unresolvable within FST only.         
 
 
-3. Advantages of two-level formalism:  
+3. Advantages of two-level formalism:    
 
-a) Declarative rather than procedural
-b) Parallel application rather than sequential
-c) More expressive than rewrite rules        
+a) Declarative rather than procedural  
+b) Parallel application rather than sequential  
+c) More expressive than rewrite rules            
 
 
 4.
