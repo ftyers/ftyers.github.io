@@ -131,10 +131,12 @@ id</li>
 used to login to websites or other computers</li>
 </ol>
 <h3>GnuPG</h3>
-<p>GNU Privacy Guard is a libre software implementation of the PGP
+<p><a href="https://www.gnupg.org">GNU Privacy Guard</a> is a libre software implementation of the PGP
 specification.</p>
 <p>The main way of interacting with GnuPG is with the command-line tool
-<code>gpg</code>. Please check that you have a modern version of <code>gpg</code>:</p>
+<code>gpg</code>. It comes by default on Linux and BSD distributions; see their
+<a href="https://www.gnupg.org">homepage</a> for installation on Mac or Windows.</p>
+<p>Please check that you have a modern version of <code>gpg</code>:</p>
 <pre><code>$ gpg --version
 
 gpg (GnuPG) 2.2.8
@@ -154,7 +156,7 @@ Compression: Uncompressed, ZIP, ZLIB, BZIP2
 </code></pre>
 <p>Versions of <code>gpg</code> older than <code>2.1.0</code> have serious design limitations,
 and are not supported. If your <code>gpg</code> version is below <code>2.0.0</code> you may
-try using <code>gpg2</code> instead.</p>
+have a <code>gpg2</code> command instead.</p>
 <h4>Generating a PGP identity</h4>
 <p>To generate a new PGP identity, run</p>
 <pre><code>$ gpg --gen-key

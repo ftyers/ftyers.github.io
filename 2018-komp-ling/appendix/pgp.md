@@ -168,11 +168,14 @@ or more of:
 
 ### GnuPG
 
-GNU Privacy Guard is a libre software implementation of the PGP
+[GNU Privacy Guard] is a libre software implementation of the PGP
 specification.
 
 The main way of interacting with GnuPG is with the command-line tool
-`gpg`. Please check that you have a modern version of `gpg`:
+`gpg`. It comes by default on Linux and BSD distributions; see their
+[homepage][GNU Privacy Guard] for installation on Mac or Windows.
+
+Please check that you have a modern version of `gpg`:
 ```
 $ gpg --version
 
@@ -194,7 +197,9 @@ Compression: Uncompressed, ZIP, ZLIB, BZIP2
 
 Versions of `gpg` older than `2.1.0` have serious design limitations,
 and are not supported. If your `gpg` version is below `2.0.0` you may
-try using `gpg2` instead.
+have a `gpg2` command instead.
+
+[GNU Privacy Guard]: https://www.gnupg.org
 
 #### Generating a PGP identity
 To generate a new PGP identity, run
