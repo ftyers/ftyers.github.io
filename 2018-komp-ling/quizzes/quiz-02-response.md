@@ -69,3 +69,10 @@ into
 ```
 This shuts off the possibility of applying (b) where (a) is applicable, to the context of the specific rule is now subtracted from the contest of the general one.
 
+# 5
+See files quiz-02-task-05.bmp and quiz-02-task-05.py, e. g.:
+```
+$echo "fox<PL>" | python quiz-02-task-05.py
+
+foxes
+```
