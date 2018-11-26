@@ -32,3 +32,24 @@ k:ε ⇐ [V - u] _ [V - u] C [#: | C]
        u    _ [V - u] C [#: | C]
 ```
 c) It's hard to imagine the reverse situation, because specific rule is subpart of general rule. Subtracting general from specific leads to... nothing?
+
+5. ![fst5.jpg](https://github.com/DorkEMK/ftyers.github.io/blob/master/2018-komp-ling/quizzes/Quiz_2/fst5.jpg)
+Scrypt takes words with tag like *cat<pl>*
+```
+import re, sys
+
+def pluralizer(word):
+    w = ''
+    if re.match('[A-Za-z]+(ch|sh|tz|s|x)\<pl\>', word):
+        w = word[:-4] +'e'
+    elif re.match('[A-Za-z]+\<pl\>', word):
+        w = word[:-4]
+    else:
+        print(word + ' can\'t be pluralized')
+        return
+    return(w + 's')
+
+for line in sys.stdin.readlines():
+    print(pluralizer(line.strip()))
+```
+
