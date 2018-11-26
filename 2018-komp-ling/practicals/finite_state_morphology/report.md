@@ -116,6 +116,6 @@ $ calc "(($total-$unknown)/$total)*100"
 
 ```
 The part about generating paradigms is really following the manual, I didn't add anything.
-After that, we implement guessers.
-
-
+The part about weighting can be found in the relevant files.
+The part about guessers took me some struggling that I have not yet fully overcome. I expect that the code is alright, but I couldn't reproduce the correct behaviour as I have discussed with Fran.
+As for the Python bindings, I have used them to implement the unit tests.

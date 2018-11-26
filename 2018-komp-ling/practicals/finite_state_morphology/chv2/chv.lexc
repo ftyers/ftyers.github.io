@@ -57,6 +57,7 @@ LEXICON N
 
 %<n%>: SUBST ;
 %<n%>: DER-N ;
+N/сть ;
 
 LEXICON Nouns
 
@@ -103,3 +104,8 @@ LEXICON DIGITLEX
 7:7   LOOP ;
 8:8   LOOP ;
 9:9   LOOP ;
+
+LEXICON N/сть
+
+%<n%>:ҫ SUBST "weight: 0.5" ;
+%<n%>%<nom%>:сть # "weight: 1.0" ;
