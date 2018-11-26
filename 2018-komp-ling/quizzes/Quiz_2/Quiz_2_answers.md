@@ -11,13 +11,13 @@ There is much information we should take into account, building such a transduce
 | cat | < space > | i |s
 
 
-There are certainly other options when such transducer expands «’s» in a wrong way:
-— «’s» using to form the possessive of singular nouns: *girl’s power*
-— «’s» using to form the possessive of word groups functioning as nouns: *the boy with a sandwich’s wallet* 
-— short form of ‘us’: *let’s dance*
-— short form of ‘was’: *where’s he last night?*
-— short form of ‘has’: *she’s seen him*
-— short form of ‘does’: *what’s he want?*     
+There are certainly other options when such transducer expands «’s» in a wrong way:  
+— «’s» using to form the possessive of singular nouns: *girl’s power*  
+— «’s» using to form the possessive of word groups functioning as nouns: *the boy with a sandwich’s wallet*   
+— short form of ‘us’: *let’s dance*  
+— short form of ‘was’: *where’s he last night?*  
+— short form of ‘has’: *she’s seen him*  
+— short form of ‘does’: *what’s he want?*       
 
 To cope with the problem, having all these possibilities, we can only with the help of morphological/syntactical disambiguation and even semantical analysis — all of that, as far as I know, is unresolvable within FST only.         
 
