@@ -5,11 +5,10 @@
 There is much information we should take into account, building such a transducer. For instance, in ‘’children’s clothing’’ it would be a mistake to expand «’s» to get «is». Thus, we can think of a transducer that restricts an application of a rule, allowing it to work only with nouns in singular form.
 
 
-
-    | cat | +N | +SG |+SH_IS |
-    |-------|------|------|----|
-    | cat | ^     | ‘     |s |
-    | cat |<space> | i |s
+| cat | +N | +SG |+SH_IS |
+|-------|------|------|----|
+| cat | ^     | ‘     |s |
+| cat | < space > | i |s
 
 
 There are certainly other options when such transducer expands «’s» in a wrong way:
