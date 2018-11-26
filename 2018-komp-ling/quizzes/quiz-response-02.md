@@ -1,9 +1,9 @@
 # Quiz 2
+
 #### 1. Draw a diagram of a finite-state transducer which implements the simple rewrite `'s` → ` is`.
 
-![S-IS transducer diagram](https://raw.githubusercontent.com/yaskevich/ftyers.github.io/tree/master/2018-komp-ling/quizzes/s-is.png)
+![S-IS transducer diagram](https://raw.githubusercontent.com/yaskevich/ftyers.github.io/master/2018-komp-ling/quizzes/s-is.png)
 
-https://github.com/yaskevich
 
 #### 2. Give an example where your transducer expands `'s` when it shouldn't. What information could you incorporate to fix it?
 
