@@ -1,6 +1,7 @@
 #### Which Unix command might you use to sort the output in frequency order?
-```sort -nr
-```
+<br />
+sort -nr
+<br />
 
 #### What do you think we would get if we set the argument reverse to False?
 <br /> the list from the least frequent words to the most frequent
