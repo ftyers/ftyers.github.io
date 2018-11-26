@@ -6,10 +6,10 @@ There is much information we should take into account, building such a transduce
 
 
 
-| cat | +N | +SG |+SH_IS |
-|-------|------|------|----|
-| cat | ^     | ‘     |s |
-| cat |<space> | i |s
+    | cat | +N | +SG |+SH_IS |
+    |-------|------|------|----|
+    | cat | ^     | ‘     |s |
+    | cat |<space> | i |s
 
 
 There are certainly other options when such transducer expands «’s» in a wrong way:
