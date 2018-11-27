@@ -95,7 +95,7 @@ These rules contradict each other. To resolve the conflict (that doesn’t exist
 
     ε —> e / {ch | sh | tz | _s | _x} ^ __ s#
     
-Script for pluralizing words with the tag `<PL>`:
+Script for pluralizing words with the tag `<PL>` (from command line):
     
     import re
 
@@ -113,3 +113,22 @@ Script for pluralizing words with the tag `<PL>`:
             return(plural(input('Try again: ')))
 
     print(plural(word))
+
+Script for pluralizing words with the tag `<PL>` (from stdin):
+
+    import sys, re
+
+    def plural(word):
+
+        if re.search('[A-Za-z]+(ch|sh|tz|s|x)<PL>', word):
+            word_pl = word[:word.index('<PL>')] + 'es'
+            return(word_pl)
+        elif re.search('([A-Za-z]+)<PL>', word):
+            word_pl = word[:word.index('<PL>')] + 's'
+            return(word_pl)
+        else:
+            return('smth went wrong (maybe you forgot to add <PL>)')
+
+    for line in sys.stdin.readlines():
+        lines = line.strip()
+        print(plural(lines))
