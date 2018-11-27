@@ -1,10 +1,17 @@
 # Compling project proposal
 
 ## Abstract
-RE: extracting phonological rules from neural networks paper: Jennifer Rodd (1997) "Recurrent Neural-Network Learning of Phonological Regularities in Turkish". CoNLL97: Computational Natural Language Learning, http://www.aclweb.org/anthology/W97-1012
+**TO-DO** one-paragraph summary of the rest of the proposal.
 
 ## Introduction
 **TO-DO** the background of the problem to be solved or topic to be studied, with references for the low-background reader.
+RE: extracting phonological rules from neural networks paper: Jennifer Rodd (1997) "Recurrent Neural-Network Learning of Phonological Regularities in Turkish". CoNLL97: Computational Natural Language Learning, http://www.aclweb.org/anthology/W97-1012
+
+Задача интерпретации нейронных сетей хорошая, добрая. Задача применения машинного обучения для извлечения интересных с точки зрения лингвистики данных хорошая, добрая.
+
+Статья (статья) показывает подход к решению поставленных задач, опробованный на турецком языке. Интересно проверить описанные в статье подходы на других языках, особенно на родственных рассмотренному в статье турецкому.
+
+Параллели в фонетических свойствах между родственными языками было бы интересно попробовать применить к исследованию фонетических эмбеддингов в родственных языках.
 
 ## Proposed goals
 
