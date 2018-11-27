@@ -24,7 +24,7 @@ for line in sys.stdin.readlines():
         continue
     form = row[1]
     if form not in vocab:
-    vocab[form] = 0
+        vocab[form] = 0
     vocab[form] = vocab[form] + 1
 
 for w in vocab:
