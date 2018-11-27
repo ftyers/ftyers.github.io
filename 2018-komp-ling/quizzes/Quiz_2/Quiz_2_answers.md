@@ -94,3 +94,22 @@ These rules contradict each other. To resolve the conflict (that doesn’t exist
 ‘insert an e after a morpheme-final, which belongs to ‘soft consonant sounds’: ch, sh, tz, _s, _x, — and before the morpheme s’
 
     ε —> e / {ch | sh | tz | _s | _x} ^ __ s#
+    
+Script for pluralizing words with the tag <PL>:
+    
+    import re
+
+    word = input ('Enter the word (with <PL> tag) you want to pluralize: ')
+
+    def plural(word):
+
+        if re.search('[A-Za-z]+(ch|sh|tz|s|x)<PL>', word):
+            word_pl = word[:-4] + 'es'
+            return(word_pl)
+        elif re.search('([A-Za-z]+)<PL>', word):
+            word_pl = word[:-4] + 's'
+            return(word_pl)
+        else:
+            return(plural(input('Try again: ')))
+
+    print(plural(word))
