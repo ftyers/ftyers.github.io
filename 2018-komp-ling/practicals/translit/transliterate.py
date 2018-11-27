@@ -1,7 +1,8 @@
 import sys
 
-vocab = {} # dict to store Russian to English letters
-
+# dict to store Russian to English letters
+vocab = {}
+#let's import it from the file:
 f = open('trans_dict.txt', 'r')
 for i in f.readlines():
     i = i.strip('\n')
@@ -13,11 +14,13 @@ for i in f.readlines():
 vowels = 'уУеЕъЪаАоОэЭьЬяЯиИюЮыЫ'
 
 for line in sys.stdin.readlines():
+    #we only need the lines with tabulation:
     if '\t' not in line:
         continue
     row = line.split('\t')
     if len(row) != 10:
         continue
+    #subst is the result of a transliterated word
     subst = ''
     # this is to check if it's the beginning of a word:
     p = ''
