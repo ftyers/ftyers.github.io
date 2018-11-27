@@ -115,6 +115,7 @@ ask questions of peers and instructors.
 [morphology-video]:    https://peertube.xyz/videos/watch/5811dfa7-9984-4c02-97e2-90934810fe9e
 [morphology-quiz]:     quizzes/quiz-02.html
 [disambiguation-slides]: slides/disambiguation.pdf
+[disambiguation-quiz]: quizzes/quiz-03.html
 
 ### Oct 9
 
@@ -173,7 +174,7 @@ Co-work on practical 2, [Finite-state Morphology] (algorithms) or
 Morphological disambiguation ([slides][disambiguation-slides],
 [video][disambiguation-video]).
 
-Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][disambiguation-quiz] due <!-- FIXME --> no earlier than Dec 4.
+Read §5.1-5.8 in [Jurafsky-Martin 2ed]. [Reading quiz][disambiguation-quiz] due Dec 11.
 
 Start practical 3, [Morphological disambiguation] (algorithms) or
 [Unigram model] (engineering).
