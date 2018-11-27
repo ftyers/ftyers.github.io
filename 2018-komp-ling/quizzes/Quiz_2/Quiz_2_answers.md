@@ -104,10 +104,10 @@ Script for pluralizing words with the tag <PL>:
     def plural(word):
 
         if re.search('[A-Za-z]+(ch|sh|tz|s|x)<PL>', word):
-            word_pl = word[:-4] + 'es'
+            word_pl = word[:word.index('<PL>')] + 'es'
             return(word_pl)
         elif re.search('([A-Za-z]+)<PL>', word):
-            word_pl = word[:-4] + 's'
+            word_pl = word[:word.index('<PL>')] + 's'
             return(word_pl)
         else:
             return(plural(input('Try again: ')))
