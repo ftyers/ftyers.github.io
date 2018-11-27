@@ -99,7 +99,7 @@ Script for pluralizing words with the tag <PL>:
     
     import re
 
-    word = input ('Enter the word (with <PL> tag) you want to pluralize: ')
+    word = input('Enter the word (with <PL> tag) you want to pluralize: ')
 
     def plural(word):
 
