@@ -95,7 +95,7 @@ These rules contradict each other. To resolve the conflict (that doesn’t exist
 
     ε —> e / {ch | sh | tz | _s | _x} ^ __ s#
     
-Script for pluralizing words with the tag `<PL>` (from command line):
+Script for pluralizing words with the tag `<PL>` (for instance, from command line):
     
     import re
 
