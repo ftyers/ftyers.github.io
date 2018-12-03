@@ -107,6 +107,7 @@ for line in sys.stdin.readlines():
 f.close()
 ```
 # Voila!
+The result is stored in the file text.txt
 
 The code is a little far from perfect. For example, it doesn't check if the whole word is in CAPS. Instead every time it sees a capital 'Ш' or 'Ч' it makes it 'Sh' and 'Сh', which is most of the times fine. 
 
