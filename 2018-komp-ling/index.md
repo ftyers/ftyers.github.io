@@ -195,19 +195,24 @@ fingerprint. See [PGP tutorial][pgp] for details.
 
 ### Dec 4
 
+Co-work on practical 3, [Morphological
+disambiguation] (algorithms) or [Unigram model] (engineering).
+
+### Dec 11
+
 Dependency parsing ([slides][dep-parse-slides],
 [video][dep-parse-video]).
 
 Read Chapter 13 *Dependency parsing* in [Jurafsky-Martin 3ed]. [Reading
-quiz][dep-parse-quiz] due <!-- FIXME --> no earlier than Dec 11.
+quiz][dep-parse-quiz] due <!-- FIXME --> no earlier than Dec 18.
 
 Due: practical 3, [Morphological disambiguation] (algorithms) or
-[Unigram model] (engineering), [quiz-03][morph-disam-quiz].
+[Unigram model] (engineering), [quiz-03][disambiguation-quiz].
 
 Start practical 4, [Dependency parsing] (algorithms) or [Unigram
 part-of-speech tagger] (engineering).
 
-### Dec 11
+### Dec 18
 
 Co-work on practical 4, [Dependency parsing] (algorithms) or [Unigram
 part-of-speech tagger] (engineering).
