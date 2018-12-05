@@ -1,0 +1,20 @@
+Practical 1.
+Сравнение двух сегментаторов.
+В практическом задании я использовала два сегментатора, которые были предложены в задании: pragmatic segementer(Ruby) и NLTK sent tokenization(библиотека Python).
+В качестве данных был использован текст на русском языке, а также на английском . 
+Текст был предоставлен сегментаторам рандомно. 
+Pragmatic segmenter был выполнен по инструкции, которая была в задани.В итоге pragmatic_segmenter на русском тексте сработал немного хуже, чем на английском тексте. В основном ошибки были в аббревиатурах и скоращениях.
+А NLTK sent_tokenizer показал себя одинаково и на русском тексте и на английском. Но все же в каких-то местах текст на английском языке был токенизирован лучше. 
+
+Примеры: 
+'В собрании Лейденского музея сохранился древнеегипетский папирус «Речение Ипувера» (ок.',
+ 'XIII - XVIII вв.',
+ 'до н.э.)',
+ 'красочно описывающий трагические события смуты, сопровождавшейся разорением и распадом страны.',
+ 'По мнению ряда историков, речь в этом документе может идти о первом известном в истории массовом социальном движении, или даже «гражданской войне».',
+ 'Такого же характера другое древнеегипетское произведение «Пророчество Неферти» (ок.',
+ 'XV в. до н.э), где сказано:«Я показываю тебе сына в виде врага, брата в виде противника; Человек будет убивать своего отца… Будет страна мала, а её руководители многочисленны».'
+ 
+ 'The novel is the first semi-fictional work written by Ottaviani; previously, he had taken no creative license with the characters he depicted, portraying them strictly according to historical sources.',
+ 'Bone Sharps follows two scientists, Othniel Charles Marsh and Edward Drinker Cope (pictured), as they pursue their hotheaded and sometimes illegal acquisitions of fossils.',
+ 'Along the way, they encounter P. T. Barnum, Buffalo Bill, Alexander Graham Bell, Ulysses S. Grant, and other figures of the Gilded Age.'
