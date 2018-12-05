@@ -1,0 +1,11 @@
+Rule type	Interpretation
+a:b => _ ;	If the symbol pair a:b appears it must be in context _
+a:b <= _ ;	If lexical a appears in the context _ then it must correspond to surface b
+a:b /<= _ ;	Lexical a never corresponds to b in context _
+
+
+a:b => _ ; - может быть и с:d; Если видим B, то здесь обязательно контекст _ (уникальное a:b)
+
+a:b <= _ ; - в контексте _ может быть только изменение a:b; c:b быть не может (уникальный контекст)
+
+a:b /<= _ ; - в контексте _ замены a быть не может
