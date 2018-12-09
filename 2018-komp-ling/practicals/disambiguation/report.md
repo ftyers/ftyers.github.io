@@ -2,7 +2,7 @@
 
 Udpipe trained upon the Finnish corpus performed as follows:
 
-Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+```Metrics    | Precision |    Recall |  F1 Score | AligndAcc
 -----------+-----------+-----------+-----------+-----------
 Tokens     |    100.00 |    100.00 |    100.00 |
 Sentences  |    100.00 |    100.00 |    100.00 |
@@ -14,4 +14,4 @@ AllTags    |     89.75 |     89.75 |     89.75 |     89.75
 Lemmas     |     84.52 |     84.52 |     84.52 |     84.52
 UAS        |    100.00 |    100.00 |    100.00 |    100.00
 LAS        |    100.00 |    100.00 |    100.00 |    100.00
-
+```
