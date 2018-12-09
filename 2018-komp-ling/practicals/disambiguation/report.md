@@ -1,0 +1,17 @@
+# Tagger comparison
+
+Udpipe trained upon the Finnish corpus performed as follows:
+
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     94.64 |     94.64 |     94.64 |     94.64
+XPOS       |     95.81 |     95.81 |     95.81 |     95.81
+Feats      |     90.77 |     90.77 |     90.77 |     90.77
+AllTags    |     89.75 |     89.75 |     89.75 |     89.75
+Lemmas     |     84.52 |     84.52 |     84.52 |     84.52
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+
