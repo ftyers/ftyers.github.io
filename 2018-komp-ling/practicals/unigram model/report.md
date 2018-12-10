@@ -3,7 +3,7 @@
 $ python3 palindrome.py<br>
 
 part of the output (freq.txt):<br>
-
+```
 3439    как  
 1669    или  
 1254    еще  
@@ -24,18 +24,20 @@ part of the output (freq.txt):<br>
 18      мм  
 17      55  
 16      доход  
-
+```
 **Implementing n dimensional matrices with dict**  
 $ python3 matrix.py  
+```
         a       absorbed        all     and     another  
 бы      0       0       0       0       0  
 вас     0       0       0       0       0  
 видит   0       0       0       0       0  
 всего   0       0       0       0       0  
 вы      0       0       0       0       0  
-
+```
 - _Why do we need end='' passed to the print() statement ? What would happen if we didn't have it ?_  
 - '\n' after each element  
+```
   a       absorbed        all     and     another  
 бы  
 0  
@@ -43,7 +45,7 @@ $ python3 matrix.py
 0  
 0  
 0  
-
+```
 **Passing arguments from the command line**  
 $ python3 args.py a b c  
 - _What output do you get ?_  
