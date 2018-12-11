@@ -57,7 +57,7 @@ The code with comments is in "train.py", reasults are in "output.txt", the first
 of each POS-tag =(number of appearence of this tag in corpora)/(number of all the tags) 
 or the probability that given word appears with given tag in corpora (appearences of this word with this tag)/
 all the appearences of this word), then there is a tag itself, then number of all appearenes of the word
-and then the word itself.  
+and then the word itself. (Well I should've probably delete repeated words from output, but it doesn't affect the results anyway.)
 
 - _What might be a simple improvement to the language model for languages with orthographic case ?_  
 - Well I just used syntagrus data where each word have a normalized and lowered form. But it is easy 
