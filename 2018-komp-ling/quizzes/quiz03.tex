@@ -1,0 +1,150 @@
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.4
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[a4paper]{article}
+\usepackage[ascii]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor= , pdfsubject=, pdfkeywords=}
+% List styles
+\newcommand\liststyleWWNumi{%
+\renewcommand\theenumi{\arabic{enumi}}
+\renewcommand\theenumii{\alph{enumii}}
+\renewcommand\theenumiii{\roman{enumiii}}
+\renewcommand\theenumiv{\arabic{enumiv}}
+\renewcommand\labelenumi{\theenumi)}
+\renewcommand\labelenumii{\theenumii)}
+\renewcommand\labelenumiii{\theenumiii.}
+\renewcommand\labelenumiv{\theenumiv.}
+}
+\newcommand\liststyleWWNumii{%
+\renewcommand\theenumi{\arabic{enumi}}
+\renewcommand\theenumii{\alph{enumii}}
+\renewcommand\theenumiii{\roman{enumiii}}
+\renewcommand\theenumiv{\arabic{enumiv}}
+\renewcommand\labelenumi{\theenumi)}
+\renewcommand\labelenumii{\theenumii)}
+\renewcommand\labelenumiii{\theenumiii.}
+\renewcommand\labelenumiv{\theenumiv.}
+}
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{1in}
+\setlength\oddsidemargin{1.25in}
+\setlength\textheight{9.6929in}
+\setlength\textwidth{5.7681in}
+\setlength\footskip{0.0cm}
+\setlength\headheight{0cm}
+\setlength\headsep{0cm}
+% Footnote rule
+\setlength{\skip\footins}{0.0469in}
+\renewcommand\footnoterule{\vspace*{-0.0071in}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.25\columnwidth}{0.0071in}}\vspace*{0.0398in}}
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{}
+  \renewcommand\@evenhead{}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{Standard}
+\title{}
+\author{ }
+\date{2018-12-11}
+\begin{document}
+\clearpage\setcounter{page}{1}\pagestyle{Standard}
+
+1
+
+a)
+
+The advantages of CG: 
+
+\liststyleWWNumi
+\begin{enumerate}
+\item It leaves the least amount of ambiguations. Every word is annotated in details and constrained by strict rules so
+that there is only one syntactical way to interpret a given text.
+\item It can be applied to running sentences instead of specific texts. The performance on new sentences are more
+accurate. If the rules are set correctly, the results are more likely to be correct.
+\end{enumerate}
+b)
+
+\ \ The advantages of CA:
+
+\liststyleWWNumii
+\begin{enumerate}
+\item The relationship between words and the importance of each word are also annotated. The emphasis or the major
+meaning of a sentence is thus displayed.
+\item The machine learning process may find possible defects of grammatical rules.
+\end{enumerate}
+c)
+
+I will choose CG because I do not like ambiguities, except when the text itself is ambiguously written so that even
+humans cannot interpret correctly.
+
+
+\bigskip
+
+2,\ \ They can be used together.
+
+\ \ On the one hand, CG can benefit from assimilating the ML feature by finding out and fixing potential insufficient
+grammatical rules set by human annotators. On the other hand, the ML method can benefit from taking CG features by
+eliminating possible ambiguities that yield irrational results and by preventing the ML to generate erroneous rules.
+
+
+\bigskip
+
+3,
+
+A dog jumps over fast barriers.
+
+The dog jumps fast (adv) or the barriers are fast (adj)?
+
+The disambiguator may assign the word \textit{fast} to be an adj since it is located right before a noun (barriers) and
+the verb before it is followed by a preposition (over), which may indicate that an adverb is not necessary here.
+
+As for my personal solution to it, first I argue that morphosyntactic ambiguity like this is not a common occurrence;
+most sentences will not encounter this problem. Second, whether the word \textit{fast} here functions as adv or adj
+does not affect the main information carried by this sentence, so even if the role of \textit{fast} is arbitrarily
+determined, the deviation of meaning is not great.
+
+My rule of thumb is to always treat the word right before a noun as an adj when possible.
+
+
+\bigskip
+
+4,
+
+\ \ Precision:  $\frac{\mathit{TP}} R$\ \  where TP is True Positive and R is the results found
+
+\ \ Recall:  $\frac{\mathit{TP}} P$ \ where TP is True Positive and P is all the positive items
+
+\ \ False Positive: FP / N where FP is all the negative results that are judged to be positive and N is all the negative
+items.
+
+
+\bigskip
+
+\ \ If disambiguators focus on recall and FP, they emphasize on finding as many positive results as possible even when
+some of them are not correct; if on precision, they emphasize on making the results as correct as possible, even at the
+cost of overlooking some positive ones..
+
+
+\bigskip
+
+5,
+
+\ \ Iknowtherussianfederationisgood
+
+\ \ I know the Russian Federation is good (n-gram)
+
+\ \ I Know the Russian. Federation is good. (unigram)
+\end{document}
