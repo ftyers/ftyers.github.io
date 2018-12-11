@@ -27,4 +27,15 @@ It has performed with the accuracy of 0.9360702420503085
 As I understand from reading the evaluation script doc strings, the alignacc is just accuracy in case the words are aligned, so it's comparable with the accuracy from nltk.
 So the result of 94.64% and 93.61% are quite compatible.
 
+# Constraint grammar
 
+I managed to reproduce the output successfully, although the part with REMOVE:6 somehow had REMOVE:8 instead:
+
+```
+$ echo "Однако стиль работы Семена Еремеевич
+а заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 | grep REMOVE
+
+;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:8
+;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:8
+
+```
