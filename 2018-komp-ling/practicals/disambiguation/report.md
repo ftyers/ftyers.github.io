@@ -32,10 +32,54 @@ So the result of 94.64% and 93.61% are quite compatible.
 I managed to reproduce the output successfully, although the part with REMOVE:6 somehow had REMOVE:8 instead:
 
 ```
-$ echo "Однако стиль работы Семена Еремеевич
-а заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 | grep REMOVE
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 | grep REMOVE
 
 ;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:8
 ;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:8
 
 ```
+
+# Improve perceptron tagger
+
+Using UD_Portugese.git didn't work (it doesn't seem to be an actual address), so I used UD_Portugese-BSD.git instead.
+
+The result with the standard features was as follows:
+
+```
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     96.35 |     96.35 |     96.35 |     96.35
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     96.35 |     96.35 |     96.35 |     96.35
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+```
+
+I tried adding several features such as prefix of the context +2 word, properties of the string (numeric, register...) and length. Here is the full list of the added features:
+```
+add('i prefix', word[:3])
+add("i-1 pref1", context[i-1][-3:])
+add("i-1 prefix", context[i-1][:3])
+add("i+1 pref1", context[i+1][-3:])
+add("i+1 prefix", context[i +1][:3])
+add("i-2 pref1", context[i-2][-3:])
+add("i+1 prefix", context[i+2][:3])
+add("i+2 suffix", context[i+2][-3:])
+add("i+2 pref1", context[i+2][0])
+add("i+2 prefix", context[i+2][:3])
+
+add('upper register', str(int(word.isupper())))
+add('lower register', str(int(word.islower())))
+add('capitalized', str(int(word[0].isupper())))
+add('numeric', str(int(word.isnumeric())))
+add('alpha', str(int(word.isalpha())))
+
+add("length", str(len(word)))
+```
+
+They didn't seem to have any effect on the performance. It seems like pretty much everything useful for disambiguation is already used.
