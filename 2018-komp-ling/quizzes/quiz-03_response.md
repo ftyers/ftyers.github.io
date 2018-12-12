@@ -1,6 +1,6 @@
 Funny story: after I made this quizz something happened with branches and I couldn't switch to master branch in GitHub desktop
 and there were some strange changes in another folder, so it happened that all my works were deleted from my computer
-and I wrote everything again out of my memory............................
+and I wrote everything again out of my memory, so I'm sorry if the answers are too short or smth............................
 
 
 1. a) No need in large human-annotated corpora.  
