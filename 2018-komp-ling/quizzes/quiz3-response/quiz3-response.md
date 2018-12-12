@@ -31,8 +31,6 @@ The combination of the systems can be really proficient for low-resourced langua
 
 3. Give a sentence with morphosyntactic ambiguity. What would you expect a disambiguator to do in this situation? What can you do?
 
-(based on &5.3 Jurafsky - Martin, Part-of-Speech Tagging)
-
 The word *book* is ambiguous:
 * (a) a verb
     * to *book* a flight
@@ -40,25 +38,33 @@ The word *book* is ambiguous:
     * lend me the *book* by Pushkin
 
 Here are the lexical likelihoods:
+```
 * P(book|VB)
 * P(book|NN)
+```
 
 To calculate the tag sequence probabilities for our HMM disambiguator:
+```
 * P(VB|A)P(DET|VB)P(book|VB)
 * P(NN|BY)P(PRP|NN)P(book|NN)
+```
 
 CG rules:
+```
 * remove NN if (-1 TO(inf))
 * remove VB if (-1 DET)
+```
 
 4. Choose several (>2) quantities that evaluate the quality of a morphological disambiguator, and describe how to compute them. Describe what it would mean to have disambiguators which differ in quality based on which quantity is used.
 
 We can summarize our tag prediction model using a 2x2 matrix depicting all four possible outcomes:
-
+```
+________________________________________________
 |  True Positive (TP)   |  False Positive (FP) |
-
-| False negative (FN) |  True Negative (TN) |
-
+|-----------------------+----------------------|
+| False negative (FN)   |  True Negative (TN)  |
+------------------------------------------------
+```
 
 * Precision = TP/(TP+FP), measures the percentage of TAG word types tagged as TAG that were correctly tagged
 * Recall = TP/(TP+FN), measures the percentage of actual TAG word types that were correctly tagged
@@ -70,6 +76,7 @@ Improving precision typically reduces recall and vice versa:
 5. Give an example where an n-gram HMM performs better than a unigram HMM tagger.
 
 N-gram HMM performs better on tagging *casa* as a NOUN when followed by ADJ and preceeded by DET:
-
+```
 Vino        a      una       casa    grande       .
 VERB    ADP  DET     NOUN    ADJ     PUNCT
+```
