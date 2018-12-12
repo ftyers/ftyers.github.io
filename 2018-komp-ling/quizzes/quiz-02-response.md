@@ -1,7 +1,7 @@
 <html>
 <body>
 <br>
-1.<br> <img src="./is.png" width="500" height="100"><br>
+1.<br> <img src="./is.png" width="500" height="150"><br>
 <br>
 <br>2.
  I suppose it will expand "'s" when it actually represents the possessive form. 
@@ -40,6 +40,21 @@ k:ε | k:v <= V _ V
 '''
 <br>
 <br>
+ 5. 
+ 
+ ```
+import sys
+import re
+
+SOFT = ['ch', 'sh', 'tz', 's', 'x']
+
+for line in sys.stdin.readlines():
+	if re.search(e for e in SOFT +'<PL>', line):
+		line = line.replace('<PL>','es')
+	else:
+  line = line.replace('<PL>','s')
+	print(line)
+ ```
 <br>
 <br>
 </body>
