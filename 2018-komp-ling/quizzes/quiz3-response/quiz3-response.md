@@ -55,11 +55,9 @@ CG rules:
 
 We can summarize our tag prediction model using a 2x2 matrix depicting all four possible outcomes:
 
-|True Positive (TP)    |  False Positive (FP) |
+|  True Positive (TP)   |  False Positive (FP) |
 
-|----------------------+-----------------------|
-
-|False negative (FN) | True Negative (TN)  |
+| False negative (FN) |  True Negative (TN) |
 
 
 * Precision = TP/(TP+FP), measures the percentage of TAG word types tagged as TAG that were correctly tagged
