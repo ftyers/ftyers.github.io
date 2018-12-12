@@ -16,6 +16,7 @@
 ##### 3. Give a sentence with morphosyntactic ambiguity. What would you expect a disambiguator to do in this situation? What can you do?
 I want to _book_ a ticket. 
 I don’t like this _book_. 
+
 Мы хотим, чтобы наш теггер в первом случае разметил «book» как глагол, а во втором – как существительное. Мы могли бы использовать биграммную или триграммную Скрытую Марковскую модель, которая рассчитала бы следующие произведения вероятности и вывела нам максимальную:
 I want to _book_ a ticket. 
 - P (book | VERB ) * P ( VERB | TO (inf) ) 
@@ -23,6 +24,7 @@ I want to _book_ a ticket.
 I don’t like this _book_. 
 - P (book |  VERB) * P (VERB | DET) 
 - P ( book | NOUN) * P (NOUN | DET) 
+
 Если мы делаем подсчеты на основе большого размеченного корпуса, то наиболее вероятными окажутся правильные варианты. 
 Или же мы могли бы написать constraint grammar rules для слова book, например: 
 - __remove NOUN if (-1 TO(inf))__, т.е. удаление вариант слова с тегом NOUN, если предыдущий тег – частица to, которая ставится перед инфинитивом глагола (но не предлог to). 
