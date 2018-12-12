@@ -77,6 +77,6 @@ Improving precision typically reduces recall and vice versa:
 
 N-gram HMM performs better on tagging *casa* as a NOUN when followed by ADJ and preceeded by DET:
 ```
-Vino        a      una       casa    grande       .
-VERB    ADP  DET     NOUN    ADJ     PUNCT
+Vino     a       una      casa     grande      .
+VERB    ADP      DET      NOUN       ADJ     PUNCT
 ```
