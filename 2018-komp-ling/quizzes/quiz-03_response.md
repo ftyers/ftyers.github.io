@@ -15,6 +15,7 @@ for "like". I could write some simple rules, stating that, for example, when aft
 tag should be chosen and the opposite for "flies", then I can write a rule that PREP should be chosen before determiner and after
 verb. (Of course rules should be more complicated...)
 
-4.
+4. FP - predicted positive, but really negative, unlike True Positive; FN - predicted negative, but really positive, unlike True Negative. Precision = TP/(TP+FP); Recall = TP/(TP+FN).  
+For disambiguation task I guess FPs are tags that were chosen by algorithm, but are incorrect; and FNs are the right tags that were not chosen by the algorithm (?? strange, probably I don't understand the question clearly). Precision - how much of the right tags were chosen correctly, recall - how much right tags were predicted at all (strange again).
 
 5. I think the previous example (from 3) is suitable, especially for the word _flies_.
