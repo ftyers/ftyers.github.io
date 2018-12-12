@@ -20,9 +20,11 @@ The are two widely-known examples from Russian:
 - Он увидел их __семью__ (NOUN or CARDINAL NUMBER) своими глазами. (He saw their _family (NOUN)_ with his eyes. vs. He saw them with his _seven (CARDINAL)_ eyes.)
 - Эти типы __стали__ (NOUN or VERB) есть в цехе. (These types of _steel (NOUN)_ are in the factory shop. vs. These fellows _started (VERB)_ to eat in the factory shop.)
 
+I believe a HMM disambiguator would count the probabilities of both variants for these sentences and would choose the one with the highest probability (though I have doubts regarding the second example, I assume that the VERB case is more common). The rules would have the same problem with the second example, if there is no very rare rule with the word "типы" ("types") - the correct chain for this word is NOUN NOUN.
 
 4. Choose several (>2) quantities that evaluate the quality of a morphological disambiguator, and describe how to compute them. Describe what it would mean to have disambiguators which differ in quality based on which quantity is used.
 
 Suggested quantities: false positive, false negative, precision, recall.
 
 5. Give an example where an n-gram HMM performs better than a unigram HMM tagger.
+Unigram tagger is quive primitive, it assigns the  tag  that  is  most  likely  for  that  word.  For example, it will assign the tag JJ to any occurrence of the word "frequent", since "frequent" is usually used as an adjective (e.g. a frequent word). The following example would be tagged incorrectly: I frequent this cafe. This won't happen if we use at least bigram tagger - the probability of the chain NOUN ADJ will be lower than NOUN VERB, and the sentence will be tagged correctly.
