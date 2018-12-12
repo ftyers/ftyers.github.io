@@ -54,11 +54,13 @@ CG rules:
 4. Choose several (>2) quantities that evaluate the quality of a morphological disambiguator, and describe how to compute them. Describe what it would mean to have disambiguators which differ in quality based on which quantity is used.
 
 We can summarize our tag prediction model using a 2x2 matrix depicting all four possible outcomes:
-_____________________________________
+
 |True Positive (TP)    |  False Positive (FP) |
+
 |----------------------+-----------------------|
+
 |False negative (FN) | True Negative (TN)  |
-|----------------------------------------------|
+
 
 * Precision = TP/(TP+FP), measures the percentage of TAG word types tagged as TAG that were correctly tagged
 * Recall = TP/(TP+FN), measures the percentage of actual TAG word types that were correctly tagged
