@@ -26,5 +26,18 @@ I believe a HMM disambiguator would count the probabilities of both variants for
 
 Suggested quantities: false positive, false negative, precision, recall.
 
+- False positive: when you get a positive result for a test, when in fact you should have got a negative result. 
+- False negative: when you get a negative test result, but you should have got a positive test result.
+- Precision: the percentage of the items that the system detected (i.e., the system labeled as positive) that are in fact positive (i.e., are positive according to the human gold labels). We should devide the correct results that our system gave us by the correct results of golden standart (some of these results are not detected by our system, so they're false positives).
+```
+precision = true positives / (true positives + false positives)
+```
+- Recall: the percentage of items actually present in the input that were correctly identified by the system.
+```
+recall = true positives / (true positives + false negatives)
+```
+The difference between precision and recall is the following: precision tells how many of the selected objects were correct, and recall tells how many of the objects that should have been selected were actually selected.
+However, if we use only one of them, the real quality of the algorithm can be estimated incorrectly. For example, if I select almost everything with my algorithm, I'll get very high recall, but precision will be very low. If I select almost nothing, precision will be very high, and recall will be low. These both are balanced in F-score, which is the harmonic mean of precision and recall, so that if either precision or recall is too low, F-1 score is too low. The goal of maximizing the F-1 score ensures that we get a reasonably high precision and recall.
+
 5. Give an example where an n-gram HMM performs better than a unigram HMM tagger.
 Unigram tagger is quive primitive, it assigns the  tag  that  is  most  likely  for  that  word.  For example, it will assign the tag JJ to any occurrence of the word "frequent", since "frequent" is usually used as an adjective (e.g. a frequent word). The following example would be tagged incorrectly: I frequent this cafe. This won't happen if we use at least bigram tagger - the probability of the chain NOUN ADJ will be lower than NOUN VERB, and the sentence will be tagged correctly.
