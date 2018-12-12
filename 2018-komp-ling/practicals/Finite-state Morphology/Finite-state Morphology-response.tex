@@ -4,7 +4,11 @@
 \usepackage[russian]{babel}
 
 \title{Finite-state Morphology}
+<<<<<<< HEAD
+\author{Nikolay Babakov}
+=======
 \author{Nikolay Babakov }
+>>>>>>> dc918bfc8c12eafb0e80ec50fea9f00385b53cd7
 \date{November 2018}
 
 \begin{document}
@@ -47,7 +51,10 @@ Multichar_Symbols
 %<gen%>              ! Дательный падеж
 
 This let me get necessary output
+<<<<<<< HEAD
+=======
 Received necessary result
+>>>>>>> dc918bfc8c12eafb0e80ec50fea9f00385b53cd7
 
 $ hfst-fst2strings chv.lexc.hfst | grep урам | grep gen
 урам<n><gen>:урам>{Ă}н
@@ -67,7 +74,11 @@ And here is my implementation of Back vowel harmony with exceptions
                                      Vow: %>:  _ н ;
                                      
 \section{Productive derivation}
+<<<<<<< HEAD
+I was stuck on this stage
+=======
 I am finally stuck on this stage
+>>>>>>> dc918bfc8c12eafb0e80ec50fea9f00385b53cd7
 I have updated my chv.lexc as instructed and run the following makefile
 all:
     ./hfst-lexc chv.lexc.txt -o chv.lexc.hfst
@@ -75,10 +86,183 @@ all:
     ./hfst-compose-intersect -1 chv.lexc.hfst -2 chv.twol.hfst -o chv.gen.hfst
     ./hfst-invert chv.gen.hfst -o chv.mor.hfst
 
+<<<<<<< HEAD
+The reason for this issue was absent nominative case
+So I added 
+
+%<nom%>:%> # ;
+
+and everything started working well
+
+\section{Loan words}
+In this section the changes I have performed were as follows
+
+Multichar_Symbols
+
+%{ъ%}  
+
+Alphabet
+%{ъ%}:0
+
+Rules
+"Non surface {м} if following %{Ă%}: followed by н"
+%{ъ%}:0 <=> _ %>: %{Ă%}: н ;
+
+After that I got necessary output
+
+./hfst-fst2strings chv.gen.hfst | grep gen | grep специалист
+специалист<n><gen>:специалистӑн
+
+\section{Modified files overview}
+Here I will provide the overview of my results
+chv.lexc
+
+FILE CONTENT
+Multichar_Symbols
+
+%<n%>                ! Имя существительное
+%<pl%>               ! Множественное число
+%<nom%>              ! Именительный падеж
+%<ins%>              ! Творительный падеж
+%<gen%>              ! Дательный падеж
+%{A%}                ! Архифонема [а] или [е]
+%{Ă%}                ! Архифонема [а] или [е]
+%>                   ! Граница морфемы
+%{м%}                ! Родительный archiphoneme
+%<der_лӑх%>          !производный суффикс
+%{ъ%}
+MY COMMENT
+This is a list of multichar symbols. These symbols are namely the units which can turn out to be different leeters or absence of the letter at all according to the rules we will state. 
+
+FILE CONTENT
+LEXICON Root
+Nouns ;
+
+MY COMMENT
+Here we define the class of words we are going to define
+
+FILE CONTENT
+LEXICON CASES 
+%<nom%>:%> # ;
+%<ins%>:%>п%{A%} # ;
+%<gen%>:%>%{Ă%}н # ;
+
+MY COMMENT
+Here we state the list of possible cases and define how are the words changed when each case is applied
+
+FILE CONTENT
+LEXICON PLURAL
+                 CASES ;
+%<pl%>:%>се%{м%} CASES ;
+MY COMMENT
+Here we define plural and singular form of the words in use
+
+FILE CONTENT
+LEXICON SUBST 
+CASES ;
+PLURAL ;
+
+MY COMMENT
+We define rules which can be applied to productive derivation
+
+FILE CONTENT
+LEXICON DER-N
+%<der_лӑх%>:%>л%{Ă%}х SUBST "weight: 1.0" ; 
+
+MY COMMENT
+We state rules for derivation and assign weight so if any conflict in rules happen we will know which word should be selected
+
+FILE CONTENT
+LEXICON N
+%<n%>: PLURAL ;
+%<n%>: SUBST ;
+%<n%>: DER-N ;
+
+MY COMMENT
+Define all main rule which can be applied to our words
+
+FILE CONTENT
+LEXICON Nouns
+урам:урам N ;     ! "улица"
+пакча:пакча N ;   ! "сад"
+хула:хула N ;     ! "город"
+канаш:канаш N ;   ! "совет"
+тӗс:тӗс N ;       ! "вид"
+патша:патша N ;   ! "царь"
+куҫ:куҫ N ;       ! "глаз"
+патшалӑх:патшалӑх N ; ! "государство"
+специалист:специалист%{ъ%} N ; ! "специалист"
+
+MY COMMENT
+The list of words the rules will be applied to.
+
+chv.twol
+FILE CONTENT
+ Alphabet
+  а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+  А Ӑ Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ
+
+MY COMMENT 
+
+FILE CONTENT  
+ %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0 
+ %{A%}:а %{A%}:е
+ %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0
+ %{м%}:0 %{м%}:м 
+ %{н%}:н %{н%}:0
+ %{ъ%}:0
+;
+
+MY COMMENT
+
+FILE CONTENT  
+Sets
+ 
+Vow = ӑ а ы о у я ё ю ӗ э и ӳ ;
+ 
+BackVow = ӑ а ы о у я ё ю %{ъ%} ;
+ 
+FrontVow = ӗ э и ӳ ;
+ 
+ArchiCns = %{м%} ;
+ 
+Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ ;
+
+MY COMMENT
+To define rules more compactly we need to unite letters into some sets 
+
+FILE CONTENT  
+Rules
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+ 
+"Back vowel harmony for archiphoneme {A}"
+%{A%}:а <=> BackVow: [ Cns: | %>: ]+ _ ;
+ 
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ <=> BackVow: [ ArchiCns: | Cns: | %>: ]+ _ ;
+        except
+                                   %{м%}: %>:  _ н ;
+                                     Vow: %>:  _ н ;
+                                   
+"Non surface {Ă} in plural genitive"
+%{Ă%}:0 <=> [ Vow: | %{м%}: ] %>: _ н ;
+ 
+"Non surface {м} if following %{Ă%}: followed by н"
+%{м%}:0 <=> _ %>: %{Ă%}: н ;
+
+"Non surface {м} if following %{Ă%}: followed by н"
+%{ъ%}:0 <=> _ %>: %{Ă%}: н ;
+
+MY COMMENT
+The rules which will change the words in certain context
+=======
 Every time I try to run recommended command I get very strange output and I was not able to do anything with that even though I acted upon telegram's instructions
 echo патшалӑх | hfst-lookup -qp chv.mor.hfst
 патшалӑх патшалӑх+? inf
 
 All related files in their final state can be found in the same folder where this report is located
+>>>>>>> dc918bfc8c12eafb0e80ec50fea9f00385b53cd7
 
 \end{document}
