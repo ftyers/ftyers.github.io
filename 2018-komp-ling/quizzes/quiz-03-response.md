@@ -25,4 +25,8 @@ I, however, cut off the alternate interpretation because of my feeling of pragma
 # 4
 
 The evaluation of POS tagging treats it as a multi-class classification problem.In a binary classification, there are two possible outcomes both for expected and real responce, which leaves us with 2x2=4 options: True Positives, True Negatives, False Positives and False Negatives.
-In a multi-class classification with n classes, we treat the problem as n binary classifications (e. g. classific
+In a multi-class classification with n classes, we treat the problem as n binary classifications (e. g. classification NOUN / ADJ / VERB = binary classification of nouns vs. everything else + binary classification of adjs vs. everything else + binary classification of verbs vs. everything else).
+We can then compute precision, recall and f1, either by calculating them for each class and taking the mean of it (which leads to ignoring the size of classes) or by putting all the TP, FN and FP together for all classes.
+Since Precision is just a normalized version of FN (that is also backwards, larger = better) and the same applies to Recall and FP, I can just discuss Precision and Recall without mentioning FN and FP.
+Higher precision means that we are less prone to mistaking a word of another class for the target class (e. g. misclassifying NOUN as VERB if we are looking for verbs), while higher recall means that we are less prone to missing a word of the target class (e. g. misclassifying NOUN as VERB if we are looking for nouns).
+I think it doesn't make much sense to take the sum of all TP, FP and FN because mistaking NOUN for VERB is a FP for one class and FN for another. However if we take the mean it starts making sence. Higher Precition
