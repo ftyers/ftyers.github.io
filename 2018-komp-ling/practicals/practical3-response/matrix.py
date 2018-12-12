@@ -11,7 +11,9 @@ for wl in rus:
         m[wl] = {}
     for w2 in eng:
         m[wl][w2] = 0
+
 print('\t' + '\t'.join(eng))
+
 for wl in m:
     print('%s\t' % (wl), end='')
     for w2 in m[wl]:
