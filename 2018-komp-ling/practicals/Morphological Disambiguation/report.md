@@ -5,7 +5,7 @@
 
 For tagging, I used Polish corpus. The tagging algorithms I used: UDPipe, MarMoT
 
-UDPipe results are in ```UDPipe\_finnish_results.txt``` and ```UDPipe_polish.txt```, MarMoT results are in ```text.out.txt```.
+UDPipe results are in ```UDPipe_finnish_results.txt``` and ```UDPipe_polish.txt```, MarMoT results are in ```text.out.txt```.
 MarMoT was qutie tricky to use and result tags are rather strange. For tagging I used a pre-trained model ```pl.marmot```
 
 I hope it is the correct tagging.
@@ -21,6 +21,6 @@ I actually enjoyed this task! It is very formal and logical, which is great.
 
 3. **Improving Perceptron Tagger**
 
-The results of an improved perceptron is ```perceptron_results.txt```. There is also an excerpt from the original code, showing changes to ```\_get\_features.function```.
+The results of an improved perceptron is ```perceptron_results.txt```. There is also an excerpt from the original code, showing changes to ```_get_features.function```.
 
 The best performance was when I changes the suffix-related parameters from [-3:] to [-2:]. Changing word-related parameters decreased the performance, even if combined with changed suffix-related parameters.
