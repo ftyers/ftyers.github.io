@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\title{Quiz 2}
+\author{Nikolay Babakov}
+\date{December 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+Q) a) Give an argument for why constraint grammar rules are more valuable
+A) Rules can handle ecxceptions
+
+Q)b) Give an argument for why corpus annotation and HMM training is more valuable
+A)Rules requires more skills form an author however corpus annotating is easier task which can be performed by ordinary students
+
+\section{Question 2}
+Q) Can the two systems be used together? Explain.
+A)Rules could be so-called back-up for Hidden Markov Models
+
+\section{Question 4}
+Q) Choose several (>2) quantities that evaluate the quality of a morphological disambiguator, and describe how to compute them. Describe what it would mean to have disambiguators which differ in quality based on which quantity is used.
+A) 
+I am familiar with such metrics as
+EVALFULL: The percentage of correctly analyzed words across all morphological features. This is the strictest possible metric.
+EVALDIAC: The percentage of words where the chosen analysis has the correct fully diacritized form
+Macroaveraging - Average class oerformance
+
+False positive, false negative and recall are mainly used for binary classification
+
+\section{Question 3 and 5}
+I suppose that we can merge these two questions
+Q) Give an example where an n-gram HMM performs better than a unigram HMM tagger.
+A) The still water is good.
+Bigram: DT JJ NN ...
+Unigram: DT ADV NN ...
+I would do the same as bigram =)
+
+\end{document}
