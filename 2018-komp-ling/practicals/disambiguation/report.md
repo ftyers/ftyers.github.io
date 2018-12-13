@@ -29,15 +29,27 @@ So the result of 94.64% and 93.61% are quite compatible.
 
 # Constraint grammar
 
-I managed to reproduce the output successfully, although the part with REMOVE:6 somehow had REMOVE:8 instead:
+The problem that I have faced is that the tagger fails to recognize UD-formatted tags with an "=", so I was bound to only use tags like DET, VERB and other tags without the "=".
+So I added these three artificial rules:
+```
+REMOVE DET IF (1 VERB) ;
+REMOVE PART IF ((-1 VERB) OR (1* VERB)) ;
+```
+The first was because I wanted the word всех to be recognized at a pronoun before a participle but couldn't use VerbForm=Part. The resulting rule feels illogical but works for our dataset:
 
 ```
-$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3 | grep REMOVE
-
-;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:8
-;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:8
-
+vadim@vadim-GE62-6QF:~/Documents/2_Masters/term_1/compling/ftyers.github.io/2018-komp-ling/practicals/disambiguation$ echo "Однако стиль работы Семена Еремеевич
+> а заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3  | grep REMOVE
+;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:16
+;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:16
+;	"весь" DET Case=Loc Number=Plur REMOVE:17
+;	"весь" DET Case=Acc Number=Plur REMOVE:17
+;	"весь" DET Case=Gen Number=Plur REMOVE:17
+;	"и" PART REMOVE:18
 ```
+Note that labeling весь as a DET is rejected.
+The second rule aims to remove the interpretation where "и" is a particle if it goes directly after a verb or anywhere in a sentence before a verb. Again, it's not likely applicable to any reasonable tasks, but seems to be working for out case. The intuition that I put into that rule is that the word "и" between two words is probably a conjuction, but I couldn't recognize "вникать" as a verb because UDpipe doesn't tag it as such.
+
 
 # Improve perceptron tagger
 
