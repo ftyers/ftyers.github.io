@@ -29,26 +29,26 @@ So the result of 94.64% and 93.61% are quite compatible.
 
 # Constraint grammar
 
-The problem that I have faced is that the tagger fails to recognize UD-formatted tags with an "=", so I was bound to only use tags like DET, VERB and other tags without the "=".
-So I added these three artificial rules:
-```
-REMOVE DET IF (1 VERB) ;
-REMOVE PART IF ((-1 VERB) OR (1* VERB)) ;
-```
-The first was because I wanted the word всех to be recognized at a pronoun before a participle but couldn't use VerbForm=Part. The resulting rule feels illogical but works for our dataset:
+I have added the following rules:
 
 ```
-vadim@vadim-GE62-6QF:~/Documents/2_Masters/term_1/compling/ftyers.github.io/2018-komp-ling/practicals/disambiguation$ echo "Однако стиль работы Семена Еремеевич
-> а заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3  | grep REMOVE
-;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:16
-;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:16
-;	"весь" DET Case=Loc Number=Plur REMOVE:17
-;	"весь" DET Case=Acc Number=Plur REMOVE:17
-;	"весь" DET Case=Gen Number=Plur REMOVE:17
-;	"и" PART REMOVE:18
+REMOVE DET IF (1 VERB) (1 (VerbForm=Part)) ;
+REMOVE (Case=Acc) if (0 (PROPN)) (1 (PROPN)) (1 (Case=Gen)) ;
 ```
-Note that labeling весь as a DET is rejected.
-The second rule aims to remove the interpretation where "и" is a particle if it goes directly after a verb or anywhere in a sentence before a verb. Again, it's not likely applicable to any reasonable tasks, but seems to be working for out case. The intuition that I put into that rule is that the word "и" between two words is probably a conjuction, but I couldn't recognize "вникать" as a verb because UDpipe doesn't tag it as such.
+The first rule aims to prevent the word все before particips from being interpreted as a determinant. The second rule says, "Hey, if we have two consecutive proper names, they are probably the same name and must have the same case, so if you're sure that the second is genetive, the first can't be accusative."
+
+That's how it works for our data:
+
+```
+$ echo "Однако стиль работы Семена Еремеевич
+а заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3  | grep REMOVE
+;	"Семен" PROPN Animacy=Anim Case=Acc Gender=Masc Number=Sing REMOVE:11
+;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:9
+;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:9
+;	"весь" DET Case=Loc Number=Plur REMOVE:10
+;	"весь" DET Case=Acc Number=Plur REMOVE:10
+;	"весь" DET Case=Gen Number=Plur REMOVE:10
+```
 
 
 # Improve perceptron tagger

@@ -2,17 +2,10 @@ DELIMITERS = "." ;
 
 LIST DET = DET ;
 LIST PUNCT = PUNCT ;
-LIST Gen = "Case=Gen" GEN Geni gen ;
-LIST Acc = acc ;
-LIST PROPN = PROPN ;
-LIST ADP = ADP ;
 LIST VERB = VERB ;
-LIST PRON = PRON ;
-LIST Sing = Sing ;
-LIST PART = PART ;
 
 SECTION
 
 REMOVE DET IF (1C PUNCT) ;
-REMOVE DET IF (1 VERB) ;
-REMOVE PART IF ((-1 VERB) OR (1* VERB)) ;
+REMOVE DET IF (1 VERB) (1 (VerbForm=Part)) ;
+REMOVE (Case=Acc) IF (0 (PROPN)) (1 (PROPN)) (1 (Case=Gen)) ;
