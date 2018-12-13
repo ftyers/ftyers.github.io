@@ -40,8 +40,7 @@ The first rule aims to prevent the word все before particips from being inter
 That's how it works for our data:
 
 ```
-$ echo "Однако стиль работы Семена Еремеевич
-а заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3  | grep REMOVE
+$ echo "Однако стиль работы Семена Еремеевича заключался в том, чтобы принимать всех желающих и лично вникать в дело." |  python3 ud-scripts/conllu-analyser.py ru-analyser.tsv | vislcg3 -t -g rus.cg3  | grep REMOVE
 ;	"Семен" PROPN Animacy=Anim Case=Acc Gender=Masc Number=Sing REMOVE:11
 ;	"тот" DET Case=Loc Gender=Neut Number=Sing REMOVE:9
 ;	"тот" DET Case=Loc Gender=Masc Number=Sing REMOVE:9
