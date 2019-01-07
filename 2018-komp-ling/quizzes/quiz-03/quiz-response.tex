@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\title{Quiz 2}
+\author{Nikolay Babakov}
+\date{December 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+Q) a) Give an argument for why constraint grammar rules are more valuable
+A) Rules can handle ecxceptions
+
+Q)b) Give an argument for why corpus annotation and HMM training is more valuable
+A)Rules requires more skills form an author however corpus annotating is easier task which can be performed by ordinary students
+
+\section{Question 2}
+Q) Can the two systems be used together? Explain.
+A)Rules could be so-called back-up for Hidden Markov Models
+
+\section{Question 4}
+Q) Choose several (>2) quantities that evaluate the quality of a morphological disambiguator, and describe how to compute them. Describe what it would mean to have disambiguators which differ in quality based on which quantity is used.
+A) 
+
+\end{document}
+
+1 
+
+
+
+
+3
+
+????
+
+4
+false positive, false negative and recall are good for binary classification. In out task we have more than 2 classes, so we might measure:
+
+precision (it is a weak evaluation, but we can still use it. It’s a number of correct answers decided by all results - both right and wrong)
+macroaveraging - we compute the performance for each class, and then average over classes
+microaveraging - we collect the decisions for all classes into a single contingency table, and then compute precision and recall from that table 
+
+
+5
+A bear likes honey 
+DET NOUN VERB NOUN
+DET VERB NOUN ADJ
+
+Here’s an example of how trigram model is better than a bigram model:
+
+The still smoking remains of the campfire 
+Intended: DT RB VBG NNS IN DT NN 
+Bigram: DT JJ NN VBZ ...
+Unigram: DT ADV …
