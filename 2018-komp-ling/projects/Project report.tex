@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Project workflow comments
+}
+\author{Nikolay Babakov
+ }
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Data collection}
+A
+1) Manually copy pasted easy fairy tales from https://iltasatu.org/
+2) Manually copy pasted easy texts from https://revita.cs.helsinki.fi/
+3) Parsed text with python from https://yle.fi/uutiset/osasto/selkouutiset/tosi_helppo/
+
+B
+1) Parsed text with python from https://yle.fi/uutiset/osasto/selkouutiset/
+2) Parsed text with python from https://www.suomesta.ru/suomen_kiel/adaptirovannye-teksty-na-finskom/
+
+C
+1) Manually copy pasted easy texts from https://revita.cs.helsinki.fi/
+2) Manually copy pasted translation of russian books with known difficulty from https://manybooks.net/
+
+\section{Similar works analysis}
+We looked through some related works about English anguage and about the languages with same structure such as Korean, Japanese and Turkish
+
+Here is a short list of what the works we read
+http://www.aclweb.org/anthology/W16-0531
+http://www.aclweb.org/anthology/C88-2135
+https://pdfs.semanticscholar.org/1324/80de063eeb5b39c1ed2f240b11dbfdcf455d.pdf
+https://www.researchgate.net/publication/228891771_Toward_a_readability_index_for_Japanese_learners_of_EFL
+https://www.researchgate.net/publication/323142424_Distributed_Readability_Analysis_Of_Turkish_Elementary_School_Textbooks
+
+But the most important thing we have found was https://github.com/UniversalDependencies/UD_Finnish-TDT
+We have installed it according to these instructions http://wiki.apertium.org/wiki/UDPipe
+
+\section{Text processing, feature generation}
+
+I divided all collected texts up to around ten setnences files and run UDPipe with them using this terminal command
+for f in ./*.txt;do cat $f | udpipe --tokenize --tag --parse nob.udpipe
+ > $f.parsed;done
+ 
+ 
+ 
+ \section{Model training}
+SVM 
+ 
