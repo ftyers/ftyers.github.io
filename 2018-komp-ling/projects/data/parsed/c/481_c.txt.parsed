@@ -1,0 +1,209 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "He ovat kai sikakauppiaita?"
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	kai	kai	ADV	Adv	_	5	advmod	_	_
+5	sikakauppiaita	sikakauppias	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = "Toivottavasti, setä George, Dartmoorin tähden.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Toivottavasti	Toivottavasti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	setä	setä	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	George	George	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Dartmoorin	Dartmoor	PROPN	N	Case=Gen|Number=Sing	5	flat:name	_	_
+8	tähden	tähden	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Olen kuullut sanottavan että sikakauppa politiikan jälkeen on kaikkein tuottavin liike."
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	sanottavan	sanottaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	2	xcomp:ds	_	_
+4	että	että	SCONJ	C	_	11	mark	_	_
+5	sikakauppa	sika#kauppa	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+6	politiikan	politiikka	NOUN	N	Case=Gen|Number=Sing	5	nmod	_	_
+7	jälkeen	jälkeen	ADP	Adp	AdpType=Post	6	case	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+9	kaikkein	kaikkein	ADV	Adv	_	10	advmod	_	_
+10	tuottavin	tuottava	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	11	amod	_	_
+11	liike	liike	NOUN	N	Case=Nom|Number=Sing	3	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Onko hän kaunis?"
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+4	kaunis	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = "Hän käyttäytyy ikäänkuin hän olisi kaunis.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	käyttäytyy	käyttäytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ikäänkuin	ikäänkuin	ADV	Adv	_	3	advmod	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj:cop	_	_
+6	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	kaunis	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Sen tekevät useimmat amerikkalaiset.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	tekevät	tekeä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	useimmat	usea	ADJ	A	Case=Nom|Degree=Sup|Number=Plur	4	amod	_	_
+4	amerikkalaiset	amerikka#lainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Siinä on heidän viehätyksensä salaisuus."
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	viehätyksensä	viehätys	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	nmod:poss	_	_
+5	salaisuus	salaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = "Miksi nuo amerikkalaiset naiset eivät voi pysyä omassa maassaan?
+1	"	"	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+2	Miksi	miksi	ADV	Adv	_	8	advmod	_	_
+3	nuo	tuo	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	4	det	_	_
+4	amerikkalaiset	amerikka#lainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	8	nsubj	_	_
+5	naiset	nainen	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+6	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	pysyä	pysyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+9	omassa	oma	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	10	amod	_	_
+10	maassaan	maa	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	8	obl	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = He vakuuttavat aina että Amerikka on naisten paradiisi."
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	vakuuttavat	vakuuttaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aina	aina	ADV	Adv	_	2	advmod	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	Amerikka	Amerikka	PROPN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	naisten	nainen	NOUN	N	Case=Gen|Number=Plur	8	nmod:poss	_	_
+8	paradiisi	paradiisi	NOUN	N	Case=Nom|Number=Sing	2	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = "Niin se onkin.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Niin	niin	ADV	Adv	_	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+4	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Sen vuoksi he niin halukkaasti pyrkivätkin sieltä pois, aivan kuin Eevakin", sanoi lordi Henry. "Hyvästi, setä George.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	obl	_	_
+2	vuoksi	vuoksi	ADP	Adp	AdpType=Post	1	case	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj:cop	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	halukkaasti	halukkaasti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+6	pyrkivätkin	pyrkivä	ADJ	A	Case=Nom|Clitic=Kin|Degree=Pos|Number=Plur	23	amod	_	_
+7	sieltä	sieltä	ADV	Adv	_	8	advmod	_	_
+8	pois	pois	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	aivan	aivan	ADV	Adv	_	6	conj	_	_
+11	kuin	kuin	SCONJ	C	_	12	mark	_	_
+12	Eevakin	Eeva	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	6	advcl	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	6	punct	_	_
+15	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+16	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	17	compound:nn	_	_
+17	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	15	nsubj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	20	punct	_	_
+19	"	"	PUNCT	Punct	_	20	punct	_	SpaceAfter=No
+20	Hyvästi	Hyvästi	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	6	punct	_	_
+22	setä	setä	NOUN	N	Case=Nom|Number=Sing	23	compound:nn	_	_
+23	George	George	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	23	punct	_	_
+
+# sent_id = 12
+# text = Minä tulen myöhään aamiaisille, jos vielä viivyn.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	tulen	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	myöhään	myöhään	ADV	Adv	_	2	advmod	_	_
+4	aamiaisille	aamiais	NOUN	N	Case=All|Number=Plur	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	jos	jos	SCONJ	C	_	8	mark	_	_
+7	vielä	vielä	ADV	Adv	_	8	advmod	_	_
+8	viivyn	viiv	NOUN	N	Case=Ill|Derivation=U|Number=Sing	2	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Kiitos siitä tiedonannosta, jonka olen saanut.
+1	Kiitos	kiitos	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	det	_	_
+3	tiedonannosta	tiedonanno	NOUN	N	Case=Ela|Number=Sing	1	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	7	obj	_	_
+6	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 14
+# text = Minä haluan aina saada tarkat tiedot uusista ystävistäni, mutta vanhoista en tahdo tietää mitään."
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	haluan	haluta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aina	aina	ADV	Adv	_	4	advmod	_	_
+4	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	tarkat	tarkka	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	tiedot	#tieto	NOUN	N	Case=Nom|Number=Plur	4	obj	_	_
+7	uusista	uusi	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	8	amod	_	_
+8	ystävistäni	ystävä	NOUN	N	Case=Ela|Number=Plur|Number[psor]=Sing|Person[psor]=1	2	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	mutta	mutta	CCONJ	C	_	13	cc	_	_
+11	vanhoista	vanha	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	13	obl	_	_
+12	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	_	_
+14	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	_
+15	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+17	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 15
+# text = "Missä sinä syöt aamiaista, Harry?" "Täti Agathan luona.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	4	obl	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	syöt	syödä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	aamiaista	aamia	NOUN	N	Case=Ela|Number=Plur	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Harry	Harry	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	4	punct	_	_
+10	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+11	Täti	täti	ADV	Adv	_	12	advmod	_	_
+12	Agathan	Agatha	PROPN	N	Case=Gen|Number=Sing	4	obl	_	_
+13	luona	luona	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 16
+# text = Olen tarjoutunut sinne aamiaisille yhdessä mr.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tarjoutunut	tarjoutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	sinne	sinne	ADV	Adv	_	2	advmod	_	_
+4	aamiaisille	aamiais	NOUN	N	Case=All|Number=Plur	2	obl	_	_
+5	yhdessä	yhdessä	ADV	Adv	_	2	advmod	_	_
+6	mr.	mr.	ADJ	Num	NumType=Ord	2	xcomp	_	SpacesAfter=\s\n
+

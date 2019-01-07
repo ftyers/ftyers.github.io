@@ -1,0 +1,192 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = niin ... esimerkiksi pyytänyt rahaa joltakin toivomatta saavanne?
+1	niin	niin	ADV	Adv	_	4	advmod	_	_
+2	...	...	PUNCT	Punct	_	4	punct	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+4	pyytänyt	pyytää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	rahaa	raha	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	joltakin	jolta	ADV	Adv	Clitic=Kin	7	advmod	_	_
+7	toivomatta	toivoa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	_
+8	saavanne	saavanne	NOUN	N	Case=Nom|Number=Sing	7	obj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- Ehkäpä ... se on ... mitä tarkoitatte ... toivomatta saavansa?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ehkäpä	ehkäpä	ADV	Adv	_	8	advmod	_	_
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	...	...	PUNCT	Punct	_	8	punct	_	_
+7	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	8	nsubj	_	_
+8	tarkoitatte	tarkoitada	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	...	...	PUNCT	Punct	_	11	punct	_	_
+10	toivomatta	toivoa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	advcl	_	_
+11	saavansa	saada	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	8	parataxis	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = -- Tarkoitan vallan toivottomasti, niin että edeltä päin on varma siitä, ettei saa mitään.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tarkoitan	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vallan	#valta	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	toivottomasti	toivottomasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	niin	niin	ADV	Adv	_	11	advmod	_	_
+7	että	että	SCONJ	C	_	11	mark	_	_
+8	edeltä	edi	NOUN	N	Case=Abl|Number=Sing	11	obl	_	_
+9	päin	#päin	ADV	Adv	_	11	advmod	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	varma	varma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	_
+12	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	11	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	mark	_	_
+15	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	ccomp	_	_
+16	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	15	nsubj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Te tiedätte esimerkiksi, jo varmasti edeltä päin, että se ja se suopea ja hyödyllinen kansalainen ei muutamissa tapauksissa ole halukas lainaamaan teille rahojaan; sillä, kysyn minä, miksi hän sen tekisi?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_
+2	tiedätte	tietää	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	jo	jo	ADV	Adv	_	7	advmod	_	_
+6	varmasti	varmasti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	edeltä	edi	NOUN	N	Case=Abl|Number=Sing	2	obl	_	_
+8	päin	päin	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	22	punct	_	_
+10	että	että	SCONJ	C	_	22	mark	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	22	nsubj:cop	_	_
+12	ja	ja	CCONJ	C	_	17	cc	_	_
+13	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	17	det	_	_
+14	suopea	suopea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	17	amod	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	hyödyllinen	hyödyllinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	14	conj	_	_
+17	kansalainen	kansalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Sing	11	conj	_	_
+18	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	22	aux	_	_
+19	muutamissa	muutama	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	20	det	_	_
+20	tapauksissa	tapaus	NOUN	N	Case=Ine|Number=Plur	21	obl	_	_
+21	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	22	cop	_	_
+22	halukas	halukas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	ccomp	_	_
+23	lainaamaan	lainata	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	22	xcomp:ds	_	_
+24	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	25	obl	_	_
+25	rahojaan	raha	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	23	obj	_	SpaceAfter=No
+26	;	;	PUNCT	Punct	_	2	punct	_	_
+27	sillä	sillä	SCONJ	C	_	29	mark	_	SpaceAfter=No
+28	,	,	PUNCT	Punct	_	29	punct	_	_
+29	kysyn	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	35	advcl	_	_
+30	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	35	nsubj	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	35	punct	_	_
+32	miksi	miksi	ADV	Adv	_	35	advmod	_	_
+33	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	35	nsubj	_	_
+34	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	35	nsubj	_	_
+35	tekisi	tehdä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+36	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hänhän kyllä tietää ettei hän saa niitä takaisin.
+1	Hänhän	Hän	ADV	Adv	Clitic=Han	3	advmod	_	_
+2	kyllä	kyllä	ADV	Adv	_	3	advmod	_	_
+3	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	mark	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+7	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	6	obj	_	_
+8	takaisin	takaisin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Ehkä sääliväisyydestä?
+1	Ehkä	ehkä	ADV	Adv	_	2	advmod	_	_
+2	sääliväisyydestä	sääliväisyys	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Mutta herra Lebesjatnikov, joka nuuskii tietoonsa kaikki uudet teoriat, selitti äskettäin minulle, että meidän päivinämme pitävät tieteet sääliväisyyttä jonakin vallan ei-siedettävänä, kuten esimerkiksi Englannissa, jossa harjotetaan valtiotaloutta.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	herra	herra	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Lebesjatnikov	Lebesjatnikov	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	6	nsubj	_	_
+6	nuuskii	nuuskia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+7	tietoonsa	tieto	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	6	obl	_	_
+8	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	det	_	_
+9	uudet	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	10	amod	_	_
+10	teoriat	teoria	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	6	punct	_	_
+12	selitti	selittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+13	äskettäin	äskettäin	ADV	Adv	Derivation=Ttain	14	advmod	_	_
+14	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	12	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	24	punct	_	_
+16	että	että	SCONJ	C	_	24	mark	_	_
+17	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	18	nmod:poss	_	_
+18	päivinämme	päivinä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	20	nmod:poss	_	_
+19	pitävät	pitää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	20	acl	_	_
+20	tieteet	tiee	NOUN	N	Case=Nom|Number=Plur	24	nsubj	_	_
+21	sääliväisyyttä	sääliväisyys	NOUN	N	Case=Par|Number=Sing	24	obj	_	_
+22	jonakin	jokin	PRON	Pron	Case=Ess|Number=Sing|PronType=Ind	23	det	_	_
+23	vallan	#valta	NOUN	N	Case=Gen|Number=Sing	24	nsubj	_	_
+24	ei-siedettävänä	ei-siedtää	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	12	ccomp	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	28	punct	_	_
+26	kuten	kuten	ADV	Adv	_	28	advmod	_	_
+27	esimerkiksi	esimerkiksi	ADV	Adv	_	28	advmod	_	_
+28	Englannissa	Englanti	PROPN	N	Case=Ine|Number=Sing	24	appos	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	31	punct	_	_
+30	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	31	obl	_	_
+31	harjotetaan	harjottaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	28	acl:relcl	_	_
+32	valtiotaloutta	valtiotalous	NOUN	N	Case=Par|Number=Sing	31	obj	_	SpaceAfter=No
+33	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 8
+# text = -- Miksi, kysyn siis teiltä, tulisi teille lainata rahaa?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kysyn	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	siis	siis	ADV	Adv	_	4	advmod	_	_
+6	teiltä	sinä	PRON	Pron	Case=Abl|Number=Plur|Person=2|PronType=Prs	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	tulisi	tulla	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+9	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	8	obl	_	_
+10	lainata	lainata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp:ds	_	_
+11	rahaa	raha	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Ja kuitenkin, vaikka jo edeltäpäin tiedätte jotenkin varmasti, ettei siitä ole mitään hyötyä, kuitenkin menette hänen luokseen ja...
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	kuitenkin	kuitenkin	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	vaikka	vaikka	SCONJ	C	_	7	mark	_	_
+5	jo	jo	ADV	Adv	_	7	advmod	_	_
+6	edeltäpäin	edeltäpäin	ADV	Adv	_	7	advmod	_	_
+7	tiedätte	tietää	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	jotenkin	jotenkin	ADV	Adv	_	9	advmod	_	_
+9	varmasti	varmasti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	mark	_	_
+12	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	7	ccomp	_	_
+13	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	cop	_	_
+14	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	15	det	_	_
+15	hyötyä	hyöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	12	nsubj:cop	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	18	punct	_	_
+17	kuitenkin	kuitenkin	ADV	Adv	_	18	advmod	_	_
+18	menette	mea	VERB	V	Mood=Pot|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	7	conj	_	_
+19	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	18	obl	_	_
+20	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	19	case	_	_
+21	ja	ja	CCONJ	C	_	18	cc	_	SpaceAfter=No
+22	...	...	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = -- Mutta miksi? kysyi Raskolnikov.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	miksi	miksi	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+5	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

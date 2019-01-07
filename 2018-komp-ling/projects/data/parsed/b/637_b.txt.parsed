@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Liikenteen hiilidioksidipäästöt halutaan puolittaa vuoteen 2030 mennessä.
+1	Liikenteen	liikenne	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	hiilidioksidipäästöt	hiilidioksidipäästö	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+3	halutaan	haluta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	puolittaa	puolittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	vuoteen	vuosi	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	2030	2030	NUM	Num	NumType=Card	5	nummod	_	_
+7	mennessä	mennessä	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Ihminen sanoo syövänsä kasviksia jo ennen kuin hän alkaa syödä kasviksia.
+1	Ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	syövänsä	syöä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	2	xcomp	_	_
+4	kasviksia	kasvis	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	ennen	ennen	ADV	Adv	_	7	advmod	_	_
+7	kuin	kuin	SCONJ	C	_	9	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	_
+10	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	kasviksia	kasvis	NOUN	N	Case=Par|Number=Plur	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Siksi kuluttajien käyttäytymistä on helppo ennustaa.
+1	Siksi	siksi	ADV	Adv	_	3	advmod	_	_
+2	kuluttajien	kuluttaja	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	3	nmod:poss	_	_
+3	käyttäytymistä	käyttäytyminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	4	obj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	helppo	helppo	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+6	ennustaa	ennustaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Valtiovarainministeri Petteri Orpon mukaan sekä euroilla että verotuksella on mahdollista ohjata ihmiset parempien valintojen äärelle.
+1	Valtiovarainministeri	valtio#varain#ministeri	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Petteri	Petteri	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+3	Orpon	Orpo	PROPN	N	Case=Gen|Number=Sing	2	flat:name	_	_
+4	mukaan	mukaan	ADP	Adp	AdpType=Post	2	case	_	_
+5	sekä	sekä	CCONJ	C	_	6	cc	_	_
+6	euroilla	euro	NOUN	N	Case=Ade|Number=Plur	2	conj	_	_
+7	että	että	CCONJ	C	_	8	cc	_	_
+8	verotuksella	verotus	NOUN	N	Case=Ade|Number=Sing	2	conj	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	mahdollista	mahdollinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	_
+11	ohjata	ohjata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp:ds	_	_
+12	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	11	obj	_	_
+13	parempien	parempi	NOUN	N	Case=Gen|Number=Plur	14	nmod:poss	_	_
+14	valintojen	valinta	NOUN	N	Case=Gen|Number=Plur	15	nmod:poss	_	_
+15	äärelle	ääri	NOUN	N	Case=All|Number=Sing	11	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 5
+# text = Seuraavan hallituksen on päätettävä merkittävistä veromuutoksista, jotta liikenteen päästöt saadaan laskuun, valtiovarainministeri Petteri Orpo (kok.) sanoo.
+1	Seuraavan	seuraava	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	hallituksen	hallitus	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	päätettävä	päättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+5	merkittävistä	merkittävä	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	6	amod	_	_
+6	veromuutoksista	veromuutos	NOUN	N	Case=Ela|Number=Plur	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	jotta	jotta	SCONJ	C	_	11	mark	_	_
+9	liikenteen	liikenne	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	päästöt	päästö	NOUN	N	Case=Nom|Number=Plur	11	obj	_	_
+11	saadaan	saada	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	advcl	_	_
+12	laskuun	lasku	NOUN	N	Case=Ill|Derivation=U|Number=Sing	11	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	valtiovarainministeri	valtio#varain#ministeri	NOUN	N	Case=Nom|Number=Sing	15	compound:nn	_	_
+15	Petteri	Petteri	PROPN	N	Case=Nom|Number=Sing	20	nsubj	_	_
+16	Orpo	Orpo	PROPN	N	Case=Nom|Number=Sing	15	flat:name	_	_
+17	(	(	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+18	kok.	kokoomus	NOUN	N	Case=Nom|Number=Sing	15	appos	_	SpaceAfter=No
+19	)	)	PUNCT	Punct	_	18	punct	_	_
+20	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Autonvalmistajat ovat puhuneet 4 000–10 000 euron etuseteleistä uudempaan ja vähemmän saastuttavaan malliin vaihtaville.
+1	Autonvalmistajat	auto#valmistaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	puhuneet	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	4 000–	4 000–	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+5	10 000	10 000	NUM	Num	NumType=Card	6	nummod	_	_
+6	euron	euro	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	etuseteleistä	etusetele	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+8	uudempaan	uuda	ADJ	A	Case=Ill|Degree=Cmp|Number=Sing	11	xcomp	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	vähemmän	vähemmän	ADV	Adv	_	11	advmod	_	_
+11	saastuttavaan	saastuttaa	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	12	acl	_	_
+12	malliin	malli	NOUN	N	Case=Ill|Number=Sing	13	obl	_	_
+13	vaihtaville	vaihtaa	VERB	V	Case=All|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	3	xcomp	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Vähäpäästöisten autojen hankintaan tarkoitettu palkkiokampanja päättyy viimeistään elokuun lopussa.
+1	Vähäpäästöisten	Vähäpäästöinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	autojen	auto	NOUN	N	Case=Gen|Number=Plur	3	nmod:poss	_	_
+3	hankintaan	hankinta	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+4	tarkoitettu	tarkoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	5	acl	_	_
+5	palkkiokampanja	palkkio#kampanja	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	päättyy	päättyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	viimeistään	viimeistään	ADV	Adv	_	6	advmod	_	_
+8	elokuun	elokuu	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	lopussa	loppu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Valtion rahoituksesta on käytetty noin 80 prosenttia.
+1	Valtion	valtio	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	rahoituksesta	rahoitus	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	käytetty	käyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	noin	noin	ADV	Adv	_	6	advmod	_	_
+6	80	80	NUM	Num	NumType=Card	7	nummod	_	_
+7	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Uusia henkilöautoja rekisteröitiin 69 600 kappaletta tammi-kesäkuun aikana, ilmoittaa Autoalan Tiedotuskeskus.
+1	Uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	2	amod	_	_
+2	henkilöautoja	henkilöauto	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+3	rekisteröitiin	rekisteröidä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	69 600	69 600	NUM	Num	NumType=Card	5	nummod	_	_
+5	kappaletta	kappale	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+6	tammi-kesäkuun	tammi-kesäkuu	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	aikana	aika	NOUN	N	Case=Ess|Number=Sing	3	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	ilmoittaa	ilmoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	Autoalan	Auto#ala	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	Tiedotuskeskus	Tiedotus#keskus	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

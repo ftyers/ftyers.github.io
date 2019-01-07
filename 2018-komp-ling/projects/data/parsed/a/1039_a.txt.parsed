@@ -1,0 +1,174 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kaksitoista tanssivaa prinsessaa
+1	Kaksitoista	kaksi#toista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+2	tanssivaa	tanssiva	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	amod	_	_
+3	prinsessaa	prinsessa	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Olipa kerran kuningas, jolla oli kaksitoista kaunista tytärtä.
+1	Olipa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	kerran	kerran	ADV	Adv	_	0	root	_	_
+3	kuningas	kuningas	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	3	acl:relcl	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	kaksitoista	kaksi#toista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+8	kaunista	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	amod	_	_
+9	tytärtä	tytär	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kuningas rakasti prinsessojaan kovasti, eikä halunnut heille koskaan tapahtuvan mitään pahaa.
+1	Kuningas	kuningas	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rakasti	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	prinsessojaan	prinsesso	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	_
+4	kovasti	kovasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	cc	_	_
+7	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+8	heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	7	obl	_	_
+9	koskaan	koskaan	ADV	Adv	_	10	advmod	_	_
+10	tapahtuvan	tapahtua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	xcomp	_	_
+11	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	12	det	_	_
+12	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Nuo kaksitoista prinsessaa jakoivat keskenään saman huoneen.
+1	Nuo	tuo	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	det	_	_
+2	kaksitoista	kaksi#toista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	prinsessaa	prinsessa	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	_
+4	jakoivat	jakaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	keskenään	keskenään	ADV	Adv	_	4	advmod	_	_
+6	saman	sama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	7	det	_	_
+7	huoneen	huone	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Kun he menivät nukkumaan, ovet lukittiin.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	menivät	mennä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	nukkumaan	nukkua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	ovet	ovi	NOUN	N	Case=Nom|Number=Plur	7	obj	_	_
+7	lukittiin	lukita	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = Mutta kuitenkin joka aamu heidän kenkänsä olivat kuluneet, aivan kuin prinsessat olisivat tanssineet koko yön.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	kuitenkin	kuitenkin	ADV	Adv	_	4	advmod	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	aamu	aama	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	kenkänsä	kenkä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	8	nsubj	_	_
+7	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	kuluneet	kulua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	acl:relcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	aivan	aivan	ADV	Adv	_	11	advmod	_	_
+11	kuin	kuin	SCONJ	C	_	14	mark	_	_
+12	prinsessat	prinsessa	NOUN	N	Case=Nom|Number=Plur	14	nsubj	_	_
+13	olisivat	olla	AUX	V	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	tanssineet	tanssia	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	8	advcl	_	_
+15	koko	koko	ADJ	A	_	16	amod	_	_
+16	yön	yö	NOUN	N	Case=Gen|Number=Sing	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Kuningas ei voinut ymmärtää, miten tämä tapahtui.
+1	Kuningas	kuningas	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	miten	miten	ADV	Adv	_	8	advmod	_	_
+7	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Niinpä hän sanoi:
+1	Niinpä	niinpä	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = – Se joka saa selville, mitä prinsessat tekevät öisin, saa yhden prinsessoista puolisokseen.
+1	–	–	PUNCT	Punct	_	12	punct	_	_
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+5	selville	selville	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	9	obj	_	_
+8	prinsessat	prinsessa	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+10	öisin	öisin	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	4	punct	_	_
+12	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+13	yhden	yksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	14	nummod	_	_
+14	prinsessoista	prinsesso	NOUN	N	Case=Ela|Number=Plur	12	obl	_	_
+15	puolisokseen	puolisos	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 10
+# text = Linnaan virtasi innokkaita nuorikaisia arvoitusta ratkaisemaan.
+1	Linnaan	Linna	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+2	virtasi	virata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	innokkaita	innokas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	_
+4	nuorikaisia	nuorikainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	arvoitusta	arvoitus	NOUN	N	Case=Par|Number=Sing	2	nsubj	_	_
+6	ratkaisemaan	ratkaista	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Mutta kukaan heistä ei saanut selville, mitä prinsessat öisin tekivät.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	nsubj	_	_
+3	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	5	obl	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	selville	selville	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	11	obj	_	_
+9	prinsessat	prinsessa	NOUN	N	Case=Nom|Number=Plur	11	nsubj	_	_
+10	öisin	öisin	ADV	Adv	_	11	advmod	_	_
+11	tekivät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Eräänä päivänä kaupunkiin saapui nuori sotilas, joka oli haavoittunut taistelussa.
+1	Eräänä	eräs	PRON	Pron	Case=Ess|Number=Sing|PronType=Ind	2	det	_	_
+2	päivänä	päivä	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+3	kaupunkiin	kaupunki	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+4	saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	sotilas	sotilas	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	haavoittunut	haavoittua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
+11	taistelussa	taistelu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Hän kuuli kahdentoista prinsessan arvoituksesta vanhalta naiselta, jota oli pysähtynyt auttamaan kadulla.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kuuli	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kahdentoista	kaksi#toista	NUM	Num	Case=Gen|Number=Sing|NumType=Card	4	nummod	_	_
+4	prinsessan	prinsessa	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	arvoituksesta	arvoitus	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+6	vanhalta	vanha	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	7	amod	_	_
+7	naiselta	nainen	NOUN	N	Case=Abl|Number=Sing	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	11	nsubj	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	pysähtynyt	pysähtyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	acl:relcl	_	_
+12	auttamaan	auttaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	kadulla	katu	NOUN	N	Case=Ade|Number=Sing	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,130 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kyllä minä sinut! sanoi kreivitär.
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	6	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+4	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	kreivitär.	kreivitär.	ADJ	Num	NumType=Ord	6	obl	_	_
+
+# sent_id = 2
+# text = -- Äiti! mitä saamme jälkiruoaksi?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	5	punct	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+5	saamme	sata	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	jälkiruoaksi	jälki#ruoka	NOUN	N	Case=Tra|Number=Sing	5	xcomp:ds	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- huusi Natasha jo aivan rohkeasti ja oikullisen iloisesti, ollen jo ennakolta varma, että hänen päähänpistonsa vieraita huvittaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	jo	jo	ADV	Adv	_	2	advmod	_	_
+5	aivan	aivan	ADV	Adv	_	6	advmod	_	_
+6	rohkeasti	rohkeasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	oikullisen	oikullinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	9	amod	_	_
+9	iloisesti	iloisesti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	2	punct	_	_
+11	ollen	ollen	ADV	Adv	_	2	advmod	_	_
+12	jo	jo	ADV	Adv	_	2	advmod	_	_
+13	ennakolta	ennako	NOUN	N	Case=Abl|Number=Sing	2	obl	_	_
+14	varma	varma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	että	että	SCONJ	C	_	20	mark	_	_
+17	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	18	nmod:poss	_	_
+18	päähänpistonsa	päähänpisto	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	19	nmod:poss	_	_
+19	vieraita	vieras	NOUN	N	Case=Par|Number=Plur	20	obj	_	_
+20	huvittaa	huvittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	csubj:cop	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Sonja ja lihava pikku Petja kyyristyivät nauramaan.
+1	Sonja	Son	NOUN	N	Case=Par|Number=Plur	6	nsubj	_	_
+2	ja	ja	CCONJ	C	_	5	cc	_	_
+3	lihava	lihava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+4	pikku	pikku	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	Petja	Petja	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+6	kyyristyivät	kyyristyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	nauramaan	nauraa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = -- Kysyinpäskin, -- kuiskasi Natasha pikku veljelleen ja Pierrelle, johon hän samassa vilkasi.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kysyinpäskin	Kysyinpäski	PROPN	N	Case=Gen|Number=Sing	5	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	2	punct	_	_
+5	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	5	obj	_	_
+7	pikku	pikku	ADJ	A	_	8	amod	_	_
+8	veljelleen	velje	NOUN	N	Case=All|Number=Sing|Person[psor]=3	5	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	Pierrelle	Pierri	PROPN	N	Case=All|Number=Sing	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	15	obl	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+14	samassa	sama	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	15	obl	_	_
+15	vilkasi	vilata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Jäätelöä, mutta sinulle ei anneta, -- sanoi Maria Dmitrijevna.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Jäätelöä	jäätelö	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	mutta	mutta	CCONJ	C	_	7	cc	_	_
+5	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	7	obl	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	anneta	antaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	2	punct	_	_
+9	--	--	PUNCT	Punct	_	2	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+12	Dmitrijevna	Dmitrijevna	PROPN	N	Case=Nom|Number=Sing	11	flat:name	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Natasha oli huomannut, ettei ole vaaraa, eikä hän sentähden Maria Dmitrijevnaakaan pelännyt.
+1	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	huomannut	huomata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	mark	_	_
+6	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+7	vaaraa	vaara	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	14	punct	_	_
+9	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	cc	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	obl	_	_
+11	sentähden	sentähden	ADP	Adp	AdpType=Post	10	case	_	_
+12	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+13	Dmitrijevnaakaan	Dmitrijevna	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	14	obl	_	_
+14	pelännyt	pelätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- Maria Dmitrijevna!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+3	Dmitrijevna	Dmitrijevna	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = minkälaista jäätelöä?
+1	minkälaista	minkälainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	jäätelöä	jäätelö	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = En pidä kermajäätelöstä.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	kermajäätelöstä	kermajäätelö	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

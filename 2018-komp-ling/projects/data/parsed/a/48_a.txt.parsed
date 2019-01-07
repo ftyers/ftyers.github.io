@@ -1,0 +1,169 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lääkäri kävi usein hänen luonaan.
+1	Lääkäri	lääkäri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	usein	usein	ADV	Adv	_	2	advmod	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	luonaan	luo	NOUN	N	Case=Ess|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Äiti istui aina isän sängyn vieressä.
+1	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aina	aina	ADV	Adv	_	2	advmod	_	_
+4	isän	isä	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	sängyn	sängy	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	vieressä	vieressä	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän oli kalpea ja väsynyt.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kalpea	kalpea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	väsynyt	väsynyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Hanna yritti auttaa.
+1	Hanna	Hanna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	yritti	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	auttaa	auttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hän käski5 Jussin lukea läksyjä, mutta Jussi vain kiusasi piikoja6 keittiössä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	käski5	käski5	SYM	Symb	_	4	obl	_	_
+3	Jussin	Jussi	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	lukea	lukea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	läksyjä	läksy	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	mutta	mutta	CCONJ	C	_	10	cc	_	_
+8	Jussi	Jussi	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	vain	vain	ADV	Adv	_	10	advmod	_	_
+10	kiusasi	kiusata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+11	piikoja6	piikoja6	NUM	Num	NumType=Card	12	nummod	_	_
+12	keittiössä	keittiö	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Plur|Person[psor]=1|Style=Coll	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Piiat olivat vihaisia.
+1	Piiat	Piia	NOUN	N	Case=Nom|Number=Plur	3	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	vihaisia	vihainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Vähitellen7 isä parantui.
+1	Vähitellen7	Vähitellen7	NUM	Num	_	2	nummod	_	_
+2	isä	isä	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	parantui	parantui	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Hän istui keinutuolissa ja poltti piippua.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	keinutuolissa	keinutuol	NOUN	N	Case=Ine|Number=Plur	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	poltti	polttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	piippua	piippu	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Äiti teki hänelle ruokaa.
+1	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+4	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Kaikki, mitä äiti teki, oli hyvää.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj:cop	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	5	obj	_	_
+4	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 11
+# text = Maukas ruoka oli tehty kuitenkin vain isälle.
+1	Maukas	Maukas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	ruoka	ruoka	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	kuitenkin	kuitenkin	ADV	Adv	_	4	advmod	_	_
+6	vain	vain	ADV	Adv	_	7	advmod	_	_
+7	isälle	isä	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = ahdistaa: olla epämukava olo, vaivata, rasittaa kuiskata: puhua ihan hiljaa hiipiä: kävellä ihan hiljaa rukous: pyyntö Jumalalle käskeä: pyytää tiukasti tekemään jotain, määrätä piika: talon palvelustyttö, joka siivoaa ja auttaa kotitöissä vähitellen: pikkuhiljaa, vähän kerrallaan 13 Jos ruokaa riitti, se oli äidille tai Jussille.
+1	ahdistaa	ahdista	NOUN	N	Case=Par|Number=Sing	5	obl	_	SpaceAfter=No
+2	:	:	PUNCT	Punct	_	1	punct	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	epämukava	epämukava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	olo	olo	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	vaivata	vaivata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	rasittaa	rasittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	acl:relcl	_	_
+10	kuiskata	kuiskata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+11	:	:	PUNCT	Punct	_	10	punct	_	_
+12	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	22	conj	_	_
+13	ihan	ihan	ADV	Adv	_	14	advmod	_	_
+14	hiljaa	hiljaa	ADV	Adv	_	15	advmod	_	_
+15	hiipiä	hiipi	NOUN	N	Case=Par|Number=Plur	12	obj	_	SpaceAfter=No
+16	:	:	PUNCT	Punct	_	12	punct	_	_
+17	kävellä	kävellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	22	acl	_	_
+18	ihan	ihan	ADV	Adv	_	19	advmod	_	_
+19	hiljaa	hiljaa	ADV	Adv	_	17	advmod	_	_
+20	rukous	rukous	NOUN	N	Case=Nom|Number=Sing	22	compound:nn	_	SpaceAfter=No
+21	:	:	PUNCT	Punct	_	22	punct	_	_
+22	pyyntö	#pyyntö	NOUN	N	Case=Nom|Number=Sing	10	obj	_	_
+23	Jumalalle	Jumala	PROPN	N	Case=All|Number=Sing	24	nmod	_	_
+24	käskeä	käski	NOUN	N	Case=Par|Number=Sing	26	nsubj	_	SpaceAfter=No
+25	:	:	PUNCT	Punct	_	24	punct	_	_
+26	pyytää	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	parataxis	_	_
+27	tiukasti	tiukasti	ADV	Adv	Derivation=Sti	26	advmod	_	_
+28	tekemään	tehdä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	26	xcomp	_	_
+29	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	28	obj	_	SpaceAfter=No
+30	,	,	PUNCT	Punct	_	26	punct	_	_
+31	määrätä	määrättää	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	26	parataxis	_	_
+32	piika	piika	NOUN	N	Case=Nom|Number=Sing	31	obj	_	SpaceAfter=No
+33	:	:	PUNCT	Punct	_	31	punct	_	_
+34	talon	talo	NOUN	N	Case=Gen|Number=Sing	35	nmod:poss	_	_
+35	palvelustyttö	palvelustyttö	NOUN	N	Case=Nom|Number=Sing	31	obl	_	SpaceAfter=No
+36	,	,	PUNCT	Punct	_	38	punct	_	_
+37	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	38	nsubj	_	_
+38	siivoaa	siivota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	acl:relcl	_	_
+39	ja	ja	CCONJ	C	_	40	cc	_	_
+40	auttaa	autata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	38	conj	_	_
+41	kotitöissä	kotitöä	NOUN	N	Case=Ine|Number=Plur	40	obl	_	_
+42	vähitellen	vähitellen	ADV	Adv	_	40	advmod	_	SpaceAfter=No
+43	:	:	PUNCT	Punct	_	38	punct	_	_
+44	pikkuhiljaa	pikkuhiljaa	ADV	Adv	_	46	advmod	_	SpaceAfter=No
+45	,	,	PUNCT	Punct	_	44	punct	_	_
+46	vähän	vähän	ADV	Adv	_	47	advmod	_	_
+47	kerrallaan	kerra	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	38	obl	_	_
+48	13	13	NUM	Num	NumType=Card	47	nummod	_	_
+49	Jos	jos	SCONJ	C	_	51	mark	_	_
+50	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	51	nsubj	_	_
+51	riitti	riittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	38	advcl	_	SpaceAfter=No
+52	,	,	PUNCT	Punct	_	55	punct	_	_
+53	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	55	nsubj:cop	_	_
+54	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	55	cop	_	_
+55	äidille	äid	NOUN	N	Case=All|Number=Plur	51	conj	_	_
+56	tai	tai	CCONJ	C	_	57	cc	_	_
+57	Jussille	Jussi	NOUN	N	Case=All|Number=Sing	51	conj	_	SpaceAfter=No
+58	.	.	PUNCT	Punct	_	22	punct	_	SpacesAfter=\s\n
+

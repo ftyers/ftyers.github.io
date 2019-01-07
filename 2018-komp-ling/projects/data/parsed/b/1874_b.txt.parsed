@@ -1,0 +1,113 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ruoho on vihreämpää aidan toisella puolella.
+1	Ruoho	ruoho	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	vihreämpää	vihreä	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	0	root	_	_
+4	aidan	#aita	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+5	toisella	toinen	PRON	Pron	Case=Ade|Number=Sing|PronType=Rcp	6	det	_	_
+6	puolella	puoli	NOUN	N	Case=Ade|Number=Sing	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Muualla on parempia ihmisiä kuin täällä.
+1	Muualla	muualla	ADV	Adv	_	4	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	parempia	hyvä	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	4	amod	_	_
+4	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	täällä	täällä	ADV	Adv	_	4	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Muualla olisi mukavampi elää kuin täällä.
+1	Muualla	muualla	ADV	Adv	_	3	advmod	_	_
+2	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	mukavampi	mukavampi	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+4	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	täällä	täällä	ADV	Adv	_	4	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Jos minä olisin saanut yhtä paljon kuin naapurini, olisin onnellinen.
+1	Jos	jos	SCONJ	C	_	4	mark	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	olisin	olla	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	advcl	_	_
+5	yhtä	yhtä	ADV	Adv	_	6	advmod	_	_
+6	paljon	paljon	ADV	Adv	_	4	advmod	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	naapurini	naapuri	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	4	punct	_	_
+10	olisin	olla	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	onnellinen	onnellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 5
+# text = Ihmiset, jotka eivät ole tyytyväisiä siihen mitä heillä jo on, ajattelevat usein näin.
+1	Ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	13	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	6	nsubj:cop	_	_
+4	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	tyytyväisiä	tyytyväinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	1	acl:relcl	_	_
+7	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	6	obl	_	_
+8	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	9	nsubj:cop	_	_
+9	heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	7	ccomp	_	_
+10	jo	jo	ADV	Adv	_	11	advmod	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop:own	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	6	punct	_	_
+13	ajattelevat	ajatella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+14	usein	usein	ADV	Adv	_	13	advmod	_	_
+15	näin	näin	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 6
+# text = Suupaloiksi.
+1	Suupaloiksi	suupaloiksi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Pieniksi paloiksi jotka on helppo syödä.
+1	Pieniksi	pieni	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	2	amod	_	_
+2	paloiksi	pala	NOUN	N	Case=Tra|Number=Plur	5	obl	_	_
+3	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	helppo	helppo	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+6	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Synnintunnustuksineen, perusmuoto synnintunnustus.
+1	Synnintunnustuksineen	Synnintunnustuks	NOUN	N	Case=Com|Person[psor]=3	4	nmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	synnintunnustus	synnintunnustus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Kerrotaan mitä pahaa ollaan tehty.
+1	Kerrotaan	kertoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+3	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	obj	_	_
+4	ollaan	olla	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	5	aux:pass	_	_
+5	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	1	ccomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Sännännyt.
+1	Sännännyt	Sännännä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Rynnännyt.
+1	Rynnännyt	Rynnätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Juossut.
+1	Juossut	juossu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

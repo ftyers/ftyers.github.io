@@ -1,0 +1,155 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Koirat pääsevät yhä useammin omistajiensa mukana kauppakeskuksiin.
+1	Koirat	koira	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	pääsevät	päästä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yhä	yhä	ADV	Adv	_	4	advmod	_	_
+4	useammin	usein	ADV	Adv	Degree=Cmp	2	advmod	_	_
+5	omistajiensa	omistajii	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	2	obl	_	_
+6	mukana	mukana	ADP	Adp	AdpType=Post	5	case	_	_
+7	kauppakeskuksiin	kauppakeskus	NOUN	N	Case=Ill|Number=Plur	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Onko suuntaus hyvä vai huono?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	suuntaus	suuntaus	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+3	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	vai	vai	CCONJ	C	_	5	cc	_	_
+5	huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Lue, miten asiaa kommentoitiin.
+1	Lue	lukea	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	miten	miten	ADV	Adv	_	5	advmod	_	_
+4	asiaa	asia	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+5	kommentoitiin	kommentoia	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	1	ccomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Jos rahat ovat todella tiukilla, ekologisuutta ei välttämättä pysty huomioimaan.
+1	Jos	jos	SCONJ	C	_	5	mark	_	_
+2	rahat	raha	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	todella	todella	ADV	Adv	_	5	advmod	_	_
+5	tiukilla	tiuk	NOUN	N	Case=Ade|Number=Plur	10	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	ekologisuutta	ekologisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	10	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	välttämättä	välttämättä	ADV	Adv	_	10	advmod	_	_
+10	pysty	pystyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+11	huomioimaan	huomioida	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 5
+# text = Toisaalta, vaikka rahaa olisi käytettävissä kuinka paljon tahansa, oman kulutuksen vaikutus ympäristöön ei ehkä edes käy mielessä.
+1	Toisaalta	toisaalta	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	vaikka	vaikka	SCONJ	C	_	6	mark	_	_
+4	rahaa	raha	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+5	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+6	käytettävissä	käyttää	VERB	V	Case=Ine|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Pass	18	advcl	_	_
+7	kuinka	kuinka	ADV	Adv	_	8	advmod	_	_
+8	paljon	paljon	ADV	Adv	_	6	advmod	_	_
+9	tahansa	tahansa	ADV	Adv	_	8	fixed	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	18	punct	_	_
+11	oman	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	_
+12	kulutuksen	kulutus	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	vaikutus	vaikutus	NOUN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+14	ympäristöön	ympäristö	NOUN	N	Case=Ill|Number=Sing	13	nmod	_	_
+15	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	18	aux	_	_
+16	ehkä	ehkä	ADV	Adv	_	18	advmod	_	_
+17	edes	edes	ADV	Adv	_	18	advmod	_	_
+18	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+19	mielessä	mieli	NOUN	N	Case=Ine|Number=Sing	18	obl	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	18	punct	_	_
+
+# sent_id = 6
+# text = Moni pienen Virolahden kauppakeskushankkeista on kaatunut, mutta nyt kuntaan tulee satoja työpaikkoja.
+1	Moni	moni	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	nsubj	_	_
+2	pienen	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	3	amod	_	_
+3	Virolahden	Virolahti	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	kauppakeskushankkeista	kauppakeskushankke	NOUN	N	Case=Ela|Number=Plur	1	nmod	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kaatunut	kaatua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	mutta	mutta	CCONJ	C	_	11	cc	_	_
+9	nyt	nyt	ADV	Adv	_	11	advmod	_	_
+10	kuntaan	kunta	NOUN	N	Case=Ill|Number=Sing	11	obl	_	_
+11	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+12	satoja	sata	NUM	Num	Case=Par|Number=Plur|NumType=Card	13	nummod	_	_
+13	työpaikkoja	työpaikko	NOUN	N	Case=Par|Number=Plur	11	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Yhdysvaltojen Seattlessa on avattu kauppa, jossa ei ole ainuttakaan kassaa, ei edes itsepalveluautomaatteja.
+1	Yhdysvaltojen	Yhdysvallat	PROPN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	Seattlessa	Seattle	PROPN	N	Case=Ine|Number=Sing	4	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	avattu	avata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	kauppa	kauppa	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	5	acl:relcl	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+9	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	cop	_	_
+10	ainuttakaan	ainutt	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	11	nmod	_	_
+11	kassaa	kassa	NOUN	N	Case=Par|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	4	punct	_	_
+13	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+14	edes	edes	ADV	Adv	_	15	advmod	_	_
+15	itsepalveluautomaatteja	itsepalveluautomaatti	NOUN	N	Case=Par|Number=Plur	4	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Joulun ja uuden vuoden välillä euro on ollut varsin kallis Norjan kruunun nähden.
+1	Joulun	joulu	NOUN	N	Case=Gen|Number=Sing	10	obl	_	_
+2	ja	ja	CCONJ	C	_	4	cc	_	_
+3	uuden	uusi	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	1	conj	_	_
+5	välillä	välillä	ADP	Adp	AdpType=Post	1	case	_	_
+6	euro	euro	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+8	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	cop	_	_
+9	varsin	varsin	ADV	Adv	_	10	advmod	_	_
+10	kallis	kallis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+11	Norjan	Norja	PROPN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	kruunun	kruunu	NOUN	N	Case=Gen|Number=Sing	10	obl	_	_
+13	nähden	nähden	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 9
+# text = Huonon kurssin vuoksi norjalaiset eivät halua käydä Suomessa ostoksilla, vaan tukevat mieluummin kotimaansa ruokakauppoja.
+1	Huonon	huono	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	kurssin	kurssi	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+3	vuoksi	vuoksi	ADP	Adp	AdpType=Post	2	case	_	_
+4	norjalaiset	norjalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	6	nsubj	_	_
+5	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	Suomessa	Suome	PROPN	N	Case=Ine|Number=Sing	7	obl	_	_
+9	ostoksilla	ostos	NOUN	N	Case=Ade|Number=Plur	7	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	vaan	vaan	CCONJ	C	_	12	cc	_	_
+12	tukevat	tukea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+13	mieluummin	mieluummin	ADV	Adv	_	12	advmod	_	_
+14	kotimaansa	kotima	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	12	obl	_	_
+15	ruokakauppoja	ruokakauppa	NOUN	N	Case=Par|Number=Plur	12	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Kuluttajia on sapettanut etenkin elektroniikkaa ja kodinkoneita myyvien liikkeiden toiminta.
+1	Kuluttajia	kuluttaja	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sapettanut	sapettaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	etenkin	etenkin	ADV	Adv	_	3	advmod	_	_
+5	elektroniikkaa	elektroniikka	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kodinkoneita	kodin#kone	NOUN	N	Case=Par|Number=Plur	5	conj	_	_
+8	myyvien	myyä	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	9	acl	_	_
+9	liikkeiden	liikke	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+10	toiminta	toiminta	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,140 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Sinun täytyy tunnustaa rikoksesi ja siten pelastaa sielusi ...
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tunnustaa	tunnustaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	rikoksesi	riko	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=2|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	siten	siten	ADV	Adv	_	8	advmod	_	_
+8	pelastaa	pelastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	sielusi	sielusi	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = se sinun on tehtävä!
+1	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	obj	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tehtävä	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = -- Ei, Sonja ... minä en mene heidän luokseen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	8	vocative	_	_
+5	...	...	PUNCT	Punct	_	4	punct	_	_
+6	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+7	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	mene	mennä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	8	obl	_	_
+10	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = -- Mutta miten aijot menetellä tulevaisuudessa?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	miten	miten	ADV	Adv	_	5	advmod	_	_
+4	aijot	aijo	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+5	menetellä	menetellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	tulevaisuudessa	tulevaisuus	NOUN	N	Case=Ine|Derivation=Vs|Number=Sing	5	obl	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Miten voit sinä elää?
+1	Miten	miten	ADV	Adv	_	4	advmod	_	_
+2	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	elää	elää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Onko mahdollista elää sellaista elämää?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	mahdollista	mahdollinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	_
+3	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	csubj:cop	_	_
+4	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	elämää	elämä	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Ja miten voit sinä puhua äitisi kanssa?...
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	miten	miten	ADV	Adv	_	5	advmod	_	_
+3	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+5	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	äitisi	äitiä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	xcomp	_	_
+7	kanssa	kanssa	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	..	..	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Mitä hänestä tulee?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	nsubj	_	_
+2	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Mutta sehän on jo totta ...
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	sehän	se	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	totta	totta	ADV	Adv	_	0	root	_	_
+6	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = sinähän oletkin jo hyljännyt äitisi ja siskosi!...
+1	sinähän	sinähän	ADV	Adv	_	5	advmod	_	_
+2	oletkin	ole	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	4	nsubj	_	_
+3	jo	jo	ADV	Adv	_	4	advmod	_	_
+4	hyljännyt	hyljätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	acl	_	_
+5	äitisi	äiteä	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	siskosi	sisota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Sinä tunsit, että sinun täytyi hyljätä heidät!
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	tunsit	tunsiä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	_
+6	täytyi	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	hyljätä	hyljätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+8	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Miten voit jatkaa elämääsi ilman ainoatakaan ihmistä, jonka puoleen kääntyä?
+1	Miten	miten	ADV	Adv	_	3	advmod	_	_
+2	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	jatkaa	jatkaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	elämääsi	elämä	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	3	obj	_	_
+5	ilman	ilman	ADP	Adp	AdpType=Prep	7	case	_	_
+6	ainoatakaan	ainoa	PRON	Pron	Case=Nom|Clitic=Kaan|PronType=Ind	7	det	_	_
+7	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	3	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	11	nmod	_	_
+10	puoleen	puoleen	ADP	Adp	AdpType=Post	9	case	_	_
+11	kääntyä	käänty	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Mitä sinusta vielä tulee!
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+2	sinusta	sinä	PRON	Pron	Case=Ela|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	vielä	vielä	ADV	Adv	_	4	advmod	_	_
+4	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

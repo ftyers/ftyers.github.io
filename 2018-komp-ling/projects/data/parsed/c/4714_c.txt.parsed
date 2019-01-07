@@ -1,0 +1,147 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = On olemassa vanha houre, jonka nimi on hyvä ja paha.
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	olemassa	olla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	houre	houre	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	7	nmod:poss	_	_
+7	nimi	nimi	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	acl:relcl	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	paha	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Tietäjien ja tähteinselittäjien ympäri pyöri tähänsaakka tämän houreen pyörä.
+1	Tietäjien	Tietäja	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	5	nmod	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	tähteinselittäjien	tähteinselittäja	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	1	conj	_	_
+4	ympäri	ympäri	ADP	Adp	AdpType=Post	1	case	_	_
+5	pyöri	pyöri	NOUN	N	Case=Nom|Number=Sing	9	obl	_	_
+6	tähänsaakka	tähänsaakka	ADP	Adp	AdpType=Post	5	case	_	_
+7	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	det	_	_
+8	houreen	houre	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	pyörä	pyörä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Kerran _uskottiin_ tietäjiin ja tähteinselittäjiin: ja _siksi_ uskottiin "kaikki on kohtaloa: sinun tulee, sillä sinun täytyy!"
+1	Kerran	kerta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	_uskottiin_ tietäjiin	_uskottiin_ tietäja	NOUN	N	Case=Ill|Derivation=Ja|Number=Plur	11	obl	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	tähteinselittäjiin	tähteinselittäja	NOUN	N	Case=Ill|Derivation=Ja|Number=Plur	2	conj	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	2	punct	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	_siksi_ uskottiin	_siksi_ uskota	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	2	conj	_	_
+8	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	11	nsubj:cop	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	kohtaloa	kohtalo	NOUN	N	Case=Par|Number=Sing	14	obl	_	SpaceAfter=No
+12	:	:	PUNCT	Punct	_	11	punct	_	_
+13	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	14	nsubj	_	_
+14	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	sillä	sillä	SCONJ	C	_	20	mark	_	_
+17	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	20	nsubj:cop	_	_
+18	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	SpaceAfter=No
+19	!	!	PUNCT	Punct	_	20	punct	_	SpaceAfter=No
+20	"	"	PUNCT	Punct	_	14	advcl	_	_
+
+# sent_id = 4
+# text = Mutta sitten epäiltiin kaikkia tietäjiä ja tähteinselittäjiä: ja _siksi_ uskottiin "_kaikki_ on vapautta: sinä voit, sillä sinä tahdot!"
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	sitten	sitten	ADV	Adv	_	3	advmod	_	_
+3	epäiltiin	epäillä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	kaikkia	kaikki	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	5	det	_	_
+5	tietäjiä	tietäjä	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	3	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	tähteinselittäjiä	tähteinselittäjä	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	5	conj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	3	punct	_	_
+9	ja	ja	CCONJ	C	_	13	cc	_	_
+10	_siksi_ uskottiin	_siksi_ uskotti	NOUN	N	Case=Ill|Number=Sing	13	orphan	_	_
+11	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+12	_kaikki_ on	_kaikki_ o	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	vapautta	vapaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	3	conj	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	3	punct	_	_
+15	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	20	nsubj:cop	_	_
+16	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	20	punct	_	_
+18	sillä	sillä	SCONJ	C	_	20	mark	_	_
+19	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	20	nmod:poss	_	_
+20	tahdot	tahto	NOUN	N	Case=Nom|Number=Plur	3	parataxis	_	SpaceAfter=No
+21	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+22	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Oi veljeni, tähdistä ja tulevaisuudesta on tähän saakka ollut vain luuloja, ei tietoa! ja _siksi_ on tähän saakka hyvästä ja pahasta ollut vain luuloja, ei tietoa! 10. "Ei sinun pidä ryöstämän!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	12	nsubj:cop	_	_
+2	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	tähdistä	tähd	NOUN	N	Case=Ela|Number=Plur	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	tulevaisuudesta	tulevaisuus	NOUN	N	Case=Ela|Derivation=Inen,Vs|Number=Sing	2	conj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+8	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	12	obl	_	_
+9	saakka	saakka	ADP	Adp	AdpType=Post	8	case	_	_
+10	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	cop	_	_
+11	vain	vain	ADV	Adv	_	12	advmod	_	_
+12	luuloja	luulo	NOUN	N	Case=Par|Number=Plur	26	nsubj:cop	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	12	conj	_	SpaceAfter=No
+16	!	!	PUNCT	Punct	_	21	punct	_	_
+17	ja	ja	CCONJ	C	_	21	cc	_	_
+18	_siksi_ on	_siksi_ 	NOUN	N	Case=Ill|Number=Sing	21	nmod	_	_
+19	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	18	obl	_	_
+20	saakka	saakka	ADP	Adp	AdpType=Post	19	case	_	_
+21	hyvästä	hyvä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	12	conj	_	_
+22	ja	ja	CCONJ	C	_	23	cc	_	_
+23	pahasta	paha	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	12	conj	_	_
+24	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	26	cop	_	_
+25	vain	vain	ADV	Adv	_	26	advmod	_	_
+26	luuloja	luulo	NOUN	N	Case=Par|Number=Plur	38	obl	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	36	punct	_	_
+28	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	36	aux	_	_
+29	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	31	nsubj:cop	_	SpaceAfter=No
+30	!	!	PUNCT	Punct	_	31	punct	_	_
+31	10	10	NUM	Num	NumType=Card	36	obl	_	SpaceAfter=No
+32	.	.	PUNCT	Punct	_	31	punct	_	_
+33	"	"	PUNCT	Punct	_	31	punct	_	SpaceAfter=No
+34	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	36	aux	_	_
+35	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	36	nsubj	_	_
+36	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	26	acl:relcl	_	_
+37	ryöstämän	ryöstämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	36	obj	_	SpaceAfter=No
+38	!	!	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 6
+# text = Ei sinun pidä tappaman!"
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tappaman	tappama	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- tuollaisia sanoja kutsuttiin kerran pyhiksi; niiden edessä polvistuttiin ja kumarruttiin ja riisuttiin kengät.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	tuollaisia	tuollainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	3	amod	_	_
+3	sanoja	#sana	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+4	kutsuttiin	kutsua	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	kerran	kerran	ADV	Adv	_	4	advmod	_	_
+6	pyhiksi	pyhi	NOUN	N	Case=Tra|Number=Sing	4	xcomp:ds	_	SpaceAfter=No
+7	;	;	PUNCT	Punct	_	4	punct	_	_
+8	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	10	obj	_	_
+9	edessä	edessä	ADV	Adv	_	10	advmod	_	_
+10	polvistuttiin	polvistuta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	4	parataxis	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	kumarruttiin	kumarruta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	10	conj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	riisuttiin	riisua	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	12	conj	_	_
+15	kengät	kenkä	NOUN	N	Case=Nom|Number=Plur	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

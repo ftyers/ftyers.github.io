@@ -1,0 +1,134 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mistä on kysymys, Apollon Sergeitsh?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	kysymys	kysymys	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	Apollon	Apolto	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	Sergeitsh	Sergeitsh	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- kysyi vanhin upseeri.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vanhin	vanha	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	4	amod	_	_
+4	upseeri	upseeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Käsketään upseeria ja miehistöä johonkin mörssäripatteriin.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Käsketään	Käsktää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	upseeria	upseeri	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	miehistöä	miehistö	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
+6	johonkin	jokin	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	7	det	_	_
+7	mörssäripatteriin	mörssäripatteri	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Minulla on kaikenkaikkiaan neljä upseeria ja miehistöä ei ole täyttä määrää -- murahti patterinpäällikkö: -- ja vielä pitäisi lähettää muualle.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	13	obl	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	kaikenkaikkiaan	kaikenkaikkia	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+4	neljä	neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	upseeria	upseeri	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+6	ja	ja	CCONJ	C	_	11	cc	_	_
+7	miehistöä	miehistö	NOUN	N	Case=Par|Number=Sing	11	nsubj:cop	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+9	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	cop	_	_
+10	täyttä	täysi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	11	amod	_	_
+11	määrää	määrä	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
+12	--	--	PUNCT	Punct	_	1	punct	_	_
+13	murahti	murahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	patterinpäällikkö	patterinpäällikkö	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	16	punct	_	_
+16	--	--	PUNCT	Punct	_	20	punct	_	_
+17	ja	ja	CCONJ	C	_	20	cc	_	_
+18	vielä	vielä	ADV	Adv	_	20	advmod	_	_
+19	pitäisi	pitää	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	lähettää	lähettää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	conj	_	_
+21	muualle	muualle	ADV	Adv	_	20	advmod	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 5
+# text = -- Vaan jonkun täytyy kuitenkin lähteä, hyvät herrat, -- sanoi hän hetkisen vaiti oltuaan.
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Vaan	vaan	ADV	Adv	_	6	advmod	_	_
+3	jonkun	joku	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	nsubj	_	_
+4	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	kuitenkin	kuitenkin	ADV	Adv	_	6	advmod	_	_
+6	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	hyvät	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	9	amod	_	_
+9	herrat	herra	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	6	punct	_	_
+11	--	--	PUNCT	Punct	_	6	punct	_	_
+12	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+14	hetkisen	hetkinen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	16	obj	_	_
+15	vaiti	vaiti	ADV	Adv	_	16	advmod	_	_
+16	oltuaan	olla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	12	advcl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = -- Seitsemäksi on komennettu etuvartiolinjoille...
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Seitsemäksi	seitsemäksi	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	komennettu	komenntaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	etuvartiolinjoille	etuvartiolinjo	NOUN	N	Case=All|Number=Plur	4	obl	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Käskekää vääpeli tänne!
+1	Käskekää	käskekää	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vääpeli	väämella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tänne	tänne	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kuka tahtoo mennä, hyvät herrat? päättäkää, -- toisti hän.
+1	Kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	nsubj	_	_
+2	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	hyvät	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	herrat	herra	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	8	punct	_	_
+8	päättäkää	päättää	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	8	punct	_	_
+10	--	--	PUNCT	Punct	_	8	punct	_	_
+11	toisti	toisti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Hän ei vielä ole ollut missään, -- sanoi Tshernovitskij osottaen Volodjaa.
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+4	vielä	vielä	ADV	Adv	_	7	advmod	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	aux	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+7	missään	mikään	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	10	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	--	--	PUNCT	Punct	_	7	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	Tshernovitskij	Tshernovitskij	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+12	osottaen	osottaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	10	advcl	_	_
+13	Volodjaa	Volodja	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = Patterinpäällikkö ei vastannut mitään.
+1	Patterinpäällikkö	Patterinpäällikkö	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	vastannut	vastata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

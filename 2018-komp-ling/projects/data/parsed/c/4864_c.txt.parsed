@@ -1,0 +1,145 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ihminen on paha" -- niin puhuivat kaikki viisaimmat minulle lohdutukseksi.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	paha	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	4	punct	_	_
+6	--	--	PUNCT	Punct	_	4	punct	_	_
+7	niin	niin	ADV	Adv	_	8	advmod	_	_
+8	puhuivat	puhua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	det	_	_
+10	viisaimmat	viisaa	ADJ	A	Case=Nom|Degree=Sup|Number=Plur	8	obj	_	_
+11	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	8	obl	_	_
+12	lohdutukseksi	lohdutus	NOUN	N	Case=Tra|Number=Sing	8	xcomp:ds	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Ah, kunhan se vain vielä tänäänkin on totta!
+1	Ah	Ah	INTJ	Interj	_	9	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	kunhan	kun	ADV	Adv	Clitic=Han	9	advmod	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj:cop	_	_
+5	vain	vain	ADV	Adv	_	6	advmod	_	_
+6	vielä	vielä	ADV	Adv	_	9	advmod	_	_
+7	tänäänkin	tänään	ADV	Adv	Clitic=Kin	9	advmod	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Sillä paha on ihmisen parhain voima.
+1	Sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	6	obl	_	_
+2	paha	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+5	parhain	parhain	ADV	Adv	Derivation=Ttain	6	advmod	_	_
+6	voima	voima	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = "Ihmisen täytyy tulla paremmaksi ja pahemmaksi"
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+3	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	paremmaksi	hyvä	ADJ	A	Case=Tra|Degree=Cmp|Number=Sing	4	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	pahemmaksi	pahemma	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	5	conj	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- niin minä opetan.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	niin	niin	ADV	Adv	_	4	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	opetan	opettaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Pahin on välttämätön yli-ihmisen parhaimpaan.
+1	Pahin	paha	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	välttämätön	välttämätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	5	amod	_	_
+4	yli-ihmisen	yli-ihminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	5	nmod:poss	_	_
+5	parhaimpaan	haimpyvä	ADJ	A	Case=Gen|Degree=Sup|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Saattoi olla hyvä tuolle pienten ihmisten saarnaajalle, että hän kärsi ja kantoi ihmisen synnin.
+1	Saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	cop	_	_
+3	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	tuolle	tuo	PRON	Pron	Case=All|Number=Sing|PronType=Dem	7	det	_	_
+5	pienten	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	_
+6	ihmisten	ihmis	NOUN	N	Case=Gen|Number=Plur	7	nmod:poss	_	_
+7	saarnaajalle	saarnaaja	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	että	että	SCONJ	C	_	11	mark	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	kärsi	kärsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	kantoi	kantoida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	conj	_	_
+14	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	synnin	synti	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Mutta minä iloitsen suuresta synnistä suurena _lohdutuksenani.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	iloitsen	iloita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	suuresta	suuri	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	5	amod	_	_
+5	synnistä	synni	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+6	suurena	suuri	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	7	amod	_	_
+7	_lohdutuksenani	_lohdutus	NOUN	N	Case=Ess|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+
+# sent_id = 9
+# text = _
+1	_	_	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 10
+# text = Mutta tällainen ei ole sanottu pitkiä korvia varten.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	tällainen	tällainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	5	obj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux:pass	_	_
+5	sanottu	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	pitkiä	pitkä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	_
+7	korvia	korvi	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+8	varten	varten	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Jokainen sana ei kuulu myöskään jokaisen suuhun.
+1	Jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	sana	sana	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kuulu	kuulua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	myöskään	myöskään	ADV	Adv	_	4	advmod	_	_
+6	jokaisen	jokainen	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	7	det	_	_
+7	suuhun	suu	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Ne ovat hienoja kaukaisia asioita: niitä älkööt lampaankynnet tavoittako!
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	hienoja	hiena	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+4	kaukaisia	kaukainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	asioita	asia	NOUN	N	Case=Par|Number=Plur	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	3	punct	_	_
+7	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	8	obj	_	_
+8	älkööt	älä	VERB	V	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	9	acl	_	_
+9	lampaankynnet	lampaankynni	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	_
+10	tavoittako	tavoitta	VERB	V	Clitic=Ko|InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	parataxis	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = 6.
+1	6	6	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

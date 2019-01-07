@@ -1,0 +1,129 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Illalla
+1	Illalla	ilta	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Kaisu menee saunaan.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	saunaan	sauna	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Saunassa palaa vain pieni kynttilä.
+1	Saunassa	sauna	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	palaa	palata	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	kynttilä	kynttilä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Sen valossa
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	valossa	valko	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+
+# sent_id = 5
+# text = Kaisu näkee, että Erni pujahtaa sisään.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	näkee	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	pujahtaa	pujahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	sisään	sisään	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän nousee lauteille Kaisun viereen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	nousee	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lauteille	laute	NOUN	N	Case=All|Number=Plur	2	obl	_	_
+4	Kaisun	Kaisu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	2	obl	_	_
+5	viereen	viereen	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = He pesevät toistensa selän.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	pesevät	pestä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toistensa	toinen	PRON	Pron	Case=Gen|Number=Plur|Person[psor]=3|PronType=Rcp	4	det	_	_
+4	selän	selkä	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kaisu sanoo:
+1	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = — Sinä häviät tässä kaupassa.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Sinä	nen	ADJ	Num	Case=Ess|Derivation=Inen|Number=Plur|NumType=Ord	3	amod	_	_
+3	häviät	häviä	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+4	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	det	_	_
+5	kaupassa	kaupa	NOUN	N	Case=Ine|Number=Sing	3	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Olet paljon pienempi kuin minä.
+1	Olet	olla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	paljon	paljon	ADV	Adv	_	1	advmod	_	_
+3	pienempi	pieni	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	1	xcomp	_	_
+4	kuin	kuin	SCONJ	C	_	5	mark	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = — Pese etupuoleltakin, niin ollaan sujut, Erni vastaa.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Pese	Pese	PROPN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	etupuoleltakin	etupuolelta	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	7	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	niin	niin	ADV	Adv	_	7	advmod	_	_
+6	ollaan	olla	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	7	aux	_	_
+7	sujut	suja	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	vastaa	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 12
+# text = Yöllä Kaisu herää.
+1	Yöllä	yö	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+2	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	herää	herätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Hän näkee Ernin ovella.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	näkee	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Ernin	Ern	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	ovella	ovi	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Erni ei sano mitään, katsoo vain.
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sano	sanoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	katsoo	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	vain	vain	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Kaisu kääntää kylkeä ja nukahtaa uudestaan.
+1	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kääntää	kääntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kylkeä	kylki	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	nukahtaa	nukahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	uudestaan	uudestaan	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,145 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Hän uinahti, -- sanoi Anna Mihailovna, huomattuaan erään ruhtinattarista, joka oli tulossa hoitovuorolleen.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	uinahti	uinahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	--	--	PUNCT	Punct	_	3	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	Mihailovna	Mihailovna	PROPN	N	Case=Nom|Number=Sing	7	flat:name	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	huomattuaan	huomata	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	3	advcl	_	_
+11	erään	eräs	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	12	det	_	_
+12	ruhtinattarista	ruhtinattari	NOUN	N	Case=Ela|Number=Sing	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	16	nsubj:cop	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	cop	_	_
+16	tulossa	tulko	NOUN	N	Case=Ine|Number=Sing	12	acl:relcl	_	_
+17	hoitovuorolleen	hoitovuoro	NOUN	N	Case=All|Number=Sing|Person[psor]=3	16	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Lähtekäämme.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lähtekäämme	Lähtekä	NOUN	N	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Pierre lähti huoneesta.
+1	Pierre	Pierre	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	huoneesta	huonei	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = XXIV.
+1	XXIV	Xxin	ADV	Adv	Style=Coll	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Vastaanottohuoneessa ei ollut enää muita kuin ruhtinas
+1	Vastaanottohuoneessa	Vastaanottohuone	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+4	enää	enää	ADV	Adv	_	5	advmod	_	_
+5	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	0	root	_	_
+6	kuin	kuin	SCONJ	C	_	7	mark	_	_
+7	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	5	advcl	_	_
+
+# sent_id = 6
+# text = Vasili ja vanhin ruhtinatar, jotka istuivat Katarinan muotokuvan alla ja puhelivat vilkkaasti keskenään.
+1	Vasili	Vasili	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	ja	ja	CCONJ	C	_	4	cc	_	_
+3	vanhin	vanha	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	4	amod	_	_
+4	ruhtinatar	ruhtinatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	istuivat	istua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+8	Katarinan	Katarina	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	muotokuvan	muoto#kuva	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+10	alla	alla	ADP	Adp	AdpType=Post	9	case	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	puhelivat	puhella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+13	vilkkaasti	vilkkaasti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+14	keskenään	keskenään	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Huomattuaan Pierren ja hänen saattajattarensa he vaikenivat.
+1	Huomattuaan	Huomatla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	7	advcl	_	_
+2	Pierren	Piersi	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	conj	_	_
+5	saattajattarensa	saattajattari	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	1	obj	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
+7	vaikenivat	vaikena	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Pierre luuli huomanneensa, että ruhtinatar pisti kiireisesti jotain piiloon.
+1	Pierre	Pierre	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	luuli	luulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	huomanneensa	huomana	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	ruhtinatar	ruhtinatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	7	nsubj	_	_
+7	pisti	pistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+8	kiireisesti	kiireisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+9	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	10	det	_	_
+10	piiloon	piilo	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Ruhtinatar kuiskasi: -- En voi kärsiä tuota naista.
+1	Ruhtinatar	Ruhtinatar	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	7	punct	_	_
+5	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	kärsiä	kärsiä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	parataxis	_	_
+8	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	9	det	_	_
+9	naista	nainen	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Katish on käskenyt valmistaa teetä pieneen vierashuoneeseen, -- sanoi ruhtinas Vasili Anna Mihailovnalle.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Katish	Katish	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	käskenyt	käskeä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	valmistaa	valmistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	teetä	tee	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+7	pieneen	pieni	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	8	amod	_	_
+8	vierashuoneeseen	vierashuone	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	4	punct	_	_
+10	--	--	PUNCT	Punct	_	4	punct	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+12	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	13	compound:nn	_	_
+13	Vasili	Vasili	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+14	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	13	flat:name	_	_
+15	Mihailovnalle	Mihailovna	PROPN	N	Case=All|Number=Sing	11	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = -- Menkäähän, rakas Anna Mihailovna, ja nauttikaa jotakin, muuten ette tätä kestä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Menkäähän	menkäähän	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	rakas	rakas	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+6	Mihailovna	Mihailovna	PROPN	N	Case=Nom|Number=Sing	5	flat:name	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	nauttikaa	nauttian	ADV	Adv	Style=Coll	10	advmod	_	_
+10	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	muuten	muuten	ADV	Adv	_	13	advmod	_	_
+13	ette	i#ei	VERB	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	15	acl	_	_
+14	tätä	tämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	13	obj	_	_
+15	kestä	kestää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	15	punct	_	SpacesAfter=\s\n
+

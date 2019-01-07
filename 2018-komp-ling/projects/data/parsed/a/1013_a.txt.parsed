@@ -1,0 +1,262 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = ”Mitä ihmettä teet täällä, pikkuötökkä?” raivostui Vaaksiainen.
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+3	ihmettä	ihme	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+4	teet	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	täällä	täällä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	pikkuötökkä	pikkuötö	VERB	V	Clitic=Kaan|InfForm=1|Number=Sing|Style=Coll|VerbForm=Inf|Voice=Act	4	conj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+9	”	”	PUNCT	Punct	_	4	punct	_	_
+10	raivostui	raivostua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+11	Vaaksiainen	Vaaksiainen	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = ”Olin juuri venyttelemässä!”
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	juuri	juuri	ADV	Adv	_	4	advmod	_	_
+4	venyttelemässä	venytteleä	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = ”Anteeksi kovasti”, sanoi pikkuötökkä, joka halusi sanoa olevansa Ippu Pötökkä, ”mutta tiedätkö mistä löydän pikkuötököiden kodin?”
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Anteeksi	anteeksi	ADV	Adv	_	3	advmod	_	_
+3	kovasti	kovasti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+4	”	”	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	pikkuötökkä	pikkuötökkä	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	halusi	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+11	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+12	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	14	cop	_	_
+13	Ippu	Ippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	14	nsubj:cop	_	_
+14	Pötökkä	Pötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	ccomp	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	14	punct	_	_
+16	”	”	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+17	mutta	mutta	CCONJ	C	_	18	cc	_	_
+18	tiedätkö	tiedätä	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	6	conj	_	_
+19	mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Rel	18	obl	_	_
+20	löydän	löytä	NOUN	N	Case=Gen|Number=Sing	21	nmod:poss	_	_
+21	pikkuötököiden	pikkuötökö	NOUN	N	Case=Gen|Number=Plur	22	nmod:poss	_	_
+22	kodin	koti	NOUN	N	Case=Gen|Number=Sing	18	obj	_	SpaceAfter=No
+23	?	?	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+24	”	”	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = ”Nehän asuvat tuolla keltaisella pöydällä, kääpiöbanaanin lehdillä!
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Nehän	Ne	ADV	Adv	Clitic=Han	3	advmod	_	_
+3	asuvat	asua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tuolla	tuo	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	6	det	_	_
+5	keltaisella	keltainen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	pöydällä	pöytä	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	kääpiöbanaanin	kääpiöbanaani	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	lehdillä	lehdi	NOUN	N	Case=Ade|Number=Plur	6	nmod	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Luulisi sinun tietävän, senkin pikkuötökkä.”
+1	Luulisi	luulla	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	tietävän	tietää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	1	xcomp:ds	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	senkin	se	PRON	Pron	Case=Gen|Clitic=Kin|Number=Sing|PronType=Dem	6	det	_	_
+6	pikkuötökkä	pikkuötökkä	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Ja niin Ippu Pötökkä, joka tunsi taas olevansa hieman enemmän pikkuötökkä, jatkoi matkaansa.
+1	Ja	ja	CCONJ	C	_	14	cc	_	_
+2	niin	niin	ADV	Adv	_	14	advmod	_	_
+3	Ippu	Ippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	14	nsubj	_	_
+4	Pötökkä	Pötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	taas	taas	ADV	Adv	_	7	advmod	_	_
+9	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	12	cop	_	_
+10	hieman	hieman	ADV	Adv	_	11	advmod	_	_
+11	enemmän	enemmän	ADV	Adv	_	12	advmod	_	_
+12	pikkuötökkä	pikkuötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	xcomp	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	7	punct	_	_
+14	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+15	matkaansa	matka	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	14	punct	_	_
+
+# sent_id = 7
+# text = Kääpiöbanaanin lehdillä oli tungosta.
+1	Kääpiöbanaanin	Kääpiöbanaan	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	lehdillä	lehdi	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	tungosta	tungo	NOUN	N	Case=Ela|Number=Sing	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Tuossa lekotteli pikkuötökkä, ja tuossa toinen.
+1	Tuossa	tuo	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	obl	_	_
+2	lekotteli	lekotellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pikkuötökkä	pikkuötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	tuossa	tuossa	ADV	Adv	_	7	advmod	_	_
+7	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	3	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = ”Minä olen Lippu Köpökkä”, sanoi ensimmäinen pikkuötökkä.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	Lippu	lippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	nsubj:cop	_	_
+5	Köpökkä	Köpökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	ensimmäinen	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	10	nummod	_	_
+10	pikkuötökkä	pikkuötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = ”Ja minä Hippu Röpökkä!”, huusi toinen.
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ja	ja	CCONJ	C	_	4	cc	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:cop	_	_
+4	Hippu	Hippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	9	nsubj	_	_
+5	Röpökkä	Röpökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	4	punct	_	_
+9	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 11
+# text = ”Ja minä – minä se olen Ippu Pötökkä”, vastasi kääpiöbanaanin vasta löytänyt pikkuötökkä.
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ja	ja	CCONJ	C	_	3	cc	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+4	–	–	PUNCT	Punct	_	9	punct	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj:cop	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj:cop	_	_
+7	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	Ippu	Ippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	9	nsubj:cop	_	_
+9	Pötökkä	Pötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
+10	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	_
+12	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+13	kääpiöbanaanin	kääpiöbanaani	NOUN	N	Case=Gen|Number=Sing	12	obj	_	_
+14	vasta	vasta	ADV	Adv	_	15	advmod	_	_
+15	löytänyt	löytää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	conj	_	_
+16	pikkuötökkä	pikkuötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	15	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 12
+# text = ”Saat asua täällä, Ippu Pötökkä”, sanoi pikkuötökkä nimeltään Lippu Köpökkä.
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	asua	asua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	täällä	täällä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	Ippu	Ippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	7	nsubj:cop	_	_
+7	Pötökkä	Pötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	2	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	pikkuötökkä	pikkuötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	_
+12	nimeltään	nimi	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	10	obl	_	_
+13	Lippu	lippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	10	nsubj	_	_
+14	Köpökkä	Köpökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	13	amod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = ”Mutta kääpiöbanaanihan pian kuolee!” huusi järkyttynyt Ippu Pötökkä.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	kääpiöbanaanihan	kääpiöbanaaniha	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	pian	pian	ADV	Adv	_	5	advmod	_	_
+5	kuolee	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	9	punct	_	_
+8	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	järkyttynyt	järkyttyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	acl	_	_
+10	Ippu	Ippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	nsubj	_	_
+11	Pötökkä	Pötö	VERB	V	Clitic=Kaan|InfForm=1|Number=Sing|Style=Coll|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 14
+# text = ”Onhan se hieman nuutunut, mutta ei se mitään”, sanoi Lippu Köpökkä.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Onhan	olla	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+4	hieman	hieman	ADV	Adv	_	5	advmod	_	_
+5	nuutunut	nuutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	mutta	mutta	CCONJ	C	_	10	cc	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj:cop	_	_
+10	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	conj	_	SpaceAfter=No
+11	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	5	punct	_	_
+13	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+14	Lippu	lippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	13	nsubj	_	_
+15	Köpökkä	Köpökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 15
+# text = ”Me pikkuötökät pidämme siitä.”
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	det	_	_
+3	pikkuötökät	pikkuötökä	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+4	pidämme	pitää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 16
+# text = Silloin Ippu Pötökkä, tuo suurista kysymyksistä kiinnostunut pikkuötökkä, ymmärsi vihdoin elämän tarkoituksen.
+1	Silloin	silloin	ADV	Adv	_	2	advmod	_	_
+2	Ippu	Ippu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj:cop	_	_
+3	Pötökkä	Pötökkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	det	_	_
+6	suurista	suuri	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	7	amod	_	_
+7	kysymyksistä	kysymys	NOUN	N	Case=Ela|Number=Plur	8	obl	_	_
+8	kiinnostunut	kiinnostua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+9	pikkuötökkä	pikkuötökkä	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	_
+11	ymmärsi	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	vihdoin	vihdoin	ADV	Adv	_	11	advmod	_	_
+13	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	tarkoituksen	tarkoitus	NOUN	N	Case=Gen|Number=Sing	11	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 17
+# text = Pikkuötökät elävät kovin pienen elämän.
+1	Pikkuötökät	Pikkuötökä	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	elävät	elää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kovin	kovin	ADV	Adv	_	4	advmod	_	_
+4	pienen	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	5	amod	_	_
+5	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 18
+# text = Ja kääpiöpalmu on nuutumaisillaankin vielä pitkäikäinen.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	kääpiöpalmu	kääpiöpalmu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	6	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	nuutumaisillaankin	nuutumaisillaan	ADV	Adv	Clitic=Kin	6	advmod	_	_
+5	vielä	vielä	ADV	Adv	_	6	advmod	_	_
+6	pitkäikäinen	pitkäikäinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

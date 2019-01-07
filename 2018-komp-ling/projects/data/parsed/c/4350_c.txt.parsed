@@ -1,0 +1,241 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Tuossa on hänen makuuhuoneensa", kuiskasi Holmes.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Tuossa	tuo	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	makuuhuoneensa	makuuhuoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = "Tämä ovi vie suoraan työhuoneeseen.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	ovi	#ovi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	vie	viedä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	suoraan	suoraan	ADV	Adv	_	4	advmod	_	_
+6	työhuoneeseen	työhuone	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Se on kumminkin niin lujasti teljetty, ettemme voi sitä tietä käyttää; siitä syntyisi liian paljon melua.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+3	kumminkin	kumminkin	ADV	Adv	_	6	advmod	_	_
+4	niin	niin	ADV	Adv	_	6	advmod	_	_
+5	lujasti	lujasti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+6	teljetty	teljtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	ettemme	että#ei	VERB	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	12	cc	_	_
+9	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	aux	_	_
+10	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	11	det	_	_
+11	tietä	#tie	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+12	käyttää	käyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	conj	_	SpaceAfter=No
+13	;	;	PUNCT	Punct	_	6	punct	_	_
+14	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	15	obl	_	_
+15	syntyisi	syntyä	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	6	parataxis	_	_
+16	liian	liian	ADV	Adv	_	17	advmod	_	_
+17	paljon	paljon	ADV	Adv	_	15	advmod	_	_
+18	melua	melu	NOUN	N	Case=Par|Derivation=U|Number=Sing	15	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Menkäämme talon ympäri, tässä on eräs kasvihuone, joka johtaa vierashuoneeseen."
+1	Menkäämme	Menkätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	talon	talo	NOUN	N	Case=Gen|Number=Sing	1	obl	_	_
+3	ympäri	ympäri	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	1	ccomp	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	det	_	_
+8	kasvihuone	kasvi#huone	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	johtaa	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	_
+12	vierashuoneeseen	vierashuone	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Ovi oli lukittu, mutta Holmes avasi sen taitavasti, ja seuraavassa hetkessä olimme me rikollisia lain silmissä.
+1	Ovi	ovi	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	lukittu	lukita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	mutta	mutta	CCONJ	C	_	7	cc	_	_
+6	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	avasi	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obj	_	_
+9	taitavasti	taitavasti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	18	punct	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	seuraavassa	seuraava	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	13	amod	_	_
+13	hetkessä	hetki	NOUN	N	Case=Ine|Number=Sing	18	obl	_	_
+14	olimme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	18	cop	_	_
+15	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	17	nmod:poss	_	_
+16	rikollisia	rikollinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	17	amod	_	_
+17	lain	laki	NOUN	N	Case=Ins|Number=Plur	18	obl	_	_
+18	silmissä	silmä	NOUN	N	Case=Ine|Number=Plur	3	conj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Tuskin saatoimme hengittää kasvihuoneen kuumaa, kosteata ilmaa.
+1	Tuskin	tuskin	ADV	Adv	_	2	advmod	_	_
+2	saatoimme	saatola	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hengittää	hengittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	kasvihuoneen	kasvihuone	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kuumaa	kuuma	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	kosteata	kosteata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+8	ilmaa	ilma	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Holmes tarttui käteeni pimeässä ja kuljetti minua palmujen ja muiden lehtikasvien ohi, jotka raapivat meitä kasvoihin.
+1	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	käteeni	käe	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=1	2	obj	_	_
+4	pimeässä	pimeä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kuljetti	kuljettaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+8	palmujen	palmu	NOUN	N	Case=Gen|Derivation=U|Number=Plur	6	obl	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	11	det	_	_
+11	lehtikasvien	lehtikasva	NOUN	N	Case=Gen|Number=Plur	8	conj	_	_
+12	ohi	ohi	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	15	nsubj	_	_
+15	raapivat	raapa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+16	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	17	obj	_	_
+17	kasvoihin	kasvo	NOUN	N	Case=Ill|Number=Plur	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Holmesilla oli muiden lahjojensa ohessa myöskin merkillinen kyky nähdä pimeässä.
+1	Holmesilla	Holmesi	NOUN	N	Case=Ade|Number=Sing	9	obl	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	4	det	_	_
+4	lahjojensa	lahja	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	1	obl	_	_
+5	ohessa	ohessa	ADP	Adp	AdpType=Post	4	case	_	_
+6	myöskin	myöskin	ADV	Adv	_	1	advmod	_	_
+7	merkillinen	merkillinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	8	amod	_	_
+8	kyky	kyky	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	conj	_	_
+10	pimeässä	pimeä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 9
+# text = Hänen kätensä johtamana tunsin tulevani toiseen huoneeseen, jossa sikarin savua vielä tuntui ilmassa.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	kätensä	käsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	nsubj	_	_
+3	johtamana	johtaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	4	acl	_	_
+4	tunsin	tunsi	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	tulevani	tulea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Pres|Person[psor]=1|VerbForm=Part|Voice=Act	0	root	_	_
+6	toiseen	toinen	PRON	Pron	Case=Ill|Number=Sing|PronType=Rcp	7	det	_	_
+7	huoneeseen	huone	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	13	obl	_	_
+10	sikarin	sikari	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	savua	savu	NOUN	N	Case=Par|Derivation=U|Number=Sing	13	nsubj	_	_
+12	vielä	vielä	ADV	Adv	_	13	advmod	_	_
+13	tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+14	ilmassa	ilma	NOUN	N	Case=Ine|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Holmes hapuili edelleen huonekalujen välitse, avasi vielä yhden oven ja sulki sen jäljestämme.
+1	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hapuili	hapuilla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	edelleen	edelleen	ADV	Adv	_	2	advmod	_	_
+4	huonekalujen	huonekalu	NOUN	N	Case=Gen|Number=Plur	2	obl	_	_
+5	välitse	välitse	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	avasi	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	vielä	vielä	ADV	Adv	_	7	advmod	_	_
+9	yhden	yksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	10	nummod	_	_
+10	oven	ovi	NOUN	N	Case=Gen|Number=Sing	7	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	sulki	sulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	14	nmod:poss	_	_
+14	jäljestämme	jäljest	NOUN	N	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1	12	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Ojentaessani kättäni tunsin muutamia takkeja riippuvan seinällä ja ymmärsin olevamme eteisessä.
+1	Ojentaessani	Ojentaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	3	advcl	_	_
+2	kättäni	käsi	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	obj	_	_
+3	tunsin	tuntaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	muutamia	muutama	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	5	det	_	_
+5	takkeja	takki	NOUN	N	Case=Par|Number=Plur	6	nsubj	_	_
+6	riippuvan	riippua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	xcomp:ds	_	_
+7	seinällä	seinä	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	ymmärsin	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+10	olevamme	olevtaa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	eteisessä	eteinen	NOUN	N	Case=Ine|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Menimme edelleen ja
+1	Menimme	Menla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	edelleen	edelleen	ADV	Adv	_	1	advmod	_	_
+3	ja	ja	CCONJ	C	_	1	cc	_	_
+
+# sent_id = 13
+# text = Holmes avasi varovasti erään oikealle vievän oven.
+1	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	avasi	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	varovasti	varovasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	erään	eräs	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	nsubj	_	_
+5	oikealle	oikea	PROPN	N	Case=All|Number=Sing	6	obl	_	_
+6	vievän	vieä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+7	oven	ovi	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Jotakin tuli vastaani, ja sydämeni melkein seisahtui rinnassani, mutta heti ymmärsin minä hymyillen säikähdykselleni, että se olikin vain kissa.
+1	Jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	nsubj	_	_
+2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vastaani	vasta	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	sydämeni	sydän	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	nsubj	_	_
+7	melkein	melkein	ADV	Adv	_	8	advmod	_	_
+8	seisahtui	seisahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	rinnassani	rinna	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	mutta	mutta	CCONJ	C	_	13	cc	_	_
+12	heti	heti	ADV	Adv	_	13	advmod	_	_
+13	ymmärsin	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+14	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	obj	_	_
+15	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	13	advcl	_	_
+16	säikähdykselleni	säikähdykse	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1	15	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	22	punct	_	_
+18	että	että	SCONJ	C	_	22	mark	_	_
+19	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	22	nsubj:cop	_	_
+20	olikin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	cop	_	_
+21	vain	vain	ADV	Adv	_	22	advmod	_	_
+22	kissa	kissa	NOUN	N	Case=Nom|Number=Sing	15	ccomp	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 15
+# text = Tässä uudessa huoneessa paloi tuli takassa ja täälläkin oli tupakansavua.
+1	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	det	_	_
+2	uudessa	uusi	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	3	amod	_	_
+3	huoneessa	huone	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+4	paloi	palaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+6	takassa	taka	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	täälläkin	täällä	ADV	Adv	Clitic=Kin	5	conj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+10	tupakansavua	tupakansavu	NOUN	N	Case=Par|Derivation=U|Number=Sing	8	nsubj:cop	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

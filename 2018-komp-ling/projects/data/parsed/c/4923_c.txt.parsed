@@ -1,0 +1,184 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Minä olen julma, sinä vuodat verta --: miksi ylistät juopunutta julmuuttani?
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj:cop	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	julma	julma	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+6	vuodat	vuotaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+7	verta	veri	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+8	--	--	PUNCT	Punct	_	11	punct	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	11	punct	_	_
+10	miksi	miksi	ADV	Adv	_	11	advmod	_	_
+11	ylistät	ylisttää	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+12	juopunutta	juopua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	acl	_	_
+13	julmuuttani	julmuut	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obj	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = "Mikä täydelliseksi tuli, kaikki kypsä -- tahtoo kuolla!" niin puhut sinä.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj	_	_
+3	täydelliseksi	täydellinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Llinen|Number=Sing	4	obl	_	_
+4	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	nsubj	_	_
+7	kypsä	kypsä	ADV	Adv	_	9	advmod	_	_
+8	--	--	PUNCT	Punct	_	7	punct	_	_
+9	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	kuolla	kuolla	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	4	punct	_	_
+13	niin	niin	ADV	Adv	_	14	advmod	_	_
+14	puhut	puha	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+15	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Siunattu, siunattu olkoon viinitarhurinveitsi!
+1	Siunattu	Siunattu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	siunattu	siunata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	5	acl	_	_
+4	olkoon	olko	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	viinitarhurinveitsi	viinitarhurinveitsi	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Mutta kaikki kypsymätön tahtoo elää: voi!
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	kypsymätön	kypsymätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	4	nsubj	_	_
+4	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	4	punct	_	_
+7	voi	voi	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Huol' itkee: "Kestä en! Pois, huoli!"
+1	Huol	Huol	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+2	'	'	PUNCT	Punct	_	3	punct	_	_
+3	itkee	itetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+6	Kestä	kestää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+7	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	6	xcomp	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+9	Pois	Pois	PROPN	N	Case=Nom|Number=Sing	3	parataxis	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	huoli	huoli	NOUN	N	Case=Nom|Number=Sing	9	conj	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mutta kaikki, mikä kärsii, tahtoo elää, jotta se tulisi kypsäksi ja iloiseksi ja kaipaavaksi, -- kaukaisempaa, korkeampaa, kirkkaampaa kaipaavaksi.
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	nsubj	_	_
+5	kärsii	kärsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	jotta	jotta	SCONJ	C	_	12	mark	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	tulisi	tulla	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	advcl	_	_
+13	kypsäksi	kypsä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	12	xcomp	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	iloiseksi	iloinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Sing	13	conj	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	kaipaavaksi	kaipaava	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	12	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	--	--	PUNCT	Punct	_	20	punct	_	_
+20	kaukaisempaa	kaukainen	ADJ	A	Case=Par|Degree=Cmp|Derivation=Inen|Number=Sing	7	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	22	punct	_	_
+22	korkeampaa	korkea	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	20	conj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	25	punct	_	_
+24	kirkkaampaa	kirkas	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	25	nsubj	_	_
+25	kaipaavaksi	kaipaaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	20	conj	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = "Minä tahdon perillisiä, niin puhuu kaikki, mikä kärsii, minä tahdon lapsia, minä en tahdo itseäni," -- mutta ilo ei tahdo perillisiä, ei lapsia, -- ilo tahtoo itsensä, tahtoo iäisyyttä, tahtoo takaisintuloa, tahtoo kaiken iäti itsensä kaltaiseksi.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+3	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	perillisiä	perillinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	2	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	niin	niin	ADV	Adv	_	7	advmod	_	_
+7	puhuu	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	19	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	kärsii	kärsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	obj	_	_
+14	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	lapsia	lapsi	NOUN	N	Case=Par|Number=Plur	13	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	19	punct	_	_
+17	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_
+18	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	advcl	_	_
+20	itseäni	itse	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	27	nsubj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+22	"	"	PUNCT	Punct	_	27	punct	_	_
+23	--	--	PUNCT	Punct	_	27	punct	_	_
+24	mutta	mutta	CCONJ	C	_	27	cc	_	_
+25	ilo	ilo	NOUN	N	Case=Nom|Number=Sing	27	nsubj	_	_
+26	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	27	aux	_	_
+27	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	19	ccomp	_	_
+28	perillisiä	perillinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	27	xcomp	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	30	punct	_	_
+30	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	27	advcl	_	_
+31	lapsia	lapsi	NOUN	N	Case=Par|Number=Plur	30	obj	_	SpaceAfter=No
+32	,	,	PUNCT	Punct	_	35	punct	_	_
+33	--	--	PUNCT	Punct	_	35	punct	_	_
+34	ilo	ilo	NOUN	N	Case=Nom|Number=Sing	35	nsubj	_	_
+35	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	31	acl:relcl	_	_
+36	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	35	obj	_	SpaceAfter=No
+37	,	,	PUNCT	Punct	_	38	punct	_	_
+38	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	conj	_	_
+39	iäisyyttä	iäisyys	NOUN	N	Case=Par|Number=Sing	38	obj	_	SpaceAfter=No
+40	,	,	PUNCT	Punct	_	41	punct	_	_
+41	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	conj	_	_
+42	takaisintuloa	takaisin#tulo	NOUN	N	Case=Par|Number=Sing	41	obj	_	SpaceAfter=No
+43	,	,	PUNCT	Punct	_	44	punct	_	_
+44	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	35	acl:relcl	_	_
+45	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	44	obj	_	_
+46	iäti	iäti	ADV	Adv	_	44	advmod	_	_
+47	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	48	obj	_	_
+48	kaltaiseksi	kaltainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Sing	44	xcomp	_	SpaceAfter=No
+49	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Huol' itkee: "Murru, vuoda verta, sydän!
+1	Huol	Huol	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+2	'	'	PUNCT	Punct	_	3	punct	_	_
+3	itkee	itetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	8	punct	_	_
+5	"	"	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+6	Murru	Murru	INTJ	Interj	_	8	discourse	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	vuoda	vuotaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+9	verta	veri	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	8	punct	_	_
+11	sydän	sytä	NOUN	N	Case=Gen|Number=Sing	8	obj	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Vaella, jalka!
+1	Vaella	Va	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	jalka	jalka	NOUN	N	Case=Nom|Number=Sing	1	appos	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Siipi, lennä!
+1	Siipi	siipi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	lennä	lentää	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

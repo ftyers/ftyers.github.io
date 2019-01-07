@@ -1,0 +1,102 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pastori Halme hengitti kiivaasti.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	hengitti	hengittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kiivaasti	kiivaasti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Joku oli ampunut häntä kohti kiväärillä.
+1	Joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ampunut	ampua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+5	kohti	kohti	ADP	Adp	AdpType=Prep	6	case	_	_
+6	kiväärillä	kivääri	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Luoti oli lentänyt reilusti yli, mutta häntä kohti oli tähdätty.
+1	Luoti	Luoti	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lentänyt	lentää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	reilusti	reilusti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	yli	yli	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	SpacesAfter= 
+7	mutta	mutta	CCONJ	C	_	11	cc	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	11	obl	_	_
+9	kohti	kohti	ADP	Adp	AdpType=Post	8	case	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux:pass	_	_
+11	tähdätty	tähdätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Hän oli pelästynyt.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pelästynyt	pelästyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = Sydän hakkasi ja kädet hikoilivat.
+1	Sydän	sydän	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hakkasi	hakata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	kädet	käsi	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+5	hikoilivat	hikoila	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Pastori Halme nojasi pylvääseen ja mietti, mitä pitäisi tehdä.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	nojasi	nojata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	pylvääseen	pylväänen	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	mietti	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	10	obj	_	_
+9	pitäisi	pitää	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 7
+# text = Ampuja oli selvästi juossut ulos.
+1	Ampuja	ampuja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	selvästi	selvästi	ADV	Adv	Derivation=Sti	4	advmod	_	_
+4	juossut	juosta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	ulos	ulos	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Uskaltaisiko hän lähteä?
+1	Uskaltaisiko	Uskaltala	VERB	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Uskaltaisiko hän mennä ulos kirkosta ja kotiin?
+1	Uskaltaisiko	Uskaltala	VERB	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+4	ulos	ulos	ADV	Adv	_	5	advmod	_	_
+5	kirkosta	kirkko	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	5	conj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Mitä jos ampuja vaanii häntä ulkopuolella?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+2	jos	jos	SCONJ	C	_	1	fixed	_	_
+3	ampuja	#ampuja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	nsubj	_	_
+4	vaanii	vaania	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+6	ulkopuolella	ulkopuolella	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

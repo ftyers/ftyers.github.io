@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- En, olen siirtynyt armeijaan, -- vastasi Anatol, vaivoin pidätellen nauruaan.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	mark	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	siirtynyt	siirtyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	armeijaan	armeija	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	--	--	PUNCT	Punct	_	9	punct	_	_
+9	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+10	Anatol	Anatol	PROPN	N	Case=Nom|Number=Sing	13	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	vaivoin	vaiva	NOUN	N	Case=Ins|Number=Plur	13	obl	_	_
+13	pidätellen	pidätella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	9	advcl	_	_
+14	nauruaan	nauru	NOUN	N	Case=Par|Derivation=U|Number=Sing|Person[psor]=3	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- Vai niin!.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Vai	Vai	CCONJ	C	_	3	cc	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 3
+# text = Se on oikein.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	oikein	oikein	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Mitä aijotte, rakkaani, tahdotteko palvella keisaria ja isänmaata?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	obj	_	_
+2	aijotte	aijlla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	rakkaani	rakka	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	tahdotteko	tahdoa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl	_	_
+7	palvella	palv	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+8	keisaria	keisari	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	isänmaata	isän#maa	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Aika on rauhaton.
+1	Aika	aika	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	rauhaton	rauhaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Tuollaisen reiman pojan on palveltava, on palveltava.
+1	Tuollaisen	Tuollainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	reiman	reima	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	pojan	poika	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	palveltava	palvella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux:pass	_	_
+8	palveltava	palvella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	5	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Palveletteko rintamassa?
+1	Palveletteko	Palvelea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	rintamassa	rintama	NOUN	N	Case=Ine|Number=Sing	1	obl	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = -- En, ruhtinas.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Rykmenttini on lähtenyt rintamaan, mutta minä olen määrätty...
+1	Rykmenttini	Rykmenttini	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lähtenyt	lähteä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	rintamaan	rintta	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	mutta	mutta	CCONJ	C	_	9	cc	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	obj	_	_
+8	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux:pass	_	_
+9	määrätty	määrätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Mihin minä taas kuulunkaan, isä?
+1	Mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Int	4	obl	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	taas	taas	ADV	Adv	_	4	advmod	_	_
+4	kuulunkaan	kuulunata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	isä	isä	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = -- kysyi Anatol nauraen isältään.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Anatol	Anatol	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	nauraen	nauraa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	isältään	isäl	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

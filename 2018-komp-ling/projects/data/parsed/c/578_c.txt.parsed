@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Hirvittävästi!"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Hirvittävästi	Hirvittävästi	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = hän vastasi katsoen hämmästyksissään tyttöön -- "hirvittävästi!
+1	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	katsoen	katsoa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	hämmästyksissään	hämmästyksissän	NUM	Num	Case=Ill|Number=Sing|NumType=Card	5	nummod	_	_
+5	tyttöön	tyttö	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+6	--	--	PUNCT	Punct	_	8	punct	_	_
+7	"	"	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+8	hirvittävästi	hirvittävästi	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Se oli julmaa.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	julmaa	julma	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Oletko sairas?
+1	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	sairas	sairas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Sinulla ei ole aavistustakaan siitä millaista se oli.
+1	Sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	6	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+4	aavistustakaan	aavistus	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	6	obl	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	6	obl	_	_
+6	millaista	millainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	0	root	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Et tiedä kuinka julmasti minä kärsin." Tyttö hymyili.
+1	Et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	kuinka	kuinka	ADV	Adv	_	4	advmod	_	_
+4	julmasti	julmasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	kärsin	kärsiä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	2	punct	_	_
+9	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	hymyili	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = "Dorian", hän vastasi lausuen vitkalleen hänen nimensä sointuvalla äänellään, ikäänkuin se olisi ollut hunajatakin makeampaa hänen punoittaville huulilleen -- "Dorian, sinun olisi pitänyt ymmärtää.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	6	appos	_	SpaceAfter=No
+3	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	lausuen	lausua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+8	vitkalleen	vitka	NOUN	N	Case=All|Number=Sing|Person[psor]=3	6	obl	_	_
+9	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	nimensä	nimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	12	nmod:poss	_	_
+11	sointuvalla	sointuva	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	12	amod	_	_
+12	äänellään	ääne	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	19	punct	_	_
+14	ikäänkuin	ikäänkuin	ADV	Adv	_	19	advmod	_	_
+15	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	19	nsubj:cop	_	_
+16	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	19	aux	_	_
+17	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	19	cop	_	_
+18	hunajatakin	hunajata	ADV	Adv	Clitic=Kin	19	advmod	_	_
+19	makeampaa	makea	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	6	conj	_	_
+20	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+21	punoittaville	punoittaa	VERB	V	Case=All|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	22	acl	_	_
+22	huulilleen	huuli	NOUN	N	Case=All|Number=Plur|Person[psor]=3	19	nmod	_	_
+23	--	--	PUNCT	Punct	_	25	punct	_	_
+24	"	"	PUNCT	Punct	_	25	punct	_	SpaceAfter=No
+25	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	6	appos	_	SpaceAfter=No
+26	,	,	PUNCT	Punct	_	25	punct	_	_
+27	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	30	nsubj	_	_
+28	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	30	aux	_	_
+29	pitänyt	pitää	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	30	aux	_	_
+30	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	acl:relcl	_	SpaceAfter=No
+31	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Mutta ymmärräthän sinä sen ainakin nyt?"
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	ymmärräthän	ymmärrät	ADV	Adv	Clitic=Han	4	advmod	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj:cop	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	0	root	_	_
+5	ainakin	ainakin	ADV	Adv	_	6	advmod	_	_
+6	nyt	nyt	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = "Mitä minun tulisi ymmärtää?" kysyi hän äkeissään.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	tulisi	tulla	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	4	punct	_	_
+8	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+10	äkeissään	äkei	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

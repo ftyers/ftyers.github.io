@@ -1,0 +1,83 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä? -- Siinäpä se on!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	2	punct	_	_
+5	Siinäpä	Siinä	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|Person=2|PronType=Prs	2	nsubj:cop	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Lähtekäämme talonmiehen luo; herättäköön hän heidät!
+1	Lähtekäämme	Lähtekätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	talonmiehen	talon#mies	NOUN	N	Case=Gen|Number=Sing	1	obl	_	_
+3	luo	luo	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	;	;	PUNCT	Punct	_	1	punct	_	_
+5	herättäköön	herättää	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Tehdään niin!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tehdään	tehdä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	niin	niin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Molemmat lähtivät alas.
+1	Molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	lähtivät	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	alas	alas	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Seis!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Seis	seis	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Jääkää te tänne, minä juoksen talonmiehen luo.
+1	Jääkää	Jäää	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	1	obj	_	_
+3	tänne	tänne	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	juoksen	juosta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+7	talonmiehen	talon#mies	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+8	luo	luo	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = -- Miksi jäädä tänne?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+3	jäädä	jäädä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	tänne	tänne	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- Onko teistä sitten apua?...
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	teistä	sinä	PRON	Pron	Case=Ela|Number=Plur|Person=2|PronType=Prs	5	nsubj:cop	_	_
+4	sitten	sitten	ADV	Adv	_	5	advmod	_	_
+5	apua	apu	NOUN	N	Case=Par|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	..	..	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = -- Kernaasti minun puolestani...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kernaasti	Kernaasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+4	puolestani	puolesta	ADP	Adp	AdpType=Post|Number[psor]=Sing|Person[psor]=1	3	case	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

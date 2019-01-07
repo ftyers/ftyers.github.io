@@ -1,0 +1,105 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Demokraatit menestyivät USA:n vaaleissa.
+1	Demokraatit	Demokraatti	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	menestyivät	menestyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	USA:n	USA	PROPN	N	Abbr=Yes|Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	vaaleissa	vaalit	NOUN	N	Case=Ine|Number=Plur	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Teiden hoito talvella paranee.
+1	Teiden	tie	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	hoito	hoito	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	talvella	talvi	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+4	paranee	parata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Virolaisten työmatkat Suomeen voivat vaikeutua, jos Suomi ja Viro päättävät ottaa käyttöön eri ajan.
+1	Virolaisten	viro#lainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	2	nmod:poss	_	_
+2	työmatkat	työmatka	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+3	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	2	nmod	_	_
+4	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	vaikeutua	vaikeutua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	jos	jos	SCONJ	C	_	11	mark	_	_
+8	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	Viro	Viro	PROPN	N	Case=Nom|Number=Sing	8	conj	_	_
+11	päättävät	päättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+12	ottaa	ottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	käyttöön	käyttö	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+14	eri	eri	ADJ	A	_	15	amod	_	_
+15	ajan	aika	NOUN	N	Case=Gen|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Säätiedot.
+1	Säätiedot	Sää#tieto	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Lähes joka 4. kaukojuna Suomessa myöhästyy.
+1	Lähes	lähes	ADV	Adv	_	2	advmod	_	_
+2	joka	joka	PRON	Pron	Case=Nom|Number=Sing	6	nsubj	_	_
+3	4.	4.	ADJ	Num	NumType=Ord	6	obl	_	_
+4	kaukojuna	kauko#juna	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+5	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	4	nmod	_	_
+6	myöhästyy	myöhästyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Monet työttömyyskassat laskevat jäsenmaksujaan.
+1	Monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	det	_	_
+2	työttömyyskassat	työttömyyskassa	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	laskevat	laskea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	jäsenmaksujaan	jäsenmaksu	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Influenssarokotukset ovat käynnissä jo monissa kunnissa.
+1	Influenssarokotukset	Influenssarokotus	NOUN	N	Case=Nom|Number=Plur	6	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	käynnissä	käynti	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+4	jo	jo	ADV	Adv	_	6	advmod	_	_
+5	monissa	moni	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	6	det	_	_
+6	kunnissa	kunta	NOUN	N	Case=Ine|Number=Plur	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Ilmasto ja ympäristö näkyvät tänä vuonna Linnan juhlissa.
+1	Ilmasto	Ilmasto	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	ympäristö	ympäristö	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	näkyvät	näkydä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	6	det	_	_
+6	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+7	Linnan	linna	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	juhlissa	juhla	NOUN	N	Case=Ine|Number=Plur	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Junat myöhästelevät.
+1	Junat	Juna	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	myöhästelevät	myöhästellä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Luomuruoka kiinnostaa.
+1	Luomuruoka	Luomuruoka	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kiinnostaa	kiinnostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Marraskuun ryhmä.
+1	Marraskuun	marraskuu	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ryhmä	ryhmä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Sää.
+1	Sää	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

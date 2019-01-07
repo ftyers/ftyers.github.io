@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lyödä vetoa.
+1	Lyödä	lyödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	vetoa	veto	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Se, joka lyö vetoa, on vedonlyöjä.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj:cop	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	lyö	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+5	vetoa	veto	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	vedonlyöjä	vedonlyö	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = Hän on mielestään oikeassa jostakin epävarmasta asiasta niin varmasti, että pelaa rahasta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+3	mielestään	mieli	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	7	obl	_	_
+4	oikeassa	oikeassa	ADV	Adv	_	5	advmod	_	_
+5	jostakin	jokin	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	7	det	_	_
+6	epävarmasta	epävarma	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	7	amod	_	_
+7	asiasta	asia	NOUN	N	Case=Ela|Number=Sing	9	obl	_	_
+8	niin	niin	ADV	Adv	_	9	advmod	_	_
+9	varmasti	varmasti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	että	että	SCONJ	C	_	12	mark	_	_
+12	pelaa	pelata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	ccomp	_	_
+13	rahasta	raha	NOUN	N	Case=Ela|Number=Sing	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 4
+# text = Jos vedonlyöjä on oikeassa, hän ansaitsee näin enemmän rahaa, jos väärässä, hän menettää rahaa.
+1	Jos	jos	SCONJ	C	_	4	mark	_	_
+2	vedonlyöjä	vedonlyö	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	oikeassa	oikea	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	7	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	ansaitsee	ansaita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	näin	näin	ADV	Adv	_	9	advmod	_	_
+9	enemmän	enemmän	ADV	Adv	_	7	advmod	_	_
+10	rahaa	raha	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	16	punct	_	_
+12	jos	jos	SCONJ	C	_	16	mark	_	_
+13	väärässä	väärässä	ADV	Adv	_	16	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	13	punct	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	menettää	menettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+17	rahaa	raha	NOUN	N	Case=Par|Number=Sing	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\s
+
+# sent_id = 5
+# text = Maailmanmusiikkia.
+1	Maailmanmusiikkia	Maailmanmusiikki	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Sellaista musiikkia, jota radioasemat eivät yleensä soita ja jossa on mukana jonkun kansan ikivanhoja musiikkiperinteitä.
+1	Sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	musiikkia	musiikki	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	8	nsubj:cop	_	_
+5	radioasemat	radioasema	NOUN	N	Case=Nom|Number=Plur	8	nsubj:cop	_	_
+6	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	yleensä	yleensä	ADV	Adv	_	8	advmod	_	_
+8	soita	sa	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	10	nsubj:cop	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	2	conj	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+12	mukana	mukana	ADP	Adp	AdpType=Post	16	case	_	_
+13	jonkun	joku	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	14	det	_	_
+14	kansan	kansa	NOUN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+15	ikivanhoja	ikivanha	ADJ	A	Case=Par|Degree=Pos|Number=Plur	16	amod	_	_
+16	musiikkiperinteitä	musiikkiperinte	NOUN	N	Case=Par|Number=Plur	10	nsubj:cop	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Maailman ääriin.
+1	Maailman	maailma	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ääriin	ääriin	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Todella kauas.
+1	Todella	todella	ADV	Adv	_	2	advmod	_	_
+2	kauas	kauas	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Kirjaimellisesti maailman toiselle puolelle, mantereen viimeiselle rannalle.
+1	Kirjaimellisesti	kirjaimellisesti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+2	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+3	toiselle	toinen	PRON	Pron	Case=All|Number=Sing|PronType=Rcp	4	det	_	_
+4	puolelle	puoli	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mantereen	manner	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+7	viimeiselle	viimeinen	ADJ	A	Case=All|Degree=Pos|Derivation=Lainen|Number=Sing	8	amod	_	_
+8	rannalle	ranta	NOUN	N	Case=All|Number=Sing	4	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\s
+
+# sent_id = 10
+# text = Maanmiehiä.
+1	Maanmiehiä	Maan#mies	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Samasta maasta tulevia ihmisiä.
+1	Samasta	sama	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	2	det	_	_
+2	maasta	maa	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	tulevia	tulla	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Saman valtion kansalaisia.
+1	Saman	sama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	2	det	_	_
+2	valtion	valtio	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kansalaisia	kansalainen	NOUN	N	Case=Par|Derivation=Lainen|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

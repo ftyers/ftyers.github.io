@@ -1,0 +1,109 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Wallander aloitti toisesta päästä talorivistöä.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	aloitti	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisesta	toinen	PRON	Pron	Case=Ela|Number=Sing|PronType=Rcp	4	det	_	_
+4	päästä	pää	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+5	talorivistöä	talorivistö	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ensimmäisessä talossa oven avasi 30-vuotias nainen.
+1	Ensimmäisessä	ensimmäinen	ADJ	Num	Case=Ine|Derivation=Inen|Number=Sing|NumType=Ord	2	nummod	_	_
+2	talossa	talo	NOUN	N	Case=Ine|Number=Sing	4	obl	_	SpacesAfter= 
+3	oven	ovi	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	avasi	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	30-vuotias	30-#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Hänellä oli päällään tahrainen haalari.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	päällään	päällä	ADV	Adv	Person[psor]=3	4	advmod	_	_
+4	tahrainen	tahrainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	haalari	haalari	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = — En halua, että minua häiritään, nainen sanoi ärtyneenä.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	7	obj	_	_
+7	häiritään	häiritä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	sanoi	sanoida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+11	ärtyneenä	ärtyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = — Olen poliisista, Wallander sanoi.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	poliisista	poliis	NOUN	N	Case=Ela|Number=Plur	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = — Oletko ehkä nähnyt viime päivinä miestä kulkemassa yksin rannalla?
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ehkä	ehkä	ADV	Adv	_	4	advmod	_	_
+4	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	viime	viime	ADJ	A	_	6	amod	_	_
+6	päivinä	päivä	NOUN	N	Case=Ess|Number=Plur	4	obl	_	_
+7	miestä	mies	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+8	kulkemassa	kulkea	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+9	yksin	yksin	ADV	Adv	_	8	advmod	_	_
+10	rannalla	ranta	NOUN	N	Case=Ade|Number=Sing	8	obl	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = hän kysyi naiselta.
+1	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kysyi	kysyydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	naiselta	nainen	NOUN	N	Case=Abl|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = — Kun maalaan, minulla on verhot alhaalla.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Kun	kun	SCONJ	C	_	3	mark	_	_
+3	maalaan	maala	NOUN	N	Case=Ill|Number=Sing	5	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop:own	_	_
+7	verhot	verho	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+8	alhaalla	alhaka	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = En ole nähnyt ketään, nainen vastasi.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	aux	_	_
+3	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = — Oletko taiteilija? Wallander kysyi.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	taiteilija	taiteilija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+5	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

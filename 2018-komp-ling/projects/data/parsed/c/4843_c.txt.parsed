@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Hiljaa!
+1	Hiljaa	hiljaa	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = -- "-- 'Onneen, kuinka vähän tarvitaan onneen!'
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+3	--	--	PUNCT	Punct	_	5	punct	_	_
+4	'	'	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	Onneen	Ona	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	kuinka	kuinka	ADV	Adv	_	9	advmod	_	_
+8	vähän	vähän	ADV	Adv	_	9	advmod	_	_
+9	tarvitaan	tarvita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+10	onneen	ona	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	conj	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+12	'	'	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Niin minä puhuin kerran, ja pidin itseäni viisaana.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	puhuin	puhua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kerran	kerran	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	pidin	pitää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	itseäni	itse	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	7	obj	_	_
+9	viisaana	viisas	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	7	xcomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Mutta se oli herjausta: sen minä opin nyt.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	herjausta	herjaus	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	opin	oppia	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	nyt	nyt	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Viisaat narrit puhuvat paremmin.
+1	Viisaat	Viisaa	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	narrit	narri	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	puhuvat	puhua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	paremmin	hyvin	ADV	Adv	Degree=Cmp	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "Vähin juuri, hiljaisin, kevyin, sisiliskon kahina, tuulahdus, henkäys, silmänräpäys -- _vähä_ aikaan saa onnen _parhaimman_ laadun.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Vähin	vähin	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	18	amod	_	_
+3	juuri	juuri	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	hiljaisin	hiljaisin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	kevyin	kevyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	sisiliskon	sisilisko	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	kahina	kahi	NOUN	N	Case=Ess|Number=Sing	2	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	tuulahdus	tuulahdus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	2	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	henkäys	henkäys	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	2	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	silmänräpäys	silmänräpäys	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	2	conj	_	_
+17	--	--	PUNCT	Punct	_	2	punct	_	_
+18	_vähä_ aikaan	_vähä_ aika	NOUN	N	Case=Ill|Number=Sing	19	obl	_	_
+19	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+20	onnen	onni	NOUN	N	Case=Gen|Number=Sing	21	nmod:poss	_	_
+21	_parhaimman_ laadun	_parhaimman_ laadu	NOUN	N	Case=Gen|Number=Sing	19	obj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	19	punct	_	_
+
+# sent_id = 7
+# text = Hiljaa! "-- Mitä minulle tapahtui: kuule!
+1	Hiljaa	hiljaa	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	7	punct	_	_
+3	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+4	--	--	PUNCT	Punct	_	7	punct	_	_
+5	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+6	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	7	obl	_	_
+7	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	7	punct	_	_
+9	kuule	kuule	INTJ	Interj	_	7	discourse	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Onko aika lentänyt matkoihinsa?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	aika	aika	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	lentänyt	lentää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	matkoihinsa	matka	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	3	obl	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Enkö minä pudonnut -- kuule! iäisyyden kaivoon?
+1	Enkö	Enkuin	SCONJ	C	Style=Coll	3	mark	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	pudonnut	pudota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	--	--	PUNCT	Punct	_	3	punct	_	_
+5	kuule	kuule	INTJ	Interj	_	8	discourse	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+7	iäisyyden	iäisyys	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	kaivoon	kaivo	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

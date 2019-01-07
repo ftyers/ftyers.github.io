@@ -1,0 +1,150 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Alan, miten ystävällistä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Alan	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	miten	miten	ADV	Adv	_	5	advmod	_	_
+5	ystävällistä	ystävälli	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kiitos että tulit".
+1	Kiitos	kiitos	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	että	että	CCONJ	C	_	3	cc	_	_
+3	tulit	tuli	NOUN	N	Case=Nom|Number=Plur	1	conj	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = "Olin päättänyt etten koskaan enää astuisi sinun kynnyksesi yli, Gray.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	päättänyt	päättädä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	etten	että#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	mark	_	_
+5	koskaan	koskaan	ADV	Adv	_	7	advmod	_	_
+6	enää	enää	ADV	Adv	_	7	advmod	_	_
+7	astuisi	astua	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	3	ccomp	_	_
+8	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	_
+9	kynnyksesi	kynny	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=2|VerbForm=Inf|Voice=Act	7	conj	_	_
+10	yli	yli	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	_
+12	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Mutta sinä sanoit että elämä ja kuolema on kysymyksessä."
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	sanoit	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	että	että	SCONJ	C	_	9	mark	_	_
+5	elämä	elämä	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kuolema	kuolema	NOUN	N	Case=Nom|Number=Sing	5	conj	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	kysymyksessä	kysymys	NOUN	N	Case=Ine|Number=Sing	3	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Hänen äänensä kuulosti kovalta ja kylmältä.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	äänensä	ääni	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	nsubj	_	_
+3	kuulosti	kuulostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kovalta	kova	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	3	xcomp	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kylmältä	kylmä	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Hänen sanansa olivat hitaita ja punnittuja.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	sanansa	sana	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	4	nsubj:cop	_	_
+3	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	hitaita	hitas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	punnittuja	punnittu	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Vakava, tutkiva katse, jonka hän kiinnitti Dorianiin, ilmaisi halveksumista.
+1	Vakava	vakava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	tutkiva	tutkiva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	katse	katse	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	8	obj	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	kiinnitti	kiinnittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+9	Dorianiin	Dorian	PROPN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	8	punct	_	_
+11	ilmaisi	ilmaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	halveksumista	halveksuminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 8
+# text = Hän oli pistänyt kätensä astrakanitakkinsa taskuihin, eikä näyttänyt huomanneen sitä liikettä, jolla Dorian oli häntä tervehtinyt.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pistänyt	pistää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kätensä	käsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	obj	_	_
+5	astrakanitakkinsa	astrakanitakki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	6	obj	_	_
+6	taskuihin	tasku	NOUN	N	Case=Ill|Number=Plur	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	cc	_	_
+9	näyttänyt	näyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+10	huomanneen	huomata	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	xcomp	_	_
+11	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	12	det	_	_
+12	liikettä	liike	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	18	punct	_	_
+14	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	18	obl	_	_
+15	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	18	nsubj	_	_
+16	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	aux	_	_
+17	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	18	obj	_	_
+18	tervehtinyt	tervehtiä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	acl:relcl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = "Niin, elämä ja kuolema on kysymyksessä, Alan, ja se koskee useampaakin kuin yhtä ihmistä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	elämä	elämä	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kuolema	kuolema	NOUN	N	Case=Nom|Number=Sing	4	conj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	kysymyksessä	kysymys	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	Alan	Alan	PROPN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	14	nsubj	_	_
+14	koskee	koskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+15	useampaakin	useampaa	ADV	Adv	Clitic=Kin	14	advmod	_	_
+16	kuin	kuin	SCONJ	C	_	18	mark	_	_
+17	yhtä	yksi	NUM	Num	Case=Par|Number=Sing|NumType=Card	18	nummod	_	_
+18	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	15	advcl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 10
+# text = Käy istumaan."
+1	Käy	käydä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	istumaan	istua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Campbell kävi tuolille pöydän ääreen ja Dorian istahti häntä vastapäätä.
+1	Campbell	Campbell	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tuolille	tuol	NOUN	N	Case=All|Number=Plur	2	obl	_	_
+4	pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+5	ääreen	ääreen	ADP	Adp	AdpType=Post	4	case	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	8	nsubj	_	_
+8	istahti	istahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	vastapäätä	vastapää	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

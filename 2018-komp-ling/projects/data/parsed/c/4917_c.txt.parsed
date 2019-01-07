@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "-- ken on oleva maan herra?
+1	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+2	--	--	PUNCT	Punct	_	7	punct	_	_
+3	ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	7	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	oleva	olla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+6	maan	maa	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	herra	herra	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = Ken tahtoo sanoa: näin pitää teidän juokseman, te suuret ja pienet virrat!"
+1	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	nsubj	_	_
+2	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	2	punct	_	_
+5	näin	näin	ADV	Adv	_	6	advmod	_	_
+6	pitää	pitää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+7	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	nmod:poss	_	_
+8	juokseman	juoksema	NOUN	N	Case=Gen|Number=Sing	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	acl:relcl	_	_
+11	suuret	#suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	pienet	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	11	conj	_	_
+14	virrat	virta	NOUN	N	Case=Nom|Number=Plur	10	nsubj:cop	_	SpaceAfter=No
+15	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- hetki lähestyy: oi ihminen, sinä korkeampi ihminen, kavahda!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	hetki	hetki	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	lähestyy	lähestyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+6	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	10	nmod:poss	_	_
+9	korkeampi	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	10	amod	_	_
+10	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	6	acl:relcl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	kavahda	kavahda	NOUN	N	Case=Nom|Number=Sing	10	conj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Tämä puhe on herkkiä korvia, sinun korviasi varten -- _yön kellot mitä sulle soi?_ 5.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+2	puhe	puhe	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	herkkiä	herkkä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	_
+5	korvia	korvi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	15	punct	_	_
+7	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	8	nmod:poss	_	_
+8	korviasi	korvi	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	15	obl	_	_
+9	varten	varten	ADP	Adp	AdpType=Post	8	case	_	_
+10	--	--	PUNCT	Punct	_	12	punct	_	_
+11	_yön	_#yö	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	kellot	kelto	NOUN	N	Case=Nom|Number=Plur	15	nsubj	_	_
+13	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	15	obj	_	_
+14	sulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs|Style=Coll	15	nsubj	_	_
+15	soi	soida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+16	?	?	PUNCT	Punct	_	15	punct	_	SpaceAfter=No
+17	_ 5.	_ 5.	ADJ	Num	NumType=Ord	15	obl	_	_
+
+# sent_id = 5
+# text = Minä kantaudun pois, minun sieluni tanssii.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	kantaudun	kantautua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pois	pois	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nmod:poss	_	_
+6	sieluni	sielu	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	7	nsubj	_	_
+7	tanssii	tanssiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Päivätyö!
+1	Päivätyö	Päivä#työ	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Päivätyö!
+1	Päivätyö	Päivä#työ	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Ken on oleva maan herra?
+1	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	oleva	olla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	5	acl	_	_
+4	maan	maa	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	herra	herra	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Kuu on viileä, tuuli vaikenee.
+1	Kuu	kuu	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	viileä	viileä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	tuuli	tuuli	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	vaikenee	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Ah! Ah!
+1	Ah	Ah	INTJ	Interj	_	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+3	Ah	Ah	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Joko te lensitte kyllin korkealle?
+1	Joko	joko	ADJ	A	_	0	root	_	_
+2	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	lensitte	lensida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	kyllin	kyllin	ADV	Adv	_	5	advmod	_	_
+5	korkealle	korkealle	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Te tanssitte: mutta sääri ei ole kuitenkaan siipi.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	nsubj:cop	_	_
+2	tanssitte	tanssida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	9	punct	_	_
+4	mutta	mutta	CCONJ	C	_	9	cc	_	_
+5	sääri	sääri	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	kuitenkaan	kuitenkaan	ADV	Adv	_	9	advmod	_	_
+9	siipi	siipi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter=\s\n
+

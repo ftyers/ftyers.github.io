@@ -1,0 +1,152 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mikä teitä ei miellytä, kreivi?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	5	obj	_	_
+3	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	miellytä	miellyttää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- kysyi pankinpitäjä kohteliaasti ja kylmästi.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pankinpitäjä	pankinpitäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+4	kohteliaasti	kohteliaasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kylmästi	kylmästi	ADV	Adv	Derivation=Sti	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Se, että te annatte
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+6	annatte	annaa	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+
+# sent_id = 4
+# text = Iljinille pienempiä kortteja ja otatte sitten yli.
+1	Iljinille	Iljin	NOUN	N	Case=All|Number=Plur	3	nmod	_	_
+2	pienempiä	pieni	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	3	amod	_	_
+3	kortteja	kortti	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	otatte	ottaa	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+6	sitten	sitten	ADV	Adv	_	7	advmod	_	_
+7	yli	yli	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 5
+# text = Se juuri on iljettävää.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	juuri	juuri	ADV	Adv	_	4	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	iljettävää	iljettävä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Luhnow kohautti hiukan olkapäitään ja kulmakarvojaan ikäänkuin sanoakseen että täytyi kaikessa heittäytyä onnettaren huostaan ja jatkoi pelaamista.
+1	Luhnow	Luhnow	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kohautti	kohauttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hiukan	hiukan	ADV	Adv	_	4	advmod	_	_
+4	olkapäitään	olkapäi	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kulmakarvojaan	kulmakarvo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	4	conj	_	_
+7	ikäänkuin	ikäänkuin	CCONJ	C	_	8	cc	_	_
+8	sanoakseen	sanoa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	2	conj	_	_
+9	että	että	SCONJ	C	_	12	mark	_	_
+10	täytyi	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	kaikessa	kaikki	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	12	obl	_	_
+12	heittäytyä	heittäytyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	ccomp	_	_
+13	onnettaren	onnetar	NOUN	N	Case=Gen|Derivation=Tar|Number=Sing	12	obl	_	_
+14	huostaan	huosta	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+17	pelaamista	pelaaminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Blücher, se!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Blücher	Blücher	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- huudahti kreivi nousten seisomaan.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	nousten	nous	NOUN	N	Case=Gen|Number=Plur	5	nsubj	_	_
+5	seisomaan	seisoa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Ota kiinni!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kiinni	kiinni	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- lisäsi hän nopeasti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Blücher hypähti esiin, iskien selkänsä sohvaan ja ollen vähältä töytäistä nurin linnaväen upseerin, juoksi isäntänsä luo ja alkoi murista katsellen kaikkia ja heilutellen häntäänsä ikäänkuin kysyäkseen: "kuka täällä esiintyy sopimattomasti?" Luhnow laski kortit käsistään ja siirtyi tuolineen sivulle.
+1	Blücher	Blücher	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hypähti	hypähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	esiin	esiin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	iskien	iski	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	selkänsä	selkä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	nmod:poss	_	_
+7	sohvaan	sohvas	NOUN	N	Case=Gen|Number=Sing	2	conj	_	_
+8	ja	ja	CCONJ	C	_	13	cc	_	_
+9	ollen	ollen	ADV	Adv	_	8	fixed	_	_
+10	vähältä	vähä	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	11	amod	_	_
+11	töytäistä	töytä	NOUN	N	Case=Ela|Number=Plur	13	obl	_	_
+12	nurin	nuri	NOUN	N	Case=Gen|Number=Sing	13	obj	_	_
+13	linnaväen	linnavää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+14	upseerin	upseeri	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+17	isäntänsä	isäntä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	obl	_	_
+18	luo	luo	ADP	Adp	AdpType=Post	17	case	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+21	murista	murista	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	20	xcomp	_	_
+22	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	21	advcl	_	_
+23	kaikkia	kaikki	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	22	obj	_	_
+24	ja	ja	CCONJ	C	_	25	cc	_	_
+25	heilutellen	heilutella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	38	conj	_	_
+26	häntäänsä	häntä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	25	obj	_	_
+27	ikäänkuin	ikäänkuin	ADV	Adv	_	38	advmod	_	_
+28	kysyäkseen	kysyä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	38	advcl	_	SpaceAfter=No
+29	:	:	PUNCT	Punct	_	28	punct	_	_
+30	"	"	PUNCT	Punct	_	33	punct	_	SpaceAfter=No
+31	kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	33	nsubj	_	_
+32	täällä	täällä	ADV	Adv	_	31	fixed	_	_
+33	esiintyy	esiintyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	parataxis	_	_
+34	sopimattomasti	sopimattomasti	ADV	Adv	Derivation=Sti	33	advmod	_	SpaceAfter=No
+35	?	?	PUNCT	Punct	_	28	punct	_	SpaceAfter=No
+36	"	"	PUNCT	Punct	_	28	punct	_	_
+37	Luhnow	Luhnow	PROPN	N	Case=Nom|Number=Sing	38	nsubj	_	_
+38	laski	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+39	kortit	kortti	NOUN	N	Case=Nom|Number=Plur	38	obj	_	_
+40	käsistään	käsi	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	38	obl	_	_
+41	ja	ja	CCONJ	C	_	42	cc	_	_
+42	siirtyi	siirtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+43	tuolineen	tuolinyt	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	44	amod	_	_
+44	sivulle	sivu	NOUN	N	Case=All|Number=Sing	42	obl	_	SpaceAfter=No
+45	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

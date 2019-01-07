@@ -1,0 +1,221 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ja vaikkapa te olette korkeata ja korkeampaa lajia: paljon teissä on käyrää ja epämuodostunutta.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Ja	ja	CCONJ	C	_	6	cc	_	_
+3	vaikkapa	vaikkapa	ADV	Adv	_	6	advmod	_	_
+4	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+5	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	korkeata	korkeata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	korkeampaa	korkea	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	9	amod	_	_
+9	lajia	laji	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	9	punct	_	_
+11	paljon	paljon	ADV	Adv	_	12	advmod	_	_
+12	teissä	teä	NOUN	N	Case=Ine|Number=Plur	6	obl	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+14	käyrää	käyrä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	obj	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	epämuodostunutta	epämuodostunut	ADJ	A	Case=Par|Degree=Pos|Number=Sing	14	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Ei ole sitä seppää maailmassa, joka teidät takoisi oikeiksi ja suoriksi.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+4	seppää	sepätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+5	maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+8	teidät	sinä	PRON	Pron	Case=Acc|Number=Plur|Person=2|PronType=Prs	9	nsubj	_	_
+9	takoisi	takoa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+10	oikeiksi	oikeä	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	9	xcomp	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	suoriksi	suori	NOUN	N	Case=Tra|Number=Sing	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = "Te olette vain siltoja: kulkekoot ne, jotka ovat korkeampia, teidän ylitsenne!
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	vain	vain	ADV	Adv	_	5	advmod	_	_
+5	siltoja	silta	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	5	punct	_	_
+7	kulkekoot	kulkela	VERB	V	Mood=Imp|Number=Plur|Person=0|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	15	punct	_	_
+10	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	15	nsubj:cop	_	_
+11	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+12	korkeampia	korkea	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	15	amod	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	15	nmod:poss	_	_
+15	ylitsenne	ylitsenne	NOUN	N	Case=Nom|Number=Sing	8	acl:relcl	_	SpaceAfter=No
+16	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Te olette portaita: niinpä älkää vihastuko häneen, joka astuu teidän ylitsenne _omaan_ korkeuteensa.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj:cop	_	_
+2	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	portaita	portaat	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	niinpä	niinpä	ADV	Adv	_	7	advmod	_	_
+6	älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	vihastuko	vihastua	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	3	parataxis	_	_
+8	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	astuu	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	_
+12	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	13	nmod:poss	_	_
+13	ylitsenne	ylitsenne	NOUN	N	Case=Nom|Number=Sing	14	compound:nn	_	_
+14	_omaan_ korkeuteensa	_omaan_ korkeue	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	11	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = "Teidän siemenestänne voi myös kerran oikea poika ja täysi perillinen kasvaa: mutta se on kaukana.
+1	"	"	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+2	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	siemenestänne	siemenestänne	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+5	myös	myös	ADV	Adv	_	6	advmod	_	_
+6	kerran	kerran	ADV	Adv	_	12	advmod	_	_
+7	oikea	oikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+8	poika	poika	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	täysi	täysi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+11	perillinen	perillinen	NOUN	N	Case=Nom|Number=Sing	8	conj	_	_
+12	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+13	:	:	PUNCT	Punct	_	12	punct	_	_
+14	mutta	mutta	CCONJ	C	_	17	cc	_	_
+15	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	17	nsubj:cop	_	_
+16	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+17	kaukana	kaukana	ADV	Adv	_	12	conj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 6
+# text = Te itse ette ole niitä, joilla on oikeus minun perintööni ja nimeeni.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj:cop	_	_
+2	itse	itse	PRON	Pron	Case=Nom|Number=Sing|Reflex=Yes	3	det	_	_
+3	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	joilla	joka	PRON	Pron	Case=Ade|Number=Plur|PronType=Rel	5	acl:relcl	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop:own	_	_
+9	oikeus	oikeus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	7	nsubj:cop	_	_
+10	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	11	nmod:poss	_	_
+11	perintööni	perintöö	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	9	nmod	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	nimeeni	nimeeni	NOUN	N	Case=Nom|Number=Sing	9	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = "Teitä en minä odota näillä vuorilla, teidän kanssanne minä en astu alas viimeistä kertaa.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	5	obj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	odota	odottaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	näillä	tämä	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	7	det	_	_
+7	vuorilla	vuori	NOUN	N	Case=Ade|Number=Plur	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_
+10	kanssanne	kanssa	ADV	Adv	Number[psor]=Plur|Person[psor]=2	13	advmod	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+12	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	astu	astua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	acl:relcl	_	_
+14	alas	alas	ADV	Adv	_	13	advmod	_	_
+15	viimeistä	viimeinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	16	amod	_	_
+16	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	13	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Te tulitte vain enteinä siitä, että korkeampia on jo matkalla minun tyköni, -- "-- ei suuren kaipuun, suuren iljetyksen, suuren kyllästymisen ihmisiä eikä niitä, joita te kutsutte jumalan jäännöksiksi, "-- ei!
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj:cop	_	_
+2	tulitte	tulida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	enteinä	ente	NOUN	N	Case=Ess|Number=Plur	0	root	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	että	että	SCONJ	C	_	11	mark	_	_
+8	korkeampia	korkea	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	11	nsubj:cop	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	jo	jo	ADV	Adv	_	11	advmod	_	_
+11	matkalla	matkka	NOUN	N	Case=Ade|Number=Sing	5	ccomp	_	_
+12	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	13	nmod:poss	_	_
+13	tyköni	tykö	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	20	punct	_	_
+15	--	--	PUNCT	Punct	_	20	punct	_	_
+16	"	"	PUNCT	Punct	_	20	punct	_	SpaceAfter=No
+17	--	--	PUNCT	Punct	_	20	punct	_	_
+18	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	20	aux	_	_
+19	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	20	amod	_	_
+20	kaipuun	kaipuu	NOUN	N	Case=Gen|Number=Sing	4	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	23	punct	_	_
+22	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	23	amod	_	_
+23	iljetyksen	iljetys	NOUN	N	Case=Gen|Number=Sing	20	conj	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	27	punct	_	_
+25	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	26	amod	_	_
+26	kyllästymisen	kyllästyminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	27	nmod:poss	_	_
+27	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	4	conj	_	_
+28	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	29	cc	_	_
+29	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	4	conj	_	SpaceAfter=No
+30	,	,	PUNCT	Punct	_	35	punct	_	_
+31	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	35	nsubj:cop	_	_
+32	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	35	nsubj:cop	_	_
+33	kutsutte	kutsui	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	35	cop	_	_
+34	jumalan	jumala	NOUN	N	Case=Gen|Number=Sing	35	nmod:poss	_	_
+35	jäännöksiksi	jäännöksi	NOUN	N	Case=Tra|Number=Sing	39	xcomp:ds	_	SpaceAfter=No
+36	,	,	PUNCT	Punct	_	35	punct	_	_
+37	"	"	PUNCT	Punct	_	35	punct	_	SpaceAfter=No
+38	--	--	PUNCT	Punct	_	35	punct	_	_
+39	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	29	conj	_	SpaceAfter=No
+40	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Ei! Kolmasti ei! _Toisia_ minä odotan näillä vuorilla ja ilman heitä minä en tahdo jalkaani siirtää täältä, "-- korkeampia, väkevämpiä, voitollisempia, iloisempia, sellaisia, jotka ovat oikeinmuodostuneita ruumiilta ja sielulta: _nauravien jalopeurojen_ täytyy tulla!
+1	Ei	ei	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+3	Kolmasti	Kolmasti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+4	ei	ei	ADV	Adv	_	1	fixed	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	1	punct	_	_
+6	_Toisia_ minä	_Toisia_ minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+7	odotan	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	näillä	tämä	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	7	obl	_	_
+9	vuorilla	vuori	NOUN	N	Case=Ade|Number=Plur	7	obl	_	_
+10	ja	ja	CCONJ	C	_	15	cc	_	_
+11	ilman	ilman	ADP	Adp	AdpType=Prep	12	case	_	_
+12	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	15	obl	_	_
+13	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+14	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	conj	_	_
+16	jalkaani	jalka	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	17	nsubj	_	_
+17	siirtää	siirtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp:ds	_	_
+18	täältä	täältä	ADV	Adv	_	17	advmod	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	22	punct	_	_
+20	"	"	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+21	--	--	PUNCT	Punct	_	22	punct	_	_
+22	korkeampia	korkea	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	24	amod	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	22	punct	_	_
+24	väkevämpiä	väkevämpiä	NOUN	N	Case=Nom|Number=Sing	17	obj	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	26	punct	_	_
+26	voitollisempia	voitollinen	ADJ	A	Case=Par|Degree=Cmp|Derivation=Inen|Number=Plur	24	conj	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	28	punct	_	_
+28	iloisempia	iloinen	ADJ	A	Case=Par|Degree=Cmp|Derivation=Inen|Number=Plur	24	conj	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	30	punct	_	_
+30	sellaisia	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	24	conj	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	34	punct	_	_
+32	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	34	nsubj:cop	_	_
+33	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	34	cop	_	_
+34	oikeinmuodostuneita	oikeinmuodostunea	ADJ	A	Case=Par|Degree=Pos|Number=Plur	24	acl:relcl	_	_
+35	ruumiilta	ruumi	NOUN	N	Case=Abl|Number=Plur	34	obl	_	_
+36	ja	ja	CCONJ	C	_	37	cc	_	_
+37	sielulta	sielu	NOUN	N	Case=Abl|Derivation=U|Number=Sing	35	conj	_	SpaceAfter=No
+38	:	:	PUNCT	Punct	_	7	punct	_	_
+39	_nauravien	_naurava	NOUN	N	Case=Gen|Number=Plur	40	nsubj	_	_
+40	jalopeurojen_ täytyy	jalopeurojen_ täytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+41	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	40	xcomp	_	SpaceAfter=No
+42	!	!	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,171 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ei se ole tarpeen", vastasi hänen ystävänsä.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	tarpeen	tarpeen	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	ystävänsä	ystävä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 2
+# text = "Elämällä on aina unikkoja käsissään.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Elämällä	Elämä	PROPN	N	Case=Ade|Number=Sing	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	aina	aina	ADV	Adv	_	5	advmod	_	_
+5	unikkoja	unikka	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	_
+6	käsissään	käsi	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tietysti joskus tarvitaan pitkääkin aikaa.
+1	Tietysti	tietysti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+2	joskus	joskus	ADV	Adv	_	3	advmod	_	_
+3	tarvitaan	tarvita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	pitkääkin	pitkääkin	ADV	Adv	_	5	advmod	_	_
+5	aikaa	aika	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Kerran minä en käyttänyt mitään muita kukkia kuin orvokkeja kokonaiseen kevätkauteen jonkunmoisen taiteellisen surun merkkinä erään rakkausjutun vuoksi, joka ei tahtonut kuolla.
+1	Kerran	kerta	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	käyttänyt	käyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	det	_	_
+6	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	7	det	_	_
+7	kukkia	kukka	NOUN	N	Case=Par|Number=Plur	17	nsubj:cop	_	_
+8	kuin	kuin	SCONJ	C	_	17	mark	_	_
+9	orvokkeja	orvokki	NOUN	N	Case=Par|Number=Plur	17	nsubj:cop	_	_
+10	kokonaiseen	kokonainen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Inen|Number=Sing	11	amod	_	_
+11	kevätkauteen	kevätkaus	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	9	nmod	_	_
+12	jonkunmoisen	jonkunmoinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	14	amod	_	_
+13	taiteellisen	taiteellinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	14	amod	_	_
+14	surun	suru	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	merkkinä	merkki	NOUN	N	Case=Ess|Number=Sing	17	obl	_	_
+16	erään	eräs	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	17	det	_	_
+17	rakkausjutun	rakkausjuttu	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+18	vuoksi	vuoksi	ADP	Adp	AdpType=Post	17	case	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	23	punct	_	_
+20	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	23	nsubj	_	_
+21	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	23	aux	_	_
+22	tahtonut	tahtoa	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	23	aux	_	_
+23	kuolla	kuolla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	17	acl:relcl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Mutta vihdoin kuitenkin se kuoli.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	vihdoin	vihdoin	ADV	Adv	_	3	advmod	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	5	advmod	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+5	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = En muista enää, mikä sen tappoi.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	muista	muistaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	enää	enää	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obj	_	_
+7	tappoi	tappaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Ehkäpä se, että tyttö tahtoi uhrata koko maailman minun tähteni.
+1	Ehkäpä	ehkäpä	ADV	Adv	_	2	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	tahtoi	tahtaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	uhrata	uhrata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+8	koko	koko	ADJ	A	_	9	amod	_	_
+9	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	7	obj	_	_
+10	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	11	nmod:poss	_	_
+11	tähteni	tähs	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing|Number[psor]=Sing|Person[psor]=1	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Se on aina julma hetki.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	aina	aina	ADV	Adv	_	4	advmod	_	_
+4	julma	julma	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+5	hetki	hetki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Se herättää ihmisessä koko iankaikkisuuden kauhun.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	herättää	herättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ihmisessä	ihmisi	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+4	koko	koko	ADJ	A	_	5	amod	_	_
+5	iankaikkisuuden	iankaikkisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	6	obl	_	_
+6	kauhun	kauhu	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = No niin -- voitkohan uskoa?
+1	No	no	INTJ	Interj	_	4	discourse	_	_
+2	niin	niin	ADV	Adv	_	1	fixed	_	_
+3	--	--	PUNCT	Punct	_	1	punct	_	_
+4	voitkohan	voitka	VERB	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	uskoa	usko	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = -- viikkoa myöhemmin lady Hampshiren luona, minä jouduin istumaan saman neiden viereen päivällispöydässä, ja hän itsepäisyydessään tahtoi ottaa esille koko jutun, rupesi kaivelemaan entisyyttä ja tekemään suunnitteluja tulevaisuuden varalta.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	viikkoa	viikko	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	_
+3	myöhemmin	myöhemmin	ADV	Adv	_	4	advmod	_	_
+4	lady	ladä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Hampshiren	Hampshire	PROPN	N	Case=Gen|Number=Sing	4	obl	_	_
+6	luona	luona	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+9	jouduin	joutua	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	istumaan	istua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+11	saman	sama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	12	det	_	_
+12	neiden	ne	NOUN	N	Case=Gen|Number=Plur	10	obl	_	_
+13	viereen	viereen	ADP	Adp	AdpType=Post	12	case	_	_
+14	päivällispöydässä	päivällispöydä	NOUN	N	Case=Ine|Number=Sing	10	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	ja	ja	CCONJ	C	_	20	cc	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
+18	itsepäisyydessään	itsepäisyydä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	20	advcl	_	_
+19	tahtoi	tuahto	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem|Style=Coll	20	nsubj	_	_
+20	ottaa	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+21	esille	esille	ADV	Adv	_	20	advmod	_	_
+22	koko	koko	ADJ	A	_	23	amod	_	_
+23	jutun	juttu	NOUN	N	Case=Gen|Number=Sing	20	obj	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	25	punct	_	_
+25	rupesi	ruveta	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+26	kaivelemaan	kaivelea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	25	xcomp	_	_
+27	entisyyttä	entisyys	NOUN	N	Case=Par|Number=Sing	26	obj	_	_
+28	ja	ja	CCONJ	C	_	29	cc	_	_
+29	tekemään	tehdä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+30	suunnitteluja	suunnittelu	NOUN	N	Case=Par|Derivation=U|Number=Plur	29	obj	_	_
+31	tulevaisuuden	tulevaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	29	obl	_	_
+32	varalta	varalta	ADP	Adp	AdpType=Post	31	case	_	SpaceAfter=No
+33	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Minä olin haudannut rakkauteni liljojen peittoon.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	haudannut	haudata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	rakkauteni	rakkausi	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	obj	_	_
+5	liljojen	liljo	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	peittoon	peitto	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

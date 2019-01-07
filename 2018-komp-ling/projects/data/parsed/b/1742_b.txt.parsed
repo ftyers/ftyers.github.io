@@ -1,0 +1,143 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Henkka ja Kerttu ei taida paljon juoda kahvia,
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=    \s
+2	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+6	taida	taitaa	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	paljon	paljon	ADV	Adv	_	8	advmod	_	_
+8	juoda	juoda	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+9	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 2
+# text = Heidi totesi kävellessään
+1	Heidi	Heidi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	totesi	todeta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kävellessään	kävellä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	2	advcl	_	_
+
+# sent_id = 3
+# text = Eijan kännykkä kädessään keittiöön.
+1	Eijan	Eija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	2	nmod:poss	_	_
+2	kännykkä	kännykkä	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	kädessään	käsi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	nmod	_	_
+4	keittiöön	keittiö	NOUN	N	Case=Ill|Number=Sing	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Heidi etsi Kertun numeron ja soitti.
+1	Heidi	Heidi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	etsi	etsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kertun	Kerttu	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	numeron	num#ero	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	soitti	soittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = — Hei Eija, Kerttu vastasi heti.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=    \s
+2	Hei	hei	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	Eija	Eija	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	heti	heti	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = — Mä oon menossa Tellervon luo kylään, ihan lähelle, palvelutaloon.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	4	nsubj:cop	_	_
+3	oon	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	menossa	meno	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+5	Tellervon	Tellerpo	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+6	luo	luo	ADP	Adp	AdpType=Post	5	case	_	_
+7	kylään	kylä	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	ihan	ihan	ADV	Adv	_	10	advmod	_	_
+10	lähelle	lähelle	ADV	Adv	_	4	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	palvelutaloon	palvelutalo	NOUN	N	Case=Ill|Number=Sing	4	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Me tutustuttiin kirkossa, Tellervo on Karjalasta ja oikein eloisa ja puhelias.
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	obj	_	_
+2	tutustuttiin	tutustuta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	kirkossa	kirkko	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	Tellervo	Tellervo	PROPN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	Karjalasta	Karjala	PROPN	N	Case=Ela|Number=Sing	2	conj	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	oikein	oikein	ADV	Adv	_	10	advmod	_	_
+10	eloisa	eloisa	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	puhelias	puhelias	PROPN	N	Case=Nom|Number=Sing	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kerttu kuului olevan hermostunut.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	4	cop	_	_
+4	hermostunut	hermostunut	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Mitä Eija mahtoikaan ajatella siitä, että hän oli jättänyt yövieraansa kahden puputtaakseen pullaa ihan toisaalla!
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	Eija	Eija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	compound:nn	_	_
+3	mahtoikaan	mahtoika	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+4	ajatella	ajatella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	että	että	SCONJ	C	_	10	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	jättänyt	jättädä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	ccomp	_	_
+11	yövieraansa	yövieraa	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	10	obj	_	_
+12	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	13	nsubj	_	_
+13	puputtaakseen	puputtaa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	10	advcl	_	_
+14	pullaa	pulla	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+15	ihan	ihan	ADV	Adv	_	16	advmod	_	_
+16	toisaalla	toisaalla	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+17	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Ja Eija olikin kuin myrkyn niellyt.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	Eija	Eija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj:cop	_	_
+3	olikin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	kuin	kuin	SCONJ	C	_	6	mark	_	_
+5	myrkyn	myrky	NOUN	N	Case=Gen|Derivation=U|Number=Sing	6	nsubj	_	_
+6	niellyt	niellä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = Ei taida tytölle kunnian kukko laulaa, Heidi mietti.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	taida	taida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	tytölle	tyttö	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	kunnian	kunnia	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kukko	kukko	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	laulaa	laulaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	Heidi	Heidi	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	mietti	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Ja päätti olla itse torumatta Kerttua.
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	itse	itse	ADV	Adv	_	5	advmod	_	_
+5	torumatta	torua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+6	Kerttua	Kerta	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pöydällä oli nippu venelehtiä.
+1	Pöydällä	pöytä	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	nippu	nippu	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+4	venelehtiä	venelehti	NOUN	N	Case=Par|Number=Sing	1	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Riikonen rakasti veneilyä.
+1	Riikonen	Riikonen	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rakasti	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	veneilyä	veneily	NOUN	N	Case=Par|Derivation=U|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Hän omisti hienon ja kalliin veneen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	omisti	omistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hienon	hieno	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	kalliin	kalli	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	3	conj	_	_
+6	veneen	vene	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Kesäisin hän oli veneellään merellä aina kun oli mahdollisuus, huonoillakin säiliä.
+1	Kesäisin	kesäisin	ADV	Adv	_	9	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+4	veneellään	venee	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	5	obl	_	_
+5	merellä	mer	NOUN	N	Case=Ade|Number=Sing	9	obl	_	_
+6	aina	aina	ADV	Adv	_	7	advmod	_	_
+7	kun	kun	SCONJ	C	_	9	mark	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	mahdollisuus	mahdollisuus	NOUN	N	Case=Nom|Derivation=Llinen,Vs|Number=Sing	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	SpacesAfter= 
+11	huonoillakin	huonoilla	VERB	V	Clitic=Kin|InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	conj	_	_
+12	säiliä	säili	NOUN	N	Case=Par|Number=Plur	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 5
+# text = Tuuran kunta oli meren rannalla.
+1	Tuuran	Tuura	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kunta	kunta	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	meren	meri	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	rannalla	ranta	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Kunnan venelaituri oli Melkorannassa, noin kymmenen kilometrin päässä kirkolta.
+1	Kunnan	kunta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	venelaituri	venelaituri	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	Melkorannassa	Melkoranna	PROPN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	noin	noin	ADV	Adv	_	7	advmod	_	_
+7	kymmenen	kymmenen	NUM	Num	Case=Gen|Number=Sing|NumType=Card	8	nummod	_	_
+8	kilometrin	kilo#metri	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+9	päässä	päässä	ADP	Adp	AdpType=Post	8	case	_	_
+10	kirkolta	kirkko	NOUN	N	Case=Abl|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Riikonen oli myös Viron matkojen harrastaja.
+1	Riikonen	Riikonen	PROPN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	myös	myös	ADV	Adv	_	6	advmod	_	_
+4	Viron	Viro	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	matkojen	matka	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	harrastaja	harrastaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Hän kävi usein Virossa, joskus myös omalla veneellään.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	usein	usein	ADV	Adv	_	2	advmod	_	_
+4	Virossa	Viro	PROPN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	joskus	joskus	ADV	Adv	_	9	advmod	_	_
+7	myös	myös	ADV	Adv	_	8	advmod	_	_
+8	omalla	oma	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	9	amod	_	_
+9	veneellään	venee	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 9
+# text = Hän toi usein tuliaisina alkoholia, jota hän tarjosi vierailleen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	toi	tuoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	usein	usein	ADV	Adv	_	2	advmod	_	_
+4	tuliaisina	tuliainen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	alkoholia	alkoholi	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	9	obj	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	tarjosi	tarjota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+10	vierailleen	vierailleen	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Se oli yleensä parasta ja kalleinta laatua.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	yleensä	yleensä	ADV	Adv	_	4	advmod	_	_
+4	parasta	hyvä	ADJ	A	Case=Par|Degree=Sup|Number=Sing	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kalleinta	kalles	ADJ	A	Case=Par|Degree=Sup|Number=Sing	7	conj	_	_
+7	laatua	laatu	NOUN	N	Case=Par|Number=Sing	4	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

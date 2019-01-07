@@ -1,0 +1,191 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ja päättyä se _mielii_.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ja	ja	CCONJ	C	_	3	cc	_	_
+3	päättyä	päättyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	obj	_	_
+5	_mielii_.	_mielii_.	ADJ	Num	NumType=Ord	3	obl	_	_
+
+# sent_id = 2
+# text = Ilta tulee jo: yli meren se ratsastaa, tuo hyvä ratsastaja!
+1	Ilta	ilta	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jo	jo	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	2	punct	_	_
+5	yli	yli	ADV	Adv	_	6	advmod	_	_
+6	meren	meri	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	ratsastaa	ratsastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	det	_	_
+11	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	_
+12	ratsastaja	ratsastaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	conj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kuinka se keinuu, tuo autuas, kotiapalaavainen, purppurasatulassaan!
+1	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	keinuu	keinua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	det	_	_
+6	autuas	autuas	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	kotiapalaavainen	kotiapalaavainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	purppurasatulassaan	purppurasatula	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	conj	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = "Taivas katsoo kirkkaana sitä, maailma lepää syvänä: oi te kaikki kummalliset, jotka tulitte minun tyköni, minun tykönäni kannattaa elää!"
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Taivas	Taivas	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	katsoo	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kirkkaana	kirkkas	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	3	obl	_	_
+5	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	maailma	maailma	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	lepää	levätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+9	syvänä	syvä	NOUN	N	Case=Ess|Number=Sing	8	obl	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	3	punct	_	_
+11	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+12	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	14	det	_	_
+13	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	12	det	_	_
+14	kummalliset	kummallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Plur	23	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	19	nsubj:cop	_	_
+17	tulitte	tulida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
+18	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	19	nmod:poss	_	_
+19	tyköni	tykö	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	14	appos	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	19	punct	_	_
+21	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	22	nmod:poss	_	_
+22	tykönäni	tykönä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	20	obj	_	_
+23	kannattaa	kannattaa	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	11	ccomp	_	_
+24	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	23	xcomp:ds	_	SpaceAfter=No
+25	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+26	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Näin puhui Zarathustra, ja jälleen kuului korkeampien ihmisten huuto ja nauru luolasta: silloin hän alkoi uudelleen.
+1	Näin	näin	ADV	Adv	_	2	advmod	_	_
+2	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	jälleen	jälleen	ADV	Adv	_	7	advmod	_	_
+7	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	korkeampien	korkeammat	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	9	det	_	_
+9	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+10	huuto	huuto	NOUN	N	Case=Nom|Number=Sing	13	compound:nn	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	nauru	nauru	NOUN	N	Case=Nom|Number=Sing	10	conj	_	_
+13	luolasta	luola	NOUN	N	Case=Ela|Number=Sing	7	obl	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	2	punct	_	_
+15	silloin	silloin	ADV	Adv	_	17	advmod	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+18	uudelleen	uudelleen	ADV	Adv	_	17	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = "He käyvät onkeen, minun syöttini vaikuttaa, myöskin heidän vihollisensa väistyy, raskauden henki.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	käyvät	käydä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	onkeen	onki	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	nmod:poss	_	_
+7	syöttini	syötti	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	nsubj	_	_
+8	vaikuttaa	vaikuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	myöskin	myöskin	ADV	Adv	_	13	advmod	_	_
+11	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	vihollisensa	vihollisi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	13	nsubj	_	_
+13	väistyy	väistyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	ccomp	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	raskauden	raskaus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	16	nmod:poss	_	_
+16	henki	henki	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = He ovat oppineet nauramaan jo itseänsä: kuulenko minä oikein?
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	oppineet	oppia	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	nauramaan	nauraa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	itseänsä	itseänsä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	3	punct	_	_
+8	kuulenko	kuulla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj:cop	_	_
+10	oikein	oikein	ADV	Adv	_	3	parataxis	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = "Minun miehenruokani vaikuttaa, minun mehu- ja voimakieleni: ja totisesti, minä en ravinnut heitä vihanneksilla!
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	miehenruokani	miehenruoka	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	nsubj	_	_
+4	vaikuttaa	vaikuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	nmod:poss	_	_
+7	mehu-	mehu	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	voimakieleni	voimakiele	ADV	Adv	Number[psor]=Sing|Person[psor]=1	4	advmod	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	4	punct	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	totisesti	totisesti	ADV	Adv	Derivation=Sti	4	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	4	punct	_	_
+14	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+15	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	ravinnut	ravita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+17	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	16	obj	_	_
+18	vihanneksilla	vihanneks	NOUN	N	Case=Ade|Number=Plur	16	obl	_	SpaceAfter=No
+19	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Vaan sotilasruualla, valloittajaruualla: uusia pyyteitä minä herätin.
+1	Vaan	vaan	ADV	Adv	_	2	advmod	_	_
+2	sotilasruualla	sotilasruua	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	valloittajaruualla	valloittajaruua	NOUN	N	Case=Ade|Number=Sing	2	conj	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	9	punct	_	_
+6	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	_
+7	pyyteitä	pyyte	NOUN	N	Case=Par|Number=Plur	9	obj	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+9	herätin	herättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 10
+# text = "Uusia toiveita on heidän käsivarsissaan ja jaloissaan, heidän sydämensä laajentuu.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Uusia	Uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	amod	_	_
+3	toiveita	toive	NOUN	N	Case=Par|Number=Plur	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	käsivarsissaan	käsivarsi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	12	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	jaloissaan	jaloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	6	punct	_	_
+10	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	sydämensä	sydämi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	12	nsubj	_	_
+12	laajentuu	laajentua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 11
+# text = He löytävät uusia sanoja, kohta on heidän henkensä hengittävä ylimielisyyttä.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	löytävät	löytää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	sanoja	sana	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	kohta	kohta	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+8	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	henkensä	henki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	10	obj	_	_
+10	hengittävä	hengitä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	11	acl	_	_
+11	ylimielisyyttä	ylimielisyys	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

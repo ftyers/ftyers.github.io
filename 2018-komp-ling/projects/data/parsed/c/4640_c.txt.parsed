@@ -1,0 +1,218 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Katso tuota porttia!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	det	_	_
+4	porttia	portti	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kääpiö!
+1	Kääpiö	Kääpiö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = jatkoin minä puhettani: sillä on kahdet kasvot.
+1	jatkoin	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	det	_	_
+3	puhettani	puhet	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	obj	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	1	punct	_	_
+5	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	1	parataxis	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop:own	_	_
+7	kahdet	kaksi	NUM	Num	Case=Nom|Number=Plur|NumType=Card	8	nummod	_	_
+8	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Kaksi tietä yhtyy tässä: niitä ei ole vielä yksikään kulkenut loppuun.
+1	Kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	nummod	_	_
+2	tietä	tie	NOUN	N	Case=Par|Number=Sing	3	nsubj	_	_
+3	yhtyy	yhtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	obl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	3	punct	_	_
+6	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	11	nsubj	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+8	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	aux	_	_
+9	vielä	vielä	ADV	Adv	_	11	advmod	_	_
+10	yksikään	yksikään	PRON	Pron	Case=Nom|Number=Sing	11	nsubj	_	_
+11	kulkenut	kulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	parataxis	_	_
+12	loppuun	loppu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = "Tämä pitkä rata taaksepäin: se kestää iankaikkisuuden.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+3	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	rata	rata	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	taaksepäin	taaksepäin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	4	punct	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	kestää	kestää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	iankaikkisuuden	iankaikkisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Ja tuo pitkä rata ulospäin -- se on toinen iankaikkisuus.
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+3	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	rata	rata	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+5	ulospäin	ulos#päin	ADV	Adv	_	10	advmod	_	_
+6	--	--	PUNCT	Punct	_	5	punct	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	10	nummod	_	_
+10	iankaikkisuus	iankaikkisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 7
+# text = Ne sotivat toisiaan vastaan, nämä tiet; ne aivan puskevat päänsä yhteen: -- ja tässä, tällä portilla, on se paikka, missä ne yhtyvät.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	2	nsubj	_	_
+2	sotivat	sota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	2	obl	_	_
+4	vastaan	vastaan	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	7	det	_	_
+7	tiet	tie	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	2	punct	_	_
+9	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	11	nsubj	_	_
+10	aivan	aivan	ADV	Adv	_	11	advmod	_	_
+11	puskevat	puskla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+12	päänsä	pää	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	11	obj	_	_
+13	yhteen	yhteen	ADV	Adv	_	11	advmod	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	2	punct	_	_
+15	--	--	PUNCT	Punct	_	17	punct	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	20	det	_	_
+20	portilla	porti	NOUN	N	Case=Ade|Number=Sing	17	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	2	punct	_	_
+22	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	cop	_	_
+23	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	24	det	_	_
+24	paikka	paikka	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	28	punct	_	_
+26	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	28	obl	_	_
+27	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	28	nsubj	_	_
+28	yhtyvät	yhtyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	acl:relcl	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Portin nimi on kirjoitettuna yläpuolella: 'Silmänräpäys'.
+1	Portin	portti	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	nimi	nimi	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kirjoitettuna	kirjoittaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	yläpuolella	yläpuol	NOUN	N	Case=Ade|Number=Sing	4	obl	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	4	punct	_	_
+7	'	'	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+8	Silmänräpäys	Silmänräpäys	NOUN	N	Case=Nom|Number=Sing	4	parataxis	_	SpaceAfter=No
+9	'	'	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = "Mutta ken kulkisi eteenpäin yhtä niistä -- ja yhä eteenpäin ja yhä etemmäksi: uskotko sinä, kääpiö, että nämä tiet iankaikkisesti sotisivat toisiaan vastaan?"
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+3	ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj	_	_
+4	kulkisi	kulhdä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	eteenpäin	eteen#päin	ADV	Adv	_	4	advmod	_	_
+6	yhtä	yhtä	ADV	Adv	_	7	advmod	_	_
+7	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	4	obl	_	_
+8	--	--	PUNCT	Punct	_	11	punct	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	yhä	yhä	ADV	Adv	_	11	advmod	_	_
+11	eteenpäin	eteen#päin	ADV	Adv	_	4	conj	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	yhä	yhä	ADV	Adv	_	14	advmod	_	_
+14	etemmäksi	etemmäksi	ADV	Adv	_	4	conj	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	16	punct	_	_
+16	uskotko	uskoa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+17	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	19	det	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	19	punct	_	_
+19	kääpiö	kääpiö	NOUN	N	Case=Nom|Number=Sing	16	parataxis	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	25	punct	_	_
+21	että	että	SCONJ	C	_	25	mark	_	_
+22	nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	23	det	_	_
+23	tiet	#tie	NOUN	N	Case=Nom|Number=Plur	25	nsubj	_	_
+24	iankaikkisesti	iankaikkisesti	ADV	Adv	Derivation=Sti	25	advmod	_	_
+25	sotisivat	sotisa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	ccomp	_	_
+26	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	25	obj	_	_
+27	vastaan	vastaan	ADV	Adv	_	25	advmod	_	SpaceAfter=No
+28	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+29	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = -- "Kaikki suora valhettelee, mutisi kääpiö ylenkatseellisesti.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+3	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	suora	suora	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	valhettelee	valhetella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	kääpiö	kääpiö	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	ylenkatseellisesti	ylenkatseellisesti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Kaikki totuus on käyrää, aika itse on ympyrä."
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	totuus	totuus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	käyrää	käyrä	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	aika	aika	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+7	itse	itse	PRON	Pron	Case=Nom|Number=Sing|Reflex=Yes	6	det	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	ympyrä	ympyrä	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = "Sinä raskauden henki!
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	det	_	_
+3	raskauden	raskaus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	4	nmod:poss	_	_
+4	henki	henki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = puhuin minä vihastuen, älä tee sitä liian kevyeksi itsellesi!
+1	puhuin	puhua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	1	nsubj	_	_
+3	vihastuen	vihastua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	conj	_	_
+7	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obj	_	_
+8	liian	liian	ADV	Adv	_	9	advmod	_	_
+9	kevyeksi	kevy	NOUN	N	Case=Tra|Number=Sing	6	xcomp:ds	_	_
+10	itsellesi	itse	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=2	1	obl	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 14
+# text = Tai minä jätän sinut istua kyyköttämään siihen, missä istut, rampa, -- ja minä kannoin sinut _korkealle_!
+1	Tai	tai	CCONJ	C	_	3	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	jätän	jättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+5	istua	istua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	_
+6	kyyköttämään	kyyköttää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	10	obl	_	_
+10	istut	istua	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	rampa	rampa	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	10	punct	_	_
+14	--	--	PUNCT	Punct	_	17	punct	_	_
+15	ja	ja	CCONJ	C	_	17	cc	_	_
+16	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	17	nsubj	_	_
+17	kannoin	kannaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+18	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	17	obj	_	_
+19	_korkealle_!	_korkealle_!	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

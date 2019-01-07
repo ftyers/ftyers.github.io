@@ -1,0 +1,108 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Kavahda!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kavahda	Kavahtaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kuuma keskipäivä nukkuu kedoilla.
+1	Kuuma	kuuma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	keskipäivä	keski#päivä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	nukkuu	nukkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kedoilla	keda	NOUN	N	Case=Ade|Number=Plur	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Älä laula!
+1	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	laula	laulaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hiljaa!
+1	Hiljaa	hiljaa	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Maailma on täydellistynyt.
+1	Maailma	maailma	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	täydellistynyt	täydellistyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "Älä laula, sinä nurmen siipisirkka, oi sieluni!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	laula	laulaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	det	_	_
+6	nurmen	nurn	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	siipisirkka	siipisirkka	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	oi	oida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	sieluni	sielu	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	9	obj	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Älä edes kuiskaa! katso -- hiljaa!
+1	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	edes	edes	ADV	Adv	_	3	advmod	_	_
+3	kuiskaa	kuiska	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+5	katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	--	--	PUNCT	Punct	_	7	punct	_	_
+7	hiljaa	hiljaa	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = vanha keskipäivä nukkuu, se liikuttaa suutaan: eikö se juo juuri onnen pisaraa -- "-- vanhaa ruskeaa pisaraa kultaista onnea, kultaista viiniä?
+1	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	keskipäivä	keski#päivä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	nukkuu	nukkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	_
+6	liikuttaa	liikuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	suutaan	suu	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	obj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	11	punct	_	_
+9	eikö	eikö	SCONJ	C	_	11	mark	_	_
+10	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj	_	_
+11	juo	juoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+12	juuri	juuri	ADV	Adv	_	11	advmod	_	_
+13	onnen	onni	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	pisaraa	pisara	NOUN	N	Case=Par|Number=Sing	11	obj	_	_
+15	--	--	PUNCT	Punct	_	22	punct	_	_
+16	"	"	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+17	--	--	PUNCT	Punct	_	22	punct	_	_
+18	vanhaa	vanha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	20	amod	_	_
+19	ruskeaa	ruskea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	20	amod	_	_
+20	pisaraa	pisara	NOUN	N	Case=Par|Number=Sing	22	nmod	_	_
+21	kultaista	kultainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	22	amod	_	_
+22	onnea	onni	NOUN	N	Case=Par|Number=Sing	11	nsubj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	25	punct	_	_
+24	kultaista	kultainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	25	amod	_	_
+25	viiniä	viini	NOUN	N	Case=Par|Number=Sing	22	conj	_	SpaceAfter=No
+26	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Tuulahdus käy sen ylitse, sen onni nauraa.
+1	Tuulahdus	Tuulahdus	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obl	_	_
+4	ylitse	ylitse	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	nmod:poss	_	_
+7	onni	onni	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	nauraa	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Niin -- nauraa jumala.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	--	--	PUNCT	Punct	_	1	punct	_	_
+3	nauraa	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	jumala	jum#ala	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

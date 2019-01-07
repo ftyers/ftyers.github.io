@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Nuotion loimussa lapsi tapitti miestä kulmakarvat koholla, ymmyrkäisin silmin.
+1	Nuotion	nuotio	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	loimussa	loimu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	4	obl	_	_
+3	lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tapitti	tapittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	miestä	mies	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	kulmakarvat	kulmakara	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+7	koholla	kohko	NOUN	N	Case=Ade|Number=Sing	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	ymmyrkäisin	ymmyrkäinen	ADJ	A	Case=Ins|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	_
+10	silmin	silmä	NOUN	N	Case=Ins|Number=Plur	7	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Viaton näky sai miehen naurahtamaan.
+1	Viaton	Viaton	ADJ	A	Case=Nom|Derivation=Ton|Number=Sing	2	amod	_	_
+2	näky	näky	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	_
+3	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	miehen	mies	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	naurahtamaan	naurahtta	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Hän ojensi makkaran vekaralle ja asteli hakemaan isoja puupölkkyjä ja kirveen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ojensi	ojentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	makkaran	makkara	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	vekaralle	vekara	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	asteli	astella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	hakemaan	hakea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	isoja	iso	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+9	puupölkkyjä	puupölkky	NOUN	N	Case=Par|Number=Plur	7	nmod	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	kirveen	kirvi	NOUN	N	Case=Ill|Number=Sing	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = — Teen meille klapeja, joilla me ruokitaan kamiinaa yöllä.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=       \s
+2	Teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	2	obl	_	_
+4	klapeja	klapi	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	joilla	joka	PRON	Pron	Case=Ade|Number=Plur|PronType=Rel	8	obl	_	_
+7	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	8	nsubj	_	_
+8	ruokitaan	ruokita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	acl:relcl	_	_
+9	kamiinaa	kamiina	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+10	yöllä	yö	NOUN	N	Case=Ade|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+
+# sent_id = 5
+# text = Tai siis, älä oo huolissas, et sä sitä joudu tekemään.
+1	Tai	tai	CCONJ	C	_	2	cc:preconj	_	_
+2	siis	siis	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	oo	olla	AUX	V	Connegative=Yes|Mood=Ind|Style=Coll|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	huolissas	huolissas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	et	että	SCONJ	C	Style=Coll	11	mark	_	_
+9	sä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	11	nsubj	_	_
+10	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	11	obj	_	_
+11	joudu	joutua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+12	tekemään	tehdä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Mä oon ihan suosiolla Kipinä-Mikko koko yön.
+1	Mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	4	nsubj:cop	_	_
+2	oon	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	ihan	ihan	ADV	Adv	_	4	advmod	_	_
+4	suosiolla	suosio	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+5	Kipinä-Mikko	Kipinä-Mikko	PROPN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+6	koko	koko	ADJ	A	_	7	amod	_	_
+7	yön	yö	NOUN	N	Case=Gen|Number=Sing	4	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Kun en mä kumminkaan saa unta.
+1	Kun	kun	SCONJ	C	_	5	mark	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	5	nsubj	_	_
+4	kumminkaan	kumminkaan	ADV	Adv	_	5	advmod	_	_
+5	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	unta.	unta.	NOUN	N	Abbr=Yes	5	obj	_	_
+
+# sent_id = 8
+# text = vahdin samalla, ettei kipinät sytytä meitä.
+1	vahdin	vahtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	samalla	samalla	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	mark	_	_
+5	kipinät	kipinä	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+6	sytytä	sytyttää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+7	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Mies laittoi pölkyn kerrallaan kannon päälle ja iski ne kirveellä pienemmiksi.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	laittoi	laittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pölkyn	pölky	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	kerrallaan	kerta	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	2	obl	_	_
+5	kannon	kanto	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	päälle	päälle	ADP	Adp	AdpType=Post	5	case	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	iski	iskeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	8	obj	_	_
+10	kirveellä	kirvei	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+11	pienemmiksi	pieni	ADJ	A	Case=Tra|Degree=Cmp|Number=Plur	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = — Aamulla sitten nuohotaan kamiinan savupiippu.
+1	—	—	PUNCT	Punct	_	4	punct	_	SpacesAfter=   \s
+2	Aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+3	sitten	sitten	ADV	Adv	_	4	advmod	_	_
+4	nuohotaan	nuohota	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	kamiinan	kamiina	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	savupiippu	savupiippu	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Noki muuttuu muuten kipinöiksi, jotka lentää ens kerralla teltan päälle ja tekee siihen reikiä.
+1	Noki	Noki	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	muuttuu	muuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	muuten	muuten	ADV	Adv	_	2	advmod	_	_
+4	kipinöiksi	kipinöi	NOUN	N	Case=Tra|Number=Sing	2	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	lentää	lentää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	ens	enssa	ADV	Adv	Style=Coll	7	advmod	_	_
+9	kerralla	kerra	NOUN	N	Case=Ade|Number=Sing	7	obl	_	_
+10	teltan	teltta	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+11	päälle	päälle	ADP	Adp	AdpType=Post	10	case	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+14	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	13	obl	_	_
+15	reikiä	reiki	NOUN	N	Case=Par|Number=Plur	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Anssi ei tykkäisi siitä.
+1	Anssi	Anssi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tykkäisi	tykkää	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

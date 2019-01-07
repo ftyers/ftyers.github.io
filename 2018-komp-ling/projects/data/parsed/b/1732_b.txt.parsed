@@ -1,0 +1,89 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Palvelutaloon, perusmuoto palvelutalo, vanhuksille tai vaikeasti vammaisille tarkoitettu talo.
+1	Palvelutaloon	Palvelutalo	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	palvelutalo	palvelu#talo	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	vanhuksille	vanhus	NOUN	N	Case=All|Number=Plur	1	conj	_	_
+7	tai	tai	CCONJ	C	_	11	cc	_	_
+8	vaikeasti	vaikeasti	ADV	Adv	Derivation=Sti	11	advmod	_	_
+9	vammaisille	vammais	NOUN	N	Case=All|Number=Plur	10	obl	_	_
+10	tarkoitettu	tarkoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	11	acl	_	_
+11	talo	talo	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Sen asukkaita palvellaan, koska he eivät selviä ilman apua.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	asukkaita	asukas	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+3	palvellaan	palvella	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	koska	koska	SCONJ	C	_	8	mark	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+7	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	selviä	selvitä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	advcl	_	_
+9	ilman	ilman	ADP	Adp	AdpType=Prep	10	case	_	_
+10	apua	apu	NOUN	N	Case=Par|Derivation=U|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Pani merkille.
+1	Pani	pa	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	_
+2	merkille	merkki	NOUN	N	Case=All|Number=Sing	1	nmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Huomasi.
+1	Huomasi	huoma	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 5
+# text = Piispa.
+1	Piispa	Piispa	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Pappien pomo.
+1	Pappien	Pappi	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	pomo	pomo	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hengellinen johtaja.
+1	Hengellinen	Hengellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	2	amod	_	_
+2	johtaja	johtaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Piispa vihkii papit eli tekee ihmisistä pappeja.
+1	Piispa	Piispa	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vihkii	vihkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	papit	pappi	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	eli	eli	CCONJ	C	_	5	cc	_	_
+5	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	ihmisistä	ihmis	NOUN	N	Case=Ela|Number=Plur	5	obl	_	_
+7	pappeja	pappi	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Pyhiinvaeltajaksi, perusmuoto pyhiinvaeltaja.
+1	Pyhiinvaeltajaksi	pyhiinvaeltajaksi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	pyhiinvaeltaja	pyhiinvaeltaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Henkilö, joka matkustaa jonnekin uskonnollisista syistä.
+1	Henkilö	henkilö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	matkustaa	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+5	jonnekin	jonnekin	ADV	Adv	_	6	advmod	_	_
+6	uskonnollisista	uskonnollis	PROPN	N	Case=Ela|Number=Sing	4	obl	_	_
+7	syistä	syy	NOUN	N	Case=Ela|Number=Plur	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

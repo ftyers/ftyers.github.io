@@ -1,0 +1,98 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Minä...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Esikunta-upseeri ei ehtinyt sanoa sanottavaansa.
+1	Esikunta-upseeri	Esikunta-upseeri	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ehtinyt	ehtiä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	sanottavaansa	sanottava	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ohi kiitävä tykinluoti pakoitti hänet kumartumaan satulassa.
+1	Ohi	ohi	ADP	Adp	AdpType=Prep	3	case	_	_
+2	kiitävä	kiitävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	tykinluoti	tykinluoti	NOUN	N	Case=Nom|Number=Sing	4	obl	_	_
+4	pakoitti	pakoittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	kumartumaan	kumartua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	_
+7	satulassa	satula	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Hän vaikeni, ja juuri kun hän aikoi jatkaa puhettaan, suhisi hänen ohitseen taas luoti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	vaikeni	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	9	punct	_	_
+4	ja	ja	CCONJ	C	_	9	cc	_	_
+5	juuri	juuri	ADV	Adv	_	6	advmod	_	_
+6	kun	kun	SCONJ	C	_	9	mark	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+8	aikoi	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	jatkaa	jatkaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+10	puhettaan	puhe	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	suhisi	suha	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	14	nmod:poss	_	_
+14	ohitseen	ohitnen	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+15	taas	taas	ADV	Adv	_	12	advmod	_	_
+16	luoti	luoti	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hän käänsi hevosensa ja lähti ratsastamaan täyttä neljää.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	käänsi	kääntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hevosensa	hevonen	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	ratsastamaan	ratsastaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+7	täyttä	täys	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+8	neljää	neljä	NUM	Num	Case=Par|Number=Sing|NumType=Card	5	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Peräytykää!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Peräytykää	Peräytyä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Kaikki peräytykää!
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	nsubj	_	_
+2	peräytykää	peräytyä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- huusi hän kaukaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	kaukaa	kaukaa	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Sotilaat alkoivat nauraa.
+1	Sotilaat	Sotilas	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	alkoivat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nauraa	nauraa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Hetken kuluttua saapui adjutantti tuoden saman käskyn.
+1	Hetken	hetki	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	kuluttua	kulua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	advcl	_	_
+3	saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	adjutantti	adjutantti	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+5	tuoden	tuoda	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	_
+6	saman	sama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	7	det	_	_
+7	käskyn	käsky	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Nuorille aikuisille on perustettu vertaisryhmiä 4 paikkakunnalla.
+1	Nuorille	nuori	ADJ	A	Case=All|Degree=Pos|Number=Plur	2	amod	_	_
+2	aikuisille	aikuis	NOUN	N	Case=All|Number=Plur	4	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	perustettu	perustaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	vertaisryhmiä	vertais#ryhmä	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+6	4	4	NUM	Num	NumType=Card	7	nummod	_	_
+7	paikkakunnalla	paikka#kunta	NOUN	N	Case=Ade|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Ryhmiä on nyt Helsingissä, Tampereella, Kuopiossa ja Jyväskylässä.
+1	Ryhmiä	ryhmä	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	nyt	nyt	ADV	Adv	_	4	advmod	_	_
+4	Helsingissä	Helsinki	PROPN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Tampereella	Tampere	PROPN	N	Case=Ade|Number=Sing	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	Kuopiossa	Kuopio	PROPN	N	Case=Ine|Number=Sing	4	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	Jyväskylässä	Jyväskylä	PROPN	N	Case=Ine|Number=Sing	4	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Tänä vuonna ryhmä saadaan myös Ouluun.
+1	Tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+3	ryhmä	#ryhmä	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+4	saadaan	saada	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	myös	myös	ADV	Adv	_	6	advmod	_	_
+6	Ouluun	Oulu	PROPN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Ryhmät on perustanut Sosiaalipedagogiikan säätiö.
+1	Ryhmät	ryhmä	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	perustanut	perustaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Sosiaalipedagogiikan	Sosiaalipedagogiikka	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	säätiö	säätiö	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 5
+# text = Monet pelaavat digipelejä yli 60 tuntia viikossa.
+1	Monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	pelaavat	pelata	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	digipelejä	digipeli	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	60	60	NUM	Num	NumType=Card	6	nummod	_	_
+6	tuntia	tunti	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
+7	viikossa	viikko	NOUN	N	Case=Ine|Number=Sing	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Se ei aina ole ongelma, jos muu elämä on kunnossa.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	aina	aina	ADV	Adv	_	5	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	ongelma	ongelma	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	jos	jos	SCONJ	C	_	11	mark	_	_
+8	muu	muu	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+9	elämä	elämä	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	kunnossa	kunnossa	ADV	Adv	_	5	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Tutkijat arvioivat, että noin 1 tai 2 prosenttia digipelaajista tulee riippuvaiseksi pelaamisesta.
+1	Tutkijat	tutkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	arvioivat	arvioida	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	11	punct	_	_
+4	että	että	SCONJ	C	_	11	mark	_	_
+5	noin	noin	ADV	Adv	_	6	advmod	_	_
+6	1	1	NUM	Num	NumType=Card	9	nummod	_	_
+7	tai	tai	CCONJ	C	_	8	cc	_	_
+8	2	2	NUM	Num	NumType=Card	6	conj	_	_
+9	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	11	nsubj	_	_
+10	digipelaajista	digipelaaj	NOUN	N	Case=Ela|Number=Plur	9	nmod	_	_
+11	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+12	riippuvaiseksi	riippuvainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Sing	13	amod	_	_
+13	pelaamisesta	pelaaminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	11	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Silloin kyseessä on riippuvuushäiriö.
+1	Silloin	silloin	ADV	Adv	_	2	advmod	_	_
+2	kyseessä	kyse	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	riippuvuushäiriö	riippuvuushäiriö	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = 10 prosentilla pelaajista on ongelmia pelaamisessa.
+1	10	10	NUM	Num	NumType=Card	2	nummod	_	_
+2	prosentilla	prosentti	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+3	pelaajista	pelaaja	NOUN	N	Case=Ela|Derivation=Ja|Number=Plur	2	nmod	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+5	ongelmia	ongelma	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	_
+6	pelaamisessa	pelaaminen	NOUN	N	Case=Ine|Derivation=Minen|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Heillä on ongelmia koulussa, työssä tai sosiaalisissa suhteissa.
+1	Heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	ongelmia	ongelma	NOUN	N	Case=Par|Number=Plur	1	nsubj:cop	_	_
+4	koulussa	koulu	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Plur|Person[psor]=1|Style=Coll	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	työssä	työ	NOUN	N	Case=Ine|Number=Sing	4	conj	_	_
+7	tai	tai	CCONJ	C	_	9	cc	_	_
+8	sosiaalisissa	sosiaalinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Plur	9	amod	_	_
+9	suhteissa	suhde	NOUN	N	Case=Ine|Number=Plur	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,145 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Sisäministeriö arvioi, että Suomesta lähteneet naiset ovat synnyttäneet Isiksen alueilla toistakymmentä lasta.
+1	Sisäministeriö	Sisäministeriö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	arvioi	arvioida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	9	punct	_	_
+4	että	että	SCONJ	C	_	9	mark	_	_
+5	Suomesta	Suomi	PROPN	N	Case=Ela|Number=Sing	6	obl	_	_
+6	lähteneet	lähteä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	7	acl	_	_
+7	naiset	nainen	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+8	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	synnyttäneet	synnyttää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+10	Isiksen	Isis	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	alueilla	alue	NOUN	N	Case=Ade|Number=Plur	9	obl	_	_
+12	toistakymmentä	toista#kymmenen	NUM	Num	Case=Par|Number=Sing|NumType=Card	13	nummod	_	_
+13	lasta	lapsi	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ongelma tulee tiedostaa, mutta lapsia ei saisi leimata turvallisuusuhaksi, sanoo Tarja Mankkinen sisäministeriön poliisiosastolta.
+1	Ongelma	ongelma	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tiedostaa	tiedosta	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	mutta	mutta	CCONJ	C	_	8	cc	_	_
+6	lapsia	lapsi	NOUN	N	Case=Par|Number=Plur	8	nsubj	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	saisi	saada	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	2	conj	_	_
+9	leimata	leimata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	turvallisuusuhaksi	turvallisuusuha	NOUN	N	Case=Tra|Number=Sing	9	xcomp:ds	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	2	punct	_	_
+12	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+13	Tarja	Tarja	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+14	Mankkinen	Mankkinen	PROPN	N	Case=Nom|Number=Sing	13	flat:name	_	_
+15	sisäministeriön	sisäministeriö	NOUN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+16	poliisiosastolta	poliisiosasto	NOUN	N	Case=Abl|Number=Sing	12	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Islamistijärjestö Boko Haram teki miltei tasan neljä vuotta sitten sieppauksen, joka tuomittiin maailmalla laajalti.
+1	Islamistijärjestö	Islamistijärjestö	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Boko	Boko	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Haram	Haram	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	miltei	miltei	ADV	Adv	_	4	advmod	_	_
+6	tasan	tasan	ADV	Adv	_	7	advmod	_	_
+7	neljä	neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	_
+8	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	4	obl	_	_
+9	sitten	sitten	ADP	Adp	AdpType=Post	8	case	_	_
+10	sieppauksen	sieppaus	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	obj	_	_
+13	tuomittiin	tuomia	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	10	acl:relcl	_	_
+14	maailmalla	maailma	NOUN	N	Case=Ade|Number=Sing	13	obl	_	_
+15	laajalti	laajalti	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Mielenosoitukset levottomalla Gazan kaistaleen ja Israelin välisellä raja-alueella eivät ota laantuakseen.
+1	Mielenosoitukset	mielen#osoitus	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	levottomalla	levottoa	VERB	V	Case=Ade|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	0	root	_	_
+3	Gazan	Gaza	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	kaistaleen	kaistali	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	Israelin	Israel	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	välisellä	välinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	raja-alueella	raja-alue	NOUN	N	Case=Ade|Number=Sing	4	conj	_	_
+9	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	ota	ottaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	_	_
+11	laantuakseen	laantua	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	10	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Haavoittuneita on 84, viranomaiset kertovat AFP:lle.
+1	Haavoittuneita	haavoittune	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	84	84	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	viranomaiset	viran#omainen	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+6	kertovat	kertoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	AFP:lle	AFP	PROPN	N	Abbr=Yes|Case=All|Number=Sing	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Epäillyt rikokset tapahtuivat vuosina 2012–2013, kertoo Kansainvälisen rikostuomioistuin.
+1	Epäillyt	epäilly	NOUN	N	Case=Nom|Derivation=U|Number=Plur	2	compound:nn	_	_
+2	rikokset	rikos	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	tapahtuivat	tapahtua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vuosina	vuosi	NOUN	N	Case=Ess|Number=Plur	3	obl	_	_
+5	2012–2013	2012–2013	NUM	Num	NumType=Card	4	nummod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	kertoo	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+8	Kansainvälisen	Kansainvälinen	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	rikostuomioistuin	rikos#tuomio#istuin	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Taliban-liikkeen jäsen ampui tyttöjen koulutuksen puolesta kampanjoinutta Yousafzaita 2012.
+1	Taliban-liikkeen	Taliban-liike	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	jäsen	jäsen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	ampui	ampua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tyttöjen	tyttö	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	koulutuksen	koulutus	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	puolesta	puolesta	ADP	Adp	AdpType=Post	5	case	_	_
+7	kampanjoinutta	kampanjoia	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	acl	_	_
+8	Yousafzaita	Yousafzas	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+9	2012	2012	NUM	Num	NumType=Card	3	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = Malala Yousafzai sai työstään Nobelin rauhanpalkinnon 2014.
+1	Malala	Malala	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Yousafzai	Yousafzai	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	työstään	työ	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	3	obl	_	_
+5	Nobelin	Nobel	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	rauhanpalkinnon	rauhan#palkinto	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+7	2014	2014	NUM	Num	NumType=Card	6	appos	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Malala Yousafsai johtaa nykyään hyväntekeväisyysjärjestöä.
+1	Malala	Malala	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Yousafsai	Yousafsai	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	johtaa	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nykyään	nykyään	ADV	Adv	_	3	advmod	_	_
+5	hyväntekeväisyysjärjestöä	hyväntekeväisyysjärjestö	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = "Älkää enää koskaan panko tyttäriänne kouluun", varoittivat palauttajat.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Älkää	Ällä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	10	nsubj	_	_
+3	enää	enää	ADV	Adv	_	2	advmod	_	_
+4	koskaan	koskaan	ADV	Adv	_	5	advmod	_	_
+5	panko	p	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=1|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	_
+6	tyttäriänne	tyttäriä	ADP	Adp	AdpType=Post|Number[psor]=Plur|Person[psor]=2	10	case	_	_
+7	kouluun	koulu	NOUN	N	Case=Ill|Number=Sing	10	obl	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	7	punct	_	_
+10	varoittivat	varoitta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	palauttajat	palauttaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	10	punct	_	SpacesAfter=\s\n
+

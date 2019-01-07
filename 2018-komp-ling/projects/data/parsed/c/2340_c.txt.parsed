@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ja lapset?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ja	ja	CCONJ	C	_	3	cc	_	_
+3	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Mihin ne joutuisivat, jollette te kauvemmin huolehtisi heistä?
+1	Mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Int	3	obl	_	_
+2	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	nsubj	_	_
+3	joutuisivat	joutuisa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	jollette	jollei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+6	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_
+7	kauvemmin	kauvemmin	ADV	Adv	_	8	advmod	_	_
+8	huolehtisi	huolehtia	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	8	obl	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- Oi, minä en tiedä!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oi	Oi	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+5	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = huudahti hän toivottomana tarttuen päähänsä.
+1	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	toivottomana	toivoton	ADJ	A	Case=Ess|Degree=Pos|Derivation=Ton|Number=Sing	1	obl	_	_
+4	tarttuen	tart#tuki	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	päähänsä	pää	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	1	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Näkyi, että tämä ajatus usein oli johtunut hänen mieleensä ja nyt uudelleen heräsi hänessä.
+1	Näkyi	näkyi	INTJ	Interj	_	8	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	että	että	SCONJ	C	_	8	mark	_	_
+4	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	det	_	_
+5	ajatus	ajatus	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+6	usein	usein	ADV	Adv	_	8	advmod	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	johtunut	johtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	mieleensä	mieli	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	8	obl	_	_
+11	ja	ja	CCONJ	C	_	14	cc	_	_
+12	nyt	nyt	ADV	Adv	_	14	advmod	_	_
+13	uudelleen	uudelleen	ADV	Adv	_	14	advmod	_	_
+14	heräsi	herätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+15	hänessä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=3|PronType=Prs	14	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 6
+# text = -- Mutta jos te nyt Kateriina Ivanovnan eläessä tulisitte sairaaksi ja olisitte pakotettu menemään sairaalaan ... kuinka silloin kävisi? jatkoi hän armahtamatta.
+1	--	--	PUNCT	Punct	_	13	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	13	cc	_	_
+3	jos	jos	SCONJ	C	_	9	mark	_	_
+4	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	det	_	_
+5	nyt	nyt	ADV	Adv	_	6	advmod	_	_
+6	Kateriina	Kateriina	PROPN	N	Case=Nom|Number=Sing	8	nmod:poss	_	_
+7	Ivanovnan	Ivanovna	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	eläessä	eläi	NOUN	N	Case=Ine|Number=Sing	9	obl	_	_
+9	tulisitte	tulä	VERB	V	Mood=Cnd|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	13	advcl	_	_
+10	sairaaksi	sairaa	NOUN	N	Case=Tra|Number=Sing	9	xcomp:ds	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	olisitte	olisida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux:pass	_	_
+13	pakotettu	pakottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+14	menemään	mennä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	_
+15	sairaalaan	sairaala	NOUN	N	Case=Ill|Number=Sing	14	obl	_	_
+16	...	...	PUNCT	Punct	_	19	punct	_	_
+17	kuinka	kuinka	ADV	Adv	_	19	advmod	_	_
+18	silloin	silloin	ADV	Adv	_	19	advmod	_	_
+19	kävisi	käydä	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	13	ccomp	_	SpaceAfter=No
+20	?	?	PUNCT	Punct	_	13	punct	_	_
+21	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	parataxis	_	_
+22	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	21	nsubj	_	_
+23	armahtamatta	armahtaa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	21	xcomp	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 7
+# text = -- Oi, mitä te sanotte, mitä te puhutte!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oi	Oi	PROPN	N	Case=Nom|Number=Sing	6	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	6	obj	_	_
+5	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+6	sanotte	sanlla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	9	nsubj:cop	_	_
+9	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	acl:relcl	_	_
+10	puhutte	puhui	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	9	cop	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Se ei tapahdu, se ei voi tapahtua! ja Sonjan kasvot vääristyivät ankarasta tuskasta.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tapahdu	tapahtua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	tapahtua	tapahtua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	13	punct	_	_
+10	ja	ja	CCONJ	C	_	13	cc	_	_
+11	Sonjan	Sonja	PROPN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	kasvot	kasvo	NOUN	N	Case=Nom|Number=Plur	13	nsubj	_	_
+13	vääristyivät	vääristyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+14	ankarasta	ankara	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	15	amod	_	_
+15	tuskasta	tuska	NOUN	N	Case=Ela|Number=Sing	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

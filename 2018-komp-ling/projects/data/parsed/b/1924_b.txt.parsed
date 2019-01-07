@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Meeri ei ymmärrä.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpacesBefore= \s
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ymmärrä	ymmärtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Kuoliko mies?
+1	Kuoliko	Kuolla	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s \s
+
+# sent_id = 3
+# text = Kyösti ei virkoa, vaikka Meeri kuinka tönii.
+1	Kyösti	Kyösti	PROPN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	virkoa	virko	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	vaikka	vaikka	SCONJ	C	_	8	mark	_	_
+6	Meeri	Meeri	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	kuinka	kuinka	ADV	Adv	_	8	advmod	_	_
+8	tönii	tönia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Meeri ei tiedä, olisiko pettynyt vai häpeissään.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	olisiko	olla	AUX	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	pettynyt	pettyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+7	vai	vai	CCONJ	C	_	8	cc	_	_
+8	häpeissään	häpei	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Häntä alkaa itkettää.
+1	Häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	itkettää	itkettää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Korvissa suhisee himo ja alapää sykkii omia aikojaan.
+1	Korvissa	korva	NOUN	N	Case=Ine|Number=Plur	2	obl	_	_
+2	suhisee	suhia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	himo	himo	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	alapää	alapä	NOUN	N	Case=Par|Number=Sing	6	nsubj	_	_
+6	sykkii	sykkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	8	amod	_	_
+8	aikojaan	aika	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s \s
+
+# sent_id = 7
+# text = Kaikki haaveet haihtuvat yksi kerrallaan, laulaisi Kääriäinen nyt.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	haaveet	haave	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	haihtuvat	haihtua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	kerrallaan	kerta	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	laulaisi	laulaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	Kääriäinen	Kääriäinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	7	nsubj	_	_
+9	nyt	nyt	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Kyösti ei enää muistuta Jormaa lainkaan.
+1	Kyösti	Kyösti	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	enää	enää	ADV	Adv	_	4	advmod	_	_
+4	muistuta	muistuttaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	Jormaa	Jorma	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	lainkaan	lainkaan	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Suuri rakastaja korisee suu auki ja lemuaa.
+1	Suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	rakastaja	rakastaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	nsubj	_	_
+3	korisee	korista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	suu	suu	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+5	auki	auki	ADV	Adv	_	3	advmod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	lemuaa	lemua	NOUN	N	Case=Par|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s \s
+
+# sent_id = 10
+# text = Meeri niistää nenänsä ja pukeutuu.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	niistää	niistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nenänsä	nenä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	pukeutuu	pukeutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Häntä harmittaa.
+1	Häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	harmittaa	harmittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Kyösti kehuskelisi pitkin kylää, miten sai Meerin vuoteeseensa.
+1	Kyösti	Kyösti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+2	kehuskelisi	kehuskellä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pitkin	pitkin	ADP	Adp	AdpType=Prep	4	case	_	_
+4	kylää	kylä	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	miten	miten	ADV	Adv	_	7	advmod	_	_
+7	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	Meerin	Meer	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	vuoteeseensa	vuoteesei	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Hannu todistaisi asian.
+1	Hannu	Hannu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	todistaisi	todistaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	asian	asia	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Meerin maine tahriintuisi ihan turhan takia.
+1	Meerin	Meer	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	maine	m#aine	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tahriintuisi	tahriintua	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ihan	ihan	ADV	Adv	_	3	advmod	_	_
+5	turhan	turha	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	takia	takia	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

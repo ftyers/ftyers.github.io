@@ -1,0 +1,140 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ei mikään.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	mikään	mikään	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Sain vain päähänpiston, vastasi hän naurahtaen.
+1	Sain	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vain	vain	ADV	Adv	_	1	advmod	_	_
+3	päähänpiston	päähänpisto	NOUN	N	Case=Gen|Number=Sing	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+7	naurahtaen	naurahtaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Jos vain oli päähänpisto, on se hyvin, sanoi Sosimov.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Jos	jos	SCONJ	C	_	5	mark	_	_
+3	vain	vain	ADV	Adv	_	5	advmod	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	päähänpisto	päähänpisto	NOUN	N	Case=Nom|Number=Sing	11	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj	_	_
+9	hyvin	hyvin	ADV	Adv	_	11	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	Sosimov	Sosimov	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 4
+# text = -- Nyt pitää minun lähteä, mutta ehkä taas palaan pian.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Nyt	nyt	ADV	Adv	_	5	advmod	_	_
+3	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	mutta	mutta	CCONJ	C	_	10	cc	_	_
+8	ehkä	ehkä	ADV	Adv	_	10	advmod	_	_
+9	taas	taas	ADV	Adv	_	8	fixed	_	_
+10	palaan	palata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+11	pian	pian	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Hän kumarsi ja lähti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kumarsi	kumartaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Kuinka sävyisä mies hän on, sanoi Pulcheria Alexandrovna.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	sävyisä	sävyisä	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	mies	mies	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	Pulcheria	Pulcher	PROPN	N	Case=Par|Number=Sing	8	obl	_	_
+10	Alexandrovna	Alexandrovna	PROPN	N	Case=Nom|Number=Sing	9	flat:name	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 7
+# text = -- Sävyisä, taitava, pulska ja viisas mies, sanoi Raskolnikov vilkkaasti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Sävyisä	Sävyisä	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	taitava	taitava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	pulska	pulska	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	viisas	viisas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	_
+9	mies	mies	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	2	punct	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	13	obj	_	_
+13	vilkkaasti	vilkkaasti	ADV	Adv	Derivation=Sti	11	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 8
+# text = -- En mitenkään voi muistaa, missä hänet olin nähnyt ennenkuin sairastuin.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	mitenkään	mitenkään	ADV	Adv	_	5	advmod	_	_
+4	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	muistaa	muistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	10	obl	_	_
+8	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+9	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+11	ennenkuin	ennenkuin	SCONJ	C	_	12	mark	_	_
+12	sairastuin	sairastua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Hän, tuolla, myöskin on hyvä ihminen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	tuolla	tuolla	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	myöskin	myöskin	ADV	Adv	_	8	advmod	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Hän nyökäytti Rasumihiniin päin.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	nyökäytti	nyökäyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Rasumihiniin	Rasumihin	PROPN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	päin	päin	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = -- Pidätkö sinä hänestä, Dunja? kysyi hän nauraen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Pidätkö	Pidätä	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	8	advcl	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	obj	_	_
+4	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	_
+8	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+10	nauraen	nauraa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	8	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

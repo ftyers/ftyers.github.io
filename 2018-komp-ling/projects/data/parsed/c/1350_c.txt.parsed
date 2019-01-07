@@ -1,0 +1,117 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Minä ajattelin, että sinä tietäisit.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	ajattelin	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	_
+7	tietäisit	tietää	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = No, me olemme kihloissa, Martin ja minä."
+1	No	no	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj:cop	_	_
+4	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	kihloissa	kihlo	NOUN	N	Case=Ine|Number=Plur	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	Martin	Martin	PROPN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Rouva Morse nauroi epäillen ja harmistuneena.
+1	Rouva	rouva	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Morse	Morse	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	nauroi	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	epäillen	epäilla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	harmistuneena	harmistua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = "Ei, ei hän puhunut", selitti Ruth.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Ei	ei	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	selitti	selittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+10	Ruth	Ruth	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = "Hän vain rakasti minua, siinä kaikki.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	rakasti	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	4	obl	_	_
+8	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Minä olin yhtä hämmästynyt kuin sinäkin.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	yhtä	yhtä	ADV	Adv	_	4	advmod	_	_
+4	hämmästynyt	hämmästyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	sinäkin	sinä	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=2|PronType=Prs	4	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Hän ei virkkanut ainoatakaan sanaa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	virkkanut	virkkaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	ainoatakaan	ainoa	PRON	Pron	Case=Nom|Clitic=Kaan|PronType=Ind	5	det	_	_
+5	sanaa	sana	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Hän vain kiersi kätensä minun ympärilleni.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	vain	vain	ADV	Adv	_	3	advmod	_	_
+3	kiersi	kiertää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kätensä	käs	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	ympärilleni	ympärille	ADV	Adv	Number[psor]=Sing|Person[psor]=1	3	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Ja ... ja minä en ollut oma itseni.
+1	Ja	ja	CCONJ	C	_	7	cc	_	_
+2	...	...	PUNCT	Punct	_	7	punct	_	_
+3	ja	ja	CCONJ	C	_	7	cc	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:cop	_	_
+5	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+7	oma	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+8	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = Ja hän suuteli minua, ja minä suutelin häntä.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	suuteli	suudella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	suutelin	suuella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

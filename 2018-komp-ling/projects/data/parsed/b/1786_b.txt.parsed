@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Metsäleireilyä.
+1	Metsäleireilyä	Metsäleireily	NOUN	N	Case=Par|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Ajan viettämistä päivällä ja yöllä metsässä, yöllä yleensä teltassa.
+1	Ajan	aika	NOUN	N	Case=Gen|Number=Sing	2	nmod:gobj	_	_
+2	viettämistä	viettäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	0	root	_	_
+3	päivällä	päivä	NOUN	N	Case=Ade|Number=Sing	2	nmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	yöllä	yö	NOUN	N	Case=Ade|Number=Sing	3	conj	_	_
+6	metsässä	metsä	NOUN	N	Case=Ine|Number=Sing	2	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	yöllä	yö	NOUN	N	Case=Ade|Number=Sing	2	nmod	_	_
+9	yleensä	yleensä	ADV	Adv	_	10	advmod	_	_
+10	teltassa	telta	NOUN	N	Case=Ine|Number=Sing	2	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Mies kuin mies.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	kuin	kuin	CCONJ	C	_	3	cc	_	_
+3	mies	mies	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Jokainen mies.
+1	Jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Monta kuukautta putkeen.
+1	Monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	det	_	_
+2	kuukautta	kuu#kausi	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+3	putkeen	putki	NOUN	N	Case=Ill|Number=Sing	2	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Samaa asiaa monen kuukauden ajan.
+1	Samaa	sama	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	amod	_	_
+2	asiaa	asia	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+3	monen	moni	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	4	det	_	_
+4	kuukauden	kuu#kausi	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	ajan	aika	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Muistikirjoihinsa, perusmuoto muistikirja.
+1	Muistikirjoihinsa	Muistikirjo	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	4	nmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	muistikirja	muisti#kirja	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Pieni, tyhjä kirja, johon ihminen voi kirjoittaa asioita, jotka eivät saa unohtua.
+1	Pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	tyhjä	tyhjä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	9	obl	_	_
+7	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	kirjoittaa	kirjoittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	acl:relcl	_	_
+10	asioita	asia	NOUN	N	Case=Par|Number=Plur	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	14	nsubj	_	_
+13	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
+15	unohtua	unohtua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Kirja muistaa kun hän ei enää muista.
+1	Kirja	kirja	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	muistaa	muistata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kun	kun	SCONJ	C	_	7	mark	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	enää	enää	ADV	Adv	_	7	advmod	_	_
+7	muista	muistaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Nauraa räkättäen.
+1	Nauraa	naura	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	räkättäen	räkättää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Nauraa kovalla äänellä, ehkä ilkeästi.
+1	Nauraa	naurata	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kovalla	kova	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	3	amod	_	_
+3	äänellä	ääni	NOUN	N	Case=Ade|Number=Sing	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	ehkä	ehkä	ADV	Adv	_	6	advmod	_	_
+6	ilkeästi	ilkeästi	ADV	Adv	Derivation=Sti	1	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

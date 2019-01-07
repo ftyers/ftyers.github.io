@@ -1,0 +1,183 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Jotkut ovat väittäneet, että suomalaiset eivät osaa lainkaan small talkia, rupattelua.
+1	Jotkut	joku	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	väittäneet	väittää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	suomalaiset	suomalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	8	nsubj	_	_
+7	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	osaa	osata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	ccomp	_	_
+9	lainkaan	lainkaan	ADV	Adv	_	11	advmod	_	_
+10	small	small	X	Foreign	Foreign=Yes	9	fixed	_	_
+11	talkia	talka	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	rupattelua	rupattelu	NOUN	N	Case=Par|Derivation=U|Number=Sing	11	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Se ei kuitenkaan ole totta.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	kuitenkaan	kuitenkaan	ADV	Adv	_	5	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Suomalaiset käyttävät small talkia keskustelun aloittamiseen ja ihmissuhteiden ylläpitämiseen .
+1	Suomalaiset	suomalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	2	nsubj	_	_
+2	käyttävät	käyttää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	small	smas	SCONJ	C	_	4	mark	_	_
+4	talkia	talka	NOUN	N	Case=Par|Number=Plur	2	advcl	_	_
+5	keskustelun	keskustelu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	6	nmod:gobj	_	_
+6	aloittamiseen	aloittaminen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	4	nmod	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	SpacesAfter=\s\s
+8	ihmissuhteiden	ihmissuhte	NOUN	N	Case=Gen|Number=Plur	9	nmod:gobj	_	_
+9	ylläpitämiseen	ylläpitäminen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	4	conj	_	_
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Small talkin avulla myös solmitaan uusia ihmissuhteita ja joskus myös torjutaan hiljaisuutta.
+1	Small	jos#smai	VERB	V	Number=Sing|Person=3|Polarity=Neg|Style=Coll|VerbForm=Fin|Voice=Act	2	acl	_	_
+2	talkin	talkki	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	5	obl	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	SpacesAfter=\s\s
+5	solmitaan	solmita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpacesAfter=\s\s
+6	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	SpacesAfter= 
+7	ihmissuhteita	ihmissuhte	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	joskus	joskus	ADV	Adv	_	11	advmod	_	_
+10	myös	myös	ADV	Adv	_	11	advmod	_	SpacesAfter=\s\s
+11	torjutaan	torjuta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	5	conj	_	SpacesAfter=\s\s
+12	hiljaisuutta	hiljaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Tervehdyksiin ei usein liity small talkia, vaan ne ovat lyhyitä (huomenta, päivää, moi) eikä esimerkiksi perheenjäsenten vointia kysellä.
+1	Tervehdyksiin	Tervehdys	NOUN	N	Case=Ill|Number=Plur	4	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	usein	usein	ADV	Adv	_	4	advmod	_	_
+4	liity	liittyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	small	small	X	Foreign	Foreign=Yes	6	compound:nn	_	SpacesAfter= 
+6	talkia	talk	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	vaan	vaan	CCONJ	C	_	11	cc	_	_
+9	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	11	nsubj:cop	_	_
+10	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	lyhyitä	lyhyä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	conj	_	_
+12	(	(	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+13	huomenta	huomen	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Sing	11	appos	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	15	punct	_	_
+15	päivää	päivä	NOUN	N	Case=Par|Number=Sing	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	moi	moi	INTJ	Interj	_	13	conj	_	SpaceAfter=No
+18	)	)	PUNCT	Punct	_	17	punct	_	_
+19	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	23	cc	_	_
+20	esimerkiksi	esimerkiksi	ADV	Adv	_	23	advmod	_	_
+21	perheenjäsenten	perheen#jäsen	NOUN	N	Case=Gen|Number=Plur	22	nmod:poss	_	SpacesAfter= 
+22	vointia	vointi	NOUN	N	Case=Par|Number=Sing	23	obj	_	_
+23	kysellä	kysellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	conj	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Tämä saattaa tuntua ulkomaalaisista kylmältä ja etäiseltä.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	saattaa	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tuntua	tuntua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	ulkomaalaisista	ulkomaalaisinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	kylmältä	kylmä	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	3	xcomp	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	SpacesAfter=\s\s
+7	etäiseltä	etäinen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Llinen|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Tyypillisiä aiheita suomalaisessa small talkissa ovat sää ja vuodenaikoihin liittyvät tapahtumat, esimerkiksi sienestäminen ja hiihtäminen.
+1	Tyypillisiä	Tyypillinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	2	amod	_	SpacesAfter=\s\s
+2	aiheita	aihe	NOUN	N	Case=Par|Number=Plur	4	nmod	_	_
+3	suomalaisessa	suomalainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	4	amod	_	_
+4	small	small	X	Foreign	Foreign=Yes	7	nsubj:cop	_	_
+5	talkissa	talki	NOUN	N	Case=Ine|Number=Sing	4	nmod	_	_
+6	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	sää	sää	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	vuodenaikoihin	vuodenaiko	NOUN	N	Case=Ill|Number=Plur	10	obl	_	_
+10	liittyvät	liittyä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	11	acl	_	_
+11	tapahtumat	tapahtuma	NOUN	N	Case=Nom|Number=Plur	7	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	esimerkiksi	esimerkiksi	ADV	Adv	_	14	advmod	_	_
+14	sienestäminen	sienestäminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	7	conj	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	hiihtäminen	hiihtäminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	7	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Puheenaihe syntyy usein myös siitä tilanteesta ja paikasta, jossa keskustelijat ovat: kaupassa puhutaan hinnoista, terveyskeskuksessa lasten flunssasta ja junassa julkisen liikenteen toimivuudesta.
+1	Puheenaihe	Puheenaihe	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	syntyy	syntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	usein	usein	ADV	Adv	_	2	advmod	_	SpacesAfter= 
+4	myös	myös	ADV	Adv	_	6	advmod	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	6	det	_	_
+6	tilanteesta	tilanne	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	paikasta	paikka	NOUN	N	Case=Ela|Number=Sing	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	15	punct	_	_
+10	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	15	obl	_	_
+11	keskustelijat	keskustelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	15	nsubj:cop	_	_
+12	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	SpaceAfter=No
+13	:	:	PUNCT	Punct	_	15	punct	_	_
+14	kaupassa	kaupa	NOUN	N	Case=Ine|Number=Sing	15	obl	_	_
+15	puhutaan	puhua	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	acl:relcl	_	_
+16	hinnoista	hinno	NOUN	N	Case=Ela|Number=Plur	15	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	terveyskeskuksessa	terveyskeskus	NOUN	N	Case=Ine|Number=Sing	16	conj	_	_
+19	lasten	lapsi	NOUN	N	Case=Gen|Number=Plur	20	nmod:poss	_	_
+20	flunssasta	flunssa	NOUN	N	Case=Ela|Number=Sing	18	nmod	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	junassa	juna	NOUN	N	Case=Ine|Number=Sing	15	conj	_	SpacesAfter=\s\s
+23	julkisen	julkinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	24	amod	_	_
+24	liikenteen	liikenne	NOUN	N	Case=Gen|Number=Sing	25	nmod:poss	_	SpacesAfter=\s\s
+25	toimivuudesta	toimivuus	NOUN	N	Case=Ela|Derivation=Vs|Number=Sing	22	nmod	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	15	punct	_	_
+
+# sent_id = 9
+# text = Henkilökohtaisista asioista, kuten palkasta, uskonnosta tai poliittisista mielipiteistä, ei suomalaisessa small talkissa juuri puhuta.
+1	Henkilökohtaisista	Henkilökohtais	NOUN	N	Case=Ela|Number=Plur	5	nmod	_	_
+2	asioista	asia	NOUN	N	Case=Ela|Number=Plur	1	nmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	kuten	kuten	ADV	Adv	_	5	advmod	_	_
+5	palkasta	palkas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	amod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	uskonnosta	uskonto	NOUN	N	Case=Ela|Number=Sing	5	conj	_	_
+8	tai	tai	CCONJ	C	_	9	cc	_	_
+9	poliittisista	poliittinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Plur	5	conj	_	SpacesAfter=\s\s
+10	mielipiteistä	mieli#pide	NOUN	N	Case=Ela|Number=Plur	17	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	17	punct	_	SpacesAfter=\s\s
+12	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	17	aux	_	_
+13	suomalaisessa	suomalainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	15	amod	_	_
+14	small	small	X	Foreign	Foreign=Yes	15	compound:nn	_	_
+15	talkissa	talki	NOUN	N	Case=Ine|Number=Sing	17	obl	_	_
+16	juuri	juuri	ADV	Adv	_	17	advmod	_	_
+17	puhuta	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	17	punct	_	_
+
+# sent_id = 10
+# text = Suomalaiset välttävät tällaisia puheenaiheita, koska heille on tärkeää, että keskustelu pysyy sopuisana.
+1	Suomalaiset	suomalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	2	nsubj	_	SpacesAfter=\s\s
+2	välttävät	välttää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\s\s
+3	tällaisia	tällainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	4	amod	_	SpacesAfter= 
+4	puheenaiheita	puheenaihe	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	koska	koska	SCONJ	C	_	9	mark	_	_
+7	heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	9	obl	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	tärkeää	tärkeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	keskustelu	keskustelu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	13	nsubj	_	_
+13	pysyy	pysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	csubj:cop	_	SpacesAfter=\s\s
+14	sopuisana	sopuisa	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

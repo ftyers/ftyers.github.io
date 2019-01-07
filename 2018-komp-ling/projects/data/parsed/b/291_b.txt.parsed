@@ -1,0 +1,288 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suomen pienin kaupunki on Kaskinen.
+1	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	pienin	pieni	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	3	amod	_	_
+3	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	Kaskinen	Kaskinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Siellä on hiukan yli 1 300 asukasta.
+1	Siellä	siellä	ADV	Adv	_	6	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	hiukan	hiukan	ADV	Adv	_	6	advmod	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	1 300	1 300	NUM	Num	NumType=Card	6	nummod	_	_
+6	asukasta	asukas	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Suurin on Helsinki yli 600 000 asukkaallaan.
+1	Suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	Helsinki	Helsinki	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	600 000	600 000	NUM	Num	NumType=Card	6	nummod	_	_
+6	asukkaallaan	asukkaa	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Pääkaupunkiseutuun kuuluvat Helsingin lisäksi Espoo, Vantaa ja Kauniainen.
+1	Pääkaupunkiseutuun	Pääkaupunkiseutu	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+2	kuuluvat	kuulua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Helsingin	Helsinki	PROPN	N	Case=Gen|Number=Sing	5	nmod	_	_
+4	lisäksi	lisäksi	ADP	Adp	AdpType=Post	3	case	_	_
+5	Espoo	Espoo	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Vantaa	Vanta	NOUN	N	Case=Par|Number=Sing	5	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	Kauniainen	Kauniainen	PROPN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Pääkaupunkiseudulla on yhteensä yli miljoona asukasta.
+1	Pääkaupunkiseudulla	pää#kaupunki#seutu	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpacesAfter= 
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	yhteensä	yhteensä	ADV	Adv	_	1	advmod	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	miljoona	miljoona	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	asukasta	asuka	NOUN	N	Case=Ela|Number=Sing	1	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Muita suuria kaupunkeja ovat Espoo,Tampere,Turku, Vantaa ja Oulu.Tampere on Pohjoismaiden suurin sisämaassa sijaitseva kaupunki.
+1	Muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	3	det	_	_
+2	suuria	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	amod	_	_
+3	kaupunkeja	kaupunki	NOUN	N	Case=Par|Number=Plur	5	nsubj:cop	_	_
+4	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	Espoo	Espoo	PROPN	N	Case=Nom|Number=Sing	19	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+7	Tampere	Tampere	PROPN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+9	Turku	Turku	PROPN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	Vantaa	vantaa	NOUN	N	Case=Nom|Number=Sing	5	conj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	Oulu.Tampere	Oulu.Tampere	PROPN	N	Case=Nom|Number=Sing	5	conj	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
+15	Pohjoismaiden	pohjois#maa	PROPN	N	Case=Gen|Number=Plur	16	nmod:poss	_	_
+16	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	19	amod	_	_
+17	sisämaassa	sisämaa	NOUN	N	Case=Ine|Number=Sing	18	obl	_	_
+18	sijaitseva	sijaita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	19	acl	_	_
+19	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	19	punct	_	_
+
+# sent_id = 7
+# text = Turku oli Suomen pääkaupunki vuoteen 1812 asti.
+1	Turku	Turku	PROPN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	pääkaupunki	#pää#kaupunki	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	vuoteen	vuosi	NOUN	N	Case=Ill|Number=Sing	4	nmod	_	_
+6	1812	1812	NUM	Num	NumType=Card	4	nummod	_	_
+7	asti	asti	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 8
+# text = Se on nykyisin kuudenneksi suurin kaupunki.Vertailun vuoksi voi mainita, että Kuhmo on pinta-alaltaan ylivoimaisesti suurin kaupunki (4 821 km2).
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	nykyisin	nykyisin	ADV	Adv	_	4	advmod	_	_
+4	kuudenneksi	kuudes	ADJ	Num	Case=Tra|Number=Sing|NumType=Ord	5	nummod	_	_
+5	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	6	amod	_	_
+6	kaupunki.Vertailun	kaupunki.Vertailu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	9	obl	_	SpacesAfter= 
+7	vuoksi	vuoksi	ADP	Adp	AdpType=Post	6	case	_	_
+8	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	mainita	mainita	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	17	punct	_	_
+11	että	että	SCONJ	C	_	17	mark	_	_
+12	Kuhmo	Kuhmo	PROPN	N	Case=Nom|Number=Sing	17	nsubj:cop	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+14	pinta-alaltaan	pinta-ala	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	16	nmod	_	_
+15	ylivoimaisesti	yli#voimaisesti	ADV	Adv	Derivation=Sti	16	advmod	_	_
+16	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	17	amod	_	_
+17	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	9	ccomp	_	_
+18	(	(	PUNCT	Punct	_	20	punct	_	SpaceAfter=No
+19	4 821	4 821	NUM	Num	_	20	compound	_	_
+20	km2	km2	NUM	Num	_	17	obl	_	SpaceAfter=No
+21	)	)	PUNCT	Punct	_	20	punct	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 9
+# text = Siellä on kuitenkin asukkaita vain noin 13 000.
+1	Siellä	siellä	ADV	Adv	_	4	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	4	advmod	_	_
+4	asukkaita	asukas	NOUN	N	Case=Par|Number=Plur	7	nsubj:cop	_	_
+5	vain	vain	ADV	Adv	_	7	advmod	_	_
+6	noin	noin	ADV	Adv	_	7	advmod	_	_
+7	13 000	13 000	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = Suomen pohjoinen sijainti tekee ilmastosta ankean.
+1	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	pohjoinen	pohjoinen	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	sijainti	sijainti	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ilmastosta	ilmasto	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+6	ankean	ankea	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Loppusyksyllä ja talvella moni kaipaa etelän aurinkoon.
+1	Loppusyksyllä	Loppusyksty	NOUN	N	Case=Ade|Number=Sing	5	obl	_	_
+2	ja	ja	CCONJ	C	_	5	cc	_	_
+3	talvella	talvi	NOUN	N	Case=Ade|Number=Sing	5	obl	_	_
+4	moni	moni	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	nsubj	_	_
+5	kaipaa	kaivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	etelän	etelä	NOUN	N	Case=Gen|Number=Sing	5	obj	_	_
+7	aurinkoon	aurinko	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = On pimeää, kosteaa ja usein kylmää ja tuulista.
+1	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pimeää	pimeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	kosteaa	kostea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	usein	usein	ADV	Adv	_	7	advmod	_	_
+7	kylmää	kylmä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	tuulista	tuulinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	2	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Moni muualta muuttanut ihmettelee, miksi yleensä on tullut Suomeen.
+1	Moni	moni	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	SpacesAfter= 
+2	muualta	muualta	ADV	Adv	_	3	advmod	_	_
+3	muuttanut	muuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	ihmettelee	ihmetella	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	miksi	miksi	ADV	Adv	_	9	advmod	_	_
+7	yleensä	yleensä	ADV	Adv	_	9	advmod	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	ccomp	_	SpacesAfter= 
+10	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 14
+# text = Näin asiaa kommentoi aikanaan etiopialainen juoksija Haile Gebreselassie: «Olen vieraillut Helsingissä viisi, kuusi kertaa ja nähnyt paljon paikkoja maassanne.
+1	Näin	näin	ADV	Adv	_	3	advmod	_	_
+2	asiaa	asia	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	kommentoi	kommentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	aikanaan	aika	NOUN	N	Case=Ess|Number=Sing|Person[psor]=3	3	obl	_	_
+5	etiopialainen	etiopialainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	6	amod	_	SpacesAfter= 
+6	juoksija	juoksija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	7	compound:nn	_	_
+7	Haile	Haile	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+8	Gebreselassie	Gebreselassie	PROPN	N	Case=Nom|Number=Sing	7	flat:name	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	3	punct	_	_
+10	«	«	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+11	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	vieraillut	vierailla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	22	acl	_	_
+13	Helsingissä	Helsinki	PROPN	N	Case=Ine|Number=Sing	12	obl	_	SpacesAfter= 
+14	viisi	viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	12	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	kuusi	kuusi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	17	nummod	_	_
+17	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	12	obl	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	22	acl	_	_
+20	paljon	paljon	ADV	Adv	_	19	advmod	_	_
+21	paikkoja	#paikka	NOUN	N	Case=Par|Number=Plur	19	obj	_	_
+22	maassanne	maassanne	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 15
+# text = Tiedän, ettei Suomikaan tullut vauraaksi helposti.
+1	Tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	mark	_	_
+4	Suomikaan	Suomika	NOUN	N	Case=Ill|Number=Sing	5	obl	_	_
+5	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	ccomp	_	_
+6	vauraaksi	vauraa	NOUN	N	Case=Tra|Number=Sing	5	obl	_	_
+7	helposti	helposti	ADV	Adv	Derivation=Sti	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 16
+# text = Olen ollut siellä pari kertaa talvella ja olen aina ihmetellyt, että miten tämä kansa on voinut tulla näin rikkaaksi näin kamalassa säässä.”
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	SpacesAfter= 
+2	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	cop	_	_
+3	siellä	siellä	ADV	Adv	_	10	advmod	_	_
+4	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+6	talvella	talvi	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	aina	aina	ADV	Adv	_	10	advmod	_	_
+10	ihmetellyt	ihmetellä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	24	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	18	punct	_	_
+12	että	että	SCONJ	C	_	18	mark	_	_
+13	miten	miten	ADV	Adv	_	18	advmod	_	_
+14	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	15	det	_	_
+15	kansa	kansa	NOUN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+16	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux	_	_
+17	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	18	aux	_	_
+18	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	ccomp	_	_
+19	näin	näin	ADV	Adv	_	20	advmod	_	_
+20	rikkaaksi	rikas	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	18	xcomp	_	_
+21	näin	näin	ADV	Adv	_	22	advmod	_	SpacesAfter= 
+22	kamalassa	kamala	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	23	amod	_	_
+23	säässä	sää	NOUN	N	Case=Ine|Number=Sing	18	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	25	punct	_	SpaceAfter=No
+25	”	”	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 17
+# text = Ilmasto on kuitenkin paljon leudompi kuin mitä Suomen maantieteellinen sijainti edellyttäisi.
+1	Ilmasto	Ilmasto	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	5	advmod	_	_
+4	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+5	leudompi	leudo	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+6	kuin	kuin	SCONJ	C	_	11	mark	_	_
+7	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	11	obj	_	_
+8	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+9	maantieteellinen	maantieteellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	10	amod	_	_
+10	sijainti	sijainti	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+11	edellyttäisi	edellyttää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 18
+# text = Ilmastoa lauhduttavat Itämeri, tuhannet järvet ja läntiset tuulet.
+1	Ilmastoa	Ilmasto	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	lauhduttavat	lauhduttaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Itämeri	Itämeri	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	tuhannet	tuhas	ADJ	Num	Case=Nom|Number=Plur|NumType=Ord	6	amod	_	_
+6	järvet	järvi	NOUN	N	Case=Nom|Number=Plur	3	conj	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	läntiset	läntinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	9	amod	_	_
+9	tuulet	tuuli	NOUN	N	Case=Nom|Number=Plur	3	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 19
+# text = Ne puhaltavat Atlantilta Golf-virran lämmittämältä alueelta.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	2	nsubj	_	_
+2	puhaltavat	puhaltaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Atlantilta	Atlant	PROPN	N	Case=Abl|Number=Sing	2	obl	_	_
+4	Golf-virran	Golf-virta	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	lämmittämältä	lämmittämä	NOUN	N	Case=Abl|Number=Sing	2	obl	_	_
+6	alueelta	alue	NOUN	N	Case=Abl|Number=Sing	2	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 20
+# text = Suomen keskilämpötila on huomattavasti korkeampi kuin muualla samoilla leveysasteilla.
+1	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	keskilämpötila	keski#lämpö#tila	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	huomattavasti	huomattavasti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+5	korkeampi	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	SpacesAfter= 
+6	kuin	kuin	SCONJ	C	_	8	mark	_	_
+7	muualla	muualla	ADV	Adv	_	8	advmod	_	_
+8	samoilla	sama	NOUN	N	Case=Ade|Number=Plur	5	advcl	_	_
+9	leveysasteilla	leveysaste	NOUN	N	Case=Ade|Number=Plur	8	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

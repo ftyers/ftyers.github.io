@@ -1,0 +1,147 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mutta ehtisinkö minä
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	ehtisinkö	ehttä	VERB	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+
+# sent_id = 2
+# text = Emman suhteen vielä jotakin?
+1	Emman	E	ADJ	A	Case=Gen|Degree=Cmp|Number=Sing	4	obl	_	_
+2	suhteen	suhteen	ADP	Adp	AdpType=Post	1	case	_	_
+3	vielä	vielä	ADV	Adv	_	4	advmod	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Voisinko mennä puhumaan sille ja kertoa, että maailmanloppu on tulossa?
+1	Voisinko	Voa	AUX	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	puhumaan	puhua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	3	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kertoa	kertoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	että	että	SCONJ	C	_	11	mark	_	_
+9	maailmanloppu	maailman#loppu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	11	nsubj:cop	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	tulossa	tulo	NOUN	N	Case=Ine|Number=Sing	6	ccomp	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Voisinko sanoa, että nyt on korkea aika pistää vähän vipinää meidänkin suhteeseen?
+1	Voisinko	Voa	AUX	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	nyt	nyt	ADV	Adv	_	8	advmod	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	korkea	korkea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	aika	aika	NOUN	N	Case=Nom|Number=Sing	2	ccomp	_	_
+9	pistää	pistää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp:ds	_	_
+10	vähän	vähän	ADV	Adv	_	11	advmod	_	_
+11	vipinää	vipinä	NOUN	N	Case=Par|Number=Sing	9	obj	_	_
+12	meidänkin	meidänkki	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	suhteeseen	suhte	NOUN	N	Case=Ill|Number=Sing	9	obl	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = Vai kosisinko minä sitä suoraan?
+1	Vai	vai	CCONJ	C	_	2	cc	_	_
+2	kosisinko	kosisa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	obj	_	_
+4	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	det	_	_
+5	suoraan	suoraan	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Luulisi, että ne tämmöisinä poikkeusaikoina suostuu vihkimään vähän nuorempiakin pareja.
+1	Luulisi	luulisi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	että	että	SCONJ	C	_	7	mark	_	_
+4	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	7	nsubj	_	_
+5	tämmöisinä	tämmöinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Plur	6	amod	_	_
+6	poikkeusaikoina	poikkeusaiko	NOUN	N	Case=Ess|Number=Plur	4	nmod	_	_
+7	suostuu	suostua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+8	vihkimään	vihkiä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+9	vähän	vähän	ADV	Adv	_	8	advmod	_	_
+10	nuorempiakin	nuorempiakki	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	pareja	pari	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Muistin kuitenkin heti, että Emmalla on hankala ja töksäyttelevä luonne.
+1	Muistin	muistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kuitenkin	kuitenkin	ADV	Adv	_	1	advmod	_	_
+3	heti	heti	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	että	että	SCONJ	C	_	6	mark	_	_
+6	Emmalla	Emma	PROPN	N	Case=Ade|Number=Sing	1	ccomp	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	hankala	hankala	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	töksäyttelevä	töksäyttelevä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	conj	_	_
+11	luonne	luonne	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Sillä oli kaunis kaula, mutta se osasi olla ikävä ja koppava.
+1	Sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kaunis	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	kaula	kaula	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mutta	mutta	CCONJ	C	_	8	cc	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	osasi	osata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+9	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	cop	_	_
+10	ikävä	ikävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	xcomp	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	koppava	koppava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Minua se ei koskaan ollut edes noteerannut.
+1	Minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	7	obj	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+4	koskaan	koskaan	ADV	Adv	_	7	advmod	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	aux	_	_
+6	edes	edes	ADV	Adv	_	7	advmod	_	_
+7	noteerannut	noteerata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Ainoa, mitä se minulle oli sanonut, oli silloin kun pidettiin kädestä kiinni.
+1	Ainoa	ainoa	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	nsubj:cop	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	obj	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj	_	_
+5	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	7	obl	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	sanonut	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	silloin	silloin	ADV	Adv	_	11	advmod	_	_
+11	kun	kun	SCONJ	C	_	12	mark	_	_
+12	pidettiin	pitää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+13	kädestä	käd	NOUN	N	Case=Ela|Number=Sing	12	obl	_	_
+14	kiinni	kiinni	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	12	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Silloin se sanoi, että ”onpas sinulla hikinen käsi”.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	että	että	SCONJ	C	_	10	mark	_	_
+6	”	”	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+7	onpas	olla	AUX	V	Clitic=Pa,S|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+8	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	10	nmod:poss	_	_
+9	hikinen	hikinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	10	amod	_	_
+10	käsi	käsi	NOUN	N	Case=Nom|Number=Sing	3	ccomp	_	SpaceAfter=No
+11	”	”	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

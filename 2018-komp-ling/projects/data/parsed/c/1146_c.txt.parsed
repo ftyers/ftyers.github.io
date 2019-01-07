@@ -1,0 +1,129 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ei, ei; ei ollenkaan, sen vakuutan", väitti mies.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	4	punct	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	ollenkaan	ollenkaan	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	nmod:poss	_	_
+10	vakuutan	vakuutta	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	4	punct	_	_
+13	väitti	väittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+14	mies	mies	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = "Teidän kysymyksenne ei kuulu suorastansa kirjaston selitysosastolle, mutta joka tapauksessa minä hyvin mielelläni palvelen teitä."
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	kysymyksenne	kysymyksenne	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kuulu	kuulua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	suorastansa	suorasta	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	nmod:poss	_	_
+7	kirjaston	kirjasto	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	selitysosastolle	selitysosasto	NOUN	N	Case=All|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	16	punct	_	_
+10	mutta	mutta	CCONJ	C	_	16	cc	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	det	_	_
+12	tapauksessa	tapaus	NOUN	N	Case=Ine|Number=Sing	16	obl	_	_
+13	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+14	hyvin	hyvin	ADV	Adv	_	15	advmod	_	_
+15	mielelläni	mielellä	ADV	Adv	Number[psor]=Sing|Person[psor]=1	16	advmod	_	_
+16	palvelen	palvella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+17	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+19	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Martin katsahti ihaillen häntä.
+1	Martin	Martin	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katsahti	katsahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ihaillen	ihailla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Jos minä voisin ratkaista kysymyksen tuolla tavalla, minä olisin tyytyväinen", hän sanoi.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Jos	jos	SCONJ	C	_	5	mark	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	voisin	voida	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	ratkaista	ratkaista	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	advcl	_	_
+6	kysymyksen	kysymys	NOUN	N	Case=Gen|Number=Sing	5	obj	_	_
+7	tuolla	tuo	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	8	det	_	_
+8	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	5	punct	_	_
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj:cop	_	_
+11	olisin	olla	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	tyytyväinen	tyytyväinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	12	punct	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	parataxis	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 5
+# text = "Anteeksi, millä tavoin?"
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Anteeksi	anteeksi	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	millä	mikä	PRON	Pron	Case=Ade|Number=Sing|PronType=Int	5	det	_	_
+5	tavoin	tapa	NOUN	N	Case=Ins|Number=Plur	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = "Tarkoitan, jos minä voisin puhua noin vapaasti ja kohteliaasti ja niin edespäin."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tarkoitan	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	jos	jos	SCONJ	C	_	7	mark	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+6	voisin	voida	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+8	noin	noin	ADV	Adv	_	9	advmod	_	_
+9	vapaasti	vapaasti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	kohteliaasti	kohteliaasti	ADV	Adv	Derivation=Sti	2	conj	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	niin	niin	ADV	Adv	_	14	advmod	_	_
+14	edespäin	edespäin	ADV	Adv	_	2	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = "Oh!" virkahti toinen ymmärtäen.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oh	Oh	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+5	virkahti	virkahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	5	obj	_	_
+7	ymmärtäen	ymmärtää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = "Milloin on sopivin aika?
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Milloin	milloin	ADV	Adv	_	5	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	sopivin	sopivä	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	5	amod	_	_
+5	aika	aika	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Iltapäivällä -- ei aivan lähellä ruoka-aikaa?
+1	Iltapäivällä	ilta#päivä	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	--	--	PUNCT	Punct	_	1	punct	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+4	aivan	aivan	ADV	Adv	_	6	advmod	_	_
+5	lähellä	lähellä	ADP	Adp	AdpType=Prep	6	case	_	_
+6	ruoka-aikaa	ruoka-aika	NOUN	N	Case=Par|Number=Sing	1	nmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

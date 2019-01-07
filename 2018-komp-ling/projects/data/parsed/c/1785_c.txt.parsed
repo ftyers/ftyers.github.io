@@ -1,0 +1,109 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Prosentti!
+1	Prosentti	prosentti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Totta tosiaan on nykyään kauniita sanoja: tuollaisia rauhoittavia, oppineita.
+1	Totta	totta	ADV	Adv	_	3	advmod	_	_
+2	tosiaan	tosiaan	ADV	Adv	_	1	fixed	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	nykyään	nykyään	ADV	Adv	_	0	root	_	_
+5	kauniita	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	sanoja	sana	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	4	punct	_	_
+8	tuollaisia	tuollainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	9	amod	_	_
+9	rauhoittavia	rauhoittaa	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	11	acl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	_
+11	oppineita	oppia	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Kun sanoo vaan prosentin, niin ei tarvitse sen enempää surra.
+1	Kun	kun	SCONJ	C	_	2	mark	_	_
+2	sanoo	sanolla	VERB	V	Connegative=Yes|Mood=Ind|Style=Coll|Tense=Pres|VerbForm=Fin	8	advcl	_	_
+3	vaan	vaan	CCONJ	C	_	4	cc	_	_
+4	prosentin	prosentti	NOUN	N	Case=Gen|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	niin	niin	ADV	Adv	_	8	advmod	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	tarvitse	tarvita	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	nsubj	_	_
+10	enempää	enempää	ADV	Adv	_	8	advmod	_	_
+11	surra	surra	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = Mutta olisipa siinä toinen sana, niin silloin ... voisi tuntua rauhattomammalta...
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	olisipa	olla	AUX	V	Clitic=Pa|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	obl	_	_
+4	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	5	nummod	_	_
+5	sana	sana	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	niin	niin	ADV	Adv	_	8	advmod	_	_
+8	silloin	silloin	ADV	Adv	_	11	advmod	_	_
+9	...	...	PUNCT	Punct	_	8	punct	_	_
+10	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	tuntua	tuntua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+12	rauhattomammalta	rauhattomamma	NOUN	N	Case=Abl|Number=Sing	11	obl	_	SpaceAfter=No
+13	...	...	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 5
+# text = Mutta jospa Dunetshkakin joutuu näitten prosenttien lukuun!...
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	jospa	jospa	ADV	Adv	_	5	advmod	_	_
+3	Dunetshkakin	Dunetshka	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	5	nsubj	_	_
+4	joutuu	joutua	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	näitten	näittä#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+6	prosenttien	prosentta	NOUN	N	Case=Gen|Number=Plur	7	nmod:poss	_	_
+7	lukuun	lukuun	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Toiseen tai toiseen?
+1	Toiseen	toinen	ADJ	Num	Case=Ill|Derivation=Inen|Number=Sing|NumType=Ord	0	root	_	_
+2	tai	tai	CCONJ	C	_	3	cc	_	_
+3	toiseen	toinen	PRON	Pron	Case=Ill|Number=Sing|PronType=Rcp	1	conj	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = "Mutta minne minä menen?" ajatteli hän äkkiä.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	minne	minne	ADV	Adv	_	5	advmod	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	menen	mennä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	8	punct	_	_
+8	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+10	äkkiä	äkkiä	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = "Kummallista.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kummallista	Kummallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Jonkun vuoksihan minä läksin ulos.
+1	Jonkun	joku	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	2	det	_	_
+2	vuoksihan	vuoksiha	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	läksin	läs	NOUN	N	Case=Ins|Number=Plur	0	root	_	_
+5	ulos	ulos	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Heti kirjeen luettuani läksin ...
+1	Heti	heti	ADV	Adv	_	3	advmod	_	_
+2	kirjeen	kirje	NOUN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+3	luettuani	luetda	VERB	V	Case=Par|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Past|Person[psor]=1|VerbForm=Part|Voice=Pass	0	root	_	_
+4	läksin	läksin	ADV	Adv	_	3	advmod	_	_
+5	...	...	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

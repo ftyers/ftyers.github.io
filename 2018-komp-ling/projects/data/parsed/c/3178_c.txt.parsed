@@ -1,0 +1,177 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Istu, setä!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Istu	Ista	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	setä	setä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Murha tosin on tehty, mutta sinä et ole se, joka sen on tehnyt."
+1	Murha	murha	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+2	tosin	tosin	ADV	Adv	_	4	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	mutta	mutta	CCONJ	C	_	10	cc	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	10	nsubj:cop	_	_
+8	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	cop	_	_
+10	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	15	nsubj	_	_
+13	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	15	nsubj	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	acl:relcl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+17	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Yht'äkkiä vallitsi salissa kuolonhiljaisuus.
+1	Yht'äkkiä	Yht'äkkiä	ADV	Adv	_	2	advmod	_	_
+2	vallitsi	vallita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	salissa	sali	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+4	kuolonhiljaisuus	kuolonhiljaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Vanhus vaipui hämmentyneenä tuolilleen; täti Sally ja Benny tuijottivat Tomiin suu auki, ja muutkin läsnäolijat tuskin tiesivät, missä heidän päänsä oli, niin suunnaton oli heidän ihmetyksensä ja kuvaamaton heidän hämmästyksensä.
+1	Vanhus	vanhus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vaipui	vaipua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hämmentyneenä	hämmentyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
+4	tuolilleen	tuoli	NOUN	N	Case=All|Number=Plur|Person[psor]=3	3	obl	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	2	punct	_	_
+6	täti	täti	ADV	Adv	_	7	advmod	_	_
+7	Sally	Sally	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	Benny	Benny	PROPN	N	Case=Nom|Number=Sing	7	conj	_	_
+10	tuijottivat	tuijotta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	Tomiin	Tom	PROPN	N	Case=Ill|Number=Sing	10	obl	_	_
+12	suu	sua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	xcomp	_	_
+13	auki	auki	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	19	punct	_	_
+15	ja	ja	CCONJ	C	_	19	cc	_	_
+16	muutkin	muu	PRON	Pron	Case=Nom|Clitic=Kin|Number=Plur|PronType=Ind	19	obl	_	_
+17	läsnäolijat	läsnäolija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	19	nsubj	_	_
+18	tuskin	tuskin	ADV	Adv	_	19	advmod	_	_
+19	tiesivät	tietää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	30	punct	_	_
+21	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	30	obl	_	_
+22	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	23	nmod:poss	_	_
+23	päänsä	pää	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	30	nsubj:cop	_	_
+24	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	cop	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	30	punct	_	_
+26	niin	niin	ADV	Adv	_	27	advmod	_	_
+27	suunnaton	suunnaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	30	nsubj:cop	_	_
+28	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	30	cop	_	_
+29	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	30	nmod:poss	_	_
+30	ihmetyksensä	ihmetys	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	32	nsubj	_	_
+31	ja	ja	CCONJ	C	_	32	cc	_	_
+32	kuvaamaton	kuvaaa	VERB	V	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing|PartForm=Neg|VerbForm=Part|Voice=Act	2	conj	_	_
+33	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	34	nmod:poss	_	_
+34	hämmästyksensä	hämmästys	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	32	obj	_	SpaceAfter=No
+35	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = "Saanko puhua, herra puheenjohtaja?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Saanko	Sa	VERB	V	Clitic=Ko|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	herra	herra	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	puheenjohtaja	puheen#johtaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = "Jumalan tähden, saat -- puhu toki!" huudahti tuomari, joka tuskin, uskoi korviaan.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	5	obl	_	_
+3	tähden	tähden	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	--	--	PUNCT	Punct	_	5	punct	_	_
+7	puhu	puhua	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	toki	toki	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	11	punct	_	_
+11	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+12	tuomari	tuomari	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	17	punct	_	_
+14	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	17	nsubj	_	_
+15	tuskin	tuskin	ADV	Adv	_	17	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	15	punct	_	_
+17	uskoi	uskoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+18	korviaan	korva	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	17	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Tom seisoi ja odotti vielä pari sekuntia -- kohottaakseen vaikutusta, kuten hän sanoi -- sitte hän alkoi aivan levollisesti: "Noin kaksi viikkoa sitte naulattiin tämän oikeustalon seinään kuulutus, jossa luvattiin 2,000 dollarin palkinto kahden suuren timantin takaisinhankkimisesta, jotka oli varastettu St. Louisissa.
+1	Tom	Tom	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	seisoi	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	odotti	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	vielä	vielä	ADV	Adv	_	4	advmod	_	_
+6	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	sekuntia	sekunti	NOUN	N	Case=Par|Number=Sing	4	obl	_	_
+8	--	--	PUNCT	Punct	_	9	punct	_	_
+9	kohottaakseen	kohottaa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	2	advcl	_	_
+10	vaikutusta	vaikutus	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	kuten	kuten	ADV	Adv	_	14	advmod	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+14	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+15	--	--	PUNCT	Punct	_	18	punct	_	_
+16	sitte	sitten	ADV	Adv	Style=Coll	18	advmod	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	parataxis	_	_
+19	aivan	aivan	ADV	Adv	_	20	advmod	_	_
+20	levollisesti	levollisesti	ADV	Adv	Derivation=Sti	18	advmod	_	SpaceAfter=No
+21	:	:	PUNCT	Punct	_	18	punct	_	_
+22	"	"	PUNCT	Punct	_	27	punct	_	SpaceAfter=No
+23	Noin	Noin	ADV	Adv	_	24	advmod	_	_
+24	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	25	nummod	_	_
+25	viikkoa	viikko	NOUN	N	Case=Par|Number=Sing	27	obj	_	_
+26	sitte	sitten	ADV	Adv	Style=Coll	27	advmod	_	_
+27	naulattiin	naulata	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	18	parataxis	_	_
+28	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	29	det	_	_
+29	oikeustalon	oikeustalo	NOUN	N	Case=Gen|Number=Sing	30	nmod:poss	_	_
+30	seinään	seinä	NOUN	N	Case=Ill|Number=Sing	27	obl	_	_
+31	kuulutus	kuulutus	NOUN	N	Case=Nom|Number=Sing	27	obj	_	SpaceAfter=No
+32	,	,	PUNCT	Punct	_	34	punct	_	_
+33	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	34	obl	_	_
+34	luvattiin	luvaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	31	acl:relcl	_	_
+35	2,000	2,000	NUM	Num	NumType=Card	36	nummod	_	_
+36	dollarin	dollari	NOUN	N	Case=Gen|Number=Sing	37	nmod:poss	_	_
+37	palkinto	palkinto	NOUN	N	Case=Nom|Number=Sing	34	obj	_	_
+38	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	40	nummod	_	_
+39	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	40	amod	_	_
+40	timantin	timantti	NOUN	N	Case=Gen|Number=Sing	37	nmod:poss	_	_
+41	takaisinhankkimisesta	takaisinhankkiminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	37	nmod	_	SpaceAfter=No
+42	,	,	PUNCT	Punct	_	45	punct	_	_
+43	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	45	obj	_	_
+44	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	45	aux:pass	_	_
+45	varastettu	varastaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	41	acl:relcl	_	_
+46	St.	St.	PROPN	N	Case=Nom|Number=Sing	45	appos	_	_
+47	Louisissa	Louis	PROPN	N	Case=Ine|Number=Sing	46	flat:name	_	SpaceAfter=No
+48	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Timantit ovat 12,000 dollarin arvoiset.
+1	Timantit	Timantti	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	12,000	12,000	NUM	Num	NumType=Card	4	nummod	_	_
+4	dollarin	dollari	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	arvoiset	arvoinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Mutta siihen palaan myöhemmin.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	_
+3	palaan	palata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	myöhemmin	myöhemmin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

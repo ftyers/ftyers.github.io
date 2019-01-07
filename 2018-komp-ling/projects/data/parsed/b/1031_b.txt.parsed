@@ -1,0 +1,142 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Monia hirvittää se, että liikunta saa sydänoireet esiin.
+1	Monia	moni	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	hirvittää	hirvittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	liikunta	lii#kunta	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+8	sydänoireet	sydän#oire	NOUN	N	Case=Nom|Number=Plur	7	obj	_	_
+9	esiin	esiin	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Asiantuntija muistuttaa, että liikunta ei aiheuta vaivoja, vaan voi paljastaa ne.
+1	Asiantuntija	asian#tuntija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	muistuttaa	muistuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	liikunta	lii#kunta	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	aiheuta	aiheuttaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+8	vaivoja	vaiva	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	vaan	vaan	CCONJ	C	_	12	cc	_	_
+11	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	paljastaa	paljastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hyvinvointikuntayhtymässä pohditaan, miten sairaalan kirurgisia lähipalveluja voitaisiin uudistaa, tuleepa sotea tai ei.
+1	Hyvinvointikuntayhtymässä	Hyvinvointikuntayhtymä	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	pohditaan	pohtia	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	9	punct	_	_
+4	miten	miten	ADV	Adv	_	9	advmod	_	_
+5	sairaalan	sairaala	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+6	kirurgisia	kirurginen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	7	amod	_	_
+7	lähipalveluja	lähipalvelu	NOUN	N	Case=Par|Derivation=U|Number=Plur	9	obj	_	_
+8	voitaisiin	voida	AUX	V	Mood=Cnd|VerbForm=Fin|Voice=Pass	9	aux	_	_
+9	uudistaa	uudistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	tuleepa	tuleepa	NOUN	N	Case=Nom|Number=Sing	12	compound:nn	_	_
+12	sotea	sotea	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+13	tai	tai	CCONJ	C	_	14	cc	_	_
+14	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Vuonna 2016 Suomessa tehtiin 2694 ympärileikkausta lääketieteellisistä syistä.
+1	Vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+2	2016	2016	NUM	Num	NumType=Card	1	nummod	_	_
+3	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	1	nmod	_	_
+4	tehtiin	tehdä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	2694	2694	NUM	Num	NumType=Card	6	nummod	_	_
+6	ympärileikkausta	ympärileikkaus	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+7	lääketieteellisistä	lääketieteellinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Plur	8	amod	_	_
+8	syistä	syy	NOUN	N	Case=Ela|Number=Plur	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Määrä on noussut huomattavasti muutamassa vuodessa.
+1	Määrä	määrä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	noussut	nousta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	huomattavasti	huomattavasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	muutamassa	muutama	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	6	det	_	_
+6	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Asiantuntija ei keksi sille selitystä.
+1	Asiantuntija	asian#tuntija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	keksi	keksiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	5	obl	_	_
+5	selitystä	selitys	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Umpilisäkkeen hoito antibiooteilla on todettu turvalliseksi ja tehokkaaksi vaihtoehdoksi myös pitkällä aikavälillä.
+1	Umpilisäkkeen	Umpilisäke	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	hoito	hoito	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+3	antibiooteilla	antibioote	NOUN	N	Case=Ade|Number=Plur	2	nmod	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux:pass	_	_
+5	todettu	todeta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	turvalliseksi	turvallinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Llinen|Number=Sing	9	amod	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	tehokkaaksi	tehokas	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	6	conj	_	_
+9	vaihtoehdoksi	vaihto#ehto	NOUN	N	Case=Tra|Number=Sing	5	obl	_	_
+10	myös	myös	ADV	Adv	_	11	advmod	_	_
+11	pitkällä	pitkä	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	12	amod	_	_
+12	aikavälillä	aika#väli	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Tämä selvisi potilaille tehdyssä viiden vuoden seurantatutkimuksessa.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	selvisi	selva	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	potilaille	potila	NOUN	N	Case=All|Number=Plur	4	obl	_	_
+4	tehdyssä	tehdä	VERB	V	Case=Ine|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	7	acl	_	_
+5	viiden	viisi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	6	nummod	_	_
+6	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	seurantatutkimuksessa	seurantatutkimus	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Silmien likinäön laserleikkausten rinnalle ovat tulleet ikänäköleikkaukset.
+1	Silmien	silmä	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	likinäön	likinäö	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	laserleikkausten	laserleikkaus	NOUN	N	Case=Gen|Number=Plur	6	obl	_	_
+4	rinnalle	rinnalle	ADP	Adp	AdpType=Post	3	case	_	_
+5	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tulleet	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	ikänäköleikkaukset	ikänäköleikkaus	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Mykiön vaihtamisella moniteholinsseihin vältetään samalla harmaakaihin synty.
+1	Mykiön	Mykiö	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	vaihtamisella	vaihtaminen	NOUN	N	Case=Ade|Derivation=Minen|Number=Sing	4	obl	_	_
+3	moniteholinsseihin	moniteholinsse	NOUN	N	Case=Ill|Number=Plur	2	nmod	_	_
+4	vältetään	välttää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	samalla	samalla	ADV	Adv	_	4	advmod	_	SpacesAfter=\s\s\s
+6	harmaakaihin	harmaaka	NOUN	N	Case=Ill|Number=Plur	7	obl	_	_
+7	synty	synnä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	xcomp:ds	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Yksityisillä klinikoilla tehtävä leikkaus ei kuitenkaan ole riskitön.
+1	Yksityisillä	Yksityinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	klinikoilla	klinika	NOUN	N	Case=Ade|Number=Plur	3	obl	_	_
+3	tehtävä	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	leikkaus	leikkaus	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+6	kuitenkaan	kuitenkaan	ADV	Adv	_	8	advmod	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	riskitön	riskitön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

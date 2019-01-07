@@ -1,0 +1,178 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Minulle ei ole kylliksi, että salama ei enää vahingoita.
+1	Minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	kylliksi	kylla	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	että	että	SCONJ	C	_	10	mark	_	_
+7	salama	salama	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	enää	enää	ADV	Adv	_	10	advmod	_	_
+10	vahingoita	vahingoittaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	csubj:cop	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Pois minä en tahdo johdattaa sitä: sen on oppiminen -- tekemään työtä _minun_ hyväkseni.
+1	Pois	pois	ADV	Adv	_	4	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	johdattaa	johdattaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	4	punct	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	nsubj	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	oppiminen	oppiminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	4	nsubj:cop	_	_
+11	--	--	PUNCT	Punct	_	12	punct	_	_
+12	tekemään	tehdä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	parataxis	_	_
+13	työtä	#työ	NOUN	N	Case=Par|Number=Sing	14	obj	_	_
+14	_minun_ hyväkseni	_minun_ hyvä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	12	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = -- Minun viisauteni on kokoontunut jo kauan kuin pilvi, se käy hiljaisemmaksi ja pimeämmäksi.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	viisauteni	viisausi	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kokoontunut	kokoontua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	jo	jo	ADV	Adv	_	7	advmod	_	_
+7	kauan	kauan	ADV	Adv	_	5	advmod	_	_
+8	kuin	kuin	SCONJ	C	_	9	mark	_	_
+9	pilvi	pilvi	NOUN	N	Case=Nom|Number=Sing	5	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	5	punct	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+13	hiljaisemmaksi	hiljaisemma	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	12	xcomp	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	pimeämmäksi	pimeämmä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	13	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Niin tekee jokainen viisaus, joka kerran on synnyttävä _salamoita_.
+1	Niin	niin	ADV	Adv	_	2	advmod	_	_
+2	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	viisaus	viisaus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+7	kerran	kerran	ADV	Adv	_	9	advmod	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux:pass	_	_
+9	synnyttävä	synnytä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+10	_salamoita_.	_salamoita_.	ADJ	Num	NumType=Ord	9	xcomp	_	_
+
+# sent_id = 5
+# text = -- Näille tämänpäivän ihmisille minä en tahdo olla _valo_, en heidän valoksi kutsumansa.
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	Näille	tämä	PRON	Pron	Case=All|Number=Plur|PronType=Dem	3	det	_	_
+3	tämänpäivän	tämän#päivä	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	ihmisille	ihmisa	NOUN	N	Case=All|Number=Plur	7	obl	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+6	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	cop	_	_
+9	_valo_,	_valo_,	PUNCT	Punct	_	7	punct	_	_
+10	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+11	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	valoksi	valo	NOUN	N	Case=Tra|Number=Sing	13	obl	_	_
+13	kutsumansa	kutsua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Agt|Person[psor]=3|VerbForm=Part|Voice=Act	7	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = _Heidät_ -- minä tahdon sokaista: viisauteni salama! puhkaise heidän silmänsä!
+1	_Heidät_	_Heidät_	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+2	--	--	PUNCT	Punct	_	3	punct	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+4	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	sokaista	soka	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	3	punct	_	_
+7	viisauteni	edviisautä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	salama	salama	NOUN	N	Case=Nom|Number=Sing	7	obj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	7	punct	_	_
+10	puhkaise	puhkaista	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+11	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	silmänsä	silmä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	10	obj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = 8.
+1	8	8	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Älkää tahtoko mitään yli kykynne: on olemassa katala vääryys niissä, jotka tahtovat yli kykynsä.
+1	Älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tahtoko	tahtoa	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	0	root	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	obj	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	kykynne	kykynne	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	2	punct	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	olemassa	olla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	parataxis	_	_
+9	katala	katala	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	amod	_	_
+10	vääryys	vääryys	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+11	niissä	se	PRON	Pron	Case=Ine|Number=Plur|PronType=Dem	2	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	14	nsubj	_	_
+14	tahtovat	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	yli	yli	ADV	Adv	_	16	advmod	_	_
+16	kykynsä	kyk	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Varsinkin, jos he tahtovat suuria asioita!
+1	Varsinkin	varsinkin	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	jos	jos	SCONJ	C	_	5	mark	_	_
+4	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+5	tahtovat	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	suuria	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	_
+7	asioita	asia	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Sillä he herättävät epäluuloa suuria asioita kohtaan, nämä hienot väärentäjät ja näyttelijät!
+1	Sillä	sillä	SCONJ	C	_	3	mark	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	herättävät	herättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	epäluuloa	epäluuloa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	suuria	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	asioita	asia	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+7	kohtaan	kohtaan	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	11	det	_	_
+10	hienot	hieno	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	11	amod	_	_
+11	väärentäjät	väärentäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	obj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	näyttelijät	näyttelijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	11	conj	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = -- -- kunnes viimein tulevat vääriksi itselleen, kierosilmäisiksi, maalipeittoisiksi madonreijiksi, verhotuiksi väkevien sanojen, näytekilpi-hyveitten, loistavien valhekiiltotekojen kaapuun.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	--	--	PUNCT	Punct	_	5	punct	_	_
+3	kunnes	kunnes	SCONJ	C	_	5	mark	_	_
+4	viimein	viimein	ADV	Adv	_	5	advmod	_	_
+5	tulevat	tulea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	vääriksi	vääri	NOUN	N	Case=Tra|Number=Sing	5	obl	_	_
+7	itselleen	itse	PRON	Pron	Case=All|Number=Sing|Person[psor]=3|Reflex=Yes	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	kierosilmäisiksi	kierosilmäinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	7	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	maalipeittoisiksi	maalipeittoinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	12	amod	_	_
+12	madonreijiksi	madonreij	NOUN	N	Case=Tra|Number=Plur	7	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	verhotuiksi	verhotua	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	16	amod	_	_
+15	väkevien	väkeva	NOUN	N	Case=Gen|Number=Plur	16	nmod:poss	_	_
+16	sanojen	sana	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3|Style=Coll	5	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	näytekilpi-hyveitten	näytekilpi-hyveittä#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	16	acl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	22	punct	_	_
+20	loistavien	loistaa	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	21	acl	_	_
+21	valhekiiltotekojen	valhekiiltoteko	NOUN	N	Case=Gen|Number=Plur	22	nmod:poss	_	_
+22	kaapuun	kaapu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

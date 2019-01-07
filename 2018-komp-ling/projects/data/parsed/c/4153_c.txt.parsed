@@ -1,0 +1,142 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Sanon teille vielä kerran, herra Holmes, että puheenne aiheutuu mielettömästä päähänpistosta."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Sanon	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	2	obl	_	_
+4	vielä	vielä	ADV	Adv	_	2	advmod	_	_
+5	kerran	kerran	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	herra	herra	NOUN	N	Case=Nom|Number=Sing	8	compound:nn	_	_
+8	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	että	että	SCONJ	C	_	12	mark	_	_
+11	puheenne	puheenne	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	aiheutuu	aiheutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	ccomp	_	_
+13	mielettömästä	mielettömä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	14	amod	_	_
+14	päähänpistosta	päähänpisto	NOUN	N	Case=Ela|Number=Sing	12	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Holmes nousi.
+1	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = "Surkuttelen teitä, rouva.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Surkuttelen	Surkutella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	rouva	rouva	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Olen tehnyt voitavani puolestanne -- mutta huomaan kaiken olevan turhaa."
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	voitavani	voitada	AUX	V	Case=Nom|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Pres|Person[psor]=1|VerbForm=Part|Voice=Act	4	cop	_	_
+4	puolestanne	puolestanne	NOUN	N	Case=Nom|Number=Sing	2	xcomp	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	huomaan	huomata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	10	nsubj:cop	_	_
+9	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	10	cop	_	_
+10	turhaa	turha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	7	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Holmes soitti kelloa.
+1	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	soitti	soittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kelloa	kello	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Kamaripalvelija astui sisään "Onko herra Trelawney Hope kotona?"
+1	Kamaripalvelija	Kamaripalvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sisään	sisään	ADV	Adv	_	2	advmod	_	_
+4	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+5	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	herra	herra	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	Trelawney	Trelawney	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+8	Hope	Hope	PROPN	N	Case=Nom|Number=Sing	7	flat:name	_	_
+9	kotona	kotona	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = "Hän tulee kello 12.15."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kello	kello	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+5	12.15.	12.15	NUM	Num	NumType=Card	4	nummod	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Holmes katsoi kelloaan.
+1	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kelloaan	kello	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = "Siis neljännestunnin kuluttua", sanoi hän.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Siis	Siis	ADV	Adv	_	4	advmod	_	_
+3	neljännestunnin	neljännestunti	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	kuluttua	kulua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	7	advcl	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = "Hyvä, minä odotan."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	odotan	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Kamaripalvelija sai tuskin oven suljetuksi jälkeensä, kun Hilda rouva jo oli polvillaan Holmesin jalkojen juuressa ja ojensi kätensä häntä kohtaan kyynelten vieriessä; pitkin hänen kauniita kasvojaan.
+1	Kamaripalvelija	Kamaripalvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tuskin	tuskin	ADV	Adv	_	2	advmod	_	_
+4	oven	ovi	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	suljetuksi	suljeta	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	xcomp	_	_
+6	jälkeensä	jälkeen	ADV	Adv	Person[psor]=3	5	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	kun	kun	SCONJ	C	_	9	mark	_	_
+9	Hilda	Hiltaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	advcl	_	_
+10	rouva	rouva	NOUN	N	Case=Nom|Number=Sing	9	obj	_	_
+11	jo	jo	ADV	Adv	_	9	advmod	_	_
+12	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+13	polvillaan	polv	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	9	obl	_	_
+14	Holmesin	Holmes	PROPN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	jalkojen	jalka	NOUN	N	Case=Gen|Number=Plur	16	nmod:poss	_	_
+16	juuressa	juur	NOUN	N	Case=Ine|Number=Sing	9	obl	_	_
+17	ja	ja	CCONJ	C	_	19	cc	_	_
+18	ojensi	ojensi	ADJ	A	_	19	amod	_	_
+19	kätensä	käsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	20	obj	_	_
+20	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	9	obl	_	_
+21	kohtaan	kohtaan	ADP	Adp	AdpType=Post	20	case	_	_
+22	kyynelten	kyyneli	NOUN	N	Case=Gen|Number=Plur	23	nmod:poss	_	_
+23	vieriessä	vierii	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No
+24	;	;	PUNCT	Punct	_	2	punct	_	_
+25	pitkin	pitkin	ADP	Adp	AdpType=Prep	28	case	_	_
+26	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	28	nmod:poss	_	_
+27	kauniita	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Plur	28	amod	_	_
+28	kasvojaan	kasvo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

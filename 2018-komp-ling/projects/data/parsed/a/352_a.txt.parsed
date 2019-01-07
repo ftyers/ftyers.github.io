@@ -1,0 +1,146 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mikä melske ja meteli!
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	det	_	_
+2	melske	melske	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	meteli	meellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Myllärin luota kuului sellaista ulinaa ja parkumista, ettei siitä tahtonut loppua tulla.
+1	Myllärin	Myllärin	ADV	Adv	_	3	advmod	_	_
+2	luota	luota	INTJ	Interj	_	1	fixed	_	_
+3	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	ulinaa	ulina	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	parkumista	parkuminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	mark	_	_
+10	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	11	obl	_	_
+11	tahtonut	tahtoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	ccomp	_	_
+12	loppua	#loppu	NOUN	N	Case=Par|Derivation=U|Number=Sing	13	obj	_	_
+13	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Myllärillä oli nimittäin ikäloppu aasi, josta se oli päättänyt hankkiutua eroon.
+1	Myllärillä	Mylläri	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	nimittäin	nimittäin	ADV	Adv	Derivation=Ttain	4	advmod	_	_
+4	ikäloppu	ikä#loppu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	1	nsubj:cop	_	_
+5	aasi	a	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=2	1	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	josta	joka	PRON	Pron	Case=Ela|Number=Sing|PronType=Rel	10	obl	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	päättänyt	päättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	acl:relcl	_	_
+11	hankkiutua	hankkiutua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+12	eroon	ero	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Koko ikänsä aasi oli kantanut painavia viljasäkkejä, mutta nyt se oli tullut vanhaksi.
+1	Koko	koko	ADJ	A	_	2	amod	_	_
+2	ikänsä	ikä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	nmod:poss	_	_
+3	aasi	a	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=2	5	nsubj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kantanut	kantaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	painavia	painava	ADJ	A	Case=Par|Degree=Pos|Number=Plur	7	amod	_	_
+7	viljasäkkejä	viljasäkki	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	mutta	mutta	CCONJ	C	_	13	cc	_	_
+10	nyt	nyt	ADV	Adv	_	13	advmod	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj	_	_
+12	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+14	vanhaksi	vanha	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	13	xcomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Sen vuoksi mylläri ei halunnut enää pitää aasia ja lähetti sen matkoihinsa.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	obl	_	_
+2	vuoksi	vuoksi	ADP	Adp	AdpType=Post	1	case	_	_
+3	mylläri	mylläri	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	enää	enää	ADV	Adv	_	5	advmod	_	_
+7	pitää	pitää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+8	aasia	aanen	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	lähetti	lähettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+11	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	12	nmod:poss	_	_
+12	matkoihinsa	matka	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = – Vai eläkkeelle!
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Vai	Vai	CCONJ	C	_	3	cc	_	_
+3	eläkkeelle	eläkkei	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = mylvi aasi loukkaantuneena.
+1	mylvi	mylvi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	aasi	aata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	loukkaantuneena	loukkaantua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = – Vielä mitä.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Vielä	Vielä	ADV	Adv	_	3	advmod	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Minä lähden Bremeniin ja rupean siellä kaupunginsoittajaksi!
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	lähden	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Bremeniin	Bremen	PROPN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	rupean	rupea	NOUN	N	Case=Gen|Number=Sing	3	conj	_	_
+6	siellä	siellä	ADV	Adv	_	2	advmod	_	_
+7	kaupunginsoittajaksi	kaupunginsoittaja	NOUN	N	Case=Tra|Derivation=Ja|Number=Sing	2	xcomp	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Ja niin se lähti.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	niin	niin	ADV	Adv	_	4	advmod	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+4	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Aasi ei tosin ehtinyt kulkea kovinkaan pitkään, kun se kohtasi matkallaan koiran.
+1	Aasi	A	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	4	obj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	tosin	t#osin	ADV	Adv	_	4	advmod	_	_
+4	ehtinyt	ehtiä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	kulkea	kulkea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	kovinkaan	kovin	ADV	Adv	Clitic=Kaan	7	advmod	_	_
+7	pitkään	pitkään	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	kun	kun	SCONJ	C	_	11	mark	_	_
+10	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj	_	_
+11	kohtasi	kohdata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	advcl	_	_
+12	matkallaan	matka	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	11	obl	_	_
+13	koiran	koita	NOUN	N	Case=Gen|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Koira makasi keskellä tietä ja vonkui ja ulisi.
+1	Koira	koira	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	makasi	makaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	keskellä	keskellä	ADP	Adp	AdpType=Prep	4	case	_	_
+4	tietä	tie	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	vonkui	vonkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	ulisi	ullä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

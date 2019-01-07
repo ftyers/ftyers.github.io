@@ -1,0 +1,187 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Toveruutta on olemassa: kunpa olisi olemassa ystävyyttä!
+1	Toveruutta	Toveruus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	olemassa	olla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	kunpa	kun	ADV	Adv	Clitic=Pa	7	nsubj	_	_
+6	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	olemassa	olla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	parataxis	_	_
+8	ystävyyttä	ystävyys	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Näin puhui Zarathustra.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Näin	Näin	ADV	Adv	_	3	advmod	_	_
+3	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Tuhannesta ja yhdestä päämaalista.
+1	Tuhannesta	tuhat	NUM	Num	Case=Ela|Number=Sing|NumType=Card	4	nummod	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	yhdestä	yksi	NUM	Num	Case=Ela|Number=Sing|NumType=Card	1	conj	_	_
+4	päämaalista	päämaali	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Monta maata näki Zarathustra ja monta kansaa: niin hän löysi monen kansan hyvän ja pahan.
+1	Monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	det	_	_
+2	maata	maa	NOUN	N	Case=Par|Number=Sing	3	nsubj	_	_
+3	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	det	_	_
+7	kansaa	kansa	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	3	punct	_	_
+9	niin	niin	ADV	Adv	_	11	advmod	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	löysi	löytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+12	monen	moni	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	13	det	_	_
+13	kansan	kansa	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	hyvän	#hyvä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	11	obj	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	pahan	paha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	14	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Mitään suurempaa valtaa ei Zarathustra löytänyt maan päällä kuin hyvän ja pahan.
+1	Mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	det	_	_
+2	suurempaa	suuri	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	3	amod	_	_
+3	valtaa	#valta	NOUN	N	Case=Par|Number=Sing	6	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	löytänyt	löytää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	maan	maa	NOUN	N	Case=Gen|Number=Sing	6	obj	_	_
+8	päällä	päällä	ADV	Adv	_	6	advmod	_	_
+9	kuin	kuin	SCONJ	C	_	10	mark	_	_
+10	hyvän	hyvä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	8	advcl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	pahan	paha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Elää ei voisi yksikään kansa, joka ei ensin arvoja arvioisi; mutta jos se tahtoo itseään säilyttää, niin se ei saa arvioida kuten naapuri arvioi.
+1	Elää	elä	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	voisi	voida	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	5	cop	_	_
+4	yksikään	yksikään	PRON	Pron	Case=Nom|Number=Sing	5	det	_	_
+5	kansa	kansa	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+9	ensin	ensin	ADV	Adv	_	11	advmod	_	_
+10	arvoja	arvo	NOUN	N	Case=Par|Number=Plur	11	obj	_	_
+11	arvioisi	arvioa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	acl:relcl	_	SpaceAfter=No
+12	;	;	PUNCT	Punct	_	11	punct	_	_
+13	mutta	mutta	CCONJ	C	_	16	cc	_	_
+14	jos	jos	SCONJ	C	_	16	mark	_	_
+15	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	16	nsubj	_	_
+16	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	conj	_	_
+17	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	18	obj	_	_
+18	säilyttää	säilyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	16	xcomp	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	23	punct	_	_
+20	niin	niin	ADV	Adv	_	23	advmod	_	_
+21	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	23	nsubj	_	_
+22	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	23	aux	_	_
+23	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	16	conj	_	_
+24	arvioida	arvioida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	23	xcomp	_	_
+25	kuten	kuten	ADV	Adv	_	24	advmod	_	_
+26	naapuri	naapuri	NOUN	N	Case=Nom|Number=Sing	27	nsubj	_	_
+27	arvioi	arvioida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	parataxis	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 7
+# text = Paljon on sellaista, jota toinen kansa kutsui hyväksi ja toinen häväistykseksi ja pilkaksi: niin minä havaitsin sen olevan.
+1	Paljon	paljon	ADV	Adv	_	3	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	8	obj	_	_
+6	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	7	det	_	_
+7	kansa	kansa	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kutsui	kutsua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+9	hyväksi	hyvä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	8	xcomp	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	12	nummod	_	_
+12	häväistykseksi	häväistys	NOUN	N	Case=Tra|Number=Sing	13	conj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	pilkaksi	pilka	NOUN	N	Case=Tra|Number=Sing	8	conj	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	3	punct	_	_
+16	niin	niin	ADV	Adv	_	18	advmod	_	_
+17	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	18	nsubj	_	_
+18	havaitsin	havaita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+19	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	20	nsubj	_	_
+20	olevan	olla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	18	xcomp:ds	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Paljon on sellaista, jota havaitsin täällä kutsuttavan pahaksi ja tuolla kunnian purppuralla koristettavan.
+1	Paljon	paljon	ADV	Adv	_	3	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	6	obj	_	_
+6	havaitsin	havaitsiä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+7	täällä	täällä	ADV	Adv	_	6	advmod	_	_
+8	kutsuttavan	kutsuttaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	6	xcomp	_	_
+9	pahaksi	paha	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	8	xcomp	_	_
+10	ja	ja	CCONJ	C	_	14	cc	_	_
+11	tuolla	tuolla	ADV	Adv	_	14	advmod	_	_
+12	kunnian	kunnia	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	purppuralla	purppura	NOUN	N	Case=Ade|Number=Sing	14	obl	_	_
+14	koristettavan	koristettaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Milloinkaan ei naapuri ymmärtänyt naapuriaan: alati hänen sielunsa ihmetteli naapurin harhaluuloja ja pahuutta.
+1	Milloinkaan	milloinkaan	ADV	Adv	_	4	advmod	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	naapuri	naapuri	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	ymmärtänyt	ymmärtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	naapuriaan	naapuria	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	10	punct	_	_
+7	alati	alati	ADV	Adv	_	10	advmod	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	sielunsa	sielu	NOUN	N	Case=Gen|Derivation=U|Number=Sing|Person[psor]=3	10	nsubj	_	_
+10	ihmetteli	ihmetella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+11	naapurin	naapuri	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	harhaluuloja	harhaluulo	NOUN	N	Case=Par|Number=Plur	10	obj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	pahuutta	pahuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	12	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Hyvyyksien taulu riippuu jokaisen kansan yllä.
+1	Hyvyyksien	Hyvyyksi	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	taulu	taulu	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	riippuu	riippua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	jokaisen	jokainen	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	det	_	_
+5	kansan	kansa	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	yllä	yllä	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Katso, se on sen voittojen taulu; katso, se on ääni sen tahdosta valtaan.
+1	Katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	nmod:poss	_	_
+6	voittojen	voitto	NOUN	N	Case=Gen|Number=Plur	7	nmod:poss	_	_
+7	taulu	taulu	NOUN	N	Case=Nom|Number=Sing	1	ccomp	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	1	punct	_	_
+9	katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj:cop	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+13	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	9	ccomp	_	_
+14	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	15	nmod:poss	_	_
+15	tahdosta	tahto	NOUN	N	Case=Ela|Number=Sing	13	nmod	_	_
+16	valtaan	valta	NOUN	N	Case=Ill|Number=Sing	13	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,113 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Oliko se vaarallista?!
+1	Oliko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+3	vaarallista	vaarallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Kerttu kauhistui.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kauhistui	kauhistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hänhän oli juonut vaikka kuinka monta kupillista kahvia suomalaisten mieliksi!
+1	Hänhän	Hä	PRON	Pron	Case=Gen|Clitic=Han|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	juonut	juoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	vaikka	vaikka	ADV	Adv	_	3	advmod	_	_
+5	kuinka	kuinka	ADV	Adv	_	4	advmod	_	_
+6	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	8	det	_	_
+7	kupillista	kupillinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	8	amod	_	_
+8	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+9	suomalaisten	suoma#lainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	10	nmod:poss	_	_
+10	mieliksi	mieli	NOUN	N	Case=Tra|Number=Sing	3	xcomp:ds	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Mitä hän oikein olikaan tehnyt lapselleen?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+3	oikein	oikein	ADV	Adv	_	5	advmod	_	_
+4	olikaan	olla	AUX	V	Clitic=Kaan|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	lapselleen	lapse	NOUN	N	Case=All|Number=Sing|Person[psor]=3	5	obl	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = — Yhden kupillisen päivässä voi juoda, mutta enempää en suosittele.
+1	—	—	PUNCT	Punct	_	6	punct	_	SpacesAfter=    \s
+2	Yhden	yksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	3	nummod	_	_
+3	kupillisen	kupillinen	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	päivässä	päivä	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+5	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	juoda	juoda	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	mutta	mutta	CCONJ	C	_	11	cc	_	_
+9	enempää	enempää	ADV	Adv	_	11	advmod	_	_
+10	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	suosittele	suositella	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Vauvat ei tykkää kahvista niin kuin me aikuiset, terveydenhoitaja virnisti.
+1	Vauvat	Vaua	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tykkää	tykä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kahvista	kahv	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	kuin	kuin	SCONJ	C	_	8	mark	_	_
+7	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	8	det	_	_
+8	aikuiset	aikuinen	NOUN	N	Case=Nom|Number=Plur	3	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	terveydenhoitaja	terveydenhoitaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	11	nsubj	_	_
+11	virnisti	virnistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Hän kehotti Kerttua riisuuntumaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kehotti	kehottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kerttua	Kerta	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	xcomp	_	_
+4	riisuuntumaan	riisuuntua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kertun toteltua hoitaja laski Kertun makaamaan hoitopöydälle suorittaakseen ultraäänitutkimuksen.
+1	Kertun	Kerttu	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	toteltua	totella	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	acl	_	_
+3	hoitaja	hoitaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	nsubj	_	_
+4	laski	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Kertun	Kerttu	PROPN	N	Case=Gen|Number=Sing	6	nsubj	_	_
+6	makaamaan	maata	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+7	hoitopöydälle	hoitopöydä	NOUN	N	Case=All|Number=Sing	6	obl	_	_
+8	suorittaakseen	suorittaa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	6	advcl	_	_
+9	ultraäänitutkimuksen	ultraäänitutkimus	NOUN	N	Case=Gen|Number=Sing	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Kerttu oli jäykkä kuin rautakanki.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	jäykkä	jäykkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	kuin	kuin	SCONJ	C	_	5	mark	_	_
+5	rautakanki	rautakanki	NOUN	N	Case=Nom|Number=Sing	3	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Hänestä ei tuntunut vähääkään mukavalta maata siinä ventovieraan sorkittavana.
+1	Hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tuntunut	tuntua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	vähääkään	vähää	ADV	Adv	Clitic=Kaan	6	advmod	_	_
+5	mukavalta	mukava	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	6	amod	_	_
+6	maata	#maa	NOUN	N	Case=Par|Number=Sing	3	nsubj	_	_
+7	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	9	obl	_	_
+8	ventovieraan	ventovieras	NOUN	N	Case=Gen|Number=Sing	9	nsubj	_	_
+9	sorkittavana	sorkittaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

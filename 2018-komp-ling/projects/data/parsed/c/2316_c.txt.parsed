@@ -1,0 +1,174 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = * * * * * --
+1	*	*	PUNCT	Punct	_	5	punct	_	SpacesBefore=\s\s\s\s\s\s\s|SpacesAfter=\s\s\s\s\s\s\s
+2	*	*	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s\s\s\s\s
+3	*	*	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s\s\s\s\s
+4	*	*	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s\s\s\s\s
+5	*	*	PUNCT	Punct	_	0	root	_	_
+6	--	--	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Ei, minussa on suurin syy --, sanoi Dunja syleillessään ja suudellessaan äitiään.
+1	Ei	ei	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	minussa	minä	PRON	Pron	Case=Ine|Number=Sing|Person=1|PronType=Prs	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	6	amod	_	_
+6	syy	syy	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+7	--	--	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	9	obj	_	_
+11	syleillessään	syleillä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	9	advcl	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	suudellessaan	suudella	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	11	conj	_	_
+14	äitiään	äiti	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = -- Hänen rikkautensa kiusasi minua, mutta minä vannon, veljeni, että en aavistanut hänen olevan niin katalan ihmisen!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hänen	Hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
+3	rikkautensa	rikkaus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	4	nsubj	_	_
+4	kiusasi	kiusata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	det	_	_
+9	vannon	vanto	NOUN	N	Case=Gen|Number=Sing	4	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	9	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	että	että	SCONJ	C	_	15	mark	_	_
+14	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	aavistanut	aavistaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	ccomp	_	_
+16	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	nsubj:cop	_	_
+17	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	19	cop	_	_
+18	niin	#niin	ADV	Adv	_	19	advmod	_	_
+19	katalan	kat#ala	NOUN	N	Case=Gen|Number=Sing	20	nmod:poss	_	_
+20	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	15	obj	_	SpaceAfter=No
+21	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Veljeni, älä tuomitse minua!
+1	Veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tuomitse	tuomita	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	4	obj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- Jumala on meidät pelastanut, kuiskasi Pulcheria Alexandrovna, vaikka hän vielä töin tuskin käsitti, mitä oli tapahtunut.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	meidät	minä	PRON	Pron	Case=Acc|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_
+5	pelastanut	pelastaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	Pulcheria	Pulcher	PROPN	N	Case=Par|Number=Sing	7	obj	_	_
+9	Alexandrovna	Alexandrovna	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	16	punct	_	_
+11	vaikka	vaikka	SCONJ	C	_	16	mark	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+13	vielä	vielä	ADV	Adv	_	14	advmod	_	_
+14	töin	töin	ADV	Adv	_	16	advmod	_	_
+15	tuskin	tuskin	ADV	Adv	_	16	advmod	_	_
+16	käsitti	käsittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	20	punct	_	_
+18	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	20	nsubj	_	_
+19	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	16	ccomp	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = He olivat kaikki iloisia, vieläpä viiden minuutin kuluttua nauroivatkin.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	iloisia	iloinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	vieläpä	vieläpä	ADV	Adv	_	9	advmod	_	_
+7	viiden	viisi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	8	nummod	_	_
+8	minuutin	minuutti	NOUN	N	Case=Gen|Number=Sing	9	nsubj	_	_
+9	kuluttua	kulua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	10	acl	_	_
+10	nauroivatkin	nauroiva	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 7
+# text = Mutta Dunetska rypisti kulmakarvojaan silloin tällöin ja kalpeni ajatellessaan mitä oli tapahtunut.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	Dunetska	Dunetska	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	rypisti	rypistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kulmakarvojaan	kulmakarvo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	3	obj	_	_
+5	silloin	silloin	ADV	Adv	_	6	advmod	_	_
+6	tällöin	tällöin	ADV	Adv	_	3	advmod	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	kalpeni	kalpetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	ajatellessaan	ajatella	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	8	advcl	_	_
+10	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	12	nsubj	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	ccomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Rasumihin oli ihastunut, vaikkakaan ei uskaltanut avonaisesti näyttää iloansa.
+1	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	3	obl	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ihastunut	ihastua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	vaikkakaan	vaikk	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	7	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	uskaltanut	uskaltaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+8	avonaisesti	avonaisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+9	näyttää	näyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+10	iloansa	iloa	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Mutta Raskolnikov istui samalla paikalla, tyynenä ja synkkänä.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	samalla	sama	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	5	det	_	_
+5	paikalla	paikka	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	tyynenä	tyyn	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	synkkänä	synkkä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	3	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Dunja luuli hänen vielä olevan suutuksissaan ja Pulcheria Alexandrovna katsoi häneen pelokkaasti.
+1	Dunja	Dunja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	luuli	luulla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	vielä	vielä	ADV	Adv	_	5	advmod	_	_
+5	olevan	olla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	2	xcomp:ds	_	_
+6	suutuksissaan	suutuksi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	5	obl	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	Pulcheria	Pulcher	PROPN	N	Case=Par|Number=Sing	10	nsubj	_	_
+9	Alexandrovna	Alexandrovna	PROPN	N	Case=Nom|Number=Sing	8	flat:name	_	_
+10	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	10	obl	_	_
+12	pelokkaasti	pelokkaasti	ADV	Adv	Derivation=Sti	10	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = -- Mitä Svidrigailov sanoi minulle? kysyi Dunja mennen hänen luoksensa.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+3	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	4	obl	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	_
+7	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	mennen	mennen	ADP	Adp	AdpType=Prep	11	case	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	luoksensa	luos	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

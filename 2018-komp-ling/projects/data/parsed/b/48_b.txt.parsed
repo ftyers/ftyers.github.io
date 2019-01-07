@@ -1,0 +1,154 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 2.
+1	2	2	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Onko oleskeluluvan tai kansalaisuuden saaminen nyt hidasta uusien turvapaikanhakijoiden takia?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	oleskeluluvan	oleskelulua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	0	root	_	_
+3	tai	tai	CCONJ	C	_	5	cc	_	_
+4	kansalaisuuden	kansalaisuus	NOUN	N	Case=Gen|Derivation=Lainen,Vs|Number=Sing	5	nmod:gobj	_	_
+5	saaminen	saaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	2	nsubj	_	_
+6	nyt	nyt	ADV	Adv	_	2	advmod	_	_
+7	hidasta	hida	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+8	uusien	uusi	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	9	amod	_	_
+9	turvapaikanhakijoiden	turva#paikka#hakija	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	2	obl	_	_
+10	takia	takia	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Ei ole.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Oleskelulupahakemusten ja kansalaisuushakemusten käsittelijät ovat eri henkilöitä kuin ne, jotka käsittelevät turvapaikanhakijoiden hakemuksia.
+1	Oleskelulupahakemusten	Oleskelulupahakemus	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	kansalaisuushakemusten	kansalaisuushakemus	NOUN	N	Case=Gen|Number=Plur	1	conj	_	_
+4	käsittelijät	käsittelijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	7	nsubj:cop	_	_
+5	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	eri	eri	ADJ	A	_	7	amod	_	_
+7	henkilöitä	henkilä	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+8	kuin	kuin	SCONJ	C	_	9	mark	_	_
+9	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	7	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	12	nsubj	_	_
+12	käsittelevät	käsitellä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	turvapaikanhakijoiden	turva#paikka#hakija	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	14	nmod:poss	_	_
+14	hakemuksia	hakemus	NOUN	N	Case=Par|Number=Plur	12	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = On aivan yhtä paljon aikaa ja työntekijöitä oleskelulupahakemusten ja kansalaisuushakemusten käsittelyyn kuin ennenkin.
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+2	aivan	aivan	ADV	Adv	_	3	advmod	_	_
+3	yhtä	yhtä	ADV	Adv	_	5	advmod	_	_
+4	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+5	aikaa	aika	NOUN	N	Case=Par|Number=Sing	13	nsubj:cop	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	työntekijöitä	työ#tekijä	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	5	conj	_	_
+8	oleskelulupahakemusten	oleskelulupahakemus	NOUN	N	Case=Gen|Number=Plur	11	nmod:gobj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	kansalaisuushakemusten	kansalaisuushakemus	NOUN	N	Case=Gen|Number=Plur	8	conj	_	_
+11	käsittelyyn	käsittely	NOUN	N	Case=Ill|Derivation=U|Number=Sing	7	nmod	_	_
+12	kuin	kuin	ADV	Adv	_	13	advmod	_	_
+13	ennenkin	ennen	ADV	Adv	Clitic=Kin	14	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 6
+# text = 3. Milloin ne hakemukset, joita nyt käsitellään, on jätetty?
+1	3.	3.	ADJ	Num	NumType=Ord	11	obl	_	_
+2	Milloin	Milloin	CCONJ	C	_	3	cc	_	_
+3	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	1	conj	_	_
+4	hakemukset	hakemus	NOUN	N	Case=Nom|Number=Plur	11	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	8	obj	_	_
+7	nyt	nyt	ADV	Adv	_	8	advmod	_	_
+8	käsitellään	käsitellä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	acl:relcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	8	punct	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux:pass	_	_
+11	jätetty	jättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 7
+# text = Eri hakemuksilla on eripituinen käsittelyaika.
+1	Eri	eri	ADJ	A	_	2	amod	_	_
+2	hakemuksilla	hakemuks	NOUN	N	Case=Ade|Number=Plur	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	eripituinen	eripituinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	käsittelyaika	käsittely#aika	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Esimerkiksi perheenjäsenten oleskeluluville käsittelyaika on noin 9 kuukautta.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	3	advmod	_	_
+2	perheenjäsenten	perheen#jäsen	NOUN	N	Case=Gen|Number=Plur	3	nsubj	_	_
+3	oleskeluluville	oleskelulua	VERB	V	Case=All|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	käsittelyaika	käsittely#aika	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	noin	noin	ADV	Adv	_	7	advmod	_	_
+7	9	9	NUM	Num	NumType=Card	8	nummod	_	_
+8	kuukautta	kuu#kausi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Opiskelija taas saa päätöksen hakemukseensa noin kuukaudessa.
+1	Opiskelija	opiskelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	nsubj	_	_
+2	taas	taas	ADV	Adv	_	1	advmod	_	_
+3	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	päätöksen	päätös	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	hakemukseensa	hakemuksei	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	obj	_	_
+6	noin	noin	ADV	Adv	_	7	advmod	_	_
+7	kuukaudessa	kuu#kausi	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Kansalaisuushakemuksen käsittely kestää noin puolesta vuodesta reiluun vuoteen.
+1	Kansalaisuushakemuksen	Kansalaisuushakemus	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	käsittely	käsittely	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	_
+3	kestää	kestää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	noin	noin	ADV	Adv	_	5	advmod	_	_
+5	puolesta	puoli	NUM	Num	Case=Ela|Number=Sing	6	nummod	_	_
+6	vuodesta	vuosi	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+7	reiluun	reilu	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	8	amod	_	_
+8	vuoteen	vuosi	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Jos ihminen hakee turvapaikkaa, hän saa päätöksen tavallisesti noin puolessa vuodessa.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	hakee	hakea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	turvapaikkaa	turva#paikka	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	päätöksen	päätös	NOUN	N	Case=Gen|Number=Sing	7	obj	_	_
+9	tavallisesti	tavallisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+10	noin	noin	ADV	Adv	_	11	advmod	_	_
+11	puolessa	puoli	NUM	Num	Case=Ine|Number=Sing	12	nummod	_	_
+12	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	7	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 12
+# text = Nyt hakijoita on niin paljon, että uudet turvapaikanhakijat joutuvat varmasti odottamaan kauemmin.
+1	Nyt	nyt	ADV	Adv	_	5	advmod	_	_
+2	hakijoita	hakija	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	paljon	paljon	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	että	että	SCONJ	C	_	12	mark	_	_
+8	uudet	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	9	amod	_	_
+9	turvapaikanhakijat	turvapaikanhakija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	12	nsubj	_	_
+10	joutuvat	joutua	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	varmasti	varmasti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+12	odottamaan	odottaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	ccomp	_	_
+13	kauemmin	kauemmin	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

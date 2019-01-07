@@ -1,0 +1,197 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ei kannata, ei kannata, mr. Gray.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kannata	kannattaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kannata	kannattaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	mr.	mr.	PROPN	N	Abbr=Yes|Case=Nom|Number=Sing	3	nsubj	_	_
+9	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	8	flat:name	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Olen valmis aina palvelemaan teitä, herra."
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	valmis	valmis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+3	aina	aina	ADV	Adv	_	4	advmod	_	_
+4	palvelemaan	palvella	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+5	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	herra	herra	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Ja mr. Hubbard astui alas portaita apulaisensa kanssa, joka vilkaisi taaksensa Dorianiin arka, ihmettelevä ilme karkeissa, rumissa kasvoissaan.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	mr.	mr.	NOUN	N	Abbr=Yes|Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Hubbard	Hubbard	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	alas	alas	ADV	Adv	_	4	advmod	_	_
+6	portaita	portaat	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+7	apulaisensa	apulaisi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	obl	_	_
+8	kanssa	kanssa	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	vilkaisi	vilkaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+12	taaksensa	taakse	ADP	Adp	AdpType=Post|Person[psor]=3	17	case	_	_
+13	Dorianiin	Dorian	PROPN	N	Case=Ill|Number=Sing	14	nmod	_	_
+14	arka	arka	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	17	amod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	ihmettelevä	ihmettelevä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	17	amod	_	_
+17	ilme	ilme	NOUN	N	Case=Nom|Number=Sing	18	compound:nn	_	_
+18	karkeissa	karke	NOUN	N	Case=Ine|Number=Plur	11	obl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	20	punct	_	_
+20	rumissa	rum	NOUN	N	Case=Ine|Number=Plur	18	conj	_	_
+21	kasvoissaan	kasvoi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	20	nmod	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Niin kaunista miestä ei hän ennen ollut nähnyt.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	kaunista	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	amod	_	_
+3	miestä	mies	NOUN	N	Case=Par|Number=Sing	8	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+6	ennen	ennen	ADP	Adp	AdpType=Prep	8	advmod	_	_
+7	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	aux	_	_
+8	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 5
+# text = Kun heidän askeltensa ääni oli vaiennut, niin Dorian lukitsi oven ja pisti avaimen taskuunsa.
+1	Kun	kun	SCONJ	C	_	6	mark	_	_
+2	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	nmod:poss	_	_
+3	askeltensa	askels	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	4	compound:nn	_	_
+4	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	vaiennut	vaieta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	niin	niin	ADV	Adv	_	10	advmod	_	_
+9	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	10	nsubj	_	_
+10	lukitsi	lukita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	oven	ovi	NOUN	N	Case=Gen|Number=Sing	10	obj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	pisti	pistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+14	avaimen	avain	NOUN	N	Case=Gen|Number=Sing	13	obj	_	_
+15	taskuunsa	tasku	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 6
+# text = Nyt hän oli turvattu.
+1	Nyt	nyt	ADV	Adv	_	4	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	turvattu	turvata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Ei kukaan saisi katsella tuota julmaa kuvaa.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+3	saisi	saada	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+4	katsella	katsella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	det	_	_
+6	julmaa	julma	ADJ	A	Case=Par|Degree=Pos|Number=Sing	7	amod	_	_
+7	kuvaa	kuva	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Ei kukaan vieras silmä saisi nähdä hänen häpeäänsä.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+3	vieras	vieras	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	silmä	silmä	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	saisi	saada	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+6	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	nmod:poss	_	_
+8	häpeäänsä	häpeä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Tullessaan kirjastoon hän huomasi, että kello oli jo viisi ja että tee oli tuotu sisään.
+1	Tullessaan	tulla	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	4	advcl	_	_
+2	kirjastoon	kirjasto	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	että	että	SCONJ	C	_	10	mark	_	_
+7	kello	kello	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	jo	jo	ADV	Adv	_	10	advmod	_	_
+10	viisi	viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	ccomp	_	_
+11	ja	ja	CCONJ	C	_	15	cc	_	_
+12	että	että	SCONJ	C	_	15	mark	_	_
+13	tee	tehdä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	15	obj	_	_
+14	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	aux:pass	_	_
+15	tuotu	tuoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	10	conj	_	_
+16	sisään	sisään	ADV	Adv	_	15	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Pienellä, hyvänhajuisesta puusta tehdyllä, helmiäiskoristeisella pöydällä, jonka hän oli saanut lahjaksi holhoojansa vaimolta, lady Radleyltä -- hän oli kaunis nainen, joka luuli aina olevansa sairas, ja sen vuoksi oli viettänyt koko talven Kairossa --, oli kirje lordi Henryltä ja sen vieressä keltasiteinen kirja, jonka kannet olivat hiukan kuluneet ja kulmat tahrautuneet.
+1	Pienellä	pieni	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	4	amod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	hyvänhajuisesta	hyvänhajuinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	4	amod	_	_
+4	puusta	puu	NOUN	N	Case=Ela|Number=Sing	5	obl	_	_
+5	tehdyllä	tehdä	VERB	V	Case=Ade|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	helmiäiskoristeisella	helmiäiskoristeinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	pöydällä	pöytä	NOUN	N	Case=Ade|Number=Sing	18	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	13	obj	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+12	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	acl:relcl	_	_
+14	lahjaksi	lahjka	NOUN	N	Case=Tra|Number=Sing	13	obl	_	_
+15	holhoojansa	holhooja	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	13	obj	_	_
+16	vaimolta	vaimo	NOUN	N	Case=Abl|Number=Sing	13	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	13	punct	_	_
+18	lady	ladä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+19	Radleyltä	Radley	NOUN	N	Case=Abl|Derivation=U|Number=Sing	24	obl	_	_
+20	--	--	PUNCT	Punct	_	19	punct	_	_
+21	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	24	nsubj:cop	_	_
+22	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	cop	_	_
+23	kaunis	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	24	amod	_	_
+24	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	18	nsubj	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	27	punct	_	_
+26	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	27	nsubj	_	_
+27	luuli	luulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	acl:relcl	_	_
+28	aina	aina	ADV	Adv	_	27	advmod	_	_
+29	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	30	cop	_	_
+30	sairas	sairas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	27	xcomp	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	36	punct	_	_
+32	ja	ja	CCONJ	C	_	36	cc	_	_
+33	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	36	obl	_	_
+34	vuoksi	vuoksi	ADP	Adp	AdpType=Post	33	case	_	_
+35	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	36	aux	_	_
+36	viettänyt	viettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	18	conj	_	_
+37	koko	koko	ADJ	A	_	38	amod	_	_
+38	talven	talvi	NOUN	N	Case=Gen|Number=Sing	39	nmod:poss	_	_
+39	Kairossa	Kairo	PROPN	N	Case=Ine|Number=Sing	36	obl	_	_
+40	--	--	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+41	,	,	PUNCT	Punct	_	18	punct	_	_
+42	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	44	cop	_	_
+43	kirje	#kirje	NOUN	N	Case=Nom|Number=Sing	44	compound:nn	_	_
+44	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+45	Henryltä	Henry	NOUN	N	Case=Abl|Derivation=U|Number=Sing	44	nmod	_	_
+46	ja	ja	CCONJ	C	_	50	cc	_	_
+47	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	50	nmod	_	_
+48	vieressä	vieressä	ADP	Adp	AdpType=Post	47	case	_	_
+49	keltasiteinen	keltasiteinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	50	amod	_	_
+50	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	45	conj	_	SpaceAfter=No
+51	,	,	PUNCT	Punct	_	56	punct	_	_
+52	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	53	nmod:poss	_	_
+53	kannet	kanni	NOUN	N	Case=Nom|Number=Plur	56	nsubj	_	_
+54	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	56	aux	_	_
+55	hiukan	hiukan	ADV	Adv	_	56	advmod	_	_
+56	kuluneet	kulua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	50	acl:relcl	_	_
+57	ja	ja	CCONJ	C	_	59	cc	_	_
+58	kulmat	kulma	NOUN	N	Case=Nom|Number=Plur	59	nsubj	_	_
+59	tahrautuneet	tahrautua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	56	conj	_	SpaceAfter=No
+60	.	.	PUNCT	Punct	_	18	punct	_	SpacesAfter=\s\n
+

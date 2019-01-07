@@ -1,0 +1,320 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ensimmäinen tapaus ilmoitettiin neljä päivää sitten", sanoi hän.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ensimmäinen	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	3	nummod	_	_
+3	tapaus	tapaus	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+4	ilmoitettiin	ilmoittaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	neljä	neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	päivää	päivä	NOUN	N	Case=Par|Number=Sing	4	obl	_	_
+7	sitten	sitten	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	4	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = "Se sattui Moise Hudsonin taidekaupassa Kensington Roadin varrella.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	sattui	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Moise	Moise	PROPN	N	Case=Nom|Number=Sing	6	nmod:poss	_	_
+5	Hudsonin	Hudson	PROPN	N	Case=Gen|Number=Sing	4	flat:name	_	_
+6	taidekaupassa	taidekaupa	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+7	Kensington	Kensington	PROPN	N	Case=Nom|Number=Sing	3	nmod	_	_
+8	Roadin	Road	PROPN	N	Case=Gen|Number=Sing	7	flat:name	_	_
+9	varrella	varrella	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Kauppapalvelija oli poistunut puodista hetkeksi, mennäkseen sisempään huoneeseen, kun hän sai kuulla kauhean jyskeen.
+1	Kauppapalvelija	Kauppapalvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	poistunut	poistua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	puodista	puodi	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+5	hetkeksi	hetki	NOUN	N	Case=Tra|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	mennäkseen	mennä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	3	advcl	_	_
+8	sisempään	sinen	ADJ	A	Case=Ill|Degree=Cmp|Derivation=Llinen|Number=Sing	9	amod	_	_
+9	huoneeseen	huone	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	kun	kun	SCONJ	C	_	13	mark	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	_
+14	kuulla	kuulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	_
+15	kauhean	kauhea	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	16	amod	_	_
+16	jyskeen	jyse	NOUN	N	Case=Gen|Number=Sing	14	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Hän riensi puotiin ja näki erään kipsisen Napoleonin rintakuvan, joka muiden taide-esineitten joukossa oli ollut pöydällä, nyt olevan palasina lattialla.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	riensi	rientää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	puotiin	puoti	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	erään	eräs	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	8	det	_	_
+7	kipsisen	kipsinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	Napoleonin	Napoleoni	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	rintakuvan	rinta#kuva	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	17	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	17	nsubj:cop	_	_
+12	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	14	nmod	_	_
+13	taide-esineitten	taide-esineitten	ADP	Adp	AdpType=Post	12	case	_	_
+14	joukossa	joukko	NOUN	N	Case=Ine|Number=Sing	11	nmod	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	aux	_	_
+16	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	17	cop	_	_
+17	pöydällä	pöytä	NOUN	N	Case=Ade|Number=Sing	9	acl:relcl	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	22	punct	_	_
+19	nyt	nyt	ADV	Adv	_	22	advmod	_	_
+20	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	22	cop	_	_
+21	palasina	palanen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Plur	22	amod	_	_
+22	lattialla	lattia	NOUN	N	Case=Ade|Number=Sing	17	obl	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hän juoksi kadulle, mutta vaikka useat ohikulkijat olivatkin nähneet erään miehen syöksyvän puodista, ei kumminkaan voitu saada häntä kiinni, eikä saatu edes tyydyttävästi hänen ulkonäköänsäkään selville.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kadulle	katu	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	mutta	mutta	CCONJ	C	_	10	cc	_	_
+6	vaikka	vaikka	ADV	Adv	_	7	advmod	_	_
+7	useat	usea	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	ohikulkijat	ohikulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	10	nsubj	_	_
+9	olivatkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	nähneet	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+11	erään	eräs	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	12	det	_	_
+12	miehen	mies	NOUN	N	Case=Gen|Number=Sing	13	nsubj	_	_
+13	syöksyvän	syöksyä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	14	acl	_	_
+14	puodista	puod	NOUN	N	Case=Ela|Number=Plur	10	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	19	aux	_	_
+17	kumminkaan	kumminkaan	ADV	Adv	_	19	advmod	_	_
+18	voitu	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	19	aux	_	_
+19	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+20	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	19	obj	_	_
+21	kiinni	kiinni	ADV	Adv	_	19	compound:prt	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	24	cc	_	_
+24	saatu	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	conj	_	_
+25	edes	edes	ADV	Adv	_	24	advmod	_	_
+26	tyydyttävästi	tyydyttävästi	ADV	Adv	Derivation=Sti	24	advmod	_	_
+27	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	29	nmod:poss	_	_
+28	ulkonäköänsäkään	ulkonäköänsääs	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	29	amod	_	_
+29	selville	selv	NOUN	N	Case=All|Number=Plur	24	obl	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Rintakuva ei kumminkaan ollut kuin muutaman markan arvoinen, ja koko juttu näytti liian vähäpätöiseltä vaatiakseen poliisin sekautumista.
+1	Rintakuva	Rinta#kuva	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	kumminkaan	kumminkaan	ADV	Adv	_	4	advmod	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	cop	_	_
+5	kuin	kuin	SCONJ	C	_	8	mark	_	_
+6	muutaman	muutama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	7	det	_	_
+7	markan	markka	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	arvoinen	arvoinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	9	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	ja	ja	CCONJ	C	_	13	cc	_	_
+11	koko	koko	ADJ	A	_	12	amod	_	_
+12	juttu	juttu	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+13	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	liian	liian	ADV	Adv	_	15	advmod	_	_
+15	vähäpätöiseltä	vähäpätöinen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Llinen|Number=Sing	13	xcomp	_	_
+16	vaatiakseen	vaatia	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	13	advcl	_	_
+17	poliisin	poliisi	NOUN	N	Case=Gen|Number=Sing	18	nmod:gobj	_	_
+18	sekautumista	sekautuminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	16	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 7
+# text = "Toinen tapaus oli kumminkin vakavampi ja merkillisempikin.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	3	nummod	_	_
+3	tapaus	tapaus	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	kumminkin	kumminkin	ADV	Adv	_	6	advmod	_	_
+6	vakavampi	vakava	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	merkillisempikin	merkillisempi	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Se sattui eilen illalla.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	sattui	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	eilen	eilen	ADV	Adv	_	2	advmod	_	_
+4	illalla	ilta	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = "Vähän matkaa Hudsonin puodista Kensington Roadin varrella asuu eräs tunnettu lääkäri, tohtori Barnicot, jolla on melkein laajin toiminta Themsin eteläpuolella.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Vähän	vähän	ADV	Adv	_	3	advmod	_	_
+3	matkaa	matka	NOUN	N	Case=Par|Number=Sing	6	compound:nn	_	_
+4	Hudsonin	Hudson	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	puodista	puodi	NOUN	N	Case=Ela|Number=Sing	3	nmod	_	_
+6	Kensington	Kensington	PROPN	N	Case=Nom|Number=Sing	9	obl	_	_
+7	Roadin	Road	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	varrella	varrella	ADP	Adp	AdpType=Post	6	case	_	_
+9	asuu	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	12	det	_	_
+11	tunnettu	tunnettu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	_
+12	lääkäri	lääkäri	NOUN	N	Case=Nom|Number=Sing	15	compound:nn	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	tohtori	tohtori	NOUN	N	Case=Nom|Number=Sing	15	compound:nn	_	_
+15	Barnicot	Barnicot	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	20	punct	_	_
+17	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	20	obl	_	_
+18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop:own	_	_
+19	melkein	melkein	ADV	Adv	_	20	advmod	_	_
+20	laajin	laakea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	15	acl:relcl	_	_
+21	toiminta	toiminta	NOUN	N	Case=Nom|Number=Sing	23	obj	_	_
+22	Themsin	Thems	PROPN	N	Case=Gen|Number=Sing	23	nmod:poss	_	_
+23	eteläpuolella	eteläpuol	NOUN	N	Case=Ade|Number=Sing	20	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 10
+# text = Hänen asuntonsa ja vastaanottohuoneensa ovat Kensington Roadin varrella, mutta Lower Brixton Roadin varrella on hänellä kirurginen laitos ja sairaala.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	asuntonsa	asunto	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	6	nsubj:cop	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	vastaanottohuoneensa	vastaanottohuoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	2	conj	_	_
+5	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	Kensington	Kensington	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+7	Roadin	Road	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	varrella	varrella	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	16	punct	_	_
+10	mutta	mutta	CCONJ	C	_	16	cc	_	_
+11	Lower	Lower	PROPN	N	Case=Nom|Number=Sing	16	obl	_	_
+12	Brixton	Brixton	PROPN	N	Case=Nom|Number=Sing	11	flat:name	_	_
+13	Roadin	Road	PROPN	N	Case=Gen|Number=Sing	11	flat:name	_	_
+14	varrella	varrella	ADP	Adp	AdpType=Post	11	case	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+16	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	6	conj	_	_
+17	kirurginen	kirurginen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	18	amod	_	_
+18	laitos	#laitos	NOUN	N	Case=Nom|Number=Sing	16	nsubj:cop	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	sairaala	sairaala	NOUN	N	Case=Nom|Number=Sing	18	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = Tämä tohtori Barnicot on Napoleonin innokas ihailija, ja koko hänen talonsa on täynnä kirjoja suuresta keisarista, sekä kuvia ja muistomerkkejä hänestä.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+2	tohtori	tohtori	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Barnicot	Barnicot	PROPN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	Napoleonin	Napoleon	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+6	innokas	innokas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	ihailija	ihailija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	17	punct	_	_
+9	ja	ja	CCONJ	C	_	17	cc	_	_
+10	koko	koko	ADJ	A	_	12	amod	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	talonsa	talo	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	17	nsubj:cop	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+14	täynnä	täynnä	ADV	Adv	_	17	advmod	_	_
+15	kirjoja	kirja	NOUN	N	Case=Par|Number=Plur	17	obj	_	_
+16	suuresta	suuri	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	17	amod	_	_
+17	keisarista	keisari	NOUN	N	Case=Ela|Number=Sing	7	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	23	punct	_	_
+19	sekä	sekä	CCONJ	C	_	23	cc	_	_
+20	kuvia	kuva	NOUN	N	Case=Par|Number=Plur	23	obj	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	muistomerkkejä	muistomerkki	NOUN	N	Case=Par|Number=Plur	20	conj	_	_
+23	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	7	conj	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 12
+# text = Joku aika sitten osti hän Moise Hudsonilta kaksi kipsijäljennöstä ranskalaisen kuvanveistäjä Devinin tekemästä Napoleonin rintakuvasta.
+1	Joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	aika	aika	NOUN	N	Case=Nom|Number=Sing	4	obl	_	_
+3	sitten	sitten	ADP	Adp	AdpType=Post	2	case	_	_
+4	osti	ostää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	det	_	_
+6	Moise	Moise	PROPN	N	Case=Nom|Number=Sing	4	obl	_	_
+7	Hudsonilta	Hudson	PROPN	N	Case=Abl|Number=Sing	6	flat:name	_	_
+8	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+9	kipsijäljennöstä	kipsijäljennö	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+10	ranskalaisen	ranska#lainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	11	amod	_	_
+11	kuvanveistäjä	kuvanveistäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	12	compound:nn	_	_
+12	Devinin	Devin	PROPN	N	Case=Gen|Number=Sing	13	nsubj	_	_
+13	tekemästä	tehdä	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	15	acl	_	_
+14	Napoleonin	Napoleon	PROPN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	rintakuvasta	rintakuva	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Toinen näistä on hänen talossaan Kensington Roadin varrella ja toinen Lower Brixtonin varrella.
+1	Toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	2	det	_	_
+2	näistä	tämä	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	6	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	talossaan	talo	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	6	obl	_	_
+6	Kensington	Kensington	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+7	Roadin	Road	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	varrella	varrella	ADP	Adp	AdpType=Post	6	case	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	11	det	_	_
+11	Lower	Lower	PROPN	N	Case=Nom|Number=Sing	6	conj	_	_
+12	Brixtonin	Brixton	PROPN	N	Case=Gen|Number=Sing	11	flat:name	_	_
+13	varrella	varrella	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 14
+# text = No niin, tullessaan huoneestaan aamulla, huomasi tohtori Barnicot, että hänen taloonsa oli tehty murtovarkaus, mutta muuta ei oltu otettu kuin hallissa sijaitseva Napoleonin rintakuva.
+1	No	no	INTJ	Interj	_	4	discourse	_	_
+2	niin	niin	ADV	Adv	_	1	fixed	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	1	punct	_	_
+4	tullessaan	tulla	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	8	advcl	_	_
+5	huoneestaan	huoneestaan	ADV	Adv	_	4	advmod	_	_
+6	aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	tohtori	tohtori	NOUN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	Barnicot	Barnicot	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	17	punct	_	_
+12	että	että	SCONJ	C	_	17	mark	_	_
+13	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	14	nmod:poss	_	_
+14	taloonsa	taloo	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	17	nsubj:cop	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	cop	_	_
+16	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	17	acl	_	_
+17	murtovarkaus	murtovarkaus	NOUN	N	Case=Nom|Number=Sing	8	ccomp	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	23	punct	_	_
+19	mutta	mutta	CCONJ	C	_	23	cc	_	_
+20	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	23	obj	_	_
+21	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	23	aux	_	_
+22	oltu	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	23	aux:pass	_	_
+23	otettu	otaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	17	conj	_	_
+24	kuin	kuin	SCONJ	C	_	26	mark	_	_
+25	hallissa	halli	NOUN	N	Case=Ine|Number=Sing	26	obl	_	_
+26	sijaitseva	sijaita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	28	acl	_	_
+27	Napoleonin	Napoleon	PROPN	N	Case=Gen|Number=Sing	28	nmod:poss	_	_
+28	rintakuva	rinta#kuva	NOUN	N	Case=Nom|Number=Sing	23	obj	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 15
+# text = Se oli viety ulos ja särjetty puutarhan muuria vasten, sillä sieltä löytyivät sirpaleet." Holmes hieroi käsiään.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	obj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	viety	vielä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	ulos	ulos	ADV	Adv	_	3	advmod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	särjetty	särjtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	_
+7	puutarhan	puu#tarha	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	muuria	muuri	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+9	vasten	vasten	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	sillä	sillä	SCONJ	C	_	13	mark	_	_
+12	sieltä	sieltä	ADV	Adv	_	13	advmod	_	_
+13	löytyivät	löytyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	_
+14	sirpaleet	sirpale	NOUN	N	Case=Nom|Number=Plur	13	nsubj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	18	punct	_	_
+17	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+18	hieroi	hieroida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+19	käsiään	käsi	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	18	obj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

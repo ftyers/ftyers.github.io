@@ -1,0 +1,178 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = ...
+1	...	...	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 2
+# text = Lapsi juoksee hevosen luo, hän juoksee sen eteen, hän näkee, kuinka sitä lyödään silmille, suoraan silmille.
+1	Lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	juoksee	juoka	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+4	luo	luo	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	juoksee	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obl	_	_
+9	eteen	eteen	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	2	punct	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	näkee	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	kuinka	kuinka	ADV	Adv	_	16	advmod	_	_
+15	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	16	obj	_	_
+16	lyödään	lyödä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	12	ccomp	_	_
+17	silmille	silmä	NOUN	N	Case=All|Number=Plur	16	obl	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	suoraan	suoraan	ADV	Adv	_	20	advmod	_	_
+20	silmille	silmä	NOUN	N	Case=All|Number=Plur	16	obl	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän itkee.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	itkee	itkeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Sydän nousee kurkkuun, kyyneleet pulpahtelevat.
+1	Sydän	sydän	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nousee	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kurkkuun	kurkku	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	kyyneleet	kyynel	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+6	pulpahtelevat	pulpahtella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Joku ruoskijoista lyö häntä kasvoille; hän ei tunne sitä, hän vääntelee käsiään, huutaa, heittäytyy tuota harmaahapsista ja -partaista vanhusta vastaan, joka puistaa päätään ja tuomitsee kaikkea tätä.
+1	Joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ruoskijoista	ruoskijo	NOUN	N	Case=Ela|Number=Plur	1	nmod	_	_
+3	lyö	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	3	obj	_	_
+5	kasvoille	kasvot	NOUN	N	Case=All|Number=Plur	3	obl	_	SpaceAfter=No
+6	;	;	PUNCT	Punct	_	3	punct	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	tunne	tuntea	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	parataxis	_	_
+10	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	vääntelee	väänella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+14	käsiään	käsi	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	huutaa	huutaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	heittäytyy	heittäytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
+19	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	20	obj	_	_
+20	harmaahapsista	harmaahapsinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	23	amod	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	-partaista	partainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	20	conj	_	_
+23	vanhusta	vanhus	NOUN	N	Case=Par|Number=Sing	18	obl	_	_
+24	vastaan	vastaan	ADP	Adp	AdpType=Post	23	case	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	27	punct	_	_
+26	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	27	nsubj	_	_
+27	puistaa	puistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	23	acl:relcl	_	_
+28	päätään	pää	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	27	obj	_	_
+29	ja	ja	CCONJ	C	_	30	cc	_	_
+30	tuomitsee	tuomita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	27	conj	_	_
+31	kaikkea	kaikki	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	32	det	_	_
+32	tätä	tämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	30	obj	_	SpaceAfter=No
+33	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Eräs nainen tarttuu hänen käteensä viedäkseen hänet pois, mutta hän tempautuu irti ja juoksee uudelleen hevosen luo.
+1	Eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tarttuu	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	käteensä	käsi	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	3	obl	_	_
+6	viedäkseen	viedä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	3	advcl	_	_
+7	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+8	pois	pois	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	mutta	mutta	CCONJ	C	_	12	cc	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	tempautuu	tempautua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+13	irti	irti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	juoksee	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	_
+16	uudelleen	uudelleen	ADV	Adv	_	15	advmod	_	_
+17	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	15	obl	_	_
+18	luo	luo	ADP	Adp	AdpType=Post	17	case	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Sen voimat ovat kohta lopussa, mutta se alkaa potkia vielä kerran.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	voimat	voima	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kohta	kohta	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	lopussa	loppu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	4	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj	_	_
+9	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	potkia	potkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	vielä	vielä	ADV	Adv	_	12	advmod	_	_
+12	kerran	kerran	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = -- Piru sinut periköön! huutaa Mikolka raivoissaan.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Piru	piru	INTJ	Interj	_	4	discourse	_	_
+3	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	periköön	periä	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	huutaa	huutaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	Mikolka	Mikolka	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	raivoissaan	raivoi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Hän heittää pois ruoskan, kumartuu ja ottaa kärryjen pohjalta pitkän ja paksun aisan, tarttuu sen päähän molemmin käsin ja kohottaa sen lyödäkseen ruskoaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	heittää	heittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pois	pois	ADV	Adv	_	2	advmod	_	_
+4	ruoskan	ruoska	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	kumartuu	kumartua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	ottaa	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	kärryjen	kärry	NOUN	N	Case=Gen|Derivation=U|Number=Plur	10	nmod:poss	_	_
+10	pohjalta	pohja	NOUN	N	Case=Abl|Number=Sing	8	obl	_	_
+11	pitkän	pitkkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	14	amod	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	paksun	paksu	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	11	conj	_	_
+14	aisan	aisa	NOUN	N	Case=Gen|Number=Sing	8	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	tarttuu	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+17	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	18	nmod:poss	_	_
+18	päähän	pää	NOUN	N	Case=Ill|Number=Sing	16	obl	_	_
+19	molemmin	molemmat	PRON	Pron	Case=Ins|Number=Plur|PronType=Ind	20	det	_	_
+20	käsin	käsi	NOUN	N	Case=Ins|Number=Plur	16	obl	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	kohottaa	kohottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+23	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	22	obj	_	_
+24	lyödäkseen	lyödä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	22	advcl	_	_
+25	ruskoaan	rusko	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	24	obj	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Hän lyö sen mäsäksi!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	lyö	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	nmod:poss	_	_
+5	mäsäksi	mäsä	NOUN	N	Case=Tra|Number=Sing	3	obl	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = huutavat sen ympärillä olijat.
+1	huutavat	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	nmod	_	_
+3	ympärillä	ympärillä	ADP	Adp	AdpType=Post	2	case	_	_
+4	olijat	olija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	1	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

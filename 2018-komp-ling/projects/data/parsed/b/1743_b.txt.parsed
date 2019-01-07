@@ -1,0 +1,190 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — No kiva että sulia on seuraa.
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=    \s
+2	No	no	INTJ	Interj	_	3	discourse	_	_
+3	kiva	kiva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	sulia	suli	NOUN	N	Case=Par|Number=Sing	7	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	seuraa	seura	NOUN	N	Case=Par|Number=Sing	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = En mä oo Eija vaan Heidi, soitan Eijan kännykästä.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	4	nsubj:cop	_	_
+3	oo	olla	AUX	V	Connegative=Yes|Mood=Ind|Style=Coll|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	Eija	Eija	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+5	vaan	vaan	CCONJ	C	_	6	cc	_	_
+6	Heidi	Heidi	PROPN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	soitan	soittaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	Eijan	Eija	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	kännykästä	kännykkä	NOUN	N	Case=Ela|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Jos sä pärjäät ilman meitä, niin me voitais Eijan kanssa lähteä takas meiän lasten luo.
+1	Jos	jos	SCONJ	C	_	12	mark	_	_
+2	sä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	3	nmod:poss	_	_
+3	pärjäät	pärjää	NOUN	N	Case=Nom|Number=Plur	12	nsubj	_	_
+4	ilman	ilman	ADP	Adp	AdpType=Prep	5	case	_	_
+5	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	3	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	niin	niin	ADV	Adv	_	12	advmod	_	_
+8	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_
+9	voitais	voila	AUX	V	Connegative=Yes|Mood=Cnd|Style=Coll|VerbForm=Fin	12	aux	_	_
+10	Eijan	Eija	PROPN	N	Case=Gen|Number=Sing	12	obl	_	_
+11	kanssa	kanssa	ADP	Adp	AdpType=Post	10	case	_	_
+12	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+13	takas	takaisin	ADV	Adv	Style=Coll	12	advmod	_	_
+14	meiän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs|Style=Coll	15	det	_	_
+15	lasten	lapsi	NOUN	N	Case=Gen|Number=Plur	12	obl	_	_
+16	luo	luo	ADP	Adp	AdpType=Post	15	case	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 4
+# text = Ennen kuin Heidi ehti kertoa
+1	Ennen	ennen	ADV	Adv	_	2	advmod	_	_
+2	kuin	kuin	SCONJ	C	_	4	mark	_	_
+3	Heidi	Heidi	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	ehti	ehtiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kertoa	kerto	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+
+# sent_id = 5
+# text = Eijalle Kertun uusimmasta siirrosta, Eija oli taas äänessä.
+1	Eijalle	Eija	NOUN	N	Case=All|Number=Sing	4	obl	_	_
+2	Kertun	Kerttu	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+3	uusimmasta	uusimma	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	4	amod	_	_
+4	siirrosta	siirro	NOUN	N	Case=Ela|Number=Sing	9	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	Eija	Eija	PROPN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	taas	taas	ADV	Adv	_	9	advmod	_	_
+9	äänessä	äänessä	ADV	Adv	_	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 6
+# text = — Siis kato mitä kauheita lehtiä nää lukee!
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=   \s
+2	Siis	Siis	ADV	Adv	_	8	advmod	_	_
+3	kato	kato	INTJ	Interj	_	8	discourse	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	6	det	_	_
+5	kauheita	kauhea	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	lehtiä	lehti	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+7	nää	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem|Style=Coll	8	nsubj	_	_
+8	lukee	lukea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 7
+# text = Seiskoja ja Reginoita ja kaiken maailman iltapäivälehtiä täällä kyllä lojuu, mutta noita mun ostamia Suomen kirjallisuuden klassikoita eivät näytä avanneenkaan!
+1	Seiskoja	Seisko	NOUN	N	Case=Par|Number=Plur	10	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	Reginoita	Regino	NOUN	N	Case=Par|Number=Plur	1	conj	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	det	_	_
+6	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	iltapäivälehtiä	iltapäivälehti	NOUN	N	Case=Par|Number=Sing	1	conj	_	_
+8	täällä	täällä	ADV	Adv	_	10	advmod	_	_
+9	kyllä	kyllä	ADV	Adv	_	10	advmod	_	_
+10	lojuu	lojuta	VERB	V	Connegative=Yes|Mood=Ind|Style=Coll|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	20	punct	_	_
+12	mutta	mutta	CCONJ	C	_	20	cc	_	_
+13	noita	tuo	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	18	det	_	_
+14	mun	minä	PRON	Pron	Case=Gen|Number=Sing|PronType=Prs|Style=Coll	15	nsubj	_	_
+15	ostamia	ostaa	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Agt|VerbForm=Part|Voice=Act	18	acl	_	_
+16	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	17	nmod:poss	_	_
+17	kirjallisuuden	kirjallisuus	NOUN	N	Case=Gen|Derivation=Llinen,Vs|Number=Sing	18	nmod:poss	_	_
+18	klassikoita	klassikko	NOUN	N	Case=Par|Number=Plur	20	nsubj	_	_
+19	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	näytä	näyttää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	conj	_	_
+21	avanneenkaan	avanneenkaan	ADV	Adv	_	20	advmod	_	SpaceAfter=No
+22	!	!	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 8
+# text = Heidin katse ei kuitenkaan osunut mihinkään lehteen, vaan paperilappuseen kirjahyllyssä esitepinon päällä.
+1	Heidin	Heidi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	katse	katse	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	kuitenkaan	kuitenkaan	ADV	Adv	_	5	advmod	_	_
+5	osunut	osua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	mihinkään	mikään	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	7	det	_	_
+7	lehteen	lehs	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	vaan	vaan	CCONJ	C	_	11	cc	_	_
+10	paperilappuseen	paperilappunen	NOUN	N	Case=Ill|Number=Sing	11	obl	_	_
+11	kirjahyllyssä	kirjahylly	NOUN	N	Case=Ine|Derivation=U|Number=Sing	5	conj	_	_
+12	esitepinon	esitepino	NOUN	N	Case=Gen|Number=Sing	11	nmod	_	_
+13	päällä	päällä	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Esitteet esittelivät ammattikouluja.
+1	Esitteet	Esite	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	esittelivät	esitellä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ammattikouluja	ammattikoulu	NOUN	N	Case=Par|Derivation=U|Number=Plur	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Lapussa luki: «Sanotaan, että naiset ovat joko kauniita tai älykkäitä, mutta sinä Rakkaani olet kumpaakin.
+1	Lapussa	Lapu	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	luki	lukea	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	«	«	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	Sanotaan	sanoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	parataxis	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	että	että	SCONJ	C	_	11	mark	_	_
+8	naiset	nainen	NOUN	N	Case=Nom|Number=Plur	11	nsubj:cop	_	_
+9	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	joko	joko	CCONJ	C	_	11	cc:preconj	_	_
+11	kauniita	kaunis	NOUN	N	Case=Par|Number=Plur	5	ccomp	_	_
+12	tai	tai	CCONJ	C	_	13	cc	_	_
+13	älykkäitä	älykkäät	NOUN	N	Case=Par|Number=Plur	11	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	19	punct	_	_
+15	mutta	mutta	CCONJ	C	_	19	cc	_	_
+16	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	17	det	_	_
+17	Rakkaani	Rakka	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	19	obj	_	_
+18	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	kumpaakin	kumpaa	VERB	V	Clitic=Kin|InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Tässä ovat pyytämäsi esitteet.»
+1	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	pyytämäsi	pyytämä	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=2	4	nmod	_	_
+4	esitteet	esite	NOUN	N	Case=Nom|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+6	»	»	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = — Mä heitän nää roskalehdet nyt paperinkeräykseen.
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=   \s
+2	Mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	3	nsubj	_	_
+3	heitän	heittää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nää	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem|Style=Coll	5	det	_	_
+5	roskalehdet	roskalehti	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+6	nyt	nyt	ADV	Adv	_	3	advmod	_	_
+7	paperinkeräykseen	paperinkeräys	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Henkka selvästikin haluaa meidän pikku Mariquitan pysyvän tyhmänä!
+1	Henkka	Henkka	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	selvästikin	selvästi	ADV	Adv	Clitic=Kin|Derivation=Sti	3	advmod	_	_
+3	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	8	nmod:poss	_	_
+5	pikku	pikku	ADJ	A	_	8	amod	_	_
+6	Mariquitan	Mariquita	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+7	pysyvän	pysyvä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	8	amod	_	_
+8	tyhmänä	tyhmä	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	3	obl	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 14
+# text = Eija huusi.
+1	Eija	Eija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	compound:nn	_	_
+2	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

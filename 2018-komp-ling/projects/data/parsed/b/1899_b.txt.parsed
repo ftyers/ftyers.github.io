@@ -1,0 +1,222 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Taksissa
+1	Taksissa	Taks	NOUN	N	Case=Ine|Number=Plur	0	root	_	_
+
+# sent_id = 2
+# text = Kaikki taksit eivät kuljeta lemmikkejä, koska niistä jää autoon eläinpölyä.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	taksit	taksi	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+3	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kuljeta	kuljettaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	lemmikkejä	lemmikki	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	koska	koska	SCONJ	C	_	9	mark	_	_
+8	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	9	obl	_	_
+9	jää	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	advcl	_	_
+10	autoon	auto	NOUN	N	Case=Ill|Number=Sing	9	obl	_	_
+11	eläinpölyä	eläinpöly	NOUN	N	Case=Par|Derivation=U|Number=Sing	9	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Eläinpöly haittaa allergisia matkustajia.
+1	Eläinpöly	Eläinpöly	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	haittaa	haitata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	allergisia	allerginen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	4	amod	_	_
+4	matkustajia	matkustaja	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kun tilaat taksin, pyydä, että sinut hakee sellainen taksi, johon saat ottaa kissan mukaan.
+1	Kun	kun	SCONJ	C	_	5	mark	_	_
+2	tilaat	tilas	NOUN	N	Case=Nom|Number=Plur	5	obj	_	_
+3	taksin	taksin	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	pyydä	pyydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	että	että	SCONJ	C	_	9	mark	_	_
+8	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	_
+9	hakee	hakea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+10	sellainen	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	11	amod	_	_
+11	taksi	tka	NOUN	N	Case=Tra|Number=Sing	9	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	14	obl	_	_
+14	saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	ottaa	ottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	_
+16	kissan	kissa	NOUN	N	Case=Gen|Number=Sing	15	obl	_	_
+17	mukaan	mukaan	ADP	Adp	AdpType=Post	16	case	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Henkilöautossa
+1	Henkilöautossa	Henkilöauto	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+
+# sent_id = 6
+# text = Kun minulla oli auto, kissani matkusti myös siinä.
+1	Kun	kun	SCONJ	C	_	2	mark	_	_
+2	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	auto	auto	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	kissani	kissa	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	7	nsubj	_	_
+7	matkusti	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	myös	myös	ADV	Adv	_	9	advmod	_	_
+9	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Aluksi se matkusti takaikkunalla.
+1	Aluksi	aluksi	ADV	Adv	_	3	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	matkusti	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	takaikkunalla	takaikkuna	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Tiesin, että se on vaarallista.
+1	Tiesin	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	että	että	SCONJ	C	_	6	mark	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	vaarallista	vaarallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	1	ccomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Kuvittelin, mitä tapahtuisi, jos kissa säikähtäisi suunniltaan esimerkiksi äkkijarrutuksessa ja kiipeäisi peloissaan kasvoilleni tai säntäisi poikimien alle.
+1	Kuvittelin	kuvitella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	nsubj	_	_
+4	tapahtuisi	tapahtua	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	ccomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	jos	jos	SCONJ	C	_	8	mark	_	_
+7	kissa	kissa	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	säikähtäisi	säikähtää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	advcl	_	_
+9	suunniltaan	suunni	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	8	obl	_	_
+10	esimerkiksi	esimerkiksi	ADV	Adv	_	11	advmod	_	_
+11	äkkijarrutuksessa	äkkijarrutus	NOUN	N	Case=Ine|Number=Sing	8	obl	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	kiipeäisi	kiipeää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	15	conj	_	_
+14	peloissaan	peloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	13	obl	_	_
+15	kasvoilleni	kasvot	NOUN	N	Case=All|Number=Plur|Number[psor]=Sing|Person[psor]=1	8	obl	_	_
+16	tai	tai	CCONJ	C	_	17	cc	_	_
+17	säntäisi	säntää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	conj	_	_
+18	poikimien	poikima	NOUN	N	Case=Gen|Number=Plur	17	obl	_	_
+19	alle	alle	ADP	Adp	AdpType=Post	18	case	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Niinpä rakensin äitini kanssa verkosta seinän poikittain auton keskelle etu- ja takapenkkien väliin.
+1	Niinpä	niinpä	ADV	Adv	_	2	advmod	_	_
+2	rakensin	rakentaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	äitini	äiti	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obl	_	_
+4	kanssa	kanssa	ADP	Adp	AdpType=Post	3	case	_	_
+5	verkosta	verko	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+6	seinän	seinä	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+7	poikittain	poikittain	ADV	Adv	Derivation=Ttain	2	advmod	_	_
+8	auton	auto	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+9	keskelle	keskelle	ADP	Adp	AdpType=Post	8	case	_	_
+10	etu-	etu	NOUN	N	_	2	obl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	takapenkkien	takapenkki	NOUN	N	Case=Gen|Number=Plur	10	conj	_	_
+13	väliin	väliin	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Verkkoseinän pystyi irrottamaan, joten käytin sitä vain silloin, kun kissa oli kyydissä.
+1	Verkkoseinän	Verkkoseinä	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	pystyi	pystyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	irrottamaan	irrottaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	joten	joten	ADV	Adv	_	6	advmod	_	_
+6	käytin	käyttää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+7	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obj	_	_
+8	vain	vain	ADV	Adv	_	9	advmod	_	_
+9	silloin	silloin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	kun	kun	SCONJ	C	_	14	mark	_	_
+12	kissa	kissa	NOUN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	_
+13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	_
+14	kyydissä	kyydi	NOUN	N	Case=Ine|Number=Sing	6	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Verkon ansiosta auton takaosa oli kokonaan kissan käytössä.
+1	Verkon	verko	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ansiosta	ansio	NOUN	N	Case=Ela|Number=Sing	8	obl	_	_
+3	auton	auto	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	takaosa	taka#osa	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	kokonaan	kokonaan	ADV	Adv	_	8	advmod	_	_
+7	kissan	kissa	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	käytössä	käyttö	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 13
+# text = Verkkoa ei tarvitse rakentaa itse, vaan sen voi ostaa valmiinakin.
+1	Verkkoa	verkko	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	tarvitse	tarvita	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	rakentaa	rakentaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	itse	itse	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	vaan	vaan	CCONJ	C	_	10	cc	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	nsubj	_	_
+9	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	ostaa	ostaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+11	valmiinakin	valmiina	VERB	V	Clitic=Kin|InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 14
+# text = Minulla vain sattuu olemaan kekseliäs ja kätevä äiti.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
+2	vain	vain	ADV	Adv	_	3	advmod	_	_
+3	sattuu	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	olemaan	olla	AUX	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+5	kekseliäs	kekseliäs	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	3	xcomp	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	kätevä	kätevä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Nykyisin kissani matkustaa henkilöautossa aina omassa häkissään.
+1	Nykyisin	nykyisin	ADV	Adv	_	3	advmod	_	_
+2	kissani	kissa	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	_
+3	matkustaa	matkustaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	henkilöautossa	henkilöauto	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	aina	aina	ADV	Adv	_	7	advmod	_	_
+6	omassa	oma	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	7	amod	_	_
+7	häkissään	häki	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 16
+# text = Ilmeisesti se tuntee siinä olonsa turvalliseksi ja kotoisaksi.
+1	Ilmeisesti	ilmeisesti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	tuntee	tuntla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	obl	_	_
+5	olonsa	olo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	_
+6	turvalliseksi	turvallinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Llinen|Number=Sing	3	xcomp	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	kotoisaksi	kotoisa	NOUN	N	Case=Tra|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 17
+# text = Häkki pehmusteineen tuoksuu tutulta ja turvalliselta; se on kuin matkustaisi omassa pesässä.
+1	Häkki	Häkki	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	pehmusteineen	pehmuste	NOUN	N	Case=Com|Person[psor]=3	1	nmod	_	_
+3	tuoksuu	tuoksua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tutulta	tuttu	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	3	xcomp	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	turvalliselta	turvallinen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Llinen|Number=Sing	4	conj	_	SpaceAfter=No
+7	;	;	PUNCT	Punct	_	3	punct	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	kuin	kuin	SCONJ	C	_	11	mark	_	_
+11	matkustaisi	matkustaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+12	omassa	oma	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	13	amod	_	_
+13	pesässä	pesä	NOUN	N	Case=Ine|Number=Sing	11	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

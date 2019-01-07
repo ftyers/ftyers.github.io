@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Minkä vuoksi tänään niin huonosti näyttelin.
+1	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+2	Minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	7	obl	_	_
+3	vuoksi	vuoksi	ADP	Adp	AdpType=Post	2	case	_	_
+4	tänään	tänään	ADV	Adv	_	7	advmod	_	_
+5	niin	niin	ADV	Adv	_	7	advmod	_	_
+6	huonosti	huonosti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	näyttelin	näytella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = Minkä vuoksi tästä lähin aina tulen huonosti näyttelemään.
+1	Minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	6	obl	_	_
+2	vuoksi	vuoksi	ADP	Adp	AdpType=Post	1	case	_	_
+3	tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	6	obl	_	_
+4	lähin	lähin	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	5	amod	_	_
+5	aina	aina	ADV	Adv	_	6	advmod	_	_
+6	tulen	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	huonosti	huonosti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+8	näyttelemään	näytteleä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Miksi en enää koskaan voi hyvin näytellä."
+1	Miksi	miksi	ADV	Adv	_	7	advmod	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+3	enää	enää	ADV	Adv	_	7	advmod	_	_
+4	koskaan	koskaan	ADV	Adv	_	7	advmod	_	_
+5	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	hyvin	hyvin	ADV	Adv	_	7	advmod	_	_
+7	näytellä	näytellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 4
+# text = Dorian kohautti olkapäitään.
+1	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kohautti	kohautti	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+3	olkapäitään	olkapäitä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = "Sinä olet sairas.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj:cop	_	_
+3	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	sairas	sairas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Sinun ei pitäisi sairaana näytellä.
+1	Sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	pitäisi	pitää	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	5	aux	_	_
+4	sairaana	sairas	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+5	näytellä	näytellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Sinä teet itsesi naurettavaksi.
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	teet	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	itsesi	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	4	obl	_	_
+4	naurettavaksi	naurtaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	2	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Sinä tuskastutit minun ystäviäni.
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	tuskastutit	tuskastutti	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	ystäviäni	ystävä	NOUN	N	Case=Par|Number=Plur|Number[psor]=Sing|Person[psor]=1	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Ja sinä tuskastutit minua."
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	tuskastutit	tuskastutti	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Tyttö ei näyttänyt kuuntelevan häntä.
+1	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	näyttänyt	näyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kuuntelevan	kuuntella	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	xcomp	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Ilo oli kokonaan muuttanut hänet.
+1	Ilo	ilo	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	kokonaan	kokonaan	ADV	Adv	_	4	advmod	_	_
+4	muuttanut	muuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

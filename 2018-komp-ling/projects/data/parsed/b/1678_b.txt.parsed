@@ -1,0 +1,117 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pohjantähden alla.
+1	Pohjantähden	Pohjantähti	PROPN	N	Case=Gen|Number=Sing	0	root	_	_
+2	alla	alla	ADP	Adp	AdpType=Post	1	case	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Pohjoisessa maassa, missä ei sään takia ole aina niin helppoa.
+1	Pohjoisessa	pohjoinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	maassa	maa	NOUN	N	Case=Ine|Number=Sing	11	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	11	obl	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+6	sään	sää	NOUN	N	Case=Gen|Number=Sing	11	obl	_	_
+7	takia	takia	ADP	Adp	AdpType=Post	6	case	_	_
+8	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	cop	_	_
+9	aina	aina	ADV	Adv	_	11	advmod	_	_
+10	niin	niin	ADV	Adv	_	11	advmod	_	_
+11	helppoa	helppo	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 3
+# text = Esimerkiksi Suomessa.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	2	advmod	_	_
+2	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kaikkien suomalaisten tuntema kirjasarja on nimeltään
+1	Kaikkien	kaikki	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	2	det	_	_
+2	suomalaisten	suomalainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	3	nsubj	_	_
+3	tuntema	tuntta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	4	acl	_	_
+4	kirjasarja	kirja#sarja	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	nimeltään	nimi	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	0	root	_	_
+
+# sent_id = 5
+# text = Täällä
+1	Täällä	täällä	ADV	Adv	_	0	root	_	_
+
+# sent_id = 6
+# text = Pohjantähden alla ja siinä kerrotaan miten vaikeaa Suomessa oli elää ennen kuin Suomesta tuli rikas maa.
+1	Pohjantähden	Pohjantähti	PROPN	N	Case=Gen|Number=Sing	5	obl	_	_
+2	alla	alla	ADP	Adp	AdpType=Post	1	case	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	obl	_	_
+5	kerrotaan	kertoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	miten	miten	ADV	Adv	_	7	advmod	_	_
+7	vaikeaa	vaikea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	obj	_	_
+8	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	5	obl	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+11	ennen	ennen	ADV	Adv	_	12	advmod	_	_
+12	kuin	kuin	SCONJ	C	_	14	mark	_	_
+13	Suomesta	Suomi	PROPN	N	Case=Ela|Number=Sing	14	obl	_	_
+14	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	_
+15	rikas	rikas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	16	amod	_	_
+16	maa	maa	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Punastui, perusmuoto punastua.
+1	Punastui	punastui	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	punastua	punastua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Kun oikein nolottaa, vaaleaihoisen ihmisen kasvot muuttuvat punaisiksi.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	oikein	oikein	ADV	Adv	_	3	advmod	_	_
+3	nolottaa	nolottaa	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	8	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	vaaleaihoisen	vaaleaihoinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+8	muuttuvat	muuttua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	punaisiksi	punainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	8	xcomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Hän punastuu.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	punastuu	punastua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Purskahtivat.
+1	Purskahtivat	Purskahta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Päästivät nopeasti, räjähtävästi ulos jotakin.
+1	Päästivät	Päästää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	räjähtävästi	räjähtävästi	ADV	Adv	Derivation=Sti	6	advmod	_	_
+5	ulos	ulos	ADV	Adv	_	6	advmod	_	_
+6	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	1	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Juoma voi purskahtaa ulos pullosta, jos pullo hajoaa.
+1	Juoma	juoma	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	purskahtaa	purskahtaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	ulos	ulos	ADV	Adv	_	3	advmod	_	_
+5	pullosta	pullo	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	jos	jos	SCONJ	C	_	9	mark	_	_
+8	pullo	pullo	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	hajoaa	hajota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,233 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = “Pää poikki!” kuningatar mekasti kimakimmalla äänellään.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Pää	pää	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+3	poikki	poikki	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	8	punct	_	_
+6	kuningatar	kuningatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	8	nsubj	_	_
+7	mekasti	mekasti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+8	kimakimmalla	kimakima	VERB	V	Case=Ade|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	0	root	_	_
+9	äänellään	ääne	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 2
+# text = Kukaan ei liikahtanutkaan.
+1	Kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	liikahtanutkaan	liikahtaa	VERB	V	Case=Nom|Clitic=Kaan|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = “Kuka sinusta piittaisi?” sanoi Liisa (joka tähän mennessä oli kasvanut oikeaan kokoonsa).
+1	“	“	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj	_	_
+3	sinusta	sinä	PRON	Pron	Case=Ela|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	piittaisi	piittata	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	4	punct	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	(	(	PUNCT	Punct	_	14	punct	_	SpaceAfter=No
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	det	_	_
+11	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	14	obl	_	_
+12	mennessä	mennessä	ADP	Adp	AdpType=Post	11	case	_	_
+13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	kasvanut	kasvaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	parataxis	_	_
+15	oikeaan	oikea	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	16	amod	_	_
+16	kokoonsa	koko	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	14	obl	_	SpaceAfter=No
+17	)	)	PUNCT	Punct	_	14	punct	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = “Sinä olet pelkkä pelikortti!”
+1	“	“	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	pelkkä	pelkkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	pelikortti	pelikortti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Samassa koko pakka lehahti ilmaan ja lenteli Liisan päälle.
+1	Samassa	samassa	ADV	Adv	_	4	advmod	_	_
+2	koko	koko	ADJ	A	_	3	amod	_	_
+3	pakka	pakka	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	lehahti	lehahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ilmaan	ilma	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	lenteli	lenellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+8	Liisan	Liisa	PROPN	N	Case=Gen|Number=Sing	7	obl	_	_
+9	päälle	päälle	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Liisa kirkaisi, puolittain peloissaan ja puolittain vihoissaan, ja yritti hätistää niitä pois ja huomasi lopulta makaavansa rannalla pää siskonsa sylissä.
+1	Liisa	Liisa	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kirkaisi	kirkaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	puolittain	puolittain	ADV	Adv	Derivation=Ttain	5	advmod	_	_
+5	peloissaan	peloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	puolittain	puolittain	ADV	Adv	Derivation=Ttain	8	advmod	_	_
+8	vihoissaan	vihoi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	5	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	yritti	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+12	hätistää	hätistää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	12	obj	_	_
+14	pois	pois	ADV	Adv	_	12	advmod	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+17	lopulta	lopulta	ADV	Adv	_	16	advmod	_	_
+18	makaavansa	maata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	16	advcl	_	_
+19	rannalla	ranta	NOUN	N	Case=Ade|Number=Sing	18	obl	_	_
+20	pää	pää	ADV	Adv	_	18	advmod	_	_
+21	siskonsa	sisko	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	22	nmod:poss	_	_
+22	sylissä	syli	NOUN	N	Case=Ine|Number=Sing	18	obl	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Sisko pyyhki hellästi pois syksyn lehtiä, jotka olivat leijailleet puista Liisan kasvoille.
+1	Sisko	sis	PRON	Pron	Case=Nom|Clitic=Ko|Number=Sing|PronType=Int	2	nsubj	_	_
+2	pyyhki	pyyhkia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hellästi	hellästi	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	pois	pois	ADV	Adv	_	2	advmod	_	_
+5	syksyn	syksy	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	lehtiä	lehti	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	10	nsubj	_	_
+9	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	leijailleet	leijailla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
+11	puista	pu	NOUN	N	Case=Ela|Number=Plur	10	obl	_	_
+12	Liisan	Liisa	PROPN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	kasvoille	kasvot	NOUN	N	Case=All|Number=Plur	10	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = “Herää, Liisa pieni!” sanoi hänen sisarensa.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Herää	herä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	Liisa	Liisa	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	2	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+9	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	sisarensa	sisari	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = “Oletpa sinä nukkunut kauan!”
+1	“	“	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Oletpa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	nukkunut	nukkuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	kauan	kauan	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = “Näin kovin outoa unta!” sanoi Liisa.
+1	“	“	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Näin	Näin	ADV	Adv	_	5	advmod	_	_
+3	kovin	kovin	ADV	Adv	_	4	advmod	_	_
+4	outoa	outo	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
+5	unta	uni	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	5	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Ja hän kertoi siskolleen niin hyvin kuin suinkin muisti kaikki ne seikkailunsa, joista juuri olet lukenut.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	siskolleen	sisko	NOUN	N	Case=All|Number=Sing|Person[psor]=3	3	obl	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	hyvin	hyvin	ADV	Adv	_	3	advmod	_	_
+7	kuin	kuin	SCONJ	C	_	9	mark	_	_
+8	suinkin	suin	ADV	Adv	Clitic=Kin	9	advmod	_	_
+9	muisti	muistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|Typo=Yes|VerbForm=Fin|Voice=Act	6	advcl	_	_
+10	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	11	det	_	_
+11	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	9	nsubj	_	_
+12	seikkailunsa	seikkailun	ADP	Adp	AdpType=Post|Person[psor]=3	11	case	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	17	punct	_	_
+14	joista	joka	PRON	Pron	Case=Ela|Number=Plur|PronType=Rel	17	obl	_	_
+15	juuri	juuri	ADV	Adv	_	17	advmod	_	_
+16	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	17	aux	_	_
+17	lukenut	lukea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	acl:relcl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Ja kun hän oli lopettanut, sisko antoi hänelle suukon poskelle ja sanoi:
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	kun	kun	SCONJ	C	_	5	mark	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	lopettanut	lopettaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	sisko	sisko	SCONJ	C	_	8	mark	_	_
+8	antoi	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+9	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	8	obl	_	_
+10	suukon	suukko	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+11	poskelle	poski	NOUN	N	Case=All|Number=Sing	8	obl	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 13
+# text = “Se oli todella outo uni, kultaseni, mutta kiiruhda nyt teelle.
+1	“	“	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	todella	todella	ADV	Adv	_	5	advmod	_	_
+5	outo	outo	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	uni	uni	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	kultaseni	kultanen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	mutta	mutta	CCONJ	C	_	11	cc	_	_
+11	kiiruhda	kiiruhda	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	conj	_	_
+12	nyt	nyt	ADV	Adv	_	11	advmod	_	_
+13	teelle	tei	NOUN	N	Case=All|Number=Sing	11	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 14
+# text = Alkaa olla myöhä.”
+1	Alkaa	alkaa	INTJ	Interj	_	3	discourse	_	_
+2	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	cop	_	_
+3	myöhä	myöhä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Niin Liisa nousi ylös, riensi matkaan ja juostessaan mietti, sikäli kuin pystyi, miten ihmeellinen uni oli ollut.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ylös	ylös	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	riensi	rientää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	matkaan	matka	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+8	ja	ja	CCONJ	C	_	6	cc	_	_
+9	juostessaan	juosta	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	10	advcl	_	_
+10	mietti	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	sikäli	sikäli	SCONJ	C	_	14	mark	_	_
+13	kuin	kuin	SCONJ	C	_	14	mark	_	_
+14	pystyi	pystyä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	10	advcl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	14	punct	_	_
+16	miten	miten	ADV	Adv	_	17	advmod	_	_
+17	ihmeellinen	ihmeellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	18	amod	_	_
+18	uni	uni	NOUN	N	Case=Nom|Number=Sing	20	nsubj:cop	_	_
+19	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

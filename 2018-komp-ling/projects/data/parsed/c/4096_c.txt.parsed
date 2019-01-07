@@ -1,0 +1,245 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- No, entä te nuori mies?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	No	no	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	entä	entä	ADV	Adv	_	0	root	_	_
+5	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	7	det	_	_
+6	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	mies	mies	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- sanoi hän Bolkonskille, -- miten on teidän laitanne, sankarini?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	Bolkonskille	Bolkonsk	PROPN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	--	--	PUNCT	Punct	_	10	punct	_	_
+7	miten	miten	ADV	Adv	_	10	advmod	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	10	nmod:poss	_	_
+10	laitanne	laitanne	NOUN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	sankarini	sankari	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	10	conj	_	SpaceAfter=No
+13	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Vaikka ruhtinas Andrei hetki sitten oli saattanut lausua muutaman sanan kantajilleen, niin ei hän nyt mitään vastannut, katsoa tuijotti vain Napoleoniin.
+1	Vaikka	vaikka	SCONJ	C	_	8	mark	_	_
+2	ruhtinas	ruhtinas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	8	obl	_	_
+4	hetki	hetki	NOUN	N	Case=Nom|Number=Sing	3	flat:name	_	_
+5	sitten	sitten	ADP	Adp	AdpType=Post	3	case	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	saattanut	saattaa	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	aux	_	_
+8	lausua	lausua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	18	advcl	_	_
+9	muutaman	muutama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	10	det	_	_
+10	sanan	sata	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	kantajilleen	kantaji	NOUN	N	Case=All|Number=Plur|Person[psor]=3	8	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	8	punct	_	_
+13	niin	niin	ADV	Adv	_	18	advmod	_	_
+14	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	18	aux	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+16	nyt	nyt	ADV	Adv	_	18	advmod	_	_
+17	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	18	det	_	_
+18	vastannut	vastata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	21	punct	_	_
+20	katsoa	katso	NOUN	N	Case=Par|Number=Sing	21	nsubj	_	_
+21	tuijotti	tuijottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	parataxis	_	_
+22	vain	vain	ADV	Adv	_	23	advmod	_	_
+23	Napoleoniin	Napoleon	PROPN	N	Case=Ill|Number=Sing	21	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	18	punct	_	_
+
+# sent_id = 4
+# text = Tällä hetkellä näyttivät hänestä ylen mitättömiltä kaikki Napoleonin harrastukset, ja mitättömältä näytti itse hänen sankarinsakin halpamaisine kunnianhimoineen ja voitonriemuineen.
+1	Tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	2	det	_	_
+2	hetkellä	hetki	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+3	näyttivät	näyttä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+5	ylen	ylen	ADV	Adv	_	3	advmod	_	_
+6	mitättömiltä	mitättömä	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	9	amod	_	_
+7	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+8	Napoleonin	Napoleon	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	harrastukset	harrastus	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	mitättömältä	mitättömä	NOUN	N	Case=Abl|Derivation=Ja|Number=Sing	13	obl	_	_
+13	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+14	itse	itse	ADV	Adv	_	16	advmod	_	_
+15	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	sankarinsakin	sankarinsa	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	_
+17	halpamaisine	halpamainen	ADJ	A	Case=Com|Degree=Pos|Derivation=Llinen	18	amod	_	_
+18	kunnianhimoineen	kunnianhimo	NOUN	N	Case=Com|Person[psor]=3	16	obl	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	voitonriemuineen	voitonriemu	NOUN	N	Case=Com|Person[psor]=3	18	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Niin vähäpätöiseltä tuntui hänestä tämä kaikki tuon korkean, hyvän totuuden taivaan rinnalla, jonka hän näki ja jonka hän nyt käsitti, ettei hän saattanut edes vastata.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	vähäpätöiseltä	vähäpätöisi	NOUN	N	Case=Abl|Number=Sing	3	obl	_	_
+3	tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+5	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+7	tuon	tuo	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	det	_	_
+8	korkean	korkea	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	hyvän	hyvä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	11	amod	_	_
+11	totuuden	totuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	12	nmod:poss	_	_
+12	taivaan	taivas	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+13	rinnalla	rinnalla	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	17	obj	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+18	ja	ja	CCONJ	C	_	22	cc	_	_
+19	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	22	obj	_	_
+20	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+21	nyt	nyt	ADV	Adv	_	22	advmod	_	_
+22	käsitti	käsittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	conj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	28	punct	_	_
+24	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	28	mark	_	_
+25	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
+26	saattanut	saattaa	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	28	aux	_	_
+27	edes	edes	ADV	Adv	_	28	advmod	_	_
+28	vastata	vastattaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	22	ccomp	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Ja kaikki näytti niin hyödyttömältä ja turhalta näiden vakavain ja jumalallisten ajatusten rinnalla, joita hänessä olivat herättäneet veren vuodosta johtunut heikkous, kärsimys ja läheisen kuoleman odottaminen.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+3	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	hyödyttömältä	hyödyttömä	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	3	xcomp	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	turhalta	turha	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	5	conj	_	_
+8	näiden	nä	NOUN	N	Case=Gen|Number=Plur	9	nmod:poss	_	_
+9	vakavain	vakavai	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	jumalallisten	jumalallinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Plur	12	amod	_	_
+12	ajatusten	ajatus	NOUN	N	Case=Gen|Number=Plur	9	conj	_	_
+13	rinnalla	rinnalla	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	18	punct	_	_
+15	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	18	obj	_	_
+16	hänessä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+17	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	aux	_	_
+18	herättäneet	herättää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	9	acl:relcl	_	_
+19	veren	veri	NOUN	N	Case=Gen|Number=Sing	20	nmod:poss	_	_
+20	vuodosta	vuodo	NOUN	N	Case=Ela|Number=Sing	21	obl	_	_
+21	johtunut	johtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	22	acl	_	_
+22	heikkous	heikkous	NOUN	N	Case=Nom|Number=Sing	18	nsubj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	24	punct	_	_
+24	kärsimys	kärsimys	NOUN	N	Case=Nom|Number=Sing	22	conj	_	_
+25	ja	ja	CCONJ	C	_	28	cc	_	_
+26	läheisen	läheinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	27	amod	_	_
+27	kuoleman	kuolema	NOUN	N	Case=Gen|Number=Sing	28	nmod:gobj	_	_
+28	odottaminen	odottaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	22	conj	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Katsellessaan Napoleonia silmiin ruhtinas Andrei ajatteli maineen mitättömyyttä, elämän mitättömyyttä, jonka arvoa kukaan ei käsitä, ja kuoleman kauheata mitättömyyttä, jonka tarkoitusta ei kukaan elävä ole voinut käsittää eli selittää.
+1	Katsellessaan	Katsella	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	6	advcl	_	_
+2	Napoleonia	Napoleon	PROPN	N	Case=Par|Number=Sing	3	obj	_	_
+3	silmiin	silmä	NOUN	N	Case=Ill|Number=Plur	1	obl	_	_
+4	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	maineen	maine	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	mitättömyyttä	mitättömyys	NOUN	N	Case=Par|Number=Sing	17	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	mitättömyyttä	mitättömyys	NOUN	N	Case=Par|Number=Sing	8	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	17	punct	_	_
+13	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	14	nmod:poss	_	_
+14	arvoa	#arvo	NOUN	N	Case=Par|Number=Sing	17	obj	_	_
+15	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	17	nsubj	_	_
+16	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	17	aux	_	_
+17	käsitä	käsiä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	kuoleman	kuolea	VERB	V	Case=Ill|InfForm=3|Number=Sing|Typo=Yes|VerbForm=Inf|Voice=Act	17	conj	_	_
+21	kauheata	kauhea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	22	amod	_	_
+22	mitättömyyttä	mitättömyys	NOUN	N	Case=Par|Number=Sing	31	obj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	31	punct	_	_
+24	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	25	nmod:poss	_	_
+25	tarkoitusta	tarkoitus	NOUN	N	Case=Par|Number=Sing	31	obj	_	_
+26	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	31	aux	_	_
+27	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	28	det	_	_
+28	elävä	elävä	NOUN	N	Case=Nom|Number=Sing	31	nsubj	_	_
+29	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	31	aux	_	_
+30	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	31	aux	_	_
+31	käsittää	käsittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	20	xcomp	_	_
+32	eli	eli	CCONJ	C	_	33	cc	_	_
+33	selittää	selittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	31	conj	_	SpaceAfter=No
+34	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Odottamatta vastausta kysymykseensä Napoleon kääntyi ruhtinas Andreista ja huusi mennessään eräälle päälliköistään: -- Pidettäköön huolta niistä herroista ja kuljetettakoon heidät minun leiripaikalleni; tarkastakoon minun lääkärini Larrey heidän haavansa.
+1	Odottamatta	odottaa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	_
+2	vastausta	vastaus	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	kysymykseensä	kysymyksei	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	compound:nn	_	_
+4	Napoleon	Napoleon	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	Andreista	Andre	PROPN	N	Case=Ela|Number=Sing	5	obl	_	_
+8	ja	ja	CCONJ	C	_	12	cc	_	_
+9	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	12	obj	_	_
+10	mennessään	mennä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	12	advcl	_	_
+11	eräälle	eräs	PRON	Pron	Case=All|Number=Sing|PronType=Ind	12	obl	_	_
+12	päälliköistään	päälliköistä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	5	conj	_	SpaceAfter=No
+13	:	:	PUNCT	Punct	_	5	punct	_	_
+14	--	--	PUNCT	Punct	_	15	punct	_	_
+15	Pidettäköön	Pidettää	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+16	huolta	huoli	NOUN	N	Case=Par|Number=Sing	15	obj	_	_
+17	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	18	det	_	_
+18	herroista	herro	NOUN	N	Case=Ela|Number=Plur	15	obl	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	kuljetettakoon	kuljetettaa	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	15	conj	_	_
+21	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	20	obj	_	_
+22	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	23	nmod:poss	_	_
+23	leiripaikalleni	leiripaika	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1	20	obl	_	SpaceAfter=No
+24	;	;	PUNCT	Punct	_	5	punct	_	_
+25	tarkastakoon	tarkastaa	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+26	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	27	nmod:poss	_	_
+27	lääkärini	lääkäri	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	28	compound:nn	_	_
+28	Larrey	Larrey	PROPN	N	Case=Nom|Number=Sing	30	obj	_	_
+29	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	30	nsubj	_	_
+30	haavansa	haaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	25	xcomp	_	SpaceAfter=No
+31	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Näkemiin saakka, ruhtinas Rjepnin, -- ja hän kannusti hevostaan ja lähti laukassa ajamaan edelleen.
+1	Näkemiin	Näkema	NOUN	N	Case=Ill|Number=Plur	7	obl	_	_
+2	saakka	saakka	ADP	Adp	AdpType=Post	1	case	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	Rjepnin	Rjepn	PROPN	N	Case=Gen|Number=Sing	7	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	--	--	PUNCT	Punct	_	10	punct	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	kannusti	kannustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	hevostaan	hevosta	NOUN	N	Case=Ill|Number=Sing	10	obl	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+14	laukassa	lauka	NOUN	N	Case=Ine|Number=Sing	13	obl	_	_
+15	ajamaan	ajaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	_
+16	edelleen	edelleen	ADV	Adv	_	15	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = Hänen kasvonsa loistivat onnesta ja itsetyytyväisyydestä.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	kasvonsa	kasvo	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	3	nsubj	_	_
+3	loistivat	loista	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	onnesta	onni	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	itsetyytyväisyydestä	itsetyytyväisyys	NOUN	N	Case=Ela|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

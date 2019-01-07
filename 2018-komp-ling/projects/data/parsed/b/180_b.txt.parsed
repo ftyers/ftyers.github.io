@@ -1,0 +1,132 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Hän sai selittää kahteen kertaan, ennen kuin Ville Mäkinen ymmärsi ja uskoi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	selittää	selittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	kahteen	kaksi	NUM	Num	Case=Ill|Number=Sing|NumType=Card	5	nummod	_	_
+5	kertaan	kerta	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	ennen	ennen	ADV	Adv	_	8	advmod	_	_
+8	kuin	kuin	SCONJ	C	_	11	mark	_	_
+9	Ville	Ville	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+10	Mäkinen	Mäkinen	PROPN	N	Case=Nom|Number=Sing	9	flat:name	_	_
+11	ymmärsi	ymmärsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	advcl	_	SpacesAfter= 
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	uskoi	uskoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = — En se minä ollut.
+1	—	—	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s   
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj:cop	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Ei kai pastori sitä luule.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	kai	kai	ADV	Adv	_	5	advmod	_	_
+3	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	_
+5	luule	luulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Tunteehan pastori minut.
+1	Tunteehan	Tunteeha	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	2	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = En minä pysty tappamaan edes hiiriä talosta.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	pysty	pystyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tappamaan	tappada	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	edes	edes	ADV	Adv	_	6	advmod	_	_
+6	hiiriä	hiiri	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+7	talosta	talo	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Olen koko yön ja aamun nukkunut täällä, Ville Mäkinen sanoi.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+2	koko	koko	ADJ	A	_	3	amod	_	_
+3	yön	yö	NOUN	N	Case=Gen|Number=Sing	6	nsubj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	aamun	#aamu	NOUN	N	Case=Gen|Number=Sing	3	conj	_	_
+6	nukkunut	nukkuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	täällä	täällä	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	Ville	Ville	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	Mäkinen	Mäkinen	PROPN	N	Case=Nom|Number=Sing	9	flat:name	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = — Tiedän, että sinä et ole mikään murhamies.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	9	punct	_	_
+4	että	että	SCONJ	C	_	9	mark	_	_
+5	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj:cop	_	_
+6	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	mikään	mikään	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+9	murhamies	murha#mies	NOUN	N	Case=Nom|Number=Sing	2	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Tulin vain varoittamaan etukäteen, että et pelästy poliisia, pastori Halme rauhoitteli.
+1	Tulin	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vain	vain	ADV	Adv	_	3	advmod	_	_
+3	varoittamaan	varoittaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+4	etukäteen	etu#käteen	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	pelästy	pelästyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	ccomp	_	_
+9	poliisia	poliisi	NOUN	N	Case=Par|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	SpacesAfter= 
+11	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+12	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	11	nummod	_	_
+13	rauhoitteli	rauhoitellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Ensimmäinen poliisiauto kaarsi siniset valot vilkkuen pihaan ja sen perässä kaksi muuta autoa.
+1	Ensimmäinen	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	2	nummod	_	_
+2	poliisiauto	poliisi#auto	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kaarsi	kaartaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	siniset	sininen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	valot	valo	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+6	vilkkuen	vilkkua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	_
+7	pihaan	piha	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpacesAfter= 
+8	ja	ja	CCONJ	C	_	13	cc	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	13	nmod	_	_
+10	perässä	perässä	ADP	Adp	AdpType=Post	9	case	_	_
+11	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	13	nummod	_	_
+12	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	13	det	_	_
+13	autoa	auto	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = Poliisit nousivat nopeasti autoista ja kyyristyivät puiden ja auton ovien suojaan.
+1	Poliisit	poliisi	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	nousivat	nousta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	autoista	auto	NOUN	N	Case=Ela|Number=Plur	2	obl	_	SpacesAfter= 
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kyyristyivät	kyyristyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	puiden	puu	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	SpacesAfter= 
+9	auton	auto	NOUN	N	Case=Gen|Number=Sing	7	conj	_	_
+10	ovien	ovi	NOUN	N	Case=Gen|Number=Plur	11	nmod:poss	_	_
+11	suojaan	suo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	6	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

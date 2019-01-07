@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Sitä paitsi mitä se meille merkitsee.
+1	Sitä	sitä	ADV	Adv	_	6	advmod	_	_
+2	paitsi	paitsi	ADV	Adv	_	1	fixed	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	6	obj	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	_
+5	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	6	obl	_	_
+6	merkitsee	merkitä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Geoffreylle se on ikävä juttu, tietenkin.
+1	Geoffreylle	Geoffrey	NOUN	N	Case=All|Number=Sing	5	obl	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	ikävä	ikävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	juttu	juttu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	tietenkin	tietenkin	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Eihän ajajia sovi ampua.
+1	Eihän	ei	AUX	V	Clitic=Han|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	ajajia	ajaja	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	3	nsubj:cop	_	_
+3	sovi	sovi	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+4	ampua	ampu	NOUN	N	Case=Par|Derivation=U|Number=Sing	3	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Muuten ihmiset väittävät että on huono ampuja.
+1	Muuten	muuten	ADV	Adv	_	3	advmod	_	_
+2	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	väittävät	väittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	ampuja	#ampuja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Ja sitä ei Geoffrey ole; hän ampuu erittäin hyvin.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	Geoffrey	Geoffrey	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	SpaceAfter=No
+6	;	;	PUNCT	Punct	_	4	punct	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	ampuu	ampua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	erittäin	erittäin	ADV	Adv	Derivation=Ttain	8	advmod	_	_
+10	hyvin	hyvin	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Mutta ei siitä maksa vaivaa puhua."
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	_
+4	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	vaivaa	vaiva	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	_
+6	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Dorian pudisti päätään.
+1	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pudisti	pudistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	päätään	pää	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "Se on paha enne, Harry.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	paha	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	enne	enne	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Harry	Harry	PROPN	N	Case=Nom|Number=Sing	5	appos	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Minä aavistan että jotakin kauheaa tapahtuu jollekin meistä.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	aavistan	aavistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	että	että	SCONJ	C	_	6	mark	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	kauheaa	kauhea	NOUN	N	Case=Par|Number=Sing	6	nsubj	_	_
+6	tapahtuu	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	jollekin	jokin	PRON	Pron	Case=All|Number=Sing|PronType=Ind	8	obl	_	_
+8	meistä	minä	PRON	Pron	Case=Ela|Number=Plur|Person=1|PronType=Prs	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Ehkä minulle itselleni", hän lisäsi, sivellen kädellään silmiään tuskallisella liikkeellä.
+1	Ehkä	ehkä	ADV	Adv	_	3	advmod	_	_
+2	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	3	det	_	_
+3	itselleni	itse	PRON	Pron	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	7	obl	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	sivellen	sivella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+10	kädellään	käde	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	9	obl	_	_
+11	silmiään	silmä	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	9	obj	_	_
+12	tuskallisella	tuskallinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Llinen|Number=Sing	13	amod	_	_
+13	liikkeellä	liike	NOUN	N	Case=Ade|Number=Sing	9	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

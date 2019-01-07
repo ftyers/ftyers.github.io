@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Siksi hän ei voinut olla mukana tällä kalamatkalla.
+1	Siksi	siksi	ADV	Adv	_	8	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	aux	_	_
+5	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	cop	_	_
+6	mukana	mukana	ADP	Adp	AdpType=Post	1	case	_	_
+7	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	8	det	_	_
+8	kalamatkalla	kalamatka	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Viimeisillään raskaana oleva nainen ei voinut soutaa isoa venettä.
+1	Viimeisillään	Viimeisillään	ADV	Adv	_	7	advmod	_	_
+2	raskaana	raskas	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+3	oleva	olla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	aux	_	_
+7	soutaa	soutaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+8	isoa	iso	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	amod	_	_
+9	venettä	vene	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Arveltiin, että lapsi syntyisi viimeistään tammikuussa.
+1	Arveltiin	Arvela	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	että	että	SCONJ	C	_	5	mark	_	_
+4	lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	syntyisi	syntya	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+6	viimeistään	viimeistään	ADV	Adv	_	5	advmod	_	_
+7	tammikuussa	tammikutu	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Kokkoluodon perheessä oli ennestään jo viisi lasta, kaksi poikaa ja kolme tyttöä.
+1	Kokkoluodon	Kokkoluoto	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	perheessä	perhe	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	ennestään	ennestään	ADV	Adv	_	6	advmod	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	viisi	viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	lasta	lapsi	NOUN	N	Case=Par|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	10	nummod	_	_
+10	poikaa	poika	NOUN	N	Case=Par|Number=Sing	7	conj	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	13	nummod	_	_
+13	tyttöä	tyttö	NOUN	N	Case=Par|Number=Sing	7	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Linnea ohjasi veneensä turvallisesti kotirantaan.
+1	Linnea	Linnea	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ohjasi	ohjata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	veneensä	veä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	2	xcomp	_	_
+4	turvallisesti	turvallisesti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	kotirantaan	kotiranta	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän tiesi, että unessa saatu tieto tarkoitti Hannan tulevaa lasta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tiesi	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	unessa	un	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+6	saatu	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	7	acl	_	_
+7	tieto	tieto	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	tarkoitti	tarkoittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+9	Hannan	Hanna	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+10	tulevaa	tuleva	ADJ	A	Case=Par|Degree=Pos|Number=Sing	11	amod	_	_
+11	lasta	lapsi	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 7
+# text = Nyt Linnealla oli kiire puhelimeen kertomaan Hannalle lapsen syntymästä.
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	Linnealla	Linnea	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	kiire	kiire	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+5	puhelimeen	puhelin	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+6	kertomaan	kertoa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+7	Hannalle	Hanna	PROPN	N	Case=All|Number=Sing	6	obl	_	_
+8	lapsen	#lapsi	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	syntymästä	syntymä	NOUN	N	Case=Ela|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Pojan kuolinpäivänkin
+1	Pojan	poika	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kuolinpäivänkin	kuolinpäivä	NOUN	N	Case=Gen|Clitic=Kin|Number=Sing	0	root	_	_
+
+# sent_id = 9
+# text = Linnea oli nähnyt.
+1	Linnea	Linnea	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Poika olisi silloin jo komea vanha mies.
+1	Poika	poika	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+2	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	cop	_	_
+3	silloin	silloin	ADV	Adv	_	7	advmod	_	_
+4	jo	jo	ADV	Adv	_	7	advmod	_	_
+5	komea	komea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+6	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Hän istuisi pitkän pitopöydän ääressä hauskana isäntänä suurissa juhlissa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	istuisi	istuä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pitkän	pitkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	pitopöydän	pito#pöytä	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+5	ääressä	ääressä	ADP	Adp	AdpType=Post	4	case	_	_
+6	hauskana	hauska	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	7	amod	_	_
+7	isäntänä	isäntä	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+8	suurissa	suuri	ADJ	A	Case=Ine|Degree=Pos|Number=Plur	9	amod	_	_
+9	juhlissa	juhla	NOUN	N	Case=Ine|Number=Plur	2	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

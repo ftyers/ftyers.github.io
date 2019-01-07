@@ -1,0 +1,111 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Ei tämä kaunotar sitten heti kolahtanut, myyjä sanoi apeana.
+1	—	—	PUNCT	Punct	_	7	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	kaunotar	kaunotar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	7	nsubj	_	_
+5	sitten	sitten	ADV	Adv	_	7	advmod	_	_
+6	heti	heti	ADV	Adv	_	7	advmod	_	_
+7	kolahtanut	kolahtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	myyjä	myyjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	10	nsubj	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+11	apeana	apea	NOUN	N	Case=Ess|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = — Ei heti, eikä myöhemmin.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+3	heti	heti	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	cc	_	_
+6	myöhemmin	myöhemmin	ADV	Adv	_	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Vene on raato.
+1	Vene	vene	PROPN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	raato	raato	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Ei sillä voi merelle mennä, Patu antoi jyrkän tuomion.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	5	obl	_	_
+3	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	merelle	meri	NOUN	N	Case=All|Number=Sing	5	obl	_	_
+5	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	Patu	Patu	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	antoi	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	jyrkän	jyrkkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	amod	_	_
+10	tuomion	tuomio	NOUN	N	Case=Gen|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Myyjä huokasi, kiersi uudelleen pullon korkin auki ja ojensi pulloa Patulle, — Käviskö ryyppy? myyjä ehdotti.
+1	Myyjä	myyjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	huokasi	huoata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	kiersi	kiertää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	uudelleen	uudelleen	ADV	Adv	_	4	advmod	_	_
+6	pullon	pullo	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	korkin	korkki	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+8	auki	auki	ADV	Adv	_	4	advmod	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	ojensi	ojentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	pulloa	pullo	NOUN	N	Case=Par|Number=Sing	10	obj	_	_
+12	Patulle	Patu	NOUN	N	Case=All|Derivation=U|Number=Sing	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	—	—	PUNCT	Punct	_	16	punct	_	_
+15	Käviskö	Käviskö	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	16	amod	_	_
+16	ryyppy	ryyppy	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+17	?	?	PUNCT	Punct	_	19	punct	_	_
+18	myyjä	myyjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	19	nsubj	_	_
+19	ehdotti	ehdottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Patu pudisti päätään.
+1	Patu	Patu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pudisti	pudistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	päätään	pää	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Myyjä pulputti viinaa omaan kurkkuun ja ähkäisi.
+1	Myyjä	myyjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	pulputti	pulputtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	viinaa	viina	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	omaan	oma	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	5	amod	_	_
+5	kurkkuun	kurkku	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	ähkäisi	ähkäistä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = — Halvalla myisin.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Halvalla	halvka	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+3	myisin	myisin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Terveys reistailee.
+1	Terveys	terveys	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	reistailee	reistailla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Ei minusta ole enää merelle.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	minusta	minä	PRON	Pron	Case=Ela|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	enää	enää	ADV	Adv	_	5	advmod	_	_
+5	merelle	meri	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

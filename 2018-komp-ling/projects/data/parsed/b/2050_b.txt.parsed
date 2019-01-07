@@ -1,0 +1,99 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Marko tuli vieläkin levottomammaksi.
+1	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vieläkin	vieläkin	ADV	Adv	_	2	advmod	_	_
+4	levottomammaksi	levottomamma	NOUN	N	Case=Tra|Number=Sing	2	xcomp:ds	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = — Nuppu on lehmän nimi.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Nuppu	Nuppu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	lehmän	lehmä	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	nimi	nimi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Ystäväsi on sellainen.
+1	Ystäväsi	ystäväsi	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	sellainen	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Hän haluaa rikkoa meidän välimme, Marko sanoi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rikkoa	rikko	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	välimme	väli	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Annakin suuttui.
+1	Annakin	Anna	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	2	nsubj	_	_
+2	suuttui	suuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = He huusivat toisilleen ilkeyksiä.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	huusivat	huuta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisilleen	toinen	PRON	Pron	Case=All|Number=Plur|Person[psor]=3|PronType=Rcp	4	det	_	_
+4	ilkeyksiä	ilkeys	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = He sanoivat asioita, joita eivät olisi tahtoneet.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	sanoivat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	asioita	asia	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	8	nsubj	_	_
+6	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	olisi	olla	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	8	aux	_	_
+8	tahtoneet	tahtoa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	acl:relcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Sitten Anna lähti, ja oven paukahdus kumisi rappukäytävässä.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	oven	ovi	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	paukahdus	paukahdus	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kumisi	kumista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	rappukäytävässä	rappu#käytävä	NOUN	N	Case=Ine|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Marko makasi valveilla.
+1	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	makasi	maata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	valveilla	valve	NOUN	N	Case=Ade|Number=Plur	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Uni ei tullut.
+1	Uni	ut	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Mustasukkaiset ajatukset myllersivät mielessä.
+1	Mustasukkaiset	Mustasukkainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	ajatukset	ajatus	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	myllersivät	myllersä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	mielessä	mieli	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

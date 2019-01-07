@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Sinä valehtelet!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	valehtelet	valehella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Minä olen aina ... aina vihannut sinua.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	aina	aina	ADV	Adv	_	6	advmod	_	_
+4	...	...	PUNCT	Punct	_	3	punct	_	_
+5	aina	aina	ADV	Adv	_	6	advmod	_	_
+6	vihannut	vihata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = -- Avdotja Romanovna, te unohdatte, että te sangen pitkän aikaa piditte minusta; se oli siihen aikaan jolloin toivoitte kääntävänne minut ...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Avdotja	Avdotja	PROPN	N	Case=Nom|Number=Sing	6	vocative	_	_
+3	Romanovna	Romanovna	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+6	unohdatte	unohdada	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	että	että	SCONJ	C	_	13	mark	_	_
+9	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	12	det	_	_
+10	sangen	sangen	ADV	Adv	_	11	advmod	_	_
+11	pitkän	pitkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	_
+12	aikaa	aika	NOUN	N	Case=Par|Number=Sing	13	nsubj	_	_
+13	piditte	pitiä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+14	minusta	minä	PRON	Pron	Case=Ela|Number=Sing|Person=1|PronType=Prs	13	obl	_	SpaceAfter=No
+15	;	;	PUNCT	Punct	_	6	punct	_	_
+16	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	22	nsubj	_	_
+17	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	aux	_	_
+18	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	19	det	_	_
+19	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	22	obl	_	_
+20	jolloin	jolloin	ADV	Adv	_	22	advmod	_	_
+21	toivoitte	toivoitten	ADV	Adv	Style=Coll	22	advmod	_	_
+22	kääntävänne	kääntävätä	VERB	V	Connegative=Yes|Mood=Pot|VerbForm=Fin	6	parataxis	_	_
+23	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	22	obj	_	_
+24	...	...	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = näin sen teidän silmistänne.
+1	näin	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	1	obj	_	_
+3	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	1	obl	_	_
+4	silmistänne	silmistä	ADP	Adp	AdpType=Post|Number[psor]=Plur|Person[psor]=2	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Muistatteko tuota kuutamoiltaa satakielen laulaessa?
+1	Muistatteko	Muistaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	det	_	_
+3	kuutamoiltaa	kuutamoilta	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
+4	satakielen	satakieli	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	laulaessa	laulaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = -- Valehtelet, valehtelet!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Valehtelet	Valehella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	valehtelet	valehella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Dunjan silmät salamoivat suuttumuksesta.
+1	Dunjan	Dunja	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	salamoivat	salamoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	suuttumuksesta	suuttumus	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- Valehtelenko minä?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Valehtelenko	Valehtella	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = No, jos sinulla on halua väittää sitä, kernaasti minun puolestani.
+1	No	no	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	jos	jos	SCONJ	C	_	6	mark	_	_
+4	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	väittää	väittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	11	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	kernaasti	kernaasti	ADV	Adv	Derivation=Sti	11	advmod	_	_
+11	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	obl	_	_
+12	puolestani	puolesta	ADP	Adp	AdpType=Post|Number[psor]=Sing|Person[psor]=1	11	case	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Tuollasesta ei naisia tule muistuttaa.
+1	Tuollasesta	Tuollasi	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	naisia	nainen	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+4	tule	tulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	muistuttaa	muistuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = -- Hän nauroi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	nauroi	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+
