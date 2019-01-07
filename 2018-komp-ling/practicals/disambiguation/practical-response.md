@@ -1,6 +1,7 @@
 ### Tager comparison
 <br />
 I tested the speech taggers for Japanese
+
 ```
 $ git clone https://github.com/UniversalDependencies/UD_Japanese-GSD
 $ cat ja_gsd-ud-train.conllu | udpipe --tokenizer=none --parser=none --train ja.udpipe
@@ -20,10 +21,12 @@ Lemmas     |     99.01 |     99.01 |     99.01 |     99.01
 UAS        |    100.00 |    100.00 |    100.00 |    100.00
 LAS        |    100.00 |    100.00 |    100.00 |    100.00
 ```
+
 <br />
 ### Constraint Grammar
 <br />
 I ran the following rules:
+
 ```
 DELIMITERS = "." ;
 
@@ -37,7 +40,9 @@ SECTION
 REMOVE DET IF (1C PUNCT) ;
 REMOVE PART IF (-1C VERB) ;
 ```
+
 And that's what I've got:
+
 
 ```
 "<Однако>"
@@ -91,33 +96,38 @@ And that's what I've got:
 "<.>"
         "." PUNCT
 ```
+
 I also wanted to remove a tag Case=Nom when it follows an ADP and remove tags Number=Plur when they follow a NOUN 
 but I coudn't figure out how to implemment these rules with this kind of tags :(
  
 ### Perceptron tagger
 Everything went well on these steps
+
 ```
 $ cat ../UD_Japanese-GSD/ja_gsd-ud-train.conllu | python3 tagger.py -t ja-ud.dat
 $ cat ../UD_Japanese-GSD/ja_gsd-ud-test.conllu | python3 tagger.py -t ja-ud.dat > jp-ud-test.out
 ```
+
 but this line
+
 ```
 $ python3 ../evaluation_script/conll17_ud_eval.py --verbose ../UD_Japanese-GSD/ja_gsd-ud-test.conllu jp-ud-test.out
 ```
+
 gave me the following:
+
 ```
-Traceback (most recent call last):
-  File "../evaluation_script/conll17_ud_eval.py", line 506, in <module>
-    main()
-  File "../evaluation_script/conll17_ud_eval.py", line 484, in main
-    evaluation = evaluate_wrapper(args)
-  File "../evaluation_script/conll17_ud_eval.py", line 458, in evaluate_wrapper
-    system_ud = load_conllu_file(args.system_file)
-  File "../evaluation_script/conll17_ud_eval.py", line 453, in load_conllu_file
-    return load_conllu(_file)
-  File "../evaluation_script/conll17_ud_eval.py", line 170, in load_conllu
-    raise UDError("There are multiple roots in a sentence")
-__main__.UDError: There are multiple roots in a sentence
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     95.62 |     95.62 |     95.62 |     95.62
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     95.62 |     95.62 |     95.62 |     95.62
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
 ```
-I have't managed to solve it yet, but I'll try soon again.
 
