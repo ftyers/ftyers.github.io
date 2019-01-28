@@ -1,4 +1,5 @@
 This script will show you an approximate complexity of Finnish text. There are level 1, 2, 3. 
+
 '1' corresponds to basic knowledge reading, '2' is intermediate one and '3' is advanced.
 
 You will need to do the following.
