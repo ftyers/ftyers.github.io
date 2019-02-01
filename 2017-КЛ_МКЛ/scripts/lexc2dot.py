@@ -11,7 +11,8 @@ for line in sys.stdin.readlines():
 	line = line.strip()
 	if line == '': continue
 	if line[0] == '!': continue
-	row = line.replace('% ', '%<SPACE>').replace(' ;', ';').replace(';', ' ;').split(' ')
+	# The join--split action here is to compress multiple spaces, e.g.     #   ;
+	row = ' '.join(line.replace('% ', '%<SPACE>').replace(' ;', ';').replace(';', ' ;').split()).split(' ')
 	lines.append(row)
 	if row[0] == 'LEXICON': 
 		if row[1] not in g: 
