@@ -63,4 +63,5 @@ def main():
     result = run_perceptron(train_data, train_labels, test_data)
     print(evaluate(result, test_labels, test_words))
     
-main()
+if __name__ == '__main__':
+    main()
