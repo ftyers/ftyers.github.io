@@ -9,6 +9,7 @@ for line in sys.stdin.readlines():
 
 freq.sort(reverse=True)
 
+
 rank = 1
 min = freq[0][0]
 ranks = []
