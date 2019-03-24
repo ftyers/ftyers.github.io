@@ -55,5 +55,3 @@ The result looks kind of like this:
 ```
 I didn't quite understand about 'orthographic case'. If you mean upper and lower case, I lowercased everything in train.py.
 If you mean cases of Russian nouns, then you have to lemmatize the text.
-
- 
