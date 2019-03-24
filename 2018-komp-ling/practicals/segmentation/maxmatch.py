@@ -20,6 +20,6 @@ with open('sentences.txt', 'r') as f:
         for word in sent:
             print(word, end=' ')
         number_of_tokens += len(sent)  
-        print('\n') #the output is strings of tokens separated with spaces, strings separated by blank lines
+        print('\n') # the output is strings of tokens separated with spaces, strings separated by blank lines
 print(len(f))
 print(number_of_tokens) 
