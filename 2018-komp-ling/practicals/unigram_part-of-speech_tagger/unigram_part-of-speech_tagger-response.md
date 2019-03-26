@@ -1,64 +1,34 @@
-
 ### Regular expressions
-
 
 ```python
 import re 
 s = 'Привет мир!'
 re.search(r'м[а-я]+', s)
 ```
-
-
-
-
     <re.Match object; span=(7, 10), match='мир'>
-
-
-
 
 ```python
 m = re.search(r'м[а-я]+', s)
 m.group()
 ```
-
-
-
-
     'мир'
-
-
-
 
 ```python
 m.span()
 ```
-
-
-
-
     (7, 10)
-
-
-
 
 ```python
 re.sub('[а-я]', 'x', s)
 ```
 
-
-
-
     'Пxxxxx xxx!'
 
-
-
 ### Libraries and modules in Python
-
 
 ```python
 %matplotlib inline 
 ```
-
 
 ```python
 import sys
@@ -81,12 +51,9 @@ plt.plot(x, y, 'ro')
 plt.show()
 ```
 
-
-![png](output_7_0.png)
-
+![png](https://github.com/DorkEMK/ftyers.github.io/blob/master/2018-komp-ling/practicals/unigram_part-of-speech_tagger/image.png)
 
 ### ElementTree
-
 
 ```python
 import xml.etree.ElementTree as ET
@@ -94,31 +61,20 @@ import xml.etree.ElementTree as ET
 tree = ET.parse('isl-ex.xml')
 ```
 
-
 ```python
 tree
 ```
-
-
-
-
     <xml.etree.ElementTree.ElementTree at 0x7fc9404d62e8>
-
-
 
 
 ```python
 root = tree.getroot()
 ```
 
-
 ```python
 print(root.tag)
 ```
-
     xigt-corpus
-
-
 
 ```python
 for tier in root.findall('.//tier'):
@@ -126,14 +82,11 @@ for tier in root.findall('.//tier'):
                 for item in tier.findall('.//item'):
                         print(item.text)
 ```
-
     (Þau) Jón og María eru vinir.
     they.NEUT Jón og María are friends
     Jón and María are friends.
 
-
 To get just the Icelandic line and the gloss line we can filter by tag:
-
 
 ```python
 for tier in root.findall('.//tier'):
@@ -146,7 +99,6 @@ for tier in root.findall('.//tier'):
     (Þau) Jón og María eru vinir.
     they.NEUT Jón og María are friends
 
-
 #### scikit learn
 
 Let's create ```pronuncation.py```, where data is splitted into train and test parts:
@@ -156,7 +108,6 @@ Let's create ```pronuncation.py```, where data is splitted into train and test p
 accuracy is 0.9955 - almost 1
 
 Let's look at the wrong classified words and the nearest letters' characteristics. Add temporary code to ```pronunciation.py```:
-
 
 ```python
 for i in range(0, len(words_test)):
