@@ -12,10 +12,11 @@ def main():
     test_data = open(sys.argv[1]).readlines()
     for line in test_data:
         line = line.split('\t')
+ 
         if len(line) > 3:
             if line[1] not in k:
                 k[line[1]] = pos_tags.copy()
-            if line[1] in k:
+            if line[1] in k and line[3] in pos_final:
                 k[line[1]][line[3]]+=1
                 pos_final[line[3]]+=1
                 word_count+=1

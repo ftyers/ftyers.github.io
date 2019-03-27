@@ -19,7 +19,6 @@ for line in model:
     line = line[:-1].split('\t')
     if len(line) == 4 and line[-1] =='-':
         pos_final[line[2]] = line[0]
-        print(pos_final)
     if len(line) == 4 and line[-1] !='-':
         words.update({line[3]:pos_tags.copy()})
         words[line[3]][line[2]]=line[0]
@@ -43,5 +42,5 @@ for i in sys.stdin:
     if len(parse)>3:
         parse[3] = tag(parse[1])
         print('\t'.join(parse))
-    else:
-        print(parse[0])
+    if i.startswith('# text = ')==True:
+        print(i)
