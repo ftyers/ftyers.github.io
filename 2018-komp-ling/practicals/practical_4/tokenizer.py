@@ -2,7 +2,7 @@ from nltk.tokenize import word_tokenize
 import sys
 
 cnt = 0
-splt = ['--------']
+splt = list('--------')
 
 for sent in sys.stdin:
     cnt += 1
