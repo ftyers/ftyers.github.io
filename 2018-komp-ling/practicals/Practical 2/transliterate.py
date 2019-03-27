@@ -45,7 +45,7 @@ def transliterate(text, matches):
 
 
 def main():
-    alphabets = read_text('Transliteration.txt')
+    alphabets = read_text('Transliteration_table.txt')
     matches = create_map(alphabets)
     text_to_transliterate = read_text('Text_to_transliterate.txt')
     transliterated_text = transliterate(text_to_transliterate, matches)
