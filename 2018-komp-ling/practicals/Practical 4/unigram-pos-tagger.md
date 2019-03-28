@@ -64,7 +64,7 @@ plt.plot(x, y, 'ro')
 plt.show()
 ```
 
-![output](https://files.slack.com/files-pri/TD571G43V-FH966V3G8/untitled.png)
+![output](output.png)
 
 ##### ElementTree
 
