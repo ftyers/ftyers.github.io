@@ -34,7 +34,7 @@ res = [['# P', 'count', 'tag', 'form']]
 
 for tag in tags:
     tag_number = tags[tag]
-    res.append([str(tag_number / number_of_tokens), str(tag_number), tag, '_'])
+    res.append([str(tag_number / number_of_tokens / 100 * 100), str(tag_number), tag, '_'])
 
 for token in tokens:
     token_info = tokens[token]
@@ -42,9 +42,9 @@ for token in tokens:
 
     for tag in token_info:
         token_tag_number = token_info[tag]
-        res.append([str(token_tag_number / token_number), str(token_tag_number), tag, token])
+        res.append([str(token_tag_number / token_number / 100 * 100), str(token_tag_number), tag, token])
 
 with open(sys.argv[2], 'w+', encoding='utf-8') as new_text:
     text = '\n'.join(['\t'.join(line) for line in res])
     new_text.write(text)
-    new_text.close()gi
+    new_text.close()
