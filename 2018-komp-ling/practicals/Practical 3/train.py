@@ -1,13 +1,12 @@
 import sys
 
 
-def unigram_model(sentence):
+def unigram_model(file):
     res = []
     counter = 0
     words = []
     tags = []
-    sentence = sentence.split('\n')
-    for line in sentence:
+    for line in file.readlines():
         if '\t' in line:
             line = line.split('\t')
             words.append((line[1], line[3]))
@@ -44,13 +43,10 @@ def unigram_model(sentence):
 
 
 def main():
-    with open('sent.txt', 'r', encoding='utf-8') as f:
-        sentences = f.read().split('# sent_id')
-        for sentence in sentences:
-                print('#P' + '\t' + 'count' + '\t' + 'tag' + '\t' + 'form')
-                for i in unigram_model(sentence):
-                    print('\t'.join(i))
-                print('\n')
+    with open(sys.argv[1], 'r', encoding='utf-8') as f:
+        print('#P' + '\t' + 'count' + '\t' + 'tag' + '\t' + 'form')
+        for item in unigram_model(f):
+            print('\t'.join(item))
 
 
 if __name__ == '__main__':
