@@ -76,4 +76,6 @@ I had this output:
 -- it's the list of arguments passed to the command line.
 
 ## Unigram language model
-Here is my code train.py 
+Here is my code [train.py](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%203/train.py) it runs from command line and takes two arguments: 1)path to the input file and 2)path to the output file. Mine are [test.txt](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%203/test.txt) [res.txt](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%203/res.txt) resp. Test file was downloaded from [Russian data from the SynTagRus corpus](https://github.com/UniversalDependencies/UD_Russian-SynTagRus/blob/master/ru_syntagrus-ud-test.conllu)
+``` 
+$ python3 train.py test.txt res.txt
