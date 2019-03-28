@@ -5,7 +5,7 @@ Firstly, I downloaded japanese_trainings conllu file. Then I parsed them using b
 1. delete all comments
 > sed '/^#/d' ja_gsd-ud-train.conllu > japanese_dict.txt
 2. delete all blank lines
-> ed '/^\s*$/d' japanese_dict.txt > japanese_dict_no_empty_lines.txt
+> sed '/^\s*$/d' japanese_dict.txt > japanese_dict_no_empty_lines.txt
 
 Also you need a data to test on. Here is mine.
 I downloaded japanese_test conllu file and extracted a text from it with this bash commands:
