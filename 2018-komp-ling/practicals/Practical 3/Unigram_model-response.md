@@ -81,4 +81,5 @@ Here is my code [train.py](https://github.com/Veranchos/ftyers.github.io/blob/ma
 $ python3 train.py test.txt res.txt
 ```
 >What might be a simple improvement to the language model for languages with orthographic case ?
+
 I think, this simple improvement might be a wordform lemmatization: we could count not only wordforms but the lemmas, which could say us more about the context. 
