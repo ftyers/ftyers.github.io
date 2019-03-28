@@ -79,3 +79,6 @@ I had this output:
 Here is my code [train.py](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%203/train.py) It runs from command line and takes two arguments: 1)path to the input file and 2)path to the output file. Mine are [test.txt](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%203/test.txt) [res.txt](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%203/res.txt) resp. Test file was downloaded from [Russian data from the SynTagRus corpus](https://github.com/UniversalDependencies/UD_Russian-SynTagRus/blob/master/ru_syntagrus-ud-test.conllu)
 ``` 
 $ python3 train.py test.txt res.txt
+```
+>What might be a simple improvement to the language model for languages with orthographic case ?
+I think, this simple improvement might be a wordform lemmatization: we could count not only wordforms but the lemmas, which could say us more about the context. 
