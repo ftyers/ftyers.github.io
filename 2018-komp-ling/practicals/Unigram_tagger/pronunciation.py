@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[ ]:
-
-
 import sys
 from sklearn.linear_model import perceptron
 from sklearn.model_selection import train_test_split
