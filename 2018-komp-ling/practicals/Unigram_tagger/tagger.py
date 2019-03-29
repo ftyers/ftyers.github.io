@@ -13,9 +13,9 @@ def get_tags(m):
         p, count, tag, form = line.split('\t')
         if int(count) > max_tag_count:
             max_tag_count = int(count)
-            max_tag = tag
+            max_tag = tag #the most frequent tag
         else:
-            value = (float(p), tag)
+            value = (float(p), tag) #create dictionary {form: [(float(p1), tag1), (float(p2), tag2)...],..}
             if form.strip() in d_word_all_tags:
                 d_word_all_tags[form.strip()].append(value)
             else:
@@ -25,7 +25,7 @@ def get_tags(m):
         max_value = max(tag[0] for tag in d_word_all_tags[form])
         for tag in d_word_all_tags[form]:
             if tag[0] == max_value:
-                d_word_max_tag[form] = tag[1]
+                d_word_max_tag[form] = tag[1] #create dictionary {form: max_tag,..}
             
     return max_tag, d_word_max_tag
 
@@ -39,9 +39,9 @@ def predict_tags(text, new_text, max_tag, d_word_max_tag):
             line = line.split('\t')
             form = line[1].lower()
             if form in d_word_max_tag:
-                line[3] = d_word_max_tag[form]
+                line[3] = d_word_max_tag[form] #if the word is known, we take value from the dict
             else:
-                line[3] = max_tag
+                line[3] = max_tag # if the word is unknown, we use the most frequent tag
             line_new = '\t'.join(map(str,line))
             new_text.write(line_new)
            
