@@ -32,7 +32,7 @@ proper_pos=/PROPN/
 #first match identical proper markables
 form="proper";form="proper"&lemma=$1&takefirst;100;nopropagate
 ```
-Результат - в файле ```paragraph.conllu```
+Результат - в файле ```paragraph.html```
 ```bash
 $ python3 xrenner.py -m rus -o html paragraph.conllu > /tmp/paragraph.html
 ```
