@@ -11,32 +11,52 @@ We would sort it in Unix like this: `sort -k1 -n -r`
 We would get an inverted frequency list, so the most frequent words would be in the end. Like this: [(21083, 'и'), (22727, 'в'), (45598, '.'), (70049, ',')]
 
 ## Ranking algorithm
-I implemented the ranking algorithm described in the tutorial and, firstly, I found out that the most frequented word somehow was out of the list, so I added a string in order not to lose it:
+Example of output:
+```
+1	21	,
+2	8	.
+3	7	и
+4	6	в
+5	4	не
+6	4	его
+7	4	был
+8	3	с
+9	3	он
+10	3	Левы
+```
+
+I noticed an inverted dependency between rank and frequency: words with smaller rank have greater frequency.
+
+> [(1, 21, ','), (2, 8, '.'), (3, 7, 'и'), (4, 6, 'в'), (5, 4, 'не'), ...]
+
+As for the code, I think we can optimize it by just numerating our entries in the **sorted** frequency list (created by the code in freq.py) like this:
 
 ```
-rank = 1
-minim = freq[0][0]
 ranks = []
-ranks.append((rank, freq[0][0], freq[0][1])) # This one
-for i in range(1, len(freq)):
-...
-```
-
-Secondly, I noticed an inverted dependency between rank and frequency: words with smaller rank have greater frequency.
-
-> [(1, 3727, 'год'), (2, 2015, 'время'), (3, 1258, 'день'), (4, 1200, 'рука'), ...]
-
-As for the code, I think we can optimize it by just numerating our entries in the sorted frequency list like this:
-
-```
-ranks = []
-    for counter in range(0, len(freq)):
-        ranks.append((counter + 1, freq[counter][0], freq[counter][1]))
-    return ranks
+for counter in range(0, len(freq)):
+    ranks.append((counter + 1, freq[counter][0], freq[counter][1]))
+print(ranks)
 ```
 
 ## Transliteration
-
+Code is transliterate.py, transliteration table is transl_dict.txt
+Example output:
+```
+1	В	_	_	_	_	_	Translit=V
+2	жизни	_	_	_	_	_	Translit=zhizni
+3	Левы	_	_	_	_	_	Translit=Lyevy
+4	Одоевцева	_	_	_	_	_	Translit=Odoyevtsyeva
+5	,	_	_	_	_	_	Translit=,
+6	из	_	_	_	_	_	Translit=iz
+7	тех	_	_	_	_	_	Translit=tyekh
+8	самых	_	_	_	_	_	Translit=samykh
+9	Одоевцевых	_	_	_	_	_	Translit=Odoyevtsyevykh
+10	,	_	_	_	_	_	Translit=,
+11	не	_	_	_	_	_	Translit=nye
+12	случалось	_	_	_	_	_	Translit=sluchalos'
+13	особых	_	_	_	_	_	Translit=osobykh
+14	потрясений	_	_	_	_	_	Translit=potryasyeniy
+```
 > What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
 
 I guess there the phonetic representation of a letter could help. As for the Russian language, the problem arises with consonants like 'е', 'ю', 'я', 'ё', which have different representations in different positions in a word. So we could write rules for every case. For instance:
