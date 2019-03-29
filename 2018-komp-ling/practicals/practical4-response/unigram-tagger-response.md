@@ -11,7 +11,7 @@ s = 'Привет мир!'
 
 re.search(r'м[а-я]+', s)
 ```
->> out
+>> 
 <_sre.SRE_Match object; span=(7, 10), match='мир'>
 
 
@@ -19,20 +19,20 @@ re.search(r'м[а-я]+', s)
 m = re.search(r'м[а-я]+', s)
 m.group()
 ```
->> out
+>> 
 'мир'
 
 
 ```
 m.span()
 ```
->> out
+>> 
 (7, 10)
 
 ```
 re.sub('[а-я]', 'x', s)
 ```
->>> out
+>>> 
 'Пxxxxx xxx!'
 
 ## Libraries and modules in Python
@@ -47,7 +47,7 @@ re.sub('[а-я]', 'x', s)
 $ wget https://raw.githubusercontent.com/vmkhlv/ftyers.github.io/master/2018-komp-ling/practicals/practical2-response/ranks.txt
 $ head ranks.txt
 ```
->> out
+>>
 1    70048    ,
 2    45571    .
 3    22727    в
@@ -67,13 +67,13 @@ import matplotlib.pyplot as plt
 x, y = [], []
 
 for line in open('ranks.txt').readlines():
-line = line.strip()
-if line == '':
-continue
+    line = line.strip()
+    if line == '':
+        continue
 
-row = line.split('\t')
-x.append(int(row[0]))
-y.append(int(row[1]))
+    row = line.split('\t')
+    x.append(int(row[0]))
+    y.append(int(row[1]))
 
 plt.plot(x, y, 'ro')
 plt.show()
@@ -93,17 +93,17 @@ tree = ET.parse('isl-ex.xml')
 root = tree.getroot()
 root.tag
 ```
->> out
+>>
 'xigt-corpus'
 
 
 ```
 for tier in root.findall('.//tier'):
-if tier.attrib['id'] == 'n':
-for item in tier.findall('.//item'):
-print(item.text)
+    if tier.attrib['id'] == 'n':
+        for item in tier.findall('.//item'):
+            print(item.text)
 ```
->> out
+>> 
 (Þau) Jón og María eru vinir.
 they.NEUT Jón og María are friends
 Jón and María are friends.
@@ -112,14 +112,14 @@ Jón and María are friends.
 
 ```
 for tier in root.findall('.//tier'):
-if tier.attrib['id'] == 'n':
-print(tier.findall('.//item')[0].text)
+    if tier.attrib['id'] == 'n':
+        print(tier.findall('.//item')[0].text)
 
-if tier.attrib['id'] == 'w-pos':
-for item in tier.findall('.//item'):
-print(item.text, end=' ')
+    if tier.attrib['id'] == 'w-pos':
+        for item in tier.findall('.//item'):
+            print(item.text, end=' ')
 ```
->> out
+>> 
 (Þau) Jón og María eru vinir.
 PUNC PRON PUNC NOUN VERB NOUN VERB NOUN PUNC 
 
@@ -164,7 +164,7 @@ my_cool_result = my_cool_perceptron.predict(test.vector.tolist())
 # mean accuracy
 my_cool_perceptron.score(test.vector.tolist(), test.label.tolist())
 ```
->> out
+>> 
 0.9937275985663082
 
 ```
@@ -172,7 +172,7 @@ my_cool_perceptron.score(test.vector.tolist(), test.label.tolist())
 my_cool_words = [(row.word, row.transcription, row.label) for row in test.itertuples()]
 print(*my_cool_words[:5], sep='\n')
 ```
->> out
+>> 
 ('#вся#', '[fsʲa]', 1)
 ('#звание#', '[ˈzvanʲɪje]', 0)
 ('#столкновение#', '[stəlknɐˈvʲenʲɪje]', 0)
@@ -183,10 +183,10 @@ print(*my_cool_words[:5], sep='\n')
 
 ```
 for i in range(0, len(my_cool_words)):
-if my_cool_result[i] != my_cool_words[i][2]:
-print('-', my_cool_result[i], my_cool_words[i])
+    if my_cool_result[i] != my_cool_words[i][2]:
+        print('-', my_cool_result[i], my_cool_words[i])
 ```
->> out
+>> 
 
 - 0 ('#нелюбовь#', '[nʲɪlʲʊˈbofʲ]', 1)
 - 0 ('#обувь#', '[ˈobʊfʲ]', 1)
@@ -239,7 +239,7 @@ $ echo <word> | python wiktionary.py
 ```
 $ echo 'страх' | python wiktionary.py
 ```
->> out
+>>
 страх
 Корень: -страх-
 IPA: strax
@@ -250,7 +250,7 @@ IPA: strax
 ```
 $ echo 'дерево' | python wiktionary.py
 ```
->> out
+>>
 дерево
 Корень: -дерев-
 IPA: ˈdʲerʲɪvə
