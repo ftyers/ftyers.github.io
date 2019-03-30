@@ -108,7 +108,7 @@ $ cat ../UD_Japanese-GSD/ja_gsd-ud-train.conllu | python3 tagger.py -t ja-ud.dat
 $ cat ../UD_Japanese-GSD/ja_gsd-ud-test.conllu | python3 tagger.py -t ja-ud.dat > jp-ud-test.out
 ```
 
-but this line
+this line
 
 ```
 $ python3 ../evaluation_script/conll17_ud_eval.py --verbose ../UD_Japanese-GSD/ja_gsd-ud-test.conllu jp-ud-test.out
@@ -131,3 +131,54 @@ UAS        |    100.00 |    100.00 |    100.00 |    100.00
 LAS        |    100.00 |    100.00 |    100.00 |    100.00
 ```
 
+I tried to widen context and use a length of a word as a feature:
+
+```
+add("length", str(len(word)))
+add('i+3 word', context[i+3])
+add('i-3 word', context[i-3])
+add('i+4 word', context[i+4])
+add('i-4 word', context[i-4])
+```
+Before adding them I got the following result:
+
+```
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     95.82 |     95.82 |     95.82 |     95.82
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     95.82 |     95.82 |     95.82 |     95.82
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+```
+
+After:
+
+```
+Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     95.61 |     95.61 |     95.61 |     95.61
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+Feats      |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |     95.61 |     95.61 |     95.61 |     95.61
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |    100.00 |    100.00 |    100.00 |    100.00
+```
+
+I've also read some articles about thw japanees morphology and learned that the verbs usaually are at the end
+of the sentences, so I added other features:
+
+```
+add('last word', str(int(word==context[-1])))
+add('first word', str(int(word==context[0])))
+```
+But they also didn't make the results any better.
