@@ -1,0 +1,9 @@
+#"che" matches name before
+text=/^[Cc]he$/;pos=/NOUN/&anytext&anyagree&takefirst;1;nopropagate
+#prefer reflexive to corefer to prev noun
+text=/^[Ss]i$/&func!="expl:pass";pos=/(NOUN|PROPN)/&anytext&anyagree;1;nopropagate
+#propagate entity type across apposition
+func=/appos/;child=$1&anytext&anyagree&takefirst;0;propagate
+func="appos_pat";child=$1&anytext&anyagree&anyentity&anycardinality&takefirst;0;propagate
+#default rule
+none;none;15;nopropagate
