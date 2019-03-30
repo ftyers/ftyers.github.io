@@ -23,13 +23,13 @@ We can see, that the higher the rank, the less frequent is the word under this r
 
 As I am not so good at Python yet, unfortunately, I do not know, how we can optimitize the code in _rank.py_, but would like to know about it.
 
-# 4. I decided to make the transliteration of the written Komi-Zyrian language from the test.conllu file, that I cloned from https://github.com/UniversalDependencies/UD_Komi_Zyrian-Lattice. 
+## 4. I decided to make the transliteration of the written Komi-Zyrian language from the test.conllu file, that I cloned from https://github.com/UniversalDependencies/UD_Komi_Zyrian-Lattice. 
 
 My program _transliterate.py_ makes a dictionary from the Komi-Zyrian alphabet and it's transliteration (see alpha-komi-zyrian.tsv). I copied the transliteration from the Wikipedia article about Komi-Zyrian. 
 
 My program takes two arguments: the source file (kpv_lattice-ud-test.conllu) and the output file (transliterated.conllu), and stores the transliteration in the Miscellaneous column of the output file. I have chosen the 9th column for transliteration, as it seems empty for all words. 
 
-# 5. The answers to the questions after the practical:
+## 5. The answers to the questions after the practical:
 
 - What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
 
