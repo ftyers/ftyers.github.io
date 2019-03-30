@@ -1,6 +1,14 @@
+# Regular expressions
+
+I already have some experience with regular expressions, you may see my program in _regexp/regexp-practice.py_ file. This program reads three .txt files with some content from three Wikipedia pages and changes all forms of word A into corresponding forms of word B, then saves output in other files. Words A and B are as follows:
+
+- лингвистика, шашлык
+- философия, астрология
+- Финляндия, Малайзия
+
 # matplotlib
 
-I am already familiar with regular expressions, so I have started this practical from _matplotlib_. The following code gets ranks and plots them:
+The following code gets ranks and plots them:
 ````
 import sys
 import matplotlib.pyplot as plt
