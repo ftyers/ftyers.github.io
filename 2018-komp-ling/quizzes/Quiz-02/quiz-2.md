@@ -6,4 +6,4 @@
 
 4. b, d
 
-5. [Answer](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/quizzes/Quiz-02/question-5.jpg)
+5. [Answer](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/quizzes/Quiz-02/question-5.jpg), [code](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/quizzes/Quiz-02/pluralize.py)
