@@ -45,7 +45,7 @@ def get_results(analized_info):
 
 
 if __name__ == '__main__':
-    seg = segmenter(r'Архиерейский собор РПЦ принял решение о канонизации доктора Евгения Боткина.txt')
+    seg = segmenter()
     ana = analyzer(seg)
     tag = get_results(ana)
     for i in tag:
