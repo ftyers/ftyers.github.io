@@ -7,7 +7,7 @@ I installed udpipe using bash commands described in the tutoral:
 >$ make
 >$ sudo cp udpipe /usr/local/bin/
 
-and downloaded pre-trained model (don't want to grow old while it is training):
+and downloaded pre-trained model (didn't want to grow old while it is training):
 
 > $ wget http://ilazki.thinkgeek.co.uk/ru_syntagrus-ud.udpipe
 
