@@ -4,10 +4,12 @@
 For the current task NLTK Sentence Tokenizer and my own segmentator implementation (just a simple regular expression) for English texts were used. 
 
 Both of them performed quite well:
-- NLTK segmentator identified 209 sentences 
-- regex segmentator identified 220 sentences
+- NLTK segmentator identified 209 sentences of the 204 given
+- regex segmentator identified 220 sentences of the 204 given
 
-Both segmentators made mistakes with processing abbreviations like *i.e.*. However, they did it in a different way: NLTK segmentator marked the end of a sentence after the whole *i.e.* while regex segmentator put the border either after *i.* and *e.*. 
+In both cases an oversegmentation took place: both segmentators made mistakes with processing abbreviations like *i.e.*. However, they did it in a different way:
+- NLTK segmentator marked the end of a sentence after the whole *i.e.*
+- regex segmentator put the sentense border either after *i.* and *e.*
 
 
 ```python
