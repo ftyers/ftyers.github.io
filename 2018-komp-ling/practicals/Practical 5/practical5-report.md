@@ -17,6 +17,6 @@ and the example text
 
 Then I segmented the text into sentences and tokens and tag/dependency parsed it using this pipeline:
 
-> $ cat pushkin.conllu | udpipe ru_syntagrus-ud.udpipe --tokenize --tag --parse |  > result.conllu
+> $ cat pushkin.txt | udpipe ru_syntagrus-ud.udpipe --tokenize --tag --parse |  > result.conllu
 
 [Here](https://github.com/Veranchos/ftyers.github.io/blob/master/2018-komp-ling/practicals/Practical%205/result.conllu) is what I got.
