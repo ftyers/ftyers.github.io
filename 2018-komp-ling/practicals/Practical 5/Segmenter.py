@@ -16,7 +16,7 @@ def segmenter(file):
 
         
 if __name__ == '__main__':
-    segmenter(__name__)
+    segmenter()
 
 
 # In[ ]:
