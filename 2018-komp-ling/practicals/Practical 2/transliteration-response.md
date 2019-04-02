@@ -26,4 +26,4 @@ In the case of Russian-to-Englich transliteration we could have troubles at the 
   if str.startswith(letter):
   ...
 ```
-If we are afraid to lose upper cases at the beginng of the sentence, we could add them in our mathes table or just implement simple rule I described above.
+If we are afraid to lose upper cases at the beginng of the sentence, we could add them in our matсhes table or just implement simple rule I described above.
