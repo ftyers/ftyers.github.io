@@ -1,10 +1,13 @@
 # Udpipe
 
-I installed udpipe using bash commands described in the tutoral:
+I installed udpipe using bash commands described in the tutorial:
 
 >$ git clone https://github.com/ufal/udpipe.git
+
 >$ cd udpipe/src
+
 >$ make
+
 >$ sudo cp udpipe /usr/local/bin/
 
 and downloaded pre-trained model (didn't want to grow old while it is training):
