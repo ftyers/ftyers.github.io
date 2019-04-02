@@ -91,6 +91,7 @@ for tier in root.findall('.//tier'):
 
 # scikit learn
 
+For this tutorial I wrote code in Google Colab, so there are some syntax changes.
 >!wget http://xixona.dlsi.ua.es/~fran/pronunciation_data.tsv
 ```
 import sys
