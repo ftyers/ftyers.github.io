@@ -8,6 +8,7 @@ with open(sys.argv[1], 'r', encoding='utf-8') as f:
         (f, w) = line.split('\t')
         freq.append((f, w))
 
+
 def is_palindrome(s):
     rev = ''
     if len(s) == 1:
