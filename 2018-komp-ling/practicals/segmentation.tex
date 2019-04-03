@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{\Huge \textbf{segmentation}}
+\author{Gong Enze }
+\date{November 2018}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{large}
+
+\centerline{Segmentation} 
+
+I applied Pragmatic Segmenter (PS) and Punkt to the same 2000-word text extracted from a Wiki dump. The original text comes with many paragraphs. To avoid the intrinsic line-changing commands at the end of the paragraphs messing up the code in Linux terminal, I turned the text into one single paragraph by copying the text into the search bar in Chrome.  Both methods are tested on the same computer in Debian Stretch. 
+
+I tested Punkt in Pycharm, which allows me to use the time module to measure the execution time. Punkt method is easy to setup, easy to use. As long as the nltk and Punkt interpreters are properly installed, what is left to be dome is to simply name the text and run it with an imported function. The execution time of segmenting the text of 2000 words is 0.008 second. 
+
+PS is executed with command lines in the terminal. Cloning the git code in the terminal is at the same level of complicacy as installing NLTK and Punkt, and running the program can be made easier with sed command. The running time is 0.012 second, which is longer than that of Punkt. 
+
+Accuracy wise, PS is significantly better than Punkt. PS shows that there are more than 300 sentences in the text. After my brief inspection, they are all correct, expect errors due to decimal points. However, Punkt tells me that there are only 6 sentences. The problem is that the original text are composed of paragraphs, the many of which are just one sentence. When the text is turned into one paragraph, the no extra space is added between the last sentence of one paragraph and the first sentence of the next. When two sentences are connected with just one dot, Punkt cannot recognize them as two separate sentences.
+
+\end{large}
+
+
+
+\end{document}

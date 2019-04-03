@@ -1,0 +1,15 @@
+This is my realization of the MaxMatch algorithm.
+
+To run this program, please put the python file, test.txt and dict.txt in the same folder.
+Then enter $python3 the_address/maxmatch.py$.
+
+The dict.txt is the 2nd column of the train.conllu file. The test.txt is the 2nd column of the test.conllu file.
+Both of them will be further processed by the python program.
+
+The Hypothesis.txt file included is the output of tokenized sentences, and the ref.txt is the tokenization extracted from the test.conllu file.
+
+WER gives a score of 0.91%, which indicates a high accuracy of the maxmatch algorithm.
+
+The errors are mostly names of places, people, academical disciplines, etc.. When one phrase is composed of 2 phrases and one of the 2 is not in the dictionary, the tokenization of the big phrase is also considered an error.
+
+ 
