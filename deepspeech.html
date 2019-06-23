@@ -3,6 +3,8 @@
 </head>
 <body>
 
+Last updated: <tt>dg. de juny 23 05:43:28 BST 2019</tt>
+
 <h3>Download DeepSpeech code:</h3>
 
 <pre>
@@ -12,6 +14,8 @@ $ apt-get install git-lfs
 $ git lfs install
 $ git lfs clone --depth 1 https://github.com/mozilla/DeepSpeech.git
 </pre>
+
+<b>NOTE:</b> You only need <tt>git lfs</tt> if you are planning to use the bundled language models
 
 <h3>Setup a virtualenv:</h3>
 
@@ -34,16 +38,17 @@ $ cd ..
 <h3>Install a tonne of requirements for training</h3>
 <pre>
 $ pip3 install -r requirements.txt
+$ pip3 install $(python3 util/taskcluster.py --decoder)
 </pre>
 
 Do you have a GPU ? If so run:
 
 <pre>
 pip3 uninstall tensorflow
-pip3 install 'tensorflow-gpu==1.6.0'
+pip3 install 'tensorflow-gpu==1.13.1'
 </pre>
 
-You'll also need to install version 9.0 of CUDA and version 7.1 of CUDNN... note that this isn't free software
+You'll also need to install version 10.0 of CUDA and version 7.5 of CUDNN... note that this isn't free software
 so you'll probably have to fill in some NVidia spam form.
 
 <h3>Install kenlm:</h3>
@@ -92,6 +97,54 @@ $ mkdir models
 <h3> Train the model </h3>
 <pre>
 $ time python3 DeepSpeech.py --train_files data/chv_digits/chv_digits.train.csv --dev_files data/chv_digits/chv_digits.dev.csv --test_files data/chv_digits/chv_digits.test.csv --alphabet_config_path data/chv_digits/alphabet.txt --lm_binary_path data/chv_digits/lm.binary --lm_trie_path data/chv_digits/trie --validation_step 1 --test_batch_size 5 --dev_batch_size 15 --early_stop True --export_dir models/digits --epoch 100 --report_count 100 --n_hidden 494 --learning_rate 0.00095  --dropout_rate 0.22 --max_to_keep 2 --log_level 0 --lm_weight 5 --word_count_weight 1.0 --valid_word_count_weight 1.0 
+</pre>
+
+<h3> Training with Common Voice </h3>
+
+You can go <a href="https://voice.mozilla.org/en/datasets">here</a> to download data from Common Voice, let's click on Chuvash.
+
+You will have to fill out your email address and click on two tickboxes. You can use whatever email address, it doesn't have to
+be real. 
+
+You can maybe even just click on <a href="https://voice-prod-bundler-ee1969a6ce8178826482b88e843c335139bd3fb4.s3.amazonaws.com/cv-corpus-2/cv.tar.gz">this link</a>.
+
+After you download the <tt>cv.tar.gz</tt> file, make a new directory in your <tt>data/</tt> directory and uncompress the data:
+
+<pre>
+$ mkdir data/chv
+$ mv cv.tar.gz data/chv
+$ tar -xzf cv.tar.gz
+$ cat *.tsv | cut -f3 | tail +2 | sed 's/./ &amp; /g' | sed 's/  */ /g' | tr ' ' '\n' | uconv -x lower | sort -ur &gt; alphabet.txt
+
+</pre>
+
+<b>WARNING:</b> Make sure that the space, <tt>' '</tt> symbol is the last symbol in the file not the first.
+
+You then need to run the <tt>bin/import_cv2.py</tt> import script:
+
+<pre>
+$ cd ../../
+$ bin/import_cv2.py --filter_alphabet data/chv/alphabet.txt /home/ftyers/source/DeepSpeech/data/chv/
+
+</pre>
+
+<b>WARNING:</b> The path should be an absolute path.
+
+Train the LM:
+
+<pre>
+$ ../../kenlm/build/bin/lmplz --discount_fallback -o 3 --arpa &lt; lm/chv.txt lm/chv.arpa
+$ ../../kenlm/build/bin/build_binary -T -s lm/chv.arpa lm/lm.binary
+$ ../../native_client/generate_trie alphabet.txt lm/lm.binary lm/trie
+</pre>
+
+The file <tt>lm/chv.txt</tt> is the plain text corpus.
+
+Then you can train the model:
+
+<pre>
+$ python3 DeepSpeech.py --train_files data/chv/clips/train.csv --dev_files data/chv/clips/dev.csv --test_files data/chv/clips/test.csv --alphabet_config_path data/chv/alphabet.txt --lm_binary_path data/chv/lm/lm.binary --lm_trie_path data/chv/lm/trie
+
 </pre>
 
 <h3> Troubleshooting </h3>
