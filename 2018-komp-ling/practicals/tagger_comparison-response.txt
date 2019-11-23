@@ -1,0 +1,42 @@
+1)	Metrics    | Precision |    Recall |  F1 Score | AligndAcc
+2)	-----------+-----------+-----------+-----------+-----------
+3)	HunPos     |     93.29 |     93.18 |     93.23 |     93.45
+4)	UDPipe     |     94.64 |     94.64 |     94.64 |     94.64
+5)	NLTK Trig. |     85.75 |     86.25 |     86.00 |     86.92
+6)	NLTK Brill |     85.77 |     86.27 |     86.02 |     86.94
+The tagger work differently. UDPipe seems to bring the best results looking at the table, giving also a quite straightforward compatibility with the Conllu file type (no reworking needed). The file is "fi_tdt-ud-test.conllu" 
+HunPos is close behind. To make it work, first we need to clean the conllu file and extract test sentences through a couple of regex. After feeding it to HunPos, the output is a word per line, and its analysis separated by a tabulation character. An empty line indicates the end of the sentence. Through a small python script this output file was reworked to make it look like a conllu file and make possible a comparison through the conll17_ud_eval script. The results are in "hunpos.txt"
+NLTK was trained from scratch using a Sequential Trigram Tagger, that then was improved through a Brill tagger using a simple set or rule. The basics on how to program it were taken from Python 3 Text Processing with NLTK 3 Cookbook (Jacob Perkins, 2014). Here I attach the full program in python, that reworks the Conllu file to make it acceptable as an NLTK input, as. The highly probabilistic basic nature of the tagger does not work well with languages with an high number of OOV words as agglutinative. It is possible to see how the tagger improves in every layer. TriNoDef shows results of the trigram tagger without the default fallback tagger, TriYesDef, adds a fallback tagger to the trigram, Brill shows the results after adding the Brill layer. The changes between the two files are here below to see the improvements given from the brill tagger.
+diff Brill.txt TriYesDef.txt
+4645c4645
+< 13    vaan    _       ADV     _       _       12      _       _       _
+---
+> 13    vaan    _       CCONJ   _       _       12      _       _       _
+8521c8521
+< 2     o       _       ADV     _       _       1       _       _       _
+---
+> 2     o       _       AUX     _       _       1       _       _       _
+8777c8777
+< 14    kuin    _       ADV     _       _       13      _       _       _
+---
+> 14    kuin    _       SCONJ   _       _       13      _       _       _
+9555c9555
+< 1     Onko    _       VERB    _       _       0       _       _       _
+---
+> 1     Onko    _       AUX     _       _       0       _       _       _
+10364c10364
+< 1     On      _       VERB    _       _       0       _       _       _
+---
+> 1     On      _       AUX     _       _       0       _       _       _
+11248c11248
+< 2     on      _       VERB    _       _       1       _       _       _
+---
+> 2     on      _       AUX     _       _       1       _       _       _
+13268c13268
+< 14    mukaan  _       ADV     _       _       13      _       _       _
+---
+> 14    mukaan  _       ADP     _       _       13      _       _       _
+19544c19544
+< 4     muiden  _       ADV     _       _       3       _       _       _
+---
+> 4     muiden  _       PRON    _       _       3       _       _       _

@@ -1,0 +1,14 @@
+I downloaded the Italian UDPipe model (italian-isdt-ud-2.2-conll18-180430), and parsed an article from Wired.it (https://www.wired.it/economia/start-up/2019/03/26/plastica-bicchieri-pcup/). Every paragraph was separated by a newline.
+The model has been loaded and tested on the article with success. It is possible to find the result in paragraph.conllu, the command was the following one: "cat testarticle.txt | udpipe italian-isdt-ud-2.2-conll18-180430.udpipe --tokenize --tag --parse > paragraph.conllu".
+To run xrenner, did not checkout the develop git as it was causing a 7/11 error in testing mode.
+Tested the english mode with the example file and worked generally good, a couple of examples of disambiguation problems were the UK flag assimilated to the new New Zealand  flag and having the word "Flag" in Consitution Project corefered with current flag.
+The english model did not corefered anything in italian language.
+Main change rule to use italian in the configuration file (config.ini): opening marks for speech “, added regexes for italian definite and indefinite articles, changed number separator.
+The rules added that actually worked were:
+#"che" matches name before
+text=/^[Cc]he$/;pos=/NOUN/&anytext&anyagree&takefirst;1;nopropagate
+#prefer reflexive to corefer to previous noun
+text=/^[Ss]i$/&func!="expl:pass";pos=/(NOUN|PROPN)/&anytext&anyagree;1;nopropagate
+added also propagate entity type across apposition, that made possible to tag "anche a i cosiddetti prodotti monouso  : piatti  , bicchieri  , stoviglie e altri accessori" as corefered.
+Relative and reflexive pronouns are marked sufficiently well: 9/13 are correct. The first occurence of "che" is not recognized, as absence of punctuation lets UDPipe think that startup is a conj of head "usa", while "usa e getta" should be treated as a collocation and Pcup be the head of next sentence.
+the result file is udx.html and in the folder "udx" is possible to find the language model used.

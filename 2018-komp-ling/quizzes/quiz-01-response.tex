@@ -1,0 +1,24 @@
+\documentclass{report}
+\title{Lorenzo Tosi, Test 1} 
+\begin{document}
+\maketitle
+\paragraph{Which problems does maxmatch suffer from?}
+requires comprehensive dictionary
+is computationally expensive
+constructs non-grammatical sentences
+\paragraph{Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2"}
+\begin{verbatim}
+sed "s=\(.*[A-Za-z]\)/\([A-Za-z].*\)=\1 / \2=g"
+\end{verbatim} 
+\paragraph{What are some downsides of machine learning techniques compared to rule-based?}
+Need for big (labelled) training data sets for some algorithms (like Riley statistical classification), data is biased depending on the training set we decide to use (altought also rule-based systems are generally more domain-biased and brittle).
+\paragraph{what are problems for sentence segmentation? provide one example in English or Russian for each that applies.}
+\subparagraph{a) ambiguous abbrevations with punctuation} 
+Abbreviations can appear in different position: if we tell our segmenter not to segment all dots preceded by a letter (or an abbreviation in the dictionary), then the program will not consider the dot, taken from abbreviations in final position (e.g. Inc.), to be a sentence boundary.
+\subparagraph{b) sentences containing symbols '!' and '?'}
+Especially in reported speech symbols can be added as an indicator of emphasis or can be really close to each other, segmenting more sentences than needed (e.g. ‘what’re you? Crazy?’).
+\subparagraph{c) sentences lacking separating punctuation}
+Rule based segmenters cannot address properly the issue of lack of separating punctuation and analysis on words marking boundaries and statistical analysis (like POS position analysis) is needed to extract effective patterns. (e.g. chat speech in corpus).
+\subparagraph{d) sentences not separated by whitespace}
+see above answer.
+\end{document}
