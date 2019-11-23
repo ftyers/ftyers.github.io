@@ -1,0 +1,72 @@
+Multichar_Symbols
+
+%>                   ! Frontera de morfema
+%<n%>                ! Nombre
+%<gen%>              ! Genetivo
+%<loc%>              ! Locativo
+%<subs%>	     ! Substantivante
+%<num%>		     ! Número
+%-
+
+
+!!!!!!!ARCHIPHONEMES!!!!!!!!
+%{m%}              ! Archiphoneme for  m in case
+
+LEXICON Root
+
+Nouns ;
+DIGITLEX ;
+
+LEXICON N
+
+%<n%>: CASE ;
+%<n%>: SUBS ;
+
+LEXICON CASE
+
+%+gui%<gen%>:%>gui #; ! "de"
+%+pe%<loc%>:%>%{m%}e #; ! "a, en"
+# ;
+
+LEXICON SUBS
+
++kue%<subs%>:%>kue # ;
+
+LEXICON Nouns
+
+ava:ava N ; ! "raza, gente"
+óga:óga N ; ! "casa"
+irũ:irũ N ; ! "amigo"
+apyka:apyka N ; ! "silla"
+tembiasa:tembiasa N ; ! "experiencia"
+
+
+LEXICON NUM-DIGIT
+
+%<num%>:%- CASE ;
+
+
+LEXICON LOOP
+
+LAST-DIGIT ; 
+DIGITLEX ; 
+
+
+LEXICON LAST-DIGIT
+
+1:1%{d%} NUM-DIGIT ; !"peteĩ"
+3:3 NUM-DIGIT ; !"mbohapy"
+
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ;
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;

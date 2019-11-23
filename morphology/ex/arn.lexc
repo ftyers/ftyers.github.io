@@ -1,0 +1,32 @@
+Multichar_Symbols
+
+%<n%>                   ! Nombre
+%<cmp%>                 ! Composición
+
+
+%>                      ! Frontera de morfema
+%+                   
+%#              
+
+
+LEXICON Root 
+
+Nouns  ; 
+
+LEXICON Cmp
+
+%<cmp%>%+:%# Nouns ;
+
+
+LEXICON N
+ 
+%<n%>:%> Cmp ;
+%<n%>: # ;
+
+LEXICON Nouns
+
+mapu:mapu N ; !"tierra"
+che:che N ; ! "gente"
+mamüll:mamüll N ; ! "madera"
+wangku:wangku N ; ! "silla"
+

@@ -1,0 +1,23 @@
+Alphabet
+
+A B Ã C D E Ẽ G G̃ H I Ĩ J K L M N Ñ O Õ P R S T U Ũ V W X Y Z Ỹ Á É Í Ó Ú Ý   F Q
+a b ã c d e ẽ g g̃ h i ĩ j k l m n ñ o õ p r s t u ũ v w x y z ỹ á é í ó ú ý ʼ f q
+
+%{m%}:p
+%{m%}:m
+%{d%}:0
+;
+
+Sets
+
+Nas = m n ñ ã ẽ ĩ õ ỹ ũ
+      M N Ñ Ã Ẽ Ĩ Õ Ỹ Ũ ;
+
+Rules 
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+"Surface [m] in loc affix after nasals"
+%{m%}:m <=> Nas: %>: _ ;
+	    Nas: %>: %{d%}: _;
