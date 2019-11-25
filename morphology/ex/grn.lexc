@@ -10,11 +10,14 @@ Multichar_Symbols
 
 
 !!!!!!!ARCHIPHONEMES!!!!!!!!
-%{m%}              ! Archiphoneme for  m in case
+%{m%}              ! Archiphoneme for m in case
+%{d%}		   ! Archiphoneme for nasal in digits
+%{s%}		   ! Archiphoneme to cancel nasalization
 
 LEXICON Root
 
 Nouns ;
+Nouns-Spa;
 DIGITLEX ;
 
 LEXICON N
@@ -31,6 +34,13 @@ LEXICON CASE
 LEXICON SUBS
 
 +kue%<subs%>:%>kue # ;
+
+LEXICON Nouns-Spa
+
+asociación:asociación%{s%} N ;
+declaración:declaración%{s%} N ;
+araña:araña N ;
+
 
 LEXICON Nouns
 
