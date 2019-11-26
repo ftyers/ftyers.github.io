@@ -8,6 +8,10 @@ a b ã c d e ẽ g g̃ h i ĩ j k l m n ñ o õ p r s t u ũ v w x y z ỹ á é
 %{m%}:m
 %{d%}:0
 %{s%}:0
+%{K%}:k
+%{K%}:g
+%{N%}:n
+%{N%}:0
 %-
 %>:%>
 
@@ -51,6 +55,12 @@ i:í <=>  _ %>: %{m%}: e:;
 	    %{d%}: %-: %>: _;
 	    except
 	    %{s%}: %>: _ ;
+
+"Surface [n] in plural nouns" 
+%{N%}:n <=> Nas: %>: _ ;
+
+"Surface [g] in pl nouns after nasals" 
+%{K%}:g <=> Nas: %>: %{N%}: _ ;
 
 
 "Always remove {d}"
