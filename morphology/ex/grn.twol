@@ -14,10 +14,12 @@ a b ã c d e ẽ g g̃ h i ĩ j k l m n ñ o õ p r s t u ũ v w x y z ỹ á é
 %{N%}:0
 %-
 %>:%>
-
 ;
 
 Sets
+
+Cns = B C D F G H J K L M N P Q R S T V W X Z G̃ Ñ 
+      b c d f g h j k l m n p q r s t v w x z g̃ ñ ;
 
 Nas = m n ñ ã ẽ ĩ õ ỹ ũ
       M N Ñ Ã Ẽ Ĩ Õ Ỹ Ũ ;
@@ -27,6 +29,8 @@ VowsTon = Á É Í Ó Ú Ý
 
 VowsAton = A E I O U Y 
            a e i o u y ;
+
+ArchiCns = %{N%} %{K%} ;
 
 
 Rules
@@ -62,6 +66,9 @@ i:í <=>  _ %>: %{m%}: e:;
 "Surface [g] in pl nouns after nasals" 
 %{K%}:g <=> Nas: %>: %{N%}: _ ;
 
+"Change tonal vowel to atonal if tonal in affix"
+Vt:Va <=>  _ [ ? - VowsTon]+  VowsTon: ;
+	  where Vt in ( á é ó ú ý ) Va in ( a e o u y ) matched;
 
 "Always remove {d}"
 
