@@ -18,7 +18,27 @@ Sets
 Nas = m n ñ ã ẽ ĩ õ ỹ ũ
       M N Ñ Ã Ẽ Ĩ Õ Ỹ Ũ ;
 
-Rules 
+VowsTon = Á É Í Ó Ú Ý
+          á é í ó ú ý ;
+
+VowsAton = A E I O U Y 
+           a e i o u y ;
+
+
+Rules
+
+"Change vowel to tonal before atonal suffix"
+
+Va:Vt <=> _ %>: [%{m%}: e: | i: c: h: a:] ;
+	  where Va in ( a e o u y )
+                Vt in ( á é ó ú ý ) matched ;
+
+"Delete ending -[i] before comparative -icha" 
+Vx:0 <=> _ %>: i: c: h: a: ;
+            where Vx in ( ĩ i í ) ;
+ 
+"Change i to tonal before atonal suffixes"
+i:í <=>  _ %>: %{m%}: e:;
 
 "Remove morpheme boundary"
 %>:0 <=> _ ;

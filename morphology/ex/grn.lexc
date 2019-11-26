@@ -6,6 +6,7 @@ Multichar_Symbols
 %<loc%>              ! Locativo
 %<subs%>	     ! Substantivante
 %<num%>		     ! Número
+%<comp%>	     ! Comparativo
 %-
 
 
@@ -24,12 +25,17 @@ LEXICON N
 
 %<n%>: CASE ;
 %<n%>: SUBS ;
+%<n%>: COMP ;
 
 LEXICON CASE
 
 %+gui%<gen%>:%>gui #; ! "de"
 %+pe%<loc%>:%>%{m%}e #; ! "a, en"
 # ;
+
+LEXICON COMP
+
+%+icha%<comp%>:%>icha #; 
 
 LEXICON SUBS
 
@@ -49,7 +55,7 @@ ava:ava N ; ! "raza, gente"
 irũ:irũ N ; ! "amigo"
 apyka:apyka N ; ! "silla"
 tembiasa:tembiasa N ; ! "experiencia"
-
+akãvai:akãvai N ; ! "locura"
 
 LEXICON NUM-DIGIT
 
