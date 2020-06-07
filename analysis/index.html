@@ -15,7 +15,7 @@ $.ajax({
     url: "https://beta.apertium.org/apy/analyse"
 ,   type: 'POST'
 ,   contentType: 'application/json'
-,   data: {'lang':'quc','modes':'morph','q':textarea_value}
+,   data: {'lang':'quc','q':textarea_value}
 ,   success: function(data){
 $("#output").text(JSON.stringify(output))
   },
