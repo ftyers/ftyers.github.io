@@ -15,8 +15,8 @@ Zepto(function($){
           url: 'https://beta.apertium.org/apy/analyse',
           data: {lang: 'quc', q: textarea_value},
           success: function(data){
-         console.log(output);
-        $("#output").text(JSON.stringify(output))
+         console.log(data);
+        $("#output").text(JSON.stringify(data))
           },
         });
         
