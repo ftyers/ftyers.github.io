@@ -5,13 +5,13 @@
 <script type="text/javascript" src="zepto.min.js"></script>
 <script>
 
-$t = $("intext").val();
+t = $("intext").val();
 
 $.ajax({
     url: "https://beta.apertium.org/apy/analyse"
 ,   type: 'POST'
 ,   contentType: 'application/json'
-,   data: {'lang':'quc','modes':'morph','q':$t}
+,   data: {'lang':'quc','modes':'morph','q':t}
 ,   success: function(data){
     this.append(data.project.html)
   },
