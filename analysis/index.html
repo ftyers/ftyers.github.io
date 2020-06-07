@@ -11,8 +11,6 @@ console.log(textarea_value)
 $('#button').click(function() {
 var textarea_value = $("#intext").val();
 
-});
-
 $.ajax({
     url: "https://beta.apertium.org/apy/analyse"
 ,   type: 'POST'
@@ -21,6 +19,8 @@ $.ajax({
 ,   success: function(data){
 $("#output").text(JSON.stringify(output))
   },
+});
+
 });
 
 Zepto(function($){
