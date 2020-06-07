@@ -18,7 +18,7 @@ $.ajax({
 ,   contentType: 'application/json'
 ,   data: {'lang':'quc','modes':'morph','q':textarea_value}
 ,   success: function(data){
-    this.append(data.project.html)
+$("output").text(output)
   },
 });
 
@@ -34,6 +34,7 @@ Zepto(function($){
 <textarea id="intext"></textarea>
 <input type="button" id="button" value="Analizar"/>
 </form>
+<div id="output"/>
 </body>
 
 </html>
