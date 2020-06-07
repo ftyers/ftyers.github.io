@@ -1,17 +1,19 @@
 <html>
 <head>
-<title>Análsis morfológico para las lenguas mayas</title>
+<title>Análisis morfológico para las lenguas mayas</title>
 <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
 <script type="text/javascript" src="zepto.min.js"></script>
 <script>
 
 $('#button').click(function() {
 var textarea_value = $("#intext").val();
+console.log(textarea_value)
 
     $.ajax({
       url: 'https://beta.apertium.org/apy/analyse',
       data: {lang: 'quc', q: textarea_value},
       success: function(data){
+     console.log(output);
     $("#output").text(JSON.stringify(output))
       },
     });
@@ -19,7 +21,6 @@ var textarea_value = $("#intext").val();
 });
 
 </script>
-<!--lang=qu&modes=morph&q=chikop-->
 </head>
 
 <body>
