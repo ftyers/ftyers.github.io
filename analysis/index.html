@@ -5,27 +5,19 @@
 <script type="text/javascript" src="zepto.min.js"></script>
 <script>
 
-var textarea_value = $("#intext").val();
-console.log(textarea_value)
-
 $('#button').click(function() {
 var textarea_value = $("#intext").val();
 
-$.ajax({
-    url: "https://beta.apertium.org/apy/analyse"
-,   type: 'POST'
-,   contentType: 'application/json'
-,   data: {'lang':'quc','q':textarea_value}
-,   success: function(data){
-$("#output").text(JSON.stringify(output))
-  },
+    $.ajax({
+      url: 'https://beta.apertium.org/apy/analyse',
+      data: {lang: 'quc', q: textarea_value},
+      success: function(data){
+    $("#output").text(JSON.stringify(output))
+      },
+    });
+    
 });
 
-});
-
-Zepto(function($){
-
-})
 </script>
 <!--lang=qu&modes=morph&q=chikop-->
 </head>
