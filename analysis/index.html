@@ -3,6 +3,21 @@
 <title>Análsis morfológico para las lenguas mayas</title>
 <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
 <script type="text/javascript" src="zepto.min.js"></script>
+<script>
+$.ajax({
+    url: "https://beta.apertium.org/apy/analyse"
+,   type: 'POST'
+,   contentType: 'application/json'
+,   data: JSON.stringify({'lang':'quc','modes':'morph','q':'chikop'}) //stringify is important
+,   success: function(data){
+    // Supposing this JSON payload was received:
+    //   {"project": {"id": 42, "html": "<div>..." }}
+    // append the HTML to context object.
+    this.append(data.project.html)
+  },
+});
+</script>
+<!--lang=qu&modes=morph&q=chikop-->
 </head>
 
 <body>
