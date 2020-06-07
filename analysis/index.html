@@ -4,15 +4,15 @@
 <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
 <script type="text/javascript" src="zepto.min.js"></script>
 <script>
+
+$t = $("intext").val();
+
 $.ajax({
     url: "https://beta.apertium.org/apy/analyse"
 ,   type: 'POST'
 ,   contentType: 'application/json'
-,   data: JSON.stringify({'lang':'quc','modes':'morph','q':'chikop'}) //stringify is important
+,   data: {'lang':'quc','modes':'morph','q':$t}
 ,   success: function(data){
-    // Supposing this JSON payload was received:
-    //   {"project": {"id": 42, "html": "<div>..." }}
-    // append the HTML to context object.
     this.append(data.project.html)
   },
 });
@@ -22,8 +22,8 @@ $.ajax({
 
 <body>
 <form>
-<textarea></textarea>
-<input type="button">analizar</input>
+<textarea id="intext"></textarea>
+<input type="button" value="Analizar"/>
 </form>
 </body>
 
