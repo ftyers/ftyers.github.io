@@ -94,7 +94,11 @@ Zepto(function($){
     }
 
     function formatReadings(s) {
-         o = s.replace(/(<[^>]+>)/gi, '<span class="tag">$1</span>');
+	 o = s.replace(/</gi,'[');
+	 o = o.replace(/>/gi,']');
+         o = o.replace(/(\[[^\]]+\])/gi, '<span class="tag">$1</span>');
+	 o = o.replace(/\[/gi,'&lt;');
+	 o = o.replace(/\]/gi,'&gt;');
          o = o.replace(/^[^\/]+\//, "");
 //         o = o.replace(/\//gi, "<br/>");
          return o;
