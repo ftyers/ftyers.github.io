@@ -1,25 +1,60 @@
 <html>
 <head>
 <title>Análisis morfológico para las lenguas mayas</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
 <script type="text/javascript" src="zepto.min.js"></script>
+<!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
 <script>
 
 Zepto(function($){
+
+//$('#intext').keydown(function(e){
+//    if(e.keyCode == 46) {
+//	     $("#output1").text("");
+//	     $("#output2").text("");
+//    }
+//});
+
+    function formatReadings(s) {
+         o = s.replace(/</gi, "&lt;");
+         o = o.replace(/>/gi, "&gt;");
+         o = o.replace(/^[^\/]+\//, "");
+         return o;
+    }
     
-    $('#button').click(function() {
-    var textarea_value = $("#intext").val();
-    console.log(textarea_value)
-    
-        $.ajax({
-          url: 'https://beta.apertium.org/apy/analyse',
-          data: {lang: 'quc', q: textarea_value},
-          success: function(data){
-         console.log(data);
-        $("#output").text(JSON.stringify(data))
-          },
-        });
-        
+    $('#intext').keypress(function(event) {
+	    var textarea_value = $("#intext").val();
+	
+	    if(textarea_value == ""){ 
+		     $("#output_readings").text("");
+		     $("#output_forms").text("");
+	    }
+	    
+	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
+		$("#output_forms").text("");
+		$("#output_readings").text("");
+	        $.ajax({
+	          url: 'https://beta.apertium.org/apy/analyse',
+	          data: {lang: 'quc', q: textarea_value},
+	          success: function(data){
+		          data.forEach(function(i) {
+		             var pack = JSON.stringify(i[0]).length - JSON.stringify(i[1]).length ;
+		
+		             var surface = "<span>" + i[1] + "</span>";
+		             console.log(surface);
+			     $("#output_forms").append(surface);
+		             console.log(i, this);
+		
+		             var readings = "<span>" + formatReadings(i[0]) + "</span>";
+		             console.log(readings);
+		             console.log("str:" + readings);
+			     $("#output_readings").append(readings);
+		
+		          })
+	          },
+	        });
+	    }
     });
     
 })
@@ -28,11 +63,14 @@ Zepto(function($){
 </head>
 
 <body>
+Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 <form>
 <textarea id="intext"></textarea>
-<input type="button" id="button" value="Analizar"/>
+<!--<input type="button" id="clear" value="Borrar"/>-->
 </form>
-<div id="output"/>
+Input: <div id="output_forms"/>
+<br/>
+Output: <div id="output_readings"/>
 </body>
 
 </html>
