@@ -20,6 +20,7 @@ Zepto(function($){
          o = s.replace(/</gi, "&lt;");
          o = o.replace(/>/gi, "&gt;");
          o = o.replace(/^[^\/]+\//, "");
+//         o = o.replace(/\//gi, "<br/>");
          return o;
     }
     
@@ -27,24 +28,23 @@ Zepto(function($){
 	    var textarea_value = $("#intext").val();
 
 	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
-		$("#output_forms").text(" ");
 		$("#output_readings").text(" ");
+		$("#output_forms").text(" ");
 	        $.ajax({
 	          url: 'https://beta.apertium.org/apy/analyse',
 	          data: {lang: 'quc', q: textarea_value},
 	          success: function(data){
 		          data.forEach(function(i) {
 		             var pack = JSON.stringify(i[0]).length - JSON.stringify(i[1]).length ;
-		
-		             var surface = "<span>" + i[1] + "</span>";
+		             var surface = "<span>" + i[1] + "</span><br/> ";
 		             console.log(surface);
 			     $("#output_forms").append(surface);
 		             console.log(i, this);
 		
-		             var readings = "<span>" + formatReadings(i[0]) + "</span>";
+		             var readings = formatReadings(i[0]);
 		             console.log(readings);
 		             console.log("str:" + readings);
-			     $("#output_readings").append("a");
+			     $("#output_readings").append("<span>" + readings + "</span><br/>");
 		
 		          })
 	          },
@@ -60,14 +60,12 @@ Zepto(function($){
 <body>
 Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 <form>
-<textarea id="intext"></textarea>
+<textarea id="intext" cols="60"></textarea>
 <!--<input type="button" id="clear" value="Borrar"/>-->
 </form>
-<div>
-Input: <span id="output_forms"/>
-<br/>
-Output: <span id="output_readings"/>
-</div>
+<table>
+<tr><td><span id="output_forms"/></td><td><span id="output_readings"/></td></tr>
+</table>
 </body>
 
 </html>
