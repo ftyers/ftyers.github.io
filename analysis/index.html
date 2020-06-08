@@ -25,15 +25,10 @@ Zepto(function($){
     
     $('#intext').keypress(function(event) {
 	    var textarea_value = $("#intext").val();
-	
-	    if(textarea_value == ""){ 
-		     $("#output_readings").text("");
-		     $("#output_forms").text("");
-	    }
-	    
+
 	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
-		$("#output_forms").text("");
-		$("#output_readings").text("");
+		$("#output_forms").text(" ");
+		$("#output_readings").text(" ");
 	        $.ajax({
 	          url: 'https://beta.apertium.org/apy/analyse',
 	          data: {lang: 'quc', q: textarea_value},
@@ -49,7 +44,7 @@ Zepto(function($){
 		             var readings = "<span>" + formatReadings(i[0]) + "</span>";
 		             console.log(readings);
 		             console.log("str:" + readings);
-			     $("#output_readings").append(readings);
+			     $("#output_readings").append("a");
 		
 		          })
 	          },
@@ -68,9 +63,11 @@ Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 <textarea id="intext"></textarea>
 <!--<input type="button" id="clear" value="Borrar"/>-->
 </form>
-Input: <div id="output_forms"/>
+<div>
+Input: <span id="output_forms"/>
 <br/>
-Output: <div id="output_readings"/>
+Output: <span id="output_readings"/>
+</div>
 </body>
 
 </html>
