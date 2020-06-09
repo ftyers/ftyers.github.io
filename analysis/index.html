@@ -101,8 +101,8 @@ Zepto(function($){
                 o += '<span class="tag">&lt;';
              } else if(s[i] == '>') {
                 o += '&gt;</span>';
-//             } else if(s[i] == '/' && !first) {
-//                o += '<br/>';
+             } else if(s[i] == '/' && !first) {
+                o += '<br/>';
              } else if(!first) {
                 o += s[i];
              }
@@ -119,20 +119,19 @@ Zepto(function($){
 	    var textarea_value = $("#intext").val();
 
 	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
-		$("#output_readings").text(" ");
-		$("#output_forms").text(" ");
-		$("#output_glosses").text(" ");
+		$("#output").empty();
 	        $.ajax({
 	          url: 'https://beta.apertium.org/apy/analyse',
 	          data: {lang: 'quc', q: textarea_value},
 	          success: function(data){
 		          data.forEach(function(i) {
 		             var pack = JSON.stringify(i[0]).length - JSON.stringify(i[1]).length ;
-//		             var surface = "<td>" + i[1] + "</td> ";
-                            var surface = "<span>" + i[1] + "</span><br/> ";
+			     var row = "<tr>";
+		             row += "<td>" + i[1] + "</td> ";
+ //                           var surface = "<span>" + i[1] + "</span><br/> ";
 
-		             console.log(surface);
-			     $("#output_forms").append(surface);
+		           //  console.log(surface);
+			  //   $("#output_forms").append(surface);
 		             console.log(i, this);
 		
 		             var readings = formatReadings(i[0]);
@@ -141,7 +140,10 @@ Zepto(function($){
 		             console.log(glosses);
 		             console.log("str:" + readings);
 //			     $("#output_readings").append("<td>" + readings + "</td>");
-                            $("#output_readings").append("<span>" + readings + "</span><br/>");
+                                row += "<td>" + readings + "</td>";
+				row += "</tr>";
+				$("#output").append(row);
+			
 
 
 //			     $("#output_glosses").append('<span class="gloss">' + glosses + "</span><br/>");
@@ -171,8 +173,8 @@ Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 <tr><span id="output_readings"/></tr>
 </table>
 </div>-->
-<table>
-<tr><td><span id="output_forms"/></td><td><span id="output_glosses"/></td><td><span id="output_readings"/></td></tr>
+<table id="output">
+<!--<span id="output_forms"/></td><td><span id="output_glosses"/></td><td><span id="output_readings"/></td></tr>-->
 </table>
 
 </body>
