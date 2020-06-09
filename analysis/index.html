@@ -94,13 +94,24 @@ Zepto(function($){
     }
 
     function formatReadings(s) {
-	 o = s.replace(/</gi,'[');
-	 o = o.replace(/>/gi,']');
-         o = o.replace(/(\[[^\]]+\])/gi, '<span class="tag">$1</span>');
-	 o = o.replace(/\[/gi,'&lt;');
-	 o = o.replace(/\]/gi,'&gt;');
-         o = o.replace(/^[^\/]+\//, "");
-//         o = o.replace(/\//gi, "<br/>");
+         o = '';
+         var first = true;
+         for(var i = 0; i < s.length; i++) {
+             if(s[i] == '<') {
+                o += '<span class="tag">&lt;';
+             } else if(s[i] == '>') {
+                o += '&gt;</span>';
+//             } else if(s[i] == '/' && !first) {
+//                o += '<br/>';
+             } else if(!first) {
+                o += s[i];
+             }
+             if(first == true && s[i] == '/') {
+                  first = false;
+             } 
+
+         }
+
          return o;
     }
     
@@ -117,7 +128,9 @@ Zepto(function($){
 	          success: function(data){
 		          data.forEach(function(i) {
 		             var pack = JSON.stringify(i[0]).length - JSON.stringify(i[1]).length ;
-		             var surface = "<span>" + i[1] + "</span><br/> ";
+//		             var surface = "<td>" + i[1] + "</td> ";
+                            var surface = "<span>" + i[1] + "</span><br/> ";
+
 		             console.log(surface);
 			     $("#output_forms").append(surface);
 		             console.log(i, this);
@@ -127,7 +140,9 @@ Zepto(function($){
 		             var glosses = readingToGloss(i[0]);
 		             console.log(glosses);
 		             console.log("str:" + readings);
-			     $("#output_readings").append("<span>" + readings + "</span><br/>");
+//			     $("#output_readings").append("<td>" + readings + "</td>");
+                            $("#output_readings").append("<span>" + readings + "</span><br/>");
+
 
 //			     $("#output_glosses").append('<span class="gloss">' + glosses + "</span><br/>");
 		
@@ -148,10 +163,18 @@ Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 <textarea id="intext" cols="60"></textarea>
 <!--<input type="button" id="clear" value="Borrar"/>-->
 </form>
-<table>
+<!--<div style="overflow-x: scroll">
+<table>-->
 <!--<th><td></td><td><input type="checkbox" value="show_glosses"/></td><td><input type="checkbox" value="show_readings"/></td></th>-->
+<!--<tr><span id="output_forms"/></tr>
+<tr><span id="output_glosses"/></tr>
+<tr><span id="output_readings"/></tr>
+</table>
+</div>-->
+<table>
 <tr><td><span id="output_forms"/></td><td><span id="output_glosses"/></td><td><span id="output_readings"/></td></tr>
 </table>
+
 </body>
 
 </html>
