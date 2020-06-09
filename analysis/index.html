@@ -104,7 +104,7 @@ Zepto(function($){
          return o;
     }
     
-    $('#intext').keypress(function(event) {
+    $('#intext').keyup(function(event) {
 	    var textarea_value = $("#intext").val();
 
 	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
