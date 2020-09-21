@@ -117,12 +117,13 @@ Zepto(function($){
     
     $('#intext').keyup(function(event) {
 	    var textarea_value = $("#intext").val();
+	    var selected_lang = $("#lang").val();
 
 	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
 		$("#output").empty();
 	        $.ajax({
 	          url: 'https://beta.apertium.org/apy/analyse',
-	          data: {lang: 'quc', q: textarea_value},
+	          data: {lang: selected_lang, q: textarea_value},
 	          success: function(data){
 		          data.forEach(function(i) {
 		             var pack = JSON.stringify(i[0]).length - JSON.stringify(i[1]).length ;
@@ -159,6 +160,10 @@ Zepto(function($){
 <body>
 Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 <form>
+<select id="lang">
+<option value="quc">Kʼicheʼ</option>
+<option value="usp">Uspantek</option>
+</select><br/>
 <textarea id="intext" cols="60"></textarea>
 <!--<input type="button" id="clear" value="Borrar"/>-->
 </form>
