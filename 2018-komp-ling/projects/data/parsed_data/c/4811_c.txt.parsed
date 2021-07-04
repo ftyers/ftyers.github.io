@@ -1,0 +1,170 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ken sen sinne pani?
+1	Ken	keä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	1	obj	_	_
+3	sinne	sinne	ADV	Adv	_	1	advmod	_	_
+4	pani	pani	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = "Liian paljon epäonnistui hänelle, tälle savenvalajalle, joka ei ollut päättänyt oppivuosiaan!
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Liian	liian	ADV	Adv	_	4	advmod	_	_
+3	paljon	paljon	ADV	Adv	_	4	advmod	_	_
+4	epäonnistui	epä#onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	tälle	tämä	PRON	Pron	Case=All|Number=Sing|PronType=Dem	8	det	_	_
+8	savenvalajalle	savenvalaja	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj	_	_
+11	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+12	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	aux	_	_
+13	päättänyt	päättädä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	acl:relcl	_	_
+14	oppivuosiaan	oppivuosa	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	13	obj	_	SpaceAfter=No
+15	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Mutta että kosti hän ruukuilleen ja luontokappaleilleen, siksi että ne onnistuivat huonosti, -- se oli synti _hyvää makua_ vastaan.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	että	että	SCONJ	C	_	3	mark	_	_
+3	kosti	kostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+5	ruukuilleen	ruukui	NOUN	N	Case=All|Number=Plur|Person[psor]=3	3	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	luontokappaleilleen	luontokappalei	NOUN	N	Case=All|Number=Plur|Person[psor]=3	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	siksi	siksi	ADV	Adv	_	10	advmod	_	_
+10	että	että	SCONJ	C	_	12	mark	_	_
+11	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	nsubj	_	_
+12	onnistuivat	onnistua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+13	huonosti	huonosti	ADV	Adv	Derivation=Sti	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	12	punct	_	_
+15	--	--	PUNCT	Punct	_	18	punct	_	_
+16	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	18	nsubj:cop	_	_
+17	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	cop	_	_
+18	synti	synti	NOUN	N	Case=Nom|Number=Sing	3	conj	_	_
+19	_hyvää	_hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	20	amod	_	_
+20	makua_ vastaan	makua_ vasta	NOUN	N	Case=Ill|Number=Sing	18	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = "Myöskin hurskaudessa on olemassa hyvä maku: se puhui viimein: pois _tuollainen_ jumala!
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Myöskin	myöski	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	hurskaudessa	hurskaud	NOUN	N	Case=Ine|Number=Sing	1	obl	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	olemassa	olla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	maku	maku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	nsubj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	5	punct	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj	_	_
+10	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+11	viimein	viimein	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	:	:	PUNCT	Punct	_	5	punct	_	_
+13	pois	pois	ADV	Adv	_	14	advmod	_	_
+14	_tuollainen_ jumala	_tuollainen_ jum#ala	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+15	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Mieluummin ei mitään jumalaa, mieluummin omin päin säätää kohtaloa, mieluummin olla narri, mieluummin itse olla jumala!'" -- "Mitä minä kuulen!
+1	Mieluummin	mieluummin	ADV	Adv	_	4	advmod	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+4	jumalaa	jum#ala	NOUN	N	Case=Par|Number=Sing	14	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	mieluummin	mieluummin	ADV	Adv	_	9	advmod	_	_
+7	omin	omin	ADV	Adv	_	6	fixed	_	_
+8	päin	päin	ADV	Adv	_	9	advmod	_	_
+9	säätää	säätää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	acl	_	_
+10	kohtaloa	kohtalo	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	mieluummin	mieluummin	ADV	Adv	_	14	advmod	_	_
+13	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	cop	_	_
+14	narri	narri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	mieluummin	mieluummin	ADV	Adv	_	19	advmod	_	_
+17	itse	itse	ADV	Adv	_	16	advmod	_	_
+18	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	19	cop	_	_
+19	jumala	jum#ala	NOUN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	SpaceAfter=No
+20	!	!	PUNCT	Punct	_	27	punct	_	SpaceAfter=No
+21	'	'	PUNCT	Punct	_	27	punct	_	SpaceAfter=No
+22	"	"	PUNCT	Punct	_	27	punct	_	_
+23	--	--	PUNCT	Punct	_	27	punct	_	_
+24	"	"	PUNCT	Punct	_	27	punct	_	SpaceAfter=No
+25	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	27	obj	_	_
+26	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	_	_
+27	kuulen	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	14	parataxis	_	SpaceAfter=No
+28	!	!	PUNCT	Punct	_	14	punct	_	_
+
+# sent_id = 6
+# text = puuttui vanha paavi tässä puheeseen heristäen korviaan; oi Zarathustra, sinä olet hurskaampi kuin luulet, tuollaista epäuskoa kantaen!
+1	puuttui	puuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	paavi	paavi	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+4	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	1	obl	_	_
+5	puheeseen	puhe	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+6	heristäen	heristää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	_
+7	korviaan	korva	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	6	obj	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	1	punct	_	_
+9	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+10	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	14	nsubj:cop	_	_
+13	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
+14	hurskaampi	hurskaa	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	1	parataxis	_	_
+15	kuin	kuin	SCONJ	C	_	16	mark	_	_
+16	luulet	luulla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	14	advcl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	14	punct	_	_
+18	tuollaista	tuollainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Sing	19	amod	_	_
+19	epäuskoa	epäusko	NOUN	N	Case=Par|Number=Sing	20	obj	_	_
+20	kantaen	kantaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	14	advcl	_	SpaceAfter=No
+21	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Joku jumala sinussa käänsi sinut jumalattomuuteesi!
+1	Joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	jumala	jum#ala	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	sinussa	sinä	PRON	Pron	Case=Ine|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	käänsi	kääntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	6	det	_	_
+6	jumalattomuuteesi	jumalattomuuteesi	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = "Eikö se ole juuri sinun hurskautesi, joka ei enää anna sinun uskoa jumalaan?
+1	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+2	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	cop	_	_
+5	juuri	juuri	ADV	Adv	_	7	advmod	_	_
+6	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	7	det	_	_
+7	hurskautesi	hurskautesi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	_
+10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	enää	enää	ADV	Adv	_	12	advmod	_	_
+12	anna	antaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	acl:relcl	_	_
+13	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	14	nsubj	_	_
+14	uskoa	uskoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp:ds	_	_
+15	jumalaan	jumala	NOUN	N	Case=Ill|Number=Sing	14	obl	_	SpaceAfter=No
+16	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = Ja sinun ylensuuri rehellisyytesi tulee viemään sinut vielä tuollepuolen hyvää ja pahaa!
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
+3	ylensuuri	ylensuuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	rehellisyytesi	rehellisyytesi	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	viemään	viedä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	_
+8	vielä	vielä	ADV	Adv	_	9	advmod	_	_
+9	tuollepuolen	tuollepuolla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+10	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	conj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

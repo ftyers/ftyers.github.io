@@ -1,0 +1,136 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Katsopas tuonne!" hän huudahti.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Katsopas	Katsopas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	tuonne	tuonne	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	3	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = "Tuo on kaikki minun!
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Se on vapautta.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	vapautta	vapaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Minä voin painua levolle noiden puiden alle ja maata sata vuotta, jos haluan.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	painua	painua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	levolle	levo	NOUN	N	Case=All|Number=Sing	3	obl	_	_
+5	noiden	tuo	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	6	det	_	_
+6	puiden	puu	NOUN	N	Case=Gen|Number=Plur	3	obl	_	_
+7	alle	alle	ADP	Adp	AdpType=Post	6	case	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	maata	maata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+10	sata	sata	NUM	Num	Case=Nom|Number=Sing|NumType=Card	11	nummod	_	_
+11	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	jos	jos	SCONJ	C	_	14	mark	_	_
+14	haluan	haluta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Ah, tule, Mart, lähdetään heti paikalla!
+1	Ah	Ah	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Mart	Mart	PROPN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	lähdetään	lähteä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	conj	_	_
+8	heti	heti	ADV	Adv	_	7	advmod	_	_
+9	paikalla	paikka	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mitä hyödyttää odottaa hetkeäkään kauempaa?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	nsubj	_	_
+2	hyödyttää	hyödyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	odottaa	odottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	hetkeäkään	hetkeä	ADV	Adv	Clitic=Kaan	3	advmod	_	_
+5	kauempaa	kauempaa	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Tuolla on maa, jossa ei ole mitään tehtävää -- ja minulla on lippu sinne, mutta ei takaisin, hitto soikoon!"
+1	Tuolla	tuo	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	maa	maa	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	1	acl:relcl	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	9	det	_	_
+9	tehtävää	tehtävä	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+10	--	--	PUNCT	Punct	_	12	punct	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	1	conj	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop:own	_	_
+14	lippu	#lippu	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+15	sinne	sinne	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	19	punct	_	_
+17	mutta	mutta	CCONJ	C	_	19	cc	_	_
+18	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	takaisin	takaisin	ADV	Adv	_	1	conj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	22	punct	_	_
+21	hitto	hitto	INTJ	Interj	_	22	discourse	_	_
+22	soikoon	soiko	NOUN	N	Case=Ill|Number=Sing	19	obl	_	SpaceAfter=No
+23	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+24	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Muutamia minuutteja myöhemmin, kun Joe tunki likaisia vaatteita koneeseen, hän keksi hotellin omistajan paidan.
+1	Muutamia	muutama	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	2	det	_	_
+2	minuutteja	minuutti	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	_
+3	myöhemmin	myöhemmin	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	kun	kun	SCONJ	C	_	10	mark	_	_
+6	Joe	Joe	PROPN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+7	tunki	tunki	NOUN	N	Case=Nom|Number=Sing	6	flat:name	_	_
+8	likaisia	likainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	9	amod	_	_
+9	vaatteita	vaate	NOUN	N	Case=Par|Number=Plur	10	obj	_	_
+10	koneeseen	kone	NOUN	N	Case=Ill|Number=Sing	3	advcl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	keksi	keksiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	hotellin	hotelli	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	omistajan	omistaja	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	16	nmod:poss	_	_
+16	paidan	paida	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 9
+# text = Hän tunsi sen merkistä, ja äkillisen vapaudenriemunpuuskassa hän heitti sen lattialle ja tallasi sitä jaloilla.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	nmod:poss	_	_
+4	merkistä	merkä	NOUN	N	Case=Ela|Number=Plur	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	äkillisen	äkillinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	8	amod	_	_
+8	vapaudenriemunpuuskassa	vapaudenriemunpuuska	NOUN	N	Case=Ine|Number=Sing	10	obl	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	heitti	heittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	12	nmod:poss	_	_
+12	lattialle	lattia	NOUN	N	Case=All|Number=Sing	10	obl	_	_
+13	ja	ja	CCONJ	C	_	16	cc	_	_
+14	tallasi	tka	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=2	16	nmod:poss	_	_
+15	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	16	det	_	_
+16	jaloilla	jalo	NOUN	N	Case=Ade|Number=Plur	2	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

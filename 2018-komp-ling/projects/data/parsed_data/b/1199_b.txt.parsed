@@ -1,0 +1,126 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Onko täällä ketään? Fred huusi.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Onko	olla	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	täällä	täällä	ADV	Adv	_	2	advmod	_	_
+4	ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+6	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	huusi	huuta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ääni kajahti outona aution kaupungin hiljaisuudessa.
+1	Ääni	ää	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	kajahti	kajahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	outona	outo	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+4	aution	autio	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kaupungin	kaupunki	NOUN	N	Case=Gen|Number=Sing	6	nsubj	_	_
+6	hiljaisuudessa	hiljaisuuda	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kaiku kiiri hetken pitkin katuja ja sitten oli taas hiljaista.
+1	Kaiku	kaiku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	kiiri	kiiriä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hetken	hetki	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+4	pitkin	pitkin	ADP	Adp	AdpType=Prep	5	case	_	_
+5	katuja	katu	NOUN	N	Case=Par|Number=Plur	2	obl	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	sitten	sitten	ADV	Adv	_	10	advmod	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	taas	taas	ADV	Adv	_	10	advmod	_	_
+10	hiljaista	hiljainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	2	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Vinkuva ääni, jonka Fred oli kuullut hautausmaalla, alkoi uudelleen.
+1	Vinkuva	Vinkuva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	7	obj	_	_
+5	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl:relcl	_	_
+8	hautausmaalla	hautausmaa	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	7	punct	_	_
+10	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	uudelleen	uudelleen	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 5
+# text = Fred painoi kädet korvilleen, mutta se ei auttanut.
+1	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	painoi	painaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kädet	käsi	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	korvilleen	korva	NOUN	N	Case=All|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	mutta	mutta	CCONJ	C	_	9	cc	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	auttanut	auttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Ääni raastoi hänen rum-pukalvojaan ja tunkeutui lamaannuttavana hänen hermostoonsa.
+1	Ääni	ää	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	raastoi	raastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	rum-pukalvojaan	rum-pukalvo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	tunkeutui	tunkeutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	lamaannuttavana	lamaannuttaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	9	acl	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	hermostoonsa	hermosto	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = — Ei!
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Ei	ei	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ei enää! Fred huusi.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	enää	enää	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	huusi	huuta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 9
+# text = — Missä kaikki ihmiset ovat?
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	0	root	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	2	nsubj:cop	_	_
+5	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Kuuletteko?
+1	Kuuletteko	Kuulea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Vastatkaa?
+1	Vastatkaa	Vastatka	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Lopettakaa tämä ääni!
+1	Lopettakaa	Lopettaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = En kestä enää!
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	kestä	kestää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	enää	enää	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

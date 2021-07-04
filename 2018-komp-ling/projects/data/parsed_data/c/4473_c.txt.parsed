@@ -1,0 +1,129 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Luovan teistä.
+1	Luovan	Luova	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	teistä	sinä	PRON	Pron	Case=Ela|Number=Plur|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Tahdotko, veljeni, käydä yksinäisyyteen?
+1	Tahdotko	tahdotko	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+6	yksinäisyyteen	yksinäisyys	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Tahdotko etsiä tien itseesi?
+1	Tahdotko	Tahdoda	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	etsiä	etsiä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	tien	#tie	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	itseesi	itseesi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Viivy vielä hetkinen ja kuuntele minua.
+1	Viivy	viivä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vielä	vielä	ADV	Adv	_	1	advmod	_	_
+3	hetkinen	hetkinen	ADJ	A	Case=Nom|Derivation=Lainen|Number=Sing	1	xcomp	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	kuuntele	kuunnella	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	conj	_	_
+6	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = "Ken etsii, hän joutuu helposti itse hukkaan.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+3	etsii	etsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+6	joutuu	joutua	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	helposti	helposti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+8	itse	itse	ADV	Adv	_	9	advmod	_	_
+9	hukkaan	hukkaan	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Kaikki yksinäisyys on rikosta": näin puhuu lauma.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	yksinäisyys	yksinäisyys	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	rikosta	riko	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	4	punct	_	_
+7	näin	näin	ADV	Adv	_	8	advmod	_	_
+8	puhuu	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	lauma	lauma	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Ja sinä kuuluit kauan laumaan.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	kuuluit	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kauan	kauan	ADV	Adv	_	3	advmod	_	_
+5	laumaan	laua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Lauman ääni on sinussakin vielä kaikuva.
+1	Lauman	Lauma	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	sinussakin	sinussa	ADV	Adv	Clitic=Kin	6	advmod	_	_
+5	vielä	vielä	ADV	Adv	_	6	advmod	_	_
+6	kaikuva	kai#kuva	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Ja kun sanot: "minulla ei ole enää yhteistä omaatuntoa teidän kanssanne", niin se on oleva valitus ja tuska.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	kun	kun	SCONJ	C	_	3	mark	_	_
+3	sanot	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+8	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop:own	_	_
+9	enää	enää	ADV	Adv	_	10	advmod	_	_
+10	yhteistä	yhteinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	11	amod	_	_
+11	omaatuntoa	omaatunto	NOUN	N	Case=Par|Number=Sing	6	nsubj:cop	_	_
+12	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_
+13	kanssanne	kanssa	ADV	Adv	Number[psor]=Plur|Person[psor]=2	6	advmod	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	niin	niin	ADV	Adv	_	20	advmod	_	_
+17	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	20	nsubj:cop	_	_
+18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	_
+19	oleva	olla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	20	acl	_	_
+20	valitus	valitus	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	tuska	tuska	NOUN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Katso, itse tämän tuskan synnytti tuo yhteinen omatunto, ja tuon omantunnon viimeinen kimallus hehkuu vielä murheessasi.
+1	Katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	itse	itse	ADV	Adv	_	6	advmod	_	_
+4	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	det	_	_
+5	tuskan	tuska	NOUN	N	Case=Gen|Number=Sing	6	nsubj	_	_
+6	synnytti	synnyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+7	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	det	_	_
+8	yhteinen	yhteinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	9	amod	_	_
+9	omatunto	omatunto	NOUN	N	Case=Nom|Number=Sing	6	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	16	punct	_	_
+11	ja	ja	CCONJ	C	_	16	cc	_	_
+12	tuon	tuo	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	13	det	_	_
+13	omantunnon	omantunto	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+14	viimeinen	viimeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	15	amod	_	_
+15	kimallus	kimallus	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+16	hehkuu	hehkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+17	vielä	vielä	ADV	Adv	_	16	advmod	_	_
+18	murheessasi	murhea	VERB	V	Case=Ine|InfForm=2|Number=Sing|Number[psor]=Sing|Person[psor]=2|VerbForm=Inf|Voice=Act	16	advcl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

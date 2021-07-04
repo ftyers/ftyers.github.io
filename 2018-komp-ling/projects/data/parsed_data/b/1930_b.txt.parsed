@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mikä nousee komeasti?
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	nsubj	_	SpacesBefore= \s
+2	nousee	noua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	komeasti	komeasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Meeri saa vastauksen, kun nouseva aurinko häikäisee silmät.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vastauksen	vastaus	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	kun	kun	SCONJ	C	_	8	mark	_	_
+6	nouseva	noua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+7	aurinko	aurinko	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	häikäisee	häikäista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	_
+9	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s \s
+
+# sent_id = 3
+# text = — Kala voisi olla kohta syönnillään, Hannu sanoo.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Kala	kala	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+5	kohta	kohta	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	syönnillään	syönni	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	Hannu	Hannu	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Meeri hymähtää.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hymähtää	hymähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hannu veivaa rattia varmoin ottein, vilkuilee naista vierellään ja sanoo sitten varovasti:
+1	Hannu	Hannu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	veivaa	veivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rattia	ratti	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	varmoin	varma	NOUN	N	Case=Ins|Number=Plur	2	obl	_	_
+5	ottein	otte	NOUN	N	Case=Ins|Number=Plur	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	vilkuilee	vilkuilla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	naista	nainen	NOUN	N	Case=Par|Number=Sing	7	obj	_	_
+9	vierellään	vierellään	ADV	Adv	_	7	advmod	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+12	sitten	sitten	ADV	Adv	_	11	advmod	_	_
+13	varovasti	varovasti	ADV	Adv	Derivation=Sti	11	advmod	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = — Tuota, jos ei kerrottaisi tästä muille.
+1	—	—	PUNCT	Punct	_	6	punct	_	_
+2	Tuota	tuota	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	jos	jos	SCONJ	C	_	6	mark	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kerrottaisi	kerrottaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+7	tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	6	obl	_	_
+8	muille	muu	PRON	Pron	Case=All|Number=Plur|PronType=Ind	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Tuollainen vahinko on aikamiehelle nolo juttu.
+1	Tuollainen	tuollainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	vahinko	vahinko	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	aikamiehelle	aikamiehi	NOUN	N	Case=All|Number=Sing	5	nmod	_	_
+5	nolo	nolo	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	juttu	juttu	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Plur|Person[psor]=1|Style=Coll	5	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s \s
+
+# sent_id = 8
+# text = Hannu vaikenee, kun nainen ei vastaa.
+1	Hannu	Hannu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vaikenee	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	kun	kun	SCONJ	C	_	7	mark	_	_
+5	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	vastaa	vastata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Meeri pidättelee naurua.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pidättelee	pidätella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	naurua	nauru	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Suunnitelma toimii loistavasti.
+1	Suunnitelma	suunnitelma	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	toimii	toimia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	loistavasti	loistavasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s \s
+
+# sent_id = 11
+# text = — Kyllä se minulle sopii, Meeri saa lopulta sanottua.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	5	advmod	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+4	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+5	sopii	sopia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+8	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+9	lopulta	lopulta	ADV	Adv	_	8	advmod	_	_
+10	sanottua	sanottua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

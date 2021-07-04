@@ -1,0 +1,174 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ihminen rakentuu soluista.
+1	Ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rakentuu	rakentua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	soluista	solu	NOUN	N	Case=Ela|Number=Plur	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Solut ovat hyvin pieniä: niitä ei voi nähdä silmällä, vaan tarvitaan mikroskooppia.
+1	Solut	Solu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	4	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	hyvin	hyvin	ADV	Adv	_	4	advmod	_	_
+4	pieniä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	9	nsubj	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+8	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	aux	_	_
+9	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	parataxis	_	_
+10	silmällä	silmä	NOUN	N	Case=Ade|Number=Sing	9	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	vaan	vaan	CCONJ	C	_	13	cc	_	_
+13	tarvitaan	tarvita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	9	conj	_	_
+14	mikroskooppia	mikroskooppa	NOUN	N	Case=Par|Number=Plur	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = On arvioitu , että aikuisessa ihmisessä on noin sata biljoonaa (100 000 000 000 000) solua.
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux:pass	_	SpacesAfter=\s\s
+2	arvioitu	arvioida	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	aikuisessa	aikuinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	ihmisessä	ihmisi	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	noin	noin	ADV	Adv	_	9	advmod	_	_
+9	sata	sata	NUM	Num	Case=Nom|Number=Sing|NumType=Card	10	nummod	_	_
+10	biljoonaa	biljoona	NOUN	N	Case=Par|Number=Sing	6	nsubj:cop	_	_
+11	(	(	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+12	100 000 000 000 000	100 000 000 000 000	NUM	Num	NumType=Card	6	obl	_	SpaceAfter=No
+13	)	)	PUNCT	Punct	_	12	punct	_	_
+14	solua	solu	NOUN	N	Case=Par|Derivation=U|Number=Sing	2	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Solu koostuu solulimasta ja sen ympärillä olevasta solukalvosta.
+1	Solu	Solu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpacesAfter=\s\s
+2	koostuu	koostua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\s\s
+3	solulimasta	solulima	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obl	_	_
+6	ympärillä	ympärillä	ADP	Adp	AdpType=Post	5	case	_	_
+7	olevasta	olla	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	acl	_	_
+8	solukalvosta	solukalvo	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Solulimassa on pieniä soluelimiä, joilla on erilaisia tehtäviä.
+1	Solulimassa	Solulima	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	pieniä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	soluelimiä	soluelin	NOUN	N	Case=Par|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	joilla	joka	PRON	Pron	Case=Ade|Number=Plur|PronType=Rel	1	acl:relcl	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	erilaisia	erilainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	9	amod	_	_
+9	tehtäviä	tehtävä	NOUN	N	Case=Par|Number=Plur	6	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Eräät soluelimet pystyvät esimerkiksi vapauttamaan energiaa sokerista, jota on kulkeutunut solun sisälle.
+1	Eräät	eräs	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	det	_	_
+2	soluelimet	soluelin	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	pystyvät	pystyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	esimerkiksi	esimerkiksi	ADV	Adv	_	5	advmod	_	SpacesAfter= \s
+5	vapauttamaan	vapauttaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpacesAfter=\s\s
+6	energiaa	energia	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+7	sokerista	sokeri	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	11	nsubj	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	kulkeutunut	kulkeutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	acl:relcl	_	_
+12	solun	solu	NOUN	N	Case=Gen|Number=Sing	11	obl	_	_
+13	sisälle	sisälle	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Solukalvo säätelee aineiden kulkua soluun ja sieltä pois.
+1	Solukalvo	Solukalvo	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpacesAfter=\s\s
+2	säätelee	sääella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter= \s
+3	aineiden	aine	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+4	kulkua	kulku	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	soluun	solu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	2	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	sieltä	sieltä	ADV	Adv	_	8	advmod	_	_
+8	pois	pois	ADV	Adv	_	2	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Solussa on myös tuma.
+1	Solussa	Solu	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	myös	myös	ADV	Adv	_	4	advmod	_	_
+4	tuma	tuma	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Tuma ohjaa solun toimintaa ja koko ihmisen kasvua ja kehitystä.
+1	Tuma	Tuma	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ohjaa	ohjata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	solun	solu	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	SpacesAfter= 
+4	toimintaa	toiminta	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	koko	koko	ADJ	A	_	7	amod	_	_
+7	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	kasvua	kasvu	NOUN	N	Case=Par|Derivation=U|Number=Sing	4	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	kehitystä	kehitys	NOUN	N	Case=Par|Number=Sing	8	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Kun ihminen kasvaa, hänessä syntyy uusia soluja.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	hänessä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	syntyy	syntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	8	amod	_	_
+8	soluja	solu	NOUN	N	Case=Par|Derivation=U|Number=Plur	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = Uusia soluja syntyy siten, että solut jakautuvat.
+1	Uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	2	amod	_	_
+2	soluja	solu	NOUN	N	Case=Par|Number=Plur	3	nsubj	_	_
+3	syntyy	syntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	siten	siten	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	solut	#solu	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+8	jakautuvat	jakautua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Yksi solu jakautuu kahdeksi täysin samanlaiseksi tytärsoluksi.
+1	Yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	nummod	_	_
+2	solu	solu	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	jakautuu	jakautua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kahdeksi	kahd	NOUN	N	Case=Tra|Number=Sing	3	obl	_	_
+5	täysin	täysin	ADV	Adv	_	3	advmod	_	_
+6	samanlaiseksi	samanlainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Sing	7	amod	_	_
+7	tytärsoluksi	tytärsolu	NOUN	N	Case=Tra|Number=Sing	3	xcomp:ds	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 13
+# text = Tytärsolut ovat aluksi kooltaan pienempiä kuin alkuperäinen solu, mutta ne kasvavat pian täysikokoisiksi.
+1	Tytärsolut	Tytärsolu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	5	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	aluksi	aluksi	ADV	Adv	_	4	advmod	_	_
+4	kooltaan	koo	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	5	obl	_	_
+5	pienempiä	pieni	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	0	root	_	_
+6	kuin	kuin	SCONJ	C	_	8	mark	_	SpacesAfter=\s\s
+7	alkuperäinen	alku#peräinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	SpacesAfter=\s\s
+8	solu	solu	NOUN	N	Case=Nom|Number=Sing	5	advcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	mutta	mutta	CCONJ	C	_	12	cc	_	_
+11	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	nsubj	_	_
+12	kasvavat	kasvaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	SpacesAfter= 
+13	pian	pian	ADV	Adv	_	12	advmod	_	_
+14	täysikokoisiksi	täysikokoinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	12	xcomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

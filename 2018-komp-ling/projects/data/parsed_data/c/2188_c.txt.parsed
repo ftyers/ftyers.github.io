@@ -1,0 +1,129 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kyllä, kyllä tulen, vastasi hän.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kyllä	kyllä	ADV	Adv	_	5	advmod	_	_
+5	tulen	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Minulla on sitäpaitsi eräs asia toimitettavana.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	sitäpaitsi	sitäpaitsi	ADV	Adv	_	1	advmod	_	_
+4	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	asia	asia	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+6	toimitettavana	toimittaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	1	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Et kai sinä aijo syödä yksin? huudahti Rasumihin ja katsoi hämmästyneenä häneen.
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	kai	kai	ADV	Adv	_	6	advmod	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+5	aijo	aijo	ADV	Adv	_	6	advmod	_	_
+6	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	yksin	yksin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	9	punct	_	_
+9	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+10	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	9	obl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+13	hämmästyneenä	hämmästyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	advcl	_	_
+14	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Mikä sinun on?
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	1	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- En, minä tulen tietystikin;
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	mark	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	tulen	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	tietystikin	tietysti	ADV	Adv	Clitic=Kin|Derivation=Sti	5	advmod	_	SpaceAfter=No
+7	;	;	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Voit vielä kai hetken viipyä luonani.
+1	Voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	vielä	vielä	ADV	Adv	_	5	advmod	_	_
+3	kai	kai	ADV	Adv	_	2	fixed	_	_
+4	hetken	hetki	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	viipyä	viipyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	luonani	luona	ADV	Adv	Number[psor]=Sing|Person[psor]=1	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Sinä et kai heti tarvitse häntä, äiti tahi...
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+2	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	kai	kai	ADV	Adv	_	5	advmod	_	_
+4	heti	heti	ADV	Adv	_	5	advmod	_	_
+5	tarvitse	tarvita	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	5	appos	_	_
+9	tahi	tahi	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = -- En, en!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Te, Dimitri Prokofjitsh, kai myöskin osotatte meille sen ilon, että syötte päivällistä kanssamme?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	Dimitri	Dimitri	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	Prokofjitsh	Prokofjitsh	PROPN	N	Case=Nom|Number=Sing	3	flat:name	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kai	kai	ADV	Adv	_	8	advmod	_	_
+7	myöskin	myöskin	ADV	Adv	_	8	advmod	_	_
+8	osotatte	otsotaa	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	17	conj	_	_
+9	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	8	obl	_	_
+10	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	11	det	_	_
+11	ilon	ilo	NOUN	N	Case=Gen|Number=Sing	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	16	punct	_	_
+13	että	että	SCONJ	C	_	16	mark	_	_
+14	syötte	syöi	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	16	cop	_	_
+15	päivällistä	päivällinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	16	amod	_	_
+16	kanssamme	kanssa	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	11	ccomp	_	SpaceAfter=No
+17	?	?	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 10
+# text = Rasumihin kumarsi ilosta loistaen.
+1	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	2	obl	_	_
+2	kumarsi	kumartaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ilosta	ilko	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+4	loistaen	loistaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Silmänräpäyksen ajan he kaikki olivat hyvin hämillään.
+1	Silmänräpäyksen	Silmänräpäys	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ajan	aika	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj:cop	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+5	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	hyvin	hyvin	ADV	Adv	_	7	advmod	_	_
+7	hämillään	hämillä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pahuudessa kohtaavat toisensa ylpeä ja heikko.
+1	Pahuudessa	Pahuud	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	kohtaavat	kohtaaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisensa	toinen	PRON	Pron	Case=Gen|Person[psor]=3|PronType=Rcp	4	nmod	_	_
+4	ylpeä	ylpeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	heikko	heikko	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Mutta he ymmärtävät toisensa väärin.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	ymmärtävät	ymmärtää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	toisensa	toinen	PRON	Pron	Case=Gen|Person[psor]=3|PronType=Rcp	3	obj	_	_
+5	väärin	väärin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Minä tunnen teidät.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	tunnen	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teidät	sinä	PRON	Pron	Case=Acc|Number=Plur|Person=2|PronType=Prs	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Teillä saa olla ainoastaan vihollisia, jotka herättävät vihaa, muttei vihollisia, jotka herättävät halveksimista.
+1	Teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	2	obl	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	cop	_	_
+4	ainoastaan	ainoastaan	ADV	Adv	_	5	advmod	_	_
+5	vihollisia	vihollinen	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	8	nsubj	_	_
+8	herättävät	herättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	vihaa	viha	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	muttei	mutta#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	cc	_	_
+12	vihollisia	vihollinen	NOUN	N	Case=Par|Number=Plur	8	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	15	nsubj	_	_
+15	herättävät	herättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+16	halveksimista	halveksiminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	15	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Teidän tulee olla ylpeitä vihollisestanne: silloin ovat vihollisenne menestykset teidänkin menestyksiänne.
+1	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	ylpeitä	ylpeä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	_
+5	vihollisestanne	vihollisestanne	NOUN	N	Case=Nom|Number=Sing	2	xcomp	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	2	punct	_	_
+7	silloin	silloin	ADV	Adv	_	2	parataxis	_	_
+8	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+9	vihollisenne	vihollisenne	NOUN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	menestykset	menestys	NOUN	N	Case=Nom|Number=Plur	7	nsubj:cop	_	_
+11	teidänkin	teidänkin	ADV	Adv	_	12	advmod	_	_
+12	menestyksiänne	menestyksiänne	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Kapinaannousu -- se on orjan ylhäisyyttä.
+1	Kapinaannousu	Kapinaannousu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	6	nsubj:cop	_	_
+2	--	--	PUNCT	Punct	_	6	punct	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	orjan	orja	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	ylhäisyyttä	ylhäisyys	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Teidän ylhäisyytenne olkoon kuuliaisuus!
+1	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	2	nmod:poss	_	_
+2	ylhäisyytenne	ylhäisyytenne	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	olkoon	ola	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kuuliaisuus	kuuliaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	3	obj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Itse teidän käskemisenne olkoon kuuliaisuutta!
+1	Itse	itse	ADV	Adv	_	4	advmod	_	_
+2	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	käskemisenne	käskemisenne	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	olkoon	ola	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kuuliaisuutta	kuuliaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	4	obj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Hyvästä soturista kaikuu "sinun täytyy" mieluisemmalta kuin "minä tahdon".
+1	Hyvästä	hyvä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	2	amod	_	_
+2	soturista	soturi	NOUN	N	Case=Ela|Number=Sing	6	obl	_	_
+3	kaikuu	kaikuu	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+4	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+6	täytyy	täytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	8	punct	_	_
+8	mieluisemmalta	mieluisemma	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	6	xcomp	_	_
+9	kuin	kuin	SCONJ	C	_	12	mark	_	_
+10	"	"	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+12	tahdon	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Ja kaiken, mikä teille on rakasta, tulee teidän vielä ensin antaa käskeä itseänne.
+1	Ja	ja	CCONJ	C	_	9	cc	_	_
+2	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	9	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj:cop	_	_
+5	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	7	obl	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	rakasta	rakas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	acl:relcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_
+11	vielä	vielä	ADV	Adv	_	12	advmod	_	_
+12	ensin	ensin	ADV	Adv	_	10	advmod	_	_
+13	antaa	antaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+14	käskeä	käski	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+15	itseänne	itseänne	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter=\s\n
+

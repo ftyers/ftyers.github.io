@@ -1,0 +1,142 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä teetä?...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+3	teetä	tee	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	..	..	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Tietysti...
+1	Tietysti	tietysti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+2	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Raskolnikov ryyppäsi kerran, pisti palan leipää suuhunsa ja katsellessaan Sametovia näytti hän äkkiä muistavan kaikki ja heräävän uudelleen; hänen kasvoilleen levisi tuo äsköinen sama pilkallinen ilme.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ryyppäsi	ryypätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kerran	kerran	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	pisti	pistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	conj	_	_
+6	palan	pala	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	leipää	leipä	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+8	suuhunsa	suuhu	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	12	obj	_	_
+9	ja	ja	CCONJ	C	_	12	cc	_	_
+10	katsellessaan	katsella	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	12	advcl	_	_
+11	Sametovia	Sametovi	NOUN	N	Case=Par|Number=Sing	10	obj	_	_
+12	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+14	äkkiä	äkkiä	ADV	Adv	_	12	advmod	_	_
+15	muistavan	muistaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	16	xcomp	_	_
+16	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	18	nsubj	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	heräävän	herätä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	12	conj	_	_
+19	uudelleen	uudelleen	ADV	Adv	_	18	advmod	_	SpaceAfter=No
+20	;	;	PUNCT	Punct	_	2	punct	_	_
+21	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	nmod:poss	_	_
+22	kasvoilleen	kasvoi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	23	obl	_	_
+23	levisi	levitä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+24	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	28	det	_	_
+25	äsköinen	äsköinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	28	amod	_	_
+26	sama	sama	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	28	det	_	_
+27	pilkallinen	pilkallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	28	amod	_	_
+28	ilme	ilme	NOUN	N	Case=Nom|Number=Sing	23	nsubj	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hän jatkoi teensä juontia.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	jatkoi	jatkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teensä	tei	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+4	juontia	juonti	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Nykyään tapahtuu paljon konnantöitä, sanoi Sametov.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Nykyään	nykyään	ADV	Adv	_	3	advmod	_	_
+3	tapahtuu	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+5	konnantöitä	konnantö	NOUN	N	Case=Par|Number=Plur	3	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+8	Sametov	Sametov	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = -- Aivan äskettäin luin eräästä Moskovan lehdestä, että siellä oli vangittu kokonainen vääränrahan tekijäin liitto.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Aivan	aivan	ADV	Adv	_	4	advmod	_	_
+3	äskettäin	äskettäin	ADV	Adv	Derivation=Ttain	4	advmod	_	_
+4	luin	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	eräästä	eräs	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	4	obl	_	_
+6	Moskovan	Moskova	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	lehdestä	lehti	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	että	että	SCONJ	C	_	12	mark	_	_
+10	siellä	siellä	ADV	Adv	_	12	advmod	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux:pass	_	_
+12	vangittu	vangita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	15	ccomp	_	_
+13	kokonainen	kokonainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	14	amod	_	_
+14	vääränrahan	vääränra	NOUN	N	Case=Nom|Clitic=Han|Number=Sing	15	obj	_	_
+15	tekijäin	tekijäädä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+16	liitto	liitto	NOUN	N	Case=Nom|Number=Sing	15	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Se oli koko seura; se väärensi rahannostolippuja.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	koko	koko	ADJ	A	_	4	amod	_	_
+4	seura	seura	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	4	punct	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj	_	_
+7	väärensi	väärentää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	rahannostolippuja	rahannostolippu	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = -- Mitä, sehän tapahtui jo kauvan sitten!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	advcl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sehän	se	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	5	nsubj	_	_
+5	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	jo	jo	ADV	Adv	_	7	advmod	_	_
+7	kauvan	kaua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	5	xcomp	_	_
+8	sitten	sitten	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Minä luin siitä jo kuukausi sitte, lausui Raskolnikov levollisesti.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	luin	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	obl	_	_
+4	jo	jo	ADV	Adv	_	2	advmod	_	_
+5	kuukausi	kuu#kausi	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+6	sitte	sitten	ADV	Adv	Style=Coll	2	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	levollisesti	levollisesti	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Teidän mielipiteenne mukaan ovat he siis konnia? lisäsi hän nauraen.
+1	--	--	PUNCT	Punct	_	8	punct	_	_
+2	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	mielipiteenne	mielipiteenne	NOUN	N	Case=Nom|Number=Sing	8	obl	_	_
+4	mukaan	mukaan	ADP	Adp	AdpType=Post	3	case	_	_
+5	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj:cop	_	_
+7	siis	siis	ADV	Adv	_	8	advmod	_	_
+8	konnia	konni	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	8	punct	_	_
+10	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+12	nauraen	nauraa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	10	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	10	punct	_	SpacesAfter=\s\n
+

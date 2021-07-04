@@ -1,0 +1,147 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Wallander huokaisi.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	huokaisi	huokaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Hän päätti mennä suoraan asiaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	suoraan	suoraan	ADV	Adv	_	3	advmod	_	_
+5	asiaan	asia	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -Teidän puolisonne on toiminut syyttäjänä, hän aloitti.
+1	-	-	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	puolisonne	puolisonne	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	toiminut	toimia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	syyttäjänä	syyttäjä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	aloitti	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = — Seitsemän vuotta sitten puolisonne toimi jonkin aikaa syyttäjän virassa Tukholmassa.
+1	—	—	PUNCT	Punct	_	6	punct	_	_
+2	Seitsemän	seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	6	obl	_	_
+4	sitten	sitten	ADP	Adp	AdpType=Post	3	case	_	_
+5	puolisonne	puolisonne	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	toimi	toimia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	jonkin	jokin	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	8	det	_	_
+8	aikaa	aika	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+9	syyttäjän	syyttäjä	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	8	nmod:poss	_	_
+10	virassa	vira	NOUN	N	Case=Ine|Number=Sing	8	nmod	_	_
+11	Tukholmassa	Tukholma	PROPN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Hän hoiti 18-vuotiaan pojan, Bengt Alexanderssonin, kuolemaan liittyneet tutkimukset.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	hoiti	hoitaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	18-vuotiaan	18#vuotias	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	pojan	poika	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+6	Bengt	Bengt	PROPN	N	Case=Nom|Number=Sing	2	appos	_	_
+7	Alexanderssonin	Alexandersson	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	kuolemaan	kuolema	NOUN	N	Case=Ill|Number=Sing	10	obl	_	_
+10	liittyneet	liittyä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	11	acl	_	_
+11	tutkimukset	tutkimus	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = Koska ketään epäiltyä ei löydetty, vaimonne päätti lopettaa tutkimukset.
+1	Koska	koska	SCONJ	C	_	5	mark	_	_
+2	ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	nsubj	_	_
+3	epäiltyä	epäillä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	5	advcl	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	löydetty	löytää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	vaimonne	vaimonne	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	lopettaa	lopettaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	tutkimukset	tutkimus	NOUN	N	Case=Nom|Number=Plur	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 7
+# text = Muistatteko tapauksen?
+1	Muistatteko	Muistaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tapauksen	tapaus	NOUN	N	Case=Gen|Number=Sing	1	obj	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = — En tietenkään muista, Stenholm sanoi.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	tietenkään	tietenkään	ADV	Adv	_	4	advmod	_	_
+4	muista	muistaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	Stenholm	Stenholm	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 9
+# text = — Minulla ja vaimollani ei ollut tapana puhua työasioista.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	vaimollani	vaimo	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	conj	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	2	cop:own	_	_
+7	tapana	tapa	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+8	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	acl	_	_
+9	työasioista	työasio	NOUN	N	Case=Ela|Number=Plur	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Wallander sanoi:
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = — Mies, joka on kuljeskellut täällä rannalla, on kuolleen pojan isä.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Mies	mies	NOUN	N	Case=Nom|Number=Sing	13	nsubj:cop	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	6	nsubj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kuljeskellut	kuljeskella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl:relcl	_	_
+7	täällä	täällä	ADV	Adv	_	6	advmod	_	_
+8	rannalla	ranta	NOUN	N	Case=Ade|Number=Sing	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	6	punct	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+11	kuolleen	kuolla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	acl	_	_
+12	pojan	poika	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	isä	isä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	13	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Hänet myrkytettiin ja hän kuoli taksin takapenkille.
+1	Hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	myrkytettiin	myrkyttaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpacesAfter= 
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	taksin	taksi	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	takapenkille	takapenki	NOUN	N	Case=All|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 13
+# text = Onko teillä jotain sanomista siihen?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	0	root	_	_
+3	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+4	sanomista	sanominen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	2	nsubj:cop	_	_
+5	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	4	nmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

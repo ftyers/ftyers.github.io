@@ -1,0 +1,141 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Minä se olin .. koetti Raskolnikov sanoa.
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:cop	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+4	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	..	..	PUNCT	Punct	_	7	punct	_	_
+6	koetti	koetti	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 2
+# text = -- Juokaa hieman!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Juokaa	juoda	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hieman	hieman	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Raskolnikov työnsi lasin luotaan ja sanoi matalalla, mutta selvällä äänellä: -- _Minä surmasin silloin tuon vanhan virkamiehen lesken ja hänen sisarensa kirveellä, jonka jälkeen ryöväsin heidät_.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	työnsi	työntaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lasin	lasi	NOUN	N	Case=Gen|Number=Sing|Style=Coll	2	obj	_	_
+4	luotaan	luota	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+7	matalalla	matala	NOUN	N	Case=Ade|Number=Sing	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	mutta	mutta	CCONJ	C	_	11	cc	_	_
+10	selvällä	selvä	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	11	amod	_	_
+11	äänellä	ääni	NOUN	N	Case=Ade|Number=Sing	2	conj	_	SpaceAfter=No
+12	:	:	PUNCT	Punct	_	2	punct	_	_
+13	--	--	PUNCT	Punct	_	15	punct	_	_
+14	_Minä	_minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+15	surmasin	surmata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+16	silloin	silloin	ADV	Adv	_	19	advmod	_	_
+17	tuon	tuo	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	19	det	_	_
+18	vanhan	vanha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	19	amod	_	_
+19	virkamiehen	virka#mies	NOUN	N	Case=Gen|Number=Sing	15	obl	_	_
+20	lesken	lesken	ADP	Adp	AdpType=Post	19	case	_	_
+21	ja	ja	CCONJ	C	_	23	cc	_	_
+22	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	23	nmod:poss	_	_
+23	sisarensa	sisari	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	15	obj	_	_
+24	kirveellä	kirvei	NOUN	N	Case=Ade|Number=Sing	15	obl	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	28	punct	_	_
+26	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	28	obl	_	_
+27	jälkeen	jälkeen	ADP	Adp	AdpType=Post	26	case	_	_
+28	ryöväsin	ryöväsi	NOUN	N	Case=Ins|Number=Plur	24	acl:relcl	_	_
+29	heidät_.	heidät_.	ADJ	Num	NumType=Ord	28	nummod	_	_
+
+# sent_id = 4
+# text = Ilja Petrovitsh avasi suunsa.
+1	Ilja	Ilja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	compound:nn	_	_
+2	Petrovitsh	Petrovitsh	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	avasi	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	suunsa	suu	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Joka taholla alettiin juosta.
+1	Joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	2	det	_	_
+2	taholla	taho	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+3	alettiin	alkaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	juosta	juosta	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Raskolnikov toisti itsesyytöksensä...
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	toisti	toistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	itsesyytöksensä	itsesyytöksensä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = EPILOGI. Olemme Siperiassa.
+1	EPILOGI.	EPILOGI.	PUNCT	Punct	_	3	punct	_	_
+2	Olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	Siperiassa	Siperia	PROPN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Suuren virran aukealla rannalla on kaupunki, joka on Venäjän hallinnon keskuskohtia.
+1	Suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	virran	virta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+3	aukealla	aukea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	4	amod	_	_
+4	rannalla	ranna	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+6	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj:cop	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+10	Venäjän	Venäjä	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	hallinnon	#hallinto	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	keskuskohtia	keskus#kohta	NOUN	N	Case=Par|Number=Plur	6	acl:relcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Kaupungilla on linnotus ja linnotuksessa sijaitsee vankila.
+1	Kaupungilla	kaupunki	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	linnotus	linnotus	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	linnotuksessa	linnotus	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+6	sijaitsee	sijaita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+7	vankila	vankila	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Raskolnikov, joka oli tuomittu toisen luokan pakkotyöhön, on jo viettänyt yhdeksän kuukautta tässä vankilassa.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	obj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux:pass	_	_
+5	tuomittu	tuomia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	1	acl:relcl	_	_
+6	toisen	toinen	ADJ	Num	Case=Gen|Derivation=Inen|Number=Sing|NumType=Ord	7	nummod	_	_
+7	luokan	#luokka	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	pakkotyöhön	pakko#työ	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	5	punct	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	jo	jo	ADV	Adv	_	12	advmod	_	_
+12	viettänyt	viettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+13	yhdeksän	yhdeksän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	14	nummod	_	_
+14	kuukautta	kuu#kausi	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+15	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	16	det	_	_
+16	vankilassa	vankila	NOUN	N	Case=Ine|Number=Sing	12	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 11
+# text = Rikoksensa toimeenpanosta on jo kulunut puolitoista vuotta.
+1	Rikoksensa	Rikos	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	nmod:poss	_	_
+2	toimeenpanosta	toimeenpano	NOUN	N	Case=Ela|Number=Sing	5	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	kulunut	kulua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	puolitoista	puolitoista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

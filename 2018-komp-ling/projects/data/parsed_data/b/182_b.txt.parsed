@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Mikä se pyyntö on, pastori Halme kysyi.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	pyyntö	#pyyntö	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+7	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+9	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = — En ole kertonut kuolemasta Juhani Mäkisen vaimolle.
+1	—	—	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s   
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	kertonut	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	kuolemasta	kuolema	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpacesAfter= 
+6	Juhani	Juhani	PROPN	N	Case=Nom|Number=Sing	8	nmod:poss	_	_
+7	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	vaimolle	vaimko	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Ajattelin, että sinä voisit pappina tehdä sen, nimismies sanoi.
+1	Ajattelin	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	että	että	SCONJ	C	_	5	mark	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+5	voisit	voä	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	ccomp	_	SpacesAfter= \s
+6	pappina	pappi	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+7	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	1	punct	_	_
+10	nimismies	nimis#mies	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = — Minä teen sen, pastori Halme huokaisi.
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s \s
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	SpacesAfter= 
+6	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+8	huokaisi	huokaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	3	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Mäkiset asuivat seurakunnan paritalossa lähellä kirkkoja.
+1	Mäkiset	Mäkinen	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	asuivat	asua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	seurakunnan	seura#kunta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	paritalossa	paritalo	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+5	lähellä	lähellä	ADP	Adp	AdpType=Prep	6	case	_	_
+6	kirkkoja	kirkko	NOUN	N	Case=Par|Number=Plur	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Mäkisen perhe asui toisessa asunnossa ja suntio Riikonen toisessa.
+1	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	perhe	perhe	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	asui	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	toisessa	toinen	ADJ	Num	Case=Ine|Derivation=Inen|Number=Sing|NumType=Ord	5	nummod	_	_
+5	asunnossa	asunto	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	suntio	suntio	NOUN	N	Case=Nom|Number=Sing	8	compound:nn	_	_
+8	Riikonen	Riikonen	PROPN	N	Case=Nom|Number=Sing	3	conj	_	_
+9	toisessa	toinen	PRON	Pron	Case=Ine|Number=Sing|PronType=Rcp	8	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Raija Mäkinen tuijotti pastori Halmetta pelästyneenä, kun tämä astui Mäkisten valoisaan keittiöön.
+1	Raija	Raija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	compound:nn	_	_
+2	Mäkinen	Mäkinen	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tuijotti	tuijottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	Halmetta	Halmetta	PROPN	N	Case=Nom|Number=Sing	3	obj	_	_
+6	pelästyneenä	pelästyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	SpacesAfter= 
+8	kun	kun	SCONJ	C	_	10	mark	_	_
+9	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj	_	_
+10	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	_
+11	Mäkisten	Mäkinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	12	amod	_	SpacesAfter= 
+12	valoisaan	valoisa	NOUN	N	Case=Ill|Number=Sing	10	obl	_	_
+13	keittiöön	keittiö	NOUN	N	Case=Ill|Number=Sing	10	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Rouva Mäkisen silmien reunat olivat punaiset ja poskilla oli kosteita viiruja.
+1	Rouva	rouva	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	silmien	silmä	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+4	reunat	reuna	NOUN	N	Case=Nom|Number=Plur	6	nsubj:cop	_	_
+5	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	punaiset	punainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	poskilla	posk	NOUN	N	Case=Ade|Number=Plur	6	conj	_	SpacesAfter= 
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+10	kosteita	kostea	ADJ	A	Case=Par|Degree=Pos|Number=Plur	11	amod	_	_
+11	viiruja	viiru	NOUN	N	Case=Par|Number=Plur	6	nsubj:cop	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= \s
+
+# sent_id = 9
+# text = Hän oli itkenyt.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	itkenyt	itkeä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Joko Raija Mäkinen tiesi miehensä kuolemasta?
+1	Joko	joko	ADJ	A	_	2	amod	_	_
+2	Raija	Raija	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Mäkinen	Mäkinen	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	tiesi	tieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	miehensä	mies	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	obj	_	_
+6	kuolemasta	kuolema	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Kuka siitä oli kertonut?
+1	Kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj	_	_
+2	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kertonut	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 12
+# text = Rikospaikalla oli ollut paljon kyläläisiä, ehkä joku heistä oli kertonut, pastori Halme mietti.
+1	Rikospaikalla	Rikospaika	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	cop	_	_
+4	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+5	kyläläisiä	kyläläinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	ehkä	ehkä	ADV	Adv	_	11	advmod	_	_
+8	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+9	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	11	obl	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	kertonut	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	SpacesAfter= 
+13	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+14	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	13	nummod	_	_
+15	mietti	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

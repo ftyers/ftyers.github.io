@@ -1,0 +1,136 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Niin, se on huono juttu, -- myönsi kornetti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	juttu	juttu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	--	--	PUNCT	Punct	_	7	punct	_	_
+10	myönsi	myöntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+11	kornetti	kornetti	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = -- Minä lupasin hänelle tosiaankin, mutta sitten tuli tämä sotaretki ja...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	lupasin	lupata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+5	tosiaankin	tosiaan	ADV	Adv	Clitic=Kin	3	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	sitten	sitten	ADV	Adv	_	9	advmod	_	_
+9	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	det	_	_
+11	sotaretki	sotaretki	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+12	ja	ja	CCONJ	C	_	9	cc	_	SpaceAfter=No
+13	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = mutta kunhan olen kolme kuukautta johtanut eskadroonaa, niin voin hänelle lähettää.
+1	mutta	mutta	CCONJ	C	_	6	cc	_	_
+2	kunhan	kun	ADV	Adv	Clitic=Han	6	advmod	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	kuukautta	kuu#kausi	NOUN	N	Case=Par|Number=Sing	6	nsubj	_	_
+6	johtanut	johtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	eskadroonaa	eskadroona	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	niin	niin	ADV	Adv	_	12	mark	_	_
+10	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	12	obl	_	_
+12	lähettää	lähettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Ei minulla ole sääli rahoja, sillä hän on hurmaava!...
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	cop:own	_	_
+4	sääli	sääli	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+5	rahoja	raha	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	sillä	sillä	SCONJ	C	_	10	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj:cop	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	hurmaava	hurmaava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	advcl	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+12	..	..	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Eikö totta?
+1	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- puheli kreivi hymyillen ja seurasi silmillään Polosowin kasvojen ilmeitä tämän lukiessa kirjettä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	puheli	puhellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	seurasi	seurata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	silmillään	silmi	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	6	obl	_	_
+8	Polosowin	Polosow	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	kasvojen	kasva	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+10	ilmeitä	ilme	NOUN	N	Case=Par|Number=Plur	6	obj	_	_
+11	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	lukiessa	lukia	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+13	kirjettä	kirje	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Hirveän virheellistä kirjoitusta, mutta sangen miellyttävää.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hirveän	hirveä	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+3	virheellistä	virheellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	4	amod	_	_
+4	kirjoitusta	kirjoitus	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mutta	mutta	CCONJ	C	_	8	cc	_	_
+7	sangen	sangen	ADV	Adv	_	8	advmod	_	_
+8	miellyttävää	miellyttävä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Hän näyttää todellakin rakastavan sinua, -- vastasi kornetti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	näyttää	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	todellakin	todella	ADV	Adv	Clitic=Kin	2	advmod	_	_
+4	rakastavan	rakastaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	2	xcomp:ds	_	_
+5	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	--	--	PUNCT	Punct	_	8	punct	_	_
+8	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+9	kornetti	kornetti	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Hm! Tiettävästi!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Hm	Hm	INTJ	Interj	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	Tiettävästi	tiettävästi	ADV	Adv	Derivation=Sti	2	fixed	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Tuommoiset naiset ne vain rakastavatkin oikein todella, kun kerran rakastavat.
+1	Tuommoiset	Tuommoinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	naiset	nainen	NOUN	N	Case=Nom|Number=Plur	7	nsubj:cop	_	_
+3	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	det	_	_
+4	vain	vain	ADV	Adv	_	5	advmod	_	_
+5	rakastavatkin	rakastava	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	2	nmod	_	_
+6	oikein	oikein	ADV	Adv	_	7	advmod	_	_
+7	todella	todella	ADV	Adv	_	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	kun	kun	SCONJ	C	_	11	mark	_	_
+10	kerran	kerran	ADV	Adv	_	11	obl	_	_
+11	rakastavat	rakastaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

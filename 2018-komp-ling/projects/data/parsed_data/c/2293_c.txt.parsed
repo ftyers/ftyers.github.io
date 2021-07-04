@@ -1,0 +1,156 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- No, kuka hän oli? kysyi Rasumihin, kun he tulivat kadulle.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	No	no	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+8	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	kun	kun	SCONJ	C	_	13	mark	_	_
+12	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_
+13	tulivat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	advcl	_	_
+14	kadulle	katu	NOUN	N	Case=All|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- Hän oli Svidrigailov, talonomistaja, jonka talossa sisartani solvaistiin hänen ollessaan siellä kotiopettajattarena.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	talonomistaja	talonomistaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	9	nmod:poss	_	_
+9	talossa	talko	NOUN	N	Case=Ine|Number=Sing	11	obl	_	_
+10	sisartani	sisar	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obj	_	_
+11	solvaistiin	solvaisa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	4	conj	_	_
+12	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	obj	_	_
+13	ollessaan	olla	AUX	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	15	cop	_	_
+14	siellä	siellä	ADV	Adv	_	15	advmod	_	_
+15	kotiopettajattarena	kotiopettajattari	NOUN	N	Case=Ess|Number=Sing	11	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Hän yritti voittaa hänen suosiotansa ja siksi Marfa Petrovna, hänen puolisonsa, ajoi sisareni pois.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	yritti	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	voittaa	voittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	suosiotansa	suosiota	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	siksi	siksi	ADV	Adv	_	8	advmod	_	_
+8	Marfa	Marfa	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+9	Petrovna	Petrovna	PROPN	N	Case=Nom|Number=Sing	8	flat:name	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	puolisonsa	puoliso	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	8	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	ajoi	ajaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+15	sisareni	sisar	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	14	obj	_	_
+16	pois	pois	ADV	Adv	_	14	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Mutta Marfa Petrovna pyysi sittemmin häneltä anteeksi.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	Marfa	Marfa	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Petrovna	Petrovna	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	pyysi	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sittemmin	sittemmin	ADV	Adv	_	4	advmod	_	_
+6	häneltä	hän	PRON	Pron	Case=Abl|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+7	anteeksi	anteeksi	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Hän kuoli hyvin äkkinäisesti vähän aikaa sitten.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hyvin	hyvin	ADV	Adv	_	4	advmod	_	_
+4	äkkinäisesti	äkkinäisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	vähän	vähän	ADV	Adv	_	6	advmod	_	_
+6	aikaa	aika	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+7	sitten	sitten	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Minä en tiedä miksi, mutta minä pelkään tuota ihmistä.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	miksi	miksi	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mutta	mutta	CCONJ	C	_	8	cc	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	pelkään	pelätä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	10	det	_	_
+10	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Hän on tullut tänne aivan vaimonsa hautauksen jälkeen...
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	tänne	tänne	ADV	Adv	_	5	advmod	_	_
+5	aivan	aivan	ADV	Adv	_	6	advmod	_	_
+6	vaimonsa	vaimo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	_
+7	hautauksen	hautaus	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+8	jälkeen	jälkeen	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Tuntui, niinkuin hän olisi tiennyt jotakin...
+1	Tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	niinkuin	niinkuin	SCONJ	C	_	6	mark	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+5	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tiennyt	tietä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	advcl	_	_
+7	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	obj	_	SpaceAfter=No
+8	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Me saamme suojella Dunjaa häneltä ...
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
+2	saamme	saada	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	suojella	suojella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+4	Dunjaa	Dunja	PROPN	N	Case=Par|Number=Sing	3	obj	_	_
+5	häneltä	hän	PRON	Pron	Case=Abl|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+6	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = se oli tämä, mitä sinulle tahdon sanoa.
+1	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	8	obj	_	_
+6	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	8	obl	_	_
+7	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	8	nsubj	_	_
+8	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	acl:relcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = -- Suojella?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Suojella	suoj	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Mitä hän sitten tahtoo tehdä Avdotja Romanovnalle?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	sitten	sitten	ADV	Adv	_	4	advmod	_	_
+4	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	Avdotja	Avdotja	PROPN	N	Case=Nom|Number=Sing	5	obj	_	_
+7	Romanovnalle	Romanovna	PROPN	N	Case=All|Number=Sing	5	obl	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

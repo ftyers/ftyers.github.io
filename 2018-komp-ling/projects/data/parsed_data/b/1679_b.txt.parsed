@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Päivään nousevaan.
+1	Päivään	päiä	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	2	acl	_	_
+2	nousevaan	nouseva	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Alkavaan päivään.
+1	Alkavaan	Alkaa	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	2	acl	_	_
+2	päivään	päivä	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 3
+# text = Ajatus on, että päivä nousee esiin auringon mukana.
+1	Ajatus	ajatus	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	päivä	päivä	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	nousee	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	esiin	esiin	ADV	Adv	_	6	advmod	_	_
+8	auringon	aurinko	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+9	mukana	mukana	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Päästäkseen tänne.
+1	Päästäkseen	päästä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	0	root	_	_
+2	tänne	tänne	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Että he pääsisivät tänne.
+1	Että	että	SCONJ	C	_	3	mark	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	pääsisivät	pääsisä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tänne	tänne	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 6
+# text = Raivasi.
+1	Raivasi	Raiva	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=2	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Teki tilaa.
+1	Teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tilaa	tila	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = Rastaletit.
+1	Rastaletit	Rastaletti	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Jos sinulla on sukujuuret Afrikassa ja kiharat hiukset, etkä leikkaa niitä, ne kasvavat itsestään rastaleteiksi.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	10	advcl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	sukujuuret	sukujuuri	NOUN	N	Case=Nom|Number=Plur	2	nsubj:cop	_	_
+5	Afrikassa	Afrikka	PROPN	N	Case=Ine|Number=Sing	2	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	kiharat	kihara	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	hiukset	hius	NOUN	N	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	2	punct	_	_
+10	etkä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+11	leikkaa	leikka	NOUN	N	Case=Par|Number=Sing	10	nsubj	_	_
+12	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	15	obj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	12	punct	_	_
+14	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	15	nsubj	_	_
+15	kasvavat	kasvaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+16	itsestään	itsestään	ADV	Adv	_	17	advmod	_	_
+17	rastaleteiksi	rastaletei	NOUN	N	Case=Tra|Number=Sing	15	xcomp:ds	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = Rennosti.
+1	Rennosti	rennosti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Vapautuneesti, mukavasti, rauhallisesti.
+1	Vapautuneesti	Vapautuneesti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	mukavasti	mukavasti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	rauhallisesti	rauhallisesti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	0	root	_	SpacesAfter=\s\s
+
+# sent_id = 12
+# text = Renttu.
+1	Renttu	Renttu	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Mies, johon ei kannata luottaa.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	2	obl	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kannata	kannattaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	acl:relcl	_	_
+6	luottaa	luottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 14
+# text = Rentut pitävät usein paljon alkoholista eivätkä käy töissä.
+1	Rentut	Rentua	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pitävät	pitää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	xcomp	_	_
+3	usein	usein	ADV	Adv	_	2	advmod	_	_
+4	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+5	alkoholista	alkoholi	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+6	eivätkä	ei	VERB	V	Clitic=Ka|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	cc	_	_
+7	käy	käydä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	_	_
+8	töissä	työ	NOUN	N	Case=Ine|Number=Plur	2	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 15
+# text = Heillä ei aina ole asuntoa.
+1	Heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	aina	aina	ADV	Adv	_	1	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop:own	_	_
+5	asuntoa	asunto	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,186 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Palvelija kumarsi ja kiirehti etsimään lintua, sillä keisarin sana oli laki.
+1	Palvelija	Palvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	kumarsi	kumartaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	kiirehti	kiirehtia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	etsimään	etsiä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	lintua	lintu	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	sillä	sillä	SCONJ	C	_	12	mark	_	_
+9	keisarin	keisari	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	sana	sana	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	laki	laki	NOUN	N	Case=Nom|Number=Sing	2	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Palvelija juoksi hädissään ympäri palatsin puutarhaa, mutta ei löytänyt lintua mistään.
+1	Palvelija	Palvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hädissään	hädi	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	2	obl	_	_
+4	ympäri	ympäri	ADP	Adp	AdpType=Prep	5	case	_	_
+5	palatsin	palata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	obl	_	_
+6	puutarhaa	puutarha	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	mutta	mutta	CCONJ	C	_	10	cc	_	_
+9	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	löytänyt	löytää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+11	lintua	lintu	NOUN	N	Case=Par|Number=Sing	10	obj	_	_
+12	mistään	mikään	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Keisari kävi yhä kärsimättömämmäksi.
+1	Keisari	keisari	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yhä	yhä	ADV	Adv	_	4	advmod	_	_
+4	kärsimättömämmäksi	kärsimättömämmä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Viimein eräs keittiöpiika muisti nähneensä satakielen.
+1	Viimein	viimein	ADV	Adv	_	4	advmod	_	_
+2	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	keittiöpiika	keittiöpiika	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	muisti	muistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	nähneensä	nähdä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	4	xcomp	_	_
+6	satakielen	satakieli	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = ”Voi, se laulaa todellakin kauniisti!” tyttö huudahti.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Voi	voi	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+5	laulaa	laulaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	todellakin	todella	ADV	Adv	Clitic=Kin	5	advmod	_	_
+7	kauniisti	kauniisti	ADV	Adv	Derivation=Sti	5	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	”	”	PUNCT	Punct	_	5	punct	_	_
+10	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+11	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = ”Ääni saa aina kyyneleet silmiini.”
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ääni	ää	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	_
+3	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	aina	aina	ADV	Adv	_	6	advmod	_	_
+5	kyyneleet	kyynel	NOUN	N	Case=Nom|Number=Plur	6	compound:nn	_	_
+6	silmiini	silmä	NOUN	N	Case=Ill|Number=Plur|Number[psor]=Sing|Person[psor]=1	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Keittiöpiika lupasi johdattaa palvelijan satakielen luokse.
+1	Keittiöpiika	Keittiöpiika	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	lupasi	luvata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	johdattaa	johdattaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	palvelijan	palvelija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	5	nmod:poss	_	_
+5	satakielen	satakieli	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	luokse	luokse	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Matkalla eräs lehmä alkoi ammua.
+1	Matkalla	matka	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+2	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	lehmä	lehmä	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Plur|Person[psor]=1|Style=Coll	4	nsubj	_	_
+4	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ammua	ammua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = ”Oi”, huudahti palvelija oitis.
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oi	Oi	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	SpaceAfter=No
+3	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	palvelija	palvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	5	nsubj	_	_
+7	oitis	oitis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = ”Onpa sillä voimakas lauluääni!”
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Onpa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	5	det	_	_
+4	voimakas	voimakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	lauluääni	lauluääni	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = ”Ei tuo ole satakieli vaan lehmä”, vastasi tyttö.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	satakieli	satakieli	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	vaan	vaan	CCONJ	C	_	7	cc	_	_
+7	lehmä	lehmä	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	5	punct	_	_
+10	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+11	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Vähän ajan kuluttua alkoi eräs sammakko kurnuttaa.
+1	Vähän	vähän	ADV	Adv	_	3	advmod	_	_
+2	ajan	aika	NOUN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+3	kuluttua	kulua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	advcl	_	_
+4	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	sammakko	sammakko	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+7	kurnuttaa	kurnuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = ”Oi”, huudahti palvelija taas.
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oi	Oi	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+3	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	palvelija	palvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	5	obj	_	_
+7	taas	taas	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 14
+# text = ”Nyt kuulen sen.
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Nyt	nyt	ADV	Adv	_	3	advmod	_	_
+3	kuulen	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Todella komea ääni!”
+1	Todella	todella	ADV	Adv	_	2	advmod	_	_
+2	komea	komea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 16
+# text = ”Ei tuo ole satakieli vaan sammakko”, vastasi tyttö.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	satakieli	satakieli	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	vaan	vaan	CCONJ	C	_	7	cc	_	_
+7	sammakko	sammakko	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	5	punct	_	_
+10	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+11	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

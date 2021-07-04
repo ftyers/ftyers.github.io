@@ -1,0 +1,80 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Hyötyi.
+1	Hyötyi	Hyötyi	INTJ	Interj	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Sai jotakin hyödyllistä.
+1	Sai	sai	CCONJ	C	_	3	cc	_	_
+2	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	det	_	_
+3	hyödyllistä	hyödyllinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Esimerkiksi tietoa.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	2	advmod	_	_
+2	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hääriessään.
+1	Hääriessään	Hääriä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Kun hän hääri.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	det	_	_
+3	hääri	hääri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Hääriä, työskennellä yleensä monen tehtävän parissa.
+1	Hääriä	Häärä	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	työskennellä	työskennellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	yleensä	yleensä	ADV	Adv	_	3	advmod	_	_
+5	monen	moni	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	det	_	_
+6	tehtävän	tehtävä	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+7	parissa	parissa	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Keittiössä häärivä ihminen voi vaikkapa tiskata, paistaa perunoita ja pilkkoa vihanneksia.
+1	Keittiössä	keittiö	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+2	häärivä	häärivä	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	vaikkapa	vaikkapa	ADV	Adv	_	6	advmod	_	_
+6	tiskata	tiskata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	paistaa	paistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	ccomp	_	_
+9	perunoita	peruno	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	pilkkoa	pilkko	NOUN	N	Case=Par|Number=Sing	9	conj	_	_
+12	vihanneksia	vihannes	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = Ihan reilusti.
+1	Ihan	ihan	ADV	Adv	_	2	advmod	_	_
+2	reilusti	reilusti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Rehellisesti, avoimesti.
+1	Rehellisesti	Rehellisesti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	avoimesti	avoimesti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 10
+# text = Ilman että keksii tekosyitä.
+1	Ilman	ilman	ADP	Adp	AdpType=Prep	0	root	_	_
+2	että	että	SCONJ	C	_	3	mark	_	_
+3	keksii	keksia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+4	tekosyitä	tekosy	NOUN	N	Case=Par|Derivation=U|Number=Plur	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,116 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Valtioneuvostoon kuuluu pääministeri ja ministereitä.
+1	Valtioneuvostoon	Valtioneuvosto	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+2	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pääministeri	pääministeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	ministereitä	ministere	NOUN	N	Case=Par|Number=Plur	3	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ministerien täytyy olla rehellisiä ja taitavia Suomen kansalaisia.
+1	Ministerien	Ministerä	NOUN	N	Case=Gen|Number=Plur	4	nsubj:cop	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	cop	_	_
+4	rehellisiä	rehellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	8	amod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	SpacesAfter=\s\s
+6	taitavia	taitava	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	conj	_	SpacesAfter=\s\s
+7	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+8	kansalaisia	kansalainen	NOUN	N	Case=Par|Derivation=Lainen|Number=Plur	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = Eduskunta valitsee pääministerin, ja presidentti nimittää hänet tehtävään.
+1	Eduskunta	edus#kunta	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	valitsee	valita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pääministerin	pää#ministeri	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	presidentti	presidentti	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	nimittää	nimittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+9	tehtävään	tehtävä	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Pääministeri johtaa valtioneuvostoa.
+1	Pääministeri	pää#ministeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpacesAfter=\s\s
+2	johtaa	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\s\s
+3	valtioneuvostoa	valtioneuvosto	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Valtioneuvosto hoitaa Suomen asioita eri ministeriöiden avulla.
+1	Valtioneuvosto	Valtioneuvosto	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpacesAfter= 
+2	hoitaa	hoitaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Suomen	Suome	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	asioita	asio	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+5	eri	eri	ADJ	A	_	6	amod	_	_
+6	ministeriöiden	ministeriö	NOUN	N	Case=Gen|Number=Plur	7	nmod:poss	_	_
+7	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Esimerkiksi ulkoasiainministeriön avulla hoidetaan suhteita muihin valtioihin.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	2	advmod	_	_
+2	ulkoasiainministeriön	ulkoasiainministeriö	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	SpacesAfter= 
+3	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	4	obl	_	_
+4	hoidetaan	hoidaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpacesAfter=\s\s
+5	suhteita	suhde	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpacesAfter=\s\s
+6	muihin	muu	PRON	Pron	Case=Ill|Number=Plur|PronType=Ind	7	det	_	_
+7	valtioihin	valtio	NOUN	N	Case=Ill|Number=Plur	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Ministeriötä johtaa ministeri.
+1	Ministeriötä	Ministeriö	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	johtaa	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ministeri	ministeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hallitus tai ministeri voi joutua eroamaan, jos eduskunnan kansanedustajat eivät luota hallitukseen tai ministeriin.
+1	Hallitus	hallitus	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+2	tai	tai	CCONJ	C	_	3	cc	_	SpacesAfter= 
+3	ministeri	ministeri	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	joutua	joutua	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	aux	_	_
+6	eroamaan	erota	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	jos	jos	SCONJ	C	_	12	mark	_	_
+9	eduskunnan	edus#kunta	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	kansanedustajat	kansanedustaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	12	nsubj	_	_
+11	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	luota	luottaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	advcl	_	_
+13	hallitukseen	hallitus	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+14	tai	tai	CCONJ	C	_	15	cc	_	_
+15	ministeriin	ministeri	NOUN	N	Case=Ill|Number=Sing	13	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Kansanedustajat voivat tehdä välikysymyksen, johon hallitus vastaa.
+1	Kansanedustajat	Kansanedustaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	nsubj	_	_
+2	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	välikysymyksen	välikysymys	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	8	obl	_	_
+7	hallitus	hallitus	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpacesAfter= 
+8	vastaa	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Vastauksen jälkeen eduskunta äänestää siitä, luottaako se hallitukseen.
+1	Vastauksen	vastaus	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+2	jälkeen	jälkeen	ADP	Adp	AdpType=Post	1	case	_	_
+3	eduskunta	edus#kunta	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	äänestää	äänestää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\s
+7	luottaako	luottaada	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpacesAfter=\s\s
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj	_	_
+9	hallitukseen	hallitus	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

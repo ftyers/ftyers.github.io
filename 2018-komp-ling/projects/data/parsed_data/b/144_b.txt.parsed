@@ -1,0 +1,123 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kalle ei sanonut mitään, meni isoon maasturiinsa ja lähti renkaat soraa ruoppaisten.
+1	Kalle	Kalle	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sanonut	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	isoon	iso	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+8	maasturiinsa	maasturi	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	6	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	conj	_	_
+11	renkaat	renas	NOUN	N	Case=Nom|Number=Plur	12	nsubj	_	_
+12	soraa	sorata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+13	ruoppaisten	ruoppainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Patu katseli Kallen perään.
+1	Patu	Patu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kallen	Kalle	PROPN	N	Case=Gen|Number=Sing	2	obl	_	_
+4	perään	perään	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = — Ei vaatteet tee purjehtijaa.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	vaatteet	vaate	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+4	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	purjehtijaa	purjehtija	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Vesillä täytyy olla tarkkana, mutta jos vahinko sattuu, pitää toimia jämptisti ja pysyä rauhallisena.
+1	Vesillä	vesi	NOUN	N	Case=Ade|Number=Plur	0	root	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	cop	_	_
+4	tarkkana	tarkkana	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	mutta	mutta	CCONJ	C	_	11	cc	_	_
+7	jos	jos	SCONJ	C	_	9	mark	_	_
+8	vahinko	vahinko	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	sattuu	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	_
+11	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+12	toimia	toin	NOUN	N	Case=Par|Number=Plur	11	obj	_	_
+13	jämptisti	jämptisti	ADV	Adv	Derivation=Sti	11	advmod	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	pysyä	pysyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	conj	_	_
+16	rauhallisena	rauhallinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Llinen|Number=Sing	15	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Emman hameen helma ja Patun housut tippuivat vettä.
+1	Emman	Emma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	hameen	hame	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	helma	helma	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	Patun	Pattu	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	housut	housut	NOUN	N	Case=Nom|Number=Plur	3	conj	_	_
+7	tippuivat	tippua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	vettä	vesi	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = Myös kalsarit olivat märät, eikä siinä oikein nakuna voinut viuhahdella.
+1	Myös	myös	ADV	Adv	_	4	advmod	_	_
+2	kalsarit	kalsari	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+3	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	märät	märkä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	cc	_	_
+7	siinä	siinä	ADV	Adv	_	11	advmod	_	_
+8	oikein	oikein	ADV	Adv	_	11	advmod	_	_
+9	nakuna	naku	NOUN	N	Case=Ess|Number=Sing	11	obl	_	_
+10	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	aux	_	_
+11	viuhahdella	viuhahdella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = — Tule kuivattelemaan serkun luokse vaatteita.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kuivattelemaan	kuivattelea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+4	serkun	serkku	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+5	luokse	luokse	ADP	Adp	AdpType=Post	4	case	_	_
+6	vaatteita	vaate	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hän taitaa olla jo kotona, Emma ehdotti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+2	taitaa	taitaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	kotona	kotona	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	Emma	Emma	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	ehdotti	ehdottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Patun piti siihen suostua.
+1	Patun	Pattu	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+2	piti	pitää	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	4	obl	_	_
+4	suostua	suostua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Kotiin olisi pitkä matka märkänä ajella.
+1	Kotiin	kotiin	ADV	Adv	_	4	advmod	_	_
+2	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	matka	matka	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	märkänä	märkä	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	6	amod	_	_
+6	ajella	aj	NOUN	N	Case=Ade|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

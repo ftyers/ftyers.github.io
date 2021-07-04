@@ -1,0 +1,221 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pastori Halme laski äkkiä kuulokkeen alas.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	laski	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	äkkiä	äkkiä	ADV	Adv	_	3	advmod	_	_
+5	kuulokkeen	kuuloke	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	alas	alas	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Hän ei halunnut ilmoittaa ampumisesta poliisille, ainakaan vielä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	ilmoittaa	ilmoittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	ampumisesta	ampuminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	4	obl	_	SpacesAfter= 
+6	poliisille	poliisi	NOUN	N	Case=All|Number=Sing	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ainakaan	ainakaan	ADV	Adv	_	9	advmod	_	_
+9	vielä	vielä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Ase hänen edessään pöydällä oli Ville Mäkisen metsästyskivääri.
+1	Ase	ase	ADV	Adv	_	2	advmod	_	_
+2	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+3	edessään	edessä	ADP	Adp	AdpType=Post|Person[psor]=3	2	case	_	_
+4	pöydällä	pöytä	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+6	Ville	Ville	PROPN	N	Case=Nom|Number=Sing	8	nmod:poss	_	_
+7	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	metsästyskivääri	metsästyskivääri	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Pappila oli iso keltainen puurakennus lähellä kirkkoja.
+1	Pappila	Pappila	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	iso	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+4	keltainen	keltainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	puurakennus	puurakennus	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	lähellä	lähellä	ADP	Adp	AdpType=Prep	7	case	_	_
+7	kirkkoja	kirkko	NOUN	N	Case=Par|Number=Plur	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = Alakerrassa olivat sali, keittiö ja pastorin työhuone.
+1	Alakerrassa	ala#kerta	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	sali	sali	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	keittiö	keittiö	NOUN	N	Case=Nom|Number=Sing	3	conj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	pastorin	pastori	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	työhuone	työhuone	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Yläkerrassa olivat makuuhuone, lastenhuone ja vierashuone.
+1	Yläkerrassa	Yläkerra	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	makuuhuone	makuuhuone	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	lastenhuone	lastenhuone	NOUN	N	Case=Nom|Number=Sing	3	conj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	vierashuone	vierashuone	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Pastori Halme oli asunut talossa nyt kolme vuotta, siitä lähtien, kun hän tuli töihin Tuuran seurakuntaan.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	asunut	asuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	talossa	talo	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+6	nyt	nyt	ADV	Adv	_	7	advmod	_	_
+7	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	_
+8	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	SpacesAfter= 
+10	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	_
+11	lähtien	lähtien	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	kun	kun	SCONJ	C	_	15	mark	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+15	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	advcl	_	SpacesAfter= 
+16	töihin	työ	NOUN	N	Case=Ill|Number=Plur	15	obl	_	_
+17	Tuuran	Tuura	PROPN	N	Case=Gen|Number=Sing	18	nmod:poss	_	_
+18	seurakuntaan	seurakunta	NOUN	N	Case=Ill|Number=Sing	15	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Pastori Halmeella oli vaimo, Kerttu, ja tytär, joka opiskeli Helsingissä.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	Halmeella	Halme	NOUN	N	Case=Ade|Number=Sing	1	nmod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	tytär	tytär	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	_
+12	opiskeli	opiskella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	Helsingissä	Helsinki	PROPN	N	Case=Ine|Number=Sing	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 9
+# text = Halmeet asuivat nyt kahdestaan tilavassa pappilassa.
+1	Halmeet	Halme	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	asuivat	asua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nyt	nyt	ADV	Adv	_	2	advmod	_	_
+4	kahdestaan	kahdestaan	ADV	Adv	_	5	advmod	_	_
+5	tilavassa	tilava	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	6	amod	_	_
+6	pappilassa	pappila	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Pastori Halme seisoi työhuoneessa maalaustelineen ääressä ja yritti keskittyä.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	seisoi	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	työhuoneessa	työhuone	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	maalaustelineen	maalausteline	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	ääressä	ääressä	ADP	Adp	AdpType=Post	5	case	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	yritti	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	keskittyä	keskittyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = Malaaminen oli pastori Halmeen harrastus.
+1	Malaaminen	Malaaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+4	Halmeen	Halme	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	harrastus	harrastus	NOUN	N	Case=Nom|Number=Sing	3	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Telineessä oli keskeneräinen taulu.
+1	Telineessä	Telinei	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	keskeneräinen	keskeneräinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	4	amod	_	_
+4	taulu	taulu	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 13
+# text = Siihen oli kuvattu kylän lähellä virtaava kapea joki.
+1	Siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	kuvattu	kuvaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	kylän	kylä	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+5	lähellä	lähellä	ADP	Adp	AdpType=Post	4	case	_	_
+6	virtaava	virata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	acl	_	_
+7	kapea	kapea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	joki	joki	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 14
+# text = Maalaamisesta ei tullut mitään.
+1	Maalaamisesta	Maalaaminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	3	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 15
+# text = Ajatukset pyörivät päässä.
+1	Ajatukset	ajatus	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	pyörivät	pyöriä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	päässä	pää	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 16
+# text = Laukauksen kaiku kuului selvänä mielessä.
+1	Laukauksen	laukaus	NOUN	N	Case=Gen|Number=Sing	2	nmod:gobj	_	_
+2	kaiku	kaiku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	_
+3	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	selvänä	selvä	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	5	amod	_	_
+5	mielessä	mieli	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 17
+# text = Pelästyksen tunne oli ollut voimakas.
+1	Pelästyksen	Pelästys	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tunne	tunne	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+5	voimakas	voimakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= 
+
+# sent_id = 18
+# text = Halme oli ottanut kiväärin mukaansa.
+1	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ottanut	ottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kiväärin	kiväärin	ADV	Adv	_	3	advmod	_	_
+5	mukaansa	mukaan	ADV	Adv	Person[psor]=3	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 19
+# text = Se oli nyt työhuoneen nurkassa.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+4	työhuoneen	työhuone	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	nurkassa	nurkka	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 20
+# text = Mitähän sillekin pitäisi tehdä?
+1	Mitähän	mikä	PRON	Pron	Case=Par|Clitic=Han|Number=Sing|PronType=Int	2	det	_	_
+2	sillekin	si	NOUN	N	Case=All|Clitic=Kin|Number=Sing	4	obl	_	_
+3	pitäisi	pitää	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

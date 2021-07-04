@@ -1,0 +1,394 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Hän on neljä vuotta sinua nuorempi", hän sanoi.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	neljä	neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+6	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	7	obj	_	_
+7	nuorempi	nuori	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	5	acl:relcl	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	7	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = "Hänellä ei ole mitään paikkaa maailmassa.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	cop:own	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	paikkaa	paikka	NOUN	N	Case=Par|Number=Sing	2	nsubj:cop	_	_
+7	maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hänellä ei ole asemaa eikä tuloja.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop:own	_	_
+4	asemaa	asema	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+5	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	cc	_	_
+6	tuloja	tulo	NOUN	N	Case=Par|Number=Plur	1	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Hän on epäkäytännöllinen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	epäkäytännöllinen	epäkäytännöllinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Rakastuneena sinuun hänen tulisi kaiken järjen ja viisauden mukaan tehdä jotakin, joka oikeuta taisi häntä ajattelemaan naimisiin menoa sen sijaan, että hän nyt uinailee noissa vähäpätöisissä jutuissaan ja lapsellisissa unelmissaan.
+1	Rakastuneena	Rakastua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	advcl	_	_
+2	sinuun	sinä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	tulisi	tullä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	det	_	_
+6	järjen	järki	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	viisauden	viisaus	NOUN	N	Case=Gen|Number=Sing	6	conj	_	_
+9	mukaan	mukaan	ADP	Adp	AdpType=Post	6	case	_	_
+10	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+11	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	10	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	17	punct	_	_
+13	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	17	nsubj	_	_
+14	oikeuta	oikeuta	NOUN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+15	taisi	taitaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	aux	_	_
+16	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	ajattelemaan	ajatella	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	acl:relcl	_	_
+18	naimisiin	naimisiin	ADV	Adv	_	17	advmod	_	_
+19	menoa	meno	NOUN	N	Case=Par|Number=Sing	17	obj	_	_
+20	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	17	obl	_	_
+21	sijaan	sijaan	ADP	Adp	AdpType=Post	20	case	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	26	punct	_	_
+23	että	että	SCONJ	C	_	26	mark	_	_
+24	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+25	nyt	nyt	ADV	Adv	_	26	advmod	_	_
+26	uinailee	uinailla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	ccomp	_	_
+27	noissa	no	NOUN	N	Case=Ine|Number=Plur	26	obl	_	_
+28	vähäpätöisissä	vähäpätöinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Plur	29	amod	_	_
+29	jutuissaan	jutui	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	26	obl	_	_
+30	ja	ja	CCONJ	C	_	31	cc	_	_
+31	lapsellisissa	lapsellis	NOUN	N	Case=Ine|Number=Plur	29	conj	_	_
+32	unelmissaan	unelmi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	26	obl	_	SpaceAfter=No
+33	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Martin Eden tuskin pääsee koskaan kohoamaan.
+1	Martin	Martti	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	Eden	Es	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	3	nmod:poss	_	_
+3	tuskin	tuskin	ADV	Adv	_	4	advmod	_	_
+4	pääsee	päästä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	koskaan	koskaan	ADV	Adv	_	4	advmod	_	_
+6	kohoamaan	kohota	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Hän ei voi suhtautua vakavasti vastuunalaisuuteen ja miehen työhön, kuten sinun isäsi on tehnyt tai kuten meidän ystävämme herra Butler.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	suhtautua	suhtautua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	vakavasti	vakavasti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+6	vastuunalaisuuteen	vastuunalaisuus	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	4	obl	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	miehen	mies	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	työhön	työ	NOUN	N	Case=Ill|Number=Sing	6	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	kuten	kuten	ADV	Adv	_	15	advmod	_	_
+12	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	15	nsubj	_	_
+13	isäsi	is	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	15	nsubj	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tehnyt	tehnä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+16	tai	tai	CCONJ	C	_	21	cc	_	_
+17	kuten	kuten	ADV	Adv	_	20	advmod	_	_
+18	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	19	nmod:poss	_	_
+19	ystävämme	ystävä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	20	nmod:poss	_	_
+20	herra	herra	NOUN	N	Case=Nom|Number=Sing	21	compound:nn	_	_
+21	Butler	Butler	PROPN	N	Case=Nom|Number=Sing	15	conj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Martin Eden ei varmaankaan tule koskaan ansaitsemaan rahaa.
+1	Martin	Martti	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	Eden	Es	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	5	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	varmaankaan	varmaan	ADV	Adv	Clitic=Kaan	5	advmod	_	_
+5	tule	tulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	koskaan	koskaan	ADV	Adv	_	7	advmod	_	_
+7	ansaitsemaan	ansaitsea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+8	rahaa	raha	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Ja tämä maailma on kuitenkin järjestetty niin, että raha on välttämätön onnelle -- oh, en minä tarkoita noita suunnattomia rikkauksia, mutta sellaista varallisuutta, joka suo riippumattoman ja säädyllisen aseman.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	maailma	maailma	NOUN	N	Case=Nom|Number=Sing	6	obj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+5	kuitenkin	kuitenkin	ADV	Adv	_	6	advmod	_	_
+6	järjestetty	järjestää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	19	advcl	_	_
+7	niin	niin	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	että	että	SCONJ	C	_	13	mark	_	_
+10	raha	raha	NOUN	N	Case=Nom|Number=Sing	13	nsubj:cop	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+12	välttämätön	välttämätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	13	amod	_	_
+13	onnelle	onni	NOUN	N	Case=All|Number=Sing	15	obl	_	_
+14	--	--	PUNCT	Punct	_	15	punct	_	_
+15	oh	oh	INTJ	Interj	_	6	appos	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	6	punct	_	_
+17	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	19	aux	_	_
+18	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_
+19	tarkoita	tarkoittaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+20	noita	tuo	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	22	det	_	_
+21	suunnattomia	suunnaton	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Plur	22	amod	_	_
+22	rikkauksia	rikkaus	NOUN	N	Case=Par|Number=Plur	19	obj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	26	punct	_	_
+24	mutta	mutta	CCONJ	C	_	26	cc	_	_
+25	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	26	amod	_	_
+26	varallisuutta	varallisuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	19	conj	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	29	punct	_	_
+28	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	29	nsubj	_	_
+29	suo	suoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	acl:relcl	_	_
+30	riippumattoman	riippumaton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	33	amod	_	_
+31	ja	ja	CCONJ	C	_	32	cc	_	_
+32	säädyllisen	säädyllinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	30	conj	_	_
+33	aseman	asema	NOUN	N	Case=Gen|Number=Sing	29	obj	_	SpaceAfter=No
+34	.	.	PUNCT	Punct	_	19	punct	_	_
+
+# sent_id = 10
+# text = _Hän._.. hän ei ole koskaan puhunut?"
+1	_Hän	_Hän	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+2	._..	._..	PUNCT	Punct	_	1	punct	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	aux	_	_
+6	koskaan	koskaan	ADV	Adv	_	7	advmod	_	_
+7	puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 11
+# text = "Ei halaistua sanaa.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	halaistua	halaistua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	sanaa	sana	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Hän ei ole edes yrittänyt, mutta jos hän koettaisi, minä en antaisi hänen puhua, koska minä en rakasta häntä."
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	edes	edes	ADV	Adv	_	5	advmod	_	_
+5	yrittänyt	yrittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	14	punct	_	_
+7	mutta	mutta	CCONJ	C	_	14	cc	_	_
+8	jos	jos	SCONJ	C	_	10	mark	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	koettaisi	koettaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	14	advcl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	10	punct	_	_
+12	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_
+13	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	antaisi	antaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	5	conj	_	_
+15	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp:ds	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	21	punct	_	_
+18	koska	koska	SCONJ	C	_	21	mark	_	_
+19	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj:cop	_	_
+20	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	21	cop	_	_
+21	rakasta	rakas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	advcl	_	_
+22	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	21	obj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	21	punct	_	SpaceAfter=No
+24	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 13
+# text = "Minä olen iloinen siitä.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	iloinen	iloinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 14
+# text = En voisi nähdä tyttäreni, minun ainoan tyttäreni, joka on niin puhdas ja tahraton, rakastuvan sellaiseen mieheen kuin hän.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	voisi	voida	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	3	aux	_	_
+3	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	tyttäreni	tytär	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	8	nmod:poss	_	_
+7	ainoan	ainoa	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	8	det	_	_
+8	tyttäreni	tytär	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj:cop	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+12	niin	niin	ADV	Adv	_	13	advmod	_	_
+13	puhdas	puhdas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	acl:relcl	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	tahraton	tahraton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	rakastuvan	rakastua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	19	acl	_	_
+18	sellaiseen	sellainen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Lainen|Number=Sing	19	amod	_	_
+19	mieheen	miehe	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+20	kuin	kuin	SCONJ	C	_	21	mark	_	_
+21	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	19	advcl	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Maailmassa on jaloja miehiä, jotka ovat puhtaita ja tahrattomia ja miehekkäitä.
+1	Maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	jaloja	jalo	NOUN	N	Case=Par|Number=Plur	1	nsubj:cop	_	_
+4	miehiä	mies	NOUN	N	Case=Par|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	8	nsubj:cop	_	_
+7	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	puhtaita	puhtas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	acl:relcl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	tahrattomia	tahraton	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Plur	8	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	miehekkäitä	miehekäs	ADJ	A	Case=Par|Degree=Pos|Number=Plur	8	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 16
+# text = Odota niitä.
+1	Odota	odottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	1	obj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 17
+# text = Sinä tapaat sellaisen jonakin päivänä, sinä rakastat häntä ja hän rakastaa sinua, ja sinä olet onnellinen hänen kanssaan, kuten sinun isäsi ja minä olemme olleet.
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	tapaat	tamas	NOUN	N	Case=Nom|Number=Plur	8	obj	_	_
+3	sellaisen	sellainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+4	jonakin	jokin	PRON	Pron	Case=Ess|Number=Sing|PronType=Ind	5	det	_	_
+5	päivänä	päivä	NOUN	N	Case=Ess|Number=Sing	2	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	_	_
+8	rakastat	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	rakastaa	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	12	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	28	punct	_	_
+15	ja	ja	CCONJ	C	_	28	cc	_	_
+16	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	28	nsubj	_	_
+17	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	28	aux	_	_
+18	onnellinen	onnellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	28	nsubj	_	_
+19	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	28	obl	_	_
+20	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	19	case	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	24	punct	_	_
+22	kuten	kuten	ADV	Adv	_	24	advmod	_	_
+23	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	24	det	_	_
+24	isäsi	isä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	28	obj	_	_
+25	ja	ja	CCONJ	C	_	24	cc	_	_
+26	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	_	_
+27	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	28	aux	_	_
+28	olleet	olla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	8	conj	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 18
+# text = Ja sitä paitsi on eräs asia, joka sinun aina tulee pitää mielessäsi..."
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+3	paitsi	paitsi	ADV	Adv	_	2	fixed	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	asia	asia	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+9	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	11	nsubj	_	_
+10	aina	aina	ADV	Adv	_	11	advmod	_	_
+11	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+12	pitää	pitää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	mielessäsi	mieless	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	12	obj	_	SpaceAfter=No
+14	...	...	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 19
+# text = "Niin, äiti."
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 20
+# text = Rouva Morsen ääni oli hyvin hiljainen ja vieno, kun hän sanoi: "Se on lapset."
+1	Rouva	rouva	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Morsen	Mornen	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	hyvin	hyvin	ADV	Adv	_	6	advmod	_	_
+6	hiljainen	hiljainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	vieno	vieno	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	kun	kun	SCONJ	C	_	12	mark	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+13	:	:	PUNCT	Punct	_	12	punct	_	_
+14	"	"	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+15	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	17	nsubj:cop	_	_
+16	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+17	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	12	nsubj:cop	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+19	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 21
+# text = "Minä...
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 22
+# text = minä olen ajatellut niitä", tunnusti Ruth, ja muistaessaan niitä ihmeellisiä ajatuksia, jotka olivat joskus kiihkeinä täyttäneet hänen mielensä, hän sävähti punaiseksi neitseellisestä kainoudesta, kun hänen täytyi puhua sellaisista asioista.
+1	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ajatellut	ajatella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	3	obj	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	tunnusti	tunnustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+8	Ruth	Ruth	PROPN	N	Case=Nom|Number=Sing	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	muistaessaan	muistaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	3	conj	_	_
+12	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	14	det	_	_
+13	ihmeellisiä	ihmeellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	14	amod	_	_
+14	ajatuksia	ajatus	NOUN	N	Case=Par|Number=Plur	11	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	20	nsubj	_	_
+17	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	aux	_	_
+18	joskus	joskus	ADV	Adv	_	20	advmod	_	_
+19	kiihkeinä	kiihkeä	ADJ	A	Case=Ess|Degree=Pos|Number=Plur	20	obl	_	_
+20	täyttäneet	täyttäa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	14	acl:relcl	_	_
+21	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	nmod:poss	_	_
+22	mielensä	mieli	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	20	obj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	25	punct	_	_
+24	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	25	nsubj	_	_
+25	sävähti	sävähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+26	punaiseksi	punainen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Sing	28	amod	_	_
+27	neitseellisestä	neitseellinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	28	amod	_	_
+28	kainoudesta	kainoudi	NOUN	N	Case=Ela|Number=Sing	25	obl	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	33	punct	_	_
+30	kun	kun	SCONJ	C	_	33	mark	_	_
+31	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	_
+32	täytyi	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	33	aux	_	_
+33	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	25	advcl	_	_
+34	sellaisista	sellainen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Lainen|Number=Plur	35	amod	_	_
+35	asioista	asia	NOUN	N	Case=Ela|Number=Plur	33	obl	_	SpaceAfter=No
+36	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

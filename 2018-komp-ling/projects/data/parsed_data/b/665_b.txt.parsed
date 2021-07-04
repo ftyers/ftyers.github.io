@@ -1,0 +1,132 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mies lähti kesällä Tampereella tavanomaiselle lenkilleen, mutta siellä tapahtui jotain kummallista.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kesällä	kesä	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+4	Tampereella	Tampere	PROPN	N	Case=Ade|Number=Sing	2	obl	_	_
+5	tavanomaiselle	tavanomainen	ADJ	A	Case=All|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	lenkilleen	lenki	NOUN	N	Case=All|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	mutta	mutta	CCONJ	C	_	10	cc	_	_
+9	siellä	siellä	ADV	Adv	_	10	advmod	_	_
+10	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	12	det	_	_
+12	kummallista	kummallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Forssan HKScanille tuotu teuraskuljetus nousi puheenaiheeksi lokakuun lopussa.
+1	Forssan	Forssa	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	HKScanille	HKScan	PROPN	N	Case=All|Number=Sing	3	obl	_	_
+3	tuotu	tuoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	teuraskuljetus	teuraskuljetus	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	puheenaiheeksi	puheenaihe	NOUN	N	Case=Tra|Number=Sing	5	obl	_	_
+7	lokakuun	lokakuu	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	lopussa	loppu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Tesoman surmasta syytetty todettiin oikeudessa syyntakeettomaksi.
+1	Tesoman	Tesoma	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	surmasta	surma	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	syytetty	syyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	todettiin	todaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	oikeudessa	oikeud	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+6	syyntakeettomaksi	syyntakeeton	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Pöytäkirjaa ei lähetetä syyteharkintaan, koska epäilty kuoli kolarissa.
+1	Pöytäkirjaa	pöytä#kirja	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lähetetä	lähettää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	syyteharkintaan	syyteharkinta	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	koska	koska	SCONJ	C	_	8	mark	_	_
+7	epäilty	epäilty	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	_
+9	kolarissa	kolari	NOUN	N	Case=Ine|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Syytetty tunnusti teon yli kolme vuotta rikoksen jälkeen.
+1	Syytetty	syyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+2	tunnusti	tunnusti	ADV	Adv	Derivation=Sti	1	advmod	_	_
+3	teon	te	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
+7	rikoksen	rikos	NOUN	N	Case=Gen|Number=Sing	1	obl	_	_
+8	jälkeen	jälkeen	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Syyttäjä vaatii syytetylle 12 vuoden ehdotonta vankeusrangaistusta taposta.
+1	Syyttäjä	syyttäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	vaatii	vaatia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	syytetylle	syytety	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	12	12	NUM	Num	NumType=Card	5	nummod	_	_
+5	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	ehdotonta	ehdoton	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Sing	7	amod	_	_
+7	vankeusrangaistusta	vankeusrangaistus	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+8	taposta	tapo	NOUN	N	Case=Ela|Number=Sing	7	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Nuorta miestä syytetään taposta.
+1	Nuorta	nuori	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	amod	_	_
+2	miestä	mies	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	syytetään	syyttää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	taposta	tapo	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Kokeneen rikosylikomisarion mukaan tapaus on harvinainen monesta eri syystä.
+1	Kokeneen	kokea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl	_	_
+2	rikosylikomisarion	rikosylikomisario	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+3	mukaan	mukaan	ADP	Adp	AdpType=Post	2	case	_	_
+4	tapaus	tapaus	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	harvinainen	harvinainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	7	amod	_	_
+7	monesta	moni	NOUN	N	Case=Ela|Number=Sing	0	root	_	_
+8	eri	eri	ADJ	A	_	9	amod	_	_
+9	syystä	syy	NOUN	N	Case=Ela|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = Merikarvialainen mies on tunnustanut panneensa kolme kertaa elintarvikkeisiin ompelukoneen neuloja.
+1	Merikarvialainen	Merikarvialainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tunnustanut	tunnustada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	panneensa	pana	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	4	xcomp	_	_
+6	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+8	elintarvikkeisiin	elin#tarvike	NOUN	N	Case=Ill|Number=Plur	9	obl	_	_
+9	ompelukoneen	ompelukoa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	acl	_	_
+10	neuloja	neulo	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Keskusrikospoliisin tutkinnassa selvitetään, ovatko Pohjolakodin toiminnassa mukana olevat syyllistyneet pahoinpitelyyn, vapaudenriistoon tai virkavelvollisuuden rikkomiseen.
+1	Keskusrikospoliisin	Keskusrikospoliisi	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tutkinnassa	tutkinna	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+3	selvitetään	selvittää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	ovatko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+6	Pohjolakodin	Pohjolakod	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	toiminnassa	toiminna	NOUN	N	Case=Ine|Number=Sing	9	obl	_	_
+8	mukana	mukana	ADP	Adp	AdpType=Post	7	case	_	_
+9	olevat	olla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	10	acl	_	_
+10	syyllistyneet	syyllistya	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+11	pahoinpitelyyn	pahoinpitely	NOUN	N	Case=Ill|Derivation=U|Number=Sing	10	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	vapaudenriistoon	vapaudenriisto	NOUN	N	Case=Ill|Number=Sing	3	conj	_	_
+14	tai	tai	CCONJ	C	_	16	cc	_	_
+15	virkavelvollisuuden	virkavelvollisuus	NOUN	N	Case=Gen|Derivation=Llinen,Vs|Number=Sing	16	nmod:gobj	_	_
+16	rikkomiseen	rikkominen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	3	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

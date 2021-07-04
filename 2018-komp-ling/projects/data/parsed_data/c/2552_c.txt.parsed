@@ -1,0 +1,156 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Minä tiedän kyllä, ettei ihminen ole mato, vastasi Raskolnikov katsellen Sonjaa omituisen ilmekkäästi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kyllä	kyllä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	mark	_	_
+7	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+8	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	cop	_	_
+9	mato	mato	INTJ	Interj	_	3	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	3	punct	_	_
+11	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+12	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+13	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	11	advcl	_	_
+14	Sonjaa	Sonja	PROPN	N	Case=Par|Number=Sing	13	obj	_	_
+15	omituisen	omituinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	16	amod	_	_
+16	ilmekkäästi	ilmekkäästi	ADV	Adv	Derivation=Sti	13	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Minä olen valehdellut, Sonja, jatkoi hän.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	valehdellut	valehdella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = -- Se on valetta kaikki...
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	valetta	vale	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+5	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nmod	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Asianlaita ei ole sellainen.
+1	Asianlaita	Asianlas	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	sellainen	sellainen	ADJ	A	Case=Nom|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Sinä olet vallan oikeassa.
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj:cop	_	_
+2	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	vallan	#valta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	oikeassa	oikeassa	ADV	Adv	_	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Vallan toiset seikat olivat myötävaikuttamassa ... vallan toiset.
+1	Vallan	valta	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	toiset	toinen	PRON	Pron	Case=Nom|Number=Plur|PronType=Rcp	3	det	_	_
+3	seikat	seikka	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+4	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	myötävaikuttamassa	myötävaikuttaa	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	...	...	PUNCT	Punct	_	8	punct	_	_
+7	vallan	valta	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	toiset	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Plur|NumType=Ord	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Minä en ole pitkiin aikoihin puhunut kenenkään kanssa ja päätäni särkee niin tuskastuttavasti.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	pitkiin	pitkä	ADJ	A	Case=Ill|Degree=Pos|Number=Plur	5	amod	_	_
+5	aikoihin	aiko	NOUN	N	Case=Ill|Number=Plur	6	obl	_	_
+6	puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	kenenkään	kukaan	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	obl	_	_
+8	kanssa	kanssa	ADP	Adp	AdpType=Post	7	case	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	päätäni	pää	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obj	_	_
+11	särkee	särkeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+12	niin	niin	ADV	Adv	_	13	advmod	_	_
+13	tuskastuttavasti	tuskastuttavasti	ADV	Adv	Derivation=Sti	11	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Kuume kiilsi hänen silmistään.
+1	Kuume	kuume	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kiilsi	kiiltaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	silmistään	silmä	NOUN	N	Case=Ela|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Hän alkoi melkein hourailla ja nopea hymy väikkyi hänen huulillaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	melkein	melkein	ADV	Adv	_	4	advmod	_	_
+4	hourailla	houraa	ADJ	A	Case=Ade|Degree=Pos|Number=Plur	2	obl	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	nopea	nopea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	hymy	hymy	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	väikkyi	väikkyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	huulillaan	huul	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Järkytetyn sieluntilansa vuoksi oli hänestä tullut heikko ja väsynyt.
+1	Järkytetyn	Järkyttää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	acl	_	_
+2	sieluntilansa	sieluntila	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	6	obl	_	_
+3	vuoksi	vuoksi	ADP	Adp	AdpType=Post	2	case	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
+6	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	heikko	heikko	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	nsubj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	väsynyt	väsynyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = Sonja ymmärsi, miten syvästi Raskolnikov kärsi, ja hänkin tunsi päässään pyörrytystä.
+1	Sonja	Sonja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	ymmärsi	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	miten	miten	ADV	Adv	_	5	advmod	_	_
+5	syvästi	syvästi	ADV	Adv	Derivation=Sti	7	advmod	_	_
+6	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	kärsi	kärsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	hänkin	hän	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	tunsi	tuntaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+12	päässään	pää	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	11	obl	_	_
+13	pyörrytystä	pyörrytys	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Raskolnikovin puhe oli niin helppoa käsittää, mutta samalla niin omituista.
+1	Raskolnikovin	Raskolnikov	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	puhe	#puhe	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	helppoa	helppo	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+6	käsittää	käsittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	mutta	mutta	CCONJ	C	_	11	cc	_	_
+9	samalla	samalla	ADV	Adv	_	11	advmod	_	_
+10	niin	niin	ADV	Adv	_	11	advmod	_	_
+11	omituista	omituinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	5	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

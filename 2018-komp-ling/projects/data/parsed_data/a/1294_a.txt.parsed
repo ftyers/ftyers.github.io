@@ -1,0 +1,86 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 19.10.
+1	19.10	19.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Älypuhelin häiritsee parisuhteita.
+1	Älypuhelin	älypuhelin	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	häiritsee	häirita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	parisuhteita	parisuhtei	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kivihiilen käyttö halutaan lopettaa.
+1	Kivihiilen	Kivihiile	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	käyttö	käyttö	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+3	halutaan	haluta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	lopettaa	lopettaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Poliisi saa uusia aseita.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	aseita	ase	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Kivenveisto vaatii paljon aikaa.
+1	Kivenveisto	Kivenveisto	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vaatii	vaatia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	paljon	paljon	ADV	Adv	_	4	advmod	_	_
+4	aikaa	aika	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Sää. 19.10.
+1	Sää	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	3	punct	_	_
+3	19.10	19.10	NUM	Num	NumType=Card	1	nummod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Itä-Suomessa raskausajan tupakointi on yleisempää kuin lännessä.
+1	Itä-Suomessa	Itä-Suome	PROPN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	raskausajan	raskaus#aika	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	tupakointi	tupakointi	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	yleisempää	yleise	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	0	root	_	_
+6	kuin	kuin	SCONJ	C	_	7	mark	_	_
+7	lännessä	länsi	NOUN	N	Case=Ine|Number=Sing	5	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = MV-julkaisun perustaja Ilja Janitskin on tuomittu vankeuteen.
+1	MV-julkaisun	MV-julkaisu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	2	nmod:poss	_	_
+2	perustaja	perustaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	compound:nn	_	_
+3	Ilja	Ilja	PROPN	N	Case=Nom|Number=Sing	6	obj	_	_
+4	Janitskin	Janitski	PROPN	N	Case=Gen|Number=Sing	3	flat:name	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+6	tuomittu	tuomita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	vankeuteen	vankeus	NOUN	N	Case=Ill|Derivation=Vs|Number=Sing	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Laulaja Katri Helena saa vuoden isovanhemman tunnustuksen.
+1	Laulaja	laulaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	compound:nn	_	_
+2	Katri	Katri	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Helena	Helena	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	isovanhemman	isovanhe	ADJ	A	Case=Gen|Degree=Sup|Number=Sing	7	amod	_	_
+7	tunnustuksen	tunnustus	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Koirat voivat tunnistaa sanoja.
+1	Koirat	koira	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tunnistaa	tunnistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	sanoja	sana	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

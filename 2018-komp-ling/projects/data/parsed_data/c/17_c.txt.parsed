@@ -1,0 +1,341 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Eikö se ollut jokseenkin mieltä kiinnittävä?"
+1	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+2	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	aux	_	_
+5	jokseenkin	jokseenkin	ADV	Adv	_	7	advmod	_	_
+6	mieltä	mieli	NOUN	N	Case=Par|Number=Sing	7	obj	_	_
+7	kiinnittävä	kiinnitä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = "Oli, kummitusjuttujen kerääjälle." Tohtori Mortimer otti kokoontaitetun sanomalehden taskustaan.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oli	olla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	kummitusjuttujen	kummitusjuta	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	5	acl	_	_
+5	kerääjälle	kerääjä	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	_
+8	Tohtori	Tohtori	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Mortimer	Mortimer	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	kokoontaitetun	kokoontaittaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	12	acl	_	_
+12	sanomalehden	sanomalehti	NOUN	N	Case=Gen|Number=Sing	10	obj	_	_
+13	taskustaan	taskusta	NOUN	N	Case=Ill|Number=Sing	10	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = "Nyt, herra Holmes, voin tarjota teille tuoreempaakin.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Nyt	nyt	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	herra	herra	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	Holmes	Holmes	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	tarjota	tarjota	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+9	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	10	obl	_	_
+10	tuoreempaakin	tuoreempaa	VERB	V	Clitic=Kin|InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = Tämä on Devon County Cronicle tämän vuoden maaliskuun 14:ltä päivältä.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+3	Devon	Devon	PROPN	N	Case=Nom|Number=Sing	4	obl	_	_
+4	County	Counnä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	Cronicle	Cronicle	PROPN	N	Case=Nom|Number=Sing	4	obj	_	_
+6	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	det	_	_
+7	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	maaliskuun	maaliskuu	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+9	14:ltä	14	NUM	Num	Case=Abl|Number=Sing|NumType=Card	10	nummod	_	_
+10	päivältä	päivä	NOUN	N	Case=Abl|Number=Sing	4	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Siinä on lyhyt kertomus sir Charles Baskervillen kuolemasta, joka oli tapahtunut muutamia päiviä aikasemmin."
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	lyhyt	lyhyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	kertomus	kertomus	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+5	sir	sir	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	6	compound:nn	_	_
+6	Charles	Charles	PROPN	N	Case=Nom|Number=Sing	8	nmod:poss	_	_
+7	Baskervillen	Baskerville	PROPN	N	Case=Gen|Number=Sing	6	flat:name	_	_
+8	kuolemasta	kuolema	NOUN	N	Case=Ela|Number=Sing	1	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	acl:relcl	_	_
+13	muutamia	muutama	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	14	det	_	_
+14	päiviä	päivä	NOUN	N	Case=Par|Number=Plur	12	obj	_	_
+15	aikasemmin	aikasemmin	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+17	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Ystäväni kumartui eteenpäin ja valmistautui tarkkaavasti kuulemaan.
+1	Ystäväni	ystävä	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	kumartui	kumartua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	eteenpäin	eteen#päin	ADV	Adv	_	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	valmistautui	valmistautua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	tarkkaavasti	tarkkaavasti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+7	kuulemaan	kuulla	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Vieraamme laski silmälasit paikalleen ja alkoi lukea: "Sir Charles Baskervillen äkillinen kuolema on synkistyttänyt koko kreivikuntaa.
+1	Vieraamme	vieraamme	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	laski	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	silmälasit	silmä#lasit	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	paikalleen	paikka	NOUN	N	Case=All|Number=Sing|Person[psor]=3	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	lukea	lukea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	2	punct	_	_
+9	"	"	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+10	Sir	Sir	PROPN	N	Case=Nom|Number=Sing	14	nmod:poss	_	_
+11	Charles	Charles	PROPN	N	Case=Nom|Number=Sing	10	flat:name	_	_
+12	Baskervillen	Baskerville	PROPN	N	Case=Gen|Number=Sing	10	flat:name	_	_
+13	äkillinen	äkillinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	14	amod	_	_
+14	kuolema	kuolema	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	synkistyttänyt	synkistyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	parataxis	_	_
+17	koko	koko	ADJ	A	_	18	amod	_	_
+18	kreivikuntaa	kreivi#kunta	NOUN	N	Case=Par|Number=Sing	16	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hänen nimeänsä mainittiin yleisesti, kun oli kysymys vapaamielisestä ehdokkaasta keski-Devonshireä varten tulevissa vaaleissa.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	nimeänsä	nimeä	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	3	obj	_	_
+3	mainittiin	mainia	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	yleisesti	yleisesti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kun	kun	SCONJ	C	_	8	mark	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	kysymys	kysymys	NOUN	N	Case=Nom|Number=Sing	3	advcl	_	_
+9	vapaamielisestä	vapaamielinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	10	amod	_	_
+10	ehdokkaasta	ehdokkaa	NOUN	N	Case=Ela|Number=Sing	8	obl	_	_
+11	keski-Devonshireä	keski-Devonshiri	NOUN	N	Case=Par|Number=Sing	8	nmod	_	_
+12	varten	varten	ADP	Adp	AdpType=Post	11	case	_	_
+13	tulevissa	tuleva	ADJ	A	Case=Ine|Degree=Pos|Number=Plur	14	amod	_	_
+14	vaaleissa	vaali	NOUN	N	Case=Ine|Number=Plur	8	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Vaikka sir Charles vain verrattain lyhyen ajan oli asunut Baskerville
+1	Vaikka	vaikka	SCONJ	C	_	9	mark	_	_
+2	sir	sir	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	3	compound:nn	_	_
+3	Charles	Charles	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+4	vain	vain	ADV	Adv	_	9	advmod	_	_
+5	verrattain	verrattain	ADV	Adv	Derivation=Ttain	9	advmod	_	_
+6	lyhyen	lyhyt	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	_
+7	ajan	aika	NOUN	N	Case=Gen|Number=Sing	9	nsubj	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	asunut	asua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+10	Baskerville	Baskerv	PROPN	N	Case=All|Number=Sing	9	obl	_	_
+
+# sent_id = 10
+# text = Hallissa, on hän kumminkin personallisen rakastettavaisuutensa ja suuren anteliaisuutensa kautta saavuttanut kunnioitusta ja ystävyyttä kaikilta, jotka tulivat tekemisiin hänen kanssaan.
+1	Hallissa	Halli	NOUN	N	Case=Ine|Number=Sing	12	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj:cop	_	_
+5	kumminkin	kumminkin	ADV	Adv	_	7	advmod	_	_
+6	personallisen	personallinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	7	amod	_	_
+7	rakastettavaisuutensa	rakastettavaisuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	12	obl	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	amod	_	_
+10	anteliaisuutensa	anteliaisuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	7	conj	_	_
+11	kautta	kautta	ADP	Adp	AdpType=Post	7	case	_	_
+12	saavuttanut	saavuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+13	kunnioitusta	kunnioitus	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	ystävyyttä	ystävyys	NOUN	N	Case=Par|Number=Sing	13	conj	_	_
+16	kaikilta	kaikki	PRON	Pron	Case=Abl|Number=Plur|PronType=Ind	12	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	19	punct	_	_
+18	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	19	nsubj	_	_
+19	tulivat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	acl:relcl	_	_
+20	tekemisiin	tekemisi	NOUN	N	Case=Ill|Number=Sing	19	obl	_	_
+21	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
+22	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	21	case	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 11
+# text = Tänä nousukkaitten aikana tuntee todellista tyydytystä, kun tapaa vanhan, onnettomuuksia ja vahingoita kärsineen kreivikuntasuvun jälkeläisen, joka on onnistunut kokoamaan oman omaisuuden ja tuomaan sen kotimaahan, aikoen siellä uudistaa suvun hävinneen suuruuden.
+1	Tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	nousukkaitten	nousukkaittä#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	mark	_	_
+3	aikana	aika	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+4	tuntee	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	todellista	todellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	6	amod	_	_
+6	tyydytystä	tyydytys	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	kun	kun	SCONJ	C	_	9	mark	_	_
+9	tapaa	tavata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	advcl	_	_
+10	vanhan	vanha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	onnettomuuksia	onnettomuus	NOUN	N	Case=Par|Derivation=Vs|Number=Plur	9	obj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	vahingoita	vahingo	NOUN	N	Case=Par|Number=Plur	9	conj	_	_
+15	kärsineen	kärsinyt	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	16	amod	_	_
+16	kreivikuntasuvun	kreivikuntasuku	NOUN	N	Case=Gen|Number=Sing	17	nmod:poss	_	_
+17	jälkeläisen	jälkeläinen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Sing	9	obj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	21	punct	_	_
+19	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	21	nsubj	_	_
+20	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	aux	_	_
+21	onnistunut	onnistua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	17	acl:relcl	_	_
+22	kokoamaan	kokoaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	21	xcomp	_	_
+23	oman	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	24	amod	_	_
+24	omaisuuden	omaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	22	obj	_	_
+25	ja	ja	CCONJ	C	_	26	cc	_	_
+26	tuomaan	tuoda	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	22	conj	_	_
+27	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	28	nmod:poss	_	_
+28	kotimaahan	koti#maa	NOUN	N	Case=Ill|Number=Sing	26	obl	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	9	punct	_	_
+30	aikoen	aikoa	AUX	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	32	aux	_	_
+31	siellä	siellä	ADV	Adv	_	32	advmod	_	_
+32	uudistaa	uudistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	conj	_	_
+33	suvun	suvu	NOUN	N	Case=Gen|Number=Sing	34	nsubj	_	_
+34	hävinneen	hävina	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	35	acl	_	_
+35	suuruuden	suuruus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	32	obj	_	SpaceAfter=No
+36	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Sir Charles on, kuten tunnettu, ansainnut suuria summia kauppayrityksillään Etelä-Afrikassa.
+1	Sir	Sir	PROPN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+2	Charles	Charles	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	kuten	kuten	ADV	Adv	_	6	advmod	_	_
+6	tunnettu	tunnettu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	ansainnut	ansaina	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	conj	_	_
+9	suuria	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Plur	10	amod	_	_
+10	summia	summa	NOUN	N	Case=Par|Number=Plur	11	obj	_	_
+11	kauppayrityksillään	kauppayrityksillä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	conj	_	_
+12	Etelä-Afrikassa	Etelä-Afrika	PROPN	N	Case=Ine|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 13
+# text = Viisaampana kuin ne, jotka eivät osaa pidättäytyä, ennenkuin onnen pyörä heilahtaa takasin, muutti hän voittonsa rahaksi ja matkusti kotiin Englantiin.
+1	Viisaampana	Viisaampana	ADV	Adv	_	7	advmod	_	_
+2	kuin	kuin	SCONJ	C	_	3	mark	_	_
+3	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	1	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	7	nsubj	_	_
+6	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	osaa	osata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	pidättäytyä	pidättäytyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	ennenkuin	ennenkuin	SCONJ	C	_	13	mark	_	_
+11	onnen	onni	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	pyörä	pyörä	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+13	heilahtaa	heilahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+14	takasin	takasi	NOUN	N	Case=Gen|Number=Sing|Style=Coll	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	7	punct	_	_
+16	muutti	muuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	voittonsa	voitto	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	obj	_	_
+19	rahaksi	raha	NOUN	N	Case=Tra|Number=Sing	16	obl	_	_
+20	ja	ja	CCONJ	C	_	21	cc	_	_
+21	matkusti	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+22	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	21	obl	_	_
+23	Englantiin	englanti	NOUN	N	Case=Ill|Number=Sing	21	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 14
+# text = Ei ole enempää kuin kaksi vuotta siitä, kun hän asettui Baskerville
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	enempää	enempää	ADV	Adv	_	11	advmod	_	_
+4	kuin	kuin	SCONJ	C	_	6	mark	_	_
+5	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	_
+7	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	6	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	kun	kun	SCONJ	C	_	11	mark	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	asettui	asettua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	Baskerville	Baskerv	PROPN	N	Case=All|Number=Sing	11	obl	_	_
+
+# sent_id = 15
+# text = Halliin, ja nyt jo puhutaan yleisesti niistä suurista suunnitelmista uutisrakennuksiksi ja parannuksiksi, jotka hänen kuolemansa keskeytti.
+1	Halliin	hall	PROPN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	ja	ja	CCONJ	C	_	6	cc	_	_
+4	nyt	nyt	ADV	Adv	_	6	advmod	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	puhutaan	puhua	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	yleisesti	yleisesti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+8	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	10	det	_	_
+9	suurista	suuri	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	10	amod	_	_
+10	suunnitelmista	suunnitelm	NOUN	N	Case=Ela|Number=Plur	6	obl	_	_
+11	uutisrakennuksiksi	uutisrakennuksi	NOUN	N	Case=Tra|Number=Sing	6	xcomp:ds	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	parannuksiksi	parannuksiksi	NOUN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	18	punct	_	_
+15	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	18	det	_	_
+16	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	18	nmod:poss	_	_
+17	kuolemansa	kuolea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Agt|Person[psor]=3|VerbForm=Part|Voice=Act	18	acl	_	_
+18	keskeytti	keskeytti	NOUN	N	Case=Nom|Number=Sing	13	acl:relcl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 16
+# text = Itse ollen lapseton, ilmotti hän julkisesti tahtovansa, että koko seutu saisi hänen eläessään hyötyä hänen onnestaan, ja monet saavat personallisista syistä valittaa hänen ennenaikaista manalle menoaan.
+1	Itse	itse	ADV	Adv	_	5	advmod	_	_
+2	ollen	ollen	ADV	Adv	_	1	fixed	_	_
+3	lapseton	lapseto	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ilmotti	ilmottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+7	julkisesti	julkisesti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+8	tahtovansa	tahtoa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	5	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	että	että	SCONJ	C	_	13	mark	_	_
+11	koko	koko	ADJ	A	_	12	amod	_	_
+12	seutu	seua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	13	nsubj	_	_
+13	saisi	saada	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	ccomp	_	_
+14	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+15	eläessään	elää	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	18	advcl	_	_
+16	hyötyä	hyöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	18	obj	_	_
+17	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	onnestaan	onnesta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	13	advcl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	22	punct	_	_
+20	ja	ja	CCONJ	C	_	22	cc	_	_
+21	monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	22	nsubj	_	_
+22	saavat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	conj	_	_
+23	personallisista	personallis	NOUN	N	Case=Ela|Number=Plur	22	obl	_	_
+24	syistä	sy	NOUN	N	Case=Ela|Number=Plur	22	obl	_	_
+25	valittaa	valittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+26	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	28	nmod:poss	_	_
+27	ennenaikaista	ennenaikainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	28	amod	_	_
+28	manalle	mana	NOUN	N	Case=All|Number=Sing	25	obl	_	_
+29	menoaan	meno	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	25	obj	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 17
+# text = Hänen suurenmoisista lahjotuksistaan lähimmän ympäristön ja koko kreivikunnan hyväntekeväisyyslaitoksille on usein ollut puhetta tämän lehden palstoilla.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	suurenmoisista	suurenmois	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+3	lahjotuksistaan	lahjotuksista	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	lähimmän	lähin	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	ympäristön	ympäristö	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	koko	koko	ADJ	A	_	8	amod	_	_
+8	kreivikunnan	kreivi#kunta	NOUN	N	Case=Gen|Number=Sing	5	conj	_	_
+9	hyväntekeväisyyslaitoksille	hyväntekeväisyyslaitoks	NOUN	N	Case=All|Number=Plur	13	obl	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+11	usein	usein	ADV	Adv	_	13	advmod	_	_
+12	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	13	cop	_	_
+13	puhetta	puhe	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
+14	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	15	det	_	_
+15	lehden	#lehti	NOUN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+16	palstoilla	palsta	NOUN	N	Case=Ade|Number=Plur	13	nmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

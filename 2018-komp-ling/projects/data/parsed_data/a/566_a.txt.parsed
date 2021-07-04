@@ -1,0 +1,115 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Äiti ja mama rakastavat toisiaan.
+1	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	mama	mama	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	rakastavat	rakastaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Ja hauskinta on, että he molemmat rakastavat minua.
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	hauskinta	hausks	ADJ	A	Case=Par|Degree=Sup|Number=Sing	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+7	molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	8	nsubj	_	_
+8	rakastavat	rakastta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	csubj:cop	_	_
+9	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Ihan hurjasti!
+1	Ihan	ihan	ADV	Adv	_	2	advmod	_	_
+2	hurjasti	hurjasti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = He olivat olleet yhdessä monta vuotta, ja sitten…
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+4	yhdessä	yhdessä	ADV	Adv	_	6	advmod	_	_
+5	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	sitten	sitten	ADV	Adv	_	6	conj	_	SpaceAfter=No
+10	…	…	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = he halusivat lapsen!
+1	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	halusivat	haluta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lapsen	lapsi	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = He eivät koskaan unohda sanoa, että minä olen parasta, mitä he tietävät, toistensa lisäksi tietysti.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	koskaan	koskaan	ADV	Adv	_	4	advmod	_	_
+4	unohda	unohtaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	että	että	SCONJ	C	_	10	mark	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj:cop	_	_
+9	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	parasta	hyvä	ADJ	A	Case=Par|Degree=Sup|Number=Sing	5	ccomp	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	14	obj	_	_
+13	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	_
+14	tietävät	tietää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	4	punct	_	_
+16	toistensa	toinen	PRON	Pron	Case=Gen|Number=Plur|Person[psor]=3|PronType=Rcp	15	obl	_	_
+17	lisäksi	lisäksi	ADP	Adp	AdpType=Post	16	case	_	_
+18	tietysti	tietysti	ADV	Adv	Derivation=Sti	16	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = – Parempaa kuin sima ja munkit?
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Parempaa	hyvä	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	0	root	_	_
+3	kuin	kuin	SCONJ	C	_	4	mark	_	_
+4	sima	sima	NOUN	N	Case=Nom|Number=Sing	2	advcl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	munkit	munkki	NOUN	N	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = minä kysyn.
+1	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	kysyn	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = – Paljon parempaa, äiti sanoo.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Paljon	paljon	ADV	Adv	_	3	advmod	_	_
+3	parempaa	hyvä	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = – Parempaa kuin koripallo ja jalkapallo yhteensä?
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Parempaa	hyvä	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	0	root	_	_
+3	kuin	kuin	SCONJ	C	_	4	mark	_	_
+4	koripallo	koripallo	NOUN	N	Case=Nom|Number=Sing	2	advcl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	jalkapallo	jalkapallo	NOUN	N	Case=Nom|Number=Sing	4	conj	_	_
+7	yhteensä	yhteensä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = minä kysyn.
+1	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	kysyn	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,115 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Odotus alkoi.
+1	Odotus	odotus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Jos kaikki menisi hyvin, pastori Mäkisen murhaaja saataisiin kiinni tänä iltana.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+3	menisi	mennä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	advcl	_	_
+4	hyvin	hyvin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	murhaaja	murhaaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	obj	_	SpacesAfter= 
+9	saataisiin	saada	VERB	V	Mood=Cnd|VerbForm=Fin|Voice=Pass	0	root	_	_
+10	kiinni	kiinni	ADV	Adv	_	9	advmod	_	_
+11	tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	12	det	_	_
+12	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Hän olisi pian täällä, ja poliisit olisivat odottamassa häntä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+2	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	pian	pian	ADV	Adv	_	4	advmod	_	_
+4	täällä	täällä	ADV	Adv	_	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	SpacesAfter= \s
+6	ja	ja	CCONJ	C	_	9	cc	_	_
+7	poliisit	poliisi	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+8	olisivat	olla	AUX	V	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	odottamassa	odottaa	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+10	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = — Tai sitten olen erehtynyt.
+1	—	—	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s   
+2	Tai	tai	CCONJ	C	_	5	cc	_	_
+3	sitten	sitten	ADV	Adv	_	5	advmod	_	_
+4	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	erehtynyt	erehtyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = Se riski on otettava, pastori Halme mietti.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+2	riski	riski	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	otettava	ottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+8	mietti	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Läheisestä pensaasta kuului kahahdus.
+1	Läheisestä	Läheinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	pensaasta	pensaa	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kahahdus	kahahdus	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Siellä oli kaksi poliisia, jotka olivat valmiina ottamaan rikollisen kiinni.
+1	Siellä	siellä	ADV	Adv	_	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	poliisia	poliisi	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	SpacesAfter= 
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	8	nsubj:cop	_	_
+7	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	valmiina	valmis	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	4	acl:relcl	_	SpacesAfter= 
+9	ottamaan	ottaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp:ds	_	_
+10	rikollisen	rikollinen	NOUN	N	Case=Gen|Number=Sing	9	obj	_	_
+11	kiinni	kiinni	ADV	Adv	_	9	compound:prt	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Poliisiauto oli jätetty vähän matkan päähän kirkon taakse.
+1	Poliisiauto	Poliisi#auto	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	jätetty	jättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	vähän	vähän	ADV	Adv	_	6	advmod	_	_
+5	matkan	matka	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	päähän	pää	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+7	kirkon	kirkko	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+8	taakse	taakse	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Äkkiä nimismies Komulainen tarttui pastori Halmeen hihasta.
+1	Äkkiä	äkkiä	ADV	Adv	_	2	advmod	_	_
+2	nimismies	nimis#mies	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Komulainen	Komulainen	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+6	Halmeen	Halme	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	hihasta	hiha	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = — Joku tulee, hän kuiskasi.
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s   
+2	Joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,165 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ei ole mitään, josta sen saisimme tietää", vastasi Lestrade.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	josta	joka	PRON	Pron	Case=Ela|Number=Sing|PronType=Rel	8	obl	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	saisimme	saada	VERB	V	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+9	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	_
+12	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+13	Lestrade	Lestrade	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = "Saatte nähdä ruumiin ruumishuoneessa, mutta me emme vielä ole saaneet tietää, kuka hän on.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Saatte	saada	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	ruumiin	ruuma	NOUN	N	Case=Ill|Number=Plur	3	obl	_	_
+5	ruumishuoneessa	ruumishuone	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	mutta	mutta	CCONJ	C	_	12	cc	_	_
+8	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	12	nsubj	_	_
+9	emme	ei	AUX	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+10	vielä	vielä	ADV	Adv	_	12	advmod	_	_
+11	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	aux	_	_
+12	saaneet	saada	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+13	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	15	punct	_	_
+15	kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	13	ccomp	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj:cop	_	_
+17	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Murhattu on pitkä, vankkarakenteinen, päivän paahtama, korkeintaan kolmenkymmenen vuoden vanha mies.
+1	Murhattu	Murhattu	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	vankkarakenteinen	vankkarakenteinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	päivän	päivä	NOUN	N	Case=Gen|Number=Sing	8	nsubj	_	_
+8	paahtama	paahtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	3	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	korkeintaan	korkeintaan	ADV	Adv	_	13	advmod	_	_
+11	kolmenkymmenen	kukolmenkymma	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	12	det	_	_
+12	vuoden	#vuosi	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	_
+14	mies	mies	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Hän on köyhästi puettu, mutta ei näytä työmieheltä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+3	köyhästi	köyhästi	ADV	Adv	Derivation=Sti	4	advmod	_	_
+4	puettu	putaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mutta	mutta	CCONJ	C	_	8	cc	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	näytä	näyttää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	conj	_	_
+9	työmieheltä	työmiehi	NOUN	N	Case=Abl|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Hänen vieressään olevasta verilammikosta löydettiin veitsi.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	vieressään	vierä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	5	advcl	_	_
+3	olevasta	olla	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	verilammikosta	verilammiko	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+5	löydettiin	löydtää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	veitsi	veitsi	NOUN	N	Case=Nom|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = En tiedä, onko murha tehty sillä, vai oliko se vainajan.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+5	murha	murha	NOUN	N	Case=Nom|Number=Sing	6	obj	_	_
+6	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	ccomp	_	_
+7	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	vai	vai	CCONJ	C	_	12	cc	_	_
+10	oliko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	cop	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj:cop	_	_
+12	vainajan	vainaja	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	2	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hänen liinavaatteissaan ei ole nimimerkkiä, eikä hänen taskuissaan ollut mitään muuta kuin omena, nuoranpätkä, halpa Lontoon kartta ja eräs valokuva.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	liinavaatteissaan	liinavaattei	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	5	obl	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	nimimerkkiä	nimimerkki	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	cc	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	taskuissaan	taskui	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	12	obl	_	_
+10	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	cop	_	_
+11	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	12	det	_	_
+12	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	conj	_	_
+13	kuin	kuin	SCONJ	C	_	14	mark	_	_
+14	omena	omena	NOUN	N	Case=Nom|Number=Sing	12	advcl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	nuoranpätkä	nuoranpätkä	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	20	punct	_	_
+18	halpa	halpa	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	20	amod	_	_
+19	Lontoon	Lontoo	PROPN	N	Case=Gen|Number=Sing	20	nmod:poss	_	_
+20	kartta	kars	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	5	conj	_	_
+21	ja	ja	CCONJ	C	_	23	cc	_	_
+22	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	23	det	_	_
+23	valokuva	valo#kuva	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Tässä se on."
+1	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	1	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Se oli silmänräpäysvalokuva, joka oli otettu pienellä käsikoneella.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	silmänräpäysvalokuva	silmänräpäysvalo#kuva	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	obj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
+7	otettu	otaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	acl:relcl	_	_
+8	pienellä	pieni	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	9	amod	_	_
+9	käsikoneella	käsikone	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Se kuvasi laihaa miestä, jolla oli terävät piirteet ja paksut kulmakarvat sekä omituisesti ulkoneva leuka.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	kuvasi	kuvata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	laihaa	laiha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	_
+4	miestä	mies	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	4	acl:relcl	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	terävät	terävä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	9	amod	_	_
+9	piirteet	piire	NOUN	N	Case=Nom|Number=Plur	12	nsubj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	paksut	paksu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	9	conj	_	_
+12	kulmakarvat	kulmakara	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	acl	_	_
+13	sekä	sekä	CCONJ	C	_	16	cc	_	_
+14	omituisesti	omituisesti	ADV	Adv	Derivation=Sti	15	advmod	_	_
+15	ulkoneva	ulkonla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	16	acl	_	_
+16	leuka	leuka	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

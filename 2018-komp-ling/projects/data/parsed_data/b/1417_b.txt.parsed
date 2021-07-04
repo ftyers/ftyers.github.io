@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — En tietenkään, Erni sanoo.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tietenkään	tietenkään	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Erni tuijottaa romahtanutta rakennusta.
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	tuijottaa	tuijottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	romahtanutta	romahtaa	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	acl	_	_
+4	rakennusta	rakennus	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän ottaa taskustaan vihon.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ottaa	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	taskustaan	taskustaan	ADV	Adv	_	2	advmod	_	_
+4	vihon	vihko	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kuun valossa
+1	Kuun	ku	NOUN	N	Case=Ill|Derivation=U|Number=Sing	2	obl	_	_
+2	valossa	valko	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+
+# sent_id = 5
+# text = Kaisu näkee, että Erni piirtää uutta varastoa.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	näkee	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	piirtää	piirtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	8	amod	_	_
+8	varastoa	varasto	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän suunnittelee sellaisen varaston, jota Kaisu on aina toivonut.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	suunnittelee	suunnitdella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sellaisen	sellainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	4	amod	_	_
+4	varaston	varasto	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	10	obj	_	_
+7	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	aina	aina	ADV	Adv	_	10	advmod	_	_
+10	toivonut	toivoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	acl:relcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Varasto on niin iso, että sinne voi ajaa traktorilla sisään.
+1	Varasto	Varasto	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	_
+4	iso	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	sinne	sinne	ADV	Adv	_	9	advmod	_	_
+8	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	ajaa	ajaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	ccomp	_	_
+10	traktorilla	traktori	NOUN	N	Case=Ade|Number=Sing	9	obl	_	_
+11	sisään	sisään	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Sitten
+1	Sitten	sitten	ADV	Adv	_	0	root	_	_
+
+# sent_id = 9
+# text = Kaisun ei tarvitse kantaa raskaita tavaroita.
+1	Kaisun	Kaisinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Coll	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	tarvitse	tarvita	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	kantaa	kantaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	raskaita	rasas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	tavaroita	tavara	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Kaisu hymyilee.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	hymyilee	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Hän tuntee, miten suupielet venyvät korviin asti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tuntee	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	miten	miten	ADV	Adv	_	6	advmod	_	_
+5	suupielet	suupieli	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+6	venyvät	venyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	korviin	korvi	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+8	asti	asti	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Hän kaappaa
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kaappaa	kaapata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+
+# sent_id = 13
+# text = Ernin syliinsä ja nostaa korkealle ilmaan.
+1	Ernin	Ern	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	syliinsä	syli	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	4	obl	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	nostaa	nostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+5	korkealle	korkea	ADJ	A	Case=All|Degree=Pos|Number=Sing	6	amod	_	_
+6	ilmaan	ilma	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	0	root	_	SpacesAfter=\s\n
+

@@ -1,0 +1,113 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = tahi yksinkertaisesti...
+1	tahi	tahi	ADV	Adv	_	2	advmod	_	_
+2	yksinkertaisesti	yksinkertaisesti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+3	...	...	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 2
+# text = ei, toverina hän ei tee sitä..." lohdutteli hän itseään.
+1	ei	ei	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	toverina	toveri	NOUN	N	Case=Ess|Number=Sing	6	obl	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+7	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obj	_	SpaceAfter=No
+8	...	...	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	6	punct	_	_
+10	lohdutteli	lohdutellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+12	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = -- Anna ruokaa Blücherille, Sashka!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	Blücherille	Blücher	PROPN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Sashka	Sashka	PROPN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- huusi kreivi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	huusi	huusi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Sashka tuli esille.
+1	Sashka	Sashka	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	esille	esille	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän oli juonut viinaa matkan päälle ja oli melko juovuksissa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	juonut	juoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	viinaa	viina	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	matkan	matka	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	päälle	päälle	ADP	Adp	AdpType=Post	5	case	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	melko	melko	ADV	Adv	_	10	advmod	_	_
+10	juovuksissa	juovuksissa	ADV	Adv	_	3	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- Taaskaan et ole malttanut olla juomatta itseäsi humalaan, lurjus!...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Taaskaan	Taaska	NOUN	N	Case=Ill|Number=Sing	5	obl	_	_
+3	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	malttanut	malttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	aux	_	_
+7	juomatta	juoa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+8	itseäsi	itse	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	9	det	_	_
+9	humalaan	humala	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	lurjus	lurjus	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+13	..	..	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Anna ruokaa Blücherille!
+1	Anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
+3	Blücherille	Blücher	PROPN	N	Case=All|Number=Sing	1	obl	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = -- Ei sillä hengenhätää ole.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	0	root	_	_
+4	hengenhätää	hengenhätä	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Kas kuinka lihava se on!
+1	Kas	kas	INTJ	Interj	_	3	discourse	_	_
+2	kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	lihava	lihava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = -- vastasi Sashka silittäen koiraa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Sashka	Sashka	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	silittäen	silittää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	koiraa	koira	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

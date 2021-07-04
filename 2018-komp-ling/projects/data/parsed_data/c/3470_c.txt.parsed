@@ -1,0 +1,83 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Hyvät herrat!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Hyvät	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	herrat	herra	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Ken lyö kanssani veikan?
+1	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	nsubj	_	_
+2	lyö	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kanssani	kanssani	ADV	Adv	_	2	advmod	_	_
+4	veikan	veikka	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Teen saman tempun, -- hän huusi.
+1	Teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	saman	sama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	3	det	_	_
+3	tempun	temppu	NOUN	N	Case=Gen|Number=Sing	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	--	--	PUNCT	Punct	_	1	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	huusi	huuta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = En kaipaa veikkaakaan.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	kaipaa	kaivata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	veikkaakaan	veikka	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Käskekää tuomaan pullo.
+1	Käskekää	Käskeä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tuomaan	tuoda	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+3	pullo	pullo	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Teen ... käskekää tuomaan.
+1	Teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	...	...	PUNCT	Punct	_	1	punct	_	_
+3	käskekää	käskeä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+4	tuomaan	tuoda	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = -- Koettakoon, koettakoon! sanoi Dolohof hymyillen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Koettakoon	Koettako	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	koettakoon	koettako	NOUN	N	Case=Ill|Number=Sing	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Dolohof	Dolohof	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = -- Mitä ajattelet?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	ajattelet	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Oletko järjiltäsi?
+1	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	järjiltäsi	järjilnätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Kenpä sinut päästää koettamaan?
+1	Kenpä	Kenpä	ADV	Adv	_	3	advmod	_	_
+2	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	päästää	päästää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	koettamaan	koettaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

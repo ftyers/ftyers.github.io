@@ -1,0 +1,111 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mitä tästä tulee?...
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	nsubj	_	_
+2	tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	obl	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Olen seitsemännen jääkärirykmentin lääkärin vaimo ... eivät päästä kulkemaan; olemme jääneet rykmentistämme, olemme eksyneet...
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+2	seitsemännen	seitsemät	NUM	Num	Case=Gen|Number=Sing|NumType=Card	3	nummod	_	_
+3	jääkärirykmentin	jääkärirykmentti	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	lääkärin	lääkäri	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+6	...	...	PUNCT	Punct	_	8	punct	_	_
+7	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	conj	_	_
+9	kulkemaan	kulkea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+10	;	;	PUNCT	Punct	_	5	punct	_	_
+11	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	jääneet	jäädä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+13	rykmentistämme	rykmentist	NOUN	N	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1	12	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	eksyneet	eksya	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	12	conj	_	SpaceAfter=No
+17	...	...	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 3
+# text = -- Lyön mäsäksi, käännä takasin!
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Lyön	L#yö	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	mäsäksi	mäsä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	5	amod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	käännä	kään	NOUN	N	Case=Ess|Number=Sing	6	obl	_	_
+6	takasin	taata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = -- huusi vihastunut upseeri sotilaalle: -- käännä takasin luhjinesi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	vihastunut	vihastua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	upseeri	#upseeri	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+5	sotilaalle	sotilaa	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	3	punct	_	_
+7	--	--	PUNCT	Punct	_	9	punct	_	_
+8	käännä	käännä	CCONJ	C	_	9	cc	_	_
+9	takasin	taata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+10	luhjinesi	luhjinesi	NOUN	N	Case=Nom|Number=Sing	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = -- Herra adjutantti, puollustakaa.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Herra	herra	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	adjutantti	adjutantti	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	puollustakaa	puollustaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Mitä tämä on?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	_
+2	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	1	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = -- huusi lääkärin vaimo.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	huusi	huusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+3	lääkärin	lääkäri	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = -- Sallikaa näiden ajoneuvojen jatkaa matkaa.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Sallikaa	Sallika	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+3	näiden	tämä	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	4	det	_	_
+4	ajoneuvojen	ajo#neuvo	NOUN	N	Case=Gen|Number=Plur	5	nsubj	_	_
+5	jatkaa	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	matkaa	matka	NOUN	N	Case=Par|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Ettekö näe, että kulkija on nainen?
+1	Ettekö	Edä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	näe	nähdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	conj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	kulkija	kulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	7	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	2	ccomp	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = -- sanoi ruhtinas Andrei, ratsastaen upseerin luo.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	ratsastaen	ratsastaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+7	upseerin	upseeri	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+8	luo	luo	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

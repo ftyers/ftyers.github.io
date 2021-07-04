@@ -1,0 +1,95 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Katala jätkä!
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=    \s
+2	Katala	Katala	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	jätkä	jätkä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Jesse huudahti.
+1	Jesse	Jesse	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = — Realismia, Kerttu hymähti.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=   \s
+2	Realismia	Realismi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	hymähti	hymähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = — Andresin kannatti tehdä niin.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Andresin	Andres	PROPN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+3	kannatti	kannattaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Eikä se nyt tietenkään pelkästä ihonväristä voinu johtua.
+1	Eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	det	_	_
+3	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+4	tietenkään	tietenkään	ADV	Adv	_	5	advmod	_	_
+5	pelkästä	pelkkä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	6	amod	_	_
+6	ihonväristä	ihonväri	NOUN	N	Case=Ela|Number=Sing	8	obl	_	_
+7	voinu	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|Style=Coll|VerbForm=Part|Voice=Act	8	aux	_	_
+8	johtua	johtua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 6
+# text = Varmaan se toinen tyttö oli tosi kiva.
+1	Varmaan	varmaan	ADV	Adv	_	7	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+3	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	4	nummod	_	_
+4	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	tosi	tosi	ADV	Adv	_	7	advmod	_	_
+7	kiva	kiva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Enkä mä sitä enää sure.
+1	Enkä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	cop	_	_
+2	mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	5	nsubj:cop	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	det	_	_
+4	enää	enää	ADV	Adv	_	5	advmod	_	_
+5	sure	sure	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Mieluummin mä oon täällä Henkan kanssa kuin siellä Andresin kanssa!
+1	Mieluummin	mieluummin	ADV	Adv	_	5	advmod	_	_
+2	mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	5	nsubj:cop	_	_
+3	oon	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	täällä	täällä	ADV	Adv	_	5	advmod	_	_
+5	Henkan	Henka	PROPN	N	Case=Gen|Number=Sing	0	root	_	_
+6	kanssa	kanssa	ADP	Adp	AdpType=Post	5	case	_	_
+7	kuin	kuin	SCONJ	C	_	9	mark	_	_
+8	siellä	siellä	ADV	Adv	_	9	advmod	_	_
+9	Andresin	Andres	PROPN	N	Case=Gen|Number=Sing	5	advcl	_	_
+10	kanssa	kanssa	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = — Miten sä ja Henkka tutustuitte?
+1	—	—	PUNCT	Punct	_	6	punct	_	SpacesAfter=    \s
+2	Miten	miten	ADV	Adv	_	6	advmod	_	_
+3	sä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	6	nsubj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	3	conj	_	_
+6	tutustuitte	tutustuida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Jesse kysyi.
+1	Jesse	Jesse	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

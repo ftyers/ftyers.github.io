@@ -1,0 +1,226 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Niin sellainen se juuri oli."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Niin	niin	ADV	Adv	_	0	root	_	_
+3	sellainen	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	4	amod	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+5	juuri	juuri	ADV	Adv	_	6	advmod	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Lordi Henry nauroi.
+1	Lordi	Lordi	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	nauroi	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = "Jos ihminen elää taiteellisesti, niin aivot ovat hänen sydämensä," hän vastasi vaipuen nojatuoliin.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Jos	jos	SCONJ	C	_	4	mark	_	_
+3	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	elää	elää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	advcl	_	_
+5	taiteellisesti	taiteellisesti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	niin	niin	ADV	Adv	_	11	advmod	_	_
+8	aivot	aipo	NOUN	N	Case=Nom|Number=Plur	11	nsubj:cop	_	_
+9	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	sydämensä	sydämi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	4	punct	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+15	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+16	vaipuen	vaipua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	15	advcl	_	_
+17	nojatuoliin	nojatuoli	NOUN	N	Case=Ill|Number=Sing	16	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	15	punct	_	_
+
+# sent_id = 4
+# text = Dorian Gray pudisti päätään ja soitti pari vienoa akordia.
+1	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	pudisti	pudistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	päätään	pää	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	3	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	soitti	soittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+8	vienoa	vieno	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	amod	_	_
+9	akordia	akordi	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = "Kuin kuva surun, muoto murehen", -- hän toisti, "kuin kasvot, joist' on sydän poissa."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Kuin	kuin	ADV	Adv	_	3	advmod	_	_
+3	kuva	kuva	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+4	surun	sur	NOUN	N	Case=Ill|Derivation=U|Number=Sing	3	nmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	muoto	muoto	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	murehen	mures	NOUN	N	Case=Gen|Number=Sing	3	appos	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	3	punct	_	_
+10	--	--	PUNCT	Punct	_	3	punct	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	toisti	toistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	"	"	PUNCT	Punct	_	16	punct	_	SpaceAfter=No
+15	kuin	kuin	SCONJ	C	_	16	mark	_	_
+16	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	12	obj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	joist	joikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int|Style=Coll	16	acl:relcl	_	SpaceAfter=No
+19	'	'	PUNCT	Punct	_	18	punct	_	_
+20	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	cop	_	_
+21	sydän	sytä	NOUN	N	Case=Gen|Number=Sing	22	nmod:poss	_	_
+22	poissa	poissa	ADV	Adv	_	18	advmod	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+24	"	"	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 6
+# text = Vanhempi mies nojautui taakse ja katseli Doriania puoleksi suljetuin silmin.
+1	Vanhempi	vanha	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	2	amod	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	nojautui	nojautua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	taakse	taakse	ADV	Adv	_	3	advmod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	Doriania	Dorian	PROPN	N	Case=Par|Number=Sing	6	obj	_	_
+8	puoleksi	puol	NOUN	N	Case=Tra|Number=Sing	6	obl	_	_
+9	suljetuin	suljettu	ADJ	A	Case=Ins|Degree=Pos|Number=Plur	10	amod	_	_
+10	silmin	silmä	NOUN	N	Case=Ins|Number=Plur	6	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = "Kuulehan, Dorian", hän sanoi hetken kuluttua, "mitä se auttaa ihmistä, jos hän kaiken maailman voittaisi -- miten ne sanat taas kuuluivat?
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kuulehan	Kuuleha	NOUN	N	Case=Gen|Number=Sing	8	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	hetken	hetki	NOUN	N	Case=Gen|Number=Sing	10	nsubj	_	_
+10	kuluttua	kulua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	15	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	"	"	PUNCT	Punct	_	15	punct	_	SpaceAfter=No
+13	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	15	obj	_	_
+14	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	15	nsubj	_	_
+15	auttaa	auttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+16	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	15	obj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	22	punct	_	_
+18	jos	jos	SCONJ	C	_	22	mark	_	_
+19	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+20	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	21	det	_	_
+21	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	22	nsubj	_	_
+22	voittaisi	voittaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	15	advcl	_	_
+23	--	--	PUNCT	Punct	_	28	punct	_	_
+24	miten	miten	ADV	Adv	_	28	advmod	_	_
+25	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	26	det	_	_
+26	sanat	sana	NOUN	N	Case=Nom|Number=Plur	28	nsubj	_	_
+27	taas	taas	ADV	Adv	_	28	advmod	_	_
+28	kuuluivat	kuulua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	22	ccomp	_	SpaceAfter=No
+29	?	?	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 8
+# text = -- ja sielullensa saisi vahingon?"
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	ja	ja	CCONJ	C	_	4	cc	_	_
+3	sielullensa	sielulli	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	nsubj	_	_
+4	saisi	saada	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	vahingon	vahinko	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Soitto keskeytyi, Dorian Gray hypähti pystyyn ja hyökkäsi ystävänsä luo.
+1	Soitto	Soitto	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	keskeytyi	keskeytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+5	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	_
+6	hypähti	hypähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	pystyyn	pystyyn	ADV	Adv	_	6	advmod	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	hyökkäsi	hyökätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	ystävänsä	ystävä	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	9	obl	_	_
+11	luo	luo	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = "Miksi sinä kysyt sitä minulta, Harry?" "Rakas ystävä", sanoi lordi Henry kohottaen hämmästyneenä kulmakarvojansa, "minä kysyin siksi että luulin sinun voivan antaa minulle siihen vastausta.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Miksi	miksi	ADV	Adv	_	4	advmod	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	kysyt	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+6	minulta	minä	PRON	Pron	Case=Abl|Number=Sing|Person=1|PronType=Prs	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	Harry	Harry	PROPN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	4	punct	_	_
+11	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+12	Rakas	rakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	13	amod	_	_
+13	ystävä	ystävä	NOUN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	4	punct	_	_
+16	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+17	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	18	compound:nn	_	_
+18	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+19	kohottaen	kohottaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	16	advcl	_	_
+20	hämmästyneenä	hämmästyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	19	advcl	_	_
+21	kulmakarvojansa	kulmakarvoja	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	20	obj	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	4	punct	_	_
+23	"	"	PUNCT	Punct	_	25	punct	_	SpaceAfter=No
+24	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_
+25	kysyin	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+26	siksi	siksi	ADV	Adv	_	27	advmod	_	_
+27	että	että	SCONJ	C	_	28	mark	_	_
+28	luulin	luullä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	25	ccomp	_	_
+29	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	31	nsubj	_	_
+30	voivan	voida	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	31	aux	_	_
+31	antaa	antaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	28	ccomp	_	_
+32	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	34	obl	_	_
+33	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	34	nmod	_	_
+34	vastausta	vastaus	NOUN	N	Case=Par|Number=Sing	31	obj	_	SpaceAfter=No
+35	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Siinä kaikki.
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	obl	_	_
+2	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Minä kuljin Hyde
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	kuljin	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Hyde	Hyde	PROPN	N	Case=Nom|Number=Sing	2	obj	_	_
+
+# sent_id = 13
+# text = Parkin läpi viime sunnuntaina ja aivan lähellä Marble Archia seisoi pieni joukko huonosti puettuja ihmisiä, jotka kuuntelivat tavallista katusaarnaajaa.
+1	Parkin	Parkki	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+2	läpi	läpi	ADP	Adp	AdpType=Post	1	case	_	_
+3	viime	viime	ADJ	A	_	4	amod	_	_
+4	sunnuntaina	sunnuntai	NOUN	N	Case=Ess|Number=Sing	10	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	aivan	aiva	NOUN	N	Case=Gen|Number=Sing	4	conj	_	_
+7	lähellä	lähellä	ADP	Adp	AdpType=Post	4	case	_	_
+8	Marble	Marble	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	Archia	Archia	PROPN	N	Case=Nom|Number=Sing	8	flat:name	_	_
+10	seisoi	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	_
+12	joukko	joukko	NOUN	N	Case=Nom|Number=Sing	10	obj	_	_
+13	huonosti	huonosti	ADV	Adv	Derivation=Sti	14	advmod	_	_
+14	puettuja	pueta	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	15	acl	_	_
+15	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	10	obj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	18	punct	_	_
+17	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	18	nsubj	_	_
+18	kuuntelivat	kuunnella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	acl:relcl	_	_
+19	tavallista	tavallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	20	amod	_	_
+20	katusaarnaajaa	katusaarnaaja	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	18	obj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	10	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,113 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Tahdon vuokrata huoneuston, sanoi hän, -- katsoa sitä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tahdon	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vuokrata	vuokrata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	huoneuston	huoneusto	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	--	--	PUNCT	Punct	_	10	punct	_	_
+10	katsoa	katsoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	ccomp	_	_
+11	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Yöllä ei vuokrata mitään huoneustoja, ja muuten täytyy teillä olla talonmies mukananne!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Yöllä	yö	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	vuokrata	vuokrattaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	huoneustoja	huoneusto	NOUN	N	Case=Par|Number=Plur	4	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	muuten	muuten	ADV	Adv	_	10	advmod	_	_
+10	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	4	conj	_	_
+12	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	cop	_	_
+13	talonmies	talon#mies	NOUN	N	Case=Nom|Number=Sing	14	compound:nn	_	_
+14	mukananne	mukananne	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	SpaceAfter=No
+15	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = -- Lattia on pesty; se kai maalataan?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Lattia	lattia	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	pesty	pesä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	4	punct	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	obj	_	_
+7	kai	kai	ADV	Adv	_	8	advmod	_	_
+8	maalataan	maalata	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	parataxis	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = jatkoi Raskolnikov -- eikö siinä enää ole verta?
+1	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+3	--	--	PUNCT	Punct	_	8	punct	_	_
+4	eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+5	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	6	obl	_	_
+6	enää	enää	ADV	Adv	_	7	advmod	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	verta	veri	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- Mitä verta?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+3	verta	veri	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = -- Jälkiä vanhuksesta ja hänen sisarestaan, luonnollisesti, jotka täällä murhattiin!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Jälkiä	jälkä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	amod	_	_
+3	vanhuksesta	vanhus	NOUN	N	Case=Ela|Number=Sing	6	obl	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	sisarestaan	sisaresta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	luonnollisesti	luonnollisesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	12	obj	_	_
+11	täällä	täällä	ADV	Adv	_	12	advmod	_	_
+12	murhattiin	murhata	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	6	acl:relcl	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Tässä oli suuri verilätäkkö.
+1	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	verilätäkkö	verilätäkkö	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = -- Mutta mikä sinä oikeastaan olet?
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	6	cc	_	_
+3	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	6	obj	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+5	oikeastaan	oikeastaan	ADV	Adv	_	6	advmod	_	_
+6	olet	olla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = kysyi työmies rauhattomasti.
+1	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	työmies	työ#mies	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+3	rauhattomasti	rauhattomasti	ADV	Adv	Derivation=Sti	1	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = -- Minäkö?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Minäkö	Minäkö	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

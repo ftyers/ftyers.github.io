@@ -1,0 +1,151 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Sitä en, Jumal'auta, ole! vastasi Svidrigailov hymyillen.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	_
+3	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Jumal'auta	Jumal'auta	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+9	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+10	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+11	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	9	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Mutta minä en halua kiistellä!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	kiistellä	kiistellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Olkoon niin, että olen lörpöttelijä; miksi en, kun en loukkaa ketään sillä.
+1	Olkoon	Ola	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	niin	#niin	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	lörpöttelijä	lörpöttelijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	1	ccomp	_	SpaceAfter=No
+7	;	;	PUNCT	Punct	_	9	punct	_	_
+8	miksi	miksi	ADV	Adv	_	9	advmod	_	_
+9	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	1	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	kun	kun	SCONJ	C	_	12	mark	_	_
+12	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	9	advcl	_	_
+13	loukkaa	loukka	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+14	ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	13	det	_	_
+15	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Olen seitsemän vuotta elänyt Marfa Petrovnan kanssa maalla ja nyt, kun kohtasin niin huomattavassa määrin mieltä kiinnittävän henkilön, olen vallan yksinkertasesti ilonen saadessani puhua hänen kanssaan jonkun hetken.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	seitsemän	seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	4	obl	_	_
+4	elänyt	elää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	Marfa	Marfa	PROPN	N	Case=Nom|Number=Sing	4	obl	_	_
+6	Petrovnan	Petrovna	PROPN	N	Case=Gen|Number=Sing	5	flat:name	_	_
+7	kanssa	kanssa	ADP	Adp	AdpType=Post	5	case	_	_
+8	maalla	maa	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	nyt	nyt	ADV	Adv	_	4	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	kun	kun	SCONJ	C	_	13	mark	_	_
+13	kohtasin	kohtata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	26	advcl	_	_
+14	niin	#niin	ADV	Adv	_	15	advmod	_	_
+15	huomattavassa	huomattava	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	17	amod	_	_
+16	määrin	määrin	ADV	Adv	_	15	fixed	_	_
+17	mieltä	mieli	NOUN	N	Case=Par|Number=Sing	18	obj	_	_
+18	kiinnittävän	kiinnittää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	19	acl	_	_
+19	henkilön	henkilö	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	26	punct	_	_
+21	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	26	aux	_	_
+22	vallan	#valta	NOUN	N	Case=Gen|Number=Sing	23	nmod:poss	_	_
+23	yksinkertasesti	yksinkertasesti	ADV	Adv	Derivation=Sti	25	advmod	_	_
+24	ilonen	iloni	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	25	obj	_	_
+25	saadessani	saada	VERB	V	Case=Ine|InfForm=2|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	26	advcl	_	_
+26	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+27	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	26	obl	_	_
+28	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	27	case	_	_
+29	jonkun	joku	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	30	det	_	_
+30	hetken	hetki	NOUN	N	Case=Gen|Number=Sing	26	obj	_	SpaceAfter=No
+31	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Sitä paitsi olen juonut puoli lasia viiniä ja se on mennyt päähän.
+1	Sitä	sitä	ADV	Adv	_	4	advmod	_	_
+2	paitsi	paitsi	ADV	Adv	_	1	fixed	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	juonut	juoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	puoli	puoli	NUM	Num	Case=Nom|Number=Sing	6	nummod	_	_
+6	lasia	#lasi	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+7	viiniä	viini	NOUN	N	Case=Par|Number=Sing	4	obl	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	mennyt	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+12	päähän	pää	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Mutta itse asiassa liikuttaa minua toinen seikka, mutta siitä minä ... vaikenen.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	itse	itse	ADV	Adv	_	4	advmod	_	_
+3	asiassa	asiassa	ADV	Adv	_	2	fixed	_	_
+4	liikuttaa	liikuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	6	obj	_	_
+6	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	7	det	_	_
+7	seikka	seikka	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	mutta	mutta	CCONJ	C	_	13	cc	_	_
+10	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	13	obl	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+12	...	...	PUNCT	Punct	_	13	punct	_	_
+13	vaikenen	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Minnekkä te niin nopeaan lähdette? kysyi Svidrigailov kummastuneena.
+1	Minnekkä	Minnekkä	CCONJ	C	_	5	cc	_	_
+2	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	_
+4	nopeaan	nopea	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	5	amod	_	_
+5	lähdette	lähdla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+7	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	kummastuneena	kummastua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Raskolnikov aikoi nousta.
+1	Raskolnikov	Raskolnikov	NOUN	N	Abbr=Yes|Case=Nom|Number=Sing	3	nsubj	_	_
+2	aikoi	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nousta	nousta	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hän oli tullut siihen vakaumukseen, että Svidrigailov oli mitä suurin ja katalin konna.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	_
+5	vakaumukseen	vakaumus	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	14	punct	_	_
+7	että	että	SCONJ	C	_	14	mark	_	_
+8	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	_
+10	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	11	obj	_	_
+11	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	14	amod	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	katalin	katali	NOUN	N	Case=Gen|Number=Sing	11	conj	_	_
+14	konna	kosi	NOUN	N	Case=Ess|Number=Sing	3	ccomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

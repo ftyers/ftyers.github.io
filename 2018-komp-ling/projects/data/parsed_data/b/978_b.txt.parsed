@@ -1,0 +1,149 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ympäri maata levittäytyneessä valepoliisijutussa on annettu tuomiot kahdeksalle.
+1	Ympäri	ympäri	ADP	Adp	AdpType=Prep	2	case	_	_
+2	maata	maa	NOUN	N	Case=Par|Number=Sing	6	obl	_	_
+3	levittäytyneessä	levittäytynei	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+4	valepoliisijutussa	valepoliisijutu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	3	obl	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+6	annettu	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	tuomiot	tuomio	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	kahdeksalle	kahdeksa	NOUN	N	Case=All|Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Helsingin poliisi varoittaa vanhuksia, heidän kanssaan työskenteleviä ja vapaaehtoisia uusista, röyhkeistä menetelmistä anastaa vanhuksilta rahaa ja koruja.
+1	Helsingin	Helsinki	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	varoittaa	varoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vanhuksia	vanhus	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	15	punct	_	_
+6	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	15	obl	_	_
+7	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	6	case	_	_
+8	työskenteleviä	työskentelevä	NOUN	N	Case=Par|Number=Plur	15	nsubj	_	_
+9	ja	ja	CCONJ	C	_	14	cc	_	_
+10	vapaaehtoisia	vapaaehtoinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	14	amod	_	_
+11	uusista	uusi	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	14	amod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	röyhkeistä	röyhkeinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	14	amod	_	_
+14	menetelmistä	menetelminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	8	conj	_	_
+15	anastaa	anastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+16	vanhuksilta	vanhuknen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Llinen|Number=Plur	17	amod	_	_
+17	rahaa	raha	NOUN	N	Case=Par|Number=Sing	15	obj	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	koruja	koru	NOUN	N	Case=Par|Derivation=U|Number=Plur	17	conj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Poliisin mukaan kyseessä on toistaiseksi suurin valepoliisihuijaus.
+1	Poliisin	poliisi	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+2	mukaan	mukaan	ADP	Adp	AdpType=Post	1	case	_	_
+3	kyseessä	kyse	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpacesAfter=\s\s
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	toistaiseksi	toistaiseksi	ADV	Adv	_	7	advmod	_	_
+6	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	7	amod	_	_
+7	valepoliisihuijaus	valepoliisihuijaus	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Pelkästään Itä-Suomen poliisilla on tutkittavana 70 rikosilmoitusta asiassa.
+1	Pelkästään	pelkästään	ADV	Adv	_	3	advmod	_	_
+2	Itä-Suomen	Itä#Suomi	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	poliisilla	poliis	NOUN	N	Case=Ade|Number=Plur	5	obl	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	tutkittavana	tutkia	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	7	acl	_	_
+6	70	70	NUM	Num	NumType=Card	7	nummod	_	_
+7	rikosilmoitusta	rikosilmoitus	NOUN	N	Case=Par|Number=Sing	9	nsubj:cop	_	_
+8	asiassa	asia	NOUN	N	Case=Ine|Number=Sing	7	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 5
+# text = Itä-Suomen poliisi tutkii tapausta, jossa valepoliisi soitti numerosta, joka näytti tulevan poliisin puhelinvaihteesta.
+1	Itä-Suomen	Itä#Suomi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tutkii	tutkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tapausta	tapaus	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	8	obl	_	_
+7	valepoliisi	valepoliisi	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	soitti	soittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+9	numerosta	numero	NOUN	N	Case=Ela|Number=Sing	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	_
+12	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	tulevan	tuleva	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	14	amod	_	_
+14	poliisin	poliisi	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	puhelinvaihteesta	puhelinvaihtei	NOUN	N	Case=Ela|Number=Sing	12	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Poliisiksi tekeytynyt soittaja onnistui huijaamaan salolaismieheltä pankkitunnukset, avainluvut ja salasanat.
+1	Poliisiksi	poliisiksi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tekeytynyt	tekeytyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl	_	_
+3	soittaja	soittaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	nsubj	_	_
+4	onnistui	onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	huijaamaan	huijaada	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	salolaismieheltä	salolaismiehi	NOUN	N	Case=Abl|Number=Sing	5	obl	_	_
+7	pankkitunnukset	pankkitunnus	NOUN	N	Case=Nom|Number=Plur	4	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	avainluvut	avainluku	NOUN	N	Case=Nom|Number=Plur	7	conj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	salasanat	salasana	NOUN	N	Case=Nom|Number=Plur	7	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Sisä-Suomen poliisi tutkii Pirkanmaalla useampaa petoskokonaisuutta, joissa epäillyt tekijät ovat esiintyneet poliiseina.
+1	Sisä-Suomen	Sisä#Suomi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tutkii	tutkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Pirkanmaalla	Pirkanmaa	PROPN	N	Case=Ade|Number=Sing	3	obl	_	_
+5	useampaa	usea	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	6	amod	_	_
+6	petoskokonaisuutta	petoskokonaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	joissa	joka	PRON	Pron	Case=Ine|Number=Plur|PronType=Rel	9	obl	_	_
+9	epäillyt	epäillä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	acl	_	_
+10	tekijät	tekijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	12	nsubj	_	_
+11	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	esiintyneet	esiintya	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	_
+13	poliiseina	poliisi	NOUN	N	Case=Ess|Number=Plur	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Rikolliset ovat saaneet huijattua iäkkäiltä ihmisiltä yli sata tuhatta euroa.
+1	Rikolliset	rikollinen	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saaneet	saada	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	huijattua	huijata	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
+5	iäkkäiltä	iäkkää	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	6	amod	_	_
+6	ihmisiltä	ihmisä	NOUN	N	Case=Abl|Number=Plur	3	obl	_	_
+7	yli	yli	ADV	Adv	_	8	advmod	_	_
+8	sata	sata	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	compound	_	_
+9	tuhatta	tuhat	NUM	Num	Case=Par|Number=Sing|NumType=Card	10	nummod	_	_
+10	euroa	euro	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Keskiviikkona hätäkeskukseen ilmoitettiin epäilyttävistä puhelinsoitoista Kuopiossa ja Leppävirralla.
+1	Keskiviikkona	keski#viikko	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+2	hätäkeskukseen	hätäkeskus	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+3	ilmoitettiin	ilmoittää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	epäilyttävistä	epäilyttävinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	puhelinsoitoista	puhelinsoito	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	_
+6	Kuopiossa	Kuopio	PROPN	N	Case=Ine|Number=Sing	3	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	Leppävirralla	Leppävirra	PROPN	N	Case=Ade|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Ilmiö on nostanut vuoden sisällä päätään merkittävästi Suomessa.
+1	Ilmiö	ilmiö	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nostanut	nostaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+5	sisällä	sisällä	ADP	Adp	AdpType=Post	4	case	_	_
+6	päätään	päätä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	parataxis	_	_
+7	merkittävästi	merkittävästi	ADV	Adv	Derivation=Sti	6	advmod	_	_
+8	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

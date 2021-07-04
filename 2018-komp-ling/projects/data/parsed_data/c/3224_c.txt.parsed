@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Tuota kiväärin rätinää minä en voi kuunnella kylmäverisesti: se ihan tunkee sieluun.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tuota	tuottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kiväärin	kiväärin	ADV	Adv	_	2	advmod	_	_
+4	rätinää	rätinää	ADV	Adv	_	2	advmod	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+6	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	kuunnella	kuunnella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+9	kylmäverisesti	kylmäverisesti	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	2	punct	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj	_	_
+12	ihan	ihan	ADV	Adv	_	13	advmod	_	_
+13	tunkee	tunkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+14	sieluun	sielu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Nyt _hurraavat!_ -- lisäsi hän, kuunnellen kaukaista jatkuvaa tuhanten äänten pauhinaa: "a--a--aa", joka vyöryi hänen kuuluviinsa vallinsarvelta.
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	_hurraavat	_hurraaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+4	_	_	PUNCT	Punct	_	2	punct	_	_
+5	--	--	PUNCT	Punct	_	2	punct	_	_
+6	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	kuunnellen	kuunnella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+10	kaukaista	kaukainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	14	amod	_	_
+11	jatkuvaa	jatkuva	ADJ	A	Case=Par|Degree=Pos|Number=Sing	14	amod	_	_
+12	tuhanten	tuhani	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	13	amod	_	_
+13	äänten	ään	NOUN	N	Case=Gen|Number=Plur	14	nmod:poss	_	_
+14	pauhinaa	pauhina	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	17	punct	_	_
+16	"	"	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+17	a--a--aa	a--a--a	NOUN	N	Case=Par|Number=Sing	6	appos	_	SpaceAfter=No
+18	"	"	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	21	punct	_	_
+20	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	21	nsubj	_	_
+21	vyöryi	vyöryä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	acl:relcl	_	_
+22	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	23	nmod:poss	_	_
+23	kuuluviinsa	kuuluvii	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	24	obj	_	_
+24	vallinsarvelta	vallinsarvi	NOUN	N	Case=Abl|Number=Sing	21	obl	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Ketkä hurraavat?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ketkä	kuka	PRON	Pron	Case=Acc|Number=Plur|PronType=Int	3	nsubj	_	_
+3	hurraavat	hurraaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = hekö vai meikäläiset?
+1	hekö	he	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vai	vai	CCONJ	C	_	3	cc	_	_
+3	meikäläiset	meikäläinen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	1	conj	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- En tiedä; mutta käsikahakkaan on jo ruvettu, koska ammunta on tauonnut.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	;	;	PUNCT	Punct	_	3	punct	_	_
+5	mutta	mutta	CCONJ	C	_	9	cc	_	_
+6	käsikahakkaan	käsikahakka	NOUN	N	Case=Ill|Number=Sing	9	obl	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux:pass	_	_
+8	jo	jo	ADV	Adv	_	9	advmod	_	_
+9	ruvettu	ruvtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	koska	koska	SCONJ	C	_	14	mark	_	_
+12	ammunta	ammunta	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	tauonnut	tauota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Samassa ajaa karahutti eräs upseeri kasakka mukanaan pihalle ja hyppäsi ikkunan alla hevosen selästä.
+1	Samassa	samassa	ADV	Adv	_	2	advmod	_	_
+2	ajaa	aja	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	karahutti	karahuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	upseeri	#upseeri	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	kasakka	kasakka	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+7	mukanaan	mukana	ADV	Adv	Person[psor]=3	3	advmod	_	_
+8	pihalle	piha	NOUN	N	Case=All|Number=Sing	3	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	hyppäsi	hypätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	ikkunan	ikkuna	NOUN	N	Case=Gen|Number=Sing	10	obl	_	_
+12	alla	alla	ADP	Adp	AdpType=Post	11	case	_	_
+13	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	selästä	selä	NOUN	N	Case=Ela|Number=Sing	10	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- Mistä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Vallinsarvelta.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Vallinsarvelta	Vallinsarvi	NOUN	N	Case=Abl|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Kenraalia tarvitaan.
+1	Kenraalia	Kenraali	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	tarvitaan	tarvita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Tulkaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tulkaa	Tulkaa	INTJ	Interj	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = No mitä?
+1	No	no	INTJ	Interj	_	2	discourse	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kaikki olettete itkupussia!
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	olettete	olettete	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	itkupussia	itkupussi	NOUN	N	Case=Par|Number=Sing	2	nmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = ette mitään ymmärrä.
+1	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	_
+3	ymmärrä	ymmärtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Natasha hymyili kyynelten keskitse.
+1	Natasha	Natasha	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hymyili	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kyynelten	kyynel	NOUN	N	Case=Gen|Number=Plur	2	obl	_	_
+4	keskitse	keskitse	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Et lukenut kirjettä?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lukenut	lukea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kirjettä	kirje	NOUN	N	Case=Par|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = -- kysyi Sonja.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- En, mutta Anna Mihailovna sanoi, että kaikki vaara on ohi, ja että hän jo on upseeri.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	mutta	mutta	CCONJ	C	_	7	cc	_	_
+5	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	Mihailovna	Mihailovna	PROPN	N	Case=Nom|Number=Sing	5	flat:name	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	että	että	SCONJ	C	_	13	mark	_	_
+10	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	11	det	_	_
+11	vaara	vaara	NOUN	N	Case=Nom|Number=Sing	13	nsubj:cop	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+13	ohi	ohi	ADV	Adv	_	7	ccomp	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	20	punct	_	_
+15	ja	ja	CCONJ	C	_	20	cc	_	_
+16	että	että	SCONJ	C	_	20	mark	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	20	nsubj:cop	_	_
+18	jo	jo	ADV	Adv	_	20	advmod	_	_
+19	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop	_	_
+20	upseeri	upseeri	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Jumalan kiitos, -- sanoi Sonja, silmiään ristien.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kiitos	kiitos	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	--	--	PUNCT	Punct	_	3	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	silmiään	silmä	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	10	obj	_	_
+10	ristien	risti	NOUN	N	Case=Gen|Number=Plur	7	appos	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- Mutta kenties hän on uskotellut sinulle.
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	6	cc	_	_
+3	kenties	kenties	ADV	Adv	_	6	advmod	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	uskotellut	uskotella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Menkäämme äidin luo.
+1	Menkäämme	Menkätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	äidin	äidi	NOUN	N	Case=Gen|Number=Sing	1	obl	_	_
+3	luo	luo	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Petja asteli ääneti pitkin huonetta.
+1	Petja	Petja	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	asteli	astella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ääneti	ääneti	ADV	Adv	_	2	advmod	_	_
+4	pitkin	pitkin	ADP	Adp	AdpType=Prep	5	case	_	_
+5	huonetta	huone	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

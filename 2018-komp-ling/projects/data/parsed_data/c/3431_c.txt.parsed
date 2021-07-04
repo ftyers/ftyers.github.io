@@ -1,0 +1,209 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Vallankumous ja hallitsijan murha suurtöitä?...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Vallankumous	vallankumous	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	0	root	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	hallitsijan	hallitsija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	5	nmod:poss	_	_
+5	murha	murha	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+6	suurtöitä	suurtö	NOUN	N	Case=Par|Number=Plur	2	nmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	..	..	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Tämän jälkeen ... mutta ettekö haluaisi siirtyä tuon pöydän luo?
+1	Tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	obl	_	_
+2	jälkeen	jälkeen	ADP	Adp	AdpType=Post	1	case	_	_
+3	...	...	PUNCT	Punct	_	5	punct	_	_
+4	mutta	mutta	CCONJ	C	_	5	cc	_	_
+5	ettekö	teä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	haluaisi	haluta	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	5	xcomp	_	_
+7	siirtyä	siirtyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	tuon	tuo	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obj	_	_
+9	pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+10	luo	luo	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = -- toisti Anna Pavlovna.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	toisti	toisti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+3	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+4	Pavlovna	Pavlovna	PROPN	N	Case=Nom|Number=Sing	3	flat:name	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = -- _Contrat social_, -- lausu vikomtti hymyillen hillitysti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	_Contrat	_Contrat	PROPN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+3	social_,	social_,	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	2	punct	_	_
+5	lausu	lausu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	6	nsubj	_	_
+6	vikomtti	vikomttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	hymyillen	hymyilla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+8	hillitysti	hillitysti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = -- En puhu hallitsijan murhasta, puhun aatteista.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	puhu	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	hallitsijan	hallitsija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	5	nmod:poss	_	_
+5	murhasta	murha	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	puhun	puhua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+8	aatteista	aatte	NOUN	N	Case=Ela|Number=Plur	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = -- Niin, rosvouden, murhan ja hallitsijan murhan aatteista, -- keskeytti hänet taas pilkallinen ääni.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	rosvouden	rosvous	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	9	nmod:poss	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	murhan	murha	NOUN	N	Case=Gen|Number=Sing	4	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	hallitsijan	hallitsija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	4	conj	_	_
+9	murhan	murha	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	aatteista	aatte	NOUN	N	Case=Ela|Number=Plur	13	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	10	punct	_	_
+12	--	--	PUNCT	Punct	_	10	punct	_	_
+13	keskeytti	keskeyttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	13	obj	_	_
+15	taas	taas	ADV	Adv	_	13	advmod	_	_
+16	pilkallinen	pilkallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	17	amod	_	_
+17	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 7
+# text = -- Nämä ovat olleet liiallisuuksia tietenkin, mutta eiväthän ne ole pääasioita, suurin merkitys on ihmisen oikeuksissa, ennakkoluulojen häviämisessä, kansalaisten yhdenvertaisuudessa; ja kaikki nämä aatteet on Napoleon säilyttänyt täydessä voimassa.
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	6	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+5	liiallisuuksia	liiallisuus	NOUN	N	Case=Par|Derivation=Llinen,Vs|Number=Plur	6	nsubj:cop	_	_
+6	tietenkin	tietenkin	ADV	Adv	_	18	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	mutta	mutta	CCONJ	C	_	12	cc	_	_
+9	eiväthän	ei	AUX	V	Clitic=Han|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+10	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	nsubj:cop	_	_
+11	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	cop	_	_
+12	pääasioita	pääasio	NOUN	N	Case=Par|Number=Plur	6	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	6	punct	_	_
+14	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	15	amod	_	_
+15	merkitys	merkitys	NOUN	N	Case=Nom|Number=Sing	18	nsubj:cop	_	_
+16	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	cop	_	_
+17	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	18	nmod:poss	_	_
+18	oikeuksissa	oikeus	NOUN	N	Case=Ine|Number=Plur	32	obl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	21	punct	_	_
+20	ennakkoluulojen	ennakkoluulo	NOUN	N	Case=Gen|Number=Plur	21	nmod:gobj	_	_
+21	häviämisessä	häviäminen	NOUN	N	Case=Ine|Derivation=Minen|Number=Sing	18	conj	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	kansalaisten	kansa#lainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	24	nmod:poss	_	_
+24	yhdenvertaisuudessa	yhdenvertaisuud	NOUN	N	Case=Ine|Number=Sing	18	nmod	_	SpaceAfter=No
+25	;	;	PUNCT	Punct	_	18	punct	_	_
+26	ja	ja	CCONJ	C	_	29	cc	_	_
+27	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	29	det	_	_
+28	nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	29	det	_	_
+29	aatteet	aate	NOUN	N	Case=Nom|Number=Plur	32	nsubj	_	_
+30	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	32	aux	_	_
+31	Napoleon	Napoleo	PROPN	N	Case=Gen|Number=Sing	32	nsubj	_	_
+32	säilyttänyt	säilyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+33	täydessä	täydi	NOUN	N	Case=Ine|Number=Sing	32	obl	_	_
+34	voimassa	voimassa	ADV	Adv	_	32	advmod	_	SpaceAfter=No
+35	.	.	PUNCT	Punct	_	32	punct	_	_
+
+# sent_id = 8
+# text = -- Vapaus ja yhdenvertaisuus, -- lausui vikomtti pilkallisesti, aivan kuin hän viimeinkin todenteolla olisi tahtonut osoittaa tuolle nuorukaiselle hänen puheittensa järjettömyyden: -- ne ovat vain heliseviä sanoja, jotka jo aikoja sitten ovat menettäneet kaikunsa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Vapaus	Vapaus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	7	nsubj	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	yhdenvertaisuus	yhdenvertaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	--	--	PUNCT	Punct	_	2	punct	_	_
+7	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	vikomtti	vikomtti	NOUN	N	Case=Nom|Number=Sing	7	obj	_	_
+9	pilkallisesti	pilkallisesti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	aivan	aivan	ADV	Adv	_	12	advmod	_	_
+12	kuin	kuin	SCONJ	C	_	14	mark	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+14	viimeinkin	viimehdä	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	18	advcl	_	_
+15	todenteolla	todenteo	NOUN	N	Case=Ade|Number=Sing	14	obl	_	_
+16	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	18	aux	_	_
+17	tahtonut	tahtoa	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	18	aux	_	_
+18	osoittaa	osoittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	24	conj	_	_
+19	tuolle	tuo	PRON	Pron	Case=All|Number=Sing|PronType=Dem	20	det	_	_
+20	nuorukaiselle	nuorukaisi	NOUN	N	Case=All|Number=Sing	18	obl	_	_
+21	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	nmod:poss	_	_
+22	puheittensa	puheits	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	23	compound:nn	_	_
+23	järjettömyyden	järjettömyys	NOUN	N	Case=Gen|Number=Sing	18	obj	_	SpaceAfter=No
+24	:	:	PUNCT	Punct	_	7	punct	_	_
+25	--	--	PUNCT	Punct	_	30	punct	_	_
+26	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	30	nsubj:cop	_	_
+27	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	30	cop	_	_
+28	vain	vain	ADV	Adv	_	29	advmod	_	_
+29	heliseviä	helisevä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	30	amod	_	_
+30	sanoja	sana	NOUN	N	Case=Par|Number=Plur	7	parataxis	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	37	punct	_	_
+32	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	37	nsubj	_	_
+33	jo	jo	ADV	Adv	_	34	advmod	_	_
+34	aikoja	aika	NOUN	N	Case=Par|Number=Plur	37	nsubj	_	_
+35	sitten	sitten	ADV	Adv	_	34	advmod	_	_
+36	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	37	aux	_	_
+37	menettäneet	menettää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	30	acl:relcl	_	_
+38	kaikunsa	kaiku	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	37	obj	_	SpaceAfter=No
+39	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = Ken ei rakastaisi vapautta ja yhdenvertaisuutta?
+1	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	rakastaisi	rakastaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+4	vapautta	vapaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	3	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	yhdenvertaisuutta	yhdenvertaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	4	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Vapahtajamme jo aikoinaan julisti vapautta ja yhdenvertaisuutta.
+1	Vapahtajamme	Vapahtajtaa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	jo	jo	ADV	Adv	_	3	advmod	_	_
+3	aikoinaan	aika	NOUN	N	Case=Ess|Number=Plur|Person[psor]=3	1	obl	_	_
+4	julisti	julistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+5	vapautta	vapaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	4	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	yhdenvertaisuutta	yhdenvertaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Ovatko ihmiset vallankumouksen jälkeen tulleet onnellisemmiksi?
+1	Ovatko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+3	vallankumouksen	vallankumous	NOUN	N	Case=Gen|Number=Sing	2	nmod	_	_
+4	jälkeen	jälkeen	ADP	Adp	AdpType=Post	3	case	_	_
+5	tulleet	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	onnellisemmiksi	onnellisemmiksi	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Päinvastoin.
+1	Päinvastoin	päin#vastoin	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Me halusimme vapautta, mutta Bonaparte sen hävitti.
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
+2	halusimme	halusla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vapautta	vapaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	mutta	mutta	CCONJ	C	_	8	cc	_	_
+6	Bonaparte	Bonaparte	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	_
+8	hävitti	hävittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

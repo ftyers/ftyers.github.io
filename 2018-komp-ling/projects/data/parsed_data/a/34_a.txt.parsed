@@ -1,0 +1,116 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Yksityishenkilöt omistavat 60 prosenttia ja valtio 26 prosenttia Suomen metsistä.
+1	Yksityishenkilöt	Yksityishenkilö	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	omistavat	omistaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	60	60	NUM	Num	NumType=Card	4	nummod	_	_
+4	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	valtio	valtio	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+7	26	26	NUM	Num	NumType=Card	8	nummod	_	_
+8	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
+9	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	metsistä	metsi	NOUN	N	Case=Ela|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Firmat, esimerkiksi metsäyhtiöt, omistavat loput.
+1	Firmat	Firma	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	6	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+4	metsäyhtiöt	metsä#yhtiö	NOUN	N	Case=Nom|Number=Plur	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	1	punct	_	_
+6	omistavat	omistaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	loput	loppu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Suurinta osaa Suomen metsistä hoidetaan koko ajan.
+1	Suurinta	suuri	ADJ	A	Case=Par|Degree=Sup|Number=Sing	2	amod	_	_
+2	osaa	osa	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+3	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	metsistä	mets	NOUN	N	Case=Ela|Number=Plur	2	nmod	_	_
+5	hoidetaan	hoidaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	koko	koko	ADJ	A	_	7	amod	_	_
+7	ajan	aika	NOUN	N	Case=Gen|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Jos metsästä kaadetaan puuta, sen tilalle pitää kasvattaa uutta puuta.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	metsästä	metsä	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	kaadetaan	kaadtaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	9	advcl	_	_
+4	puuta	puu	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obl	_	_
+7	tilalle	tilalle	ADP	Adp	AdpType=Post	6	case	_	_
+8	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	kasvattaa	kasvattaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+10	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	11	amod	_	_
+11	puuta	puu	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 5
+# text = Uuden puuston kasvatusaika on noin 50-120 vuotta.
+1	Uuden	uusi	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	puuston	puusto	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kasvatusaika	kasvatus#aika	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	noin	noin	ADV	Adv	_	6	advmod	_	_
+6	50-120	50-120	NUM	Num	NumType=Card	7	nummod	_	_
+7	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = Uutta metsää kasvaa kuitenkin joka vuosi enemmän kuin vanhaa kaadetaan.
+1	Uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	amod	_	_
+2	metsää	metsä	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kuitenkin	kuitenkin	ADV	Adv	_	3	advmod	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing	6	det	_	_
+6	vuosi	vuosi	NOUN	N	Case=Nom|Number=Sing	7	obl	_	_
+7	enemmän	enemmän	ADV	Adv	_	3	advmod	_	_
+8	kuin	kuin	SCONJ	C	_	10	mark	_	_
+9	vanhaa	vanha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	obj	_	_
+10	kaadetaan	kaadtaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	7	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Suomi on aina elänyt metsästä.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	aina	aina	ADV	Adv	_	4	advmod	_	_
+4	elänyt	elää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	metsästä	metsä	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Metsäteollisuus alkoi jo 1800-luvun lopulla.
+1	Metsäteollisuus	Metsäteollisuus	NOUN	N	Case=Nom|Derivation=Llinen,Vs|Number=Sing	2	nsubj	_	_
+2	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jo	jo	ADV	Adv	_	2	advmod	_	_
+4	1800-luvun	1800#luku	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	lopulla	loppu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Silloin puuta käytettiin sahatavaraksi ja paperinvalmistukseen.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	puuta	#puu	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	käytettiin	käyttää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	sahatavaraksi	sahatavara	NOUN	N	Case=Tra|Number=Sing	3	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	paperinvalmistukseen	paperinvalmistus	NOUN	N	Case=Ill|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Vielä nykyään paperia viedään paljon ulkomaille.
+1	Vielä	vielä	ADV	Adv	_	2	advmod	_	_
+2	nykyään	nykyään	ADV	Adv	_	4	advmod	_	_
+3	paperia	paperi	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+4	viedään	viedä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	paljon	paljon	ADV	Adv	_	6	advmod	_	_
+6	ulkomaille	ulko#maa	NOUN	N	Case=All|Number=Plur	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

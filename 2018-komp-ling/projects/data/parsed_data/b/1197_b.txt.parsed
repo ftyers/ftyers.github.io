@@ -1,0 +1,118 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Fred juoksi ulos hautausmaan portista eikä pysähtynyt ennen kuin tunsi olevansa riittävän kaukana omasta haudastaan.
+1	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ulos	ulos	ADV	Adv	_	2	advmod	_	_
+4	hautausmaan	hautausa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	portista	porti	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	cc	_	_
+7	pysähtynyt	pysähtyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	conj	_	_
+8	ennen	ennen	ADV	Adv	_	9	advmod	_	_
+9	kuin	kuin	SCONJ	C	_	10	mark	_	_
+10	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	_
+11	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	14	cop	_	_
+12	riittävän	riittävä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	13	amod	_	_
+13	kaukana	kaukana	ADV	Adv	_	14	advmod	_	_
+14	omasta	oma	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	10	xcomp	_	_
+15	haudastaan	haudastaan	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kadut olivat autiot.
+1	Kadut	katu	NOUN	N	Case=Nom|Number=Plur	3	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	autiot	autio	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ainoatakaan ihmistä ei ollut näkyvissä.
+1	Ainoatakaan	ainoa	PRON	Pron	Case=Nom|Clitic=Kaan|PronType=Ind	2	det	_	_
+2	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	aux:pass	_	_
+5	näkyvissä	näkyä	VERB	V	Case=Ine|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Fred pani merkille, että kaikki kellot liikkeiden yläpuolella olivat pysähtyneet.
+1	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pani	panna	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	merkille	merkki	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	11	punct	_	_
+5	että	että	SCONJ	C	_	11	mark	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+7	kellot	kello	NOUN	N	Case=Nom|Number=Plur	11	nsubj	_	_
+8	liikkeiden	liikke	NOUN	N	Case=Gen|Number=Plur	7	nmod	_	_
+9	yläpuolella	yläpuolella	ADP	Adp	AdpType=Post	8	case	_	_
+10	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	pysähtyneet	pysähtyä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Mitä minulle on tapahtunut? Fred ajatteli.
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	nsubj	_	_
+2	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	1	nmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+6	Fred	Fred	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Korvia vihlova ääni, hiljaisuus ja hautakivi jossa oli heidän nimensä?
+1	Korvia	Korvi	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	vihlova	vihloa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	hiljaisuus	hiljaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	3	conj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	hautakivi	hauta#kivi	NOUN	N	Case=Nom|Number=Sing	3	conj	_	_
+8	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	3	nmod	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	nimensä	nimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 7
+# text = Ja kuolinvuodet?
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	kuolinvuodet	kuolin#vuosi	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Miksi ainoatakaan ihmistä ei liiku kadulla?
+1	Miksi	miksi	ADV	Adv	_	5	advmod	_	_
+2	ainoatakaan	ainoa	PRON	Pron	Case=Nom|Clitic=Kaan|PronType=Ind	3	det	_	_
+3	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	liiku	liikkua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	kadulla	katu	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Frediä puistatti ja kylmä hikivirta juoksi pitkin hänen selkäänsä.
+1	Frediä	Fredä	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	_
+2	puistatti	puistattaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	6	cc	_	_
+4	kylmä	kylmä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	hikivirta	hikivirta	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	pitkin	pitkin	ADP	Adp	AdpType=Prep	9	case	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	selkäänsä	selkä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Vähän väliä hän kuivasi nenäliinalla hikistä otsaansa.
+1	Vähän	vähän	ADV	Adv	_	4	advmod	_	_
+2	väliä	väli	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	kuivasi	kuivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	nenäliinalla	nenäliina	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+6	hikistä	hikinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	7	amod	_	_
+7	otsaansa	otsa	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

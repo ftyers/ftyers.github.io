@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Marko rutisti rakastaan itseään vasten.
+1	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rutisti	rutistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rakastaan	rakas	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	_
+4	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	2	obl	_	_
+5	vasten	vasten	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = — Anna anteeksi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	anteeksi	anteeksi	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tule kotiin, Marko sanoi Annan korvaan.
+1	Tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	1	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	1	punct	_	_
+4	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+6	Annan	anta	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	korvaan	korva	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = — Asiakkaat ihmettelevät.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Asiakkaat	asiakas	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	ihmettelevät	ihmetellä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Nauravat vielä meille, Anna sanoi hiljaa Markolle.
+1	Nauravat	Nauraa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vielä	vielä	ADV	Adv	_	1	advmod	_	_
+3	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+7	hiljaa	hiljaa	ADV	Adv	_	8	advmod	_	_
+8	Markolle	Marko	PROPN	N	Case=All|Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Marko haistoi Annan hiuksien raikkaan tuoksun.
+1	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	haistoi	haistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Annan	anta	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	hiuksien	hius	NOUN	N	Case=Gen|Derivation=Vs|Number=Plur	6	nmod:poss	_	_
+5	raikkaan	raikas	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	tuoksun	tuoksu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	2	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = — Naurakoot.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Naurakoot	Nauraa	VERB	V	Mood=Imp|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Tämä on meidän kahden rakkautta, Marko sanoi niin, että muutkin kuulivat.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	nmod:poss	_	_
+4	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	5	nummod	_	_
+5	rakkautta	rakkaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	niin	niin	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	muutkin	muu	PRON	Pron	Case=Nom|Clitic=Kin|Number=Plur|PronType=Ind	13	nsubj	_	_
+13	kuulivat	kuulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	ccomp	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Reissumies Jussi
+1	Reissumies	Reissu#mies	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Jussi	Jussi	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 10
+# text = Jussi oli kyllästynyt kaikkeen: aamutelkkarin pirteisiin juontajiin, sanomalehtien uutisiin ja torilla miesporukassa seisoskeluun.
+1	Jussi	Jussi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kyllästynyt	kyllästydä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kaikkeen	kaikki	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	3	obl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	aamutelkkarin	aamutelkkari	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	pirteisiin	pire	NOUN	N	Case=Ill|Number=Plur	3	obl	_	_
+8	juontajiin	juontaja	NOUN	N	Case=Ill|Derivation=Ja|Number=Plur	3	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	sanomalehtien	sanomalehti	NOUN	N	Case=Gen|Number=Plur	11	nmod:poss	_	_
+11	uutisiin	uutinen	NOUN	N	Case=Ill|Number=Plur	8	conj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	torilla	tori	NOUN	N	Case=Ade|Number=Sing	8	conj	_	_
+14	miesporukassa	miesporuka	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+15	seisoskeluun	seisoskelu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	3	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Aina samat naamat ja jutut.
+1	Aina	aina	ADV	Adv	_	3	advmod	_	_
+2	samat	sama	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	3	det	_	_
+3	naamat	naama	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	jutut	juttu	NOUN	N	Case=Nom|Number=Plur	3	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

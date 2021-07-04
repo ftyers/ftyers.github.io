@@ -1,0 +1,107 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Turistirysistä, perusmuoto turistirysä.
+1	Turistirysistä	Turistirynen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+4	turistirysä	turistirysä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Rysä on ansa veden alla, kalat uivat sen sisään mutta eivät pääse ulos.
+1	Rysä	rysä	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	ansa	a	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	nmod:poss	_	_
+4	veden	#vesi	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+5	alla	alla	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	kalat	kala	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+8	uivat	ua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	_
+10	sisään	sisään	ADV	Adv	_	8	advmod	_	_
+11	mutta	mutta	CCONJ	C	_	13	cc	_	_
+12	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	pääse	päästä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	conj	_	_
+14	ulos	ulos	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Turistirysä on paikka, johon matkustaa tosi paljon turisteja, monen mielestä liian paljon.
+1	Turistirysä	Turistirysä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	paikka	paikka	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	6	obl	_	_
+6	matkustaa	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+7	tosi	tosi	ADV	Adv	_	6	advmod	_	_
+8	paljon	paljon	ADV	Adv	_	9	advmod	_	_
+9	turisteja	turisti	NOUN	N	Case=Par|Number=Plur	14	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	monen	moni	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	12	det	_	_
+12	mielestä	mieli	NOUN	N	Case=Ela|Number=Sing	14	obl	_	_
+13	liian	liian	ADV	Adv	_	14	advmod	_	_
+14	paljon	paljon	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Täytettä, perusmuoto täyte.
+1	Täytettä	täyte	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	täyte	täyte	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Se, mitä on jonkin sisällä.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	jonkin	jokin	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	1	acl:relcl	_	_
+6	sisällä	sisällä	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Sisältö.
+1	Sisältö	sisältö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Kakulla on täyte.
+1	Kakulla	Kaku	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	täyte	täyte	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Kirjan täytettä ovat sivut, lauseet ja sanat.
+1	Kirjan	kirja	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	täytettä	täyte	NOUN	N	Case=Par|Number=Sing	4	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	sivut	sivu	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	lauseet	lause	NOUN	N	Case=Nom|Number=Plur	4	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	sanat	sana	NOUN	N	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Urheilullisemmalle, perusmuoto urheilullinen.
+1	Urheilullisemmalle	Urheilullisemma	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+4	urheilullinen	urheilullinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Liikunnallinen.
+1	Liikunnallinen	Liikunnallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Urheilua sisältävä.
+1	Urheilua	urheilu	NOUN	N	Case=Par|Derivation=U|Number=Sing	2	obj	_	_
+2	sisältävä	sisällä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

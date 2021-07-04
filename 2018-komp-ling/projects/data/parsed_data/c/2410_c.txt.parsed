@@ -1,0 +1,166 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä se on?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Miksi?
+1	Miksi	miksi	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Mitä...
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+2	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Raskolnikov kiiruhti oven luo avatakseen sen, mutta se oli suljettu.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kiiruhti	kiiruhtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	oven	ovi	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+4	luo	luo	ADP	Adp	AdpType=Post	3	case	_	_
+5	avatakseen	avata	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	2	advcl	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	mutta	mutta	CCONJ	C	_	11	cc	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	obj	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux:pass	_	_
+11	suljettu	sulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Se on suljettu ja tässä on avain!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	suljettu	suljkaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	ja	ja	CCONJ	C	_	4	cc	_	_
+6	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	4	obl	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	avain	avain	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Hän näytti hänelle todellakin avainta, jonka hän otti taskustaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+4	todellakin	todella	ADV	Adv	Clitic=Kin	5	advmod	_	_
+5	avainta	avainta	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	9	obj	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+10	taskustaan	taskustaan	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Taas valetta! raivosi Raskolnikov, joka ei enää kauvemmin voinut hillitä itseään, -- sinä valehtelet, kirottu narri!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Taas	taas	ADV	Adv	_	3	advmod	_	_
+3	valetta	vale	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+5	raivosi	raivota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	18	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj	_	_
+9	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+10	enää	enää	ADV	Adv	_	13	advmod	_	_
+11	kauvemmin	kauvemmin	ADV	Adv	_	13	advmod	_	_
+12	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	aux	_	_
+13	hillitä	hillitä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	acl:relcl	_	_
+14	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	13	punct	_	_
+16	--	--	PUNCT	Punct	_	18	punct	_	_
+17	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	18	nsubj	_	_
+18	valehtelet	valehella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	18	punct	_	_
+20	kirottu	kirota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	21	acl	_	_
+21	narri	narri	NOUN	N	Case=Nom|Number=Sing	18	obj	_	SpaceAfter=No
+22	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Ja hän syöksyi väistyvän, mutta pelottoman Porfyriuksen kimppuun.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	syöksyi	syöksyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	väistyvän	väistyä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	mutta	mutta	CCONJ	C	_	9	cc	_	_
+7	pelottoman	peloton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	8	amod	_	_
+8	Porfyriuksen	Porfyrius	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	kimppuun	kimppuun	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = -- Nyt ymmärrän kaikki, kaikki, huudahti hän syöksyen hänen kimppuunsa, -- sinä valehtelet ja kiemurtelet kanssani niin, että minä paljastaisin itseni...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Nyt	nyt	ADV	Adv	_	3	advmod	_	_
+3	ymmärrän	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	syöksyen	syöksyä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	8	advcl	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	obl	_	_
+12	kimppuunsa	kimppuun	ADP	Adp	AdpType=Post|Person[psor]=3	11	case	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	8	punct	_	_
+14	--	--	PUNCT	Punct	_	3	punct	_	_
+15	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	16	nsubj	_	_
+16	valehtelet	valehella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	kiemurtelet	kiemurella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	16	conj	_	_
+19	kanssani	kanssani	ADV	Adv	_	18	advmod	_	_
+20	niin	niin	ADV	Adv	_	18	advmod	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	24	punct	_	_
+22	että	että	SCONJ	C	_	24	mark	_	_
+23	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	24	nsubj	_	_
+24	paljastaisin	paljastaa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	20	ccomp	_	_
+25	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	24	obj	_	SpaceAfter=No
+26	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = -- Pötyä, paljastaa itseänne ette voi enää, kuomaseni, Rodion Romanovitsh.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Pötyä	Pöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	paljastaa	paljastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+5	itseänne	itseänne	ADV	Adv	_	4	advmod	_	_
+6	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+7	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	enää	enää	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	kuomaseni	kuomanen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	Rodion	Rodion	PROPN	N	Case=Nom|Number=Sing	8	conj	_	_
+13	Romanovitsh	Romanovitsh	PROPN	N	Case=Nom|Number=Sing	12	flat:name	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Tehän olette vallan suunniltanne.
+1	Tehän	Te	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	vallan	valta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	suunniltanne	suunniltanne	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Älkää toki huutako niin kovaa, taikka kutsun väkeäni.
+1	Älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	toki	toki	ADV	Adv	_	3	advmod	_	_
+3	huutako	huutaa	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	0	root	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	kovaa	kova	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	taikka	taikka	CCONJ	C	_	9	cc	_	_
+8	kutsun	kutsinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Coll	9	det	_	_
+9	väkeäni	väke	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,82 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Muikea hymy.
+1	Muikea	Muikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	hymy	hymy	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Leveä, tosi ilahtunut hymy.
+1	Leveä	levi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	tosi	tosi	ADV	Adv	_	5	advmod	_	_
+4	ilahtunut	ilahtuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	acl	_	_
+5	hymy	hymy	NOUN	N	Case=Nom|Derivation=U|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Murjaisi.
+1	Murjaisi	murjaisi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Sanoi jotain vähän hölmöä.
+1	Sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+3	vähän	vähän	ADV	Adv	_	4	advmod	_	_
+4	hölmöä	hölmö	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Palloillaan.
+1	Palloillaan	Pallo	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Pyöritään ja pompitaan kuin pallot.
+1	Pyöritään	Pyöritä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	pompitaan	pompita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	conj	_	_
+4	kuin	kuin	SCONJ	C	_	5	mark	_	_
+5	pallot	pallo	NOUN	N	Case=Nom|Number=Plur	3	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Parempaapuoliskoaan.
+1	Parempaapuoliskoaan	parempaapuoliskoaan	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Vaimoaan.
+1	Vaimoaan	vaimo	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Moni mies ajattelee että vaimo on parempi ihminen kuin hän itse.
+1	Moni	moni	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	ajattelee	ajatellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	parempi	hyvä	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	8	amod	_	_
+8	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	3	ccomp	_	_
+9	kuin	kuin	SCONJ	C	_	11	mark	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	itse	itse	ADV	Adv	_	8	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Puolisot ovat kuin puoliskolta, yhden pariskunnan kaksi puolta.
+1	Puolisot	puoliso	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	kuin	kuin	ADV	Adv	_	4	advmod	_	_
+4	puoliskolta	puoliskko	NOUN	N	Case=Abl|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	yhden	yksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	7	nummod	_	_
+7	pariskunnan	paris#kunta	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+8	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+9	puolta	puoli	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

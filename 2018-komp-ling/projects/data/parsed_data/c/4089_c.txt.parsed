@@ -1,0 +1,202 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kääntykää tänne, -- hän huusi, hyppien jäällä, joka rätisi hänen allaan; -- kääntykää!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kääntykää	Kääntyä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tänne	tänne	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	hyppien	hyppiä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+10	jäällä	jää	NOUN	N	Case=Ade|Number=Sing	9	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj	_	_
+13	rätisi	rätiä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	10	acl:relcl	_	_
+14	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	nmod:poss	_	_
+15	allaan	a	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	13	obl	_	SpaceAfter=No
+16	;	;	PUNCT	Punct	_	2	punct	_	_
+17	--	--	PUNCT	Punct	_	2	punct	_	_
+18	kääntykää	kääntyä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+19	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- huusi hän tykkimiehille.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	tykkimiehille	tykkimieh	NOUN	N	Case=All|Number=Plur	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Kyllä kestää!...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	3	advmod	_	_
+3	kestää	kestää	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	..	..	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Jää kannatti hänet, mutta taipui ja rätisi, ja oli päivän selvää, ettei se kannattaisi tykkiä tai miesjoukkoa, vaan voi murtua minä hetkenä tahansa hänenkin painostaan.
+1	Jää	jä	NOUN	N	Case=Par|Number=Sing	2	nsubj	_	_
+2	kannatti	kannattaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	mutta	mutta	CCONJ	C	_	6	cc	_	_
+6	taipui	taipua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	rätisi	rätiä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	ja	ja	CCONJ	C	_	13	cc	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	cop	_	_
+12	päivän	päivä	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	selvää	selvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	17	mark	_	_
+16	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	17	nsubj	_	_
+17	kannattaisi	kannattaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	2	ccomp	_	_
+18	tykkiä	tykkiä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	17	xcomp	_	_
+19	tai	tai	CCONJ	C	_	20	cc	_	_
+20	miesjoukkoa	miesjoukko	NOUN	N	Case=Par|Number=Sing	18	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	24	punct	_	_
+22	vaan	vaan	CCONJ	C	_	24	cc	_	_
+23	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	24	aux	_	_
+24	murtua	murtua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+25	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	26	nsubj	_	_
+26	hetkenä	hetki	NOUN	N	Case=Ess|Number=Sing	24	obl	_	_
+27	tahansa	tahansa	ADV	Adv	_	29	advmod	_	_
+28	hänenkin	hänenkin	ADV	Adv	_	29	advmod	_	_
+29	painostaan	painosta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	24	ccomp	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Sotilaat katselivat hänen kulkuansa ja painautuivat rannalle astumatta sentään jäälle.
+1	Sotilaat	Sotilas	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	katselivat	katsela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	kulkuansa	kulkua	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	painautuivat	painautua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	rannalle	ranta	NOUN	N	Case=All|Number=Sing	6	obl	_	_
+8	astumatta	astua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+9	sentään	sentään	ADV	Adv	_	10	advmod	_	_
+10	jäälle	jäälle	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Rykmentinpäällikkö, joka istui ratsullaan padon suulla, kohotti kätensä ja avasi suunsa huutaakseen jotakin Dolohoville.
+1	Rykmentinpäällikkö	Rykmentinpäällikkö	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+5	ratsullaan	ratsu	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	4	obl	_	_
+6	padon	pato	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	suulla	suu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	4	punct	_	_
+9	kohotti	kohottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	kätensä	käsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	avasi	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	_
+13	suunsa	suu	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	12	obj	_	_
+14	huutaakseen	huutaa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	12	advcl	_	_
+15	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	14	obj	_	_
+16	Dolohoville	Dolohov	PROPN	N	Case=All|Number=Sing	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 7
+# text = Samassa lensi tykinluoti joukon yli niin matalalta, että kaikki kauhistuivat.
+1	Samassa	sama	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	2	obl	_	_
+2	lensi	lentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tykinluoti	tykinluoti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	joukon	joukko	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+5	yli	yli	ADV	Adv	_	2	advmod	_	_
+6	niin	niin	ADV	Adv	_	7	advmod	_	_
+7	matalalta	matala	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	että	että	SCONJ	C	_	11	mark	_	_
+10	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	11	nsubj	_	_
+11	kauhistuivat	kauhistua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kuului mäjähdys, ja kenraali hevosineen virui verilätäkössä.
+1	Kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	mäjähdys	mäjähdys	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	kenraali	kenraali	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	hevosineen	hevos	NOUN	N	Case=Com|Person[psor]=3	5	nmod	_	_
+7	virui	virua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+8	verilätäkössä	verilätäkö	NOUN	N	Case=Ine|Number=Sing	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Kukaan ei katsahtanut kenraaliin eikä ajatellutkaan häntä auttaa.
+1	Kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	katsahtanut	katsahtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kenraaliin	kenraali	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cc	_	_
+6	ajatellutkaan	ajatellutka	NOUN	N	Case=Ill|Number=Sing	8	obl	_	_
+7	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+8	auttaa	autata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = "Jäälle!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Jäälle	Jäälle	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Jäälle!
+1	Jäälle	Jäälle	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Menkää!
+1	Menkää	Menkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Kääntykää!
+1	Kääntykää	Kääntykä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 14
+# text = Ettekö kuule!
+1	Ettekö	Edä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kuule	kuule	INTJ	Interj	_	1	discourse	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 15
+# text = Menkää!" kuului joka taholta, kun tykinluoti oli kaatanut kenraalin.
+1	Menkää	Menkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+3	"	"	PUNCT	Punct	_	1	punct	_	_
+4	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	6	det	_	_
+6	taholta	taho	NOUN	N	Case=Abl|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	kun	kun	SCONJ	C	_	11	mark	_	_
+9	tykinluoti	tykinluoti	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	kaatanut	kaataa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	advcl	_	_
+12	kenraalin	kenraali	NOUN	N	Case=Gen|Number=Sing	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 16
+# text = Kohta ei kukaan tietänyt mitä ja miksi huudettiin.
+1	Kohta	kohta	ADV	Adv	_	4	advmod	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nsubj	_	_
+4	tietänyt	tietää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	miksi	miksi	ADV	Adv	_	8	advmod	_	_
+8	huudettiin	huudtaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

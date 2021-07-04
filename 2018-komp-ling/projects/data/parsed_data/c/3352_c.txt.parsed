@@ -1,0 +1,129 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Heidän joukossaan se puhe alkoikin.
+1	Heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	joukossaan	jouko	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	5	obl	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	puhe	puhe	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	alkoikin	alkaa	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Aiheen siihen antoi melu, joka syntyi, kun eräs mies syöksyi salalinnotukseen.
+1	Aiheen	Aihe	NOUN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+2	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	_
+3	antoi	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	melu	melu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	syntyi	syntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	kun	kun	SCONJ	C	_	12	mark	_	_
+10	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	11	det	_	_
+11	mies	mies	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	syöksyi	syöksyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	_
+13	salalinnotukseen	salalinnotus	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- No veliseni, eikö kadulla ollut hyvä olla?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	No	no	INTJ	Interj	_	3	discourse	_	_
+3	veliseni	velinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+6	kadulla	katu	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+7	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	cop	_	_
+8	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+9	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	cop	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = vai eivätkö tytöt laula tarpeeksi iloisesti? kysyi muuan.
+1	vai	vai	CCONJ	C	_	4	cc	_	_
+2	eivätkö	ei	AUX	V	Clitic=Ko|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	tytöt	tyttö	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+4	laula	laula	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	tarpeeksi	tarpeeksi	ADV	Adv	_	6	advmod	_	_
+6	iloisesti	iloisesti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	8	punct	_	_
+8	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	muuan	muuan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 5
+# text = -- Sellaisia outoja lauluja laulavat, etten ole moisia milloinkaan kuullut kotikylässäni, -- sanoi nauraen salalinnotukseen syöksynyt sotamies.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Sellaisia	sellainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Plur	4	amod	_	_
+3	outoja	outo	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	lauluja	laulu	NOUN	N	Case=Par|Derivation=U|Number=Plur	5	nsubj	_	_
+5	laulavat	laulaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	etten	että#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	11	mark	_	_
+8	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	aux	_	_
+9	moisia	moinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	11	nsubj	_	_
+10	milloinkaan	milloinkaan	ADV	Adv	_	11	advmod	_	_
+11	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	ccomp	_	_
+12	kotikylässäni	kotikylä	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	11	punct	_	_
+14	--	--	PUNCT	Punct	_	11	punct	_	_
+15	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	parataxis	_	_
+16	nauraen	nauraa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	15	advcl	_	_
+17	salalinnotukseen	salalinnotus	NOUN	N	Case=Ill|Number=Sing	18	obl	_	_
+18	syöksynyt	syöksyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	19	acl	_	_
+19	sotamies	sota#mies	NOUN	N	Case=Nom|Number=Sing	16	obj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Ei se Vasin pidä pommeista, ei pidä!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+4	Vasin	Vas	PROPN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	pommeista	pommi	NOUN	N	Case=Ela|Number=Plur	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	conj	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = -- virkkoi muuan aristokraattien nurkasta.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	virkkoi	virkkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	muuan	muuan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	aristokraattien	aristokraatti	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	nurkasta	nurkka	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Kun tarvis tulee, niin on toinen asia!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Kun	kun	SCONJ	C	_	4	mark	_	_
+3	tarvis	tarvis	ADV	Adv	_	4	advmod	_	_
+4	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	niin	niin	ADV	Adv	_	4	advmod	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	9	nummod	_	_
+9	asia	asia	NOUN	N	Case=Nom|Number=Sing	4	xcomp	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = -- vastasi verkalleen
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	verkalleen	verkalleen	ADV	Adv	_	2	advmod	_	_
+
+# sent_id = 10
+# text = Vasin, jonka puhuessa kaikki muut vaikenivat.
+1	Vasin	Vata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	puhuessa	puhua	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+5	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	nsubj	_	_
+6	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	5	det	_	_
+7	vaikenivat	vaikena	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

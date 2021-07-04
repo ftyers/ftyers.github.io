@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Oikeastaan on kaikki paikoillaan" --: mutta tätä _vastaan_ saarnaa suvituuli!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oikeastaan	oikeastaan	ADV	Adv	_	5	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	paikoillaan	paiko	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	7	obl	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	7	punct	_	_
+7	--	--	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	12	punct	_	_
+9	mutta	mutta	CCONJ	C	_	12	cc	_	_
+10	tätä	tämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	11	det	_	_
+11	_vastaan_ saarnaa	_vastaan_ saarna	NOUN	N	Case=Par|Number=Sing	12	nmod	_	_
+12	suvituuli	suvituuli	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 2
+# text = Suvituuli, härkä, joka ei ole mikään kyntöhärkä, raivoava härkä, hävittäjä, joka vihastunein sarvin murtaa jäätä!
+1	Suvituuli	Suvituuli	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	härkä	härkä	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	12	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj:cop	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	cop	_	_
+8	mikään	mikään	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	12	det	_	_
+9	kyntöhärkä	kyntöhärkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	raivoava	raivoava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	_
+12	härkä	härkä	NOUN	N	Case=Nom|Number=Sing	1	acl:relcl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	hävittäjä	hävittäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	1	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	19	nsubj	_	_
+17	vihastunein	vihastuni	NOUN	N	Case=Ins|Number=Plur	19	obl	_	_
+18	sarvin	sarva	NOUN	N	Case=Ins|Number=Plur	19	obl	_	_
+19	murtaa	murtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+20	jäätä	jäämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	19	obj	_	SpaceAfter=No
+21	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Mutta jää -- -- _murtaa porraspuut!_ Oi veljeni, eikö nyt ole kaikki _virrassa_?
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	jää	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	--	--	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	5	punct	_	_
+5	_murtaa	_murtaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+6	porraspuut	porraspuu	NOUN	N	Case=Nom|Number=Plur	5	obj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	_ Oi	_ oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+9	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+12	nyt	nyt	ADV	Adv	_	15	advmod	_	_
+13	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	15	cop	_	_
+14	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	15	det	_	_
+15	_virrassa_	_virrassa_	NOUN	N	Case=Nom|Number=Sing	8	conj	_	SpaceAfter=No
+16	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Eivätkö kaikki kaidepuut ja portaat ole pudonneet veteen?
+1	Eivätkö	ei	AUX	V	Clitic=Ko|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	kaidepuut	kaidepuu	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	portaat	portaa	NOUN	N	Case=Nom|Number=Plur	3	conj	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	pudonneet	pudota	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	veteen	vesi	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Ken pysyttelisi vielä "hyvässä" ja "pahassa"? "Voi meitä!
+1	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	nsubj	_	_
+2	pysyttelisi	pysytella	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vielä	vielä	ADV	Adv	_	2	advmod	_	_
+4	"	"	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+5	hyvässä	hyvä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	9	amod	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	9	punct	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	"	"	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+9	pahassa	paha	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	9	punct	_	_
+12	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+13	Voi	voi	INTJ	Interj	_	14	discourse	_	_
+14	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	SpaceAfter=No
+15	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Terve meille!
+1	Terve	terve	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	1	nmod	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Suvituuli puhaltaa!"
+1	Suvituuli	Suvituuli	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	puhaltaa	puhallata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Näin saarnatkaa, oi veljeni, kaikilla kaduilla!
+1	Näin	näin	ADV	Adv	_	2	advmod	_	_
+2	saarnatkaa	saarnatka	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	kaikilla	kaikki	PRON	Pron	Case=Ade|Number=Plur|PronType=Ind	8	det	_	_
+8	kaduilla	katu	NOUN	N	Case=Ade|Number=Plur	5	nmod	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = 9.
+1	9.	9.	ADJ	Num	NumType=Ord	0	root	_	SpacesAfter=\s\n
+

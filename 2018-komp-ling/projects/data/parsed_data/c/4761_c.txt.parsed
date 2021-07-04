@@ -1,0 +1,250 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 3. _Yksi!_ Inehmo, oi! _Kaksi!_
+1	3.	3.	ADJ	Num	NumType=Ord	6	obl	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+2	_Yksi	_Y	NOUN	N	Case=Tra|Number=Sing	1	flat	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+4	_ Inehmo	_ Inehmo	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpacesInToken=_\s\s\s\s\sInehmo|SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+8	_Kaksi	_Ka	NOUN	N	Case=Tra|Number=Sing	6	obl	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+10	_	_	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s\s\s\s
+
+# sent_id = 2
+# text = Yön kellot mitä sulle soi? _Kolme!_ "Unt' untelon _Neljä!_ "ma nukuin --, väistyi uni pois: -- _Viisi!_ "Syv' elo on, _Kuusi!_ "mitata päivän miel' ei vois. _Seitsemän!_ "Syv' itku sen --, _Kahdeksan!_ "syvempi vielä ilon-syys: _Yhdeksän!_ "Huol' itkee: kestä en! _Kymmenen!_ "Vaan ilon miel' on iäisyys --, _Yksitoista!_ "-- on syvä, syvä iäisyys!" _Kaksitoista!_ Seitsemän sinettiä.
+1	Yön	#yö	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kellot	kelto	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	5	obj	_	_
+4	sulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs|Style=Coll	5	nsubj	_	_
+5	soi	soida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+7	_Kolme	_Kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	_	_	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s\s\s
+10	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+11	Unt'	Unt'	PUNCT	Punct	_	5	punct	_	_
+12	untelon	untelo	NOUN	N	Case=Gen|Number=Sing	18	obj	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+13	_Neljä	_Neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	12	nummod	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+15	_	_	PUNCT	Punct	_	18	punct	_	SpacesAfter=\s\s\s\s\s
+16	"	"	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+17	ma	ma	NOUN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+18	nukuin	nukkua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+19	--	--	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	21	punct	_	_
+21	väistyi	väistyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+22	uni	uni	NOUN	N	Case=Nom|Number=Sing	21	nsubj	_	_
+23	pois	pois	ADV	Adv	_	21	advmod	_	SpaceAfter=No
+24	:	:	PUNCT	Punct	_	5	punct	_	_
+25	--	--	PUNCT	Punct	_	26	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+26	_Viisi	_Viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	34	nummod	_	SpaceAfter=No
+27	!	!	PUNCT	Punct	_	29	punct	_	SpaceAfter=No
+28	_ "	_ "	NUM	Num	NumType=Card	29	nummod	_	SpacesInToken=_\s\s\s\s\s"|SpaceAfter=No
+29	Syv	Syv	PROPN	N	Case=Nom|Number=Sing	31	conj	_	SpaceAfter=No
+30	'	'	PUNCT	Punct	_	29	punct	_	_
+31	elo	elo	NOUN	N	Case=Nom|Number=Sing	34	nsubj:cop	_	_
+32	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	34	cop	_	SpaceAfter=No
+33	,	,	PUNCT	Punct	_	34	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+34	_Kuusi	_Kuusi	NOUN	N	Case=Nom|Number=Sing	5	parataxis	_	SpaceAfter=No
+35	!	!	PUNCT	Punct	_	34	punct	_	SpaceAfter=No
+36	_	_	PUNCT	Punct	_	38	punct	_	SpacesAfter=\s\s\s\s\s
+37	"	"	PUNCT	Punct	_	38	punct	_	SpaceAfter=No
+38	mitata	mitata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	34	parataxis	_	_
+39	päivän	#päivä	NOUN	N	Case=Gen|Number=Sing	40	nmod:poss	_	_
+40	miel	miel	NOUN	N	Case=Nom|Number=Sing	38	obj	_	SpaceAfter=No
+41	'	'	PUNCT	Punct	_	38	punct	_	_
+42	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	38	aux	_	_
+43	vois	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|Style=Coll|VerbForm=Fin|Voice=Act	38	cop	_	SpaceAfter=No
+44	.	.	PUNCT	Punct	_	38	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+45	_Seitsemän	_Seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	38	obl	_	SpaceAfter=No
+46	!	!	PUNCT	Punct	_	47	punct	_	SpaceAfter=No
+47	_ "	_ "	NUM	Num	NumType=Card	38	obl	_	SpacesInToken=_\s\s\s\s\s"|SpaceAfter=No
+48	Syv	Syv	PROPN	N	Case=Nom|Number=Sing	47	flat:name	_	SpaceAfter=No
+49	'	'	PUNCT	Punct	_	38	punct	_	_
+50	itku	itku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	38	obj	_	_
+51	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	59	nmod:poss	_	_
+52	--	--	PUNCT	Punct	_	51	punct	_	SpaceAfter=No
+53	,	,	PUNCT	Punct	_	54	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+54	_Kahdeksan	_Kahdeksa	PROPN	N	Case=Gen|Number=Sing	51	conj	_	SpaceAfter=No
+55	!	!	PUNCT	Punct	_	51	punct	_	SpaceAfter=No
+56	_ "	_ "	PUNCT	Punct	_	51	punct	_	SpacesInToken=_\s\s\s\s\s"|SpaceAfter=No
+57	syvempi	syva	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	59	amod	_	_
+58	vielä	vielä	ADV	Adv	_	59	advmod	_	_
+59	ilon-syys	ilon-syys	NOUN	N	Case=Nom|Number=Sing	38	obj	_	SpaceAfter=No
+60	:	:	PUNCT	Punct	_	38	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+61	_Yhdeksän	_Yhdeksän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	67	appos	_	SpaceAfter=No
+62	!	!	PUNCT	Punct	_	61	punct	_	SpaceAfter=No
+63	_	_	PUNCT	Punct	_	61	punct	_	SpacesAfter=\s\s\s\s\s
+64	"	"	PUNCT	Punct	_	61	punct	_	SpaceAfter=No
+65	Huol	Huol	PROPN	N	Case=Nom|Number=Sing	67	nsubj	_	SpaceAfter=No
+66	'	'	PUNCT	Punct	_	65	punct	_	_
+67	itkee	itkeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	38	parataxis	_	SpaceAfter=No
+68	:	:	PUNCT	Punct	_	38	punct	_	_
+69	kestä	kestää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	38	parataxis	_	_
+70	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	81	mark	_	SpaceAfter=No
+71	!	!	PUNCT	Punct	_	72	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+72	_Kymmenen	_Kymmen	PROPN	N	Case=Gen|Number=Sing	81	nsubj:cop	_	SpaceAfter=No
+73	!	!	PUNCT	Punct	_	74	punct	_	SpaceAfter=No
+74	_	_	PUNCT	Punct	_	78	punct	_	SpacesAfter=\s\s\s\s\s
+75	"	"	PUNCT	Punct	_	78	punct	_	SpaceAfter=No
+76	Vaan	vaan	CCONJ	C	_	78	cc	_	_
+77	ilon	ilo	NOUN	N	Case=Gen|Number=Sing	78	nmod:poss	_	_
+78	miel	miel	NOUN	N	Case=Nom|Number=Sing	72	conj	_	SpaceAfter=No
+79	'	'	PUNCT	Punct	_	72	punct	_	_
+80	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	81	cop	_	_
+81	iäisyys	iäisyys	NOUN	N	Case=Nom|Number=Sing	69	obl	_	_
+82	--	--	PUNCT	Punct	_	81	punct	_	SpaceAfter=No
+83	,	,	PUNCT	Punct	_	84	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+84	_Yksitoista	_Yksito	PROPN	N	Case=Ela|Number=Sing	81	conj	_	SpaceAfter=No
+85	!	!	PUNCT	Punct	_	86	punct	_	SpaceAfter=No
+86	_	_	PUNCT	Punct	_	90	punct	_	SpacesAfter=\s\s\s\s\s
+87	"	"	PUNCT	Punct	_	90	punct	_	SpaceAfter=No
+88	--	--	PUNCT	Punct	_	90	punct	_	_
+89	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	90	cop	_	_
+90	syvä	syvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	81	conj	_	SpaceAfter=No
+91	,	,	PUNCT	Punct	_	93	punct	_	_
+92	syvä	syvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	93	amod	_	_
+93	iäisyys	iäisyys	NOUN	N	Case=Nom|Number=Sing	90	nsubj:cop	_	SpaceAfter=No
+94	!	!	PUNCT	Punct	_	90	punct	_	SpaceAfter=No
+95	"	"	PUNCT	Punct	_	90	punct	_	SpacesAfter=\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s
+96	_Kaksitoista	_Kaksito	PROPN	N	Case=Ela|Number=Sing	90	nmod	_	SpaceAfter=No
+97	!	!	PUNCT	Punct	_	90	punct	_	SpaceAfter=No
+98	_ Seitsemän	_ Seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	99	nummod	_	_
+99	sinettiä	sinetti	NOUN	N	Case=Par|Number=Sing	90	nsubj:cop	_	SpaceAfter=No
+100	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = (Eli: On- ja Aamen-laulu.)
+1	(	(	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Eli	Eli	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	On-	O	NOUN	N	Case=Gen|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	Aamen-laulu	Aamen-laulu	PROPN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	)	)	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = 1. Jos minä tietäjä olen ja täynnä tietäjähenkeä, joka vaeltaa korkealla harjanteella kahden meren välissä, -- vaeltaa menneen ja tulevaisen välissä kuin raskas pilvi, -- helteisille alangoille vihamielisenä ja kaikelle, mikä väsynyttä on eikä osaa kuolla eikä elää:
+1	1	1	NUM	Num	NumType=Card	20	obl	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+3	Jos	jos	SCONJ	C	_	9	mark	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj:cop	_	_
+5	tietäjä	tietäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	nsubj:cop	_	_
+6	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	täynnä	täynnä	ADV	Adv	_	9	advmod	_	_
+9	tietäjähenkeä	tietäjä#henki	NOUN	N	Case=Par|Number=Sing	20	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	_
+12	vaeltaa	vaeltaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	korkealla	korkea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	14	amod	_	_
+14	harjanteella	harjante	NOUN	N	Case=Ade|Number=Sing	12	obl	_	_
+15	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	16	nummod	_	_
+16	meren	#meri	NOUN	N	Case=Gen|Number=Sing	12	obl	_	_
+17	välissä	välissä	ADP	Adp	AdpType=Post	16	case	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	9	punct	_	_
+19	--	--	PUNCT	Punct	_	9	punct	_	_
+20	vaeltaa	vaeltaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+21	menneen	mennyt	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	24	amod	_	_
+22	ja	ja	CCONJ	C	_	23	cc	_	_
+23	tulevaisen	tulevainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	21	conj	_	_
+24	välissä	väli	NOUN	N	Case=Ine|Number=Sing	20	obl	_	_
+25	kuin	kuin	SCONJ	C	_	27	mark	_	_
+26	raskas	raskas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	27	amod	_	_
+27	pilvi	pilvi	NOUN	N	Case=Nom|Number=Sing	20	advcl	_	SpaceAfter=No
+28	,	,	PUNCT	Punct	_	32	punct	_	_
+29	--	--	PUNCT	Punct	_	32	punct	_	_
+30	helteisille	helteis	NOUN	N	Case=All|Number=Plur	32	obl	_	_
+31	alangoille	alango	NOUN	N	Case=All|Number=Plur	30	nmod	_	_
+32	vihamielisenä	vihamielinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	40	conj	_	_
+33	ja	ja	CCONJ	C	_	34	cc	_	_
+34	kaikelle	kaikki	PRON	Pron	Case=All|Number=Sing|PronType=Ind	32	conj	_	SpaceAfter=No
+35	,	,	PUNCT	Punct	_	40	punct	_	_
+36	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	37	det	_	_
+37	väsynyttä	väsynys	NOUN	N	Case=Par|Number=Sing	40	obj	_	_
+38	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	40	aux	_	_
+39	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	40	cc	_	_
+40	osaa	osata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	20	conj	_	_
+41	kuolla	kuolla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	40	xcomp	_	_
+42	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	43	cc	_	_
+43	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	41	conj	_	SpaceAfter=No
+44	:	:	PUNCT	Punct	_	20	punct	_	_
+
+# sent_id = 5
+# text = Salamaksi valmistuneena pimeässä helmassa ja lunastavaksi valonsäteeksi, raskaana salamoista, jotka sanovat: on! nauravat: on! ennustaviksi salamansäteiksi valmistuneena: mutta autuas on näin kohtua-kantavainen!
+1	Salamaksi	Salama	NOUN	N	Case=Tra|Number=Sing	2	obl	_	_
+2	valmistuneena	valmistua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	advcl	_	_
+3	pimeässä	pimeä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	4	amod	_	_
+4	helmassa	helma	NOUN	N	Case=Ine|Number=Sing	7	obl	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	lunastavaksi	lunastava	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	amod	_	_
+7	valonsäteeksi	valonsäte	NOUN	N	Case=Tra|Number=Sing	13	xcomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	raskaana	raskas	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	10	amod	_	_
+10	salamoista	salamo	NOUN	N	Case=Ela|Number=Plur	13	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	13	nsubj	_	_
+13	sanovat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	13	punct	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	SpaceAfter=No
+16	!	!	PUNCT	Punct	_	17	punct	_	_
+17	nauravat	nauraa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	parataxis	_	SpaceAfter=No
+18	:	:	PUNCT	Punct	_	13	punct	_	_
+19	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	cop	_	SpaceAfter=No
+20	!	!	PUNCT	Punct	_	22	punct	_	_
+21	ennustaviksi	ennustava	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	22	amod	_	_
+22	salamansäteiksi	salamansäte	NOUN	N	Case=Tra|Number=Plur	23	xcomp:ds	_	_
+23	valmistuneena	valmistua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	24	advcl	_	SpaceAfter=No
+24	:	:	PUNCT	Punct	_	29	punct	_	_
+25	mutta	mutta	CCONJ	C	_	29	cc	_	_
+26	autuas	autuas	NOUN	N	Case=Nom|Number=Sing	29	nsubj:cop	_	_
+27	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	29	cop	_	_
+28	näin	näin	ADV	Adv	_	29	advmod	_	_
+29	kohtua-kantavainen	kohtua-kantavainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	13	parataxis	_	SpaceAfter=No
+30	!	!	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 6
+# text = Ja totisesti, kauan täytyy sen raskaana ukkosilmana vuorella riippua, ken kerran on sytyttävä tulevaisuuden valon!
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	totisesti	totisesti	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	kauan	kauan	ADV	Adv	_	8	advmod	_	_
+5	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	nmod:poss	_	_
+7	raskaana	raskas	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	8	amod	_	_
+8	ukkosilmana	ukkosilma	NOUN	N	Case=Ess|Number=Sing	15	obl	_	_
+9	vuorella	vuor	NOUN	N	Case=Ade|Number=Sing	10	nmod	_	_
+10	riippua	riippu	NOUN	N	Case=Par|Number=Sing	8	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	8	punct	_	_
+12	ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	11	nsubj	_	_
+13	kerran	kerran	ADV	Adv	_	12	advmod	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux:pass	_	_
+15	sytyttävä	sytytä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+16	tulevaisuuden	tulevaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	17	nmod:poss	_	_
+17	valon	valo	NOUN	N	Case=Gen|Number=Sing	15	obj	_	SpaceAfter=No
+18	!	!	PUNCT	Punct	_	15	punct	_	_
+
+# sent_id = 7
+# text = -- Oi miten palava kaipuu minulla täytyykään olla iäisyyteen ja sormuksien hääsormukseen, -- takaisintulon sormukseen!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	miten	miten	ADV	Adv	_	2	advmod	_	_
+4	palava	pa#lava	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	kaipuu	kaipua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+7	täytyykään	täytyy	ADV	Adv	Clitic=Kaan	9	advmod	_	_
+8	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	cop	_	_
+9	iäisyyteen	iäisyys	NOUN	N	Case=Ill|Number=Sing	5	obl	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	sormuksien	sormuksi	NOUN	N	Case=Gen|Number=Plur	12	nmod:poss	_	_
+12	hääsormukseen	hääsormus	NOUN	N	Case=Ill|Number=Sing	9	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	--	--	PUNCT	Punct	_	16	punct	_	_
+15	takaisintulon	takaisin#tulo	NOUN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+16	sormukseen	sormus	NOUN	N	Case=Ill|Number=Sing	9	conj	_	SpaceAfter=No
+17	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,92 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Raskassoutusta.
+1	Raskassoutusta	Raskassoutus	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Raskassoutuista.
+1	Raskassoutuista	raskassoutuista	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Väsyttävää.
+1	Väsyttävää	Väsyttävä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Vaikeaa kestää.
+1	Vaikeaa	vaikea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	advcl	_	_
+2	kestää	kestää	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Kirjaimellisesti tässä soudetaan veneellä, jossa on paljon painoa tai joka kulkee vastatuuleen.
+1	Kirjaimellisesti	kirjaimellisesti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+2	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	obl	_	_
+3	soudetaan	soudtaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	veneellä	vene	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	4	acl:relcl	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	paljon	paljon	ADV	Adv	_	6	advmod	_	_
+9	painoa	painoa	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+10	tai	tai	CCONJ	C	_	12	cc	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj	_	_
+12	kulkee	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	vastatuuleen	vastatuuli	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Soutaminen on siis raskasta.
+1	Soutaminen	Soutaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	siis	siis	ADV	Adv	_	4	advmod	_	_
+4	raskasta	raskas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Saarnan aihee takkii.
+1	Saarnan	Saarta	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	aihee	aihla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	takkii	takin	ADV	Adv	Style=Coll	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Saarnan aiheen takia.
+1	Saarnan	Saarta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	aiheen	aihe	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+3	takia	takia	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Papin uskonnollisen puheen takia.
+1	Papin	pappi	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	uskonnollisen	uskonnollinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	3	amod	_	_
+3	puheen	puhe	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+4	takia	takia	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Saarnastuolista, perusmuoto saarnastuoli.
+1	Saarnastuolista	saarnastuolista	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	saarnastuoli	saarnastuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Koroke puhujille kirkossa.
+1	Koroke	koroke	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	puhujille	puhuj	NOUN	N	Case=All|Number=Plur	1	nmod	_	_
+3	kirkossa	kirkko	NOUN	N	Case=Ine|Number=Sing	1	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Usein hyvin koristeellinen.
+1	Usein	usein	ADV	Adv	_	3	advmod	_	_
+2	hyvin	hyvin	ADV	Adv	_	3	advmod	_	_
+3	koristeellinen	koristeellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Laivaväkeni nousi kapinaan minua vastaan.
+1	Laivaväkeni	laivaväkeni	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kapinaan	kapina	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	2	obl	_	_
+5	vastaan	vastaan	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = He päättivät murhata minut, ja töin tuskin heidät saatiin suostumaan siihen, että he jättävät minut tähän autioon saareen, minut ja nämä kaksi miestä, joista toinen oli alikapteenini ja toinen matkustaja.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	päättivät	päättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	murhata	murhata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	töin	töin	ADV	Adv	_	10	advmod	_	_
+8	tuskin	tuskin	ADV	Adv	_	10	advmod	_	_
+9	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	8	obj	_	_
+10	saatiin	saaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	2	conj	_	_
+11	suostumaan	suostua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp:ds	_	_
+12	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	11	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	että	että	SCONJ	C	_	16	mark	_	_
+15	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	16	nsubj	_	_
+16	jättävät	jättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	ccomp	_	_
+17	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	16	obj	_	_
+18	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	20	det	_	_
+19	autioon	autio	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	20	amod	_	_
+20	saareen	saari	NOUN	N	Case=Ill|Number=Sing	22	obl	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	22	punct	_	_
+22	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	16	obj	_	_
+23	ja	ja	CCONJ	C	_	26	cc	_	_
+24	nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	26	det	_	_
+25	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	26	nummod	_	_
+26	miestä	mies	NOUN	N	Case=Par|Number=Sing	22	conj	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	31	punct	_	_
+28	joista	joka	PRON	Pron	Case=Ela|Number=Plur|PronType=Rel	31	obl	_	_
+29	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	31	nsubj:cop	_	_
+30	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	31	cop	_	_
+31	alikapteenini	alikapteeni	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	22	acl:relcl	_	_
+32	ja	ja	CCONJ	C	_	34	cc	_	_
+33	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	34	nummod	_	_
+34	matkustaja	matkustaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	31	conj	_	SpaceAfter=No
+35	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Me emme voineet odottaa muuta kuin että meidän täytyy kuolla täällä, sillä emmehän tienneet saaren olevan asuttu.
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
+2	emme	ei	AUX	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	voineet	voida	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	odottaa	odottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	_
+6	kuin	kuin	SCONJ	C	_	10	mark	_	_
+7	että	että	SCONJ	C	_	10	mark	_	_
+8	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	10	nsubj	_	_
+9	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	kuolla	kuolla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	_
+11	täällä	täällä	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	sillä	sillä	SCONJ	C	_	15	mark	_	_
+14	emmehän	emme	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	15	nsubj	_	_
+15	tienneet	tietä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	18	advcl	_	_
+16	saaren	#saari	NOUN	N	Case=Gen|Number=Sing	18	obj	_	_
+17	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	18	aux:pass	_	_
+18	asuttu	asua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	conj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Missä ovat nuo konnat, teidän vihollisenne? kysäisin minä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	0	root	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	nuo	tuo	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	det	_	_
+5	konnat	konta	NOUN	N	Case=Nom|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	nmod:poss	_	_
+8	vihollisenne	vihollisenne	NOUN	N	Case=Nom|Number=Sing	5	appos	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	2	punct	_	_
+10	kysäisin	kysäa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Tiedättekö minne he ovat menneet?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tiedättekö	tietää	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+3	minne	minne	ADV	Adv	_	6	advmod	_	_
+4	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
+5	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	menneet	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = -- Tuolla he makaavat, sir, hän vastasi viitaten tiheikköön metsässä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Tuolla	tuolla	ADV	Adv	_	4	advmod	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+4	makaavat	makaaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	sir	sir	X	Symb	_	4	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+10	viitaten	viitata	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	11	advcl	_	_
+11	tiheikköön	tiheikä	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	advcl	_	_
+12	metsässä	metsä	NOUN	N	Case=Ine|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- Sydämeni vapisee pelosta, että he ovat nähneet teidät ja kuulleet teidän puhuvan.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Sydämeni	sydän	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	_
+3	vapisee	vapista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	pelosta	pelko	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+8	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	nähneet	näha	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	ccomp	_	_
+10	teidät	sinä	PRON	Pron	Case=Acc|Number=Plur|Person=2|PronType=Prs	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	kuulleet	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	9	conj	_	_
+13	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	14	nsubj	_	_
+14	puhuvan	puhua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	12	xcomp:ds	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Ja jos niin on, silloin he murhaavat meidät joka miehen.
+1	Ja	ja	CCONJ	C	_	8	cc	_	_
+2	jos	jos	SCONJ	C	_	8	mark	_	_
+3	niin	niin	ADV	Adv	_	8	advmod	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	silloin	silloin	ADV	Adv	_	8	advmod	_	_
+7	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+8	murhaavat	murhaaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	meidät	minä	PRON	Pron	Case=Acc|Number=Plur|Person=1|PronType=Prs	8	obj	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	det	_	_
+11	miehen	mies	NOUN	N	Case=Gen|Number=Sing	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = -- Onko heillä aseita?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	0	root	_	_
+4	aseita	ase	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

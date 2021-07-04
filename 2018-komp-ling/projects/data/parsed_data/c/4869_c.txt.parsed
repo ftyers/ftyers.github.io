@@ -1,0 +1,113 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 10.
+1	10	10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Jos te tahdotte korkealle, niin käyttäkää omia jalkojanne!
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+3	tahdotte	tahdlla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	korkealle	korkea	ADJ	A	Case=All|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	niin	niin	ADV	Adv	_	7	advmod	_	_
+7	käyttäkää	käyttää	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+8	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	9	amod	_	_
+9	jalkojanne	jalkojanne	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = Älkää antako _kantaa_ itseänne ylös, älkää istuko vieraille selille ja vieraille päille!
+1	Älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	antako	antaa	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	0	root	_	_
+3	_kantaa_	_kantaa_	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+4	itseänne	itseänne	ADV	Adv	_	5	advmod	_	_
+5	ylös	ylös	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	istuko	istua	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	2	conj	_	_
+9	vieraille	vieras	ADJ	A	Case=All|Degree=Pos|Number=Plur	10	amod	_	_
+10	selille	sel	NOUN	N	Case=All|Number=Plur	8	obl	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	vieraille	vieras	ADJ	A	Case=All|Degree=Pos|Number=Plur	13	amod	_	_
+13	päille	pä	NOUN	N	Case=All|Number=Plur	10	conj	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Mutta sinä nouset hevosen selkään?
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	nouset	nounen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	4	amod	_	_
+4	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	selkään	selkä	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Sinä ratsastat nyt ripeästi ylös päämaaliisi!
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	ratsastat	ratsastaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nyt	nyt	ADV	Adv	_	2	advmod	_	_
+4	ripeästi	ripeästi	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	ylös	ylös	ADV	Adv	_	6	advmod	_	_
+6	päämaaliisi	päämaaliisi	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Mutta sinun rampa jalkasi istuu myös mukana hevosen selässä!
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
+3	rampa	rampa	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	jalkasi	jalka	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=2	5	nsubj	_	_
+5	istuu	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	myös	myös	ADV	Adv	_	9	advmod	_	_
+7	mukana	mukana	ADP	Adp	AdpType=Post	9	case	_	_
+8	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	selässä	selä	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Kun sinä olet päämaalissasi, kun sinä hyppäät hevosesi selästä: _kukkulallasi_ juuri, korkeampi ihminen, olet sinä kompastuva!
+1	Kun	kun	SCONJ	C	_	4	mark	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	päämaalissasi	päämaalissata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	kun	kun	SCONJ	C	_	15	mark	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	15	nsubj:cop	_	_
+8	hyppäät	hyppäs	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	10	det	_	_
+9	hevosesi	hevose	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	10	det	_	_
+10	selästä	selä	NOUN	N	Case=Ela|Number=Sing	7	nmod	_	SpaceAfter=No
+11	:	:	PUNCT	Punct	_	7	punct	_	_
+12	_kukkulallasi_ juuri	_kukkulallasi_ juuri	ADV	Adv	_	14	advmod	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	12	punct	_	_
+14	korkeampi	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	15	amod	_	_
+15	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	4	advcl	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	19	punct	_	_
+17	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
+18	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	19	nsubj:cop	_	_
+19	kompastuva	kompastuva	NOUN	N	Case=Nom|Number=Sing	15	conj	_	SpaceAfter=No
+20	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = 11. Te luovat, te korkeammat ihmiset!
+1	11	11	NUM	Num	NumType=Card	4	obl	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+3	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+4	luovat	luoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	det	_	_
+7	korkeammat	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Plur	8	amod	_	_
+8	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Raskas on vain omasta lapsestaan.
+1	Raskas	raskas	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	omasta	oma	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	5	amod	_	_
+5	lapsestaan	lapsesta	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

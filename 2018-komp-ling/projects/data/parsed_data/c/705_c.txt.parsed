@@ -1,0 +1,183 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Sinä jumaloit itseäsi liiaksi!
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	jumaloit	juumaloda	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	itseäsi	itse	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	4	det	_	_
+4	liiaksi	liia	NOUN	N	Case=Tra|Number=Sing	2	xcomp:ds	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Me olemme molemmat tulleet rangaistuksi."
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
+2	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	4	nsubj	_	_
+4	tulleet	tullä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	rangaistuksi	rangaistu	NOUN	N	Case=Tra|Number=Sing	4	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Dorian Gray kääntyi hitaasti taakseen ja katseli häntä kyyneltynein silmin.
+1	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hitaasti	hitaasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	taakseen	taakse	ADV	Adv	Person[psor]=3	3	advmod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+9	kyyneltynein	kyyneltyni	NOUN	N	Case=Ins|Number=Plur	7	obl	_	_
+10	silmin	silmä	NOUN	N	Case=Ins|Number=Plur	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = "Se on liian myöhäistä, Basil", hän änkytti.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	liian	liian	ADV	Adv	_	5	advmod	_	_
+5	myöhäistä	myöhäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Basil	Basil	PROPN	N	Case=Nom|Number=Sing	5	appos	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	5	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	änkytti	änkyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = "Ei koskaan ole liian myöhäistä, Dorian.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	koskaan	koskaan	ADV	Adv	_	6	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	liian	liian	ADV	Adv	_	6	advmod	_	_
+6	myöhäistä	myöhäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Polvistukaamme yhdessä ja koettakaamme, emmekö muistaisi vielä rukousta.
+1	Polvistukaamme	Polvistua	VERB	V	Mood=Imp|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+2	yhdessä	yhdessä	ADV	Adv	_	1	advmod	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	koettakaamme	koettakataa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	1	punct	_	_
+6	emmekö	emme	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	xcomp	_	_
+7	muistaisi	muistaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+8	vielä	vielä	ADV	Adv	_	7	advmod	_	_
+9	rukousta	rukous	NOUN	N	Case=Par|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Eikö ole jotain tämäntapaista lausetta:
+1	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+4	tämäntapaista	tämäntapainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	lausetta	lause	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = 'Jos teidän syntinne veriruskiat olisivat, niin heidän pitää lumivalkeaksi tuleman'?"
+1	'	'	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+2	Jos	jos	SCONJ	C	_	10	mark	_	_
+3	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	4	nmod:poss	_	_
+4	syntinne	synti	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=2	5	nmod:poss	_	_
+5	veriruskiat	veriruskia	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	_
+6	olisivat	olla	AUX	V	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	10	cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	niin	niin	ADV	Adv	_	10	advmod	_	_
+9	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+11	lumivalkeaksi	lumivalkea	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	10	xcomp	_	_
+12	tuleman	tulema	NOUN	N	Case=Gen|Number=Sing	10	obj	_	SpaceAfter=No
+13	'	'	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 9
+# text = "Nuo sanat eivät merkitse minulle enää mitään".
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Nuo	tuo	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	det	_	_
+3	sanat	sata	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+4	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	merkitse	merkita	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+7	enää	enää	ADV	Adv	_	8	advmod	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	obj	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = "Älä sano sitä.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sano	sanoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Olet tehnyt kylliksi pahaa elämässäsi.
+1	Olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	kylliksi	kyllä	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	5	xcomp	_	_
+4	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
+5	elämässäsi	elämässä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Hyvä Jumala!
+1	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Etkö näe miten tuo kirottu kuva vilkuu meihin?"
+1	Etkö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	näe	nähdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	miten	miten	ADV	Adv	_	5	advmod	_	_
+4	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	obj	_	_
+5	kirottu	kirota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
+6	kuva	#kuva	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+7	vilkuu	vilkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	xcomp	_	_
+8	meihin	me	NOUN	N	Case=Ill|Number=Plur	7	obl	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Dorian Gray vilkaisi kuvaan, ja äkkiä selittämätön vihan tunne Basil Hallwardia kohtaan valtasi hänet, ikäänkuin kuva olisi sen hänessä herättänyt ja kuiskannut sen hänen korvaansa inhottavilla huulillaan.
+1	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	vilkaisi	vilkaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kuvaan	kuva	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	äkkiä	äkkiä	ADV	Adv	_	8	advmod	_	_
+8	selittämätön	selittämätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	10	amod	_	_
+9	vihan	viha	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	tunne	tunne	NOUN	N	Case=Nom|Number=Sing	11	compound:nn	_	_
+11	Basil	Basil	PROPN	N	Case=Nom|Number=Sing	3	obl	_	_
+12	Hallwardia	Hallward	PROPN	N	Case=Par|Number=Sing	11	flat:name	_	_
+13	kohtaan	kohtaan	ADP	Adp	AdpType=Post	11	case	_	_
+14	valtasi	valata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+15	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	14	obj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	22	punct	_	_
+17	ikäänkuin	ikäänkuin	SCONJ	C	_	22	mark	_	_
+18	kuva	kuva	NOUN	N	Case=Nom|Number=Sing	22	nsubj	_	_
+19	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	22	aux	_	_
+20	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	21	nmod:poss	_	_
+21	hänessä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+22	herättänyt	herättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	advcl	_	_
+23	ja	ja	CCONJ	C	_	24	cc	_	_
+24	kuiskannut	kuiskata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	22	conj	_	_
+25	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	27	obj	_	_
+26	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	27	nmod:poss	_	_
+27	korvaansa	korva	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	24	obj	_	_
+28	inhottavilla	inhottava	ADJ	A	Case=Ade|Degree=Pos|Number=Plur	29	amod	_	_
+29	huulillaan	huul	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	24	obl	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

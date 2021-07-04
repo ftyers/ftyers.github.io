@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\title{Sentence segmentation}
+\author{Nikolay Babakov}
+\date{October 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Brief description of each segmenter used.}
+I have used the segmenters which were offered by default. 
+The first one was sent-tokenize from NLTK. I implemented random text choosing and segmentation inside one process in my notebook\newline
+The second one was pragmatic segmenter in ruby. I have followed all tech instructions for using it and finally got the results and saved them in a separate file\newline
+
+\section{Quantitative and qualitative evaluation}
+I have calculated real amount of sentences manually. It equals 153\newline
+NLTK segmentation turned to be more accurate because it made only 164 - 153 = 11 non existing sentences\newline
+Meanwhile ruby script made 177 - 153 = 24 non existing sentences\newline
+
+NLTK main mistakes were about abbreviations of short words Ruby scrip main mistakes were about name abbreviation\newline
+
+Here is an example for NLTK ambigious segmentation\newline
+'Но одновременно быстрыми темпами шёл рост местного населения (см.',\newline
+'ниже\xa0— агломерация).',\newline
+'Всё это начало создавать большую антропогенную нагрузку на экологию КМВ (см.', 'Пятигорск).'\newline
+
+And this one relates to ruby pragmatic segmenter ambigious results\newline
+'Вот почему 27 марта 1992 года и был подписан Указ Президента Российской Федерации Б.'\newline
+ 'Н.'\newline
+ 'Ельцина, согласно которому Кавминводы являются особо охраняемым эколого-курортным регионом Российской Федерации.'\newline
+
+\end{document}

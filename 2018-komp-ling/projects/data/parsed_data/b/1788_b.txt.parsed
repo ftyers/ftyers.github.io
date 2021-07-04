@@ -1,0 +1,117 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Palelluttakoon.
+1	Palelluttakoon	Palelluttakoon	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Hän saa palelluttaa itsensä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	palelluttaa	palelluttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Palelluttaa, tehdä kylmäksi, jäädyttää.
+1	Palelluttaa	Palelluttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+4	kylmäksi	kylmä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	jäädyttää	jäädyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Pankkitilitiedoissa.
+1	Pankkitilitiedoissa	Pankkitilitiedo	NOUN	N	Case=Ine|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Tiedoissa, jotka pankki antaa pankkitilin tapahtumista: kenelle on maksettu, keneltä on tullut rahaa tilille.
+1	Tiedoissa	Tiedo	NOUN	N	Case=Ine|Number=Plur	11	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	5	nsubj	_	_
+4	pankki	pankki	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+6	pankkitilin	pankkitili	NOUN	N	Case=Gen|Number=Sing	7	nmod:gobj	_	_
+7	tapahtumista	tapahtuminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	5	obj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	1	punct	_	_
+9	kenelle	keni	NOUN	N	Case=All|Number=Sing	11	obl	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux:pass	_	_
+11	maksettu	maksaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	keneltä	kuka	PRON	Pron	Case=Abl|Number=Sing|PronType=Int	15	nsubj	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	ccomp	_	_
+16	rahaa	raha	NOUN	N	Case=Par|Number=Sing	15	obj	_	_
+17	tilille	tila	NOUN	N	Case=All|Number=Plur	15	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 6
+# text = Panttivanki, vangittu ihminen, jota vangitsija ei päästetä vapaaksi ennen kuin saa mitä haluaa.
+1	Panttivanki	Panttivanki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	vangittu	vangita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	9	obj	_	_
+7	vangitsija	vangitsija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	päästetä	päästtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	acl:relcl	_	_
+10	vapaaksi	vapaa	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	9	xcomp	_	_
+11	ennen	ennen	ADV	Adv	_	12	advmod	_	_
+12	kuin	kuin	SCONJ	C	_	13	mark	_	_
+13	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	9	advcl	_	_
+14	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	15	obj	_	_
+15	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	13	ccomp	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Pasmat sekaisin.
+1	Pasmat	Pasma	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+2	sekaisin	sekaisin	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Suunnitelmat sekaisin.
+1	Suunnitelmat	suunnitelma	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+2	sekaisin	sekaisin	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Elämän suunta, tulevaisuus kadoksissa.
+1	Elämän	elämä	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	suunta	suunta	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	tulevaisuus	tulevaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	2	conj	_	_
+5	kadoksissa	kadoksissa	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Alunperin pasma tarkoitti lankavyyhden osaa.
+1	Alunperin	alunperin	ADV	Adv	_	3	advmod	_	_
+2	pasma	pasma	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tarkoitti	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	lankavyyhden	lankavyyhti	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	osaa	osa	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Lankavyyhti on pitkä lanka, joka on kiedottu rullalle, kääritty pieneen tilaan.
+1	Lankavyyhti	Lankavyyhti	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	lanka	lanka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	obj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux:pass	_	_
+8	kiedottu	kiedota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+9	rullalle	rulla	NOUN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	kääritty	kääritä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+12	pieneen	pieni	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	13	amod	_	_
+13	tilaan	tila	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,198 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Käytähän minun keksintöjäni", oli Joe ylpeästi huomauttanut neuvoessaan Martinille oikoteitä, "siten säästät sekä pesupöytää että omia rystysiäsi ja ennen kaikkea aikaa.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Käytähän	Käykä	PRON	Pron	Case=Par|Clitic=Han|Number=Sing|PronType=Int	4	det	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	keksintöjäni	keksintöjä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	10	nsubj	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+8	Joe	Joe	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	ylpeästi	ylpeästi	ADV	Adv	Derivation=Sti	10	advmod	_	_
+10	huomauttanut	huomauttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+11	neuvoessaan	neuvoe	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	10	obl	_	_
+12	Martinille	Martin	PROPN	N	Case=All|Number=Sing	10	obl	_	_
+13	oikoteitä	oikote	NOUN	N	Case=Par|Number=Plur	10	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	"	"	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+16	siten	siten	ADV	Adv	_	17	advmod	_	_
+17	säästät	säästtää	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	10	conj	_	_
+18	sekä	sekä	CCONJ	C	_	19	cc	_	_
+19	pesupöytää	pesupöytää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	conj	_	_
+20	että	että	SCONJ	C	_	22	mark	_	_
+21	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	22	amod	_	_
+22	rystysiäsi	rystysi	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	19	obj	_	_
+23	ja	ja	CCONJ	C	_	26	cc	_	_
+24	ennen	ennen	ADV	Adv	_	26	advmod	_	_
+25	kaikkea	kaikkea	ADV	Adv	_	24	fixed	_	_
+26	aikaa	aika	NOUN	N	Case=Par|Number=Sing	22	conj	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 2
+# text = Aika on kallista.
+1	Aika	aika	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kallista	kallis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Jos säästät sitä vaikkapa vain viisitoista minuuttia viikossa, on sekin hyvä tässä hiton löyläkässä."
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	säästät	säästtää	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	advcl	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+4	vaikkapa	vaikkapa	ADV	Adv	_	2	advmod	_	_
+5	vain	vain	ADV	Adv	_	6	advmod	_	_
+6	viisitoista	viisi#toista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+8	viikossa	viikko	NOUN	N	Case=Ine|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	2	punct	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+11	sekin	se	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|PronType=Dem	12	obl	_	_
+12	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+13	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	15	det	_	_
+14	hiton	hitto	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	löyläkässä	löyläkä	NOUN	N	Case=Ine|Number=Sing	12	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+17	"	"	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 4
+# text = Kaulusten ja kalvosimien mankeloiminen oli myös Joen keksintöä.
+1	Kaulusten	Kaulus	NOUN	N	Case=Gen|Number=Plur	4	nmod:gobj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	kalvosimien	kalvosima	NOUN	N	Case=Gen|Number=Plur	1	conj	_	_
+4	mankeloiminen	mankeloiminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	8	nsubj:cop	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	myös	myös	ADV	Adv	_	8	advmod	_	_
+7	Joen	joki	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	keksintöä	keksintö	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 5
+# text = Sinä iltana, kun he puuhailivat kirkkaassa sähkövalossa, hän selitti sen.
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	6	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	kun	kun	SCONJ	C	_	6	mark	_	_
+5	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
+6	puuhailivat	puuhaila	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	advcl	_	_
+7	kirkkaassa	kirkkaa	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	8	amod	_	_
+8	sähkövalossa	sähkövalo	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	6	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	selitti	selittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 6
+# text = "Näin ei menetellä missään pesulassa, paitsi tässä.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Näin	näin	ADV	Adv	_	4	advmod	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	menetellä	menetellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	missään	mikään	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	6	det	_	_
+6	pesulassa	pesula	NOUN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	paitsi	paitsi	ADV	Adv	_	9	advmod	_	_
+9	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	4	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Mutta se on tehtävä, jos aikoo päästä lauantaina vapaaksi kello kolmelta.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	tehtävä	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	jos	jos	SCONJ	C	_	8	mark	_	_
+7	aikoo	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	_
+9	lauantaina	lauantai	NOUN	N	Case=Ess|Number=Sing	8	obl	_	_
+10	vapaaksi	vapaa	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	12	amod	_	_
+11	kello	#kello	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+12	kolmelta	kolme	NUM	Num	Case=Abl|Number=Sing|NumType=Card	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Mutta minä tiedän, miten on meneteltävä, ja siinä onkin ero.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	miten	miten	ADV	Adv	_	7	advmod	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
+7	meneteltävä	menetelä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	conj	_	_
+11	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+12	ero	ero	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Aseta oikea lämpö alustaan ja oikea paino ja anna käydä kolme kertaa läpi.
+1	Aseta	asettaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	oikea	oikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	lämpö	lämpö	NOUN	N	Case=Nom|Number=Sing	1	obj	_	_
+4	alustaan	alusta	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	oikea	oikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	paino	#paino	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	_
+10	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp:ds	_	_
+11	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	12	nummod	_	_
+12	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	10	obl	_	_
+13	läpi	läpi	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Katsopas tätä!"
+1	Katsopas	Katsovata	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tätä	tämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	1	obj	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Hän otti kalvosimen tarkastettavaksi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kalvosimen	kalvosin	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	tarkastettavaksi	tarkasttaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	2	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = "Sitä ei voisi tehdä paremmin käsilläkään."
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	voisi	voida	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	5	aux	_	_
+5	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	paremmin	hyvin	ADV	Adv	Degree=Cmp	5	advmod	_	_
+7	käsilläkään	käsillä	ADV	Adv	Clitic=Kaan	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 13
+# text = Torstaina
+1	Torstaina	torstai	NOUN	N	Case=Ess|Number=Sing	0	root	_	_
+
+# sent_id = 14
+# text = Joe joutui raivoihinsa.
+1	Joe	Joe	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	joutui	joutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	raivoihinsa	raivo	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 15
+# text = Oli tuotu nippu ylimääräisiä "houkutuskappaleita".
+1	Oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	aux:pass	_	_
+2	tuotu	tuoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+3	nippu	nippu	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	ylimääräisiä	yli#määräinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	6	amod	_	_
+5	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+6	houkutuskappaleita	houkutuskappale	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

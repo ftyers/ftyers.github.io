@@ -1,0 +1,140 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Herra Jumala!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Herra	herra	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Sinä, joka asut tuolla taivaissa, pelasta, armahda, suojele minua!" kuiskasi Rostof hiljaa.
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	10	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	asut	ata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	_
+5	tuolla	tuolla	ADV	Adv	_	4	advmod	_	_
+6	taivaissa	taivai	NOUN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	pelasta	pelka	NOUN	N	Case=Ela|Number=Sing	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	4	punct	_	_
+10	armahda	armahtaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	suojele	suojella	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	10	conj	_	_
+13	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	12	obj	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	16	punct	_	_
+16	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+17	Rostof	Rostof	PROPN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+18	hiljaa	hiljaa	ADV	Adv	_	16	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 3
+# text = Husaarit saapuivat hevostensa luo, äänet kävivät kuuluvammiksi ja rauhallisemmiksi, paarit hävisivät näkyvistä.
+1	Husaarit	Husaari	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	saapuivat	saapua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hevostensa	hevoss	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	2	obl	_	_
+4	luo	luo	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	äänet	ään	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	kävivät	kävä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	kuuluvammiksi	kuuluvamma	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	7	xcomp	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	rauhallisemmiksi	rauhallisemma	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	2	punct	_	_
+12	paarit	paari	NOUN	N	Case=Nom|Number=Plur	13	nsubj	_	_
+13	hävisivät	hävitä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+14	näkyvistä	näkyvi	NOUN	N	Case=Ela|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- No, veliseni, joko pääsit ruudin hajuun?...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	No	no	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	veliseni	velinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	joko	joko	CCONJ	C	_	7	cc	_	_
+7	pääsit	pääsiä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+8	ruudin	ruuti	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	hajuun	haju	NOUN	N	Case=Ill|Derivation=U|Number=Sing	7	obl	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+11	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- huusi Denisof Rostovin korvaan.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Denisof	Denisof	PROPN	N	Case=Nom|Number=Sing	5	nmod:poss	_	_
+4	Rostovin	Rostov	PROPN	N	Case=Gen|Number=Sing	3	flat:name	_	_
+5	korvaan	korva	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = "Kaikki on päättynyt; mutta olenpa pelkuri, pelkuri olen", ajatteli Rostof ja, raskaasti huoahtaen, hän otti pitelijältä jalkaansa arastelevan Gratshikinsa ja asettelihe istumaan satulaan.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Kaikki	Kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	päättynyt	päättyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	4	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	olenpa	olla	VERB	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+8	pelkuri	pelkuri	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	pelkuri	pelkuri	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+11	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	4	punct	_	_
+14	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+15	Rostof	Rostof	PROPN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+16	ja	ja	CCONJ	C	_	19	cc	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	19	punct	_	_
+18	raskaasti	raskaasti	ADV	Adv	Derivation=Sti	19	advmod	_	_
+19	huoahtaen	huoahtaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	14	conj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	4	punct	_	_
+21	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+22	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+23	pitelijältä	pitelijä	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	25	xcomp	_	_
+24	jalkaansa	jalka	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	25	obj	_	_
+25	arastelevan	arastella	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	26	acl	_	_
+26	Gratshikinsa	Gratshiki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	22	obj	_	_
+27	ja	ja	CCONJ	C	_	29	cc	_	_
+28	asettelihe	asettelihe	NOUN	N	Case=Nom|Number=Sing	29	nsubj	_	_
+29	istumaan	istua	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	22	conj	_	_
+30	satulaan	satula	NOUN	N	Case=Ill|Number=Sing	29	obl	_	SpaceAfter=No
+31	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- Oltiinko nyt raehaulisateessa?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oltiinko	Oltia	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nyt	nyt	ADV	Adv	_	2	advmod	_	_
+4	raehaulisateessa	raehaulisate	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- kysyi hän Denisovilta.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	Denisovilta	Denisov	PROPN	N	Case=Abl|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Vieläpä hyvässäkin!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Vieläpä	vieläpä	ADV	Adv	_	3	advmod	_	_
+3	hyvässäkin	hyvä	NOUN	N	Case=Ine|Clitic=Kin|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = -- huusi Denisof: -- oivallisesti toimimme!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Denisof	Denisof	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	oivallisesti	oivallisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	toimimme	toimla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

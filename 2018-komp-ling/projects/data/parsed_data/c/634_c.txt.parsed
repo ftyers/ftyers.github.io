@@ -1,0 +1,124 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Maalari katsoi häneen ihmeissänsä.
+1	Maalari	Maalari	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katsoi	katsaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+4	ihmeissänsä	ihmeissä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = "Rakas ystävä, mitä mielettömyyksiä sinä puhut!" hän huudahti.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Rakas	rakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	ystävä	ystävä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	8	obj	_	_
+6	mielettömyyksiä	mielettömyys	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	_	_
+8	puhut	puha	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	3	acl:relcl	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	3	punct	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = "Tarkoitatko ettei minun maalaukseni miellytä sinua?
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tarkoitatko	Tarkoitaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ettei	etta#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	mark	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	maalaukseni	maalaus	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nsubj	_	_
+6	miellytä	miellyttää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+7	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	6	obj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Missä se on?
+1	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	0	root	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	1	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Miksi olet asettanut varjostimen sen eteen?
+1	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+2	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	asettanut	asettaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	varjostimen	varjostin	NOUN	N	Case=Gen|Number=Sing	5	obj	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obl	_	_
+6	eteen	eteen	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Anna minun katsella sitä.
+1	Anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	katsella	katsella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp:ds	_	_
+4	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Se on minun paras työni.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	paras	hyvä	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	5	amod	_	_
+5	työni	työ	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Ota varjostin pois, Dorian.
+1	Ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	varjostin	varjosti	NOUN	N	Case=Gen|Number=Sing	1	obj	_	_
+3	pois	pois	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Miten hävytöntä, että sinun palvelijasi on peittänyt minun maalaukseni tuolla tavalla.
+1	Miten	miten	ADV	Adv	_	2	advmod	_	_
+2	hävytöntä	hävytön	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	6	nmod:poss	_	_
+6	palvelijasi	palvelija	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=2	8	nsubj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	peittänyt	peittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+9	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+10	maalaukseni	maalau	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	8	advcl	_	_
+11	tuolla	tuolla	ADV	Adv	_	12	advmod	_	_
+12	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Koko huone näytti niin oudolta kun tulin sisään."
+1	Koko	koko	ADJ	A	_	2	amod	_	_
+2	huone	huone	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	oudolta	outo	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	3	xcomp	_	_
+6	kun	kun	SCONJ	C	_	7	mark	_	_
+7	tulin	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	_
+8	sisään	sisään	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = "Minun palvelijallani ei ole mitään tekemistä sen kanssa, Basil.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minun	Minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	palvelijallani	palvelija	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	_
+6	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	det	_	_
+7	tekemistä	tekeminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	3	nsubj:cop	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	nmod	_	_
+9	kanssa	kanssa	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	3	punct	_	_
+11	Basil	Basil	PROPN	N	Case=Nom|Number=Sing	3	appos	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

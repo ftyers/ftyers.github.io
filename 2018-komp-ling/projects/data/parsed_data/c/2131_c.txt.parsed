@@ -1,0 +1,140 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ja Porfyriukselle.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ja	ja	CCONJ	C	_	3	cc	_	_
+3	Porfyriukselle	Porfyriuksi	PROPN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- No, jos Porfyriuskin on kuullut sen, mitähän se tekee?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	No	no	INTJ	Interj	_	7	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	jos	jos	SCONJ	C	_	7	mark	_	_
+5	Porfyriuskin	Porfyriuski	PROPN	N	Case=Gen|Number=Sing	7	nsubj	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	mitähän	mikä	PRON	Pron	Case=Par|Clitic=Han|Number=Sing|PronType=Int	12	obj	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl:relcl	_	SpaceAfter=No
+13	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = -- Mutta sano minulle, onko sinulla mitään vaikutusvaltaa heihin ... hänen äitiinsä ja sisareensa?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+3	sano	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	3	ccomp	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	9	det	_	_
+9	vaikutusvaltaa	vaikutus#valta	NOUN	N	Case=Par|Number=Sing	7	nsubj:cop	_	_
+10	heihin	hän	PRON	Pron	Case=Ill|Number=Plur|Person=3|PronType=Prs	7	obl	_	_
+11	...	...	PUNCT	Punct	_	13	punct	_	_
+12	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	13	nmod:poss	_	_
+13	äitiinsä	äitii	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	nsubj	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	sisareensa	sisarei	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	13	conj	_	SpaceAfter=No
+16	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = -- He saavat olla sangen varovaisia hänen kanssaan tänään...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	saavat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	cop	_	_
+5	sangen	sangen	ADV	Adv	_	6	advmod	_	_
+6	varovaisia	varovainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	3	xcomp	_	_
+7	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+8	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	7	case	_	_
+9	tänään	tänään	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = -- He kyllä ymmärtävät toisensa, sanoi Rasumihin välinpitämättömästi.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	kyllä	kyllä	ADV	Adv	_	4	advmod	_	_
+4	ymmärtävät	ymmärtää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	toisensa	toinen	PRON	Pron	Case=Nom|Number=Sing|Person[psor]=3|PronType=Rcp	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	7	obl	_	_
+9	välinpitämättömästi	välin#pitämättömästi	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = -- Mikähän se on, joka hänet on yllyttänyt Lushinia vastaan.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mikähän	mikä	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Int	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+7	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	yllyttänyt	yllyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl:relcl	_	_
+10	Lushinia	Lushin	PROPN	N	Case=Par|Number=Sing	9	obl	_	_
+11	vastaan	vastaan	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hän on varakas mies, eikä näytä olevan vastaan ... itsellään heillä tosin ei ole mitään, mitä?
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	varakas	varakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	cc	_	_
+7	näytä	näyttää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	conj	_	_
+8	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	cop	_	_
+9	vastaan	vastaan	ADV	Adv	_	7	advmod	_	_
+10	...	...	PUNCT	Punct	_	15	punct	_	_
+11	itsellään	kuitsaan	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	12	det	_	_
+12	heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	15	nsubj	_	_
+13	tosin	t#osin	ADV	Adv	_	12	advmod	_	_
+14	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	conj	_	_
+16	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	18	det	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	15	obj	_	SpaceAfter=No
+19	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = -- Kuinka pälkähtää päähäsi kysyä minulta sitä?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	pälkähtää	pälkähtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	päähäsi	pääh	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	5	obj	_	_
+5	kysyä	kysyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+6	minulta	minä	PRON	Pron	Case=Abl|Number=Sing|Person=1|PronType=Prs	7	obl	_	_
+7	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = huusi Rasumihin hänelle harmistuneena.
+1	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	1	obl	_	_
+3	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+4	harmistuneena	harmistua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = -- Kuinka saattaisin tietää, onko heillä mitään vai ei?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	saattaisin	saattaa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+7	heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	8	det	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	10	obj	_	_
+9	vai	vai	CCONJ	C	_	10	cc	_	_
+10	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

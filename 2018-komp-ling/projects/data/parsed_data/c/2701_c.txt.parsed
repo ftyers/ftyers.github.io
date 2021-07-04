@@ -1,0 +1,123 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Minulla ei ole yhtään menetettävää.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop:own	_	_
+4	yhtään	yhtään	ADV	Adv	_	1	advmod	_	_
+5	menetettävää	menetettävä	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Nyt lukitsen kirjotuspöydän ja samoin oven ja me olemme taas portailla.
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	lukitsen	lukita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kirjotuspöydän	kirjotus#pöytä	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	samoin	samoin	ADV	Adv	_	6	advmod	_	_
+6	oven	ovi	NOUN	N	Case=Gen|Number=Sing	3	conj	_	_
+7	ja	ja	CCONJ	C	_	11	cc	_	_
+8	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	11	nsubj:cop	_	_
+9	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	taas	taas	ADV	Adv	_	11	advmod	_	_
+11	portailla	portaat	NOUN	N	Case=Ade|Number=Plur	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Otammeko vaunut?
+1	Otammeko	Otaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl	_	_
+2	vaunut	vaunu	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Minä lähden saarille.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	lähden	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	saarille	saari	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Kas tässä meillä on ajoneuvot, sen otan ja lähden Jalaginiin...
+1	Kas	kas	INTJ	Interj	_	3	discourse	_	_
+2	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	3	obl	_	_
+3	meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	0	root	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop:own	_	_
+5	ajoneuvot	ajo#neuvo	NOUN	N	Case=Nom|Number=Plur	3	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	_
+8	otan	otaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	lähden	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	Jalaginiin	Jalagin	PROPN	N	Case=Ill|Number=Sing	10	obl	_	SpaceAfter=No
+12	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Vai niin, te ette tahdo?
+1	Vai	vai	CCONJ	C	_	6	cc	_	_
+2	niin	niin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+5	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Ettekö halua täyttää roolianne?
+1	Ettekö	Edä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	_
+2	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	täyttää	täyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	roolianne	roolianne	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Vain pieni kävelyretki!...
+1	Vain	vain	ADV	Adv	_	2	advmod	_	_
+2	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	kävelyretki	kävelyretki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	..	..	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Te ehkä pelkäätte sadeilmaa?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+2	ehkä	ehkä	ADV	Adv	_	3	advmod	_	_
+3	pelkäätte	pelkätä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sadeilmaa	sadeilma	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Ei tee mitään, nostamme vaununkaton.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	nostamme	nostaa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	vaununkaton	vaununkatto	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Svidrigailov istui jo ajoneuvoissa.
+1	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jo	jo	ADV	Adv	_	2	advmod	_	_
+4	ajoneuvoissa	ajoneuvo	NOUN	N	Case=Ine|Number=Plur	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Raskolnikov harkitsi mielessään, eivätkö hänen epäilyksensä edes tällä hetkellä olleet perusteettomat.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	harkitsi	harkita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mielessään	mieli	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	12	punct	_	_
+5	eivätkö	ei	AUX	V	Clitic=Ko|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+6	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	nmod:poss	_	_
+7	epäilyksensä	epäilys	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	12	nsubj:cop	_	_
+8	edes	edes	ADV	Adv	_	12	advmod	_	_
+9	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	10	det	_	_
+10	hetkellä	hetki	NOUN	N	Case=Ade|Number=Sing	12	obl	_	_
+11	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	12	cop	_	_
+12	perusteettomat	perusteeton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Plur	2	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

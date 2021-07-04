@@ -1,0 +1,75 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 10.11. Lentoliikenteen häirintä.
+1	10.11	10.11	NUM	Num	NumType=Card	4	nummod	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	4	punct	_	_
+3	Lentoliikenteen	Lentoliikene	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	häirintä	häirin	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Veroasiat voi hoitaa verkossa.
+1	Veroasiat	Veroasia	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	hoitaa	hoitaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	verkossa	verkko	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Isät pitävät lyhyitä isyysvapaita.
+1	Isät	isä	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	pitävät	pitää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lyhyitä	lyhyä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	isyysvapaita	isyysvapas	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Sää pysyy harmaana.
+1	Sää	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	2	nsubj	_	_
+2	pysyy	pysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	harmaana	harmaa	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Suomessa kokeillaan mobiilikoulua.
+1	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	kokeillaan	kokeilla	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	mobiilikoulua	mobiilikoulu	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Suomalaisten matkat Viroon vähenevät.
+1	Suomalaisten	suomalainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	2	nmod:poss	_	_
+2	matkat	matka	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+3	Viroon	Viro	PROPN	N	Case=Ill|Number=Sing	2	nmod	_	_
+4	vähenevät	vähetä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Susia on syksyllä enemmän kuin keväällä.
+1	Susia	susia	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	syksyllä	syksy	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+4	enemmän	enemmän	ADV	Adv	_	0	root	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	keväällä	kevät	NOUN	N	Case=Ade|Number=Sing	4	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Naiset pääsevät Pörssiklubiin.
+1	Naiset	nainen	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	pääsevät	päää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Pörssiklubiin	Pörssiklub	PROPN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Suomen yllä on iso harmaa pilvi.
+1	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	6	obl	_	_
+2	yllä	yllä	ADP	Adp	AdpType=Post	1	case	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	iso	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+5	harmaa	harmaa	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	pilvi	pilvi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

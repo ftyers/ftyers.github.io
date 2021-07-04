@@ -1,0 +1,214 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Miksi en rakastaisi häntä?
+1	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	rakastaisi	rakastaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Harry, minä rakastan häntä.
+1	Harry	Harry	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	rakastan	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Hän on minulle kaikki kaikessa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	0	root	_	_
+5	kaikessa	kaikki	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	4	det	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Joka ilta minä käyn häntä katsomassa.
+1	Joka	joka	PRON	Pron	Case=Nom|Number=Sing	2	det	_	_
+2	ilta	ilta	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+4	käyn	käky	NOUN	N	Case=Gen|Derivation=U|Number=Sing	5	nmod:poss	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+6	katsomassa	katsoa	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Milloin hän on Rosalinda, milloin Imogen.
+1	Milloin	milloin	ADV	Adv	_	4	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	Rosalinda	Rosalinda	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	milloin	milloin	ADV	Adv	_	7	advmod	_	_
+7	Imogen	Imogen	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Olen nähnyt hänen kuolevan synkässä italialaisessa haudassa, imien myrkkyä rakastettunsa huulilta.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	kuolevan	kuolla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+5	synkässä	synkä	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+6	italialaisessa	italialainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	7	amod	_	_
+7	haudassa	hauda	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	imien	ima	NOUN	N	Case=Gen|Number=Plur	10	nmod:gobj	_	_
+10	myrkkyä	myrkky	NOUN	N	Case=Par|Derivation=U|Number=Sing	2	obj	_	_
+11	rakastettunsa	rakastettu	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	12	nmod:poss	_	_
+12	huulilta	huuli	NOUN	N	Case=Abl|Number=Plur	10	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Olen seurannut häntä halki Ardenin metsien, joissa hän harhaili somana poikana, housut ja takki yllä ja lakki päässä.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	seurannut	seurata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	halki	halkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	_
+5	Ardenin	Arden	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	metsien	metsi	NOUN	N	Case=Gen|Number=Plur	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	joissa	joka	PRON	Pron	Case=Ine|Number=Plur|PronType=Rel	10	obl	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	harhaili	harhailla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+11	somana	soma	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	12	amod	_	_
+12	poikana	poika	NOUN	N	Case=Ess|Number=Sing	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	housut	housut	NOUN	N	Case=Nom|Number=Plur	6	conj	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	takki	takki	NOUN	N	Case=Nom|Number=Sing	6	conj	_	_
+17	yllä	yllä	ADV	Adv	_	4	advmod	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	lakki	lakki	NOUN	N	Case=Nom|Number=Sing	17	conj	_	_
+20	päässä	pää	NOUN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hän on astunut mielipuolena rikoksellisen kuninkaan eteen, antanut hänen kantaa katumuksen taakkaa ja maistaa katkeria yrttejä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	astunut	astua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	mielipuolena	mielipuoli	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+5	rikoksellisen	rikoksellinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	6	amod	_	_
+6	kuninkaan	kuningas	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+7	eteen	eteen	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	kantaa	kanta	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+12	katumuksen	katumus	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	taakkaa	taakka	NOUN	N	Case=Par|Number=Sing	9	obj	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	maistaa	maistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+16	katkeria	katkeri	NOUN	N	Case=Par|Number=Sing	15	obj	_	_
+17	yrttejä	yrtti	NOUN	N	Case=Par|Number=Plur	16	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hän on ollut viaton ja kateuden mustat kourat ovat kuristaneet hänen hienoa kurkkuansa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	viaton	viaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	8	amod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kateuden	kateus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	4	conj	_	_
+7	mustat	musta	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	kourat	koura	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	_
+9	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	kuristaneet	kuristaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	13	nmod:poss	_	_
+12	hienoa	hieno	ADJ	A	Case=Par|Degree=Pos|Number=Sing	13	amod	_	_
+13	kurkkuansa	kurkku	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	10	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = Olen nähnyt hänet kaikenikäisenä ja kaikissa puvuissa.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	kaikenikäisenä	kaikenikäinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	kaikissa	kaikki	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	7	det	_	_
+7	puvuissa	puvu	NOUN	N	Case=Ine|Number=Plur	4	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Tavalliset naiset eivät koskaan vetoa mielikuvitukseemme.
+1	Tavalliset	tavallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Plur	2	amod	_	_
+2	naiset	nainen	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+3	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	koskaan	koskaan	ADV	Adv	_	5	advmod	_	_
+5	vetoa	veto	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+6	mielikuvitukseemme	mielikuvitukse	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	5	nsubj:cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = He eivät koskaan voi kohota ympäristönsä yli.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	koskaan	koskaan	ADV	Adv	_	5	advmod	_	_
+4	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	kohota	kohota	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	ympäristönsä	ympäristö	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	obj	_	_
+7	yli	yli	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 13
+# text = Ei mikään valo voi muuttaa heitä.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	mikään	mikään	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	valo	valo	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	muuttaa	muuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 14
+# text = On yhtä helppoa tuntea heidän sielujaan kuin heidän hattujaan.
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	yhtä	yhtä	ADV	Adv	_	3	advmod	_	_
+3	helppoa	helppo	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+4	tuntea	tuntea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	csubj:cop	_	_
+5	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	sielujaan	sielu	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	4	obj	_	_
+7	kuin	kuin	SCONJ	C	_	9	mark	_	_
+8	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	hattujaan	hattu	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	4	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Niiden perille voi aina päästä.
+1	Niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	2	nmod:poss	_	_
+2	perille	pera	NOUN	N	Case=All|Number=Plur	5	obl	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	aina	aina	ADV	Adv	_	5	advmod	_	_
+5	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 16
+# text = Ei niissä piile minkäänlaista salaperäisyyttä.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	niissä	se	PRON	Pron	Case=Ine|Number=Plur|PronType=Dem	3	obl	_	_
+3	piile	piillä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	minkäänlaista	minkäänlainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	salaperäisyyttä	salaperäisyys	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 17
+# text = He rakastavat aamulla Hyde Parkissa ja juttelevat teepöydän ääressä iltapuolella.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	rakastavat	rakastaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+4	Hyde	Hyde	PROPN	N	Case=Nom|Number=Sing	2	obj	_	_
+5	Parkissa	Park	PROPN	N	Case=Ine|Number=Sing	4	flat:name	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	juttelevat	jutella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	teepöydän	tee#pöytä	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+9	ääressä	ääressä	ADP	Adp	AdpType=Post	8	case	_	_
+10	iltapuolella	iltapuol	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

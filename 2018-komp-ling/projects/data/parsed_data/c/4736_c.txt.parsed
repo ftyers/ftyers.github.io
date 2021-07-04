@@ -1,0 +1,95 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suorina kulkekaa ajoissa, oi veljeni, oppikaa suorina kulkemaan!
+1	Suorina	suori	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+2	kulkekaa	kulkea	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ajoissa	ajoissa	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	oppikaa	oppika	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+9	suorina	suora	ADJ	A	Case=Ess|Degree=Pos|Number=Plur	10	xcomp	_	_
+10	kulkemaan	kulkea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Meri myrskyää: monet tahtovat nousta pystyyn teidän varassanne.
+1	Meri	meri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	myrskyää	myrskytä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	5	nsubj	_	_
+5	tahtovat	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	nousta	nousta	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	pystyyn	pystyyn	ADV	Adv	_	6	advmod	_	_
+8	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	9	nmod:poss	_	_
+9	varassanne	varassanne	NOUN	N	Case=Nom|Number=Sing	6	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Meri myrskyää: kaikki on meressä.
+1	Meri	meri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	myrskyää	myrskytä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	meressä	meri	NOUN	N	Case=Ine|Number=Sing	2	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = No niin!
+1	No	no	INTJ	Interj	_	2	discourse	_	_
+2	niin	niin	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hyvä!
+1	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Te vanhat merimiessydämet!
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	det	_	_
+2	vanhat	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	merimiessydämet	merimiessydän	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Mitä isänmaasta!
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	isänmaasta	isänmaa	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = _Sinne_ tahtoo meidän peräsimemme, missä meidän _lastemme_ maa on!
+1	_Sinne_ tahtoo	_Sinne_ tahtoo	INTJ	Interj	_	3	discourse	_	_
+2	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	peräsimemme	peräsim	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	3	acl:relcl	_	_
+6	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	7	nmod:poss	_	_
+7	_lastemme_ maa	_lastemme_ ma	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Sinne, myrskyisempänä kuin meri, myrskyää meidän suuri kaipuumme!
+1	Sinne	sinne	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	myrskyisempänä	myrskyisempänä	ADV	Adv	Degree=Cmp	0	root	_	_
+4	kuin	kuin	SCONJ	C	_	5	mark	_	_
+5	meri	meri	NOUN	N	Case=Nom|Number=Sing	3	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	myrskyää	myrskytä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	10	nmod:poss	_	_
+9	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	amod	_	_
+10	kaipuumme	kaipu	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Plur|Person[psor]=1	7	obl	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = -- 29.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	29	29	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,118 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Tehän olette niin kalpea?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Tehän	Te	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	kalpea	kalpea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Ja kätenne vapisevat?
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	kätenne	kätenne	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	vapisevat	vapisla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- Kuumetta se on! vastasi Raskolnikov lyhyesti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kuumetta	Kuume	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	lyhyesti	lyhyesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Eihän se kait ole ihmeellistä, jos sairastuukin ...
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Eihän	ei	AUX	V	Clitic=Han|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	kait	kaki	NOUN	N	Case=Nom|Number=Plur	6	nsubj:cop	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	ihmeellistä	ihmeellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	jos	jos	SCONJ	C	_	9	mark	_	_
+9	sairastuukin	sairastuu	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|PronType=Ind	6	advcl	_	_
+10	...	...	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = kun ei ole mitään syötävää ... lisäsi hän vaivoin kyeten lausumaan sanoja.
+1	kun	kun	SCONJ	C	_	5	mark	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	obj	_	_
+5	syötävää	syödä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+6	...	...	PUNCT	Punct	_	5	punct	_	_
+7	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+9	vaivoin	vaiva	NOUN	N	Case=Ins|Number=Plur	7	obl	_	_
+10	kyeten	kyeta	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+11	lausumaan	lausua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+12	sanoja	sana	NOUN	N	Case=Par|Number=Plur	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Hän tunsi taas voimattomuutta; mutta vastaus näytti todenmukaiselta.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	taas	taas	ADV	Adv	_	3	advmod	_	_
+5	voimattomuutta	voimattomuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	3	obj	_	SpaceAfter=No
+6	;	;	PUNCT	Punct	_	3	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	vastaus	vastaus	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+10	todenmukaiselta	todenmukainen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Inen|Number=Sing	9	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Vanhus otti pantin.
+1	Vanhus	vanhus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pantin	pantti	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Mitä tämä on?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = kysyi hän katsellen Raskolnikovia vielä tarkkaavammin ja punniten pakettia kädessään.
+1	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+4	Raskolnikovia	Raskolnikovi	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	vielä	vielä	ADV	Adv	_	3	advmod	_	_
+6	tarkkaavammin	tarkkaavammin	ADV	Adv	_	1	advmod	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	punniten	punnita	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+9	pakettia	paketti	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+10	kädessään	käsi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = -- Kapine ...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kapine	Kapine	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = paperossikotelo ... hopeinen ... katsokaa itse.
+1	paperossikotelo	paperossikotelo	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	...	...	PUNCT	Punct	_	3	punct	_	_
+3	hopeinen	hopeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+4	...	...	PUNCT	Punct	_	5	punct	_	_
+5	katsokaa	katsoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+6	itse	itse	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

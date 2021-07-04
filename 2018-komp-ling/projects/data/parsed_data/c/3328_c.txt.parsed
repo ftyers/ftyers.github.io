@@ -1,0 +1,146 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mainio kirja.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mainio	Mainio	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Jumala... minun...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	flat:name	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- jatkoi lukija.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lukija	lukija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kun Kozeljtsov kysyi vääpeliä, vaikeni lukija, sotamiehet rupesivat liikkumaan, yskivät, niistivät nenäänsä, kuten ainakin äänettömyyden jälkeen, vääpeli nuttuaan napittaen nousi lukijaa ympäröivästä ryhmästä, ja harpaten yli sotamiesten jalkojen, joille ei ollut missään tilaa, tuli upseerin luo.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	Kozeljtsov	Kozeljtsov	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	_
+4	vääpeliä	vääpeli	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	vaikeni	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	lukija	lukija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	sotamiehet	sota#mies	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	_
+10	rupesivat	ruveta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+11	liikkumaan	liikkua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	yskivät	yskä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	15	punct	_	_
+15	niistivät	niistää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+16	nenäänsä	nenä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	15	obj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	20	punct	_	_
+18	kuten	kuten	ADV	Adv	_	20	advmod	_	_
+19	ainakin	ainakin	ADV	Adv	_	20	advmod	_	_
+20	äänettömyyden	äänettömyys	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+21	jälkeen	jälkeen	ADP	Adp	AdpType=Post	20	case	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	23	punct	_	_
+23	vääpeli	väämella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+24	nuttuaan	nuttu	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	23	obj	_	_
+25	napittaen	napittaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+26	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+27	lukijaa	lukija	NOUN	N	Case=Par|Number=Sing	26	obj	_	_
+28	ympäröivästä	ympäröivä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	29	amod	_	_
+29	ryhmästä	ryhmä	NOUN	N	Case=Ela|Number=Sing	26	obl	_	SpaceAfter=No
+30	,	,	PUNCT	Punct	_	32	punct	_	_
+31	ja	ja	CCONJ	C	_	32	cc	_	_
+32	harpaten	harpata	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	conj	_	_
+33	yli	yli	ADV	Adv	_	35	advmod	_	_
+34	sotamiesten	sotamies	NOUN	N	Case=Gen|Number=Plur	35	nmod:poss	_	_
+35	jalkojen	jalka	NOUN	N	Case=Gen|Number=Plur	41	nmod:poss	_	SpaceAfter=No
+36	,	,	PUNCT	Punct	_	41	punct	_	_
+37	joille	joka	PRON	Pron	Case=All|Number=Plur|PronType=Rel	41	nsubj:cop	_	_
+38	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	41	aux	_	_
+39	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	41	cop	_	_
+40	missään	mikään	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	41	det	_	_
+41	tilaa	tila	NOUN	N	Case=Par|Number=Sing	32	obj	_	SpaceAfter=No
+42	,	,	PUNCT	Punct	_	43	punct	_	_
+43	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+44	upseerin	upseeri	NOUN	N	Case=Gen|Number=Sing	43	obl	_	_
+45	luo	luo	ADP	Adp	AdpType=Post	44	case	_	SpaceAfter=No
+46	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = -- Terve, veliseni!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Terve	terve	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	veliseni	velinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Tämäkö se on meidän komppania?
+1	Tämäkö	Tämä	PRON	Pron	Case=Nom|Clitic=Ko|Number=Sing|Person=2|PronType=Prs	5	obl	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	komppania	komppani	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = -- Terveyttä toivotan!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Terveyttä	terveys	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	3	obj	_	_
+3	toivotan	toivotaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = terve tuloa, teidän jalosukuisuutenne -- vastasi vääpeli, iloisesti ja ystävällisesti katsoen Kozeljtsoviin.
+1	terve	terve	X	Foreign	Foreign=Yes	0	root	_	_
+2	tuloa	tulo	NOUN	N	Case=Par|Number=Sing	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	7	obl	_	_
+5	jalosukuisuutenne	jalosukuisuutenne	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	--	--	PUNCT	Punct	_	5	punct	_	_
+7	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+8	vääpeli	vääpeli	NOUN	N	Case=Nom|Number=Sing	13	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	iloisesti	iloisesti	ADV	Adv	Derivation=Sti	13	advmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	ystävällisesti	ystävällisesti	ADV	Adv	Derivation=Sti	10	conj	_	_
+13	katsoen	katsoa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+14	Kozeljtsoviin	Kozeljtsovi	NOUN	N	Case=Ill|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = -- Kuinka on terveyden laita, oletteko jo toipunut, teidän jalosukuisuutenne?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Kuinka	kuinka	ADV	Adv	_	5	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	terveyden	terveys	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	5	nmod:poss	_	_
+5	laita	laita	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	oletteko	olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+8	jo	jo	ADV	Adv	_	9	advmod	_	_
+9	toipunut	toipua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	acl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	12	nmod:poss	_	_
+12	jalosukuisuutenne	jalosukuisuutenne	NOUN	N	Case=Nom|Number=Sing	7	obj	_	SpaceAfter=No
+13	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = No Jumalan kiitos.
+1	No	no	INTJ	Interj	_	3	discourse	_	_
+2	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kiitos	kiitos	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Kovin olemmekin teitä ikävöineet.
+1	Kovin	kovin	ADV	Adv	_	2	advmod	_	_
+2	olemmekin	olla	VERB	V	Clitic=Kin|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	4	det	_	_
+4	ikävöineet	ikävöine	NOUN	N	Case=Nom|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

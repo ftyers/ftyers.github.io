@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suomessa on yli 800 000 koiraa.
+1	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	yli	yli	ADV	Adv	_	4	advmod	_	_
+4	800 000	800 000	NUM	Num	NumType=Card	5	nummod	_	_
+5	koiraa	koira	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Koiria on enemmän kuin pääkaupungissa asukkaita.
+1	Koiria	koira	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	enemmän	enemmän	ADV	Adv	_	0	root	_	_
+4	kuin	kuin	SCONJ	C	_	5	mark	_	_
+5	pääkaupungissa	pää#kaupunki	NOUN	N	Case=Ine|Number=Sing	3	advcl	_	_
+6	asukkaita	asukas	NOUN	N	Case=Par|Number=Plur	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Vaikka koiria on paljon, niillä kaikilla on omistaja.
+1	Vaikka	vaikka	SCONJ	C	_	4	mark	_	_
+2	koiria	koira	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	paljon	paljon	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	niillä	se	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	0	root	_	_
+7	kaikilla	kaikki	PRON	Pron	Case=Ade|Number=Plur|PronType=Ind	6	det	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop:own	_	_
+9	omistaja	omistaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Suomessa ei ole kulkukoiria.
+1	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop	_	_
+4	kulkukoiria	kulkukoiri	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Suurin osa Suomen koirista on rotukoiria.
+1	Suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	2	amod	_	_
+2	osa	osa	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+3	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	koirista	koiri	NOUN	N	Case=Ela|Number=Sing	2	nmod	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	rotukoiria	rotukoiri	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Suomen suosituin koirarotu on labradorinnoutaja.
+1	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	suosituin	suosittu	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	3	amod	_	_
+3	koirarotu	koirarotu	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	labradorinnoutaja	labradorinnoutaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Koiran rooli suomalaisessa perheessä on muuttunut paljon.
+1	Koiran	koira	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	rooli	rooli	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	suomalaisessa	suomalainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	4	amod	_	_
+4	perheessä	perhe	NOUN	N	Case=Ine|Number=Sing	2	nmod	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	muuttunut	muuttuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	paljon	paljon	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Ennen haluttiin, että koirasta on hyötyä.
+1	Ennen	ennen	ADV	Adv	_	2	advmod	_	_
+2	haluttiin	haluta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	koirasta	koira	NOUN	N	Case=Ela|Number=Sing	2	ccomp	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	hyötyä	hyöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	5	nsubj:cop	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Koiran tehtävä oli vahtia taloa ja pihapiiriä tai lähteä ihmisen kaverina metsästämään.
+1	Koiran	koira	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tehtävä	tehtävä	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	vahtia	vahtia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	taloa	#talo	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	pihapiiriä	piha#piiri	NOUN	N	Case=Par|Number=Sing	5	conj	_	_
+8	tai	tai	CCONJ	C	_	9	cc	_	_
+9	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+10	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	kaverina	kaveri	NOUN	N	Case=Ess|Number=Sing	9	obl	_	_
+12	metsästämään	metsästää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Nykyään koira on perheenjäsen.
+1	Nykyään	nykyään	ADV	Adv	_	4	advmod	_	_
+2	koira	koira	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	perheenjäsen	perheen#jäsen	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Monelle suomalaiselle koira on tärkeämpi kuin toinen ihminen.
+1	Monelle	moni	PRON	Pron	Case=All|Number=Sing|PronType=Ind	2	det	_	_
+2	suomalaiselle	suomalainen	NOUN	N	Case=All|Derivation=Lainen|Number=Sing	3	nmod:poss	_	_
+3	koira	koira	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	tärkeämpi	tärkeä	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+6	kuin	kuin	SCONJ	C	_	8	mark	_	_
+7	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	8	nummod	_	_
+8	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	5	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,176 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = “Ei teitä mestata!”, sanoi Liisa ja hän piilotti ne isoon kukkapurkkiin.
+1	“	“	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+4	mestata	mestattaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	piilotti	piilottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+13	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	obj	_	_
+14	isoon	iso	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	15	amod	_	_
+15	kukkapurkkiin	kukkapurkki	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Sotilaskolmikko vaelteli vähän aikaa lähimaastossa niitä etsimässä, mutta marssi pian vaivihkaa muiden perään.
+1	Sotilaskolmikko	Sotilaskolmikko	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vaelteli	vaelellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vähän	vähän	ADV	Adv	_	4	advmod	_	_
+4	aikaa	aika	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	lähimaastossa	lähimaasto	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+6	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	7	nsubj	_	_
+7	etsimässä	etsiä	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	mutta	mutta	CCONJ	C	_	10	cc	_	_
+10	marssi	marssia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	pian	pian	ADV	Adv	_	10	advmod	_	_
+12	vaivihkaa	vaivihkaa	ADV	Adv	_	10	advmod	_	_
+13	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	10	obl	_	_
+14	perään	perään	ADP	Adp	AdpType=Post	13	case	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = “Joko päät ovat poissa?” mekasti kuningatar.
+1	“	“	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Joko	joko	ADJ	A	_	3	amod	_	_
+3	päät	pää	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+4	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	poissa	poissa	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	9	punct	_	_
+8	mekasti	mekasti	ADV	Adv	Derivation=Sti	9	advmod	_	_
+9	kuningatar	kuningatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 4
+# text = “Poissa ovat, Teidän majesteettinne,” karjuivat sotilaat vastaukseksi.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Poissa	po	NOUN	N	Case=Ine|Number=Plur	9	obl	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	6	nmod:poss	_	_
+6	majesteettinne	majesteetti	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=2	2	nsubj:cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	2	punct	_	_
+9	karjuivat	karjua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	sotilaat	sotilas	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+11	vastaukseksi	vastaus	NOUN	N	Case=Tra|Number=Sing	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 5
+# text = “Niin sitä pitää”, pauhasi kuingatar.
+1	“	“	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Niin	niin	ADV	Adv	_	4	advmod	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+4	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	pauhasi	pauha	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=2	8	nmod	_	_
+8	kuingatar	kuingatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	4	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = “Osaatko pelata krokettia?”
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Osaatko	Osaaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pelata	pelata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	krokettia	kroketti	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Sotilaat olivat vaiti ja katsoivat
+1	Sotilaat	Sotilas	NOUN	N	Case=Nom|Number=Plur	3	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	vaiti	vaiti	ADV	Adv	_	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	katsoivat	katsoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+
+# sent_id = 8
+# text = Liisaan, koska kysymys oli selvästikin tarkoitettu hänelle.
+1	Liisaan	Liisaan	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	koska	koska	SCONJ	C	_	7	mark	_	_
+4	kysymys	kysymys	NOUN	N	Case=Nom|Number=Sing	7	obj	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
+6	selvästikin	selvästi	ADV	Adv	Clitic=Kin|Derivation=Sti	7	advmod	_	_
+7	tarkoitettu	tarkoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	1	advcl	_	_
+8	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 9
+# text = “Kyllä vain”, huusi Liisa.
+1	“	“	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Kyllä	Kyllä	ADV	Adv	_	3	advmod	_	_
+3	vain	vain	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+4	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = “Tule sitten tänne”, mylvi kuningatar, ja Liisa liittyi kulkueeseen ihmetellen suuresti mitä seuraavaksi tapahtuisi.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sitten	sitten	ADV	Adv	_	2	advmod	_	_
+4	tänne	tänne	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	mylvi	mylvi	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+8	kuningatar	kuningatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	2	punct	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	liittyi	liittyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	kulkueeseen	kulkue	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+14	ihmetellen	ihmetella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	12	advcl	_	_
+15	suuresti	suuresti	ADV	Adv	Derivation=Sti	18	advmod	_	_
+16	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	18	obj	_	_
+17	seuraavaksi	seuraavaksi	ADV	Adv	_	18	advmod	_	_
+18	tapahtuisi	tapahtua	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	14	ccomp	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = “Onpa – onpa kaunis päivä tänään!”
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Onpa	olla	VERB	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	–	–	PUNCT	Punct	_	2	punct	_	_
+4	onpa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+5	kaunis	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	päivä	päivä	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+7	tänään	tänään	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	”	”	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = kuului vieno ääni hänen läheltään.
+1	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vieno	vieno	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	läheltään	läheltä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	ccomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Valkea kani oli tupsahtanut hänen viereensä ja tähysteli häntä hermostuneena.
+1	Valkea	valkea	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	kani	ka	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	nmod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tupsahtanut	tupsahtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+6	viereensä	viereen	ADP	Adp	AdpType=Post|Person[psor]=3	5	case	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	tähysteli	tähysellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	hermostuneena	hermostua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

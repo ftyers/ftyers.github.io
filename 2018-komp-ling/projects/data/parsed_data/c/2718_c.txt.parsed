@@ -1,0 +1,84 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Lurjus!...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lurjus	Lurjus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	..	..	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Sinä pilkkaat minua!
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	pilkkaat	pilkas	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+3	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	2	nmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Päästä minut!
+1	Päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	1	obj	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = -- Mutta minne aijotte?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+3	minne	minne	ADV	Adv	_	4	advmod	_	_
+4	aijotte	aijlla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- Hänen luokseen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+3	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	2	case	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Missä hän on?...
+1	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Te sen tiedätte.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	tiedätte	tietää	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Miksi on tämä ovi suljettu?
+1	Miksi	miksi	ADV	Adv	_	5	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux:pass	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	ovi	#ovi	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+5	suljettu	sulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Mehän tulimme tänne tästä ovesta, mutta nyt se on suljettu.
+1	Mehän	minä	PRON	Pron	Case=Nom|Clitic=Han|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
+2	tulimme	tulla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tänne	tänne	ADV	Adv	_	2	advmod	_	_
+4	tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	5	det	_	_
+5	ovesta	ovi	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	mutta	mutta	CCONJ	C	_	11	cc	_	_
+8	nyt	nyt	ADV	Adv	_	11	advmod	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	obj	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux:pass	_	_
+11	suljettu	sulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Koska se tapahtui?
+1	Koska	koska	SCONJ	C	_	3	mark	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

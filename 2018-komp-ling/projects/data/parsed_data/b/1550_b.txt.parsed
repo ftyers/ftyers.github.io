@@ -1,0 +1,131 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Wallander istui työpöytänsä ääressä.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	työpöytänsä	työpöyt	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obl	_	_
+4	ääressä	ääressä	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Huoneessa oli myös kaksi muuta poliisia: Hansson ja Ann-Britt Höglund.
+1	Huoneessa	huone	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	myös	myös	ADV	Adv	_	6	advmod	_	_
+4	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+5	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	poliisia	poliisi	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	1	punct	_	_
+8	Hansson	Hansson	PROPN	N	Case=Nom|Number=Sing	1	parataxis	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	Ann-Britt	Ann-Britt	PROPN	N	Case=Nom|Number=Sing	8	conj	_	_
+11	Höglund	Höglund	PROPN	N	Case=Nom|Number=Sing	10	flat:name	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = — Näyttää siis siltä, että Alexandersson on murhattu, Wallander sanoi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Näyttää	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	siis	siis	ADV	Adv	_	2	advmod	_	_
+4	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	SpacesAfter= 
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	Alexandersson	Alexandersson	PROPN	N	Case=Nom|Number=Sing	9	obj	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux:pass	_	_
+9	murhattu	murhata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	SpacesAfter= 
+11	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+12	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = — Hänen kuolemansa ei ollut luonnollinen, vaan hänet myrkytettiin.
+1	—	—	PUNCT	Punct	_	6	punct	_	_
+2	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
+3	kuolemansa	kuolema	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	6	nsubj:cop	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+6	luonnollinen	luonnollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	vaan	vaan	CCONJ	C	_	10	cc	_	_
+9	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	10	obj	_	_
+10	myrkytettiin	myrkyttaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	6	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Emme vielä tiedä, milloin hän sai myrkkyä ja miten kauan kesti ennen kuin myrkky alkoi vaikuttaa.
+1	Emme	ei	AUX	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	vielä	vielä	ADV	Adv	_	3	advmod	_	_
+3	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	milloin	milloin	ADV	Adv	_	7	advmod	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	myrkkyä	myrkky	NOUN	N	Case=Par|Derivation=U|Number=Sing	7	obj	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	miten	miten	ADV	Adv	_	11	advmod	_	_
+11	kauan	kauan	ADV	Adv	_	12	advmod	_	_
+12	kesti	kesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+13	ennen	ennen	ADV	Adv	_	14	advmod	_	_
+14	kuin	kuin	SCONJ	C	_	16	mark	_	_
+15	myrkky	myrkky	NOUN	N	Case=Nom|Derivation=U|Number=Sing	16	nsubj	_	_
+16	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	_
+17	vaikuttaa	vaikuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	16	xcomp	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = — Onko mahdollista, että hän teki itsemurhan?
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	mahdollista	mahdollinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	csubj:cop	_	_
+8	itsemurhan	itse#murha	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Ann-Britt Höglund kysyi.
+1	Ann-Britt	Ann-Britt	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Höglund	Höglund	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = — Ei, Wallander vastasi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = — En usko, että kuolettavaa myrkkyä ottanut henkilö soittaisi taksin.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	usko	uskoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	että	että	SCONJ	C	_	10	mark	_	_
+6	kuolettavaa	kuoleta	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	7	acl	_	_
+7	myrkkyä	myrkky	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+8	ottanut	ottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+9	henkilö	henkilö	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	soittaisi	soittata	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+11	taksin	taksi	NOUN	N	Case=Gen|Number=Sing	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = Olen melko varma siitä, että Alexandersson murhattiin.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	melko	melko	ADV	Adv	_	3	advmod	_	_
+3	varma	varma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	SpacesAfter= 
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	Alexandersson	Alexandersson	PROPN	N	Case=Nom|Number=Sing	8	obj	_	_
+8	murhattiin	murhata	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	4	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

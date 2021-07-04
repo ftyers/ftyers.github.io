@@ -1,0 +1,95 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Murhanhimoisen.
+1	Murhanhimoisen	Murhanhimoinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Tosi vihaisen.
+1	Tosi	tosi	ADV	Adv	_	2	advmod	_	_
+2	vihaisen	vihainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Sellaisen että melkein voisi hyökätä toisen kimppuun.
+1	Sellaisen	sellainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	että	että	SCONJ	C	_	5	mark	_	_
+3	melkein	melkein	ADV	Adv	_	5	advmod	_	_
+4	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	hyökätä	hyökätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	toisen	toinen	PRON	Pron	Case=Gen|Number=Sing|PronType=Rcp	5	obl	_	_
+7	kimppuun	kimppuun	ADV	Adv	_	6	fixed	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Mököttäjakansa.
+1	Mököttäjakansa	Mököttäjaka	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Kansa, joka on hiljaa kun on suuttunut, eikä selitä, mikä harmittaa.
+1	Kansa	Ka	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	15	obj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	8	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+5	hiljaa	hiljaa	ADV	Adv	_	6	advmod	_	_
+6	kun	kun	SCONJ	C	_	8	mark	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	suuttunut	suuttua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	cc	_	_
+11	selitä	sel	NOUN	N	Case=Par|Number=Plur	8	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	_
+14	harmittaa	harmittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 6
+# text = Ollutta ja mennyttä.
+1	Ollutta	olla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	mennyttä	menä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	conj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Jo tapahtunut, ei tapahdu enää.
+1	Jo	jo	ADV	Adv	_	2	advmod	_	_
+2	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	tapahdu	tapahtua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	_	_
+6	enää	enää	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Historiaa.
+1	Historiaa	historia	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Ovikellon pirahtaessa.
+1	Ovikellon	Ovikelto	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	pirahtaessa	pirahtaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 10
+# text = Sähköisen ovikellon soidessa.
+1	Sähköisen	sähköinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	ovikellon	ovikelto	NOUN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+3	soidessa	soida	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 11
+# text = Kun sähköinen ovikello päästi yksitoikkoisen jonkin aikaa kestävän äänen.
+1	Kun	kun	SCONJ	C	_	4	mark	_	_
+2	sähköinen	sähköinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	ovikello	ovi#kello	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	päästi	päästaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	yksitoikkoisen	yksitoikkoinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	7	amod	_	_
+6	jonkin	jokin	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	7	det	_	_
+7	aikaa	aika	NOUN	N	Case=Par|Number=Sing	8	nsubj	_	_
+8	kestävän	kestää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	9	acl	_	_
+9	äänen	ääni	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

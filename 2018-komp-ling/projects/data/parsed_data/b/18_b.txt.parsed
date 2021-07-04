@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suomi osallistuu Naton sotaharjoitukseen Norjassa.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	osallistuu	osallistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Naton	Nato	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	sotaharjoitukseen	sota#harjoitus	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+5	Norjassa	Norja	PROPN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Sotilasliitto Naton harjoitus alkaa torstaina.
+1	Sotilasliitto	Sotilasliitto	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+2	Naton	Nato	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	harjoitus	harjoitus	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	torstaina	torstai	NOUN	N	Case=Ess|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Suomi ja Ruotsi eivät kuulu Natoon, mutta ne ovat mukana harjoituksessa.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	Ruotsi	Ruotsi	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kuulu	kuulua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	Natoon	Nato	PROPN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	mutta	mutta	CCONJ	C	_	12	cc	_	_
+9	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	nsubj:cop	_	_
+10	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+11	mukana	mukana	ADP	Adp	AdpType=Post	12	case	_	_
+12	harjoituksessa	harjoitus	NOUN	N	Case=Ine|Number=Sing	5	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Harjoitukseen osallistuu yhteensä noin 50 000 sotilasta.
+1	Harjoitukseen	Harjoitus	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+2	osallistuu	osallistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yhteensä	yhteensä	ADV	Adv	_	2	advmod	_	_
+4	noin	noin	ADV	Adv	_	5	advmod	_	_
+5	50 000	50 000	NUM	Num	NumType=Card	6	nummod	_	_
+6	sotilasta	sotilas	NOUN	N	Case=Par|Number=Sing	2	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Samaan aikaan Naton harjoituksen kanssa järjestetään myös merisotaharjoitus Itämerellä.
+1	Samaan	sama	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	2	det	_	_
+2	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+3	Naton	Nato	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	harjoituksen	harjoitus	NOUN	N	Case=Gen|Number=Sing	2	nmod	_	_
+5	kanssa	kanssa	ADP	Adp	AdpType=Post	4	case	_	_
+6	järjestetään	järjestää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	myös	myös	ADV	Adv	_	8	advmod	_	_
+8	merisotaharjoitus	merisotaharjoitus	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Itämerellä	Itämeri	PROPN	N	Case=Ade|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Merisotaharjoitus on kansainvälinen, ja sitä johtaa Suomi.
+1	Merisotaharjoitus	Merisotaharjoitus	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kansainvälinen	kansain#välinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	obj	_	_
+7	johtaa	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Vartijat ovat aloittaneet lakon keskiviikkona.
+1	Vartijat	Vartija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	aloittaneet	aloittaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	lakon	lakko	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	keskiviikkona	keskiviikko	NOUN	N	Case=Ess|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = He eivät tee työtä 3 päivään.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	työtä	työ	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	3	3	NUM	Num	NumType=Card	6	nummod	_	_
+6	päivään	päivä	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Vartijat palaavat töihin lauantaina.
+1	Vartijat	Vartija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	palaavat	palata	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	töihin	työ	NOUN	N	Case=Ill|Number=Plur	2	obl	_	_
+4	lauantaina	lauantai	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Lakon aikana Helsinki-Vantaan lentoasemalla voi olla ruuhkaa.
+1	Lakon	Lakko	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	aikana	aika	NOUN	N	Case=Ess|Number=Sing	0	root	_	_
+3	Helsinki-Vantaan	Helsinki-Vanta	NOUN	N	Case=Ill|Number=Sing	2	nmod	_	_
+4	lentoasemalla	lentoasema	NOUN	N	Case=Ade|Number=Sing	3	nmod	_	_
+5	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+6	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	cop	_	_
+7	ruuhkaa	ruuhka	NOUN	N	Case=Par|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Matkustajien pitää ehkä jonottaa turvatarkastukseen kauemmin kuin tavallisesti.
+1	Matkustajien	matkustaja	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	4	nsubj	_	_
+2	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ehkä	ehkä	ADV	Adv	_	4	advmod	_	_
+4	jonottaa	jonottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	turvatarkastukseen	turvatarkastus	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	kauemmin	kauemmin	ADV	Adv	_	4	advmod	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	tavallisesti	tavallisesti	ADV	Adv	Derivation=Sti	6	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

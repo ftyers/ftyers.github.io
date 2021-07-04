@@ -1,0 +1,380 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Käväsi tässä toinenkin päällikkö, mutta kiire näytti olleen, -- sanoi ali-upseeri ruhtinas Andreille, -- kiireempi oli hänellä kuin teidän jalosukuisuudellanne.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Käväsi	Kää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Pres|Person[psor]=2|VerbForm=Part|Voice=Act	0	root	_	_
+3	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	2	obl	_	_
+4	toinenkin	toinen	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|PronType=Rcp	5	det	_	_
+5	päällikkö	päällikkö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	kiire	kiire	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	olleen	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	cop	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	9	punct	_	_
+12	--	--	PUNCT	Punct	_	2	punct	_	_
+13	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+14	ali-upseeri	ali-upseeri	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+15	ruhtinas	ruhtinas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	_
+16	Andreille	Andre	PROPN	N	Case=All|Number=Sing	13	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	19	punct	_	_
+18	--	--	PUNCT	Punct	_	19	punct	_	_
+19	kiireempi	kiirea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	2	conj	_	_
+20	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	cop	_	_
+21	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
+22	kuin	kuin	SCONJ	C	_	24	mark	_	_
+23	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	24	nmod:poss	_	_
+24	jalosukuisuudellanne	jalosukuisuudellanne	NOUN	N	Case=Nom|Number=Sing	21	advcl	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ruhtinas Andrei ei puhellut Tushinin kanssa.
+1	Ruhtinas	Ruhtinas	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	puhellut	puhella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	Tushinin	Tushin	PROPN	N	Case=Gen|Number=Sing	4	obl	_	_
+6	kanssa	kanssa	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Molemmat olivat he niin touhuissaan, etteivät edes toisiaan huomanneet.
+1	Molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	5	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj:cop	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	touhuissaan	touhui	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	etteivät	että#ei	VERB	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	mark	_	_
+8	edes	edes	ADV	Adv	_	10	advmod	_	_
+9	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	10	obj	_	_
+10	huomanneet	huomata	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	5	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Kun kaksi ehjää tykkiä oli kiinnitetty etuteloihin, ja he alkoivat laskeutua alas kunnaalta (yksi särkynyt tykki ja haupitsi jätettiin patterille), ajoi ruhtinas Andrei Tushinin luo.
+1	Kun	kun	SCONJ	C	_	6	mark	_	_
+2	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+3	ehjää	ehjä	NUM	Num	Case=Par|Number=Sing|NumType=Card	4	nummod	_	_
+4	tykkiä	tykki	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+6	kiinnitetty	kiinnittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	11	advcl	_	_
+7	etuteloihin	etutelo	NOUN	N	Case=Ill|Number=Plur	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_
+11	alkoivat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	laskeutua	laskeutua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	alas	alas	ADV	Adv	_	14	advmod	_	_
+14	kunnaalta	kunnaalta	ADV	Adv	_	12	advmod	_	_
+15	(	(	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+16	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	18	nummod	_	_
+17	särkynyt	särkyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	18	acl	_	_
+18	tykki	tykki	NOUN	N	Case=Nom|Number=Sing	21	obj	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	haupitsi	haupitsi	NOUN	N	Case=Nom|Number=Sing	18	conj	_	_
+21	jätettiin	jättää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	11	parataxis	_	_
+22	patterille	patteri	NOUN	N	Case=All|Number=Sing	21	obl	_	SpaceAfter=No
+23	)	)	PUNCT	Punct	_	21	punct	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	25	punct	_	_
+25	ajoi	ajaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	parataxis	_	_
+26	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	27	compound:nn	_	_
+27	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	25	obl	_	_
+28	Tushinin	Tushin	PROPN	N	Case=Gen|Number=Sing	27	flat:name	_	_
+29	luo	luo	ADP	Adp	AdpType=Post	27	case	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 5
+# text = -- No, näkemiin asti, -- sanoi ruhtinas Andrei, ojentaen kättään Tushinille.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	No	no	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	näkemiin	näkemiin	ADV	Adv	_	8	advmod	_	_
+5	asti	asti	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	--	--	PUNCT	Punct	_	4	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	ojentaen	ojentaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	13	advcl	_	_
+13	kättään	kättä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	8	parataxis	_	_
+14	Tushinille	Tushin	PROPN	N	Case=All|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 6
+# text = -- Näkemiin asti, kyyhkyläiseni, -- sanoi Tushin, -- rakkaani!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Näkemiin	Näkemiin	ADV	Adv	_	5	orphan	_	_
+3	asti	asti	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	kyyhkyläiseni	kyyhkyläinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	--	--	PUNCT	Punct	_	5	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	--	--	PUNCT	Punct	_	12	punct	_	_
+12	rakkaani	rakkaani	NOUN	N	Case=Nom|Number=Sing	9	appos	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Hyvästi, kyyhkyläiseni, -- sanoi Tushin vesissä silmin, eikä hän itsekkään tietänyt, miksi kyyneleet täyttivät hänen silmänsä.
+1	Hyvästi	Hyvästi	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	kyyhkyläiseni	kyyhkyläinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	--	--	PUNCT	Punct	_	3	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	vesissä	vesi	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+9	silmin	silmä	NOUN	N	Case=Ins|Number=Plur	6	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	cc	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+13	itsekkään	itsek	ADV	Adv	Clitic=Kaan	14	advmod	_	_
+14	tietänyt	tietää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	18	punct	_	_
+16	miksi	miksi	ADV	Adv	_	18	advmod	_	_
+17	kyyneleet	kyynel	NOUN	N	Case=Nom|Number=Plur	18	nsubj	_	_
+18	täyttivät	täyttää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+19	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	20	nmod:poss	_	_
+20	silmänsä	silmä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	18	obj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = XXI.
+1	XXI	XXI	NOUN	Foreign	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Tuuli oli tyyntynyt, mustat pilvet rippuivat matalalla peittäen taistelukentän ja sulautuen taivaanrannassa ruudinsavuun.
+1	Tuuli	tuuli	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	tyyntynyt	tyyntynyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	mustat	musta	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	pilvet	pilvi	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+7	rippuivat	rippua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	matalalla	matala	NOUN	N	Case=Ade|Number=Sing	9	obl	_	_
+9	peittäen	peittää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	_
+10	taistelukentän	taistelukenttä	NOUN	N	Case=Gen|Number=Sing	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	sulautuen	sulautua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+13	taivaanrannassa	taivaan#ranta	NOUN	N	Case=Ine|Number=Sing	12	obl	_	_
+14	ruudinsavuun	ruudinsavu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	12	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Tuli pimeä, ja siksipä näkyivätkin selvinä tulipalon leimut kahtaalta.
+1	Tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pimeä	pimeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	siksipä	siksi	ADV	Adv	Clitic=Pa	7	advmod	_	_
+6	näkyivätkin	näkyivä	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	7	nsubj	_	_
+7	selvinä	selä	VERB	V	Case=Ess|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	9	acl	_	_
+8	tulipalon	tuli#palo	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	leimut	leipu	NOUN	N	Case=Nom|Number=Plur	1	nsubj	_	_
+10	kahtaalta	kahtaa	NOUN	N	Case=Abl|Number=Sing	1	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Tykinjyske oli heikentynyt, mutta pyssynpauke kävi yhä kiivaammaksi ja alkoi kuulua yhä lähempää takaa ja oikealta.
+1	Tykinjyske	Tykinjyske	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	heikentynyt	heikentyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	mutta	mutta	CCONJ	C	_	7	cc	_	_
+6	pyssynpauke	pyssynpauke	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	yhä	yhä	ADV	Adv	_	9	advmod	_	_
+9	kiivaammaksi	kiivaamma	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	xcomp	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+12	kuulua	kuulua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	yhä	yhä	ADV	Adv	_	14	advmod	_	_
+14	lähempää	lähempää	ADV	Adv	_	12	advmod	_	_
+15	takaa	takaa	ADV	Adv	_	12	advmod	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	oikealta	oikea	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	15	conj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Niin pian kun Tushin tykkeineen oli päässyt suojaan vihollisen tulelta ja laskeutunut alas rotkoon, saapuivat hänen luokseen esikunta ja adjutantit, joiden joukossa olivat myöskin esikunta-upseeri ja Scherkof, joka kahdesti oli lähetetty viemään peräytymiskäskyä
+1	Niin	niin	ADV	Adv	_	2	advmod	_	_
+2	pian	pian	ADV	Adv	_	3	advmod	_	_
+3	kun	kun	SCONJ	C	_	7	mark	_	_
+4	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	tykkeineen	tykke	NOUN	N	Case=Com|Person[psor]=3	7	obl	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	päässyt	päästä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	16	advcl	_	_
+8	suojaan	suo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	7	obj	_	_
+9	vihollisen	vihollinen	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	tulelta	tuli	NOUN	N	Case=Abl|Number=Sing	7	obl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	laskeutunut	laskeutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	conj	_	_
+13	alas	alas	ADV	Adv	_	12	advmod	_	_
+14	rotkoon	rotko	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	7	punct	_	_
+16	saapuivat	saapua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+17	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	obl	_	_
+18	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	17	case	_	_
+19	esikunta	esi#kunta	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+20	ja	ja	CCONJ	C	_	21	cc	_	_
+21	adjutantit	adjutantti	NOUN	N	Case=Nom|Number=Plur	19	conj	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	joiden	joka	PRON	Pron	Case=Gen|Number=Plur|PronType=Rel	24	nmod:poss	_	_
+24	joukossa	joukko	NOUN	N	Case=Ine|Number=Sing	16	obl	_	_
+25	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	cop	_	_
+26	myöskin	myöskin	ADV	Adv	_	16	advmod	_	_
+27	esikunta-upseeri	esikunta-upseeri	NOUN	N	Case=Nom|Number=Sing	16	obj	_	_
+28	ja	ja	CCONJ	C	_	29	cc	_	_
+29	Scherkof	Scherkof	PROPN	N	Case=Nom|Number=Sing	27	conj	_	SpaceAfter=No
+30	,	,	PUNCT	Punct	_	34	punct	_	_
+31	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	34	obj	_	_
+32	kahdesti	kahdesti	ADV	Adv	Derivation=Sti	34	advmod	_	_
+33	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	34	aux:pass	_	_
+34	lähetetty	lähettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	27	acl:relcl	_	_
+35	viemään	viedä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	34	xcomp	_	_
+36	peräytymiskäskyä	peräytymiskäsky	NOUN	N	Case=Par|Number=Sing	35	obj	_	_
+
+# sent_id = 13
+# text = Tushinille, mutta joka kummallakaan kerralla ei ollut saapunut patterille.
+1	Tushinille	Tushin	NOUN	N	Case=All|Number=Plur	9	obl	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	9	punct	_	_
+3	mutta	mutta	CCONJ	C	_	9	cc	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	det	_	_
+5	kummallakaan	kummall	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	9	nsubj	_	_
+6	kerralla	kerta	NOUN	N	Case=Ade|Number=Sing	5	nmod	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+8	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	aux	_	_
+9	saapunut	saapua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+10	patterille	patteri	NOUN	N	Case=All|Number=Sing	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 14
+# text = Kaikki he, toinen toistaan keskeyttäen, antoivat Tushinille käskyjä ja määräyksiä, miten ja minne hänen oli mentävä, nuhtelivat häntä ja tekivät huomautuksiaan.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	6	nsubj	_	_
+5	toistaan	toistaan	ADV	Adv	_	6	advmod	_	_
+6	keskeyttäen	keskeyttää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	1	punct	_	_
+8	antoivat	antoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	Tushinille	Tushin	PROPN	N	Case=All|Number=Sing	8	obl	_	_
+10	käskyjä	käsky	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	määräyksiä	määräys	NOUN	N	Case=Par|Number=Plur	8	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	21	punct	_	_
+14	miten	miten	ADV	Adv	_	21	advmod	_	_
+15	ja	ja	CCONJ	C	_	19	cc	_	_
+16	minne	minne	ADV	Adv	_	19	advmod	_	_
+17	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+18	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	mentävä	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	21	conj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	21	punct	_	_
+21	nuhtelivat	nuhtela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+22	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	21	obj	_	_
+23	ja	ja	CCONJ	C	_	24	cc	_	_
+24	tekivät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+25	huomautuksiaan	huomautus	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	24	obj	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 15
+# text = Tushin ei antanut miehilleen minkäänlaisia määräyksiä, ajaa nyykytti vain vaiti ollen hevoskaakillaan toisten jälissä.
+1	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	miehilleen	miehi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	3	obl	_	_
+5	minkäänlaisia	minkään#lainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Plur	6	amod	_	_
+6	määräyksiä	määräys	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ajaa	aja	NOUN	N	Case=Par|Number=Sing	9	obj	_	_
+9	nyykytti	nyykyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	vain	vain	ADV	Adv	_	11	advmod	_	_
+11	vaiti	vaiti	ADV	Adv	_	13	advmod	_	_
+12	ollen	ollen	ADV	Adv	_	11	fixed	_	_
+13	hevoskaakillaan	hevoskaakilla	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	9	advcl	_	_
+14	toisten	toinen	PRON	Pron	Case=Gen|Number=Plur|PronType=Rcp	15	nmod:poss	_	_
+15	jälissä	jälä	NOUN	N	Case=Ine|Number=Plur	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 16
+# text = Hän ei uskaltanut avata suutaan, sillä jokainen sana olisi tuonut kyyneleet hänen silmiinsä, vaikkei hän itsekkään tietänyt miksi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	uskaltanut	uskaltaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	avata	avata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	suutaan	suu	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	sillä	sillä	SCONJ	C	_	11	mark	_	_
+8	jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+9	sana	sana	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+10	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	tuonut	tuoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	19	advcl	_	_
+12	kyyneleet	kyynel	NOUN	N	Case=Nom|Number=Plur	11	obj	_	_
+13	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	14	nmod:poss	_	_
+14	silmiinsä	silmi	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	11	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	vaikkei	vaikka#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	19	mark	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+18	itsekkään	itsek	ADV	Adv	Clitic=Kaan	19	advmod	_	_
+19	tietänyt	tietää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+20	miksi	miksi	ADV	Adv	_	19	advmod	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 17
+# text = Vaikka olikin käsketty jättää haavoittuneet, niin laahusti niitä sentään paljon joukkojen jälissä, ja kaikki pyysivät he päästä tykeille istumaan.
+1	Vaikka	vaikka	SCONJ	C	_	3	mark	_	_
+2	olikin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	käsketty	käsktää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	jättää	jättää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	haavoittuneet	haavoittua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	ccomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	niin	niin	ADV	Adv	_	8	advmod	_	_
+8	laahusti	laahusti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+9	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	5	obj	_	_
+10	sentään	sentään	ADV	Adv	_	11	advmod	_	_
+11	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+12	joukkojen	joukko	NOUN	N	Case=Gen|Number=Plur	13	nmod:poss	_	_
+13	jälissä	jäli	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	ja	ja	CCONJ	C	_	17	cc	_	_
+16	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	17	nsubj	_	_
+17	pyysivät	pyysiä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+18	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	19	nsubj	_	_
+19	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	17	xcomp	_	_
+20	tykeille	tyke	NOUN	N	Case=All|Number=Plur	19	obl	_	_
+21	istumaan	istua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	19	xcomp	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 18
+# text = Nuorekkaan reipas jalkaväen upseeri, joka taistelun alkaessa sellaisella kiireellä juoksi Tushinin majasta, oli saanut luodin mahaansa ja lojui nyt Matvjevnan telalla.
+1	Nuorekkaan	Nuorekas	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	reipas	reipas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+3	jalkaväen	jalka#väki	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	upseeri	upseeri	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+7	taistelun	taistelu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	8	nsubj	_	_
+8	alkaessa	alkaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	11	advcl	_	_
+9	sellaisella	sellainen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Lainen|Number=Sing	10	amod	_	_
+10	kiireellä	kiire	NOUN	N	Case=Ade|Number=Sing	11	obl	_	_
+11	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+12	Tushinin	Tushin	PROPN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	majasta	maja	NOUN	N	Case=Ela|Number=Sing	11	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	11	punct	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+17	luodin	luodi	NOUN	N	Case=Gen|Number=Sing	16	obj	_	_
+18	mahaansa	maha	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	16	obl	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	lojui	lojua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	conj	_	_
+21	nyt	nyt	ADV	Adv	_	20	advmod	_	_
+22	Matvjevnan	Matvjevna	PROPN	N	Case=Gen|Number=Sing	23	nmod:poss	_	_
+23	telalla	tela	NOUN	N	Case=Ade|Number=Sing	20	obl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	16	punct	_	SpacesAfter=\s\n
+

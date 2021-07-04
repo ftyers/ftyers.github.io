@@ -1,0 +1,168 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kyllä, sen aijon
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	nmod:poss	_	_
+5	aijon	aijo	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Mutta minä en uskonut voivani kestää häpeätä ja siksi minä aijoin upottaa itseni.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	uskonut	uskoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	voivani	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Pres|Person[psor]=1|VerbForm=Part|Voice=Act	6	aux	_	_
+6	kestää	kestää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+7	häpeätä	häpeätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	ja	ja	CCONJ	C	_	12	cc	_	_
+9	siksi	siksi	ADV	Adv	_	12	advmod	_	_
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+11	aijoin	aijoin	ADV	Adv	_	12	advmod	_	_
+12	upottaa	upottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	conj	_	_
+13	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Mutta seisoessani veden ääressä ajattelin, että koska tähän asti olin pitänyt itseni vahvana, en nytkään tahdo paeta häpeätä...
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	seisoessani	seisoa	VERB	V	Case=Ine|InfForm=2|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	5	advcl	_	_
+3	veden	vesi	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+4	ääressä	ääressä	ADP	Adp	AdpType=Post	3	case	_	_
+5	ajattelin	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	18	punct	_	_
+7	että	että	SCONJ	C	_	18	mark	_	_
+8	koska	koska	SCONJ	C	_	14	mark	_	_
+9	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	14	obl	_	_
+10	asti	asti	ADP	Adp	AdpType=Post	9	case	_	_
+11	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	_
+12	pitänyt	pitää	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	cop	_	_
+13	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	14	nsubj:cop	_	_
+14	vahvana	vahva	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	18	advcl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	14	punct	_	_
+16	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	18	aux	_	_
+17	nytkään	nyt	ADV	Adv	Clitic=Kaan	18	advmod	_	_
+18	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
+19	paeta	paeta	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	18	xcomp:ds	_	_
+20	häpeätä	häpeämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	19	obj	_	SpaceAfter=No
+21	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Onko se ylpeyttä, Dunja? -- Kyllä, Rodja se on ylpeyttä.
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	ylpeyttä	ylpeys	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	10	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	8	punct	_	_
+7	--	--	PUNCT	Punct	_	8	punct	_	_
+8	Kyllä	kyllä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	8	punct	_	_
+10	Rodja	Rodja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	13	nsubj:cop	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj:cop	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+13	ylpeyttä	ylpeys	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 5
+# text = Raskolnikovin silmät salamoivat, ja hän näytti iloitsevan sitä, että vielä saattoi olla ylpeä.
+1	Raskolnikovin	Raskolnikovi	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	salamoivat	salamoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	iloitsevan	iloitsla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	xcomp	_	_
+9	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	että	että	SCONJ	C	_	15	mark	_	_
+12	vielä	vielä	ADV	Adv	_	15	advmod	_	_
+13	saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	aux	_	_
+14	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	15	cop	_	_
+15	ylpeä	ylpeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	ccomp	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = -- Siskoni, et kai sinä usko, että minä yksinkertaisesti pelkäsin vettä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Siskoni	siskoni	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	kai	kai	ADV	Adv	_	7	advmod	_	_
+6	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	_
+7	usko	uskoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	että	että	SCONJ	C	_	12	mark	_	_
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+11	yksinkertaisesti	yksinkertaisesti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+12	pelkäsin	pelätä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	7	ccomp	_	_
+13	vettä	vesi	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Kysyi Raskolnikov tuskallisesti hymyillen ja katsellen sisartaan silmiin.
+1	Kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+3	tuskallisesti	tuskallisesti	ADV	Adv	Derivation=Sti	1	advmod	_	_
+4	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	_
+7	sisartaan	sisarta	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+8	silmiin	silmä	NOUN	N	Case=Ill|Number=Plur	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = -- Vaiti, Rodja! huudahti Dunja katkerasti.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Vaiti	vaiti	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Rodja	Rodja	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	huudahti	huudahti	NOUN	N	Case=Nom|Number=Sing	4	flat:name	_	_
+7	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	_
+8	katkerasti	katkerastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Vaitioloa kesti parisen minuuttia.
+1	Vaitioloa	Vaitiolo	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	kesti	kestää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	parisen	parisen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Raskolnikov istui lattiaan tuijottaen miettivin ilmein.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lattiaan	latta	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	_
+4	tuijottaen	tuijottaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	miettivin	miettipi	NOUN	N	Case=Ins|Number=Plur	4	obl	_	_
+6	ilmein	ilmi	NOUN	N	Case=Ins|Number=Plur	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Dunja seisoi pöydän toisen pään ääressä ja katseli häntä surullisesti.
+1	Dunja	Dunja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	seisoi	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	toisen	toinen	PRON	Pron	Case=Gen|Number=Sing|PronType=Rcp	5	det	_	_
+5	pään	pää	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	ääressä	ääressä	ADP	Adp	AdpType=Post	5	case	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	surullisesti	surullisesti	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Äkkiä nousi hän paikaltaan.
+1	Äkkiä	äkkiä	ADV	Adv	_	2	advmod	_	_
+2	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	paikaltaan	paikka	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

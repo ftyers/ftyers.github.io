@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Miksi niin?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+3	niin	niin	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = mennään mieluummin yhdessä, -- sanoi Volodja.
+1	mennään	mennä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	mieluummin	mieluummin	ADV	Adv	_	1	advmod	_	_
+3	yhdessä	yhdessä	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	--	--	PUNCT	Punct	_	1	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+7	Volodja	Volodja	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Lähden kanssasi vallinsarvelle.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lähden	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kanssasi	kanssa	ADP	Adp	AdpType=Post|Number[psor]=Sing|Person[psor]=2	4	case	_	_
+4	vallinsarvelle	vallinsarvi	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Onhan se yhdentekevä: täytyy tottua.
+1	Onhan	olla	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+3	yhdentekevä	yhdentekevä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tottua	tottua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Jos sinä menet, voin minäkin lähteä.
+1	Jos	jos	SCONJ	C	_	7	mark	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	det	_	_
+3	menet	meni	NOUN	N	Case=Nom|Number=Plur	7	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	minäkin	minä	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+7	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = -- On parempi, ettet mene.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	parempi	hyvä	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ettet	että#ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	conj	_	_
+6	mene	mennä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- Ei, sallithan: saan ainakin tietää kuinka...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sallithan	sallit	NOUN	N	Case=Nom|Clitic=Han|Number=Sing	6	obl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	saan	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	ainakin	ainakin	ADV	Adv	_	6	advmod	_	_
+8	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+9	kuinka	kuinka	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = -- Minun neuvoni on, ettet mene, vaan tee kuten tahdot...
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	neuvoni	neuvo	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	ettet	että#ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+7	mene	mennä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	vaan	vaan	CCONJ	C	_	10	cc	_	_
+10	tee	tea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+11	kuten	kuten	ADV	Adv	_	10	advmod	_	_
+12	tahdot	tahto	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	SpaceAfter=No
+13	...	...	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Taivas oli pilvetön, mutta tumma.
+1	Taivas	taivas	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	pilvetön	pilvetön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	mutta	mutta	CCONJ	C	_	6	cc	_	_
+6	tumma	tumma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Tähdet ja lakkaamatta lentelevien pommien ja laukausten tulet loistivat kirkkaasti synkässä yössä.
+1	Tähdet	tähti	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+2	ja	ja	CCONJ	C	_	5	cc	_	_
+3	lakkaamatta	lakkaamatta	ADV	Adv	_	4	advmod	_	_
+4	lentelevien	lentelea	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	5	acl	_	_
+5	pommien	pomma	NOUN	N	Case=Gen|Number=Plur	1	conj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	laukausten	laukaus	NOUN	N	Case=Gen|Number=Plur	8	nmod:poss	_	_
+8	tulet	tuli	NOUN	N	Case=Nom|Number=Plur	1	conj	_	_
+9	loistivat	loista	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	kirkkaasti	kirkkaasti	ADV	Adv	Derivation=Sti	9	advmod	_	_
+11	synkässä	synkä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	12	amod	_	_
+12	yössä	yö	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter=\s\n
+

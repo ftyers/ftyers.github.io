@@ -1,0 +1,162 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pienestä lapsesta kasvaa aikuinen.
+1	Pienestä	pieni	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	2	amod	_	_
+2	lapsesta	lapsi	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	aikuinen	aikuinen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Hän kehittyy fyysisesti, psyykkisesti ja sosiaalisesti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	SpacesAfter=\s\s
+2	kehittyy	kehittyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter=\s\s
+3	fyysisesti	fyysisesti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	psyykkisesti	psyykkisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	sosiaalisesti	sosiaalisesti	ADV	Adv	Derivation=Sti	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Fyysinen kehitys tarkoittaa, että ihmisen vartalo kehittyy: hänen pituutensa kasvaa, paino nousee ja hän oppii esimerkiksi kävelemään.
+1	Fyysinen	Fyysinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	kehitys	kehitys	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	vartalo	vartalo	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kehittyy	kehittyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	3	punct	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	pituutensa	pituus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	12	nsubj	_	_
+12	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	paino	#paino	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+15	nousee	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	_
+16	ja	ja	CCONJ	C	_	18	cc	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	oppii	oppiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+19	esimerkiksi	esimerkiksi	ADV	Adv	_	18	advmod	_	_
+20	kävelemään	kävellä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	18	xcomp	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Psyykkinen kehitys tarkoittaa, että ihminen oppii ajattelemaan ja ymmärtämään erilaisia asioita.
+1	Psyykkinen	psyykkinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	kehitys	kehitys	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	oppii	oppia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+8	ajattelemaan	ajatella	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	ymmärtämään	ymmärttä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	conj	_	_
+11	erilaisia	erilainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	12	amod	_	_
+12	asioita	asia	NOUN	N	Case=Par|Number=Plur	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Sosiaalinen kehitys tarkoittaa, että ihminen oppii elämään yhdessä muiden kanssa.
+1	Sosiaalinen	sosiaalinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	SpacesAfter= 
+2	kehitys	kehitys	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	oppii	oppiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+8	elämään	elämä	NOUN	N	Case=Ill|Number=Sing	7	obl	_	_
+9	yhdessä	yhdessä	ADV	Adv	_	10	advmod	_	_
+10	muiden	muu	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	7	obl	_	_
+11	kanssa	kanssa	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Jokainen ihminen on yksilö.
+1	Jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	yksilö	yksilö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Se tarkoittaa, että jokainen ihminen on ainutlaatuinen eli maailmassa ei ole ketään toista aivan samanlaista ihmistä.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	SpacesAfter=\s\s
+8	ainutlaatuinen	ainutlaatuinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	ccomp	_	SpacesAfter=\s\s
+9	eli	eli	CCONJ	C	_	10	cc	_	_
+10	maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	8	conj	_	_
+11	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+12	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+13	ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	17	det	_	_
+14	toista	toinen	PRON	Pron	Case=Par|Number=Sing|PronType=Rcp	17	det	_	_
+15	aivan	aivan	ADV	Adv	_	16	advmod	_	_
+16	samanlaista	samanlainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	17	amod	_	_
+17	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	8	nsubj:cop	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Siksi ihmiset kehittyvät eri tavoin: joku kasvaa pitkäksi, toinen jää lyhyeksi; joku oppii puhumaan jo vuoden ikäisenä, mutta toinen vasta kaksivuotiaana.
+1	Siksi	siksi	ADV	Adv	_	3	advmod	_	_
+2	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	kehittyvät	kehittydä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	eri	eri	ADJ	A	_	5	amod	_	_
+5	tavoin	tapa	NOUN	N	Case=Ins|Number=Plur	3	obl	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	3	punct	_	_
+7	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj	_	_
+8	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+9	pitkäksi	pitkä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	8	xcomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	12	nsubj	_	_
+12	jää	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	lyhyeksi	lyhy	NOUN	N	Case=Tra|Number=Sing	12	xcomp:ds	_	SpaceAfter=No
+14	;	;	PUNCT	Punct	_	3	punct	_	_
+15	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	16	nsubj	_	_
+16	oppii	oppia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+17	puhumaan	puhua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	16	xcomp	_	SpacesAfter= 
+18	jo	jo	ADV	Adv	_	20	advmod	_	_
+19	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	20	nmod:poss	_	_
+20	ikäisenä	ikäinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	17	obl	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	25	punct	_	_
+22	mutta	mutta	CCONJ	C	_	25	cc	_	_
+23	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	25	det	_	_
+24	vasta	vasta	ADV	Adv	_	25	advmod	_	_
+25	kaksivuotiaana	kaksi#vuotias	NOUN	N	Case=Ess|Number=Sing	16	conj	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = On normaalia, että ihmiset oppivat erilaisia asioita eri ikäisinä.
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	normaalia	normaali	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	SpacesAfter= 
+6	oppivat	oppia	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	csubj:cop	_	_
+7	erilaisia	erilainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	8	amod	_	_
+8	asioita	asia	NOUN	N	Case=Par|Number=Plur	6	obj	_	_
+9	eri	eri	ADJ	A	_	10	amod	_	_
+10	ikäisinä	ikäinen	NOUN	N	Case=Ess|Number=Plur	6	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Yleensä tytöt kehittyvät sekä fyysisesti että psyykkisesti nopeammin kuin pojat.
+1	Yleensä	yleensä	ADV	Adv	_	3	advmod	_	_
+2	tytöt	tyttö	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	kehittyvät	kehittyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sekä	sekä	CCONJ	C	_	5	cc:preconj	_	_
+5	fyysisesti	fyysisesti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+6	että	että	CCONJ	C	_	7	cc	_	SpacesAfter= 
+7	psyykkisesti	psyykkisesti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+8	nopeammin	nopeasti	ADV	Adv	Degree=Cmp|Derivation=Sti	3	advmod	_	_
+9	kuin	kuin	SCONJ	C	_	10	mark	_	_
+10	pojat	poika	NOUN	N	Case=Nom|Number=Plur	8	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,123 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Tämän!
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kaisu sanoo ja nostaa nyrkkinsä uhkaavasti Viivin kasvojen eteen.
+1	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	nostaa	nostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	nyrkkinsä	nyrkki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	obj	_	_
+6	uhkaavasti	uhkaavasti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+7	Viivin	Viivi	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	kasvojen	kasvot	NOUN	N	Case=Gen|Number=Plur	4	obl	_	_
+9	eteen	eteen	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = — Näillä käsillä olen raatanut ja tehnyt sikalasta ihmisten asunnon!
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Näillä	tämä	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	5	obl	_	_
+3	käsillä	käsillä	ADV	Adv	_	5	advmod	_	_
+4	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	raatanut	raataa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+8	sikalasta	sikala	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+9	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+10	asunnon	asunto	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Kaisu palaa huvilalta kotiin Ernin luo.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	palaa	palaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	huvilalta	huvila	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	4	amod	_	_
+4	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+5	Ernin	Ern	PROPN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	luo	luo	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hän istuu miehensä viereen ja kysyy vakavana:
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	istuu	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	miehensä	mies	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obl	_	_
+4	viereen	viereen	ADP	Adp	AdpType=Post	3	case	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	kysyy	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	vakavana	vakava	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	6	xcomp	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = — Mitä minä merkitsen sinulle ja kaupallesi?
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	merkitsen	merkita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	4	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kaupallesi	kaupka	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=2	5	conj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Olenko minä sinun vaimosi vai palkaton apulainen?
+1	Olenko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:cop	_	_
+3	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
+4	vaimosi	vaimo	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	7	nmod:poss	_	_
+5	vai	vai	CCONJ	C	_	6	cc	_	_
+6	palkaton	palkaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	4	conj	_	_
+7	apulainen	apulainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Erni näyttää avuttomalta.
+1	Erni	Erni	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	näyttää	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	avuttomalta	avuttoma	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Hän ei osaa sanoa mitään.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	osaa	osata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Pihalta kuuluu auton ääni.
+1	Pihalta	piha	NOUN	N	Case=Abl|Number=Sing	2	obl	_	_
+2	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	auton	auto	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Viivi ajaa kaupalle kovaa vauhtia ja jarruttaa oven eteen.
+1	Viivi	Viivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ajaa	ajaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaupalle	kaupa	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	kovaa	kova	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
+5	vauhtia	vauhti	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	jarruttaa	jarruttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	oven	ovi	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+9	eteen	eteen	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Hän juoksee ovesta sisään.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	juoksee	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ovesta	ovi	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+4	sisään	sisään	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

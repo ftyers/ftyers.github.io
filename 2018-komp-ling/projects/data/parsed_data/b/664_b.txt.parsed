@@ -1,0 +1,142 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tapahtumista epäillään kolmea henkilöä.
+1	Tapahtumista	tapahtuminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	2	obj	_	_
+2	epäillään	epäillä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	kolmea	kolme	NUM	Num	Case=Par|Number=Sing|NumType=Card	4	nummod	_	_
+4	henkilöä	henkilö	NOUN	N	Case=Par|Number=Sing	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Isä Heikki Ristikankareen elämään laskeutui pimeys vuonna 1998, kun 15-vuotias Piia Ristikankare katosi jälkiä jättämättä.
+1	Isä	isä	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Heikki	Heikki	PROPN	N	Case=Nom|Number=Sing	4	nmod:poss	_	_
+3	Ristikankareen	Ristikankare	PROPN	N	Case=Gen|Number=Sing	2	flat:name	_	_
+4	elämään	elämä	NOUN	N	Case=Ill|Number=Sing	5	obl	_	_
+5	laskeutui	laskeutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	pimeys	pimeys	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	5	obj	_	_
+7	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+8	1998	1998	NUM	Num	NumType=Card	7	nummod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	kun	kun	SCONJ	C	_	14	mark	_	_
+11	15-vuotias	15#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	12	amod	_	_
+12	Piia	Piia	PROPN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+13	Ristikankare	Ristikankare	PROPN	N	Case=Nom|Number=Sing	12	flat:name	_	_
+14	katosi	kadota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	_
+15	jälkiä	jälki	NOUN	N	Case=Par|Number=Plur	16	obj	_	_
+16	jättämättä	jättää	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Poliisi saa tapauksesta vihjeitä edelleen.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tapauksesta	tapaus	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+4	vihjeitä	vihje	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+5	edelleen	edelleen	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Poliisi tutkii törkeää petoksen yrittämistä ja petosta.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tutkii	tutkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	törkeää	törkeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	_
+4	petoksen	petos	NOUN	N	Case=Gen|Number=Sing	5	nmod:gobj	_	_
+5	yrittämistä	yrittäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	2	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	petosta	peto	NOUN	N	Case=Ela|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Törkeistä talousrikoksista epäilty venäläismies vaatii poliisia palauttamaan takavarikoidut kolme ja puoli miljoonaa euroa.
+1	Törkeistä	Törkeinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	talousrikoksista	talousrikos	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+3	epäilty	epäillä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	venäläismies	venäläis#mies	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	vaatii	vaatia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	poliisia	poliisi	NOUN	N	Case=Par|Number=Sing	7	nsubj	_	_
+7	palauttamaan	palauttada	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	_
+8	takavarikoidut	takavarikoida	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	13	acl	_	_
+9	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	13	nummod	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	puoli	puoli	NUM	Num	Case=Nom|Number=Sing	12	compound	_	_
+12	miljoonaa	miljoona	NUM	Num	Case=Par|Number=Sing|NumType=Card	9	conj	_	_
+13	euroa	euro	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Oysista vahvistetaan Ylelle, että epäilty rikos olisi tapahtunut viime yönä yhteispäivystyksessä.
+1	Oysista	Oys	NOUN	N	Case=Ela|Number=Plur	2	obl	_	_
+2	vahvistetaan	vahvistea	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	Ylelle	Yle	PROPN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	9	punct	_	_
+5	että	että	SCONJ	C	_	9	mark	_	_
+6	epäilty	epäillä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	7	acl	_	_
+7	rikos	rikos	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+10	viime	viime	ADJ	A	_	11	amod	_	_
+11	yönä	yö	NOUN	N	Case=Ess|Number=Sing	9	obl	_	_
+12	yhteispäivystyksessä	yhteispäivystys	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Akaalaisten yksityishenkilöiden jättämä tutkintapyyntö koskee muun muassa
+1	Akaalaisten	Akaalainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Plur	2	amod	_	_
+2	yksityishenkilöiden	yksityis#henkilö	NOUN	N	Case=Gen|Number=Plur	3	nsubj	_	_
+3	jättämä	jättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	4	acl	_	_
+4	tutkintapyyntö	tutkinta#pyyntö	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	koskee	koskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	muun	muun	ADV	Adv	_	5	advmod	_	_
+7	muassa	muassa	ADV	Adv	_	6	fixed	_	_
+
+# sent_id = 8
+# text = Viialan yhtenäiskoulun väistötilojen hankintaa.
+1	Viialan	Vii#ala	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	yhtenäiskoulun	yhtenäiskoulu	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	väistötilojen	väistötilo	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+4	hankintaa	hankinta	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Poliisin tutkinnan mukaan hyökkäyksen tekijä oli suomalainen alle 30-vuotias mies.
+1	Poliisin	poliisi	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tutkinnan	tutkinta	NOUN	N	Case=Gen|Number=Sing	10	obl	_	_
+3	mukaan	mukaan	ADP	Adp	AdpType=Post	2	case	_	_
+4	hyökkäyksen	hyökkäys	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	tekijä	tekijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	10	nsubj:cop	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+7	suomalainen	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	10	amod	_	_
+8	alle	alle	ADV	Adv	_	9	advmod	_	_
+9	30-vuotias	30-#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	amod	_	_
+10	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = Nuorisosäätiön uusin sotku on monimutkainen vyyhti, jossa säätiö teki yli 40 miljoonan euron tappiot.
+1	Nuorisosäätiön	Nuorisosäätiö	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	uusin	uusi	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	3	amod	_	_
+3	sotku	sotku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	monimutkainen	moni#mutkainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	vyyhti	vyyhti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	10	obl	_	_
+9	säätiö	säätiö	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+11	yli	yli	ADV	Adv	_	13	advmod	_	_
+12	40	40	NUM	Num	NumType=Card	13	compound	_	_
+13	miljoonan	miljoona	NUM	Num	Case=Gen|Number=Sing|NumType=Card	14	nummod	_	_
+14	euron	euro	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	tappiot	tappio	NOUN	N	Case=Nom|Number=Plur	10	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = Poliisi tutkii onnettomuuden syytä.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tutkii	tutkiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	onnettomuuden	onnettomuus	NOUN	N	Case=Gen|Derivation=Ton,Vs|Number=Sing	2	obl	_	_
+4	syytä	syy	NOUN	N	Case=Par|Number=Sing	3	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

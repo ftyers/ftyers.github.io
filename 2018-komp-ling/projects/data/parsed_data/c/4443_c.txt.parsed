@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Mikä on hyvää?" kysytte te.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	8	punct	_	_
+7	kysytte	kysyi	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Olla urhoollinen on hyvää.
+1	Olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	aux	_	_
+2	urhoollinen	urhoollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Antakaa pikkutyttöjen puhua: "hyvää on, mikä samalla on kaunista ja liikuttavaa."
+1	Antakaa	antaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pikkutyttöjen	pikkutyttö	NOUN	N	Case=Gen|Number=Plur	3	nsubj	_	_
+3	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp:ds	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	1	punct	_	_
+5	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+6	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	1	parataxis	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj:cop	_	_
+10	samalla	samalla	ADV	Adv	_	9	advmod	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	kaunista	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	acl:relcl	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	liikuttavaa	liikuttava	ADJ	A	Case=Par|Degree=Pos|Number=Sing	12	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Teitä nimitetään sydämettömiksi: mutta teidän sydämenne on oikea, ja minä rakastan sydämellisyytenne kainoutta.
+1	Teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	2	obj	_	_
+2	nimitetään	nimittää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	sydämettömiksi	sydämettömi	NOUN	N	Case=Tra|Number=Sing	2	xcomp:ds	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	9	punct	_	_
+5	mutta	mutta	CCONJ	C	_	9	cc	_	_
+6	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	7	nmod:poss	_	_
+7	sydämenne	sydämenne	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	oikea	oikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+13	rakastan	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+14	sydämellisyytenne	sydämellisyytenne	NOUN	N	Case=Nom|Number=Sing	15	compound:nn	_	_
+15	kainoutta	kainous	NOUN	N	Case=Par|Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Te häpeätte vuokseanne ja toiset häpeävät luodevettään.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_
+2	häpeätte	häpetä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl	_	_
+3	vuokseanne	vuokseanne	NOUN	N	Case=Nom|Number=Sing	7	obj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	toiset	toinen	PRON	Pron	Case=Nom|Number=Plur|PronType=Rcp	6	det	_	_
+6	häpeävät	häpeävä	NOUN	N	Case=Nom|Number=Plur	3	conj	_	_
+7	luodevettään	luodevettä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = Te olette rumia?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj:cop	_	_
+2	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	rumia	ruma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Olkoon menneeksi, veljeni!
+1	Olkoon	Ola	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	menneeksi	menne	NOUN	N	Case=Tra|Number=Sing	1	xcomp:ds	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	nsubj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Niinpä kietokaa ympärillenne ylevyys, ruman vaippa!
+1	Niinpä	niinpä	ADV	Adv	_	2	advmod	_	_
+2	kietokaa	kietoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	4	acl	_	_
+3	ympärillenne	ympärillenne	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	ylevyys	ylevyys	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	ruman	ruma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	_
+7	vaippa	vaippa	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Ja kun sielunne tulee suureksi, tulee se ylpeäksi ja ylevyydessänne on pahuutta.
+1	Ja	ja	CCONJ	C	_	7	cc	_	_
+2	kun	kun	SCONJ	C	_	4	mark	_	_
+3	sielunne	sielunne	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+5	suureksi	suuri	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	4	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj	_	_
+9	ylpeäksi	ylpeä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	xcomp	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	ylevyydessänne	ylevyydessänne	ADV	Adv	_	7	conj	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+13	pahuutta	pahuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	11	nsubj:cop	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = Minä tunnen teidät.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	tunnen	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teidät	sinä	PRON	Pron	Case=Acc|Number=Plur|Person=2|PronType=Prs	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

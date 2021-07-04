@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = mutta harvoin.
+1	mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	harvoin	harvoin	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Me luimme yhdessä ... ja puhuimme...
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
+2	luimme	lula	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yhdessä	yhdessä	ADV	Adv	_	2	advmod	_	_
+4	...	...	PUNCT	Punct	_	6	punct	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	puhuimme	puhua	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän on näkevä Jumalan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	näkevä	näklä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Raamatunsanat kaikuivat ihmeellisesti.
+1	Raamatunsanat	Raamatunsana	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	kaikuivat	kaikua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ihmeellisesti	ihmeellisesti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Taasen uutuus: hänellä oli ollut salaisia yhtymiä
+1	Taasen	taanen	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	uutuus	uutuus	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop:own	_	_
+7	salaisia	salainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	8	amod	_	_
+8	yhtymiä	yhtymä	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+
+# sent_id = 6
+# text = Lisavjetan kanssa ja molemmat olivat he hassuja.
+1	Lisavjetan	Lisavjetta	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+2	kanssa	kanssa	ADP	Adp	AdpType=Post	1	case	_	_
+3	ja	ja	CCONJ	C	_	7	cc	_	_
+4	molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	7	nsubj:cop	_	_
+5	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nmod:poss	_	_
+7	hassuja	hassu	NOUN	N	Case=Par|Derivation=U|Number=Plur	1	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Voi tapahtua, että itse tulee puolihulluksi, se tarttuu! ajatteli hän.
+1	Voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tapahtua	tapahtua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	itse	itse	ADV	Adv	_	6	advmod	_	_
+6	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	puolihulluksi	puolihullu	NOUN	N	Case=Tra|Derivation=U|Number=Sing	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+10	tarttuu	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	12	punct	_	_
+12	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 8
+# text = -- Lue! huusi hän äkisti, itsepäisesti ja vihaisesti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lue	lukea	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+6	äkisti	äkisti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	itsepäisesti	itsepäisesti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	vihaisesti	vihaisesti	ADV	Adv	Derivation=Sti	8	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Sonja viivytteli.
+1	Sonja	Sonja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	viivytteli	viivytellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Hänen sydämmensä löi kiivaasti.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	sydämmensä	sydämmi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	nsubj	_	_
+3	löi	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kiivaasti	kiivaasti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Hän ei uskaltanut lukea Raskolnikoville.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	uskaltanut	uskaltaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	lukea	lukea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	Raskolnikoville	Raskolnikov	PROPN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Tämä katsoi sydämen tuskalla tuota mielipuolta raukkaa.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sydämen	sydän	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	tuskalla	tuska	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+5	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	det	_	_
+6	mielipuolta	mielipuo	NOUN	N	Case=Abl|Number=Sing	2	obl	_	_
+7	raukkaa	raukka	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

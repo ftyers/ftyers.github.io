@@ -1,0 +1,94 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 30.10.
+1	30.10	30.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Eläinten määrä vähenee.
+1	Eläinten	eläin	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	määrä	määrä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	vähenee	vähetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Porvoolaisperhe yrittää pienentää ilmastopäästöjä.
+1	Porvoolaisperhe	Porvoolaisperhe	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	yrittää	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pienentää	pienentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	ilmastopäästöjä	ilmastopäästö	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Maahanmuutto ja maastamuutto vähenivät.
+1	Maahanmuutto	maahanmuutto	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	maastamuutto	maastamuutto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	vähenivät	vähetä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Euroopassa myrskyää ja tulvii.
+1	Euroopassa	Eurooppa	PROPN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	myrskyää	myrskytä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	tulvii	tulvia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Säätiedot.
+1	Säätiedot	Sää#tieto	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = 30.10.
+1	30.10	30.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Saksassa suuri muutos politiikan huipulla.
+1	Saksassa	Saksa	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	muutos	muutos	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	politiikan	politiikka	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	huipulla	huippu	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Ruotsin hallituksen muodostaminen tosi vaikeaa.
+1	Ruotsin	Ruotsi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	hallituksen	hallitus	NOUN	N	Case=Gen|Number=Sing	3	nmod:gsubj	_	_
+3	muodostaminen	muodostaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	5	nsubj:cop	_	_
+4	tosi	tosi	ADV	Adv	_	5	advmod	_	_
+5	vaikeaa	vaikea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Ohisalo ei halua Vihreiden johtoon.
+1	Ohisalo	Ohisalo	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	Vihreiden	Vihreät	PROPN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	johtoon	johto	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Korot voivat nousta jo keväällä.
+1	Korot	korko	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nousta	nousta	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	jo	jo	ADV	Adv	_	3	advmod	_	_
+5	keväällä	kevät	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Kellojen siirtely voi jatkua monta vuotta.
+1	Kellojen	Kella	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	siirtely	siirtely	NOUN	N	Case=Nom|Derivation=U|Number=Sing	4	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	jatkua	jatkua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

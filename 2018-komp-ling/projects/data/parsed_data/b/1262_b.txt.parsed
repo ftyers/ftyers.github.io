@@ -1,0 +1,184 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Me emme oikein tulleet juttuun keskenämme, Erik totesi hiljaa.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_
+3	emme	ei	AUX	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	oikein	oikein	ADV	Adv	_	5	advmod	_	_
+5	tulleet	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	juttuun	juttu	NOUN	N	Case=Ill|Number=Sing	7	obl	_	_
+7	keskenämme	keskentää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	xcomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	5	punct	_	_
+9	Erik	Erik	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	totesi	todeta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+11	hiljaa	hiljaa	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = — Kari ei koskaan hyväksynyt sitä, että jätin lukion kesken ja menin ammattikouluun.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Kari	Kari	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	koskaan	koskaan	ADV	Adv	_	5	advmod	_	_
+5	hyväksynyt	hyväksyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	että	että	SCONJ	C	_	9	mark	_	_
+9	jätin	jättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+10	lukion	lukio	NOUN	N	Case=Gen|Number=Sing	9	obl	_	_
+11	kesken	kesken	ADP	Adp	AdpType=Post	10	case	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	menin	mennä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	_
+14	ammattikouluun	ammattikoulu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Hänen mielestään minun olisi pitänyt opiskella juristiksi tai lääkäriksi.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	mielestään	mieli	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	6	obl	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+4	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	pitänyt	pitää	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	aux	_	_
+6	opiskella	opiskella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	juristiksi	juristi	NOUN	N	Case=Tra|Number=Sing	6	obl	_	_
+8	tai	tai	CCONJ	C	_	9	cc	_	_
+9	lääkäriksi	lääkäri	NOUN	N	Case=Tra|Number=Sing	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+
+# sent_id = 4
+# text = Hän sanoi kerran suoraan, ettei elämäni ole hänestä minkään arvoista.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kerran	kerran	ADV	Adv	_	2	advmod	_	_
+4	suoraan	suoraan	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	mark	_	_
+7	elämäni	elämä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	nsubj:cop	_	_
+8	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	cop	_	_
+9	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	11	obl	_	_
+10	minkään	mikään	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	11	det	_	_
+11	arvoista	arvoinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	2	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Erik katsoi tiukasti poliiseja ja sanoi:
+1	Erik	Erik	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tiukasti	tiukasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	poliiseja	poliisi	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = — Kari oli nilkki.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Kari	Kari	PROPN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	nilkki	nilkki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Mutta en minä häntä tappanut.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	tappanut	tappaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = — Lähditte hotellista viime lauantaina päivällä ja palasitte vasta tänään, Helenius sanoi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Lähditte	Lähtiä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hotellista	hotellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	5	amod	_	_
+4	viime	viime	ADJ	A	_	5	amod	_	_
+5	lauantaina	lauantai	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+6	päivällä	päivä	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	palasitte	palasida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	vasta	vasta	ADV	Adv	_	10	advmod	_	_
+10	tänään	tänään	ADV	Adv	_	2	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	2	punct	_	_
+12	Helenius	Helenius	PROPN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+13	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = — Missä olette ollut koko viikon?
+1	—	—	PUNCT	Punct	_	6	punct	_	_
+2	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	6	nsubj:cop	_	_
+3	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+5	koko	koko	ADJ	A	_	6	amod	_	_
+6	viikon	viikko	NOUN	N	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s
+
+# sent_id = 10
+# text = Erik huokaisi ja sanoi:
+1	Erik	Erik	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	huokaisi	huokaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = — Sain ystävältäni kyydin Tanssisaareen.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Sain	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ystävältäni	ystäväl	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obj	_	_
+4	kyydin	kyyti	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	Tanssisaareen	Tanssisaari	PROPN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Hän tuli hakemaan minua seitsemältä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hakemaan	hakeda	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+5	seitsemältä	seitsemä	NOUN	N	Case=Abl|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Juhlat kestivät pikkutunneille saakka, ja aamulla menin ystäväni mökille nukkumaan.
+1	Juhlat	juhla	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	kestivät	kestää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pikkutunneille	pikkutunne	NOUN	N	Case=All|Number=Plur	2	obl	_	_
+4	saakka	saakka	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+8	menin	mennä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	ystäväni	ystävä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	obj	_	_
+10	mökille	mökki	NOUN	N	Case=All|Number=Sing	11	obl	_	_
+11	nukkumaan	nukkua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Ystäväni pyysi minua jäämään kalastuskaveriksi pariksi päiväksi.
+1	Ystäväni	ystävä	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	pyysi	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	jäämään	jäädä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+5	kalastuskaveriksi	kalastuskaveri	NOUN	N	Case=Tra|Number=Sing	4	obl	_	_
+6	pariksi	pari	NUM	Num	Case=Tra|Number=Sing|NumType=Card	7	nummod	_	_
+7	päiväksi	päivä	NOUN	N	Case=Tra|Derivation=Ja|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 15
+# text = Meillä oli hauskaa yhdessä.
+1	Meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	hauskaa	hauska	ADJ	A	Case=Par|Degree=Pos|Number=Sing	1	nsubj:cop	_	_
+4	yhdessä	yhdessä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 16
+# text = Aika kului nopeasti.
+1	Aika	aika	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kului	kulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

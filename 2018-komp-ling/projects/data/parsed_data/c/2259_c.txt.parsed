@@ -1,0 +1,186 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ei, _ne_ ihmiset eivät ole sitä laatua.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Ei	ei	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	_ne_	_ne_	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+5	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	9	nsubj:cop	_	_
+6	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	cop	_	_
+8	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	9	det	_	_
+9	laatua	laatu	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 2
+# text = _Nykyinen hallitsija_, jolle kaikki on luvallista, hävittää Toulonin, murhaa Parisissa, _unohtaa_ armeijan Egyptiin, uhraa puoli miljonaa ihmistä sotaretkellään Moskovaan ja laskee siitä leikkiä Vilnassa.
+1	_Nykyinen	_Nykyinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	8	nsubj	_	_
+2	hallitsija_,	hallitsija_,	PUNCT	Punct	_	6	punct	_	_
+3	jolle	joka	PRON	Pron	Case=All|Number=Sing|PronType=Rel	6	obl	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	luvallista	luvallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	1	acl:relcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	hävittää	hävittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	Toulonin	Toulon	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	murhaa	murha	NOUN	N	Case=Par|Number=Sing	8	obl	_	_
+12	Parisissa	parisissa	ADP	Adp	AdpType=Post	11	case	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	_unohtaa_ armeijan	_unohtaa_ armeija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	15	nmod:poss	_	_
+15	Egyptiin	Egypti	NOUN	N	Case=Ill|Number=Sing	11	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	uhraa	uhrata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+18	puoli	puoli	NUM	Num	Case=Nom|Number=Sing	19	compound	_	_
+19	miljonaa	miljona	NUM	Num	Case=Par|Number=Sing|NumType=Card	20	nummod	_	_
+20	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	17	obj	_	_
+21	sotaretkellään	sotaretkellään	ADV	Adv	_	17	advmod	_	_
+22	Moskovaan	Moskova	PROPN	N	Case=Ill|Number=Sing	17	obl	_	_
+23	ja	ja	CCONJ	C	_	24	cc	_	_
+24	laskee	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+25	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	24	obl	_	_
+26	leikkiä	leikkiä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	24	xcomp	_	_
+27	Vilnassa	Vilna	PROPN	N	Case=Ine|Number=Sing	26	obl	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = Kuoltuaan hän korotetaan jumaluuteen.
+1	Kuoltuaan	Kuolla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	3	advcl	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	korotetaan	korottaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	jumaluuteen	jumaluus	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = _Hänelle on kaikki luvallista!_ Sellaiset ihmiset eivät voi olla lihaa ja verta, heidän täytyy olla rautaa!"
+1	_Hänelle	_Häni	NOUN	N	Case=All|Number=Sing	10	obl	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+4	luvallista	luvallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	7	amod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+6	_ Sellaiset	_ Sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	7	amod	_	_
+7	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	1	nsubj:cop	_	_
+8	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	olla	olla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+11	lihaa	liha	NOUN	N	Case=Par|Number=Sing	10	obj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	verta	veri	NOUN	N	Case=Par|Number=Sing	11	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	18	punct	_	_
+15	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	18	nsubj:cop	_	_
+16	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux	_	_
+17	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	18	cop	_	_
+18	rautaa	rauta	NOUN	N	Case=Par|Number=Sing	10	conj	_	SpaceAfter=No
+19	!	!	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+20	"	"	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 5
+# text = Hänen ajatuksensa saivat äkkiä toisen suunnan ja hän melkeinpä hymyili.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	ajatuksensa	ajatus	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	nsubj	_	_
+3	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	äkkiä	äkkiä	ADV	Adv	_	3	advmod	_	_
+5	toisen	toinen	ADJ	Num	Case=Gen|Derivation=Inen|Number=Sing|NumType=Ord	6	nummod	_	_
+6	suunnan	suunta	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	det	_	_
+9	melkeinpä	melkeinpä	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	hymyili	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "Napoleon, pyramidit, Waterloo -- ja pieni, inhottava reistratorin leski, ilkeä akka, koronkiskuri, jolla on punanen matka-arkku vuoteensa alla!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Napoleon	Napoleon	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	pyramidit	pyramidi	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Waterloo	Waterloo	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+7	--	--	PUNCT	Punct	_	9	punct	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	inhottava	inhottava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	13	amod	_	_
+12	reistratorin	reistratori	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	leski	leski	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	ilkeä	ilkeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	16	amod	_	_
+16	akka	akka	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	koronkiskuri	koronkiskuri	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	20	punct	_	_
+20	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	2	acl:relcl	_	_
+21	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	cop:own	_	_
+22	punanen	punainen	NOUN	N	Case=Nom|Number=Sing|Style=Coll	20	nsubj:cop	_	_
+23	matka-arkku	matka-arkku	NOUN	N	Case=Nom|Number=Sing	22	nmod	_	_
+24	vuoteensa	vuoe	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	23	nmod	_	_
+25	alla	alla	ADP	Adp	AdpType=Post	24	case	_	SpaceAfter=No
+26	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Kuka voinee sulattaa sen!
+1	Kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+2	voinee	voida	AUX	V	Mood=Pot|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sulattaa	sulattaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Eipä edes Porfyrius Petrovitsh!
+1	Eipä	ei	AUX	V	Clitic=Pa|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	edes	edes	ADV	Adv	_	3	advmod	_	_
+3	Porfyrius	Porfyrius	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+4	Petrovitsh	Petrovitsh	PROPN	N	Case=Nom|Number=Sing	3	flat:name	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Tahtoisiko ehkä Napoleon ryömiä vanhan akan vuoteen alle?
+1	Tahtoisiko	Tahtola	VERB	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ehkä	ehkä	ADV	Adv	_	1	advmod	_	_
+3	Napoleon	Napoleo	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	ryömiä	ryömä	NOUN	N	Case=Par|Number=Plur	1	obj	_	_
+5	vanhan	vanha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	akan	aka	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	vuoteen	vuosi	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+8	alle	alle	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Hyi helvetti!"
+1	Hyi	Htyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|Typo=Yes|VerbForm=Fin|Voice=Act	0	root	_	_
+2	helvetti	helvetti	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Oli hetkiä, jolloin hän huomasi hourailevansa.
+1	Oli	olla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hetkiä	hetki	NOUN	N	Case=Par|Number=Plur	1	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	jolloin	jolloin	ADV	Adv	_	6	advmod	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+7	hourailevansa	hourailea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	6	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = "Tuo vanha akka on syrjäseikka", jatkoi hän ajatusjuoksuaan kiihkeästi ja nykimättä; "...
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	akka	akka	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	syrjäseikka	syrjäseikka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+11	ajatusjuoksuaan	ajatusjuoksu	NOUN	N	Case=Par|Derivation=U|Number=Sing|Person[psor]=3	9	obj	_	_
+12	kiihkeästi	kiihkeästi	ADV	Adv	Derivation=Sti	9	advmod	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	nykimättä	nykiä	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	conj	_	SpaceAfter=No
+15	;	;	PUNCT	Punct	_	6	punct	_	_
+16	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+17	...	...	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

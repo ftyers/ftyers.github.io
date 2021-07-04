@@ -1,0 +1,170 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Miksi sinä et ostanut rommia?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	5	advmod	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+4	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	ostanut	ostaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	rommia	rommi	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- kysyi tällä välin kornetti kuiskaten sotamieheltään.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	2	obl	_	_
+4	välin	välin	ADV	Adv	_	2	advmod	_	_
+5	kornetti	kornetti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+6	kuiskaten	kuiskata	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+7	sotamieheltään	sotamiehel	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Olihan sinulla rahaa.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Olihan	olla	AUX	V	Clitic=Han|Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	4	det	_	_
+4	rahaa	raha	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Miksi meidän aina pitää ostaa!
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	6	advmod	_	_
+3	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_
+4	aina	aina	ADV	Adv	_	6	advmod	_	_
+5	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	ostaa	ostaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Minun niskoillani ovat muutenkin kaikki menot.
+1	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nmod:poss	_	_
+2	niskoillani	niskoi	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	muutenkin	muuten	ADV	Adv	Clitic=Kin	2	advmod	_	_
+5	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	menot	meno	NOUN	N	Case=Nom|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Heidän saksalainen polttelee vain piippua eikä tee mitään.
+1	Heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	saksalainen	saksalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	3	nsubj	_	_
+3	polttelee	poltella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vain	vain	ADV	Adv	_	3	advmod	_	_
+5	piippua	piippu	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	cc	_	_
+7	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Toinen kirje ei nähtävästi ollut ikävä, sillä kreivi luki sitä hymysuin.
+1	Toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	2	nummod	_	_
+2	kirje	#kirje	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	nähtävästi	nähtävästi	ADV	Adv	Derivation=Sti	6	advmod	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+6	ikävä	ikävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	sillä	sillä	SCONJ	C	_	10	mark	_	_
+9	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	luki	lukea	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	_
+11	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	12	obj	_	_
+12	hymysuin	hymysua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	ccomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = -- Keneltä se on?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Keneltä	kuka	PRON	Pron	Case=Abl|Number=Sing|PronType=Int	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- kysyi Polosow, joka oli taas tullut huoneeseen ja laitteli itselleen yösijaa lautojen päälle uunin viereen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Polosow	Polosow	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	taas	taas	ADV	Adv	_	8	advmod	_	_
+8	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl:relcl	_	_
+9	huoneeseen	huone	NOUN	N	Case=Ill|Number=Sing	8	obl	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	laitteli	laitellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+12	itselleen	itse	PRON	Pron	Case=All|Number=Sing|Person[psor]=3|Reflex=Yes	11	obl	_	_
+13	yösijaa	yösija	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	11	obj	_	_
+14	lautojen	lauto	NOUN	N	Case=Gen|Number=Plur	11	obl	_	_
+15	päälle	päälle	ADP	Adp	AdpType=Post	14	case	_	_
+16	uunin	uuni	NOUN	N	Case=Gen|Number=Sing	11	obl	_	_
+17	viereen	viereen	ADP	Adp	AdpType=Post	16	case	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Miinalta -- vastasi kreivi iloisesti ojentaen hänelle kirjeen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Miinalta	Miina	NOUN	N	Case=Abl|Number=Sing	4	obl	_	_
+3	--	--	PUNCT	Punct	_	2	punct	_	_
+4	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+6	iloisesti	iloisesti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+7	ojentaen	ojentaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	_
+8	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	7	obl	_	_
+9	kirjeen	kirje	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = -- Tahdotko lukea?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Tahdotko	Tahdoda	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lukea	lukea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Siinäpä on ihastuttava nainen... parempi kuin meikäläiset neidit!...
+1	Siinäpä	Siinä	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|Person=2|PronType=Prs	3	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	ihastuttava	ihastuta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+4	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	3	obl	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	6	punct	_	_
+6	parempi	hyvä	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	3	appos	_	_
+7	kuin	kuin	SCONJ	C	_	9	mark	_	_
+8	meikäläiset	meikäläinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	9	amod	_	_
+9	neidit	neidi	NOUN	N	Case=Nom|Number=Plur	6	advcl	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+11	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Katsohan, miten paljon tunnetta ja järkeä tässä kirjeessä on!...
+1	Katsohan	Katso	ADV	Adv	Clitic=Han	5	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	miten	miten	ADV	Adv	_	4	advmod	_	_
+4	paljon	paljon	ADV	Adv	_	5	advmod	_	_
+5	tunnetta	tunne	NOUN	N	Case=Par|Number=Sing	9	nsubj:cop	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	järkeä	järki	NOUN	N	Case=Par|Number=Sing	5	conj	_	_
+8	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	9	det	_	_
+9	kirjeessä	kirje	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+12	...	...	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 14
+# text = Se vaan on paha, että hän pyytää rahoja.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	vaan	vaan	CCONJ	C	_	4	cc	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	paha	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	pyytää	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+9	rahoja	raha	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

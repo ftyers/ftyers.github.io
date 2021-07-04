@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lehdessä olikin yllätys!
+1	Lehdessä	lehti	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	olikin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	yllätys	yllätys	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Pieni uutinen, mutta iso selvä kuva.
+1	Pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	uutinen	uutinen	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	mutta	mutta	CCONJ	C	_	7	cc	_	_
+5	iso	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+6	selvä	selvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	kuva	kuva	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kuvassa näkyi Jussi laivan kannella, pelkät kalsarit jalassa ja tukka märkänä.
+1	Kuvassa	kuva	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	näkyi	näkyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Jussi	Jussi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	laivan	laiva	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kannella	kann	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	pelkät	pelkkä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	kalsarit	kalsarit	NOUN	N	Case=Nom|Number=Plur	12	obj	_	_
+9	jalassa	jalka	NOUN	N	Case=Ine|Number=Sing	8	nmod	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	tukka	tukka	NOUN	N	Case=Nom|Number=Sing	8	conj	_	_
+12	märkänä	märkä	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Vieressä oli sinihameinen nainen, jolla oli sylissään pieni märkä koira.
+1	Vieressä	vieressä	ADV	Adv	_	4	advmod	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	sinihameinen	sinihameinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	4	amod	_	_
+4	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	4	acl:relcl	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop:own	_	_
+8	sylissään	syli	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	6	obl	_	_
+9	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+10	märkä	märkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+11	koira	koira	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Kuvan alla luki:
+1	Kuvan	kuva	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+2	alla	alla	ADP	Adp	AdpType=Post	1	case	_	_
+3	luki	lukea	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mies toimi ripeästi ja pelasti koiran hukkumasta.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	toimi	toimia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ripeästi	ripeästi	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	pelasti	pelastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	koiran	koita	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	hukkumasta	hukkuma	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Lehtikuvaajamme sattui olemaan eilen laivalla ja näki tapauksen.
+1	Lehtikuvaajamme	lehtikuvaajamme	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sattui	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olemaan	olla	AUX	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	5	cop	_	_
+4	eilen	eilen	ADV	Adv	_	5	advmod	_	_
+5	laivalla	laiva	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	tapauksen	tapaus	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Jussista tuli julkkis hotellissa.
+1	Jussista	jussista	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	julkkis	julkkis	X	Foreign	Foreign=Yes	4	compound:nn	_	_
+4	hotellissa	hotelli	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Kyllä hänet kuvasta tunnistettiin.
+1	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	_
+2	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+3	kuvasta	kuva	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+4	tunnistettiin	tunnistaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Mutta lehtipä oli luettu Jussin kotipuolessakin.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	lehtipä	lehtipä	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	luettu	lutaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	Jussin	Jussi	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	kotipuolessakin	kotipuolessa	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Ja nyt siellä tiedettiin, miltä paikkakunnalta Jussia haettaisiin.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	nyt	nyt	ADV	Adv	_	4	advmod	_	_
+3	siellä	siellä	ADV	Adv	_	4	advmod	_	_
+4	tiedettiin	tietää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	miltä	mä	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	7	amod	_	_
+7	paikkakunnalta	paikka#kunta	NOUN	N	Case=Abl|Number=Sing	9	obl	_	_
+8	Jussia	Jussi	NOUN	N	Case=Par|Number=Sing	9	nsubj:cop	_	_
+9	haettaisiin	haettainen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Llinen|Number=Plur	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

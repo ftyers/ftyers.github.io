@@ -1,0 +1,112 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Ei.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Hän oli juristi, hän toimi syyttäjänä, mies vastasi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	juristi	juristi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	toimi	toimia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	syyttäjänä	syyttäjä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	mies	mies	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Wallander kävi vielä kolmessa talossa, mutta mitään uutta ei selvinnyt.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vielä	vielä	ADV	Adv	_	2	advmod	_	_
+4	kolmessa	kolme	NUM	Num	Case=Ine|Number=Sing|NumType=Card	5	nummod	_	_
+5	talossa	talo	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	mutta	mutta	CCONJ	C	_	11	cc	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	9	det	_	_
+9	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	11	nsubj	_	_
+10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	selvinnyt	selvitä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hän käveli autolle odottamaan Ann-Britt Höglundia.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	käveli	kävellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	autolle	auto	NOUN	N	Case=All|Number=Sing	2	obl	_	SpacesAfter= 
+4	odottamaan	odottaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	Ann-Britt	Ann-Britt	PROPN	N	Case=Nom|Number=Sing	4	obj	_	_
+6	Höglundia	Höglund	PROPN	N	Case=Par|Number=Sing	5	flat:name	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Tälläkään ei ollut mitään kerrottavaa.
+1	Tälläkään	tälläkään	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	kerrottavaa	kerrottava	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Vain Agnes Ehn oli nähnyt Alexanderssonin, ei kukaan muu.
+1	Vain	vain	ADV	Adv	_	2	advmod	_	_
+2	Agnes	Agnes	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	Ehn	Ehn	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	Alexanderssonin	Alexandersson	PROPN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	det	_	_
+10	muu	muu	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = He ajoivat takaisin Ystadiin.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	ajoivat	ajaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	takaisin	takaisin	ADV	Adv	_	2	advmod	_	_
+4	Ystadiin	Ystad	PROPN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = ♦♦♦ Kun Wallander astui työhuoneeseensa, puhelin soi.
+1	♦♦♦	♦♦♦	SYM	Symb	_	8	nsubj	_	_
+2	Kun	kun	SCONJ	C	_	4	mark	_	_
+3	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	advcl	_	_
+5	työhuoneeseensa	työhuoneesei	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	puhelin	puhelin	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	soi	soida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Soittaja oli lääkäri, joka oli tutkinut Alexanderssonin ruumiin.
+1	Soittaja	Soittaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	lääkäri	lääkäri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	tutkinut	tutkia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl:relcl	_	_
+8	Alexanderssonin	Alexandersson	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	ruumiin	ruuma	NOUN	N	Case=Ill|Number=Plur	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Hänellä oli lisää tietoa myrkystä.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	lisää	lisää	ADV	Adv	_	1	advmod	_	_
+4	tietoa	tieto	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+5	myrkystä	myrky	NOUN	N	Case=Ela|Derivation=U|Number=Sing	4	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,152 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tahdotko?
+1	Tahdotko	tahdotko	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = -- En. -- Sinä valehtelet!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	6	punct	_	_
+5	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+6	valehtelet	valehella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = huudahti Rasumihin kärsimättömästi, miten sinä sen tiedät?
+1	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	1	obl	_	_
+3	kärsimättömästi	kärsimättömästi	ADV	Adv	Derivation=Sti	1	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	miten	miten	ADV	Adv	_	8	advmod	_	_
+6	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	_
+8	tiedät	tietää	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Ethän sinä voi vastata puolestasi!
+1	Ethän	Et	ADV	Adv	Clitic=Han	4	obl	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	vastata	vastata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	puolestasi	puolesrata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Muuten et sitä myös ymmärräkään.
+1	Muuten	muuten	ADV	Adv	_	3	advmod	_	_
+2	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	0	root	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	_
+5	ymmärräkään	ymmärrä	ADV	Adv	Clitic=Kaan	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Minä olen myös ollut monta kertaa kinoissa ihmisten kanssa, mutta olen aina sopinut...
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:cop	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+3	myös	myös	ADV	Adv	_	7	advmod	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+5	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	7	obl	_	_
+7	kinoissa	kino	NOUN	N	Case=Ine|Number=Plur	0	root	_	_
+8	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	7	obl	_	_
+9	kanssa	kanssa	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	mutta	mutta	CCONJ	C	_	14	cc	_	_
+12	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	_
+13	aina	aina	ADV	Adv	_	14	advmod	_	_
+14	sopinut	sopia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	conj	_	SpaceAfter=No
+15	...	...	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Lopuksi häpeää ja sopii!...
+1	Lopuksi	lopuksi	ADV	Adv	_	2	advmod	_	_
+2	häpeää	hävetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	sopii	sopia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	..	..	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Älä siis unohda, että asun Potshinskovin talossa, kolmannessa...
+1	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	siis	siis	ADV	Adv	_	3	advmod	_	_
+3	unohda	unohda	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	että	että	SCONJ	C	_	6	mark	_	_
+6	asun	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|Typo=Yes|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+7	Potshinskovin	Potshinskov	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	talossa	talko	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	kolmannessa	kolmas	ADJ	Num	Case=Ine|Number=Sing|NumType=Ord	8	appos	_	SpaceAfter=No
+11	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = -- Tällä tavoin ehkä lopuksi ottaisitte vastaan rosvoa, herra Rasumihin, saadaksenne vain ilon tehdä muita hyviä töitä!
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	3	det	_	_
+3	tavoin	tapa	NOUN	N	Case=Ins|Number=Plur	6	obl	_	_
+4	ehkä	ehkä	ADV	Adv	_	6	advmod	_	_
+5	lopuksi	lopuksi	ADV	Adv	_	6	advmod	_	_
+6	ottaisitte	ottaa	VERB	V	Mood=Cnd|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+7	vastaan	vastaan	ADV	Adv	_	8	advmod	_	_
+8	rosvoa	rosvo	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	6	punct	_	_
+10	herra	herra	NOUN	N	Case=Nom|Number=Sing	11	compound:nn	_	_
+11	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	6	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	11	punct	_	_
+13	saadaksenne	saadaksenne	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+14	vain	vain	ADV	Adv	_	15	advmod	_	_
+15	ilon	ilo	NOUN	N	Case=Gen|Number=Sing	16	nsubj	_	_
+16	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp:ds	_	_
+17	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	19	det	_	_
+18	hyviä	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	19	amod	_	_
+19	töitä	työ	NOUN	N	Case=Par|Number=Plur	16	obj	_	SpaceAfter=No
+20	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = -- Kuka?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Minä?
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = En, jos vain joku sellaista ajattelee, väännän hänen niskansa nurin!
+1	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	xcomp	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	jos	jos	SCONJ	C	_	7	mark	_	_
+4	vain	vain	ADV	Adv	_	6	advmod	_	_
+5	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	7	nsubj	_	_
+7	ajattelee	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	väännän	vääntää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	niskansa	niska	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	9	obj	_	_
+12	nurin	nuri	NOUN	N	Case=Gen|Number=Sing	9	obj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 13
+# text = Siis Potshinkovin talossa n:o 47, virkamies Babushkinin huoneustossa.
+1	Siis	siis	ADV	Adv	_	4	advmod	_	_
+2	Potshinkovin	Potshinkov	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	talossa	talto	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+4	n:o	n:a	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	47	47	NUM	Num	NumType=Card	7	nummod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	virkamies	virka#mies	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+8	Babushkinin	Babushkin	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	huoneustossa	huoneusto	NOUN	N	Case=Ine|Number=Sing	7	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

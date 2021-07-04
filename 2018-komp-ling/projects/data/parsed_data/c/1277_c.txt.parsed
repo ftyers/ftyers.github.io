@@ -1,0 +1,179 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Kirjoja ihan pohjaan asti?" hän kysyi.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kirjoja	kirja	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+3	ihan	ihan	ADV	Adv	_	4	advmod	_	_
+4	pohjaan	#pohja	NOUN	N	Case=Ill|Number=Sing	2	nmod	_	_
+5	asti	asti	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Martin nyökkäsi alkaen asetella kirjoja keittiön pöydälle, joka oli huoneessa pesupöydän asemesta.
+1	Martin	Martti	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	nyökkäsi	nyökkäsi	NOUN	N	Case=Nom|Number=Sing	4	obl	_	_
+3	alkaen	alkaen	ADP	Adp	AdpType=Post	2	case	_	_
+4	asetella	asetella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	kirjoja	kirja	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+6	keittiön	keittiö	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	pöydälle	pöytä	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj:cop	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	huoneessa	huone	NOUN	N	Case=Ine|Number=Sing	7	acl:relcl	_	_
+12	pesupöydän	pesu#pöytä	NOUN	N	Case=Gen|Number=Sing	11	nmod	_	_
+13	asemesta	asemesta	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = "Tuota!" huudahti Joe, sitten hän vaikeni ja selvitteli aivoissaan herääviä ajatuksia.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Tuota	tuota	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+5	huudahti	huudahtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Joe	Joe	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	sitten	sitten	ADV	Adv	_	10	advmod	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	vaikeni	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	selvitteli	selvitellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+13	aivoissaan	aivoi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	14	obl	_	_
+14	herääviä	heräää	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	15	acl	_	_
+15	ajatuksia	ajatus	NOUN	N	Case=Par|Number=Plur	12	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Vihdoin se tuli.
+1	Vihdoin	vihdoin	ADV	Adv	_	3	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = "Sanokaa, ettehän te ole kovin hassahtunut tyttöihin ... tuota, aivan auttamattomasti?" hän tiedusteli.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Sanokaa	Sanoka	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	ettehän	ette	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	5	det	_	_
+5	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+7	kovin	kovin	ADV	Adv	_	8	advmod	_	_
+8	hassahtunut	hassahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl:relcl	_	_
+9	tyttöihin	tyttö	NOUN	N	Case=Ill|Number=Plur	8	obl	_	_
+10	...	...	PUNCT	Punct	_	2	punct	_	_
+11	tuota	tuota	INTJ	Interj	_	2	discourse	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	2	punct	_	_
+13	aivan	aivan	ADV	Adv	_	14	advmod	_	_
+14	auttamattomasti	auttamattomasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+15	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	2	punct	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	tiedusteli	tiedustella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = "En", kuului vastaus.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	vastaus	vastaus	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = "Hakkailinhan minä niitä tukuttain, ennen kuin tutustuin kirjoihin.
+1	"	"	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+2	Hakkailinhan	Hakkailin	ADV	Adv	Clitic=Han	9	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+4	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	5	obj	_	_
+5	tukuttain	tukuttain	ADV	Adv	Derivation=Ttain	9	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	ennen	ennen	ADV	Adv	_	8	advmod	_	_
+8	kuin	kuin	SCONJ	C	_	9	mark	_	_
+9	tutustuin	tutustua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	kirjoihin	kirja	NOUN	N	Case=Ill|Number=Plur	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 8
+# text = Mutta sen jälkeen minulla ei ole ollut aikaa."
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	obl	_	_
+3	jälkeen	jälkeen	ADP	Adp	AdpType=Post	2	case	_	_
+4	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+7	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop:own	_	_
+8	aikaa	aika	NOUN	N	Case=Par|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = "Eikä siihen ole aikaa täälläkään.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	0	root	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	_
+5	aikaa	aika	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	_
+6	täälläkään	täällä	ADV	Adv	Clitic=Kaan	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Kaikki, mitä voitte täällä tehdä, on työ ja nukkuminen."
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	nsubj:cop	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	6	obj	_	_
+4	voitte	voida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	täällä	täällä	ADV	Adv	_	6	advmod	_	_
+6	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	työ	työ	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	nukkuminen	nukkuminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	9	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 11
+# text = Martin ajatteli viiden tunnin yölepoansa ja hymyili.
+1	Martin	Martin	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	viiden	viisi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	4	nummod	_	_
+4	tunnin	tunti	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	yölepoansa	yölepoa	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	hymyili	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Huone oli pesulaitoksen päällä, ja samassa rakennuksessa olivat koneet, jotka pumppusivat vettä, valmistivat sähköä ja toimittivat konetyöt pesulassa.
+1	Huone	huone	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	pesulaitoksen	pesulaitos	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+4	päällä	päällä	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	samassa	sama	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	8	det	_	_
+8	rakennuksessa	rakennus	NOUN	N	Case=Ine|Number=Sing	10	obl	_	_
+9	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	koneet	koä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	13	nsubj	_	_
+13	pumppusivat	pumppusa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	acl:relcl	_	_
+14	vettä	vesi	NOUN	N	Case=Par|Number=Sing	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	valmistivat	valmistaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+17	sähköä	sähkö	NOUN	N	Case=Par|Number=Sing	16	obj	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	toimittivat	toimittaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	conj	_	_
+20	konetyöt	kone#työ	NOUN	N	Case=Nom|Number=Plur	19	obj	_	_
+21	pesulassa	pesula	NOUN	N	Case=Ine|Number=Sing	19	obl	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

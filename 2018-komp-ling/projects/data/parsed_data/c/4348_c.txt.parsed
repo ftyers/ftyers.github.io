@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Nämä ovat", jatkoi hän, "ensi luokkaisen murtovarkaan tiirikoita, hänen timanttinen lasiveitsensä ja muita ammattiin kuuluvia nykyaikaisia keksinnöitä.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	6	nsubj	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	det	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+10	ensi	ensi	ADJ	A	_	11	amod	_	_
+11	luokkaisen	luokkainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Sing	13	nmod:poss	_	_
+12	murtovarkaan	murtovaras	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	13	amod	_	_
+13	tiirikoita	tiiriko	NOUN	N	Case=Par|Number=Plur	6	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	17	nmod:poss	_	_
+16	timanttinen	timanttinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	17	amod	_	_
+17	lasiveitsensä	lasiveitsi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	20	obj	_	_
+18	ja	ja	CCONJ	C	_	20	cc	_	_
+19	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	20	obj	_	_
+20	ammattiin	ammata	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	13	conj	_	_
+21	kuuluvia	kuulua	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	23	acl	_	_
+22	nykyaikaisia	nykyaikainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	23	amod	_	_
+23	keksinnöitä	keksinnö	NOUN	N	Case=Par|Number=Plur	20	obj	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	20	punct	_	_
+
+# sent_id = 2
+# text = Tässä on salalyhtyni.
+1	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	salalyhtyni	salalyhty	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	nsubj:cop	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Kaikki on valmista.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	valmista	valmis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Onko sinulla pehmeitä kenkiä?"
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	0	root	_	_
+3	pehmeitä	pehmeä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	kenkiä	kenkä	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = "Kyllä, kumipohjaiset tenniskengät."
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Kyllä	kyllä	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kumipohjaiset	kumipohjainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	tenniskengät	tennis#kenkä	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = "Hyvä on!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	on	olla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Entä naamari?"
+1	Entä	entä	ADV	Adv	_	2	advmod	_	_
+2	naamari	naamari	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "Voin tehdä sen mustasta silkistä."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	nmod:poss	_	_
+5	mustasta	musta	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	6	amod	_	_
+6	silkistä	silki	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = "Huomaan sinun ymmärtävän sellaisia seikkoja.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Huomaan	huomata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	ymmärtävän	ymmärtää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	2	xcomp:ds	_	_
+5	sellaisia	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	6	amod	_	_
+6	seikkoja	seikko	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Meidän täytyy syödä hieman kylmää ruokaa, ennen kuin lähdemme.
+1	Meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	hieman	hieman	ADV	Adv	_	5	advmod	_	_
+5	kylmää	kylmä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	amod	_	_
+6	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	ennen	ennen	ADV	Adv	_	9	advmod	_	_
+9	kuin	kuin	SCONJ	C	_	10	mark	_	_
+10	lähdemme	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Nyt on kello puoli kymmenen.
+1	Nyt	nyt	ADV	Adv	_	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kello	kello	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+4	puoli	puoli	NUM	Num	Case=Nom|Number=Sing	5	compound	_	_
+5	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

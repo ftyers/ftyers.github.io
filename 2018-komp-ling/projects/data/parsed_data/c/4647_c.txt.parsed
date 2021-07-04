@@ -1,0 +1,211 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Oi elämäni ehtoopäivä!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	elämäni	elämä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nmod:poss	_	_
+3	ehtoopäivä	ehtoo#päivä	NOUN	N	Case=Nom|Number=Sing	1	obj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Mitä minä en antaisi siitä, jotta minulla olisi yksi: tämä ajatusteni elävä istutus ja tämä korkeimman toiveeni huomenvalo!
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	antaisi	antaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+5	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jotta	jotta	SCONJ	C	_	8	mark	_	_
+8	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	5	ccomp	_	_
+9	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	cop:own	_	_
+10	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	20	nummod	_	SpaceAfter=No
+11	:	:	PUNCT	Punct	_	10	punct	_	_
+12	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	det	_	_
+13	ajatusteni	ajatupsi	NOUN	N	Case=Gen|Number=Plur|Number[psor]=Sing|Person[psor]=1	14	obl	_	_
+14	elävä	elää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	15	acl	_	_
+15	istutus	istutus	NOUN	N	Case=Nom|Number=Sing	20	compound:nn	_	_
+16	ja	ja	CCONJ	C	_	19	cc	_	_
+17	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	19	det	_	_
+18	korkeimman	korkea	ADJ	A	Case=Gen|Degree=Sup|Number=Sing	19	amod	_	_
+19	toiveeni	toiveeni	NOUN	N	Case=Nom|Number=Sing	15	conj	_	_
+20	huomenvalo	huomenvalo	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	SpaceAfter=No
+21	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Tovereita etsi kerran luova ja toiveensa lapsia: ja katso, tapahtui niin, ettei hän voinut löytää niitä, muutoin kuin että hän itse loi ne ensin.
+1	Tovereita	Tovere	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	_
+2	etsi	etsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kerran	kerran	ADV	Adv	_	2	advmod	_	_
+4	luova	luova	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	toiveensa	toive	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	conj	_	_
+7	lapsia	lapsi	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	2	punct	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	niin	niin	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	18	punct	_	_
+15	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	18	mark	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+17	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	18	aux	_	_
+18	löytää	löytää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	ccomp	_	_
+19	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	18	obj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	21	punct	_	_
+21	muutoin	muutoin	ADV	Adv	_	2	advmod	_	_
+22	kuin	kuin	SCONJ	C	_	26	mark	_	_
+23	että	että	SCONJ	C	_	26	mark	_	_
+24	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+25	itse	itse	PRON	Pron	Case=Nom|Number=Sing|Reflex=Yes	26	det	_	_
+26	loi	laa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	advcl	_	_
+27	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	26	obj	_	_
+28	ensin	ensin	ADV	Adv	_	26	advmod	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Näin minä olen keskellä työtäni, menossa lasteni luo ja tulossa heidän luotansa: lastensa vuoksi Zarathustran täytyy tehdä itsensä täydelliseksi.
+1	Näin	näin	ADV	Adv	_	5	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	keskellä	keskellä	ADP	Adp	AdpType=Prep	5	case	_	_
+5	työtäni	työ	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	13	nmod:poss	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	menossa	meno	NOUN	N	Case=Ine|Number=Sing	5	conj	_	_
+8	lasteni	lapsi	NOUN	N	Case=Gen|Number=Plur|Number[psor]=Sing|Person[psor]=1	7	nmod	_	_
+9	luo	luo	ADP	Adp	AdpType=Post	8	case	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	tulossa	tulko	NOUN	N	Case=Ine|Number=Sing	5	conj	_	_
+12	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	13	nmod:poss	_	_
+13	luotansa	luota	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	13	punct	_	_
+15	lastensa	lapsi	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	19	obl	_	_
+16	vuoksi	vuoksi	ADP	Adp	AdpType=Post	15	case	_	_
+17	Zarathustran	Zarathustra	PROPN	N	Case=Gen|Number=Sing	19	obj	_	_
+18	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	parataxis	_	_
+20	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	21	obj	_	_
+21	täydelliseksi	täydellinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Llinen|Number=Sing	19	xcomp	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 5
+# text = Sillä perinpohjin rakastetaan vain lastaan ja työtään; ja missä suurta rakkautta omaan itseensä on, siellä se on tunnusmerkkinä raskaudesta: niin minä havaitsin olevan.
+1	Sillä	sillä	SCONJ	C	_	3	mark	_	_
+2	perinpohjin	perinpohjin	ADV	Adv	_	3	advmod	_	_
+3	rakastetaan	rakasttaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	21	advcl	_	_
+4	vain	vain	ADV	Adv	_	5	advmod	_	_
+5	lastaan	lapsi	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	3	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	työtään	työ	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	3	conj	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	3	punct	_	_
+9	ja	ja	CCONJ	C	_	14	cc	_	_
+10	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	14	det	_	_
+11	suurta	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Sing	12	amod	_	_
+12	rakkautta	rakkaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	14	nsubj:cop	_	_
+13	omaan	oma	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	14	amod	_	_
+14	itseensä	itse	PRON	Pron	Case=Ill|Number=Sing|Person[psor]=3|Reflex=Yes	18	det	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	14	punct	_	_
+17	siellä	siellä	ADV	Adv	_	14	advmod	_	_
+18	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	21	nsubj:cop	_	_
+19	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
+20	tunnusmerkkinä	tunnusmerkkä	ADJ	A	Case=Ess|Degree=Pos|Number=Plur	21	amod	_	_
+21	raskaudesta	raskaus	NOUN	N	Case=Ela|Derivation=Vs|Number=Sing	0	root	_	SpaceAfter=No
+22	:	:	PUNCT	Punct	_	21	punct	_	_
+23	niin	niin	ADV	Adv	_	25	advmod	_	_
+24	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_
+25	havaitsin	havaitsiä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	21	parataxis	_	_
+26	olevan	olla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	25	xcomp	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	21	punct	_	_
+
+# sent_id = 6
+# text = Vielä viheriöivät minun lapseni ensimäisessä keväässään, seisoen lähellä toisiansa ja yhdessä tuulien ravistamina, minun yrttitarhani ja parhaimman maani puut.
+1	Vielä	vielä	ADV	Adv	_	2	advmod	_	_
+2	viheriöivät	viheriöä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	lapseni	lapsi	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obj	_	_
+5	ensimäisessä	ensimäinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	keväässään	kevää	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	seisoen	seisoki	NOUN	N	Case=Gen|Number=Sing	10	nmod	_	_
+9	lähellä	lähellä	ADP	Adp	AdpType=Post	8	case	_	_
+10	toisiansa	toisia	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	conj	_	_
+11	ja	ja	CCONJ	C	_	14	cc	_	_
+12	yhdessä	yhdessä	ADV	Adv	_	14	advmod	_	_
+13	tuulien	tuula	NOUN	N	Case=Gen|Number=Plur	14	nmod:poss	_	_
+14	ravistamina	ravistami	NOUN	N	Case=Ess|Number=Sing	2	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	21	punct	_	_
+16	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	17	nmod:poss	_	_
+17	yrttitarhani	yrttitarha	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	21	nmod:poss	_	_
+18	ja	ja	CCONJ	C	_	20	cc	_	_
+19	parhaimman	parhaimman	ADV	Adv	_	20	advmod	_	_
+20	maani	maani	NOUN	N	Case=Nom|Number=Sing	17	conj	_	_
+21	puut	puu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	14	appos	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Ja totisesti!
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	totisesti	totisesti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Missä sellaisia puita yhdessä seisoo, siellä ovat autuaat saaret!
+1	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	3	det	_	_
+2	sellaisia	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	3	amod	_	_
+3	puita	puu	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+4	yhdessä	yhdessä	ADV	Adv	_	10	advmod	_	_
+5	seisoo	seisoo	INTJ	Interj	_	4	fixed	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	siellä	siellä	ADV	Adv	_	10	advmod	_	_
+8	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	autuaat	autuaa	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	10	amod	_	_
+10	saaret	saari	NOUN	N	Case=Nom|Number=Plur	11	nsubj:cop	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 9
+# text = Mutta kerran minä tahdon nostaa ne ylös ja asettaa jokaisen erikseen yksin: jotta se oppisi yksinäisyyttä ja uhmaa ja varovaisuutta.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	kerran	kerran	ADV	Adv	_	4	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	tahdon	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	nostaa	nostaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	obj	_	_
+7	ylös	ylös	ADV	Adv	_	4	advmod	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	asettaa	asettaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+10	jokaisen	jokainen	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	9	obj	_	_
+11	erikseen	erikseen	ADV	Adv	_	9	advmod	_	_
+12	yksin	yksin	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+13	:	:	PUNCT	Punct	_	4	punct	_	_
+14	jotta	jotta	SCONJ	C	_	16	mark	_	_
+15	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	16	nsubj	_	_
+16	oppisi	oppa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+17	yksinäisyyttä	yksinäisyys	NOUN	N	Case=Par|Number=Sing	16	obj	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	uhmaa	uhma	NOUN	N	Case=Par|Number=Sing	17	conj	_	_
+20	ja	ja	CCONJ	C	_	21	cc	_	_
+21	varovaisuutta	varovaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	16	conj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Rosoisena ja koukistuneena ja taipuvalla kovuudella on se sitten seisova meren rannalla, voittamattoman elämän elävänä majakkana.
+1	Rosoisena	Rosoinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	6	obl	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	koukistuneena	koukistua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	conj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	taipuvalla	taipuva	NOUN	N	Case=Ade|Number=Sing	1	conj	_	_
+6	kovuudella	kovuus	NOUN	N	Case=Ade|Derivation=Vs|Number=Sing	10	obl	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	obj	_	_
+9	sitten	sitten	ADV	Adv	_	10	advmod	_	_
+10	seisova	seisoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	0	root	_	_
+11	meren	meri	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	rannalla	ranta	NOUN	N	Case=Ade|Number=Sing	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	17	punct	_	_
+14	voittamattoman	voittamaton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	15	amod	_	_
+15	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	17	nmod:poss	_	_
+16	elävänä	elää	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	17	acl	_	_
+17	majakkana	majakka	NOUN	N	Case=Ess|Number=Sing	12	conj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	10	punct	_	SpacesAfter=\s\n
+

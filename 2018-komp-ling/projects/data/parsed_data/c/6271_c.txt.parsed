@@ -1,0 +1,155 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pyörätie ja jalkakäytävä on yhdistetty.
+1	Pyörätie	pyörä#tie	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	jalkakäytävä	jalkakäytävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	conj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux:pass	_	_
+5	yhdistetty	yhdistää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Pyöräilijä ajaa väylän oikealla puolella.
+1	Pyöräilijä	pyöräilijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	ajaa	ajaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	väylän	väylä	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	oikealla	oikea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	5	amod	_	_
+5	puolella	puoli	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän ohittaa samalla puolella kävelevän jalankulkijan ja muut pyöräilijät vasemmalta puolelta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ohittaa	ohittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	samalla	sama	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	4	det	_	_
+4	puolella	puoli	NOUN	N	Case=Ade|Number=Sing	5	obl	_	_
+5	kävelevän	käveleä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	6	acl	_	_
+6	jalankulkijan	jalankulkija	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	10	nmod:poss	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	9	det	_	_
+9	pyöräilijät	pyöräilijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	6	conj	_	_
+10	vasemmalta	vasen	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	11	amod	_	_
+11	puolelta	puoli	NOUN	N	Case=Abl|Number=Sing	2	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kevyen liikenteen väylillä syntyy joskus vaaratilanteita risteyksissä ja tunneleissa.
+1	Kevyen	kevyt	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	2	amod	_	_
+2	liikenteen	liikene	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	väylillä	väyli	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+4	syntyy	syntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	joskus	joskus	ADV	Adv	_	4	advmod	_	_
+6	vaaratilanteita	vaaratilante	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+7	risteyksissä	risteys	NOUN	N	Case=Ine|Number=Plur	4	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	tunneleissa	tunnele	NOUN	N	Case=Ine|Number=Plur	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Ennen niitä on syytä hidastaa nopeutta varsinkin, jos ne ovat mäen alla.
+1	Ennen	ennen	ADP	Adp	AdpType=Prep	2	case	_	_
+2	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	4	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	syytä	syy	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+5	hidastaa	hidastaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	_
+6	nopeutta	nopeus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	5	obj	_	_
+7	varsinkin	varsinkin	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	jos	jos	SCONJ	C	_	12	mark	_	_
+10	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	12	nsubj:cop	_	_
+11	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	mäen	mäki	NOUN	N	Case=Gen|Number=Sing	4	advcl	_	_
+13	alla	alla	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Väylien risteyksessä pyöräilijän on väistettävä oikealta tulevia pyöräilijöitä.
+1	Väylien	Väyli	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	risteyksessä	risteys	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+3	pyöräilijän	pyöräilijä	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	väistettävä	väisttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+6	oikealta	oikea	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	5	xcomp	_	_
+7	tulevia	tuleva	ADJ	A	Case=Par|Degree=Pos|Number=Plur	8	amod	_	_
+8	pyöräilijöitä	pyöräilijä	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	5	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Pyöräilijän on tarvittaessa varoitettava muita soittokellolla.
+1	Pyöräilijän	Pyöräilijä	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	4	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	tarvittaessa	tarvita	VERB	V	Case=Ine|InfForm=2|VerbForm=Inf|Voice=Pass	4	advcl	_	_
+4	varoitettava	varoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+5	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	6	det	_	_
+6	soittokellolla	soittokello	NOUN	N	Case=Ade|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Kypärä
+1	Kypärä	kypärä	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 9
+# text = Käytä pyöräilykypärää.
+1	Käytä	käyttää	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pyöräilykypärää	pyöräilykypärä	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Se suojaa päätä vammoilta, jos kaadut.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	suojaa	suojata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	päätä	pää	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	vammoilta	vamma	NOUN	N	Case=Abl|Number=Plur	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jos	jos	SCONJ	C	_	7	mark	_	_
+7	kaadut	kaatu	NOUN	N	Case=Nom|Number=Plur	2	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Kypärän on oltava sopivan kokoinen.
+1	Kypärän	Kypärän	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	oltava	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	5	cop	_	_
+4	sopivan	sopiva	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	5	amod	_	_
+5	kokoinen	kokoinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Se ei saa kiristää, eikä se saa olla liian löysä.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	kiristää	kiristää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cc	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	_
+9	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	cop	_	_
+10	liian	liian	ADV	Adv	_	11	advmod	_	_
+11	löysä	löysä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Sopiva kypärä on mukavan tuntuinen päässä.
+1	Sopiva	sopiva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	kypärä	kypärä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	mukavan	mukava	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	5	amod	_	_
+5	tuntuinen	tuntuinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+6	päässä	pää	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 14
+# text = Kokeile kypärää jo kaupassa, ennen kuin ostat sen.
+1	Kokeile	kokeilla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kypärää	kypärä	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
+3	jo	jo	ADV	Adv	_	1	advmod	_	_
+4	kaupassa	kaupa	NOUN	N	Case=Ine|Number=Sing	1	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	ennen	ennen	ADV	Adv	_	7	advmod	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	ostat	otstaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	1	advcl	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

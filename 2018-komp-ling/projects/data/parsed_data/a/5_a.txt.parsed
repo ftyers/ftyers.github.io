@@ -1,0 +1,141 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Isot tulipalot jatkuvat Kaliforniassa, USA:ssa.
+1	Isot	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	tulipalot	tulipalo	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	jatkuvat	jatkua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Kaliforniassa	Kalifornia	PROPN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	USA:ssa	USA	PROPN	N	Abbr=Yes|Case=Ine|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Yli 70 ihmistä on kuollut tulipaloissa, ja yli 1000 ihmistä on kadonnut.
+1	Yli	yli	ADV	Adv	_	2	advmod	_	_
+2	70	70	NUM	Num	NumType=Card	3	nummod	_	_
+3	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kuollut	kuolla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	tulipaloissa	tulipalo	NOUN	N	Case=Ine|Number=Plur	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	ja	ja	CCONJ	C	_	13	cc	_	_
+9	yli	yli	ADV	Adv	_	10	advmod	_	_
+10	1000	1000	NUM	Num	NumType=Card	11	nummod	_	_
+11	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	13	nsubj	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	kadonnut	kadota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Suurin osa kadonneista on Paradisen kaupungista ja sen ympäristöstä.
+1	Suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	2	amod	_	_
+2	osa	osa	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+3	kadonneista	kadonnut	NOUN	N	Case=Ela|Number=Plur	2	nmod	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	Paradisen	Paradinen	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	kaupungista	kaupunki	NOUN	N	Case=Ela|Number=Sing	0	root	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	nmod:poss	_	_
+9	ympäristöstä	ympäristö	NOUN	N	Case=Ela|Number=Sing	6	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Tuli on polttanut kaupungin kokonaan.
+1	Tuli	tuli	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	polttanut	polttada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kaupungin	kaupung	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+5	kokonaan	kokonaan	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Monissa Kalifornian kaupungeissa ilma on täynnä savua.
+1	Monissa	moni	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	3	det	_	_
+2	Kalifornian	Kalifornia	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kaupungeissa	kaupunki	NOUN	N	Case=Ine|Number=Plur	6	obl	_	_
+4	ilma	ilma	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	täynnä	täynnä	ADV	Adv	_	0	root	_	_
+7	savua	savu	NOUN	N	Case=Par|Number=Sing	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Siksi monet koulut ovat kiinni.
+1	Siksi	siksi	ADV	Adv	_	5	advmod	_	_
+2	monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	3	det	_	_
+3	koulut	koulu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	5	nsubj:cop	_	_
+4	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	kiinni	kiinni	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Presidentti Donald Trump käy lauantaina tapaamassa paloalueen asukkaita ja palomiehiä.
+1	Presidentti	presidentti	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Donald	Donald	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Trump	Trump	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	lauantaina	lauantai	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+6	tapaamassa	tavata	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+7	paloalueen	paloalue	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	asukkaita	asukas	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	palomiehiä	palo#mies	NOUN	N	Case=Par|Number=Plur	8	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Helsingin uusi kauppakeskus Redi ei ole saanut niin paljon asiakkaita kuin odotti.
+1	Helsingin	Helsinki	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	uusi	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	kauppakeskus	kauppa#keskus	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	Redi	Redi	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	aux	_	_
+7	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	niin	niin	ADV	Adv	_	9	advmod	_	_
+9	paljon	paljon	ADV	Adv	_	10	advmod	_	_
+10	asiakkaita	asiakas	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+11	kuin	kuin	SCONJ	C	_	12	mark	_	_
+12	odotti	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = Redi avattiin Helsingin Kalasatamassa syyskuussa.
+1	Redi	Redi	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+2	avattiin	avata	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	Helsingin	Helsing	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	Kalasatamassa	Kalasatama	PROPN	N	Case=Ine|Number=Sing	2	obl	_	_
+5	syyskuussa	syyskuu	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Redissä on melkein 200 kauppaa.
+1	Redissä	Redä	NOUN	N	Case=Ine|Number=Plur	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	melkein	melkein	ADV	Adv	_	4	advmod	_	_
+4	200	200	NUM	Num	NumType=Card	5	nummod	_	_
+5	kauppaa	kauppa	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Monilla kaupoilla on ongelmia, koska asiakkaita on vähän.
+1	Monilla	moni	PRON	Pron	Case=Ade|Number=Plur|PronType=Ind	2	det	_	_
+2	kaupoilla	kaupa	NOUN	N	Case=Ade|Number=Plur	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	ongelmia	ongelma	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	koska	koska	SCONJ	C	_	9	mark	_	_
+7	asiakkaita	asiakas	NOUN	N	Case=Par|Number=Plur	9	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	vähän	vähän	ADV	Adv	_	2	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = 5 firmaa on jo lopettanut.
+1	5	5	NUM	Num	NumType=Card	2	nummod	_	_
+2	firmaa	firma	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	lopettanut	lopettaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

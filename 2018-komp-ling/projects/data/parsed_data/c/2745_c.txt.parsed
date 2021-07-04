@@ -1,0 +1,79 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Voinko saada teetä? kysyi Svidrigailov.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Voinko	Vola	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	teetä	tee	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+6	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Kyllä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Mitä teillä muuta on?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	nsubj:cop	_	_
+3	teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	0	root	_	_
+4	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = -- Vasikanpaistia, viinaa ja kaikellaisia kylmiä ruokia.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Vasikanpaistia	Vasikanpaisti	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	viinaa	viina	NOUN	N	Case=Par|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	kaikellaisia	kaikellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	7	amod	_	_
+7	kylmiä	kylmä	NOUN	N	Case=Par|Number=Plur	2	conj	_	_
+8	ruokia	ruoka	NOUN	N	Case=Par|Number=Plur	2	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Antakaa minulle vasikanpaistia ja teetä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Antakaa	antaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+4	vasikanpaistia	vasikanpaisti	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	teetä	tee	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Ei mitään muuta? kysyi palvelija hieman kummastuneena.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+4	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+6	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	palvelija	palvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj	_	_
+8	hieman	hieman	ADV	Adv	_	9	advmod	_	_
+9	kummastuneena	kummastua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = -- Ei, ei.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Mies poistui pettynein toivein.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	poistui	poistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pettynein	pettyni	NOUN	N	Case=Ins|Number=Plur	2	obl	_	_
+4	toivein	toive	NOUN	N	Case=Ins|Number=Plur	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

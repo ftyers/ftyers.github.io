@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Erni menee kaupan puolelle.
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaupan	#kauppa	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	puolelle	puoli	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kaisu seuraa häntä.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	seuraa	seuraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän katsoo
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	katsoo	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+
+# sent_id = 4
+# text = Ernin pieniä käsiä ja ajattelee Ernin ääntä, joka kuulostaa kiltiltä.
+1	Ernin	Ern	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	pieniä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	amod	_	_
+3	käsiä	käsi	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	ajattelee	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	Ernin	Ern	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	ääntä	ääni	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	kuulostaa	kuulostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+11	kiltiltä	kiltä	NOUN	N	Case=Abl|Number=Plur	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = — Taidan olla vähän hullu, jos jään tänne, Kaisu ajattelee.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Taidan	T#aita	NOUN	N	Case=Gen|Number=Sing	5	nsubj:cop	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	vähän	vähän	ADV	Adv	_	5	advmod	_	_
+5	hullu	hullu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jos	jos	SCONJ	C	_	8	mark	_	_
+8	jään	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+9	tänne	tänne	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	5	punct	_	_
+11	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	ajattelee	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Erni katsoo Kaisua arasti ja sanoo:
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	katsoo	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kaisua	Kaisu	NOUN	N	Case=Par|Derivation=U|Number=Sing	2	obj	_	_
+4	arasti	arasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = — Jos jäät tänne, älä sano minua kauppiaaksi vaan Erniksi.
+1	—	—	PUNCT	Punct	_	7	punct	_	_
+2	Jos	jos	SCONJ	C	_	7	mark	_	_
+3	jäät	jää	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+4	tänne	tänne	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	sano	sanoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	7	obj	_	_
+9	kauppiaaksi	kauppiaa	NOUN	N	Case=Tra|Number=Sing	7	xcomp:ds	_	_
+10	vaan	vaan	CCONJ	C	_	11	cc	_	_
+11	Erniksi	Erni	NOUN	N	Case=Tra|Number=Sing	7	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = — Hyvä on.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	on	olla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Olkoon.
+1	Olkoon	Olko	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Minä jään, Kaisu sanoo.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	jään	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Erni katsoo häntä niin kiitollisena, että
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	katsoo	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	kiitollisena	kiitollinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Llinen|Number=Sing	2	ccomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	että	että	SCONJ	C	_	5	mark	_	_
+
+# sent_id = 12
+# text = Kaisu ei osaa sanoa enää mitään.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	osaa	osata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	enää	enää	ADV	Adv	_	4	advmod	_	_
+6	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Kaisu aloittaa työt kaupassa.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	aloittaa	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	työt	#työ	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	kaupassa	kaupa	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

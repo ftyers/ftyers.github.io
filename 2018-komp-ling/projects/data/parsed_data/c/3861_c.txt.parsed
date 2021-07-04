@@ -1,0 +1,109 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kapteeni Tushin!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kapteeni	kape	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=1	0	root	_	_
+3	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	2	appos	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kapteeni!
+1	Kapteeni	kape	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Tushin vilkasi pelästyneenä sivulleen.
+1	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	vilkasi	vilata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pelästyneenä	pelästyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
+4	sivulleen	sivu	NOUN	N	Case=All|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hän huomasi esikunta-upseerin, joka Grundissa oli karkoittanut hänet muonakauppiaan majasta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	esikunta-upseerin	esikunta-upseeri	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+6	Grundissa	Grund	PROPN	N	Case=Ine|Number=Sing	8	obl	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	karkoittanut	karkoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl:relcl	_	_
+9	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	8	obj	_	_
+10	muonakauppiaan	muonakauppa	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	11	obj	_	_
+11	majasta	maja	NOUN	N	Case=Ela|Number=Sing	8	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hengästyneenä huusi esikunta-upseeri.
+1	Hengästyneenä	Hengästyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	advcl	_	_
+2	huusi	huusi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	esikunta-upseeri	esikunta-upseeri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = -- Mitä ajattelette, oletteko menettänyt järkenne?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	ajattelette	ajattella	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	oletteko	olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	menettänyt	menettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	acl	_	_
+7	järkenne	järkenne	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Kahdesti on teille annettu peräytymiskäsky, mutta te yhä...
+1	Kahdesti	kahdesti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+3	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	4	obl	_	_
+4	annettu	annaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	peräytymiskäsky	peräytya#käsky	NOUN	N	Case=Nom|Derivation=U|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	9	nsubj:cop	_	_
+9	yhä	yhä	ADV	Adv	_	4	conj	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = "Minkätähden he nyt minua?"
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minkätähden	Minkätähti	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	0	root	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = ... ajatteli Tushin, katsellen kauhuissaan päällikköään.
+1	...	...	PUNCT	Punct	_	2	punct	_	_
+2	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Tushin	Tush	PROPN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+6	kauhuissaan	kauhuissaan	ADV	Adv	_	7	advmod	_	_
+7	päällikköään	päällikköä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Minä ... tuota...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+4	tuota	tuota	INTJ	Interj	_	2	discourse	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = -- alkoi hän sopertaa, pitäen kättään ohimolla.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	sopertaa	soperta	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	pitäen	pitää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+7	kättään	kättä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	_
+8	ohimolla	ohimo	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

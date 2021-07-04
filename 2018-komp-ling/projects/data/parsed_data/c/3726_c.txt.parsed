@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tosiaankin viisi vuotta antaisin elämästäni!
+1	Tosiaankin	Tosiaankin	ADV	Adv	_	2	advmod	_	_
+2	viisi	viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	4	nmod	_	_
+4	antaisin	antaa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+5	elämästäni	elämä	NOUN	N	Case=Ela|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obl	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- Tietenkin on heidänkin ikävä, -- sanoi nauraen eräs muita rohkeampi upseeri.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Tietenkin	Tietenkin	ADV	Adv	_	5	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	heidänkin	heidän	ADV	Adv	Clitic=Kin	5	advmod	_	_
+5	ikävä	ikävä	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	--	--	PUNCT	Punct	_	5	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	nauraen	nauraa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	8	advcl	_	_
+10	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	13	det	_	_
+11	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	13	det	_	_
+12	rohkeampi	rohkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	13	amod	_	_
+13	upseeri	upseeri	NOUN	N	Case=Nom|Number=Sing	9	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = Upseerien näin haastellessa osoitti seurue-upseeri jotain kenraalille; tämä katsoi kaukoputkella.
+1	Upseerien	upseeri	NOUN	N	Case=Gen|Number=Plur	3	nmod:poss	_	_
+2	näin	näin	ADV	Adv	_	3	advmod	_	_
+3	haastellessa	haastell	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+4	osoitti	osoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	seurue-upseeri	seurue-upseeri	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+6	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	det	_	_
+7	kenraalille	kenraali	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	4	punct	_	_
+9	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj	_	_
+10	katsoi	katsaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+11	kaukoputkella	kaukoputk	NOUN	N	Case=Ade|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Totta tosiaan, totta tosiaan, -- sanoi kenraali kiukkuisena, laskien kaukoputkea silmiltään ja kohautellen harteitaan, -- alkavat pyyhkäistä tykeillään ylimenopaikkaa.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Totta	totta	ADV	Adv	_	3	advmod	_	_
+3	tosiaan	tosiaan	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	totta	totta	ADV	Adv	_	6	advmod	_	_
+6	tosiaan	tosiaan	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	--	--	PUNCT	Punct	_	6	punct	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	kenraali	kenraali	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+11	kiukkuisena	kiukkuinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	9	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	laskien	laski	NOUN	N	Case=Gen|Number=Plur	15	nmod:poss	_	_
+14	kaukoputkea	kaukoputkea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	15	amod	_	_
+15	silmiltään	silmä	NOUN	N	Case=Abl|Number=Plur|Person[psor]=3	9	obl	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	kohautellen	kohautellla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	conj	_	_
+18	harteitaan	harteita	NOUN	N	Case=Ill|Number=Sing	17	obl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	9	punct	_	_
+20	--	--	PUNCT	Punct	_	21	punct	_	_
+21	alkavat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	parataxis	_	_
+22	pyyhkäistä	pyyhkäistä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	21	xcomp	_	_
+23	tykeillään	tykei	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	22	obl	_	_
+24	ylimenopaikkaa	ylimenopaikka	NOUN	N	Case=Par|Number=Sing	22	obj	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 5
+# text = Ja mitä he siellä nahjustelevat?
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	siellä	siellä	ADV	Adv	_	5	advmod	_	_
+5	nahjustelevat	nahjustella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Paljaalla silmällä saattoi joen toiselta rannalta eroittaa vihollisen tykkeineen.
+1	Paljaalla	paljaka	NOUN	N	Case=Ade|Number=Sing	7	obl	_	_
+2	silmällä	silmä	NOUN	N	Case=Ade|Number=Sing	1	nmod	_	_
+3	saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+4	joen	joki	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	toiselta	toinen	ADJ	Num	Case=Abl|Derivation=Inen|Number=Sing|NumType=Ord	6	amod	_	_
+6	rannalta	ranna	NOUN	N	Case=Abl|Number=Sing	1	obl	_	_
+7	eroittaa	eroittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	vihollisen	vihollinen	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	tykkeineen	tykke	NOUN	N	Case=Com|Person[psor]=3	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Näkyi maidonvalkea savupilvi, ja pian kuului kaukainen tykin jymäys:
+1	Näkyi	näkyä	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	maidonvalkea	maidonvalkea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	savupilvi	savupilvi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	pian	pian	ADV	Adv	_	7	advmod	_	_
+7	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	kaukainen	kaukainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	10	amod	_	_
+9	tykin	#tykki	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	jymäys	jymäys	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+11	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Selvästi huomasi, miten venäläiset alkoivat kiirehtiä ylimenopaikalla.
+1	Selvästi	selvästi	ADV	Adv	Derivation=Sti	2	advmod	_	_
+2	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	miten	miten	ADV	Adv	_	6	advmod	_	_
+5	venäläiset	venäläinen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	6	nsubj	_	_
+6	alkoivat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	kiirehtiä	kiirehtiä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	ylimenopaikalla	ylimenopaika	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Nesvitski puhkasi syvään, nousi seisaalleen ja astui hymyhuulin kenraalin luo.
+1	Nesvitski	Nesvitski	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	puhkasi	puhata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	syvään	syvään	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	seisaalleen	seisaa	NOUN	N	Case=All|Number=Sing|Person[psor]=3	5	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	hymyhuulin	hymyhuuli	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+10	kenraalin	kenraali	NOUN	N	Case=Gen|Number=Sing	8	obl	_	_
+11	luo	luo	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Ettekö halua haukata hieman, teidän ylhäisyytenne?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ettekö	Edä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	_
+3	halua	haluta	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	haukata	haukata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	hieman	hieman	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	nmod:poss	_	_
+8	ylhäisyytenne	ylhäisyytenne	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = -- hän sanoi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

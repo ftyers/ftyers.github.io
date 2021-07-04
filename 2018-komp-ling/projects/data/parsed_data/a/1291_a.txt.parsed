@@ -1,0 +1,77 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 23.10.
+1	23.10	23.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Suomalaisten velat.
+1	Suomalaisten	suomalainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	2	nmod:poss	_	_
+2	velat	velka	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Häirintä ulkoministeriössä.
+1	Häirintä	Häirä	ADJ	A	Case=Par|Degree=Sup|Number=Sing	2	amod	_	_
+2	ulkoministeriössä	ulkoministeriö	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kansainväliset adoptiot Suomessa.
+1	Kansainväliset	kansain#välinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	adoptiot	adoptio	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+3	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	2	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Sää. 23.10.
+1	Sää	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	3	nsubj	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	3	punct	_	_
+3	23.10	23.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Monet työntekijät ovat lakossa maanantaina ja tiistaina.
+1	Monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	det	_	_
+2	työntekijät	työn#tekijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	5	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	lakossa	lakko	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+5	maanantaina	maanantai	NOUN	N	Case=Ess|Number=Sing	0	root	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	tiistaina	tiistai	NOUN	N	Case=Ess|Number=Sing	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Vartijat ovat lakossa loppuviikolla.
+1	Vartijat	Vartija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	4	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	lakossa	lakko	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+4	loppuviikolla	loppuviiko	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Afganistanissa järjestettiin parlamenttivaalit.
+1	Afganistanissa	Afganistan	PROPN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	järjestettiin	järjestää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	parlamenttivaalit	parlamenttivaalit	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Tutkijat selvittävät, mikä tekee suomalaiset onnellisiksi.
+1	Tutkijat	tutkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	selvittävät	selvittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	nsubj	_	_
+5	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+6	suomalaiset	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	7	amod	_	_
+7	onnellisiksi	onnellinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Sää on syksyistä.
+1	Sää	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	syksyistä	syksyi	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

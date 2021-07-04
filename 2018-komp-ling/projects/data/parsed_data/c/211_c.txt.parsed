@@ -1,0 +1,139 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Minä olin toivonut, että pelastaisitte minut tästä jutusta.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	toivonut	toivoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	että	että	SCONJ	C	_	7	mark	_	_
+7	pelastaisitte	pelastaä	VERB	V	Mood=Cnd|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+8	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	7	obj	_	_
+9	tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	10	det	_	_
+10	jutusta	juttu	NOUN	N	Case=Ela|Number=Sing	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Ei ole juuri hauskaa olla yksin täällä kotona enemmän kuin nummellakaan."
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	_
+3	juuri	juuri	ADV	Adv	_	4	advmod	_	_
+4	hauskaa	hauska	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+5	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	cop	_	_
+6	yksin	yksin	ADV	Adv	_	9	advmod	_	_
+7	täällä	täällä	ADV	Adv	_	9	advmod	_	_
+8	kotona	kotona	ADV	Adv	_	7	fixed	_	_
+9	enemmän	enemmän	ADV	Adv	_	4	advmod	_	_
+10	kuin	kuin	SCONJ	C	_	11	mark	_	_
+11	nummellakaan	nummell	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	9	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = "Hyvä ystävä, teidän täytyy ehdottomasti luottaa minuun ja tehdä aivan niin kuin sanon.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	ystävä	ystävä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	nsubj	_	_
+6	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	ehdottomasti	ehdottomasti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+8	luottaa	luottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	acl:relcl	_	_
+9	minuun	minä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	11	obl	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	conj	_	_
+12	aivan	aivan	ADV	Adv	_	13	advmod	_	_
+13	niin	niin	ADV	Adv	_	11	advmod	_	_
+14	kuin	kuin	SCONJ	C	_	15	mark	_	_
+15	sanon	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Voitte ilmoittaa Stapletoneille, että kernaasti olisimme tulleet mukananne, elleivät tärkeät asiat olisi pakottaneet meitä matkustamaan Lontooseen.
+1	Voitte	voida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	ilmoittaa	ilmoittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	Stapletoneille	Stapletone	PROPN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	kernaasti	kernaasti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+7	olisimme	olla	AUX	V	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	tulleet	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+9	mukananne	mukananne	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	elleivät	jos#ei	VERB	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	mark	_	_
+12	tärkeät	tärkeä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	13	amod	_	_
+13	asiat	#asia	NOUN	N	Case=Nom|Number=Plur	15	nsubj	_	_
+14	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	pakottaneet	pakottaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+16	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	17	nsubj	_	_
+17	matkustamaan	matkustaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp:ds	_	_
+18	Lontooseen	Lontoo	PROPN	N	Case=Ill|Number=Sing	17	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Pian toivomme saavamme palata Devonshireen.
+1	Pian	pian	ADV	Adv	_	2	advmod	_	_
+2	toivomme	toivoa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	saavamme	saavtaa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	xcomp	_	_
+4	palata	palata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	Devonshireen	Devonshiri	PROPN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Lupaatteko sanoa sen heille?"
+1	Lupaatteko	Lupaaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obj	_	_
+4	heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	2	obl	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = "Minä vakuutan, etten muuta voi."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	vakuutan	vakuutaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	etten	että#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	mark	_	_
+6	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	obj	_	_
+7	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Sir Henryn kasvoista huomasin hänen olevan kovin loukkaantuneen siitä, että me, kuten hän luuli, lähdimme pakosalle.
+1	Sir	Sir	PROPN	N	Case=Nom|Number=Sing	3	nmod:poss	_	_
+2	Henryn	Henry	PROPN	N	Case=Gen|Number=Sing	1	flat:name	_	_
+3	kasvoista	kasvo	NOUN	N	Case=Ela|Number=Plur	4	nmod	_	_
+4	huomasin	huomata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+6	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	aux	_	_
+7	kovin	kovin	ADV	Adv	_	8	advmod	_	_
+8	loukkaantuneen	loukkaantua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	ccomp	_	_
+9	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	18	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	16	punct	_	_
+11	että	että	SCONJ	C	_	16	mark	_	_
+12	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	16	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	kuten	kuten	SCONJ	C	_	16	mark	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	luuli	luulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	ccomp	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	16	punct	_	_
+18	lähdimme	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	8	acl	_	_
+19	pakosalle	pakosa	NOUN	N	Case=All|Number=Sing	18	obl	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = "Koska tahdotte lähteä?" kysyi hän kylmästi.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Koska	koska	SCONJ	C	_	3	mark	_	_
+3	tahdotte	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	3	punct	_	_
+7	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+9	kylmästi	kylmästi	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

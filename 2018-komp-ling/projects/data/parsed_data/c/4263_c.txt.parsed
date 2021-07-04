@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Tahdoin vain koetella teitä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tahdoin	Tahdaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	koetella	koetella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Malmi antaa oikean äänen koko ajan.
+1	Malmi	Malmi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	oikean	oikea	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	äänen	ääni	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+5	koko	koko	ADJ	A	_	6	amod	_	_
+6	ajan	aika	NOUN	N	Case=Gen|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = No niin.
+1	No	no	INTJ	Interj	_	0	root	_	_
+2	niin	niin	ADV	Adv	_	1	fixed	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Otan päälleni suuren edesvastuun, mutta olen antanut Hopkinsille oivan vihjauksen ja ellei hän voi päästä etemmäksi, en minäkään enempää voi hänen hyväksensä tehdä.
+1	Otan	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	päälleni	pää	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	obl	_	_
+3	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	edesvastuun	edes#vastuu	NOUN	N	Case=Gen|Number=Sing	1	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mutta	mutta	CCONJ	C	_	8	cc	_	_
+7	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	antanut	antada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	conj	_	_
+9	Hopkinsille	Hopkins	PROPN	N	Case=All|Number=Sing	10	obl	_	_
+10	oivan	oia	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	11	acl	_	_
+11	vihjauksen	vihjaus	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+12	ja	ja	CCONJ	C	_	16	cc	_	_
+13	ellei	jos#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	cc	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+15	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+17	etemmäksi	etemmäksi	ADV	Adv	_	16	advmod	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	25	punct	_	_
+19	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	25	aux	_	_
+20	minäkään	minä	PRON	Pron	Case=Nom|Clitic=Kaan|Number=Sing|Person=1|PronType=Prs	25	nsubj	_	_
+21	enempää	enempää	ADV	Adv	_	25	advmod	_	_
+22	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	aux	_	_
+23	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	24	nmod:poss	_	_
+24	hyväksensä	hyväs	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	25	obj	_	_
+25	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Katsokaa, kapteeni Droker.
+1	Katsokaa	katsoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	kapteeni	kapteeni	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	Droker	Droker	PROPN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Täten, täyttääkseni laillisen muodon, julistan teidät vangituksi; sinä Watson, olet englantilainen valamiehistö, enkä milloinkaan ole tavannut miestä, joka siihen paremmin sopisi.
+1	Täten	täten	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	täyttääkseni	täyttää	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	7	advcl	_	_
+4	laillisen	laillinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	5	amod	_	_
+5	muodon	#muoto	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	julistan	julistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	teidät	sinä	PRON	Pron	Case=Acc|Number=Plur|Person=2|PronType=Prs	7	obj	_	_
+9	vangituksi	vangittu	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	xcomp	_	SpaceAfter=No
+10	;	;	PUNCT	Punct	_	7	punct	_	_
+11	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	16	nsubj:cop	_	_
+12	Watson	Watson	PROPN	N	Case=Nom|Number=Sing	11	appos	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	11	punct	_	_
+14	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+15	englantilainen	englanti#lainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	16	amod	_	_
+16	valamiehistö	valamiehistö	NOUN	N	Case=Nom|Number=Sing	7	parataxis	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	21	punct	_	_
+18	enkä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	21	cc	_	_
+19	milloinkaan	milloinkaan	ADV	Adv	_	21	advmod	_	_
+20	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	21	aux	_	_
+21	tavannut	tavana	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	conj	_	_
+22	miestä	mies	NOUN	N	Case=Par|Number=Sing	21	obj	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	27	punct	_	_
+24	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	27	nsubj	_	_
+25	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	27	obl	_	_
+26	paremmin	hyvin	ADV	Adv	Degree=Cmp	27	advmod	_	_
+27	sopisi	sopa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	22	acl:relcl	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Minä olen tuomari.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj:cop	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	tuomari	tuomari	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Siis, valamiehistö, olette kuulleet todistukset, onko vanki syyllinen vaiko syytön?"
+1	Siis	siis	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	valamiehistö	valamiehistö	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kuulleet	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	todistukset	todistus	NOUN	N	Case=Nom|Number=Plur	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	vanki	vanki	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+11	syyllinen	syyllinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	7	ccomp	_	_
+12	vaiko	vai	CCONJ	C	Clitic=Ko	13	cc	_	_
+13	syytön	syyttö	NOUN	N	Case=Gen|Number=Sing	11	conj	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = "Syytön, herra tuomari", vastasin minä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Syytön	Syyttö	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	herra	herra	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+5	tuomari	tuomari	NOUN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	vastasin	vastata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 10
+# text = "Jumalan ääni on kansan ääni.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	kansan	kansa	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = Teidät on vapautettu, kapteeni Droker.
+1	Teidät	sinä	PRON	Pron	Case=Acc|Number=Plur|Person=2|PronType=Prs	3	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	vapautettu	vapauttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	kapteeni	kapteeni	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	Droker	Droker	PROPN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

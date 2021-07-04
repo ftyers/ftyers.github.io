@@ -1,0 +1,164 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Niin, Kaluginhan sen tietää -- virkkoi ruhtinas Galjtsin everstille.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	Kaluginhan	Kalugi	NOUN	N	Case=Gen|Clitic=Han|Number=Sing	6	nsubj	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	obj	_	_
+6	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	--	--	PUNCT	Punct	_	6	punct	_	_
+8	virkkoi	virkkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+9	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	Galjtsin	Galjtsi	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+11	everstille	eversti	NOUN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = -- Kuulehan, V. kertoi minulle tänään -- että sinä olit ollut aika urho...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kuulehan	Kuuleha	PROPN	N	Case=Gen|Number=Sing	5	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	V.	v.	PROPN	N	Abbr=Yes|Case=Nom|Number=Sing	2	flat:name	_	_
+5	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+7	tänään	tänään	ADV	Adv	_	5	advmod	_	_
+8	--	--	PUNCT	Punct	_	14	punct	_	_
+9	että	että	SCONJ	C	_	14	mark	_	_
+10	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	14	nsubj:cop	_	_
+11	olit	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	_
+12	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	cop	_	_
+13	aika	#aika	NOUN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	_
+14	urho	urho	NOUN	N	Case=Nom|Number=Sing	5	ccomp	_	SpaceAfter=No
+15	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = -- Mutta ne tappiot, kauheat tappiot, -- sanoi eversti -- _minun rykmentistäni_ kaatui _neljäsataa miestä_.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+3	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	4	det	_	_
+4	tappiot	tappio	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	kauheat	kauhea	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+7	tappiot	tappio	NOUN	N	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	--	--	PUNCT	Punct	_	10	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	eversti	eversti	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+12	--	--	PUNCT	Punct	_	15	punct	_	_
+13	_minun	_minu	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	rykmentistäni_	rykmentistäni_	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+15	kaatui	kaatua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+16	_neljäsataa	_neljä#sata	NUM	Num	Case=Par|Number=Sing|NumType=Card	17	nummod	_	_
+17	miestä_.	miestä_.	ADJ	Num	NumType=Ord	15	obl	_	_
+
+# sent_id = 4
+# text = Ihme on, _että minä pääsin sieltä hengissä_.
+1	Ihme	ihme	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	_että	_e	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+6	pääsin	päästä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	sieltä	sieltä	ADV	Adv	_	6	advmod	_	_
+8	hengissä_.	hengissä_.	ADJ	Num	NumType=Ord	6	xcomp	_	_
+
+# sent_id = 5
+# text = Samassa näkivät herrat Mihailovin, joka pää siteessä tuli toisessa päässä bulevardia heitä vastaan.
+1	Samassa	samassa	ADV	Adv	_	2	advmod	_	_
+2	näkivät	nähdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	herrat	herra	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	Mihailovin	Mihailov	PROPN	N	Case=Gen|Number=Sing	9	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	det	_	_
+7	pää	pä	NOUN	N	Case=Par|Number=Sing	9	obl	_	_
+8	siteessä	sitei	NOUN	N	Case=Ine|Number=Sing	7	nmod	_	_
+9	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	toisessa	toinen	PRON	Pron	Case=Ine|Number=Sing|PronType=Rcp	11	det	_	_
+11	päässä	pää	NOUN	N	Case=Ine|Number=Sing	9	obl	_	_
+12	bulevardia	bulevardi	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+13	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	9	obl	_	_
+14	vastaan	vastaan	ADP	Adp	AdpType=Post	13	case	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Mitä, oletteko haavottunut, kapteeni? kysyi Kalugin.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	7	det	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	oletteko	olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl	_	_
+5	haavottunut	haavottua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	kapteeni	kapteeni	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	_
+9	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	Kalugin	Kalugi	PROPN	N	Case=Gen|Number=Sing	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 7
+# text = -- Olen hiukan, kivi sattui päähäni, -- vastasi Mihailov.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	hiukan	hiukan	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	kivi	#kivi	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	sattui	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	päähäni	pää	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	--	--	PUNCT	Punct	_	6	punct	_	_
+10	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+11	Mihailov	Mihailov	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- _Est-ce
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	_Est-ce	_Est-ce	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 9
+# text = que le pavillon est baissé deja?_[8] kysyi ruhtinas Galjtsin vilkaisten Mihailovin lakkiin, puhumatta kellekään.
+1	que	que	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	le	le	PROPN	N	Case=Nom|Number=Sing	4	nmod:poss	_	_
+3	pavillon	pavilto	NOUN	N	Case=Gen|Number=Sing	2	flat:name	_	_
+4	est	e	NOUN	N	Case=Ela|Number=Sing|Style=Coll	5	nmod	_	_
+5	baissé	baissé	NOUN	Foreign	Case=Nom|Number=Sing	8	compound:nn	_	_
+6	deja	di	NOUN	N	Case=Par|Number=Plur	5	nmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+8	_[8	_[8	SYM	Symb	_	10	nsubj	_	SpaceAfter=No
+9	]	]	PUNCT	Punct	_	8	punct	_	_
+10	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	10	obj	_	_
+12	Galjtsin	Galjtsi	PROPN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	vilkaisten	vilkainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	14	amod	_	_
+14	Mihailovin	Mihailov	PROPN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	lakkiin	lakki	NOUN	N	Case=Ill|Number=Sing	10	obl	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	puhumatta	puhua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	advcl	_	_
+18	kellekään	kelle	ADV	Adv	Clitic=Kaan	17	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = -- _Non, pas encore_[9] -- vastasi Mihailov, jota halutti näyttää että hän sekä ymmärsi että puhui ranskaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	_Non	_Non	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	pas	pas	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	encore_[9	encore_[9	NUM	Num	NumType=Card	4	nummod	_	SpaceAfter=No
+6	]	]	PUNCT	Punct	_	2	punct	_	_
+7	--	--	PUNCT	Punct	_	2	punct	_	_
+8	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	Mihailov	Mihailov	PROPN	N	Case=Nom|Number=Sing	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	12	obj	_	_
+12	halutti	haluttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	näyttää	näyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	_
+14	että	että	SCONJ	C	_	17	mark	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+16	sekä	sekä	CCONJ	C	_	17	cc	_	_
+17	ymmärsi	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	ccomp	_	_
+18	että	että	SCONJ	C	_	19	mark	_	_
+19	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	ccomp	_	_
+20	ranskaa	ranska	NOUN	N	Case=Par|Number=Sing	19	obj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

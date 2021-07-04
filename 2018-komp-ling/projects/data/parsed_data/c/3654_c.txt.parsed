@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Hyvästit ovat heitetyt ... mene!
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Hyvästit	Hyvästi	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	heitetyt	heittää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
+5	...	...	PUNCT	Punct	_	6	punct	_	_
+6	mene	mennä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = -- sanoi vanhus äkkiä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vanhus	vanhus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	äkkiä	äkkiä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Mene!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mene	mennä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- huusi hän kiivaasti ja korkealla äänellä, avatessaan työhuoneen ovea.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	kiivaasti	kiivaasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	korkealla	korkea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	7	amod	_	_
+7	äänellä	ääni	NOUN	N	Case=Ade|Number=Sing	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	avatessaan	avata	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	2	advcl	_	_
+10	työhuoneen	työhuone	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	ovea	ovi	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Mitä on tapahtunut, mitä?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tapahtunut	tapahtua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = -- kysyivät ruhtinatar Maria ja pikku ruhtinatar nähtyään ruhtinas Andrein ja vanhuksen, joka ovea pidellen valkeassa yönutussa, tekotukatta ja lasit nenällä, huusi kiivaalla, korkealla äänellä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyivät	kysyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ruhtinatar	ruhtinatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	4	compound:nn	_	_
+4	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	8	obj	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	pikku	pikku	ADJ	A	_	7	amod	_	_
+7	ruhtinatar	ruhtinatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	4	conj	_	_
+8	nähtyään	nählä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	2	advcl	_	_
+9	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	Andrein	Andrein	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	vanhuksen	vanhus	NOUN	N	Case=Gen|Number=Sing	10	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	20	punct	_	_
+14	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	20	nsubj:cop	_	_
+15	ovea	#ovi	NOUN	N	Case=Par|Number=Sing	16	obj	_	_
+16	pidellen	pidellä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	19	advcl	_	_
+17	valkeassa	valkea	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	18	amod	_	_
+18	yönutussa	yönutu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	16	obl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	14	punct	_	_
+20	tekotukatta	tekotukatta	ADP	Adp	AdpType=Prep	10	acl:relcl	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	lasit	lata	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	20	conj	_	_
+23	nenällä	nenä	NOUN	N	Case=Ade|Number=Sing	22	obl	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	26	punct	_	_
+25	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	26	nsubj:cop	_	_
+26	kiivaalla	kiivaa	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	23	conj	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	29	punct	_	_
+28	korkealla	korkea	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	29	amod	_	_
+29	äänellä	ääni	NOUN	N	Case=Ade|Number=Sing	23	conj	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Ruhtinas Andrei huoahti eikä vastannut mitään.
+1	Ruhtinas	Ruhtinas	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Andrei	Andrei	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	huoahti	huoahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	cc	_	_
+5	vastannut	vastata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+6	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- No, -- hän sanoi, käännyttyään vaimoonsa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	No	no	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	2	punct	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	käännyttyään	käännytä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	6	advcl	_	_
+9	vaimoonsa	vaimo	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Ja tässä 'no':ssa oli sellainen kylmä ivan väre, aivan kuin hän olisi sanonut: "tehkää häntä nyt tepposianne".
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	4	det	_	_
+3	'	'	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	no':ssa	no'	NOUN	N	Case=Ine|Number=Sing	15	obl	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+6	sellainen	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	9	amod	_	_
+7	kylmä	kylmä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	_
+8	ivan	iva	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	väre	väre	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	aivan	aivan	ADV	Adv	_	12	advmod	_	_
+12	kuin	kuin	SCONJ	C	_	15	mark	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+14	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	sanonut	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+16	:	:	PUNCT	Punct	_	15	punct	_	_
+17	"	"	PUNCT	Punct	_	18	punct	_	SpaceAfter=No
+18	tehkää	tehä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	15	parataxis	_	_
+19	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	18	obj	_	_
+20	nyt	nyt	ADV	Adv	_	18	advmod	_	_
+21	tepposianne	tepposianne	NOUN	N	Case=Nom|Number=Sing	18	appos	_	SpaceAfter=No
+22	"	"	PUNCT	Punct	_	21	punct	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	15	punct	_	_
+
+# sent_id = 10
+# text = -- _André, dejá_![48] -- sanoi pikku ruhtinatar, kalveten ja katsellen kauhistuneena miestään.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	_André	_André	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	dejá_!	dejá_!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	[48	[48	NUM	Num	NumType=Card	2	appos	_	SpaceAfter=No
+6	]	]	PUNCT	Punct	_	2	punct	_	_
+7	--	--	PUNCT	Punct	_	2	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	pikku	pikku	ADJ	A	_	10	amod	_	_
+10	ruhtinatar	ruhtinatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	8	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	kalveten	kalveta	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	8	advcl	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	15	conj	_	_
+15	kauhistuneena	kauhistua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	advcl	_	_
+16	miestään	mies	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	15	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

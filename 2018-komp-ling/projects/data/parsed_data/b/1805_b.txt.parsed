@@ -1,0 +1,177 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Älä soita Kertulle suutas.
+1	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	soita	soittaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kertulle	Kertu	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	suutas	suutas	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	2	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Älä puhu Kertulle rumasti.
+1	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	puhu	puhua	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kertulle	Kertu	NOUN	N	Case=All|Derivation=U|Number=Sing	2	obl	_	_
+4	rumasti	rumasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Soittaa suuta, käyttää suuta soittimena jolla on ikävä ääni.
+1	Soittaa	soittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	suuta	suu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	käyttää	käyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+5	suuta	suu	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	soittimena	soittin	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	7	xcomp	_	_
+7	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	4	obl	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+9	ikävä	ikävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	amod	_	_
+10	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Neljästoista luku, jossa nuori Jesse saa kuulla toisenlaisesta teini-iästä
+1	Neljästoista	Neljästoinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	luku	luku	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	7	obl	_	_
+5	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	Jesse	Jesse	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+8	kuulla	kuulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+9	toisenlaisesta	toisenlainen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Lainen|Number=Sing	10	amod	_	_
+10	teini-iästä	teini-iä	NOUN	N	Case=Ela|Number=Sing	8	obl	_	_
+
+# sent_id = 5
+# text = Heti kun
+1	Heti	heti	ADV	Adv	_	2	advmod	_	_
+2	kun	kun	SCONJ	C	_	0	root	_	_
+
+# sent_id = 6
+# text = Henkka oli alkanut puhua yhteisestä tulevaisuudesta Suomessa, Kerttu oli tehnyt kaikkensa oppiakseen suomen kielen.
+1	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	alkanut	alkaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	yhteisestä	yhteinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	tulevaisuudesta	tulevaisuus	NOUN	N	Case=Ela|Derivation=Inen,Vs|Number=Sing	4	obl	_	_
+7	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	6	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+12	kaikkensa	kaikki	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|PronType=Ind	11	obj	_	_
+13	oppiakseen	oppia	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	11	advcl	_	_
+14	suomen	suomi	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	kielen	kieli	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Ensi päivästä Suomessa lähtien hän oli vaatinut, että Henkkakin puhuisi hänelle suomea.
+1	Ensi	ensi	ADJ	A	_	2	amod	_	_
+2	päivästä	päivä	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	7	obl	_	_
+4	lähtien	lähtien	ADP	Adp	AdpType=Post	3	case	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	vaatinut	vaatia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	että	että	SCONJ	C	_	11	mark	_	_
+10	Henkkakin	Henkka	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	11	nsubj	_	_
+11	puhuisi	puhua	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	ccomp	_	_
+12	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	11	obl	_	_
+13	suomea	suomi	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Se oli Kertun mielestä hyväksi paitsi sopeutumisen kannalta, myös siksi, ettei Henkka juuri osannut espanjaa.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	Kertun	Kerttu	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	mielestä	mieli	NOUN	N	Case=Ela|Number=Sing	5	obl	_	_
+5	hyväksi	hyvä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	11	nmod	_	_
+6	paitsi	paitsi	ADP	Adp	AdpType=Prep	8	case	_	_
+7	sopeutumisen	sopeutuminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	8	nmod:poss	_	_
+8	kannalta	kanta	NOUN	N	Case=Abl|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	myös	myös	ADV	Adv	_	11	advmod	_	_
+11	siksi	siksi	ADV	Adv	_	18	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	16	punct	_	_
+13	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	mark	_	_
+14	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+15	juuri	juuri	ADV	Adv	_	16	advmod	_	_
+16	osannut	osana	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	ccomp	_	_
+17	espanjaa	espanja	NOUN	N	Case=Par|Number=Sing	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 9
+# text = Kertusta oli hieman hölmöä puhua Henkan kanssa englantia, joka oli kummallekin vieras kieli.
+1	Kertusta	Kertus	NOUN	N	Case=Par|Number=Sing	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	hieman	hieman	ADV	Adv	_	4	advmod	_	_
+4	hölmöä	hölmö	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+5	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	acl	_	_
+6	Henkan	Henka	PROPN	N	Case=Gen|Number=Sing	5	obl	_	_
+7	kanssa	kanssa	ADP	Adp	AdpType=Post	6	case	_	_
+8	englantia	englanti	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj:cop	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	_
+12	kummallekin	kumma	NOUN	N	Case=All|Clitic=Kin|Number=Sing	14	obl	_	_
+13	vieras	vieras	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	_
+14	kieli	kieli	NOUN	N	Case=Nom|Number=Sing	8	acl:relcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Sitä paitsi kielet kiinnostivat Kerttua.
+1	Sitä	sitä	ADV	Adv	_	4	advmod	_	_
+2	paitsi	paitsi	ADV	Adv	_	1	fixed	_	_
+3	kielet	#kieli	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+4	kiinnostivat	kiinnostaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Kerttua	kerttua	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Itse asiassa Kerttua kiinnosti lähes kaikki maan ja taivaan välillä.
+1	Itse	itse	ADV	Adv	_	4	advmod	_	_
+2	asiassa	asiassa	ADV	Adv	_	1	fixed	_	_
+3	Kerttua	kerttua	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	kiinnosti	kiinnostää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	lähes	lähes	ADV	Adv	_	6	advmod	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+7	maan	maa	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	taivaan	taivas	NOUN	N	Case=Gen|Number=Sing	7	conj	_	_
+10	välillä	välillä	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Hän olisi halunnut opiskella enemmän.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	opiskella	opiskella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	enemmän	enemmän	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Siihen ei kuitenkaan ollut varaa.
+1	Siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	kuitenkaan	kuitenkaan	ADV	Adv	_	1	advmod	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	cop	_	_
+5	varaa	vara	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 14
+# text = Isoveljien työttömyyden johdosta hänenkin oli mentävä töihin.
+1	Isoveljien	Isovelja	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	2	nmod:poss	_	_
+2	työttömyyden	työttömyys	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+3	johdosta	johdosta	ADP	Adp	AdpType=Post	2	case	_	_
+4	hänenkin	häne	NOUN	N	Case=Gen|Clitic=Kin|Number=Sing	6	obj	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+6	mentävä	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+7	töihin	työ	NOUN	N	Case=Ill|Number=Plur	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

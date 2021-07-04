@@ -1,0 +1,187 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Tämä oli suurin hetki minun elämässäni.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	5	amod	_	_
+5	hetki	hetki	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	nmod:poss	_	_
+7	elämässäni	elämä	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Nähkääs, minä en ole tottunut tällaiseen", änkytti poika.
+1	Nähkääs	Nähkääs	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+4	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	tottunut	tottua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	tällaiseen	tällainen	NOUN	N	Case=Ill|Derivation=Lainen|Number=Sing	6	obl	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	6	punct	_	_
+10	änkytti	änkyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+11	poika	poika	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Hän katsahti avuttomana ympärilleen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	katsahti	katsahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	avuttomana	avuton	ADJ	A	Case=Ess|Degree=Pos|Derivation=Ton|Number=Sing	2	obl	_	_
+4	ympärilleen	ympärille	ADV	Adv	Person[psor]=3	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Tällaisia ihmisiä ja tällainen talo.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Tällaisia	Tällainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	3	amod	_	_
+3	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	tällainen	tällainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	6	amod	_	_
+6	talo	talo	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Kaikki se on uutta minulle ja minä pidän siitä."
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+5	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	pidän	pitää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = "Toivon, että tulette uudestaan", sanoi tyttö, kun vieras lausui jäähyväisiä hänen veljilleen.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Toivon	toivoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	tulette	tulla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+6	uudestaan	uudestaan	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	2	punct	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	kun	kun	SCONJ	C	_	14	mark	_	_
+13	vieras	vieras	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+14	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	_
+15	jäähyväisiä	jäähyväinen	NOUN	N	Case=Par|Number=Plur	14	obj	_	_
+16	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	17	nmod:poss	_	_
+17	veljilleen	velji	NOUN	N	Case=All|Number=Plur|Person[psor]=3	14	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hän pisti hatun päähänsä, työntyi vitkastellen ulos ovesta ja oli kadonnut.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	pisti	pistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hatun	hattu	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	päähänsä	pää	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	työntyi	työntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	vitkastellen	vitkastellen	ADV	Adv	_	6	advmod	_	_
+8	ulos	ulos	ADV	Adv	_	9	advmod	_	_
+9	ovesta	ovi	NOUN	N	Case=Ela|Number=Sing	6	obl	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	kadonnut	kadota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "No, mitä ajattelet hänestä?" kysyi Arthur.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	No	no	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	nsubj	_	_
+5	ajattelet	ajatellä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	5	obl	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	5	punct	_	_
+9	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+10	Arthur	Arthur	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = "Hän on sangen mielenkiintoinen, toi tullessaan raikkaan tuulahduksen", vastasi sisar.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	sangen	sangen	ADV	Adv	_	5	advmod	_	_
+5	mielenkiintoinen	mielenkiintoinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	toi	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem|Style=Coll	8	obj	_	_
+8	tullessaan	tulla	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	5	advcl	_	_
+9	raikkaan	raikas	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	amod	_	_
+10	tuulahduksen	tuulahdus	NOUN	N	Case=Gen|Number=Sing	8	obl	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	5	punct	_	_
+13	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+14	sisar	sisar	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = "Kuinka vanha hän on?"
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = "Kaksikymmentä, melkein kaksikymmentä yksi.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kaksikymmentä	kaksi#kymmenen	NUM	Num	Case=Par|Number=Sing|NumType=Card	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	melkein	melkein	ADV	Adv	_	5	advmod	_	_
+5	kaksikymmentä	kaksi#kymmenen	NUM	Num	Case=Par|Number=Sing|NumType=Card	6	compound	_	_
+6	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Minä kysyin häneltä tänä iltana.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	kysyin	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häneltä	hän	PRON	Pron	Case=Abl|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+4	tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	5	det	_	_
+5	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = En luullut, että hän olisi niin nuori."
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	luullut	luulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj:cop	_	_
+6	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	niin	niin	ADV	Adv	_	8	advmod	_	_
+8	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Ja minä olen kolme vuotta vanhempi, ajatteli sisar antaessaan veljelleen hyvänyönsuukon.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	6	nmod	_	_
+6	vanhempi	vanhka	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+9	sisar	sisar	NOUN	N	Case=Nom|Number=Sing	8	obj	_	_
+10	antaessaan	antaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	8	advcl	_	_
+11	veljelleen	velj	NOUN	N	Case=All|Number=Sing|Person[psor]=3	10	obl	_	_
+12	hyvänyönsuukon	hyvänyönsuukko	NOUN	N	Case=Gen|Number=Sing	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

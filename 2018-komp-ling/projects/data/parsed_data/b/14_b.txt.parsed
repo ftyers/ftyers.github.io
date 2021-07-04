@@ -1,0 +1,109 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Monet työntekijät ovat olleet lakossa maanantaina.
+1	Monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	det	_	_
+2	työntekijät	työn#tekijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	5	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+5	lakossa	lakko	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+6	maanantaina	maanantai	NOUN	N	Case=Ess|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Lakko jatkuu vielä tiistaina.
+1	Lakko	lakko	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	jatkuu	jatkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vielä	vielä	ADV	Adv	_	2	advmod	_	_
+4	tiistaina	tiistai	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Lakko vaikuttaa monien elämään.
+1	Lakko	lakko	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vaikuttaa	vaikuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	monien	moni	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	4	nsubj	_	_
+4	elämään	elää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Esimerkiksi kaikissa päiväkodeissa ja kouluissa ei tehdä ruokaa.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	3	advmod	_	_
+2	kaikissa	kaikki	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	3	det	_	_
+3	päiväkodeissa	päiväkode	NOUN	N	Case=Ine|Number=Plur	7	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	kouluissa	koulu	NOUN	N	Case=Ine|Number=Plur	3	conj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	tehdä	tehtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Siksi lapset ovat syöneet omia eväitä.
+1	Siksi	siksi	ADV	Adv	_	4	advmod	_	_
+2	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	syöneet	syöa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	eväitä	eväs	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Yhteensä yli 10 000 työntekijää on lopettanut työt maanantain ja tiistain ajaksi.
+1	Yhteensä	yhteensä	ADV	Adv	_	3	advmod	_	_
+2	yli	yli	ADV	Adv	_	3	advmod	_	_
+3	10 000	10 000	NUM	Num	NumType=Card	4	nummod	_	_
+4	työntekijää	työ#tekijä	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	6	nsubj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	lopettanut	lopettaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	työt	#työ	NOUN	N	Case=Nom|Number=Plur	6	obj	_	_
+8	maanantain	maanantain	ADV	Adv	Derivation=Ttain	6	advmod	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	tiistain	tiistain	ADV	Adv	Derivation=Ttain	11	advmod	_	_
+11	ajaksi	aika	NOUN	N	Case=Tra|Number=Sing	8	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = He ovat suuttuneet, koska hallitus suunnittelee uutta irtisanomislakia.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	suuttuneet	suuttua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	koska	koska	SCONJ	C	_	7	mark	_	_
+6	hallitus	hallitus	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	suunnittelee	suunnitella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	_
+8	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	amod	_	_
+9	irtisanomislakia	irtisanomis#laki	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Jos laki tulee voimaan, pienten firmojen on helpompi irtisanoa työntekijöitä.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	laki	#laki	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	advcl	_	_
+4	voimaan	voimaan	ADV	Adv	_	3	compound:prt	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	pienten	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	7	amod	_	_
+7	firmojen	firmo	NOUN	N	Case=Gen|Number=Plur	9	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	helpompi	helppo	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+10	irtisanoa	irti#sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp:ds	_	_
+11	työntekijöitä	työn#tekijä	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 9
+# text = Vartijat aloittavat lakon keskiviikkona.
+1	Vartijat	Vartija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	aloittavat	aloittaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lakon	lakko	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	keskiviikkona	keskiviikko	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Lakko kestää perjantaihin asti.
+1	Lakko	lakko	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kestää	kestää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	perjantaihin	perjanta	NOUN	N	Case=Ill|Number=Plur	2	obl	_	_
+4	asti	asti	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

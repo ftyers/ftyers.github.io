@@ -1,0 +1,146 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lääkkeiden hintakilpailun avaamisen lisäksi apteekkien perustamista helpotetaan.
+1	Lääkkeiden	lääke	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	hintakilpailun	hintakilpailu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	3	nmod:gobj	_	_
+3	avaamisen	avaaminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	7	obl	_	_
+4	lisäksi	lisäksi	ADP	Adp	AdpType=Post	3	case	_	_
+5	apteekkien	apteekki	NOUN	N	Case=Gen|Number=Plur	6	nmod:gobj	_	_
+6	perustamista	perustaminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	7	obj	_	_
+7	helpotetaan	helpottaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = Tutkimustuloksia odotetaan kolmen kuukauden kuluessa.
+1	Tutkimustuloksia	tutkimus#tulos	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+2	odotetaan	odotaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	kolmen	kolme	NUM	Num	Case=Gen|Number=Sing|NumType=Card	4	nummod	_	_
+4	kuukauden	kuu#kausi	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	kuluessa	kulua	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Influenssarokotusten pistäminen apteekeissa saa Apteekkariliiton kyselyssä vahvaa kannatusta muun muassa puoluevaltuustojen jäseniltä.
+1	Influenssarokotusten	Influenssarokotus	NOUN	N	Case=Gen|Number=Plur	2	nmod:gobj	_	_
+2	pistäminen	pistäminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	4	nsubj	_	_
+3	apteekeissa	apteeke	NOUN	N	Case=Ine|Number=Plur	2	nmod	_	_
+4	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Apteekkariliiton	Apteekkariliitto	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	kyselyssä	kysely	NOUN	N	Case=Ine|Derivation=U|Number=Sing	4	obl	_	_
+7	vahvaa	vahva	ADJ	A	Case=Par|Degree=Pos|Number=Sing	8	amod	_	_
+8	kannatusta	kannatus	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+9	muun	muun	ADV	Adv	_	12	advmod	_	_
+10	muassa	muassa	ADV	Adv	_	9	fixed	_	_
+11	puoluevaltuustojen	puoluevaltuusto	NOUN	N	Case=Gen|Number=Plur	12	nmod:poss	_	_
+12	jäseniltä	jäsen	NOUN	N	Case=Abl|Number=Plur	4	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Tulevaisuudessa lääkäri voi määrätä heti potilaalle sopivan lääkehoidon perimätiedon avulla.
+1	Tulevaisuudessa	tulevaisuus	NOUN	N	Case=Ine|Derivation=Vs|Number=Sing	4	obl	_	_
+2	lääkäri	lääkäri	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	määrätä	määrätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	heti	heti	ADV	Adv	_	4	advmod	_	_
+6	potilaalle	potilas	NOUN	N	Case=All|Number=Sing	4	obl	_	_
+7	sopivan	sopia	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	9	acl	_	_
+8	lääkehoidon	lääke#hoito	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	perimätiedon	perimä#tieto	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	4	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = ACE:n estäjät ovat yleisimpiä verenpainelääkkeitä ympäri maailmaa.
+1	ACE:n	ACE	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	estäjät	estäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	5	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	yleisimpiä	yleinen	ADJ	A	Case=Par|Degree=Sup|Derivation=Inen|Number=Plur	5	amod	_	_
+5	verenpainelääkkeitä	verenpainelääkke	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+6	ympäri	ympäri	ADP	Adp	AdpType=Prep	7	case	_	_
+7	maailmaa	maailma	NOUN	N	Case=Par|Number=Sing	5	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = THL:n ylilääkäri muistuttaa, että influenssa on vakava tauti, joka voi aiheuttaa vaarallisia jälkitauteja.
+1	THL:n	THL	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ylilääkäri	ylilääkäri	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	muistuttaa	muistuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	9	punct	_	_
+5	että	että	SCONJ	C	_	9	mark	_	_
+6	influenssa	influenssa	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	vakava	vakava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	_
+9	tauti	tauti	NOUN	N	Case=Nom|Number=Sing	3	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj	_	_
+12	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	aiheuttaa	aiheuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	acl:relcl	_	_
+14	vaarallisia	vaarallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	15	amod	_	_
+15	jälkitauteja	jälkitauti	NOUN	N	Case=Par|Number=Plur	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Rintasyövästä alkanut tauti on nyt maksassa, keuhkoissa, selkänikamissa, imusolmukkeissa ja aivoissa, eikä hoitoja enää ole tiedossa.
+1	Rintasyövästä	Rintasyövä	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+2	alkanut	alkada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl	_	_
+3	tauti	tauti	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	nyt	nyt	ADV	Adv	_	6	advmod	_	_
+6	maksassa	maksa	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	keuhkoissa	keuhko	NOUN	N	Case=Ine|Number=Plur	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	selkänikamissa	selkänikam	NOUN	N	Case=Ine|Number=Plur	6	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	imusolmukkeissa	imusolmukke	NOUN	N	Case=Ine|Number=Plur	6	conj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	aivoissa	aivoa	NOUN	N	Case=Ine|Number=Plur	6	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	20	cc	_	_
+17	hoitoja	hoito	NOUN	N	Case=Par|Number=Plur	20	nsubj:cop	_	_
+18	enää	enää	ADV	Adv	_	20	advmod	_	_
+19	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	20	cop	_	_
+20	tiedossa	tieto	NOUN	N	Case=Ine|Number=Sing	6	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Fluorokinoloniantibioottien käyttöä rajoitetaan Euroopassa vakavien sivuvaikutusten vuoksi.
+1	Fluorokinoloniantibioottien	Fluorokinoloniantibiootti	NOUN	N	Case=Gen|Number=Plur	2	nmod:gobj	_	_
+2	käyttöä	käyttö	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	rajoitetaan	rajoittaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	Euroopassa	Eurooppa	PROPN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	vakavien	vakava	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	_
+6	sivuvaikutusten	sivuvaikutus	NOUN	N	Case=Gen|Number=Plur	3	obl	_	_
+7	vuoksi	vuoksi	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Lääke voi aiheuttaa pitkäaikaisia jännevaurioita, lihaskipuja ja sekavuutta.
+1	Lääke	lääke	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	aiheuttaa	aiheuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	pitkäaikaisia	pitkäaikainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	jännevaurioita	jännevaurio	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	lihaskipuja	lihaskipu	NOUN	N	Case=Par|Number=Plur	5	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	sekavuutta	sekavuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	5	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Viranomaiset löysivät tutkinnan yhteydessä kymmeniä tuhansia euroja käteistä, ampuma-aseita ja räjähteitä.
+1	Viranomaiset	viran#omainen	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	löysivät	löytää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tutkinnan	tutkinta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	yhteydessä	yhteys	NOUN	N	Case=Ine|Derivation=Vs|Number=Sing	2	obl	_	_
+5	kymmeniä	kymmenen	NUM	Num	Case=Par|Number=Plur|NumType=Card	6	compound	_	_
+6	tuhansia	tuhat	NUM	Num	Case=Par|Number=Plur|NumType=Card	7	nummod	_	_
+7	euroja	euro	NOUN	N	Case=Par|Number=Plur	8	nmod	_	_
+8	käteistä	käteinen	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	ampuma-aseita	ampuma-ase	NOUN	N	Case=Par|Number=Plur	8	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	räjähteitä	räjähte	NOUN	N	Case=Par|Number=Plur	8	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,151 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Minulle kevään aika; kukkasten tanssia sinipilvissä."
+1	Minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
+2	kevään	kevät	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	aika	aika	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	;	;	PUNCT	Punct	_	3	punct	_	_
+5	kukkasten	kukkas	NOUN	N	Case=Gen|Number=Plur	6	nsubj	_	_
+6	tanssia	tanssia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	parataxis	_	_
+7	sinipilvissä	sinipilvä	NOUN	N	Case=Ine|Number=Plur	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = "Hän on hieno herra", sanoi poika synkästi.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	hieno	hieno	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	herra	herra	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	poika	poika	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	synkästi	synkästi	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = "Prinssi!" huudahti tyttö sointuvalla äänellä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Prinssi	Prinssi	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+5	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	tyttö	#tyttö	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+7	sointuvalla	sointuva	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	8	amod	_	_
+8	äänellä	ääni	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = "Mitä muuta sinä vaadit?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	_
+3	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	det	_	_
+5	vaadit	vaadi	NOUN	N	Case=Nom|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = "Hän tahtoo tehdä sinut orjakseen."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	6	obj	_	_
+6	orjakseen	orja	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "Minä kammon vapautta."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	kammon	kammon	X	Foreign	Foreign=Yes	2	appos	_	_
+4	vapautta	vapaus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	3	flat:name	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = "Minä tahtoisin suojella sinua häneltä."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	tahtoisin	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+4	suojella	suojella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	4	obj	_	_
+6	häneltä	hän	PRON	Pron	Case=Abl|Number=Sing|Person=3|PronType=Prs	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = "Kun näkee hänet, niin jumaloipi häntä, kun tuntee hänet, niin luottaa häneen."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Kun	kun	SCONJ	C	_	3	mark	_	_
+3	näkee	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	niin	niin	ADV	Adv	_	7	advmod	_	_
+7	jumaloipi	jumaloipiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	kun	kun	SCONJ	C	_	11	mark	_	_
+11	tuntee	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+12	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	11	obj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	11	punct	_	_
+14	niin	niin	ADV	Adv	_	15	advmod	_	_
+15	luottaa	luottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	conj	_	_
+16	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	15	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+18	"	"	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = "Sibyl, sinä olet mieletön."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Sibyl	Sibyl	PROPN	N	Case=Nom|Number=Sing	6	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj:cop	_	_
+5	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	mieletön	mieletön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Tyttö nauroi ja tarttui hänen käsivarteensa.
+1	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nauroi	nauroa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	käsivarteensa	käsivare	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = "Sinä vanha, rakas
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj:cop	_	_
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	rakas	rakas	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 12
+# text = Jim, sinä puhut kuin olisit sadan vuoden vanha.
+1	Jim	Jim	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	puhut	puha	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	kuin	kuin	SCONJ	C	_	9	mark	_	_
+6	olisit	olla	AUX	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	9	cop	_	_
+7	sadan	sata	NUM	Num	Case=Gen|Number=Sing|NumType=Card	8	nummod	_	_
+8	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Kerran sinäkin rakastut.
+1	Kerran	kerta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	sinäkin	sinä	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	rakastut	rakasta	VERB	V	Case=Nom|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

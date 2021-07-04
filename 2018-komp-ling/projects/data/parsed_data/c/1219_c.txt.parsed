@@ -1,0 +1,311 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Martin
+1	Martin	Martti	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Edeniä oli koko hänen elämänsä ajan hallinnut suuri uteliaisuus.
+1	Edeniä	Eden	NOUN	N	Case=Par|Number=Plur	9	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+3	koko	koko	ADJ	A	_	6	amod	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	elämänsä	elämä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	6	nmod:poss	_	_
+6	ajan	aika	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+7	hallinnut	hallita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+8	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	_
+9	uteliaisuus	uteliaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Hän tahtoi tietää, ja tämä halu se juuri oli ajanut häntä seikkailemaan ympäri maailman.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tahtoi	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	11	punct	_	_
+5	ja	ja	CCONJ	C	_	11	cc	_	_
+6	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	det	_	_
+7	halu	halu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	11	nsubj	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj	_	_
+9	juuri	juuri	ADV	Adv	_	11	advmod	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	ajanut	ajaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+12	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
+13	seikkailemaan	seikkailea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+14	ympäri	ympäri	ADP	Adp	AdpType=Prep	15	case	_	_
+15	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	13	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Mutta Spenceriltä hän nyt oppi, ettei hän koskaan ollut mitään tiennyt eikä olisi koskaan saanut mitään tietää, vaikka olisi jatkanut purjehtimistaan maailman loppuun asti.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	Spenceriltä	Spencerä	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	5	obl	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	oppi	oppia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+9	koskaan	koskaan	ADV	Adv	_	12	advmod	_	_
+10	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	aux	_	_
+11	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	12	obj	_	_
+12	tiennyt	tietä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	ccomp	_	_
+13	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	cc	_	_
+14	olisi	olla	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	16	aux	_	_
+15	koskaan	koskaan	ADV	Adv	_	16	advmod	_	_
+16	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	conj	_	_
+17	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	18	obj	_	_
+18	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	16	xcomp	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	22	punct	_	_
+20	vaikka	vaikka	SCONJ	C	_	22	mark	_	_
+21	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	22	aux	_	_
+22	jatkanut	jatkaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	advcl	_	_
+23	purjehtimistaan	purjehtimista	NOUN	N	Case=Ill|Number=Sing	22	obl	_	_
+24	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	25	nmod:poss	_	_
+25	loppuun	loppu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	22	obl	_	_
+26	asti	asti	ADP	Adp	AdpType=Post	25	case	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Hän oli ainoastaan pinnalta nähnyt asioita, huomannut irrallisia ilmiöitä, poiminut totuuden sirpaleita, tehnyt vähäpätöisiä, pinnallisia johtopäätöksiä -- kaikki ilman minkäänlaista yhteyttä tässä oikullisessa harhaluulojen ja sattumain sekamelskaisessa maailmassa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ainoastaan	ainoastaan	ADV	Adv	_	5	advmod	_	_
+4	pinnalta	pinna	NOUN	N	Case=Abl|Number=Sing	5	obl	_	_
+5	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	asioita	asia	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	huomannut	huomata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+9	irrallisia	irrallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	10	amod	_	_
+10	ilmiöitä	ilmiö	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	poiminut	poimia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+13	totuuden	totuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	14	nmod:poss	_	_
+14	sirpaleita	sirpale	NOUN	N	Case=Par|Number=Plur	12	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+17	vähäpätöisiä	vähäpätöinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	20	amod	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	pinnallisia	pinnallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	20	amod	_	_
+20	johtopäätöksiä	johto#päätös	NOUN	N	Case=Par|Number=Plur	16	obj	_	_
+21	--	--	PUNCT	Punct	_	5	punct	_	_
+22	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	25	det	_	_
+23	ilman	ilman	ADP	Adp	AdpType=Prep	25	case	_	_
+24	minkäänlaista	minkään#lainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Sing	25	amod	_	_
+25	yhteyttä	yhteys	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	5	obl	_	_
+26	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	obl	_	_
+27	oikullisessa	oikullinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Llinen|Number=Sing	28	amod	_	_
+28	harhaluulojen	harhaluulo	NOUN	N	Case=Gen|Number=Plur	31	nmod:poss	_	_
+29	ja	ja	CCONJ	C	_	30	cc	_	_
+30	sattumain	sattumai	NOUN	N	Case=Gen|Number=Sing	28	conj	_	_
+31	sekamelskaisessa	sekamelskainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Sing	32	amod	_	_
+32	maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+33	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Hän oli tutkinut sitä koneistoa, joka teki linnut kykeneviksi lentämään, ja saattoi sangen järkevästi keskustella siitä, mutta hänen mieleensä ei ollut koskaan juolahtanut koettaa tutkien saada selville sitä kehityskulkua, jonka aikana linnut muodostuvat elimellisiksi lentokoneiksi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tutkinut	tutkia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	det	_	_
+5	koneistoa	koneisto	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	linnut	lintu	NOUN	N	Case=Nom|Number=Plur	8	obj	_	_
+10	kykeneviksi	kykeneva	ADJ	A	Case=Tra|Degree=Pos|Number=Plur	11	xcomp	_	_
+11	lentämään	lentää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	saattoi	saattaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+15	sangen	sangen	ADV	Adv	_	16	advmod	_	_
+16	järkevästi	järkevästi	ADV	Adv	Derivation=Sti	14	advmod	_	_
+17	keskustella	keskustella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	_
+18	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	17	obl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	26	punct	_	_
+20	mutta	mutta	CCONJ	C	_	26	cc	_	_
+21	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	nmod:poss	_	_
+22	mieleensä	mieli	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	26	obl	_	_
+23	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	26	aux	_	_
+24	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	26	aux	_	_
+25	koskaan	koskaan	ADV	Adv	_	26	advmod	_	_
+26	juolahtanut	juolahtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+27	koettaa	koettaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	26	xcomp	_	_
+28	tutkien	tutki	NOUN	N	Case=Gen|Number=Plur	29	nsubj	_	_
+29	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	27	xcomp:ds	_	_
+30	selville	selville	ADV	Adv	_	29	advmod	_	_
+31	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	32	det	_	_
+32	kehityskulkua	kehityskulku	NOUN	N	Case=Par|Derivation=U|Number=Sing	29	obj	_	SpaceAfter=No
+33	,	,	PUNCT	Punct	_	37	punct	_	_
+34	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	35	nmod:poss	_	_
+35	aikana	#aika	NOUN	N	Case=Ess|Number=Sing	37	obl	_	_
+36	linnut	lintu	NOUN	N	Case=Nom|Number=Plur	37	nsubj	_	_
+37	muodostuvat	muodostua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	32	acl:relcl	_	_
+38	elimellisiksi	elimellinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Inen|Number=Plur	39	amod	_	_
+39	lentokoneiksi	lentokone	NOUN	N	Case=Tra|Number=Plur	37	obl	_	SpaceAfter=No
+40	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Hän ei ollut koskaan uneksinut, että sellaista kehityskulkua oli olemassakaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	aux	_	_
+4	koskaan	koskaan	ADV	Adv	_	5	advmod	_	_
+5	uneksinut	uneksia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	että	että	SCONJ	C	_	11	mark	_	_
+8	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	9	amod	_	_
+9	kehityskulkua	kehityskulku	NOUN	N	Case=Par|Derivation=U|Number=Sing	11	nsubj:cop	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	olemassakaan	olemass	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	5	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Että linnut kehittyisivät ja vasta sitten ilmestyisivät elämään, siitä hänellä ei ollut aavistustakaan.
+1	Että	että	SCONJ	C	_	3	mark	_	_
+2	linnut	lintu	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	kehittyisivät	kehittyisä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	vasta	vasta	ADV	Adv	_	7	advmod	_	_
+6	sitten	sitten	ADV	Adv	_	7	advmod	_	_
+7	ilmestyisivät	ilmestyisä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	elämään	elämä	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	3	punct	_	_
+10	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	obl	_	_
+11	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+12	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	_
+13	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	cop	_	_
+14	aavistustakaan	aavistus	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Ne olivat aina olleet olemassa.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	nsubj	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	aina	aina	ADV	Adv	_	5	advmod	_	_
+4	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	5	aux	_	_
+5	olemassa	olla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Se kai oli jokin sattuma sekin.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	kai	kai	ADV	Adv	_	1	fixed	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	jokin	jokin	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	sattuma	sattuma	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	sekin	se	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|PronType=Dem	5	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Ja saman mikä koski lintuja, saattoi sovittaa kaikkeen.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	saman	sama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	4	det	_	_
+3	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	koski	koskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	lintuja	lintu	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	sovittaa	sovittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+9	kaikkeen	kaikki	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Hänen taitamattomat ja valmistamattomat yrityksensä tutustua filosofiaan olivat olleet hedelmättömät.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	taitamattomat	taitamaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Plur	5	amod	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	valmistamattomat	valmistamaton	ADJ	A	Case=Nom|Derivation=Ton|Number=Plur	2	conj	_	_
+5	yrityksensä	yritys	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	10	nsubj:cop	_	_
+6	tutustua	tutustua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	acl	_	_
+7	filosofiaan	filosofia	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+8	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	10	cop	_	_
+10	hedelmättömät	hedelmätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Plur	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 13
+# text = Kantin keskiaikainen metafysiikka ei ollut antanut hänelle avainta mihinkään, vaan saanut hänet ainoastaan epäilemään omia henkisiä voimiaan.
+1	Kantin	Kantti	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	keskiaikainen	keskiaikainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	metafysiikka	metafysiikka	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	aux	_	_
+6	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
+8	avainta	avainta	NOUN	N	Case=Nom|Number=Sing	6	obj	_	_
+9	mihinkään	mikään	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	6	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	vaan	vaan	CCONJ	C	_	12	cc	_	_
+12	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	conj	_	_
+13	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	12	obj	_	_
+14	ainoastaan	ainoastaan	ADV	Adv	_	15	advmod	_	_
+15	epäilemään	epäillä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	_
+16	omia	oma	ADJ	A	Case=Par|Degree=Pos|Number=Plur	18	amod	_	_
+17	henkisiä	henkinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	18	amod	_	_
+18	voimiaan	voima	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	15	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 14
+# text = Yhtä hyödytöntä oli hänen ollut koettaa tutkia kehitysoppia, ja tuo toivoton yritys oli rauennutkin yhteen ainoaan Romanesin teokseen.
+1	Yhtä	yhtä	ADV	Adv	_	6	advmod	_	_
+2	hyödytöntä	hyödytöntä	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	aux	_	_
+6	koettaa	koettaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	tutkia	tutkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	kehitysoppia	kehitysoppa	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	17	punct	_	_
+10	ja	ja	CCONJ	C	_	17	cc	_	_
+11	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	det	_	_
+12	toivoton	toiv#otto	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	yritys	yritys	NOUN	N	Case=Nom|Number=Sing	17	nsubj:cop	_	_
+14	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	cop	_	_
+15	rauennutkin	rauennu	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	17	nmod:poss	_	_
+16	yhteen	yhteen	ADV	Adv	_	17	advmod	_	_
+17	ainoaan	aino	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	conj	_	_
+18	Romanesin	Romanes	PROPN	N	Case=Gen|Number=Sing	19	nmod:poss	_	_
+19	teokseen	teos	NOUN	N	Case=Ill|Number=Sing	17	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 15
+# text = Hän ei ymmärtänyt siitä yhtään mitään, ja ainoa ajatus, jonka hän siitä sai, oli, että kehitysoppi oli jokin rutikuiva järjestelmä, jonka joukko pieniä herroja oli saivarrellut kokoon suunnattomasta käsittämättömien sanojen paljoudesta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ymmärtänyt	ymmärtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	obl	_	_
+5	yhtään	yhtään	ADV	Adv	_	3	advmod	_	_
+6	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	ainoa	ainoa	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	det	_	_
+10	ajatus	ajatus	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	15	obj	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+14	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	15	obl	_	_
+15	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	cop	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	24	punct	_	_
+19	että	että	SCONJ	C	_	24	mark	_	_
+20	kehitysoppi	kehitysoppi	NOUN	N	Case=Nom|Number=Sing	24	nsubj:cop	_	_
+21	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	cop	_	_
+22	jokin	jokin	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	24	det	_	_
+23	rutikuiva	rutikuiva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	24	amod	_	_
+24	järjestelmä	järjestelmä	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	31	punct	_	_
+26	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	27	nmod:poss	_	_
+27	joukko	joukko	NOUN	N	Case=Nom|Number=Sing	31	nsubj	_	_
+28	pieniä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Plur	29	amod	_	_
+29	herroja	herro	NOUN	N	Case=Par|Number=Plur	31	nsubj	_	_
+30	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	31	aux	_	_
+31	saivarrellut	saivarrella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	24	conj	_	_
+32	kokoon	kokoon	ADV	Adv	_	33	advmod	_	_
+33	suunnattomasta	suunnattoma	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	31	obl	_	_
+34	käsittämättömien	käsittämättöma	NOUN	N	Case=Gen|Number=Plur	35	nmod:poss	_	_
+35	sanojen	sana	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3|Style=Coll	31	obl	_	_
+36	paljoudesta	paljous	NOUN	N	Case=Ela|Derivation=Vs|Number=Sing	35	nmod	_	SpaceAfter=No
+37	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

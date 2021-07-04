@@ -1,0 +1,136 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Mie en nyt kuuleppas ymmärrä siun kieltäs.
+1	—	—	PUNCT	Punct	_	5	punct	_	SpacesAfter=   \s
+2	Mie	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	5	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	kuuleppas	kuulepvata	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ymmärrä	ymmärtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	ccomp	_	_
+7	siun	siun	ADV	Adv	_	6	advmod	_	_
+8	kieltäs	kielkä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Taiat kuule puhhuu espanjaa vaa niin kuin äitis siulle, Tellervo virnisti pienokaiselle.
+1	Taiat	Taiat	ADV	Adv	_	3	advmod	_	_
+2	kuule	kuule	INTJ	Interj	_	3	aux	_	_
+3	puhhuu	puhhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	espanjaa	espanja	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	vaa	vaan	ADV	Adv	Style=Coll	6	advmod	_	_
+6	niin	niin	ADV	Adv	_	3	advmod	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	äitis	äitis	NOUN	N	Case=Nom|Number=Sing	6	advcl	_	_
+9	siulle	siu	NOUN	N	Case=All|Number=Sing	8	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	Tellervo	Tellervo	PROPN	N	Case=Nom|Number=Sing	13	nsubj:cop	_	_
+12	virnisti	virnisti	ADV	Adv	Derivation=Sti	13	advmod	_	_
+13	pienokaiselle	pienokainen	ADJ	A	Case=All|Degree=Pos|Derivation=Inen|Number=Sing	3	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = — Mut minkä ihmeen nuken työ ootte tehny? hän huudahti.
+1	—	—	PUNCT	Punct	_	4	punct	_	SpacesAfter=    \s
+2	Mut	mutta	CCONJ	C	Style=Coll	4	cc	_	_
+3	minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	4	det	_	_
+4	ihmeen	ihme	NOUN	N	Case=Gen|Number=Sing	7	nsubj	_	_
+5	nuken	nuki	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	työ	työ	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+7	ootte	olla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	8	acl	_	_
+8	tehny	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|Style=Coll|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	8	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = Olohuoneessa oli papereista ja vanhoista vaatteista valmistettu nukke, johon oli kiinnitetty lappuja.
+1	Olohuoneessa	olo#huone	NOUN	N	Case=Ine|Number=Sing	7	obl	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	papereista	papere	NOUN	N	Case=Ela|Number=Plur	7	obl	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	vanhoista	vanha	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	6	amod	_	_
+6	vaatteista	vaatte	NOUN	N	Case=Ela|Number=Plur	3	conj	_	_
+7	valmistettu	valmistaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl	_	_
+8	nukke	nukke	NOUN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	12	obl	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux:pass	_	_
+12	kiinnitetty	kiinnittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl:relcl	_	_
+13	lappuja	lappu	NOUN	N	Case=Par|Derivation=U|Number=Plur	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 5
+# text = — Se on Ano Nuevo.
+1	—	—	PUNCT	Punct	_	4	punct	_	SpacesAfter=    \s
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	Ano	Ano	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+5	Nuevo	Nuevo	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Meillä Kolumbiassa poltetaan uutena vuotena vanha vuosi ja sen pahat teot, Kerttu selitti.
+1	Meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	2	det	_	_
+2	Kolumbiassa	Kolumbia	PROPN	N	Case=Ine|Number=Sing	3	obl	_	_
+3	poltetaan	polttaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	uutena	uusi	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	5	amod	_	_
+5	vuotena	vuosi	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+6	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	vuosi	vuosi	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	11	nmod:poss	_	_
+10	pahat	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	11	amod	_	_
+11	teot	teko	NOUN	N	Case=Nom|Number=Plur	7	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	3	punct	_	_
+13	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+14	selitti	selittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = — Sulia onkin nykyään meneillään jotain uutta teiltä Kolumbiasta joka kerta kun me tavataan, Eija sanoi.
+1	—	—	PUNCT	Punct	_	7	punct	_	SpacesAfter=    \s
+2	Sulia	Suli	NOUN	N	Case=Par|Number=Sing	7	nsubj:cop	_	_
+3	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+4	nykyään	nykyään	ADV	Adv	_	5	advmod	_	_
+5	meneillään	meneillään	ADV	Adv	_	7	advmod	_	_
+6	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	det	_	_
+7	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+8	teiltä	sinä	PRON	Pron	Case=Abl|Number=Plur|Person=2|PronType=Prs	9	det	_	_
+9	Kolumbiasta	Kolumbia	PROPN	N	Case=Ela|Number=Sing	7	nmod	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing	11	det	_	_
+11	kerta	kerta	NOUN	N	Case=Nom|Number=Sing	14	obl	_	_
+12	kun	kun	SCONJ	C	_	14	mark	_	_
+13	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	14	nsubj	_	_
+14	tavataan	tavata	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	7	advcl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	7	punct	_	_
+16	Eija	Eija	PROPN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+17	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = — Ja se on kuule hyvä niin.
+1	—	—	PUNCT	Punct	_	6	punct	_	SpacesAfter=    \s
+2	Ja	ja	CCONJ	C	_	6	cc	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	kuule	kuule	INTJ	Interj	_	6	discourse	_	_
+6	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+7	niin	niin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Vauva saa kasvaa tyytyväisen äidin kanssa, huusi Henkka keittiöstä.
+1	Vauva	vauva	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	xcomp	_	_
+4	tyytyväisen	tyytyväinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	äidin	äidi	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	kanssa	kanssa	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	keittiöstä	keittiö	NOUN	N	Case=Ela|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

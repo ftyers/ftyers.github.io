@@ -1,0 +1,103 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ah, te puhutte kyvystä?
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Ah	Ah	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	nsubj:cop	_	_
+5	puhutte	puhui	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	kyvystä	kyvy	NOUN	N	Case=Ela|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Hi, hi, hi!
+1	Hi	Hi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	hi	hi	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	hi	hi	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Saan tosiaan ilmaista kummastukseni, vaikka aavistinkin, että te esittäisitte sitä.
+1	Saan	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tosiaan	tosiaan	ADV	Adv	_	1	advmod	_	_
+3	ilmaista	ilmaista	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+4	kummastukseni	kummastus	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	vaikka	vaikka	SCONJ	C	_	7	mark	_	_
+7	aavistinkin	aavistin	ADV	Adv	Clitic=Kin	1	advcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	että	että	SCONJ	C	_	11	mark	_	_
+10	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	11	nsubj	_	_
+11	esittäisitte	esittää	VERB	V	Mood=Cnd|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	7	ccomp	_	_
+12	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Te, te puhutte kevytmielisyydestä ja estetiikasta?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nsubj:cop	_	_
+4	puhutte	puhui	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	kevytmielisyydestä	kevytmielisyys	NOUN	N	Case=Ela|Number=Sing	1	acl:relcl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	estetiikasta	estetiika	NOUN	N	Case=Ela|Number=Sing	5	conj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Te ... idealisti, Schiller?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	det	_	_
+2	...	...	PUNCT	Punct	_	3	punct	_	_
+3	idealisti	idealisti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Schiller	Schiller	PROPN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Vahinko vain, että minulla on kiire, te olette tosiaan erinomasen mieltäkiinnittävä subjekti.
+1	Vahinko	vaha	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vain	vain	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	1	ccomp	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop:own	_	_
+7	kiire	kiire	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	14	punct	_	_
+9	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	14	nsubj:cop	_	_
+10	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
+11	tosiaan	tosiaan	ADV	Adv	_	13	advmod	_	_
+12	erinomasen	erinomasen	ADV	Adv	_	13	advmod	_	_
+13	mieltäkiinnittävä	mieltäkiinnittävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	_
+14	subjekti	subjekti	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Apropos, pidättekö Schilleristä?
+1	Apropos	Apropos	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	pidättekö	pitää	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Schilleristä	schilleristä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Minä olen vallan ihastunut häneen.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	vallan	#valta	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	ihastunut	ihastua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = -- Te olette lörpöttelijä! huudahti Raskolnikov.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj:cop	_	_
+3	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	lörpöttelijä	lörpöttelijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	huudahti	huudahtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

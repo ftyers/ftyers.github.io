@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "No, enhän minä ole mikään vaivainen raukka", sanoi poika.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	No	no	INTJ	Interj	_	9	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	enhän	ei	AUX	V	Clitic=Han|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj:cop	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	cop	_	_
+7	mikään	mikään	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+8	vaivainen	vaivainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	9	amod	_	_
+9	raukka	raukka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	9	punct	_	_
+12	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	parataxis	_	_
+13	poika	poika	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 2
+# text = "Jos on pakko, voin sulattaa vaikka rautanauloja.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Jos	jos	SCONJ	C	_	4	mark	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	pakko	pakko	NOUN	N	Case=Nom|Number=Sing	7	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	sulattaa	sulattaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+8	vaikka	vaikka	ADV	Adv	_	9	advmod	_	_
+9	rautanauloja	rautanaulo	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = Nyt minä kuitenkin olen tainnut saada vatsakatarin.
+1	Nyt	nyt	ADV	Adv	_	6	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	6	advmod	_	_
+4	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	tainnut	taitaa	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	aux	_	_
+6	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	vatsakatarin	vatsakatari	NOUN	N	Case=Gen|Number=Sing	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Suurinta osaa siitä, mitä sanotte, en voi sulattaa.
+1	Suurinta	suurinta	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	osaa	osata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	6	obj	_	_
+6	sanotte	sanlla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	aux	_	_
+10	sulattaa	sulattaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = En näet ole tottunut sellaiseen.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	näet	näet	ADV	Adv	_	4	advmod	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	tottunut	tottua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	sellaiseen	sellainen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Lainen|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Minä pidän kirjoista ja runoista ja aina, kun saan aikaa, luen niitä, mutta en ole koskaan ajatellut niistä, kuten te.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	pidän	pitää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kirjoista	kirjo	NOUN	N	Case=Ela|Number=Plur	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	runoista	runo	NOUN	N	Case=Ela|Number=Plur	3	conj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	aina	aina	ADV	Adv	_	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	kun	kun	SCONJ	C	_	10	mark	_	_
+10	saan	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	_
+11	aikaa	aika	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	luen	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+14	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	mutta	mutta	CCONJ	C	_	20	cc	_	_
+17	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	20	aux	_	_
+18	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	20	aux	_	_
+19	koskaan	koskaan	ADV	Adv	_	20	advmod	_	_
+20	ajatellut	ajatella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+21	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	20	obl	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	kuten	kuten	ADV	Adv	_	24	advmod	_	_
+24	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	appos	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Siksi en voi niitä arvostella.
+1	Siksi	siksi	ADV	Adv	_	5	advmod	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	5	obj	_	_
+5	arvostella	arvostella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Minä olen kuin merimies tuuliajolla vierailla vesillä ilman karttaa ja kompassia.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:cop	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	kuin	kuin	SCONJ	C	_	4	mark	_	_
+4	merimies	meri#mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	tuuliajolla	tuuliajo	NOUN	N	Case=Ade|Number=Sing	4	nmod	_	_
+6	vierailla	vieraa	ADJ	A	Case=Ade|Degree=Pos|Number=Plur	7	amod	_	_
+7	vesillä	ves	NOUN	N	Case=Ade|Number=Plur	4	nmod	_	_
+8	ilman	ilman	ADP	Adp	AdpType=Prep	9	case	_	_
+9	karttaa	kartta	NOUN	N	Case=Par|Number=Sing	4	nmod	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	kompassia	kompassi	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Nyt tahdon alkaa alusta.
+1	Nyt	nyt	ADV	Adv	_	3	advmod	_	_
+2	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+3	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	alusta	alku	NOUN	N	Case=Ela|Derivation=U|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Ehkäpä te voitte ohjata minua oikealle tolalle.
+1	Ehkäpä	ehkäpä	ADV	Adv	_	4	advmod	_	_
+2	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+3	voitte	voida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	ohjata	ohjata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	4	obj	_	_
+6	oikealle	oikea	ADJ	A	Case=All|Degree=Pos|Number=Sing	7	amod	_	_
+7	tolalle	tola	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

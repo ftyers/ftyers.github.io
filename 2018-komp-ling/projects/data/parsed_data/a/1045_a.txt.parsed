@@ -1,0 +1,136 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kolme Pukkia
+1	Kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	nummod	_	_
+2	Pukkia	Pukki	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Olipa kerran kolme pukkia: Pikku-Pukki, Keski-Pukki ja Iso-Pukki.
+1	Olipa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	kerran	kerran	ADV	Adv	_	0	root	_	_
+3	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	pukkia	pukki	NOUN	N	Case=Par|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	6	punct	_	_
+6	Pikku-Pukki	Pikku-Pukki	NOUN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	Keski-Pukki	Keski-Pukki	NOUN	N	Case=Nom|Number=Sing	6	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	Iso-Pukki	Iso-Pukki	NOUN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Pukit asuivat jyrkän vuoren rinteellä.
+1	Pukit	Pukki	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	asuivat	asua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jyrkän	jyrkkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	vuoren	vuori	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	rinteellä	rintei	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Ne olivat syöneet kaiken ruohon ympäriltään, ja nyt ne olivat kovin nälkäisiä.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	nsubj	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	syöneet	syöa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	det	_	_
+5	ruohon	ruoho	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+6	ympäriltään	ympäriltään	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	ja	ja	CCONJ	C	_	13	cc	_	_
+9	nyt	nyt	ADV	Adv	_	13	advmod	_	_
+10	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	13	nsubj:cop	_	_
+11	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	cop	_	_
+12	kovin	kovin	ADV	Adv	_	13	advmod	_	_
+13	nälkäisiä	nälkäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	3	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Vuoren alapuolella laaksossa oli vehreä niitty täynnä makoisaa ruohoa.
+1	Vuoren	Vuori	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+2	alapuolella	alapuolella	ADP	Adp	AdpType=Post	1	case	_	_
+3	laaksossa	laakso	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	vehreä	vehreä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	_
+6	niitty	niitä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+7	täynnä	täynnä	ADV	Adv	_	6	advmod	_	_
+8	makoisaa	makoisa	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	amod	_	_
+9	ruohoa	ruoho	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mutta niitylle päästäkseen pukkien oli kuljettava sillan yli, ja sillan alla asui ilkeä peikko.
+1	Mutta	mutta	CCONJ	C	_	6	cc	_	_
+2	niitylle	niity	NOUN	N	Case=All|Derivation=U|Number=Sing	3	obl	_	_
+3	päästäkseen	päästä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	6	advcl	_	_
+4	pukkien	pukki	NOUN	N	Case=Gen|Number=Plur	6	nsubj	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kuljettava	kuljtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+7	sillan	silta	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+8	yli	yli	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	ja	ja	CCONJ	C	_	13	cc	_	_
+11	sillan	silta	NOUN	N	Case=Gen|Number=Sing	13	obl	_	_
+12	alla	alla	ADP	Adp	AdpType=Post	11	case	_	_
+13	asui	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+14	ilkeä	ilkeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	15	amod	_	_
+15	peikko	peikko	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = – Minulla on nälkä, sanoi Pikku-Pukki.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	nälkä	nälkä	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	Pikku-Pukki	Pikku-Pukki	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = – Aion päästä niitylle, enkä pelkää peikkoa.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Aion	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	niitylle	niity	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	enkä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cc	_	_
+7	pelkää	pelkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	8	amod	_	_
+8	peikkoa	peikko	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Ja ennenkuin muut ehtivät estellä, urhea Pikku-Pukki astui sillalle.
+1	Ja	ja	CCONJ	C	_	9	cc	_	_
+2	ennenkuin	ennenkuin	SCONJ	C	_	4	mark	_	_
+3	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	4	nsubj	_	_
+4	ehtivät	ehtiä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	advcl	_	_
+5	estellä	estellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	urhea	urhea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	Pikku-Pukki	Pikku-Pukki	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	sillalle	silla	NOUN	N	Case=All|Number=Sing	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 10
+# text = Kip-kip-kip se kipitti vikkelästi sillan yli.
+1	Kip-kip-kip	Kip-kip-kip	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	kipitti	kipittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vikkelästi	vikkelästi	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	sillan	silta	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	yli	yli	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Silloin sillan alta kuului uhkaavaa mörinää.
+1	Silloin	Silloin	ADV	Adv	_	4	advmod	_	_
+2	sillan	silta	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+3	alta	alta	ADP	Adp	AdpType=Post	2	case	_	_
+4	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	uhkaavaa	uhkaava	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	amod	_	_
+6	mörinää	mörinä	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

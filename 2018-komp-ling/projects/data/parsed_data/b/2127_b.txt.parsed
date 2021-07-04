@@ -1,0 +1,133 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Simon Lambergilla oli harrastus.
+1	Simon	Simo	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	Lambergilla	Lamberg	PROPN	N	Case=Ade|Number=Sing	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	harrastus	harrastus	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 2
+# text = Hänellä oli valokuvakansio, jossa oli tunnettujen henkilöiden kuvia.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	valokuvakansio	valokuvakansio	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	3	acl:relcl	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	tunnettujen	tunnaa	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl	_	_
+8	henkilöiden	henkilö	NOUN	N	Case=Gen|Number=Plur	9	nmod:poss	_	_
+9	kuvia	kuva	NOUN	N	Case=Par|Number=Plur	5	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= 
+
+# sent_id = 3
+# text = Ne eivät kuitenkaan olleet tavallisia henkilökuvia.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	6	nsubj:cop	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	kuitenkaan	kuitenkaan	ADV	Adv	_	6	advmod	_	_
+4	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+5	tavallisia	tavallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	6	amod	_	_
+6	henkilökuvia	henkilö#kuva	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = Hän oli muuttanut kuvat niin, että henkilöt näyttivät niissä pieniltä, rumilta ja inhottavilta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	muuttanut	muuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kuvat	kua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	xcomp	_	_
+5	niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	että	että	SCONJ	C	_	9	mark	_	_
+8	henkilöt	henkilö	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	näyttivät	näyttää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+10	niissä	se	PRON	Pron	Case=Ine|Number=Plur|PronType=Dem	9	obl	_	_
+11	pieniltä	pienä	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	9	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	rumilta	rum	NOUN	N	Case=Abl|Number=Plur	11	conj	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	inhottavilta	inhottava	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	11	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Tänä iltana hän aikoi tehdä samanlaisen kuvan pääministeristä.
+1	Tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+4	aikoi	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	samanlaisen	samanlainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	7	amod	_	_
+7	kuvan	#kuva	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	pääministeristä	pääministeri	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = Hän oli leikannut Ruotsin pääministerin kuvan sanomalehdestä ja suurentanut sen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	leikannut	leikata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Ruotsin	Ruotsi	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	pääministerin	pää#ministeri	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+6	kuvan	kuva	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	sanomalehdestä	sanomalehs	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	suurentanut	suurentaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+10	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 7
+# text = Hän asetti kuvan eteensä pöydälle.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	asetti	asettaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kuvan	#kuva	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	eteensä	etei	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+5	pöydälle	pöytä	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Mistä hän aloittaisi?
+1	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	3	obl	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	aloittaisi	aloittaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hän päätti aloittaa silmistä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aloittaa	aloittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	silmistä	silmä	NOUN	N	Case=Ela|Number=Plur	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Hän tekisi niistä pienet ja vinot.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tekisi	teka	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	niistä	se	PRON	Pron	Case=Ela|Number=Plur|PronType=Dem	2	obl	_	_
+4	pienet	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	vinot	vino	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Sitten hän leikkaisi pois suun tai ehkä neuloisi sen kiinni.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	leikkaisi	leikkaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	pois	pois	ADV	Adv	_	3	advmod	_	_
+5	suun	suu	NOUN	N	Case=Gen|Number=Sing	8	nsubj	_	_
+6	tai	tai	CCONJ	C	_	8	cc	_	_
+7	ehkä	ehkä	ADV	Adv	_	8	advmod	_	_
+8	neuloisi	neuloa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	3	conj	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	obj	_	_
+10	kiinni	kiinni	ADV	Adv	_	8	compound:prt	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Poliitikot puhuivat liikaa.
+1	Poliitikot	poliitikko	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	puhuivat	puhua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	liikaa	liikaa	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

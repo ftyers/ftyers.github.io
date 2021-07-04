@@ -1,0 +1,133 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Ei, vain puoli vuotta kesäaikaan, nainen vastasi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	vain	vain	ADV	Adv	_	5	advmod	_	_
+5	puoli	puoli	NUM	Num	Case=Nom|Number=Sing	6	nummod	_	_
+6	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+7	kesäaikaan	kesäaika	NOUN	N	Case=Ill|Number=Sing	6	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = — Tulen yleensä huhtikuun alussa ja viivyn lokakuuhun.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Tulen	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yleensä	yleensä	ADV	Adv	_	2	advmod	_	_
+4	huhtikuun	huhtikuu	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+5	alussa	alku	NOUN	N	Case=Ine|Derivation=U|Number=Sing	2	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	viivyn	viivy	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	lokakuuhun	lokakuu	NOUN	N	Case=Ill|Number=Sing	5	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 3
+# text = Talvella asun Halmstadissa.
+1	Talvella	talvi	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+2	asun	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|Typo=Yes|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Halmstadissa	Halmstad	PROPN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = Olen eläkkeellä oleva opettaja.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+2	eläkkeellä	eläkkei	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+3	oleva	olla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	opettaja	opettaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Mieheni kuoli joitakin vuosia sitten.
+1	Mieheni	mies	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	joitakin	jokin	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	4	det	_	_
+4	vuosia	vuosi	NOUN	N	Case=Par|Number=Plur	2	obl	_	_
+5	sitten	sitten	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = — Satuitteko näkemään viime viikolla miestä, joka tuli tänne muutaman kerran yksin taksilla? Wallander kysyi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Satuitteko	Satuia	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	näkemään	näkeä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	viime	viime	ADJ	A	_	5	amod	_	_
+5	viikolla	viikko	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+6	miestä	mies	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	tänne	tänne	ADV	Adv	_	9	advmod	_	_
+11	muutaman	muutama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	12	det	_	_
+12	kerran	kerran	ADV	Adv	_	9	obl	_	_
+13	yksin	yksin	ADV	Adv	_	14	advmod	_	_
+14	taksilla	taks	NOUN	N	Case=Ade|Number=Plur	9	obl	_	SpaceAfter=No
+15	?	?	PUNCT	Punct	_	2	punct	_	_
+16	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+17	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Naisen vastaus yllätti hänet.
+1	Naisen	nainen	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	vastaus	vastaus	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	yllätti	yllättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = — Kyllä minä näin.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	näin	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 9
+# text = Hän halusi tilata taksin ja lainasi minulta puhelinta sitä varten.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	halusi	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tilata	tilata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	taksin	taksi	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpacesAfter= 
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	lainasi	lainata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	minulta	minä	PRON	Pron	Case=Abl|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
+8	puhelinta	puhelinta	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+9	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obl	_	_
+10	varten	varten	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = Jos se nyt oli se mies, jota tarkoitat.
+1	Jos	jos	SCONJ	C	_	6	mark	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+3	nyt	nyt	ADV	Adv	_	6	advmod	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	det	_	_
+6	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	9	obj	_	_
+9	tarkoitat	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = Hän oli hyvin kohtelias.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	hyvin	hyvin	ADV	Adv	_	4	advmod	_	_
+4	kohtelias	kohtelias	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Hänen nimensä taisi olla Alexandersson.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	nimensä	nimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	nsubj:cop	_	_
+3	taisi	taitaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+5	Alexandersson	Alexandersson	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

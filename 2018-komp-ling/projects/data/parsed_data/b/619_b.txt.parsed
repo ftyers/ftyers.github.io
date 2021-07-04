@@ -1,0 +1,126 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Keskiviikon neuvotteluissa edistyttiin, mutta työ jatkuu.
+1	Keskiviikon	Keskiviikko	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	neuvotteluissa	neuvottelu	NOUN	N	Case=Ine|Derivation=U|Number=Plur	3	obl	_	_
+3	edistyttiin	edistyta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	mutta	mutta	CCONJ	C	_	7	cc	_	_
+6	työ	t#yö	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	jatkuu	jatkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Tutkijat havaitsivat, että vanhempien yritykset säädellä lastensa syömistä eivät aina johtaneet toivottuun lopputulokseen.
+1	Tutkijat	tutkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	havaitsivat	havaita	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	vanhempien	vanha	ADJ	A	Case=Gen|Degree=Cmp|Number=Plur	6	amod	_	_
+6	yritykset	yritys	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+7	säädellä	säädellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+8	lastensa	lapsi	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	9	nmod:gobj	_	_
+9	syömistä	syöminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	7	obj	_	_
+10	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	aina	aina	ADV	Adv	_	12	advmod	_	_
+12	johtaneet	johtaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+13	toivottuun	toivota	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	14	acl	_	_
+14	lopputulokseen	loppu#tulos	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Arvostelijoiden mukaan lisäjoukkojen lähettäminen Yhdysvaltain etelärajalle oli mediatemppu.
+1	Arvostelijoiden	Arvostelija	NOUN	N	Case=Gen|Derivation=Ja|Number=Plur	8	obl	_	_
+2	mukaan	mukaan	ADP	Adp	AdpType=Post	1	case	_	_
+3	lisäjoukkojen	lisäjoukko	NOUN	N	Case=Gen|Number=Plur	4	nmod:gobj	_	_
+4	lähettäminen	lähettäminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	8	nsubj:cop	_	_
+5	Yhdysvaltain	Yhdys#vallat	PROPN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	etelärajalle	eteläraja	NOUN	N	Case=All|Derivation=Ja|Number=Sing	4	nmod	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	mediatemppu	mediatemppu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = Trumpin vaalien alla tekemä päätös maksaa yhdysvaltalaisille veronmaksajille yli 60 miljoonaa euroa.
+1	Trumpin	Trump	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	vaalien	vaalit	NOUN	N	Case=Gen|Number=Plur	4	obl	_	_
+3	alla	alla	ADP	Adp	AdpType=Post	2	case	_	_
+4	tekemä	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	5	acl	_	_
+5	päätös	päätös	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpacesAfter=\s\s
+6	maksaa	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	yhdysvaltalaisille	yhdysvaltalais	NOUN	N	Case=All|Number=Plur	6	obl	_	_
+8	veronmaksajille	veronmaksaji	NOUN	N	Case=All|Number=Sing	6	obl	_	_
+9	yli	yli	ADV	Adv	_	11	advmod	_	_
+10	60	60	NUM	Num	NumType=Card	11	compound	_	_
+11	miljoonaa	miljoona	NUM	Num	Case=Par|Number=Sing|NumType=Card	12	nummod	_	_
+12	euroa	euro	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Saksassa on pulaa muun muassa sairaanhoitajista sekä it-ammattilaista.
+1	Saksassa	Saksa	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	pulaa	pula	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+4	muun	muun	ADV	Adv	_	6	advmod	_	_
+5	muassa	muassa	ADV	Adv	_	4	fixed	_	_
+6	sairaanhoitajista	sairaanhoitaji	NOUN	N	Case=Ela|Number=Sing	1	obl	_	_
+7	sekä	sekä	CCONJ	C	_	8	cc	_	_
+8	it-ammattilaista	it-ammattilai	NOUN	N	Case=Ela|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Britannian pääministeri Theresa
+1	Britannian	Britannia	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	pääministeri	pää#ministeri	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	Theresa	Theresa	ADV	Adv	_	2	advmod	_	_
+
+# sent_id = 7
+# text = May sanoo olevansa oikeuden päätöksestä erittäin pettynyt ja huolestunut.
+1	May	May	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	7	aux	_	_
+4	oikeuden	#oikeus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	5	nmod:poss	_	_
+5	päätöksestä	päätös	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+6	erittäin	erittäin	ADV	Adv	Derivation=Ttain	7	advmod	_	_
+7	pettynyt	pettyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	huolestunut	huolestuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ilmoitus ehti olla Facebookissa kahden viikon ajan.
+1	Ilmoitus	ilmoitus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ehti	ehtiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	cop	_	_
+4	Facebookissa	Facebook	PROPN	N	Case=Ine|Number=Sing	7	obl	_	_
+5	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	6	nummod	_	_
+6	viikon	viikko	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	ajan	aika	NOUN	N	Case=Gen|Number=Sing	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Poliisi on eristänyt alueen.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	eristänyt	eristää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	alueen	alue	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Räjähdys tapahtui yliopiston laboratoriossa.
+1	Räjähdys	Räjähdys	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yliopiston	yli#opisto	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	laboratoriossa	laboratorio	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Tarkempi syy ei ole tiedossa.
+1	Tarkempi	tarkka	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	2	amod	_	_
+2	syy	syy	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	tiedossa	tieto	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

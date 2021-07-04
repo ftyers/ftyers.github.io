@@ -1,0 +1,103 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mikä sinua vaivaa? huudahti Rasumihin ja tarttui hänen käteensä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj	_	_
+3	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	4	obj	_	_
+4	vaivaa	vaivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+6	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+7	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	6	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	käteensä	käsi	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Hän istuutui jälleen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	istuutui	istuutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jälleen	jälleen	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = He katselivat häntä kummeksien.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	katselivat	katsela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	kummeksien	kummes	NOUN	N	Case=Gen|Derivation=Vs|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Niin, miksi olette kaikki niin ikävännäköisiä, sanoi hän voimakkaasti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	miksi	miksi	ADV	Adv	_	8	advmod	_	_
+5	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	det	_	_
+7	niin	niin	ADV	Adv	_	8	advmod	_	_
+8	ikävännäköisiä	ikävännäköinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	8	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	parataxis	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+12	voimakkaasti	voimakkaasti	ADV	Adv	Derivation=Sti	10	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 5
+# text = -- Jutelkaa keskenänne.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Jutelkaa	Jutella	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	keskenänne	keskenänne	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = En voi mitään kuulla.
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	_
+4	kuulla	kuulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- Jumalan kiitos, ettei ollut pahempaa!
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kiitos	kiitos	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	mark	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	cop	_	_
+7	pahempaa	paha	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	0	root	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Luulin että hän pyörtyisi kuten eilen, sanoi Pulcheria Alexandrovna ristien itsensä.
+1	Luulin	luulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	että	että	SCONJ	C	_	4	mark	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	pyörtyisi	pyörtyä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+5	kuten	kuten	ADV	Adv	_	6	advmod	_	_
+6	eilen	eilen	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	1	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+9	Pulcheria	Pulcher	PROPN	N	Case=Par|Number=Sing	8	obj	_	_
+10	Alexandrovna	Alexandrovna	PROPN	N	Case=Nom|Number=Sing	9	flat:name	_	_
+11	ristien	risti	NOUN	N	Case=Gen|Number=Plur	9	nmod:poss	_	_
+12	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = -- Mikä sinua vaivaa, Rodja? sanoi sisar.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	4	nsubj	_	_
+3	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	4	obj	_	_
+4	vaivaa	vaivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	Rodja	Rodja	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	sisar	sisar	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

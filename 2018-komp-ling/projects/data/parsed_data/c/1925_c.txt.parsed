@@ -1,0 +1,126 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Voinhan minä muuten palata jonkun toisen kerran.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Voinhan	Voilla	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	muuten	muuten	ADV	Adv	_	5	advmod	_	_
+5	palata	palata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	jonkun	joku	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	obj	_	_
+7	toisen	toinen	PRON	Pron	Case=Gen|Number=Sing|PronType=Rcp	8	det	_	_
+8	kerran	kerran	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- Ei, ei; miksi vaivaisimme me teitä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	7	punct	_	_
+6	miksi	miksi	ADV	Adv	_	7	advmod	_	_
+7	vaivaisimme	vaivaa	VERB	V	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+8	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	9	det	_	_
+9	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	7	obj	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = Te olette järkevä mies...
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj:cop	_	_
+2	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	järkevä	järkevä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = No, Rodja, älä pidätä vierastamme ... etkö näe, että hän odottaa -- ja hän valmistausi todella viemään Raskolnikovin kättä.
+1	No	no	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	Rodja	Rodja	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	pidätä	pidätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	vierastamme	vieras	NOUN	N	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1	6	obj	_	_
+8	...	...	PUNCT	Punct	_	6	punct	_	_
+9	etkö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	näe	nähdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	että	että	SCONJ	C	_	14	mark	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+14	odottaa	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	ccomp	_	_
+15	--	--	PUNCT	Punct	_	6	punct	_	_
+16	ja	ja	CCONJ	C	_	20	cc	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	det	_	_
+18	valmistausi	valmistausi	NOUN	N	Case=Nom|Number=Sing	20	nsubj	_	_
+19	todella	todella	ADV	Adv	_	20	advmod	_	_
+20	viemään	viedä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	conj	_	_
+21	Raskolnikovin	Raskolnikov	PROPN	N	Case=Gen|Number=Sing	22	nmod:poss	_	_
+22	kättä	kät	NOUN	N	Case=Par|Number=Sing	20	obj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = -- Anna olla, teen sen itse... sanoi Raskolnikov ottaen kynän ja kirjottaen nimensä kirjaan.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	aux	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	obj	_	_
+7	itse	itse	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	...	...	PUNCT	Punct	_	5	punct	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+10	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+11	ottaen	ottaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	9	advcl	_	_
+12	kynän	kynä	NOUN	N	Case=Gen|Number=Sing	11	obj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	kirjottaen	kirjottaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	11	conj	_	_
+15	nimensä	nimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	nmod:poss	_	_
+16	kirjaan	kirja	NOUN	N	Case=Ill|Number=Sing	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Rahanlaskija laski rahat ja poistui.
+1	Rahanlaskija	Rahanlaskija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	laski	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rahat	raha	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	poistui	poistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Hyvä!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ja nyt, veliseni, etkö tahdo syödä vähän!
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	nyt	nyt	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	veliseni	velinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	etkö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	conj	_	_
+8	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+9	vähän	vähän	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = -- Kyllä! vastasi Raskolnikov.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = -- Onko teillä keittoa?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	0	root	_	_
+4	keittoa	keitto	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

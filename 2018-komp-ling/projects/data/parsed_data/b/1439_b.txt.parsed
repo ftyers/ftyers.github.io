@@ -1,0 +1,164 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tietoja haluttiin käyttää sotilastarkoituksiin, mutta niiden avulla haluttiin lisätä myös muuta tietämystä.
+1	Tietoja	tieto	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+2	haluttiin	haluta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	käyttää	käyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+4	sotilastarkoituksiin	sotilastarkoitus	NOUN	N	Case=Ill|Number=Plur	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	mutta	mutta	CCONJ	C	_	9	cc	_	_
+7	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	8	nmod:poss	_	_
+8	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	9	obl	_	_
+9	haluttiin	haluta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	2	conj	_	_
+10	lisätä	lisätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp:ds	_	_
+11	myös	myös	ADV	Adv	_	13	advmod	_	_
+12	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	13	det	_	_
+13	tietämystä	tietämys	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Tietoa haluttiin
+1	Tietoa	tieto	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	haluttiin	haluta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+
+# sent_id = 3
+# text = Kiinan armeijasta ja maan hallinnosta.
+1	Kiinan	Kiina	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	armeijasta	armeija	NOUN	N	Case=Ela|Number=Sing	0	root	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	maan	maa	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	hallinnosta	hallinto	NOUN	N	Case=Ela|Number=Sing	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Venäläiset halusivat myös löytää sopivat marssireitit
+1	Venäläiset	venäläinen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	2	nsubj	_	_
+2	halusivat	haluta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	myös	myös	ADV	Adv	_	4	advmod	_	_
+4	löytää	löytää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	sopivat	sopiva	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	marssireitit	marssireitti	NOUN	N	Case=Nom|Number=Plur	4	obj	_	_
+
+# sent_id = 5
+# text = Kiinan pääkaupunkiin, Pekingiin.
+1	Kiinan	Kiina	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	pääkaupunkiin	pää#kaupunki	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	Pekingiin	Peking	PROPN	N	Case=Ill|Number=Sing	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Matka Kiinaan ei ollut helppo.
+1	Matka	matka	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	Kiinaan	Kiina	PROPN	N	Case=Ill|Number=Sing	1	nmod	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+5	helppo	helppo	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Matkastaan Mannerheim kertoi muistelmissaan seuraavasti:
+1	Matkastaan	matkastaan	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Mannerheim	Mannerheim	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	muistelmissaan	muistelmi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	obl	_	_
+5	seuraavasti	seuraavasti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = — Välillä kuljimme kuumilla hiekka-aavikoilla, välillä vuorilla ja jopa jäätiköillä.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Välillä	Välillä	ADV	Adv	_	3	advmod	_	_
+3	kuljimme	kulkea	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kuumilla	kuuma	ADJ	A	Case=Ade|Degree=Pos|Number=Plur	5	amod	_	_
+5	hiekka-aavikoilla	hiekka-aavika	NOUN	N	Case=Ade|Number=Plur	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	välillä	välillä	ADV	Adv	_	8	advmod	_	_
+8	vuorilla	vuor	NOUN	N	Case=Ade|Number=Plur	3	obl	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	jopa	jopa	ADV	Adv	_	11	advmod	_	_
+11	jäätiköillä	jäätiköi	NOUN	N	Case=Ade|Number=Plur	8	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Oli kestettävä kovaa hellettä ja kovaa pakkasta, hiekkamyrskyjä ja lumimyräköitä.
+1	Oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	kestettävä	kesttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+3	kovaa	kova	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	_
+4	hellettä	helle	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	kovaa	kova	ADJ	A	Case=Par|Degree=Pos|Number=Sing	7	amod	_	_
+7	pakkasta	pakkanen	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	hiekkamyrskyjä	hiekkamyrsky	NOUN	N	Case=Par|Derivation=U|Number=Plur	4	conj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	lumimyräköitä	lumimyräkö	NOUN	N	Case=Par|Number=Plur	4	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Näimme upeita kaupunkeja ja pieniä kurjia kyliä.
+1	Näimme	nähdä	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	upeita	upea	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	amod	_	_
+3	kaupunkeja	kaupunki	NOUN	N	Case=Par|Number=Plur	1	obj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	pieniä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	kurjia	kurja	NOUN	N	Case=Par|Number=Plur	3	conj	_	_
+7	kyliä	kylä	NOUN	N	Case=Par|Number=Plur	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Matkansa alussa Mannerheim näki paikalliset paimentolaishäät, joihin liittyi ratsastuskilpailu perinteen mukaisesti.
+1	Matkansa	Matka	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	nmod:poss	_	_
+2	alussa	alku	NOUN	N	Case=Ine|Derivation=U|Number=Sing	4	obl	_	_
+3	Mannerheim	Mannerheim	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	paikalliset	paikallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Plur	6	amod	_	_
+6	paimentolaishäät	paimentolaishää	NOUN	N	Case=Nom|Number=Plur	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	joihin	joka	PRON	Pron	Case=Ill|Number=Plur|PronType=Rel	9	obl	_	_
+9	liittyi	liittyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	ratsastuskilpailu	ratsastuskilpailu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	9	nsubj	_	_
+11	perinteen	perine	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	mukaisesti	mukaisesti	ADV	Adv	Derivation=Sti	9	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Ratsailla olevat osanottajat yrittivät siepata maasta teurastetun pukin, joka esitti ryöstettävää tyttöä.
+1	Ratsailla	Ratsa	NOUN	N	Case=Ade|Number=Plur	2	obl	_	_
+2	olevat	olla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	osanottajat	osanottaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	4	nsubj	_	_
+4	yrittivät	yrittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	siepata	siepata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+6	maasta	maa	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+7	teurastetun	teurasttaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl	_	_
+8	pukin	pu	NOUN	N	Case=Nom|Clitic=Kin|Derivation=U|Number=Sing	4	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+11	esitti	esittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	acl:relcl	_	_
+12	ryöstettävää	ryöstettävä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	13	amod	_	_
+13	tyttöä	tyttö	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Kun yksi ratsastaja oli siepannut eläimen, muut laukkasivat hänen peräänsä ja yrittivät ryöstää «tytön» häneltä.
+1	Kun	kun	SCONJ	C	_	5	mark	_	_
+2	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	ratsastaja	ratsastaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	5	nsubj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	siepannut	siepata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	advcl	_	_
+6	eläimen	eläin	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	9	nsubj	_	_
+9	laukkasivat	laukkasa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	peräänsä	perä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	9	obj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	yrittivät	yrittiä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	_
+14	ryöstää	ryöstä	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+15	«	«	PUNCT	Punct	_	16	punct	_	SpaceAfter=No
+16	tytön	tyttö	NOUN	N	Case=Gen|Number=Sing	14	appos	_	SpaceAfter=No
+17	»	»	PUNCT	Punct	_	9	punct	_	_
+18	häneltä	hän	PRON	Pron	Case=Abl|Number=Sing|Person=3|PronType=Prs	9	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter=\s\n
+

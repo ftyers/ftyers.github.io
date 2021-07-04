@@ -1,0 +1,190 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Hei meidän herraa!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hei	hei	INTJ	Interj	_	4	discourse	_	_
+3	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	herraa	herra	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Kotka!
+1	Kotka	kotka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- huudahti lapsenhoitajatar eräältä ovelta.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lapsenhoitajatar	lapsenhoitajatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	2	obj	_	_
+4	eräältä	eräs	PRON	Pron	Case=Abl|Number=Sing|PronType=Ind	5	det	_	_
+5	ovelta	ovi	NOUN	N	Case=Abl|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kreivi tanssi hyvin ja hän tiesi itsekin sen, mutta hänen parinsa ei taitanut eikä tahtonutkaan hyvin tanssia.
+1	Kreivi	kreivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tanssi	tanssia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hyvin	hyvin	ADV	Adv	_	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	tiesi	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	itsekin	itse	ADV	Adv	Clitic=Kin	8	advmod	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	mutta	mutta	CCONJ	C	_	14	cc	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	parinsa	pari	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	14	obj	_	_
+13	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	taitanut	taitaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+15	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	cc	_	_
+16	tahtonutkaan	tahtoa	VERB	V	Case=Nom|Clitic=Kaan|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+17	hyvin	hyvin	ADV	Adv	_	16	advmod	_	_
+18	tanssia	tanssia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	16	xcomp	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hänen suunnaton ruhonsa oli jäykän suorana, ja tukevat käsivarret suorina sivuilla (työlaukkunsa hän oli antanut kreivittärelle); ainoastaan hänen ankarat, mutta silti kauniit kasvonsa tanssivat.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	nmod:poss	_	_
+2	suunnaton	suunnaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	3	amod	_	_
+3	ruhonsa	ruho	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	6	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	jäykän	jäykkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	suorana	suora	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	tukevat	tukea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+10	käsivarret	käsi#varsi	NOUN	N	Case=Gen|Number=Plur	12	nmod:poss	_	_
+11	suorina	suora	ADJ	A	Case=Ess|Degree=Pos|Number=Plur	12	amod	_	_
+12	sivuilla	sivu	NOUN	N	Case=Ade|Number=Plur	9	obl	_	_
+13	(	(	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+14	työlaukkunsa	työlaukku	NOUN	N	Case=Gen|Derivation=U|Number=Sing|Person[psor]=3	17	obj	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+16	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	aux	_	_
+17	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	parataxis	_	_
+18	kreivittärelle	kreivittäri	NOUN	N	Case=All|Number=Sing	17	obl	_	SpaceAfter=No
+19	)	)	PUNCT	Punct	_	17	punct	_	SpaceAfter=No
+20	;	;	PUNCT	Punct	_	6	punct	_	_
+21	ainoastaan	ainoastaan	ADV	Adv	_	23	advmod	_	_
+22	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	23	nmod:poss	_	_
+23	ankarat	ankara	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	28	amod	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	28	punct	_	_
+25	mutta	mutta	CCONJ	C	_	28	cc	_	_
+26	silti	silti	ADV	Adv	_	27	advmod	_	_
+27	kauniit	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	28	amod	_	_
+28	kasvonsa	kasvo	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	29	nsubj	_	_
+29	tanssivat	tansa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Sen, mikä kuvastui kreivin koko pyöreästä olennosta, Maria Dmitrijevnassa ilmaisivat ainoastaan yhä enemmän ja enemmän hymyilevät kasvot ja tempoileva nenä.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	12	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	kuvastui	kuvastua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+5	kreivin	kreivi	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+6	koko	koko	ADJ	A	_	8	amod	_	_
+7	pyöreästä	pyöreä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	8	amod	_	_
+8	olennosta	olenno	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+11	Dmitrijevnassa	Dmitrijevna	PROPN	N	Case=Ine|Number=Sing	10	flat:name	_	_
+12	ilmaisivat	ilmaisa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+13	ainoastaan	ainoastaan	ADV	Adv	_	12	advmod	_	_
+14	yhä	yhä	ADV	Adv	_	15	advmod	_	_
+15	enemmän	enemmän	ADV	Adv	_	12	advmod	_	_
+16	ja	ja	CCONJ	C	_	18	cc	_	_
+17	enemmän	enemmän	ADV	Adv	_	18	advmod	_	_
+18	hymyilevät	hymyillä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	conj	_	_
+19	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	18	obj	_	_
+20	ja	ja	CCONJ	C	_	22	cc	_	_
+21	tempoileva	tempoilla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	22	acl	_	_
+22	nenä	nenä	NOUN	N	Case=Nom|Number=Sing	19	conj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 7
+# text = Joskin kreivi, joka innostumistaan innostui, hurmasi katselijat odottamattoman taitavilla pyörähdyksillään ja notkeiden jalkojensa keveillä hypyillä, niin ei Maria Dmitrijevnakaan silti jäänyt ihailusta vähemmälle, kun hän suuria tavoittelemattakaan, liikutteli harteitaan tai pyörteli käsivarsiaan käänteissä ja poljennoissa.
+1	Joskin	joskin	SCONJ	C	_	8	mark	_	_
+2	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	6	nsubj	_	_
+5	innostumistaan	innostumistaan	ADV	Adv	_	6	advmod	_	_
+6	innostui	innostua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	hurmasi	hurmata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	advcl	_	_
+9	katselijat	katselija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	8	obj	_	_
+10	odottamattoman	odottamaton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	11	amod	_	_
+11	taitavilla	taitav	NOUN	N	Case=Ade|Number=Plur	8	obl	_	_
+12	pyörähdyksillään	pyörähdyksi	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	8	obl	_	_
+13	ja	ja	CCONJ	C	_	16	cc	_	_
+14	notkeiden	notke	NOUN	N	Case=Gen|Number=Plur	15	nmod:poss	_	_
+15	jalkojensa	jalka	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	16	nmod:poss	_	_
+16	keveillä	kevei	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+17	hypyillä	hypyi	NOUN	N	Case=Ade|Number=Plur	16	nmod	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	8	punct	_	_
+19	niin	niin	ADV	Adv	_	24	advmod	_	_
+20	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	24	aux	_	_
+21	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	24	nsubj	_	_
+22	Dmitrijevnakaan	Dmitrijevn	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	24	obl	_	_
+23	silti	silti	ADV	Adv	_	24	advmod	_	_
+24	jäänyt	jäädä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+25	ihailusta	ihailu	NOUN	N	Case=Ela|Derivation=U|Number=Sing	24	obl	_	_
+26	vähemmälle	vähä	ADJ	A	Case=All|Degree=Cmp|Number=Sing	24	xcomp	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	33	punct	_	_
+28	kun	kun	SCONJ	C	_	33	mark	_	_
+29	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	31	det	_	_
+30	suuria	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Plur	31	amod	_	_
+31	tavoittelemattakaan	tavoittelematt	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	33	nsubj	_	SpaceAfter=No
+32	,	,	PUNCT	Punct	_	31	punct	_	_
+33	liikutteli	liikutellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	26	advcl	_	_
+34	harteitaan	harteita	NOUN	N	Case=Ill|Number=Sing	33	obl	_	_
+35	tai	tai	CCONJ	C	_	36	cc	_	_
+36	pyörteli	pyörellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	33	conj	_	_
+37	käsivarsiaan	käsivarsa	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	36	obj	_	_
+38	käänteissä	käänteä	NOUN	N	Case=Ine|Number=Plur	36	obl	_	_
+39	ja	ja	CCONJ	C	_	40	cc	_	_
+40	poljennoissa	poljenno	NOUN	N	Case=Ine|Number=Plur	38	conj	_	SpaceAfter=No
+41	.	.	PUNCT	Punct	_	24	punct	_	_
+
+# sent_id = 8
+# text = Ja ansiosta häntä ihailtiinkin, sillä arvostellessaan jokainen otti lukuun hänen lihavuutensa ja ainaisen jäykkyytensä.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	ansiosta	ansio	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+4	ihailtiinkin	ihailtihdä	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	sillä	sillä	SCONJ	C	_	9	mark	_	_
+7	arvostellessaan	arvostella	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	9	advcl	_	_
+8	jokainen	jokainen	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	nsubj	_	_
+9	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	advcl	_	_
+10	lukuun	lukuun	ADV	Adv	_	9	advmod	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	lihavuutensa	lihavuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing|Person[psor]=3	9	obj	_	_
+13	ja	ja	CCONJ	C	_	15	cc	_	_
+14	ainaisen	ainainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	15	amod	_	_
+15	jäykkyytensä	jäykkyyti	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	12	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Tanssi kiihtyi kiihtymistään.
+1	Tanssi	tanssi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kiihtyi	kiihtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kiihtymistään	kiihtymi	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Toisiin tanssijoihin ei hetkeksikään kiinnitetty huomiota, eivätkä he siitä välittäneetkään.
+1	Toisiin	toinen	PRON	Pron	Case=Ill|Number=Plur|PronType=Rcp	2	det	_	_
+2	tanssijoihin	tanssijo	NOUN	N	Case=Ill|Number=Plur	5	obl	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	hetkeksikään	hetki	NOUN	N	Case=Tra|Clitic=Kaan|Number=Sing	5	obl	_	_
+5	kiinnitetty	kiinnittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	huomiota	huomio	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	eivätkä	ei	VERB	V	Clitic=Ka|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	conj	_	_
+9	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	8	obl	_	_
+11	välittäneetkään	välittäneet	ADV	Adv	Clitic=Kaan	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

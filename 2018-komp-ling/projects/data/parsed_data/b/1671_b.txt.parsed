@@ -1,0 +1,207 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ihmeitä, perusmuoto ihme.
+1	Ihmeitä	ihmi	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+4	ihme	ihme	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Uskomaton tapahtuma tai teko.
+1	Uskomaton	Uskomaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	2	amod	_	_
+2	tapahtuma	tapahtuma	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	tai	tai	CCONJ	C	_	4	cc	_	_
+4	teko	teko	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 3
+# text = Intti, perusmuoto inttää.
+1	Intti	intti	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	inttää	inttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Sanoa tai pyytää jotakin uudestaan, vaikka toinen on sanonut olevansa eri mieltä.
+1	Sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	tai	tai	CCONJ	C	_	3	cc	_	_
+3	pyytää	pyytää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	uudestaan	uudestaan	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	vaikka	vaikka	SCONJ	C	_	10	mark	_	_
+8	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	10	nsubj	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	sanonut	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	advcl	_	_
+11	olevansa	olla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	10	xcomp	_	_
+12	eri	eri	ADJ	A	_	13	amod	_	_
+13	mieltä	mieli	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Itsetyytyväisen, perusmuoto itsetyytyväinen.
+1	Itsetyytyväisen	Itsetyytyväinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	4	amod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+4	itsetyytyväinen	itsetyytyväinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Itseensä, omiin tekoihinsa tyytyväinen.
+1	Itseensä	itse	PRON	Pron	Case=Ill|Number=Sing|Person[psor]=3|Reflex=Yes	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	omiin	oma	ADJ	A	Case=Ill|Degree=Pos|Number=Plur	4	amod	_	_
+4	tekoihinsa	teko	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	5	nmod	_	_
+5	tyytyväinen	tyytyväinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 7
+# text = Jammailemaan.
+1	Jammailemaan	Jammailea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Heilumaan tai tanssimaan, ehkä myös soittamaan musiikin mukana.
+1	Heilumaan	Heilua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp:ds	_	_
+2	tai	tai	CCONJ	C	_	3	cc	_	_
+3	tanssimaan	tanssida	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ehkä	ehkä	ADV	Adv	_	7	advmod	_	_
+6	myös	myös	ADV	Adv	_	7	advmod	_	_
+7	soittamaan	soittaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	1	conj	_	_
+8	musiikin	musiikki	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+9	mukana	mukana	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	0	root	_	SpacesAfter=\s\s
+
+# sent_id = 9
+# text = Joka tapauksessa.
+1	Joka	joka	PRON	Pron	Case=Nom|Number=Sing	0	root	_	_
+2	tapauksessa	tapaus	NOUN	N	Case=Ine|Number=Sing	1	nmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Kuitenkin.
+1	Kuitenkin	kuitenkin	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Vaikka asiat olisivat toisin, näin tapahtuisi silti.
+1	Vaikka	vaikka	SCONJ	C	_	4	mark	_	_
+2	asiat	#asia	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+3	olisivat	olla	AUX	V	Mood=Cnd|Number=Plur|Person=3|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	toisin	toisin	ADV	Adv	_	7	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	näin	näin	ADV	Adv	_	7	advmod	_	_
+7	tapahtuisi	tapahtua	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+8	silti	silti	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 12
+# text = Tämä poliisi olisi joka tapauksessa saanut kuulla kaiken tarkoittaa, että Eija olisi kertonut tälle poliisille kaiken vaikka tämä ei olisikaan ollut poliisi.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+2	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	det	_	_
+5	tapauksessa	tapaus	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+6	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	kuulla	kuulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	9	nsubj	_	_
+9	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	ccomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	että	että	SCONJ	C	_	14	mark	_	_
+12	Eija	Eija	PROPN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+13	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	kertonut	kertoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	ccomp	_	_
+15	tälle	tämä	PRON	Pron	Case=All|Number=Sing|PronType=Dem	14	obl	_	_
+16	poliisille	poliisi	NOUN	N	Case=All|Number=Sing	14	obl	_	_
+17	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	14	nsubj	_	_
+18	vaikka	vaikka	SCONJ	C	_	23	mark	_	_
+19	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	23	nsubj:cop	_	_
+20	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	23	aux	_	_
+21	olisikaan	olla	AUX	V	Clitic=Kaan|Connegative=Yes|Mood=Cnd|VerbForm=Fin	23	aux	_	_
+22	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	23	cop	_	_
+23	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	14	advcl	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s
+
+# sent_id = 13
+# text = Jos ei tunneta.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tunneta	tuntea	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 14
+# text = Jos ei olla jo tuttuja, jos ei jo tiedetä, kuka toinen on.
+1	Jos	jos	SCONJ	C	_	5	mark	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	tuttuja	tuttu	NOUN	N	Case=Par|Number=Plur	10	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	jos	jos	SCONJ	C	_	10	mark	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	jo	jo	ADV	Adv	_	10	advmod	_	_
+10	tiedetä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	10	ccomp	_	_
+13	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	12	nsubj:cop	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	10	punct	_	SpacesAfter=\s\s
+
+# sent_id = 15
+# text = Juomisen laita.
+1	Juomisen	Juominen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	2	nmod:poss	_	_
+2	laita	laita	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 16
+# text = Juomiseen liittyvät asiat.
+1	Juomiseen	Juominen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	2	obl	_	_
+2	liittyvät	liittyä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	asiat	asia	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 17
+# text = Järki.
+1	Järki	järki	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 18
+# text = Äly, kyky ajatella.
+1	Äly	Äly	NOUN	N	Case=Nom|Derivation=U|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	kyky	kyky	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	ajatella	ajatella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\s
+
+# sent_id = 19
+# text = Kantautuneen, perusmuoto kantautua.
+1	Kantautuneen	Kantautua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+4	kantautua	kantautua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 20
+# text = Kuulua kauempaa.
+1	Kuulua	kuulu	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+2	kauempaa	kauempaa	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 21
+# text = Ääni voi kantautua vaikkapa huoneesta toiseen, tai sisältä ulos.
+1	Ääni	ää	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	nsubj	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kantautua	kantautua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	vaikkapa	vaikkapa	ADV	Adv	_	3	advmod	_	_
+5	huoneesta	huoa	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	acl	_	_
+6	toiseen	toinen	PRON	Pron	Case=Ill|Number=Sing|PronType=Rcp	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	tai	tai	CCONJ	C	_	10	cc	_	_
+9	sisältä	sisältä	ADV	Adv	_	10	advmod	_	_
+10	ulos	ulos	ADV	Adv	_	3	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

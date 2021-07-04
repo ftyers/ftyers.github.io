@@ -1,0 +1,238 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Sillä aikaa minä puhun itselleni kuten se, jolla on aikaa.
+1	Sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	4	obl	_	_
+2	aikaa	aika	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	puhun	puhua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	itselleni	itse	PRON	Pron	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	4	obl	_	_
+6	kuten	kuten	ADV	Adv	_	4	advmod	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	7	acl:relcl	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+11	aikaa	aika	NOUN	N	Case=Par|Number=Sing	9	nsubj:cop	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Kukaan ei kerro minulle uutta: niin minä kerron itselleni oman itseni.
+1	Kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kerro	kertoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+5	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	obj	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	5	punct	_	_
+7	niin	niin	ADV	Adv	_	3	advmod	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+9	kerron	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+10	itselleni	itse	PRON	Pron	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	9	obl	_	_
+11	oman	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	_
+12	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	9	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = 2. Kun minä tulin ihmisten luo, silloin minä huomasin heidän istuvan vanhassa luulossa: kaikki luulivat jo kauan sitten tietävänsä, mikä ihmiselle oli hyvää ja pahaa.
+1	2.	2.	ADJ	Num	NumType=Ord	10	obl	_	_
+2	Kun	kun	SCONJ	C	_	4	mark	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	tulin	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	advcl	_	_
+5	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	4	obl	_	_
+6	luo	luo	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	silloin	silloin	ADV	Adv	_	10	advmod	_	_
+9	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+10	huomasin	huomata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	12	nsubj	_	_
+12	istuvan	istua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	10	xcomp:ds	_	_
+13	vanhassa	vanha	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	14	amod	_	_
+14	luulossa	luulo	NOUN	N	Case=Ine|Number=Sing	12	obl	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	10	punct	_	_
+16	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	17	nsubj	_	_
+17	luulivat	luulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+18	jo	jo	ADV	Adv	_	19	advmod	_	_
+19	kauan	kauan	ADV	Adv	_	17	advmod	_	_
+20	sitten	sitten	ADV	Adv	_	21	advmod	_	_
+21	tietävänsä	tietää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	17	xcomp	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	24	nsubj:cop	_	_
+24	ihmiselle	ihminen	NOUN	N	Case=All|Number=Sing	21	acl:relcl	_	_
+25	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	cop	_	_
+26	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	24	obj	_	_
+27	ja	ja	CCONJ	C	_	28	cc	_	_
+28	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	26	conj	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 4
+# text = Vanhalta väsyneeltä asialta heistä tuntui kaikki puhe hyveestä; ja ken tahtoi nukkua hyvin, hän puhui vielä ennen maatamenoaan "hyvästä" ja "pahasta".
+1	Vanhalta	Vanha	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	2	amod	_	_
+2	väsyneeltä	väsynei	NOUN	N	Case=Abl|Number=Sing	5	obl	_	_
+3	asialta	asia	NOUN	N	Case=Abl|Number=Sing	5	obl	_	_
+4	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	5	obl	_	_
+5	tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+7	puhe	puhe	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+8	hyveestä	hyvei	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+9	;	;	PUNCT	Punct	_	12	punct	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	12	nsubj	_	_
+12	tahtoi	tahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+13	nukkua	nukku	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+14	hyvin	hyvin	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+18	vielä	vielä	ADV	Adv	_	17	advmod	_	_
+19	ennen	ennen	ADP	Adp	AdpType=Prep	20	case	_	_
+20	maatamenoaan	maatameno	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	17	obl	_	_
+21	"	"	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+22	hyvästä	hyvä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	5	appos	_	SpaceAfter=No
+23	"	"	PUNCT	Punct	_	24	punct	_	_
+24	ja	ja	CCONJ	C	_	26	cc	_	_
+25	"	"	PUNCT	Punct	_	26	punct	_	SpaceAfter=No
+26	pahasta	pahas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	27	conj	_	SpaceAfter=No
+27	"	"	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Tämän uneliaisuuden minä ravistin hereille opettaessani: mikä hyvää ja pahaa on, _sitä ei tiedä vielä kukaan:_ -- paitsi ehkä luova!
+1	Tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	det	_	_
+2	uneliaisuuden	uneliaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	4	obj	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	ravistin	ravistää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hereille	here	NOUN	N	Case=All|Number=Plur	4	obl	_	_
+6	opettaessani	opettae	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obl	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	9	punct	_	_
+8	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj:cop	_	_
+9	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	acl:relcl	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	conj	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	_sitä	_se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	16	obj	_	_
+15	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	conj	_	_
+17	vielä	vielä	ADV	Adv	_	16	advmod	_	_
+18	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	16	nsubj	_	SpaceAfter=No
+19	:_	:_	PUNCT	Punct	_	23	punct	_	_
+20	--	--	PUNCT	Punct	_	23	punct	_	_
+21	paitsi	paitsi	ADV	Adv	_	23	advmod	_	_
+22	ehkä	ehkä	ADV	Adv	_	23	advmod	_	_
+23	luova	luova	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	18	conj	_	SpaceAfter=No
+24	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = -- Mutta hän on se, joka luo ihmisen päämaalin ja antaa maalle sen tarkoituksen ja tulevaisuuden: hän vasta _luo_ sen, _että_ jokin on hyvää ja pahaa.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	25	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	luo	luoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	päämaalin	päämaali	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	maalle	maa	NOUN	N	Case=All|Number=Sing	12	obl	_	_
+14	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	15	nmod:poss	_	_
+15	tarkoituksen	tarkoitus	NOUN	N	Case=Gen|Number=Sing	12	obj	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	tulevaisuuden	tulevaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	15	conj	_	SpaceAfter=No
+18	:	:	PUNCT	Punct	_	8	punct	_	_
+19	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	21	det	_	_
+20	vasta	vasta	ADV	Adv	_	21	advmod	_	_
+21	_luo_ sen	_luo_ nen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	25	nsubj:cop	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	23	punct	_	_
+23	_että_ jokin	_että_ jokin	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	25	nsubj:cop	_	_
+24	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	25	cop	_	_
+25	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+26	ja	ja	CCONJ	C	_	27	cc	_	_
+27	pahaa	paha	ADJ	A	Case=Par|Degree=Pos|Number=Sing	25	conj	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	25	punct	_	_
+
+# sent_id = 7
+# text = Ja minä käskin heidän heittämään kumoon vanhat opetusistuimensa ja missä vain tuo vanha luulo oli istunut; minä käskin heidän nauramaan suurille hyvemestareilleen ja pyhille miehilleen ja runoilijoilleen ja maailmanlunastajilleen.
+1	Ja	ja	CCONJ	C	_	16	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+3	käskin	käs	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	16	nsubj	_	_
+4	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+5	heittämään	heitttä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	_
+6	kumoon	kumo	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	8	amod	_	_
+7	vanhat	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	opetusistuimensa	opetusistuimi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	5	obj	_	_
+9	ja	ja	CCONJ	C	_	16	cc	_	_
+10	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	16	obl	_	_
+11	vain	vain	ADV	Adv	_	16	advmod	_	_
+12	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	14	det	_	_
+13	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	_
+14	luulo	luulo	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	istunut	istua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+17	;	;	PUNCT	Punct	_	16	punct	_	_
+18	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	_
+19	käskin	käs	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	16	obj	_	_
+20	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	21	nsubj	_	_
+21	nauramaan	nauraa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	19	xcomp:ds	_	_
+22	suurille	suuri	NOUN	N	Case=All|Number=Sing	21	obl	_	_
+23	hyvemestareilleen	hyvemestarei	NOUN	N	Case=All|Number=Plur|Person[psor]=3	21	obl	_	_
+24	ja	ja	CCONJ	C	_	25	cc	_	_
+25	pyhille	pyh	NOUN	N	Case=All|Number=Plur	23	conj	_	_
+26	miehilleen	miehi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	21	nmod	_	_
+27	ja	ja	CCONJ	C	_	28	cc	_	_
+28	runoilijoilleen	runoilijoi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	26	conj	_	_
+29	ja	ja	CCONJ	C	_	30	cc	_	_
+30	maailmanlunastajilleen	maailmanlunastaji	NOUN	N	Case=All|Number=Plur|Person[psor]=3	26	conj	_	SpaceAfter=No
+31	.	.	PUNCT	Punct	_	16	punct	_	_
+
+# sent_id = 8
+# text = Heidän synkille viisailleen minä käskin heidän nauramaan ja jokaiselle, joka mustana linnunpelättimenä varoittaen oli istunut elämän puussa.
+1	Heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	synkille	synk	NOUN	N	Case=All|Number=Plur	16	obl	_	_
+3	viisailleen	viisai	NOUN	N	Case=All|Number=Plur|Person[psor]=3	2	nmod	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	16	nsubj	_	_
+5	käskin	käs	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	16	nsubj	_	_
+6	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
+7	nauramaan	nauraa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	16	xcomp	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	jokaiselle	jokainen	PRON	Pron	Case=All|Number=Sing|PronType=Ind	16	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	16	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	16	nsubj	_	_
+12	mustana	musta	NOUN	N	Case=Ess|Number=Sing	14	obl	_	_
+13	linnunpelättimenä	linnunpelätdin	NOUN	N	Case=Ess|Number=Sing	14	obl	_	_
+14	varoittaen	varoittaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	16	advcl	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	istunut	istua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+17	elämän	elämä	NOUN	N	Case=Gen|Number=Sing	18	nmod:poss	_	_
+18	puussa	puu	NOUN	N	Case=Ine|Number=Sing	16	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	16	punct	_	_
+
+# sent_id = 9
+# text = Heidän suurelle hautakadulleen minä asetuin ja itse haaskojen ja korppikotkien luo -- ja minä nauroin heidän kaikelle menneisyydelleen ja sen laholle ja häviävälle ihanuudelle.
+1	Heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	suurelle	suuri	ADJ	A	Case=All|Degree=Pos|Number=Sing	3	amod	_	_
+3	hautakadulleen	hautakadu	NOUN	N	Case=All|Number=Sing|Person[psor]=3	5	obl	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	asetuin	asetua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	itse	itse	ADV	Adv	_	8	advmod	_	_
+8	haaskojen	haasko	NOUN	N	Case=Gen|Number=Plur	5	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	korppikotkien	korppikotki	NOUN	N	Case=Gen|Number=Plur	8	conj	_	_
+11	luo	luo	ADP	Adp	AdpType=Post	8	case	_	_
+12	--	--	PUNCT	Punct	_	15	punct	_	_
+13	ja	ja	CCONJ	C	_	15	cc	_	_
+14	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+15	nauroin	nauroida	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+16	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	15	obj	_	_
+17	kaikelle	kaikki	PRON	Pron	Case=All|Number=Sing|PronType=Ind	18	det	_	_
+18	menneisyydelleen	menneisyyde	NOUN	N	Case=All|Number=Sing|Person[psor]=3	15	obl	_	_
+19	ja	ja	CCONJ	C	_	21	cc	_	_
+20	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	21	nmod:poss	_	_
+21	laholle	laho	NOUN	N	Case=All|Number=Sing	5	conj	_	_
+22	ja	ja	CCONJ	C	_	24	cc	_	_
+23	häviävälle	häviävä	ADJ	A	Case=All|Degree=Pos|Number=Sing	24	amod	_	_
+24	ihanuudelle	ihanuudi	NOUN	N	Case=All|Number=Sing	5	conj	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

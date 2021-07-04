@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Entä nyt?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Entä	entä	ADV	Adv	_	3	advmod	_	_
+3	nyt	nyt	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- hän sanoi Denisoville -- ei näy tulevan mitään tappelusta.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Denisoville	Denisov	PROPN	N	Case=All|Number=Sing	3	obl	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	näy	näkyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	_
+8	tulevan	tulla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	xcomp:ds	_	_
+9	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	10	det	_	_
+10	tappelusta	tappelu	NOUN	N	Case=Ela|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Näethän, meikäläiset vetäytyvät takaisin.
+1	Näethän	Näet	ADV	Adv	Clitic=Han	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	meikäläiset	meikäläinen	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+4	vetäytyvät	vetäytyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	takaisin	takaisin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Piru heidät tietää, mitä tekevät!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Piru	piru	INTJ	Interj	_	4	discourse	_	_
+3	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+4	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	7	nsubj	_	_
+7	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- mutisi Denisof.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Denisof	Denisof	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Hei! Rostof!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Hei	hei	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	Rostof	Rostof	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- huusi hän junkkarille, huomattuaan hänen iloiset kasvonsa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	junkkarille	junkkari	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	huomattuaan	huomata	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	2	advcl	_	_
+7	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
+8	iloiset	iloinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	9	amod	_	_
+9	kasvonsa	kasvo	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	6	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Jopa alkaa.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Jopa	jopa	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Ja hän hymähti hyväksyvästi, ollen nähtävästi hyvillään junkkarin takia.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	hymähti	hymähtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hyväksyvästi	hyväksyvästi	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	ollen	ollen	ADV	Adv	_	9	advmod	_	_
+7	nähtävästi	nähtävästi	ADV	Adv	Derivation=Sti	9	advmod	_	_
+8	hyvillään	hyvillään	ADV	Adv	_	9	advmod	_	_
+9	junkkarin	junkkari	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+10	takia	takia	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Rostof tunsi olevansa ylen onnellinen.
+1	Rostof	Rostof	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	5	cop	_	_
+4	ylen	ylen	ADV	Adv	_	5	advmod	_	_
+5	onnellinen	onnellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	2	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Samassa ilmestyi rykmentinpäällikkö sillalle.
+1	Samassa	samassa	ADV	Adv	_	2	advmod	_	_
+2	ilmestyi	ilmestyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rykmentinpäällikkö	rykmentinpäällikkö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	sillalle	silla	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Denisovv pyräytti täyttä neljää häntä kohti.
+1	Denisovv	Denisovv	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pyräytti	pyräyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	täyttä	täys	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	neljää	neljä	NUM	Num	Case=Par|Number=Sing|NumType=Card	5	nummod	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+6	kohti	kohti	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

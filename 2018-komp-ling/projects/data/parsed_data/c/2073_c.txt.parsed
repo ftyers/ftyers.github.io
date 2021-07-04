@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ehkä suvaitsevat ne, jotka tahtomattaan ovat syypäät tähän, ainakin korvata osan teidän tappiostanne...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ehkä	Ehkä	ADV	Adv	_	3	advmod	_	_
+3	suvaitsevat	suvaitsla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	9	nsubj:cop	_	_
+7	tahtomattaan	tahtoma	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	9	nsubj:cop	_	_
+8	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	syypäät	syypäs	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	4	acl:relcl	_	_
+10	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	9	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	_
+12	ainakin	ainakin	ADV	Adv	_	13	advmod	_	_
+13	korvata	korvata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+14	osan	osa	NOUN	N	Case=Gen|Number=Sing	13	obj	_	_
+15	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	16	nmod:poss	_	_
+16	tappiostanne	tappiostanne	NOUN	N	Case=Nom|Number=Sing	14	appos	_	SpaceAfter=No
+17	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Te ette ymmärrä minua! huusi Katerina Ivanovna suuttuneena hänelle -- mitä siinä on korvaamista?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+3	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	ymmärrä	ymmärtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	4	obj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	_
+7	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	Katerina	Kater	PROPN	N	Case=Ess|Number=Sing	7	obl	_	_
+9	Ivanovna	Ivanov	NOUN	N	Case=Ess|Number=Sing	10	obl	_	_
+10	suuttuneena	suuttua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	advcl	_	_
+11	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	14	obl	_	_
+12	--	--	PUNCT	Punct	_	14	punct	_	_
+13	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	14	nsubj:cop	_	_
+14	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	7	obl	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
+16	korvaamista	korvaaminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	14	nsubj:cop	_	SpaceAfter=No
+17	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Hänhän oli juovuksissa ja lankesi itse hevosen jalkoihin!
+1	Hänhän	Hä	PRON	Pron	Case=Gen|Clitic=Han|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	juovuksissa	juovuksissa	ADV	Adv	_	8	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	lankesi	laneta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	itse	itse	ADV	Adv	_	8	advmod	_	_
+7	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	jalkoihin	jalka	NOUN	N	Case=Ill|Number=Plur	0	root	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 4
+# text = Mitä tuloja!
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	tuloja	tulo	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Mitään tuloja ei hänen puoleltaan ollut koskaan puhettakaan, ainoastaan surua ja kurjuutta.
+1	Mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	det	_	_
+2	tuloja	tula	NOUN	N	Case=Par|Number=Plur	8	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	puoleltaan	puole	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	8	obl	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	cop	_	_
+7	koskaan	koskaan	ADV	Adv	_	8	advmod	_	_
+8	puhettakaan	puhe	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	0	root	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	ainoastaan	ainoastaan	ADV	Adv	_	11	advmod	_	_
+11	surua	suru	NOUN	N	Case=Par|Derivation=U|Number=Sing	8	conj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	kurjuutta	kurjuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	8	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 6
+# text = Tuo juoppolallihan on juonut kaikki!
+1	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+2	juoppolallihan	juoppolallla	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	juonut	juoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	obj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Hän on varastanut meiltä ja laahannut kaikki kapakkaan, hän on antanut lapsilleni ja omalle elämälleni kuoliniskun kapakassa!
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	varastanut	varastaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	meiltä	minä	PRON	Pron	Case=Abl|Number=Plur|Person=1|PronType=Prs	3	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	laahannut	laahata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+7	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	obj	_	_
+8	kapakkaan	kapakkaan	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+13	lapsilleni	lapsi	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1	12	obl	_	_
+14	ja	ja	CCONJ	C	_	18	cc	_	_
+15	omalle	oma	ADJ	A	Case=All|Degree=Pos|Number=Sing	16	amod	_	_
+16	elämälleni	elämä	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1	18	obl	_	_
+17	kuoliniskun	kuolinisku	NOUN	N	Case=Gen|Derivation=U|Number=Sing	18	nmod:poss	_	_
+18	kapakassa	kapaka	NOUN	N	Case=Ine|Number=Sing	3	conj	_	SpaceAfter=No
+19	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Jumalan kiitos, että hän kuolee!
+1	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kiitos	kiitos	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	kuolee	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Nyt toivon menettävämme edes jotakin kärsimyksistämme.
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	toivon	toivoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	menettävämme	menettäv	NOUN	N	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1	2	obj	_	_
+4	edes	edes	ADV	Adv	_	2	advmod	_	_
+5	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	kärsimyksistämme	kärsimyksist	NOUN	N	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1	2	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

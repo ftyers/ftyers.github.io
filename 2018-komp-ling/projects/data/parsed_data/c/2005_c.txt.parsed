@@ -1,0 +1,96 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Lähde tiehesi täältä!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Lähde	lähde	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tiehesi	tieheta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	täältä	täältä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Lähden kyllä, hempukkani!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lähden	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kyllä	kyllä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	hempukkani	hempukka	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Ja hän hoiperteli sisään.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	hoiperteli	hoiperellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sisään	sisään	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Raskolnikov läksi poispäin.
+1	Raskolnikov	Raskolnikov	NOUN	N	Abbr=Yes|Case=Nom|Number=Sing	0	root	_	_
+2	läksi	lä	NOUN	N	Case=Tra|Number=Sing	1	nmod	_	_
+3	poispäin	poispäin	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- Kuulkaa, herrani! huusi tyttö hänelle.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Kuulkaa	kuulkaa	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	herrani	herra	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nsubj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	6	obj	_	_
+8	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = -- Mitä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Tyttö joutui hämilleen.
+1	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	joutui	joutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hämilleen	hämi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Rakas herrani, aina tahtoisin iloiten kuluttaa hetkiäni teidän seurassanne, mutta nyt olen niin hämilläni teidän läsnäollessanne.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Rakas	Rakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	herrani	herra	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	aina	aina	ADV	Adv	_	6	advmod	_	_
+6	tahtoisin	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+7	iloiten	iloiten	ADV	Adv	_	6	advmod	_	_
+8	kuluttaa	kuluttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+9	hetkiäni	hetkiä	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	obj	_	_
+10	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	11	nmod:poss	_	_
+11	seurassanne	seurassanne	NOUN	N	Case=Nom|Number=Sing	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	19	punct	_	_
+13	mutta	mutta	CCONJ	C	_	19	cc	_	_
+14	nyt	nyt	ADV	Adv	_	19	advmod	_	_
+15	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
+16	niin	niin	ADV	Adv	_	19	advmod	_	_
+17	hämilläni	hämillä	ADV	Adv	Number[psor]=Sing|Person[psor]=1	19	advmod	_	_
+18	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	19	nmod:poss	_	_
+19	läsnäollessanne	läsnäollessanne	NOUN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Lahjoittakaa minulle, kavaljeeri rakas, kuusi kopekkaa naukkua varten!
+1	Lahjoittakaa	Lahjoittaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	5	acl	_	_
+2	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	1	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	kavaljeeri	kavaljeeri	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	rakas	rakas	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	kuusi	kuusi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	_
+8	kopekkaa	kopekka	NOUN	N	Case=Par|Number=Sing	9	nmod	_	_
+9	naukkua	naukku	NOUN	N	Case=Par|Number=Sing	5	conj	_	_
+10	varten	varten	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

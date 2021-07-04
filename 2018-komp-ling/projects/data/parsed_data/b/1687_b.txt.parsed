@@ -1,0 +1,182 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pitkää viikonloppua.
+1	Pitkää	pitkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	amod	_	_
+2	viikonloppua	viikonloppu	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Viikonloppu tarkoittaa lauantaita ja sunnuntaita, jotka ovat yleensä vapaapäiviä.
+1	Viikonloppu	viikon#loppu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lauantaita	lauantas	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	sunnuntaita	sunnuntas	NOUN	N	Case=Par|Number=Plur	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	10	nsubj:cop	_	_
+8	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	yleensä	yleensä	ADV	Adv	_	10	advmod	_	_
+10	vapaapäiviä	vapaapäivä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	acl:relcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Jos työntekijällä on niiden lisäksi myös esimerkiksi perjantai tai maanantai vapaata, viikonloppu on pitkä.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	työntekijällä	työntekijä	NOUN	N	Case=Ade|Number=Sing	15	advcl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	8	nmod	_	_
+5	lisäksi	lisäksi	ADP	Adp	AdpType=Post	4	case	_	_
+6	myös	myös	ADV	Adv	_	8	advmod	_	_
+7	esimerkiksi	esimerkiksi	ADV	Adv	_	8	advmod	_	_
+8	perjantai	perjantai	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+9	tai	tai	CCONJ	C	_	10	cc	_	_
+10	maanantai	maanantai	NOUN	N	Case=Nom|Number=Sing	8	conj	_	_
+11	vapaata	vapaa	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	2	punct	_	_
+13	viikonloppu	viikon#loppu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	15	nsubj:cop	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+15	pitkä	pitkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	15	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Potkittua, perusmuoto potkia.
+1	Potkittua	potkittua	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	potkia	potki	NOUN	N	Case=Par|Number=Sing	1	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Henkkaa ei satutettu potkimalla, vaan potkiminen tarkoittaa nyt kannustamista.
+1	Henkkaa	Henkka	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	satutettu	satuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	potkimalla	potkia	VERB	V	Case=Ade|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	vaan	vaan	CCONJ	C	_	8	cc	_	_
+7	potkiminen	potkiminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	8	nsubj	_	_
+8	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	nyt	nyt	ADV	Adv	_	8	advmod	_	_
+10	kannustamista	kannustaminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Saisi urheilullisemmalle lomalle potkittua, saisi houkuteltua urheilullisemmalle lomalle.
+1	Saisi	saada	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+2	urheilullisemmalle	urheilullisemma	ADJ	A	Case=All|Degree=Pos|Number=Sing	3	amod	_	_
+3	lomalle	loma	NOUN	N	Case=All|Number=Sing	1	obl	_	_
+4	potkittua	potkittua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	saisi	saada	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+7	houkuteltua	houkutella	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	6	xcomp	_	_
+8	urheilullisemmalle	urheilullisemma	ADJ	A	Case=All|Degree=Pos|Number=Sing	9	amod	_	_
+9	lomalle	loma	NOUN	N	Case=All|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 7
+# text = Rinkkamatkalle, perusmuoto rinkkamatka.
+1	Rinkkamatkalle	Rinkkamatka	NOUN	N	Case=All|Number=Sing	4	nmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	rinkkamatka	rinkkamatka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Rinkka on suuri reppu, johon mahtuvat monen päivän vaatteet.
+1	Rinkka	Rinkka	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	reppu	reppu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	7	obl	_	_
+7	mahtuvat	mahtua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	monen	moni	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	9	det	_	_
+9	päivän	#päivä	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	vaatteet	vaate	NOUN	N	Case=Nom|Number=Plur	7	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Sitä on helppo kantaa.
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	helppo	helppo	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	kantaa	kanta	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Rinkkamatka on lomamatka, jonka aikana kävellään paljon rinkka selässä.
+1	Rinkkamatka	Rinkkamatka	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	lomamatka	lomamatka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	6	nmod:poss	_	_
+6	aikana	#aika	NOUN	N	Case=Ess|Number=Sing	7	obl	_	_
+7	kävellään	kävellä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	acl:relcl	_	_
+8	paljon	paljon	ADV	Adv	_	7	advmod	_	_
+9	rinkka	rinkka	NOUN	N	Case=Nom|Number=Sing	10	obj	_	_
+10	selässä	selä	NOUN	N	Case=Ine|Number=Sing	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 11
+# text = Riittämätön.
+1	Riittämätön	riittämätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Liian pieni, liian vähän.
+1	Liian	liian	ADV	Adv	_	2	advmod	_	_
+2	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	liian	liian	ADV	Adv	_	5	advmod	_	_
+5	vähän	vähän	ADV	Adv	_	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 13
+# text = Ruotsinlaivalle, perusmuoto ruotsinlaiva.
+1	Ruotsinlaivalle	Ruotsinlaiva	PROPN	N	Case=All|Number=Sing	4	nmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	ruotsinlaiva	ruotsin#laiva	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 14
+# text = Iso risteilijä, joka kulkee Itämerellä Suomen ja Ruotsin väliä.
+1	Iso	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	risteilijä	risteilijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	nsubj	_	_
+5	kulkee	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+6	Itämerellä	Itämeri	PROPN	N	Case=Ade|Number=Sing	5	obl	_	_
+7	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	Ruotsin	Ruotsi	PROPN	N	Case=Gen|Number=Sing	7	conj	_	_
+10	väliä	#väli	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 15
+# text = Tarttuvan, perusmuoto tarttua.
+1	Tarttuvan	tarttuva	NOUN	N	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	tarttua	tarttua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	acl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 16
+# text = Ottaa kiinni.
+1	Ottaa	ottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	kiinni	kiinni	ADV	Adv	_	1	compound:prt	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 17
+# text = Myös ehdotukseen, pyyntöön, tarjoukseen voi tarttua.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	ehdotukseen	ehdotus	NOUN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	pyyntöön	pyyntö	NOUN	N	Case=Ill|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	tarjoukseen	tarjous	NOUN	N	Case=Ill|Number=Sing	2	conj	_	_
+7	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	tarttua	tarttua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

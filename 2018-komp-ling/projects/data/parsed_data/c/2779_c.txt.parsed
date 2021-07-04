@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- On jo myöhästä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	jo	jo	ADV	Adv	_	4	advmod	_	_
+4	myöhästä	myöhä	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Minä menen nyt heti ilmasemaan itseni.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	menen	mennä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nyt	nyt	ADV	Adv	_	2	advmod	_	_
+4	heti	heti	ADV	Adv	_	2	advmod	_	_
+5	ilmasemaan	ilmasea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+6	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Mutta minä en tosiaan tiedä, miksi sen teen.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	tosiaan	tosiaan	ADV	Adv	_	5	advmod	_	_
+5	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	miksi	miksi	ADV	Adv	_	9	advmod	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obj	_	_
+9	teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Suuret kyyneleet vierivät Dunjan poskipäillä.
+1	Suuret	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	kyyneleet	kyynel	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	vierivät	vierä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Dunjan	Dunja	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	poskipäillä	poskipäi	NOUN	N	Case=Ade|Number=Plur	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = -- Sinä itket, siskoseni.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	det	_	_
+3	itket	itki	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	siskoseni	siskose	ADV	Adv	Number[psor]=Sing|Person[psor]=1	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Voitko ojentaa minulle kätesi.
+1	Voitko	voida	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	ojentaa	ojentaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	2	obl	_	_
+4	kätesi	kätesi	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Oletko voinut epäillä sitä?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	epäillä	epäillä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Dunja syleili veljeään sydämmellisesti.
+1	Dunja	Dunja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	syleili	syleillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	veljeään	veli	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	_
+4	sydämmellisesti	sydämmellisesti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Sinähän sovitat puolet rikoksestasi sillä, että ilmaset itsesi ja otat syyn omille harteillesi! huudahti Dunja puristaen veljeään itseensä ja suudellen häntä.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Sinähän	sinä	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	sovitat	sovittaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+4	puolet	#puoli	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+5	rikoksestasi	rikoksesrata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	että	että	SCONJ	C	_	12	mark	_	_
+9	ilmaset	ilmanen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	_
+10	itsesi	itnen	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2	12	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	otat	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+13	syyn	syy	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+14	omille	oma	ADJ	A	Case=All|Degree=Pos|Number=Plur	15	amod	_	_
+15	harteillesi	hartit	NOUN	N	Case=All|Number=Plur|Number[psor]=Sing|Person[psor]=2	12	obl	_	SpaceAfter=No
+16	!	!	PUNCT	Punct	_	12	punct	_	_
+17	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+18	Dunja	Dun	NOUN	N	Case=Par|Number=Plur	17	obj	_	_
+19	puristaen	puristaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	17	advcl	_	_
+20	veljeään	velje	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	19	obj	_	_
+21	itseensä	itse	PRON	Pron	Case=Ill|Number=Sing|Person[psor]=3|Reflex=Yes	17	obl	_	_
+22	ja	ja	CCONJ	C	_	23	cc	_	_
+23	suudellen	suudellla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	17	conj	_	_
+24	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	23	obj	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

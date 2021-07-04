@@ -1,0 +1,112 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ah, pötyä!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ah	Ah	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	pötyä	pöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Älkää uskoko häntä
+1	Älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	uskoko	uskoko	ADJ	A	_	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	nsubj:cop	_	_
+
+# sent_id = 3
+# text = ... ei, älkää uskoko häntä ollenkaan! huudahti Raskolnikov raivoissaan.
+1	...	...	PUNCT	Punct	_	2	punct	_	_
+2	ei	ei	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	uskoko	uskoa	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	0	root	_	_
+6	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+7	ollenkaan	ollenkaan	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	_
+9	huudahti	huudahtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+10	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+11	raivoissaan	raivoi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Tuntui siltä kuin Porfyrius Petrovitsh ei olisi kuullut noita omituisia sanoja.
+1	Tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	1	obl	_	_
+3	kuin	kuin	SCONJ	C	_	8	mark	_	_
+4	Porfyrius	Porfyrius	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+5	Petrovitsh	Petrovitsh	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	olisi	olla	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	8	aux	_	_
+8	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	advcl	_	_
+9	noita	tuo	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	11	det	_	_
+10	omituisia	omituinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	11	amod	_	_
+11	sanoja	sana	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- Miten voit sinä lähteä ulos, ellet ollut houreissa? huusi Rasumihin kiivastuneena.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Miten	miten	ADV	Adv	_	5	advmod	_	_
+3	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+5	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	ulos	ulos	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	ellet	ellla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+9	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	cop	_	_
+10	houreissa	houre	NOUN	N	Case=Ine|Number=Plur	8	obl	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	5	punct	_	_
+12	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+13	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	14	obl	_	_
+14	kiivastuneena	kiivastua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Miksi läksit?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+3	läksit	läksiä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Mitä varten?...
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	_
+2	varten	varten	ADP	Adp	AdpType=Post	1	case	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+4	..	..	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Ja miksi niin salasesti?
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	miksi	miksi	ADV	Adv	_	4	advmod	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	_
+4	salasesti	salasesti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Oliko se terveen ajatusta?
+1	Oliko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	terveen	tervi	PROPN	N	Case=Ill|Number=Sing	4	nmod	_	_
+4	ajatusta	ajatus	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Nyt, kun kaikki vaara on ohi; puhun sinulle jo vallan suoraan!
+1	Nyt	nyt	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	kun	kun	SCONJ	C	_	7	mark	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	vaara	vaara	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	ohi	ohi	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	7	punct	_	_
+9	puhun	puhua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	9	obl	_	_
+11	jo	jo	ADV	Adv	_	12	advmod	_	_
+12	vallan	valtaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	advcl	_	_
+13	suoraan	suoraan	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	9	punct	_	SpacesAfter=\s\n
+

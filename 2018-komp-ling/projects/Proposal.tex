@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Finnish second language readability classification 
+}
+\author{Nikolay Babakov, Nadia Katricheva, Maria Podryadchikova, Enze Gong
+ }
+\date{November 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Abstract}
+The task of text classification can save much time for both students and teachers, especially in the sphere of learning foreign languages. We are going to create a model which distinguishes a given text according to three or six levels scale. We will train our model on texts with predefined levels and test it on new unlabeled texts. 
+
+\section{Introduction}
+We would like to implement readability classification model for a number of reasons. First of all, it seems to be the task which will make us get more familiar with the technologies we have never used before. Moreover, the task itself can be applied in different spheres, mainly in education. 
+As far as we are informed there is no such model implemented for the Finnish language, so it should be a useful instrument for Finnish learners
+
+\section{Proposed goals}
+MVP for this project is the model which is able to divide the input texts into three types: Basic, Intermediate and Advanced. 
+
+EP is having a model which can split the texts into standard six categories (A1, A1, B1, B2, C1, C2) according to Common European Framework of Reference for Languages.
+
+HAP.\newline
+If we step forward to some usable product, we can not only include some trained model into our project, but also collect a corpus divided not only by readability but also by some basic set of themes like “sports”, “news”, “technology”, etc. What the user can get is not only some definite text readability evaluation, but also some ready for reading text from our corpora or some text which meets preset readability and theme requirements from the corpora provided from the user’s side. 
+
+\section{Requirements}
+Texts for processing\newline
+The results we are going to reach mostly depend on the materials we will be able to find for implementing the model. In ideal world, we will need to have “text - readability grade” corpora. But we will hardly be able to find such ideal materials so we will also use some sources which provide reading materials in Finnish for beginners or some classical books for hard readability example. Some kind of test of Finnish as foreign language materials will also be a good reliable option for us. 
+An additional difficulty is that none of us can speak any Finnish so this will let us to upgrade searching skills in some totally new material.
+
+Processing techniques\newline
+We are going to use similar works’ experience to work on this project. One of the papers is “Insights from Russian second language readability classification: complexity-dependent training requirements, and feature evaluation of multiple categories” 
+What we will finally need to do is to convert the input text into some matrix, each row of which will correspond to definite feature. The target variable should be the vector which shows the predefined readability level for each text.
+Converting raw text into features and then into number matrices is the task which also be new for most of us, so this will be another skill we are supposed to get during the project.
+
+Model training approaches\newline
+Even when we get a pure number matrix with number target variable vector we will still need to choose which machine learning approach will work best on the data which we will get. Our knowledge is not equal in this field, moreover we are only supposed to learn this formally in our masters in future, so we will have to do some home reading and maybe to pass some introduction courses to get more familiar to the approaches in question.
+
+\section{Timelines}
+According to the current information we have six weeks for this project, which is nearly up to 23rd of December.
+An approximate schedule will be as follows\newline
+Week 1. Collecting texts of different readability types and assigning respective types to them.\newline
+Week 2. Looking for similar works done for similar languages. Going through theoretical basics. \newline
+Week 3 - 4. Text processing, feature generation. According to the types of texts which we found we will think whether it is worth trying to divide the texts into three basic or six categories.\newline
+Week 5. On this stage we are supposed to get the data which we can input to some model for further training. We will have to implement different approaches and find the one which provides us with the highest accuracy rate.\newline
+Week 6. All previous tasks being finished on time, we can split the texts into themes and try to implement the options described in HAP.
+
+section{Data policy}
+Copyright 2018 Nikolay Babakov
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. 
+
+section{References}
+We currently refer only to the mentioned work http://www.aclweb.org/anthology/W16-0534, but we will have to look for more sources to get additional knowledge. 
+
+\end{document}

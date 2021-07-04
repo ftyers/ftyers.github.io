@@ -1,0 +1,100 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Anna meni makuuhuoneeseen.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	makuuhuoneeseen	makuu#huone	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Marko meni perässä.
+1	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	perässä	perässä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Anna puki ylleen uudet alusvaatteet ja valitsi huolella hametta.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	puki	pukea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ylleen	ylle	ADV	Adv	Person[psor]=3	2	advmod	_	_
+4	uudet	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	5	amod	_	_
+5	alusvaatteet	alusvaate	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	valitsi	valita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	huolella	huolella	ADV	Adv	_	7	advmod	_	_
+9	hametta	hame	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Markon kurkkua kuivasi.
+1	Markon	Markko	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kurkkua	kurkku	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	kuivasi	kuivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Mustasukkaisuus sumensi ajatukset, ja olo tuli levottomaksi.
+1	Mustasukkaisuus	mustasukkaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	2	nsubj	_	_
+2	sumensi	sumentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ajatukset	ajatus	NOUN	N	Case=Nom|Number=Plur	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	olo	olo	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	levottomaksi	levoton	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	7	xcomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = — En pidä ystävästäsi.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	ystävästäsi	ystävä	NOUN	N	Case=Ela|Number=Sing|Number[psor]=Sing|Person[psor]=2	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Hän ei ole sinulle hyvää seuraa, Marko sanoi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+4	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	6	obl	_	_
+5	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	amod	_	_
+6	seuraa	seura	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Anna viittasi kädellä.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	viittasi	viitata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kädellä	kädi	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = — Höpö höpö.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Höpö	Höpö	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	höpö	höpö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Sinä vaan ajattelet turhia.
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+2	vaan	vaan	CCONJ	C	_	3	cc	_	_
+3	ajattelet	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	turhia	turha	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Anna alkoi olla valmis lähtemään.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	cop	_	_
+4	valmis	valmis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	xcomp	_	_
+5	lähtemään	lähteä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

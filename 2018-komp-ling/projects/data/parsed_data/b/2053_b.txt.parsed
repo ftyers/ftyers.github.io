@@ -1,0 +1,142 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Marko valvoi aamuun asti.
+1	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	valvoi	valvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aamuun	aamu	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	asti	asti	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Anna ei tullut kotiin eikä soittanut.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	cc	_	_
+6	soittanut	soittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Kului pari päivää ja iltaa, jotka olivat yksinäisiä Markolle.
+1	Kului	kulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	päivää	päivä	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	iltaa	ilta	NOUN	N	Case=Par|Number=Sing	1	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	9	nsubj:cop	_	_
+8	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	yksinäisiä	yksinäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	5	acl:relcl	_	_
+10	Markolle	Marko	PROPN	N	Case=All|Number=Sing	9	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Hänen teki mieli mennä ostarille.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mieli	mieli	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+5	ostarille	ostari	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Siellä hän näkisi Annan.
+1	Siellä	siellä	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	näkisi	nähdä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Annan	anta	PROPN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mutta Marko ei uskaltanut.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	Marko	Marko	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	uskaltanut	uskaltaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Jos toinen vaikka torjuisi hänet.
+1	Jos	jos	SCONJ	C	_	4	mark	_	_
+2	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	4	nsubj	_	_
+3	vaikka	vaikka	SCONJ	C	_	4	mark	_	_
+4	torjuisi	torjua	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Markon työ alkoi mennä huonosti.
+1	Markon	Markko	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	työ	työ	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	huonosti	huonosti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Toiset ihmettelivät, mikä miehen mieltä painoi.
+1	Toiset	toinen	PRON	Pron	Case=Nom|Number=Plur|PronType=Rcp	2	nsubj	_	_
+2	ihmettelivät	ihmetellä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+5	miehen	#mies	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	mieltä	mieli	NOUN	N	Case=Par|Number=Sing	7	nsubj	_	_
+7	painoi	painaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Työmaan mestarikin huomasi sen.
+1	Työmaan	Työ#maa	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	mestarikin	mestari	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	3	nsubj	_	_
+3	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Pomon täytyy pitää alaisistaan huolta, muutenhan kärsii koko työmaa.
+1	Pomon	Pomo	NOUN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pitää	pitää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	alaisistaan	alaisistaan	ADV	Adv	_	5	advmod	_	_
+5	huolta	huoli	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	muutenhan	muutella	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	kärsii	kärsiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	koko	koko	ADJ	A	_	10	amod	_	_
+10	työmaa	työma	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Niinpä hän kerran kysyi Markolta:
+1	Niinpä	niinpä	ADV	Adv	_	4	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	kerran	kerran	ADV	Adv	_	4	obl	_	_
+4	kysyi	kysyydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Markolta	Marko	NOUN	N	Case=Abl|Number=Sing	4	obl	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = — Mikä on?
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Työ ei suju.
+1	Työ	työ	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	suju	suja	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Katselet vaan ja mietit jotakin.
+1	Katselet	Katsella	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vaan	vaan	CCONJ	C	_	5	cc	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	mietit	mietti	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+5	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	1	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

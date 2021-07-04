@@ -1,0 +1,123 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Onnea Selkosanomat ja LL-Bladet!
+1	Onnea	onnea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	Selkosanomat	Selkosanoma	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	LL-Bladet	LL-Blasi	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Selkosanomien ja LL-Bladetin lukijat kertovat, miksi he lukevat lehteä ja lähettävät terveisiä 25-vuotiaalle Selkosanomille.
+1	Selkosanomien	Selkosanoma	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	LL-Bladetin	LL-Bladetti	NOUN	N	Case=Gen|Number=Sing	1	conj	_	_
+4	lukijat	lukija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	5	nsubj	_	_
+5	kertovat	kertoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	miksi	miksi	ADV	Adv	_	9	advmod	_	_
+8	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+9	lukevat	lukea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+10	lehteä	lehti	NOUN	N	Case=Par|Number=Sing	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	lähettävät	lähettää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+13	terveisiä	terveinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	15	amod	_	_
+14	25-vuotiaalle	25-vuotiaa	ADJ	A	Case=All|Degree=Pos|Number=Sing	15	amod	_	_
+15	Selkosanomille	Selkosanom	NOUN	N	Case=All|Number=Plur	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = “Haluan lukea uutisia suomeksi” Inkerinsuomalainen Denis Kosiakov, 22, on kotoisin Moskovasta.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Haluan	haluta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lukea	lukea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+4	uutisia	uutinen	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	suomeksi	suomi	NOUN	N	Case=Tra|Number=Sing	3	obl	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	2	punct	_	_
+7	Inkerinsuomalainen	Inkerinsuomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	8	amod	_	_
+8	Denis	Denis	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+9	Kosiakov	Kosiakov	PROPN	N	Case=Nom|Number=Sing	8	flat:name	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	22	22	NUM	Num	NumType=Card	8	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	2	punct	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+14	kotoisin	kotoisin	ADV	Adv	_	15	advmod	_	_
+15	Moskovasta	Moskova	PROPN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Denis on muuttanut Suomeen vuonna 2014.
+1	Denis	Denis	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	muuttanut	muuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+6	2014	2014	NUM	Num	NumType=Card	5	nummod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Hän asuu nyt Vantaalla.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	asuu	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nyt	nyt	ADV	Adv	_	2	advmod	_	_
+4	Vantaalla	Vantaa	PROPN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Denisin äidinkieli on venäjä, mutta hänellä on inkerinsuomalaiset sukujuuret.
+1	Denisin	Deninen	ADJ	A	Case=Nom|Degree=Sup|Derivation=Llinen|Number=Sing	2	amod	_	_
+2	äidinkieli	äidinkieli	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	venäjä	venäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	4	conj	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop:own	_	_
+9	inkerinsuomalaiset	inkerinsuomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	10	amod	_	_
+10	sukujuuret	sukujuuri	NOUN	N	Case=Nom|Number=Plur	7	nsubj:cop	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Denis ei kuitenkaan puhunut suomea ennen Suomeen muuttoa.
+1	Denis	Denis	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	kuitenkaan	kuitenkaan	ADV	Adv	_	4	advmod	_	_
+4	puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	suomea	suomi	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	ennen	ennen	ADP	Adp	AdpType=Prep	8	case	_	_
+7	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	8	obl	_	_
+8	muuttoa	muutto	NOUN	N	Case=Par|Number=Sing	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Hän on oppinut kieltä nopeasti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	oppinut	oppida	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kieltä	kieli	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Denis on ammatiltaan liiketoiminta-analyytikko.
+1	Denis	Denis	PROPN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	ammatiltaan	ammatti	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	4	obl	_	_
+4	liiketoiminta-analyytikko	liiketoiminta-analyytikko	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Nyt hän opiskelee Edupolissa yrittäjyyttä ja Helsingin aikuisopistossa suomen kieltä.
+1	Nyt	nyt	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	opiskelee	opiskella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Edupolissa	Edupol	PROPN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	yrittäjyyttä	yrittäjyys	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	Helsingin	Helsinki	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	aikuisopistossa	aikuisopisto	NOUN	N	Case=Ine|Number=Sing	10	obl	_	_
+9	suomen	suomi	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	kieltä	kieli	NOUN	N	Case=Par|Number=Sing	5	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

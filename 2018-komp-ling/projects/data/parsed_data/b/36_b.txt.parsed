@@ -1,0 +1,129 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = USA:ssa on ollut vaalit.
+1	USA:ssa	USA	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	vaalit	vaali	NOUN	N	Case=Nom|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 2
+# text = Amerikkalaiset valitsivat edustajia kongressiin.
+1	Amerikkalaiset	amerikkalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	2	nsubj	_	_
+2	valitsivat	valita	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	edustajia	edustaja	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	2	obj	_	_
+4	kongressiin	kongressi	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Demokraatit saivat enemmän paikkoja kongressin edustajainhuoneeseen kuin republikaanit.
+1	Demokraatit	Demokraatti	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	enemmän	enemmän	ADV	Adv	_	4	advmod	_	_
+4	paikkoja	paikka	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+5	kongressin	kongressi	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	edustajainhuoneeseen	edustajainhuone	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	republikaanit	republikaani	NOUN	N	Case=Nom|Number=Plur	2	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Se on huono asia presidentti Donald Trumpille, joka on republikaani.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	asia	asia	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+5	presidentti	presidentti	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	Donald	Donald	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+7	Trumpille	Trump	PROPN	N	Case=All|Number=Sing	6	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj:cop	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	republikaani	republikaani	NOUN	N	Case=Nom|Number=Sing	6	acl:relcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Demokraatit voivat nyt estää ja hidastaa Trumpin ideoita.
+1	Demokraatit	Demokraatti	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+2	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	nyt	nyt	ADV	Adv	_	4	advmod	_	_
+4	estää	estää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	hidastaa	hidastaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+7	Trumpin	Trump	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	ideoita	idea	NOUN	N	Case=Par|Number=Plur	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Presidentin lakiehdotukset eivät tule voimaan, jos kongressi ei hyväksy niitä.
+1	Presidentin	presidentti	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	lakiehdotukset	lakiehdotus	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+3	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tule	tulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	voimaan	voimaan	ADV	Adv	_	4	compound:prt	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	jos	jos	SCONJ	C	_	10	mark	_	_
+8	kongressi	kongressi	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	hyväksy	hyväksyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	advcl	_	_
+11	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Kongressi päättää myös USA:n raha-asioista.
+1	Kongressi	kongressi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	päättää	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	myös	myös	ADV	Adv	_	5	advmod	_	_
+4	USA:n	USA	NOUN	N	Abbr=Yes|Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	raha-asioista	raha-asio	NOUN	N	Case=Ela|Number=Plur	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Presidentti Trumpin on nyt vaikea saada rahaa esimerkiksi muurin rakentamiseen Meksikon rajalle.
+1	Presidentti	Presidentti	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Trumpin	Trump	PROPN	N	Case=Gen|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	vaikea	vaikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+6	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	_
+7	rahaa	raha	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+8	esimerkiksi	esimerkiksi	ADV	Adv	_	10	advmod	_	_
+9	muurin	muuri	NOUN	N	Case=Gen|Number=Sing	10	nmod:gobj	_	_
+10	rakentamiseen	rakentaminen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	6	obl	_	_
+11	Meksikon	Meksikko	PROPN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	rajalle	raja	NOUN	N	Case=All|Number=Sing	10	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Muuri on ollut yksi Trumpin lempi-ideoista.
+1	Muuri	Muuri	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	0	root	_	_
+5	Trumpin	Trump	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	lempi-ideoista	lempi-ideo	NOUN	N	Case=Ela|Number=Plur	4	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Naiset menestyivät hyvin USA:n kongressivaaleissa.
+1	Naiset	nainen	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	menestyivät	menestyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hyvin	hyvin	ADV	Adv	_	2	advmod	_	_
+4	USA:n	USA	PROPN	N	Abbr=Yes|Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kongressivaaleissa	kongressivaale	NOUN	N	Case=Ine|Number=Plur	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Kongressiin pääsi myös naisia, jotka kuuluvat eri vähemmistöihin.
+1	Kongressiin	Kongressi	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+2	pääsi	päästä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	myös	myös	ADV	Adv	_	4	advmod	_	_
+4	naisia	nainen	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	kuuluvat	kuulua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	eri	eri	ADJ	A	_	9	amod	_	_
+9	vähemmistöihin	vähemmistö	NOUN	N	Case=Ill|Number=Plur	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

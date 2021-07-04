@@ -1,0 +1,146 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Liikenne kasvaa eniten Kittilän lentokentällä.
+1	Liikenne	Liikenne	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	eniten	eniten	ADV	Adv	_	2	advmod	_	_
+4	Kittilän	Kittilä	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	lentokentällä	lento#kenttä	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kittilän lentoaseman remontti on pian valmis, ja lentoasema on nyt paljon suurempi kuin ennen.
+1	Kittilän	Kittilä	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	lentoaseman	lento#asema	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	remontti	remontti	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	pian	pian	ADV	Adv	_	6	advmod	_	_
+6	valmis	valmis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	ja	ja	CCONJ	C	_	13	cc	_	_
+9	lentoasema	lento#asema	NOUN	N	Case=Nom|Number=Sing	13	nsubj:cop	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+11	nyt	nyt	ADV	Adv	_	13	advmod	_	_
+12	paljon	paljon	ADV	Adv	_	13	advmod	_	_
+13	suurempi	suuri	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	6	conj	_	_
+14	kuin	kuin	SCONJ	C	_	15	mark	_	_
+15	ennen	ennen	ADV	Adv	_	13	advcl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Remontti maksoi 20 miljoonaa euroa.
+1	Remontti	remontti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	maksoi	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	20	20	NUM	Num	NumType=Card	4	compound	_	_
+4	miljoonaa	miljoona	NUM	Num	Case=Par|Number=Sing|NumType=Card	5	nummod	_	_
+5	euroa	euro	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Kieli muuttuu.
+1	Kieli	kieli	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	muuttuu	muuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Nuoret puhuvat esimerkiksi parisuhteesta eri sanoilla kuin vanhemmat.
+1	Nuoret	nuori	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	puhuvat	puhua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+4	parisuhteesta	parisuhteesta	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+5	eri	eri	ADJ	A	_	6	amod	_	_
+6	sanoilla	sana	NOUN	N	Case=Ade|Number=Plur	2	obl	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	vanhemmat	vanhempi	NOUN	N	Case=Nom|Number=Plur	2	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Kahdella nuorella on "juttu", kun he tutustuvat toisiinsa.
+1	Kahdella	kaksi	NUM	Num	Case=Ade|Number=Sing|NumType=Card	2	nummod	_	_
+2	nuorella	nuor	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	juttu	juttu	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	kun	kun	SCONJ	C	_	10	mark	_	_
+9	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	tutustuvat	tutustua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	_
+11	toisiinsa	toinen	PRON	Pron	Case=Ill|Number=Plur|Person[psor]=3	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Silloin nuoret tapaavat niin, että paikalla on myös muita nuoria.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	nuoret	nuori	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	tapaavat	tapaaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	niin	niin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	että	että	SCONJ	C	_	7	mark	_	_
+7	paikalla	paikka	NOUN	N	Case=Ade|Number=Sing	3	ccomp	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+9	myös	myös	ADV	Adv	_	11	advmod	_	_
+10	muita	muu	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	11	det	_	_
+11	nuoria	nuori	NOUN	N	Case=Par|Number=Plur	7	nsubj:cop	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = "Säätö" tarkoittaa sitä, että nuoret viettävät jo enemmän aikaa kahdestaan.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Säätö	Säätö	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+3	"	"	PUNCT	Punct	_	2	punct	_	_
+4	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	että	että	SCONJ	C	_	9	mark	_	_
+8	nuoret	nuori	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	viettävät	viettää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+10	jo	jo	ADV	Adv	_	9	advmod	_	_
+11	enemmän	enemmän	ADV	Adv	_	12	advmod	_	_
+12	aikaa	aika	NOUN	N	Case=Par|Number=Sing	9	obj	_	_
+13	kahdestaan	kahdestaan	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = He voivat esimerkiksi käydä kahdestaan kahvilla.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+4	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	kahdestaan	kahdestaan	ADV	Adv	_	6	advmod	_	_
+6	kahvilla	kahvi	NOUN	N	Case=Ade|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = "Aletaan oleen" tarkoittaa seurustelua.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Aletaan	alkaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	oleen	oleen	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+5	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	seurustelua	seurustelu	NOUN	N	Case=Par|Derivation=U|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Silloin parisuhde on jo vakava.
+1	Silloin	silloin	ADV	Adv	_	5	advmod	_	_
+2	parisuhde	parisuhde	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	vakava	vakava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Nuoret voivat esimerkiksi kertoa suhteesta vanhemmille ja aloittaa seksin.
+1	Nuoret	nuori	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+2	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+4	kertoa	kertoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	suhteesta	suhde	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+6	vanhemmille	vanhempi	ADJ	A	Case=All|Degree=Pos|Number=Plur	4	xcomp	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	aloittaa	aloittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	conj	_	_
+9	seksin	seksi	NOUN	N	Case=Gen|Number=Sing	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

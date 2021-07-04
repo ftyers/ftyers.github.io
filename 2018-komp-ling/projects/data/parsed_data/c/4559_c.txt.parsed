@@ -1,0 +1,91 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Miksi? Mitävarten?
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Miksi	miksi	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+4	Mitävarten	Mitävaret	PROPN	N	Case=Gen|Number=Plur	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Millä?
+1	Millä	mikä	PRON	Pron	Case=Ade|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Mihin?
+1	Mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Missä?
+1	Missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Miten?
+1	Miten	miten	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Eikö ole hulluutta elää vielä?
+1	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	hulluutta	hulluus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	4	nsubj:cop	_	_
+4	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	vielä	vielä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- "Oi, ystäväni, ilta se on, joka minusta niin kysyy.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Oi	Oi	PROPN	N	Case=Nom|Number=Sing	7	compound:nn	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ystäväni	ystävä	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	ilta	ilta	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	_
+12	minusta	minä	PRON	Pron	Case=Ela|Number=Sing|Person=1|PronType=Prs	14	obl	_	_
+13	niin	#niin	ADV	Adv	_	14	advmod	_	_
+14	kysyy	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Suokaa minulle anteeksi minun surumielisyyteni.
+1	Suokaa	Suoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	1	obl	_	_
+3	anteeksi	anteeksi	ADV	Adv	_	5	advmod	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	surumielisyyteni	surumielisyysi	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = "Ilta on joutunut: suokaa minulle anteeksi, että ilta on joutunut!"
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ilta	ilta	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	joutunut	joutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	suokaa	suoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
+8	anteeksi	anteeksi	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	että	että	SCONJ	C	_	13	mark	_	_
+11	ilta	ilta	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	joutunut	joutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	ccomp	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Näin puhui Zarathustra.
+1	Näin	näin	ADV	Adv	_	2	advmod	_	_
+2	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

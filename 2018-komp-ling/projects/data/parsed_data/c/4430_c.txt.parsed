@@ -1,0 +1,176 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ei vihalla, vaan naurulla surmataan.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	vihalla	viha	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	vaan	vaan	CCONJ	C	_	6	cc	_	_
+5	naurulla	nauru	NOUN	N	Case=Ade|Derivation=U|Number=Sing	6	obl	_	_
+6	surmataan	surmata	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ylös, surmatkaamme raskauden henki!
+1	Ylös	ylös	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	surmatkaamme	surmata	VERB	V	Mood=Imp|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+4	raskauden	raskaus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	5	nmod:poss	_	_
+5	henki	henki	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Minä olen oppinut kävelemään: nyt lasken minä itseni valloilleen.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	oppinut	oppida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	kävelemään	kävellä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	nyt	nyt	ADV	Adv	_	7	advmod	_	_
+7	lasken	laskea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+9	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	10	obj	_	_
+10	valloilleen	valloi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Minä olen oppinut lentämään: nyt en tahdo ensin saada sysäystä päästäkseni paikoiltani.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	oppinut	oppida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	lentämään	lentää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	nyt	nyt	ADV	Adv	_	8	advmod	_	_
+7	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	parataxis	_	_
+9	ensin	ensin	ADV	Adv	_	10	advmod	_	_
+10	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+11	sysäystä	sysäys	NOUN	N	Case=Par|Number=Sing	10	obj	_	_
+12	päästäkseni	päästä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	10	advcl	_	_
+13	paikoiltani	paikoil	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Nyt minä olen kevyt, nyt minä lennän, nyt näen itseni allani, nyt tanssii jumala minun kauttani.
+1	Nyt	nyt	ADV	Adv	_	4	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kevyt	kevyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	nyt	nyt	ADV	Adv	_	8	advmod	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	lennän	lentää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	nyt	nyt	ADV	Adv	_	11	advmod	_	_
+11	näen	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+12	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	11	obj	_	_
+13	allani	a	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obl	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	nyt	nyt	ADV	Adv	_	16	advmod	_	_
+16	tanssii	tanssia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	_
+17	jumala	jum#ala	NOUN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+18	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	19	nmod:poss	_	_
+19	kauttani	kaut	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	17	nmod	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = -- Näin puhui Zarathustra.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Näin	Näin	ADV	Adv	_	3	advmod	_	_
+3	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Vuorella kasvavasta puusta.
+1	Vuorella	Vuor	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+2	kasvavasta	kasvaa	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	puusta	puu	NOUN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Zarathustran silmä oli nähnyt, että eräs nuorukainen karttoi häntä.
+1	Zarathustran	Zarathustra	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	silmä	silmä	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	det	_	_
+8	nuorukainen	nuorukainen	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	karttoi	karttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+10	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Ja kun hän eräänä iltana vaelsi yksin halki vuorien, jotka ympäröivät sitä kaupunkia, jota kutsutaan "Kirjavaksi lehmäksi": katso, silloin huomasi hän kulkiessaan tämän nuorukaisen istuvan puuta vasten nojautuneena ja väsynein katsein silmäilevän alas laaksoon.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	kun	kun	SCONJ	C	_	6	mark	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+4	eräänä	eräs	PRON	Pron	Case=Ess|Number=Sing|PronType=Ind	5	det	_	_
+5	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	6	obl	_	_
+6	vaelsi	vaeltaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	advcl	_	_
+7	yksin	yksin	ADV	Adv	_	6	advmod	_	_
+8	halki	halki	ADP	Adp	AdpType=Prep	9	case	_	_
+9	vuorien	vuori	NOUN	N	Case=Gen|Number=Plur	6	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	12	nsubj	_	_
+12	ympäröivät	ympäröä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+13	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	14	det	_	_
+14	kaupunkia	kaupunki	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	17	obj	_	_
+17	kutsutaan	kutsua	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	14	acl:relcl	_	_
+18	"	"	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+19	Kirjavaksi	Kirjaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	17	xcomp:ds	_	_
+20	lehmäksi	lehmä	NOUN	N	Case=Tra|Number=Sing	19	xcomp	_	SpaceAfter=No
+21	"	"	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+22	:	:	PUNCT	Punct	_	12	punct	_	_
+23	katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	26	punct	_	_
+25	silloin	silloin	ADV	Adv	_	26	advmod	_	_
+26	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	conj	_	_
+27	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	26	nsubj	_	_
+28	kulkiessaan	kulkia	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	26	advcl	_	_
+29	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	30	det	_	_
+30	nuorukaisen	nuorukainen	NOUN	N	Case=Gen|Number=Sing	31	nsubj	_	_
+31	istuvan	istua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	32	acl	_	_
+32	puuta	puu	NOUN	N	Case=Par|Number=Sing	34	obl	_	_
+33	vasten	vasten	ADP	Adp	AdpType=Post	32	case	_	_
+34	nojautuneena	nojautua	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	40	acl	_	_
+35	ja	ja	CCONJ	C	_	40	cc	_	_
+36	väsynein	väsyni	NOUN	N	Case=Ins|Number=Plur	38	obl	_	_
+37	katsein	katsi	NOUN	N	Case=Ins|Number=Plur	38	obl	_	_
+38	silmäilevän	silmäileä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	40	acl	_	_
+39	alas	alas	ADV	Adv	_	40	advmod	_	_
+40	laaksoon	laakso	NOUN	N	Case=Ill|Number=Sing	28	conj	_	SpaceAfter=No
+41	.	.	PUNCT	Punct	_	23	punct	_	_
+
+# sent_id = 10
+# text = Zarathustra tarttui puuhun, jonka luona nuorukainen istui ja puhui näin: "Jos tahtoisin ravistaa tätä puuta käsilläni, niin en sitä voisi.
+1	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	puuhun	puu	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	8	obl	_	_
+6	luona	luona	ADP	Adp	AdpType=Post	5	case	_	_
+7	nuorukainen	nuorukainen	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	conj	_	_
+11	näin	näin	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	:	:	PUNCT	Punct	_	8	punct	_	_
+13	"	"	PUNCT	Punct	_	15	punct	_	SpaceAfter=No
+14	Jos	jos	SCONJ	C	_	15	mark	_	_
+15	tahtoisin	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	2	advcl	_	_
+16	ravistaa	ravistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp	_	_
+17	tätä	tämä	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	18	det	_	_
+18	puuta	puu	NOUN	N	Case=Par|Number=Sing	16	obj	_	_
+19	käsilläni	käsi	NOUN	N	Case=Ade|Number=Plur|Number[psor]=Sing|Person[psor]=1	16	obl	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	22	punct	_	_
+21	niin	niin	ADV	Adv	_	22	advmod	_	_
+22	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	2	advcl	_	_
+23	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	24	obj	_	_
+24	voisi	voida	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	22	cop	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,190 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- No, mennään, Volodja!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	No	no	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	mennään	mennä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Volodja	Volod	NOUN	N	Case=Par|Derivation=U|Number=Plur	4	conj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- sanoi vanhempi veli, kun kuormarattaat olivat ajaneet sillalle.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vanhempi	vanha	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	4	amod	_	_
+4	veli	veli	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	kun	kun	SCONJ	C	_	9	mark	_	_
+7	kuormarattaat	kuormaratas	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+8	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	ajaneet	ajada	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
+10	sillalle	silla	NOUN	N	Case=All|Number=Sing	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Näitkö pommin?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Näitkö	näitkö	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	pommin	pommin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Sillalla veljekset kohtasivat rattaita, joissa oli haavottuneita ja vallikoppia sekä huonekalukuorman, jota ajoi nainen.
+1	Sillalla	Silla	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+2	veljekset	veljes	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	kohtasivat	kohtata	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	rattaita	rattas	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	joissa	joka	PRON	Pron	Case=Ine|Number=Plur|PronType=Rel	8	obl	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	haavottuneita	haavottua	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	vallikoppia	vallikoppi	NOUN	N	Case=Par|Number=Sing	8	conj	_	_
+11	sekä	sekä	CCONJ	C	_	12	cc	_	_
+12	huonekalukuorman	huonekalukuorma	NOUN	N	Case=Gen|Number=Sing	3	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	15	obj	_	_
+15	ajoi	ajaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	acl:relcl	_	_
+16	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Toisella puolella ei kukaan heitä pidättänyt.
+1	Toisella	toinen	ADJ	Num	Case=Ade|Derivation=Inen|Number=Sing|NumType=Ord	2	nummod	_	_
+2	puolella	puoli	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	nsubj	_	_
+5	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	6	obj	_	_
+6	pidättänyt	pidättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Vaistomaisesti seuraten Nikolajevin patterin muuria ja ääneti kuunnellen päittensä päällä räjähteleviä pommeja ja putoilevien pirstaleiden viuhinaa, veljekset tulivat vihdoin sille paikalle patteria, missä oli pyhimyksen kuva.
+1	Vaistomaisesti	Vaistomaisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+2	seuraten	seurata	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	19	advcl	_	_
+3	Nikolajevin	Nikolajevin	PROPN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	patterin	patteri	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	muuria	muuri	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	ääneti	ääneti	ADV	Adv	_	8	advmod	_	_
+8	kuunnellen	kuunnella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+9	päittensä	päitti	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	8	obj	_	_
+10	päällä	päällä	ADV	Adv	_	11	advmod	_	_
+11	räjähteleviä	räjähellä	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	12	acl	_	_
+12	pommeja	pommi	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+13	ja	ja	CCONJ	C	_	16	cc	_	_
+14	putoilevien	putoilea	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	15	acl	_	_
+15	pirstaleiden	pirstale	NOUN	N	Case=Gen|Number=Plur	16	nmod:poss	_	_
+16	viuhinaa	viuhina	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	2	punct	_	_
+18	veljekset	veljes	NOUN	N	Case=Nom|Number=Plur	19	nsubj	_	_
+19	tulivat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+20	vihdoin	vihdoin	ADV	Adv	_	19	advmod	_	_
+21	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	19	obl	_	_
+22	paikalle	paikka	NOUN	N	Case=All|Number=Sing	19	obl	_	_
+23	patteria	patteri	NOUN	N	Case=Par|Number=Sing	19	obj	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	25	punct	_	_
+25	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	19	conj	_	_
+26	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	25	cop	_	_
+27	pyhimyksen	pyhimys	NOUN	N	Case=Gen|Number=Sing	28	nmod:poss	_	_
+28	kuva	kuva	NOUN	N	Case=Nom|Number=Sing	25	nsubj:cop	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	19	punct	_	_
+
+# sent_id = 7
+# text = Täällä he saivat tietää, että viides, kevyt patteri, johon Volodja oli määrätty, oli Korabeljnajassa, ja päättivät vaarasta huolimatta yhdessä mennä yöksi vanhemman veljen asuntoon viidennelle vallinsarvelle ja sieltä huomenna patterille.
+1	Täällä	täällä	ADV	Adv	_	3	advmod	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	18	punct	_	_
+6	että	että	SCONJ	C	_	18	mark	_	_
+7	viides	viides	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	10	nummod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	kevyt	kevyt	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	amod	_	_
+10	patteri	patteri	NOUN	N	Case=Nom|Number=Sing	18	nsubj:cop	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	15	obl	_	_
+13	Volodja	Volodja	PROPN	N	Case=Nom|Number=Sing	15	obj	_	_
+14	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	aux:pass	_	_
+15	määrätty	määrätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	10	acl:relcl	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	15	punct	_	_
+17	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	cop	_	_
+18	Korabeljnajassa	Korabeljnaja	PROPN	N	Case=Ine|Number=Sing	4	ccomp	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	21	punct	_	_
+20	ja	ja	CCONJ	C	_	21	cc	_	_
+21	päättivät	päättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+22	vaarasta	vaara	NOUN	N	Case=Ela|Number=Sing	21	obl	_	_
+23	huolimatta	huolimatta	ADP	Adp	AdpType=Post	22	case	_	_
+24	yhdessä	yhdessä	ADV	Adv	_	21	advmod	_	_
+25	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	21	xcomp	_	_
+26	yöksi	yö	NOUN	N	Case=Tra|Number=Sing	27	nmod	_	_
+27	vanhemman	vanha	ADJ	A	Case=Gen|Degree=Cmp|Number=Sing	28	amod	_	_
+28	veljen	veli	NOUN	N	Case=Gen|Number=Sing	29	nmod:poss	_	_
+29	asuntoon	asunto	NOUN	N	Case=Ill|Number=Sing	25	obl	_	_
+30	viidennelle	viides	ADJ	Num	Case=All|Number=Sing|NumType=Ord	31	amod	_	_
+31	vallinsarvelle	vallinsarvi	NOUN	N	Case=All|Number=Sing	25	obl	_	_
+32	ja	ja	CCONJ	C	_	35	cc	_	_
+33	sieltä	sieltä	ADV	Adv	_	35	advmod	_	_
+34	huomenna	huomenna	ADV	Adv	_	35	advmod	_	_
+35	patterille	patteri	NOUN	N	Case=All|Number=Sing	3	conj	_	SpaceAfter=No
+36	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Käännyttyään erääseen käytävään ja harpattuaan pitkin patterin muuria loikovien sotamiesten yli, he tulivat vihdoin sitomispaikalle.
+1	Käännyttyään	Käännytä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	12	advcl	_	_
+2	erääseen	eräänen	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+3	käytävään	käytää	VERB	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	1	xcomp	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	harpattuaan	harpatla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	1	conj	_	_
+6	pitkin	pitkin	ADP	Adp	AdpType=Prep	8	case	_	_
+7	patterin	patteri	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	muuria	muuri	NOUN	N	Case=Par|Number=Sing	9	obl	_	_
+9	loikovien	loikoa	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	10	acl	_	_
+10	sotamiesten	sotamies	NOUN	N	Case=Gen|Number=Plur	5	obl	_	_
+11	yli	yli	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	nsubj	_	_
+14	tulivat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+15	vihdoin	vihdoin	ADV	Adv	_	14	advmod	_	_
+16	sitomispaikalle	sitomispaika	NOUN	N	Case=All|Number=Sing	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	14	punct	_	_
+
+# sent_id = 9
+# text = X.
+1	X	X	ADJ	Num	NumType=Ord	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Kun he astuivat ensimäiseen huoneeseen, jossa ylt'ympäri sijotetuilla telttavuoteilla makasi haavottuneita, ja joka oli täynnä kamalan inhottavaa sairaalan löyhkää, tuli heitä vastaan kaksi laupeudensisarta.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	astuivat	astua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	advcl	_	_
+4	ensimäiseen	ensimäinen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	huoneeseen	huone	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	11	obl	_	_
+8	ylt'ympäri	ylt'ympäri	ADP	Adp	AdpType=Post	7	case	_	_
+9	sijotetuilla	sijotetu	NOUN	N	Case=Ade|Number=Plur	11	obl	_	_
+10	telttavuoteilla	telttavuote	NOUN	N	Case=Ade|Number=Plur	9	nmod	_	_
+11	makasi	maata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+12	haavottuneita	haavottua	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	21	acl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	21	punct	_	_
+14	ja	ja	CCONJ	C	_	21	cc	_	_
+15	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	21	nsubj:cop	_	_
+16	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	cop	_	_
+17	täynnä	täynnä	ADV	Adv	_	21	advmod	_	_
+18	kamalan	kam#ala	NOUN	N	Case=Gen|Number=Sing	19	nsubj	_	_
+19	inhottavaa	inhottaa	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	21	acl	_	_
+20	sairaalan	sairaala	NOUN	N	Case=Gen|Number=Sing	21	nmod:poss	_	_
+21	löyhkää	löyhkä	NOUN	N	Case=Par|Number=Sing	11	nsubj	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	3	punct	_	_
+23	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+24	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+25	vastaan	vastaan	ADV	Adv	_	23	compound:prt	_	_
+26	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	27	nummod	_	_
+27	laupeudensisarta	laupeudensisari	NOUN	N	Case=Par|Number=Sing	23	nsubj	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	23	punct	_	SpacesAfter=\s\n
+

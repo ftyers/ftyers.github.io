@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Herra Jumala!
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s \s
+2	Herra	herra	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+3	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Kerttu Halme oli huutanut.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	huutanut	huutaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Hän oli vaatinut heti poliisia taloon suojelemaan heitä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	vaatinut	vaatia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	heti	heti	ADV	Adv	_	5	advmod	_	_
+5	poliisia	poliisi	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+6	taloon	talo	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+7	suojelemaan	suojelea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+8	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Lopulta pastori
+1	Lopulta	lopulta	ADV	Adv	_	2	advmod	_	_
+2	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 5
+# text = Halme oli saanut vaimon rauhoittumaan.
+1	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	vaimon	vaimo	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+5	rauhoittumaan	rauhoittua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = — Panitko oven lukkoon, Kerttu Halme kysyi.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Panitko	Pantaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	oven	ovi	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	lukkoon	lukko	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	SpacesAfter= \s
+6	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	flat:name	_	_
+8	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = — Panin, pastori Halme vastasi.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Panin	Pan	PROPN	N	Case=Gen|Number=Sing	6	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = — Ihan varmasti?
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s   
+2	Ihan	ihan	ADV	Adv	_	3	advmod	_	_
+3	varmasti	varmasti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Vai pitääkö minun mennä tarkistamaan, Kerttu Halme varmisti.
+1	Vai	vai	CCONJ	C	_	2	cc	_	_
+2	pitääkö	pitää	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+4	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpacesAfter= 
+5	tarkistamaan	tarkistaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	Kerttu	Kerta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+8	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+9	varmisti	varmisti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Pastori Halme katsoi vaimoaan.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vaimoaan	vaimo	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Hän näki, että Kerttu oli peloissaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	peloissaan	peloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

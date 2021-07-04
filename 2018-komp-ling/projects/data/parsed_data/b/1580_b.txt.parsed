@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Hän päätti kuitenkin tutkia asiaa seuraavana päivänä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	2	advmod	_	_
+4	tutkia	tutkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	asiaa	asia	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	seuraavana	seuraava	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	7	amod	_	_
+7	päivänä	päivä	NOUN	N	Case=Ess|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Sinä yönä Wallander nukkui huonosti.
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	yönä	yö	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+3	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	nukkui	nukkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	huonosti	huonosti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = ♦♦♦ Seuraavana päivänä Ystadissa satoi.
+1	♦♦♦	♦♦♦	SYM	Symb	_	5	nsubj	_	_
+2	Seuraavana	seuraava	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	3	amod	_	_
+3	päivänä	päivä	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+4	Ystadissa	Ystad	PROPN	N	Case=Ine|Number=Sing	5	obl	_	_
+5	satoi	sataa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Wallander saapui poliisitalolle jo seitsemältä.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	poliisitalolle	poliisitalo	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	seitsemältä	seitsemä	NOUN	N	Case=Abl|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Hän joi ensin kupin kahvia.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	joi	juoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ensin	ensin	ADV	Adv	_	2	advmod	_	_
+4	kupin	kuppi	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Sen jälkeen hän käveli toiselle puolelle poliisitaloa, jossa syyttäjä Per Akessonilla oli huone.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	obl	_	_
+2	jälkeen	jälkeen	ADP	Adp	AdpType=Post	1	case	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	käveli	kävellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpacesAfter= 
+5	toiselle	toinen	PRON	Pron	Case=All|Number=Sing|PronType=Rcp	6	det	_	_
+6	puolelle	puoli	NOUN	N	Case=All|Number=Sing	4	obl	_	_
+7	poliisitaloa	poliisitalo	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	14	punct	_	SpacesAfter= 
+9	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	14	obl	_	_
+10	syyttäjä	syyttäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	11	compound:nn	_	_
+11	Per	per	PROPN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	_
+12	Akessonilla	Akesson	PROPN	N	Case=Ade|Number=Sing	11	flat:name	_	_
+13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	_
+14	huone	huone	NOUN	N	Case=Nom|Number=Sing	7	acl:relcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Wallander tiesi, että Akessonilla oli tapana tulla aikaisin töihin.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tiesi	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	Akessonilla	Akesson	PROPN	N	Case=Ade|Number=Sing	2	ccomp	_	SpacesAfter= 
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop:own	_	_
+7	tapana	tapa	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+8	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	acl	_	_
+9	aikaisin	aikaisin	ADV	Adv	_	8	advmod	_	_
+10	töihin	työ	NOUN	N	Case=Ill|Number=Plur	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hän koputti oveen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	koputti	koputtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	oveen	ovi	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Akesson kutsui hänet sisään.
+1	Akesson	Akesson	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kutsui	kutsua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	sisään	sisään	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = — Jaha, sinäkin olet täällä aikaisin, Akesson sanoi.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Jaha	Jaha	PROPN	N	Case=Nom|Number=Sing	7	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sinäkin	sinä	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=2|PronType=Prs	7	nsubj:cop	_	_
+5	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	täällä	täällä	ADV	Adv	_	7	advmod	_	_
+7	aikaisin	aikaisin	ADV	Adv	_	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	SpacesAfter= 
+9	Akesson	Akesson	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = — Sinulla on varmaan tärkeää asiaa.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	varmaan	varmaan	ADV	Adv	_	5	advmod	_	_
+5	tärkeää	tärkeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+6	asiaa	asia	NOUN	N	Case=Par|Number=Sing	5	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

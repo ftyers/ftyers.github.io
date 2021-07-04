@@ -1,0 +1,164 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Minkä tytön?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	3	det	_	_
+3	tytön	tyttö	NOUN	N	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Sofia Semjonovnan, joka oli siellä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Sofia	Sofia	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+3	Semjonovnan	Semjonovna	PROPN	N	Case=Gen|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj:cop	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	siellä	siellä	ADV	Adv	_	2	acl:relcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Miksi äiti on peloissaan hänen tähtensä?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	5	advmod	_	_
+3	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	peloissaan	peloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	0	root	_	_
+6	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	nmod:poss	_	_
+7	tähtensä	tähs	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	nsubj:cop	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = -- Minä aavistan, Dunja.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	aavistan	aavistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	3	appos	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Usko minua, jos tahdot, mutta hänen sisään astuessaan käsitin, että tässä meillä on selitys kaikkeen.
+1	Usko	usko	SCONJ	C	_	5	mark	_	_
+2	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	5	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	jos	jos	SCONJ	C	_	5	mark	_	_
+5	tahdot	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	mutta	mutta	CCONJ	C	_	10	cc	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	obl	_	_
+9	sisään	sisään	ADP	Adp	AdpType=Prep	8	case	_	_
+10	astuessaan	astua	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	5	conj	_	_
+11	käsitin	käsit	NOUN	Foreign	Case=Gen|Number=Sing	10	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	että	että	SCONJ	C	_	15	mark	_	_
+14	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	15	obl	_	_
+15	meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	11	ccomp	_	_
+16	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop:own	_	_
+17	selitys	selitys	NOUN	N	Case=Nom|Number=Sing	15	nsubj:cop	_	_
+18	kaikkeen	kaikki	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	15	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Ei, ei suinkaan.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Ei	ei	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	suinkaan	suinkaan	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Äidillä on usein niin naurettavia aavistuksia.
+1	Äidillä	äiti	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	usein	usein	ADV	Adv	_	1	advmod	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	naurettavia	naurettava	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	amod	_	_
+6	aavistuksia	aavistus	NOUN	N	Case=Par|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Rodja ei ole koskaan ennen nähnyt tyttöä kuin eilen ja tuskin tunsi häntä, kun hän astui huoneeseen tänään.
+1	Rodja	Rod	NOUN	N	Case=Par|Number=Plur	6	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+4	koskaan	koskaan	ADV	Adv	_	6	advmod	_	_
+5	ennen	ennen	ADV	Adv	_	6	advmod	_	_
+6	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	tyttöä	tyttö	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+8	kuin	kuin	SCONJ	C	_	9	mark	_	_
+9	eilen	eilen	ADV	Adv	_	7	advcl	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	tuskin	tuskin	ADV	Adv	_	12	advmod	_	_
+12	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+13	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	12	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	kun	kun	SCONJ	C	_	17	mark	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+17	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	_
+18	huoneeseen	huoneenen	NOUN	N	Case=Ill|Number=Sing	17	obl	_	_
+19	tänään	tänään	ADV	Adv	_	17	advmod	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = -- Saat nähdä vielä!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	vielä	vielä	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Hän saattoi minut sangen levottomaksi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	saattoi	saattaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	2	obj	_	_
+4	sangen	sangen	ADV	Adv	_	2	advmod	_	_
+5	levottomaksi	levoton	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	2	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Oikein pelästyin, kun hän katsoi minuun.
+1	Oikein	oikein	ADV	Adv	_	2	advmod	_	_
+2	pelästyin	pelästtyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	kun	kun	SCONJ	C	_	6	mark	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	_
+7	minuun	minä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Saatoin tuskin istua hiljaa, kun Rodja sanoi meille hänen nimensä...
+1	Saatoin	saattaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tuskin	tuskin	ADV	Adv	_	1	advmod	_	_
+3	istua	istua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+4	hiljaa	hiljaa	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kun	kun	SCONJ	C	_	8	mark	_	_
+7	Rodja	Rodja	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	advcl	_	_
+9	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	8	obl	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	nimensä	nimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	8	obj	_	SpaceAfter=No
+12	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Pietari Petrovitshhan myöskin kirjoitti hänestä...
+1	Pietari	Pietari	PROPN	N	Case=Nom|Number=Sing	3	nmod:poss	_	_
+2	Petrovitshhan	Petrovitshha	PROPN	N	Case=Gen|Number=Sing	1	flat:name	_	_
+3	myöskin	myös	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	4	nsubj	_	_
+4	kirjoitti	kirjoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	4	obl	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 14
+# text = Hän piti tyttöä arvossa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	piti	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tyttöä	tyttö	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	arvossa	arvko	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

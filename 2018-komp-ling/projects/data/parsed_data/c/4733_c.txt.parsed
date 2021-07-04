@@ -1,0 +1,162 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 26.
+1	26	26	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Oi veljeni!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	obj	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Keissä kuitenkin on kaiken ihmistulevaisuuden suurin vaara?
+1	Keissä	Keä	NOUN	N	Case=Ine|Number=Plur	0	root	_	_
+2	kuitenkin	kuitenkin	ADV	Adv	_	1	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+4	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	det	_	_
+5	ihmistulevaisuuden	ihmistulevaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	6	nmod:poss	_	_
+6	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	7	amod	_	_
+7	vaara	#vaara	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Eikö se ole hyvissä ja vanhurskaissa?
+1	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	hyvissä	hyvissä	ADV	Adv	_	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	vanhurskaissa	vanhurska	NOUN	N	Case=Ine|Number=Plur	4	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- -- niissä, jotka puhuvat ja sydämessä tuntevat: "me tiedämme jo, mikä hyvää on ja oikeaa, meillä on se myös; voi niitä, jotka täällä vielä etsivät!"
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	--	--	PUNCT	Punct	_	3	punct	_	_
+3	niissä	se	PRON	Pron	Case=Ine|Number=Plur|PronType=Dem	13	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	6	nsubj	_	_
+6	puhuvat	puhua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	sydämessä	sydämi	NOUN	N	Case=Ine|Number=Sing	9	obl	_	_
+9	tuntevat	tuntea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	6	punct	_	_
+11	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+12	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	13	nsubj	_	_
+13	tiedämme	tietää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+14	jo	jo	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	17	nsubj:cop	_	_
+17	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	13	ccomp	_	_
+18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	cop	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	oikeaa	oikea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	17	conj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	22	punct	_	_
+22	meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	13	acl:relcl	_	_
+23	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	22	cop:own	_	_
+24	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	25	nsubj:cop	_	_
+25	myös	myös	ADV	Adv	_	22	advmod	_	SpaceAfter=No
+26	;	;	PUNCT	Punct	_	13	punct	_	_
+27	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	aux	_	_
+28	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	13	obj	_	SpaceAfter=No
+29	,	,	PUNCT	Punct	_	33	punct	_	_
+30	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	33	nsubj	_	_
+31	täällä	täällä	ADV	Adv	_	33	advmod	_	_
+32	vielä	vielä	ADV	Adv	_	33	advmod	_	_
+33	etsivät	etsiä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	acl:relcl	_	SpaceAfter=No
+34	!	!	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+35	"	"	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 6
+# text = Ja mitä vahinkoa pahat tehnevätkin: hyvien vahinko on vahingollisin vahinko!
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+3	vahinkoa	vahinko	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+4	pahat	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	5	amod	_	_
+5	tehnevätkin	tehnevä	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	0	root	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	5	punct	_	_
+7	hyvien	hyvä	NOUN	N	Case=Gen|Number=Plur	8	nmod:poss	_	_
+8	vahinko	vahinko	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	vahingollisin	vahingollinen	ADJ	A	Case=Nom|Degree=Sup|Derivation=Llinen|Number=Sing	11	amod	_	_
+11	vahinko	vahinko	NOUN	N	Case=Nom|Number=Sing	5	parataxis	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Ja mitä vahinkoa maailman-soimaajat tehnevätkin: hyvien vahinko on vahingollisin vahinko.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+3	vahinkoa	vahinko	NOUN	N	Case=Par|Number=Sing	4	nmod	_	_
+4	maailman-soimaajat	maailman-soimaaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	0	root	_	_
+5	tehnevätkin	tehnevä	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	4	appos	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	5	punct	_	_
+7	hyvien	hyvä	NOUN	N	Case=Gen|Number=Plur	8	nmod:poss	_	_
+8	vahinko	vahinko	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	vahingollisin	vahingollinen	ADJ	A	Case=Nom|Degree=Sup|Derivation=Llinen|Number=Sing	11	amod	_	_
+11	vahinko	vahinko	NOUN	N	Case=Nom|Number=Sing	5	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Oi veljeni, hyvien ja vanhurskaitten sydämeen näki kerran eräs, joka silloin sanoi: "he ovat farisealaisia."
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	hyvien	hyvä	NOUN	N	Case=Gen|Number=Plur	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	vanhurskaitten	vanhurskaittä#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	conj	_	_
+7	sydämeen	sydän	NOUN	N	Case=Ill|Number=Sing	2	conj	_	_
+8	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+9	kerran	kerran	ADV	Adv	_	8	advmod	_	_
+10	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	_
+13	silloin	silloin	ADV	Adv	_	14	advmod	_	_
+14	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	acl:relcl	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	8	punct	_	_
+16	"	"	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+17	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	19	nsubj:cop	_	_
+18	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
+19	farisealaisia	farisealainen	NOUN	N	Case=Par|Derivation=Lainen|Number=Plur	8	parataxis	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+21	"	"	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Mutta häntä ei ymmärretty.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	ymmärretty	ymmärtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Hyvät ja vanhurskaat itse eivät voineet ymmärtää häntä heidän henkensä on vangittuna heidän hyvään omantuntoonsa.
+1	Hyvät	hyvä	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	vanhurskaat	vanhursas	NOUN	N	Case=Nom|Number=Plur	1	conj	_	_
+4	itse	itse	ADV	Adv	_	7	advmod	_	_
+5	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	voineet	voida	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	7	aux	_	_
+7	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+9	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	henkensä	henki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	obj	_	_
+11	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	vangittuna	vangita	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	7	advcl	_	_
+13	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	15	nmod:poss	_	_
+14	hyvään	hyvä	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	15	amod	_	_
+15	omantuntoonsa	omantunto	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 11
+# text = Hyvien tyhmyys on pohjattoman viisas.
+1	Hyvien	hyvä	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	tyhmyys	tyhmyys	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	pohjattoman	pohjaton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	5	amod	_	_
+5	viisas	viisas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

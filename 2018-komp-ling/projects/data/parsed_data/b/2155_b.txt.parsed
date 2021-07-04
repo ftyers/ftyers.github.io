@@ -1,0 +1,131 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Wallander kiirehti puolijuoksua Lambergin studiolle.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kiirehti	kiirehtia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	puolijuoksua	puoli#juoksu	NOUN	N	Case=Par|Derivation=U|Number=Sing	2	obj	_	_
+4	Lambergin	Lamberg	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	studiolle	studio	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 2
+# text = Matka kesti neljätoista minuuttia.
+1	Matka	matka	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kesti	kestää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	neljätoista	neljä#toista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 3
+# text = Kun hän tuli perille, hän huomasi heti miehen koiran kanssa.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	perille	perille	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	heti	heti	ADV	Adv	_	7	advmod	_	_
+9	miehen	mies	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	koiran	koira	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+11	kanssa	kanssa	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter= 
+
+# sent_id = 4
+# text = Miehen nimi oli Lars Beckman, ja hän oli 70-vuotias.
+1	Miehen	mies	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	nimi	nimi	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	Lars	Lars	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+5	Beckman	Beckman	PROPN	N	Case=Nom|Number=Sing	4	flat:name	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj:cop	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	70-vuotias	70-#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Mies oli sama, joka oli auttanut siivooja Hilda Anderssonia aamulla.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	sama	sama	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	auttanut	auttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl:relcl	_	_
+8	siivooja	siivooja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	compound:nn	_	_
+9	Hilda	Hilda	PROPN	N	Case=Nom|Number=Sing	7	obj	_	_
+10	Anderssonia	Anderssonia	PROPN	N	Case=Nom|Number=Sing	9	flat:name	_	_
+11	aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	7	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = Hän oli soittanut poliisille, kun siivooja oli löytänyt Lambergin ruumiin.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	soittanut	soittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	poliisille	poliisi	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	kun	kun	SCONJ	C	_	9	mark	_	_
+7	siivooja	siivooja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	nsubj	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	löytänyt	löytää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	advcl	_	_
+10	Lambergin	Lamberg	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	ruumiin	ruuma	NOUN	N	Case=Ill|Number=Plur	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = — Asun tässä lähellä, mies kertoi.
+1	—	—	PUNCT	Punct	_	7	punct	_	_
+2	Asun	asinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Coll	3	det	_	_
+3	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	7	obl	_	_
+4	lähellä	lähellä	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mies	mies	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 8
+# text = Käyn koiran kanssa ulkona aikaisin aamulla ja myöhään illalla.
+1	Käyn	Kää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	acl	_	_
+2	koiran	koirka	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+3	kanssa	kanssa	ADP	Adp	AdpType=Post	2	case	_	_
+4	ulkona	ulkona	ADV	Adv	_	2	advmod	_	_
+5	aikaisin	aikaisin	ADV	Adv	_	4	fixed	_	_
+6	aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	myöhään	myöhään	ADV	Adv	_	9	advmod	_	_
+9	illalla	ilta	NOUN	N	Case=Ade|Number=Sing	6	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Hetki sitten näin miehen, joka meni studion ovesta sisään.
+1	Hetki	hetki	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	sitten	sitten	ADV	Adv	_	3	advmod	_	_
+3	näin	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	miehen	mies	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	studion	studio	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	ovesta	ovi	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+10	sisään	sisään	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = — Onko hän vielä sisällä?
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+4	vielä	vielä	ADV	Adv	_	5	advmod	_	_
+5	sisällä	sisällä	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Wallander kysyi.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

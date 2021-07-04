@@ -1,0 +1,165 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Rahankäytönopas
+1	Rahankäytönopas	Rahankäytönopas	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Jos et maksa laskuja tai velkaa
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	laskuja	lasku	NOUN	N	Case=Par|Derivation=U|Number=Plur	3	obj	_	_
+5	tai	tai	CCONJ	C	_	6	cc	_	_
+6	velkaa	velka	NOUN	N	Case=Par|Number=Sing	3	conj	_	_
+
+# sent_id = 3
+# text = Laskut ja velat on aina maksettava ennemmin tai myöhemmin.
+1	Laskut	lasku	NOUN	N	Case=Nom|Number=Plur	6	obj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	velat	velka	NOUN	N	Case=Nom|Number=Plur	1	conj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+5	aina	aina	ADV	Adv	_	6	advmod	_	_
+6	maksettava	maksaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+7	ennemmin	ennemmin	ADV	Adv	_	6	advmod	_	_
+8	tai	tai	CCONJ	C	_	9	cc	_	_
+9	myöhemmin	myöhemmin	ADV	Adv	_	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Velat eivät noin vain katoa tai vanhene.
+1	Velat	velka	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	noin	noin	ADV	Adv	_	5	advmod	_	_
+4	vain	vain	ADV	Adv	_	5	advmod	_	_
+5	katoa	kadota	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	tai	tai	CCONJ	C	_	7	cc	_	_
+7	vanhene	edvanhä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Mitä myöhemmäksi maksamisen jättää, sitä kalliimmaksi se tulee.
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	det	_	_
+2	myöhemmäksi	myöhemmä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	3	amod	_	_
+3	maksamisen	maksaminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	4	nsubj	_	_
+4	jättää	jättää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	det	_	_
+7	kalliimmaksi	kalliimma	NOUN	N	Case=Tra|Number=Sing	9	obl	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj	_	_
+9	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Velat vanhenevat kymmenessä vuodessa, jos luotonantaja ei peri velkaa.
+1	Velat	velka	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	vanhenevat	vanheta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kymmenessä	kymmenen	NUM	Num	Case=Ine|Number=Sing|NumType=Card	4	nummod	_	_
+4	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	jos	jos	SCONJ	C	_	10	mark	_	_
+7	luotonantaja	luotonantaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	10	nsubj:cop	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	peri	peri	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+10	velkaa	velka	NOUN	N	Case=Par|Number=Sing	2	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Mutta yleensä luotonantajat pitävät huolta siitä, että velat eivät vanhene.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	yleensä	yleensä	ADV	Adv	_	4	advmod	_	_
+3	luotonantajat	luotonantaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	4	nsubj	_	_
+4	pitävät	pitää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	huolta	huoli	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	että	että	SCONJ	C	_	11	mark	_	_
+9	velat	velka	NOUN	N	Case=Nom|Number=Plur	11	nsubj	_	_
+10	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	vanhene	edvanhä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Se tarkoittaa, että velkaa ei saa anteeksi, vaan se pitää maksaa ja sen korot kasvavat koko ajan.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	tarkoittaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	velkaa	velka	NOUN	N	Case=Par|Number=Sing	7	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+8	anteeksi	anteeksi	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	vaan	vaan	CCONJ	C	_	13	cc	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj	_	_
+12	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	maksaa	maksaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+14	ja	ja	CCONJ	C	_	17	cc	_	_
+15	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	16	nmod:poss	_	_
+16	korot	korko	NOUN	N	Case=Nom|Number=Plur	17	nsubj	_	_
+17	kasvavat	kasvaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	conj	_	_
+18	koko	koko	ADJ	A	_	19	amod	_	_
+19	ajan	aika	NOUN	N	Case=Gen|Number=Sing	17	obl	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Maksujärjestelyt
+1	Maksujärjestelyt	Maksujärjestely	NOUN	N	Case=Nom|Derivation=U|Number=Plur	0	root	_	_
+
+# sent_id = 10
+# text = Joskus voit joutua tilanteeseen, jossa et pystykään maksamaan velkaasi.
+1	Joskus	joskus	ADV	Adv	_	3	advmod	_	_
+2	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	joutua	joutua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	tilanteeseen	tilanne	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	9	obl	_	_
+7	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+8	pystykään	pystykään	ADV	Adv	_	9	advmod	_	_
+9	maksamaan	maksada	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	acl:relcl	_	_
+10	velkaasi	velka	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=2	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Ota silloin heti yhteys pankkiin tai siihen yritykseen, josta olet lainan saanut.
+1	Ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	silloin	silloin	ADV	Adv	_	1	advmod	_	_
+3	heti	heti	ADV	Adv	_	1	advmod	_	_
+4	yhteys	yhteys	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	1	obj	_	_
+5	pankkiin	pankki	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+6	tai	tai	CCONJ	C	_	8	cc	_	_
+7	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	8	det	_	_
+8	yritykseen	yritys	NOUN	N	Case=Ill|Number=Sing	5	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	josta	joka	PRON	Pron	Case=Ela|Number=Sing|PronType=Rel	13	obl	_	_
+11	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+12	lainan	laina	NOUN	N	Case=Gen|Number=Sing	13	nsubj	_	_
+13	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Voit yrittää sopia uuden aikataulun, jossa maksat velan hitaammin.
+1	Voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	yrittää	yrittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	sopia	sopia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	uuden	uusi	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	5	amod	_	_
+5	aikataulun	aika#taulu	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	8	obl	_	_
+8	maksat	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	velan	#velka	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	hitaammin	hitaasti	ADV	Adv	Degree=Cmp|Derivation=Sti	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Usein sopiminen onnistuu, jos rahapula on tilapäinen.
+1	Usein	usein	ADV	Adv	_	3	advmod	_	_
+2	sopiminen	sopiminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	3	nsubj	_	_
+3	onnistuu	onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	jos	jos	SCONJ	C	_	8	mark	_	_
+6	rahapula	raha#pula	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	tilapäinen	tilapäinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = – Luen Selkosanomia, koska sitä on helpompi ymmärtää.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Luen	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Selkosanomia	Selkosanomi	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	koska	koska	SCONJ	C	_	8	mark	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	obj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	helpompi	helppo	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	2	advcl	_	_
+9	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp:ds	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Jos luen esimerkiksi Metro-lehteä, en ymmärrä kaikkea.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	luen	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+3	esimerkiksi	esimerkiksi	ADV	Adv	_	4	advmod	_	_
+4	Metro-lehteä	Metro-#lehti	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	ymmärrä	ymmärtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	kaikkea	kaikki	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = Kun luen Selkosanomia, ymmärrän melkein kaiken.
+1	Kun	kun	SCONJ	C	_	2	mark	_	_
+2	luen	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+3	Selkosanomia	Selkosanoma	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	ymmärrän	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	melkein	melkein	ADV	Adv	_	5	advmod	_	_
+7	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Olen huomannut, että usein lehdessä on noin 10 sanaa, joita en ole ymmärtänyt!
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	huomannut	huomata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	usein	usein	ADV	Adv	_	6	advmod	_	_
+6	lehdessä	lehdi	NOUN	N	Case=Ine|Number=Sing	2	ccomp	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	noin	noin	ADV	Adv	_	9	advmod	_	_
+9	10	10	NUM	Num	NumType=Card	10	nummod	_	_
+10	sanaa	sana	NOUN	N	Case=Par|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	15	obj	_	_
+13	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+14	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	15	aux	_	_
+15	ymmärtänyt	ymmärtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	acl:relcl	_	SpaceAfter=No
+16	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = – Minua kiinnostaa tietää, mitä Suomessa kirjoitetaan maailman tapahtumista.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Minua	Minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+3	kiinnostaa	kiinnostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	8	obj	_	_
+7	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	8	obl	_	_
+8	kirjoitetaan	kirjoitea	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	acl:relcl	_	_
+9	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	10	nmod:gobj	_	_
+10	tapahtumista	tapahtuminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Selkosanomien lukeminen auttaa minua myös ymmärtämään, suomalaisten näkökulmaa.
+1	Selkosanomien	Selkosanoma	NOUN	N	Case=Gen|Number=Plur	2	nmod:gobj	_	_
+2	lukeminen	lukeminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	3	nsubj	_	_
+3	auttaa	auttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+5	myös	myös	ADV	Adv	_	6	advmod	_	_
+6	ymmärtämään	ymmärtää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	suomalaisten	suomalainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Plur	9	amod	_	_
+9	näkökulmaa	näkö#kulma	NOUN	N	Case=Par|Number=Sing	6	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Eli sitä, miten suomalaiset ajattelevat.
+1	Eli	eli	CCONJ	C	_	2	cc	_	_
+2	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	miten	miten	ADV	Adv	_	6	advmod	_	_
+5	suomalaiset	suomalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	6	nsubj	_	_
+6	ajattelevat	ajatella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Luen uutisia myös englanniksi ja venäjäksi.
+1	Luen	lukea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	uutisia	uutinen	NOUN	N	Case=Par|Number=Plur	1	obj	_	_
+3	myös	myös	ADV	Adv	_	4	advmod	_	_
+4	englanniksi	englanti	NOUN	N	Case=Tra|Number=Sing	1	xcomp:ds	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	venäjäksi	venäjä	NOUN	N	Case=Tra|Derivation=Ja|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Mitä haluaisit toivottaa 25-vuotiaalle Selkosanomille?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	obj	_	_
+2	haluaisit	haluta	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toivottaa	toivottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	25-vuotiaalle	25-vuotiaa	ADJ	A	Case=All|Degree=Pos|Number=Sing	5	amod	_	_
+5	Selkosanomille	Selkosanomi	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = – Tietenkin onnea!
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Tietenkin	tietenkin	ADV	Adv	_	3	advmod	_	_
+3	onnea	onnea	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Toivon myös monia uusia tavoitteita.
+1	Toivon	toivoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	myös	myös	ADV	Adv	_	5	advmod	_	_
+3	monia	moni	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	5	det	_	_
+4	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	_
+5	tavoitteita	tavoite	NOUN	N	Case=Par|Number=Plur	1	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Aina pitää katsoa eteenpäin!
+1	Aina	aina	ADV	Adv	_	3	advmod	_	_
+2	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	katsoa	katsoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	eteenpäin	eteenpäin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

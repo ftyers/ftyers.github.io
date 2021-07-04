@@ -1,0 +1,170 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = KERTOSÄE (johon keittäjätär ja vauva yhtyivät):
+1	KERTOSÄE	Kertosäe	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	(	(	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+3	johon	joka	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	7	obl	_	_
+4	keittäjätär	keittäjätär	NOUN	N	Case=Nom|Derivation=Ja,Tar|Number=Sing	7	nsubj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	vauva	vauva	NOUN	N	Case=Nom|Number=Sing	4	conj	_	_
+7	yhtyivät	yhtyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+8	)	)	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = “Äää!
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Äää	äää	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Äää!
+1	Äää	Ää	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Äää!”
+1	Äää	Ää	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+3	”	”	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s\s
+
+# sent_id = 5
+# text = Laulun toisessa säkeistössä Kreivitär alkoi viskellä lasta kiivaasti ilmaan, ja pikkuraukka ulvoi niin, että Liisa tuskin kuuli sanat:
+1	Laulun	laulu	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	toisessa	toinen	ADJ	Num	Case=Ine|Derivation=Inen|Number=Sing|NumType=Ord	3	nummod	_	_
+3	säkeistössä	säkeistö	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+4	Kreivitär	Kreivitär	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	viskellä	viskellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	lasta	lapsi	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+8	kiivaasti	kiivaasti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+9	ilmaan	ilma	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	pikkuraukka	pikkuraukka	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+13	ulvoi	ulvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+14	niin	niin	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	että	että	SCONJ	C	_	19	mark	_	_
+17	Liisa	Liisa	PROPN	N	Case=Nom|Number=Sing	19	nsubj	_	_
+18	tuskin	tuskin	ADV	Adv	_	19	advmod	_	_
+19	kuuli	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	ccomp	_	_
+20	sanat	sana	NOUN	N	Case=Nom|Number=Plur	19	obj	_	SpaceAfter=No
+21	:	:	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s\s
+
+# sent_id = 6
+# text = “Aina pauhaan, parjaan poikaa, jos aivastaa, niin heti lyön.
+1	“	“	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Aina	aina	ADV	Adv	_	3	advmod	_	_
+3	pauhaan	pauha	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	parjaan	jyvä	ADJ	A	Case=Gen|Degree=Sup|Number=Sing	6	amod	_	_
+6	poikaa	poika	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	jos	jos	SCONJ	C	_	9	mark	_	_
+9	aivastaa	aivastaa	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	3	punct	_	_
+11	niin	niin	ADV	Adv	_	3	advmod	_	_
+12	heti	heti	ADV	Adv	_	3	advmod	_	_
+13	lyön	l#yö	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Kas, pippuria täällä saa vaikka kesken aamuyön!
+1	Kas	kas	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	pippuria	pippuri	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+4	täällä	täällä	ADV	Adv	_	5	advmod	_	_
+5	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	vaikka	vaikka	SCONJ	C	_	8	mark	_	_
+7	kesken	kesken	ADP	Adp	AdpType=Prep	8	case	_	_
+8	aamuyön	aamu#yö	NOUN	N	Case=Gen|Number=Sing	5	obl	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = “Äää!
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Äää	äää	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Äää!
+1	Äää	Ää	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Äää!”
+1	Äää	Ää	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+3	”	”	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s\s
+
+# sent_id = 11
+# text = “Tässä!
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Saat hoitaa sitä vähän aikaa, jos tahdot!”
+1	Saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hoitaa	hoitaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+4	vähän	vähän	ADV	Adv	_	5	advmod	_	_
+5	aikaa	aika	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jos	jos	SCONJ	C	_	8	mark	_	_
+8	tahdot	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	advcl	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+10	”	”	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Kreivitär sanoi Liisalle nakatessaan vauvan hänelle.
+1	Kreivitär	Kreivitär	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Liisalle	Liisa	PROPN	N	Case=All|Number=Sing	2	obl	_	_
+4	nakatessaan	nakata	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	vauvan	vauva	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+6	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = “Krokettipeli alkaa kohta, ja minun täytyy laittautua valmiiksi”.
+1	“	“	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Krokettipeli	Krokettipeli	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kohta	kohta	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	ja	ja	CCONJ	C	_	9	cc	_	_
+7	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+8	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	laittautua	laittautua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+10	valmiiksi	valmis	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	9	xcomp	_	SpaceAfter=No
+11	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Ja niine hyvineen hän kiirehti pois.
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	niine	niine	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	hyvineen	hyv	NOUN	N	Case=Com|Person[psor]=3	2	nmod	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+5	kiirehti	kiirehtiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	pois	pois	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 16
+# text = Keittäjätär heitti hänen peräänsä paistinpannun, mutta se meni niukasti ohi.
+1	Keittäjätär	Keittäjätär	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	heitti	heittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	peräänsä	perää	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+5	paistinpannun	paistinpantu	NOUN	N	Case=Gen|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj	_	_
+9	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	niukasti	niukasti	ADV	Adv	Derivation=Sti	9	advmod	_	_
+11	ohi	ohi	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

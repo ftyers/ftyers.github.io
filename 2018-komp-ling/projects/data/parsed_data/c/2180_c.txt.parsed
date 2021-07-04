@@ -1,0 +1,116 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä sinä tuumaat, äiti?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	tuumaat	tuumata	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- Pietari Petrovitsh kirjoittaa, että jos hän tapaa sinut luonamme, lähtee hän tiehensä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Pietari	Pietari	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Petrovitsh	Petrovitsh	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	kirjoittaa	kirjoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	13	punct	_	_
+6	että	että	SCONJ	C	_	13	mark	_	_
+7	jos	jos	SCONJ	C	_	9	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	tapaa	tavata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	_
+10	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	11	nsubj	_	_
+11	luonamme	luontaa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	ccomp	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	9	punct	_	_
+13	lähtee	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	det	_	_
+15	tiehensä	tiehi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	13	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Mitä aijot tehdä?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	aijot	aijo	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = -- Sinä, äiti ja Dunja ratkaisette nyt asian.
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+7	ratkaisette	ratkaiä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	nyt	nyt	ADV	Adv	_	7	advmod	_	_
+9	asian	asia	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Minä teen, miten parhaaksi näette, lisäsi hän kuivasti.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	teen	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	miten	miten	ADV	Adv	_	6	advmod	_	_
+5	parhaaksi	hyvä	ADJ	A	Case=Tra|Degree=Sup|Number=Sing	6	nummod	_	_
+6	näette	nähdä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+10	kuivasti	kuivasti	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Dunetshka on jo tehnyt päätöksensä ja minä hyväksyn sen täydellisesti, kiirehti Pulcheria Alexandrovna sanomaan.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Dunetshka	Dunetshka	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	päätöksensä	päätös	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	obj	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+9	hyväksyn	hyväksyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+10	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obj	_	_
+11	täydellisesti	täydellisesti	ADV	Adv	Derivation=Sti	9	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	5	punct	_	_
+13	kiirehti	kiirehtia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+14	Pulcheria	Pulcher	PROPN	N	Case=Par|Number=Sing	13	obj	_	_
+15	Alexandrovna	Alexandrovna	PROPN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+16	sanomaan	sanoa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = -- Olen päättänyt Rodja, sydämellisesti pyytää sinua tulemaan luoksemme illalla.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	päättänyt	päättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Rodja	Rodja	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	sydämellisesti	sydämellisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	pyytää	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+8	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	_
+9	tulemaan	tulea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp:ds	_	_
+10	luoksemme	luo	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Plur|Person[psor]=1|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	illalla	ilta	NOUN	N	Case=Ade|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Tahdotko tulla? sanoi Dunja.
+1	Tahdotko	Tahdoda	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	4	punct	_	_
+4	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+5	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Kyllä tahdon.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	3	advmod	_	_
+3	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

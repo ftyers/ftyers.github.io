@@ -1,0 +1,151 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kerttu vilkaisi puhelintaan, joka oli ollut yön yli laturissa.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vilkaisi	vilkaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	puhelintaan	puhelin	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	10	nsubj:cop	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+7	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	cop	_	_
+8	yön	yö	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+9	yli	yli	ADV	Adv	_	10	advmod	_	_
+10	laturissa	laturi	NOUN	N	Case=Ine|Number=Sing	3	acl:relcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ei tekstiviestejä, vieläkään.
+1	Ei	ei	VERB	V	Number=Sing|Person=0|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tekstiviestejä	teksti#viesti	NOUN	N	Case=Par|Number=Plur	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	vieläkään	vielä	ADV	Adv	Clitic=Kaan	1	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Tosin Jevgeni oli Henkan mukana, ja se tarkoitti, ettei mies voinut olla tekemässä mitään kovin vaarallista.
+1	Tosin	tosin	ADV	Adv	_	4	advmod	_	_
+2	Jevgeni	Jevgi	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	Henkan	Henka	PROPN	N	Case=Gen|Number=Sing	9	obl	_	_
+5	mukana	mukana	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj	_	_
+9	tarkoitti	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	mark	_	_
+12	mies	mies	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+13	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	15	aux	_	_
+14	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	15	aux	_	_
+15	tekemässä	tehdä	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	ccomp	_	_
+16	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	15	obj	_	_
+17	kovin	kovin	ADV	Adv	_	18	advmod	_	_
+18	vaarallista	vaarallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	15	xcomp	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 4
+# text = Minne he sitten olivatkin menneet,
+1	Minne	minne	ADV	Adv	_	5	advmod	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+3	sitten	sitten	ADV	Adv	_	5	advmod	_	_
+4	olivatkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	menneet	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Henkka oli tarvinnut siihen autoa.
+1	Henkka	Henkka	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	tarvinnut	tarvita	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+4	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	5	obl	_	_
+5	autoa	auto	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Kerttu asteli ikkunaan katsomaan tyhjää parkkipaikkaa.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	asteli	asdella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ikkunaan	ikkuna	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	katsomaan	katsoa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	tyhjää	tyhjä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	amod	_	_
+6	parkkipaikkaa	parkkipaikka	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Jos hänellä vain olisi ollut ajokortti!
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+3	vain	vain	ADV	Adv	_	6	advmod	_	_
+4	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+6	ajokortti	ajokortti	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Silloin hän olisi voinut liikkua autolla, eikä Henkka olisi päässyt pakenemaan sillä.
+1	Silloin	silloin	ADV	Adv	_	5	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+3	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	aux	_	_
+5	liikkua	liikkua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	autolla	auto	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	cc	_	_
+9	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+10	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	päässyt	päästä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+12	pakenemaan	pakenea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Kertun katse lähti harhailemaan, kunnes se pysähtyi torniin, jonka huipulla komeili risti.
+1	Kertun	Kerttu	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	katse	katse	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	harhailemaan	harhailea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kunnes	kunnes	SCONJ	C	_	8	mark	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	pysähtyi	pysähtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	_
+9	torniin	tor#niin	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	12	nmod:poss	_	_
+12	huipulla	huippu	NOUN	N	Case=Ade|Number=Sing	13	obl	_	_
+13	komeili	komeillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+14	risti	risti	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Kirkko.
+1	Kirkko	kirkko	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Kerttu ei vielä kertaakaan ollut käynyt tavallisessa suomalaisessa kirkossa.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	vielä	vielä	ADV	Adv	_	6	advmod	_	_
+4	kertaakaan	kertaakaan	ADV	Adv	_	6	advmod	_	_
+5	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	aux	_	_
+6	käynyt	käyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	tavallisessa	tavallinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Llinen|Number=Sing	8	amod	_	_
+8	suomalaisessa	suomalainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	9	amod	_	_
+9	kirkossa	kirkko	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 12
+# text = Ei edes naimisiin mennessään, sillä Henkka oli halunnut maistraattihäät.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	edes	edes	ADV	Adv	_	3	advmod	_	_
+3	naimisiin	naimisiin	ADV	Adv	_	4	advmod	_	_
+4	mennessään	mennä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	sillä	sillä	SCONJ	C	_	9	mark	_	_
+7	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	advcl	_	_
+10	maistraattihäät	maistraattihäs	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kalevi lähti kahden vuoden avoliiton jälkeen.
+1	Kalevi	Kalevi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	4	nummod	_	_
+4	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	avoliiton	avoliitto	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	jälkeen	jälkeen	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Mies ilmoitti, ettei aio kilpailla jonkun iskelmätähden kanssa.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ilmoitti	ilmoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	mark	_	_
+5	aio	aikoa	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	kilpailla	kilpailla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+7	jonkun	joku	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	8	det	_	_
+8	iskelmätähden	iskelmätähti	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+9	kanssa	kanssa	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Miten joku voi oikeasti suuttua, jos nainen käy muutaman kerran ihailemansa laulajan keikalla.
+1	Miten	miten	ADV	Adv	_	5	advmod	_	_
+2	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	oikeasti	oikeasti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+5	suuttua	suuttua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	jos	jos	SCONJ	C	_	9	mark	_	_
+8	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+10	muutaman	muutama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	9	obj	_	_
+11	kerran	kerran	ADV	Adv	_	9	advmod	_	_
+12	ihailemansa	ihailea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Agt|Person[psor]=3|VerbForm=Part|Voice=Act	13	acl	_	_
+13	laulajan	laul#aika	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	keikalla	keikka	NOUN	N	Case=Ade|Number=Sing	9	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Tarkkaan ottaen Meeri kävi keikoilla kaksikymmentä kahdeksan kertaa.
+1	Tarkkaan	tarkkaan	ADV	Adv	_	2	advmod	_	_
+2	ottaen	#ottaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	4	advcl	_	_
+3	Meeri	Meeri	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	keikoilla	keika	NOUN	N	Case=Ade|Number=Plur	6	obl	_	_
+6	kaksikymmentä	kaksi#kymmenen	NUM	Num	Case=Par|Number=Sing|NumType=Card	7	compound	_	_
+7	kahdeksan	kahdeksan	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	_
+8	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Kalevin lähtö harmitti Meeriä pitkään.
+1	Kalevin	Kalevin	ADV	Adv	_	3	advmod	_	_
+2	lähtö	lähtö	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	harmitti	harmittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Meeriä	Meer	PROPN	N	Case=Par|Number=Sing	3	obj	_	_
+5	pitkään	pitkään	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mies oli aivan Jorma Kääriäisen näköinen.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+3	aivan	aivan	ADV	Adv	_	6	advmod	_	_
+4	Jorma	Jorma	PROPN	N	Case=Nom|Number=Sing	6	nmod:poss	_	_
+5	Kääriäisen	Kääriäinen	PROPN	N	Case=Gen|Number=Sing	4	flat:name	_	_
+6	näköinen	näköinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s \s
+
+# sent_id = 7
+# text = Eron jälkeen Meeri Kalusi eroon kaikesta entisestä.
+1	Eron	ero	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+2	jälkeen	jälkeen	ADP	Adp	AdpType=Post	1	case	_	_
+3	Meeri	Meeri	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	Kalusi	Kaluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	eroon	ero	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	kaikesta	kaikki	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	7	det	_	_
+7	entisestä	entis	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Onneksi tällä paikkakunnalla oli pulaa maatalouslomittajista, ja Meerille löytyi töitä ja asunto.
+1	Onneksi	onneksi	ADV	Adv	_	3	advmod	_	_
+2	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	3	det	_	_
+3	paikkakunnalla	paikka#kunta	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	pulaa	pula	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	_
+6	maatalouslomittajista	maatalouslomittaji	NOUN	N	Case=Ela|Number=Sing	3	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	Meerille	Meer	PROPN	N	Case=All|Number=Sing	10	obl	_	_
+10	löytyi	löytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	töitä	työ	NOUN	N	Case=Par|Number=Plur	10	obj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	asunto	asunto	NOUN	N	Case=Nom|Number=Sing	11	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s \s
+
+# sent_id = 9
+# text = Iltaa varten Meeri meikkaa ruskeat silmänsä ja punaa huulensa.
+1	Iltaa	ilta	NOUN	N	Case=Par|Number=Sing	4	obl	_	_
+2	varten	varten	ADP	Adp	AdpType=Post	1	case	_	_
+3	Meeri	Meeri	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	meikkaa	meikata	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ruskeat	ruskea	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	6	amod	_	_
+6	silmänsä	silmä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	obj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	punaa	punata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	huulensa	huuli	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Kohottavat rintaliivit ja leveähelmainen kukkamekko viimeistelevät naisellisen kokonaisuuden.
+1	Kohottavat	Kohottava	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	2	amod	_	_
+2	rintaliivit	rintaliivi	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	leveähelmainen	leveähelmainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	kukkamekko	kukkamekko	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+6	viimeistelevät	viimeisellä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	naisellisen	naisellinen	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	kokonaisuuden	kokonaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,97 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Kyllä äiti on oikeasti sairas.
+1	—	—	PUNCT	Punct	_	6	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	6	advmod	_	_
+3	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	oikeasti	oikeasti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+6	sairas	sairas	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Ottivat hänet sairaalaan, Erni sanoo.
+1	Ottivat	ottaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	1	obj	_	_
+3	sairaalaan	sairaala	NOUN	N	Case=Ill|Number=Sing	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Kaisu ei vieläkään usko.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	vieläkään	vielä	ADV	Adv	Clitic=Kaan	4	advmod	_	_
+4	usko	uskoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Hän ajattelee, että rouva valehtelee.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ajattelee	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	rouva	rouva	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	valehtelee	valehella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Häntä suututtaa.
+1	Häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	suututtaa	suututtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän ottaa petivaateet kainaloonsa ja vie ne yläkertaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ottaa	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	petivaateet	petivaae	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+4	kainaloonsa	kainalo	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	vie	viedä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	6	obj	_	_
+8	yläkertaan	ylä#kerta	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = — Tästä lähtien nukun vintillä! hän ilmoittaa Ernille.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	5	obl	_	_
+3	lähtien	lähtien	ADP	Adp	AdpType=Post	2	case	_	_
+4	nukun	nukku	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	vintillä	vint	NOUN	N	Case=Ade|Number=Plur	8	obl	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	ilmoittaa	ilmoitata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	Ernille	Ern	PROPN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 8
+# text = Vintillä on kylmä.
+1	Vintillä	vint	PROPN	N	Case=Ade|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kylmä	kylmä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = — Yhtenä yönä lämpötila laskee melkein pakkasen puolelle.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Yhtenä	yksi	NUM	Num	Case=Ess|Number=Sing|NumType=Card	3	nummod	_	_
+3	yönä	yö	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+4	lämpötila	lämpö#tila	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	laskee	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	melkein	melkein	ADV	Adv	_	5	advmod	_	_
+7	pakkasen	pakkanen	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	puolelle	puoli	NOUN	N	Case=All|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Erni tulee ovelle.
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ovelle	ovi	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

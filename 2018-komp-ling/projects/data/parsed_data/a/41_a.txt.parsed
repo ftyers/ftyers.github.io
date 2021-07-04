@@ -1,0 +1,377 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = – Enkö minä saa puhua omassa talossani?
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Enkö	Enkuin	SCONJ	C	Style=Coll	4	mark	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	omassa	oma	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	7	amod	_	_
+7	talossani	talo	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	obl	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Niin, minä tiedän, että sinä haluat päästä eroon1 minusta.
+1	Niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	_	_
+8	haluat	haluta	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+9	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	eroon1	eroon1	SYM	Symb	_	9	obj	_	_
+11	minusta	minä	PRON	Pron	Case=Ela|Number=Sing|Person=1|PronType=Prs	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Olen juoppo2 mies.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	juoppo2	juoppo2	ADJ	Num	NumType=Ord	3	nummod	_	_
+3	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Sinä vihaat minua.
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	2	det	_	_
+2	vihaat	vihas	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+3	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	2	nmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = – Oskar, syö nopeammin, että pääset nukkumaan.
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Oskar	Oskar	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	syö	syödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	nopeammin	nopeasti	ADV	Adv	Degree=Cmp|Derivation=Sti	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	että	että	SCONJ	C	_	9	mark	_	_
+8	pääset	päänen	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	nukkumaan	nukkua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Kello on kohta kolme.
+1	Kello	kello	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	kohta	kohta	ADV	Adv	_	4	advmod	_	_
+4	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = – Miksi?
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Luulet, että olen humalassa,3 vaikka en ole.
+1	Luulet	luulla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	6	punct	_	_
+3	että	että	SCONJ	C	_	6	mark	_	_
+4	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	humalassa	humala	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+6	,3	,3	NUM	Num	NumType=Card	1	ccomp	_	_
+7	vaikka	vaikka	SCONJ	C	_	9	mark	_	_
+8	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Mitä roskaa tämä on?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	roskaa	roska	NOUN	N	Case=Par|Number=Sing	4	nsubj:cop	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 10
+# text = – Kylmää vasikanpaistia.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Kylmää	kylmä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	amod	_	_
+3	vasikanpaistia	vasikanpaisti	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = – Minulla on vaimo, joka antaa huonoa ruokaa!
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+8	huonoa	huono	ADJ	A	Case=Par|Degree=Pos|Number=Sing	9	amod	_	_
+9	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Kukaan ei pidä minusta.
+1	Kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	minusta	minä	PRON	Pron	Case=Ela|Number=Sing|Person=1|PronType=Prs	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Syö itse kylmä vasikanpaisti, isä huusi ja löi käden pöytään.
+1	Syö	s#yö	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	itse	itse	ADV	Adv	_	4	advmod	_	_
+3	kylmä	kylmä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	vasikanpaisti	vasikanpaisti	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	isä	isä	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	huusi	huuta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	löi	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	conj	_	_
+10	käden	käsi	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	pöytään	pöytä	NOUN	N	Case=Ill|Number=Sing	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 14
+# text = – Oskar, sinä rikot astiat.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Oskar	Oskar	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nmod:poss	_	_
+5	rikot	rikko	NOUN	N	Case=Nom|Number=Plur	6	compound:nn	_	_
+6	astiat	astia	NOUN	N	Case=Nom|Number=Plur	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 15
+# text = – Ne on ostettu minun rahoillani.
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	ostettu	ostaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nmod:poss	_	_
+6	rahoillani	rahoi	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 16
+# text = Mene pois, tai minä –!
+1	Mene	mennä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pois	pois	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	tai	tai	CCONJ	C	_	5	cc	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	1	conj	_	_
+6	–	–	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 17
+# text = Hyvä Jumala, lyökö hän mammaa?
+1	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	lyökö	lyö	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj:cop	_	_
+6	mammaa	mamma	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 18
+# text = Hanna juoksi ruokasaliin.
+1	Hanna	Hanna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ruokasaliin	ruokasali	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 19
+# text = Isä istui tuolilla punaisena.
+1	Isä	isä	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tuolilla	tuoli	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+4	punaisena	punainen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 20
+# text = Hänen silmänsä olivat pyöreät, ja nyrkki oli äitiin päin.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	silmänsä	silmä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	nsubj:cop	_	_
+3	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	pyöreät	pyöreä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	ja	ja	CCONJ	C	_	9	cc	_	_
+7	nyrkki	nyrkki	NOUN	N	Case=Nom|Number=Sing	9	obj	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux:pass	_	_
+9	äitiin	äia	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	4	conj	_	_
+10	päin	päin	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 21
+# text = Äiti seisoi vieressä ja yritti estää, että isä ei hakkaisi4 pöytää.
+1	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	seisoi	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vieressä	vieressä	ADV	Adv	_	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	yritti	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	estää	estää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	että	että	SCONJ	C	_	12	mark	_	_
+9	isä	isä	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	hakkaisi4	hakkaisi4	NUM	Num	NumType=Card	12	nummod	_	_
+12	pöytää	pöytä	NOUN	N	Case=Par|Number=Sing	6	ccomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 22
+# text = – Pappa!
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Pappa	pappa	X	Foreign	Foreign=Yes	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 23
+# text = Hanna huusi.
+1	Hanna	Hantaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	1	obj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 24
+# text = – Älä lyö mammaa, älä lyö!
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lyö	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	mammaa	mamma	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	lyö	lyödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 25
+# text = Hanna tarttui5 kiinni isään.
+1	Hanna	Hantaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tarttui5	tarttui5	SYM	Symb	_	1	obj	_	_
+3	kiinni	kiinni	ADV	Adv	_	1	advmod	_	_
+4	isään	isä	NOUN	N	Case=Ill|Number=Sing	1	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 26
+# text = Isän käsi laskeutui alas.
+1	Isän	isä	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	käsi	käsi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	laskeutui	laskeutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	alas	alas	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 27
+# text = Tylsä katse kääntyi lapseen, joka oli kalpea6 kuin kuolema.
+1	Tylsä	tylsä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	katse	katse	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	lapseen	lapnen	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj:cop	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	kalpea6	kalpea6	NUM	Num	NumType=Card	4	acl:relcl	_	_
+9	kuin	kuin	SCONJ	C	_	10	mark	_	_
+10	kuolema	kuolema	NOUN	N	Case=Nom|Number=Sing	8	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 28
+# text = Äiti halasi Hannaa.
+1	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	halasi	halata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Hannaa	Hanna	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 29
+# text = Hän vei tytön äkkiä nukkumaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	vei	viedä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tytön	tyttö	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	äkkiä	äkkiä	ADV	Adv	_	2	advmod	_	_
+5	nukkumaan	nukkua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 30
+# text = – Juo vähän vettä, Hanna.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Juo	juoda	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vähän	vähän	ADV	Adv	_	2	advmod	_	_
+4	vettä	vesi	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Hanna	Hanna	PROPN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 31
+# text = Kuinka sinä nyt voit?
+1	Kuinka	kuinka	ADV	Adv	_	4	advmod	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj:cop	_	_
+3	nyt	nyt	ADV	Adv	_	4	advmod	_	_
+4	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 32
+# text = päästä eroon: (tässä) saada avioero juoppo: henkilö, joka juo paljon alkoholia olla humalassa: olla juovuksissa, olla juonut paljon alkoholia hakata: lyödä tarttua: ottaa kiinni kalpea: vaalea, väritön, sairaan näköinen 8 – Hyvin, mamma.
+1	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	eroon	ero	NOUN	N	Case=Ill|Number=Sing	1	obl	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	1	punct	_	_
+4	(	(	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+5	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	7	obl	_	SpaceAfter=No
+6	)	)	PUNCT	Punct	_	5	punct	_	_
+7	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	acl	_	_
+8	avioero	avio#ero	NOUN	N	Case=Nom|Number=Sing	11	obj	_	_
+9	juoppo	juoppo	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	11	punct	_	_
+11	henkilö	henkilö	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	_
+14	juo	juoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	paljon	paljon	ADV	Adv	_	16	advmod	_	_
+16	alkoholia	alkoholi	NOUN	N	Case=Par|Number=Sing	14	obj	_	_
+17	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	18	cop	_	_
+18	humalassa	humala	NOUN	N	Case=Ine|Number=Sing	21	obl	_	SpaceAfter=No
+19	:	:	PUNCT	Punct	_	18	punct	_	_
+20	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	21	cop	_	_
+21	juovuksissa	juovuksissa	ADV	Adv	_	14	ccomp	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	14	punct	_	_
+23	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	24	aux	_	_
+24	juonut	juoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	conj	_	_
+25	paljon	paljon	ADV	Adv	_	26	advmod	_	_
+26	alkoholia	alkoholi	NOUN	N	Case=Par|Number=Sing	24	obj	_	_
+27	hakata	hakata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	24	parataxis	_	SpaceAfter=No
+28	:	:	PUNCT	Punct	_	27	punct	_	_
+29	lyödä	lyödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	27	xcomp	_	_
+30	tarttua	tarttua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	29	parataxis	_	SpaceAfter=No
+31	:	:	PUNCT	Punct	_	30	punct	_	_
+32	ottaa	ottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	30	parataxis	_	_
+33	kiinni	kiinni	ADV	Adv	_	32	compound:prt	_	_
+34	kalpea	kalpea	NOUN	N	Case=Nom|Number=Sing	32	obj	_	SpaceAfter=No
+35	:	:	PUNCT	Punct	_	36	punct	_	_
+36	vaalea	vaalea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	34	appos	_	SpaceAfter=No
+37	,	,	PUNCT	Punct	_	38	punct	_	_
+38	väritön	väritön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	36	conj	_	SpaceAfter=No
+39	,	,	PUNCT	Punct	_	41	punct	_	_
+40	sairaan	sairas	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	41	amod	_	_
+41	näköinen	näköinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	46	amod	_	_
+42	8	8	NUM	Num	NumType=Card	46	orphan	_	_
+43	–	–	PUNCT	Punct	_	42	punct	_	_
+44	Hyvin	Hyvin	ADV	Adv	_	46	advmod	_	SpaceAfter=No
+45	,	,	PUNCT	Punct	_	44	punct	_	_
+46	mamma	mamma	NOUN	N	Case=Nom|Number=Sing	36	conj	_	SpaceAfter=No
+47	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 33
+# text = Äiti antoi suukon, silitti poskea ja lähti sitten pois.
+1	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	antoi	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	suukon	suukko	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	silitti	silittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	poskea	poski	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	sitten	sitten	ADV	Adv	_	8	advmod	_	_
+10	pois	pois	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 34
+# text = Oli pimeää ja hiljaista.
+1	Oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	pimeää	pimeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	hiljaista	hiljainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

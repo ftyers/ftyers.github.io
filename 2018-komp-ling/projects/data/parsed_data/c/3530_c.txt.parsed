@@ -1,0 +1,159 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Suokaa anteeksi, -- sanoi palvelijatar.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Suokaa	Suoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	anteeksi	anteeksi	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	--	--	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	palvelijatar	palvelijatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Käskekää kreivi luokseni.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Käskekää	Käskeä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+4	luokseni	luo	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kreivi tulla tuupersi vaimonsa luo jonkunverran syyllisen näköisenä, kuten tavallisesti.
+1	Kreivi	kreivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	tuupersi	tuupersiä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+4	vaimonsa	vaimo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obl	_	_
+5	luo	luo	ADP	Adp	AdpType=Post	4	case	_	_
+6	jonkunverran	jonkunverran	ADV	Adv	_	8	advmod	_	_
+7	syyllisen	syyllinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	6	amod	_	_
+8	näköisenä	näköinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	3	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	kuten	kuten	ADV	Adv	_	11	advmod	_	_
+11	tavallisesti	tavallisesti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Mutta kreivitär rakkaani!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+3	kreivitär	kreivitär	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	4	nmod	_	_
+4	rakkaani	rakkaani	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Minkälainen onkaan meillä tänään _sauté au madère_ pyistä?
+1	Minkälainen	minkälainen	ADJ	A	Case=Nom|Derivation=Lainen|Number=Sing	6	nsubj	_	_
+2	onkaan	olla	AUX	V	Clitic=Kaan|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	6	obl	_	_
+4	tänään	tänään	ADV	Adv	_	3	advmod	_	_
+5	_sauté	_sauté	NOUN	Foreign	Case=Nom|Number=Sing	6	nsubj	_	_
+6	au	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	madère_	madère_	NOUN	N	Case=Nom|Number=Sing	6	obj	_	_
+8	pyistä	py	NOUN	N	Case=Ela|Number=Plur	7	nmod	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Minä maistoin; turhaan en tuhatta ruplaa maksanut Taraskasta.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	maistoin	maistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	;	;	PUNCT	Punct	_	8	punct	_	_
+4	turhaan	turhaan	ADV	Adv	_	8	advmod	_	_
+5	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+6	tuhatta	tuhat	NUM	Num	Case=Par|Number=Sing|NumType=Card	7	nummod	_	_
+7	ruplaa	rupla	NOUN	N	Case=Par|Number=Sing	8	nsubj	_	_
+8	maksanut	maksaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+9	Taraskasta	Taraska	PROPN	N	Case=Ela|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Sen hän on arvoinenkin!
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	arvoinenkin	arvoinenkin	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Hän istahti vaimonsa viereen, nuorekkaasti kiertäen kätensä polviensa ympärille ja pörhistäen harmaat hapsensa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	istahti	istahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vaimonsa	vaimo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+4	viereen	viereen	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	nuorekkaasti	nuorekkaasti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	kiertäen	kiertää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+8	kätensä	käsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	7	obj	_	_
+9	polviensa	polvii	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	7	obl	_	_
+10	ympärille	ympärille	ADP	Adp	AdpType=Post	9	case	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	pörhistäen	pörhistää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	conj	_	_
+13	harmaat	har#maa	NOUN	N	Case=Nom|Number=Plur	14	obj	_	_
+14	hapsensa	hapsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	12	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Mitä käskette, kreivitär rakkaani?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	käskette	käskla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	kreivitär	kreivitär	X	Symb	_	6	cc	_	_
+6	rakkaani	rakka	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = -- Kuulehan nyt, ystäväiseni, -- mutta mikä tahra sinulla tässä on?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kuulehan	Kuule	ADV	Adv	Clitic=Han	3	advmod	_	_
+3	nyt	nyt	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ystäväiseni	ystäväinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	--	--	PUNCT	Punct	_	12	punct	_	_
+8	mutta	mutta	CCONJ	C	_	12	cc	_	_
+9	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing	10	det	_	_
+10	tahra	tahra	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+11	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	12	nsubj:cop	_	_
+12	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	conj	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = -- sanoi hän, osoittaen miehensä liiviä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	osoittaen	osoittaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+6	miehensä	mies	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	nmod:poss	_	_
+7	liiviä	liivi	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Varmaankin on siinä _sauté au madère'a_, -- hän sanoi hymyillen.
+1	Varmaankin	Varmaan	ADV	Adv	Clitic=Kin	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	det	_	_
+4	_sauté	_sauté	NOUN	Foreign	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	au	au	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+6	madère'a_,	madère'a_,	PUNCT	Punct	_	1	punct	_	_
+7	--	--	PUNCT	Punct	_	1	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+10	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	9	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = -- Niin, kreiviseni: minä tarvitsen rahaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kreiviseni	kreivinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+7	tarvitsen	tarvita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	rahaa	raha	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

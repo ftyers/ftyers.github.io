@@ -1,0 +1,107 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pastori Halme kurkisti varovasti pylvään takaa.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	kurkisti	kurkistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	varovasti	varovasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	pylvään	pylvät	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+6	takaa	takaa	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Kirkko oli tyhjä.
+1	Kirkko	kirkko	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	tyhjä	tyhjä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Parvella ei näkynyt mitään.
+1	Parvella	Parv	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	näkynyt	näkyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Pastori Halme hiipi varovasti parvelle meneville portaille ja niitä ylös.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	hiipi	hiipiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	varovasti	varovasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	parvelle	parvelle	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	meneville	menea	VERB	V	Case=All|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+7	portaille	portaat	NOUN	N	Case=All|Number=Plur	3	obl	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	10	nsubj:cop	_	_
+10	ylös	ylös	ADV	Adv	_	3	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Portaiden yläpäässä lattialla oli kivääri.
+1	Portaiden	portaat	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	yläpäässä	ylä#pää	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+3	lattialla	lattia	NOUN	N	Case=Ade|Number=Sing	2	nmod	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+5	kivääri	kivääri	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = — Tänne on saatava äkkiä poliisi, pastori Halme ajatteli.
+1	—	—	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s   
+2	Tänne	tänne	ADV	Adv	_	4	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	saatava	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+5	äkkiä	äkkiä	ADV	Adv	_	4	advmod	_	_
+6	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+8	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	_
+10	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Hän nosti kiväärin lattialta ja kiirehti sakastiin.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	nosti	nostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kiväärin	kivääri	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	lattialta	lattia	NOUN	N	Case=Abl|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	kiirehti	kiirehti	NOUN	N	Case=Nom|Number=Sing	7	obj	_	_
+7	sakastiin	sakasa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Hän tarttui puhelimen kuulokkeeseen ja valitsi poliisin numeron.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	puhelimen	puhelin	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	kuulokkeeseen	kuulokke	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	valitsi	valita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	poliisin	poliisi	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	numeron	numero	NOUN	N	Case=Gen|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Hän nosti aseen eteensä pöydälle.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	nosti	nostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aseen	ase	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	eteensä	etei	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+5	pöydälle	pöytä	NOUN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = — Poliisin päivystys, vastattiin toisessa päässä.
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s   
+2	Poliisin	Poliisi	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	päivystys	päivystys	NOUN	N	Case=Nom|Number=Sing	5	vocative	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	vastattiin	vastata	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	toisessa	toinen	PRON	Pron	Case=Ine|Number=Sing|PronType=Rcp	7	det	_	_
+7	päässä	pää	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

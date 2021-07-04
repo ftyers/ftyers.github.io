@@ -1,0 +1,155 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Keskustan eduskuntaryhmän puheenjohtaja asuu perheineen Helsingissä, mutta nostaa maakuntaedustajille tarkoitettua, korotettua kulukorvausta.
+1	Keskustan	keskusta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	eduskuntaryhmän	eduskunta#ryhmä	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	puheenjohtaja	puheen#johtaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	nsubj	_	_
+4	asuu	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	perheineen	perhe	NOUN	N	Case=Com|Person[psor]=3	4	obl	_	_
+6	Helsingissä	Helsinki	PROPN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	mutta	mutta	CCONJ	C	_	9	cc	_	_
+9	nostaa	nostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	maakuntaedustajille	maakuntaedustaj	NOUN	N	Case=All|Number=Plur	11	obl	_	_
+11	tarkoitettua	tarkoittaa	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	xcomp	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	korotettua	korottaa	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	14	acl	_	_
+14	kulukorvausta	kulukorvaus	NOUN	N	Case=Par|Number=Sing	9	nsubj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Täysin ohjeiden mukaan, sanotaan eduskunnan tilitoimistosta.
+1	Täysin	täyta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ohjeiden	ohji	NOUN	N	Case=Gen|Number=Plur	1	obl	_	_
+3	mukaan	mukaan	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	sanotaan	sanoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	conj	_	_
+6	eduskunnan	edus#kunta	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	tilitoimistosta	tilitoimisto	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Soviteltua ansiopäivärahaa koskevia päätöksiä annettiin viime vuonna noin 325-tuhatta, joka on 20 prosenttia edellisvuotta enemmän.
+1	Soviteltua	Soviteltu	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	amod	_	_
+2	ansiopäivärahaa	ansiopäiväraha	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	koskevia	koskea	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	4	acl	_	_
+4	päätöksiä	päätös	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+5	annettiin	anneta	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	viime	viime	ADJ	A	_	7	amod	_	_
+7	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+8	noin	noin	ADV	Adv	_	9	advmod	_	_
+9	325-tuhatta	325-tuhatta	ADP	Adp	AdpType=Post	16	case	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj:cop	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
+13	20	20	NUM	Num	NumType=Card	14	nummod	_	SpacesAfter= 
+14	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	16	nmod	_	_
+15	edellisvuotta	edellisvuotta	ADV	Adv	_	16	advmod	_	_
+16	enemmän	enemmän	ADV	Adv	_	5	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Leikkuri iskee, mikäli on tienannut ennen työttömäksi joutumistaan yli 3 115 euroa kuukaudessa.
+1	Leikkuri	Leikkuri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	iskee	iskeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	mikäli	mikäli	SCONJ	C	_	6	mark	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tienannut	tienata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
+7	ennen	ennen	ADV	Adv	_	6	advmod	_	_
+8	työttömäksi	työtön	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	9	amod	_	_
+9	joutumistaan	joutumista	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+10	yli	yli	ADV	Adv	_	11	advmod	_	_
+11	3 115	3 115	NUM	Num	NumType=Card	12	nummod	_	_
+12	euroa	euro	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+13	kuukaudessa	kuu#kausi	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Muutokset koskevat vain uusia hakijoita.
+1	Muutokset	muutos	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	koskevat	koskea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vain	vain	ADV	Adv	_	5	advmod	_	_
+4	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	amod	_	_
+5	hakijoita	hakija	NOUN	N	Case=Par|Derivation=Ja|Number=Plur	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 6
+# text = Kunnat järjestävät erityyppistä kuntouttavaa toimintaa työttömille.
+1	Kunnat	kunta	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	järjestävät	järjestää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	erityyppistä	erityyppinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+4	kuntouttavaa	kuntouttava	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
+5	toimintaa	toiminta	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+6	työttömille	työttöm	NOUN	N	Case=All|Number=Plur	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Osa kunnista tarjoaa työttömien palveluja myös yksityisille tilattavaksi, kun taas toinen osa kunnista pitää työtoiminnan puhtaasti omien seinien sisällä.
+1	Osa	osa	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	kunnista	kunta	NOUN	N	Case=Ela|Number=Plur	1	nmod	_	_
+3	tarjoaa	tarjota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	työttömien	työtön	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Plur	5	amod	_	_
+5	palveluja	palvelu	NOUN	N	Case=Par|Derivation=U|Number=Plur	3	obj	_	_
+6	myös	myös	ADV	Adv	_	7	advmod	_	_
+7	yksityisille	yksityinen	ADJ	A	Case=All|Degree=Pos|Derivation=Inen|Number=Plur	3	obl	_	_
+8	tilattavaksi	tilattava	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	xcomp	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	15	punct	_	_
+10	kun	kun	SCONJ	C	_	15	mark	_	_
+11	taas	taas	ADV	Adv	_	13	advmod	_	_
+12	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	13	nummod	_	_
+13	osa	osa	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+14	kunnista	kunta	NOUN	N	Case=Ela|Number=Plur	13	nmod	_	_
+15	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	_
+16	työtoiminnan	työtoiminta	NOUN	N	Case=Gen|Number=Sing	15	obj	_	_
+17	puhtaasti	puhtaasti	ADV	Adv	Derivation=Sti	15	advmod	_	_
+18	omien	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	19	amod	_	_
+19	seinien	seini	NOUN	N	Case=Gen|Number=Plur	15	obl	_	_
+20	sisällä	sisällä	ADP	Adp	AdpType=Post	19	case	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = Loimaan työttömät tekevät alihankintana töitä kahdelle yritykselle.
+1	Loimaan	Loimaa	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	työttömät	työtön	NOUN	N	Case=Nom|Derivation=Ton|Number=Plur	3	nsubj	_	_
+3	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	alihankintana	alihankinta	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+5	töitä	työ	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+6	kahdelle	kaksi	NUM	Num	Case=All|Number=Sing|NumType=Card	5	nummod	_	_
+7	yritykselle	yritys	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Työttömät eivät saa palkkaa, vaan korvaus menee paikalliselle yhdistykselle.
+1	Työttömät	työttömä	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saa	sata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	palkkaa	palkka	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	vaan	vaan	CCONJ	C	_	8	cc	_	_
+7	korvaus	korvaus	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	paikalliselle	paikallisi	NOUN	N	Case=All|Number=Sing	8	obl	_	_
+10	yhdistykselle	yhdistys	NOUN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Jatkossa kaupunki maksaa palkkiot myös kaupungin jaostojen puheenjohtajille ja varapuheenjohtajille, mikä nostaa summaa entisestään.
+1	Jatkossa	jatko	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+2	kaupunki	kaupunki	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	maksaa	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	palkkiot	palkkio	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+5	myös	myös	ADV	Adv	_	8	advmod	_	_
+6	kaupungin	kaupunki	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	jaostojen	jaosto	NOUN	N	Case=Gen|Number=Plur	8	nmod:poss	_	_
+8	puheenjohtajille	puheenjohtaj	NOUN	N	Case=All|Number=Plur	3	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	varapuheenjohtajille	varapuheenjohtaj	NOUN	N	Case=All|Number=Plur	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj	_	_
+13	nostaa	nostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	acl:relcl	_	_
+14	summaa	summa	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+15	entisestään	entisestään	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,130 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Se -- on nyt _minun_ tieni, -- missä on teidän?
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	--	--	PUNCT	Punct	_	1	punct	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	_minun_ tieni	_minun_ tieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	--	--	PUNCT	Punct	_	8	punct	_	_
+8	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	5	acl:relcl	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+10	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	8	nsubj:cop	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = niin minä vastasin niille, jotka kysyivät minulta 'tietä'. _Tietä_ nimittäin -- ei ole!
+1	niin	niin	ADV	Adv	_	3	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	vastasin	vastata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	niille	se	PRON	Pron	Case=All|Number=Plur|PronType=Dem	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	kysyivät	kysyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	minulta	minä	PRON	Pron	Case=Abl|Number=Sing|Person=1|PronType=Prs	7	obl	_	_
+9	'	'	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+10	tietä	tie	NOUN	N	Case=Par|Number=Sing	7	appos	_	SpaceAfter=No
+11	'	'	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	17	punct	_	_
+13	_Tietä_	_Tietä_	NOUN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+14	nimittäin	nimittäin	ADV	Adv	Derivation=Ttain	17	advmod	_	_
+15	--	--	PUNCT	Punct	_	14	punct	_	_
+16	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	_
+17	ole	olla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	parataxis	_	SpaceAfter=No
+18	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- Näin puhui Zarathustra.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Näin	Näin	ADV	Adv	_	3	advmod	_	_
+3	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Vanhoista ja uusista tauluista.
+1	Vanhoista	vanha	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	4	amod	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	uusista	uusi	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	1	conj	_	_
+4	tauluista	taulu	NOUN	N	Case=Ela|Number=Plur	5	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 5
+# text = l.
+1	l	llä	ADV	Adv	Style=Coll	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Täällä minä istun ja odotan, vanhoja rikottuja tauluja ympärilläni ja myöskin uusia puoleksi kirjoitettuja.
+1	Täällä	täällä	ADV	Adv	_	3	advmod	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	istun	isttua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	odotan	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	vanhoja	vanha	ADJ	A	Case=Par|Degree=Pos|Number=Plur	8	conj	_	_
+8	rikottuja	rikota	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+9	tauluja	taulu	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+10	ympärilläni	ympärillä	ADV	Adv	Number[psor]=Sing|Person[psor]=1	3	advmod	_	_
+11	ja	ja	CCONJ	C	_	14	cc	_	_
+12	myöskin	myöskin	ADV	Adv	_	13	advmod	_	_
+13	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	14	amod	_	_
+14	puoleksi	puol	NOUN	N	Case=Tra|Number=Sing	15	obl	_	_
+15	kirjoitettuja	kirjoittaa	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Milloin tulee minun hetkeni?
+1	Milloin	milloin	ADV	Adv	_	2	advmod	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	hetkeni	hetki	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- minun alasastumiseni, laskeutumiseni hetki: sillä vielä kerran minä tahdon ihmisten luo mennä.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	alasastumiseni	alasastuminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	laskeutumiseni	laskeutuminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nmod	_	_
+6	hetki	hetki	NOUN	N	Case=Nom|Number=Sing	3	appos	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	15	punct	_	_
+8	sillä	sillä	SCONJ	C	_	15	mark	_	_
+9	vielä	vielä	ADV	Adv	_	10	advmod	_	_
+10	kerran	kerran	ADV	Adv	_	15	obl	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+12	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	ihmisten	ihmis	NOUN	N	Case=Gen|Number=Plur	15	obl	_	_
+14	luo	luo	ADP	Adp	AdpType=Post	13	case	_	_
+15	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Sitä minä odotan nyt: sillä ensin täytyy merkkien tulla, että _minun_ hetkeni on läsnä, -- nimittäin naurava jalopeura kyyhkysparven keralla.
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	odotan	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nyt	nyt	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	3	punct	_	_
+6	sillä	sillä	SCONJ	C	_	10	mark	_	_
+7	ensin	ensin	ADV	Adv	_	10	advmod	_	_
+8	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	merkkien	merkki	NOUN	N	Case=Gen|Number=Plur	10	nsubj	_	_
+10	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	että	että	SCONJ	C	_	15	mark	_	_
+13	_minun_ hetkeni	_minun_ hetki	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	15	nsubj:cop	_	_
+14	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+15	läsnä	läsnä	ADV	Adv	_	10	ccomp	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	20	punct	_	_
+17	--	--	PUNCT	Punct	_	20	punct	_	_
+18	nimittäin	nimittäin	ADV	Adv	Derivation=Ttain	19	advmod	_	_
+19	naurava	naurava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	20	amod	_	_
+20	jalopeura	jalopeura	NOUN	N	Case=Nom|Number=Sing	3	appos	_	_
+21	kyyhkysparven	kyyhkysparvi	NOUN	N	Case=Gen|Number=Sing	22	nmod:poss	_	_
+22	keralla	kera	NOUN	N	Case=Ade|Number=Sing	20	nmod	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

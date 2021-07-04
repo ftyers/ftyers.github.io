@@ -1,0 +1,141 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Voi, miten kaunista!"
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Voi	voi	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	miten	miten	ADV	Adv	_	2	fixed	_	_
+5	kaunista	kaunis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- ajatteli Natasha, ja kun Nikolai ja Sonja olivat lähteneet huoneesta, nousi hänkin piilopaikastaan, lähti heidän jälestään ja kutsui Boriksen luokseen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	11	punct	_	_
+5	ja	ja	CCONJ	C	_	11	cc	_	_
+6	kun	kun	SCONJ	C	_	11	mark	_	_
+7	Nikolai	Nikolai	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	7	conj	_	_
+10	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	lähteneet	lähteä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+12	huoneesta	huonei	NOUN	N	Case=Ela|Number=Sing	11	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+15	hänkin	hän	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=3|PronType=Prs	14	obj	_	_
+16	piilopaikastaan	piilopaikastaan	ADV	Adv	_	14	advmod	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	2	punct	_	_
+18	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+19	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	20	nmod:poss	_	_
+20	jälestään	jäle	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	18	obl	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	kutsui	kutsua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	conj	_	_
+23	Boriksen	Boris	PROPN	N	Case=Gen|Number=Sing	22	obl	_	_
+24	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	23	case	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Boris, tulkaa tänne, -- sanoi hän viekkaan merkitsevästi.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Boris	Boris	PROPN	N	Case=Nom|Number=Sing	4	vocative	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	tulkaa	tulla	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tänne	tänne	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	--	--	PUNCT	Punct	_	4	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+10	viekkaan	viekkaan	ADV	Adv	_	11	advmod	_	_
+11	merkitsevästi	merkitsevästi	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Minun täytyy puhua teille eräs asia.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Minun	Minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	7	obl	_	_
+6	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+7	asia	asia	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Tänne, tänne, -- hän puhui ja vei Boriksen kasvihuoneeseen, siihen paikkaan, missä oli ollut kätkeytyneenä kukkasammioiden keskessä.
+1	Tänne	tänne	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	tänne	tänne	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	--	--	PUNCT	Punct	_	3	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	vei	viedä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+10	Boriksen	Boris	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	kasvihuoneeseen	kasvihuone	NOUN	N	Case=Ill|Number=Sing	9	obl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	14	det	_	_
+14	paikkaan	paikka	NOUN	N	Case=Ill|Number=Sing	11	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	19	punct	_	_
+16	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	19	obl	_	_
+17	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	aux	_	_
+18	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	19	cop	_	_
+19	kätkeytyneenä	kätkeytyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	7	advcl	_	_
+20	kukkasammioiden	kukkasammio	NOUN	N	Case=Gen|Number=Plur	21	nmod:poss	_	_
+21	keskessä	keski	NOUN	N	Case=Ine|Number=Sing	19	obl	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 6
+# text = Boris kulki hymyillen hänen jälessään.
+1	Boris	Boris	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kulki	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hymyillen	hymyilla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	jälessään	jälä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	3	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Mikä on sitten se _eräs asia_? -- hän kysyi.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	sitten	sitten	ADV	Adv	_	2	advmod	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+6	_eräs	_eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+7	asia_?	asia_?	SYM	Symb	_	2	nmod	_	_
+8	--	--	PUNCT	Punct	_	2	punct	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Natasha hämmentyi, katsahti ympärilleen ja huomattuaan kukkasammiolla nukkensa kumartui sitä ottamaan.
+1	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hämmentyi	hämmentyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	katsahti	katsahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	ympärilleen	ympärille	ADV	Adv	Person[psor]=3	4	advmod	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	huomattuaan	huomatla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	10	advcl	_	_
+8	kukkasammiolla	kukkasammio	NOUN	N	Case=Ade|Number=Sing	7	obl	_	_
+9	nukkensa	nukki	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	7	obj	_	_
+10	kumartui	kumartua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+11	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	ottamaan	ottaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp:ds	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Suudelkaa nukkea, -- hän sanoi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Suudelkaa	Suudelkaa	INTJ	Interj	_	3	discourse	_	_
+3	nukkea	nukkea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	--	--	PUNCT	Punct	_	3	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

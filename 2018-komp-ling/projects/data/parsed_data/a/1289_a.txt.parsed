@@ -1,0 +1,101 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 25.10.
+1	25.10	25.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Petra Olli voitti painin MM-kultaa.
+1	Petra	Petra	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Olli	olli	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	voitti	voittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	painin	paini	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	MM-kultaa	MM-kulta	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Vantaa antaa 6 miljoonaa euroa asuinalueille, jotka tarvitsevat tukea.
+1	Vantaa	vantaa	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	6	6	NUM	Num	NumType=Card	4	compound	_	_
+4	miljoonaa	miljoona	NUM	Num	Case=Par|Number=Sing|NumType=Card	5	nummod	_	_
+5	euroa	euro	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+6	asuinalueille	asuinalue	NOUN	N	Case=All|Number=Plur	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	9	nsubj	_	_
+9	tarvitsevat	tarvita	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	tukea	tuki	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Verkkofirma Nokia aloittaa säästöohjelman.
+1	Verkkofirma	Verkkofirma	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Nokia	Nokia	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	aloittaa	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	säästöohjelman	säästöohjelma	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Armeijan kasarmirakennukset uudistetaan.
+1	Armeijan	armeija	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kasarmirakennukset	kasarmirakennus	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+3	uudistetaan	uudisttaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Sää kylmenee.
+1	Sää	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs|Style=Coll	2	nmod:poss	_	_
+2	kylmenee.	kylmenee.	ADJ	Num	NumType=Ord	0	root	_	_
+
+# sent_id = 7
+# text = 25.10.
+1	25.10	25.10	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Touko Aalto ei jatka vihreiden puheenjohtajan tehtävässä.
+1	Touko	Touko	PROPN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	Aalto	Aalto	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	jatka	jatka	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	vihreiden	vihreä	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	6	amod	_	_
+6	puheenjohtajan	puheenjohtaja	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing	7	nmod:poss	_	_
+7	tehtävässä	tehtävä	NOUN	N	Case=Ine|Number=Sing	4	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Suomi osallistuu Naton sotaharjoitukseen Norjassa.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	osallistuu	osallistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Naton	Nato	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	sotaharjoitukseen	sota#harjoitus	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+5	Norjassa	Norja	PROPN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Vartijat ovat aloittaneet lakon.
+1	Vartijat	Vartija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	aloittaneet	aloittaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	lakon	lakko	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Euroopan unioni kieltää muovitavaroita.
+1	Euroopan	Eurooppa	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	unioni	unioni	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kieltää	kieltää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	muovitavaroita	muovitavaro	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Talvinopeudet otetaan käyttöön liikenteessä tällä viikolla.
+1	Talvinopeudet	Talvinopeus	NOUN	N	Case=Nom|Derivation=Vs|Number=Plur	2	obj	_	_
+2	otetaan	ottaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	käyttöön	käyttö	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+4	liikenteessä	liikenne	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+5	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	6	det	_	_
+6	viikolla	viikko	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

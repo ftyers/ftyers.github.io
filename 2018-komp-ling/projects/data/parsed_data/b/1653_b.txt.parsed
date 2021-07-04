@@ -1,0 +1,135 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kumpaisenkin.
+1	Kumpaisenkin	Kumpaisenkin	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Kummankin.
+1	Kummankin	kumpikin	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Molempien.
+1	Molempien	molemmat	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Kuvailla.
+1	Kuvailla	kuva	NOUN	N	Case=Ade|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Kertoa, millainen joku on.
+1	Kertoa	kerto	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	millainen	millainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	1	acl:relcl	_	_
+4	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 6
+# text = Kuulolla.
+1	Kuulolla	Kuulo	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Kuulemassa, kuuloetäisyydellä.
+1	Kuulemassa	kuulla	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	kuuloetäisyydellä	kuuloetäisyydi	NOUN	N	Case=Ade|Number=Sing	1	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = Loistoeno.
+1	Loistoeno	Loistoeno	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Tosi hyvä eli loistava eno. Luikki.
+1	Tosi	tosi	ADV	Adv	_	2	advmod	_	_
+2	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+3	eli	eli	CCONJ	C	_	4	cc	_	_
+4	loistava	loistava	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	conj	_	_
+5	eno	eno	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\s
+7	Luikki	Luikki	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = Liikkui niin, että häntä oli vaikea huomata, nopeasti ja piilossa.
+1	Liikkui	liikkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	niin	niin	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	että	että	SCONJ	C	_	7	mark	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	vaikea	vaikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	ccomp	_	_
+8	huomata	huomata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp:ds	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	8	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	piilossa	piilo	NOUN	N	Case=Ine|Number=Sing	8	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 11
+# text = Miinuksia, perusmuoto miinus.
+1	Miinuksia	Miinus	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	miinus	miinus	X	Foreign	Foreign=Yes	1	appos	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Huono puoli, pahe, ikävä luonteenpiirre.
+1	Huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	puoli	puoli	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	pahe	pahe	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	ikävä	ikävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	luonteenpiirre	luonteenpiirre	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Kirjaimellisesti matematiikkaa: neljä miinus kolme on yksi eli 4 — 3 =
+1	Kirjaimellisesti	kirjaimellisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+2	matematiikkaa	matematiikka	NOUN	N	Case=Par|Number=Sing	8	obl	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	5	punct	_	_
+4	neljä	neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	miinus	miinus	NOUN	N	Case=Nom|Number=Sing	6	nmod	_	_
+6	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nsubj:cop	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	0	root	_	_
+9	eli	eli	CCONJ	C	_	10	cc	_	_
+10	4	4	NUM	Num	NumType=Card	8	conj	_	_
+11	—	—	PUNCT	Punct	_	12	punct	_	_
+12	3	3	NUM	Num	NumType=Card	13	nummod	_	_
+13	=	=	SYM	Punct	_	8	orphan	_	_
+
+# sent_id = 14
+# text = 1. Palatkaamme, tarttukaamme, pyörittäkäämme.
+1	1	1	NUM	Num	NumType=Card	3	obl	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+3	Palatkaamme	Palata	VERB	V	Mood=Imp|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	tarttukaamme	tarttua	VERB	V	Mood=Imp|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	pyörittäkäämme	pyörittäkätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Me pyydämme itseämme ja lukijaa palaamaan, tarttumaan, pyörittämään.
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
+2	pyydämme	pyytää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	itseämme	itse	PRON	Pron	Case=Par|Number=Sing|Number[psor]=Plur|Person[psor]=1|Reflex=Yes	6	nsubj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	lukijaa	lukija	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	3	conj	_	_
+6	palaamaan	palata	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	tarttumaan	tarttua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	pyörittämään	pyörittää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

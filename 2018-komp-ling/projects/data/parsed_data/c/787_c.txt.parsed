@@ -1,0 +1,200 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Sen minä kirjoitan tänä iltana päiväkirjaani."
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	obj	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	kirjoitan	kirjoitaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	6	det	_	_
+6	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+7	päiväkirjaani	päiväkirjaani	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = "Minkä sitten?"
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	3	nsubj:cop	_	_
+3	sitten	sitten	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = "Että kärventynyt lapsi ei karta tulta."
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Että	että	SCONJ	C	_	6	mark	_	_
+3	kärventynyt	kärventyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	acl	_	_
+4	lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	karta	kar	NOUN	N	Case=Par|Derivation=Tar|Number=Sing	0	root	_	_
+7	tulta	tu	NOUN	N	Case=Abl|Number=Sing	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = "Minä en ole edes kärventynyt.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	edes	edes	ADV	Adv	_	6	advmod	_	_
+6	kärventynyt	kärventyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Minun siipeni ovat koskemattomat."
+1	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	2	nmod:poss	_	_
+2	siipeni	siipi	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	koskemattomat	koskematon	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Plur	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = "Te käytätte niitä kaikkeen muuhun paitsi lentoon."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+3	käytätte	käyttä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	3	obj	_	_
+5	kaikkeen	kaikki	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	6	det	_	_
+6	muuhun	muu	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	3	obl	_	_
+7	paitsi	paitsi	ADP	Adp	AdpType=Prep	6	case	_	_
+8	lentoon	lento	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = "Rohkeus on miehistä paennut naisiin.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Rohkeus	Rohkeus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	5	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	miehistä	mieh	NOUN	N	Case=Ela|Number=Plur	5	obl	_	_
+5	paennut	paeta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	naisiin	nainen	NOUN	N	Case=Ill|Number=Plur	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Se on uusi kokemus."
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	uusi	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	kokemus	kokemus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = "Teillä on kilpailija."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	kilpailija	kilpailija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = "Kuka?" Lordi Henry nauroi.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+5	Lordi	Lordi	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	5	flat:name	_	_
+7	nauroi	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = "Lady Narborough", hän kuiskasi.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Lady	Lady	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+3	Narborough	Narborough	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = "Hän suorastaan jumaloi Doriania."
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	suorastaan	suorastaan	ADV	Adv	_	4	advmod	_	_
+4	jumaloi	jumalaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	Doriania	Dorian	PROPN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = "Te peloitatte minua.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+3	peloitatte	peloitada	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 14
+# text = Rakkaus muinaisuuteen on vaarallinen meille romantikoille."
+1	Rakkaus	rakkaus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	4	nsubj:cop	_	_
+2	muinaisuuteen	muinaisuus	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	1	nmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	vaarallinen	vaarallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	_
+5	meille	minä	PRON	Pron	Case=All|Number=Plur|Person=1|PronType=Prs	6	det	_	_
+6	romantikoille	romantiko	NOUN	N	Case=All|Number=Plur	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 15
+# text = "Romantikoille!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Romantikoille	Romantiko	NOUN	N	Case=All|Number=Plur	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 16
+# text = Te osaatte käyttää kaikkia tieteen järjestelmiä."
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_
+2	osaatte	osata	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	käyttää	käyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	kaikkia	kaikki	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	5	det	_	_
+5	tieteen	tiede	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	järjestelmiä	järjestelmä	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 17
+# text = "Miehet ovat kasvattaneet meitä."
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Miehet	mies	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kasvattaneet	kasvattaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 18
+# text = "Mutta he eivät ole päässeet teistä selville."
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	6	cc	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
+4	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+6	päässeet	päästa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	teistä	sinä	PRON	Pron	Case=Ela|Number=Plur|Person=2|PronType=Prs	6	obl	_	_
+8	selville	selville	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 19
+# text = "Antakaa kuvaus meistä sukupuolena", kuului vaatimus herttuattaren puolelta.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Antakaa	antaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kuvaus	kuvaus	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+4	meistä	minä	PRON	Pron	Case=Ela|Number=Plur|Person=1|PronType=Prs	5	det	_	_
+5	sukupuolena	sukupuoli	NOUN	N	Case=Ess|Number=Sing	2	obl	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	_
+8	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+9	vaatimus	vaatimus	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	herttuattaren	herttuatar	NOUN	N	Case=Gen|Derivation=Tar|Number=Sing	8	obl	_	_
+11	puolelta	puoli	NOUN	N	Case=Abl|Number=Sing	10	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

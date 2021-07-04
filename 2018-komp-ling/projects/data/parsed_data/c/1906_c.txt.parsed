@@ -1,0 +1,165 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Miksikä en nyt voisi mennä hänen luokseen?"...
+1	Miksikä	Miksikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	nsubj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+4	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	obl	_	_
+7	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	6	case	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Hän kulki portaita ylös viidenteen kerrokseen Rasumihin luo.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kulki	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	portaita	portaat	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+4	ylös	ylös	ADV	Adv	_	5	advmod	_	_
+5	viidenteen	viides	ADJ	Num	Case=Ill|Number=Sing|NumType=Ord	6	nummod	_	_
+6	kerrokseen	kerros	NOUN	N	Case=Ill|Number=Sing	2	obl	_	_
+7	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	2	obl	_	_
+8	luo	luo	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tämä oli kotona, istui huoneessaan, kirjotti ja tuli itse avaamaan hänelle ovea.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kotona	kotona	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	huoneessaan	huonee	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	kirjotti	kirjottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+11	itse	itse	ADV	Adv	_	10	advmod	_	_
+12	avaamaan	avata	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+13	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	12	obl	_	_
+14	ovea	ovi	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = He eivät olleet nähneet toisiaan neljään kuukauteen.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	nähneet	näha	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	4	obj	_	_
+6	neljään	neljä	NUM	Num	Case=Ill|Number=Sing|NumType=Card	7	nummod	_	_
+7	kuukauteen	kuu#kausi	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Rasumihin oli puettuna risaseen kotinuttuun ja paljaissa jaloissaan oli hänellä tohvelit; hänen partansa oli ajamaton ja kasvonsa pesemättömät; hän hämmästyi suuresti.
+1	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	3	obl	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	puettuna	putaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl	_	_
+4	risaseen	risanen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	kotinuttuun	kotinuttu	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	paljaissa	palja	NOUN	N	Case=Ine|Number=Plur	5	conj	_	_
+8	jaloissaan	jaloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	19	obl	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	cop	_	_
+10	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	16	obl	_	_
+11	tohvelit	tohveli	NOUN	N	Case=Nom|Number=Plur	16	nsubj:cop	_	SpaceAfter=No
+12	;	;	PUNCT	Punct	_	11	punct	_	_
+13	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	14	nmod:poss	_	_
+14	partansa	parta	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	nsubj:cop	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	cop	_	_
+16	ajamaton	ajamaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	19	nmod:poss	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	kasvonsa	kasvo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	conj	_	_
+19	pesemättömät	pesemätön	NOUN	N	Case=Nom|Derivation=Ton|Number=Plur	0	root	_	SpaceAfter=No
+20	;	;	PUNCT	Punct	_	19	punct	_	_
+21	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+22	hämmästyi	hämmästyydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	parataxis	_	_
+23	suuresti	suuresti	ADV	Adv	Derivation=Sti	22	advmod	_	SpaceAfter=No
+24	.	.	PUNCT	Punct	_	19	punct	_	_
+
+# sent_id = 6
+# text = -- Miten sinun laitasi on?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Miten	miten	ADV	Adv	_	4	advmod	_	_
+3	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+4	laitasi	lairata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = huudahti hän katsellen toveriaan kiireestä kantapäähän; sitten hän vaikeni hetkeksi ja päästi pitkän, hiljasen vihellyksen.
+1	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	1	advcl	_	_
+4	toveriaan	toveri	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	3	obj	_	_
+5	kiireestä	kiirei	NOUN	N	Case=Ela|Number=Sing	1	obl	_	_
+6	kantapäähän	kantapäähän	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+7	;	;	PUNCT	Punct	_	1	punct	_	_
+8	sitten	sitten	ADV	Adv	_	10	advmod	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	vaikeni	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+11	hetkeksi	hetk	NOUN	N	Case=Tra|Number=Sing	10	obl	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	päästi	päästää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+14	pitkän	pitkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	17	amod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	hiljasen	hiljanen	NOUN	N	Case=Gen|Number=Sing	17	nmod:poss	_	_
+17	vihellyksen	vihellys	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = -- Noinko huonossa tilassa sinä olet?
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Noinko	Noinko	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	huonossa	huono	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	4	amod	_	_
+4	tilassa	tila	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+5	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+6	olet	olla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Voitathan sinä minutkin, lisäsi hän katsellen Raskolnikovin rääsyjä.
+1	Voitathan	Voitat	NOUN	N	Case=Nom|Clitic=Han|Number=Sing	5	advcl	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	det	_	_
+3	minutkin	minä	PRON	Pron	Case=Acc|Clitic=Kin|Number=Sing|Person=1|PronType=Prs	1	nmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+7	katsellen	katsella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	_
+8	Raskolnikovin	Raskolnikov	PROPN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	rääsyjä	rääsy	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = -- Mutta istuhan, sinä kai olet väsyksissä!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+3	istuhan	istu	NOUN	N	Case=Nom|Clitic=Han|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj:cop	_	_
+6	kai	kai	ADV	Adv	_	8	advmod	_	_
+7	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	väsyksissä	väsyksissä	ADV	Adv	_	3	conj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Ja kun Raskolnikov istuutui huomasi Rasumihin vasta, että hänen vieraansa oli sairas.
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	kun	kun	SCONJ	C	_	4	mark	_	_
+3	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	istuutui	istuutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	_
+5	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	5	obl	_	_
+7	vasta	vasta	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	13	punct	_	_
+9	että	että	SCONJ	C	_	13	mark	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	vieraansa	vieras	ADJ	A	Case=Gen|Degree=Pos|Number=Sing|Person[psor]=3	13	nsubj:cop	_	_
+12	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	cop	_	_
+13	sairas	sairas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	ccomp	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

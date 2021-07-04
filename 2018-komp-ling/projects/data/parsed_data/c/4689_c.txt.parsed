@@ -1,0 +1,159 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ken kaiken tahtoisi käsittää ihmisten tykönä, hänen täytyisi käydä kaikkeen käsiksi.
+1	Ken	ken	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+2	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	3	nsubj	_	_
+3	tahtoisi	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+4	käsittää	käsittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	ihmisten	ihminen	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	tykönä	tykö	NOUN	N	Case=Ess|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+9	täytyisi	täytyä	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+11	kaikkeen	kaikki	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	12	det	_	_
+12	käsiksi	käsiksi	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Mutta siihen minulla on liian puhtaat kädet.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	_
+3	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop:own	_	_
+5	liian	liian	ADV	Adv	_	3	advmod	_	_
+6	puhtaat	puhdas	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	7	amod	_	_
+7	kädet	käsi	NOUN	N	Case=Nom|Number=Plur	3	nsubj:cop	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Minä en voi edes hengittää heidän hengitystään; oi, että minä elin niin kauan heidän melunsa ja huonon hengityksensä seassa!
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	edes	edes	ADV	Adv	_	5	advmod	_	_
+5	hengittää	hengittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	7	nmod:poss	_	_
+7	hengitystään	hengity	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	5	obl	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	5	punct	_	_
+9	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	13	nsubj	_	_
+13	elin	ella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	9	ccomp	_	_
+14	niin	niin	ADV	Adv	_	15	advmod	_	_
+15	kauan	kauan	ADV	Adv	_	13	advmod	_	_
+16	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	17	nmod:poss	_	_
+17	melunsa	melu	NOUN	N	Case=Gen|Derivation=U|Number=Sing|Person[psor]=3	13	obl	_	_
+18	ja	ja	CCONJ	C	_	20	cc	_	_
+19	huonon	huono	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	20	amod	_	_
+20	hengityksensä	hengitys	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	17	conj	_	_
+21	seassa	seassa	ADP	Adp	AdpType=Post	17	case	_	SpaceAfter=No
+22	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Oi autuasta hiljaisuutta minun ympärilläni!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	autuasta	autua	NOUN	N	Case=Ela|Number=Sing	1	obl	_	_
+3	hiljaisuutta	hiljaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	1	obj	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	ympärilläni	ympärä	NOUN	N	Case=Ade|Number=Plur|Number[psor]=Sing|Person[psor]=1	1	obl	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Oi puhtaita tuoksuja minun ympärilläni!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	puhtaita	puhtas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	amod	_	_
+3	tuoksuja	tuoksu	NOUN	N	Case=Par|Derivation=U|Number=Plur	1	obj	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	nmod:poss	_	_
+5	ympärilläni	ympärä	NOUN	N	Case=Ade|Number=Plur|Number[psor]=Sing|Person[psor]=1	1	obl	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Oi, miten tämä hiljaisuus vetää puhdasta henkeä syvästä rinnasta!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	miten	miten	ADV	Adv	_	5	advmod	_	_
+4	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	det	_	_
+5	hiljaisuus	hiljaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	1	ccomp	_	_
+6	vetää	vetää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	acl	_	_
+7	puhdasta	puhdas	ADJ	A	Case=Par|Degree=Pos|Number=Sing	8	amod	_	_
+8	henkeä	henki	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+9	syvästä	syvä	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	10	amod	_	_
+10	rinnasta	rinnka	NOUN	N	Case=Ela|Number=Sing	6	obl	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Oi, miten se kuuntelee, tämä autuas hiljaisuus!
+1	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	miten	miten	ADV	Adv	_	5	advmod	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+5	kuuntelee	kuunnella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	det	_	_
+8	autuas	autuas	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	hiljaisuus	hiljaisuus	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing	5	obj	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Mutta tuolla alhaalla -- siellä puhuu kaikki, siellä jää kaikki kuulematta.
+1	Mutta	mutta	CCONJ	C	_	6	cc	_	_
+2	tuolla	tuo	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	3	det	_	_
+3	alhaalla	alhaka	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+4	--	--	PUNCT	Punct	_	6	punct	_	_
+5	siellä	siellä	ADV	Adv	_	6	advmod	_	_
+6	puhuu	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	conj	_	_
+7	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	siellä	siellä	ADV	Adv	_	10	advmod	_	_
+10	jää	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+11	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	nsubj	_	_
+12	kuulematta	kuulea	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 9
+# text = Kuuluttakoon viisauttansa kelloilla korviin: kaupustelijat turulla kilisyttävät pennejään yli niiden äänen.
+1	Kuuluttakoon	Kuuluttaa	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	acl	_	_
+2	viisauttansa	viisautta	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	nmod:poss	_	_
+3	kelloilla	kella	NOUN	N	Case=Ade|Number=Plur	1	obl	_	_
+4	korviin	korvi	NOUN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	kaupustelijat	kaupustelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	8	nsubj	_	_
+7	turulla	turu	NOUN	N	Case=Ade|Number=Sing	6	nmod	_	_
+8	kilisyttävät	kilisyttää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	pennejään	penni	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	8	obj	_	_
+10	yli	yli	ADP	Adp	AdpType=Prep	12	case	_	_
+11	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	12	nmod:poss	_	_
+12	äänen	ääni	NOUN	N	Case=Gen|Number=Sing	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 10
+# text = Kaikki puhuu heidän tykönään, kukaan ei osaa enää ymmärtää.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	nsubj	_	_
+2	puhuu	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	tykönään	tykö	NOUN	N	Case=Ess|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj	_	_
+7	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	osaa	osata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	_
+9	enää	enää	ADV	Adv	_	8	advmod	_	_
+10	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Kaikki putoo veteen, mitään ei putoo enää syviin kaivoihin.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	nsubj	_	_
+2	putoo	putoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	veteen	vesi	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	putoo	putoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	enää	enää	ADV	Adv	_	7	advmod	_	_
+9	syviin	syvä	ADJ	A	Case=Ill|Degree=Pos|Number=Plur	10	amod	_	_
+10	kaivoihin	kaivo	NOUN	N	Case=Ill|Number=Plur	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

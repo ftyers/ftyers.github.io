@@ -1,0 +1,65 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 1. Ajattele, missä ja kenelle puhut.
+1	1	1	NUM	Num	NumType=Card	3	obl	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+3	Ajattele	ajatella	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	3	conj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	kenelle	keni	NOUN	N	Case=All|Number=Sing	8	obl	_	_
+8	puhut	puha	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = 2.
+1	2.	2.	ADJ	Num	NumType=Ord	0	root	_	_
+
+# sent_id = 3
+# text = Seuraa, ymmärtääkö työkaveri, mitä puhut.
+1	Seuraa	seurata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	ymmärtääkö	ymmärtää	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+4	työkaveri	työ#kaveri	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	obj	_	_
+7	puhut	puha	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = 3. Kysy, menikö asia perille.
+1	3.	3.	ADJ	Num	NumType=Ord	2	obl	_	_
+2	Kysy	kysyä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	menikö	mennä	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	asia	asia	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+6	perille	perille	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = 4. Sano toisella tavalla, jos työkaveri ei ymmärrä.
+1	4.	4.	ADJ	Num	NumType=Ord	2	obl	_	_
+2	Sano	sanoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisella	toinen	ADJ	Num	Case=Ade|Derivation=Inen|Number=Sing|NumType=Ord	4	nummod	_	_
+4	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	jos	jos	SCONJ	C	_	9	mark	_	_
+7	työkaveri	työkaveri	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	ymmärrä	ymmärtää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = 5. Muuta puhetapaa, kun työkaverin kielitaito paranee.
+1	5	5	NUM	Num	NumType=Card	4	nummod	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	4	punct	_	_
+3	Muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+4	puhetapaa	puhe#tapa	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	kun	kun	SCONJ	C	_	9	mark	_	_
+7	työkaverin	työkaveri	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	kielitaito	kielitaito	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	paranee	parata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,176 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Keltajuurikasjäätelöä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Keltajuurikasjäätelöä	Keltajuurikasjäätelö	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Eipäs, minkälaista?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Eipäs	ei	VERB	V	Clitic=Pa,S|Number=Sing|Person=0|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	minkälaista	minkälainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Sing	2	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Maria Dmitrijevna, minkälaista?
+1	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+2	Dmitrijevna	Dmitrijevna	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	minkälaista	minkälainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	1	conj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = -- intti Natasha, melkein huutaen.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	intti	intti	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	melkein	melkein	ADV	Adv	_	6	advmod	_	_
+6	huutaen	huutaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Tahdon tietää!
+1	Tahdon	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Maria Dmitrijevna ja kreivitär alkoivat nauraa, ja heidän jälissään melkein kaikki muutkin vieraat.
+1	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+2	Dmitrijevna	Dmitrijevna	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	kreivitär	kreivitär	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	1	conj	_	_
+5	alkoivat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	nauraa	nauraa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	14	punct	_	_
+8	ja	ja	CCONJ	C	_	14	cc	_	_
+9	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	10	nmod:poss	_	_
+10	jälissään	jäli	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	14	nmod	_	_
+11	melkein	melkein	ADV	Adv	_	14	advmod	_	_
+12	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	14	det	_	_
+13	muutkin	muu	PRON	Pron	Case=Nom|Clitic=Kin|Number=Plur|PronType=Ind	14	nmod:poss	_	_
+14	vieraat	vieras	NOUN	N	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Vieraat eivät nauraneet Maria Dmitrijevnan vastaukselle, vaan he nauroivat tämän tyttösen uhkarohkeudelle ja näppäryydelle, hän kun oli rohjennut ja taitanut näin käyttäytyä Maria Dmitrijevnan kanssa.
+1	Vieraat	Vieras	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nauraneet	nauraa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	6	nmod:poss	_	_
+5	Dmitrijevnan	Dmitrijevna	PROPN	N	Case=Gen|Number=Sing	4	flat:name	_	_
+6	vastaukselle	vastaus	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	vaan	vaan	CCONJ	C	_	10	cc	_	_
+9	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+10	nauroivat	nauraa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	12	det	_	_
+12	tyttösen	tyttönen	NOUN	N	Case=Gen|Number=Sing	10	obj	_	_
+13	uhkarohkeudelle	uhkarohkeudi	NOUN	N	Case=All|Number=Sing	10	obl	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	näppäryydelle	näppäryydi	NOUN	N	Case=All|Number=Sing	13	conj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	20	punct	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
+18	kun	kun	SCONJ	C	_	20	mark	_	_
+19	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	rohjennut	rohjeta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+21	ja	ja	CCONJ	C	_	22	cc	_	_
+22	taitanut	taitaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+23	näin	näin	ADV	Adv	_	24	advmod	_	_
+24	käyttäytyä	käyttäytyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	22	xcomp	_	_
+25	Maria	Maria	PROPN	N	Case=Nom|Number=Sing	24	obl	_	_
+26	Dmitrijevnan	Dmitrijevna	PROPN	N	Case=Gen|Number=Sing	25	flat:name	_	_
+27	kanssa	kanssa	ADP	Adp	AdpType=Post	25	case	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Natasha ei hellittänyt ennenkun hänelle ilmoitettiin, että jälkiruoaksi tarjotaan ananasijäätelöä.
+1	Natasha	Natasha	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	hellittänyt	hellittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	ennenkun	ennenkun	ADV	Adv	_	3	advmod	_	_
+5	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+6	ilmoitettiin	ilmoittaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	että	että	SCONJ	C	_	10	mark	_	_
+9	jälkiruoaksi	jälki#ruoka	NOUN	N	Case=Tra|Number=Sing	10	obl	_	_
+10	tarjotaan	tarjoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	6	ccomp	_	_
+11	ananasijäätelöä	ananasijäätelö	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Ennen jälkiruokaa tarjottiin samppanjaa.
+1	Ennen	ennen	ADP	Adp	AdpType=Prep	2	case	_	_
+2	jälkiruokaa	jälkiruoka	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+3	tarjottiin	tarjota	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	samppanjaa	samppanjaa	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Orkesteri alkoi taas soittaa, kreivi suuteli puolisoaan ja vieraat, nousten paikoiltaan menivät onnittelemaan kreivitärtä, kreivin ja lasten kanssa ja keskenään he kilistelivät lasejaan yli pöydän.
+1	Orkesteri	orkesteri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	taas	taas	ADV	Adv	_	2	advmod	_	_
+4	soittaa	soittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	suuteli	suudella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	puolisoaan	puoliso	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	7	obj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	vieraat	vieras	NOUN	N	Case=Nom|Number=Plur	8	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	nousten	nous	NOUN	N	Case=Gen|Number=Plur	13	nmod:poss	_	_
+13	paikoiltaan	paikka	NOUN	N	Case=Abl|Number=Plur|Person[psor]=3	11	nmod	_	_
+14	menivät	mennä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+15	onnittelemaan	onnitella	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	_
+16	kreivitärtä	kreivitär	NOUN	N	Case=Par|Number=Sing	15	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	kreivin	kreipi	NOUN	N	Case=Ins|Number=Plur	16	conj	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	lasten	lapsi	NOUN	N	Case=Gen|Number=Plur	16	conj	_	_
+21	kanssa	kanssa	ADP	Adp	AdpType=Post	16	case	_	_
+22	ja	ja	CCONJ	C	_	25	cc	_	_
+23	keskenään	keskenään	ADV	Adv	_	25	advmod	_	_
+24	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	25	nsubj	_	_
+25	kilistelivät	kilistelä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+26	lasejaan	laseja	NOUN	N	Case=Ill|Number=Sing	25	obl	_	_
+27	yli	yli	ADP	Adp	AdpType=Prep	28	case	_	_
+28	pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	25	obl	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Taas alkoivat palvelijat hääriä, tuolit kolisivat, ja vieraat palasivat vierashuoneeseen ja kreivin työhuoneeseen samassa järjestyksessä kuin olivat tulleetkin; heidän naamansa vain olivat hieman tavallista punakammat.
+1	Taas	taas	ADV	Adv	_	2	advmod	_	_
+2	alkoivat	alkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	palvelijat	palvelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+4	hääriä	häärä	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	tuolit	tuolla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	kolisivat	kolisa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	vieraat	vieras	NOUN	N	Case=Nom|Number=Plur	11	nsubj	_	_
+11	palasivat	palasa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+12	vierashuoneeseen	vierashuone	NOUN	N	Case=Ill|Number=Sing	11	obl	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	kreivin	kreivi	NOUN	N	Case=Gen|Number=Sing	15	conj	_	_
+15	työhuoneeseen	työhuone	NOUN	N	Case=Ill|Number=Sing	11	obl	_	_
+16	samassa	sama	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	17	det	_	_
+17	järjestyksessä	järjestys	NOUN	N	Case=Ine|Number=Sing	11	obl	_	_
+18	kuin	kuin	SCONJ	C	_	20	mark	_	_
+19	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	cop	_	_
+20	tulleetkin	tullee	ADJ	A	Case=Nom|Clitic=Kin|Degree=Pos|Number=Plur	11	advcl	_	SpaceAfter=No
+21	;	;	PUNCT	Punct	_	2	punct	_	_
+22	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	23	nsubj	_	_
+23	naamansa	naaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Agt|Person[psor]=3|VerbForm=Part|Voice=Act	24	acl	_	_
+24	vain	vain	ADV	Adv	_	25	advmod	_	_
+25	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	27	cop	_	_
+26	hieman	hieman	ADV	Adv	_	27	advmod	_	_
+27	tavallista	tavallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	28	advcl	_	_
+28	punakammat	punaka	ADJ	A	Case=Nom|Degree=Cmp|Number=Plur	2	parataxis	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

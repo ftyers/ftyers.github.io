@@ -1,0 +1,177 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mennään, mennään.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mennään	mennä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	mennään	mennä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	parataxis	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Minä en tahdo juurikaslientä... syö sinä, Federson!
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	juurikaslientä	juurikaslien	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	6	punct	_	_
+6	syö	syödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	Federson	Federson	PROPN	N	Case=Nom|Number=Sing	7	appos	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- virkkoi hän toverilleen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	virkkoi	virkkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	toverilleen	toveri	NOUN	N	Case=All|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Vaan tahdoithan sinä syödä.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Vaan	vaan	ADV	Adv	_	3	advmod	_	_
+3	tahdoithan	tahdoit	NOUN	N	Case=Nom|Clitic=Han|Number=Sing	0	root	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+5	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	acl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = -- En tahdo mitään.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Kun he tulivat portaille, kyseli nuorempi yhä veljeltään: "No, mitä, kerro", ja yhä puhui kuinka hauskaa oli tavata, vaan itse ei kertonut mitään.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	tulivat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	advcl	_	_
+4	portaille	portaat	NOUN	N	Case=All|Number=Plur	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	kyseli	kysella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	nuorempi	nuori	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	9	amod	_	_
+8	yhä	yhä	ADV	Adv	_	9	advmod	_	_
+9	veljeltään	veljel	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	nsubj	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	6	punct	_	_
+11	"	"	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+12	No	no	INTJ	Interj	_	14	discourse	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	12	punct	_	_
+14	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	6	parataxis	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	kerro	kerro	NOUN	N	Case=Nom|Number=Sing	14	appos	_	SpaceAfter=No
+17	"	"	PUNCT	Punct	_	16	punct	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	21	punct	_	_
+19	ja	ja	CCONJ	C	_	21	cc	_	_
+20	yhä	yhä	ADV	Adv	_	21	advmod	_	_
+21	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+22	kuinka	kuinka	ADV	Adv	_	23	advmod	_	_
+23	hauskaa	hauska	ADJ	A	Case=Par|Degree=Pos|Number=Sing	21	ccomp	_	_
+24	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	cop	_	_
+25	tavata	tavata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	23	xcomp:ds	_	SpaceAfter=No
+26	,	,	PUNCT	Punct	_	30	punct	_	_
+27	vaan	vaan	CCONJ	C	_	30	cc	_	_
+28	itse	itse	ADV	Adv	_	30	advmod	_	_
+29	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	30	aux	_	_
+30	kertonut	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	conj	_	_
+31	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	30	obj	_	SpaceAfter=No
+32	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Kun oli kulunut viitisen minuuttia, jonka kuluessa oli ennättänyt syntyä äänettömyyttäkin, kysyi vanhempi veli minkävuoksi ei nuorempi ollut mennyt kaartiin, niinkuin kaikki odottivat.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kulunut	kulua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	advcl	_	_
+4	viitisen	viitinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	10	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	kuluessa	kulua	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	10	advcl	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	ennättänyt	ennättää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	conj	_	_
+11	syntyä	syntyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+12	äänettömyyttäkin	äänettömyyttä	ADV	Adv	Clitic=Kin	11	advmod	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	conj	_	_
+15	vanhempi	vanha	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	16	amod	_	_
+16	veli	veli	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+17	minkävuoksi	minkävuo	NOUN	N	Case=Tra|Number=Sing	14	obl	_	_
+18	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	21	aux	_	_
+19	nuorempi	nuora	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	21	amod	_	_
+20	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	21	aux	_	_
+21	mennyt	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+22	kaartiin	kaarti	NOUN	N	Case=Ill|Number=Sing	21	obl	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	26	punct	_	_
+24	niinkuin	niinkuin	SCONJ	C	_	26	mark	_	_
+25	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	26	nsubj	_	_
+26	odottivat	odottaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	21	advcl	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	21	punct	_	_
+
+# sent_id = 8
+# text = -- Ennemmin halutti Sevastopoliin: täällähän, jos onnistaa, ylenee vielä pikemmin kuin kaartissa: siellä kymmenen vuotta everstinä, vaan täällä Todtlebenkin kahdessa vuodessa kohosi everstiluutnantista kenraaliksi.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ennemmin	ennemmin	ADV	Adv	_	3	advmod	_	_
+3	halutti	haluttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Sevastopoliin	Sevastopol	PROPN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	3	punct	_	_
+6	täällähän	tää	NOUN	N	Case=Ade|Clitic=Han|Number=Sing	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	jos	jos	SCONJ	C	_	9	mark	_	_
+9	onnistaa	onnistaa	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	ylenee	yletä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+12	vielä	vielä	ADV	Adv	_	11	advmod	_	_
+13	pikemmin	pikemmin	ADV	Adv	_	11	advmod	_	_
+14	kuin	kuin	SCONJ	C	_	15	mark	_	_
+15	kaartissa	kaarti	NOUN	N	Case=Ine|Number=Sing	13	advcl	_	SpaceAfter=No
+16	:	:	PUNCT	Punct	_	3	punct	_	_
+17	siellä	siellä	ADV	Adv	_	18	advmod	_	_
+18	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	19	nummod	_	_
+19	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	20	nmod	_	_
+20	everstinä	everstinä	NOUN	N	Case=Nom|Number=Sing	27	nsubj	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	27	punct	_	_
+22	vaan	vaan	CCONJ	C	_	27	cc	_	_
+23	täällä	täällä	ADV	Adv	_	26	advmod	_	_
+24	Todtlebenkin	Todtlebenkin	ADV	Adv	_	23	fixed	_	_
+25	kahdessa	kaksi	NUM	Num	Case=Ine|Number=Sing|NumType=Card	26	nummod	_	_
+26	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	27	obl	_	_
+27	kohosi	kohota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+28	everstiluutnantista	everstiluutnantinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	29	amod	_	_
+29	kenraaliksi	kenraali	NOUN	N	Case=Tra|Number=Sing	27	xcomp:ds	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = No, ja jos taas kaatuu, niin minkäs sille voi!
+1	No	no	INTJ	Interj	_	10	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	ja	ja	CCONJ	C	_	10	cc	_	_
+4	jos	jos	SCONJ	C	_	6	mark	_	_
+5	taas	taas	ADV	Adv	_	6	advmod	_	_
+6	kaatuu	kaatua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	niin	niin	ADV	Adv	_	10	advmod	_	_
+9	minkäs	minkä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	10	nsubj:cop	_	_
+10	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	0	root	_	_
+11	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 10
+# text = -- Oletpas sinä veitikka!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Oletpas	Oletpas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	det	_	_
+4	veitikka	veitikka	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = -- virkkoi veli hymyillen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	virkkoi	virkkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	veli	veli	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

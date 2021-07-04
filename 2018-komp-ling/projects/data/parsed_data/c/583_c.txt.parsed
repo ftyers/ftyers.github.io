@@ -1,0 +1,118 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kolmannen luokan näyttelijätär, jolla on kauniit kasvot."
+1	Kolmannen	kolmas	ADJ	Num	Case=Gen|Number=Sing|NumType=Ord	2	nummod	_	_
+2	luokan	luokka	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	näyttelijätär	näyttelijätär	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	3	acl:relcl	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop:own	_	_
+7	kauniit	kaunis	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Tyttö kalpeni ja alkoi vavista.
+1	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kalpeni	kalpetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	vavista	vavi	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän väänsi käsiään ja ääni tuntui takertuvan kiinni kurkkuun.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	väänsi	vääntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	käsiään	käsi	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	ääni	ääni	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	takertuvan	takertua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	6	xcomp	_	_
+8	kiinni	kiinni	ADV	Adv	_	7	advmod	_	_
+9	kurkkuun	kurkkuun	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Sinä et ole tosissasi, Dorian?" hän mutisi.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+5	tosissasi	tosissaan	ADV	Adv	Number[psor]=Sing|Person[psor]=2	11	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	5	appos	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	5	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 5
+# text = "Sinä vain näyttelet."
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	näyttelet	näytella	VERB	V	Mood=Imp|Number=Sing|Person=2|Typo=Yes|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = "Vai näyttelen!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Vai	Vai	CCONJ	C	_	3	cc	_	_
+3	näyttelen	näytella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Sen minä jätän sinulle.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obj	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	jätän	jättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Sinä teet sitä niin mainiosti", hän vastasi katkerasti.
+1	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	teet	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+4	niin	niin	ADV	Adv	_	2	advmod	_	_
+5	mainiosti	mainiosti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	katkerasti	katkerasti	ADV	Adv	Derivation=Sti	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Tyttö kohosi polviltaan ja tuskallinen ilme kasvoissaan hän astui Dorian luo.
+1	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kohosi	kohota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	polviltaan	polvi	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	2	obl	_	_
+4	ja	ja	CCONJ	C	_	9	cc	_	_
+5	tuskallinen	tuskallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	6	amod	_	_
+6	ilme	ilme	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+7	kasvoissaan	kasvoi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	6	nmod	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	Dorian	Doria	PROPN	N	Case=Gen|Number=Sing	9	obl	_	_
+11	luo	luo	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Hän tarttui häntä käsivarteen kiinni ja katsoi häntä silmiin.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	käsivarteen	käsivars	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	2	obl	_	_
+5	kiinni	kiinni	ADV	Adv	_	2	compound:prt	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	_
+9	silmiin	silmä	NOUN	N	Case=Ill|Number=Plur	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

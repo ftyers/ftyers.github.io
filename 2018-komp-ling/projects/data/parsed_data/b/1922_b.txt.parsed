@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Hannu seuraa peilistä takapenkin tapahtumia.
+1	Hannu	Hannu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpacesBefore= \s
+2	seuraa	seurata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	peilistä	peili	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+4	takapenkin	taka#penkki	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	tapahtumia	tapahtuma	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Miehen paksu niska punoittaa.
+1	Miehen	mies	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	paksu	paksu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	niska	niska	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	punoittaa	punoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Hän naureskelee, Meeri huomaa, mutta keskittyy sitten Kyöstin kouriin.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	naureskelee	naureskella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	Meeri	Meeri	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	huomaa	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	mutta	mutta	CCONJ	C	_	8	cc	_	_
+8	keskittyy	keskittyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	sitten	sitten	ADV	Adv	_	8	advmod	_	_
+10	Kyöstin	Kyösti	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	kouriin	kouri	NOUN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Ne liikkuvat sitä vilkkaammin, mitä lähemmäs
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	2	nsubj	_	_
+2	liikkuvat	liikkua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+4	vilkkaammin	vilkkaasti	ADV	Adv	Degree=Cmp|Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	nmod	_	_
+7	lähemmäs	lähemmäs	ADV	Adv	_	6	fixed	_	_
+
+# sent_id = 5
+# text = Kyöstin taloa tullaan.
+1	Kyöstin	Kyöstää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	taloa	#talo	NOUN	N	Case=Par|Number=Sing	1	obj	_	_
+3	tullaan	tulla	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	parataxis	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s \s
+
+# sent_id = 6
+# text = Kyösti maksaa kyydin.
+1	Kyösti	Kyösti	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	maksaa	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kyydin	kyyti	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Ollaan vihdoin kahden.
+1	Ollaan	olla	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	cop	_	_
+2	vihdoin	vihdoin	ADV	Adv	_	3	advmod	_	_
+3	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s \s
+
+# sent_id = 8
+# text = Kyösti menee talon nurkalle ja lorottelee pitkään.
+1	Kyösti	Kyösti	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	talon	talo	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	nurkalle	nurka	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	lorottelee	lorotella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	pitkään	pitkään	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Hänellä on ulkokäymälä, Meeri harmittelee.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	ulkokäymälä	ulkokäymälä	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	1	punct	_	_
+5	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	harmittelee	harmitella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Hyttynen inisee ja jossain kukkuu käki.
+1	Hyttynen	hyttynen	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	inisee	inista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	jossain	jokin	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	5	obl	_	_
+5	kukkuu	kukkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	käki	kähdä	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s \s
+
+# sent_id = 11
+# text = Portaat noustaan suudellen.
+1	Portaat	portaa	NOUN	N	Case=Nom|Number=Plur	2	obj	_	_
+2	noustaan	nousta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	suudellen	suudella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Se onnistuu hyvin, kun Meeri vähän kumartuu.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	onnistuu	onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hyvin	hyvin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	kun	kun	SCONJ	C	_	8	mark	_	_
+6	Meeri	Meeri	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	vähän	vähän	ADV	Adv	_	8	advmod	_	_
+8	kumartuu	kumartua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Ulkokäymälä unohtuu.
+1	Ulkokäymälä	Ulkokäymei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	unohtuu	unohtulla	VERB	V	Connegative=Yes|Mood=Ind|Style=Coll|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,131 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ei niin mitään.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	niin	niin	ADV	Adv	_	3	advmod	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = He eivät käsittäneet, he eivät voi käsittää keisarimme vaatimattomuutta, joka itselleen ei tahdo mitään, vaan tahtoo kaiken maailman onneksi.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	käsittäneet	käsittää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+6	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	käsittää	käsittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+9	keisarimme	keisarla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	8	ccomp	_	_
+10	vaatimattomuutta	vaatimattomuus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	15	nsubj	_	_
+13	itselleen	itse	PRON	Pron	Case=All|Number=Sing|Person[psor]=3|Reflex=Yes	15	obl	_	_
+14	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
+16	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	15	obj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	19	punct	_	_
+18	vaan	vaan	CCONJ	C	_	19	cc	_	_
+19	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	conj	_	_
+20	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	21	det	_	_
+21	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	19	obj	_	_
+22	onneksi	onneksi	ADV	Adv	_	19	advmod	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ja mitä ovat he luvanneet?
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	nsubj	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+5	luvanneet	luvata	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = -- Ei niin mitään!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	obj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Eivätkä edes sitä ole täyttäneet, mitä lupasivat!
+1	Eivätkä	ei	VERB	V	Clitic=Ka|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	cc	_	_
+2	edes	edes	ADV	Adv	_	5	advmod	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	nsubj	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	täyttäneet	täyttää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	8	nsubj	_	_
+8	lupasivat	lupasa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	ccomp	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Preussi on jo julistanut Bonaparten voittamattomaksi, ja siellä väitetään, ettei koko Europakaan hänelle mitään taida.
+1	Preussi	Preussi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	jo	jo	ADV	Adv	_	4	advmod	_	_
+4	julistanut	julistada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	Bonaparten	Bonaparten	PROPN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	voittamattomaksi	voittamaton	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	4	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	siellä	siellä	ADV	Adv	_	10	advmod	_	_
+10	väitetään	väittää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	17	punct	_	_
+12	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	17	mark	_	_
+13	koko	koko	ADJ	A	_	14	amod	_	_
+14	Europakaan	Europ	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	17	obl	_	_
+15	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	17	obl	_	_
+16	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	17	obj	_	_
+17	taida	taida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	ccomp	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Ja minä en usko hitustakaan, en Hardenbergiin, en Haugwitziin.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	usko	uskoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	hitustakaan	hitust	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	en	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	11	mark	_	_
+8	Hardenbergiin	Hardenberg	PROPN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	7	punct	_	_
+10	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	Haugwitziin	Haugwitz	PROPN	N	Case=Ill|Number=Sing	4	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Tämä kuuluisa Preussin puolueettomuus on -- ainoastaan ansa.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+2	kuuluisa	kuuluisa	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+3	Preussin	Preuss	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	puolueettomuus	puolueettomuus	NOUN	N	Case=Nom|Derivation=Ton,Vs|Number=Sing	8	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+6	--	--	PUNCT	Punct	_	8	punct	_	_
+7	ainoastaan	ainoastaan	ADV	Adv	_	8	advmod	_	_
+8	ansa	a	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Uskon ainoastaan Jumalaan ja rakkaan keisarimme korkeaan kohtaloon.
+1	Uskon	uskoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ainoastaan	ainoastaan	ADV	Adv	_	1	advmod	_	_
+3	Jumalaan	Jumala	PROPN	N	Case=Ill|Number=Sing	1	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	rakkaan	rakata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+6	keisarimme	keisari	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	5	obj	_	_
+7	korkeaan	korkea	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	8	amod	_	_
+8	kohtaloon	kohtalo	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Hän pelastaa Europan!
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	pelastaa	pelastaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Europan	Europpa	PROPN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

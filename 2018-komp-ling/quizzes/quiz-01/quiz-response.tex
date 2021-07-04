@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+
+\title{Quiz 1}
+\author{Nikolay Babakov}
+\date{October 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{Question 1}
+Q: Which problems does maxmatch suffer from?\newline
+A: b) is computationally expensive
+d) constructs non-grammatical sentences
+
+\section{Question 2}
+Q: Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around "/" in "either/or" expressions but not around fractions "1/2"\newline
+A: sed -e 's/\([a-z]\+\)\/\([a-z]\+\)/\1 \/ \2/g'
+
+\section{Question 3}
+Q: the text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?\newline
+A: ML approach requires big amount of data and time. Moreover it is hard to detect the reason for any issue if any exists
+
+\section{Question 4}
+Q: write a sentence (in English or in Russian) which maxmatch segments incorrectly.\newline
+A: thetabledownthere - theta bled own there
+
+\section{Question 5}
+Q: what are problems for sentence segmentation? provide one example in English or Russian for each that applies.\newline
+A: a) ambiguous abbrevations with punctuation\newline
+'Но одновременно быстрыми темпами шёл рост местного населения (см.',\newline
+'ниже\xa0— агломерация).',\newline
+'Всё это начало создавать большую антропогенную нагрузку на экологию КМВ (см.', 'Пятигорск).'\newline
+\end{document}

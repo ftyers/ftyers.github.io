@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Oletko lukenut Aallonmurtajan?
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lukenut	lukeda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Aallonmurtajan	Aallonmurtaja	PROPN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Sylvi kysyi.
+1	Sylvi	Sylvi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Anna säpsähti ja kääntyi ympäri.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	säpsähti	säpsähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	ympäri	ympäri	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hän ei ollut huomannut, että talon emäntä oli tullut keittiöstä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	huomannut	huomata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	että	että	SCONJ	C	_	10	mark	_	_
+7	talon	talo	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	emäntä	emäntä	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	ccomp	_	_
+11	keittiöstä	keittiö	NOUN	N	Case=Ela|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Sylvi seisoi tarjotin kädessään.
+1	Sylvi	Sylvi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	seisoi	seisaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tarjotin	tarjottaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+4	kädessään	käsi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Tarjottimella oli kaksi höyryävää kahvikuppia ja lautasellinen mokkapaloja.
+1	Tarjottimella	Tarjottim	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+4	höyryävää	höyryävä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
+5	kahvikuppia	kahvikuppi	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	lautasellinen	lautasellinen	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+8	mokkapaloja	mokkapalo	NOUN	N	Case=Par|Number=Plur	7	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 7
+# text = Anna ja Sylvi istuivat kahvilla salin pöydän ääressä.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	Sylvi	Sylvi	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	istuivat	istuaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kahvilla	kahvi	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+6	salin	sali	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+7	pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+8	ääressä	ääressä	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Ulkona oli tullut pimeää.
+1	Ulkona	ulkona	ADV	Adv	_	3	advmod	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	pimeää	pimeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Ukkosen jyrinä lähestyi.
+1	Ukkosen	ukkonen	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	jyrinä	jyri	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+3	lähestyi	lähestyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Tuuli ravisteli omenapuiden oksia.
+1	Tuuli	tuuli	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ravisteli	ravistella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	omenapuiden	omenapu	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+4	oksia	oksa	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Ensimmäiset sadepisarat rapsahtelivat jo ikkunalautaan.
+1	Ensimmäiset	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Plur|NumType=Ord	2	nummod	_	_
+2	sadepisarat	sadepisara	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	rapsahtelivat	rapsahtela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	jo	jo	ADV	Adv	_	3	advmod	_	_
+5	ikkunalautaan	ikkunalauta	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,99 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Tänään?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tänään	tänään	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Vain hetkeä aikaisemmin kuin
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Vain	vain	ADV	Adv	_	3	advmod	_	_
+3	hetkeä	hetki	NOUN	N	Case=Par|Number=Sing	4	nmod	_	_
+4	aikaisemmin	aikaisemmin	ADV	Adv	_	5	advmod	_	_
+5	kuin	kuin	SCONJ	C	_	0	root	_	_
+
+# sent_id = 3
+# text = Te tulitte hänen luokseen.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	obl	_	_
+2	tulitte	tulida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+4	luokseen	luokse	ADP	Adp	AdpType=Post|Person[psor]=3	3	case	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Minä olen kuullut kaikki, miten hän kiusasi Teitä.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	miten	miten	ADV	Adv	_	8	advmod	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	kiusasi	kiusata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+9	Teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = -- Miksi?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Mitä?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Miten? -- Siellä hänen luonaan, lautaseinän takana.
+1	Miten	miten	ADV	Adv	_	6	orphan	_	SpaceAfter=No
+2	?	?	PUNCT	Punct	_	1	punct	_	_
+3	--	--	PUNCT	Punct	_	1	punct	_	_
+4	Siellä	Siellä	ADV	Adv	_	6	advmod	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	luonaan	luo	NOUN	N	Case=Ess|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	lautaseinän	lautaseinä	NOUN	N	Case=Gen|Number=Sing	6	nmod	_	_
+9	takana	takana	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Minä olin siellä kaiken aikaa.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj:cop	_	_
+2	olin	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	siellä	siellä	ADV	Adv	_	5	advmod	_	_
+4	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	det	_	_
+5	aikaa	aika	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = -- Mitä!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Te siis olitte yllätys!
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj:cop	_	_
+2	siis	siis	ADV	Adv	_	1	advmod	_	_
+3	olitte	olida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	yllätys	yllätys	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Miten se on mahdollista?
+1	Miten	miten	ADV	Adv	_	4	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	mahdollista	mahdollinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Kertokaa se minulle.
+1	Kertokaa	kertoa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	1	obj	_	_
+3	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	1	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

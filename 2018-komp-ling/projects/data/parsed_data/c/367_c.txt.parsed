@@ -1,0 +1,176 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "'Teaatterissako?
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	'	'	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Teaatterissako	Teaatterissako	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Ja mitä sanoisi mummo siihen?'
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	sanoisi	sanoa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+4	mummo	mummo	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+5	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	'	'	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = "'Irroittakaa varovasti itsenne mummostanne!' "'Ei', sanoin minä, 'en tahdo pettää mummoa.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	'	'	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+3	Irroittakaa	Irroittaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	6	acl	_	_
+4	varovasti	varovasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	itsenne	itsenne	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	mummostanne	mummostanne	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	11	punct	_	SpaceAfter=No
+8	'	'	PUNCT	Punct	_	11	punct	_	_
+9	"	"	PUNCT	Punct	_	11	punct	_	SpaceAfter=No
+10	'	'	PUNCT	Punct	_	11	punct	_	SpaceAfter=No
+11	Ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	cc	_	SpaceAfter=No
+12	'	'	PUNCT	Punct	_	11	punct	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	11	punct	_	_
+14	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+15	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	19	nsubj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	19	punct	_	_
+17	'	'	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+18	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	14	ccomp	_	_
+20	pettää	pettää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	19	xcomp	_	_
+21	mummoa	mummo	NOUN	N	Case=Par|Number=Sing	20	obj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	14	punct	_	_
+
+# sent_id = 4
+# text = Hyvästi!' "'Hyvästi, hyvästi!' sanoi hänkin.
+1	Hyvästi	Hyvästi	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+3	'	'	PUNCT	Punct	_	8	punct	_	_
+4	"	"	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+5	'	'	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+6	Hyvästi	Hyvästi	ADV	Adv	Derivation=Sti	8	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	hyvästi	hyvästi	ADV	Adv	Derivation=Sti	11	advmod	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+10	'	'	PUNCT	Punct	_	8	punct	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	hänkin	hän	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 5
+# text = "Päivällisen jälkeen tuli hän luoksemme, istahtui, puheskeli kauvan mummon kanssa, tiedusteli kävikö hän koskaan ulkona, oliko hänellä tuttavia ja yht'äkkiä sanoi hän: "'Tänään olen ostanut loossin oopperaan.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Päivällisen	Päivällinen	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+3	jälkeen	jälkeen	ADP	Adp	AdpType=Post	2	case	_	_
+4	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+6	luoksemme	luo	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Plur|Person[psor]=1|VerbForm=Inf|Voice=Act	4	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	istahtui	istahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	puheskeli	puheskella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+11	kauvan	kauva	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	_
+12	mummon	mummo	NOUN	N	Case=Gen|Number=Sing	10	obl	_	_
+13	kanssa	kanssa	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	4	punct	_	_
+15	tiedusteli	tiedustella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+16	kävikö	kävnä	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	xcomp:ds	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+18	koskaan	koskaan	ADV	Adv	_	16	advmod	_	_
+19	ulkona	ulkona	ADV	Adv	_	16	advmod	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	26	punct	_	_
+21	oliko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	26	aux	_	_
+22	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	26	obl	_	_
+23	tuttavia	tuttava	ADJ	A	Case=Par|Degree=Pos|Number=Plur	26	nsubj	_	_
+24	ja	ja	CCONJ	C	_	25	cc	_	_
+25	yht'äkkiä	yht'äkkiä	ADV	Adv	_	23	conj	_	_
+26	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	acl:relcl	_	_
+27	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	33	nsubj	_	SpaceAfter=No
+28	:	:	PUNCT	Punct	_	33	punct	_	_
+29	"	"	PUNCT	Punct	_	33	punct	_	SpaceAfter=No
+30	'	'	PUNCT	Punct	_	33	punct	_	SpaceAfter=No
+31	Tänään	tänään	ADV	Adv	_	33	advmod	_	_
+32	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	33	aux	_	_
+33	ostanut	ostaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	26	acl:relcl	_	_
+34	loossin	loossi	NOUN	N	Case=Gen|Number=Sing	35	nmod:poss	_	_
+35	oopperaan	ooppera	NOUN	N	Case=Ill|Number=Sing	33	obl	_	SpaceAfter=No
+36	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Annetaan Sevillan parturia.
+1	Annetaan	antaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	Sevillan	Sevilla	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	parturia	parturi	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Tuttavani tahtoivat käydä kanssani, mutta kieltäysivät ja nyt jää minulle piletti.'
+1	Tuttavani	Tuttava	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	tahtoivat	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	kanssani	kanssani	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	kieltäysivät	kieltäysä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	nyt	nyt	ADV	Adv	_	10	advmod	_	_
+10	jää	jäädä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	10	obl	_	_
+12	piletti	piletti	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+14	'	'	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "'Sevillan parturiako?' huudahti mummo, 'samaa parturia, jota minunkin aikana näytettiin?'
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	'	'	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+3	Sevillan	Sevilla	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	parturiako	parturiako	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	'	'	PUNCT	Punct	_	4	punct	_	_
+7	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	mummo	mummo	NOUN	N	Case=Nom|Number=Sing	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	'	'	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+11	samaa	sama	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	12	det	_	_
+12	parturia	parturi	NOUN	N	Case=Par|Number=Sing	7	nmod	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	17	punct	_	_
+14	jota	joka	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	17	obj	_	_
+15	minunkin	minä	PRON	Pron	Case=Gen|Clitic=Kin|Number=Sing|Person=1|PronType=Prs	16	nmod:poss	_	_
+16	aikana	aika	NOUN	N	Case=Ess|Number=Sing	17	obl	_	_
+17	näytettiin	näyttää	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	12	acl:relcl	_	SpaceAfter=No
+18	?	?	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+19	'	'	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = "'Niin, samaa parturia', sanoi hän ja katsahti minuun.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	'	'	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+3	Niin	niin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	samaa	sama	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	parturia	parturi	NOUN	N	Case=Par|Number=Sing	9	nsubj	_	SpaceAfter=No
+7	'	'	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	katsahti	katsahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	_
+13	minuun	minä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 10
+# text = Minä ymmärsin kaikki, punastuin ja sydämeni sykki kiivaasti odotuksesta.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	ymmärsin	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	punastuin	punastua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	sydämeni	sydän	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	nmod:poss	_	_
+8	sykki	sykki	NOUN	N	Case=Nom|Number=Sing	5	conj	_	_
+9	kiivaasti	kiivaasti	ADV	Adv	Derivation=Sti	10	advmod	_	_
+10	odotuksesta	odotus	NOUN	N	Case=Ela|Number=Sing	8	nmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

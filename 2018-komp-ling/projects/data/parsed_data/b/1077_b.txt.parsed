@@ -1,0 +1,186 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = “Öhöm!”, lausui Hiiri tärkeän näköisenä.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Öhöm	Öhöm	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Hiiri	Hiiri	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	tärkeän	tärkeä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	9	amod	_	_
+9	näköisenä	näköinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = “Oletteko valmiina?
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oletteko	Olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	valmiina	valmis	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	2	obl	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tämä on on kuivinta mitä tiedän.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kuivinta	kuivs	ADJ	A	Case=Par|Degree=Sup|Number=Sing	0	root	_	_
+5	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	6	obj	_	_
+6	tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Hiljaisuutta, pyydän!
+1	Hiljaisuutta	Hiljaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	pyydän	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = ‘Vilhelm Valloittaja, jonka puolella
+1	‘	‘	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Vilhelm	Vilhelm	PROPN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Valloittaja	Valloittaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	6	nmod:poss	_	_
+6	puolella	puol	NOUN	N	Case=Ade|Number=Sing	3	conj	_	_
+
+# sent_id = 6
+# text = Paavi oli, sai pian alamaisikseen englantilaiset, jotka janosivat johtajaa ja olivat tottuneet riistoonja valloituksiin.
+1	Paavi	Paavi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	pian	pian	ADV	Adv	_	4	advmod	_	_
+6	alamaisikseen	alamaisikseen	ADV	Adv	_	7	advmod	_	_
+7	englantilaiset	englantilainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	4	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	10	nsubj	_	_
+10	janosivat	janosa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+11	johtajaa	johtaja	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	10	obj	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	tottuneet	tottua	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	10	conj	_	_
+15	riistoonja	riistoon	NOUN	N	Case=Par|Number=Plur	14	obj	_	_
+16	valloituksiin	valloitus	NOUN	N	Case=Ill|Number=Plur	14	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Mercian ja Northumbrian jaarlit Edwin ja Morcar -“
+1	Mercian	Mercia	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	Northumbrian	Northumbria	PROPN	N	Case=Gen|Number=Sing	1	conj	_	_
+4	jaarlit	jaarli	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+5	Edwin	Edwin	PROPN	N	Case=Nom|Number=Sing	4	appos	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	Morcar	Morcar	PROPN	N	Case=Nom|Number=Sing	5	conj	_	_
+8	-	-	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	“	“	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = “Yäk!”, sanoi Papukaija, ja sitä puistatti.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Yäk	Yäk	X	Foreign	Foreign=Yes	6	nsubj	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Papukaija	Papukaija	PROPN	N	Case=Nom|Number=Sing	6	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	11	obj	_	_
+11	puistatti	puistattaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = “Anteeksi kuinka?”, sanoi Hiiri kulmiaan rypistäen mutta hyvin kohteliaasti.
+1	“	“	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Anteeksi	anteeksi	ADV	Adv	_	3	advmod	_	_
+3	kuinka	kuinka	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	Hiiri	Hiiri	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	kulmiaan	kulmia	NOUN	N	Case=Ill|Number=Sing	7	obl	_	_
+10	rypistäen	rypistää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+11	mutta	mutta	CCONJ	C	_	13	cc	_	_
+12	hyvin	hyvin	ADV	Adv	_	13	advmod	_	_
+13	kohteliaasti	kohteliaasti	ADV	Adv	Derivation=Sti	7	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = “Sanoitko jotain?”
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Sanoitko	Sanotaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jotain	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	obj	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = “En minä”, sanoi Papukaija hätäisesti.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	SpaceAfter=No
+4	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	Papukaija	Papukaija	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	hätäisesti	hätäisesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = “Luulin ihan, että sanoit,” sanoi Hiiri.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Luulin	luulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ihan	ihan	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	että	että	SCONJ	C	_	6	mark	_	_
+6	sanoit	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	2	punct	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	Hiiri	Hiiri	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = “Jatkan.’Edwin ja Morcar, Mercian ja Notrhumbrian jaarlit, asettuivat hänen puolelleen ja jopa Stigand, Canterburyn arkkipiispa, katsoi parhaaksi…“
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Jatkan	jatka	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	SpaceAfter=No
+3	.’	.’	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+4	Edwin	Edwin	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	Morcar	Morcar	PROPN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	Mercian	Mercia	PROPN	N	Case=Gen|Number=Sing	2	conj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	Notrhumbrian	Notrhumbria	PROPN	N	Case=Gen|Number=Sing	2	conj	_	_
+11	jaarlit	jaarli	NOUN	N	Case=Nom|Number=Plur	13	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	11	punct	_	_
+13	asettuivat	asettua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	15	nmod:poss	_	_
+15	puolelleen	puole	NOUN	N	Case=All|Number=Sing|Person[psor]=3	13	obl	_	_
+16	ja	ja	CCONJ	C	_	18	cc	_	_
+17	jopa	jopa	ADV	Adv	_	18	advmod	_	_
+18	Stigand	Stigand	PROPN	N	Case=Nom|Number=Sing	13	conj	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	21	punct	_	_
+20	Canterburyn	Canterbury	PROPN	N	Case=Gen|Number=Sing	21	nmod:poss	_	_
+21	arkkipiispa	arkki#piispa	NOUN	N	Case=Nom|Number=Sing	13	conj	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	23	punct	_	_
+23	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	conj	_	_
+24	parhaaksi	hyvä	ADJ	A	Case=Tra|Degree=Sup|Number=Sing	23	xcomp	_	SpaceAfter=No
+25	…	…	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+26	“	“	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 14
+# text = “Katsoi mitä?, kysyi Ankka.
+1	“	“	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Katsoi	katsoida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	obj	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	Ankka	Ankka	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

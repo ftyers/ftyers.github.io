@@ -1,0 +1,105 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Isi laskee ihmeissään kädessään olevan kahvimukin pöydälle.
+1	Isi	Isi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	laskee	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ihmeissään	ihmei	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	2	obl	_	_
+4	kädessään	käde	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	_
+5	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	6	cop	_	_
+6	kahvimukin	kahvimukin	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	nsubj:cop	_	_
+7	pöydälle	pöytä	NOUN	N	Case=All|Number=Sing	6	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = ”Kas! Te tytöt heräsitte ihan itse.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Kas	Kas	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	nmod:poss	_	_
+5	tytöt	tyttö	NOUN	N	Case=Nom|Number=Plur	8	nsubj:cop	_	_
+6	heräsitte	heräsida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	ihan	ihan	ADV	Adv	_	8	advmod	_	_
+8	itse	itse	ADV	Adv	_	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = Kello on vasta puoli seitsemän.”
+1	Kello	kello	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	vasta	vasta	ADV	Adv	_	4	advmod	_	_
+4	puoli	puoli	NUM	Num	Case=Nom|Number=Sing	5	compound	_	_
+5	seitsemän	seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Siri ja Siina katsovat toisiaan ymmällään.
+1	Siri	Siri	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	Siina	Siina	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	katsovat	katsoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	4	obj	_	_
+6	ymmällään	ymmällä	ADV	Adv	Person[psor]=3	4	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Onko nyt jo aamu?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+2	nyt	nyt	ADV	Adv	_	4	advmod	_	_
+3	jo	jo	ADV	Adv	_	4	advmod	_	_
+4	aamu	aamu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Siinan kulmat menevät kurttuun.
+1	Siinan	Siina	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kulmat	kulma	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	menevät	mennä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kurttuun	kurttu	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Höh.
+1	Höh	Höh	INTJ	Interj	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Aamu tuli näin aikaisin ja pilasi hyvän yöhiippailun.
+1	Aamu	aamu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	näin	näin	ADV	Adv	_	4	advmod	_	_
+4	aikaisin	aikaisin	ADV	Adv	_	2	advmod	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	pilasi	pilata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	hyvän	hyvä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	8	amod	_	_
+8	yöhiippailun	yöhiippailu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Siriä alkaa hihityttää.
+1	Siriä	siriä	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hihityttää	hihityttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Sitten Siinakin tirskuu.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	Siinakin	Siina	ADV	Adv	Clitic=Kin	3	advmod	_	_
+3	tirskuu	tirskuu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = ”Me ollaan ihan myöhässä!” hän nauraa.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj:cop	_	_
+3	ollaan	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	ihan	ihan	ADV	Adv	_	5	advmod	_	_
+5	myöhässä	myöhässä	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	5	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	nauraa	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

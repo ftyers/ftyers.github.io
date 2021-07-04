@@ -1,0 +1,165 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kuulehan, armaani, -- sanoi kreivi nöyrän näköiselle nuorukaiselle, joka samassa astui huoneeseen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kuulehan	Kuuleha	PROPN	N	Case=Gen|Number=Sing	7	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	armaani	armaani	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	--	--	PUNCT	Punct	_	2	punct	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	nöyrän	nöyrä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	amod	_	_
+10	näköiselle	näköinen	ADJ	A	Case=All|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+11	nuorukaiselle	nuorukaisi	NOUN	N	Case=All|Number=Sing	8	nmod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	15	nsubj	_	_
+14	samassa	samassa	ADV	Adv	_	15	advmod	_	_
+15	astui	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+16	huoneeseen	huone	NOUN	N	Case=Ill|Number=Sing	15	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = -- Tuohan minulle...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Tuohan	Tuo	ADV	Adv	Clitic=Han	3	advmod	_	_
+3	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+4	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = (hän alkoi miettiä).
+1	(	(	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	miettiä	miettiä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	)	)	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Niin, 700 ruplaa, niin.
+1	Niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	700	700	NUM	Num	NumType=Card	4	nummod	_	_
+4	ruplaa	rupla	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Mutta katso, ettet tuo sellaisia rikkinäisiä, likaisia, kuin tässä tuonaan, vaan puhtaita, kauniita, kreivittärelle.
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	ettet	että#ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	det	_	_
+6	sellaisia	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	7	amod	_	_
+7	rikkinäisiä	rikkinäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	4	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	likaisia	likainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	7	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	kuin	kuin	SCONJ	C	_	13	mark	_	_
+12	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	13	det	_	_
+13	tuonaan	tuo	NOUN	N	Case=Ess|Number=Sing|Person[psor]=3	18	advcl	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	vaan	vaan	CCONJ	C	_	16	cc	_	_
+16	puhtaita	puhtas	NOUN	N	Case=Par|Number=Plur	13	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	13	punct	_	_
+18	kauniita	kaunis	NOUN	N	Case=Par|Number=Plur	2	conj	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	20	punct	_	_
+20	kreivittärelle	kreivittäri	NOUN	N	Case=All|Number=Sing	18	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Niin, Mitenjka, ole hyvä, tuo puhtaita, -- sanoi kreivitär, surullisesti huoahtaen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Mitenjka	Mitenjka	PROPN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	cop	_	_
+7	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	10	amod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	det	_	_
+10	puhtaita	puhtaita	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	10	punct	_	_
+12	--	--	PUNCT	Punct	_	10	punct	_	_
+13	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+14	kreivitär	kreivitär	NOUN	N	Case=Nom|Number=Sing	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	surullisesti	surullisesti	ADV	Adv	Derivation=Sti	17	advmod	_	_
+17	huoahtaen	huoahtaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	13	advcl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 7
+# text = -- Teidän ylhäisyytenne, milloin käskette tuomaan?
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	3	nmod:poss	_	_
+3	ylhäisyytenne	ylhäisyytenne	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	milloin	milloin	ADV	Adv	_	6	advmod	_	_
+6	käskette	käskla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	tuomaan	tuoda	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = -- kysyi Mitenjka.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Mitenjka	Mitenjka	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = -- Suvaitkaa tietää, että...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Suvaitkaa	suvaitkaa	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	että	että	SCONJ	C	_	3	advmod	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Muuten, älkää olko huolissanne, -- hän lisäsi, huomattuaan, että kreivi alkoi hengittää raskaasti ja nopeasti, joka aina oli syttyvän vihan merkkinä.
+1	Muuten	muuten	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	olko	olla	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	9	advcl	_	_
+5	huolissanne	huolissanne	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	--	--	PUNCT	Punct	_	4	punct	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	huomattuaan	huomata	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	9	advcl	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	että	että	SCONJ	C	_	15	mark	_	_
+14	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+15	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	ccomp	_	_
+16	hengittää	hengittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp	_	_
+17	raskaasti	raskaasti	ADV	Adv	Derivation=Sti	16	advmod	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	17	conj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	24	punct	_	_
+21	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	24	nsubj	_	_
+22	aina	aina	ADV	Adv	_	24	advmod	_	_
+23	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	24	aux	_	_
+24	syttyvän	syttyä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	16	acl:relcl	_	_
+25	vihan	viha	NOUN	N	Case=Gen|Number=Sing	26	nmod:poss	_	_
+26	merkkinä	merkki	NOUN	N	Case=Ess|Number=Sing	24	obl	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 11
+# text = -- Minä olinkin unohtaa...
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	olinkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	unohtaa	unohtaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Tuonko rahat heti?
+1	Tuonko	Tuolla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	rahat	raha	NOUN	N	Case=Nom|Number=Plur	3	nsubj:cop	_	_
+3	heti	heti	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

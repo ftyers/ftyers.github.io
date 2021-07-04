@@ -1,0 +1,108 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kazakstanista laukaistiin Sojuz-raketti kohti avaruutta.
+1	Kazakstanista	kazakstanista	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+2	laukaistiin	laukaista	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	Sojuz-raketti	Sojuz-raketti	NOUN	N	Case=Nom|Number=Sing	2	obl	_	_
+4	kohti	kohti	ADP	Adp	AdpType=Prep	5	case	_	_
+5	avaruutta	avaruus	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Pian laukaisun jälkeen huomattiin moottorivika.
+1	Pian	pian	ADV	Adv	_	2	advmod	_	_
+2	laukaisun	laukaisu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	4	obl	_	_
+3	jälkeen	jälkeen	ADP	Adp	AdpType=Post	2	case	_	_
+4	huomattiin	huomatla	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	moottorivika	moottori#vika	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Siksi raketin miehistön piti tehdä hätälasku.
+1	Siksi	siksi	ADV	Adv	_	2	advmod	_	_
+2	raketin	rakettaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	miehistön	miehistö	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	piti	pitää	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+5	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+6	hätälasku	hätälasku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Raketissa oli 2 miehistön jäsentä.
+1	Raketissa	Raketi	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	2	2	NUM	Num	NumType=Card	4	nummod	_	_
+4	miehistön	miehistö	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	jäsentä	jäsen	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = He eivät kuolleet.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kuolleet	kuolla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = He pelastuivat käyttämällä kapselia, jossa oli laskuvarjo.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	pelastuivat	pelastua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	käyttämällä	käyttää	VERB	V	Case=Ade|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	kapselia	kapseli	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	4	acl:relcl	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+8	laskuvarjo	lasku#varjo	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Toinen miehistön jäsen oli amerikkalainen ja toinen venäläinen.
+1	Toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	2	nummod	_	_
+2	miehistön	miehistö	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	jäsen	jäsen	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	amerikkalainen	amerikkalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	8	amod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	5	conj	_	_
+8	venäläinen	venäläinen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 8
+# text = He olivat matkalla kansainväliselle avaruusasemalle.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	matkalla	matka	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+4	kansainväliselle	kansainvälinen	ADJ	A	Case=All|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	avaruusasemalle	avaruusasema	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hirmumyrsky on tehnyt vahinkoja USA:ssa.
+1	Hirmumyrsky	Hirmumyrsky	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	vahinkoja	vahinko	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	USA:ssa	USA	PROPN	N	Abbr=Yes|Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Hirmumyrsky Michael iski esimerkiksi Floridaan.
+1	Hirmumyrsky	Hirmumyrsky	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Michael	Michael	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	iski	iskeä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	esimerkiksi	esimerkiksi	ADV	Adv	_	5	advmod	_	_
+5	Floridaan	Florida	PROPN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Myrskyn tuulet puhalsivat melkein 70 metriä sekunnissa.
+1	Myrskyn	Myrsky	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tuulet	tuuli	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	puhalsivat	puhalsa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	melkein	melkein	ADV	Adv	_	5	advmod	_	_
+5	70	70	NUM	Num	NumType=Card	6	nummod	_	_
+6	metriä	metri	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+7	sekunnissa	sekunti	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

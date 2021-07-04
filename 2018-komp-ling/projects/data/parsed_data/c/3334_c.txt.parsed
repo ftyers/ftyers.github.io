@@ -1,0 +1,143 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Keneltä minä saan rahat?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Keneltä	kuka	PRON	Pron	Case=Abl|Number=Sing|PronType=Int	4	obl	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	saan	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	rahat	raha	NOUN	N	Case=Nom|Number=Plur	4	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = mutisi majuri, joka oli voittanut kahdeksan ruplan verran.
+1	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	majuri	majuri	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	6	nsubj	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	voittanut	voittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl:relcl	_	_
+7	kahdeksan	kahdeksan	NUM	Num	Case=Gen|Number=Sing|NumType=Card	8	nummod	_	_
+8	ruplan	rupla	NOUN	N	Case=Gen|Number=Sing	6	obj	_	_
+9	verran	verran	ADV	Adv	_	8	fixed	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Olen pannut peliin yli kaksikymmentä ruplaa, nyt olen voittanut enkä saa mitään.
+1	-	-	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	-	-	PUNCT	Punct	_	4	punct	_	_
+3	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	pannut	pata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	peliin	peli	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	yli	yli	ADV	Adv	_	7	advmod	_	_
+7	kaksikymmentä	kaksi#kymmenen	NUM	Num	Case=Par|Number=Sing|NumType=Card	8	nummod	_	_
+8	ruplaa	rupla	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	nyt	nyt	ADV	Adv	_	12	advmod	_	_
+11	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+12	voittanut	voittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+13	enkä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	14	cc	_	_
+14	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	conj	_	_
+15	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	14	obj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Mistä minä maksan?
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	4	obl	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	maksan	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- sanoi pankinpitäjä: -- kun pöydällä ei ole rahaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pankinpitäjä	pankinpitäjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	2	punct	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	kun	kun	SCONJ	C	_	7	mark	_	_
+7	pöydällä	pöytä	NOUN	N	Case=Ade|Number=Sing	2	advcl	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+9	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	cop	_	_
+10	rahaa	raha	NOUN	N	Case=Par|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Siitä minä en välitä!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Siitä	Se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	5	obl	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	välitä	välittää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = -- huusi majuri nousten istualtaan -- minä pelaan teidän kanssanne enkä hänen.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	huusi	huusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	majuri	#majuri	NOUN	N	Case=Nom|Number=Sing	8	obj	_	_
+4	nousten	nous	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	istualtaan	istua	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	3	nmod	_	_
+6	--	--	PUNCT	Punct	_	3	punct	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	pelaan	pela	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+9	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	11	nsubj	_	_
+10	kanssanne	kanssa	ADV	Adv	Number[psor]=Plur|Person[psor]=2	11	advmod	_	_
+11	enkä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	ccomp	_	_
+12	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 8
+# text = -- Hikinen upseeri tulistui äkkiä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hikinen	Hikinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	upseeri	#upseeri	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tulistui	tulistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	äkkiä	äkkiä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = -- Olenhan sanonut, että maksan huomenna: kuinka rohkenette puhua minulle hävyttömyyksiä?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Olenhan	Olella	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sanonut	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	että	että	SCONJ	C	_	6	mark	_	_
+6	maksan	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	_
+7	huomenna	huomenna	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	3	punct	_	_
+9	kuinka	kuinka	ADV	Adv	_	10	advmod	_	_
+10	rohkenette	rohkea	VERB	V	Mood=Pot|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+11	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp	_	_
+12	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	11	obl	_	_
+13	hävyttömyyksiä	hävyttömyys	NOUN	N	Case=Par|Number=Plur	11	obj	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = --.
+1	--	--	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 11
+# text = Minä sanon, mitä tahdon! eihän tuolla tavalla kukaan tee!
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	sanon	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+5	tahdon	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+7	eihän	ei	AUX	V	Clitic=Han|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	cop	_	_
+8	tuolla	tuo	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	5	obl	_	_
+9	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	5	obl	_	_
+10	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	11	nsubj	_	_
+11	tee	tehdä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	conj	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = -- kiljasi majuri.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	kiljasi	kiljata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	majuri	majuri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,135 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Kuuntele, kun kerron.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Kuuntele	kuunellä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	kun	kun	SCONJ	C	_	5	mark	_	_
+5	kerron	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Tähän kylään muutti kerran nuori ja kokematon tyttö, joka oli juuri päässyt ylioppilaaksi.
+1	Tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	2	det	_	_
+2	kylään	kylä	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+3	muutti	muuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kerran	kerran	ADV	Adv	_	5	advmod	_	_
+5	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kokematon	kokematon	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	5	conj	_	_
+8	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	SpacesAfter= \s
+10	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	13	nsubj	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	aux	_	_
+12	juuri	juuri	ADV	Adv	_	13	advmod	_	_
+13	päässyt	päästä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	acl:relcl	_	_
+14	ylioppilaaksi	yli#oppilas	NOUN	N	Case=Tra|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Hän piti lapsista, ja täällä oli työpaikka päiväkodissa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	piti	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lapsista	lapsi	NOUN	N	Case=Ela|Number=Plur	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	täällä	täällä	ADV	Adv	_	8	advmod	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	työpaikka	työpaikka	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+9	päiväkodissa	päiväkodi	NOUN	N	Case=Ine|Number=Sing	8	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Hän oli ollut koko ikänsä mukana seurakuntanuorissa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+4	koko	koko	ADJ	A	_	5	amod	_	_
+5	ikänsä	ikä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	_
+6	mukana	mukana	ADP	Adp	AdpType=Post	5	case	_	_
+7	seurakuntanuorissa	seurakuntanuor	NOUN	N	Case=Ine|Number=Plur	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = Täälläkin hän meni mukaan seurakunnan toimintaan ja alkoi pitää pyhäkoulua, Riikka aloitti kertomuksensa.
+1	Täälläkin	täälläkin	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	mukaan	mukaan	ADV	Adv	_	3	advmod	_	_
+5	seurakunnan	seura#kunta	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	toimintaan	toiminta	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	SpacesAfter= 
+8	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	pitää	pitää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	pyhäkoulua	pyhäkoulu	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+12	Riikka	Riikka	PROPN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+13	aloitti	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+14	kertomuksensa	kertomus	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	13	obj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Riikka leikkasi marjapiirakasta palan ja laittoi sen pastori Halmeen lautaselle.
+1	Riikka	Riikka	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	leikkasi	leikata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	marjapiirakasta	marjapiiraka	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+4	palan	p#ala	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	laittoi	laittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	obj	_	_
+8	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Halmeen	Halme	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	lautaselle	lautanen	NOUN	N	Case=All|Number=Sing	6	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 7
+# text = Sitten hän jatkoi kertomista:
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kertomista	kertominen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	3	obj	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = — Seurakunnassa oli työssä nuori ja komea pappi.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Seurakunnassa	Seurakunna	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	työssä	työ	NOUN	N	Case=Ine|Number=Sing	5	nmod	_	SpacesAfter= 
+5	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	komea	komea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	conj	_	_
+8	pappi	pappi	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 9
+# text = Pappi oli naimisissa ja kahden pienen lapsen isä.
+1	Pappi	pappi	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	naimisissa	naimisissa	ADV	Adv	_	0	root	_	_
+4	ja	ja	CCONJ	C	_	8	cc	_	_
+5	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	7	nummod	_	_
+6	pienen	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	_
+7	lapsen	#lapsi	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	isä	isä	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Se ei estänyt pappia rakastumasta tyttöön.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	estänyt	estää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	pappia	pappi	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	SpacesAfter= \s
+5	rakastumasta	rakastua	VERB	V	Case=Ela|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	_
+6	tyttöön	tyttö	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Heillä oli kiihkeä suhde.
+1	Heillä	hän	PRON	Pron	Case=Ade|Number=Plur|Person=3|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	kiihkeä	kiihkeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	suhde	suhde	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,264 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = ”Antakaa tänne vaan”, huikkasi morsian.
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Antakaa	antaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tänne	tänne	ADV	Adv	_	2	advmod	_	_
+4	vaan	vaan	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	huikkasi	huikata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+8	morsian	morsia	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = ”Sain hameista tarpeekseni.”
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Sain	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hameista	hame	NOUN	N	Case=Ela|Number=Plur	2	obl	_	_
+4	tarpeekseni	tarpeekse	ADV	Adv	Number[psor]=Sing|Person[psor]=1	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Morsian ripusti vanhan mekkonsa naulaan, hyppäsi haalareihin ja kiipesi laivan komentosillalle.
+1	Morsian	Morsia	PROPN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	ripusti	ripustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vanhan	vanha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	mekkonsa	mekko	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+5	naulaan	naula	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	hyppäsi	hypätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	haalareihin	haalare	NOUN	N	Case=Ill|Number=Plur	7	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	kiipesi	kiimeta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+11	laivan	laiva	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	komentosillalle	komentosilla	NOUN	N	Case=All|Number=Sing	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = ”Olemme matkalla Kap Verdelle”, kertoi kapteeni.
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	matkalla	matka	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+4	Kap	Kap	PROPN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+5	Verdelle	Verdi	PROPN	N	Case=All|Number=Sing	4	flat:name	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	kapteeni	kapteeni	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 5
+# text = ”Otamme sinut mukaan, jos haluat tulla.”
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Otamme	ottaa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	2	obl	_	_
+4	mukaan	mukaan	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jos	jos	SCONJ	C	_	7	mark	_	_
+7	haluat	haluta	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	_
+8	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+10	”	”	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = ”Kyllä minä haluaisin”, vastasi morsian, jonka hiukset tuuli oli sekoittanut, ”mutta en tiedä, miten voisin korvata matkani.
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+4	haluaisin	haluta	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+8	morsian	morsia	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	11	nmod:poss	_	_
+11	hiukset	hius	NOUN	N	Case=Nom|Number=Plur	14	obj	_	_
+12	tuuli	tuuli	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	sekoittanut	sekoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	acl:relcl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	14	punct	_	_
+16	”	”	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+17	mutta	mutta	CCONJ	C	_	19	cc	_	_
+18	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	conj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	23	punct	_	_
+21	miten	miten	ADV	Adv	_	23	advmod	_	_
+22	voisin	voida	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	23	aux	_	_
+23	korvata	korvata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	19	ccomp	_	_
+24	matkani	matk	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	23	obj	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Ja sulhaselta pitää kysyä myös.”
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	sulhaselta	sulhanen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Inen|Number=Sing	4	obl	_	_
+3	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kysyä	kysyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	myös	myös	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = ”Kysytään, kysytään.
+1	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kysytään	kysyä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	kysytään	kysyä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Sinähän voisit auttaa meitä keittiöhommissa”, ehdotti kapteeni, jonka herkkuruokaa oli sinappisilli.
+1	Sinähän	sinä	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	voisit	voä	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	auttaa	auttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	3	obj	_	_
+5	keittiöhommissa	keittiöhomm	NOUN	N	Case=Ine|Number=Plur	3	obl	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	ehdotti	ehdottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+9	kapteeni	kapteeni	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	12	nmod:poss	_	_
+12	herkkuruokaa	herkkuruoka	NOUN	N	Case=Par|Number=Sing	9	acl:relcl	_	_
+13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	cop	_	_
+14	sinappisilli	sinappisilli	NOUN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = ”Oikeastaan minulla on unelma”, kuuli morsian itsensä sanovan.
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Oikeastaan	oikeastaan	ADV	Adv	_	3	advmod	_	_
+3	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	8	obl	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop:own	_	_
+5	unelma	unelma	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	kuuli	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	morsian	morsia	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+10	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	11	nsubj	_	_
+11	sanovan	sanoa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	xcomp:ds	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 11
+# text = ”Minut on kasvatettu sieväksi neidiksi, mutta olen aina salaa haaveillut työstä koneiden parissa.”
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Minut	Minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	kasvatettu	kasvattaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	sieväksi	sievä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	6	amod	_	_
+6	neidiksi	neidi	NOUN	N	Case=Tra|Number=Sing	4	xcomp:ds	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	12	punct	_	_
+8	mutta	mutta	CCONJ	C	_	12	cc	_	_
+9	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+10	aina	aina	ADV	Adv	_	12	advmod	_	_
+11	salaa	salaa	ADV	Adv	_	12	advmod	_	_
+12	haaveillut	haaveilla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+13	työstä	#työ	NOUN	N	Case=Ela|Number=Sing	12	obl	_	_
+14	koneiden	kone	NOUN	N	Case=Gen|Number=Plur	12	obl	_	_
+15	parissa	parissa	ADP	Adp	AdpType=Post	14	case	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+17	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = ”No jopas”, lipsahti kapteenilta, ”vaikka kyllähän se tietysti sopii.”
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	No	no	INTJ	Interj	_	3	discourse	_	_
+3	jopas	jovata	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	lipsahti	lipsahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	kapteenilta	kapteenilta	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	14	punct	_	_
+9	”	”	PUNCT	Punct	_	14	punct	_	SpaceAfter=No
+10	vaikka	vaikka	SCONJ	C	_	14	mark	_	_
+11	kyllähän	kyllähän	ADV	Adv	_	14	advmod	_	_
+12	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	14	nsubj	_	_
+13	tietysti	tietysti	ADV	Adv	Derivation=Sti	14	advmod	_	_
+14	sopii	sopia	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+16	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 13
+# text = Kapteeni pyysi, että perämies opastaisi morsiamen laivan konehuoneeseen.
+1	Kapteeni	kape	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	pyysi	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	perämies	perä#mies	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	opastaisi	opastaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	morsiamen	morsian	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	laivan	laiva	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	konehuoneeseen	konehuone	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Sitten kapteeni alkoi tavata sähkettä maihin.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	kapteeni	kapteeni	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tavata	tavata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	sähkettä	sähke	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	maihin	maa	NOUN	N	Case=Ill|Number=Plur	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 15
+# text = Messipoikia päätös harmitti, sillä he olivat jo kauan toivoneet uutta keittäjää.
+1	Messipoikia	Messipoika	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+2	päätös	päätös	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	harmitti	harmittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	sillä	sillä	SCONJ	C	_	10	mark	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	10	nsubj	_	_
+7	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+8	jo	jo	ADV	Adv	_	10	advmod	_	_
+9	kauan	kauan	ADV	Adv	_	10	advmod	_	_
+10	toivoneet	toivoa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	advcl	_	_
+11	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	12	amod	_	_
+12	keittäjää	keittäjä	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	10	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 16
+# text = Laivan vakituinen kokki oli nimittäin likinäköinen ja usein sattui, että hän lisäsi ruokaan mausteita vääristä purkeista.
+1	Laivan	laiva	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	vakituinen	vakituinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	kokki	kokki	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	nimittäin	nimittäin	ADV	Adv	Derivation=Ttain	6	advmod	_	_
+6	likinäköinen	likinäköinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	usein	usein	ADV	Adv	_	9	advmod	_	_
+9	sattui	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	ccomp	_	_
+14	ruokaan	ruoka	NOUN	N	Case=Ill|Number=Sing	13	obl	_	_
+15	mausteita	mause	NOUN	N	Case=Par|Number=Plur	13	obj	_	_
+16	vääristä	väärinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	17	amod	_	_
+17	purkeista	purke	NOUN	N	Case=Ela|Number=Plur	13	nmod	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 17
+# text = Edellispäivänä hän oli laittanut lihakeittoon pippurien sijaan kardemummaa ja kokonaisen viikon hän oli käyttänyt suolan sijasta sokeria.
+1	Edellispäivänä	Edellispäivä	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	laittanut	laittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	lihakeittoon	lihakeitto	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	pippurien	pippuri	NOUN	N	Case=Gen|Number=Plur	4	obl	_	_
+7	sijaan	sijaan	ADP	Adp	AdpType=Post	6	case	_	_
+8	kardemummaa	kardemumma	ADJ	A	Case=Par|Degree=Pos|Number=Sing	11	amod	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	kokonaisen	kokonainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	8	conj	_	_
+11	viikon	viikko	NOUN	N	Case=Gen|Number=Sing	14	obj	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+13	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	käyttänyt	käyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+15	suolan	suola	NOUN	N	Case=Gen|Number=Sing	14	obl	_	_
+16	sijasta	sijasta	ADP	Adp	AdpType=Post	15	case	_	_
+17	sokeria	sokeri	NOUN	N	Case=Par|Number=Sing	14	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

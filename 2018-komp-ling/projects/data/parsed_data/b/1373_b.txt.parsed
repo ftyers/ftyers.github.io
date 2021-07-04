@@ -1,0 +1,163 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Älä puhu hölmöjä.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	puhu	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	hölmöjä	hölmö	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Minä putosin, siksi se tapahtui, Kaisu sanoo tiukasti.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	putosin	pudota	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	siksi	siksi	ADV	Adv	_	6	advmod	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	_
+6	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	tiukasti	tiukasti	ADV	Adv	Derivation=Sti	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Kumpikaan ei nuku koko yönä.
+1	Kumpikaan	kumpikaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nuku	nukkua	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+4	koko	koko	ADJ	A	_	5	amod	_	_
+5	yönä	yö	NOUN	N	Case=Ess|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Kummankin mieli on synkkä kuin keskiyö.
+1	Kummankin	kumpikin	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	2	det	_	_
+2	mieli	mieli	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	synkkä	synkkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	keskiyö	keski#yö	NOUN	N	Case=Nom|Number=Sing	4	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Aamulla
+1	Aamulla	aamu	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+
+# sent_id = 6
+# text = Kaisu avaa kaupan.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	avaa	avata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaupan	kauppa	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hän palvelee asiakkaita niin kuin aina.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	palvelee	palvella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	asiakkaita	asiakas	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+4	niin	niin	ADV	Adv	_	2	advmod	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	aina	aina	ADV	Adv	_	4	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kylän ukot vitsailevat:
+1	Kylän	kylä	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ukot	ukko	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	vitsailevat	vitsailla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = — Taidat olla pieniin päin, kun olet niin kalpea.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Taidat	Taita	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	pieniin	pie#niin	ADV	Adv	_	5	advmod	_	_
+5	päin	päin	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	kun	kun	SCONJ	C	_	10	mark	_	_
+8	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	niin	niin	ADV	Adv	_	10	advmod	_	_
+10	kalpea	kalpea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Kaisu iskee jauhopussin pöydälle niin kovaa, että jauhot leviävät ympäriinsä.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	iskee	iskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jauhopussin	jauhopussi	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	pöydälle	pöytä	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	kovaa	kova	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	että	että	SCONJ	C	_	10	mark	_	_
+9	jauhot	jauho	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	_
+10	leviävät	levitä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+11	ympäriinsä	ympäriinsä	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Erni tulee siivoamaan sotkun.
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	siivoamaan	siivota	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	sotkun	sotku	NOUN	N	Case=Gen|Derivation=U|Number=Sing	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Vasta illalla
+1	Vasta	vasta	ADV	Adv	_	2	advmod	_	_
+2	illalla	ilta	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+
+# sent_id = 13
+# text = Kaisu saa surunsa itketyksi.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	saa	sata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	surunsa	suru	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	4	nsubj	_	_
+4	itketyksi	itkeä	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	xcomp:ds	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s\s\s
+
+# sent_id = 14
+# text = Auto pysähtyy Ruutinojan kaupan eteen.
+1	Auto	auto	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pysähtyy	pysähtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Ruutinojan	Ruutinoja	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	kaupan	kauppa	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+5	eteen	eteen	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 15
+# text = Viivi astuu ulos autosta.
+1	Viivi	Viivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	astuu	astua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ulos	ulos	ADV	Adv	_	2	advmod	_	_
+4	autosta	auto	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 16
+# text = — Yllätys, yllätys!
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Yllätys	yllätys#	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	yllätys	yllätys	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 17
+# text = Viivi nauraa.
+1	Viivi	Viivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nauraa	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 18
+# text = Hänellä on nyt ajokortti ja uusi auto.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	nyt	nyt	ADV	Adv	_	1	advmod	_	_
+4	ajokortti	ajokortti	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	uusi	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	auto	auto	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

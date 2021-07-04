@@ -1,0 +1,153 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = näytelmä on lopussa.
+1	näytelmä	näytelmä	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	lopussa	loppu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Päästä minut levolle, anna minun edes kuolla rauhassa...
+1	Päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	1	obj	_	_
+3	levolle	levo	NOUN	N	Case=All|Number=Sing	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	_
+6	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	obj	_	_
+7	edes	edes	ADV	Adv	_	5	advmod	_	_
+8	kuolla	kuolla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	_
+9	rauhassa	rauha	NOUN	N	Case=Ine|Number=Sing	8	obl	_	SpaceAfter=No
+10	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Hän laskettiin tyynyille.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	laskettiin	laskaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	tyynyille	tyyny	NOUN	N	Case=All|Number=Plur	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Mitä -- pappia ...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	_
+3	--	--	PUNCT	Punct	_	2	punct	_	_
+4	pappia	pappa	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	_
+5	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = sitä ei tarvita ...
+1	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tarvita	tarvita	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Onko teillä joku rupla ehkä ylijäämää?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+2	teillä	sinä	PRON	Pron	Case=Ade|Number=Plur|Person=2|PronType=Prs	6	obl	_	_
+3	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	rupla	rupla	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	ehkä	ehkä	ADV	Adv	_	6	advmod	_	_
+6	ylijäämää	ylijäämä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Minulla ei ole mitään syntejä...
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop:own	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	syntejä	synti	NOUN	N	Case=Par|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Jumalan täytyy antaa ne ilmankin anteeksi.
+1	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	antaa	antaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	obj	_	_
+5	ilmankin	ilman	ADV	Adv	Clitic=Kin	3	advmod	_	_
+6	anteeksi	anteeksi	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hän tietää kyllä, miten paljon olen kärsinyt...
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kyllä	kyllä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	miten	miten	ADV	Adv	_	8	advmod	_	_
+6	paljon	paljon	ADV	Adv	_	8	advmod	_	_
+7	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	kärsinyt	kärsiä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	SpaceAfter=No
+9	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Ja jollei hän anna minulle anteeksi ... niin saa olla, niinkuin hän...
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	jollei	jollei	SCONJ	C	_	4	mark	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	anna	antaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+5	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
+6	anteeksi	anteeksi	ADV	Adv	_	4	advmod	_	_
+7	...	...	PUNCT	Punct	_	4	punct	_	_
+8	niin	niin	ADV	Adv	_	9	advmod	_	_
+9	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	4	obj	_	_
+10	olla	olla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	niinkuin	niinkuin	SCONJ	C	_	13	mark	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	advcl	_	SpaceAfter=No
+14	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Hän meni tainnoksiin, kohoutui taas puoleksi ja katseli ympärilleen ja näkyi tuntevan muutamia läsnäolijoista.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tainnoksiin	tainnos	NOUN	N	Case=Ill|Number=Plur	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	kohoutui	kohoutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	taas	taas	ADV	Adv	_	5	advmod	_	_
+7	puoleksi	puol	NOUN	N	Case=Tra|Number=Sing	5	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+10	ympärilleen	ympärille	ADV	Adv	Person[psor]=3	2	advmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	näkyi	näkyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	tuntevan	tuntla	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	15	acl	_	_
+14	muutamia	muutama	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	15	det	_	_
+15	läsnäolijoista	läsnä#olija	NOUN	N	Case=Ela|Derivation=Ja|Number=Plur	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Sitten hän jälleen meni tunnottomaksi.
+1	Sitten	sitten	ADV	Adv	_	4	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	jälleen	jälleen	ADV	Adv	_	4	advmod	_	_
+4	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tunnottomaksi	tunnoton	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	4	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Hän hengitti raskaasti, hänen äänensä korisi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	hengitti	hengittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	raskaasti	raskaasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	äänensä	ääni	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	7	nsubj	_	_
+7	korisi	kora	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Tuntui siltä kuin jotakin olisi tunkeutunut hänen kurkkuunsa.
+1	Tuntui	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	1	obl	_	_
+3	kuin	kuin	SCONJ	C	_	6	mark	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	nsubj	_	_
+5	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	tunkeutunut	tunkeutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	advcl	_	_
+7	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	obl	_	_
+8	kurkkuunsa	kurkkuun	ADP	Adp	AdpType=Post|Person[psor]=3	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

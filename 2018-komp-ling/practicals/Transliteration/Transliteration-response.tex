@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Transliteration}
+\author{Nikolay Babakov }
+\date{November 2018}
+
+\begin{document}
+
+\maketitle
+
+\section{The dict datastructure + File input/output}
+I used Russian conluu file and iterated over it to collect tokens. I assumed that the tokens are located on the lines which has first digit symbol.
+I collected dict, transferred it to list and then created a doc accordingly.
+Such doc has all tokens with their frequency sorted so I assume that item's index equals its rank here.
+
+\section{Transliterator}
+I created transl.txt doc which has the list of Russian letters and English transliteration corresponding to them.
+Then I made some simple function which performs trasnliteration if the letter belongs to Russian alphabet, otherwise it leaves the letter as it is. 
+Then I iterated over conluu file and created write_lines list with modified content
+Finally I created ru_modified.conllu and pasted write_lines into it.
+
+\section{Answers to the questions}
+Q: What to do with ambiguous letters ? For example, Cyrillic `е' could be either je or e.
+A: I googled standartized alphabet used in official documents and referred to the unified transliteration method from it
+
+Q: Can you think of a way that you could provide mappings from many characters to one character ?
+A: For such task we'd better to have some corpus with transliteration to analyze the language in question
+For example we can look through all two or more letters which are mapped into one and check whether it is possible that their combination is mapped into several letters. If no examples found than every time we see the first letter of the set which map into one letter we simply check whether this letter belongs to the set and map the set into corresponding letter.
+
+Q: How might you make different mapping rules for characters at the beginning or end of the string ?
+
+A: When iterating over the symbols we can check whether the symbol is the first one in the word (index equals 0) or the last one (index equals len(word))
+
+
+\end{document}

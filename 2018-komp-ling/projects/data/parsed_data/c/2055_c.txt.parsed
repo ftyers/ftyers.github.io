@@ -1,0 +1,112 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Aivan siten se tapahtui!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Aivan	aivan	ADV	Adv	_	3	advmod	_	_
+3	siten	siten	ADV	Adv	_	5	advmod	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+5	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = huusi joku silminnäkijä joukosta.
+1	huusi	huusi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+2	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	silminnäkijä	silminnäkijä	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+4	joukosta	joukko	NOUN	N	Case=Ela|Number=Sing	3	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- Kolme kertaa hän huusi, se on totta! vakuutti toinen.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	huusi	huuta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	conj	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	5	punct	_	_
+11	vakuutti	vakuuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+12	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	11	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = -- Täsmälleen kolme kertaa, sen kuulivat kaikki! huudahti kolmas.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Täsmälleen	Täsmälleen	ADV	Adv	_	3	advmod	_	_
+3	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	7	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	nsubj	_	_
+7	kuulivat	kuulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	nsubj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	10	punct	_	_
+10	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+11	kolmas	kolmas	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	10	xcomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Ajaja ei muuten ollut erikoisen alakulonen eikä pelästynyt.
+1	Ajaja	Ajaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	muuten	muuten	ADV	Adv	_	6	advmod	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+5	erikoisen	erikoinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	alakulonen	alakulonen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	_
+7	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cc	_	_
+8	pelästynyt	pelästyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Ajoneuvoista saattoi päättää, että niiden omistaja oli rikas ja kunnioitettu ja odotti nähtävästi niiden tuloa jossakin; polisit olivat jo aikeissa ottaa huomioon tuon seikan.
+1	Ajoneuvoista	ajoneuvoista	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	päättää	päättää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	9	punct	_	_
+5	että	että	SCONJ	C	_	9	mark	_	_
+6	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	7	nmod:poss	_	_
+7	omistaja	omistaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	nsubj:cop	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	rikas	rikas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	ccomp	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	kunnioitettu	kunnioittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	conj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	odotti	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+14	nähtävästi	nähtävästi	ADV	Adv	Derivation=Sti	13	advmod	_	_
+15	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	16	nmod:poss	_	_
+16	tuloa	#tulo	NOUN	N	Case=Par|Number=Sing	17	obj	_	_
+17	jossakin	jokin	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	13	obl	_	SpaceAfter=No
+18	;	;	PUNCT	Punct	_	3	punct	_	_
+19	polisit	polisi	NOUN	N	Case=Nom|Number=Plur	23	nsubj	_	_
+20	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	aux	_	_
+21	jo	jo	ADV	Adv	_	22	advmod	_	_
+22	aikeissa	aike	NOUN	N	Case=Ine|Number=Plur	23	obl	_	_
+23	ottaa	ottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	parataxis	_	_
+24	huomioon	huomio	NOUN	N	Case=Ill|Number=Sing	23	obl	_	_
+25	tuon	tuo	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	26	det	_	_
+26	seikan	seikka	NOUN	N	Case=Gen|Number=Sing	23	obj	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Yli ajettu oli vietävä polisikonttoriin ja sieltä sairalaan.
+1	Yli	yli	ADV	Adv	_	2	advmod	_	_
+2	ajettu	ajaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	vietävä	viedä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+5	polisikonttoriin	polisikonttori	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	sieltä	sieltä	ADV	Adv	_	8	advmod	_	_
+8	sairalaan	sairala	NOUN	N	Case=Ill|Number=Sing	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Kukaan ei tuntenut häntä.
+1	Kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tuntenut	tuntea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+
