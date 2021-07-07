@@ -1,0 +1,99 @@
+Multichar_Symbols
+
+%<n%>                ! Имя существительное
+%<pl%>               ! Множественное число
+%<nom%>              ! Именительный падеж
+%<ins%>              ! Творительный падеж
+
+%{A%}                ! Архифонема [а] или [е]
+%{ъ%}                ! Архифонема для морфотактики
+
+%>                   ! Граница морфемы
+
+%<der_л?х%>          ! Словообразование
+
+%{э%}                ! Front vowel
+%{a%}                ! Back vowel
+%{л%}                ! -н, -л, -р
+%{c%}                ! other
+
+LEXICON Root
+
+Nouns ;
+DIGITLEX ;
+Guesser ;
+
+LEXICON CASES 
+
+%<nom%>:%> # ;
+%<ins%>:%>п%{A%} # ;
+%<gen%>:%>с%{A%} # ;
+
+LEXICON PLURAL
+
+             CASES ;
+%<pl%>:%>сем CASES ;
+
+LEXICON SUBST 
+
+PLURAL ;
+
+LEXICON DER-N
+
+%<der_л?х%>:%>л%{A%}х SUBST "weight: 1.0" ;
+
+
+LEXICON N
+
+%<n%>: SUBST ;
+%<n%>: DER-N ;
+
+LEXICON Nouns
+
+урам:урам N ;                  ! "улица"
+пакча:пакча N ;                ! "сад"
+хула:хула N ;                  ! "город"
+канаш:канаш N ;                ! "совет"
+т?с:т?с N ;                    ! "вид"
+патша:патша N ;                ! "царь"
+ку?:ку? N ;                    ! "глаз"
+патшал?х:патшал?х N ;          ! "государство"
+специалист:специалист%{ъ%} N ; ! "специалист"
+
+LEXICON NUM-DIGIT
+
+%<num%>:%- CASES ;
+
+LEXICON LAST-DIGIT
+
+1:1%{э%}%{л%}    NUM-DIGIT ; ! "п?р" 
+2:2%{с%}%{э%}    NUM-DIGIT ; ! "икк?" 
+3:3%{с%}%{э%}    NUM-DIGIT ; ! "ви???" 
+4:4%{с%}%{а%}    NUM-DIGIT ; ! "т?ватт?" 
+5:5%{э%}%{с%}    NUM-DIGIT ; ! "пилл?к" 
+6:6%{с%}%{а%}    NUM-DIGIT ; ! "ултт?" 
+7:7%{с%}%{э%}    NUM-DIGIT ; ! "?ичч?" 
+8:8%{э%}%{л%}    NUM-DIGIT ; ! "сакк?р" 
+9:9%{э%}%{л%}    NUM-DIGIT ; ! "т?хх?р" 
+
+LEXICON LOOP
+
+                 LAST-DIGIT ; 
+                 DIGITLEX ; 
+
+LEXICON DIGITLEX
+
+%0:%0 LOOP ;
+1:1   LOOP ;
+2:2   LOOP ;
+3:3   LOOP ;
+4:4   LOOP ;
+5:5   LOOP ;
+6:6   LOOP ;
+7:7   LOOP ;
+8:8   LOOP ;
+9:9   LOOP ;
+
+LEXICON Guesser
+
+??%<guess%>:?? N ;
