@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>Análisis morfológico para el ombeayiüts</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script type="text/javascript" src="zepto.min.js"></script>
+<!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+<script>
+
+Zepto(function($){
+
+//$('#intext').keydown(function(e){
+//    if(e.keyCode == 46) {
+//	     $("#output1").text("");
+//	     $("#output2").text("");
+//    }
+//});
+    function readingToGloss(s) {
+	var lookup = new Map();
+	lookup.set("<perf>", "com");
+	lookup.set("<impf>", "inc");
+	lookup.set("<o_sg1>", "b1s");
+	lookup.set("<o_sg2>", "b2s");
+	lookup.set("<o_sg3>", "b3s");
+	lookup.set("<o_pl1>", "b1p");
+	lookup.set("<o_pl2>", "b2p");
+	lookup.set("<o_pl3>", "b3p");
+	lookup.set("<s_sg1>", "a1s");
+	lookup.set("<s_sg2>", "a2s");
+	lookup.set("<s_sg3>", "a3s");
+	lookup.set("<s_pl1>", "a1p");
+	lookup.set("<s_pl2>", "a2p");
+	lookup.set("<s_pl3>", "a3p");
+	lookup.set("<px1sg>", "a1s");
+	lookup.set("<px2sg>", "a2s");
+	lookup.set("<px3sg>", "a3s");
+	lookup.set("<px1pl>", "a1p");
+	lookup.set("<px2pl>", "a2p");
+	lookup.set("<px3pl>", "a3p");
+	lookup.set("<anti>", "ap");
+	lookup.set("<abl>", "mov");
+	lookup.set("<lat>", "mov");
+	lookup.set("<imp>", "imp");
+	lookup.set("<itg>", "");
+	lookup.set("<mov>", "");
+	lookup.set("<pass>", "pass");
+	lookup.set("<v>", "");
+	lookup.set("<tv>", "");
+	lookup.set("<ik>", "ss");
+	lookup.set("<a>", "ss");
+	lookup.set("<uʼ>", "ss");
+	lookup.set("<rel>", "");
+	lookup.set("jas<prn>", "int");
+	lookup.set("ali<clf>", "clf");
+	lookup.set("le<det>", "det");
+
+	var intr = s.match(/<iv>/g);
+	if(intr){
+		s = s.replace(/<s_/gi, '<o_');
+	}
+
+        var tags2 = s.replace(/^[^\/]+\//, "");
+        tags2 = tags2.replace(/\/.*/, "");
+	tags2 = tags2.replace(/(<[^>]+>)/gi, '$1 ');
+	tags2 = tags2.replace(/\+ik<mark>/gi, '<ik>');
+	tags2 = tags2.replace(/\+a<mark>/gi, '<a>');
+	tags2 = tags2.replace(/\+uʼ<mark>/gi, '<uʼ>');
+	tags2 = tags2.replace(/\+/gi, '+ ');
+	var tags = tags2.split(' '); 
+	console.log(tags);
+	o = "";
+	first = true;
+	tags.forEach(function(i) {
+		gl = lookup.get(i);
+		if(gl) {
+			console.log('!tagsG:' + i);
+			if(!first) {
+				o += "-" ;
+			}
+			o += lookup.get(i);
+			first = false
+		} else if(i[0] != '<' && i[0] != '+' && !lookup.get(i) && i != "") {
+			console.log('!tagsS:' + i);
+			if(!first) {
+				o += "-" ;
+			}
+			o += 'stem';
+			first = false
+		}
+	});
+
+	return o;
+    }
+
+    function formatReadings(s) {
+         o = '';
+         var first = true;
+         for(var i = 0; i < s.length; i++) {
+             if(s[i] == '<') {
+                o += '<span class="tag">&lt;';
+             } else if(s[i] == '>') {
+                o += '&gt;</span>';
+             } else if(s[i] == '/' && !first) {
+                o += '<br/>';
+             } else if(!first) {
+                o += s[i];
+             }
+             if(first == true && s[i] == '/') {
+                  first = false;
+             } 
+
+         }
+
+         return o;
+    }
+    
+    $('#intext').keyup(function(event) {
+	    var textarea_value = $("#intext").val();
+	   // var selected_lang = $("#lang").val();
+            var selected_lang = "huv";
+
+	    if(/[?!., ]/.test(event.key) || /[?!., ]/.test(textarea_value[-1])) {
+		$("#output").empty();
+	        $.ajax({
+	          url: 'https://beta.apertium.org/apy/analyse',
+	          data: {lang: selected_lang, q: textarea_value},
+	          success: function(data){
+		          data.forEach(function(i) {
+		             var pack = JSON.stringify(i[0]).length - JSON.stringify(i[1]).length ;
+			     var row = "<tr>";
+		             row += "<td>" + i[1] + "</td> ";
+ //                           var surface = "<span>" + i[1] + "</span><br/> ";
+
+		           //  console.log(surface);
+			  //   $("#output_forms").append(surface);
+		             console.log(i, this);
+		
+		             var readings = formatReadings(i[0]);
+		             console.log(readings);
+		             var glosses = readingToGloss(i[0]);
+		             console.log(glosses);
+		             console.log("str:" + readings);
+//			     $("#output_readings").append("<td>" + readings + "</td>");
+                                row += "<td>" + readings + "</td>";
+				row += "</tr>";
+				$("#output").append(row);
+			
+		
+		          })
+	          },
+	        });
+	    }
+    });
+    
+})
+
+</script>
+</head>
+
+<body>
+Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
+<form>
+<!--<select id="lang">
+<option value="quc">Kʼicheʼ</option>
+<option value="usp">Uspantek</option>
+</select>--><br/>
+<textarea id="intext" cols="60"></textarea>
+<!--<input type="button" id="clear" value="Borrar"/>-->
+</form>
+<!--<div style="overflow-x: scroll">
+<table>-->
+<!--<th><td></td><td><input type="checkbox" value="show_glosses"/></td><td><input type="checkbox" value="show_readings"/></td></th>-->
+<!--<tr><span id="output_forms"/></tr>
+<tr><span id="output_glosses"/></tr>
+<tr><span id="output_readings"/></tr>
+</table>
+</div>-->
+<table id="output">
+<!--<span id="output_forms"/></td><td><span id="output_glosses"/></td><td><span id="output_readings"/></td></tr>-->
+</table>
+
+</body>
+
+</html>
