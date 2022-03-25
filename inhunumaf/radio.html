@@ -1,0 +1,80 @@
+<h1 id="un-station-de-radio-par-internet-avec-le-raspberry-pi">Un station de radio par internet avec le Raspberry Pi</h1>
+<p>Les instructions ici a continuation donnent les commandes necessaire pour monter un station radio sur le Raspberry Pi. Elles sont adaptées de <a href="https://maker.pro/raspberry-pi/projects/how-to-build-an-internet-radio-station-with-raspberry-pi-darkice-and-icecast">ce page</a> en anglais.</p>
+<p>Il y a deux logiciels principaux pour fair le station de radio:</p>
+<ul>
+<li><a href="http://www.darkice.org/">DarkIce</a>: Ce programme permet l’enregistrement d’audio en temps real</li>
+<li><a href="https://icecast.org/">Icecast</a>: Ce programme permet la transmission d’audio par internet</li>
+</ul>
+<h2 id="installer-darkice">Installer <code>darkice</code></h2>
+<p>En première lieu on doit télécharger le paquet avec le logiciel de DarkIce.</p>
+<pre><code>wget &#39;https://github.com/x20mar/darkice-with-mp3-for-raspberry-pi/blob/master/darkice_1.0.1-999~mp3+1_armhf.deb?raw=true&#39; -O darkice_1.0.1-999~mp3+1_armhf.deb</code></pre>
+<p>Après il faut installer des dependences (autres paquet qui sont necessaires pour que on puisse installer le logiciel principal). Ils sont deux <a href="https://fr.wikipedia.org/wiki/Biblioth%C3%A8que_logicielle">bibliothèques</a> pour aider en codifier l’audio en <a href="https://fr.wikipedia.org/wiki/MP3">format MP3</a>.</p>
+<pre><code>sudo apt-get install libmp3lame0 libtwolame0</code></pre>
+<p>Et puis on doit installer le logiciel ci-même.</p>
+<pre><code>sudo dpkg -i darkice_1.0.1-999~mp3+1_armhf.deb</code></pre>
+<h2 id="installer-icecast">Installer <code>icecast</code></h2>
+<p>Icecast c’est le logiciel qui permet la transmission du votre flux radio par internet.</p>
+<pre><code>sudo apt-get install icecast2</code></pre>
+<p>Pendant l’installation le logiciel vous demandera si vous voulez configurer Icecast. Vous devez répondre <code>Oui</code>, et fournez les information suivantes:</p>
+<ul>
+<li>Nom d’hôte: <code>raspberrypi</code></li>
+<li>Mot de passe: <code>HdneLg</code></li>
+<li>Mot de passe du relais: <code>HdneLg</code></li>
+<li>Mot de passe pour l’administration: <code>6GpBJQ</code></li>
+</ul>
+<p>Vous pouvez changer des mots de passes, ce sont generés automatiquement.</p>
+<h2 id="configurer-darkice">Configurer <code>darkice</code></h2>
+<p>Maintenant il faut écrire un <a href="https://fr.wikipedia.org/wiki/Fichier_de_configuration">fichier de configuration</a> de DarkIce.</p>
+<p>On commence pour ouvrir un nouveau fichier dans l’<a href="https://fr.wikipedia.org/wiki/%C3%89diteur_de_texte">editeur de texte</a> <code>nano</code>:</p>
+<pre><code>sudo nano darkice.cfg</code></pre>
+<p>Vous sortira une écran sans rien. Vous devez copier et coller l’information suivante dans le terminal:</p>
+<pre><code>[general]
+duration        = 0      # duration in s, 0 forever
+bufferSecs      = 1      # buffer, in seconds
+reconnect       = yes    # reconnect if disconnected
+ 
+[input]
+device          = plughw:2,0 # Soundcard device for the audio input
+sampleRate      = 44100   # sample rate 11025, 22050 or 44100
+bitsPerSample   = 16      # bits
+channel         = 1       # 1 = mono, 2 = stéreo
+ 
+[icecast2-0]
+bitrateMode     = cbr       # constant bit rate (&#39;cbr&#39; constant, &#39;abr&#39; average)
+format          = mp3       # format. Choose &#39;vorbis&#39; for OGG Vorbis
+bitrate         = 16000       # bitrate
+server          = localhost # or IP
+port            = 8000      # port for IceCast2 access
+password        = HdneLg # source password for the IceCast2 server
+mountPoint      = stream.mp3  # mount point on the IceCast2 server .mp3 or .ogg
+name            = Raspberry Pi</code></pre>
+<p>Pour quitter <code>nano</code> tapez: Contrôle + X, puis O (ou Y) pour confirmer, enfin <code>Entrer</code> pour sauvegarder les modifications.</p>
+<h2 id="executer-darkice">Executer <code>darkice</code></h2>
+<p>Maintenant vous pouvez executer <code>darkice</code> avec le fichier de configuration que vous venez de préparer.</p>
+<pre><code>darkice -c darkice.cfg</code></pre>
+<h2 id="trouver-laddresse-ip-de-votre-ordinateur">Trouver l’addresse IP de votre ordinateur</h2>
+<p>Pour pouvoir se connecter a votre nouveau station radio, il faut savoir l’<a href="https://fr.wikipedia.org/wiki/Adresse_IP">addresse IP</a> (addresse de protocol internet). Dans le terminal tapez le commande suivant:</p>
+<pre><code>ip addr show wlan0</code></pre>
+<p>Il vous presentera quelque chose comme ça:</p>
+<pre><code>2: wlan0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether b8:e8:56:38:c8:90 brd ff:ff:ff:ff:ff:ff
+    inet 10.50.50.128/24 brd 10.50.50.255 scope global noprefixroute dynamic wlp3s0
+       valid_lft 58856sec preferred_lft 58856sec
+    inet6 fe80::dc4a:db31:714d:7c2c/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever</code></pre>
+<p>La parte important ici c’est l’addresse <code>inet</code>, c’est à dire, dans la ligne:</p>
+<pre><code>    inet 10.50.50.128/24 brd 10.50.50.255 scope global noprefixroute dynamic wlp3s0</code></pre>
+<p>Il faut prêtre attention à la parte <code>inet 10.50.50.128/24</code>. L’addresse IP du ordinateur c’est <strong><code>10.50.50.128</code></strong>.</p>
+<p>L’addresse IP c’est toujours quatre numéro separés pour trois points.</p>
+<h2 id="ouvrir-la-station-dans-votre-navigateur">Ouvrir la station dans votre navigateur</h2>
+<p>Maintenant vous pouvez naviguer à la page:</p>
+<ul>
+<li>http://10.50.50.128:8000</li>
+</ul>
+<p>pour commencer à écouter.</p>
+<h2 id="en-savoir-plus">En savoir plus</h2>
+<ul>
+<li><a href="https://qastack.fr/ubuntu/28496/how-do-i-setup-an-icecast-server-for-broadcasting-audio-in-my-network">Comment configurer un serveur Icecast pour la diffusion audio sur mon réseau?</a></li>
+<li><a href="https://technic2radio.fr/darkice-toutes-librairies-raspberry-pi/">Darkice avec toutes les librairies sur Raspberry Pi</a></li>
+<li><a href="https://technic2radio.fr/darkice-darksnow/">Darkice – Darksnow</a></li>
+</ul>
