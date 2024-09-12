@@ -1,0 +1,28 @@
+def _get_features(self, i, word, context, prev, prev2):
+		'''Map tokens into a feature representation, implemented as a
+		{hashable: float} dict. If the features change, a new model must be
+		trained.
+		'''
+		def add(name, *args):
+			features[' '.join((name,) + tuple(args))] += 1
+
+		i += len(self.START)
+		features = defaultdict(int)
+		# It's useful to have a constant feature, which acts sort of like a prior
+		add('bias')
+		add('i suffix', word[-2:])
+		add('i pref1', word[0])
+		add('i-1 tag', prev)
+		add('i-2 tag', prev2)
+		add('i tag+i-2 tag', prev, prev2)
+		add('i word', context[i])
+		add('i-1 tag+i word', prev, context[i])
+		add('i-1 word', context[i-1])
+		add('i-1 suffix', context[i-1][-2:])
+		add('i-2 word', context[i-2])
+		add('i+1 word', context[i+1])
+		add('i+1 suffix', context[i+1][-2:])
+		add('i+2 word', context[i+2])
+		#print(word, '|||', features)
+		return features
+

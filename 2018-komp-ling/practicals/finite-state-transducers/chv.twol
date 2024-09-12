@@ -1,0 +1,54 @@
+Alphabet
+  а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+  А Ă Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ 
+ %{A%}:а %{A%}:е %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0 %{м%}:м %{м%}:0
+ %{э%}:0 %{л%}:0 %{с%}:0 %{а%}:0 %{ъ%} %{Т%}:т %{Т%}:р
+ %{л%}:н %{л%}:л %{л%}:р
+;
+
+Sets
+
+BackVow = ӑ а ы о у я ё ю %{ъ%};
+
+FrontVow = е ӗ э и ӳ ; 
+
+Vowels = е ӗ э и ӳ ӑ а ы о у я ё ю ;
+
+Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ ; 
+
+ArchiCns = %{м%} ;
+
+
+Rules 
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+"Back vowel harmony for archiphoneme {A}"
+%{A%}:а <=> BackVow: [ Cns: | %>: ]+ _ ;
+
+"%{Ă%}:0 if there is previous %{м%}: or a vowel and, optionally, a following н"
+
+%{Ă%}:0 <=> %{м%}: %>:  _ н ;
+	    Vowels: %>: _ ; 
+
+"%{м%}:0 if there is a following %{Ă%}: followed by н"
+
+%{м%}:0 <=> _ %>: %{Ă%}: н ;
+
+
+"%{Ă%}:ӑ or %{Ă%}:ӗ according to vowel harmony if previous consonant"
+
+%{Ă%}:ӑ <=> BackVow: [ ArchiCns: | Cns: | %>: ]+ _ ;
+        except
+                                     %{м%}: %>:  _ н ;
+				     Vowels: %>: _ ; 
+"Ablative - choosing р or т"
+%{Т%}:т <=> %{л%}: %>: _ ;
+
+
+
+
+! a:b   CONSTRAINT_OPERATOR   LEFT_CONTEXT   _   RIGHT_CONTEXT ;
+
+
