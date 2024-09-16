@@ -1,0 +1,179 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä sinä siellä tekisit?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+4	siellä	siellä	ADV	Adv	_	5	advmod	_	_
+5	tekisit	tehdä	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Sinusta tulisi siellä samanlainen villi kuin ennenkin; ihmisen lihaakin taas söisit.
+1	Sinusta	sinä	PRON	Pron	Case=Ela|Number=Sing|Person=2|PronType=Prs	2	obl	_	_
+2	tulisi	tulla	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	siellä	siellä	ADV	Adv	_	2	advmod	_	_
+4	samanlainen	samanlainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	villi	villi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+6	kuin	kuin	SCONJ	C	_	7	mark	_	_
+7	ennenkin	ennenkin	ADV	Adv	_	2	advcl	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	2	punct	_	_
+9	ihmisen	ihminen	NOUN	N	Case=Gen|Number=Sing	10	nsubj	_	_
+10	lihaakin	lihaa	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	xcomp	_	_
+11	taas	taas	ADV	Adv	_	12	advmod	_	_
+12	söisit	söä	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Hän kävi hyvin murheelliseksi ja päätänsä puistellen vastasi: -- Ei, ei!
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hyvin	hyvin	ADV	Adv	_	2	advmod	_	_
+4	murheelliseksi	murheellinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Llinen|Number=Sing	6	conj	_	_
+5	ja	ja	CCONJ	C	_	4	cc	_	_
+6	päätänsä	päätä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+7	puistellen	puistella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	8	advcl	_	_
+8	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	11	punct	_	_
+10	--	--	PUNCT	Punct	_	11	punct	_	_
+11	Ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	mark	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	11	punct	_	_
+13	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	advcl	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Perjantai sanoo heille: pitää olla hyvä, pitää rukoilla Jumalaa, pitää syödä ohraleipää, vuohilihaa, vuohimaitoa; ei syö enää mies.
+1	Perjantai	perjantai	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	2	obl	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	7	punct	_	_
+5	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	cop	_	_
+7	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	14	amod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+10	rukoilla	ruka	NOUN	N	Case=Ade|Number=Plur	9	obl	_	_
+11	Jumalaa	Jum#ala	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	7	punct	_	_
+13	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	syödä	syödä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	acl:relcl	_	_
+15	ohraleipää	ohraleipä	NOUN	N	Case=Par|Number=Sing	14	obj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	vuohilihaa	vuohiliha	NOUN	N	Case=Par|Number=Sing	15	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	19	punct	_	_
+19	vuohimaitoa	vuohimaito	NOUN	N	Case=Par|Number=Sing	15	conj	_	SpaceAfter=No
+20	;	;	PUNCT	Punct	_	2	punct	_	_
+21	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	22	aux	_	_
+22	syö	syödä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	parataxis	_	_
+23	enää	enää	ADV	Adv	_	22	advmod	_	_
+24	mies	mies	NOUN	N	Case=Nom|Number=Sing	22	nsubj	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Mutta tappaisivathan ne sinut!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	tappaisivathan	tappaisla	AUX	V	Clitic=Han|Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	nsubj:cop	_	_
+5	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Ei! sanoi hän vakavasti.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+6	vakavasti	vakavasti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- Ei he tappaa, he tahtoo oppia.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+4	tappaa	tapata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	7	nsubj	_	_
+7	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	oppia	oppi	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Ja samalla hän kertoi heidän oppineen yhtä ja toista parrakkailta valkoisilta miehiltä, joita oli tullut heidän maahansa.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	samalla	samalla	ADV	Adv	_	4	advmod	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	oppineen	opp	NOUN	N	Case=Com|Person[psor]=3	4	obl	_	_
+7	yhtä	yhtä	ADV	Adv	_	12	advmod	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	toista	toinen	PRON	Pron	Case=Par|Number=Sing|PronType=Rcp	10	det	_	_
+10	parrakkailta	parrakkail	NOUN	N	Case=Par|Number=Sing	7	conj	_	_
+11	valkoisilta	valkoinen	ADJ	A	Case=Abl|Degree=Pos|Derivation=Llinen|Number=Plur	12	amod	_	_
+12	miehiltä	miehä	NOUN	N	Case=Abl|Number=Plur	4	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	16	nsubj	_	_
+15	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	acl:relcl	_	_
+17	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	18	nmod:poss	_	_
+18	maahansa	maa	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	16	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Kysyin sitten, tahtoisiko hän lähteä takaisin omaan maahansa.
+1	Kysyin	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sitten	sitten	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	tahtoisiko	tahtoa	VERB	V	Clitic=Ko|Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	conj	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+6	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+7	takaisin	takaisin	ADV	Adv	_	6	advmod	_	_
+8	omaan	oma	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	9	amod	_	_
+9	maahansa	maa	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Hän naurahti ja vastasi, ettei hän jaksa uida niin pitkää matkaa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	naurahti	naurahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	mark	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	jaksa	jaksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	ccomp	_	_
+9	uida	uida	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	niin	niin	ADV	Adv	_	11	advmod	_	_
+11	pitkää	pitkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	12	amod	_	_
+12	matkaa	matka	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Entä jos tekisin hänelle kanootin?
+1	Entä	entä	ADV	Adv	_	3	advmod	_	_
+2	jos	jos	SCONJ	C	_	1	fixed	_	_
+3	tekisin	teka	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+5	kanootin	kanootti	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = No silloin hän oli valmis lähtemään, jos nimittäin minä tulisin mukaan.
+1	No	no	INTJ	Interj	_	5	discourse	_	_
+2	silloin	silloin	ADV	Adv	_	5	advmod	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	valmis	valmis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+6	lähtemään	lähteä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp:ds	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	jos	jos	SCONJ	C	_	11	mark	_	_
+9	nimittäin	nimittäin	ADV	Adv	Derivation=Ttain	11	advmod	_	_
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj:cop	_	_
+11	tulisin	tulinen	ADJ	A	Case=Nom|Degree=Sup|Derivation=Llinen|Number=Sing	5	advcl	_	_
+12	mukaan	mukaan	ADP	Adp	AdpType=Post	11	case	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

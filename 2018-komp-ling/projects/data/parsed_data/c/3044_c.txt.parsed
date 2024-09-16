@@ -1,0 +1,136 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä nyt? kysäisin minä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+3	nyt	nyt	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	_
+5	kysäisin	kysäa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+6	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- Voi ilo! huudahteli hän.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Voi	voi	INTJ	Interj	_	3	discourse	_	_
+3	ilo	ilo	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+5	huudahteli	huudahellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = -- Voi ilo ja riemu!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Voi	voi	INTJ	Interj	_	3	discourse	_	_
+3	ilo	ilo	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	riemu	riemu	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Tuolla minun maa, tuolla minun kansa!
+1	Tuolla	tuo	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	3	det	_	_
+2	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	maa	maa	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	tuolla	tuolla	ADV	Adv	_	7	advmod	_	_
+6	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	7	nmod:poss	_	_
+7	kansa	kansa	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Sanomaton mielihyvä loisti hänen kasvoillaan, silmät säihkyivät, koko hänen olemuksensa näytti hehkuvan halusta päästä takaisin hänen oman kansansa luo.
+1	Sanomaton	Sanomaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	2	amod	_	_
+2	mielihyvä	mielihyvä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	loisti	loistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	kasvoillaan	kasvo	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+8	säihkyivät	säihkyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	koko	koko	ADJ	A	_	12	amod	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	olemuksensa	olemus	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	13	nsubj	_	_
+13	näytti	näyttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	ccomp	_	_
+14	hehkuvan	heh#kuva	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	halusta	halu	NOUN	N	Case=Ela|Derivation=U|Number=Sing	13	obl	_	_
+16	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	xcomp	_	_
+17	takaisin	takaisin	ADV	Adv	_	16	advmod	_	_
+18	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	20	nmod:poss	_	_
+19	oman	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	20	amod	_	_
+20	kansansa	kansa	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	obj	_	_
+21	luo	luo	ADP	Adp	AdpType=Post	20	case	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Tuo kiihkeä ilo herätti minussa ensi hetkenä sangen masentavia ajatuksia.
+1	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+2	kiihkeä	kiihkeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	ilo	ilo	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	herätti	herättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	minussa	minä	PRON	Pron	Case=Ine|Number=Sing|Person=1|PronType=Prs	4	obl	_	_
+6	ensi	ensi	ADJ	A	_	7	amod	_	_
+7	hetkenä	hetki	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+8	sangen	sangen	ADV	Adv	_	4	advmod	_	_
+9	masentavia	masentava	ADJ	A	Case=Par|Degree=Pos|Number=Plur	10	amod	_	_
+10	ajatuksia	ajatus	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Jos Perjantain todellakin onnistuisi päästä omaan maahansa, niin eikö olisi luultavaa, että hän unohtaisi uskontonsa ja kiintymyksensä minuun.
+1	Jos	jos	SCONJ	C	_	5	mark	_	_
+2	Perjantain	Perjantain	ADV	Adv	Derivation=Ttain	5	advmod	_	_
+3	todellakin	todella	ADV	Adv	Clitic=Kin	5	advmod	_	_
+4	onnistuisi	onnistua	AUX	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	päästä	päästä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	advcl	_	_
+6	omaan	oma	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	7	amod	_	_
+7	maahansa	maa	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	5	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	5	punct	_	_
+9	niin	niin	ADV	Adv	_	12	advmod	_	_
+10	eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	olisi	olla	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	12	cop	_	_
+12	luultavaa	luultava	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	että	että	SCONJ	C	_	16	mark	_	_
+15	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj	_	_
+16	unohtaisi	unohtaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	12	csubj:cop	_	_
+17	uskontonsa	uskonto	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	obj	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	kiintymyksensä	kiintymys	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	17	conj	_	_
+20	minuun	minä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	16	obl	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 8
+# text = Hän kertoisi heille tässä saaressa olevasta valkoisesta miehestä; heitä saapuisi tänne satakunta miestä, ehkäpä parikin sataa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kertoisi	kertoa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	heille	hän	PRON	Pron	Case=All|Number=Plur|Person=3|PronType=Prs	2	obl	_	_
+4	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	det	_	_
+5	saaressa	saar	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+6	olevasta	olla	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	acl	_	_
+7	valkoisesta	valkoinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	miehestä	mies	NOUN	N	Case=Ela|Number=Sing	2	nmod	_	SpaceAfter=No
+9	;	;	PUNCT	Punct	_	2	punct	_	_
+10	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_
+11	saapuisi	saapua	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+12	tänne	tänne	ADV	Adv	_	11	advmod	_	_
+13	satakunta	sata#kunta	NOUN	N	Case=Nom|Number=Sing	14	compound:nn	_	_
+14	miestä	mies	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	ehkäpä	ehkäpä	ADV	Adv	_	17	advmod	_	_
+17	parikin	pari	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+18	sataa	#sata	NUM	Num	Case=Par|Number=Sing|NumType=Card	17	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Ja kuinka kävisi minun silloin?
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	kävisi	käydä	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	0	root	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	silloin	silloin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

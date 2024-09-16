@@ -1,0 +1,247 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ruokaisaa pannaria, jauhelihakastiketta, munakasta tai vaikkapa kauramuffineja.
+1	Ruokaisaa	Ruokaisa	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	amod	_	_
+2	pannaria	pannari	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	jauhelihakastiketta	jauhelihakastike	NOUN	N	Case=Par|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	munakasta	munaka	NOUN	N	Case=Ela|Number=Sing	2	conj	_	_
+7	tai	tai	CCONJ	C	_	9	cc	_	_
+8	vaikkapa	vaikkapa	ADV	Adv	_	9	advmod	_	_
+9	kauramuffineja	kauramuffini	NOUN	N	Case=Par|Number=Plur	2	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Alle vuoden ikäinen
+1	Alle	alle	ADP	Adp	AdpType=Prep	3	case	_	_
+2	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	ikäinen	ikäinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+
+# sent_id = 3
+# text = Lilja nautiskelee ruokansa rauhassa, itse ja käsin.
+1	Lilja	Lilja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	nautiskelee	nautiskella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ruokansa	ruoka	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	2	obj	_	_
+4	rauhassa	rauha	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	itse	itse	ADV	Adv	_	4	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	käsin	käsi	NOUN	N	Case=Ins|Number=Plur	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Kotkaan avatussa uudessa päiväkodissa lapsille on oma ravintola.
+1	Kotkaan	Kotata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	avatussa	avatu	NOUN	N	Case=Ine|Number=Sing	1	obl	_	_
+3	uudessa	uusi	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	4	amod	_	_
+4	päiväkodissa	päiväkodi	NOUN	N	Case=Ine|Number=Sing	1	obl	_	_
+5	lapsille	lapsi	NOUN	N	Case=All|Number=Plur	1	obl	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+7	oma	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	ravintola	ravintola	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Sosiaalinen media pursuaa päivittäin kuvia ruoasta.
+1	Sosiaalinen	sosiaalinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	media	media	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	pursuaa	pursuta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	päivittäin	päivittäin	ADV	Adv	Derivation=Ttain	5	advmod	_	_
+5	kuvia	#kuva	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+6	ruoasta	ruoka	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Ammattilaisen vinkeillä annokset voi saada näyttämään entistä herkullisemmilta.
+1	Ammattilaisen	Ammattilainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	vinkeillä	vinkei	NOUN	N	Case=Ade|Number=Plur	5	obl	_	_
+3	annokset	annos	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	näyttämään	näytttä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	entistä	entinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	herkullisemmilta	herkullisemm	NOUN	N	Case=Abl|Number=Plur	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Keminmaalainen Erkki Puotiniemi on jo vuosia valmistanut koruja muun muassa kirpputoreilta löytämistään hopea-aterimista.
+1	Keminmaalainen	Keminmaalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	Erkki	Erkki	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+3	Puotiniemi	Puotiniemi	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	jo	jo	ADV	Adv	_	7	advmod	_	_
+6	vuosia	vuosi	NOUN	N	Case=Par|Number=Plur	7	nsubj	_	_
+7	valmistanut	valmistaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	koruja	koru	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+9	muun	muun	ADV	Adv	_	12	advmod	_	_
+10	muassa	muassa	ADV	Adv	_	9	fixed	_	_
+11	kirpputoreilta	kirpputoreilta	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	löytämistään	löytämistä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	7	advcl	_	_
+13	hopea-aterimista	hopea-ateriminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\s
+
+# sent_id = 8
+# text = Tammikuussa Jari Grekin raajat halvaantuivat.
+1	Tammikuussa	tammikuu	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	Jari	Jari	PROPN	N	Case=Nom|Number=Sing	4	nmod:poss	_	_
+3	Grekin	Grekki	PROPN	N	Case=Gen|Number=Sing	2	flat:name	_	_
+4	raajat	raaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	5	nsubj	_	_
+5	halvaantuivat	halvaantua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Elokuussa hän pystyy jo kulkemaan pyörätuolilla itse ja jalatkin liikkuvat vähän.
+1	Elokuussa	elokuu	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	pystyy	pystyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	kulkemaan	kulkea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+6	pyörätuolilla	pyörätuoli	NOUN	N	Case=Ade|Number=Sing	5	obl	_	_
+7	itse	itse	ADV	Adv	_	10	advmod	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	jalatkin	jala	NOUN	N	Case=Nom|Clitic=Kin|Number=Plur	10	nsubj	_	_
+10	liikkuvat	liikkua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	vähän	vähän	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Hänelle kuuluu fysioterapiaa alle kaksi tuntia viikossa, joten muusikkokaverit päättivät kerätä rahaa kuntoutusta varten.
+1	Hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+2	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	fysioterapiaa	fysioterapia	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+4	alle	alle	ADP	Adp	AdpType=Post	3	case	_	_
+5	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	tuntia	tunti	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+7	viikossa	viikko	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	joten	joten	ADV	Adv	_	11	advmod	_	_
+10	muusikkokaverit	muusikkokaveri	NOUN	N	Case=Nom|Number=Plur	11	nsubj	_	_
+11	päättivät	päättää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+12	kerätä	kerätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	rahaa	raha	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+14	kuntoutusta	kuntoutus	NOUN	N	Case=Par|Number=Sing	12	obl	_	_
+15	varten	varten	ADP	Adp	AdpType=Post	14	case	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Hangon
+1	Hangon	Hanko	PROPN	N	Case=Gen|Number=Sing	0	root	_	_
+
+# sent_id = 12
+# text = Tulliniemessä sijaitsi jatkosodan aikana suuri saksalaisleiri, jonka läpi kulki jopa tuhansia saksalaisia päivittäin pohjoisen rintamille tai kotiinsa lomille.
+1	Tulliniemessä	Tulliniemi	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	sijaitsi	sijaita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	jatkosodan	jatko#sota	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	aikana	aika	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+5	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	saksalaisleiri	saksalaisleiri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	10	obl	_	_
+9	läpi	läpi	ADP	Adp	AdpType=Post	8	case	_	_
+10	kulki	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+11	jopa	jopa	ADV	Adv	_	12	advmod	_	_
+12	tuhansia	tuhat	NUM	Num	Case=Par|Number=Plur|NumType=Card	13	nummod	_	_
+13	saksalaisia	saksalainen	NOUN	N	Case=Par|Derivation=Lainen|Number=Plur	10	nsubj	_	_
+14	päivittäin	päivittäin	ADV	Adv	Derivation=Ttain	10	advmod	_	_
+15	pohjoisen	pohjoinen	NOUN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+16	rintamille	rintam	NOUN	N	Case=All|Number=Plur	10	obl	_	_
+17	tai	tai	CCONJ	C	_	18	cc	_	_
+18	kotiinsa	koti	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	16	conj	_	_
+19	lomille	loma	NOUN	N	Case=All|Number=Plur	10	obl	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Meneillään olevilla kaivauksilla yritetään selvittää esimerkiksi se, mitä tapahtui leirin ukrainalaisvangeille.
+1	Meneillään	menei	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	2	obl	_	_
+2	olevilla	olla	VERB	V	Case=Ade|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	kaivauksilla	kaivauks	NOUN	N	Case=Ade|Number=Plur	4	obl	_	_
+4	yritetään	yrittää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	selvittää	selvittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+6	esimerkiksi	esimerkiksi	ADV	Adv	_	7	advmod	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+11	leirin	leiri	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	ukrainalaisvangeille	ukrainalaisvange	NOUN	N	Case=All|Number=Plur	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\s
+
+# sent_id = 14
+# text = Ruokailumuotoilu on vielä harvojen laji, mutta kovassa nousussa sekä meillä että maailmalla.
+1	Ruokailumuotoilu	Ruokailumuotoilu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	vielä	vielä	ADV	Adv	_	4	advmod	_	_
+4	harvojen	harva	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	laji	laji	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mutta	mutta	CCONJ	C	_	9	cc	_	_
+8	kovassa	kova	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	9	amod	_	_
+9	nousussa	nousu	NOUN	N	Case=Ine|Derivation=U|Number=Sing	5	conj	_	_
+10	sekä	sekä	CCONJ	C	_	11	cc:preconj	_	_
+11	meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	9	obl	_	_
+12	että	että	CCONJ	C	_	13	cc	_	_
+13	maailmalla	maailma	NOUN	N	Case=Ade|Number=Sing	11	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 15
+# text = Syöminen ei ole vain ruokaa lautasella.
+1	Syöminen	syöminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	6	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+4	vain	vain	ADV	Adv	_	5	advmod	_	_
+5	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	6	nsubj:cop	_	_
+6	lautasella	lautas	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 16
+# text = Se on kulttuuria: jaettu kokemus, joka herättää tunteita ja muistoja, ja jossa ovat läsnä kaikki aistit.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kulttuuria	kulttuuri	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	5	punct	_	_
+5	jaettu	jakaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	6	acl	_	_
+6	kokemus	kokemus	NOUN	N	Case=Nom|Number=Sing	3	appos	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	herättää	herättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	tunteita	tune	NOUN	N	Case=Par|Number=Plur	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	muistoja	muisto	NOUN	N	Case=Par|Number=Plur	10	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	10	conj	_	_
+16	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	cop	_	_
+17	läsnä	läsnä	ADV	Adv	_	19	advmod	_	_
+18	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	19	det	_	_
+19	aistit	aisti	NOUN	N	Case=Nom|Number=Plur	15	nsubj:cop	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 17
+# text = Alan pioneerin, hollantilaisen Marije Vogelzangin, teoksissa tuntematon saattaa laittaa kävijälle lusikan suuhun.
+1	Alan	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	pioneerin	pioneeri	NOUN	N	Case=Gen|Number=Sing	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	hollantilaisen	hollantilainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	Marije	Marije	PROPN	N	Case=Nom|Number=Sing	2	conj	_	_
+6	Vogelzangin	Vogelzang	PROPN	N	Case=Gen|Number=Sing	5	flat:name	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	teoksissa	teoks	NOUN	N	Case=Ine|Number=Plur	11	obl	_	_
+9	tuntematon	tuntematon	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	11	nsubj	_	_
+10	saattaa	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	laittaa	laittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	acl	_	_
+12	kävijälle	kävijä	NOUN	N	Case=All|Number=Sing	11	obl	_	_
+13	lusikan	lusikka	NOUN	N	Case=Gen|Number=Sing	14	nmod:poss	_	_
+14	suuhun	suu	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 18
+# text = Nyt hän on matkalla Helsinkiin.
+1	Nyt	nyt	ADV	Adv	_	4	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	matkalla	matka	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+5	Helsinkiin	Helsinki	PROPN	N	Case=Ill|Number=Sing	4	nmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

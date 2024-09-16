@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Project workflow comments
+}
+\author{Nikolay Babakov
+ }
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Data collection}
+A
+1) Manually copy pasted easy fairy tales from https://iltasatu.org/
+2) Manually copy pasted easy texts from https://revita.cs.helsinki.fi/
+3) Parsed text with python from https://yle.fi/uutiset/osasto/selkouutiset/tosi_helppo/
+
+B
+1) Parsed text with python from https://yle.fi/uutiset/osasto/selkouutiset/
+2) Parsed text with python from https://www.suomesta.ru/suomen_kiel/adaptirovannye-teksty-na-finskom/
+
+C
+1) Manually copy pasted easy texts from https://revita.cs.helsinki.fi/
+2) Manually copy pasted translation of russian books with known difficulty from https://manybooks.net/
+
+\section{Similar works analysis}
+We looked through some related works about English language and about the languages with same structure such as Korean, Japanese and Turkish
+
+Here is a short list of what the works we read
+http://www.aclweb.org/anthology/W16-0531
+http://www.aclweb.org/anthology/C88-2135
+https://pdfs.semanticscholar.org/1324/80de063eeb5b39c1ed2f240b11dbfdcf455d.pdf
+https://www.researchgate.net/publication/228891771_Toward_a_readability_index_for_Japanese_learners_of_EFL
+https://www.researchgate.net/publication/323142424_Distributed_Readability_Analysis_Of_Turkish_Elementary_School_Textbooks
+
+But the most important thing we have found was https://github.com/UniversalDependencies/UD_Finnish-TDT
+We have installed it according to these instructions http://wiki.apertium.org/wiki/UDPipe
+
+\section{Text processing, feature generation}
+
+I divided all collected texts up to around ten setnences files (refer to write_ten_sentence_tokens.py) and run UDPipe with them using the following terminal command
+for f in ./*.txt;do cat $f | udpipe --tokenize --tag --parse nob.udpipe
+ > $f.parsed;done
+ 
+ \section{Model training}
+The main idea was to analyze basic text features such as sentence length, long words and punctuation percentage, but most importnat was representing each word as a part_of_speech vector and then averaging each vector's value according to part of speech amount per each training unit.
+
+For such a vector I needed to get all possible features with two or more values per each part of speech. I failed to find the list of Finnish part of speech properties so I write some code to get this information. You will find it in get_one_hot_encoded_pos_properties.py. I iterated over all parsed data available, collected all properties and made one hot encoded dictionary from these values. 
+ 
+ 
+ Now when I had these features I implemented the function which iterates over *.conluu file and collect common text features (as mentioned above) and update each vector value according to each word's grammar property. 
+ 
+ After I got all collected data analyzed I trained this with SVM (this model was used in numerous works I read about the subject) and final results were  0.8822
+ 
+ The trained model has been saved as finalized_model.sav
+ 
+ The code can be found in model.python
+ 
+  \section{Model usage}
+  
+  The final user who want to use the model will need to do the following
+  1. Install udpipe http://wiki.apertium.org/wiki/UDPipe (what you need to do is just make udpipe tool callable from your command line (desribed in section "Get the code! ")
+  2. Locate the file with the text to be analyzed and run the following command 
+  cat "path_to_analyzed_file"| udpipe --tokenize --tag --parse nob.udpipe > "output_file_name"
+  (To prevent some hours of training put nob.udpipe file into the location you are going to run this command from (pretrained nob.udpipe is located in udpipe_ready_tools)
+  Now you have the file ready to be handled by the model
+  3. Run predict.py and pass parsed file name into it. You will get level prediction to the output
+  
+  

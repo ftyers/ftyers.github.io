@@ -1,0 +1,98 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Nyt rinnallein!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Nyt	nyt	ADV	Adv	_	3	advmod	_	_
+3	rinnallein	rinnalli	NOUN	N	Case=Ins|Number=Plur	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Ja nopsasti, sa laukkaaja ilkeäsisu!
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	nopsasti	nopsasti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	sa	sa	ADV	Adv	_	6	advmod	_	_
+5	laukkaaja	laukkaaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	compound:nn	_	_
+6	ilkeäsisu	ilkeäsisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Nyt ylös ja yli!
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	ylös	ylös	ADV	Adv	_	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	yli	yli	ADV	Adv	_	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Voi!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Voi	voi	INTJ	Interj	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Minut itseni kaatoi juoksussa risu!
+1	Minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+2	itseni	itse	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	3	nsubj	_	_
+3	kaatoi	kaataa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	juoksussa	juoksu	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	risu	risu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	nsubj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "Oi katso, ylväs, ma tässä makaan ja anon armoa!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	katso	katsoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ylväs	ylväs	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	ma	ma	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	9	obl	_	_
+9	makaan	maata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	anon	anoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	conj	_	_
+12	armoa	armo	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 7
+# text = Sun kanssasi kulkisin kernaasti -- ihanampia polkuja! "-- polkuja lemmen.
+1	Sun	Sun	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kanssasi	kanssata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kulkisin	kulka	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	2	obj	_	_
+4	kernaasti	kernaasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	ihanampia	ihana	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	7	amod	_	_
+7	polkuja	polku	NOUN	N	Case=Par|Derivation=U|Number=Plur	2	obj	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	12	punct	_	_
+9	"	"	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+10	--	--	PUNCT	Punct	_	12	punct	_	_
+11	polkuja	#polku	NOUN	N	Case=Par|Derivation=U|Number=Plur	12	nsubj:cop	_	_
+12	lemmen	lemn	NOUN	N	Case=Gen|Number=Sing	7	appos	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ne halki hiljaisten viitojen johtaa.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	obl	_	_
+2	halki	halki	ADP	Adp	AdpType=Post	1	case	_	_
+3	hiljaisten	hiljainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	4	amod	_	_
+4	viitojen	viito	NOUN	N	Case=Gen|Number=Plur	5	nsubj	_	_
+5	johtaa	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Tai pitkin järven kalvoa: siell' leikki kultaisten kalojen hohtaa!
+1	Tai	tai	CCONJ	C	_	6	cc	_	_
+2	pitkin	pitkin	ADP	Adp	AdpType=Prep	4	case	_	_
+3	järven	järvi	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	kalvoa	kalvo	NOUN	N	Case=Par|Number=Sing	6	obl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	6	punct	_	_
+6	siell	siell	X	Foreign	Foreign=Yes	0	root	_	SpaceAfter=No
+7	'	'	PUNCT	Punct	_	11	punct	_	_
+8	leikki	leikki	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+9	kultaisten	kultainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	_
+10	kalojen	kala	NOUN	N	Case=Gen|Number=Plur	11	nsubj	_	_
+11	hohtaa	hohtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	11	punct	_	SpacesAfter=\s\n
+

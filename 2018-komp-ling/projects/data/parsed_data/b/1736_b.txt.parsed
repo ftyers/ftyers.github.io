@@ -1,0 +1,123 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Talo kahvipöytineen.
+1	Talo	talo	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+2	kahvipöytineen	kahvipöyt	NOUN	N	Case=Com|Person[psor]=3	1	nmod	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Taloja sen pöytä, jolla oli kahvia tarjolla.
+1	Taloja	talo	NOUN	N	Case=Par|Number=Plur	3	nsubj:cop	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	nmod:poss	_	_
+3	pöytä	pöytä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	3	acl:relcl	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+8	tarjolla	tarjolla	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 3
+# text = Toissii immeisii.
+1	Toissii	Toissiä	ADV	Adv	Style=Coll	2	advmod	_	_
+2	immeisii	immeisiä	ADV	Adv	Style=Coll	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Toisia ihmisiä.
+1	Toisia	toinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 5
+# text = Torniin, perusmuoto torni.
+1	Torniin	tor#niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	torni	tor	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Korkea, kapea rakennuksen osa.
+1	Korkea	korkea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	kapea	kapea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+4	rakennuksen	rakennus	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	osa	osa	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Tuhlannut, perusmuoto tuhlata.
+1	Tuhlannut	Tuhlata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+4	tuhlata	tuhlata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Käyttää loppuun turhaan.
+1	Käyttää	käyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	loppuun	loppu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	1	obl	_	_
+3	turhaan	turhaan	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Kuluttaa ilman syytä.
+1	Kuluttaa	Kuluttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+2	ilman	ilman	ADP	Adp	AdpType=Prep	3	case	_	_
+3	syytä	syy	NOUN	N	Case=Par|Number=Sing	1	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Haaskata.
+1	Haaskata	Haaskata	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 11
+# text = Tuomitse, perusmuoto tuomita.
+1	Tuomitse	tuomitse	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	tuomita	tuomita	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Julistaa syylliseksi.
+1	Julistaa	julistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	syylliseksi	syyllinen	ADJ	A	Case=Tra|Degree=Pos|Derivation=Llinen|Number=Sing	1	xcomp	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Määrätä rangaistus.
+1	Määrätä	määrättää	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	rangaistus	rangaistus	NOUN	N	Case=Nom|Number=Sing	1	obj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 14
+# text = Urut.
+1	Urut	Uru	NOUN	N	Case=Nom|Derivation=U|Number=Plur	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 15
+# text = Soitin, vähän niin kuin piano, jonka koskettimiin on yhdistetty isot pillit, jotka puhaltavat äänen ulos.
+1	Soitin	soittaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	vähän	vähän	ADV	Adv	_	4	advmod	_	_
+4	niin	niin	ADV	Adv	_	1	advmod	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	piano	piano	NOUN	N	Case=Nom|Number=Sing	4	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	9	nmod:poss	_	_
+9	koskettimiin	koskettima	NOUN	N	Case=Ill|Number=Plur	11	obl	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux:pass	_	_
+11	yhdistetty	yhdistää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	6	acl:relcl	_	_
+12	isot	iso	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	13	amod	_	_
+13	pillit	pilli	NOUN	N	Case=Nom|Number=Plur	11	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	16	nsubj	_	_
+16	puhaltavat	puhaltaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl:relcl	_	_
+17	äänen	ääni	NOUN	N	Case=Gen|Number=Sing	18	obj	_	_
+18	ulos	ulos	ADV	Adv	_	16	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

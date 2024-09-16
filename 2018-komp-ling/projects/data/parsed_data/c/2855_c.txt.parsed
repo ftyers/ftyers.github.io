@@ -1,0 +1,221 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tämä ensimmäinen menestys synnytti minussa jos minkälaisia korkealentoisia suunnitelmia -- suureksi turmiokseni.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+2	ensimmäinen	ensimmäinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	3	nummod	_	_
+3	menestys	menestys	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	synnytti	synnyttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	minussa	minä	PRON	Pron	Case=Ine|Number=Sing|Person=1|PronType=Prs	9	nmod	_	_
+6	jos	jos	SCONJ	C	_	9	mark	_	_
+7	minkälaisia	minkälainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	9	amod	_	_
+8	korkealentoisia	korkealentoinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	9	amod	_	_
+9	suunnitelmia	suunnitelma	NOUN	N	Case=Par|Number=Plur	12	advcl	_	_
+10	--	--	PUNCT	Punct	_	12	punct	_	_
+11	suureksi	suuri	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	12	amod	_	_
+12	turmiokseni	turmio	NOUN	N	Case=Tra|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Päätin tehdä jälleen matkan Guineaan.
+1	Päätin	päättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	_
+3	jälleen	jälleen	ADV	Adv	_	2	advmod	_	_
+4	matkan	matka	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	Guineaan	Guinea	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Kapteeni, hyvä ystäväni, tosin sairastui heti Lontooseen tultuamme ja kuoli muutaman päivän perästä.
+1	Kapteeni	kape	NOUN	N	Case=Nom|Number=Plur|Number[psor]=Sing|Person[psor]=1	7	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	ystäväni	ystävä	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	1	punct	_	_
+6	tosin	tosin	ADV	Adv	_	7	advmod	_	_
+7	sairastui	sairastua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	heti	heti	ADV	Adv	_	7	advmod	_	_
+9	Lontooseen	Lontoo	PROPN	N	Case=Ill|Number=Sing	10	obl	_	_
+10	tultuamme	tulla	VERB	V	Case=Par|Degree=Pos|Number=Sing|Number[psor]=Plur|PartForm=Past|Person[psor]=1|VerbForm=Part|Voice=Pass	7	ccomp	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	conj	_	_
+13	muutaman	muutama	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	14	det	_	_
+14	päivän	#päivä	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	perästä	perä	NOUN	N	Case=Ela|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 4
+# text = Laivan päälliköksi tuli nyt entinen perämies, ja hänen kanssaan minä läksin onnettomimmalle matkalle, mitä ihminen milloinkaan on tehnyt.
+1	Laivan	laiva	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	päälliköksi	päällikö	NOUN	N	Case=Tra|Number=Sing	3	obl	_	_
+3	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	entinen	entinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	perämies	perä#mies	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	14	punct	_	_
+8	ja	ja	CCONJ	C	_	14	cc	_	_
+9	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	14	obl	_	_
+10	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	9	case	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj:cop	_	_
+12	läksin	läs	NOUN	N	Case=Ins|Number=Plur	14	nmod	_	_
+13	onnettomimmalle	onnettomimma	ADJ	A	Case=All|Degree=Pos|Number=Sing	14	amod	_	_
+14	matkalle	matka	NOUN	N	Case=All|Number=Sing	3	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	20	obj	_	_
+17	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	20	nsubj	_	_
+18	milloinkaan	milloinkaan	ADV	Adv	_	20	advmod	_	_
+19	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	20	aux	_	_
+20	tehnyt	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	acl:relcl	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Kapteenivainajan leskelle jätin talletettavaksi kaksisataa puntaa ja sadalla ostin uusia tavaroita.
+1	Kapteenivainajan	Kapteenivain#aika	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+2	leskelle	leskelle	ADP	Adp	AdpType=Post	1	case	_	_
+3	jätin	jättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	talletettavaksi	tallettaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	3	advcl	_	_
+5	kaksisataa	kaksi#sata	NUM	Num	Case=Par|Number=Sing|NumType=Card	6	nummod	_	_
+6	puntaa	punta	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+7	ja	ja	CCONJ	C	_	9	cc	_	_
+8	sadalla	sata	NUM	Num	Case=Ade|Number=Sing|NumType=Card	9	obl	_	_
+9	ostin	ostaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	11	amod	_	_
+11	tavaroita	tavara	NOUN	N	Case=Par|Number=Plur	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Laiva oli juuri kääntymässä Kanarian saarten ja mannermaan välisille väylille, kun huomasimme aamuhämärissä maurilaisen merirosvolaivan, joka Salésta päin lasketteli täyttä vauhtia meitä kohti.
+1	Laiva	laiva	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	juuri	juuri	ADV	Adv	_	4	advmod	_	_
+4	kääntymässä	kääntyä	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	Kanarian	Kanaria	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	saarten	saari	NOUN	N	Case=Gen|Number=Plur	8	nsubj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	mannermaan	mannera	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+9	välisille	välis	NOUN	N	Case=All|Number=Plur	8	obl	_	_
+10	väylille	väyl	NOUN	N	Case=All|Number=Plur	8	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	13	punct	_	_
+12	kun	kun	SCONJ	C	_	13	mark	_	_
+13	huomasimme	huomata	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	advcl	_	_
+14	aamuhämärissä	aamuhämärä	NOUN	N	Case=Ine|Number=Plur	13	obl	_	_
+15	maurilaisen	maurilainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	16	amod	_	_
+16	merirosvolaivan	merirosvolaiva	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	21	punct	_	_
+18	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	21	nsubj	_	_
+19	Salésta	Salé	PROPN	N	Case=Ela|Number=Sing	21	obl	_	_
+20	päin	päin	ADP	Adp	AdpType=Post	19	case	_	_
+21	lasketteli	lasketellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	acl:relcl	_	_
+22	täyttä	täysi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	23	amod	_	_
+23	vauhtia	vauhti	NOUN	N	Case=Par|Number=Sing	21	obj	_	_
+24	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	21	obl	_	_
+25	kohti	kohti	ADP	Adp	AdpType=Post	24	case	_	SpaceAfter=No
+26	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Me nostimme kaikki purjeet, mutta havaitsimme pian rosvojen pääsevän yhä lähemmäksi meitä.
+1	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
+2	nostimme	nostla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	det	_	_
+4	purjeet	purje	NOUN	N	Case=Nom|Number=Plur	2	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	havaitsimme	havaitsla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	pian	pian	ADV	Adv	_	7	advmod	_	_
+9	rosvojen	rosvo	NOUN	N	Case=Gen|Number=Plur	10	nsubj	_	_
+10	pääsevän	päästä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	xcomp:ds	_	_
+11	yhä	yhä	ADV	Adv	_	12	advmod	_	_
+12	lähemmäksi	lähemmäksi	ADV	Adv	_	7	advmod	_	_
+13	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	7	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Täytyi varustautua taisteluun.
+1	Täytyi	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	varustautua	varustautua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	taisteluun	taistelu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Meillä oli kaksitoista tykkiä, rosvoilla kahdeksantoista.
+1	Meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	kaksitoista	kaksi#toista	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	tykkiä	tykki	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	rosvoilla	rosva	NOUN	N	Case=Ade|Number=Plur	7	nmod	_	_
+7	kahdeksantoista	kahdeksantoinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	1	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Kello kolmen aikaan iltapäivällä rosvolaiva oli meidät saavuttanut.
+1	Kello	kello	NOUN	N	Case=Nom|Number=Sing	5	nmod:poss	_	_
+2	kolmen	kolme	NUM	Num	Case=Gen|Number=Sing|NumType=Card	3	nummod	_	_
+3	aikaan	#aika	NOUN	N	Case=Ill|Number=Sing	1	nmod	_	_
+4	iltapäivällä	iltapäivä	NOUN	N	Case=Ade|Number=Sing	3	nmod	_	_
+5	rosvolaiva	rosvo#laiva	NOUN	N	Case=Nom|Number=Sing	8	nsubj:cop	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	meidät	minä	PRON	Pron	Case=Acc|Number=Plur|Person=1|PronType=Prs	8	nsubj	_	_
+8	saavuttanut	saavuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 11
+# text = Nähtävästi sen aikomuksena oli hyökätä kimppuumme perän puolelta, mutta se asettuikin erehdyksessä meihin sivuttain, ja silloin laukaisimme kahdeksan tykkiä yhtaikaa sitä kohti.
+1	Nähtävästi	Nähtävästi	ADV	Adv	Derivation=Sti	3	advmod	_	_
+2	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	nmod:poss	_	_
+3	aikomuksena	aikomus	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	hyökätä	hyökätä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	kimppuumme	kimppu	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Plur|Person[psor]=1	8	obl	_	_
+7	perän	perä	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+8	puolelta	puoli	NOUN	N	Case=Abl|Number=Sing	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	mutta	mutta	CCONJ	C	_	12	cc	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	asettuikin	asettuä	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+13	erehdyksessä	erehdys	NOUN	N	Case=Ine|Number=Sing	12	obl	_	_
+14	meihin	me	NOUN	N	Case=Ill|Number=Plur	12	obl	_	_
+15	sivuttain	sivuttain	ADV	Adv	Derivation=Ttain	12	advmod	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	19	punct	_	_
+17	ja	ja	CCONJ	C	_	19	cc	_	_
+18	silloin	silloin	ADV	Adv	_	19	advmod	_	_
+19	laukaisimme	laukaa	VERB	V	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	5	conj	_	_
+20	kahdeksan	kahdeksan	NUM	Num	Case=Nom|Number=Sing|NumType=Card	21	nummod	_	_
+21	tykkiä	tykki	NOUN	N	Case=Par|Number=Sing	19	obl	_	_
+22	yhtaikaa	yhtaikaa	ADV	Adv	_	23	advmod	_	_
+23	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	19	obl	_	_
+24	kohti	kohti	ADP	Adp	AdpType=Post	23	case	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Se peräytyi hiukan, mutta vastasi heti taas tuleemme, ja sen parisataa miestä laukaisi muskettinsa meitä kohti saamatta kuitenkaan vahinkoa aikaan, koska me olimme hyvässä suojassa.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	peräytyi	peräytyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hiukan	hiukan	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	mutta	mutta	CCONJ	C	_	6	cc	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	heti	heti	ADV	Adv	_	6	advmod	_	_
+8	taas	taas	ADV	Adv	_	7	fixed	_	_
+9	tuleemme	tulela	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	xcomp	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	15	punct	_	_
+11	ja	ja	CCONJ	C	_	15	cc	_	_
+12	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	14	nmod:poss	_	_
+13	parisataa	pari#sata	NUM	Num	Case=Par|Number=Sing|NumType=Card	14	nummod	_	_
+14	miestä	mies	NOUN	N	Case=Par|Number=Sing	15	nsubj	_	_
+15	laukaisi	laukaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+16	muskettinsa	musketti	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	15	obj	_	_
+17	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	15	obl	_	_
+18	kohti	kohti	ADP	Adp	AdpType=Post	17	case	_	_
+19	saamatta	saada	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp	_	_
+20	kuitenkaan	kuitenkaan	ADV	Adv	_	19	advmod	_	_
+21	vahinkoa	vahinko	NOUN	N	Case=Par|Number=Sing	22	obj	_	_
+22	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	19	nmod	_	SpaceAfter=No
+23	,	,	PUNCT	Punct	_	28	punct	_	_
+24	koska	koska	SCONJ	C	_	28	mark	_	_
+25	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	28	nsubj:cop	_	_
+26	olimme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	28	cop	_	_
+27	hyvässä	hyvä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	28	amod	_	_
+28	suojassa	suoja	NOUN	N	Case=Ine|Number=Sing	2	advcl	_	SpaceAfter=No
+29	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

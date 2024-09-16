@@ -1,0 +1,110 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suomi täyttää 100 vuotta.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	täyttää	täyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	100	100	NUM	Num	NumType=Card	4	nummod	_	_
+4	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Juhlavuoden sarjassa "Suomalainen juttu" osa 5 on Peruna.
+1	Juhlavuoden	Juhla#vuosi	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	sarjassa	sarja	NOUN	N	Case=Ine|Number=Sing	10	obl	_	_
+3	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+4	Suomalainen	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	juttu	juttu	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	_
+7	osa	osa	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+8	5	5	NUM	Num	NumType=Card	7	nummod	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	Peruna	Peruna	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 3
+# text = Kun suomalainen laittaa arkiruokaa, hän keittää perunoita.
+1	Kun	kun	SCONJ	C	_	2	mark	_	_
+2	suomalainen	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	7	advcl	_	_
+3	laittaa	laittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	acl	_	_
+4	arkiruokaa	arkiruoka	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	keittää	keittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	perunoita	peruno	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 4
+# text = Kun suomalainen laittaa juhlaruokaa, hän keittää perunoita.
+1	Kun	kun	SCONJ	C	_	2	mark	_	_
+2	suomalainen	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	7	advcl	_	_
+3	laittaa	laittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	acl	_	_
+4	juhlaruokaa	juhlaruoka	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_
+7	keittää	keittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	perunoita	peruno	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Arkiaterialla perunoissa on kuoret.
+1	Arkiaterialla	Arkiateria	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	perunoissa	peruno	NOUN	N	Case=Ine|Number=Plur	1	nmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+4	kuoret	kuori	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Juhla-aterialla perunat on kuorittu valmiiksi jo ennen keittämistä.
+1	Juhla-aterialla	Juhla-ateria	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+2	perunat	peruna	NOUN	N	Case=Nom|Number=Plur	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	kuorittu	kuorita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	valmiiksi	valmis	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	4	xcomp	_	_
+6	jo	jo	ADV	Adv	_	4	advmod	_	_
+7	ennen	ennen	ADP	Adp	AdpType=Prep	8	case	_	_
+8	keittämistä	keittäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	4	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Suomi on perunamaa.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	perunamaa	perunama	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Täällä viljellään ja syödään paljon perunaa.
+1	Täällä	täällä	ADV	Adv	_	2	advmod	_	_
+2	viljellään	viljellä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	syödään	syödä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	_
+5	paljon	paljon	ADV	Adv	_	4	advmod	_	_
+6	perunaa	peruna	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Jos suomalaisella on kasvimaa, siellä varmasti kasvaa myös perunaa.
+1	Jos	jos	SCONJ	C	_	4	mark	_	_
+2	suomalaisella	suomalainen	NOUN	N	Case=Ade|Derivation=Lainen|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kasvimaa	kasvima	NOUN	N	Case=Par|Number=Sing	8	advcl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	siellä	siellä	ADV	Adv	_	7	advmod	_	_
+7	varmasti	varmasti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+8	kasvaa	kasvaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	myös	myös	ADV	Adv	_	10	advmod	_	_
+10	perunaa	peruna	NOUN	N	Case=Par|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 10
+# text = Viime syksyn perunasato oli 600 miljoonaa kiloa.
+1	Viime	viime	ADJ	A	_	2	amod	_	_
+2	syksyn	syksy	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	perunasato	perunasato	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	600	600	NUM	Num	NumType=Card	6	compound	_	_
+6	miljoonaa	miljoona	NUM	Num	Case=Par|Number=Sing|NumType=Card	7	nummod	_	_
+7	kiloa	kilo	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mikä _tyyli_, miten hän kuvailee herttaisesti!
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	6	nsubj	_	_
+3	_tyyli_,	_tyyli_,	PUNCT	Punct	_	6	punct	_	_
+4	miten	miten	ADV	Adv	_	6	advmod	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	kuvailee	kuvailla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	herttaisesti	herttaisesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = -- puheli kreivitär, lukiessaan kirjeen kertoelevaa osaa.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	puheli	puheli	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	kreivitär	kreivitär	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	lukiessaan	lukia	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	3	advcl	_	_
+6	kirjeen	kirje	NOUN	N	Case=Gen|Number=Sing	7	obj	_	_
+7	kertoelevaa	kertoella	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	acl	_	_
+8	osaa	osa	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- Ja mikä sydän!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Ja	ja	CCONJ	C	_	4	cc	_	_
+3	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing	4	det	_	_
+4	sydän	sydän	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Itsestään ei sanaakaan ... ei sanaakaan!
+1	Itsestään	itse	PRON	Pron	Case=Ela|Number=Sing|Person[psor]=3|Reflex=Yes	3	det	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	sanaakaan	sana	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	0	root	_	_
+4	...	...	PUNCT	Punct	_	3	punct	_	_
+5	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	sanaakaan	sana	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	3	conj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Yhä vain jostain Denisovista, mutta itse hän varmaankin on heitä kaikkia urhoollisempi.
+1	Yhä	yhä	ADV	Adv	_	4	advmod	_	_
+2	vain	vain	ADV	Adv	_	4	advmod	_	_
+3	jostain	jokin	PRON	Pron	Case=Ela|Number=Sing|PronType=Ind	4	det	_	_
+4	Denisovista	Denisov	PROPN	N	Case=Ela|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	13	punct	_	_
+6	mutta	mutta	CCONJ	C	_	13	cc	_	_
+7	itse	itse	ADV	Adv	_	13	advmod	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj:cop	_	_
+9	varmaankin	varmaan	ADV	Adv	Clitic=Kin	13	advmod	_	_
+10	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+11	heitä	hän	PRON	Pron	Case=Par|Number=Plur|Person=3|PronType=Prs	13	obl	_	_
+12	kaikkia	kaikki	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	13	det	_	_
+13	urhoollisempi	urhoollinen	ADJ	A	Case=Nom|Degree=Cmp|Derivation=Inen|Number=Sing	4	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Ei sanaakaan omista kärsimyksistään.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	cop	_	_
+2	sanaakaan	sana	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	4	nsubj:cop	_	_
+3	omista	oma	ADJ	A	Case=Ela|Degree=Pos|Number=Plur	4	amod	_	_
+4	kärsimyksistään	kärsimyksi	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Mikä sydän!
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	2	det	_	_
+2	sydän	sytä	NOUN	N	Case=Gen|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Aivan kaltaisensa!
+1	Aivan	aivan	ADV	Adv	_	2	advmod	_	_
+2	kaltaisensa	kaltaisi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Ja miten kaikkia muistelee!
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	miten	miten	ADV	Adv	_	4	advmod	_	_
+3	kaikkia	kaikki	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	4	nsubj	_	_
+4	muistelee	muistella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Ketään ei ole unohtanut.
+1	Ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+4	unohtanut	unohtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Sitä sanoin aina, aina sitä sanoin, kun hän vielä oli tuollainen pikkarainen...
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+2	sanoin	sataa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aina	aina	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	aina	aina	ADV	Adv	_	7	advmod	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	obj	_	_
+7	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	14	punct	_	_
+9	kun	kun	SCONJ	C	_	14	mark	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj:cop	_	_
+11	vielä	vielä	ADV	Adv	_	14	advmod	_	_
+12	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	cop	_	_
+13	tuollainen	tuollainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	14	amod	_	_
+14	pikkarainen	pikkarainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	7	advcl	_	SpaceAfter=No
+15	...	...	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

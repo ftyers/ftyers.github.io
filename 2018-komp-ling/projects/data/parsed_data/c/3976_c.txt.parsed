@@ -1,0 +1,145 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Sepä sen, niin, niin!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Sepä	Sepä	ADV	Adv	_	3	advmod	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	niin	niin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	niin	niin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- vastasi hymyillen Boris: -- mutta kyllä on meilläkin ollut kunniakas retki.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hymyillen	hymyilla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	Boris	Boris	PROPN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	2	punct	_	_
+6	--	--	PUNCT	Punct	_	13	punct	_	_
+7	mutta	mutta	CCONJ	C	_	13	cc	_	_
+8	kyllä	kyllä	ADV	Adv	_	13	advmod	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+10	meilläkin	minä	PRON	Pron	Case=Ade|Clitic=Kin|Number=Plur|Person=1|PronType=Prs	13	nsubj:cop	_	_
+11	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	cop	_	_
+12	kunniakas	kunniakas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	13	amod	_	_
+13	retki	retki	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tiedäthän, että suuriruhtinas koko ajan on kulkenut meidän rykmenttimme mukana, joten meillä on ollut kaikenlaisia etuja ja mukavuuksia.
+1	Tiedäthän	tietää	VERB	V	Clitic=Han|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	8	punct	_	_
+3	että	että	SCONJ	C	_	8	mark	_	_
+4	suuriruhtinas	suuriruhtinas	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	6	nummod	_	_
+5	koko	koko	ADJ	A	_	6	amod	_	_
+6	ajan	aika	NOUN	N	Case=Gen|Number=Sing	8	nsubj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	kulkenut	kulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	ccomp	_	_
+9	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	10	nmod:poss	_	_
+10	rykmenttimme	rykmentti	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	8	obl	_	_
+11	mukana	mukana	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	joten	joten	ADV	Adv	_	14	advmod	_	_
+14	meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	1	acl:relcl	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	aux	_	_
+16	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	cop:own	_	_
+17	kaikenlaisia	kaiken#lainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	18	amod	_	_
+18	etuja	etu	NOUN	N	Case=Par|Number=Plur	14	nsubj:cop	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	mukavuuksia	mukavuus	NOUN	N	Case=Par|Number=Plur	18	conj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Puolassa oli kohtelu verratonta, niitä päivällisiä, niitä tanssiaisia -- kaikkea en voi sinulle kertoakkaan.
+1	Puolassa	Puola	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kohtelu	kohtelu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	1	nsubj:cop	_	_
+4	verratonta	verraton	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Sing	7	amod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	7	det	_	_
+7	päivällisiä	päivällinen	NOUN	N	Case=Par|Number=Plur	1	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	10	det	_	_
+10	tanssiaisia	tanssiainen	NOUN	N	Case=Par|Number=Plur	16	nsubj:cop	_	_
+11	--	--	PUNCT	Punct	_	16	punct	_	_
+12	kaikkea	kaikki	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	16	nsubj:cop	_	_
+13	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	_
+14	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	16	aux	_	_
+15	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	16	obl	_	_
+16	kertoakkaan	kertoakkaan	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	16	punct	_	_
+
+# sent_id = 5
+# text = Ja perintöruhtinas on ollut sangen suosiollinen meidän upseereille.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	perintöruhtinas	perintöruhtinas	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+5	sangen	sangen	ADV	Adv	_	6	advmod	_	_
+6	suosiollinen	suosiollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	_
+7	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	8	nmod:poss	_	_
+8	upseereille	upseeri	NOUN	N	Case=All|Number=Plur	6	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Ja ystävykset kertoilivat toisilleen näkemiään ja kokemiaan: toinen husaarijuomingeista ja taisteluista, toinen siitä, miten on hauskaa ja edullista palvella korkea-arvoisten henkilöiden päällikkyydessä, y.m.s.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	ystävykset	ystävys	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	kertoilivat	kertoila	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	toisilleen	toinen	PRON	Pron	Case=All|Number=Plur|Person[psor]=3|PronType=Rcp	5	det	_	_
+5	näkemiään	näkemä	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	3	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kokemiaan	kokemia	NOUN	N	Case=Ill|Number=Sing	3	conj	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	3	punct	_	_
+9	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	10	det	_	_
+10	husaarijuomingeista	husaarijuominge	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	taisteluista	taistelu	NOUN	N	Case=Ela|Number=Plur	10	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	25	punct	_	_
+14	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	25	det	_	_
+15	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	25	det	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	19	punct	_	_
+17	miten	miten	ADV	Adv	_	19	advmod	_	_
+18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	cop	_	_
+19	hauskaa	hauska	ADJ	A	Case=Par|Degree=Pos|Number=Sing	25	amod	_	_
+20	ja	ja	CCONJ	C	_	21	cc	_	_
+21	edullista	edullinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	19	conj	_	_
+22	palvella	palv	NOUN	N	Case=Ade|Number=Sing	19	obl	_	_
+23	korkea-arvoisten	korkea-arvoinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	24	amod	_	_
+24	henkilöiden	henkilö	NOUN	N	Case=Gen|Number=Plur	25	nmod:poss	_	_
+25	päällikkyydessä	päällikkyydi	NOUN	N	Case=Ine|Number=Sing	10	conj	_	SpaceAfter=No
+26	,	,	PUNCT	Punct	_	3	punct	_	_
+27	y.m.s.	niin#say.m.ottu	ADJ	A	Abbr=Yes|Case=Ine|Degree=Pos|Number=Sing	3	obj	_	_
+
+# sent_id = 7
+# text = -- Oi kaartti!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaartti	kaartti	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- sanoi Rostof. -- Mutta kuulehan, lähetä hakemaan viiniä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Rostof	Rostof	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+5	--	--	PUNCT	Punct	_	7	punct	_	_
+6	Mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	kuulehan	kuule	NOUN	N	Case=Nom|Clitic=Han|Number=Sing	2	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	lähetä	lähetä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+10	hakemaan	hakea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	viiniä	viini	NOUN	N	Case=Par|Number=Sing	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Boris rypisti kulmiaan.
+1	Boris	Boris	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rypisti	rypistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kulmiaan	kulma	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

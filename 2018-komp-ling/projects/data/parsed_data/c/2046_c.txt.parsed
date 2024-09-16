@@ -1,0 +1,93 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Niin.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Tekeekö mielesi tietää?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tekeekö	tehdä	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mielesi	miele	ADV	Adv	Number[psor]=Sing|Person[psor]=2	4	advmod	_	_
+4	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tule mukanani polisikonttoriin, niin sanon sen sinulle.
+1	Tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	mukanani	mukana	ADV	Adv	Number[psor]=Sing|Person[psor]=1	1	advmod	_	_
+3	polisikonttoriin	polisikonttori	NOUN	N	Case=Ill|Number=Sing	1	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	sanon	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	obj	_	_
+8	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Työmiehet katselivat hämillään toisiaan.
+1	Työmiehet	Työ#mies	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	katselivat	katsela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hämillään	hämillä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	advcl	_	_
+4	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Lähtekäämme, olemme jo kyllin kuluttaneet aikaa, tule Aljoshka!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lähtekäämme	Lähtekätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	jo	jo	ADV	Adv	_	7	advmod	_	_
+6	kyllin	kyllin	ADV	Adv	_	7	advmod	_	_
+7	kuluttaneet	kuluttaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+8	aikaa	aika	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	2	punct	_	_
+10	tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	Aljoshka	Aljoshka	PROPN	N	Case=Nom|Number=Sing	10	obj	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Minä suljen, sanoi vanhempi työmies.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	suljen	sulkea	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+5	vanhempi	vanha	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	6	amod	_	_
+6	työmies	työ#mies	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- No, tule! vastasi Raskolnikov välinpitämättömästi, kulkien vitkalleen portaita alas.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	No	no	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	tule	tulla	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	6	obj	_	_
+8	välinpitämättömästi	välin#pitämättömästi	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	10	punct	_	_
+10	kulkien	kulkea	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+11	vitkalleen	vitkalleen	ADV	Adv	_	10	advmod	_	_
+12	portaita	portaat	NOUN	N	Case=Par|Number=Plur	10	obj	_	_
+13	alas	alas	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = -- Kuulehan talonmies!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kuulehan	Kuuleha	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	talonmies	talon#mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = huusi hän tultuaan porttikäytävään.
+1	huusi	huusi	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	tultuaan	tulla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	0	root	_	_
+4	porttikäytävään	porttikäytävä	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

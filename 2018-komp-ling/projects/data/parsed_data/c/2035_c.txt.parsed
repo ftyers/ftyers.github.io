@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mistä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = No, jääköön, mene helvettiin.
+1	No	no	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	jääköön	jäädä	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	mene	mennä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	6	obj	_	_
+6	helvettiin	helvtaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Potshinkov, 47, Babushkin!...
+1	Potshinkov	Potshinkov	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	47	47	NUM	Num	NumType=Card	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Babushkin	Babushkin	PROPN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+7	..	..	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Muista!
+1	Muista	muu	PRON	Pron	Case=Ela|Number=Plur|PronType=Ind	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Raskolnikov meni puutarhakadulle ja kääntyi kulmassa.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	puutarhakadulle	puutarhakadu	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	kulmassa	kulma	NOUN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Rasumihin katseli ajattelevasti hänen jälkeensä.
+1	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	2	obl	_	_
+2	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ajattelevasti	ajattelevasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	jälkeensä	jälkeen	ADV	Adv	Person[psor]=3	2	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Vihdoin hän viittasi kädellään, meni taloon, mutta pysähtyi keskelle portaita.
+1	Vihdoin	vihdoin	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	viittasi	viitata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kädellään	käsi	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	taloon	talo	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	mutta	mutta	CCONJ	C	_	10	cc	_	_
+10	pysähtyi	pysähtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	keskelle	keskelle	ADP	Adp	AdpType=Prep	12	case	_	_
+12	portaita	portaat	NOUN	N	Case=Par|Number=Plur	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- Piru vieköön!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Piru	piru	INTJ	Interj	_	3	discourse	_	_
+3	vieköön	viedä	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = jatkoi hän melkein ääneensä, -- hän puhuu järkevästi ja kuitenkin tuntuu siltä, kuin...
+1	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	melkein	melkein	ADV	Adv	_	1	advmod	_	_
+4	ääneensä	äää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	1	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	1	punct	_	_
+6	--	--	PUNCT	Punct	_	8	punct	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+8	puhuu	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+9	järkevästi	järkevästi	ADV	Adv	Derivation=Sti	8	advmod	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	kuitenkin	kuitenkin	ADV	Adv	_	12	advmod	_	_
+12	tuntuu	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	12	advcl	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	15	punct	_	_
+15	kuin	kuin	SCONJ	C	_	13	mark	_	SpaceAfter=No
+16	...	...	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Mutta minä olen myöskin narri ...
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	myöskin	myöskin	ADV	Adv	_	5	advmod	_	_
+5	narri	narri	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	...	...	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = ikäänkuin eivät hullut ihmiset osaisi puhua järkevästi!
+1	ikäänkuin	ikäänkuin	ADV	Adv	_	5	advmod	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	hullut	hullu	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	4	amod	_	_
+4	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+5	osaisi	osata	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+6	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	järkevästi	järkevästi	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Ja tuntuupa siltä kuin pelkäisi Sosimovkin jotakin sellaista!
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	tuntuupa	tuntuupa	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	2	obl	_	_
+4	kuin	kuin	SCONJ	C	_	5	mark	_	_
+5	pelkäisi	pelkää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	advcl	_	_
+6	Sosimovkin	Sosimovk	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+7	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	8	det	_	_
+8	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	5	nsubj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

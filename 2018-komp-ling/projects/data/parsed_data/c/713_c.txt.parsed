@@ -1,0 +1,161 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Kymmenen minuuttia yli kahden?
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+4	yli	yli	ADV	Adv	_	5	advmod	_	_
+5	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	3	nummod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Kuinka myöhäistä.
+1	Kuinka	kuinka	ADV	Adv	_	2	advmod	_	_
+2	myöhäistä	myöhäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Herättäkää minut huomenna yhdeksältä.
+1	Herättäkää	Herättää	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	minut	minä	PRON	Pron	Case=Acc|Number=Sing|Person=1|PronType=Prs	1	obj	_	_
+3	huomenna	huomenna	ADV	Adv	_	1	advmod	_	_
+4	yhdeksältä	yhdeksän	NUM	Num	Case=Abl|Number=Sing|NumType=Card	1	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Minulla on hiukan työtä."
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	hiukan	hiukan	ADV	Adv	_	4	advmod	_	_
+4	työtä	työ	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = "Hyvä, herra."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	herra	herra	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = "Onko kukaan käynyt täällä tänä iltana?"
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nsubj	_	_
+4	käynyt	käydä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	täällä	täällä	ADV	Adv	_	4	advmod	_	_
+6	tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	7	det	_	_
+7	iltana	ilta	NOUN	N	Case=Ess|Number=Sing	4	obl	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = "Mr. Hallward, herra.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Mr.	Mr.	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+3	Hallward	Hallward	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	herra	herra	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hän odotti täällä kello yhteentoista asti, ja sitten hän meni asemalle."
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	odotti	odottää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	täällä	täällä	ADV	Adv	_	2	advmod	_	_
+4	kello	kello	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+5	yhteentoista	yhteento	NOUN	N	Case=Ela|Number=Plur	2	nmod	_	_
+6	asti	asti	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	sitten	sitten	ADV	Adv	_	11	advmod	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+12	asemalle	asema	NOUN	N	Case=All|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = "Oi, sepä ikävä etten tavannut häntä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	sepä	sepä	ADV	Adv	_	6	advmod	_	_
+5	ikävä	ikävä	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	etten	että#ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	mark	_	_
+7	tavannut	tavana	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Jättikö hän mitään sanaa?" "Ei, herra.
+1	Jättikö	Jätti	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+4	sanaa	sana	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	8	punct	_	_
+7	"	"	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+8	Ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	8	punct	_	_
+10	herra	herra	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Hän sanoi vain kirjoittavansa teille Parisista, jollei hän tapaisi teitä klubissa."
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	kirjoittavansa	kirjoittaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	2	xcomp	_	_
+5	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	6	det	_	_
+6	Parisista	Paris	PROPN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	jollei	jollei	SCONJ	C	_	10	mark	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	tapaisi	tapaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	2	advcl	_	_
+11	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	12	det	_	_
+12	klubissa	klub	NOUN	N	Case=Ine|Number=Plur	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = "Se on hyvä, Francis.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Francis	Francis	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Älkää unohtako herättää minua kello yhdeksältä." "En, herra."
+1	Älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	unohtako	unohtaa	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	0	root	_	_
+3	herättää	herättää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
+5	kello	#kello	NOUN	N	Case=Nom|Number=Sing	12	compound:nn	_	_
+6	yhdeksältä	yhdeksän	NUM	Num	Case=Abl|Number=Sing|NumType=Card	5	nummod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	10	punct	_	_
+9	"	"	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+10	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	12	orphan	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	10	punct	_	_
+12	herra	herra	NOUN	N	Case=Nom|Number=Sing	3	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+14	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Mies hiipi pois tohveleissaan käytävätä pitkin.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hiipi	hiipiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pois	pois	ADV	Adv	_	2	advmod	_	_
+4	tohveleissaan	tohvelei	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	_
+5	käytävätä	käytävä	NOUN	N	Case=Par|Number=Sing	2	nmod	_	_
+6	pitkin	pitkin	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,126 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kykenisittekö te ampumaan itsenne?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kykenisittekö	Kykenisidä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+4	ampumaan	ampua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+5	itsenne	itsenne	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Sepä vain puuttui! sanoi Svidrigailov inhoa osoittavin ilmein.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Sepä	Sepä	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	vain	vain	ADV	Adv	_	4	advmod	_	_
+4	puuttui	puuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	8	compound:nn	_	_
+8	inhoa	inho	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+9	osoittavin	osoittavä	ADJ	A	Case=Ins|Degree=Pos|Number=Plur	10	amod	_	_
+10	ilmein	ilmi	NOUN	N	Case=Ins|Number=Plur	6	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = --Olkaa hyvä ja jättäkää puhumatta tuollaisista asioista, lisäsi hän ilman minkäänlaista teeskentelyä, joka oli painanut valtavan leimansa hänen edellisiin sanoihinsa.
+1	--Olkaa	-Olka	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+2	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	jättäkää	jättäkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	2	conj	_	_
+5	puhumatta	puhua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	advcl	_	_
+6	tuollaisista	tuollais	NOUN	N	Case=Ela|Number=Plur	5	obl	_	_
+7	asioista	asia	NOUN	N	Case=Ela|Number=Plur	6	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	5	punct	_	_
+9	lisäsi	lisätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+11	ilman	ilman	ADP	Adp	AdpType=Prep	13	case	_	_
+12	minkäänlaista	minkään#lainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Sing	13	amod	_	_
+13	teeskentelyä	teeskentely	NOUN	N	Case=Par|Derivation=U|Number=Sing	9	obj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	17	nsubj	_	_
+16	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	aux	_	_
+17	painanut	painaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	acl:relcl	_	_
+18	valtavan	valtava	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	19	amod	_	_
+19	leimansa	leima	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	17	obj	_	_
+20	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	22	nmod:poss	_	_
+21	edellisiin	edellinen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Llinen|Number=Plur	22	amod	_	_
+22	sanoihinsa	sano	NOUN	N	Case=Ill|Number=Plur|Person[psor]=3	17	obl	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 4
+# text = Hänen kasvojensa ilme muuttui.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	kasvojensa	kasva	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	3	nmod:poss	_	_
+3	ilme	ilme	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	muuttui	muuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- Minun on tunnustettava heikkouteni ...
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Minun	Minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tunnustettava	tunnusttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+5	heikkouteni	heikkous	NOUN	N	Case=Nom|Derivation=Inen,Vs|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obj	_	_
+6	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = mitä voin sille tehdä ... kuolemaa pelkään, enkä pidä, että siitä puhutaan.
+1	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+2	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	4	obl	_	_
+4	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	...	...	PUNCT	Punct	_	7	punct	_	_
+6	kuolemaa	kuolemma	ADV	Adv	Typo=Yes	7	advmod	_	_
+7	pelkään	pelätä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	enkä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	10	cc	_	_
+10	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	että	että	SCONJ	C	_	14	mark	_	_
+13	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	14	obl	_	_
+14	puhutaan	puhua	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	10	ccomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Tiedättekö, että minä olen osaksi mystikkokin.
+1	Tiedättekö	tietää	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	että	että	SCONJ	C	_	7	mark	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj:cop	_	_
+5	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	osaksi	osa	NOUN	N	Case=Tra|Number=Sing	7	nmod	_	_
+7	mystikkokin	mystikko	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	1	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = -- Vai niin!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Vai	Vai	CCONJ	C	_	3	cc	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 9
+# text = Marfa Petrovnan henki!
+1	Marfa	Marfa	PROPN	N	Case=Nom|Number=Sing	3	nmod:poss	_	_
+2	Petrovnan	Petrovna	PROPN	N	Case=Gen|Number=Sing	1	flat:name	_	_
+3	henki	henki	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = No, miten on asian laita, näyttäytyykö se vielä teille?
+1	No	no	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	miten	miten	ADV	Adv	_	0	root	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	asian	asia	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	laita	laita	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	näyttäytyykö	näyttäytyä	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+10	vielä	vielä	ADV	Adv	_	8	advmod	_	_
+11	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	8	obl	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,134 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Tietysti se häntä miellyttää", sanoi lordi Henry.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Tietysti	tietysti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+4	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	5	obj	_	_
+5	miellyttää	miellyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	5	punct	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = "Kukapa ei siitä pitäisi?
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Kukapa	kuka	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|PronType=Int	5	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	5	obl	_	_
+5	pitäisi	pitää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Se on suurinta mitä nykyajan taide on luonut.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	suurinta	suuri	ADJ	A	Case=Par|Degree=Sup|Number=Sing	0	root	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	8	obj	_	_
+5	nykyajan	nyky#aika	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	taide	taide	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	luonut	luoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	acl:relcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Minä maksan sinulle siitä mitä ikänä haluat.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	maksan	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	2	obl	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	obl	_	_
+5	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	obj	_	_
+6	ikänä	ikänä	ADV	Adv	_	7	advmod	_	_
+7	haluat	haluta	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Minun täytyy se saada."
+1	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+4	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = "Se ei ole minun omani, Harry."
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nmod:poss	_	_
+6	omani	oma	ADJ	A	Case=Gen|Degree=Pos|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	Harry	Harry	PROPN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = "Kenenkä sitten?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Kenenkä	Kenei	VERB	V	Clitic=Ka|Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sitten	sitten	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "Dorianin tietysti", vastasi maalari.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Dorianin	Dorian	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	tietysti	tietysti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	maalari	maalari	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = "Onpa hänellä hyvä onni."
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Onpa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+4	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	onni	onni	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = "Kuinka surullista!" mutisi Dorian Gray, silmät yhä kiintyneinä muotokuvaan.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	surullista	surullinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	3	punct	_	_
+6	mutisi	muta	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	Gray	Gray	PROPN	N	Case=Nom|Number=Sing	7	flat:name	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	3	punct	_	_
+10	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	12	obj	_	_
+11	yhä	yhä	ADV	Adv	_	12	advmod	_	_
+12	kiintyneinä	kiintyä	VERB	V	Case=Ess|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+13	muotokuvaan	muotokuva	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = "Miten haikeata!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Miten	miten	ADV	Adv	_	3	advmod	_	_
+3	haikeata	haikea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Minä vanhenen, tulen julmaksi, rumaksi.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	vanhenen	vanheta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	tulen	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	julmaksi	julma	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	4	xcomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	rumaksi	ruma	NOUN	N	Case=Tra|Number=Sing	4	xcomp:ds	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

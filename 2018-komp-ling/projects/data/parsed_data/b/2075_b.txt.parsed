@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Lapset soittivat Tampereen hotellit läpi.
+1	Lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	soittivat	soittaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Tampereen	Tampere	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	hotellit	hotelli	NOUN	N	Case=Nom|Number=Plur	2	obl	_	_
+5	läpi	läpi	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Viimein he löysivät Jussin ja saivat hänet Tammer-hotellista puhelimeen.
+1	Viimein	viimein	ADV	Adv	_	3	advmod	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	löysivät	löytää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Jussin	Jussi	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+8	Tammer-hotellista	Tammer-hotell	PROPN	N	Case=Ela|Number=Sing	6	obl	_	_
+9	puhelimeen	puhelin	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Lapset käskivät Jussin lähteä heti kotiin.
+1	Lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	käskivät	käskä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Jussin	Jussi	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+5	heti	heti	ADV	Adv	_	4	advmod	_	_
+6	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Vanha mies tuolla tavalla maailmalla hummailemassa.
+1	Vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	tuolla	tuolla	ADV	Adv	_	4	advmod	_	_
+4	tavalla	tavka	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+5	maailmalla	maailmka	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+6	hummailemassa	hummailea	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Ei se sellainen passaa.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+3	sellainen	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	4	amod	_	_
+4	passaa	passata	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Oli tietysti polskittu Näsijärvessä aika konjakeissa.
+1	Oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+2	tietysti	tietysti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+3	polskittu	polskita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	Näsijärvessä	Näsijärve	PROPN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	aika	#aika	NOUN	N	Case=Nom|Number=Sing	6	nmod:poss	_	_
+6	konjakeissa	konjake	NOUN	N	Case=Ine|Number=Plur	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Sydänvikainen pappa!
+1	Sydänvikainen	Sydänvikainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	pappa	pappa	X	Foreign	Foreign=Yes	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ja kukas naikkonenkin siinä kuvassa oli?
+1	Ja	ja	CCONJ	C	_	5	cc	_	_
+2	kukas	kukas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	naikkonenkin	naikkone	NOUN	N	Case=Gen|Clitic=Kin|Number=Sing	5	nsubj:cop	_	_
+4	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	det	_	_
+5	kuvassa	kuva	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Jussi soitti Liisalle.
+1	Jussi	Jussi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	soitti	soittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Liisalle	Liisa	PROPN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = — Minun täytyy lähteä bisneksiä hoitamaan.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Minun	Minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	bisneksiä	bisnes	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+6	hoitamaan	hoitaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Pidetään yhteyttä, sanoi Jussi.
+1	Pidetään	pitää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	yhteyttä	yhteys	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+5	Jussi	Jussi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

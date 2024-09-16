@@ -1,0 +1,110 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Miksi matkustaisin täältä pois?" kysyin.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+3	matkustaisin	matkustaa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+4	täältä	täältä	ADV	Adv	_	3	advmod	_	_
+5	pois	pois	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	3	punct	_	_
+8	kysyin	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = "Sitä en voi teille selittää."
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	aux	_	_
+5	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	6	obl	_	_
+6	selittää	selittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Hän puhui matalasti ja innokkaasti ja omituisella murteella.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	matalasti	matalasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	innokkaasti	innokkaasti	ADV	Adv	Derivation=Sti	2	conj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	omituisella	omituinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	murteella	murte	NOUN	N	Case=Ade|Number=Sing	2	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Tehkää kumminkin, Jumalan nimessä, niinkuin sanon.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tehkää	Tehä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kumminkin	kumminkin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	Jumalan	jumala	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	nimessä	nimi	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	niinkuin	niinkuin	SCONJ	C	_	9	mark	_	_
+9	sanon	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Lähtekää täältä, ja älkää koskaan jalallanne astuko nummelle."
+1	Lähtekää	Lähteä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	täältä	täältä	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	älkää	ei	VERB	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	1	conj	_	_
+6	koskaan	koskaan	ADV	Adv	_	8	advmod	_	_
+7	jalallanne	jalallanne	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	astuko	astu	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+9	nummelle	nummi	NOUN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = "Mutta minähän olen aivan äsken saapunut tänne."
+1	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	7	cc	_	_
+3	minähän	minä	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+4	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	aivan	aivan	ADV	Adv	_	7	advmod	_	_
+6	äsken	äsken	ADV	Adv	_	7	advmod	_	_
+7	saapunut	saapuda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+8	tänne	tänne	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = "Lopettakaa toki vastaväitteenne", lausui hän.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Lopettakaa	Lopettaa	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toki	toki	ADV	Adv	_	4	advmod	_	_
+4	vastaväitteenne	vastaväitteenne	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "Ettekö voi ymmärtää, että tämä varoitus tarkottaa teidän etuanne?
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Ettekö	ettekö	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	ymmärtää	ymmärtää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	det	_	_
+8	varoitus	varoitus	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	tarkottaa	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+10	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	11	nmod:poss	_	_
+11	etuanne	etuanne	NOUN	N	Case=Nom|Number=Sing	9	obj	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Palatkaa Lontooseen.
+1	Palatkaa	Palata	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Lontooseen	Lontoo	PROPN	N	Case=Ill|Number=Sing	1	obl	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

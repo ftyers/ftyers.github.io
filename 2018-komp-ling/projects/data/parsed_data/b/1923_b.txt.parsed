@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Tämä mies tietää mitä tahtoo, Meeri innostuu.
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	SpacesBefore= \s
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	obj	_	_
+5	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	innostuu	innostua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Kyösti ohjailee häntä kohti leveää, sekaista vuodetta.
+1	Kyösti	Kyösti	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ohjailee	ohjailla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	kohti	kohti	ADP	Adp	AdpType=Prep	8	case	_	_
+5	leveää	leveä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	8	amod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	sekaista	sekainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	vuodetta	vuode	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Mies rojahtaa pitkälleen ja potkaisee kengät jaloistaan.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rojahtaa	rojahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pitkälleen	pitkä	NOUN	N	Case=All|Number=Sing|Person[psor]=3	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	potkaisee	potkaista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	kengät	kenkä	NOUN	N	Case=Nom|Number=Plur	5	obj	_	_
+7	jaloistaan	jaloista	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hän availee vyötään ja käskee Meerin pitää kiirettä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	availee	availla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vyötään	vyö	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	käskee	käskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	conj	_	_
+6	Meerin	Meeri	PROPN	N	Case=Gen|Number=Sing	7	nsubj	_	_
+7	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	kiirettä	kiire	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s \s
+
+# sent_id = 5
+# text = — Meillä on koko yö aikaa, Meeri kujertaa.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	koko	koko	ADJ	A	_	5	amod	_	_
+5	yö	yö	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+6	aikaa	aika	NOUN	N	Case=Par|Number=Sing	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	_
+8	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	kujertaa	kujerrata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän riisuu mekkoaan hitaasti.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	riisuu	riisua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	mekkoaan	mekko	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	2	obj	_	_
+4	hitaasti	hitaasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Kyösti hengittää raskaasti.
+1	Kyösti	Kyösti	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hengittää	hengittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	raskaasti	raskaasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Meeri nauttii Kyöstin katseesta.
+1	Meeri	Meeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nauttii	nauttia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Kyöstin	Kyöst	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	katseesta	katsei	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Hän venyttelee aistillisesti ja nousee nelinkontin miehen päälle.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	venyttelee	venytella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aistillisesti	aistillisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	nousee	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	nelinkontin	nelinkontti	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	miehen	mies	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+8	päälle	päälle	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s \s
+
+# sent_id = 10
+# text = Lämpimät kädet tavoittelevat kupeita, mutta putoavat sitten pois.
+1	Lämpimät	Lämpiä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Agt|VerbForm=Part|Voice=Act	2	acl	_	_
+2	kädet	käsi	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	tavoittelevat	tavoittella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kupeita	kupe	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	putoavat	pudota	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	sitten	sitten	ADV	Adv	_	7	advmod	_	_
+9	pois	pois	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Kääriäisen katse sammuu Kyöstin sameista silmistä.
+1	Kääriäisen	Kääriäinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	katse	katse	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	sammuu	sammua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Kyöstin	Kyöst	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	sameista	same	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+6	silmistä	silmä	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = Luomet lupsahtavat kiinni.
+1	Luomet	Luon	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	lupsahtavat	lupsahtaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kiinni	kiinni	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

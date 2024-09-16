@@ -1,0 +1,97 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Viiden vanha.
+1	Viiden	viisi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	2	nummod	_	_
+2	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Viisi vuotta vanha, viisivuotias.
+1	Viisi	Viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	nummod	_	_
+2	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	3	nmod	_	_
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	viisivuotias	viisi#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Villahansikas.
+1	Villahansikas	Villahansikas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Villainen hansikas, käsine, joka on tehty villasta.
+1	Villainen	Villainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	hansikas	hansikas	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	käsine	käsine	NOUN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	obj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux:pass	_	_
+8	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl:relcl	_	_
+9	villasta	villa	NOUN	N	Case=Ela|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Voitonriemun, perusmuoto voitonriemu.
+1	Voitonriemun	Voitonriem	NOUN	N	Case=Ill|Derivation=U|Number=Sing	4	nmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	voitonriemu	voitonriemu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Ilo siitä että voitti, onnistui.
+1	Ilo	ilo	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+2	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	1	nmod	_	_
+3	että	että	SCONJ	C	_	4	mark	_	_
+4	voitti	voittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	onnistui	onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s
+
+# sent_id = 7
+# text = Väänsi, perusmuoto vääntää.
+1	Väänsi	väänsi	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	vääntää	vääntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Taivuttaa, pakottaa toiseen muotoon, epäluonnolliseen asentoon.
+1	Taivuttaa	Taivuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	pakottaa	pakottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+4	toiseen	toinen	PRON	Pron	Case=Ill|Number=Sing|PronType=Rcp	5	det	_	_
+5	muotoon	muoto	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	epäluonnolliseen	epäluonnollinen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Llinen|Number=Sing	8	amod	_	_
+8	asentoon	asento	NOUN	N	Case=Ill|Number=Sing	1	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Ylipäätäänkin.
+1	Ylipäätäänkin	Ylipäätään	ADV	Adv	Clitic=Kin	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Myös yleisesti.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	yleisesti	yleisesti	ADV	Adv	Derivation=Sti	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Se mitä sanottiin yhdestä ihmisestä päti kaikkiin, ylipäätäänkin.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	0	root	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	3	obj	_	_
+3	sanottiin	sanoa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	1	acl:relcl	_	_
+4	yhdestä	yksi	NUM	Num	Case=Ela|Number=Sing|NumType=Card	5	nummod	_	_
+5	ihmisestä	ihminen	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+6	päti	pätaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+7	kaikkiin	kaikki	PRON	Pron	Case=Ill|Number=Plur|PronType=Ind	9	det	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	ylipäätäänkin	ylipäätään	ADV	Adv	Clitic=Kin	6	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

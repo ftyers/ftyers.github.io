@@ -1,0 +1,175 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mikä tämä on? kysyi hän sihteeriltä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+6	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+8	sihteeriltä	sihteerä	NOUN	N	Case=Abl|Number=Plur	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Teiltä vaaditaan rahoja erään velkakirjan perusteella.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Teiltä	sinä	PRON	Pron	Case=Abl|Number=Plur|Person=2|PronType=Prs	3	obl	_	_
+3	vaaditaan	vaadia	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	rahoja	#raha	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	erään	eräs	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	6	det	_	_
+6	velkakirjan	velkakirja	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	perusteella	peruste	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Teidän tulee joko suorittaa summa sekä kaikki kustannukset tai täytyy teidän jättää kirjallinen selitys siitä, milloin kykenette sen maksamaan, sitä paitsi tulee teidän suostua olemaan jättämättä pääkaupunkia ja olemaan sekä myymättä irtainta omaisuuttanne tai olemaan menettämättä sitä muuten ennenkuin olette suorittanut veikanne.
+1	Teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	joko	joko	CCONJ	C	_	4	cc:preconj	_	_
+4	suorittaa	suorittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	summa	summa	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+6	sekä	sekä	CCONJ	C	_	8	cc	_	_
+7	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	det	_	_
+8	kustannukset	kustannus	NOUN	N	Case=Nom|Number=Plur	5	conj	_	_
+9	tai	tai	CCONJ	C	_	12	cc	_	_
+10	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_
+12	jättää	jättää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+13	kirjallinen	kirjallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	14	amod	_	_
+14	selitys	selitys	NOUN	N	Case=Nom|Number=Sing	12	obj	_	_
+15	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	14	nmod	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	18	punct	_	_
+17	milloin	milloin	ADV	Adv	_	18	advmod	_	_
+18	kykenette	kykea	VERB	V	Mood=Pot|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	2	conj	_	_
+19	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	20	nsubj	_	_
+20	maksamaan	maksaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	18	xcomp:ds	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	24	punct	_	_
+22	sitä	sitä	ADV	Adv	_	24	advmod	_	_
+23	paitsi	paitsi	ADV	Adv	_	22	fixed	_	_
+24	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+25	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	26	nsubj	_	_
+26	suostua	suostua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	24	xcomp:ds	_	_
+27	olemaan	olla	AUX	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	28	aux	_	_
+28	jättämättä	jätttä	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	26	conj	_	_
+29	pääkaupunkia	pää#kaupunki	NOUN	N	Case=Par|Number=Sing	28	obj	_	_
+30	ja	ja	CCONJ	C	_	31	cc	_	_
+31	olemaan	olla	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	28	conj	_	_
+32	sekä	sekä	CCONJ	C	_	33	cc	_	_
+33	myymättä	myyä	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+34	irtainta	irtas	ADJ	A	Case=Par|Degree=Sup|Number=Sing	35	amod	_	_
+35	omaisuuttanne	omaisuuttanne	NOUN	N	Case=Nom|Number=Sing	33	obj	_	_
+36	tai	tai	CCONJ	C	_	38	cc	_	_
+37	olemaan	olla	AUX	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	38	aux	_	_
+38	menettämättä	menettää	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+39	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	38	obj	_	_
+40	muuten	muuten	ADV	Adv	_	38	advmod	_	_
+41	ennenkuin	ennenkuin	SCONJ	C	_	43	mark	_	_
+42	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	43	aux	_	_
+43	suorittanut	suorittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
+44	veikanne	veikanne	NOUN	N	Case=Nom|Number=Sing	43	obj	_	SpaceAfter=No
+45	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Takaajalla sitävastoin on oikeus myyttää irtain omaisuutenne ja menetellä teidän suhteenne lain mukaan.
+1	Takaajalla	Takaaja	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+2	sitävastoin	sitävastoin	ADV	Adv	_	1	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+4	oikeus	oikeus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	1	nsubj:cop	_	_
+5	myyttää	myyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	acl	_	_
+6	irtain	irtain	ADV	Adv	Derivation=Ttain	7	advmod	_	_
+7	omaisuutenne	omaisuutenne	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	menetellä	menetellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	conj	_	_
+10	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	11	nmod:poss	_	_
+11	suhteenne	suhteenne	NOUN	N	Case=Nom|Number=Sing	9	obj	_	_
+12	lain	laki	NOUN	N	Case=Gen|Number=Sing	9	obl	_	_
+13	mukaan	mukaan	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- Niin, mutta ...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Niin	niin	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	mutta	mutta	CCONJ	C	_	2	fixed	_	_
+5	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = minulla ei ole velkaa kenellekään.
+1	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop:own	_	_
+4	velkaa	velka	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+5	kenellekään	kukaan	PRON	Pron	Case=All|Number=Sing|PronType=Ind	1	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = -- Se ei koske meihin.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	koske	koskea	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	meihin	me	NOUN	N	Case=Ill|Number=Plur	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Meillä on maksettavaksi langennut ja lain mukaan protesteerattu velkakirja, sadanviidentoista ruplan suuruinen, jonka te olette antanut kolleginasessori Sarnitsinin leskelle yhdeksän kuukautta sitten, ja me toivomme nyt, että annatte selityksen sen johdosta.
+1	Meillä	minä	PRON	Pron	Case=Ade|Number=Plur|Person=1|PronType=Prs	3	obl	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	maksettavaksi	maksaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+4	langennut	langena	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	acl	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	lain	laki	NOUN	N	Case=Gen|Number=Sing	8	obl	_	_
+7	mukaan	mukaan	ADP	Adp	AdpType=Post	6	case	_	_
+8	protesteerattu	protesteerata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	conj	_	_
+9	velkakirja	velka#kirja	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	sadanviidentoista	sadanviidento	NOUN	N	Case=Ela|Number=Plur	13	nmod	_	_
+12	ruplan	rupla	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	suuruinen	suuruinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	18	punct	_	_
+15	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	18	obj	_	_
+16	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	18	nsubj	_	_
+17	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux	_	_
+18	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	acl:relcl	_	_
+19	kolleginasessori	kolleginasessori	NOUN	N	Case=Nom|Number=Sing	20	compound:nn	_	_
+20	Sarnitsinin	Sarnitsin	PROPN	N	Case=Gen|Number=Sing	18	obj	_	_
+21	leskelle	leski	NOUN	N	Case=All|Number=Sing	18	obl	_	_
+22	yhdeksän	yhdeksän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	23	nummod	_	_
+23	kuukautta	kuu#kausi	NOUN	N	Case=Par|Number=Sing	18	obl	_	_
+24	sitten	sitten	ADP	Adp	AdpType=Post	23	case	_	SpaceAfter=No
+25	,	,	PUNCT	Punct	_	28	punct	_	_
+26	ja	ja	CCONJ	C	_	28	cc	_	_
+27	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	28	nsubj	_	_
+28	toivomme	toivoa	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+29	nyt	nyt	ADV	Adv	_	28	advmod	_	SpaceAfter=No
+30	,	,	PUNCT	Punct	_	32	punct	_	_
+31	että	että	SCONJ	C	_	32	mark	_	_
+32	annatte	antaa	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	28	ccomp	_	_
+33	selityksen	selitys	NOUN	N	Case=Gen|Number=Sing	32	obj	_	_
+34	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	32	obl	_	_
+35	johdosta	johdosta	ADP	Adp	AdpType=Post	34	case	_	SpaceAfter=No
+36	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = -- Mutta sehän on emäntäni?
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	sehän	se	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	emäntäni	emän	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = -- Entäpä sitten, jos onkin emäntänne?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Entäpä	entä	ADV	Adv	Clitic=Pa	3	advmod	_	_
+3	sitten	sitten	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	jos	jos	SCONJ	C	_	7	mark	_	_
+6	onkin	olla	AUX	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+7	emäntänne	emäntänne	ADV	Adv	_	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

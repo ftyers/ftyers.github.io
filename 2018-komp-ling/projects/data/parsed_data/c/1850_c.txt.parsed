@@ -1,0 +1,92 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Vai ... niin...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Vai	Vai	INTJ	Interj	_	0	root	_	_
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+4	niin	niin	ADV	Adv	_	2	fixed	_	SpaceAfter=No
+5	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Hän ei siis ole kotona?
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	siis	siis	ADV	Adv	_	6	advmod	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+6	kotona	kotona	ADV	Adv	_	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = Kummallista.
+1	Kummallista	Kummallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Muuten sangen tyhmää.
+1	Muuten	muuten	ADV	Adv	_	3	advmod	_	_
+2	sangen	sangen	ADV	Adv	_	3	advmod	_	_
+3	tyhmää	tyhmä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Minnekkähän akka nyt on mennyt?
+1	Minnekkähän	Minnekkähän	ADV	Adv	_	2	advmod	_	_
+2	akka	akka	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	mennyt	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Minulla kun olisi ollut asiaa!
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	kun	kun	SCONJ	C	_	5	mark	_	_
+3	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	cop	_	_
+5	asiaa	asia	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = -- Niinpä minullakin, veliseni!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Niinpä	niinpä	ADV	Adv	_	3	advmod	_	_
+3	minullakin	minu	NOUN	N	Case=Ade|Clitic=Kin|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	veliseni	velinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	conj	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = -- No, mitä nyt on tehtävä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	No	no	INTJ	Interj	_	7	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	7	obj	_	_
+5	nyt	nyt	ADV	Adv	_	7	advmod	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux:pass	_	_
+7	tehtävä	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = Menemmekö tiehemme?
+1	Menemmekö	Menemme	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tiehemme	tieh	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	1	nsubj	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Voi, ja minä kun luulin saavani rahaa! huudahti nuorempi tulija.
+1	Voi	voi	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	ja	ja	CCONJ	C	_	6	cc	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+5	kun	kun	ADV	Adv	_	6	advmod	_	_
+6	luulin	luulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	saavani	saaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Pres|Person[psor]=1|VerbForm=Part|Voice=Act	6	xcomp	_	_
+8	rahaa	raha	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	6	punct	_	_
+10	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+11	nuorempi	nuorka	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	12	amod	_	_
+12	tulija	tulija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	10	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

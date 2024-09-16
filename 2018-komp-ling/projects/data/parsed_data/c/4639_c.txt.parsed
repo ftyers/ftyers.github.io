@@ -1,0 +1,95 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Seis! Kääpiö! sanoin minä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Seis	seis	PROPN	N	Case=Nom|Number=Sing	4	compound:nn	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+4	Kääpiö	Kääpiö	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+6	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Minä!
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Tai sinä!
+1	Tai	tai	CCONJ	C	_	2	cc	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Mutta minä olen väkevämpi meistä kummastakin --: sinä et tunne minun pohjattomuus-ajatustani!
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:cop	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	väkevämpi	väkevä	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+5	meistä	minä	PRON	Pron	Case=Ela|Number=Plur|Person=1|PronType=Prs	6	obl	_	_
+6	kummastakin	kummasta	VERB	V	Clitic=Kin|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	xcomp:ds	_	_
+7	--	--	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	4	punct	_	_
+9	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	_	_
+10	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	tunne	tuntea	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	parataxis	_	_
+12	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	13	nmod:poss	_	_
+13	pohjattomuus-ajatustani	pohjattomuus-ajatu	NOUN	N	Case=Ela|Number=Sing|Number[psor]=Sing|Person[psor]=1	11	obl	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Sitä sinä et voisi kantaa!"
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj	_	_
+3	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	voisi	voida	AUX	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	5	aux	_	_
+5	kantaa	kantaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = -- Silloin tapahtui se, mikä kevensi minua: sillä kääpiö hyppäsi minun hartioiltani, tuo utelias!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+3	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	kevensi	keventaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	7	obj	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	7	punct	_	_
+10	sillä	sillä	SCONJ	C	_	12	mark	_	_
+11	kääpiö	kääpiö	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	hyppäsi	hypätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+13	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	14	nmod:poss	_	_
+14	hartioiltani	hartioil	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	12	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	12	punct	_	_
+16	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	17	det	_	_
+17	utelias	utelias	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+18	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Ja se kyyristyi kivelle minun eteeni.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	kyyristyi	kyyristyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kivelle	kivi	NOUN	N	Case=All|Number=Sing	3	obl	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nmod:poss	_	_
+6	eteeni	esi	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=1	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Mutta juuri siinä oli portti, mihin me pysähdyimme.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	juuri	juuri	ADV	Adv	_	3	advmod	_	_
+3	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	portti	portti	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	9	obl	_	_
+8	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_
+9	pysähdyimme	pysähdyla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

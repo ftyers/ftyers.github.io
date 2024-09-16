@@ -1,0 +1,126 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä? -- huudahti Turbin synkistyen.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	5	nsubj	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+4	--	--	PUNCT	Punct	_	2	punct	_	_
+5	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Turbin	Turb	PROPN	N	Case=Gen|Number=Sing	5	obj	_	_
+7	synkistyen	synkistyä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- Mitä? Nulikka!...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+4	Nulikka	Nulikka	PROPN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- huusi hän tarttuen nuorukaisen käsiin ja puristaen niitä niin että tällä nousi veri päähän enemmän pelästyksestä kuin suuttumuksesta.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	tarttuen	tarttua	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	nuorukaisen	nuorukainen	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	käsiin	käsi	NOUN	N	Case=Ill|Number=Plur	4	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	puristaen	puristaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	conj	_	_
+9	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	8	obj	_	_
+10	niin	niin	ADV	Adv	_	8	advmod	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	13	obl	_	_
+13	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	ccomp	_	_
+14	veri	veri	NOUN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+15	päähän	pää	NOUN	N	Case=Ill|Number=Sing	13	obl	_	_
+16	enemmän	enemmän	ADV	Adv	_	17	advmod	_	_
+17	pelästyksestä	pelästys	NOUN	N	Case=Ela|Number=Sing	13	nmod	_	_
+18	kuin	kuin	SCONJ	C	_	19	mark	_	_
+19	suuttumuksesta	suuttumus	NOUN	N	Case=Ela|Number=Sing	17	advcl	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Mitä, tahdotteko kaksintastelua?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	tahdotteko	tahdoa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	kaksintastelua	kaksintastelu	NOUN	N	Case=Par|Derivation=U|Number=Sing	4	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Olen kyllä käytettävänänne.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	kyllä	kyllä	ADV	Adv	_	3	advmod	_	_
+3	käytettävänänne	käytettävänätä	VERB	V	Connegative=Yes|Mood=Pot|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Heti kun Turbin päästi irti kädet, joita hän oli niin lujasti puristanut, tarttui pari miestä nuorukaiseen ja vei hänet peräovelle.
+1	Heti	heti	ADV	Adv	_	2	advmod	_	_
+2	kun	kun	SCONJ	C	_	4	mark	_	_
+3	Turbin	Turbin	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	päästi	päästää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	advcl	_	_
+5	irti	irti	ADV	Adv	_	6	advmod	_	_
+6	kädet	käti	NOUN	N	Case=Nom|Number=Plur	4	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	13	obj	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	aux	_	_
+11	niin	niin	ADV	Adv	_	13	advmod	_	_
+12	lujasti	lujasti	ADV	Adv	Derivation=Sti	13	advmod	_	_
+13	puristanut	puristaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	acl:relcl	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	4	punct	_	_
+15	tarttui	tarttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+16	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	17	nummod	_	_
+17	miestä	mies	NOUN	N	Case=Par|Number=Sing	15	obj	_	_
+18	nuorukaiseen	nuorukainen	NOUN	N	Case=Ill|Number=Sing	15	obl	_	_
+19	ja	ja	CCONJ	C	_	20	cc	_	_
+20	vei	viedä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	15	conj	_	_
+21	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	20	obj	_	_
+22	peräovelle	peräovi	NOUN	N	Case=All|Number=Sing	20	obl	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	15	punct	_	_
+
+# sent_id = 7
+# text = -- Oletteko tullut hulluksi?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oletteko	Olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	hulluksi	hullu	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Varmaankin olette juovuksissa.
+1	Varmaankin	Varmaan	ADV	Adv	Clitic=Kin	3	advmod	_	_
+2	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	juovuksissa	juovuksissa	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Antakaahan, kun kerromme isällenne.
+1	Antakaahan	antaa	VERB	V	Clitic=Han|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	kun	kun	SCONJ	C	_	4	mark	_	_
+4	kerromme	kerroda	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	advcl	_	_
+5	isällenne	isällenne	NOUN	N	Case=Nom|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Mikä teitä vaivaa?
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	3	nsubj	_	_
+2	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+3	vaivaa	vaivata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = -- puhelivat he hänelle.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	puhelivat	puhela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	obj	_	_
+4	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,259 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Miten täällä?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Miten	miten	ADV	Adv	_	3	advmod	_	_
+3	täällä	täällä	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Miksei sitten räjäytetty siltaa, olihan se miinoitettu?
+1	Miksei	miksi#ei	VERB	V	Number=Sing|Person=0|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sitten	sitten	ADV	Adv	_	3	advmod	_	_
+3	räjäytetty	räjäyttää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	siltaa	silta	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	olihan	olla	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	obj	_	_
+8	miinoitettu	miinoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	1	conj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Sitä kysyn teiltä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	3	obj	_	_
+3	kysyn	kysä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	teiltä	sinä	PRON	Pron	Case=Abl|Number=Plur|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Sitä ei kenkään tiedä, ei Bonapartekaan.
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	kenkään	ken	ADV	Adv	Clitic=Kaan	4	advmod	_	_
+4	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	Bonapartekaan	Bonaparte	ADV	Adv	Clitic=Kaan	4	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Bolkonski kohautti harteitaan.
+1	Bolkonski	Bolkonski	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kohautti	kohauttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	harteitaan	harteitaan	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Mutta jos vihollinen on kulkenut sillan yli, niin silloin on armeija mennyttä: siltä katkaistaan paluutie, -- hän sanoi.
+1	--	--	PUNCT	Punct	_	14	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	14	cc	_	_
+3	jos	jos	SCONJ	C	_	6	mark	_	_
+4	vihollinen	vihollinen	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kulkenut	kulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	14	advcl	_	_
+7	sillan	silta	NOUN	N	Case=Gen|Number=Sing	6	obj	_	_
+8	yli	yli	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	6	punct	_	_
+10	niin	niin	ADV	Adv	_	14	advmod	_	_
+11	silloin	silloin	ADV	Adv	_	10	fixed	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	cop	_	_
+13	armeija	armeija	NOUN	N	Case=Nom|Number=Sing	14	nsubj:cop	_	_
+14	mennyttä	mennys	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+15	:	:	PUNCT	Punct	_	17	punct	_	_
+16	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	17	obl	_	_
+17	katkaistaan	katkaista	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	14	acl:relcl	_	_
+18	paluutie	paluu#tie	NOUN	N	Case=Nom|Number=Sing	17	obj	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	17	punct	_	_
+20	--	--	PUNCT	Punct	_	14	punct	_	_
+21	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	22	nsubj	_	_
+22	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	14	parataxis	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	14	punct	_	_
+
+# sent_id = 7
+# text = -- Siinäpä ollaan, -- vastasi Bilibin.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Siinäpä	Siinä	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|Person=2|PronType=Prs	0	root	_	_
+3	ollaan	olla	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	--	--	PUNCT	Punct	_	2	punct	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+7	Bilibin	Bilibin	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Kuulkaahan: Ranskalaiset saapuvat Wieniin, kuten teille jo sanoin.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kuulkaahan	kuulla	VERB	V	Clitic=Han|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	Ranskalaiset	Ranskalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	5	nsubj	_	_
+5	saapuvat	saapua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	Wieniin	Wien	PROPN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	kuten	kuten	SCONJ	C	_	11	mark	_	_
+9	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	11	obl	_	_
+10	jo	jo	ADV	Adv	_	11	advmod	_	_
+11	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Oivallista.
+1	Oivallista	Oivallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Seuraavana päivänä, s.o. eilen, herrat sotamarskit: Murat, Lannes ja Belliard, nousevat ratsuilleen ja lähtevät sillalle.
+1	Seuraavana	seuraava	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	2	amod	_	_
+2	päivänä	päivä	NOUN	N	Case=Ess|Number=Sing	16	obl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	s.o.	s.o.	ADV	Adv	Abbr=Yes	8	advmod	_	_
+5	eilen	eilen	ADV	Adv	_	4	fixed	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	herrat	herra	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	sotamarskit	sotamarski	NOUN	N	Case=Nom|Number=Plur	16	nsubj	_	SpaceAfter=No
+9	:	:	PUNCT	Punct	_	8	punct	_	_
+10	Murat	Murat	PROPN	N	Case=Nom|Number=Sing	8	appos	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	Lannes	Lannes	PROPN	N	Case=Nom|Number=Sing	10	conj	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	Belliard	Belliard	PROPN	N	Case=Nom|Number=Sing	10	conj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	10	punct	_	_
+16	nousevat	nousta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+17	ratsuilleen	ratsui	NOUN	N	Case=All|Number=Plur|Person[psor]=3	16	obl	_	_
+18	ja	ja	CCONJ	C	_	19	cc	_	_
+19	lähtevät	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	conj	_	_
+20	sillalle	silla	NOUN	N	Case=All|Number=Sing	19	obl	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	16	punct	_	_
+
+# sent_id = 11
+# text = (Huomatkaa, että he kaikki ovat gascognelaisia.)
+1	(	(	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Huomatkaa	huomata	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj:cop	_	_
+6	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+7	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	gascognelaisia	gascognelainen	NOUN	N	Case=Par|Derivation=Lainen|Number=Plur	2	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+10	)	)	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = "Hyvät herrat", puhuu eräs heistä -- "te tiedätte, että Thaborin silta on miinoitettu, ja että sitä suojelee uhkaava _jete de pont_[70] ja viidentoista tuhannen miehen suuruinen sotajoukko, jolle on annettu määräys räjäyttää silta ja estää meidän ylimenoamme.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hyvät	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	herrat	herra	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	puhuu	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	det	_	_
+8	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	12	obl	_	_
+9	--	--	PUNCT	Punct	_	12	punct	_	_
+10	"	"	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+11	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	12	nsubj	_	_
+12	tiedätte	tietää	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	18	punct	_	_
+14	että	että	SCONJ	C	_	18	mark	_	_
+15	Thaborin	Thabor	PROPN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+16	silta	silta	NOUN	N	Case=Nom|Number=Sing	18	obj	_	_
+17	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	aux:pass	_	_
+18	miinoitettu	miinoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	12	ccomp	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	23	punct	_	_
+20	ja	ja	CCONJ	C	_	23	cc	_	_
+21	että	että	SCONJ	C	_	23	mark	_	_
+22	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	23	obj	_	_
+23	suojelee	suojella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	26	conj	_	_
+24	uhkaava	uhkata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	25	acl	_	_
+25	_jete	_jete	NOUN	N	Case=Nom|Number=Sing	23	obj	_	_
+26	de	de	PROPN	N	Case=Nom|Number=Sing	6	conj	_	_
+27	pont_[	pont_[	PUNCT	Punct	_	28	punct	_	SpaceAfter=No
+28	70	70	NUM	Num	NumType=Card	26	appos	_	SpaceAfter=No
+29	]	]	PUNCT	Punct	_	35	punct	_	_
+30	ja	ja	CCONJ	C	_	35	cc	_	_
+31	viidentoista	viisi#toista	NUM	Num	Case=Gen|Number=Sing|NumType=Card	33	nummod	_	_
+32	tuhannen	tuhat	NUM	Num	Case=Gen|Number=Sing|NumType=Card	33	nummod	_	_
+33	miehen	mies	NOUN	N	Case=Gen|Number=Sing	35	nmod:poss	_	_
+34	suuruinen	suuruinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	35	amod	_	_
+35	sotajoukko	sotajoukko	NOUN	N	Case=Nom|Number=Sing	6	conj	_	SpaceAfter=No
+36	,	,	PUNCT	Punct	_	39	punct	_	_
+37	jolle	joka	PRON	Pron	Case=All|Number=Sing|PronType=Rel	39	obl	_	_
+38	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	39	aux:pass	_	_
+39	annettu	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	41	acl	_	_
+40	määräys	määräys	NOUN	N	Case=Nom|Number=Sing	39	obj	_	_
+41	räjäyttää	räjäyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	conj	_	_
+42	silta	silta	NOUN	N	Case=Nom|Number=Sing	41	obj	_	_
+43	ja	ja	CCONJ	C	_	44	cc	_	_
+44	estää	estää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	41	conj	_	_
+45	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	44	obj	_	_
+46	ylimenoamme	ylimenoa	ADV	Adv	Number[psor]=Plur|Person[psor]=1	44	advmod	_	SpaceAfter=No
+47	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 13
+# text = Mutta meidän herramme ja keisarimme, Napoleon olisi mielissään, jos valloittaisimme sillan.
+1	Mutta	mutta	CCONJ	C	_	9	cc	_	_
+2	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	3	nmod:poss	_	_
+3	herramme	herra	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	9	nmod:poss	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	keisarimme	keisari	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Plur|Person[psor]=1	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	Napoleon	Napoleo	PROPN	N	Case=Gen|Number=Sing	9	nsubj:cop	_	_
+8	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	mielissään	mieli	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	jos	jos	SCONJ	C	_	12	mark	_	_
+12	valloittaisimme	valloittaa	VERB	V	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	9	advcl	_	_
+13	sillan	silta	NOUN	N	Case=Gen|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 14
+# text = Menkäämme kolmisin ja valloittakaamme silta."
+1	Menkäämme	Menkätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kolmisin	kolminen	ADJ	A	Case=Nom|Degree=Sup|Derivation=Llinen|Number=Sing	1	xcomp	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	valloittakaamme	valloittaa	VERB	V	Mood=Imp|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	5	conj	_	_
+5	silta	silta	NOUN	N	Case=Nom|Number=Sing	1	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 15
+# text = -- "Menkäämme", sanoivat toiset; ja he menevät ja valloittavat sillan, kulkevat sen yli, ovat nyt koko armeijoineen Tonavan tällä puolella ja kulkevat meidän kimppuumme, teidän kimppuunne ja uhkaavat teidän yhdyslinjaanne.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Menkäämme	Menkätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	sanoivat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	toiset	toinen	PRON	Pron	Case=Nom|Number=Plur|PronType=Rcp	6	obj	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	3	punct	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	11	nsubj	_	_
+11	menevät	mennä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	valloittavat	valloittaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+14	sillan	silta	NOUN	N	Case=Gen|Number=Sing	13	obj	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	16	punct	_	_
+16	kulkevat	kulkea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+17	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	16	obl	_	_
+18	yli	yli	ADP	Adp	AdpType=Post	17	case	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	3	punct	_	_
+20	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
+21	nyt	nyt	ADV	Adv	_	3	advmod	_	_
+22	koko	koko	ADJ	A	_	23	amod	_	_
+23	armeijoineen	armeijo	NOUN	N	Case=Com|Person[psor]=3	3	obl	_	_
+24	Tonavan	Tonava	PROPN	N	Case=Gen|Number=Sing	3	obj	_	_
+25	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	26	det	_	_
+26	puolella	puoli	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+27	ja	ja	CCONJ	C	_	28	cc	_	_
+28	kulkevat	kulkla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+29	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	30	nmod:poss	_	_
+30	kimppuumme	kimppu	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Plur|Person[psor]=1	28	obl	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	35	punct	_	_
+32	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	35	nsubj	_	_
+33	kimppuunne	kimppuunne	ADV	Adv	_	35	advmod	_	_
+34	ja	ja	CCONJ	C	_	35	cc	_	_
+35	uhkaavat	uhata	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	30	acl:relcl	_	_
+36	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	37	nmod:poss	_	_
+37	yhdyslinjaanne	yhdyslinjaanne	NOUN	N	Case=Nom|Number=Sing	35	obj	_	SpaceAfter=No
+38	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

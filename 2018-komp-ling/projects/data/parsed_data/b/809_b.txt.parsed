@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ampuja surmasi välikohtauksessa 12 ihmistä.
+1	Ampuja	ampuja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	surmasi	surmata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	välikohtauksessa	välikohtaus	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+4	12	12	NUM	Num	NumType=Card	5	nummod	_	_
+5	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Myös ampuja itse kuoli.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	ampuja	#ampuja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	4	nsubj	_	_
+3	itse	itse	PRON	Pron	Case=Nom|Number=Sing|Reflex=Yes	4	det	_	_
+4	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Kalifornia on kärsinyt tänä vuonna ennätysmäisistä maastopaloista.
+1	Kalifornia	Kalifornia	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kärsinyt	kärsidä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	tänä	tämä	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	5	det	_	_
+5	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	3	obl	_	_
+6	ennätysmäisistä	ennätysmäinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Plur	7	amod	_	_
+7	maastopaloista	maastopalo	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Ammuskelu tapahtui ravintolassa, jossa oli paikalla satoja nuoria.
+1	Ammuskelu	Ammuskelu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	tapahtui	tapahtua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ravintolassa	ravintola	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	3	acl:relcl	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	paikalla	paikka	NOUN	N	Case=Ade|Number=Sing	5	obl	_	_
+8	satoja	sata	NUM	Num	Case=Par|Number=Plur|NumType=Card	9	nummod	_	_
+9	nuoria	nuori	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Mies ampui vaimonsa ja neljä muuta ihmistä, sekä lopuksi itsensä.
+1	Mies	mies	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ampui	ampua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vaimonsa	vaimo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	neljä	neljä	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+6	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	det	_	_
+7	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	sekä	sekä	CCONJ	C	_	11	cc	_	_
+10	lopuksi	lopuksi	ADV	Adv	_	11	advmod	_	_
+11	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Saksalaisastronautti Alexander Gerstin valokuvat paljastavat maastopalojen laajuuden.
+1	Saksalaisastronautti	Saksalaisastronautti	PROPN	N	Case=Nom|Number=Sing	4	nmod:poss	_	_
+2	Alexander	Alexander	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	Gerstin	Gerst	PROPN	N	Case=Gen|Number=Sing	1	flat:name	_	_
+4	valokuvat	valokuva	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+5	paljastavat	paljastaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	maastopalojen	maastopalo	NOUN	N	Case=Gen|Number=Plur	7	nmod:poss	_	_
+7	laajuuden	laajuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Pohjois-Kalifornian Mendocinossa roihuavista kaksoispaloista on kasvanut yhteensä Los Angelesin kaupungin kokoiset.
+1	Pohjois-Kalifornian	Pohjois-Kalifornia	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	Mendocinossa	Mendocino	PROPN	N	Case=Ine|Number=Sing	1	flat:name	_	_
+3	roihuavista	roihuavi	NOUN	N	Case=Ela|Number=Sing	6	obl	_	_
+4	kaksoispaloista	kaksoispalo	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	kasvanut	kasvaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	yhteensä	yhteensä	ADV	Adv	_	11	advmod	_	_
+8	Los	Los	PROPN	N	Case=Nom|Number=Sing	10	nmod:poss	_	_
+9	Angelesin	Angeles	PROPN	N	Case=Gen|Number=Sing	8	flat:name	_	_
+10	kaupungin	kaupunki	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	kokoiset	kokoinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	6	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = Metsäpalokausi alkaa yleensä Kaliforniassa vasta elokuussa.
+1	Metsäpalokausi	Metsäpalo#kausi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	alkaa	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yleensä	yleensä	ADV	Adv	_	2	advmod	_	_
+4	Kaliforniassa	Kalifornia	PROPN	N	Case=Ine|Number=Sing	2	obl	_	_
+5	vasta	vasta	ADV	Adv	_	6	advmod	_	_
+6	elokuussa	elokuu	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Viikko sitten maanantaina alkunsa saanut Carr-palo on polttanut arviolta jo lähes 40 000 hehtaaria maastoa.
+1	Viikko	viikko	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+2	sitten	sitten	ADV	Adv	_	3	advmod	_	_
+3	maanantaina	maanantai	NOUN	N	Case=Ess|Number=Sing	1	obl	_	_
+4	alkunsa	alku	NOUN	N	Case=Gen|Derivation=U|Number=Sing|Person[psor]=3	5	nsubj	_	_
+5	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	acl	_	_
+6	Carr-palo	Carr-palo	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	polttanut	polttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+9	arviolta	arvio	NOUN	N	Case=Abl|Number=Sing	8	obl	_	_
+10	jo	jo	ADV	Adv	_	11	advmod	_	_
+11	lähes	lähes	ADV	Adv	_	12	advmod	_	_
+12	40 000	40 000	NUM	Num	NumType=Card	13	nummod	_	_
+13	hehtaaria	hehtaari	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+14	maastoa	maasto	NOUN	N	Case=Par|Number=Sing	13	nmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 10
+# text = Satoja rakennuksia on tuhoutunut maastopaloissa Kaliforniassa, eikä ihmisuhreiltakaan ole vältytty.
+1	Satoja	sata	NUM	Num	Case=Par|Number=Plur|NumType=Card	2	nummod	_	_
+2	rakennuksia	rakennus	NOUN	N	Case=Par|Number=Plur	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tuhoutunut	tuhoutua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	maastopaloissa	maastopalo	NOUN	N	Case=Ine|Number=Plur	4	obl	_	_
+6	Kaliforniassa	Kalifornia	PROPN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	cc	_	_
+9	ihmisuhreiltakaan	ihmisuhreilt	NOUN	N	Case=Par|Clitic=Kaan|Number=Sing	11	obj	_	_
+10	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	aux:pass	_	_
+11	vältytty	vältyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

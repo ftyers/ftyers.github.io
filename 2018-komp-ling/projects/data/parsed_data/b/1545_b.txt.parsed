@@ -1,0 +1,117 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Merkillinen tapaus, mutta oletan, että mies sai sydänkohtauksen.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Merkillinen	merkillinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	3	amod	_	_
+3	tapaus	tapaus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	mutta	mutta	CCONJ	C	_	6	cc	_	_
+6	oletan	olettaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	että	että	SCONJ	C	_	10	mark	_	_
+9	mies	mies	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	ccomp	_	_
+11	sydänkohtauksen	sydänkohtaus	NOUN	N	Case=Gen|Number=Sing	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+
+# sent_id = 2
+# text = Mitä lääkärit sanovat? Wallander kysyi.
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	lääkärit	lääkäri	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	sanovat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+5	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = — He eivät tiedä, mihin mies kuoli.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+3	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Rel	8	obl	_	_
+7	mies	mies	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = — He tutkivat miehen ruumiin tarkemmin ja selvittävät kuolinsyyn, Hansson selitti.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	tutkivat	tutkia	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	miehen	#mies	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	ruumiin	ruuma	NOUN	N	Case=Ill|Number=Plur	3	obl	_	_
+6	tarkemmin	tarkemmin	ADV	Adv	_	3	advmod	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	selvittävät	selvittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	kuolinsyyn	kuolinsy	NOUN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	3	punct	_	_
+11	Hansson	Hansson	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	selitti	selittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = ♦♦♦ Tuntia myöhemmin Wallander tiesi vähän enemmän kuolleesta miehestä.
+1	♦♦♦	♦♦♦	SYM	Symb	_	5	obl	_	_
+2	Tuntia	tunt	PROPN	N	Case=Par|Number=Sing	1	flat:name	_	_
+3	myöhemmin	myöhemmin	ADV	Adv	_	5	advmod	_	_
+4	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	tiesi	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	vähän	vähän	ADV	Adv	_	7	advmod	_	_
+7	enemmän	enemmän	ADV	Adv	_	5	advmod	_	_
+8	kuolleesta	kuollei	NOUN	N	Case=Ela|Number=Sing	5	obl	_	_
+9	miehestä	mies	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Hansson oli soittanut Tukholmaan ja puhunut Alexanderssonin sihteerin kanssa.
+1	Hansson	Hansson	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	soittanut	soittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Tukholmaan	Tukholma	PROPN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+7	Alexanderssonin	Alexandersson	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	sihteerin	sihteeri	NOUN	N	Case=Gen|Number=Sing	6	obl	_	_
+9	kanssa	kanssa	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Alexandersson oli ollut naimisissa, mutta eronnut kymmenen vuotta sitten.
+1	Alexandersson	Alexandersson	PROPN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	naimisissa	naimisissa	ADV	Adv	_	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mutta	mutta	CCONJ	C	_	7	cc	_	_
+7	eronnut	erota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	conj	_	_
+8	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+9	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	7	obl	_	_
+10	sitten	sitten	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Hänellä oli ollut myös yksi lapsi, poika.
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	cop:own	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	_
+5	yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	6	nummod	_	_
+6	lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	poika	poika	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter= 
+
+# sent_id = 9
+# text = Poika oli kuollut seitsemän vuotta sitten.
+1	Poika	poika	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kuollut	kuolla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	seitsemän	seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+6	sitten	sitten	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

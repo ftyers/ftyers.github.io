@@ -1,0 +1,134 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Virossa kaikki on niin halpaa, Riikosella oli tapana sanoa selitykseksi.
+1	—	—	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s   
+2	Virossa	Viro	PROPN	N	Case=Ine|Number=Sing	6	obl	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	halpaa	halpaa	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	SpacesAfter= \s
+8	Riikosella	Riikonen	NOUN	N	Case=Ade|Derivation=Minen|Number=Sing	10	obl	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	tapana	tapa	NOUN	N	Case=Ess|Number=Sing	11	obl	_	_
+11	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+12	selitykseksi	selitys	NOUN	N	Case=Tra|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 2
+# text = — Tunsitko hyvin pastori Mäkisen, pastori Halme aloitti keskustelun.
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s   
+2	Tunsitko	Tunstaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hyvin	hyvin	ADV	Adv	_	2	advmod	_	_
+4	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	SpacesAfter= 
+7	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nsubj	_	_
+9	aloitti	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+10	keskustelun	keskustelu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = — En sen paremmin kuin muutkaan, suntio Riikonen sanoi vähän tylysti.
+1	—	—	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s   
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	nmod:poss	_	_
+4	paremmin	hyvin	ADV	Adv	Degree=Cmp	10	advmod	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	muutkaan	muut	ADV	Adv	Clitic=Kaan	4	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+8	suntio	suntio	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Riikonen	Riikonen	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	vähän	vähän	ADV	Adv	_	12	advmod	_	_
+12	tylysti	tylysti	ADV	Adv	Derivation=Sti	10	advmod	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	10	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Hän ei halunnut puhua Mäkisestä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	Mäkisestä	Mäkisi	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = — Mutta tehän olitte naapureita, pastori Halme jatkoi.
+1	—	—	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s   
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	tehän	te	PRON	Pron	Case=Nom|Clitic=Han|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+4	olitte	olida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+5	naapureita	naapuri	NOUN	N	Case=Par|Number=Plur	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	SpacesAfter= 
+7	pastori	pastori	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+8	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nsubj	_	_
+9	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = — Heidän avioliittonsa ei kai ollut kovin onnellinen.
+1	—	—	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s   
+2	Heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	3	nmod:poss	_	_
+3	avioliittonsa	avioliitto	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	8	nsubj:cop	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+5	kai	kai	ADV	Adv	_	8	advmod	_	SpacesAfter= 
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	cop	_	_
+7	kovin	kovin	ADV	Adv	_	8	advmod	_	_
+8	onnellinen	onnellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter= \s
+
+# sent_id = 7
+# text = Muksut ovat pahassa iässä.
+1	Muksut	Muksu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	4	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	pahassa	paha	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	4	amod	_	_
+4	iässä	ikä	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Meteliä kuuluu joskus tänne puolelle seinän takaa, suntio Riikonen vastasi.
+1	Meteliä	meteli	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+2	kuuluu	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	joskus	joskus	ADV	Adv	_	2	advmod	_	_
+4	tänne	tänne	ADV	Adv	_	2	advmod	_	_
+5	puolelle	puoli	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+6	seinän	seinä	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+7	takaa	takaa	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	SpacesAfter= 
+9	suntio	suntio	NOUN	N	Case=Nom|Number=Sing	10	compound:nn	_	_
+10	Riikonen	Riikonen	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+11	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = — Mäkisen vaimo on kiltti.
+1	—	—	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s   
+2	Mäkisen	Mäkinen	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kiltti	killa	VERB	V	Mood=Ind|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Hän tuo minullekin joskus kasviksia puutarhasta.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	det	_	_
+2	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	minullekin	minu	NOUN	N	Case=All|Clitic=Kin|Number=Sing	0	root	_	_
+4	joskus	joskus	ADV	Adv	_	5	advmod	_	_
+5	kasviksia	kasvis	NOUN	N	Case=Par|Number=Plur	3	nmod	_	_
+6	puutarhasta	puutarha	NOUN	N	Case=Ela|Number=Sing	5	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Häntä käy sääliksi, Riikonen jatkoi.
+1	Häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sääliksi	sääli	NOUN	N	Case=Tra|Number=Sing	2	xcomp:ds	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	SpacesAfter= \s
+5	Riikonen	Riikonen	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

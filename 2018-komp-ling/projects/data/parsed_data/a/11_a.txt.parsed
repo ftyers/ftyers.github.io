@@ -1,0 +1,139 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suomi voi vähentää nopeasti päästöjä, jotka lämmittävät ilmastoa.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	vähentää	vähentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	3	advmod	_	_
+5	päästöjä	päästä	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	8	nsubj	_	_
+8	lämmittävät	lämmittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	ilmastoa	ilmasto	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Uusi raportti kertoo, että päästöjä voidaan vähentää 50 prosenttia vuoteen 2030 mennessä.
+1	Uusi	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	raportti	raportti	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kertoo	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	päästöjä	päästö	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+7	voidaan	voida	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	8	aux	_	_
+8	vähentää	vähentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	ccomp	_	_
+9	50	50	NUM	Num	NumType=Card	10	nummod	_	_
+10	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	8	obl	_	_
+11	vuoteen	vuosi	NOUN	N	Case=Ill|Number=Sing	8	obl	_	_
+12	2030	2030	NUM	Num	NumType=Card	8	obl	_	_
+13	mennessä	mennessä	ADP	Adp	AdpType=Post	12	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Se ei edes maksa paljon.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	edes	edes	ADV	Adv	_	4	advmod	_	_
+4	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+5	paljon	paljon	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Yksi tapa vähentää päästöjä on tuulivoima.
+1	Yksi	yksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	nummod	_	_
+2	tapa	#tapa	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	vähentää	vähentää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	päästöjä	päästö	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	tuulivoima	tuuli#voima	NOUN	N	Case=Nom|Number=Sing	3	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Suomen merialueilla tuulee paljon, ja uudet tuulivoimalat ovat isoja ja tehokkaita.
+1	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	merialueilla	merialue	NOUN	N	Case=Ade|Number=Plur	3	obl	_	_
+3	tuulee	tuulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	paljon	paljon	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	ja	ja	CCONJ	C	_	10	cc	_	_
+7	uudet	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	tuulivoimalat	tuulivoimala	NOUN	N	Case=Nom|Number=Plur	10	nsubj:cop	_	_
+9	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	isoja	isa	ADJ	A	Case=Par|Degree=Pos|Number=Plur	3	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	tehokkaita	tehokas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	10	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Tuulivoima todennäköisesti laskee sähkön hintaa 2020-luvulla.
+1	Tuulivoima	Tuuli#voima	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	todennäköisesti	toden#näköisesti	ADV	Adv	Derivation=Sti	1	advmod	_	_
+3	laskee	laskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sähkön	sähkkö	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	hintaa	hinta	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+6	2020-luvulla	2020#luku	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Myös sähköautot halpenevat, ja sähköautoja tulee lisää.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	sähköautot	sähkö#auto	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	halpenevat	halpenla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	sähköautoja	sähköauto	NOUN	N	Case=Par|Number=Plur	7	nsubj	_	_
+7	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	lisää	lisää	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Suomessa on vuonna 2030 ehkä 800 000 sähköautoa.
+1	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	1	obl	_	_
+4	2030	2030	NUM	Num	NumType=Card	3	nummod	_	_
+5	ehkä	ehkä	ADV	Adv	_	6	advmod	_	_
+6	800 000	800 000	NUM	Num	NumType=Card	7	nummod	_	_
+7	sähköautoa	sähkö#auto	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Suomeen tulee uusia eläimiä, kun ilmasto lämpenee.
+1	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	2	obl	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	uusia	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Plur	4	amod	_	_
+4	eläimiä	eläimä	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kun	kun	SCONJ	C	_	8	mark	_	_
+7	ilmasto	ilmasto	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	lämpenee	lämpetä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Esimerkiksi sakaali tulee Suomeen, kun Suomen talvet lämpenevät.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	3	advmod	_	_
+2	sakaali	sakaali	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	kun	kun	SCONJ	C	_	9	mark	_	_
+7	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	talvet	talvi	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	lämpenevät	lämpentä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Uskotaan, että Suomessa nähdään sakaaleja viimeistään 10 vuoden päästä.
+1	Uskotaan	uskoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	että	että	SCONJ	C	_	5	mark	_	_
+4	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	5	obl	_	_
+5	nähdään	nähdä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	ccomp	_	_
+6	sakaaleja	sakaali	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+7	viimeistään	viimeistään	ADV	Adv	_	8	advmod	_	_
+8	10	10	NUM	Num	NumType=Card	9	nummod	_	_
+9	vuoden	vuosi	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+10	päästä	päästä	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

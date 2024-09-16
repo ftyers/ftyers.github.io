@@ -1,0 +1,92 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Ei, ei!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Niin ei saa käydä, ei! huusi Sonja kovasti ja vimmatusti, ikäänkuin olisi saanut puukon piston.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	käydä	käydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	8	punct	_	_
+8	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+10	kovasti	kovasti	ADV	Adv	Derivation=Sti	8	advmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	vimmatusti	vimmatusti	ADV	Adv	Derivation=Sti	8	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	ikäänkuin	ikäänkuin	ADV	Adv	_	16	advmod	_	_
+15	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	16	aux	_	_
+16	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	conj	_	_
+17	puukon	puukko	NOUN	N	Case=Gen|Number=Sing	18	nmod:poss	_	_
+18	piston	pisto	NOUN	N	Case=Gen|Number=Sing	16	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = -- Jumalani, Jumalani!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Jumalani	Jumalaan	ADV	Adv	Number[psor]=Sing|Person[psor]=1	4	orphan	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Jumalani	Jumalaan	ADV	Adv	Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Jotakin niin hirmuista sinä et saada lähettää!...
+1	Jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	det	_	_
+2	niin	niin	ADV	Adv	_	3	advmod	_	_
+3	hirmuista	hirmu	NOUN	N	Case=Ela|Number=Plur	6	obl	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	6	nsubj	_	_
+5	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	lähettää	lähettää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+9	...	...	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = -- Hän antaa sen kuitenkin muutamille tapahtua!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	3	obj	_	_
+5	kuitenkin	kuitenkin	ADV	Adv	_	3	advmod	_	_
+6	muutamille	muutama	NOUN	N	Case=All|Number=Plur	3	obl	_	_
+7	tapahtua	tapahtua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = -- Ei, ei!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Jumala on häntä suojeleva!
+1	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	det	_	_
+4	suojeleva	suojeleva	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Jumalani!
+1	Jumalani	Jumalaan	ADV	Adv	Number[psor]=Sing|Person[psor]=1	0	root	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = toisti hän melkein mielettömänä.
+1	toisti	toisti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj:cop	_	_
+3	melkein	melkein	ADV	Adv	_	4	advmod	_	_
+4	mielettömänä	mieletön	ADJ	A	Case=Ess|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kauko-ohjattavasta kopterista on tullut yleinen kuvausväline Suomessa.
+1	Kauko-ohjattavasta	Kauko-ohjattava	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	2	amod	_	_
+2	kopterista	kopteri	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	yleinen	yleinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	kuvausväline	kuvausväline	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+7	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Kaikki eivät tiedä tai välitä säännöistä.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tai	tai	CCONJ	C	_	5	cc	_	_
+5	välitä	välitä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+6	säännöistä	sääntö	NOUN	N	Case=Ela|Number=Plur	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Tapaukseen ei epäillä liittyvän rikosta.
+1	Tapaukseen	Tapauknen	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	epäillä	epäillä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	liittyvän	liittydä	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	3	xcomp	_	_
+5	rikosta	riko	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Rajoitus on voimassa huomenna torstaina kello 14–24.
+1	Rajoitus	rajoitus	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	voimassa	voimassa	ADV	Adv	_	4	advmod	_	_
+4	huomenna	huomenna	ADV	Adv	_	5	advmod	_	_
+5	torstaina	torstai	NOUN	N	Case=Ess|Number=Sing	0	root	_	_
+6	kello	kello	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+7	14–24	14–24	NUM	Num	NumType=Card	6	nummod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Ilmailuharrastajat joutuvat pysyttelemään maassa sunnuntaista kello 6:sta tiistaihin kello 8:aan.
+1	Ilmailuharrastajat	Ilmailuharrastaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	nsubj	_	_
+2	joutuvat	joutua	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pysyttelemään	pysytteleä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp:ds	_	_
+4	maassa	maa	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+5	sunnuntaista	sunnuntainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	6	amod	_	_
+6	kello	#kello	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+7	6:sta	6	NUM	Num	Case=Ela|Number=Sing|NumType=Card	8	nummod	_	_
+8	tiistaihin	tiista	NOUN	N	Case=Ill|Number=Plur	3	obl	_	_
+9	kello	kello	NOUN	N	Case=Nom|Number=Sing	10	obj	_	_
+10	8:aan	8:a	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 6
+# text = Radalla voi lentää videolasien avulla ohjattavia droneja.
+1	Radalla	rata	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	lentää	lentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	videolasien	videolasi	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	6	obl	_	_
+6	ohjattavia	ohjattaa	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+7	droneja	droni	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Lentoaseman ilmatilassa tehtiin viime viikolla viisi havaintoa droneista lentokoneiden lähestymis- ja lähtölinjojen lähellä.
+1	Lentoaseman	Lentoasema	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	ilmatilassa	ilmatila	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+3	tehtiin	tehdä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	viime	viime	ADJ	A	_	5	amod	_	_
+5	viikolla	viikko	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+6	viisi	viisi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	havaintoa	havainto	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+8	droneista	drone	NOUN	N	Case=Ela|Number=Plur	7	nmod	_	_
+9	lentokoneiden	lentokone	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+10	lähestymis-	lähestymis	NOUN	N	Case=Nom|Number=Sing	3	obl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	lähtölinjojen	lähtölinjo	NOUN	N	Case=Gen|Number=Plur	10	conj	_	_
+13	lähellä	lähellä	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Kuningas Salmanin kerrotaan olleen tapahtuman aikaan muualla.
+1	Kuningas	kuningas	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Salmanin	Salman	PROPN	N	Case=Gen|Number=Sing	3	nsubj	_	_
+3	kerrotaan	kertoa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	olleen	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	6	cop	_	_
+5	tapahtuman	tapahtuma	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	7	obl	_	_
+7	muualla	muualla	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Miehittämättömien ilma-alusten käyttö lisääntyy nopeasti, mutta testipaikkoja ei juurikaan ole.
+1	Miehittämättömien	Miehittämättöma	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	ilma-alusten	ilma-alus	NOUN	N	Case=Gen|Number=Plur	3	nmod:gobj	_	_
+3	käyttö	käyttö	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	lisääntyy	lisääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	mutta	mutta	CCONJ	C	_	11	cc	_	_
+8	testipaikkoja	testipaikko	NOUN	N	Case=Par|Number=Plur	11	nsubj:cop	_	_
+9	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+10	juurikaan	juuri	ADV	Adv	Clitic=Kaan	11	advmod	_	_
+11	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Pyhtään uudesta lentokentästä kaavaillaan minikoptereiden tuotekehityspaikkaa.
+1	Pyhtään	Pyhtä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+2	uudesta	uusi	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	3	amod	_	_
+3	lentokentästä	lentokentä	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+4	kaavaillaan	kaavailla	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	conj	_	_
+5	minikoptereiden	minikoptere	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	tuotekehityspaikkaa	tuotekehityspaikka	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

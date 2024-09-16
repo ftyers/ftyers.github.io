@@ -1,0 +1,112 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Terveydenhuolto Terveyskeskukset
+1	Terveydenhuolto	Terveydenhuolto	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Terveyskeskukset	Terveyskeskus	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+
+# sent_id = 2
+# text = Jokaisessa kunnassa ja kaupungissa on terveyskeskus.
+1	Jokaisessa	jokainen	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	2	det	_	_
+2	kunnassa	kunta	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	kaupungissa	kaupunki	NOUN	N	Case=Ine|Number=Sing	2	conj	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	terveyskeskus	terveys#keskus	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 3
+# text = Siellä huolehditaan kunnan asukkaiden terveydestä.
+1	Siellä	siellä	ADV	Adv	_	2	advmod	_	_
+2	huolehditaan	huolehdita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	kunnan	kunta	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	asukkaiden	asukas	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	terveydestä	terveys	NOUN	N	Case=Ela|Derivation=Vs|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Jos sairastut, voit saada terveyskeskuksesta ajan lääkärille.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	sairastut	sairastua	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	terveyskeskuksesta	terveyskeskus	NOUN	N	Case=Ela|Number=Sing	5	obl	_	_
+7	ajan	#aika	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	lääkärille	lääkäri	NOUN	N	Case=All|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Ota selvää, minkä terveyskeskuksen asiakas sinä olet.
+1	Ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	selvää	selvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Int	8	obl	_	_
+5	terveyskeskuksen	terveyskeskus	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	asiakas	asiakas	NOUN	N	Case=Nom|Number=Sing	8	obj	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	8	nsubj	_	_
+8	olet	olla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = Tavallisesti se on kotia lähinnä oleva terveyskeskus.
+1	Tavallisesti	tavallisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+4	kotia	koti	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+5	lähinnä	lähinnä	ADV	Adv	_	6	advmod	_	_
+6	oleva	olla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	acl	_	_
+7	terveyskeskus	terveys#keskus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Lääkärissä käynnistä maksetaan eri kunnissa eri tavalla.
+1	Lääkärissä	Lääkärä	NOUN	N	Case=Ine|Number=Plur	3	obl	_	_
+2	käynnistä	käynti	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+3	maksetaan	maksaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	eri	eri	ADJ	A	_	5	amod	_	_
+5	kunnissa	kunta	NOUN	N	Case=Ine|Number=Plur	3	obl	_	_
+6	eri	eri	ADJ	A	_	7	amod	_	_
+7	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Joissakin kunnissa on käytössä vuosimaksu.
+1	Joissakin	jokin	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	2	det	_	_
+2	kunnissa	kunta	NOUN	N	Case=Ine|Number=Plur	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	käytössä	käyttö	NOUN	N	Case=Ine|Number=Sing	5	nmod	_	_
+5	vuosimaksu	vuosi#maksu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Silloin terveyskeskusmaksu maksetaan kerran vuodessa.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	terveyskeskusmaksu	terveyskeskus#maksu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	obj	_	_
+3	maksetaan	maksaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	kerran	kerran	ADV	Adv	_	5	advmod	_	_
+5	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Joissakin kunnissa on käytössä kertamaksu.
+1	Joissakin	jokin	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	2	det	_	_
+2	kunnissa	kunta	NOUN	N	Case=Ine|Number=Plur	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	käytössä	käyttö	NOUN	N	Case=Ine|Number=Sing	5	nmod	_	_
+5	kertamaksu	kerta#maksu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Silloin asiakas maksaa kertamaksun kolmelta ensimmäiseltä lääkärissä käynniltä vuodessa.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	asiakas	asiakas	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	maksaa	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kertamaksun	kertamaksu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	7	nmod:poss	_	_
+5	kolmelta	kolme	NUM	Num	Case=Abl|Number=Sing|NumType=Card	7	nummod	_	_
+6	ensimmäiseltä	ensimmäinen	ADJ	Num	Case=Abl|Derivation=Inen|Number=Sing|NumType=Ord	7	amod	_	_
+7	lääkärissä	lääkäri	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+8	käynniltä	käynnä	NOUN	N	Case=Abl|Number=Plur	9	obl	_	_
+9	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	3	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Mikä on rakkaus?
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	rakkaus	rakkaus	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Mikä on luominen?
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	luominen	luominen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Mikä on kaipuu?
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	kaipuu	kaipuu	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Mikä on tähti?"
+1	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	tähti	#tähti	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = -- niin kysyy viimeinen ihminen ja vilkuttaa silmiänsä.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	niin	niin	ADV	Adv	_	3	advmod	_	_
+3	kysyy	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	viimeinen	viimeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	vilkuttaa	vilkuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	silmiänsä	silmiä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Maa on silloin käynyt pieneksi ja sen päällä hyppii viimeinen ihminen, joka tekee kaiken pieneksi.
+1	Maa	maa	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	silloin	silloin	ADV	Adv	_	4	advmod	_	_
+4	käynyt	käydä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	pieneksi	pieni	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	4	xcomp	_	_
+6	ja	ja	CCONJ	C	_	9	cc	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	obl	_	_
+8	päällä	päällä	ADP	Adp	AdpType=Post	7	case	_	_
+9	hyppii	hyppiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	viimeinen	viimeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	11	amod	_	_
+11	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	14	nsubj	_	_
+14	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	14	obj	_	_
+16	pieneksi	pieni	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	14	xcomp	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Hänen sukunsa on häviämätön kuten maakirppu: viimeinen ihminen elää kauimmin.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	sukunsa	suku	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	6	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	häviämätön	häviämätön	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	6	amod	_	_
+5	kuten	kuten	ADV	Adv	_	6	advmod	_	_
+6	maakirppu	maakirppu	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	6	punct	_	_
+8	viimeinen	viimeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	9	amod	_	_
+9	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+10	elää	elää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+11	kauimmin	kauesti	ADV	Adv	Degree=Sup|Derivation=Sti	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 8
+# text = "Me olemme löytäneet onnen" -- sanovat viimeiset ihmiset ja vilkuttavat silmiänsä.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	4	nsubj	_	_
+3	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	löytäneet	löytää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	onnen	onni	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	5	punct	_	_
+7	--	--	PUNCT	Punct	_	4	punct	_	_
+8	sanovat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	viimeiset	viimeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	_
+10	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	8	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	vilkuttavat	vilkuttaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	silmiänsä	silmiä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = He ovat jättäneet seudut, missä oli vaikeata elää: sillä lämpöä tarvitaan.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	jättäneet	jättäa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	seudut	seudu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	8	obl	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	vaikeata	vaikea	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	acl:relcl	_	_
+9	elää	elää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	csubj:cop	_	SpaceAfter=No
+10	:	:	PUNCT	Punct	_	13	punct	_	_
+11	sillä	sillä	SCONJ	C	_	13	mark	_	_
+12	lämpöä	lämpö	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+13	tarvitaan	tarvita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	advcl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Naapuria rakastetaan vielä ja hangataan kylkeä häneen: sillä lämpöä tarvitaan.
+1	Naapuria	Naapuri	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+2	rakastetaan	rakasttaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	vielä	vielä	ADV	Adv	_	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	hangataan	hangata	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	conj	_	_
+6	kylkeä	kylki	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+7	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	2	obl	_	SpaceAfter=No
+8	:	:	PUNCT	Punct	_	11	punct	_	_
+9	sillä	sillä	SCONJ	C	_	11	mark	_	_
+10	lämpöä	lämpö	NOUN	N	Case=Par|Number=Sing	11	obj	_	_
+11	tarvitaan	tarvita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

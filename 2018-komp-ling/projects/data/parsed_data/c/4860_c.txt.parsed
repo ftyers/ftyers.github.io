@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 2. Jumalan edessä!
+1	2	2	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+3	Jumalan	Jumala	PROPN	N	Case=Gen|Number=Sing	1	obl	_	_
+4	edessä	edessä	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = -- Mutta nyt tämä jumala on kuollut!
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	7	cc	_	_
+3	nyt	nyt	ADV	Adv	_	7	advmod	_	_
+4	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	det	_	_
+5	jumala	jum#ala	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	kuollut	kuolla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = Te korkeammat ihmiset, tämä jumala oli teidän suurin vaaranne.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	det	_	_
+2	korkeammat	korkeampi	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	3	amod	_	_
+3	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	10	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	det	_	_
+6	jumala	jum#ala	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	cop	_	_
+8	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	9	nmod:poss	_	_
+9	suurin	suuri	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	10	amod	_	_
+10	vaaranne	vaaranne	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 4
+# text = Vasta sitten kuin hän vaipui hautaan olette te jälleen ylösnousseet.
+1	Vasta	vasta	ADV	Adv	_	2	advmod	_	_
+2	sitten	sitten	ADV	Adv	_	3	advmod	_	_
+3	kuin	kuin	SCONJ	C	_	5	mark	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	vaipui	vaipua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	hautaan	hautaan	ADV	Adv	_	5	advmod	_	_
+7	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+8	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_
+9	jälleen	jälleen	ADV	Adv	_	10	advmod	_	_
+10	ylösnousseet	ylösnoustä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	5	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Nyt vasta tulee suuri keskipäivä, nyt vasta tulee korkeampi ihminen -- herraksi!
+1	Nyt	nyt	ADV	Adv	_	3	advmod	_	_
+2	vasta	vasta	ADV	Adv	_	3	advmod	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+5	keskipäivä	keski#päivä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	nyt	nyt	ADV	Adv	_	9	advmod	_	_
+8	vasta	vasta	ADV	Adv	_	9	advmod	_	_
+9	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	korkeampi	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	11	amod	_	_
+11	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+12	--	--	PUNCT	Punct	_	13	punct	_	_
+13	herraksi	herra	NOUN	N	Case=Tra|Number=Sing	9	xcomp	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Ymmärsittekö te tämän sanan, oi veljeni?
+1	Ymmärsittekö	Ymmärsidä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+2	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	1	obj	_	_
+3	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	det	_	_
+4	sanan	sana	NOUN	N	Case=Gen|Number=Sing	1	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	1	punct	_	_
+6	oi	aa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	veljeni	veli	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	6	nsubj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Te peljästytte: pyörryttääkö teidän sydäntänne?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+2	peljästytte	peljästyi	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+4	pyörryttääkö	pyörryttää	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	6	nsubj	_	_
+6	sydäntänne	sydäntänne	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Ammoittaako tässä pohjattomuus teitä vastaan?
+1	Ammoittaako	Ammoittaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	1	obl	_	_
+3	pohjattomuus	pohjattomuus	NOUN	N	Case=Nom|Derivation=Ton,Vs|Number=Sing	1	obj	_	_
+4	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	1	obj	_	_
+5	vastaan	vastaan	ADV	Adv	_	1	compound:prt	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Haukkuuko helvetinkoira teille täällä?
+1	Haukkuuko	Haukkuu	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	helvetinkoira	helvetinkoira	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+3	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	1	obl	_	_
+4	täällä	täällä	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

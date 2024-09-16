@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä tämä merkitsee?...
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	obj	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj	_	_
+4	merkitsee	merkitä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Mitä tarkotatte?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	obj	_	_
+2	tarkotatte	tarkotada	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- En todellakaan tiedä, mitä tarkotan, mumisi Svidrigailov hämmentyneenä.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	todellakaan	todella	ADV	Adv	Clitic=Kaan	4	advmod	_	_
+4	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	obj	_	_
+7	tarkotan	tarkotaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	4	punct	_	_
+9	mumisi	mumia	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+10	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+11	hämmentyneenä	hämmentyä	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = He olivat molemmat vaiti pitkän aikaa.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	4	nsubj	_	_
+4	vaiti	vaitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	pitkän	pitkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	aikaa	aika	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- Mistä te puhutte hänen kanssaan, kun hän tulee? kysyi Raskolnikov viimein.
+1	--	--	PUNCT	Punct	_	10	punct	_	_
+2	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	10	obl	_	_
+3	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	10	nsubj	_	_
+4	puhutte	puhui	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	10	obl	_	_
+6	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	kun	kun	SCONJ	C	_	10	mark	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	10	punct	_	_
+12	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+13	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+14	viimein	viimein	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 6
+# text = -- Me puhumme tavallisista asioista ... ainoastaan pikku-asioista.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+3	puhumme	puhua	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	tavallisista	tavallis	NOUN	N	Case=Ela|Number=Plur	3	obl	_	_
+5	asioista	asia	NOUN	N	Case=Ela|Number=Plur	4	nmod	_	_
+6	...	...	PUNCT	Punct	_	3	punct	_	_
+7	ainoastaan	ainoastaan	ADV	Adv	_	8	advmod	_	_
+8	pikku-asioista	pikku-asio	NOUN	N	Case=Ela|Number=Plur	3	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- Ehkä tämä kaikki, mitä puhutte, on valhetta, sanoi Raskolnikov.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Ehkä	ehkä	ADV	Adv	_	4	advmod	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	10	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	nsubj:cop	_	_
+7	puhutte	puhui	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	10	acl:relcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	valhetta	valhe	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	10	punct	_	_
+12	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	parataxis	_	_
+13	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 8
+# text = -- Minä valhettelen harvoin, vastasi Svidrigailov ajatuksissaan; hän ei ole huomaavinaan kysymyksessä olevaa loukkausta.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	valhettelen	valhetella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	harvoin	harvoin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+7	Svidrigailov	Svidrigailov	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	ajatuksissaan	ajatuksi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+9	;	;	PUNCT	Punct	_	3	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj:cop	_	_
+11	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	_
+12	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	16	cop	_	_
+13	huomaavinaan	huomaavinaan	ADV	Adv	_	15	advmod	_	_
+14	kysymyksessä	kysymys	NOUN	N	Case=Ine|Number=Sing	15	obl	_	_
+15	olevaa	olla	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	16	acl	_	_
+16	loukkausta	loukkaus	NOUN	N	Case=Par|Number=Sing	3	parataxis	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = -- Oletteko koskaan ennen nähnyt noita kummituksia?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oletteko	Olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	koskaan	koskaan	ADV	Adv	_	5	advmod	_	_
+4	ennen	ennen	ADV	Adv	_	5	advmod	_	_
+5	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+6	noita	tuo	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	7	det	_	_
+7	kummituksia	kummitus	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

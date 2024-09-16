@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Se ei ole totta!
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	_
+4	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Se on hirveä valhe!
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	hirveä	hirveä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	valhe	valhe	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Kuinka sinä uskallat sellaista sanoa?"
+1	Kuinka	kuinka	ADV	Adv	_	5	advmod	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	det	_	_
+3	uskallat	uskallat	PROPN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+4	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	sanoa	sano	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = "Se on aivan totta, Dorian", sanoi lordi Henry vakavasti.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	aivan	aivan	ADV	Adv	_	5	advmod	_	_
+5	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	7	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	5	punct	_	_
+10	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+11	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	12	compound:nn	_	_
+12	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+13	vakavasti	vakavasti	ADV	Adv	Derivation=Sti	10	advmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = "Se seisoo kaikissa aamulehdissä.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	seisoo	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kaikissa	kaikki	PRON	Pron	Case=Ine|Number=Plur|PronType=Ind	5	det	_	_
+5	aamulehdissä	aamulehdä	NOUN	N	Case=Ine|Number=Plur	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Minä pyysin kirjeessäni, ettet ottaisi ketään vastaan ennenkuin minä tulisin.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	pyysin	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kirjeessäni	kirjeä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	5	advcl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ettet	että#ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+6	ottaisi	ottaa	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	2	ccomp	_	_
+7	ketään	kukaan	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	obj	_	_
+8	vastaan	vastaan	ADV	Adv	_	6	advmod	_	_
+9	ennenkuin	ennenkuin	SCONJ	C	_	11	mark	_	_
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_
+11	tulisin	tulä	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Kuulustelu tulee tietysti pidettäväksi, mutta sinua ei saa sekoittaa siihen.
+1	Kuulustelu	Kuulustelu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tietysti	tietysti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	pidettäväksi	pitää	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	2	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	mutta	mutta	CCONJ	C	_	9	cc	_	_
+7	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	9	obj	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	_	_
+10	sekoittaa	sekoittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Tuollaiset tapahtumat saattavat miehen muotiin Parisissa.
+1	Tuollaiset	Tuollainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	2	amod	_	_
+2	tapahtumat	tapahtuma	NOUN	N	Case=Nom|Number=Plur	5	nsubj:cop	_	_
+3	saattavat	saattaa	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	miehen	mies	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	muotiin	muoti	NOUN	N	Case=Ill|Number=Sing	0	root	_	_
+6	Parisissa	parisissa	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Mutta Lontoossa ihmisillä on niin paljon ennakkoluuloja.
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	Lontoossa	Lontoo	PROPN	N	Case=Ine|Number=Sing	0	root	_	_
+3	ihmisillä	ihmisi	NOUN	N	Case=Ade|Number=Plur	2	obl	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	paljon	paljon	ADV	Adv	_	7	advmod	_	_
+7	ennakkoluuloja	ennakko#luulo	NOUN	N	Case=Par|Number=Plur	2	nsubj:cop	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Täällä ei kukaan voisi debyteerata skandalilla.
+1	Täällä	täällä	ADV	Adv	_	5	advmod	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	nsubj	_	_
+4	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	debyteerata	debyteerata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	skandalilla	skandali	NOUN	N	Case=Ade|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Se on säästettävä vanhojen päivien varaksi huomion herättämistä varten.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	säästettävä	säästtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Pass	0	root	_	_
+4	vanhojen	vanha	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	5	amod	_	_
+5	päivien	päiva	NOUN	N	Case=Gen|Number=Plur	6	nmod:poss	_	_
+6	varaksi	vara	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	7	amod	_	_
+7	huomion	huomio	NOUN	N	Case=Gen|Number=Sing	8	nmod:gobj	_	_
+8	herättämistä	herättäminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	3	obl	_	_
+9	varten	varten	ADP	Adp	AdpType=Post	8	case	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

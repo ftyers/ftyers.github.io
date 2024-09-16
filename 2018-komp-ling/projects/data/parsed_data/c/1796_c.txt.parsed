@@ -1,0 +1,125 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Isä, isä kulta, huutaa lapsi isälleen, -- isä kulta, mitä he tekevät?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Isä	isä	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	isä	isä	NOUN	N	Case=Nom|Number=Sing	5	compound:nn	_	_
+5	kulta	kulta	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	huutaa	huutaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	7	obj	_	_
+9	isälleen	isä	NOUN	N	Case=All|Number=Plur|Person[psor]=3	8	nmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	--	--	PUNCT	Punct	_	13	punct	_	_
+12	isä	isä	NOUN	N	Case=Nom|Number=Sing	13	compound:nn	_	_
+13	kulta	kulta	NOUN	N	Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	17	punct	_	_
+15	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	17	obj	_	_
+16	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	17	nsubj	_	_
+17	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	acl:relcl	_	SpaceAfter=No
+18	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 2
+# text = Isä, he lyövät hevosraukkaa.
+1	Isä	isä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+4	lyövät	lyödä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+5	hevosraukkaa	hevosraukka	NOUN	N	Case=Par|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Lähtekäämme pois! sanoo isä, -- he ovat juopuneita, eivätkä tiedä mitä tekevät.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Lähtekäämme	Lähtekätää	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pois	pois	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+5	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	isä	isä	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	--	--	PUNCT	Punct	_	11	punct	_	_
+9	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	11	nsubj:cop	_	_
+10	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+11	juopuneita	juopunut	ADJ	A	Case=Par|Degree=Pos|Number=Plur	5	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	eivätkä	ei	VERB	V	Clitic=Ka|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	cc	_	_
+14	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	conj	_	_
+15	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	16	nsubj	_	_
+16	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	acl:relcl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Tule, äläkä katso taaksesi!
+1	Tule	tule	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	äläkä	äläkä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	katso	katso	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	taaksesi	taa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=2|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Ja isä aikoo viedä hänet pois, mutta hän tempautuu hänen kädestään, ja juoksee itseään muistamatta hevosen luo.
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	isä	isä	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	aikoo	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	viedä	viedä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+6	pois	pois	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	mutta	mutta	CCONJ	C	_	10	cc	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	tempautuu	tempautua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	12	nmod:poss	_	_
+12	kädestään	käde	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	10	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	4	punct	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	juoksee	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+16	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	17	obj	_	_
+17	muistamatta	muistaa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp	_	_
+18	hevosen	hevonen	NOUN	N	Case=Gen|Number=Sing	17	obl	_	_
+19	luo	luo	ADP	Adp	AdpType=Post	18	case	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Mutta hevosraukan on jo käynyt huonosti.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	hevosraukan	hevosraukka	NOUN	N	Case=Gen|Number=Sing	5	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	käynyt	käydä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	huonosti	huonosti	ADV	Adv	Derivation=Sti	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Se huohottaa, pysähtyy, vetää taas ja on kaatumaisillaan.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	huohottaa	huohottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	pysähtyy	pysähtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	vetää	vetää	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	taas	taas	ADV	Adv	_	6	advmod	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	kaatumaisillaan	kaatua	VERB	V	Person[psor]=3|VerbForm=Inf|Voice=Act	2	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Ruoskikaa kuoliaaksi! huutaa Mikolka, -- siihen se nyt vielä kelpaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ruoskikaa	Ruoskika	NOUN	N	Case=Par|Number=Sing	3	nmod	_	_
+3	kuoliaaksi	kuoliaaksi	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+5	huutaa	huutaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	Mikolka	Mikolka	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	--	--	PUNCT	Punct	_	13	punct	_	_
+9	siihen	se	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	13	obl	_	_
+10	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj:cop	_	_
+11	nyt	nyt	ADV	Adv	_	13	advmod	_	_
+12	vielä	vielä	ADV	Adv	_	13	advmod	_	_
+13	kelpaa	kelpaa	ADV	Adv	_	6	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

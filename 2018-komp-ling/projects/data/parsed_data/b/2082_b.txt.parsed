@@ -1,0 +1,208 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Moskovan aikaa.
+1	Moskovan	Moskova	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	aikaa	aika	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Avaruusalusten suunnittelija Sergei Koroljov puhui radioyhteyden kautta.
+1	Avaruusalusten	Avaruusalus	NOUN	N	Case=Gen|Number=Plur	2	nmod:poss	_	_
+2	suunnittelija	suunnittelija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	compound:nn	_	_
+3	Sergei	Sergei	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	Koroljov	Koroljov	PROPN	N	Case=Nom|Number=Sing	3	flat:name	_	_
+5	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	radioyhteyden	radioyhteys	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	5	obl	_	_
+7	kautta	kautta	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = ’’Juri, kuuletko ääneni?
+1	’	’	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	’	’	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Juri	Juri	PROPN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	kuuletko	kuuleda	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ääneni	ääni	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	obj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Minulla on sinulle kerrottavaa.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	4	det	_	_
+4	kerrottavaa	kerrottava	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Kun kuulet, että lähtöön on minuutti aikaa, niin itse asiassa kestää vielä kuutisen minuuttia ennen kuin pääset matkaan, eli sinun ei tarvitse huolestua.”
+1	Kun	kun	SCONJ	C	_	2	mark	_	_
+2	kuulet	kuulla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	lähtöön	lähtö	NOUN	N	Case=Ill|Number=Sing	2	ccomp	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	minuutti	minuutti	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+8	aikaa	aika	NOUN	N	Case=Par|Number=Sing	7	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	2	punct	_	_
+10	niin	niin	ADV	Adv	_	11	advmod	_	_
+11	itse	itse	ADV	Adv	_	13	advmod	_	_
+12	asiassa	asiassa	ADV	Adv	_	11	fixed	_	_
+13	kestää	kestää	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+14	vielä	vielä	ADV	Adv	_	13	advmod	_	_
+15	kuutisen	kuutinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	16	amod	_	_
+16	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+17	ennen	ennen	ADV	Adv	_	20	advmod	_	_
+18	kuin	kuin	SCONJ	C	_	20	mark	_	_
+19	pääset	päänen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	20	amod	_	_
+20	matkaan	matka	NOUN	N	Case=Ill|Number=Sing	13	obl	_	SpaceAfter=No
+21	,	,	PUNCT	Punct	_	26	punct	_	_
+22	eli	eli	CCONJ	C	_	26	cc	_	_
+23	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	26	nsubj	_	_
+24	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	26	aux	_	_
+25	tarvitse	tarvita	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	26	aux	_	_
+26	huolestua	huolestua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	13	conj	_	SpaceAfter=No
+27	.	.	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+28	”	”	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 6
+# text = ’’Kuulen kyllä.
+1	’	’	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	’Kuulen	’Kuulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kyllä	kyllä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = En ole huolestunut.”
+1	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	cop	_	_
+3	huolestunut	huolestunut	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = ’’Kuusi minuuttia kaikenlaisille asioille, sinähän tiedät.”
+1	’	’	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	’	’	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+3	Kuusi	kuusi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	minuuttia	minuutti	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+5	kaikenlaisille	kaikenlais	NOUN	N	Case=All|Number=Plur	4	nmod	_	_
+6	asioille	asia	NOUN	N	Case=All|Number=Plur	4	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	sinähän	sinähän	ADV	Adv	_	9	advmod	_	_
+9	tiedät	tietää	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+11	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Hän tarkoitti, että pieni laitevika oli aiheuttanut kuuden minuutin viiveen lähtölaskentaan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	tarkoitti	tarkoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	laitevika	laite#vika	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	aiheuttanut	aiheuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+9	kuuden	kuusi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	10	nummod	_	_
+10	minuutin	minuutti	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	viiveen	viivi	PROPN	N	Case=Ill|Number=Sing	8	obl	_	_
+12	lähtölaskentaan	lähtölaskenta	NOUN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Eräs Jurin kollegoista kosmonauttien tukiryhmästä liittyi linjalle.
+1	Eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	nsubj	_	_
+2	Jurin	Jur	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	kollegoista	kollego	NOUN	N	Case=Ela|Number=Plur	1	nmod	_	_
+4	kosmonauttien	kosmonautti	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	tukiryhmästä	tukiryhmä	NOUN	N	Case=Ela|Number=Sing	1	nmod	_	_
+6	liittyi	liittyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	linjalle	linja	NOUN	N	Case=All|Number=Sing	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 11
+# text = ’’Juri, joko pitkästyt?”
+1	’	’	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	’	’	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Juri	Juri	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	joko	joko	CCONJ	C	_	6	cc	_	_
+6	pitkästyt	pitkästä	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = ’’Musiikki tekisi odottamisesta siedettävämpää.”
+1	’	’	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	’	’	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+3	Musiikki	Musiikki	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tekisi	tehdä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	odottamisesta	odottaminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	4	obl	_	_
+6	siedettävämpää	siedettävä	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 13
+# text = Koroljov lähetti teknikkoja etsimään levyjä.
+1	Koroljov	Koroljov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	lähetti	lähettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teknikkoja	teknikko	NOUN	N	Case=Par|Number=Plur	4	nsubj	_	_
+4	etsimään	etsiä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+5	levyjä	levy	NOUN	N	Case=Par|Number=Plur	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Hetkeä myöhemmin Gagarin ilmoitti: ”He laittoivat rakkauslaulun soimaan.”
+1	Hetkeä	hetki	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+2	myöhemmin	myöhemmin	ADV	Adv	_	4	advmod	_	_
+3	Gagarin	Gagari	PROPN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	ilmoitti	ilmoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	”	”	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+7	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	8	nsubj	_	_
+8	laittoivat	laittaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	rakkauslaulun	rakkauslaulu	NOUN	N	Case=Gen|Number=Sing	10	nsubj	_	_
+10	soimaan	soida	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp:ds	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+12	”	”	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 15
+# text = Gagarin tunsi kuinka alus tärisi kun jossain venttiilit sulkeutuivat, johtoja ja kaapeleita irrotettiin ja laukaisutorni vedettiin kauemmaksi.
+1	Gagarin	Gagari	PROPN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kuinka	kuinka	ADV	Adv	_	5	advmod	_	_
+4	alus	alus	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	tärisi	täristä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+6	kun	kun	SCONJ	C	_	9	mark	_	_
+7	jossain	jokin	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	8	det	_	_
+8	venttiilit	venttiili	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	sulkeutuivat	sulkeutuaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	johtoja	johto	NOUN	N	Case=Par|Number=Plur	9	conj	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	kaapeleita	kaapele	NOUN	N	Case=Par|Number=Plur	14	obj	_	_
+14	irrotettiin	irrottaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	9	conj	_	_
+15	ja	ja	CCONJ	C	_	17	cc	_	_
+16	laukaisutorni	laukaisutorni	NOUN	N	Case=Nom|Number=Sing	17	obj	_	_
+17	vedettiin	vedtaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	5	conj	_	_
+18	kauemmaksi	kauemmaksi	ADV	Adv	_	17	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 16
+# text = ’’Lähdemme nyt alas bunkkeriin seuraamaan lähtöä”, sanoi Koroljov.
+1	’	’	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	’	’	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Lähdemme	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nyt	nyt	ADV	Adv	_	3	advmod	_	_
+5	alas	alas	ADV	Adv	_	6	advmod	_	_
+6	bunkkeriin	bunkker	PROPN	N	Case=Ill|Number=Sing	3	obl	_	_
+7	seuraamaan	seurata	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+8	lähtöä	lähtö	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	3	punct	_	_
+11	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+12	Koroljov	Koroljov	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

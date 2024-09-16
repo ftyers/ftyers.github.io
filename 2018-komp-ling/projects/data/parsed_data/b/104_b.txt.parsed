@@ -1,0 +1,104 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Mikä ei ole pieni asia?
+1	—	—	PUNCT	Punct	_	6	punct	_	_
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	6	nsubj:cop	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	asia	asia	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Patu kysyi.
+1	Patu	Patu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = — Olet luotettavan tuntuinen mies.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	luotettavan	luotettava	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	4	amod	_	_
+4	tuntuinen	tuntuinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	mies	mies	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Siksi kerron sinulle, että aion lähteä purjehtimaan yksin maailman ympäri, merenkulkija sanoi.
+1	Siksi	siksi	ADV	Adv	_	2	advmod	_	_
+2	kerron	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	aion	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+8	purjehtimaan	purjehtia	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+9	yksin	yksin	ADV	Adv	_	10	advmod	_	_
+10	maailman	maailma	NOUN	N	Case=Gen|Number=Sing	8	obl	_	_
+11	ympäri	ympäri	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	2	punct	_	_
+13	merenkulkija	merenkulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	14	nsubj	_	_
+14	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = — Oh hoh.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Oh	Oh	X	Foreign	Foreign=Yes	0	root	_	_
+3	hoh	hoh	X	Foreign	Foreign=Yes	2	flat:name	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Yksin laivalla ja minkälaisen lastin kanssa?
+1	Yksin	yksin	ADV	Adv	_	2	advmod	_	_
+2	laivalla	laiva	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+3	ja	ja	CCONJ	C	_	5	cc	_	_
+4	minkälaisen	minkälainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	lastin	lasti	NOUN	N	Case=Gen|Number=Sing	2	conj	_	_
+6	kanssa	kanssa	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Patu hämmästeli.
+1	Patu	Patu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	hämmästeli	hämmäsellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = — Ehei.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Ehei	Ehei	INTJ	Interj	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Ei sentään laivalla.
+1	Ei	ei	VERB	V	Number=Sing|Person=0|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sentään	sentään	ADV	Adv	_	1	advmod	_	_
+3	laivalla	laiva	NOUN	N	Case=Ade|Number=Sing	1	obl	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Sopivan kokoisella veneellä, ilman lastia.
+1	Sopivan	sopiva	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	kokoisella	kokoinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	veneellä	vene	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	ilman	ilman	ADP	Adp	AdpType=Prep	6	case	_	_
+6	lastia	lasti	NOUN	N	Case=Par|Number=Sing	3	appos	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Sitten voi poiketa missä satamassa tahtoo, merenkulkija sanoi.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	poiketa	poiketa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	5	det	_	_
+5	satamassa	satama	NOUN	N	Case=Ine|Number=Sing	3	obl	_	_
+6	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	merenkulkija	merenkulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

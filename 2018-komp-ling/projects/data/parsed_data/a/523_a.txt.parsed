@@ -1,0 +1,115 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = – Tee tästä nahkasta kestävä kukkaro, norsu sanoi sorsalle, – jotta voin säilyttää siinä vaimoni valokuvaa.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Tee	tehdä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tästä	tämä	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	det	_	_
+4	nahkasta	nahka	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+5	kestävä	kestävä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	kukkaro	kukkaro	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	_
+8	norsu	norsu	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+10	sorsalle	sorsa	NOUN	N	Case=All|Number=Sing	9	obl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	2	punct	_	_
+12	–	–	PUNCT	Punct	_	15	punct	_	_
+13	jotta	jotta	SCONJ	C	_	15	mark	_	_
+14	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	säilyttää	säilyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+16	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	15	obl	_	_
+17	vaimoni	vaimo	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	18	nmod:poss	_	_
+18	valokuvaa	valo#kuva	NOUN	N	Case=Par|Number=Sing	15	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Minulla on vaimoa kovasti ikävä.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	vaimoa	vaimo	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+4	kovasti	kovasti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+5	ikävä	ikävä	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = – Asia ymmärretty, lättäjalka räätäli sanoi ja laittoi neulansa viuhumaan.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Asia	asia	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+3	ymmärretty	ymmärtää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	6	acl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	lättäjalka	lättäjalka	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	räätäli	räätäli	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	sanoi	sanoida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	laittoi	laittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+10	neulansa	neula	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	11	nsubj	_	_
+11	viuhumaan	viuhua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp:ds	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 4
+# text = Viikon kuluttua norsu meni kukkaroa noutamaan.
+1	Viikon	viikko	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	kuluttua	kulua	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	acl	_	_
+3	norsu	norsu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	4	nsubj	_	_
+4	meni	metä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kukkaroa	kukkaro	NOUN	N	Case=Par|Number=Sing	6	nsubj	_	_
+6	noutamaan	noutaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = – Ei tullut kukkaroa, sorsa sanoi.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kukkaroa	kukkaro	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	sorsa	sorsa	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = – Tuli lippis.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lippis	lippis	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = – Mitä minä lippiksellä?
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	4	det	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj:cop	_	_
+4	lippiksellä	lippis	NOUN	N	Case=Ade|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Vanha tööttökärsä ihmetteli.
+1	Vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	nsubj	_	_
+2	tööttökärsä	tööttökärsä	ADV	Adv	_	3	advmod	_	_
+3	ihmetteli	ihmetellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = – Tee vyö.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Tee	tehdä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vyö	vyö	NOUN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = – Selvä on, pomo, virkkoi saraheinän mussuttaja ja teki vyötä käskettyä.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Selvä	Selvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	pomo	pomo	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	virkkoi	virkkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+8	saraheinän	saraheinä	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	mussuttaja	mussuttaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	7	nsubj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+12	vyötä	v#yö	NOUN	N	Case=Par|Number=Sing	13	obj	_	_
+13	käskettyä	käsktää	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	11	xcomp	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

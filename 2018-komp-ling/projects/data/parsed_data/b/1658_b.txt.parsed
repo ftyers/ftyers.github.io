@@ -1,0 +1,197 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Neljäs luku, jossa juodaan kahvia…
+1	Neljäs	neljäs	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	2	nummod	_	_
+2	luku	luku	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	5	obl	_	_
+5	juodaan	juoda	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	acl:relcl	_	_
+6	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	…	…	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Kertulle valkeni nopeasti, miksi Eija oli kutsunut naapurissa asuvan poliisin kylään.
+1	Kertulle	Kertu	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+2	valkeni	valeta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	miksi	miksi	ADV	Adv	_	8	advmod	_	_
+6	Eija	Eija	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	kutsunut	kutsua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+9	naapurissa	naapuri	NOUN	N	Case=Ine|Number=Sing	8	obl	_	_
+10	asuvan	asua	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	11	acl	_	_
+11	poliisin	poliisi	NOUN	N	Case=Gen|Number=Sing	12	nmod:poss	_	_
+12	kylään	kylä	NOUN	N	Case=Ill|Number=Sing	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Tämä poliisi olisi joka tapauksessa saanut ennen pitkää kuulla kaiken, sillä hän oli Eijan ystävä!
+1	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+2	poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+3	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	det	_	_
+5	tapauksessa	tapaus	NOUN	N	Case=Ine|Number=Sing	6	obl	_	_
+6	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	ennen	ennen	ADV	Adv	_	8	advmod	_	_
+8	pitkää	pitkää	ADV	Adv	_	9	advmod	_	_
+9	kuulla	kuulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+10	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	16	punct	_	_
+12	sillä	sillä	SCONJ	C	_	16	mark	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	16	nsubj:cop	_	_
+14	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	16	cop	_	_
+15	Eijan	Eija	PROPN	N	Case=Gen|Number=Sing	16	nmod:poss	_	_
+16	ystävä	ystävä	NOUN	N	Case=Nom|Number=Sing	6	advcl	_	SpaceAfter=No
+17	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = — No, sen jo tarkistin, että ainakaan putkassa Henkka ei oo!
+1	—	—	PUNCT	Punct	_	2	punct	_	SpacesAfter=   \s
+2	No	no	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	6	obj	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	tarkistin	tarkistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	13	punct	_	_
+8	että	että	SCONJ	C	_	13	mark	_	_
+9	ainakaan	ainakaan	ADV	Adv	_	10	advmod	_	_
+10	putkassa	putka	NOUN	N	Case=Ine|Number=Sing	13	obl	_	_
+11	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	13	nsubj	_	_
+12	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	oo	olla	VERB	V	Connegative=Yes|Mood=Ind|Style=Coll|Tense=Pres|VerbForm=Fin	6	ccomp	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Heidi sanoi, kun Kerttu oli kertonut hänelle saman verran kuin Eijallekin.
+1	Heidi	Heidi	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	kun	kun	SCONJ	C	_	7	mark	_	_
+5	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	kertonut	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	advcl	_	_
+8	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	7	obl	_	_
+9	saman	saman	ADV	Adv	_	7	advmod	_	_
+10	verran	verran	ADV	Adv	_	9	fixed	_	_
+11	kuin	kuin	SCONJ	C	_	12	mark	_	_
+12	Eijallekin	Eija	PROPN	N	Case=All|Clitic=Kin|Number=Sing	9	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Tai no, vähän enemmän.
+1	Tai	tai	INTJ	Interj	_	5	discourse	_	_
+2	no	no	INTJ	Interj	_	1	fixed	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	1	punct	_	_
+4	vähän	vähän	ADV	Adv	_	5	advmod	_	_
+5	enemmän	enemmän	ADV	Adv	_	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Poliisille Kerttu oli tunnustanut, että he olivat tapelleet.
+1	Poliisille	poliis	NOUN	N	Case=All|Number=Plur	4	obl	_	_
+2	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tunnustanut	tunnustaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+8	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	tapelleet	tapella	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = — Me ei koskaan ennen olla riidelty, hän painotti.
+1	—	—	PUNCT	Punct	_	7	punct	_	SpacesAfter=   \s
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	obj	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+4	koskaan	koskaan	ADV	Adv	_	7	advmod	_	_
+5	ennen	ennen	ADP	Adp	AdpType=Prep	7	case	_	_
+6	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	7	aux:pass	_	_
+7	riidelty	riidellä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	7	punct	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	painotti	painottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = — Mistä te riitelitte?
+1	—	—	PUNCT	Punct	_	3	punct	_	SpacesAfter=   \s
+2	Mistä	mikä	PRON	Pron	Case=Ela|Number=Sing|PronType=Int	3	obl	_	_
+3	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	0	root	_	_
+4	riitelitte	riitelitten	ADV	Adv	Style=Coll	3	advmod	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Eija kysyi, mutta Kerttu ei vastannut.
+1	Eija	Eija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	7	punct	_	_
+4	mutta	mutta	CCONJ	C	_	7	cc	_	_
+5	Kerttu	Kerttu	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	vastannut	vastata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Eija kaatoi kupilliset kahvia kummallekin vieraalleen.
+1	Eija	Eija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	kaatoi	kaataa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kupilliset	kupillinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Plur	4	amod	_	_
+4	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	kummallekin	kumma	NOUN	N	Case=All|Clitic=Kin|Number=Sing	6	obl	_	_
+6	vieraalleen	vieraalle	ADV	Adv	Person[psor]=3	2	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Kerttu pakotti itsensä juomaan.
+1	Kerttu	kerttu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pakotti	pakottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	4	nsubj	_	_
+4	juomaan	juoda	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Hän ihmetteli ties kuinka monetta kertaa, miten suomalaiset saattoivat juoda eniten kahvia maailmassa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ihmetteli	ihmetella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ties	ties	ADV	Adv	_	2	advmod	_	_
+4	kuinka	kuinka	ADV	Adv	_	5	advmod	_	_
+5	monetta	mone	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+6	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	5	nmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	miten	miten	ADV	Adv	_	10	advmod	_	_
+9	suomalaiset	suomalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	10	nsubj	_	_
+10	saattoivat	saattaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+11	juoda	juoda	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	acl	_	_
+12	eniten	eniten	ADV	Adv	_	13	advmod	_	_
+13	kahvia	kahvi	NOUN	N	Case=Par|Number=Sing	11	obj	_	_
+14	maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	11	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Suomalainen peruskahvi oli Kertun mielestä yksinkertaisesti kamalaa.
+1	Suomalainen	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Sing	2	amod	_	_
+2	peruskahvi	peruskahvi	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	_
+4	Kertun	Kerttu	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	mielestä	mieli	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+6	yksinkertaisesti	yksinkertaisesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	kamalaa	kamala	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 15
+# text = Joka siemauksella tunsi, ettei kahvipapuja ollut paahdettu tarpeeksi pitkään!
+1	Joka	joka	PRON	Pron	Case=Nom|Number=Sing	2	det	_	_
+2	siemauksella	siemaus	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+3	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	mark	_	_
+6	kahvipapuja	kahvipapu	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+7	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	aux:pass	_	_
+8	paahdettu	paahdtaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	ccomp	_	_
+9	tarpeeksi	tarpeeksi	ADV	Adv	_	10	advmod	_	_
+10	pitkään	pitkään	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

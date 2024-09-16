@@ -1,0 +1,125 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Ainoastaan hieno maailma menee sinne."
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Ainoastaan	Ainoastaan	ADV	Adv	_	5	advmod	_	_
+3	hieno	hieno	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	maailma	maailma	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	sinne	sinne	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = "Tyhmyyksiä, Jim", kuiskasi tyttö silitellen hänen takkinsa hihaa.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tyhmyyksiä	Tyhmyys	NOUN	N	Case=Par|Number=Plur	7	advcl	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	Jim	Jim	PROPN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	kuiskasi	kuisata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	tyttö	#tyttö	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	silitellen	silitella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	takkinsa	takki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	12	nmod:poss	_	_
+12	hihaa	hiha	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 3
+# text = Hän epäröi hetken aikaa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	epäröi	epäröidä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hetken	hetki	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	aikaa	aika	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Olkoon menneeksi", sanoi hän vihdoin, "mutta älä pukeudu kovin vitkalleen."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Olkoon	Olko	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+3	menneeksi	menne	NOUN	N	Case=Tra|Number=Sing	2	nmod	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+8	vihdoin	vihdoin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	8	punct	_	_
+10	"	"	PUNCT	Punct	_	13	punct	_	SpaceAfter=No
+11	mutta	mutta	CCONJ	C	_	13	cc	_	_
+12	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	13	aux	_	_
+13	pukeudu	pukeutua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	conj	_	_
+14	kovin	kovin	ADV	Adv	_	15	advmod	_	_
+15	vitkalleen	vitkalleen	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+17	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Tyttö hyppi ulos huoneesta.
+1	Tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	hyppi	hyppi	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+3	ulos	ulos	ADV	Adv	_	4	advmod	_	_
+4	huoneesta	huonei	NOUN	N	Case=Ela|Number=Sing	2	nmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän juoksi laulaen ylös portaita.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	juoksi	juosta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	laulaen	laulaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	ylös	ylös	ADV	Adv	_	3	advmod	_	_
+5	portaita	portaat	NOUN	N	Case=Par|Number=Plur	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hänen pienten jalkojensa sipsutus kuului ylhäältä.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	3	det	_	_
+2	pienten	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
+3	jalkojensa	jalka	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	4	nmod:poss	_	_
+4	sipsutus	sipsutus	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	ylhäältä	ylhäältä	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = James kulki pari kolme kertaa yli huoneen lattian.
+1	James	James	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kulki	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	nummod	_	_
+4	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+6	yli	yli	ADP	Adp	AdpType=Post	8	case	_	_
+7	huoneen	huone	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	lattian	lattia	NOUN	N	Case=Gen|Number=Sing	2	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Sitten hän kääntyi äidin puoleen, joka istui ääneti tuolillaan.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	äidin	äiti	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	puoleen	puoli	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	istui	istua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	ääneti	ääneti	ADV	Adv	_	8	advmod	_	_
+10	tuolillaan	tuol	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	8	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = "Äiti, ovatko minun tavarani kunnossa?" hän kysyi.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Äiti	äiti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ovatko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nmod:poss	_	_
+6	tavarani	tavara	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj:cop	_	_
+7	kunnossa	kunnossa	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	2	punct	_	_
+10	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+11	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

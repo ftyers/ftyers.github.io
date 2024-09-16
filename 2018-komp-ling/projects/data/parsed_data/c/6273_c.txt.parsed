@@ -1,0 +1,169 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Perintä
+1	Perintä	perintä	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 2
+# text = Jos et maksa laskua eräpäivään mennessä, saat muistutuskirjeitä.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	advcl	_	_
+4	laskua	lasku	NOUN	N	Case=Par|Derivation=U|Number=Sing	5	obj	_	_
+5	eräpäivään	eräpäivä	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+6	mennessä	mennessä	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	muistutuskirjeitä	muistutuskirje	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = Jos et maksa velkaa kahden muistutuskirjeen jälkeen, asia voi siirtyä perintätoimistolle.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	advcl	_	_
+4	velkaa	velka	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	kahden	kaksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	6	nummod	_	_
+6	muistutuskirjeen	muistutuskirje	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+7	jälkeen	jälkeen	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	asia	asia	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+10	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	siirtyä	siirtyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+12	perintätoimistolle	perintätoimisto	NOUN	N	Case=All|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	11	punct	_	_
+
+# sent_id = 4
+# text = Sen jälkeen perintätoimisto lähettää muistutuskirjeen.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	obl	_	_
+2	jälkeen	jälkeen	ADP	Adp	AdpType=Post	1	case	_	_
+3	perintätoimisto	perintätoimisto	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	lähettää	lähettää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	muistutuskirjeen	muistutuskirje	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Myös perintätoimiston kanssa voit neuvotella uudesta maksuaikataulusta.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	perintätoimiston	perintä#toimisto	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+3	kanssa	kanssa	ADP	Adp	AdpType=Post	2	case	_	_
+4	voit	voida	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	neuvotella	neuvotella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	uudesta	uusi	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	7	amod	_	_
+7	maksuaikataulusta	maksuaikataulu	NOUN	N	Case=Ela|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Laskun ja viivästyskoron lisäksi joudut maksamaan perintäkulut.
+1	Laskun	lasku	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	viivästyskoron	viivästyskorko	NOUN	N	Case=Gen|Number=Sing	1	conj	_	_
+4	lisäksi	lisäksi	ADP	Adp	AdpType=Post	1	case	_	_
+5	joudut	jouda	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+6	maksamaan	maksaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	perintäkulut	perintä#kulu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Jos olet ostanut osamaksulla tavaran, myyjä saattaa ottaa tavaran takaisin.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ostanut	ostada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	advcl	_	_
+4	osamaksulla	osamaksulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	tavaran	tavara	NOUN	N	Case=Gen|Number=Sing	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	myyjä	myyjä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	nsubj	_	_
+8	saattaa	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	ottaa	ottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+10	tavaran	tavara	NOUN	N	Case=Gen|Number=Sing	9	obj	_	_
+11	takaisin	takaisin	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 8
+# text = Viivästyskorko
+1	Viivästyskorko	Viivästynen#korko	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 9
+# text = Jos maksat laskun myöhässä tai et maksa sitä ollenkaan, joudut maksamaan viivästyskorkoa.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	maksat	maksaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	advcl	_	_
+3	laskun	lasku	NOUN	N	Case=Gen|Derivation=U|Number=Sing	2	obj	_	_
+4	myöhässä	myöhässä	ADV	Adv	_	7	advmod	_	_
+5	tai	tai	CCONJ	C	_	7	cc	_	_
+6	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	7	obj	_	_
+9	ollenkaan	ollenkaan	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	joudut	jouda	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	7	ccomp	_	_
+12	maksamaan	maksaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp	_	_
+13	viivästyskorkoa	viivästyskorko	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = Korko on nykyisin kymmenen prosenttia.
+1	Korko	korko	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	nykyisin	nykyisin	ADV	Adv	_	4	advmod	_	_
+4	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	prosenttia	prosentti	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = Sadan euron laskusta kertyy siis vuodessa kymmenen euroa viivästyskorkoa.
+1	Sadan	sata	NUM	Num	Case=Gen|Number=Sing|NumType=Card	2	nummod	_	_
+2	euron	euro	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	laskusta	lasku	NOUN	N	Case=Ela|Derivation=U|Number=Sing	4	obl	_	_
+4	kertyy	kertyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	siis	siis	ADV	Adv	_	4	advmod	_	_
+6	vuodessa	vuosi	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+7	kymmenen	kymmenen	NUM	Num	Case=Nom|Number=Sing|NumType=Card	8	nummod	_	_
+8	euroa	euro	NOUN	N	Case=Par|Number=Sing	9	nmod	_	_
+9	viivästyskorkoa	viivästyskorko	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 12
+# text = Ulosotto
+1	Ulosotto	Ulosotto	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+
+# sent_id = 13
+# text = Jos et maksa laskua vielä perimistoimistollekaan, asia voidaan viedä käräjäoikeuteen.
+1	Jos	jos	SCONJ	C	_	3	mark	_	_
+2	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	maksa	maksaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	advcl	_	_
+4	laskua	lasku	NOUN	N	Case=Par|Derivation=U|Number=Sing	3	obj	_	_
+5	vielä	vielä	ADV	Adv	_	6	advmod	_	_
+6	perimistoimistollekaan	perimistoimistolleka	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	asia	asia	NOUN	N	Case=Nom|Number=Sing	10	obj	_	_
+9	voidaan	voida	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	10	aux	_	_
+10	viedä	viedä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+11	käräjäoikeuteen	käräjäoikeus	NOUN	N	Case=Ill|Derivation=Vs|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 14
+# text = Jos laskuun ei liity mitään epäselvää, käräjäoikeus antaa tuomion.
+1	Jos	jos	SCONJ	C	_	4	mark	_	_
+2	laskuun	lasku	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	liity	liittyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	advcl	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	epäselvää	epä#selvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	käräjäoikeus	käräjä#oikeus	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	9	nsubj	_	_
+9	antaa	antaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	tuomion	tuomio	NOUN	N	Case=Gen|Number=Sing	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 15
+# text = Sen avulla laskun perijä saa rahat ulosoton kautta.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	avulla	apu	NOUN	N	Case=Ade|Derivation=U|Number=Sing	5	obl	_	_
+3	laskun	lasku	NOUN	N	Case=Gen|Derivation=U|Number=Sing	4	nmod:poss	_	_
+4	perijä	perijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	5	nsubj	_	_
+5	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	rahat	raha	NOUN	N	Case=Nom|Number=Plur	5	obj	_	_
+7	ulosoton	ulosotto	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+8	kautta	kautta	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

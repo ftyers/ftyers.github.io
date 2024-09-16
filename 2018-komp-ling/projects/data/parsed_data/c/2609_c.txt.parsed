@@ -1,0 +1,154 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Mitä sanoit sinä ... minä tarkotan -- minusta?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	sanoit	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+5	...	...	PUNCT	Punct	_	3	punct	_	_
+6	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+7	tarkotan	tarkotaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+8	--	--	PUNCT	Punct	_	9	punct	_	_
+9	minusta	minus	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Minä sanoin hänelle, että sinä olet sangen kunniallinen ja työteliäs ihminen.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+3	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	13	punct	_	_
+6	että	että	SCONJ	C	_	13	mark	_	_
+7	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	13	nsubj:cop	_	_
+8	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+9	sangen	sangen	ADV	Adv	_	10	advmod	_	_
+10	kunniallinen	kunniallinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	13	amod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	työteliäs	työteliäs	ADJ	Num	Case=Nom|Number=Sing|NumType=Ord	10	conj	_	_
+13	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	3	ccomp	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Sitä en sentään suonut hänelle, että sinä rakastat häntä, sillä sen hän tietää sanomattakin.
+1	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	sentään	sentään	ADV	Adv	_	4	advmod	_	_
+4	suonut	suoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	että	että	SCONJ	C	_	9	mark	_	_
+8	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	_
+9	rakastat	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+10	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	9	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	sillä	sillä	SCONJ	C	_	15	mark	_	_
+13	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	15	obj	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+15	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	advcl	_	_
+16	sanomattakin	sanomattakki	NOUN	N	Case=Gen|Number=Sing	15	obj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Tietääkö hän sen?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Tietääkö	Tietää	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+4	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- Kyllä, luonnollisesti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	4	orphan	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	luonnollisesti	luonnollisesti	ADV	Adv	Derivation=Sti	5	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 6
+# text = Minä sanoin hänelle, että miten tahansa minun käyneekin, tulisit sinä sentään aina olemaan hänen suojelijansa.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	11	punct	_	_
+5	että	että	SCONJ	C	_	11	mark	_	_
+6	miten	miten	ADV	Adv	_	9	advmod	_	_
+7	tahansa	tahansa	ADV	Adv	_	6	fixed	_	_
+8	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	nmod:poss	_	_
+9	käyneekin	käyneekin	ADV	Adv	_	11	advmod	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	_
+11	tulisit	tulla	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	17	advcl	_	_
+12	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	11	nsubj	_	_
+13	sentään	sentään	ADV	Adv	_	11	advmod	_	_
+14	aina	aina	ADV	Adv	_	17	advmod	_	_
+15	olemaan	olla	AUX	V	Case=Ill|Degree=Pos|Number=Sing|PartForm=Agt|VerbForm=Part|Voice=Act	17	cop	_	_
+16	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	17	nmod:poss	_	_
+17	suojelijansa	suojelija	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Nyt jätän hänet sinun huostaasi.
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	jätän	jättää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+4	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	5	nmod:poss	_	_
+5	huostaasi	huosta	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=2	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Minä sanon sen sinulle, koska olen täysin vakuutettu, että sinä rakastat häntä ja että sinulla on täysin puhdas sydän.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	sanon	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obj	_	_
+4	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	koska	koska	SCONJ	C	_	9	mark	_	_
+7	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	täysin	täysin	ADV	Adv	_	9	advmod	_	_
+9	vakuutettu	vakuutettu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	advcl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	13	punct	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	13	nsubj	_	_
+13	rakastat	rakastaa	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	9	ccomp	_	_
+14	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	13	obj	_	_
+15	ja	ja	CCONJ	C	_	21	cc	_	_
+16	että	että	SCONJ	C	_	21	mark	_	_
+17	sinulla	sinä	PRON	Pron	Case=Ade|Number=Sing|Person=2|PronType=Prs	21	nsubj:cop	_	_
+18	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
+19	täysin	täysin	ADV	Adv	_	20	advmod	_	_
+20	puhdas	puhdas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	21	amod	_	_
+21	sydän	sydän	NOUN	N	Case=Nom|Number=Sing	13	conj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Minä tiedän myöskin, että hän saattaa rakastaa sinuakin ja että hän ehkä jo rakastaa.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	tiedän	tietää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	myöskin	myöskin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	8	nsubj	_	_
+7	saattaa	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+8	rakastaa	rakastaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+9	sinuakin	sinua	ADV	Adv	Clitic=Kin	8	advmod	_	_
+10	ja	ja	CCONJ	C	_	15	cc	_	_
+11	että	että	SCONJ	C	_	15	mark	_	_
+12	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+13	ehkä	ehkä	ADV	Adv	_	15	advmod	_	_
+14	jo	jo	ADV	Adv	_	15	advmod	_	_
+15	rakastaa	rakastaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Päätä nyt itseksesi, kallisteletko pulloja vai etkö.
+1	Päätä	päättää	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	nyt	nyt	ADV	Adv	_	1	advmod	_	_
+3	itseksesi	itse	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=2|VerbForm=Inf|Voice=Act	8	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	kallisteletko	kallisteleda	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl	_	_
+6	pulloja	pullo	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+7	vai	vai	CCONJ	C	_	8	cc	_	_
+8	etkö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	1	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

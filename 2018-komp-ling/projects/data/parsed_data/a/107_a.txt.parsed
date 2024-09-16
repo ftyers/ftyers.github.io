@@ -1,0 +1,121 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = – Onpa tämä sää!
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Onpa	olla	AUX	V	Clitic=Pa|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	sää	sää	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Kulkija harmitteli ja puki takin ylleen.
+1	Kulkija	kulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	harmitteli	harmitellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	puki	pukea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+5	takin	takki	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+6	ylleen	ylle	ADV	Adv	Person[psor]=3	4	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = – Siinä näet, tuuli riemuitsi.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Siinä	Se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	6	obl	_	_
+3	näet	näet	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	tuuli	tuuli	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	riemuitsi	riemuita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = – Sinä tosin sait hänet riisumaan takkinsa, mutta minä sain hänet pukemaan sen uudelleen ylleen.
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nsubj	_	_
+3	tosin	t#osin	ADV	Adv	_	4	advmod	_	_
+4	sait	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	riisumaan	riisua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	_
+7	takkinsa	takk	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	mutta	mutta	CCONJ	C	_	11	cc	_	_
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_
+11	sain	saada	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+12	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+13	pukemaan	pukea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	11	xcomp:ds	_	_
+14	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	13	obj	_	_
+15	uudelleen	uudelleen	ADV	Adv	_	13	advmod	_	_
+16	ylleen	ylle	ADV	Adv	Person[psor]=3	13	advmod	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Aurinko nauroi.
+1	Aurinko	aurinko	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nauroi	nauraa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = – Me olemme yhtä voimakkaita.
+1	–	–	PUNCT	Punct	_	5	punct	_	_
+2	Me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	5	nsubj:cop	_	_
+3	olemme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	yhtä	yhtä	ADV	Adv	_	5	advmod	_	_
+5	voimakkaita	voimakas	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Sinä omalla tavallasi, minä omallani.
+1	Sinä	se	PRON	Pron	Case=Ess|Number=Sing|PronType=Dem	3	det	_	_
+2	omalla	oma	ADJ	A	Case=Ade|Degree=Pos|Number=Sing	3	amod	_	_
+3	tavallasi	tavka	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=2	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	appos	_	_
+6	omallani	oma	NOUN	N	Case=Ade|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Ja siitä päivästä lähtien taivaalta ei ole enää kuulunut melskettä ja meteliä, vaan aurinko ja tuuli ovat oppineet elämään sovussa keskenään.
+1	Ja	ja	CCONJ	C	_	9	cc	_	_
+2	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	3	det	_	_
+3	päivästä	päivä	NOUN	N	Case=Ela|Number=Sing	9	obl	_	_
+4	lähtien	lähtien	ADP	Adp	AdpType=Post	3	case	_	_
+5	taivaalta	taivas	NOUN	N	Case=Abl|Number=Sing	9	obl	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	9	aux	_	_
+8	enää	enää	ADV	Adv	_	9	advmod	_	_
+9	kuulunut	kuuluda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+10	melskettä	melske	NOUN	N	Case=Par|Number=Sing	9	obj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	meteliä	meteli	NOUN	N	Case=Par|Number=Sing	10	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	19	punct	_	_
+14	vaan	vaan	CCONJ	C	_	19	cc	_	_
+15	aurinko	aurinko	NOUN	N	Case=Nom|Number=Sing	19	nsubj	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	tuuli	tuuli	NOUN	N	Case=Nom|Number=Sing	15	conj	_	_
+18	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	19	aux	_	_
+19	oppineet	oppia	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	9	conj	_	_
+20	elämään	eltä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	19	xcomp	_	_
+21	sovussa	sovu	NOUN	N	Case=Ine|Number=Sing	20	obl	_	_
+22	keskenään	keskenään	ADV	Adv	_	20	advmod	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 9
+# text = Oletko kuullut tarinan lapsista, jotka löysivät metsästä oikean piparkakkutalon?
+1	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	kuullut	kuulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	tarinan	tarina	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	lapsista	lapsi	NOUN	N	Case=Ela|Number=Plur	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	7	nsubj	_	_
+7	löysivät	löysä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+8	metsästä	metsä	NOUN	N	Case=Ela|Number=Sing	7	obl	_	_
+9	oikean	oikea	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	10	amod	_	_
+10	piparkakkutalon	piparkakkutalo	NOUN	N	Case=Gen|Number=Sing	7	obj	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Minäpä kerron!
+1	Minäpä	minä	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|Person=2|PronType=Prs	2	nsubj	_	_
+2	kerron	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

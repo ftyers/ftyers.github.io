@@ -1,0 +1,134 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pastori Halme oli monta kertaa halunnut kysellä pojan isästä.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	6	obl	_	_
+6	halunnut	haluta	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	kysellä	kysellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp	_	_
+8	pojan	poika	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	isästä	isä	NOUN	N	Case=Ela|Number=Sing	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Oliko hän elossa?
+1	Oliko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+3	elossa	elossa	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 3
+# text = Pitikö hän yhteyttä?
+1	Pitikö	Piti	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+3	yhteyttä	yhteys	NOUN	N	Case=Par|Derivation=Vs|Number=Sing	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 4
+# text = Riikka ei ollut kertonut hänestä mitään.
+1	Riikka	Riikka	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	aux	_	_
+4	kertonut	kertoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+6	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Pastori Halme oli joskus katsonut Riikan tietoja kirkonkirjoista.
+1	Pastori	pastori	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+2	Halme	Halme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	1	nummod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	joskus	joskus	ADV	Adv	_	5	advmod	_	_
+5	katsonut	katsoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	Riikan	Riikka	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	tietoja	tieto	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+8	kirkonkirjoista	kirkonkirjo	NOUN	N	Case=Ela|Number=Plur	7	nmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Riikka oli 30-vuotias.
+1	Riikka	Riikka	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	30-vuotias	30-#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 7
+# text = Hänen poikansa
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	poikansa	poika	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	_
+
+# sent_id = 8
+# text = Mika täyttäisi pian 12 vuotta.
+1	Mika	Mika	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	SpacesAfter= \s
+2	täyttäisi	täyttäistä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pian	pian	ADV	Adv	_	2	advmod	_	_
+4	12	12	NUM	Num	NumType=Card	5	nummod	_	_
+5	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 9
+# text = Pojan isästä ei ollut mitään merkintää.
+1	Pojan	poika	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	isästä	isä	NOUN	N	Case=Ela|Number=Sing	0	root	_	_
+3	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+4	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	cop	_	_
+5	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	merkintää	merkintä	NOUN	N	Case=Par|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Riikka pani kahvin tulemaan ja toi pöytään marjapiirakan.
+1	Riikka	Riikka	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pani	panna	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kahvin	kahvi	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+4	tulemaan	tulla	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	toi	tuoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	pöytään	pöytä	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+8	marjapiirakan	marjapiirakka	NOUN	N	Case=Gen|Number=Sing	6	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 11
+# text = Riikka oli muuttanut kuntaan pääkaupungista, kun hän oli päässyt harjoittelijaksi päiväkotiin.
+1	Riikka	Riikka	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	muuttanut	muuttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kuntaan	kunta	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	pääkaupungista	pää#kaupunki	NOUN	N	Case=Ela|Number=Sing	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	kun	kun	SCONJ	C	_	10	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	päässyt	päästä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	advcl	_	SpacesAfter= 
+11	harjoittelijaksi	harjoittelija	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	12	amod	_	_
+12	päiväkotiin	päivä#koti	NOUN	N	Case=Ill|Number=Sing	10	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 12
+# text = Riikka asui pienessä talossa, joka oli kunnan omistuksessa.
+1	Riikka	Riikka	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	asui	asua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pienessä	pieni	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	4	amod	_	_
+4	talossa	talo	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj:cop	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	kunnan	kunta	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	omistuksessa	omistus	NOUN	N	Case=Ine|Number=Sing	4	acl:relcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 13
+# text = Kunnan työntekijänä Riikka oli saanut vuokrata talon.
+1	Kunnan	kunta	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	työntekijänä	työntekijä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	5	obl	_	_
+3	Riikka	Riikka	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	vuokrata	vuokrata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	talon	talo	NOUN	N	Case=Gen|Number=Sing	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

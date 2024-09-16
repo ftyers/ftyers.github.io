@@ -1,0 +1,117 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Miksi pyydät itseltäsi anteeksi?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	3	advmod	_	_
+3	pyydät	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	itseltäsi	itse	NOUN	N	Case=Abl|Number=Sing|Number[psor]=Sing|Person[psor]=2	3	obj	_	_
+5	anteeksi	anteeksi	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Kaikki on niin vastenmielistä, sanoi Raskolnikov liian hienotunteisesti.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	_
+4	vastenmielistä	vastenmielinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	liian	liian	ADV	Adv	_	9	advmod	_	_
+9	hienotunteisesti	hienotunteisesti	ADV	Adv	Derivation=Sti	6	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Se oli osaksi teeskentelyä.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	osaksi	oska	NOUN	N	Case=Tra|Number=Sing	4	obl	_	_
+4	teeskentelyä	teeskentely	NOUN	N	Case=Par|Derivation=U|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Käsitän kyllä aivan hyvin.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Käsitän	Käsitää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kyllä	kyllä	ADV	Adv	_	2	advmod	_	_
+4	aivan	aivan	ADV	Adv	_	5	advmod	_	_
+5	hyvin	hyvin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Vakuutan sinulle että, käsitän sen.
+1	Vakuutan	Vakuuttaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	1	obl	_	_
+3	että	että	SCONJ	C	_	5	mark	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	käsitän	käsittää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	1	ccomp	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = On suuri häpeä sanoa jotakin sellaista...
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	häpeä	häpeä	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	6	det	_	_
+6	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	4	obj	_	SpaceAfter=No
+7	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = -- Noh, älä puhu siitä, onko se suuri häpeä!
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Noh	Noh	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	puhu	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+9	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	nsubj:cop	_	_
+10	suuri	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+11	häpeä	häpeä	NOUN	N	Case=Nom|Number=Sing	6	ccomp	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Molemmat vaikenivat.
+1	Molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	vaikenivat	vaikena	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Rasumihin oli tavattoman ilonen.
+1	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	tavattoman	tavaton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	4	amod	_	_
+4	ilonen	ilonen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = Raskolnikov huomasi sen ja häntä inhotti.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	6	obj	_	_
+6	inhotti	inhottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Se, mitä Rasumihin äskettäin oli kertonut Porfyriuksesta, saattoi hänet myös levottomaksi.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj:cop	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	7	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	nsubj	_	_
+4	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	7	obl	_	_
+5	äskettäin	äskettäin	ADV	Adv	Derivation=Ttain	7	advmod	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	kertonut	kertoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	_
+8	Porfyriuksesta	Porfyrius	NOUN	N	Case=Ela|Number=Sing	7	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	7	punct	_	_
+10	saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	cop	_	_
+11	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	13	obj	_	_
+12	myös	myös	ADV	Adv	_	13	advmod	_	_
+13	levottomaksi	levoton	ADJ	A	Case=Tra|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	13	punct	_	SpacesAfter=\s\n
+

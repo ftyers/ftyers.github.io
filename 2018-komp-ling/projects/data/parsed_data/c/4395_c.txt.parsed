@@ -1,0 +1,191 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = 9.
+1	9	9	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Kauan nukkui Zarathustra, eikä ainoastaan aamurusko kulkenut yli hänen kasvojensa, vaan myös aamupäivä.
+1	Kauan	kauan	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	nukkui	nukkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	cc	_	_
+6	ainoastaan	ainoastaan	ADV	Adv	_	8	advmod	_	_
+7	aamurusko	aamurusko	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	kulkenut	kulkea	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+9	yli	yli	ADV	Adv	_	8	advmod	_	_
+10	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	11	nmod:poss	_	_
+11	kasvojensa	kasva	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3	8	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	vaan	vaan	CCONJ	C	_	15	cc	_	_
+14	myös	myös	ADV	Adv	_	15	advmod	_	_
+15	aamupäivä	aamu#päivä	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Mutta viimein aukenivat hänen silmänsä: ihmetellen katseli Zarathustra metsän siimekseen ja hiljaisuuteen, ihmetellen katseli hän sisimpäänsä.
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	viimein	viimein	ADV	Adv	_	3	advmod	_	_
+3	aukenivat	aukena	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	silmänsä	silmä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	obj	_	SpaceAfter=No
+6	:	:	PUNCT	Punct	_	3	punct	_	_
+7	ihmetellen	ihmetellen	ADV	Adv	_	8	advmod	_	_
+8	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+9	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	11	nmod:poss	_	_
+10	metsän	metsä	NOUN	N	Case=Gen|Number=Sing	9	flat:name	_	_
+11	siimekseen	siimes	NOUN	N	Case=Ill|Number=Sing	8	obl	_	_
+12	ja	ja	CCONJ	C	_	13	cc	_	_
+13	hiljaisuuteen	hiljaisuus	NOUN	N	Case=Ill|Derivation=Inen,Vs|Number=Sing	11	conj	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	ihmetellen	ihmetellen	ADV	Adv	_	16	advmod	_	_
+16	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	acl:relcl	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	det	_	_
+18	sisimpäänsä	sisimpää	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	16	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Sitten hän nousi nopeasti, kuten merenkulkija, joka äkkiä näkee maata, ja riemuitsi: sillä hän näki uuden totuuden.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	kuten	kuten	SCONJ	C	_	7	mark	_	_
+7	merenkulkija	merenkulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	3	advcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	11	nsubj	_	_
+10	äkkiä	äkkiä	ADV	Adv	_	11	advmod	_	_
+11	näkee	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	15	acl:relcl	_	_
+12	maata	maa	NOUN	N	Case=Par|Number=Sing	11	obj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	riemuitsi	riemuitsi	NOUN	N	Case=Nom|Number=Sing	7	conj	_	SpaceAfter=No
+16	:	:	PUNCT	Punct	_	3	punct	_	_
+17	sillä	sillä	SCONJ	C	_	19	mark	_	_
+18	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+19	näki	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	advcl	_	_
+20	uuden	uusi	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	21	amod	_	_
+21	totuuden	totuus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	19	obj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Ja näin hän puhui silloin sydämelleen:
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	näin	näin	ADV	Adv	_	4	advmod	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	silloin	silloin	ADV	Adv	_	6	advmod	_	_
+6	sydämelleen	sydämelleen	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Valo syttyi sielussani: tovereita minä tarvitsen, ja eläviä, -- en kuolleita tovereita ja ruumiita, joita kannan myötäni, mihin tahdon.
+1	Valo	valo	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	syttyi	syttyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sielussani	sielussani	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	2	punct	_	_
+5	tovereita	tovere	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+6	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+7	tarvitsen	tarvita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	eläviä	elävä	NOUN	N	Case=Par|Number=Plur	2	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	15	punct	_	_
+12	--	--	PUNCT	Punct	_	15	punct	_	_
+13	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+14	kuolleita	kuollea	ADJ	A	Case=Par|Degree=Pos|Number=Plur	15	amod	_	_
+15	tovereita	tovere	NOUN	N	Case=Par|Number=Plur	2	conj	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	ruumiita	ruumis	NOUN	N	Case=Par|Number=Plur	15	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	21	punct	_	_
+19	joita	joka	PRON	Pron	Case=Par|Number=Plur|PronType=Rel	21	obj	_	_
+20	kannan	#kanta	NOUN	N	Case=Gen|Number=Sing	21	nmod:poss	_	_
+21	myötäni	myö	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=1	15	conj	_	SpaceAfter=No
+22	,	,	PUNCT	Punct	_	24	punct	_	_
+23	mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Int	24	det	_	_
+24	tahdon	tahto	NOUN	N	Case=Gen|Number=Sing	21	appos	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Vaan eläviä tovereita minä tarvitsen, jotka seuraavat minua, koska tahtovat itseään seurata -- ja sinne, mihin minä tahdon.
+1	Vaan	vaan	ADV	Adv	_	2	advmod	_	_
+2	eläviä	elää	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Pres|VerbForm=Part|Voice=Act	3	acl	_	_
+3	tovereita	tovere	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	tarvitsen	tarvita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	8	nsubj	_	_
+8	seuraavat	seurata	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	8	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	koska	koska	SCONJ	C	_	12	mark	_	_
+12	tahtovat	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	advcl	_	_
+13	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	14	obj	_	_
+14	seurata	seurata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	_
+15	--	--	PUNCT	Punct	_	21	punct	_	_
+16	ja	ja	CCONJ	C	_	21	cc	_	_
+17	sinne	sinne	ADV	Adv	_	16	fixed	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	21	punct	_	_
+19	mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Int	21	obl	_	_
+20	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	21	nsubj	_	_
+21	tahdon	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Valo syttyi sielussani: kansalle älköön puhuko Zarathustra, vaan tovereille!
+1	Valo	valo	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	syttyi	syttyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sielussani	sielu	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	obl	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	2	punct	_	_
+5	kansalle	kansa	NOUN	N	Case=All|Number=Sing	7	obl	_	_
+6	älköön	ei	AUX	V	Mood=Imp|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+7	puhuko	puhu	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+8	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	vaan	vaan	CCONJ	C	_	11	cc	_	_
+11	tovereille	tovere	NOUN	N	Case=All|Number=Plur	7	conj	_	SpaceAfter=No
+12	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Ei sovi Zarathustran tulla lauman paimeneksi ja koiraksi!
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	sovi	sovi	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Zarathustran	Zarathustran	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	lauman	lauma	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	paimeneksi	paimen	NOUN	N	Case=Tra|Number=Sing	4	obl	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	koiraksi	koira	NOUN	N	Case=Tra|Number=Sing	4	conj	_	SpaceAfter=No
+9	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Houkutellakseni monia pois laumasta -- sitävarten minä tulin.
+1	Houkutellakseni	Houkutella	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	9	advcl	_	_
+2	monia	moni	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	4	nsubj	_	_
+3	pois	pois	ADV	Adv	_	4	advmod	_	_
+4	laumasta	laua	VERB	V	Case=Ela|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp:ds	_	_
+5	--	--	PUNCT	Punct	_	1	punct	_	_
+6	sitävarten	sitävarten	ADP	Adp	AdpType=Post	5	case	_	_
+7	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+8	tulin	tulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 11
+# text = Suuttuva on minuun kansa ja lauma: ryöväri tahtoo Zarathustra olla paimenille.
+1	Suuttuva	Suuttuva	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	minuun	minä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	4	det	_	_
+4	kansa	kansa	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	lauma	lauma	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+7	:	:	PUNCT	Punct	_	4	punct	_	_
+8	ryöväri	ryöväri	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+10	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	12	nsubj:cop	_	_
+11	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	cop	_	_
+12	paimenille	paimen	NOUN	N	Case=All|Number=Plur	9	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

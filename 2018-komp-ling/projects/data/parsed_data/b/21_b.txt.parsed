@@ -1,0 +1,123 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Suomi aikoo kieltää alaikäisten avioliitot kokonaan.
+1	Suomi	Suomi	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	aikoo	aikoa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	kieltää	kieltää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	alaikäisten	ala#ikäinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	avioliitot	avioliito	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+6	kokonaan	kokonaan	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Alaikäiset ovat alle 18-vuotiaita.
+1	Alaikäiset	Alaikäinen	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	alle	alle	ADV	Adv	_	4	advmod	_	_
+4	18-vuotiaita	18-vuotiaa	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Nykyään alaikäiset voivat hakea poikkeuslupaa mennä naimisiin.
+1	Nykyään	nykyään	ADV	Adv	_	4	advmod	_	_
+2	alaikäiset	alaikäinen	NOUN	N	Case=Nom|Number=Plur	4	nsubj	_	_
+3	voivat	voida	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	hakea	hakea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	poikkeuslupaa	poikkeuslupa	NOUN	N	Case=Par|Number=Sing	6	obj	_	_
+6	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+7	naimisiin	naimisiin	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Esimerkiksi viime vuonna viranomaiset saivat 11 hakemusta.
+1	Esimerkiksi	esimerkiksi	ADV	Adv	_	2	advmod	_	_
+2	viime	viime	ADJ	A	_	3	amod	_	_
+3	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+4	viranomaiset	viran#omainen	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+5	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	11	11	NUM	Num	NumType=Card	7	nummod	_	_
+7	hakemusta	hakemus	NOUN	N	Case=Par|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = 7 hakemusta hyväksyttiin.
+1	7	7	NUM	Num	NumType=Card	2	nummod	_	_
+2	hakemusta	hakemus	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+3	hyväksyttiin	hyväksyä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Usein poikkeusluvan hakija on 17-vuotias tyttö, joka haluaa naimisiin uskonnon tai raskauden takia.
+1	Usein	usein	ADV	Adv	_	6	advmod	_	_
+2	poikkeusluvan	poikkeusluva	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	hakija	hakija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	17-vuotias	17#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	tyttö	tyttö	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	naimisiin	naimisiin	ADV	Adv	_	9	advmod	_	_
+11	uskonnon	uskonto	NOUN	N	Case=Gen|Number=Sing	9	obl	_	_
+12	tai	tai	CCONJ	C	_	13	cc	_	_
+13	raskauden	raskaus	NOUN	N	Case=Gen|Derivation=Vs|Number=Sing	11	conj	_	_
+14	takia	takia	ADP	Adp	AdpType=Post	11	case	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Alle 17-vuotias on saanut poikkeusluvan vain harvoin.
+1	Alle	alle	ADV	Adv	_	2	advmod	_	_
+2	17-vuotias	17#vuotias	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	poikkeusluvan	poikkeusluva	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+6	vain	vain	ADV	Adv	_	7	advmod	_	_
+7	harvoin	harvoin	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Hallitus haluaa muuttaa lakia niin, että poikkeuslupaa ei voi enää hakea.
+1	Hallitus	hallitus	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	muuttaa	muuttaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	lakia	laki	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	niin	niin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	12	punct	_	_
+7	että	että	SCONJ	C	_	12	mark	_	_
+8	poikkeuslupaa	poikkeuslupa	NOUN	N	Case=Par|Number=Sing	12	obj	_	_
+9	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+10	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	aux	_	_
+11	enää	enää	ADV	Adv	_	12	advmod	_	_
+12	hakea	hakea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	ccomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Lain muuttamisesta päättää eduskunta eli Suomen parlamentti.
+1	Lain	laki	NOUN	N	Case=Gen|Number=Sing	2	nmod:gobj	_	_
+2	muuttamisesta	muuttaminen	NOUN	N	Case=Ela|Derivation=Minen|Number=Sing	3	obl	_	_
+3	päättää	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	eduskunta	edus#kunta	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+5	eli	eli	CCONJ	C	_	7	cc	_	_
+6	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	parlamentti	parlamentti	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Lappajärvellä juhlitaan uutta maailmanmestaria.
+1	Lappajärvellä	Lappajärvi	NOUN	N	Case=Ade|Number=Sing	2	obl	_	_
+2	juhlitaan	juhlia	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	4	amod	_	_
+4	maailmanmestaria	maailmanmestari	NOUN	N	Case=Par|Number=Sing	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Painija Petra Olli on kotoisin Lappajärveltä.
+1	Painija	Painija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	compound:nn	_	_
+2	Petra	Petra	PROPN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+3	Olli	olli	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	kotoisin	kotoisin	ADV	Adv	_	6	advmod	_	_
+6	Lappajärveltä	Lappajärvi	NOUN	N	Case=Abl|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

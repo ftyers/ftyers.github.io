@@ -1,0 +1,206 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Partako?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Partako	partako	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = "Niin.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Niin	niin	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Se ei ole sir Henry -- se on -- niin, se on todellakin minun naapurini, rangaistusvanki."
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+4	sir	sir	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	5	compound:nn	_	_
+5	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+6	--	--	PUNCT	Punct	_	10	punct	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	10	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	--	--	PUNCT	Punct	_	10	punct	_	_
+10	niin	niin	ADV	Adv	_	5	conj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	16	punct	_	_
+12	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	16	nsubj:cop	_	_
+13	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+14	todellakin	todella	ADV	Adv	Clitic=Kin	16	advmod	_	_
+15	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	16	nmod:poss	_	_
+16	naapurini	naapuri	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	conj	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	rangaistusvanki	rangaistusvanki	NOUN	N	Case=Nom|Number=Sing	5	conj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+20	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Kuumeisella kiireellÃ¤ olimme kÃ¤Ã¤ntÃ¤neet ruumiin ja sen verta tippuva parta viittasi nyt kylmÃ¤Ã¤n, kirkkaaseen kuuhun pÃ¤in.
+1	Kuumeisella	Kuumeinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	kiireellÃ	kiireellÃ	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	SpaceAfter=No
+3	¤	¤	SYM	Symb	_	5	nsubj	_	_
+4	olimme	olla	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kÃ¤Ã¤ntÃ¤neet	kÃ¤Ã¤ntÃ¤a	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	11	acl	_	_
+6	ruumiin	ruuma	NOUN	N	Case=Ill|Number=Plur	5	obl	_	_
+7	ja	ja	CCONJ	C	_	11	cc	_	_
+8	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	9	nmod:poss	_	_
+9	verta	veri	NOUN	N	Case=Par|Number=Sing	10	obj	_	_
+10	tippuva	tippua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	11	acl	_	_
+11	parta	parta	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	viittasi	viitata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+13	nyt	nyt	ADV	Adv	_	12	advmod	_	_
+14	kylmÃ¤Ã¤n	kylmÃ¤Ã¤n	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	17	amod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	17	punct	_	_
+16	kirkkaaseen	kirkkaanen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Inen|Number=Sing	17	amod	_	_
+17	kuuhun	kuu	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+18	pÃ¤in	pÃ¤	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 5
+# text = Ei voinut erehtyÃ¤ tuosta matalasta otsasta, tuuheista kulmakarvoista ja kuopalle painuneista, elÃ¤imellisistÃ¤ silmistÃ¤.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	voinut	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+3	erehtyÃ	erehtyÃ	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	SpaceAfter=No
+4	¤	¤	SYM	Symb	_	0	root	_	_
+5	tuosta	tuosta	ADV	Adv	_	7	advmod	_	_
+6	matalasta	matala	ADJ	A	Case=Ela|Degree=Pos|Number=Sing	7	amod	_	_
+7	otsasta	otsa	NOUN	N	Case=Ela|Number=Sing	4	nmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	tuuheista	tuuhe	NOUN	N	Case=Ela|Number=Plur	7	conj	_	_
+10	kulmakarvoista	kulmakarvo	NOUN	N	Case=Ela|Number=Plur	13	nmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	kuopalle	kuopa	NOUN	N	Case=All|Number=Sing	10	conj	_	_
+13	painuneista	painune	NOUN	N	Case=Ela|Number=Plur	9	nmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	16	punct	_	_
+15	elÃ¤	elÃ¤	NOUN	N	Case=Nom|Number=Sing	16	compound:nn	_	SpaceAfter=No
+16	imellisistÃ	imellisistÃ	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+17	¤	¤	SYM	Symb	_	16	flat:name	_	_
+18	silmistÃ	silmistÃ	NOUN	N	Case=Nom|Number=Sing	19	compound:nn	_	SpaceAfter=No
+19	¤	¤	SYM	Symb	_	4	flat:name	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Ne olivat todellakin samat kasvot, jotka olivat tuijottaneet minuun kallioon kiinnitetyn kynttilÃ¤n valossa -- Seldenin, murhaajan kasvot.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	todellakin	todella	ADV	Adv	Clitic=Kin	5	advmod	_	_
+4	samat	sama	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	5	det	_	_
+5	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	9	nsubj	_	_
+8	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	tuijottaneet	tuijottaa	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	5	acl:relcl	_	_
+10	minuun	minä	PRON	Pron	Case=Ill|Number=Sing|Person=1|PronType=Prs	13	obl	_	_
+11	kallioon	kallio	NOUN	N	Case=Ill|Number=Sing	12	obl	_	_
+12	kiinnitetyn	kiinnittää	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	13	acl	_	_
+13	kynttilÃ¤	kynttilÃ¤	NOUN	N	Case=Nom|Number=Sing	9	obj	_	SpaceAfter=No
+14	n	n	PROPN	N	Abbr=Yes|Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	valossa	valo	NOUN	N	Case=Ine|Number=Sing	13	nmod	_	_
+16	--	--	PUNCT	Punct	_	17	punct	_	_
+17	Seldenin	Selden	PROPN	N	Case=Gen|Number=Sing	20	nmod:poss	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	20	punct	_	_
+19	murhaajan	murha#aika	NOUN	N	Case=Gen|Number=Sing	20	nmod:poss	_	_
+20	kasvot	kasvot	NOUN	N	Case=Nom|Number=Plur	15	appos	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Samassa hetkessÃ¤ oli kaikki selvÃ¤Ã¤.
+1	Samassa	samassa	ADV	Adv	_	3	advmod	_	_
+2	hetkessÃ	hetkessÃ	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	SpaceAfter=No
+3	¤	¤	SYM	Symb	_	0	root	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	selvÃ	selvÃ	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+7	¤Ã	¤Ã	NOUN	N	Case=Nom|Number=Sing	3	flat:name	_	SpaceAfter=No
+8	¤	¤	SYM	Symb	_	3	flat:name	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = MinÃ¤ muistin, ettÃ¤ sir Henry oli sanonut minulle antaneensa vanhat vaatteensa Barrymorelle.
+1	MinÃ	MinÃ	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	SpaceAfter=No
+2	¤	¤	SYM	Symb	_	3	nsubj	_	_
+3	muistin	muistaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	10	nmod:poss	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	ettÃ	ettÃ	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	SpaceAfter=No
+6	¤	¤	SYM	Symb	_	3	flat:name	_	_
+7	sir	sir	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	6	flat:name	_	_
+8	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	sanonut	sanoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+11	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	10	obl	_	_
+12	antaneensa	antaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Act	10	xcomp	_	_
+13	vanhat	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	14	amod	_	_
+14	vaatteensa	vaate	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	12	obj	_	_
+15	Barrymorelle	Barrymori	PROPN	N	Case=All|Number=Sing	12	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 9
+# text = TÃ¤mÃ¤ oli vuorostaan antanut ne Seldenille valepuvuksi pakoa varten.
+1	TÃ¤mÃ	TÃ¤mÃ	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	SpaceAfter=No
+2	¤	¤	SYM	Symb	_	5	nsubj	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	vuorostaan	vuorosta	NOUN	N	Case=Ill|Number=Sing	5	obl	_	_
+5	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	obj	_	_
+7	Seldenille	Selden	PROPN	N	Case=All|Number=Sing	8	obl	_	_
+8	valepuvuksi	valepuva	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+9	pakoa	pako	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+10	varten	varten	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Saappaat, paita, lakki -- kaikki oli sir Henryn.
+1	Saappaat	saapas	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	paita	paita	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	lakki	lakki	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+6	--	--	PUNCT	Punct	_	9	punct	_	_
+7	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	nsubj:cop	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	sir	sir	NOUN	N	Case=Nom|Number=Sing	1	conj	_	_
+10	Henryn	Henry	PROPN	N	Case=Gen|Number=Sing	9	appos	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 11
+# text = Tapaus oli sittenkin surullinen kyllÃ¤, mutta tÃ¤mÃ¤ mies oli kumminkin maan lakien mukaan ansainnut kuoleman.
+1	Tapaus	tapaus	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	sittenkin	sittenkin	ADV	Adv	_	5	advmod	_	_
+4	surullinen	surullinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	5	amod	_	_
+5	kyllÃ	kyllÃ	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	¤	¤	SYM	Symb	_	5	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	17	punct	_	_
+8	mutta	mutta	CCONJ	C	_	17	cc	_	_
+9	tÃ¤mÃ	tÃ¤mÃ	NOUN	N	Case=Nom|Number=Sing	11	compound:nn	_	SpaceAfter=No
+10	¤	¤	SYM	Symb	_	11	nmod	_	_
+11	mies	mies	NOUN	N	Case=Nom|Number=Sing	17	nsubj	_	_
+12	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	17	aux	_	_
+13	kumminkin	kumminkin	ADV	Adv	_	15	advmod	_	_
+14	maan	maa	NOUN	N	Case=Gen|Number=Sing	15	nmod:poss	_	_
+15	lakien	laki	NOUN	N	Case=Gen|Number=Plur	17	obl	_	_
+16	mukaan	mukaan	ADP	Adp	AdpType=Post	15	case	_	_
+17	ansainnut	ansaita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	conj	_	_
+18	kuoleman	kuolema	NOUN	N	Case=Gen|Number=Sing	17	obj	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = MinÃ¤ ilmoitin Holmesille asian laidan ja minun sydÃ¤meni paisui kiitollisuudesta ja ilosta.
+1	MinÃ	MinÃ	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	SpaceAfter=No
+2	¤	¤	SYM	Symb	_	3	nsubj	_	_
+3	ilmoitin	ilmoittää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Holmesille	Holmes	PROPN	N	Case=All|Number=Sing	3	obl	_	_
+5	asian	asia	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	laidan	laita	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+7	ja	ja	CCONJ	C	_	10	cc	_	_
+8	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	nmod:poss	_	_
+9	sydÃ¤	sydÃ¤	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+10	meni	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	paisui	paisua	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	10	advcl	_	_
+12	kiitollisuudesta	kiitollisuus	NOUN	N	Case=Ela|Derivation=Vs|Number=Sing	11	obl	_	_
+13	ja	ja	CCONJ	C	_	14	cc	_	_
+14	ilosta	ilo	NOUN	N	Case=Ela|Number=Sing	12	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

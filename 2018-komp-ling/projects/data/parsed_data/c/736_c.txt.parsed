@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "No, Alan, ei ole aikaa hukata hetkeäkään.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	No	no	INTJ	Interj	_	8	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	Alan	Alan	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+8	aikaa	aika	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+9	hukata	hukata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	acl	_	_
+10	hetkeäkään	hetkeäkä	NOUN	N	Case=Ill|Number=Sing	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 2
+# text = Kuinka raskas tämä laatikko on!
+1	Kuinka	kuinka	ADV	Adv	_	2	advmod	_	_
+2	raskas	raskas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	laatikko	laatikko	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Minä kannan sen ylös.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	kannan	kantaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	obj	_	_
+4	ylös	ylös	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Ota sinä muut tavarat."
+1	Ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	det	_	_
+3	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	4	det	_	_
+4	tavarat	tavata	NOUN	N	Case=Nom|Number=Plur	1	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Hän puhui nopeasti ja käskevästi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	käskevästi	käskevästi	ADV	Adv	Derivation=Sti	2	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Campbell tunsi olevansa voitettu.
+1	Campbell	Campbell	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olevansa	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|Person[psor]=3|VerbForm=Part|Voice=Act	4	aux:pass	_	_
+4	voitettu	voittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	2	ccomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = He läksivät yhdessä huoneesta.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	läksivät	läksä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	yhdessä	yhdessä	ADV	Adv	_	2	advmod	_	_
+4	huoneesta	huonei	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kun he tulivat ylös, niin Dorian otti avaimen esiin ja väänsi lukkoa.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	tulivat	tulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	advcl	_	_
+4	ylös	ylös	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	niin	niin	ADV	Adv	_	8	advmod	_	_
+7	Dorian	Dorian	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	otti	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+9	avaimen	avain	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+10	esiin	esiin	ADV	Adv	_	8	advmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	väänsi	vääntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	lukkoa	lukko	NOUN	N	Case=Par|Number=Sing	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 9
+# text = Sitten hän pysähtyi ja epäröivä katse kohosi hänen silmiinsä.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	pysähtyi	pysähtyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	epäröivä	epäröivä	NOUN	N	Case=Nom|Number=Sing	6	compound:nn	_	_
+6	katse	katse	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	kohosi	kohota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nmod:poss	_	_
+9	silmiinsä	silmi	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	7	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Häntä värisytti.
+1	Häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	värisytti	värisyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = "En luule voivani tulla sisään, Alan," hän mutisi.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	luule	luulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	voivani	voida	AUX	V	Case=Nom|Degree=Pos|Number=Sing|Number[psor]=Sing|PartForm=Pres|Person[psor]=1|VerbForm=Part|Voice=Act	5	aux	_	_
+5	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+6	sisään	sisään	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	3	punct	_	_
+8	Alan	ala	PROPN	N	Case=Gen|Number=Sing	12	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	12	punct	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

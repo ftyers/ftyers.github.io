@@ -1,0 +1,191 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = USA:ssa 11 ihmistä on kuollut iskussa synagogaan.
+1	USA:ssa	USA	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+2	11	11	NUM	Num	NumType=Card	1	nummod	_	_
+3	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kuollut	kuolla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	iskussa	isku	NOUN	N	Case=Ine|Number=Sing	5	obl	_	_
+7	synagogaan	synagoga	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = Isku tehtiin lauantaina Pittsburghissa.
+1	Isku	Isku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	obj	_	_
+2	tehtiin	tehdä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	lauantaina	lauantai	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+4	Pittsburghissa	Pittsburgh	PROPN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 3
+# text = Poliisi on ottanut kiinni 46-vuotiaan miehen, joka ampui ihmisiä synagogassa.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	ottanut	ottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kiinni	kiinni	ADV	Adv	_	3	compound:prt	_	_
+5	46-vuotiaan	46-vuotias	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	miehen	mies	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+9	ampui	ampua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	acl:relcl	_	_
+10	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	9	obj	_	_
+11	synagogassa	synagoga	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Poliisi uskoo, että mies teki iskun yksin.Mies on kirjoittanut ja välittänyt väkivaltaisia viestejä sosiaalisessa mediassa.
+1	Poliisi	poliisi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	uskoo	uskoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	mies	mies	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	iskun	isku	NOUN	N	Case=Gen|Derivation=U|Number=Sing	6	obj	_	_
+8	yksin.Mies	yksin.Mies	PROPN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	kirjoittanut	kirjoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	conj	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	välittänyt	välittädä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	conj	_	_
+13	väkivaltaisia	väki#valtainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	14	amod	_	_
+14	viestejä	viesti	NOUN	N	Case=Par|Number=Plur	12	obj	_	_
+15	sosiaalisessa	sosiaalinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Llinen|Number=Sing	16	amod	_	_
+16	mediassa	media	NOUN	N	Case=Ine|Number=Sing	10	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 5
+# text = Häntä vastaan on nostettu jo 29 syytettä.
+1	Häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+2	vastaan	vastaan	ADP	Adp	AdpType=Post	1	case	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	nostettu	nosttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	29	29	NUM	Num	NumType=Card	7	nummod	_	_
+7	syytettä	syyte	NOUN	N	Case=Par|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Myös kuolemanrangaistus on mahdollinen.
+1	Myös	myös	ADV	Adv	_	4	advmod	_	_
+2	kuolemanrangaistus	kuolemanrangaistus	NOUN	N	Case=Nom|Number=Sing	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	mahdollinen	mahdollinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Presidentti Donald Trump sanoo, että amerikkalaiset surevat Pittsburghin juutalaisten joukkomurhaa.
+1	Presidentti	presidentti	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Donald	Donald	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Trump	Trump	PROPN	N	Case=Nom|Number=Sing	2	flat:name	_	_
+4	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	amerikkalaiset	amerikkalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	8	nsubj	_	_
+8	surevat	surla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	ccomp	_	_
+9	Pittsburghin	Pittsburgh	PROPN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	juutalaisten	juuta#lainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	11	nmod:poss	_	_
+11	joukkomurhaa	joukkomurha	NOUN	N	Case=Par|Number=Sing	8	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Oikeusministeri sanoo, että maassa ei ole mitään sijaa vihalle ja väkivallalle, joka perustuu uskontoon.
+1	Oikeusministeri	oikeus#ministeri	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	maassa	maa	NOUN	N	Case=Ine|Number=Sing	2	ccomp	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+7	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop	_	_
+8	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	9	det	_	_
+9	sijaa	sija	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+10	vihalle	viha	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	väkivallalle	väkivalla	NOUN	N	Case=All|Number=Sing	10	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	15	punct	_	_
+14	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	15	nsubj	_	_
+15	perustuu	perustua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	acl:relcl	_	_
+16	uskontoon	uskonto	NOUN	N	Case=Ill|Number=Sing	15	obl	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 9
+# text = Isku on tuomittu myös Euroopassa.
+1	Isku	Isku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	3	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	tuomittu	tuomita	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	_
+5	Euroopassa	Eurooppa	PROPN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 10
+# text = Pizzalaatikoissa voi olla terveydelle haitallisia kemikaaleja.
+1	Pizzalaatikoissa	Pizzalaatiko	NOUN	N	Case=Ine|Number=Plur	4	obl	_	_
+2	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	cop	_	_
+4	terveydelle	terveydi	NOUN	N	Case=All|Number=Sing	0	root	_	_
+5	haitallisia	haitallinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	6	amod	_	_
+6	kemikaaleja	kemikaali	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Tanskassa on tehty mittauksia kemikaaleista laatikoissa.
+1	Tanskassa	Tanska	PROPN	N	Case=Ine|Number=Sing	3	obl	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	tehty	tehdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	mittauksia	mittaus	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	kemikaaleista	kemikaale	NOUN	N	Case=Ela|Number=Plur	4	nmod	_	_
+6	laatikoissa	laatiko	NOUN	N	Case=Ine|Number=Plur	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\s
+
+# sent_id = 12
+# text = Materiaalissa käytetään perfluorattuja yhdisteitä.
+1	Materiaalissa	Materiaali	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+2	käytetään	käyttää	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	perfluorattuja	perfluorata	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	4	acl	_	_
+4	yhdisteitä	yhdiste	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Ne estävät rasvan imeytymistä laatikon läpi.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	2	nsubj	_	_
+2	estävät	estää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rasvan	rasva	NOUN	N	Case=Gen|Number=Sing	4	nmod:gobj	_	_
+4	imeytymistä	imeytyminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	2	obj	_	_
+5	laatikon	laatikko	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	läpi	läpi	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Asiantuntijat sanovat, että pizzaa ei pidä säilyttää laatikossa.
+1	Asiantuntijat	asian#tuntija	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	sanovat	sanoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	että	että	SCONJ	C	_	8	mark	_	_
+5	pizzaa	pizza	NOUN	N	Case=Par|Derivation=Ja|Number=Sing	8	obj	_	_
+6	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	pidä	pitää	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	aux	_	_
+8	säilyttää	säilyttää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	_
+9	laatikossa	laatikko	NOUN	N	Case=Ine|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 15
+# text = Suomalaiset markkinajohtajat Kotipizza ja laatikkovalmistaja DS Smith kertovat Ylelle, että niiden laatikoissa ei ole perfluorattuja yhdisteitä.
+1	Suomalaiset	suomalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	2	amod	_	_
+2	markkinajohtajat	markkinajohtaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	compound:nn	_	_
+3	Kotipizza	Kotipizza	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+4	ja	ja	CCONJ	C	_	6	cc	_	_
+5	laatikkovalmistaja	laatikkovalmistaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	6	compound:nn	_	_
+6	DS	DS	PROPN	N	Case=Nom|Number=Sing	3	conj	_	_
+7	Smith	Smith	PROPN	N	Case=Nom|Number=Sing	6	flat:name	_	_
+8	kertovat	kertoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	Ylelle	Yle	PROPN	N	Case=All|Number=Sing	8	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	16	punct	_	_
+11	että	että	SCONJ	C	_	16	mark	_	_
+12	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	13	nmod:poss	_	_
+13	laatikoissa	laatiko	NOUN	N	Case=Ine|Number=Plur	16	obl	_	_
+14	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	_
+15	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	16	aux:pass	_	_
+16	perfluorattuja	perfluorata	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	8	ccomp	_	_
+17	yhdisteitä	yhdiste	NOUN	N	Case=Par|Number=Plur	16	obj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

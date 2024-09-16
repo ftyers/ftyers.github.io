@@ -1,0 +1,181 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = ”Tämä on kummallisin poni, jonka olen ikinä nähnyt”, hän tuumi.
+1	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	kummallisin	kummallinen	ADJ	A	Case=Nom|Degree=Sup|Derivation=Llinen|Number=Sing	5	amod	_	_
+5	poni	poni	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	10	obj	_	_
+8	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+9	ikinä	ikinä	ADV	Adv	_	10	advmod	_	_
+10	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	5	acl:relcl	_	SpaceAfter=No
+11	”	”	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	5	punct	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+14	tuumi	tuumia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = ”Parasta viedä se sisään lämpimään.”
+1	”	”	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Parasta	hyvä	ADJ	A	Case=Par|Degree=Sup|Number=Sing	3	obl	_	_
+3	viedä	viedä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	obj	_	_
+5	sisään	sisään	ADV	Adv	_	3	advmod	_	_
+6	lämpimään	lämmin	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+8	”	”	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Tallin estehevoset ja kouluratsut huiskauttelivat epäillen häntäänsä pienelle ja pyöreälle yksisarviselle.
+1	Tallin	talli	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	estehevoset	estehevonen	NOUN	N	Case=Nom|Number=Plur	5	nsubj	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	kouluratsut	kouluratsut	NOUN	N	Case=Nom|Number=Plur	2	conj	_	_
+5	huiskauttelivat	huiskauttela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	epäillen	epäilla	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	5	advcl	_	_
+7	häntäänsä	häntä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	6	obj	_	_
+8	pienelle	pieni	NOUN	N	Case=All|Number=Sing	11	obl	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	pyöreälle	pyöreä	NOUN	N	Case=All|Number=Sing	8	conj	_	_
+11	yksisarviselle	yksisarvinen	NOUN	N	Case=All|Derivation=Minen|Number=Sing	5	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = ”Et sinä hevonen ole”, ne tapasivat sanoa.
+1	”	”	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
+4	hevonen	hevonen	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	9	nsubj	_	_
+9	tapasivat	tapasa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	sanoa	sanoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 5
+# text = ”En tietenkään ole, minä olen yksisarvinen”, se vastasi aina uudelleen.
+1	”	”	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+3	tietenkään	tietenkään	ADV	Adv	_	8	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj:cop	_	_
+7	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	8	cop	_	_
+8	yksisarvinen	yksisarvinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	SpaceAfter=No
+9	”	”	PUNCT	Punct	_	8	punct	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	12	punct	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	12	nsubj	_	_
+12	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	conj	_	_
+13	aina	aina	ADV	Adv	_	14	advmod	_	_
+14	uudelleen	uudelleen	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 6
+# text = ”Et sinä ponikaan ole”, muut jatkoivat ja kävivät läpi kaikki tietämänsä kavio- ja sorkkaeläimet.
+1	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	4	nmod:poss	_	_
+4	ponikaan	ponika	NOUN	N	Case=Ill|Number=Sing	9	obl	_	_
+5	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	cop	_	SpaceAfter=No
+6	”	”	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	9	nsubj	_	_
+9	jatkoivat	jatkaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	kävivät	käydä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	_
+12	läpi	läpi	ADV	Adv	_	11	advmod	_	_
+13	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	14	det	_	_
+14	tietämänsä	tietämä	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	11	obj	_	_
+15	kavio-	kavio	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	sorkkaeläimet	sorkkaeläin	NOUN	N	Case=Nom|Number=Plur	15	conj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 7
+# text = Kun kouluratsut harjoittelivat laukkapiruetteja ja estehevoset ylittivät puomeja, yksisarvisella oli tapana kopistella leipomolle.
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	kouluratsut	kouluratsut	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	harjoittelivat	harjoittela	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	advcl	_	_
+4	laukkapiruetteja	laukkapiruetti	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	estehevoset	estehevonen	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+7	ylittivät	ylittää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	puomeja	puomi	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	3	punct	_	_
+10	yksisarvisella	yksisarvinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	12	amod	_	_
+11	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	cop	_	_
+12	tapana	tapa	NOUN	N	Case=Ess|Number=Sing	0	root	_	_
+13	kopistella	kopistella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	_
+14	leipomolle	leipomo	NOUN	N	Case=All|Number=Sing	13	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 8
+# text = Talon vaaleanpunainen julkisivu oli hauskasti rapattu ja seinällä kiipeilevä muratti suorastaan kutsui astumaan sisään.
+1	Talon	talo	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+2	vaaleanpunainen	vaaleanpunainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	julkisivu	julkisivu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	6	obj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux:pass	_	_
+5	hauskasti	hauskasti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+6	rapattu	rapata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+7	ja	ja	CCONJ	C	_	12	cc	_	_
+8	seinällä	seinä	NOUN	N	Case=Ade|Number=Sing	9	obl	_	_
+9	kiipeilevä	kiipeillä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	10	acl	_	_
+10	muratti	muratti	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+11	suorastaan	suorastaan	ADV	Adv	_	12	advmod	_	_
+12	kutsui	kutsua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	_
+13	astumaan	astua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	_
+14	sisään	sisään	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 9
+# text = Vielä houkuttelevampia olivat kuitenkin leipomosta leijailevat hajut.
+1	Vielä	vielä	ADV	Adv	_	2	advmod	_	_
+2	houkuttelevampia	houkutteleva	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	6	nsubj	_	_
+3	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	aux	_	_
+4	kuitenkin	kuitenkin	ADV	Adv	_	6	advmod	_	_
+5	leipomosta	leipomo	NOUN	N	Case=Ela|Number=Sing	6	obl	_	_
+6	leijailevat	leijailea	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	hajut	haju	NOUN	N	Case=Nom|Derivation=U|Number=Plur	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Kuuma omenahillo, kaneli ja voi, vastapaistettu vehnäleipä ja sokerimunkki kutkuttivat vastustamattomasti jokaisen lähistöllä olevan nenää.
+1	Kuuma	kuuma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	omenahillo	omena#hillo	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	kaneli	kaneli	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	voi	voi	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	vastapaistettu	vastapaisttaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+9	vehnäleipä	vehnä#leipä	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+10	ja	ja	CCONJ	C	_	11	cc	_	_
+11	sokerimunkki	sokerimunkki	NOUN	N	Case=Nom|Number=Sing	2	conj	_	_
+12	kutkuttivat	kutkutta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+13	vastustamattomasti	vastustamattomasti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+14	jokaisen	jokainen	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	15	nmod:poss	_	_
+15	lähistöllä	lähistö	NOUN	N	Case=Ade|Number=Sing	12	obl	_	_
+16	olevan	olla	AUX	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	17	cop	_	_
+17	nenää	nenä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	12	xcomp	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	12	punct	_	_
+
+# sent_id = 11
+# text = Varsinkin sellaisen, joka saa pääasiassa syödäkseen heiniä ja porkkanoita.
+1	Varsinkin	varsinkin	ADV	Adv	_	2	advmod	_	_
+2	sellaisen	sellainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	nsubj	_	_
+5	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl:relcl	_	_
+6	pääasiassa	pääasiassa	ADV	Adv	_	7	advmod	_	_
+7	syödäkseen	syödä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	5	advcl	_	_
+8	heiniä	heinä	NOUN	N	Case=Par|Number=Plur	7	obj	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	porkkanoita	porkkano	NOUN	N	Case=Par|Number=Plur	8	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

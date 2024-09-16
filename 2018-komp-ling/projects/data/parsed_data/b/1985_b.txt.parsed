@@ -1,0 +1,108 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ei ole tahti muuttunut Suomen rautateillä.
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	aux	_	_
+3	tahti	tahti	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	muuttunut	muuttua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	Suomen	Suomi	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	rautateillä	rautatei	NOUN	N	Case=Ade|Number=Plur	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Junat kulkee aina vaan myöhässä, hattumies jatkoi.
+1	Junat	Juna	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	kulkee	kulkea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aina	aina	ADV	Adv	_	5	advmod	_	_
+4	vaan	vaan	CCONJ	C	_	5	cc	_	_
+5	myöhässä	myöhässä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	2	punct	_	_
+7	hattumies	hattu#mies	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	jatkoi	jatkoida	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Pariskunta katsoi toisiaan.
+1	Pariskunta	pariskun	NOUN	N	Case=Par|Number=Sing	2	nsubj	_	_
+2	katsoi	katsoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Mitä tuohon sanoisi?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+2	tuohon	tuo	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	3	obl	_	_
+3	sanoisi	sanoa	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Jos sanoo juu, on muka heti samaa mieltä.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	juu	juu	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	muka	muka	ADV	Adv	_	2	advmod	_	_
+7	heti	heti	ADV	Adv	_	8	advmod	_	_
+8	samaa	sama	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	9	det	_	_
+9	mieltä	mieli	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Jos sanoo ei, silloinkin menee vastaus vähän pieleen.
+1	Jos	jos	SCONJ	C	_	2	mark	_	_
+2	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+3	ei	ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	silloinkin	silloin	ADV	Adv	Clitic=Kin	6	advmod	_	_
+6	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	vastaus	vastaus	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+8	vähän	vähän	ADV	Adv	_	9	advmod	_	_
+9	pieleen	pieli	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Niin kuin tahtoisi riitaa haastaa.
+1	Niin	niin	ADV	Adv	_	3	advmod	_	_
+2	kuin	kuin	SCONJ	C	_	3	mark	_	_
+3	tahtoisi	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	5	advcl	_	_
+4	riitaa	riita	NOUN	N	Case=Par|Number=Sing	3	obl	_	_
+5	haastaa	haastaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Vanha mies sanoi: — Niin.
+1	Vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	mies	mies	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+5	—	—	PUNCT	Punct	_	6	punct	_	_
+6	Niin	niin	ADV	Adv	_	3	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hänen vaimonsa nyökkäsi.
+1	Hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	vaimonsa	vaimo	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	3	nsubj	_	_
+3	nyökkäsi	nyökätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Vaimo ehkä ajatteli, että mies kyllä tietää, kuinka ollaan ja vieraille puhutaan.
+1	Vaimo	vaimo	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ehkä	ehkä	ADV	Adv	_	3	advmod	_	_
+3	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	että	että	SCONJ	C	_	8	mark	_	_
+6	mies	mies	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+7	kyllä	kyllä	ADV	Adv	_	8	advmod	_	_
+8	tietää	tietää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	kuinka	kuinka	ADV	Adv	_	14	advmod	_	_
+11	ollaan	olla	AUX	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	14	cop	_	_
+12	ja	ja	CCONJ	C	_	14	cc	_	_
+13	vieraille	viera	NOUN	N	Case=All|Number=Plur	14	obl	_	_
+14	puhutaan	puhua	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	8	conj	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,183 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Älä puhu enää, sinä elpyvä!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	puhu	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	enää	enää	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	det	_	_
+7	elpyvä	elpyvä	NOUN	N	Case=Nom|Number=Sing	3	obj	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- niin vastasivat hänelle hänen eläimensä, vaan käy ulos sinne, missä maailma odottaa sinua yrttitarhan lailla.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	niin	niin	ADV	Adv	_	3	advmod	_	_
+3	vastasivat	vastasa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	3	obl	_	_
+5	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	6	nmod:poss	_	_
+6	eläimensä	eläimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	vaan	vaan	CCONJ	C	_	9	cc	_	_
+9	käy	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	ulos	ulos	ADV	Adv	_	11	advmod	_	_
+11	sinne	sinne	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Int	15	obl	_	_
+14	maailma	maailma	NOUN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+15	odottaa	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	acl:relcl	_	_
+16	sinua	sinä	PRON	Pron	Case=Par|Number=Sing|Person=2|PronType=Prs	17	det	_	_
+17	yrttitarhan	yrttitarha	NOUN	N	Case=Gen|Number=Sing	15	obj	_	_
+18	lailla	lailla	ADV	Adv	_	15	advmod	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = "Käy ruusujen ja mehiläisten ja kyyhkysparvien luo.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Käy	käydä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ruusujen	ruusu	NOUN	N	Case=Gen|Derivation=U|Number=Plur	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	mehiläisten	mehiläinen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	3	conj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kyyhkysparvien	kyyhkysparva	NOUN	N	Case=Gen|Number=Plur	3	conj	_	_
+8	luo	luo	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Mutta varsinkin laululintujen luo: jotta oppisit heiltä _laulamaan_!
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	varsinkin	varsinkin	ADV	Adv	_	3	advmod	_	_
+3	laululintujen	laululintu	NOUN	N	Case=Gen|Number=Plur	9	obl	_	_
+4	luo	luo	ADP	Adp	AdpType=Post	3	case	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	3	punct	_	_
+6	jotta	jotta	SCONJ	C	_	7	mark	_	_
+7	oppisit	oppä	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	9	advcl	_	_
+8	heiltä	hän	PRON	Pron	Case=Abl|Number=Plur|Person=3|PronType=Prs	9	det	_	_
+9	_laulamaan_!	_laulamaan_!	SYM	Symb	_	0	root	_	_
+
+# sent_id = 5
+# text = "Laulaminen on näet elpyviä varten; terve puhukoon.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Laulaminen	Laulaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	5	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	näet	näet	ADV	Adv	_	5	advmod	_	_
+5	elpyviä	elpyvi	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+6	varten	varten	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	;	;	PUNCT	Punct	_	8	punct	_	_
+8	terve	terve	X	Foreign	Foreign=Yes	5	appos	_	_
+9	puhukoon	puhuko	NOUN	N	Case=Ill|Number=Sing	8	flat:name	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Ja jos tervekin tahtoo lauluja, niin hän tahtoo kuitenkin toisia lauluja kuin elpyvä."
+1	Ja	ja	CCONJ	C	_	9	cc	_	_
+2	jos	jos	SCONJ	C	_	4	mark	_	_
+3	tervekin	tervekin	ADV	Adv	_	4	advmod	_	_
+4	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	advcl	_	_
+5	lauluja	laulu	NOUN	N	Case=Par|Derivation=U|Number=Plur	4	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	niin	niin	ADV	Adv	_	9	advmod	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	tahtoo	tahtoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	kuitenkin	kuitenkin	ADV	Adv	_	9	advmod	_	_
+11	toisia	toinen	PRON	Pron	Case=Par|Number=Plur|PronType=Rcp	12	det	_	_
+12	lauluja	laulu	NOUN	N	Case=Par|Derivation=U|Number=Plur	9	obj	_	_
+13	kuin	kuin	SCONJ	C	_	14	mark	_	_
+14	elpyvä	elpyvä	NOUN	N	Case=Nom|Number=Sing	9	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 7
+# text = -- "Oi te ilvehtijät ja vääntöurut, vaietkaa toki!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+3	Oi	oida	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+4	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	5	det	_	_
+5	ilvehtijät	ilvehtijä	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	vääntöurut	vääntöuru	NOUN	N	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	vaietkaa	vaietkata	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	toki	toki	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = vastasi Zarathustra ja hymyili eläimilleen.
+1	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Zarathustra	Zarathustra	PROPN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	hymyili	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+5	eläimilleen	eläimi	NOUN	N	Case=All|Number=Plur|Person[psor]=3	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Kuinka hyvin te tiedätte, minkä lohdutuksen minä löysin itselleni seitsemässä päivässä!
+1	Kuinka	kuinka	ADV	Adv	_	4	advmod	_	_
+2	hyvin	hyvin	ADV	Adv	_	3	advmod	_	_
+3	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+4	tiedätte	tietää	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	7	nmod:poss	_	_
+7	lohdutuksen	lohdutus	NOUN	N	Case=Gen|Number=Sing	9	obj	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	9	nsubj	_	_
+9	löysin	löyta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+10	itselleni	itse	PRON	Pron	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	9	obl	_	_
+11	seitsemässä	seitsemä	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	12	amod	_	_
+12	päivässä	päivä	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = "Että minun jälleen täytyy laulaa, -- sen lohdutuksen minä löysin itselleni ja tämän elpymisen: tahdotteko te siitäkin heti tehdä laulun?" -- "Älä puhu enää, vastasivat hänen eläimensä hänelle uudelleen; ennemmin, sinä elpyvä, valmista itsellesi ensin lyyry, uusi lyyry!
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Että	että	SCONJ	C	_	6	mark	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+4	jälleen	jälleen	ADV	Adv	_	6	advmod	_	_
+5	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	laulaa	laulaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	--	--	PUNCT	Punct	_	6	punct	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	nmod:poss	_	_
+10	lohdutuksen	lohdutus	NOUN	N	Case=Gen|Number=Sing	6	obj	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+12	löysin	löyta	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+13	itselleni	itse	PRON	Pron	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=1|Reflex=Yes	12	obl	_	_
+14	ja	ja	CCONJ	C	_	16	cc	_	_
+15	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	16	det	_	_
+16	elpymisen	elpyminen	NOUN	N	Case=Gen|Derivation=Minen|Number=Sing	12	conj	_	SpaceAfter=No
+17	:	:	PUNCT	Punct	_	12	punct	_	_
+18	tahdotteko	tahdoa	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	parataxis	_	_
+19	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	18	obj	_	_
+20	siitäkin	se	PRON	Pron	Case=Ela|Clitic=Kin|Number=Sing|PronType=Dem	22	obl	_	_
+21	heti	heti	ADV	Adv	_	22	advmod	_	_
+22	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	18	xcomp	_	_
+23	laulun	laulu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	22	obj	_	SpaceAfter=No
+24	?	?	PUNCT	Punct	_	25	punct	_	SpaceAfter=No
+25	"	"	PUNCT	Punct	_	18	punct	_	_
+26	--	--	PUNCT	Punct	_	12	punct	_	_
+27	"	"	PUNCT	Punct	_	29	punct	_	SpaceAfter=No
+28	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	29	aux	_	_
+29	puhu	puhua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	conj	_	_
+30	enää	enää	ADV	Adv	_	29	advmod	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	29	punct	_	_
+32	vastasivat	vastata	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	conj	_	_
+33	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	34	nmod:poss	_	_
+34	eläimensä	eläimi	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	32	obj	_	_
+35	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	32	obl	_	_
+36	uudelleen	uudelleen	ADV	Adv	_	32	advmod	_	SpaceAfter=No
+37	;	;	PUNCT	Punct	_	38	punct	_	_
+38	ennemmin	ennemmin	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+39	,	,	PUNCT	Punct	_	46	punct	_	_
+40	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	46	det	_	_
+41	elpyvä	elpyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	46	amod	_	SpaceAfter=No
+42	,	,	PUNCT	Punct	_	46	punct	_	_
+43	valmista	valmis	ADJ	A	Case=Par|Degree=Pos|Number=Sing	44	amod	_	_
+44	itsellesi	itse	NOUN	N	Case=All|Number=Sing|Number[psor]=Sing|Person[psor]=2	46	nmod	_	_
+45	ensin	ensin	ADV	Adv	_	46	advmod	_	_
+46	lyyry	lyyry	NOUN	N	Abbr=Yes|Case=Nom|Number=Sing	12	appos	_	SpaceAfter=No
+47	,	,	PUNCT	Punct	_	49	punct	_	_
+48	uusi	uusi	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	49	amod	_	_
+49	lyyry	lyyry	NOUN	N	Case=Nom|Number=Sing	46	conj	_	SpaceAfter=No
+50	!	!	PUNCT	Punct	_	12	punct	_	SpacesAfter=\s\n
+

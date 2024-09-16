@@ -1,0 +1,99 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Minä en tule, Rasumihin!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	tule	tulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	4	obl	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Raskolnikov kääntyi ja läksi.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	läksi	lä	NOUN	N	Case=Tra|Number=Sing	2	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Lyönpä vetoa, että sinä tulet, huusi Rasumihin hänen jälkeen, --muuten olet sinä ...
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Lyönpä	Lyönpä	ADV	Adv	_	3	advmod	_	_
+3	vetoa	veto	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	_
+7	tulet	tulla	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	huusi	huutaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Style=Coll|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+10	Rasumihin	Rasum	NOUN	N	Case=Ill|Number=Plur	9	obl	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	obl	_	_
+12	jälkeen	jälkeen	ADP	Adp	AdpType=Post	11	case	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	16	punct	_	_
+14	--muuten	-muut	NOUN	N	Case=Gen|Number=Plur	16	nsubj:cop	_	_
+15	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+16	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	conj	_	_
+17	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = muuten en tahdo enää tietää mitään sinusta!
+1	muuten	muuten	ADV	Adv	_	3	advmod	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tahdo	tahtoa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	enää	enää	ADV	Adv	_	3	advmod	_	_
+5	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+6	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	obj	_	_
+7	sinusta	sinä	PRON	Pron	Case=Ela|Number=Sing|Person=2|PronType=Prs	5	obl	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Seis, odota!
+1	Seis	seis	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	odota	odottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Onko Sametov tuolla?
+1	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	Sametov	Sametov	PROPN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+3	tuolla	tuolla	ADV	Adv	_	0	root	_	SpaceAfter=No
+4	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- Kyllä...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = -- Oletko nähnyt hänet?
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Oletko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	3	obj	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = -- Kyllä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Puhunut hänen kanssaan?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	2	obl	_	_
+4	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	3	case	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = -- Kyllä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

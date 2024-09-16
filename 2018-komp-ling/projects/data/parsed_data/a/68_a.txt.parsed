@@ -1,0 +1,134 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Pitkälle ei taaskaan päästy.
+1	Pitkälle	pitkälle	ADV	Adv	_	4	advmod	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	taaskaan	taaskaan	ADV	Adv	_	4	advmod	_	_
+4	päästy	päästä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Koira aloitti niin mahdottoman ulinan, ettei kukaan pystynyt istumaan sen kanssa samassa autossa.
+1	Koira	koira	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	aloitti	aloittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	niin	niin	ADV	Adv	_	4	advmod	_	_
+4	mahdottoman	mahdoton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	5	amod	_	_
+5	ulinan	ulina	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	mark	_	_
+8	kukaan	kukaan	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	nsubj	_	_
+9	pystynyt	pystyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	_
+10	istumaan	istua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	obl	_	_
+12	kanssa	kanssa	ADP	Adp	AdpType=Post	11	case	_	_
+13	samassa	samassa	ADV	Adv	_	9	advmod	_	_
+14	autossa	auto	NOUN	N	Case=Ine|Number=Sing	9	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Onneksi naapurin herra Ruiskukkala sattui juuri silloin ajamaan traktorillaan heidän ohitseen.
+1	Onneksi	onneksi	ADV	Adv	_	5	advmod	_	_
+2	naapurin	naapuri	NOUN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	herra	herra	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	Ruiskukkala	Ruiskukkala	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	sattui	sattua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	juuri	juuri	ADV	Adv	_	5	advmod	_	_
+7	silloin	silloin	ADV	Adv	_	5	advmod	_	_
+8	ajamaan	ajaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+9	traktorillaan	traktor	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	8	obl	_	_
+10	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	11	nmod:gobj	_	_
+11	ohitseen	ohitnen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = – Ollaankos sitä jonkinlaisessa pulassa, kun siinä ojan pientareella seisoskelette? herra Ruiskukkala kysyi.
+1	–	–	PUNCT	Punct	_	5	punct	_	_
+2	Ollaankos	Ollaalla	AUX	V	Clitic=Ko,S|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	det	_	_
+4	jonkinlaisessa	jonkinlainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	5	amod	_	_
+5	pulassa	pula	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	11	punct	_	_
+7	kun	kun	SCONJ	C	_	11	mark	_	_
+8	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	11	obl	_	_
+9	ojan	oja	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	pientareella	pientare	NOUN	N	Case=Ade|Number=Sing	11	obl	_	_
+11	seisoskelette	seisoskella	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	5	punct	_	_
+13	herra	herra	NOUN	N	Case=Nom|Number=Sing	14	compound:nn	_	_
+14	Ruiskukkala	Ruiskukkala	PROPN	N	Case=Nom|Number=Sing	15	nsubj	_	_
+15	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = – Kieltämättä hieman, isä myönsi.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Kieltämättä	kielttä	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	6	advcl	_	_
+3	hieman	hieman	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	isä	isä	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	myönsi	myöntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = – Tuo koira pitäisi jollain keinoin saada kotiin.
+1	–	–	PUNCT	Punct	_	4	punct	_	_
+2	Tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	koira	koira	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	pitäisi	pitää	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	jollain	jokin	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	6	det	_	_
+6	keinoin	keino	NOUN	N	Case=Ins|Number=Plur	4	obl	_	_
+7	saada	saada	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp	_	_
+8	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	7	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Siinä samassa oli koira hypännyt traktorin lavalle ja heilutti siellä iloisena häntäänsä.
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	5	obl	_	_
+2	samassa	sama	PRON	Pron	Case=Ine|Number=Sing|PronType=Ind	5	obl	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	koira	koira	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	hypännyt	hypätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	traktorin	traktori	NOUN	N	Case=Gen|Number=Sing	5	obj	_	_
+7	lavalle	lava	NOUN	N	Case=All|Number=Sing	5	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	heilutti	heiluttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+10	siellä	siellä	ADV	Adv	_	9	advmod	_	_
+11	iloisena	iloinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Inen|Number=Sing	9	obl	_	_
+12	häntäänsä	häntä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	9	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = – Kyllähän minä voin sen teille tuoda, jos ei se teidän autoonne mahdu, herra Ruiskukkala lupasi hieman ihmetellen.
+1	–	–	PUNCT	Punct	_	7	punct	_	_
+2	Kyllähän	kyllä	ADV	Adv	Clitic=Han	7	advmod	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	7	nsubj	_	_
+4	voin	voida	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	nsubj	_	_
+6	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	7	obl	_	_
+7	tuoda	tuoda	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	14	punct	_	_
+9	jos	jos	SCONJ	C	_	14	mark	_	_
+10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	aux	_	_
+11	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	14	nsubj	_	_
+12	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	13	nmod:poss	_	_
+13	autoonne	autoo	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Plur|Person[psor]=2	14	obl	_	_
+14	mahdu	mahtua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	advcl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	7	punct	_	_
+16	herra	herra	NOUN	N	Case=Nom|Number=Sing	17	compound:nn	_	_
+17	Ruiskukkala	Ruiskukkala	PROPN	N	Case=Nom|Number=Sing	18	nsubj	_	_
+18	lupasi	luvata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	parataxis	_	_
+19	hieman	hieman	ADV	Adv	_	20	advmod	_	_
+20	ihmetellen	ihmetellä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	18	advcl	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = Niin sitä sitten köröteltiin traktorilla kotiin.
+1	Niin	niin	ADV	Adv	_	4	advmod	_	_
+2	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+3	sitten	sitten	ADV	Adv	_	4	advmod	_	_
+4	köröteltiin	körötela	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	traktorilla	traktori	NOUN	N	Case=Ade|Number=Sing	4	obl	_	_
+6	kotiin	koti	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

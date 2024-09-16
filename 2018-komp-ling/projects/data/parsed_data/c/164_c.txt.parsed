@@ -1,0 +1,150 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "No niin", sanoi hän, "minä vastaan.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	No	no	INTJ	Interj	_	6	discourse	_	_
+3	niin	niin	ADV	Adv	_	2	fixed	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	"	"	PUNCT	Punct	_	10	punct	_	SpaceAfter=No
+10	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
+11	vastaan	vastaan	ADP	Adp	AdpType=Post	10	case	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Kysykää mitä tahdotte!"
+1	Kysykää	kysyä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+3	tahdotte	tahtoa	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	1	advcl	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = "Olitteko kirjeenvaihdossa sir Charlesin kanssa?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Olitteko	Olia	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kirjeenvaihdossa	kirjeenvaihdo	NOUN	N	Case=Ine|Number=Sing	2	obl	_	_
+4	sir	sir	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	2	obj	_	_
+5	Charlesin	Charles	PROPN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	kanssa	kanssa	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = "Kyllä, kirjoitin hänelle pari kertaa, kiittääkseni häntä hänen hienotunteisesta jalomielisyydestään."
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kirjoitin	kirjoittaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	4	obl	_	_
+6	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	4	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	kiittääkseni	kiittää	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	4	conj	_	_
+10	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+11	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	13	nmod:poss	_	_
+12	hienotunteisesta	hienotunteinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	13	amod	_	_
+13	jalomielisyydestään	jalomielisyyde	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	9	obl	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = "Oletteko merkinnyt muistiin, koska nuo kirjeet lähetettiin?"
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Oletteko	Olet#teko	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	merkinnyt	merkitä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	muistiin	muisti	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	koska	koska	SCONJ	C	_	9	mark	_	_
+7	nuo	tuo	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	8	det	_	_
+8	kirjeet	#kirje	NOUN	N	Case=Nom|Number=Plur	9	obj	_	_
+9	lähetettiin	lähettaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	3	advcl	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+11	"	"	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "En." "Tapasitteko itse häntä?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+4	"	"	PUNCT	Punct	_	2	punct	_	_
+5	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+6	Tapasitteko	Tapasia	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	advcl	_	_
+7	itse	itse	ADV	Adv	_	6	advmod	_	_
+8	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	6	obj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = "Kyllä, kerran tai pari, hänen käydessään Coombe Traceyssa.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	kerran	kerran	ADV	Adv	_	0	root	_	_
+5	tai	tai	CCONJ	C	_	6	cc	_	_
+6	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	käydessään	käydä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	4	advcl	_	_
+10	Coombe	Coombe	PROPN	N	Case=Nom|Number=Sing	9	obj	_	_
+11	Traceyssa	Tracey	PROPN	N	Case=Ine|Number=Sing	10	flat:name	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Hän oli sangen vaatimaton luonne ja teki mieluimmin hyvää hiljaisuudessa."
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	sangen	sangen	ADV	Adv	_	5	advmod	_	_
+4	vaatimaton	vaatimaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	5	amod	_	_
+5	luonne	luonne	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+8	mieluimmin	mieluasti	ADV	Adv	Degree=Sup|Derivation=Sti	7	advmod	_	_
+9	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	amod	_	_
+10	hiljaisuudessa	hiljaisuud	NOUN	N	Case=Ine|Number=Sing	7	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = "Mutta jos tapasitte häntä niin harvoin ja kirjoititte hänelle niin harvoin, kuinka saattoi hän sitten kylliksi tuntea teidän olojanne auttaakseen teitä mainitsemallanne tavalla?"
+1	"	"	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	19	cc	_	_
+3	jos	jos	SCONJ	C	_	7	mark	_	_
+4	tapasitte	tapasida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+5	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	7	nsubj:cop	_	_
+6	niin	niin	ADV	Adv	_	7	advmod	_	_
+7	harvoin	harvoin	ADV	Adv	_	19	advcl	_	_
+8	ja	ja	CCONJ	C	_	12	cc	_	_
+9	kirjoititte	kirjoitida	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	12	cop	_	_
+10	hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	12	obl	_	_
+11	niin	niin	ADV	Adv	_	12	advmod	_	_
+12	harvoin	harvoin	ADV	Adv	_	7	conj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	7	punct	_	_
+14	kuinka	kuinka	ADV	Adv	_	19	advmod	_	_
+15	saattoi	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	19	aux	_	_
+16	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	19	nsubj	_	_
+17	sitten	sitten	ADV	Adv	_	18	advmod	_	_
+18	kylliksi	kylli	NOUN	N	Case=Tra|Number=Sing	19	obl	_	_
+19	tuntea	tuntea	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+20	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	21	nmod:poss	_	_
+21	olojanne	olojanne	NOUN	N	Case=Nom|Number=Sing	19	obj	_	_
+22	auttaakseen	auttaa	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	19	advcl	_	_
+23	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	25	det	_	_
+24	mainitsemallanne	mainitsemallanne	NOUN	N	Case=Nom|Number=Sing	25	nsubj:cop	_	_
+25	tavalla	tapa	NOUN	N	Case=Ade|Number=Sing	22	obl	_	SpaceAfter=No
+26	?	?	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+27	"	"	PUNCT	Punct	_	19	punct	_	_
+
+# sent_id = 10
+# text = Hän vastasi väitteeseeni epäröimättä hetkeäkään.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	väitteeseeni	väitteeseeni	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+4	epäröimättä	epäröiä	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+5	hetkeäkään	hetkeäkä	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

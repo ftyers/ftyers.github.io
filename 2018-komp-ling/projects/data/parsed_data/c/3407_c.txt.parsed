@@ -1,0 +1,247 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Anna Pavlovnan vierashuone alkoi vähitellen täyttyä.
+1	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	3	nmod:poss	_	_
+2	Pavlovnan	Pavlovna	PROPN	N	Case=Gen|Number=Sing	1	flat:name	_	_
+3	vierashuone	vierashuone	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	vähitellen	vähitellen	ADV	Adv	_	4	advmod	_	_
+6	täyttyä	täyä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Saapui Pietarin hienoin ylhäisö, saapui eri-ikäisiä ja -luonteisia ihmisiä, mutta kaikki kuuluivat he samaan yhteiskuntaluokkaan.
+1	Saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	Pietarin	Pietar	PROPN	N	Case=Gen|Number=Sing	3	nmod:poss	_	_
+3	hienoin	hieno	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	4	amod	_	_
+4	ylhäisö	ylhäisö	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+7	eri-ikäisiä	eri-ikäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	10	amod	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	-luonteisia	luonteisia	NOUN	N	Case=Nom|Number=Sing	7	conj	_	_
+10	ihmisiä	ihminen	NOUN	N	Case=Par|Number=Plur	6	obj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	mutta	mutta	CCONJ	C	_	14	cc	_	_
+13	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	14	nsubj	_	_
+14	kuuluivat	kuulua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+15	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	14	obj	_	_
+16	samaan	sama	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	17	det	_	_
+17	yhteiskuntaluokkaan	yhteiskuntaluokka	NOUN	N	Case=Ill|Number=Sing	14	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Saapui ruhtinas
+1	Saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+
+# sent_id = 4
+# text = Vasilin tytär, kaunotar Helena, joka oli tullut isäänsä noutamaan, lähteäkseen hänen kanssaan lähettilään juhlaan.
+1	Vasilin	Vasillä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	tytär	tytär	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	1	obj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	kaunotar	kaunotar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	5	compound:nn	_	_
+5	Helena	Helena	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	tullut	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	acl:relcl	_	_
+10	isäänsä	isää	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	11	nsubj	_	_
+11	noutamaan	noutaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp:ds	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	lähteäkseen	lähteä	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	16	advcl	_	_
+14	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	16	obl	_	_
+15	kanssaan	kanssa	ADP	Adp	AdpType=Post|Person[psor]=3	14	case	_	_
+16	lähettilään	lähettilä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	conj	_	_
+17	juhlaan	juhla	NOUN	N	Case=Ill|Number=Sing	16	obl	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Hän oli tanssiaispuvussa, ja hänen rinnassaan helyili keisarinnan nimikirjaimilla varustettu hovineidin merkki.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	tanssiaispuvussa	tanssiaispuvu	NOUN	N	Case=Ine|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	ja	ja	CCONJ	C	_	8	cc	_	_
+6	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	7	nmod:poss	_	_
+7	rinnassaan	rinna	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	8	obl	_	_
+8	helyili	helyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+9	keisarinnan	keisarinta	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	nimikirjaimilla	nimikirjaim	NOUN	N	Case=Ade|Number=Plur	11	obl	_	_
+11	varustettu	varustaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	12	acl	_	_
+12	hovineidin	hovineiti	NOUN	N	Case=Gen|Number=Sing	13	nmod:poss	_	_
+13	merkki	merkki	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Saapui myöskin tunnettu, Pietarin hurmaavin nainen, nuori pieni ruhtinatar Bolkonski, joka edellisenä talvena oli mennyt miehelään eikä siunatun tilansa tähden liikuskellut suuressa maailmassa, mutta kävi vielä kuitenkin pienissä iltaseuroissa.
+1	Saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	myöskin	myöskin	ADV	Adv	_	1	advmod	_	_
+3	tunnettu	tunnettu	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	Pietarin	Pietar	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	hurmaavin	hurmaava	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	7	amod	_	_
+7	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	12	compound:nn	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	nuori	nuori	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+10	pieni	pieni	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	11	amod	_	_
+11	ruhtinatar	ruhtinatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	12	compound:nn	_	_
+12	Bolkonski	Bolkonski	PROPN	N	Case=Nom|Number=Sing	1	nsubj	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	18	punct	_	_
+14	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	18	nsubj	_	_
+15	edellisenä	edellinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Llinen|Number=Sing	16	amod	_	_
+16	talvena	talvi	NOUN	N	Case=Ess|Number=Sing	18	obl	_	_
+17	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	18	aux	_	_
+18	mennyt	mennä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	acl:relcl	_	_
+19	miehelään	miehelä	NOUN	N	Case=Ill|Number=Sing	18	obl	_	_
+20	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	24	cc	_	_
+21	siunatun	siunata	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	22	acl	_	_
+22	tilansa	tila	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	24	obl	_	_
+23	tähden	tähden	ADP	Adp	AdpType=Post	22	case	_	_
+24	liikuskellut	liikuskella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	18	conj	_	_
+25	suuressa	suuri	ADJ	A	Case=Ine|Degree=Pos|Number=Sing	26	amod	_	_
+26	maailmassa	maailma	NOUN	N	Case=Ine|Number=Sing	24	obl	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	29	punct	_	_
+28	mutta	mutta	CCONJ	C	_	29	cc	_	_
+29	kävi	käydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	conj	_	_
+30	vielä	vielä	ADV	Adv	_	29	advmod	_	_
+31	kuitenkin	kuitenkin	ADV	Adv	_	29	advmod	_	_
+32	pienissä	pieni	ADJ	A	Case=Ine|Degree=Pos|Number=Plur	33	amod	_	_
+33	iltaseuroissa	iltaseuro	NOUN	N	Case=Ine|Number=Plur	29	obl	_	SpaceAfter=No
+34	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Saapui ruhtinas Hippolyt, ruhtinas Vasilin poika, Mortemartin kanssa, jonka hän esitteli; saapui myös abotti Morio ja monet muut.
+1	Saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	ruhtinas	ruhtinas	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Hippolyt	Hippoly	NOUN	N	Case=Nom|Derivation=U|Number=Plur	1	nsubj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	ruhtinas	ruhtinas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+6	Vasilin	Vasil	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	poika	poika	NOUN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	9	punct	_	_
+9	Mortemartin	Mortemart	PROPN	N	Case=Gen|Number=Sing	1	obl	_	_
+10	kanssa	kanssa	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	jonka	joka	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	14	obj	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+14	esitteli	esitellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	acl:relcl	_	SpaceAfter=No
+15	;	;	PUNCT	Punct	_	1	punct	_	_
+16	saapui	saapua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	parataxis	_	_
+17	myös	myös	ADV	Adv	_	18	advmod	_	_
+18	abotti	abotti	NOUN	N	Case=Nom|Number=Sing	19	compound:nn	_	_
+19	Morio	Morio	PROPN	N	Case=Nom|Number=Sing	16	nsubj	_	_
+20	ja	ja	CCONJ	C	_	22	cc	_	_
+21	monet	moni	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	22	det	_	_
+22	muut	muu	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	16	conj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = -- Ettekö vielä ole nähnyt tätiä, tai ehkette häntä tunne?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ettekö	Edä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	advcl	_	_
+3	vielä	vielä	ADV	Adv	_	5	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	nähnyt	nähdä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	tätiä	täti	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	tai	tai	CCONJ	C	_	9	cc	_	_
+9	ehkette	ehkla	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	_
+10	häntä	hän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+11	tunne	tunne	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = -- puheli Anna Pavlovna vierailleen ja johdaiteli heidät aivan tosissaan pienen vanhan eukon luo, joka korkeassa nauharuusuisessa pääkoristeessaan purjehti viereisestä huoneesta heti kun vieraita alkoi saapua, mainitsi vieraiden nimet, vitkalleen kääntäen katseensa vieraista tätiin, ja poistui aina tämän tehtyään.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	puheli	puheli	NOUN	N	Case=Nom|Number=Sing	3	compound:nn	_	_
+3	Anna	Anna	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+4	Pavlovna	Pavlovna	PROPN	N	Case=Nom|Number=Sing	3	flat:name	_	_
+5	vierailleen	vierai	NOUN	N	Case=All|Number=Sing|Person[psor]=3	3	nmod	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	johdaiteli	johdaiellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	7	obj	_	_
+9	aivan	aivan	ADV	Adv	_	10	advmod	_	_
+10	tosissaan	tosissaan	ADV	Adv	_	7	advmod	_	_
+11	pienen	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	12	amod	_	_
+12	vanhan	vanha	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	13	amod	_	_
+13	eukon	eukko	NOUN	N	Case=Gen|Number=Sing	7	obl	_	_
+14	luo	luo	ADP	Adp	AdpType=Post	13	case	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	20	punct	_	_
+16	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	20	nsubj	_	_
+17	korkeassa	korkea	NOUN	N	Case=Ine|Number=Sing	20	obl	_	_
+18	nauharuusuisessa	nauharuusuinen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Sing	19	amod	_	_
+19	pääkoristeessaan	pääkoristee	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	17	nmod	_	_
+20	purjehti	purjehtiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	13	acl:relcl	_	_
+21	viereisestä	viereinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Inen|Number=Sing	22	amod	_	_
+22	huoneesta	huonei	NOUN	N	Case=Ela|Number=Sing	20	obl	_	_
+23	heti	heti	ADV	Adv	_	24	advmod	_	_
+24	kun	kun	SCONJ	C	_	26	mark	_	_
+25	vieraita	vieras	NOUN	N	Case=Par|Number=Plur	26	nsubj	_	_
+26	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	20	advcl	_	_
+27	saapua	saapua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	26	xcomp	_	SpaceAfter=No
+28	,	,	PUNCT	Punct	_	29	punct	_	_
+29	mainitsi	mainita	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+30	vieraiden	vieras	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	31	amod	_	_
+31	nimet	nimi	NOUN	N	Case=Nom|Number=Plur	29	obj	_	SpaceAfter=No
+32	,	,	PUNCT	Punct	_	34	punct	_	_
+33	vitkalleen	vitka	NOUN	N	Case=All|Number=Sing|Person[psor]=3	34	obl	_	_
+34	kääntäen	kääntää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	29	advcl	_	_
+35	katseensa	katsei	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	37	obj	_	_
+36	vieraista	vierainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	37	amod	_	_
+37	tätiin	täti	NOUN	N	Case=Ill|Number=Sing	34	obl	_	SpaceAfter=No
+38	,	,	PUNCT	Punct	_	29	punct	_	_
+39	ja	ja	CCONJ	C	_	40	cc	_	_
+40	poistui	poistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+41	aina	aina	ADV	Adv	_	43	advmod	_	_
+42	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	43	obj	_	_
+43	tehtyään	tehdä	VERB	V	Case=Par|Degree=Pos|Number=Sing|PartForm=Past|Person[psor]=3|VerbForm=Part|Voice=Pass	40	advcl	_	SpaceAfter=No
+44	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 10
+# text = Kaikki vieraat suorittivat nämä tervehtimismenot, vaikkeivatkaan tätiä tunteneet eivätkä hänestä välittäneet.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	2	det	_	_
+2	vieraat	vieras	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	suorittivat	suorittaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	nämä	tämä	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	5	det	_	_
+5	tervehtimismenot	tervehtimismeto	NOUN	N	Case=Nom|Number=Plur	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	vaikkeivatkaan	vaikkeivatata	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+8	tätiä	täti	NOUN	N	Case=Par|Number=Sing	9	nsubj	_	_
+9	tunteneet	tuntea	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	7	ccomp	_	_
+10	eivätkä	ei	VERB	V	Clitic=Ka|Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	12	cc	_	_
+11	hänestä	hän	PRON	Pron	Case=Ela|Number=Sing|Person=3|PronType=Prs	12	obl	_	_
+12	välittäneet	välittää	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	9	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Anna
+1	Anna	Anna	ADV	Adv	_	0	root	_	_
+
+# sent_id = 12
+# text = Pavlovna seurasi surullisen juhlallisena näitä tervehtimismenoja ja oli sydämessään niihin tyytyväinen.
+1	Pavlovna	Pavlov	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+2	seurasi	seurata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	surullisen	surullinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	4	amod	_	_
+4	juhlallisena	juhlallinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Llinen|Number=Sing	6	amod	_	_
+5	näitä	tämä	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	6	det	_	_
+6	tervehtimismenoja	tervehtimismena	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	_
+7	ja	ja	CCONJ	C	_	11	cc	_	_
+8	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	cop	_	_
+9	sydämessään	sydämä	VERB	V	Case=Ine|InfForm=2|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	11	advcl	_	_
+10	niihin	se	PRON	Pron	Case=Ill|Number=Plur|PronType=Dem	11	obl	_	_
+11	tyytyväinen	tyytyväinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 13
+# text = Täti puheli kaikkien vieraiden kanssa samoin lauseparsin.
+1	Täti	täti	ADV	Adv	_	2	advmod	_	_
+2	puheli	puheli	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+3	kaikkien	kaikki	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	4	det	_	_
+4	vieraiden	viera	NOUN	N	Case=Gen|Number=Plur	7	obl	_	_
+5	kanssa	kanssa	ADP	Adp	AdpType=Post	4	case	_	_
+6	samoin	samoin	ADV	Adv	_	7	advmod	_	_
+7	lauseparsin	lausepartää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	7	punct	_	SpacesAfter=\s\n
+

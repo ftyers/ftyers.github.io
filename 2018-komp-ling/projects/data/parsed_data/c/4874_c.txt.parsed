@@ -1,0 +1,115 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mutta, te arvanpelaajat, mitä siitä!
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	0	root	_	_
+4	arvanpelaajat	arvanpelaaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	3	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	7	obj	_	_
+7	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	4	nmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Te ette oppineet pelaamaan ja pilkkaamaan, niinkuin täytyy pelata ja pilkata!
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	nsubj	_	_
+2	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	oppineet	oppia	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	pelaamaan	pelata	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	pilkkaamaan	pilkkaaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	niinkuin	niinkuin	SCONJ	C	_	10	mark	_	_
+9	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	pelata	pelata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	pilkata	pilkata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	conj	_	SpaceAfter=No
+13	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Emmekö me istu suuren pilkka- ja pelipöydän ääressä?
+1	Emmekö	Emme	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+3	istu	ista	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	1	conj	_	_
+4	suuren	suuri	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	5	amod	_	_
+5	pilkka-	pilkka	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	pelipöydän	peli#pöytä	NOUN	N	Case=Gen|Number=Sing	1	conj	_	_
+8	ääressä	ääressä	ADP	Adp	AdpType=Post	7	case	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Ja jos teiltä jotakin suurta epäonnistui, niin oletteko itse senvuoksi epäonnistuneita?
+1	Ja	ja	CCONJ	C	_	9	cc	_	_
+2	jos	jos	SCONJ	C	_	6	mark	_	_
+3	teiltä	sinä	PRON	Pron	Case=Abl|Number=Plur|Person=2|PronType=Prs	5	det	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	suurta	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Sing	6	nsubj	_	_
+6	epäonnistui	epä#onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	advcl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	niin	niin	ADV	Adv	_	9	advmod	_	_
+9	oletteko	olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+10	itse	itse	ADV	Adv	_	12	advmod	_	_
+11	senvuoksi	senvuo	NOUN	N	Case=Tra|Number=Sing	12	obl	_	_
+12	epäonnistuneita	epäonnistua	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	9	xcomp	_	SpaceAfter=No
+13	?	?	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 5
+# text = Ja jos itse epäonnistuitte, epäonnistuiko senvuoksi -- ihminen?
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	jos	jos	SCONJ	C	_	6	mark	_	_
+3	itse	itse	ADV	Adv	_	4	advmod	_	_
+4	epäonnistuitte	epäonnistuitten	ADV	Adv	Style=Coll	2	fixed	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	epäonnistuiko	epäonnistua	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	senvuoksi	senvuo	NOUN	N	Case=Tra|Number=Sing	6	obl	_	_
+8	--	--	PUNCT	Punct	_	6	punct	_	_
+9	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 6
+# text = Mutta jos ihminen epäonnistui: -- hyvä!
+1	Mutta	mutta	CCONJ	C	_	7	cc	_	_
+2	jos	jos	SCONJ	C	_	4	mark	_	_
+3	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	epäonnistui	epä#onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	advcl	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	4	punct	_	_
+6	--	--	PUNCT	Punct	_	7	punct	_	_
+7	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 7
+# text = Niinpä ylös! 15.
+1	Niinpä	niinpä	ADV	Adv	_	2	advmod	_	_
+2	ylös	ylös	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	4	punct	_	_
+4	15	15	NUM	Num	NumType=Card	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Mitä korkeampi lajiltaan, sitä harvemmin asia onnistuu.
+1	Mitä	mitä	CCONJ	C	_	2	cc:preconj	_	_
+2	korkeampi	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	_
+3	lajiltaan	laji	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	sitä	sitä	ADV	Adv	_	8	advmod	_	_
+6	harvemmin	harvemmin	ADV	Adv	_	8	advmod	_	_
+7	asia	asia	NOUN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	onnistuu	onnistua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Te korkeammat ihmiset täällä, ettekö te kaikki ole epäonnistuneita?
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	3	det	_	_
+2	korkeammat	korkea	ADJ	A	Case=Nom|Degree=Cmp|Number=Plur	3	amod	_	_
+3	ihmiset	ihminen	NOUN	N	Case=Nom|Number=Plur	6	nsubj	_	_
+4	täällä	täällä	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	ettekö	teä	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	10	nsubj:cop	_	_
+8	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+9	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	cop	_	_
+10	epäonnistuneita	epä#onnistunut	ADJ	A	Case=Par|Degree=Pos|Number=Plur	6	ccomp	_	SpaceAfter=No
+11	?	?	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

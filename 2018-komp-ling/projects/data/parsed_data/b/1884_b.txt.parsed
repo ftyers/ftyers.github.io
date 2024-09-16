@@ -1,0 +1,151 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Etunimiä saa olla enintään kolme.
+1	Etunimiä	Etunin	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	_
+2	saa	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+4	enintään	enintään	ADV	Adv	_	5	advmod	_	_
+5	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	xcomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ne eivät saa olla sopimattomia eikä niiden käytöstä saa olla ilmeistä haittaa.
+1	Ne	se	PRON	Pron	Case=Nom|Number=Plur|PronType=Dem	3	nsubj	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	cop	_	_
+5	sopimattomia	sopimaton	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Plur	3	xcomp	_	_
+6	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	cc	_	_
+7	niiden	se	PRON	Pron	Case=Gen|Number=Plur|PronType=Dem	8	nmod:poss	_	_
+8	käytöstä	käyttö	NOUN	N	Case=Ela|Number=Sing	6	obl	_	_
+9	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	3	conj	_	_
+10	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	cop	_	_
+11	ilmeistä	ilmeinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	12	amod	_	_
+12	haittaa	haitta	NOUN	N	Case=Par|Number=Sing	9	xcomp	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Myös ruotsin- ja saamenkielisille sekä ortodoksinimille on omat päivänsä.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	ruotsin-	ruotsin	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	saamenkielisille	saamenkielis	NOUN	N	Case=All|Number=Plur	2	conj	_	_
+5	sekä	sekä	CCONJ	C	_	6	cc	_	_
+6	ortodoksinimille	ortodoksinim	NOUN	N	Case=All|Number=Plur	2	conj	_	SpacesAfter= 
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	omat	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	9	amod	_	_
+9	päivänsä	päivä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 4
+# text = Sukunimi on tarkoitettu periytyväksi.
+1	Sukunimi	suku#nimi	NOUN	N	Case=Nom|Number=Sing	3	obj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux:pass	_	_
+3	tarkoitettu	tarkoittaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+4	periytyväksi	periytyvä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Se on alun perin antanut viitteitä käyttäjänsä asuinpaikasta ja yhteiskunnallisesta asemasta.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	alun	alun	ADV	Adv	_	5	advmod	_	_
+4	perin	perin	ADV	Adv	_	3	fixed	_	_
+5	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	viitteitä	viite	NOUN	N	Case=Par|Number=Plur	5	obj	_	_
+7	käyttäjänsä	käyttäjä	NOUN	N	Case=Gen|Derivation=Ja|Number=Sing|Person[psor]=3	8	nmod:poss	_	_
+8	asuinpaikasta	asuinpaika	NOUN	N	Case=Ela|Number=Sing	6	nmod	_	_
+9	ja	ja	CCONJ	C	_	11	cc	_	_
+10	yhteiskunnallisesta	yhteis#kunnallinen	ADJ	A	Case=Ela|Degree=Pos|Derivation=Llinen|Number=Sing	11	amod	_	_
+11	asemasta	asema	NOUN	N	Case=Ela|Number=Sing	5	conj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Aatelisnimet olivat olleet käytössä jo vuodesta 1626.
+1	Aatelisnimet	Aatelisnin	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	olleet	olla	AUX	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	4	cop	_	_
+4	käytössä	käyttö	NOUN	N	Case=Ine|Number=Sing	0	root	_	_
+5	jo	jo	ADV	Adv	_	6	advmod	_	_
+6	vuodesta	vuosi	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+7	1626	1626	NUM	Num	NumType=Card	6	nummod	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Opintielle lähtevät ottivat käyttöön usein kotipaikan nimestä johdetun nimen.
+1	Opintielle	Opintii	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+2	lähtevät	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ottivat	ottaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+4	käyttöön	käyttö	NOUN	N	Case=Ill|Number=Sing	3	obl	_	_
+5	usein	usein	ADV	Adv	_	3	advmod	_	_
+6	kotipaikan	kotipaikka	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	SpacesAfter= \s
+7	nimestä	nimi	NOUN	N	Case=Ela|Number=Sing	8	obl	_	_
+8	johdetun	johtaa	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+9	nimen	nimi	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Nimiin lisättiin aluksi latinasta, myöhemmin ranskasta otettu johdin.
+1	Nimiin	Nima	NOUN	N	Case=Ill|Number=Plur	2	obl	_	_
+2	lisättiin	lisätä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	aluksi	aluksi	ADV	Adv	_	4	advmod	_	_
+4	latinasta	latina	NOUN	N	Case=Ela|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	myöhemmin	myöhemmin	ADV	Adv	_	9	advmod	_	_
+7	ranskasta	ranskka	NOUN	N	Case=Ela|Number=Sing	8	obl	_	_
+8	otettu	ottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl	_	_
+9	johdin	johtaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Myös porvaristo ja käsityöläiset ottivat itselleen sukunimiä.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	porvaristo	porvaristo	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	käsityöläiset	käsityöläinen	NOUN	N	Case=Nom|Number=Plur	2	conj	_	_
+5	ottivat	ottaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	itselleen	itse	PRON	Pron	Case=All|Number=Sing|Person[psor]=3|Reflex=Yes	5	obl	_	_
+7	sukunimiä	sukunin	NOUN	N	Case=Par|Number=Plur	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Talonpojat omaksuivat tavan 1800-luvulla.
+1	Talonpojat	Talonpoja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	2	nsubj	_	_
+2	omaksuivat	omaksua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tavan	tapa	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	1800-luvulla	1800#luku	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Tyypillisiä sukunimiä olivat porvarisnimet, sotilasnimet ja talonpoikaisnimet.
+1	Tyypillisiä	Tyypillinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Plur	2	amod	_	_
+2	sukunimiä	sukunin	NOUN	N	Case=Par|Number=Plur	4	nsubj:cop	_	_
+3	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	porvarisnimet	porvarisnin	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	sotilasnimet	sotilasnin	NOUN	N	Case=Nom|Number=Plur	4	conj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	talonpoikaisnimet	talonpoikaisnin	NOUN	N	Case=Nom|Number=Plur	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 12
+# text = Oma lukunsa ovat olleet isän- ja äidinnimijohdokset.
+1	Oma	oma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	2	amod	_	_
+2	lukunsa	luku	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	4	nsubj	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	olleet	olla	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	isän-	isän	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	äidinnimijohdokset	äidinnimijohdos	NOUN	N	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 13
+# text = Son-loppuiset nimet ovat yleisiä edelleen.
+1	Son-loppuiset	Son-loppuinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	nimet	nimi	NOUN	N	Case=Nom|Number=Plur	4	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	yleisiä	yleinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	_
+5	edelleen	edelleen	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

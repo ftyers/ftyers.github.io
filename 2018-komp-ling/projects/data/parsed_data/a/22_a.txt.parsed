@@ -1,0 +1,127 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Humalaiset ihmiset aiheuttavat myös paljon työtä poliisille ja palomiehille.
+1	Humalaiset	Humalainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	2	amod	_	_
+2	ihmiset	ihmiset	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	aiheuttavat	aiheuttta	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	_
+5	paljon	paljon	ADV	Adv	_	6	advmod	_	_
+6	työtä	työ	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+7	poliisille	poliis	NOUN	N	Case=All|Number=Plur	3	obl	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	palomiehille	palomieh	NOUN	N	Case=All|Number=Plur	7	conj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Siksi valtio on myös yrittänyt vähentää suomalaisten alkoholin juomista.
+1	Siksi	siksi	ADV	Adv	_	5	advmod	_	_
+2	valtio	valtio	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	_
+5	yrittänyt	yrittää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	vähentää	vähentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	_
+7	suomalaisten	suomalainen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Lainen|Number=Plur	8	amod	_	_
+8	alkoholin	alkoholi	NOUN	N	Case=Gen|Number=Sing	9	nmod:gobj	_	_
+9	juomista	juominen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	6	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 3
+# text = Vuonna 1919 Suomeen tuli kieltolaki, joka kielsi alkoholin Suomessa kokonaan.
+1	Vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	4	obl	_	_
+2	1919	1919	NUM	Num	NumType=Card	1	nummod	_	_
+3	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	1	nmod	_	_
+4	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kieltolaki	kielto#laki	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	8	punct	_	_
+7	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	8	nsubj	_	_
+8	kielsi	kieltaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	acl:relcl	_	_
+9	alkoholin	alkoholi	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	Suomessa	Suomi	PROPN	N	Case=Ine|Number=Sing	8	obl	_	_
+11	kokonaan	kokonaan	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Alkoholia ei saanut myydä tai itse valmistaa.
+1	Alkoholia	alkoholia	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	myydä	myydä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	tai	tai	CCONJ	C	_	7	cc	_	_
+6	itse	itse	ADV	Adv	_	7	advmod	_	_
+7	valmistaa	valmistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Kieltolaki oli voimassa 13 vuotta.
+1	Kieltolaki	Kielto#laki	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	voimassa	voimassa	ADV	Adv	_	5	advmod	_	_
+4	13	13	NUM	Num	NumType=Card	5	nummod	_	_
+5	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Kieltolain aikana Suomeen kuitenkin salakuljetettiin alkoholia meren yli Virosta.
+1	Kieltolain	Kielto#laki	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	aikana	aika	NOUN	N	Case=Ess|Number=Sing	5	obl	_	_
+3	Suomeen	Suomi	PROPN	N	Case=Ill|Number=Sing	5	obl	_	_
+4	kuitenkin	kuitenkin	ADV	Adv	_	5	advmod	_	_
+5	salakuljetettiin	salakuljettaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+6	alkoholia	alkoholi	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+7	meren	#meri	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+8	yli	yli	ADP	Adp	AdpType=Post	7	case	_	_
+9	Virosta	Viro	PROPN	N	Case=Ela|Number=Sing	7	nmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Silloin myös tehtiin alkoholia salaa.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	myös	myös	ADV	Adv	_	3	advmod	_	_
+3	tehtiin	tehdä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	alkoholia	alkoholi	NOUN	N	Case=Par|Number=Sing	3	obj	_	_
+5	salaa	salaa	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Kieltolaki loppui vuonna 1932.
+1	Kieltolaki	Kielto#laki	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	loppui	loppua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vuonna	vuosi	NOUN	N	Case=Ess|Number=Sing	2	obl	_	_
+4	1932	1932	NUM	Num	NumType=Card	3	nummod	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Silloin perustettiin Alko.
+1	Silloin	silloin	ADV	Adv	_	2	advmod	_	_
+2	perustettiin	perustaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	Alko	Alko	PROPN	N	Case=Nom|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Alkon idea oli, että valtio myy alkoholia.
+1	Alkon	Alkko	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	idea	idea	NOUN	N	Case=Nom|Number=Sing	7	nsubj:cop	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	että	että	SCONJ	C	_	7	mark	_	_
+6	valtio	valtio	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	myy	myydä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	alkoholia	alkoholi	NOUN	N	Case=Par|Number=Sing	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 11
+# text = Silloin se voi myös valvoa, että suomalaiset eivät juo liikaa.
+1	Silloin	silloin	ADV	Adv	_	5	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	myös	myös	ADV	Adv	_	5	advmod	_	_
+5	valvoa	valvoa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	että	että	SCONJ	C	_	10	mark	_	_
+8	suomalaiset	suomalainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	10	nsubj	_	_
+9	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	juo	juoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+11	liikaa	liikaa	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,122 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Todella!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Todella	todella	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ja minne joutuvat pahat amerikkalaiset kuoltuansa?" kysyi herttuatar.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	minne	minne	ADV	Adv	_	6	advmod	_	_
+3	joutuvat	joutua	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	pahat	paha	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	5	amod	_	_
+5	amerikkalaiset	amerikka#lainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	6	nsubj:cop	_	_
+6	kuoltuansa	kuoltua	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	9	punct	_	_
+9	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+10	herttuatar	herttuatar	NOUN	N	Case=Nom|Derivation=Tar|Number=Sing	9	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 3
+# text = "He matkustavat Amerikkaan", mutisi lordi Henry.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+3	matkustavat	matkustaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	Amerikkaan	Amerikka	NOUN	N	Case=Ill|Number=Sing	3	obl	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+8	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Sir Thomas rypisti kulmiaan.
+1	Sir	Sir	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Thomas	Thomas	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	rypisti	rypistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kulmiaan	kulma	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = "Minäpä luulen, että teidän veljenne pojalla on ennakkoluuloja tuota suurta maata kohtaan", hän sanoi lady Agathalle.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Minäpä	minä	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|Person=2|PronType=Prs	3	obj	_	_
+3	luulen	luulla	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	että	että	SCONJ	C	_	10	mark	_	_
+6	teidän	sinä	PRON	Pron	Case=Gen|Number=Plur|Person=2|PronType=Prs	7	nmod:poss	_	_
+7	veljenne	veljenne	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+8	pojalla	poja	NOUN	N	Case=Ade|Number=Sing	7	nmod	_	_
+9	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+10	ennakkoluuloja	ennakko#luulo	NOUN	N	Case=Par|Number=Plur	3	ccomp	_	_
+11	tuota	tuo	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	13	det	_	_
+12	suurta	suuri	ADJ	A	Case=Par|Degree=Pos|Number=Sing	13	amod	_	_
+13	maata	maa	NOUN	N	Case=Par|Number=Sing	10	nmod	_	_
+14	kohtaan	kohtaan	ADP	Adp	AdpType=Post	13	case	_	SpaceAfter=No
+15	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	3	punct	_	_
+17	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	18	nsubj	_	_
+18	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+19	lady	lady	NOUN	N	Case=Nom|Derivation=U|Number=Sing	18	obj	_	_
+20	Agathalle	Agatha	PROPN	N	Case=All|Number=Sing	19	nmod	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = "Minä olen matkustanut siellä ristin ja rastin, vieläpä tirehtöörien omissa yksityisvaunuissa, sillä tirehtöörit tuollaisissa tapauksissa ovat tavattoman kohteliaita.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	matkustanut	matkustaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	siellä	siellä	ADV	Adv	_	4	advmod	_	_
+6	ristin	#risti	NOUN	N	Case=Gen|Number=Sing	4	obj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	rastin	rasti	NOUN	N	Case=Gen|Number=Sing	6	conj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	vieläpä	vieläpä	ADV	Adv	_	13	advmod	_	_
+11	tirehtöörien	tirehtööri	NOUN	N	Case=Gen|Number=Plur	13	nmod:poss	_	_
+12	omissa	oma	ADJ	A	Case=Ine|Degree=Pos|Number=Plur	13	amod	_	_
+13	yksityisvaunuissa	yksityisvaunu	NOUN	N	Case=Ine|Number=Plur	4	obl	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	21	punct	_	_
+15	sillä	sillä	SCONJ	C	_	21	mark	_	_
+16	tirehtöörit	tirehtööri	NOUN	N	Case=Nom|Number=Plur	21	nsubj:cop	_	_
+17	tuollaisissa	tuollainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Inen|Number=Plur	18	amod	_	_
+18	tapauksissa	tapaus	NOUN	N	Case=Ine|Number=Plur	16	nmod	_	_
+19	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	21	cop	_	_
+20	tavattoman	tavaton	ADJ	A	Case=Gen|Degree=Pos|Derivation=Ton|Number=Sing	21	amod	_	_
+21	kohteliaita	kohtelias	NOUN	N	Case=Par|Number=Plur	4	advcl	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Minä vakuutan teille, että matkustaminen siellä on hyvin sivistävää."
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	vakuutan	vakuuttaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	10	punct	_	_
+5	että	että	SCONJ	C	_	10	mark	_	_
+6	matkustaminen	matkustaminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	10	nsubj:cop	_	_
+7	siellä	siellä	ADV	Adv	_	6	advmod	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	hyvin	hyvin	ADV	Adv	_	10	advmod	_	_
+10	sivistävää	sivistävä	NOUN	N	Case=Par|Number=Sing	2	ccomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "Mutta pitääkö meidän nähdä Chicago ollaksemme sivistyneitä?" kysyi mr.
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+3	pitääkö	pitää	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	_
+4	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	5	nsubj	_	_
+5	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+6	Chicago	Chicago	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	ollaksemme	olla	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Plur|Person[psor]=1|VerbForm=Inf|Voice=Act	5	ccomp	_	_
+8	sivistyneitä	sivistyne	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+10	"	"	PUNCT	Punct	_	11	punct	_	_
+11	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+12	mr.	mr.	ADJ	Num	NumType=Ord	11	obl	_	SpacesAfter=\s\n
+

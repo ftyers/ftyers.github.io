@@ -1,0 +1,126 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Siinäpä se on, että kaikki tekevät siten! lausui Sametov.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Siinäpä	Siinä	PRON	Pron	Case=Nom|Clitic=Pa|Number=Sing|Person=2|PronType=Prs	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	että	että	SCONJ	C	_	8	mark	_	_
+7	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj	_	_
+8	tekevät	tehdä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+9	siten	siten	ADV	Adv	_	8	advmod	_	SpaceAfter=No
+10	!	!	PUNCT	Punct	_	2	punct	_	_
+11	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+12	Sametov	Sametov	PROPN	N	Case=Nom|Number=Sing	11	nsubj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = -- Ensin tekee joku murhan noudattaen suunnitelman mukaista varovaisuutta, panee henkensä alttiiksi -- ja sitten vangituttaa hän äkkiä itsensä.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Ensin	Ensin	ADV	Adv	_	3	advmod	_	_
+3	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+5	murhan	murha	NOUN	N	Case=Gen|Number=Sing	3	obj	_	_
+6	noudattaen	noudattaa	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	3	advcl	_	_
+7	suunnitelman	suunnitelma	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	mukaista	mukainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	9	amod	_	_
+9	varovaisuutta	varovaisuus	NOUN	N	Case=Par|Derivation=Inen,Vs|Number=Sing	6	obj	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	11	punct	_	_
+11	panee	paa	VERB	V	Mood=Pot|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	conj	_	_
+12	henkensä	henki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	11	obj	_	_
+13	alttiiksi	altis	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	11	xcomp	_	_
+14	--	--	PUNCT	Punct	_	3	punct	_	_
+15	ja	ja	CCONJ	C	_	17	cc	_	_
+16	sitten	sitten	ADV	Adv	_	17	advmod	_	_
+17	vangituttaa	vangituttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+18	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	17	nsubj	_	_
+19	äkkiä	äkkiä	ADV	Adv	_	17	advmod	_	_
+20	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	17	obj	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Heidän rahantuhlauksensa tavallisesti saattaa heidät satimeen.
+1	Heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	2	nmod:poss	_	_
+2	rahantuhlauksensa	rahantuhlaus	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	6	nsubj:cop	_	_
+3	tavallisesti	tavallisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	saattaa	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	6	det	_	_
+6	satimeen	satin	NOUN	N	Case=Ill|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Kaikki eivät suinkaan ole sellaisia neroja kuin te.
+1	Kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+2	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	suinkaan	suinkaan	ADV	Adv	_	6	advmod	_	_
+4	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	6	cop	_	_
+5	sellaisia	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Plur	6	amod	_	_
+6	neroja	nero	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+7	kuin	kuin	SCONJ	C	_	8	mark	_	_
+8	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	6	advcl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 5
+# text = Te ette luonnollisestikaan menisi satimeen.
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	4	nsubj	_	_
+2	ette	ei	AUX	V	Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	luonnollisestikaan	luonnollisestika	NOUN	N	Case=Ill|Number=Sing	4	obl	_	_
+4	menisi	mennä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+5	satimeen	satin	NOUN	N	Case=Ill|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Raskolnikov rypisti kulmakarvojaan ja tuijotti Sametoviin.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	rypisti	rypistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kulmakarvojaan	kulmakarvo	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	tuijotti	tuijottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	Sametoviin	Sametovi	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = -- Minusta tuntuu siltä kuin tahtoisitte te mielellänne tietää, miten minä olisin menetellyt tällaisessa tapauksessa!
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Minusta	minä	PRON	Pron	Case=Ela|Number=Sing|Person=1|PronType=Prs	3	obl	_	_
+3	tuntuu	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	3	obl	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	tahtoisitte	tahtoa	VERB	V	Mood=Cnd|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	4	advcl	_	_
+7	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	9	nsubj	_	_
+8	mielellänne	mielellänne	ADV	Adv	_	9	advmod	_	_
+9	tietää	tietää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	miten	miten	ADV	Adv	_	14	advmod	_	_
+12	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	14	nsubj	_	_
+13	olisin	olla	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	14	aux	_	_
+14	menetellyt	menetellä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	9	ccomp	_	_
+15	tällaisessa	tällainen	ADJ	A	Case=Ine|Degree=Pos|Derivation=Lainen|Number=Sing	16	amod	_	_
+16	tapauksessa	tapaus	NOUN	N	Case=Ine|Number=Sing	14	obl	_	SpaceAfter=No
+17	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = kysyi hän vastentahtosesti.
+1	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	1	nsubj	_	_
+3	vastentahtosesti	vastentahtosesti	ADV	Adv	Derivation=Sti	1	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = -- Sitä minä kyllä mielelläni tahtoisin, lausui toinen päättävästi ja vakaasti.
+1	--	--	PUNCT	Punct	_	6	punct	_	_
+2	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	6	obj	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	6	nsubj	_	_
+4	kyllä	kyllä	ADV	Adv	_	5	advmod	_	_
+5	mielelläni	mielellä	ADV	Adv	Number[psor]=Sing|Person[psor]=1	6	advmod	_	_
+6	tahtoisin	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	6	punct	_	_
+8	lausui	lausua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	_
+9	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	8	obj	_	_
+10	päättävästi	päättävästi	ADV	Adv	Derivation=Sti	8	advmod	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	vakaasti	vakaasti	ADV	Adv	Derivation=Sti	8	conj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

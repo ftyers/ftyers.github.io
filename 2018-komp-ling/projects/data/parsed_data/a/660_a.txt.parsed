@@ -1,0 +1,113 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Silloin susi päätti, ettei se enää milloinkaan söisi yhtään ainoaa kilipukkia.
+1	Silloin	silloin	ADV	Adv	_	3	advmod	_	_
+2	susi	#susi	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	9	punct	_	_
+5	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	mark	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	9	nsubj	_	_
+7	enää	enää	ADV	Adv	_	9	advmod	_	_
+8	milloinkaan	milloinkaan	ADV	Adv	_	9	advmod	_	_
+9	söisi	söidä	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	3	ccomp	_	_
+10	yhtään	yhtään	ADV	Adv	_	9	advmod	_	_
+11	ainoaa	ainoa	ADJ	A	Case=Par|Degree=Pos|Number=Sing	12	amod	_	_
+12	kilipukkia	kilipukki	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Eikä se syönytkään.
+1	Eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	nsubj	_	_
+3	syönytkään	syöä	VERB	V	Case=Nom|Clitic=Kaan|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ja niin seitsemän pientä kiliä elivät onnellisena elämänsä loppuun saakka.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	niin	niin	ADV	Adv	_	3	advmod	_	_
+3	seitsemän	seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+4	pientä	pieni	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	amod	_	_
+5	kiliä	kili	NOUN	N	Case=Par|Number=Sing	6	nsubj	_	_
+6	elivät	elää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	onnellisena	onnellinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Llinen|Number=Sing	8	nummod	_	_
+8	elämänsä	elämä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	9	nmod:poss	_	_
+9	loppuun	loppu	NOUN	N	Case=Ill|Derivation=U|Number=Sing	6	obl	_	_
+10	saakka	saakka	ADP	Adp	AdpType=Post	9	case	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = Tässä ovat Hulda ja Jalmari.
+1	Tässä	tämä	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	Hulda	Hulda	PROPN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	Jalmari	Jalmari	PROPN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = On jo myöhä.
+1	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	jo	jo	ADV	Adv	_	1	advmod	_	_
+3	myöhä	myöhä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 6
+# text = – Nyt on iltasadun aika, Jalmari sanoo.
+1	–	–	PUNCT	Punct	_	5	punct	_	_
+2	Nyt	nyt	ADV	Adv	_	5	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	iltasadun	iltasadu	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	aika	aika	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	Jalmari	Jalmari	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = – Valitaan kirja yhdessä!
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Valitaan	valita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	2	obj	_	_
+4	yhdessä	yhdessä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = – Kilja, kilja! Hihkuu Hulda.
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Kilja	Kil	NOUN	N	Case=Par|Derivation=U|Number=Plur	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	kilja	kilja	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+6	Hihkuu	Hihkuu	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	Hulda	Hulda	PROPN	N	Case=Nom|Number=Sing	2	appos	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = – Luettaisiinko kirja autoista ja muista härveleistä?
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Luettaisiinko	Luettaisia	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kirja	kirja	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+4	autoista	auto	NOUN	N	Case=Ela|Number=Plur	3	nmod	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	muista	muu	PRON	Pron	Case=Ela|Number=Plur|PronType=Ind	7	det	_	_
+7	härveleistä	härvele	NOUN	N	Case=Ela|Number=Plur	4	conj	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Jalmari ehdottaa.
+1	Jalmari	Jalmari	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ehdottaa	ehdottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = – Kaikenmoisia vimpaimia on hyvä tuntea.
+1	–	–	PUNCT	Punct	_	6	punct	_	_
+2	Kaikenmoisia	Kaikenmoinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	3	amod	_	_
+3	vimpaimia	vimpain	NOUN	N	Case=Par|Number=Plur	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	tuntea	tuntea	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

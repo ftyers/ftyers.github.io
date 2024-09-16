@@ -1,0 +1,119 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Heitti kuperkeikkaa.
+1	Heitti	heittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kuperkeikkaa	kuperkeikka	NOUN	N	Case=Par|Number=Sing	1	nsubj	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Meni itsensä ympäri pää edellä.
+1	Meni	n	NOUN	N	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	nmod:poss	_	_
+2	itsensä	itse	PRON	Pron	Case=Gen|Number=Sing|Person[psor]=3|Reflex=Yes	4	nmod	_	_
+3	ympäri	ympäri	ADP	Adp	AdpType=Post	2	case	_	_
+4	pää	pää	NOUN	N	Case=Nom|Number=Sing	0	root	_	_
+5	edellä	edellä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Kieppui.
+1	Kieppui	Kieppu	NOUN	N	Case=Nom|Derivation=U|Number=Sing|Typo=Yes	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 4
+# text = Hemmotellut, perusmuoto hemmoteltu.
+1	Hemmotellut	hemmotellut	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+4	hemmoteltu	hemmotella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Ihminen, joka on saanut liian paljon, eikä arvosta sitä.
+1	Ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	5	nsubj	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	saanut	saada	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	acl:relcl	_	_
+6	liian	liian	ADV	Adv	_	7	advmod	_	_
+7	paljon	paljon	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	5	punct	_	_
+9	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	cc	_	_
+10	arvosta	arvostaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	conj	_	_
+11	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	0	root	_	_
+
+# sent_id = 6
+# text = Ihminen, joka kiukuttelee helposti, jos asiat eivät mene, kuten hän haluaa.
+1	Ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	4	nsubj	_	_
+4	kiukuttelee	kiukutella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	acl:relcl	_	_
+5	helposti	helposti	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	jos	jos	SCONJ	C	_	10	mark	_	_
+8	asiat	#asia	NOUN	N	Case=Nom|Number=Plur	10	nsubj	_	_
+9	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	mene	mennä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	4	advcl	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	14	punct	_	_
+12	kuten	kuten	SCONJ	C	_	14	mark	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	14	nsubj	_	_
+14	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Hoitopöydälle.
+1	Hoitopöydälle	Hoitopöydä	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Pöydälle, jolla hoidetaan.
+1	Pöydälle	pöytä	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	jolla	joka	PRON	Pron	Case=Ade|Number=Sing|PronType=Rel	4	obl	_	_
+4	hoidetaan	hoitaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	1	acl:relcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 9
+# text = Hyvi oon tähä ikkää astpärjänny.
+1	Hyvi	hyvi	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+2	oon	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	tähä	tähä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	amod	_	_
+4	ikkää	ikkä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	5	nsubj	_	_
+5	astpärjänny	astpärjäntyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Hyvin olen tähän ikään asti pärjännyt.
+1	Hyvin	hyvin	ADV	Adv	_	6	advmod	_	_
+2	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+3	tähän	tämä	PRON	Pron	Case=Ill|Number=Sing|PronType=Dem	4	det	_	_
+4	ikään	ikä	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+5	asti	asti	ADP	Adp	AdpType=Post	4	case	_	_
+6	pärjännyt	pärjätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\s
+
+# sent_id = 11
+# text = Hyö vaa varttoo ja lykkää sit lapsen tekkoo.
+1	Hyö	Hyö	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vaa	vata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	varttoo	vartto	NOUN	N	Case=Par|Number=Sing|Style=Coll	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	lykkää	lykätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	sit	sitten	ADV	Adv	Style=Coll	8	advmod	_	_
+7	lapsen	lapsi	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	tekkoo	tekko	NOUN	N	Case=Par|Number=Sing|Style=Coll	5	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = He vain odottavat ja siirtävät tulevaisuuteen lapsen tekemistä.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj	_	_
+2	vain	vain	ADV	Adv	_	3	advmod	_	_
+3	odottavat	odottaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	siirtävät	siirtää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	tulevaisuuteen	tulevaisuus	NOUN	N	Case=Ill|Derivation=Vs|Number=Sing	5	obl	_	_
+7	lapsen	lapsi	NOUN	N	Case=Gen|Number=Sing	8	nmod:gobj	_	_
+8	tekemistä	tekeminen	NOUN	N	Case=Par|Derivation=Minen|Number=Sing	5	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

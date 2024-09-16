@@ -1,0 +1,166 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Kirjoittamisesi tarkoitus on kai hankkia sinulle toimeentulo, vai kuinka?"
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Kirjoittamisesi	Kirjoittamise	PRON	Pron	Case=Gen|Number=Sing|Number[psor]=Sing|Person[psor]=2|Reflex=Yes	3	det	_	_
+3	tarkoitus	tarkoitus	NOUN	N	Case=Nom|Number=Sing	6	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+5	kai	kai	ADV	Adv	_	6	advmod	_	_
+6	hankkia	hankkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+7	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	6	obl	_	_
+8	toimeentulo	toimeen#tulo	NOUN	N	Case=Nom|Number=Sing	6	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	vai	vai	CCONJ	C	_	11	cc	_	_
+11	kuinka	kuinka	ADV	Adv	_	6	conj	_	SpaceAfter=No
+12	?	?	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+13	"	"	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = "On, niin se on, mutta tuo onneton juttu pakottaa minua.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	niin	niin	ADV	Adv	_	2	advmod	_	_
+5	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	_
+8	mutta	mutta	CCONJ	C	_	12	cc	_	_
+9	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	11	det	_	_
+10	onneton	onneton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	11	amod	_	_
+11	juttu	juttu	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	pakottaa	pakottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+13	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	12	obj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Minä en voi olla kirjoittamatta; se vaatii tulla kirjoitetuksi."
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+4	olla	olla	AUX	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	aux	_	_
+5	kirjoittamatta	kirjoittaa	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+6	;	;	PUNCT	Punct	_	5	punct	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	vaatii	vaatia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	parataxis	_	_
+9	tulla	tulla	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	8	xcomp	_	_
+10	kirjoitetuksi	kirjoittaa	VERB	V	Case=Tra|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	xcomp	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = "Mutta tuon Wiki-Wikin luonne, miksi sinä panet hänet puhumaan niin raa'asti?
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	tuon	tuo	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	det	_	_
+4	Wiki-Wikin	Wiki-Wik	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	luonne	luonne	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	miksi	miksi	ADV	Adv	_	9	advmod	_	_
+8	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	nsubj	_	_
+9	panet	paa	VERB	V	Mood=Pot|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	5	ccomp	_	_
+10	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	9	obj	_	_
+11	puhumaan	puhua	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+12	niin	niin	ADV	Adv	_	13	advmod	_	_
+13	raa'asti	raa'asti	ADV	Adv	Derivation=Sti	11	advmod	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Varmasti se loukkaa lukijoitasi, ja varmasti juuri sen tähden toimittajat hylkäävät sinun kirjoituksesi." "Koska todellinen Wiki-Wiki olisi puhunut juuri niin kuin minä annan hänen puhua."
+1	Varmasti	varmasti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+2	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	loukkaa	loukka	NOUN	N	Case=Par|Number=Sing	4	nsubj	_	_
+4	lukijoitasi	lukijoirata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	12	punct	_	_
+6	ja	ja	CCONJ	C	_	12	cc	_	_
+7	varmasti	varmasti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+8	juuri	juuri	ADV	Adv	_	9	advmod	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	12	obl	_	_
+10	tähden	tähden	ADP	Adp	AdpType=Post	9	case	_	_
+11	toimittajat	toimittaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Plur	12	nsubj	_	_
+12	hylkäävät	hylkäää	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	14	conj	_	_
+13	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	14	nsubj	_	_
+14	kirjoituksesi	kirjoitu	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=2|VerbForm=Inf|Voice=Act	4	advcl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	27	punct	_	SpaceAfter=No
+16	"	"	PUNCT	Punct	_	27	punct	_	_
+17	"	"	PUNCT	Punct	_	22	punct	_	SpaceAfter=No
+18	Koska	koska	SCONJ	C	_	22	mark	_	_
+19	todellinen	todellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	20	amod	_	_
+20	Wiki-Wiki	Wiki-Wiki	PROPN	N	Case=Nom|Number=Sing	22	nsubj	_	_
+21	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	22	aux	_	_
+22	puhunut	puhua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	27	advcl	_	_
+23	juuri	juuri	ADV	Adv	_	24	advmod	_	_
+24	niin	niin	ADV	Adv	_	27	advmod	_	_
+25	kuin	kuin	SCONJ	C	_	24	fixed	_	_
+26	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	27	nsubj	_	_
+27	annan	antaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+28	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	29	nsubj	_	_
+29	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	27	xcomp:ds	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+31	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = "Mutta se ei osoita hyvää makua."
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	nsubj	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	osoita	osoittaa	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	hyvää	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	7	amod	_	_
+7	makua	maku	NOUN	N	Case=Par|Derivation=U|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = "Se on elämää", vastasi Martin varmasti.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	elämää	elämä	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	Martin	Martin	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	varmasti	varmasti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = "Se on totta ja todellista.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	totta	tosi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	todellista	todellinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Ja minun täytyy kirjoittaa elämästä sellaisena kuin minä sen näen."
+1	Ja	ja	CCONJ	C	_	4	cc	_	_
+2	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	kirjoittaa	kirjoittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	elämästä	elämä	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+6	sellaisena	sellainen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Lainen|Number=Sing	4	obl	_	_
+7	kuin	kuin	SCONJ	C	_	10	mark	_	_
+8	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	10	nsubj	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	obj	_	_
+10	näen	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Ruth ei vastannut, ja kiusallisen hetken he istuivat aivan äänettä.
+1	Ruth	Ruth	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	vastannut	vastata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	9	punct	_	_
+5	ja	ja	CCONJ	C	_	9	cc	_	_
+6	kiusallisen	kiusallinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	7	amod	_	_
+7	hetken	#hetki	NOUN	N	Case=Gen|Number=Sing	9	obl	_	_
+8	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	9	nsubj	_	_
+9	istuivat	istua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	aivan	aivan	ADV	Adv	_	11	advmod	_	_
+11	äänettä	ääne	NOUN	N	Case=Par|Number=Sing	9	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

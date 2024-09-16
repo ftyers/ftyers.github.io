@@ -1,0 +1,92 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Ladon vieressä oli auto.
+1	Ladon	Lato	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+2	vieressä	vieressä	ADP	Adp	AdpType=Post	1	case	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+4	auto	auto	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Auton takana oli peräkärry, jossa näkyi pari kuusta.
+1	Auton	auto	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+2	takana	takana	ADP	Adp	AdpType=Post	1	case	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+4	peräkärry	peräkärry	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	7	obl	_	_
+7	näkyi	näkyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	pari	pari	NUM	Num	Case=Nom|Number=Sing|NumType=Card	9	nummod	_	_
+9	kuusta	kuus	NOUN	N	Case=Par|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Auton vieressä seisoi kaksi miestä.
+1	Auton	auto	NOUN	N	Case=Gen|Number=Sing	3	obl	_	_
+2	vieressä	vieressä	ADP	Adp	AdpType=Post	1	case	_	_
+3	seisoi	seisoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	miestä	mies	NOUN	N	Case=Par|Number=Sing	3	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Toinen miehistä oli tumma ja tanakka.
+1	Toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	2	det	_	_
+2	miehistä	mies	NOUN	N	Case=Ela|Number=Plur	4	nmod	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	tumma	tumma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	tanakka	tanakka	NOUN	N	Case=Nom|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Toinen oli nuorempi, luihu partasuu.
+1	Toinen	toinen	ADJ	Num	Case=Nom|Derivation=Inen|Number=Sing|NumType=Ord	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	nuorempi	nuori	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	6	punct	_	_
+5	luihu	luihu	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	partasuu	partasua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Molemmat näyttivät pelästyneiltä, kun isäntä yllätti heidät.
+1	Molemmat	molemmat	PRON	Pron	Case=Nom|Number=Plur|PronType=Ind	2	nsubj	_	_
+2	näyttivät	näyttä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	pelästyneiltä	pelästyneä	NOUN	N	Case=Abl|Number=Plur	2	obl	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	kun	kun	SCONJ	C	_	7	mark	_	_
+6	isäntä	isäntä	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	yllätti	yllättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	_
+8	heidät	hän	PRON	Pron	Case=Acc|Number=Plur|Person=3|PronType=Prs	7	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Eikä ihme.
+1	Eikä	ei	AUX	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	ihme	ihme	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = He olivat kuusivarkaita!
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	3	nsubj:cop	_	_
+2	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	kuusivarkaita	kuusivaras	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Isäntä suuttui kovasti.
+1	Isäntä	isän	PRON	Pron	Case=Par|Number=Sing|Person=3|PronType=Prs	2	obj	_	_
+2	suuttui	suuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kovasti	kovasti	ADV	Adv	Derivation=Sti	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Varkaat katsoivat toisiaan puhumatta.
+1	Varkaat	varas	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	katsoivat	katsoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	_
+4	puhumatta	puhua	VERB	V	Case=Abe|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

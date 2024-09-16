@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Miksi? Miksi? sanoi Sonja, joka tunsi lausuttujen sanojen koskeneen häneen omituisesti ja liikuttavasti.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+4	Miksi	miksi	ADV	Adv	_	6	advmod	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Sonja	Sonja	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	10	nsubj	_	_
+10	tunsi	tuntea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	acl:relcl	_	_
+11	lausuttujen	lausuta	VERB	V	Case=Gen|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	12	acl	_	_
+12	sanojen	sana	NOUN	N	Case=Gen|Number=Plur|Person[psor]=3|Style=Coll	13	nsubj	_	_
+13	koskeneen	koskea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	10	advcl	_	_
+14	häneen	hän	PRON	Pron	Case=Ill|Number=Sing|Person=3|PronType=Prs	13	obl	_	_
+15	omituisesti	omituisesti	ADV	Adv	Derivation=Sti	13	advmod	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	liikuttavasti	liikuttavasti	ADV	Adv	Derivation=Sti	15	conj	_	SpaceAfter=No
+18	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = -- Miksi?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Miksi	miksi	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Siksi, ettet voi tällä lailla jatkaa --juuri siksi.
+1	Siksi	siksi	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	ettet	että#ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	7	advcl	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	aux	_	_
+5	tällä	tämä	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	6	det	_	_
+6	lailla	lailla	ADV	Adv	_	7	advmod	_	_
+7	jatkaa	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+8	--juuri	-juuri	NOUN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+9	siksi	siksi	ADV	Adv	_	7	advmod	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 4
+# text = Lopuksi täytyy kuitenkin vakavasti ja avoimesti oppia tuomitsemaan asemansa eikä vain lapsellisesti itkemään ja huutamaan Jumalalle, ettei hän antaisi sen mennä niin pitkälle.
+1	Lopuksi	lopuksi	ADV	Adv	_	4	advmod	_	_
+2	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	kuitenkin	kuitenkin	ADV	Adv	_	4	advmod	_	_
+4	vakavasti	vakavasti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	avoimesti	avoimesti	ADV	Adv	Derivation=Sti	7	advmod	_	_
+7	oppia	oppia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+8	tuomitsemaan	tuomitsea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	xcomp	_	_
+9	asemansa	asem	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	8	obl	_	_
+10	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	cc	_	_
+11	vain	vain	ADV	Adv	_	12	advmod	_	_
+12	lapsellisesti	lapsellisesti	ADV	Adv	Derivation=Sti	13	advmod	_	_
+13	itkemään	itkeä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	conj	_	_
+14	ja	ja	CCONJ	C	_	15	cc	_	_
+15	huutamaan	huutaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	7	conj	_	_
+16	Jumalalle	Jumala	PROPN	N	Case=All|Number=Sing	15	obl	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	20	punct	_	_
+18	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	20	mark	_	_
+19	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_
+20	antaisi	antaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	7	ccomp	_	_
+21	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	22	nsubj	_	_
+22	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	20	xcomp:ds	_	_
+23	niin	niin	ADV	Adv	_	24	advmod	_	_
+24	pitkälle	pitkälle	ADV	Adv	_	22	advmod	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 5
+# text = Miten kävisi, jos sinut huomenna vietäisiin sairalaan?
+1	Miten	miten	ADV	Adv	_	2	advmod	_	_
+2	kävisi	käydä	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	jos	jos	SCONJ	C	_	5	mark	_	_
+5	sinut	sinä	PRON	Pron	Case=Acc|Number=Sing|Person=2|PronType=Prs	2	advcl	_	_
+6	huomenna	huomenna	ADV	Adv	_	7	advmod	_	_
+7	vietäisiin	vietäinen	ADJ	A	Case=Ill|Degree=Pos|Derivation=Inen|Number=Plur	8	amod	_	_
+8	sairalaan	sairala	NOUN	N	Case=Ill|Number=Sing	5	obl	_	SpaceAfter=No
+9	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Hän, äitipuolesi, on menettänyt järkensä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	äitipuolesi	äitipuole	ADV	Adv	Number[psor]=Sing|Person[psor]=2	6	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+6	menettänyt	menettää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+7	järkensä	järki	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 7
+# text = Hänellä on keuhkotauti, kuolee pian ... ja lapset?
+1	Hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	keuhkotauti	keuhkotauti	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	kuolee	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+6	pian	pian	ADV	Adv	_	5	advmod	_	_
+7	...	...	PUNCT	Punct	_	1	punct	_	_
+8	ja	ja	CCONJ	C	_	9	cc	_	_
+9	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	7	conj	_	SpaceAfter=No
+10	?	?	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Poletshka ... hänkin turmeltuu.
+1	Poletshka	Poletshka	ADV	Adv	_	4	advmod	_	_
+2	...	...	PUNCT	Punct	_	1	punct	_	_
+3	hänkin	hän	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	turmeltuu	turmeltua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

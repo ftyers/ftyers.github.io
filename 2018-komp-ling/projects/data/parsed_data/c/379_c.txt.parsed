@@ -1,0 +1,151 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Huomiseen!
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Huomiseen	huominen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Huomiseen!" kaikui päässäni, kun hän oli kadonnut silmistäni.
+1	Huomiseen	huominen	NOUN	N	Case=Ill|Derivation=Minen|Number=Sing	4	obl	_	SpaceAfter=No
+2	!	!	PUNCT	Punct	_	1	punct	_	SpaceAfter=No
+3	"	"	PUNCT	Punct	_	1	punct	_	_
+4	kaikui	kaikua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	päässäni	pää	NOUN	N	Case=Ine|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	10	punct	_	_
+7	kun	kun	SCONJ	C	_	10	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+9	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	kadonnut	kadota	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	4	advcl	_	_
+11	silmistäni	silmä	NOUN	N	Case=Ela|Number=Plur|Number[psor]=Sing|Person[psor]=1	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = KOLMAS YÖ.
+1	KOLMAS	kolmas	PROPN	N	Case=Nom|Number=Sing	0	root	_	_
+2	YÖ	yö	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 4
+# text = Tänään oli surullinen sadepäivä, ilman auringon sädettä, niinkuin tuleva vanhuutenikin.
+1	Tänään	tänään	ADV	Adv	_	4	advmod	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	surullinen	surullinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	4	amod	_	_
+4	sadepäivä	sade#päivä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	ilman	ilman	ADP	Adp	AdpType=Prep	8	case	_	_
+7	auringon	aurinko	NOUN	N	Case=Gen|Number=Sing	8	nmod:poss	_	_
+8	sädettä	säde	NOUN	N	Case=Par|Number=Sing	4	nmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	niinkuin	niinkuin	SCONJ	C	_	12	mark	_	_
+11	tuleva	tulla	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	12	acl	_	_
+12	vanhuutenikin	vanhuuteni	NOUN	N	Case=Nom|Clitic=Kin|Number=Sing	4	advcl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = Minua vallitsevat sellaiset omituiset ajatukset, -- sellaiset kolkot tunteet, sellaiset minulle vielä epäselvät kysymykset tunkeutuvat päähäni ja sitäpaitsi puuttuu minulta tahtoa ja voimaa niitä selvittämään.
+1	Minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	2	obj	_	_
+2	vallitsevat	vallita	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sellaiset	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	5	amod	_	_
+4	omituiset	omituinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	5	amod	_	_
+5	ajatukset	ajatus	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	17	punct	_	_
+7	--	--	PUNCT	Punct	_	17	punct	_	_
+8	sellaiset	sellainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Lainen|Number=Plur	9	amod	_	_
+9	kolkot	kolkko	NOUN	N	Case=Nom|Number=Plur	17	nsubj	_	_
+10	tunteet	tunne	NOUN	N	Case=Nom|Number=Plur	17	nsubj	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	12	punct	_	_
+12	sellaiset	sellainen	ADJ	A	Case=Nom|Derivation=Lainen|Number=Plur	17	nsubj	_	_
+13	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	17	obl	_	_
+14	vielä	vielä	ADV	Adv	_	15	advmod	_	_
+15	epäselvät	epä#selvä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	16	amod	_	_
+16	kysymykset	kysymys	NOUN	N	Case=Nom|Number=Plur	17	nsubj	_	_
+17	tunkeutuvat	tunkeutua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+18	päähäni	pää	NOUN	N	Case=Ill|Number=Sing|Number[psor]=Sing|Person[psor]=1	17	obl	_	_
+19	ja	ja	CCONJ	C	_	21	cc	_	_
+20	sitäpaitsi	sitäpaitsi	NOUN	N	Case=Nom|Number=Sing	21	nsubj	_	_
+21	puuttuu	puuttua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	17	conj	_	_
+22	minulta	minä	PRON	Pron	Case=Abl|Number=Sing|Person=1|PronType=Prs	23	det	_	_
+23	tahtoa	tahto	NOUN	N	Case=Par|Number=Sing	21	obj	_	_
+24	ja	ja	CCONJ	C	_	25	cc	_	_
+25	voimaa	voima	NOUN	N	Case=Par|Number=Sing	23	conj	_	_
+26	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	27	nsubj	_	_
+27	selvittämään	selvittää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	21	xcomp:ds	_	SpaceAfter=No
+28	.	.	PUNCT	Punct	_	17	punct	_	_
+
+# sent_id = 6
+# text = Ei ole minun asiani selvittää kaikkia!
+1	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+2	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+3	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	4	nmod:poss	_	_
+4	asiani	asia	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	5	nsubj	_	_
+5	selvittää	selvittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	kaikkia	kaikki	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	5	obj	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Tänään emme tule näkemään toisiamme.
+1	Tänään	tänään	ADV	Adv	_	3	advmod	_	_
+2	emme	ei	AUX	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tule	tulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	näkemään	näkeä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+5	toisiamme	toinen	PRON	Pron	Case=Par|Number=Plur|Number[psor]=Plur|Person[psor]=1|PronType=Rcp	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Eilen, kun erosimme toisistamme, rupesivat pilvet taivasta peittämään ja nousi sumu.
+1	Eilen	eilen	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	kun	kun	SCONJ	C	_	4	mark	_	_
+4	erosimme	erosla	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	toisistamme	toisista	ADV	Adv	Number[psor]=Plur|Person[psor]=1	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	7	punct	_	_
+7	rupesivat	rupesa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+8	pilvet	pilvi	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+9	taivasta	taia	VERB	V	Case=Ela|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	7	xcomp	_	_
+10	peittämään	peitttä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	nousi	nousta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+13	sumu	sumu	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Minä sanoin että huomenna tulee huono päivä; hän ei vastannut, hän ei tahtonut puhua itseänsä vastaan.
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	sanoin	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	että	että	SCONJ	C	_	5	mark	_	_
+4	huomenna	huomenna	ADV	Adv	_	5	advmod	_	_
+5	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+6	huono	huono	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	päivä	päivä	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+8	;	;	PUNCT	Punct	_	2	punct	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	11	nsubj	_	_
+10	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	11	aux	_	_
+11	vastannut	vastata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	parataxis	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	15	nsubj	_	_
+14	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+15	tahtonut	tahtoa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	conj	_	_
+16	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	15	xcomp	_	_
+17	itseänsä	itseä	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	16	obl	_	_
+18	vastaan	vastaan	ADP	Adp	AdpType=Post	17	case	_	SpaceAfter=No
+19	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Hänelle on tämä päivä selvä ja kirkas eikä yksikään pilvi synkistä heidän onneansa.
+1	Hänelle	hän	PRON	Pron	Case=All|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	det	_	_
+4	päivä	#päivä	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+5	selvä	selvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	kirkas	kirkas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	5	conj	_	_
+8	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	10	cc	_	_
+9	yksikään	yksikään	PRON	Pron	Case=Nom|Number=Sing	10	det	_	_
+10	pilvi	pilvi	NOUN	N	Case=Nom|Number=Sing	5	conj	_	_
+11	synkistä	synk	NOUN	N	Case=Ela|Number=Plur	5	nmod	_	_
+12	heidän	hän	PRON	Pron	Case=Gen|Number=Plur|Person=3|PronType=Prs	13	nmod:poss	_	_
+13	onneansa	onne	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	5	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\n
+

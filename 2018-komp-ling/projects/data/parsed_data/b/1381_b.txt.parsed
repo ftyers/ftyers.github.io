@@ -1,0 +1,115 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Tulisit alas, hän pyytää Kaisua.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Tulisit	tulla	VERB	V	Mood=Cnd|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	6	advcl	_	_
+3	alas	alas	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	2	punct	_	_
+5	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+6	pyytää	pyytää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+7	Kaisua	Kaisu	NOUN	N	Case=Par|Derivation=U|Number=Sing	6	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 2
+# text = Erni menee
+1	Erni	Er	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	2	nsubj	_	_
+2	menee	mennä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+
+# sent_id = 3
+# text = Kaisun patjan viereen.
+1	Kaisun	Kaisinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs|Style=Coll	2	det	_	_
+2	patjan	patja	NOUN	N	Case=Gen|Number=Sing	0	root	_	_
+3	viereen	viereen	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Hän työntää kasvonsa Kaisun kämmeneen.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	työntää	työntää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kasvonsa	kasvo	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	5	obj	_	_
+4	Kaisun	Kaisu	NOUN	N	Case=Gen|Derivation=U|Number=Sing	5	nsubj	_	_
+5	kämmeneen	kämmea	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	2	ccomp	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Sitten Erni sanoo:
+1	Sitten	sitten	ADV	Adv	_	2	advmod	_	_
+2	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = — Sinä olet minulle arvokas.
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	5	nsubj:cop	_	_
+3	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+4	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	5	obl	_	_
+5	arvokas	arvokas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Minulla ei ole niin paljon rahaa, että voisin maksaa sen, minkä sinä ansaitset.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	1	aux	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	1	cop:own	_	_
+4	niin	niin	ADV	Adv	_	5	advmod	_	_
+5	paljon	paljon	ADV	Adv	_	1	advmod	_	_
+6	rahaa	raha	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	10	punct	_	_
+8	että	että	SCONJ	C	_	10	mark	_	_
+9	voisin	voida	AUX	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	maksaa	maksaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	1	ccomp	_	_
+11	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	15	punct	_	_
+13	minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	15	nmod:poss	_	_
+14	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	15	nsubj:cop	_	_
+15	ansaitset	ansaitnen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	11	acl:relcl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Kaisu herää kunnolla.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	herää	herätä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kunnolla	kunnolla	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Mitä tuo mies sanoo?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	2	det	_	_
+2	tuo	tuo	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	det	_	_
+3	mies	mies	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	sanoo	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = Kaisu vetää Ernin viereensä peiton alle.
+1	Kaisu	Kaisu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	2	nsubj	_	_
+2	vetää	vetää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Ernin	Ern	PROPN	N	Case=Gen|Number=Sing	2	obl	_	_
+4	viereensä	viereen	ADP	Adp	AdpType=Post|Person[psor]=3	3	case	_	_
+5	peiton	peitto	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+6	alle	alle	ADP	Adp	AdpType=Post	5	case	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = — Sano se vielä, Kaisu kehottaa.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Sano	sanoa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	obj	_	_
+4	vielä	vielä	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	Kaisu	Kaisu	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	_
+7	kehottaa	kehottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	parataxis	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 12
+# text = Ja Erni toistaa koko pitkän lauseen.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	Erni	Erni	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	toistaa	toistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	koko	koko	ADJ	A	_	6	amod	_	_
+5	pitkän	pitkä	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	6	amod	_	_
+6	lauseen	lause	NOUN	N	Case=Gen|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

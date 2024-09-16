@@ -1,0 +1,140 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Sitten hän alkoi kysellä, aikoiko Tuomas tehdä kesällä kauppamatkoja.
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+3	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kysellä	kysellä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	aikoiko	aikoida	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	aux	_	_
+7	Tuomas	Tuomas	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	SpacesAfter= \s
+8	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	conj	_	_
+9	kesällä	kesä	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+10	kauppamatkoja	kauppamatko	NOUN	N	Case=Par|Number=Plur	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 2
+# text = Tuomas kertoi, ettei nyt ollut tarvetta matkustella.
+1	Tuomas	Tuomas	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	8	punct	_	_
+4	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	mark	_	_
+5	nyt	nyt	ADV	Adv	_	8	advmod	_	_
+6	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	8	aux	_	_
+7	tarvetta	tarve	NOUN	N	Case=Par|Number=Sing	8	obj	_	_
+8	matkustella	matkustella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 3
+# text = — Matkojahan saattaa ilmaantua yllättäen, opettaja sanoi ja hymyili ovelasti.
+1	—	—	PUNCT	Punct	_	4	punct	_	_
+2	Matkojahan	Matkojaha	NOUN	N	Case=Gen|Number=Sing	4	nsubj	_	_
+3	saattaa	saattaa	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	ilmaantua	ilmaantua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+5	yllättäen	yllättäen	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	opettaja	opettaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	8	nsubj	_	_
+8	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+9	ja	ja	CCONJ	C	_	10	cc	_	_
+10	hymyili	hymyillä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+11	ovelasti	ovelasti	ADV	Adv	Derivation=Sti	10	advmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Aamuyöstä Oskari Pihlaja palasi kaupalle.
+1	Aamuyöstä	aamu#yö	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+2	Oskari	Oskari	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+3	Pihlaja	Pihlaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	flat:name	_	_
+4	palasi	palata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	kaupalle	kaupa	NOUN	N	Case=All|Number=Sing	4	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 5
+# text = Nyt hänellä oli mukanaan vahva työnjohtaja Ruben Leppänen.
+1	Nyt	nyt	ADV	Adv	_	2	advmod	_	_
+2	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	0	root	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	cop:own	_	_
+4	mukanaan	mukana	ADV	Adv	Person[psor]=3	6	advmod	_	_
+5	vahva	vahva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	6	amod	_	_
+6	työnjohtaja	työ#johtaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	7	compound:nn	_	_
+7	Ruben	Ruben	PROPN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	_
+8	Leppänen	Leppänen	PROPN	N	Case=Nom|Number=Sing	7	flat:name	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 6
+# text = Ruben omisti komean Studebaker-henkilöauton.
+1	Ruben	Ruben	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	omisti	omistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	komean	komea	NOUN	N	Case=Gen|Number=Sing	2	obj	_	_
+4	Studebaker-henkilöauton	Studebaker-henkilöauton	PROPN	N	Case=Nom|Number=Sing	3	appos	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 7
+# text = Sen takapenkille oli varattu köyttä ja säkkejä.
+1	Sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	2	nmod:poss	_	_
+2	takapenkille	takapenki	NOUN	N	Case=All|Number=Sing	4	obl	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	varattu	varaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	köyttä	köys	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	säkkejä	säkki	NOUN	N	Case=Par|Number=Plur	5	conj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= \s
+
+# sent_id = 8
+# text = Miehet ryskyttivät kaupan ovea ja komensivat Tuomas Kokkoluotoa tulemaan ulos.
+1	Miehet	mies	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	ryskyttivät	ryskyttä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kaupan	kauppa	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	ovea	ovi	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	komensivat	komensa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	7	conj	_	_
+7	Tuomas	Tuomas	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	Kokkoluotoa	Kokkoluoto	NOUN	N	Case=Par|Number=Sing	9	nsubj	_	_
+9	tulemaan	tulla	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+10	ulos	ulos	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 9
+# text = Uninen kauppias pukeutui ja kiroili öistä herätystä.
+1	Uninen	uninen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	2	amod	_	_
+2	kauppias	kauppias	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	pukeutui	pukeutua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	kiroili	kiroilla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	öistä	öinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	7	amod	_	_
+7	herätystä	herätys	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Kaupan portailla
+1	Kaupan	kauppa	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	portailla	portaat	NOUN	N	Case=Ade|Number=Plur	0	root	_	_
+
+# sent_id = 11
+# text = Pihlaja laittoi säkin Kokkoluodon päähän.
+1	Pihlaja	Pihlaja	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	2	nsubj	_	_
+2	laittoi	laittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	säkin	säkki	NOUN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	Kokkoluodon	Kokkoluoto	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	päähän	pää	NOUN	N	Case=Ill|Number=Sing	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 12
+# text = Samalla Leppänen sitoi hänen kätensä.
+1	Samalla	samalla	ADV	Adv	_	3	advmod	_	_
+2	Leppänen	Leppänen	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	sitoi	sitoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	5	nmod:poss	_	_
+5	kätensä	käsi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter= \s
+
+# sent_id = 13
+# text = Sidottu Tuomas työnnettiin Studebaker-auton takapenkille.
+1	Sidottu	sidottu	NOUN	N	Case=Nom|Number=Sing	2	compound:nn	_	_
+2	Tuomas	Tuomas	PROPN	N	Case=Nom|Number=Sing	3	obj	_	_
+3	työnnettiin	työnntaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	Studebaker-auton	Studebaker-auto	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	takapenkille	takapenki	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,111 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Pääsitkö ehjänä, Petrof? -- kysyi eräs.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Pääsitkö	Pääsii	AUX	V	Clitic=Ko|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	ehjänä	ehjä	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Petrof	Petrof	PROPN	N	Case=Nom|Number=Sing	3	conj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+7	--	--	PUNCT	Punct	_	3	punct	_	_
+8	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+9	eräs	eräs	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	8	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = -- Kylläpä löylyn saivat, veliseni.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Kylläpä	Kylläpä	ADV	Adv	_	4	advmod	_	_
+3	löylyn	löyly	NOUN	N	Case=Gen|Derivation=U|Number=Sing	4	nsubj	_	_
+4	saivat	saada	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	veliseni	velinen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing|Number[psor]=Sing|Person[psor]=1	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Eivät enää pistä tänne nokkaansa, -- puhui toinen.
+1	Eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+2	enää	enää	ADV	Adv	_	3	advmod	_	_
+3	pistä	pistää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	tänne	tänne	ADV	Adv	_	3	advmod	_	_
+5	nokkaansa	nokka	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	3	obj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	--	--	PUNCT	Punct	_	3	punct	_	_
+8	puhui	puhua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+9	toinen	toinen	PRON	Pron	Case=Nom|Number=Sing|PronType=Rcp	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = -- On kuin säkissä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kuin	kuin	ADV	Adv	_	4	advmod	_	_
+4	säkissä	säki	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Mutta miten he omiaan löylyttivät!
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	miten	miten	ADV	Adv	_	4	advmod	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nmod:poss	_	_
+4	omiaan	oma	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	5	obj	_	_
+5	löylyttivät	löylyttä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = On kuin säkissä; onpas pimeä, pojat.
+1	On	olla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	kuin	kuin	ADV	Adv	_	3	advmod	_	_
+3	säkissä	säki	NOUN	N	Case=Ine|Number=Sing	1	obl	_	SpaceAfter=No
+4	;	;	PUNCT	Punct	_	1	punct	_	_
+5	onpas	olla	AUX	V	Clitic=Pa,S|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+6	pimeä	pimeä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	1	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	pojat	poika	NOUN	N	Case=Nom|Number=Plur	1	nsubj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Eikö kellään ole juotavaa?
+1	Eikö	ei	AUX	V	Clitic=Ko|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	kellään	kukaan	PRON	Pron	Case=Ade|Number=Sing|PronType=Ind	0	root	_	_
+3	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	cop	_	_
+4	juotavaa	juotava	NOUN	N	Case=Par|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Ranskalaisten viimeinen hyökkäys oli torjuttu.
+1	Ranskalaisten	ranskalainen	NOUN	N	Case=Gen|Derivation=Lainen|Number=Plur	3	nmod:poss	_	_
+2	viimeinen	viimeinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	3	amod	_	_
+3	hyökkäys	hyökkäys	NOUN	N	Case=Nom|Number=Sing	5	obj	_	_
+4	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux:pass	_	_
+5	torjuttu	torjua	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 9
+# text = Ja taas lähtivät
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	taas	taas	ADV	Adv	_	3	advmod	_	_
+3	lähtivät	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+
+# sent_id = 10
+# text = Tushinin tykit eteenpäin.
+1	Tushinin	Tushin	PROPN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	tykit	tykki	NOUN	N	Case=Nom|Number=Plur	0	root	_	_
+3	eteenpäin	eteenpäin	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Pimeys oli täydellinen, kuului vain ympäriltä jalkaväen astunnan töminää.
+1	Pimeys	Pimeys	NOUN	N	Case=Nom|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	täydellinen	täydellinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	kuului	kuulua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	vain	vain	ADV	Adv	_	7	advmod	_	_
+7	ympäriltä	ympärä	ADJ	A	Case=Abl|Degree=Pos|Number=Plur	8	amod	_	_
+8	jalkaväen	jalka#väki	NOUN	N	Case=Gen|Number=Sing	9	nmod:poss	_	_
+9	astunnan	astunta	NOUN	N	Case=Gen|Number=Sing	10	nmod:poss	_	_
+10	töminää	töminä	NOUN	N	Case=Par|Number=Sing	5	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

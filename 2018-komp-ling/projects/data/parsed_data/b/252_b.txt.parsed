@@ -1,0 +1,128 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Linnea, Hanna ja vastasyntynyt lapsi olivat väkijoukon mukana saattamassa miehiä, jotka lähtivät sotaan.
+1	Linnea	Linnea	PROPN	N	Case=Nom|Number=Sing	6	nmod:poss	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	Hanna	Hanna	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	vastasyntynyt	vastasyntyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	1	conj	_	_
+6	lapsi	lapsi	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	_
+7	olivat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	10	aux	_	_
+8	väkijoukon	väkijoukko	NOUN	N	Case=Gen|Number=Sing	10	obl	_	_
+9	mukana	mukana	ADP	Adp	AdpType=Post	8	case	_	_
+10	saattamassa	saattaa	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+11	miehiä	mies	NOUN	N	Case=Par|Number=Plur	10	obj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	14	nsubj	_	_
+14	lähtivät	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	11	acl:relcl	_	_
+15	sotaan	sota	NOUN	N	Case=Ill|Number=Sing	14	obl	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 2
+# text = Väkeä oli paikalla ainakin 500 ihmistä.
+1	Väkeä	väki	NOUN	N	Case=Par|Number=Sing	3	nsubj:cop	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	paikalla	paikka	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+4	ainakin	ainakin	ADV	Adv	_	5	advmod	_	_
+5	500	500	NUM	Num	NumType=Card	3	nummod	_	_
+6	ihmistä	ihminen	NOUN	N	Case=Par|Number=Sing	3	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Veturi vihelsi monta kertaa, kuin sekin olisi ollut työväen asialla.
+1	Veturi	veturi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	vihelsi	viheltaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	monta	moni	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	det	_	_
+4	kertaa	kerta	NOUN	N	Case=Par|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	kuin	kuin	SCONJ	C	_	11	mark	_	_
+7	sekin	se	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|PronType=Dem	11	nsubj:cop	_	_
+8	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	aux	_	_
+9	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	11	cop	_	_
+10	työväen	työ#väki	NOUN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	asialla	asia	NOUN	N	Case=Ade|Number=Sing	2	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = Väkijoukko lauloi työväenmarssin.
+1	Väkijoukko	väki#joukko	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	lauloi	lauloa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	työväenmarssin	työväenmarssi	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Illalla naiset istuivat vakavina Linnean tuvassa.
+1	Illalla	ilta	NOUN	N	Case=Ade|Number=Sing	3	obl	_	_
+2	naiset	naiset	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	istuivat	istua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vakavina	vakava	ADJ	A	Case=Ess|Degree=Pos|Number=Plur	3	xcomp	_	_
+5	Linnean	Linnea	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	tuvassa	tuva	NOUN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Linnea sanoi, että hänellä on varma tunne, ettei kaikki tämä pääty hyvin.
+1	Linnea	Linnea	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	että	että	SCONJ	C	_	5	mark	_	_
+5	hänellä	hän	PRON	Pron	Case=Ade|Number=Sing|Person=3|PronType=Prs	2	ccomp	_	_
+6	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+7	varma	varma	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	amod	_	_
+8	tunne	tunne	NOUN	N	Case=Nom|Number=Sing	5	nsubj:cop	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	13	punct	_	_
+10	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	mark	_	_
+11	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	12	det	_	_
+12	tämä	tämä	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	13	nsubj	_	_
+13	pääty	päättyä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
+14	hyvin	hyvin	ADV	Adv	_	13	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = — Näen, kuinka miehiä ammutaan.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Näen	nähdä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	kuinka	kuinka	ADV	Adv	_	6	advmod	_	_
+5	miehiä	mies	NOUN	N	Case=Par|Number=Plur	6	obj	_	_
+6	ammutaan	ammuta	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	2	parataxis	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Kaikkialle maahan tulee orpoja nälkäisiä lapsia, joilla ei ole isää eikä äitiä.
+1	Kaikkialle	kaikkialle	ADV	Adv	_	3	advmod	_	_
+2	maahan	maa	NOUN	N	Case=Ill|Number=Sing	1	nmod	_	_
+3	tulee	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	orpoja	orpa	NOUN	N	Case=Par|Number=Plur	3	nsubj	_	_
+5	nälkäisiä	nälkäinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	6	amod	_	_
+6	lapsia	lapsi	NOUN	N	Case=Par|Number=Plur	3	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	joilla	joka	PRON	Pron	Case=Ade|Number=Plur|PronType=Rel	6	acl:relcl	_	_
+9	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	8	aux	_	_
+10	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	cop	_	_
+11	isää	isä	NOUN	N	Case=Par|Number=Sing	8	nsubj:cop	_	_
+12	eikä	ei	VERB	V	Clitic=Ka|Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	13	cc	_	_
+13	äitiä	äiti	NOUN	N	Case=Par|Number=Sing	3	conj	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Naapurista lähtivät rintamalle Jaakkolan veljekset.
+1	Naapurista	naapuri	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+2	lähtivät	lähteä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rintamalle	rintama	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+4	Jaakkolan	Jaakkola	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	veljekset	veljes	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= \s
+
+# sent_id = 10
+# text = Linnea ennusti, että he kuolevat sodassa.
+1	Linnea	Linnea	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	ennusti	ennustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	6	punct	_	_
+4	että	että	SCONJ	C	_	6	mark	_	_
+5	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	6	nsubj	_	_
+6	kuolevat	kuolla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+7	sodassa	sota	NOUN	N	Case=Ine|Number=Sing	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

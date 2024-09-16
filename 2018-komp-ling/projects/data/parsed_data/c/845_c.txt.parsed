@@ -1,0 +1,207 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Älä siinä lörpöttele!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Älä	ei	AUX	V	Mood=Imp|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	4	aux	_	_
+3	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	4	obl	_	_
+4	lörpöttele	lörpötellä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Mene syöttämään.
+1	Mene	mennä	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	syöttämään	syöttää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = -- Teistä on pääasia, että koira on kylläinen, mutta kun ihminen ottaa ryypyn, niin te heti moititte.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Teistä	sinä	PRON	Pron	Case=Ela|Number=Plur|Person=2|PronType=Prs	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	pääasia	pääainen	ADJ	A	Case=Par|Derivation=Lainen|Number=Plur|Style=Coll	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	että	että	SCONJ	C	_	9	mark	_	_
+7	koira	koira	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	kylläinen	kylläinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	4	csubj:cop	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	14	punct	_	_
+11	mutta	mutta	CCONJ	C	_	14	cc	_	_
+12	kun	kun	SCONJ	C	_	14	mark	_	_
+13	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+14	ottaa	ottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+15	ryypyn	ryyp	NOUN	N	Case=Ill|Derivation=U|Number=Sing	14	obl	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	14	punct	_	_
+17	niin	niin	ADV	Adv	_	18	advmod	_	_
+18	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	14	obl	_	_
+19	heti	heti	ADV	Adv	_	20	advmod	_	_
+20	moititte	moititten	ADV	Adv	Style=Coll	18	fixed	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Saat selkääsi!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Saat	saada	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	selkääsi	selkä	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	2	obj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = -- huudahti kreivi semmoisella äänellä, että ikkunanruudut tärisivät ja ratsumiestä alkoi hieman peloittaa.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kreivi	kreiivi	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+4	semmoisella	semmoinen	ADJ	A	Case=Ade|Degree=Pos|Derivation=Inen|Number=Sing	5	amod	_	_
+5	äänellä	ääni	NOUN	N	Case=Ade|Number=Sing	2	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	että	että	SCONJ	C	_	9	mark	_	_
+8	ikkunanruudut	ikkunanruutu	NOUN	N	Case=Nom|Number=Plur	9	nsubj	_	_
+9	tärisivät	tärisä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	ccomp	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	ratsumiestä	ratsumii	NOUN	N	Case=Ela|Number=Sing	12	obl	_	_
+12	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	conj	_	_
+13	hieman	hieman	ADV	Adv	_	14	advmod	_	_
+14	peloittaa	peloittaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = -- Kysykäähän, onko
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kysykäähän	kysykäähän	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+
+# sent_id = 7
+# text = Sashka vielä mitään syönyt.
+1	Sashka	Sashka	SCONJ	C	_	4	mark	_	_
+2	vielä	vielä	ADV	Adv	_	4	advmod	_	_
+3	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	4	obj	_	_
+4	syönyt	syödä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = No, lyökää vain, jos koira on teille rakkaampi kuin ihminen, -- puheli Sashka.
+1	No	no	INTJ	Interj	_	3	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	lyökää	lyöä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+4	vain	vain	ADV	Adv	_	3	fixed	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	jos	jos	SCONJ	C	_	10	mark	_	_
+7	koira	koira	NOUN	N	Case=Nom|Number=Sing	10	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	cop	_	_
+9	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	10	obl	_	_
+10	rakkaampi	rakkaa	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	16	advcl	_	_
+11	kuin	kuin	SCONJ	C	_	12	mark	_	_
+12	ihminen	ihminen	NOUN	N	Case=Nom|Number=Sing	10	advcl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	10	punct	_	_
+14	--	--	PUNCT	Punct	_	15	punct	_	_
+15	puheli	puheli	NOUN	N	Case=Nom|Number=Sing	16	compound:nn	_	_
+16	Sashka	Sashka	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Mutta samassa hän sai niin voimakkaan nyrkin-iskun vasten kasvoja että hän kaatui, löi päänsä seinään ja pakeni nenäänsä pidellen ovesta ulos käytävään, jossa hän vaipui viljalaarin päälle.
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	samassa	samassa	ADV	Adv	_	4	advmod	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	sai	saada	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	niin	niin	ADV	Adv	_	6	advmod	_	_
+6	voimakkaan	voimakas	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	_
+7	nyrkin-iskun	nyrkin-isku	NOUN	N	Case=Gen|Number=Sing	4	obl	_	_
+8	vasten	vasten	ADP	Adp	AdpType=Post	7	case	_	_
+9	kasvoja	kasva	NOUN	N	Case=Par|Number=Plur	4	obj	_	_
+10	että	että	SCONJ	C	_	12	mark	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	12	nsubj	_	_
+12	kaatui	kaatua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	12	punct	_	_
+14	löi	löa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+15	päänsä	pää	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	14	obj	_	_
+16	seinään	seinä	NOUN	N	Case=Ill|Number=Sing	14	obl	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	pakeni	paeta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+19	nenäänsä	nenä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	18	obj	_	_
+20	pidellen	pidellä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	18	advcl	_	_
+21	ovesta	ovi	NOUN	N	Case=Ela|Number=Sing	20	obl	_	_
+22	ulos	ulos	ADV	Adv	_	23	advmod	_	_
+23	käytävään	käytävä	NOUN	N	Case=Ill|Number=Sing	20	obl	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	27	punct	_	_
+25	jossa	joka	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	27	obl	_	_
+26	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	27	nsubj	_	_
+27	vaipui	vaipua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	23	acl:relcl	_	_
+28	viljalaarin	viljalaari	NOUN	N	Case=Gen|Number=Sing	27	obl	_	_
+29	päälle	päälle	ADP	Adp	AdpType=Post	28	case	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 10
+# text = -- Hän on lyönyt hampaani mäsäksi, -- murisi Sashka pyyhkien toisella kädellään veristä nenäänsä ja silittäen toisella Blücheriä, joka nuoleskeli itseään, -- hän on lyönyt hampaani mäsäksi, Bljushka, mutta sittenkin hän on minun kreivini ja minä olen valmis menemään hänen edestään vaikka tuleen -- tiedä se!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	lyönyt	lyödä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	28	advcl	_	_
+5	hampaani	hampaani	NOUN	N	Case=Nom|Number=Sing	4	obj	_	_
+6	mäsäksi	mäsä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	4	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	4	punct	_	_
+8	--	--	PUNCT	Punct	_	4	punct	_	_
+9	murisi	muristä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+10	Sashka	Sashka	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+11	pyyhkien	pyyhkea	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	9	advcl	_	_
+12	toisella	toinen	PRON	Pron	Case=Ade|Number=Sing	9	obl	_	_
+13	kädellään	käsi	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	9	obl	_	_
+14	veristä	verinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	15	amod	_	_
+15	nenäänsä	nenä	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	9	obj	_	_
+16	ja	ja	CCONJ	C	_	17	cc	_	_
+17	silittäen	silittää	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	9	conj	_	_
+18	toisella	toinen	PRON	Pron	Case=Ade|Number=Sing	17	obl	_	_
+19	Blücheriä	Blücher	PROPN	N	Case=Par|Number=Sing	17	obj	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	22	punct	_	_
+21	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	22	nsubj	_	_
+22	nuoleskeli	nuoleskella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	19	acl:relcl	_	_
+23	itseään	itse	PRON	Pron	Case=Par|Number=Sing|Person[psor]=3|Reflex=Yes	22	obj	_	SpaceAfter=No
+24	,	,	PUNCT	Punct	_	22	punct	_	_
+25	--	--	PUNCT	Punct	_	4	punct	_	_
+26	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	28	nsubj	_	_
+27	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	28	aux	_	_
+28	lyönyt	lyödä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+29	hampaani	hampaani	NOUN	N	Case=Nom|Number=Sing	28	obj	_	_
+30	mäsäksi	mäsä	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	28	xcomp	_	SpaceAfter=No
+31	,	,	PUNCT	Punct	_	32	punct	_	_
+32	Bljushka	Bljushka	PROPN	N	Case=Nom|Number=Sing	28	conj	_	SpaceAfter=No
+33	,	,	PUNCT	Punct	_	39	punct	_	_
+34	mutta	mutta	CCONJ	C	_	39	cc	_	_
+35	sittenkin	sittenkin	ADV	Adv	_	39	advmod	_	_
+36	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	39	nsubj:cop	_	_
+37	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	39	cop	_	_
+38	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	39	nmod:poss	_	_
+39	kreivini	kreivi	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	28	conj	_	_
+40	ja	ja	CCONJ	C	_	43	cc	_	_
+41	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	43	nsubj:cop	_	_
+42	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	43	cop	_	_
+43	valmis	valmis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	28	conj	_	_
+44	menemään	meneä	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	43	xcomp	_	_
+45	hänen	hän	PRON	Pron	Case=Gen|Number=Sing|Person=3|PronType=Prs	46	nmod:poss	_	_
+46	edestään	ede	NOUN	N	Case=Ela|Number=Sing|Person[psor]=3	44	obl	_	_
+47	vaikka	vaikka	SCONJ	C	_	48	mark	_	_
+48	tuleen	tula	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	44	advcl	_	_
+49	--	--	PUNCT	Punct	_	50	punct	_	_
+50	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	48	conj	_	_
+51	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	50	nsubj	_	SpaceAfter=No
+52	!	!	PUNCT	Punct	_	28	punct	_	_
+
+# sent_id = 11
+# text = Sentähden että hän, näetkö, on minun kreivini.
+1	Sentähden	Sentähden	ADV	Adv	_	0	root	_	_
+2	että	että	SCONJ	C	_	9	mark	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj:cop	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	näetkö	näei	AUX	V	Clitic=Ko|Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	9	aux	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	5	punct	_	_
+7	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	9	nmod:poss	_	_
+9	kreivini	kreivi	NOUN	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=1	1	ccomp	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = Tahdotko ruokaa?
+1	Tahdotko	Tahdoda	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	2	acl	_	_
+2	ruokaa	ruoka	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

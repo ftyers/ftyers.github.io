@@ -1,0 +1,133 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Voi!
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Voi	voi	INTJ	Interj	_	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Piru vieköön sen jutun!
+1	Piru	piru	INTJ	Interj	_	2	discourse	_	_
+2	vieköön	vieä	VERB	V	Mood=Imp|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	nmod:poss	_	_
+4	jutun	juttu	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Älkää muistuttako minua siitä, huudahti hän vallan liikutettuna.
+1	Älkää	ei	AUX	V	Mood=Imp|Number=Plur|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	muistuttako	muistuttaa	VERB	V	Connegative=Yes|Mood=Imp|VerbForm=Fin	0	root	_	_
+3	minua	minä	PRON	Pron	Case=Par|Number=Sing|Person=1|PronType=Prs	2	obj	_	_
+4	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	_
+8	vallan	#valta	NOUN	N	Case=Gen|Number=Sing	6	obj	_	_
+9	liikutettuna	liikuttaa	VERB	V	Case=Ess|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	8	acl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = -- Ei ... ensin ...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Ei	ei	ADV	Adv	_	0	root	_	_
+3	...	...	PUNCT	Punct	_	2	punct	_	_
+4	ensin	ensin	ADV	Adv	_	2	fixed	_	_
+5	...	...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = mieluummin ... hm!
+1	mieluummin	mieluummin	ADV	Adv	_	3	advmod	_	_
+2	...	...	PUNCT	Punct	_	1	punct	_	_
+3	hm	hm	INTJ	Interj	_	0	root	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Voi, nyt ei minulla ole aikaa kauvemmin, en voi puhua kauvemmin kanssanne.
+1	Voi	voi	INTJ	Interj	_	5	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+4	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+6	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	cop:own	_	_
+7	aikaa	aika	NOUN	N	Case=Par|Number=Sing	5	nsubj:cop	_	_
+8	kauvemmin	kauvemmin	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	12	aux	_	_
+12	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	conj	_	_
+13	kauvemmin	kauvesti	ADV	Adv	Degree=Cmp|Derivation=Sti	14	advmod	_	_
+14	kanssanne	kanssa	ADV	Adv	Number[psor]=Plur|Person[psor]=2	12	advmod	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Vahinko vain!
+1	Vahinko	vaha	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	vain	vain	ADV	Adv	_	1	advmod	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Minulla oli tosiaan jotakin kerrottavaa teille.
+1	Minulla	minä	PRON	Pron	Case=Ade|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop:own	_	_
+3	tosiaan	tosiaan	ADV	Adv	_	1	advmod	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	kerrottavaa	kerrottava	NOUN	N	Case=Par|Number=Sing	1	nsubj:cop	_	_
+6	teille	sinä	PRON	Pron	Case=All|Number=Plur|Person=2|PronType=Prs	1	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = -- Odottaako teitä ehkä joku nainen?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Odottaako	Odottaa	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	2	obj	_	_
+4	ehkä	ehkä	ADV	Adv	_	2	advmod	_	_
+5	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	6	det	_	_
+6	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = -- Kyllä, nainen; odottamaton kutsu ... ei, en minä siitä aikonut puhua.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	nainen	nainen	NOUN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	SpaceAfter=No
+5	;	;	PUNCT	Punct	_	4	punct	_	_
+6	odottamaton	odottamaton	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	7	amod	_	_
+7	kutsu	kutsu	NOUN	N	Case=Nom|Derivation=U|Number=Sing	9	nsubj:cop	_	_
+8	...	...	PUNCT	Punct	_	9	punct	_	_
+9	ei	ei	ADV	Adv	_	0	root	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	9	punct	_	_
+11	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	15	aux	_	_
+12	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	15	nsubj	_	_
+13	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	15	obl	_	_
+14	aikonut	aikoa	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	15	aux	_	_
+15	puhua	puhua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	conj	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 11
+# text = -- No, ja tämän elintavan vastenmielisyydellä ei ole enää mitään vaikutusta teihin?
+1	--	--	PUNCT	Punct	_	7	punct	_	_
+2	No	no	INTJ	Interj	_	7	discourse	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	tämän	tämä	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	nmod:poss	_	_
+6	elintavan	elintava	ADJ	A	Case=Gen|Degree=Pos|Number=Sing	7	amod	_	_
+7	vastenmielisyydellä	vastenmielisyydi	NOUN	N	Case=Ade|Number=Sing	0	root	_	_
+8	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+9	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	7	cop	_	_
+10	enää	enää	ADV	Adv	_	7	advmod	_	_
+11	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	12	det	_	_
+12	vaikutusta	vaikutus	NOUN	N	Case=Par|Number=Sing	7	nsubj:cop	_	_
+13	teihin	sinä	PRON	Pron	Case=Ill|Number=Plur|Person=2|PronType=Prs	12	nmod	_	SpaceAfter=No
+14	?	?	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 12
+# text = Oletteko jo kadottanut kaiken vastustuskyvyn?
+1	Oletteko	Olea	VERB	V	Clitic=Ko|Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	3	xcomp	_	_
+2	jo	jo	ADV	Adv	_	3	advmod	_	_
+3	kadottanut	kadottaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	5	det	_	_
+5	vastustuskyvyn	vastustus#kyky	NOUN	N	Case=Gen|Derivation=U|Number=Sing	3	obj	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

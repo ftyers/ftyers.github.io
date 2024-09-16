@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Oppikoulu, ha, ha, ha!...
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Oppikoulu	Oppikoulu	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	ha	ha	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	ha	ha	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	ha	ha	NOUN	N	Case=Nom|Number=Sing	2	conj	_	SpaceAfter=No
+9	!...	!...	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Ei, Rodion Romanovitsh, sen toiveen olen antanut mennä menojaan.
+1	Ei	ei	ADV	Adv	_	9	advmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	Rodion	Rodio	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	Romanovitsh	Romanovitsh	PROPN	N	Case=Nom|Number=Sing	9	nsubj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	9	punct	_	_
+6	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	7	nmod:poss	_	_
+7	toiveen	toivi	PROPN	N	Case=Ill|Number=Sing	9	obl	_	_
+8	olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	antanut	antaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+10	mennä	mennä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	_
+11	menojaan	meno	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Olen kaikkien hylkäämä.
+1	Olen	olla	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	cop	_	_
+2	kaikkien	kaikki	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	3	nmod:poss	_	_
+3	hylkäämä	hylkäämä	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Poletshka, paljonko olet kerännyt?
+1	Poletshka	Poletshka	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	5	punct	_	_
+3	paljonko	paljon	ADV	Adv	Clitic=Ko	5	advmod	_	_
+4	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	kerännyt	kerätä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Et enempää kuin kaksi kopeekkaa!
+1	Et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	2	cop	_	_
+2	enempää	enempää	ADV	Adv	_	0	root	_	_
+3	kuin	kuin	SCONJ	C	_	5	mark	_	_
+4	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	kopeekkaa	kopeekka	NOUN	N	Case=Par|Number=Sing	2	advcl	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Ah, niitä vaivaisia!
+1	Ah	Ah	INTJ	Interj	_	4	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	4	nsubj:cop	_	_
+4	vaivaisia	vaivainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Plur	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 7
+# text = Mitä sinä puhut, Poletshka?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+2	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	3	nsubj	_	_
+3	puhut	puha	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	Poletshka	Poletshka	PROPN	N	Case=Nom|Number=Sing	3	appos	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Puhu minulle ranskaa, parles moi francais.
+1	Puhu	puhua	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	minulle	minä	PRON	Pron	Case=All|Number=Sing|Person=1|PronType=Prs	1	obl	_	_
+3	ranskaa	ranska	NOUN	N	Case=Par|Number=Sing	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	parles	parles	ADV	Adv	_	7	advmod	_	_
+6	moi	moi	INTJ	Interj	_	7	discourse	_	_
+7	francais	francata	VERB	V	Connegative=Yes|Mood=Cnd|Style=Coll|VerbForm=Fin	1	ccomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Olenhan opettanut sinulle joitakin sananparsia.
+1	Olenhan	Olella	AUX	V	Clitic=Han|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	aux	_	_
+2	opettanut	opettaa	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+3	sinulle	sinä	PRON	Pron	Case=All|Number=Sing|Person=2|PronType=Prs	2	obl	_	_
+4	joitakin	jokin	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	5	det	_	_
+5	sananparsia	sananparnen	NOUN	N	Case=Par|Number=Plur	2	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Miten muuten voitaisiin huomata, että te olette aatelisperheen hyvinkasvatettuja lapsia, ettei kuulu mihinkään nuorallatanssijaperheeseen ...
+1	Miten	miten	ADV	Adv	_	4	advmod	_	_
+2	muuten	muuten	ADV	Adv	_	4	advmod	_	_
+3	voitaisiin	voida	AUX	V	Mood=Cnd|VerbForm=Fin|Voice=Pass	4	aux	_	_
+4	huomata	huomata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	11	punct	_	_
+6	että	että	SCONJ	C	_	11	mark	_	_
+7	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	11	nsubj:cop	_	_
+8	olette	olla	AUX	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	11	cop	_	_
+9	aatelisperheen	aatelisperhe	NOUN	N	Case=Gen|Number=Sing	10	obj	_	_
+10	hyvinkasvatettuja	hyvinkasvateta	VERB	V	Case=Par|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Pass	11	acl	_	_
+11	lapsia	lapsi	NOUN	N	Case=Par|Number=Plur	4	ccomp	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	14	punct	_	_
+13	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	14	mark	_	_
+14	kuulu	kuulua	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	11	ccomp	_	_
+15	mihinkään	mikään	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	16	det	_	_
+16	nuorallatanssijaperheeseen	nuorallatanssijaperhe	NOUN	N	Case=Ill|Number=Sing	14	obl	_	_
+17	...	...	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = me emme pidä mitään narripeliä kaduilla, vaan laulamme hienoja romansseja...
+1	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	3	nsubj	_	_
+2	emme	ei	AUX	V	Number=Plur|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	pidä	pitää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	narripeliä	narripeli	NOUN	N	Case=Par|Number=Plur	3	obj	_	_
+6	kaduilla	katu	NOUN	N	Case=Ade|Number=Plur	3	obl	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	vaan	vaan	CCONJ	C	_	9	cc	_	_
+9	laulamme	laulta	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	3	conj	_	_
+10	hienoja	hiena	NOUN	N	Case=Par|Number=Plur	11	obj	_	_
+11	romansseja	romanssi	NOUN	N	Case=Par|Number=Plur	9	obj	_	SpaceAfter=No
+12	...	...	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 12
+# text = No, mitä me nyt laulaisimme?...
+1	No	no	INTJ	Interj	_	6	discourse	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	1	punct	_	_
+3	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	6	obj	_	_
+4	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_
+5	nyt	nyt	ADV	Adv	_	6	advmod	_	_
+6	laulaisimme	laulaa	VERB	V	Mood=Cnd|Number=Plur|Person=1|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	...	...	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+

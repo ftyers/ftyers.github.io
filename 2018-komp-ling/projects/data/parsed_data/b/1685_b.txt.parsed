@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Heittoonsa, perusmuoto heitto.
+1	Heittoonsa	Heitto	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	heitto	heitto	NOUN	N	Case=Nom|Number=Sing	1	appos	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 2
+# text = Ehdotus.
+1	Ehdotus	ehdotus	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 3
+# text = Kirjaimellisesti jonkin esineen heittäminen, mutta myös ehdotuksen voi puhumalla heittää ilmaan.
+1	Kirjaimellisesti	kirjaimellisesti	ADV	Adv	Derivation=Sti	4	advmod	_	_
+2	jonkin	jokin	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	3	det	_	_
+3	esineen	esine	NOUN	N	Case=Gen|Number=Sing	4	nmod:gobj	_	_
+4	heittäminen	heittäminen	NOUN	N	Case=Nom|Derivation=Minen|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	10	punct	_	_
+6	mutta	mutta	CCONJ	C	_	10	cc	_	_
+7	myös	myös	ADV	Adv	_	10	advmod	_	_
+8	ehdotuksen	ehdotus	NOUN	N	Case=Gen|Number=Sing	10	nsubj	_	_
+9	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	10	aux	_	_
+10	puhumalla	puhua	VERB	V	Case=Ade|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+11	heittää	heittää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	10	xcomp:ds	_	_
+12	ilmaan	ilma	NOUN	N	Case=Ill|Number=Sing	11	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Jatketta, perusmuoto jatke.
+1	Jatketta	Jatke	NOUN	N	Case=Par|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	jatke	jatke	NOUN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Jotakin millä voi jatkaa, pidentää, suurentaa.
+1	Jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	det	_	_
+2	millä	mikä	PRON	Pron	Case=Ade|Number=Sing|PronType=Int	4	nsubj	_	_
+3	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	jatkaa	jatkaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	6	punct	_	_
+6	pidentää	pidentää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	8	punct	_	_
+8	suurentaa	suurentaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\s
+
+# sent_id = 6
+# text = Kaltaiselle.
+1	Kaltaiselle	Kaltaisi	NOUN	N	Case=All|Number=Sing	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Sellaiselle kuin.
+1	Sellaiselle	sellainen	ADJ	A	Case=All|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+2	kuin	kuin	SCONJ	C	_	1	fixed	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 8
+# text = Samanlaiselle kuin.
+1	Samanlaiselle	Samanlainen	ADJ	A	Case=All|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+2	kuin	kuin	SCONJ	C	_	1	fixed	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 9
+# text = Henkan kaltaiselle, sellaiselle kuin Henkka.
+1	Henkan	Henkka	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	kaltaiselle	kaltainen	ADJ	A	Case=All|Degree=Pos|Derivation=Lainen|Number=Sing	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	4	punct	_	_
+4	sellaiselle	sellainen	ADJ	A	Case=All|Degree=Pos|Derivation=Lainen|Number=Sing	2	conj	_	_
+5	kuin	kuin	SCONJ	C	_	6	mark	_	_
+6	Henkka	Henkka	PROPN	N	Case=Nom|Number=Sing	2	advcl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\s
+
+# sent_id = 10
+# text = Koulukaveriltaan, perusmuoto koulukaveri.
+1	Koulukaveriltaan	Koulukaveri	NOUN	N	Case=Abl|Number=Sing|Person[psor]=3	4	nmod	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	4	punct	_	_
+3	perusmuoto	perusmuoto	NOUN	N	Case=Nom|Number=Sing	4	compound:nn	_	_
+4	koulukaveri	koulukaveri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 11
+# text = Kaveri, joka on tai oli samaan aikaan koulussa kuin sinä.
+1	Kaveri	kaveri	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	9	punct	_	_
+3	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	9	nsubj:cop	_	_
+4	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+5	tai	tai	CCONJ	C	_	9	cc	_	_
+6	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+7	samaan	sama	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	8	det	_	_
+8	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	9	obl	_	_
+9	koulussa	koulu	NOUN	N	Case=Ine|Number=Sing	1	acl:relcl	_	_
+10	kuin	kuin	SCONJ	C	_	11	mark	_	_
+11	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	9	advcl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	1	punct	_	SpacesAfter=\s\s
+
+# sent_id = 12
+# text = Kuollakseen.
+1	Kuollakseen	Kuollakseen	ADV	Adv	_	0	root	_	SpaceAfter=No
+2	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 13
+# text = Tosi paljon.
+1	Tosi	tosi	ADV	Adv	_	2	advmod	_	_
+2	paljon	paljon	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = Kirjaimellisesti jos haluaa jotakin kuollakseen, niin haluaa niin paljon että on valmis kuolemaan, jos ei saa, mitä haluaa.
+1	Kirjaimellisesti	kirjaimellisesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+2	jos	jos	SCONJ	C	_	3	mark	_	_
+3	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	8	advcl	_	_
+4	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	3	obj	_	_
+5	kuollakseen	kuolla	VERB	V	Case=Tra|InfForm=1|Number=Sing|Person[psor]=3|VerbForm=Inf|Voice=Act	3	advcl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	niin	niin	ADV	Adv	_	8	advmod	_	_
+8	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+9	niin	niin	ADV	Adv	_	10	advmod	_	_
+10	paljon	paljon	ADV	Adv	_	8	advmod	_	_
+11	että	että	SCONJ	C	_	13	mark	_	_
+12	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	cop	_	_
+13	valmis	valmis	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	ccomp	_	_
+14	kuolemaan	kuolema	NOUN	N	Case=Ill|Number=Sing	13	obl	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	18	punct	_	_
+16	jos	jos	SCONJ	C	_	18	mark	_	_
+17	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	18	aux	_	_
+18	saa	saada	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	8	advcl	_	SpaceAfter=No
+19	,	,	PUNCT	Punct	_	21	punct	_	_
+20	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	21	obj	_	_
+21	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	ccomp	_	SpaceAfter=No
+22	.	.	PUNCT	Punct	_	8	punct	_	SpacesAfter=\s\n
+

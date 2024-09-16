@@ -1,0 +1,167 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Kolme toivomusta Einoa kiukutti.
+1	Kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	2	nummod	_	_
+2	toivomusta	toivomus	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+3	Einoa	Einoa	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	4	nsubj	_	_
+4	kiukutti	kiukuttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = – En enää ikinä leiki Aarnin kanssa, hän ajatteli.
+1	–	–	PUNCT	Punct	_	5	punct	_	_
+2	En	ei	VERB	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	mark	_	_
+3	enää	enää	ADV	Adv	_	5	advmod	_	_
+4	ikinä	ikinä	ADV	Adv	_	5	advmod	_	_
+5	leiki	leikkiä	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	10	advcl	_	_
+6	Aarnin	Aarn	PROPN	N	Case=Gen|Number=Sing	5	obl	_	_
+7	kanssa	kanssa	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	5	punct	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 3
+# text = – Olkoot kaikki päiväkodin lapset!
+1	–	–	PUNCT	Punct	_	5	punct	_	_
+2	Olkoot	olkolla	AUX	V	Mood=Ind|Number=Sing|Person=2|Style=Coll|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	5	det	_	_
+4	päiväkodin	päiväkodi	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+6	!	!	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Minä muutan ulkomaille ja pysyn siellä!
+1	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	nsubj	_	_
+2	muutan	muuttaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ulkomaille	ulko#maa	NOUN	N	Case=All|Number=Plur	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	pysyn	pysyä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	siellä	siellä	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+7	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Ja niin
+1	Ja	ja	CCONJ	C	_	2	cc	_	_
+2	niin	niin	ADV	Adv	_	0	root	_	_
+
+# sent_id = 6
+# text = Eino pakkasi reppunsa ja suuntasi kohti läheistä metsää.
+1	Eino	Eino	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pakkasi	pakata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	reppunsa	reppu	NOUN	N	Case=Gen|Number=Sing|Person[psor]=3	2	obj	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	suuntasi	suunnata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	kohti	kohti	ADP	Adp	AdpType=Prep	8	case	_	_
+7	läheistä	läheinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Inen|Number=Sing	8	amod	_	_
+8	metsää	metsä	NOUN	N	Case=Par|Number=Sing	5	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hän päätti rakentaa itselleen majan.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	päätti	päättää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	rakentaa	rakentaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	itselleen	itse	PRON	Pron	Case=All|Number=Sing|Person[psor]=3|Reflex=Yes	3	obl	_	_
+5	majan	m#aika	NOUN	N	Case=Gen|Number=Sing	3	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hän rakensi sitä kolme tuntia ja siitä tuli oikein hieno.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	rakensi	rakentaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	2	obj	_	_
+4	kolme	kolme	NUM	Num	Case=Nom|Number=Sing|NumType=Card	5	nummod	_	_
+5	tuntia	tunti	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	8	obl	_	_
+8	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+9	oikein	oikein	ADV	Adv	_	10	advmod	_	_
+10	hieno	hieno	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	8	nsubj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Siinä oli sammalsohva ja kivituoli ja kävyillä koristeltu oviaukko.
+1	Siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	0	root	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	1	cop	_	_
+3	sammalsohva	sammalsohva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	9	amod	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	kivituoli	kivituoli	NOUN	N	Case=Nom|Number=Sing	3	conj	_	_
+6	ja	ja	CCONJ	C	_	8	cc	_	_
+7	kävyillä	kävyi	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+8	koristeltu	koristella	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	3	conj	_	_
+9	oviaukko	oviaukko	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = – Ei hassumpi, tuumasi Eino ja tarkasteli uutta kotitaloaan.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	hassumpi	hassu	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	3	punct	_	_
+5	tuumasi	tuumata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	_
+6	Eino	Eino	PROPN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	tarkasteli	tarkasdella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+9	uutta	uusi	ADJ	A	Case=Par|Degree=Pos|Number=Sing	10	amod	_	_
+10	kotitaloaan	koti#talo	NOUN	N	Case=Par|Number=Sing|Person[psor]=3	8	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = „Mitähän Aarni nyt sanoisi?“
+1	„	„	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Mitähän	mikä	PRON	Pron	Case=Par|Clitic=Han|Number=Sing|PronType=Int	3	det	_	_
+3	Aarni	Aarni	PROPN	N	Case=Nom|Number=Sing	5	obj	_	_
+4	nyt	nyt	ADV	Adv	_	5	advmod	_	_
+5	sanoisi	sanoa	VERB	V	Mood=Cnd|Number=Sing|Person=0|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	“	“	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 12
+# text = Sitten
+1	Sitten	sitten	ADV	Adv	_	0	root	_	_
+
+# sent_id = 13
+# text = Eino muisti riidan.
+1	Eino	Eino	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	muisti	muistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	riidan	riita	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 14
+# text = – Olkoon Aarni ja kaikki muutkin lapset, hän tuumi ja kömpi majaansa.
+1	–	–	PUNCT	Punct	_	3	punct	_	_
+2	Olkoon	Olko	NOUN	N	Case=Ill|Number=Sing	3	nmod	_	_
+3	Aarni	Aarni	PROPN	N	Case=Nom|Number=Sing	10	vocative	_	_
+4	ja	ja	CCONJ	C	_	7	cc	_	_
+5	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	7	det	_	_
+6	muutkin	muu	PRON	Pron	Case=Nom|Clitic=Kin|Number=Plur|PronType=Ind	7	det	_	_
+7	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	3	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	3	punct	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	tuumi	tuumia	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+11	ja	ja	CCONJ	C	_	12	cc	_	_
+12	kömpi	kö	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	10	conj	_	_
+13	majaansa	maja	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	12	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	10	punct	_	_
+
+# sent_id = 15
+# text = Mutta juuri silloin hän huomasi maassa kimaltelevan lasipullon.
+1	Mutta	mutta	CCONJ	C	_	5	cc	_	_
+2	juuri	juuri	ADV	Adv	_	3	advmod	_	_
+3	silloin	silloin	ADV	Adv	_	5	advmod	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	huomasi	huomata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+6	maassa	maa	NOUN	N	Case=Ine|Number=Sing	7	obl	_	_
+7	kimaltelevan	kimaltella	VERB	V	Case=Gen|Degree=Pos|Number=Sing|PartForm=Pres|VerbForm=Part|Voice=Act	8	acl	_	_
+8	lasipullon	lasipulto	NOUN	N	Case=Gen|Number=Sing	5	obj	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 16
+# text = Se näytti vanhalta.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	nsubj	_	_
+2	näytti	näyttää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	vanhalta	vanha	ADJ	A	Case=Abl|Degree=Pos|Number=Sing	2	xcomp	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

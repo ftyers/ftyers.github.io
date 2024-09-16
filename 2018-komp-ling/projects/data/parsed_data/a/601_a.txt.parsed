@@ -1,0 +1,143 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mutta silloin
+1	Mutta	mutta	CCONJ	C	_	2	cc	_	_
+2	silloin	silloin	ADV	Adv	_	0	root	_	_
+
+# sent_id = 2
+# text = Panu muisti tehtävänsä.
+1	Panu	Panu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	muisti	muistaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tehtävänsä	tehtävä	NOUN	N	Case=Nom|Number=Sing|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Se käännähti ympäri, kiskaisi lahjarekeä ja pukkasi sarvillaan lahjapaketteja lasten jalkojen juureen.
+1	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	2	det	_	_
+2	käännähti	käännähti	NOUN	N	Case=Nom|Number=Sing	5	obl	_	_
+3	ympäri	ympäri	ADP	Adp	AdpType=Post	2	case	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	kiskaisi	kiskaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	0	root	_	_
+6	lahjarekeä	lahjareki	NOUN	N	Case=Par|Number=Sing	5	obj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	pukkasi	pukata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	conj	_	_
+9	sarvillaan	sarv	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	8	obl	_	_
+10	lahjapaketteja	lahjapaketti	NOUN	N	Case=Par|Number=Plur	8	obj	_	_
+11	lasten	lapsi	NOUN	N	Case=Gen|Number=Plur	10	nmod:poss	_	_
+12	jalkojen	jalka	NOUN	N	Case=Gen|Number=Plur	13	nmod:poss	_	_
+13	juureen	juuri	NOUN	N	Case=Ill|Number=Sing	8	nmod	_	SpaceAfter=No
+14	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = Ensin lapset pelästyivät ja luulivat, ettei poro pitänyt heistä.
+1	Ensin	ensin	ADV	Adv	_	3	advmod	_	_
+2	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	pelästyivät	pelästyä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	luulivat	luulla	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	9	punct	_	_
+7	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	9	mark	_	_
+8	poro	poro	NOUN	N	Case=Nom|Number=Sing	9	nsubj	_	_
+9	pitänyt	pitää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	3	ccomp	_	_
+10	heistä	hän	PRON	Pron	Case=Ela|Number=Plur|Person=3|PronType=Prs	9	obl	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Mutta pian he huomasivat sen lempeät suuret silmät, jotka viestittivät:
+1	Mutta	mutta	CCONJ	C	_	4	cc	_	_
+2	pian	pian	ADV	Adv	_	4	advmod	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	4	nsubj	_	_
+4	huomasivat	huomaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	nmod:poss	_	_
+6	lempeät	lempeä	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+7	suuret	suuri	ADJ	A	Case=Nom|Degree=Pos|Number=Plur	8	amod	_	_
+8	silmät	silmä	NOUN	N	Case=Nom|Number=Plur	4	obj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	11	punct	_	_
+10	jotka	joka	PRON	Pron	Case=Nom|Number=Plur|PronType=Rel	11	nsubj	_	_
+11	viestittivät	viestittä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	acl:relcl	_	SpaceAfter=No
+12	:	:	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = Ota itsellesi paketti, viekää loput toisillekin!
+1	Ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	0	root	_	_
+2	itsellesi	itselle	ADV	Adv	Number[psor]=Sing|Person[psor]=2	1	advmod	_	_
+3	paketti	paketti	NOUN	N	Case=Nom|Number=Sing	1	obj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	viekää	vieä	VERB	V	Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	1	conj	_	_
+6	loput	loppu	NOUN	N	Case=Nom|Derivation=U|Number=Plur	7	obj	_	_
+7	toisillekin	toisi	NOUN	N	Case=All|Clitic=Kin|Number=Sing	5	nmod	_	SpaceAfter=No
+8	!	!	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 7
+# text = Lapset riemastuivat.
+1	Lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	riemastuivat	riemastua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = He hyppelivät ihmetellen paketit sylissään.
+1	He	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	2	nsubj	_	_
+2	hyppelivät	hyppelä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ihmetellen	ihmetella	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	2	advcl	_	_
+4	paketit	paketti	NOUN	N	Case=Nom|Number=Plur	3	obj	_	_
+5	sylissään	syli	NOUN	N	Case=Ine|Number=Plur|Person[psor]=3	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Mitään tällaista he eivät osanneet odottaa.
+1	Mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	2	det	_	_
+2	tällaista	tällainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	5	nsubj	_	_
+3	he	hän	PRON	Pron	Case=Nom|Number=Plur|Person=3|PronType=Prs	5	nsubj	_	_
+4	eivät	ei	AUX	V	Number=Plur|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+5	osanneet	osata	VERB	V	Case=Nom|Degree=Pos|Number=Plur|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+6	odottaa	odottaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 10
+# text = Panu katseli onnellisena vierestä, kun lapset tanssivat auringon paahtamalla kujalla.
+1	Panu	Panu	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	onnellisena	onnellinen	ADJ	A	Case=Ess|Degree=Pos|Derivation=Llinen|Number=Sing	2	obl	_	_
+4	vierestä	vierestä	ADV	Adv	_	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	kun	kun	SCONJ	C	_	8	mark	_	_
+7	lapset	lapsi	NOUN	N	Case=Nom|Number=Plur	8	nsubj	_	_
+8	tanssivat	tanssia	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	advcl	_	_
+9	auringon	aurinko	NOUN	N	Case=Gen|Number=Sing	8	obj	_	_
+10	paahtamalla	paahtaa	VERB	V	Case=Ade|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	8	advcl	_	_
+11	kujalla	kuja	NOUN	N	Case=Ade|Number=Sing	10	obl	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 11
+# text = Ja niin pohjolan poron lahjaretki päättyi onnellisesti – maahan, missä lumesta, jäästä ja joulusta ei tiedetty mitään.
+1	Ja	ja	CCONJ	C	_	6	cc	_	_
+2	niin	niin	ADV	Adv	_	6	advmod	_	_
+3	pohjolan	pohjola	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+4	poron	porko	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	lahjaretki	lahjaretki	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	päättyi	päättyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	onnellisesti	onnellisesti	ADV	Adv	Derivation=Sti	6	advmod	_	_
+8	–	–	PUNCT	Punct	_	6	punct	_	_
+9	maahan	maa	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+10	,	,	PUNCT	Punct	_	18	punct	_	_
+11	missä	mikä	PRON	Pron	Case=Ine|Number=Sing|PronType=Rel	18	obl	_	_
+12	lumesta	lumi	NOUN	N	Case=Ela|Number=Sing	11	obl	_	SpaceAfter=No
+13	,	,	PUNCT	Punct	_	14	punct	_	_
+14	jäästä	jää	NOUN	N	Case=Ela|Number=Sing	12	conj	_	_
+15	ja	ja	CCONJ	C	_	16	cc	_	_
+16	joulusta	joulu	NOUN	N	Case=Ela|Derivation=U|Number=Sing	12	conj	_	_
+17	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	18	aux	_	_
+18	tiedetty	tietää	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	9	acl:relcl	_	_
+19	mitään	mikään	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	18	obj	_	SpaceAfter=No
+20	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 12
+# text = Ilo loisti tummasilmäisten lasten kasvoilta.
+1	Ilo	ilo	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	loisti	loistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	tummasilmäisten	tummasilmäinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Plur	4	amod	_	_
+4	lasten	lapsi	NOUN	N	Case=Gen|Number=Plur	5	nmod:poss	_	_
+5	kasvoilta	kasvo	NOUN	N	Case=Abl|Number=Plur	2	obl	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

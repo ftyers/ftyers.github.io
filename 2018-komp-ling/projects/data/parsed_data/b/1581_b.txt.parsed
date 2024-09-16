@@ -1,0 +1,148 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — En tiedä, onko se tärkeää, mutta tarvitsen apuasi, Wallander sanoi.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tiedä	tietää	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj:cop	_	_
+7	tärkeää	tärkeä	ADJ	A	Case=Par|Degree=Pos|Number=Sing	3	ccomp	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	11	punct	_	_
+9	mutta	mutta	CCONJ	C	_	11	cc	_	_
+10	tarvitsen	tarvitnen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Inen|Number=Sing	11	amod	_	_
+11	apuasi	apu	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	3	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	3	punct	_	SpacesAfter= 
+13	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	14	nsubj	_	_
+14	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Hän kertoi lyhyesti Alexanderssonin kuolemasta ja Ture Stenholmista.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	kertoi	kertoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	lyhyesti	lyhyesti	ADV	Adv	Derivation=Sti	2	advmod	_	_
+4	Alexanderssonin	Alexandersson	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kuolemasta	kuolemka	NOUN	N	Case=Ela|Number=Sing	2	obl	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	Ture	Ture	PROPN	N	Case=Nom|Number=Sing	5	conj	_	_
+8	Stenholmista	Stenholm	PROPN	N	Case=Ela|Number=Sing	7	flat:name	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = Wallander selitti Akessonille:
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	selitti	selittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Akessonille	Akesson	PROPN	N	Case=All|Number=Sing	2	obl	_	SpaceAfter=No
+4	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 4
+# text = — Tarvitsen apua asiassa, joka koskee rouva Stenholmia.
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Tarvitsen	Tarvita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	apua	apu	NOUN	N	Case=Par|Derivation=U|Number=Sing	4	obj	_	_
+4	asiassa	asia	NOUN	N	Case=Ine|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	SpacesAfter= 
+6	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	7	nsubj	_	_
+7	koskee	koskea	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	acl:relcl	_	_
+8	rouva	rouva	NOUN	N	Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Stenholmia	Stenholma	NOUN	N	Case=Par|Number=Plur	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter= 
+
+# sent_id = 5
+# text = Kajsa Stenholm on toiminut syyttäjänä, niin kuin sinäkin.
+1	Kajsa	Kajsa	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	Stenholm	Stenholm	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux	_	_
+4	toiminut	toimia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+5	syyttäjänä	syyttäjä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	4	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	niin	niin	ADV	Adv	_	4	advmod	_	_
+8	kuin	kuin	SCONJ	C	_	9	mark	_	_
+9	sinäkin	sinä	PRON	Pron	Case=Nom|Clitic=Kin|Number=Sing|Person=2|PronType=Prs	7	advcl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	SpacesAfter= 
+
+# sent_id = 6
+# text = Hän on toiminut Nynäshamnissa, mutta hän on ollut myös joitakin lyhyitä jaksoja syyttäjänä Tukholmassa.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	toiminut	toimia	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Nynäshamnissa	Nynäshamn	PROPN	N	Case=Ine|Number=Sing	3	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	13	punct	_	SpacesAfter= 
+6	mutta	mutta	CCONJ	C	_	13	cc	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj:cop	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	aux	_	_
+9	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	13	cop	_	_
+10	myös	myös	ADV	Adv	_	13	advmod	_	_
+11	joitakin	jokin	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	13	det	_	_
+12	lyhyitä	lyhyä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	13	amod	_	_
+13	jaksoja	jaksa	NOUN	N	Case=Par|Number=Plur	3	conj	_	SpacesAfter= 
+14	syyttäjänä	syyttäjä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	13	nmod	_	_
+15	Tukholmassa	Tukholma	PROPN	N	Case=Ine|Number=Sing	13	nmod	_	SpaceAfter=No
+16	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Wallander selasi papereitaan.
+1	Wallander	Wallander	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	selasi	selata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	papereitaan	paperi	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = Hän jatkoi:
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	:	:	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = — Seitsemän vuotta sitten Kajsa Stenholm oli joitakin kuukausia syyttäjänä Tukholmassa.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Seitsemän	seitsemän	NUM	Num	Case=Nom|Number=Sing|NumType=Card	3	nummod	_	_
+3	vuotta	vuosi	NOUN	N	Case=Par|Number=Sing	9	obl	_	_
+4	sitten	sitten	ADP	Adp	AdpType=Post	3	case	_	SpacesAfter= 
+5	Kajsa	Kajsa	PROPN	N	Case=Nom|Number=Sing	9	nsubj:cop	_	_
+6	Stenholm	Stenholm	PROPN	N	Case=Nom|Number=Sing	5	flat:name	_	_
+7	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	cop	_	_
+8	joitakin	jokin	PRON	Pron	Case=Par|Number=Plur|PronType=Ind	9	det	_	_
+9	kuukausia	kuu#kausi	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+10	syyttäjänä	syyttäjä	NOUN	N	Case=Ess|Derivation=Ja|Number=Sing	9	nmod	_	_
+11	Tukholmassa	Tukholma	PROPN	N	Case=Ine|Number=Sing	9	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	9	punct	_	SpacesAfter= 
+
+# sent_id = 10
+# text = Samaan aikaan Alexanderssonin pojan kimppuun hyökättiin kadulla ja hän kuoli.
+1	Samaan	sama	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	2	det	_	_
+2	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	6	obl	_	_
+3	Alexanderssonin	Alexandersson	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	pojan	poja	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	kimppuun	kimppuun	ADV	Adv	_	6	advmod	_	_
+6	hyökättiin	hyökätä	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+7	kadulla	katu	NOUN	N	Case=Ade|Number=Sing	6	obl	_	_
+8	ja	ja	CCONJ	C	_	10	cc	_	_
+9	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	_
+10	kuoli	kuolla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	SpacesAfter= 
+
+# sent_id = 11
+# text = Tarvitsen apua selvittääkseni, onko näillä tapahtumilla jokin yhteys.
+1	Tarvitsen	Tarvita	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	apua	apu	NOUN	N	Case=Par|Derivation=U|Number=Sing	1	obj	_	_
+3	selvittääkseni	selvittää	VERB	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Sing|Person[psor]=1|VerbForm=Inf|Voice=Act	1	xcomp	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	7	punct	_	_
+5	onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	7	cop	_	_
+6	näillä	tämä	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	7	det	_	_
+7	tapahtumilla	tapahtum	NOUN	N	Case=Ade|Number=Plur	1	ccomp	_	_
+8	jokin	jokin	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	9	det	_	_
+9	yhteys	yhteys	NOUN	N	Case=Nom|Derivation=Vs|Number=Sing	7	nsubj:cop	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 12
+# text = — Kuinka vanha poika oli?
+1	—	—	PUNCT	Punct	_	5	punct	_	_
+2	Kuinka	kuinka	ADV	Adv	_	3	advmod	_	_
+3	vanha	vanha	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	amod	_	_
+4	poika	poika	NOUN	N	Case=Nom|Number=Sing	1	nsubj:cop	_	_
+5	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	0	root	_	SpacesAfter=\s\n
+

@@ -1,0 +1,137 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Mikä on miehen nimi?"
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Mikä	mikä	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	0	root	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	miehen	mies	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	nimi	nimi	NOUN	N	Case=Nom|Number=Sing	2	nsubj:cop	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = "Phillips; hän tuli laivaan Alexandriassa."
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Phillips	Phillips	PROPN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	;	;	PUNCT	Punct	_	2	punct	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	tuli	tulla	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+6	laivaan	laiva	NOUN	N	Case=Ill|Number=Sing	5	obl	_	_
+7	Alexandriassa	Alexandria	PROPN	N	Case=Ine|Number=Sing	5	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = "Onko hänessä muuta merkillistä?"
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Onko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	hänessä	hän	PRON	Pron	Case=Ine|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+4	muuta	muu	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	5	det	_	_
+5	merkillistä	merkillinen	ADJ	A	Case=Par|Degree=Pos|Derivation=Llinen|Number=Sing	0	root	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 4
+# text = "Ei -- kovin peloissaan hän vain on.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	Ei	ei	ADV	Adv	_	5	advmod	_	_
+3	--	--	PUNCT	Punct	_	2	punct	_	_
+4	kovin	kovin	ADV	Adv	_	5	advmod	_	_
+5	peloissaan	peloi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	0	root	_	_
+6	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj:cop	_	_
+7	vain	vain	ADV	Adv	_	5	advmod	_	_
+8	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 5
+# text = Yötä päivää hän pitää ovensa lukittuna, ja kun sille kolkutetaan, raottaa hän sitä vain ja tirkistää ensin, kuka oven takana on."
+1	Yötä	yötä	ADV	Adv	_	2	advmod	_	_
+2	päivää	päivä	NOUN	N	Case=Par|Number=Sing	4	obj	_	_
+3	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_
+4	pitää	pitää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	ovensa	ovi	NOUN	N	Case=Nom|Number=Plur|Person[psor]=3	4	obj	_	_
+6	lukittuna	lukittu	ADJ	A	Case=Ess|Degree=Pos|Number=Sing	4	xcomp	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	ja	ja	CCONJ	C	_	11	cc	_	_
+9	kun	kun	SCONJ	C	_	11	mark	_	_
+10	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	11	obl	_	_
+11	kolkutetaan	kolkuttaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	4	conj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	13	punct	_	_
+13	raottaa	raotata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	conj	_	_
+14	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	13	nsubj	_	_
+15	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	13	obj	_	_
+16	vain	vain	ADV	Adv	_	13	advmod	_	_
+17	ja	ja	CCONJ	C	_	18	cc	_	_
+18	tirkistää	tirkistää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	conj	_	_
+19	ensin	ensin	ADV	Adv	_	18	advmod	_	SpaceAfter=No
+20	,	,	PUNCT	Punct	_	22	punct	_	_
+21	kuka	kuka	PRON	Pron	Case=Nom|Number=Sing|PronType=Int	22	det	_	_
+22	oven	ovi	NOUN	N	Case=Gen|Number=Sing	18	obl	_	_
+23	takana	takana	ADP	Adp	AdpType=Post	22	case	_	_
+24	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	18	cop	_	SpaceAfter=No
+25	.	.	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+26	"	"	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 6
+# text = "Totisesti, hänet tahtoisin mielelläni nähdä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Totisesti	totisesti	ADV	Adv	Derivation=Sti	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	tahtoisin	tahtoa	VERB	V	Mood=Cnd|Number=Sing|Person=1|VerbForm=Fin|Voice=Act	0	root	_	_
+6	mielelläni	mielellä	ADV	Adv	Number[psor]=Sing|Person[psor]=1	5	advmod	_	_
+7	nähdä	nähdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	5	xcomp	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Sanokaapa -- ettekö voi avata ovea selki selälleen, kun taas menette sinne sisään, jotta -- --" "Varjelkoon!
+1	Sanokaapa	Sanola	VERB	V	Clitic=Pa|Mood=Imp|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	3	nsubj	_	_
+2	--	--	PUNCT	Punct	_	1	punct	_	_
+3	ettekö	ette	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	voi	voida	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+5	avata	avata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	_
+6	ovea	#ovi	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+7	selki	selki	ADP	Adp	AdpType=Post	6	case	_	_
+8	selälleen	selkä	NOUN	N	Case=All|Number=Sing|Person[psor]=3	5	obl	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	kun	kun	SCONJ	C	_	12	mark	_	_
+11	taas	taas	ADV	Adv	_	10	fixed	_	_
+12	menette	mea	VERB	V	Mood=Pot|Number=Plur|Person=2|VerbForm=Fin|Voice=Act	3	advcl	_	_
+13	sinne	sinne	ADV	Adv	_	12	advmod	_	_
+14	sisään	sisään	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+15	,	,	PUNCT	Punct	_	21	punct	_	_
+16	jotta	jotta	SCONJ	C	_	21	mark	_	_
+17	--	--	PUNCT	Punct	_	21	punct	_	_
+18	--	--	PUNCT	Punct	_	21	punct	_	SpaceAfter=No
+19	"	"	PUNCT	Punct	_	21	punct	_	_
+20	"	"	PUNCT	Punct	_	21	punct	_	SpaceAfter=No
+21	Varjelkoon	Varjelko	NOUN	N	Case=Ill|Number=Sing	12	obl	_	SpaceAfter=No
+22	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Ja vähäpä siitä olisi hyötyä.
+1	Ja	ja	CCONJ	C	_	3	cc	_	_
+2	vähäpä	vähäpä	ADV	Adv	_	3	advmod	_	_
+3	siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	0	root	_	_
+4	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	3	cop	_	_
+5	hyötyä	hyöty	NOUN	N	Case=Par|Derivation=U|Number=Sing	3	nsubj:cop	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 9
+# text = Hän asettuu aina oven taakse."
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	asettuu	asettua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	aina	aina	ADV	Adv	_	2	advmod	_	_
+4	oven	ovi	NOUN	N	Case=Gen|Number=Sing	2	obl	_	_
+5	taakse	taakse	ADP	Adp	AdpType=Post	4	case	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+7	"	"	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = Tom mietti hetkisen.
+1	Tom	Tom	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	mietti	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	hetkisen	hetkinen	NOUN	N	Case=Gen|Number=Sing	2	obj	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

@@ -1,0 +1,112 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = – Tomppelit!
+1	–	–	PUNCT	Punct	_	2	punct	_	_
+2	Tomppelit	Tomppeli	NOUN	N	Case=Nom|Number=Plur	0	root	_	SpaceAfter=No
+3	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 2
+# text = Sitten mä menen yksin!
+1	Sitten	sitten	ADV	Adv	_	3	advmod	_	_
+2	mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	3	nsubj	_	_
+3	menen	mennä	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	yksin	yksin	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Ja mä tienaan niillä kuvilla omaisuuden, ettäs tiedätte.
+1	Ja	ja	CCONJ	C	_	9	cc	_	_
+2	mä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs|Style=Coll	3	det	_	_
+3	tienaan	tie	NOUN	N	Case=Ess|Number=Sing|Person[psor]=3	9	obl	_	_
+4	niillä	se	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	5	det	_	_
+5	kuvilla	kuv	NOUN	N	Case=Ade|Number=Plur	3	obl	_	_
+6	omaisuuden	omaisuus	NOUN	N	Case=Gen|Derivation=Inen,Vs|Number=Sing	9	nsubj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	ettäs	etkä	PRON	Pron	Case=Par|Clitic=S|Number=Sing|PronType=Int	9	obl	_	_
+9	tiedätte	tietää	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 4
+# text = Te jäätte nuolemaan näppejänne!
+1	Te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	2	nsubj	_	_
+2	jäätte	jätä	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	nuolemaan	nuolea	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp	_	_
+4	näppejänne	näppejänne	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 5
+# text = Sara pyörähti kannoillaan ja lähti ulko-ovea kohti.
+1	Sara	Sara	NOUN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	pyörähti	pyörähtää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	kannoillaan	kanta	NOUN	N	Case=Ade|Number=Plur|Person[psor]=3	2	obl	_	_
+4	ja	ja	CCONJ	C	_	5	cc	_	_
+5	lähti	lähteä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	_
+6	ulko-ovea	ulko#ovi	NOUN	N	Case=Par|Number=Sing	5	obl	_	_
+7	kohti	kohti	ADP	Adp	AdpType=Post	6	case	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Ennen kuin paiskasi oven perässään, hän vielä kääntyi.
+1	Ennen	ennen	ADV	Adv	_	2	advmod	_	_
+2	kuin	kuin	SCONJ	C	_	3	mark	_	_
+3	paiskasi	paiskata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	9	advcl	_	_
+4	oven	ovi	NOUN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	perässään	perä	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	obl	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	3	punct	_	_
+7	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+8	vielä	vielä	ADV	Adv	_	9	advmod	_	_
+9	kääntyi	kääntyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 7
+# text = – Ja jos se Susi-Herkko syö mut, niin kyllä teitä sitten kaduttaa!
+1	–	–	PUNCT	Punct	_	13	punct	_	_
+2	Ja	ja	CCONJ	C	_	13	cc	_	_
+3	jos	jos	SCONJ	C	_	6	mark	_	_
+4	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	5	det	_	_
+5	Susi-Herkko	Susi-Herkko	NOUN	N	Case=Nom|Number=Sing	6	nsubj	_	_
+6	syö	syödä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	13	advcl	_	_
+7	mut	minä	PRON	Pron	Case=Acc|Number=Sing|PronType=Prs|Style=Coll	6	obl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	6	punct	_	_
+9	niin	niin	ADV	Adv	_	10	advmod	_	_
+10	kyllä	kyllä	ADV	Adv	_	13	advmod	_	_
+11	teitä	sinä	PRON	Pron	Case=Par|Number=Plur|Person=2|PronType=Prs	13	nsubj	_	_
+12	sitten	sitten	ADV	Adv	_	13	advmod	_	_
+13	kaduttaa	kaduttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+14	!	!	PUNCT	Punct	_	13	punct	_	_
+
+# sent_id = 8
+# text = Pojat katsoivat toisiaan neuvottomina.
+1	Pojat	poika	NOUN	N	Case=Nom|Number=Plur	2	nsubj	_	_
+2	katsoivat	katsoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	4	obj	_	_
+4	neuvottomina	neuvottomi	NOUN	N	Case=Ess|Number=Plur	2	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = – Mitä se sillä omaisuudella tekee, kun sen isä ostaa sille kaiken mitä se haluaa?
+1	–	–	PUNCT	Punct	_	6	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	6	obj	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	6	nsubj	_	_
+4	sillä	se	PRON	Pron	Case=Ade|Number=Sing|PronType=Dem	5	det	_	_
+5	omaisuudella	omaisuus	NOUN	N	Case=Ade|Derivation=Vs|Number=Sing	6	obl	_	_
+6	tekee	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	11	punct	_	_
+8	kun	kun	SCONJ	C	_	11	mark	_	_
+9	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	10	nmod:poss	_	_
+10	isä	isä	NOUN	N	Case=Nom|Number=Sing	11	nsubj	_	_
+11	ostaa	ostaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+12	sille	se	PRON	Pron	Case=All|Number=Sing|PronType=Dem	11	obl	_	_
+13	kaiken	kaikki	PRON	Pron	Case=Gen|Number=Sing|PronType=Ind	16	nsubj	_	_
+14	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	16	obj	_	_
+15	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	16	nsubj	_	_
+16	haluaa	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	11	ccomp	_	SpaceAfter=No
+17	?	?	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 10
+# text = Sampo huokasi.
+1	Sampo	Sampo	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	huokasi	huoata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

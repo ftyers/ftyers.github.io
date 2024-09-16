@@ -1,0 +1,157 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kyllä, eilistä -- vastasi Nastasja, joka oli ollut sisässä koko ajan.
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	eilistä	eilinen	NOUN	N	Case=Par|Number=Sing	0	root	_	_
+5	--	--	PUNCT	Punct	_	4	punct	_	_
+6	vastasi	vastata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+7	Nastasja	Nastas	NOUN	N	Case=Par|Derivation=U|Number=Plur	6	nsubj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	12	punct	_	_
+9	joka	joka	PRON	Pron	Case=Nom|Number=Sing|PronType=Rel	12	nsubj:cop	_	_
+10	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	12	aux	_	_
+11	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	12	cop	_	_
+12	sisässä	sisä	NOUN	N	Case=Ine|Number=Sing	7	acl:relcl	_	_
+13	koko	koko	ADJ	A	_	14	amod	_	_
+14	ajan	aika	NOUN	N	Case=Gen|Number=Sing	12	obl	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = -- Onko myös perunoita ja riissiä?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Onko	olla	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	myös	myös	ADV	Adv	_	4	advmod	_	_
+4	perunoita	peruno	NOUN	N	Case=Par|Number=Plur	2	nsubj	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	riissiä	riissi	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+7	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = -- Kyllä on perunoita ja riissiä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	4	advmod	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	2	cop	_	_
+4	perunoita	peruno	NOUN	N	Case=Par|Number=Plur	0	root	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	riissiä	riissi	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = -- Hyvä, tuo tänne sitä ja ota mukaasi myös vähän teetä.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	4	nsubj	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	tuo	tuoda	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+5	tänne	tänne	ADV	Adv	_	4	advmod	_	_
+6	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+7	ja	ja	CCONJ	C	_	8	cc	_	_
+8	ota	ottaa	VERB	V	Mood=Imp|Number=Sing|Person=2|VerbForm=Fin|Voice=Act	4	conj	_	_
+9	mukaasi	muka	NOUN	N	Case=Par|Number=Sing|Number[psor]=Sing|Person[psor]=2	8	obj	_	_
+10	myös	myös	ADV	Adv	_	11	advmod	_	_
+11	vähän	vähän	ADV	Adv	_	12	advmod	_	_
+12	teetä	tee	NOUN	N	Case=Par|Number=Sing	8	obl	_	SpaceAfter=No
+13	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = -- Kyllä otan.
+1	--	--	PUNCT	Punct	_	3	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	3	advmod	_	_
+3	otan	otaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Raskolnikov katseli Nastasjaa suuresti kummissaan uupunein silminsä.
+1	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	2	nsubj	_	_
+2	katseli	katsella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	Nastasjaa	Nastasja	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	suuresti	suuresti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+5	kummissaan	kummi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	2	obl	_	_
+6	uupunein	uupunut	ADJ	A	Case=Nom|Degree=Sup|Number=Sing	7	amod	_	_
+7	silminsä	silm	NOUN	N	Case=Ill|Number=Sing|Person[psor]=3	2	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = Hän vaikeni ja odotti, mitä se merkitsisi.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	vaikeni	vaieta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+3	ja	ja	CCONJ	C	_	4	cc	_	_
+4	odotti	odottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	conj	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	8	punct	_	_
+6	mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Rel	8	obj	_	_
+7	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	merkitsisi	merkitä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	4	ccomp	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 8
+# text = "Tuntuu siltä kuin en enää hourailisi," ajatteli hän, "se on totta, toivon ma"... Parin minuutin päästä palasi Nastasja tuoden myös teetä.
+1	"	"	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+2	Tuntuu	tuntua	VERB	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+3	siltä	se	PRON	Pron	Case=Abl|Number=Sing|PronType=Dem	2	obl	_	_
+4	kuin	kuin	SCONJ	C	_	7	mark	_	_
+5	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	7	aux	_	_
+6	enää	enää	ADV	Adv	_	7	advmod	_	_
+7	hourailisi	hourailla	VERB	V	Connegative=Yes|Mood=Cnd|VerbForm=Fin	2	advcl	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	2	punct	_	SpaceAfter=No
+9	"	"	PUNCT	Punct	_	2	punct	_	_
+10	ajatteli	ajatella	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+11	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	10	nsubj	_	SpaceAfter=No
+12	,	,	PUNCT	Punct	_	16	punct	_	_
+13	"	"	PUNCT	Punct	_	16	punct	_	SpaceAfter=No
+14	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	16	nsubj:cop	_	_
+15	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	16	cop	_	_
+16	totta	totta	ADV	Adv	_	10	advmod	_	SpaceAfter=No
+17	,	,	PUNCT	Punct	_	18	punct	_	_
+18	toivon	toivoa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	25	conj	_	_
+19	ma	ma	NOUN	N	Case=Nom|Number=Sing	25	nsubj	_	SpaceAfter=No
+20	"	"	PUNCT	Punct	_	19	punct	_	SpaceAfter=No
+21	...	...	PUNCT	Punct	_	25	punct	_	_
+22	Parin	pari	NUM	Num	Case=Gen|Number=Sing|NumType=Card	23	nummod	_	_
+23	minuutin	minuutti	NOUN	N	Case=Gen|Number=Sing	25	obl	_	_
+24	päästä	päästä	ADP	Adp	AdpType=Post	23	case	_	_
+25	palasi	palata	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	2	parataxis	_	_
+26	Nastasja	Nastas	NOUN	N	Case=Par|Derivation=U|Number=Plur	27	obj	_	_
+27	tuoden	tuoda	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	25	advcl	_	_
+28	myös	myös	ADV	Adv	_	29	advmod	_	_
+29	teetä	tee	NOUN	N	Case=Par|Number=Sing	27	obj	_	SpaceAfter=No
+30	.	.	PUNCT	Punct	_	25	punct	_	_
+
+# sent_id = 9
+# text = Keiton mukana oli hän tuonut kaksi lusikkaa, kaksi lautasta ja kaikki lisätarpeet: suolaa, piparijuurta, sinappia lihaa varten j.n.e. niin täydellisen pöydän, ettei Raskolnikov ollut nähnyt sellaista pitkään aikaan.
+1	Keiton	keitto	NOUN	N	Case=Gen|Number=Sing	5	obl	_	_
+2	mukana	mukana	ADP	Adp	AdpType=Post	1	case	_	_
+3	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	5	nsubj	_	_
+5	tuonut	tuoda	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	22	acl	_	_
+6	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	7	nummod	_	_
+7	lusikkaa	lusikka	NOUN	N	Case=Par|Number=Sing	5	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	kaksi	kaksi	NUM	Num	Case=Nom|Number=Sing|NumType=Card	10	nummod	_	_
+10	lautasta	lauta	NOUN	N	Case=Ela|Number=Sing	7	nmod	_	_
+11	ja	ja	CCONJ	C	_	13	cc	_	_
+12	kaikki	kaikki	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	13	det	_	_
+13	lisätarpeet	lisätarve	NOUN	N	Case=Nom|Number=Plur	5	conj	_	SpaceAfter=No
+14	:	:	PUNCT	Punct	_	5	punct	_	_
+15	suolaa	suola	NOUN	N	Case=Par|Number=Sing	20	obj	_	SpaceAfter=No
+16	,	,	PUNCT	Punct	_	17	punct	_	_
+17	piparijuurta	piparijuuri	NOUN	N	Case=Par|Number=Sing	15	conj	_	SpaceAfter=No
+18	,	,	PUNCT	Punct	_	19	punct	_	_
+19	sinappia	sinappi	NOUN	N	Case=Par|Number=Sing	15	conj	_	_
+20	lihaa	liha	NOUN	N	Case=Par|Number=Sing	5	nmod	_	_
+21	varten	varten	ADP	Adp	AdpType=Post	20	case	_	_
+22	j.n.e	j.n.e	NOUN	N	Case=Nom|Number=Sing	31	nsubj	_	SpaceAfter=No
+23	.	.	PUNCT	Punct	_	26	punct	_	_
+24	niin	niin	CCONJ	C	_	26	cc	_	_
+25	täydellisen	täydellinen	ADJ	A	Case=Gen|Degree=Pos|Derivation=Llinen|Number=Sing	26	amod	_	_
+26	pöydän	pöytä	NOUN	N	Case=Gen|Number=Sing	22	conj	_	SpaceAfter=No
+27	,	,	PUNCT	Punct	_	31	punct	_	_
+28	ettei	että#ei	VERB	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	31	mark	_	_
+29	Raskolnikov	Raskolnikov	PROPN	N	Case=Nom|Number=Sing	31	nsubj	_	_
+30	ollut	olla	AUX	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	31	aux	_	_
+31	nähnyt	nähä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+32	sellaista	sellainen	ADJ	A	Case=Par|Degree=Pos|Derivation=Lainen|Number=Sing	34	amod	_	_
+33	pitkään	pitkä	ADJ	A	Case=Ill|Degree=Pos|Number=Sing	34	amod	_	_
+34	aikaan	aika	NOUN	N	Case=Ill|Number=Sing	31	obl	_	SpaceAfter=No
+35	.	.	PUNCT	Punct	_	31	punct	_	SpacesAfter=\s\n
+

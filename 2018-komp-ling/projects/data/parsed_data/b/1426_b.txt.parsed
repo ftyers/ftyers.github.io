@@ -1,0 +1,125 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = Mitä pitää tehdä kurittomalle pojalle?
+1	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	3	obj	_	_
+2	pitää	pitää	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Pres|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	tehdä	tehdä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+4	kurittomalle	kurittoma	ADJ	A	Case=All|Degree=Pos|Number=Sing	5	amod	_	_
+5	pojalle	poika	NOUN	N	Case=All|Number=Sing	3	obl	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Mannerheimin sukulaiset miettivät.
+1	Mannerheimin	Mannerheimi	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	sukulaiset	sukulainen	NOUN	N	Case=Nom|Number=Plur	3	nsubj	_	_
+3	miettivät	miettiä	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 3
+# text = Mannerheim itse halusi sotilaaksi.
+1	Mannerheim	Mannerheim	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	itse	itse	PRON	Pron	Case=Nom|Number=Sing|Reflex=Yes	1	nmod	_	_
+3	halusi	haluta	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	sotilaaksi	sotilas	NOUN	N	Case=Tra|Number=Sing	3	obl	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 4
+# text = Siksi sukulaiset ajattelivat, että sopiva koulu Mannerheimille olisi Haminan kadettikoulu.
+1	Siksi	siksi	ADV	Adv	_	3	advmod	_	_
+2	sukulaiset	sukulainen	NOUN	N	Case=Nom|Derivation=Lainen|Number=Plur	3	nsubj	_	_
+3	ajattelivat	ajatella	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	11	punct	_	_
+5	että	että	SCONJ	C	_	11	mark	_	_
+6	sopiva	sopiva	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	7	amod	_	_
+7	koulu	#koulu	NOUN	N	Case=Nom|Number=Sing	11	nsubj:cop	_	_
+8	Mannerheimille	Mannerheim	PROPN	N	Case=All|Number=Sing	7	nmod	_	_
+9	olisi	olla	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	11	cop	_	_
+10	Haminan	Hamina	PROPN	N	Case=Gen|Number=Sing	11	nmod:poss	_	_
+11	kadettikoulu	kadetti#koulu	NOUN	N	Case=Nom|Number=Sing	3	ccomp	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = Siellä koulutettiin upseereita armeijaan.
+1	Siellä	siellä	ADV	Adv	_	2	advmod	_	_
+2	koulutettiin	kouluttaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+3	upseereita	upseere	NOUN	N	Case=Par|Number=Plur	2	obj	_	_
+4	armeijaan	armei	NOUN	N	Case=Par|Number=Plur|Person[psor]=3	2	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 6
+# text = Myös Haminassa Mannerheimin vallattomuus jatkui.
+1	Myös	myös	ADV	Adv	_	2	advmod	_	_
+2	Haminassa	Hamina	PROPN	N	Case=Ine|Number=Sing	5	obl	_	_
+3	Mannerheimin	Mannerheim	PROPN	N	Case=Gen|Number=Sing	4	nmod:poss	_	_
+4	vallattomuus	vallattomuus	NOUN	N	Case=Nom|Derivation=Ton,Vs|Number=Sing	5	nsubj	_	_
+5	jatkui	jatkua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 7
+# text = Hän ei hyväksynyt Haminan koulun kovaa kuria, vaan rikkoi sääntöjä.
+1	Hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
+2	ei	ei	AUX	V	Number=Sing|Person=3|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	hyväksynyt	hyväksyä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	Haminan	Hamina	PROPN	N	Case=Gen|Number=Sing	5	nmod:poss	_	_
+5	koulun	koulu	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+6	kovaa	kova	ADJ	A	Case=Par|Degree=Pos|Number=Sing	7	amod	_	_
+7	kuria	kuri	NOUN	N	Case=Par|Number=Sing	3	obj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	vaan	vaan	CCONJ	C	_	10	cc	_	_
+10	rikkoi	rikkoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	3	conj	_	_
+11	sääntöjä	sääntö	NOUN	N	Case=Par|Number=Plur	10	obj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 8
+# text = Siitä syystä Mannerheim erotettiin myös Haminan koulusta.
+1	Siitä	se	PRON	Pron	Case=Ela|Number=Sing|PronType=Dem	2	det	_	_
+2	syystä	syy	NOUN	N	Case=Ela|Number=Sing	4	obl	_	_
+3	Mannerheim	Mannerheim	PROPN	N	Case=Nom|Number=Sing	4	obj	_	_
+4	erotettiin	erottaa	VERB	V	Mood=Ind|Tense=Past|VerbForm=Fin|Voice=Pass	0	root	_	_
+5	myös	myös	ADV	Adv	_	7	advmod	_	_
+6	Haminan	Hamina	PROPN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	koulusta	koulu	NOUN	N	Case=Ela|Number=Sing	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 9
+# text = Muistelmissaan Mannerheim kirjoittaa erottamisestaan:
+1	Muistelmissaan	Muistelmi	NOUN	N	Case=Ine|Number=Sing|Person[psor]=3	3	obl	_	_
+2	Mannerheim	Mannerheim	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	kirjoittaa	kirjoittaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	erottamisestaan	erottamisestaan	ADV	Adv	_	3	advmod	_	SpaceAfter=No
+5	:	:	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 10
+# text = Minun oli vaikea sopeutua Haminan koulun sääntöihin.
+1	Minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	3	nsubj	_	_
+2	oli	olla	AUX	V	Mood=Ind|Number=Sing|Person=0|Tense=Past|VerbForm=Fin|Voice=Act	3	cop	_	_
+3	vaikea	vaikea	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+4	sopeutua	sopeutua	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	_
+5	Haminan	Hamina	PROPN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	koulun	koulu	NOUN	N	Case=Gen|Number=Sing	7	nmod:poss	_	_
+7	sääntöihin	sääntö	NOUN	N	Case=Ill|Number=Plur	4	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 11
+# text = Joidenkin pienten sääntöjen rikkomisten vuoksi jouduin arestiin.
+1	Joidenkin	jokin	PRON	Pron	Case=Gen|Number=Plur|PronType=Ind	3	det	_	_
+2	pienten	pieni	ADJ	A	Case=Gen|Degree=Pos|Number=Plur	3	amod	_	_
+3	sääntöjen	sääntä	NOUN	N	Case=Gen|Number=Plur	4	nmod:poss	_	_
+4	rikkomisten	rikkomis	NOUN	N	Case=Gen|Number=Plur	6	obl	_	_
+5	vuoksi	vuoksi	ADP	Adp	AdpType=Post	4	case	_	_
+6	jouduin	joudtua	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	arestiin	aresti	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 12
+# text = Siksi en päässyt lomalle koulusta moneen kuukauteen.
+1	Siksi	siksi	ADV	Adv	_	3	advmod	_	_
+2	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	3	aux	_	_
+3	päässyt	päästä	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Act	0	root	_	_
+4	lomalle	loma	NOUN	N	Case=All|Number=Sing	3	obl	_	_
+5	koulusta	koulu	NOUN	N	Case=Ela|Number=Sing	3	obl	_	_
+6	moneen	moni	PRON	Pron	Case=Ill|Number=Sing|PronType=Ind	7	det	_	_
+7	kuukauteen	kuukaus	NOUN	N	Case=Ill|Derivation=Vs|Number=Sing	3	obl	_	SpaceAfter=No
+8	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\s\n
+

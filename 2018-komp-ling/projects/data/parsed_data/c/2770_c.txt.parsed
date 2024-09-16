@@ -1,0 +1,120 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = -- Kyllä, minä matkustan.
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Kyllä	kyllä	ADV	Adv	_	5	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+5	matkustan	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 2
+# text = -- Sitä juuri arvelin!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	4	obj	_	_
+3	juuri	juuri	ADV	Adv	_	4	advmod	_	_
+4	arvelin	arvella	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 3
+# text = Jos sinun on välttämätöntä, lähteä, voimmehan Dunja ja minä seurata mukana, siinä tapauksessa että sinä niin haluat.
+1	Jos	jos	SCONJ	C	_	4	mark	_	_
+2	sinun	sinä	PRON	Pron	Case=Gen|Number=Sing|Person=2|PronType=Prs	4	nsubj:cop	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	välttämätöntä	välttämätön	ADJ	A	Case=Par|Degree=Pos|Derivation=Ton|Number=Sing	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	4	punct	_	_
+6	lähteä	lähteä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	4	xcomp:ds	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	9	punct	_	_
+8	voimmehan	voida	AUX	V	Clitic=Han|Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	cop	_	_
+9	Dunja	Dunja	PROPN	N	Case=Nom|Number=Sing	6	conj	_	_
+10	ja	ja	CCONJ	C	_	12	cc	_	_
+11	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
+12	seurata	seurata	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	conj	_	_
+13	mukana	mukana	ADV	Adv	_	12	advmod	_	SpaceAfter=No
+14	,	,	PUNCT	Punct	_	4	punct	_	_
+15	siinä	se	PRON	Pron	Case=Ine|Number=Sing|PronType=Dem	16	det	_	_
+16	tapauksessa	tapaus	NOUN	N	Case=Ine|Number=Sing	4	obl	_	_
+17	että	että	SCONJ	C	_	20	mark	_	_
+18	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	20	nsubj	_	_
+19	niin	niin	ADV	Adv	_	20	advmod	_	_
+20	haluat	haluta	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	16	ccomp	_	SpaceAfter=No
+21	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = Ymmärrätkö, Rodja, minä tahdoin illalla vastaanottaa _hänet_ tyttärenäni.
+1	Ymmärrätkö	ymmärtää	VERB	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+2	,	,	PUNCT	Punct	_	3	punct	_	_
+3	Rodja	Rodja	PROPN	N	Case=Nom|Number=Sing	1	conj	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	8	punct	_	_
+5	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	8	nsubj	_	_
+6	tahdoin	tahdoin	ADV	Adv	_	8	advmod	_	_
+7	illalla	ilta	NOUN	N	Case=Ade|Number=Sing	8	obl	_	_
+8	vastaanottaa	vastaanottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	_
+9	_hänet_ tyttärenäni	_hänet_ tyttäre	NOUN	N	Case=Ess|Number=Sing|Number[psor]=Sing|Person[psor]=1	8	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 5
+# text = Dimitri Prokofjits auttaa meitä.
+1	Dimitri	Dimitri	PROPN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+2	Prokofjits	Prokofjits	PROPN	N	Case=Nom|Number=Sing	1	flat:name	_	_
+3	auttaa	auttaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+4	meitä	minä	PRON	Pron	Case=Par|Number=Plur|Person=1|PronType=Prs	3	obj	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 6
+# text = Mutta ... mihin ... aijot sinä matkustaa?
+1	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+2	...	...	PUNCT	Punct	_	3	punct	_	_
+3	mihin	mikä	PRON	Pron	Case=Ill|Number=Sing|PronType=Int	0	root	_	_
+4	...	...	PUNCT	Punct	_	7	punct	_	_
+5	aijot	aijo	NOUN	N	Case=Nom|Number=Plur	7	nsubj	_	_
+6	sinä	sinä	PRON	Pron	Case=Nom|Number=Sing|Person=2|PronType=Prs	7	nsubj	_	_
+7	matkustaa	matkustaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	3	parataxis	_	SpaceAfter=No
+8	?	?	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = -- Hyvästi, äiti!
+1	--	--	PUNCT	Punct	_	4	punct	_	_
+2	Hyvästi	Hyvästi	ADV	Adv	Derivation=Sti	4	advmod	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	2	punct	_	_
+4	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	!	!	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = -- Mitä, jo tänään?
+1	--	--	PUNCT	Punct	_	2	punct	_	_
+2	Mitä	mikä	PRON	Pron	Case=Par|Number=Sing|PronType=Int	0	root	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	5	punct	_	_
+4	jo	jo	ADV	Adv	_	5	advmod	_	_
+5	tänään	tänään	ADV	Adv	_	2	advmod	_	SpaceAfter=No
+6	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = huudahti äiti kuin kadottaisi hänet ainiaaksi.
+1	huudahti	huudahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+2	äiti	äiti	NOUN	N	Case=Nom|Number=Sing	1	nsubj	_	_
+3	kuin	kuin	SCONJ	C	_	4	mark	_	_
+4	kadottaisi	kadottaa	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	1	advcl	_	_
+5	hänet	hän	PRON	Pron	Case=Acc|Number=Sing|Person=3|PronType=Prs	4	obj	_	_
+6	ainiaaksi	ainiaa	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	4	xcomp	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	1	punct	_	_
+
+# sent_id = 10
+# text = -- Minä en voi viipyä kauvempaa.
+1	--	--	PUNCT	Punct	_	5	punct	_	_
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+3	en	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+4	voi	voida	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	5	aux	_	_
+5	viipyä	viipyä	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+6	kauvempaa	kauve	ADJ	A	Case=Par|Degree=Cmp|Number=Sing	5	obj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 11
+# text = On jo aika minun ...
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+2	jo	jo	ADV	Adv	_	4	advmod	_	_
+3	aika	aika	ADV	Adv	_	4	advmod	_	_
+4	minun	minä	PRON	Pron	Case=Gen|Number=Sing|Person=1|PronType=Prs	0	root	_	_
+5	...	...	PUNCT	Punct	_	4	punct	_	SpacesAfter=\s\n
+

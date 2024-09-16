@@ -1,0 +1,114 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = — Se käydään ostamassa ja laitetaan yhdessä kuntoon.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	3	obj	_	_
+3	käydään	käydä	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	ostamassa	ostaa	VERB	V	Case=Ine|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp:ds	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	laitetaan	laittaa	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	3	conj	_	_
+7	yhdessä	yhdessä	ADV	Adv	_	6	advmod	_	_
+8	kuntoon	kunto	NOUN	N	Case=Ill|Number=Sing	6	obl	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 2
+# text = Vaikka menisi sitten aikaa ja rahaa, merenkulkija jatkoi.
+1	Vaikka	vaikka	SCONJ	C	_	2	mark	_	_
+2	menisi	mennä	VERB	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	9	advcl	_	_
+3	sitten	sitten	ADV	Adv	_	4	advmod	_	_
+4	aikaa	aika	NOUN	N	Case=Par|Number=Sing	2	obl	_	_
+5	ja	ja	CCONJ	C	_	6	cc	_	_
+6	rahaa	raha	NOUN	N	Case=Par|Number=Sing	4	conj	_	SpaceAfter=No
+7	,	,	PUNCT	Punct	_	2	punct	_	_
+8	merenkulkija	merenkulkija	NOUN	N	Case=Nom|Derivation=Ja|Number=Sing	9	nsubj	_	_
+9	jatkoi	jatkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 3
+# text = Patu ja Emma katsoivat toisiaan.
+1	Patu	Patu	PROPN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+2	ja	ja	CCONJ	C	_	3	cc	_	_
+3	Emma	Emma	PROPN	N	Case=Nom|Number=Sing	1	conj	_	_
+4	katsoivat	katsoa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	toisiaan	toinen	PRON	Pron	Case=Par|Number=Plur|Person[psor]=3	4	obj	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 4
+# text = — Mutta purjehditaan vaan näillä lähivesillä.
+1	—	—	PUNCT	Punct	_	3	punct	_	_
+2	Mutta	mutta	CCONJ	C	_	3	cc	_	_
+3	purjehditaan	purjehdita	VERB	V	Mood=Ind|Tense=Pres|VerbForm=Fin|Voice=Pass	0	root	_	_
+4	vaan	vaan	CCONJ	C	_	6	cc	_	_
+5	näillä	tämä	PRON	Pron	Case=Ade|Number=Plur|PronType=Dem	6	det	_	_
+6	lähivesillä	lähivesi	NOUN	N	Case=Ade|Number=Plur	3	conj	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 5
+# text = On ainakin pienempi vaara merirosvoista, Patu ehdotti.
+1	On	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+2	ainakin	ainakin	ADV	Adv	_	4	advmod	_	_
+3	pienempi	pieni	ADJ	A	Case=Nom|Degree=Cmp|Number=Sing	4	amod	_	_
+4	vaara	#vaara	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+5	merirosvoista	merirosvo	NOUN	N	Case=Ela|Number=Plur	4	nmod	_	SpaceAfter=No
+6	,	,	PUNCT	Punct	_	4	punct	_	_
+7	Patu	Patu	PROPN	N	Case=Nom|Number=Sing	8	nsubj	_	_
+8	ehdotti	ehdottaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	8	punct	_	_
+
+# sent_id = 6
+# text = Patun nenä alkoi kutiamaan.
+1	Patun	Pattu	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	nenä	nenä	NOUN	N	Case=Nom|Number=Sing	3	nsubj	_	_
+3	alkoi	alkaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+4	kutiamaan	kutiaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	3	xcomp	_	SpaceAfter=No
+5	.	.	PUNCT	Punct	_	3	punct	_	_
+
+# sent_id = 7
+# text = Ehkä joku ruokamauste teki sen ja vaikka hän yritti estää, pääsi aivastus pärskähtämään.
+1	Ehkä	ehkä	ADV	Adv	_	4	advmod	_	_
+2	joku	joku	PRON	Pron	Case=Nom|Number=Sing|PronType=Ind	3	det	_	_
+3	ruokamauste	ruokamauste	NOUN	N	Case=Nom|Number=Sing	4	nsubj	_	_
+4	teki	tehdä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+5	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	4	obj	_	_
+6	ja	ja	CCONJ	C	_	9	cc	_	_
+7	vaikka	vaikka	SCONJ	C	_	9	mark	_	_
+8	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	9	nsubj	_	_
+9	yritti	yrittää	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	advcl	_	_
+10	estää	estää	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	9	xcomp	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	4	punct	_	_
+12	pääsi	päästä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	conj	_	_
+13	aivastus	aivastus	NOUN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+14	pärskähtämään	pärskähtää	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 8
+# text = Patun kaivaessa nenäliinaa taskusta, lattialle putosi jotakin, minkä Emma kumartui nopeasti ottamaan.
+1	Patun	Pattu	NOUN	N	Case=Gen|Number=Sing	2	nsubj	_	_
+2	kaivaessa	kaivaa	VERB	V	Case=Ine|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	7	advcl	_	_
+3	nenäliinaa	nenäliina	NOUN	N	Case=Par|Number=Sing	2	obj	_	_
+4	taskusta	tasku	NOUN	N	Case=Ela|Derivation=U|Number=Sing	2	obl	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	2	punct	_	_
+6	lattialle	lattia	NOUN	N	Case=All|Number=Sing	2	obl	_	_
+7	putosi	pudota	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+8	jotakin	jokin	PRON	Pron	Case=Par|Number=Sing|PronType=Ind	7	nsubj	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	12	punct	_	_
+10	minkä	mikä	PRON	Pron	Case=Gen|Number=Sing|PronType=Rel	12	obj	_	_
+11	Emma	Emma	PROPN	N	Case=Nom|Number=Sing	12	nsubj	_	_
+12	kumartui	kumartua	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	8	acl:relcl	_	_
+13	nopeasti	nopeasti	ADV	Adv	Derivation=Sti	12	advmod	_	_
+14	ottamaan	ottta	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	12	xcomp	_	SpaceAfter=No
+15	.	.	PUNCT	Punct	_	7	punct	_	_
+
+# sent_id = 9
+# text = — Ankkurinappi?
+1	—	—	PUNCT	Punct	_	2	punct	_	_
+2	Ankkurinappi	Ankkurinappi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+3	?	?	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 10
+# text = hän ihmetteli.
+1	hän	hän	PRON	Pron	Case=Nom|Number=Sing|Person=3|PronType=Prs	2	nsubj	_	_
+2	ihmetteli	ihmetellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	SpacesAfter=\s\n
+

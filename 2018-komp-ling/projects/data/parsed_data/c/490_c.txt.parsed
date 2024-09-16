@@ -1,0 +1,122 @@
+# newdoc
+# newpar
+# sent_id = 1
+# text = "Minä kyllä ymmärrän, lordi Henry", mutisi mr.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	4	nsubj	_	_
+3	kyllä	kyllä	ADV	Adv	_	4	advmod	_	_
+4	ymmärrän	ymmärtää	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	7	punct	_	_
+6	lordi	lordi	NOUN	N	Case=Nom|Number=Sing	7	compound:nn	_	_
+7	Henry	Henry	PROPN	N	Case=Nom|Number=Sing	4	appos	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	4	punct	_	_
+10	mutisi	mutista	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+11	mr	mr	NOUN	N	Case=Nom|Number=Sing	10	nsubj	_	SpaceAfter=No
+12	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 2
+# text = Erskine hymyillen.
+1	Erskine	Erski	PRON	Pron	Case=Com|Number=Plur|PronType=Ind	2	obl	_	_
+2	hymyillen	hymyillä	VERB	V	Case=Ins|InfForm=2|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 3
+# text = "Paradoksit ovat tavallaan kyllä hyviä..." toisti parooni.
+1	"	"	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+2	Paradoksit	Paradoksi	NOUN	N	Case=Nom|Number=Plur	6	nsubj:cop	_	_
+3	ovat	olla	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	cop	_	_
+4	tavallaan	tava	NOUN	N	Case=Ade|Number=Sing|Person[psor]=3	6	obl	_	_
+5	kyllä	kyllä	ADV	Adv	_	6	advmod	_	_
+6	hyviä	hyvä	ADJ	A	Case=Par|Degree=Pos|Number=Plur	0	root	_	SpaceAfter=No
+7	...	...	PUNCT	Punct	_	6	punct	_	SpaceAfter=No
+8	"	"	PUNCT	Punct	_	6	punct	_	_
+9	toisti	toisti	ADV	Adv	Derivation=Sti	10	advmod	_	_
+10	parooni	paroonee	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	6	parataxis	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	6	punct	_	_
+
+# sent_id = 4
+# text = "Oliko se paradoksi?" kysyi mr. Erskine.
+1	"	"	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+2	Oliko	olla	AUX	V	Clitic=Ko|Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	cop	_	_
+3	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	4	nsubj:cop	_	_
+4	paradoksi	paradoksi	NOUN	N	Case=Nom|Number=Sing	0	root	_	SpaceAfter=No
+5	?	?	PUNCT	Punct	_	4	punct	_	SpaceAfter=No
+6	"	"	PUNCT	Punct	_	7	punct	_	_
+7	kysyi	kysyä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	4	parataxis	_	_
+8	mr.	mr.	NOUN	N	Abbr=Yes|Case=Nom|Number=Sing	9	compound:nn	_	_
+9	Erskine	Erskine	PROPN	N	Case=Nom|Number=Sing	7	nsubj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
+
+# sent_id = 5
+# text = "En minä sitä luule.
+1	"	"	PUNCT	Punct	_	5	punct	_	SpaceAfter=No
+2	En	ei	AUX	V	Number=Sing|Person=1|Polarity=Neg|VerbForm=Fin|Voice=Act	5	aux	_	_
+3	minä	minä	PRON	Pron	Case=Nom|Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
+4	sitä	se	PRON	Pron	Case=Par|Number=Sing|PronType=Dem	5	obj	_	_
+5	luule	luulla	VERB	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
+6	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 6
+# text = Ehkäpä kyllä.
+1	Ehkäpä	ehkäpä	ADV	Adv	_	2	advmod	_	_
+2	kyllä	kyllä	ADV	Adv	_	0	root	_	SpaceAfter=No
+3	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 7
+# text = No niin, paradoksit johtavat totuuteen.
+1	No	no	INTJ	Interj	_	5	discourse	_	_
+2	niin	niin	INTJ	Interj	_	1	fixed	_	SpaceAfter=No
+3	,	,	PUNCT	Punct	_	1	punct	_	_
+4	paradoksit	paradoksit	NOUN	N	Case=Nom|Number=Sing	5	nsubj	_	_
+5	johtavat	johtaa	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+6	totuuteen	totuus	NOUN	N	Case=Ill|Derivation=Vs|Number=Sing	5	obl	_	SpaceAfter=No
+7	.	.	PUNCT	Punct	_	5	punct	_	_
+
+# sent_id = 8
+# text = Voidaksemme tutkia todellisuutta täytyy meidän antaa sen tanssia nuoralla.
+1	Voidaksemme	voida	AUX	V	Case=Tra|InfForm=1|Number=Sing|Number[psor]=Plur|Person[psor]=1|VerbForm=Inf|Voice=Act	2	aux	_	_
+2	tutkia	tutkia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+3	todellisuutta	todellisuus	NOUN	N	Case=Par|Derivation=Llinen,Vs|Number=Sing	2	obj	_	_
+4	täytyy	täytyä	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	6	aux	_	_
+5	meidän	minä	PRON	Pron	Case=Gen|Number=Plur|Person=1|PronType=Prs	6	nsubj	_	_
+6	antaa	antaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	2	xcomp:ds	_	_
+7	sen	se	PRON	Pron	Case=Gen|Number=Sing|PronType=Dem	8	nsubj	_	_
+8	tanssia	tanssia	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	6	xcomp:ds	_	_
+9	nuoralla	nuora	NOUN	N	Case=Ade|Number=Sing	8	obl	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	2	punct	_	_
+
+# sent_id = 9
+# text = Kun totuudet muuttuvat konstintekijöiksi, niin me voimme arvostella niitä."
+1	Kun	kun	SCONJ	C	_	3	mark	_	_
+2	totuudet	totuus	NOUN	N	Case=Nom|Derivation=Vs|Number=Plur	3	nsubj	_	_
+3	muuttuvat	muuttua	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	9	advcl	_	_
+4	konstintekijöiksi	konstintekijö	NOUN	N	Case=Tra|Number=Plur	3	xcomp	_	SpaceAfter=No
+5	,	,	PUNCT	Punct	_	3	punct	_	_
+6	niin	niin	ADV	Adv	_	9	advmod	_	_
+7	me	minä	PRON	Pron	Case=Nom|Number=Plur|Person=1|PronType=Prs	9	nsubj	_	_
+8	voimme	voida	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin|Voice=Act	9	aux	_	_
+9	arvostella	arvostella	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	0	root	_	_
+10	niitä	se	PRON	Pron	Case=Par|Number=Plur|PronType=Dem	9	obj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	9	punct	_	SpaceAfter=No
+12	"	"	PUNCT	Punct	_	9	punct	_	_
+
+# sent_id = 10
+# text = "Hyvä Jumala!" sanoi lady Agatha, "kylläpä te miehet osaatte todistaa!
+1	"	"	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+2	Hyvä	hyvä	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	3	amod	_	_
+3	Jumala	Jumala	PROPN	N	Case=Nom|Number=Sing	6	nsubj	_	SpaceAfter=No
+4	!	!	PUNCT	Punct	_	3	punct	_	SpaceAfter=No
+5	"	"	PUNCT	Punct	_	3	punct	_	_
+6	sanoi	sanoa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin|Voice=Act	0	root	_	_
+7	lady	lady	NOUN	N	Case=Nom|Number=Sing	8	compound:nn	_	_
+8	Agatha	Agatha	PROPN	N	Case=Nom|Number=Sing	6	flat:name	_	SpaceAfter=No
+9	,	,	PUNCT	Punct	_	14	punct	_	_
+10	"	"	PUNCT	Punct	_	14	punct	_	SpaceAfter=No
+11	kylläpä	kylläpä	ADV	Adv	_	14	advmod	_	_
+12	te	sinä	PRON	Pron	Case=Nom|Number=Plur|Person=2|PronType=Prs	13	det	_	_
+13	miehet	#mies	NOUN	N	Case=Nom|Number=Plur	14	nsubj	_	_
+14	osaatte	osata	VERB	V	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	6	advcl	_	_
+15	todistaa	todistaa	VERB	V	InfForm=1|Number=Sing|VerbForm=Inf|Voice=Act	14	xcomp	_	SpaceAfter=No
+16	!	!	PUNCT	Punct	_	6	punct	_	SpacesAfter=\s\n
+
