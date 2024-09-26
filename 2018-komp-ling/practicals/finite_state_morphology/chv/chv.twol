@@ -1,0 +1,35 @@
+Alphabet
+  а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+  А Ӑ Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ 
+ %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0
+ %{м%}:м %{м%}:0
+;
+
+Sets 
+
+BackVow = ӑ а ы о у я ё ю ;
+
+FrontVow = ӗ э и ӳ ; 
+
+Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ ; 
+
+Vows = ӑ а ы о у я ё ю ӗ э и ӳ ;
+
+ArchiCns = %{м%} ;
+
+Rules 
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+"Back vowel harmony for archiphoneme {Ă}"
+%{Ă%}:ӑ <=> BackVow: [ ArchiCns: | Cns: | %>: ]+ _ ;
+        except:
+                                   [%{м%}: | Vows] %>:  _ н ;
+
+
+"Non surface {Ă} in genitive"
+%{Ă%}:0 <=> [%{м%}: | Vows ] %>: _ н ; 
+
+"Non surface {м} in plural genitive"
+%{м%}:0 <=> _ %>: ; 
