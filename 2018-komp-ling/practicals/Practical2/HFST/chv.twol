@@ -1,0 +1,45 @@
+Alphabet
+  а ӑ е ё ӗ и о у ӳ ы э ю я б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ
+  А Ӑ Е Ё Ӗ И О У Ӳ Ы Э Ю Я Б В Г Д Ж З К Л М Н П Р С Ҫ Т Ф Х Ц Ч Ш Щ Й Ь Ъ 
+%{A%}:а %{A%}:е %{Ă%}:ӑ %{Ă%}:ӗ %{Ă%}:0 %{м%}:м %{м%}:0
+;
+
+Sets
+
+BackVow = ӑ а ы о у я ё ю ;
+
+FrontVow = ӗ э и ӳ ; 
+
+Vowels = ӗ э и ӳ ӑ а ы о у я ё ю ;
+
+Cns = б в г д ж з к л м н п р с ҫ т ф х ц ч ш щ й ь ъ ; 
+
+
+Rules 
+
+"Remove morpheme boundary"
+%>:0 <=> _ ;
+
+"Back vowel harmony for archiphoneme {A}"
+%{A%}:а <=> BackVow: [ Cns: | %>: ]+ _ ;
+
+"%{Ӑ%}:0 if there is a surface vowel before the morpheme boundary"
+
+%{Ӑ%}:0 <=> Vowels: %>: _ ;
+
+"%{Ӑ%}:0 if there is previous %{м%}:0"
+
+%{Ӑ%}:0 <=> %{м%}:0 _ ; 
+
+"%{м%}:0 if there is a following %{Ă%}: followed by н"
+
+%{м%}:0 <=> _ %{Ă%}: н: ;
+
+"%{Ă%}:ӑ or %{Ă%}:ӗ according to vowel harmony if previous consonant"
+
+%{Ă%}:ӑ <=> BackVow: [ Cns: | %>: ]+ _ ;
+
+
+! a:b   CONSTRAINT_OPERATOR   LEFT_CONTEXT   _   RIGHT_CONTEXT ;
+
+
