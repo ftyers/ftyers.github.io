@@ -1,0 +1,21 @@
+This program transliterates Russian text into Latin letters. Simply name the
+text you want to transliterate 'text' and put it under the same directory
+as the python file. Then run the python.
+
+If the original Russian text does not differentiate ё from e,
+the program will not either, for differentiation requires a huge Russian 
+dictionary to run the spelling check, which we do not have so far.
+
+This program, however, will fix the result to match the pronounciations for 
+some common and simple words. For example, её, ого and его will be turned 
+into the correct transliteration based on their pronounciations.
+
+Since ого and его will be located at the end of words but not the end
+of sentences, if there is a space right after them, we are confident
+changing the г into v according to the pronounciation.
+
+The hard sign in Russian Ъ is silent, so the transliteration process simply
+deletes it.
+
+The dictionary upon which the transliteration is based is included in the 
+python file.
