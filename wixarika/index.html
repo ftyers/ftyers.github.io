@@ -38,6 +38,7 @@ textInputBox.addEventListener("keyup", (event) => {
 	 let val = textInputBox.value;
 	val = val.replace(/\+/g, 'ɨ');
 	val = val.replace(/\'/g, "ʼ");
+	val = val.replace(/ˀ/g, "ʼ");
 	    textOutputBox.innerHTML = val;
    });
 
