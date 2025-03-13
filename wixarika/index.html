@@ -25,11 +25,11 @@ Introduzca un texto, o empiece a escribir en el cuadro de texto abajo.
 </div>-->
 <!--<span id="output_forms"/></td><td><span id="output_glosses"/></td><td><span id="output_readings"/></td></tr>-->
 
-<span style="border: black 1px solid; padding: 2px; font-size: 150%">ɨ</span>
+<span style="border: black 1px solid; padding-left: 4px; padding: 2px; font-size: 150%">ɨ</span>
 <span style="border: black 1px solid; padding: 2px; font-size: 150%">Ɨ</span>
 <span style="border: black 1px solid; padding: 2px; font-size: 150%">ɨ́</span>
 <span style="border: black 1px solid; padding: 2px; font-size: 150%">Ɨ́</span>
-
+<b/>
 <div id="output"></div>
 
 </body>
@@ -45,6 +45,35 @@ textInputBox.addEventListener("keyup", (event) => {
 	val = val.replace(/\+/g, 'ɨ');
 	val = val.replace(/\'/g, "ʼ");
 	val = val.replace(/ˀ/g, "ʼ");
+
+val = val.replace(/nunutsiyari/g, "nunuutsiyari");
+val = val.replace(/netinutuixie/g, "netinuutuixie");
+val = val.replace(/ʼuxa ʼawarie/g, "ʼuxaʼáwaarie");
+val = val.replace(/ʼitsariyari/g, "ʼitsaariyari");
+val = val.replace(/teiwaritɨa/g, "teiwaritɨ́a");
+val = val.replace(/kakaɨyarita/g, "kaakaɨyarita");
+val = val.replace(/xeitéwiyari/g, "xeitewiyari");
+val = val.replace(/wiixáritari/g, "wixáritaari");
+val = val.replace(/titétewatɨ/g, "titetewatɨ");
+val = val.replace(/kiekatari/g, "kiekátaari");
+val = val.replace(/Tateikíe/g, "Taatei Kie");
+val = val.replace(/titayari/g, "tiitayari");
+val = val.replace(/parewiya/g, "pareewiya");
+val = val.replace(/neʼiyari/g, "neʼiyaari");
+val = val.replace(/netumini/g, "netumiini");
+val = val.replace(/ʼíkwai/g, "ʼikwai");
+val = val.replace(/ʼEnaʼí/g, "ʼEena ʼi");
+val = val.replace(/xeeniu/g, "xeeníu");
+val = val.replace(/maxatsi/g, "maxátsi");
+val = val.replace(/xeikɨá/g, "xeikɨ́a");
+val = val.replace(/tɨkari/g, "tɨkaari");
+val = val.replace(/xewitɨ/g, "xewítɨ");
+val = val.replace(/hípatɨ/g, "hipátɨ");
+val = val.replace(/hetsié/g, "hetsíe");
+val = val.replace(/ʼana /g, "ʼaana");
+val = val.replace(/muwa/g, "muuwa");
+
+
 	    textOutputBox.innerHTML = val;
    });
 
