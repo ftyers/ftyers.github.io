@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Quiz 1 Natalia Isupova.md</title><style></style></head><body id="preview">
+<h1><a id="1_Which_problems_does_maxmatch_suffer_from_Choose_all_that_apply_0"></a>1. Which problems does maxmatch suffer from? (Choose all that apply.)</h1>
+<ul>
+<li>a) requires comprehensive dictionary</li>
+<li>d) constructs non-grammatical sentences</li>
+</ul>
+<h1><a id="2_Write_a_perlsed_substitution_with_regular_expressions_that_adds_whitespace_for_segmentation_around__in_eitheror_expressions_but_not_around_fractions_12_4"></a>2. Write a perl/sed substitution with regular expressions that adds whitespace for segmentation around “/” in “either/or” expressions but not around fractions “1/2”.</h1>
+<pre><code class="language-sh">sed <span class="hljs-string">'s/\([a-zA-Z]\+\)\/\([a-zA-Z]\+\)/\1 \/ \2/g'</span>  
+</code></pre>
+<h1><a id="3_The_text_mentions_several_times_that_machine_learning_techniques_produce_better_segmentation_than_rulebased_systems_what_are_some_downsides_of_machine_learning_techniques_compared_to_rulebased_9"></a>3. The text mentions several times that machine learning techniques produce better segmentation than rule-based systems; what are some downsides of machine learning techniques compared to rule-based?</h1>
+<ul>
+<li>the need of huge manually marked corpora for training</li>
+<li>machine learning techniques take more time to create/choose and adjust the algorithm</li>
+<li>machine learning techniques can sometimes have unexpected results</li>
+</ul>
+<h1><a id="4_Write_a_sentence_in_English_or_in_Russian_which_maxmatch_segments_incorrectly_14"></a>4. Write a sentence (in English or in Russian) which maxmatch segments incorrectly.</h1>
+<p>thetabledownthere -&gt; theta bled own there</p>
+<h1><a id="5_What_are_problems_for_sentence_segmentation_Provide_one_example_in_English_or_Russian_for_each_that_applies_17"></a>5. What are problems for sentence segmentation? Provide one example in English or Russian for each that applies.</h1>
+<ul>
+<li>a) ambiguous abbrevations with punctuation:</li>
+</ul>
+<blockquote>
+<p>Более 2 тыс. бутылок воды было роздано пассажирам столичной подземки и МЦК за выходные из-за жары.</p>
+</blockquote>
+<p>(The full stop after abbreviation “тыс.” can be considered as the end of the sentence.)</p>
+<ul>
+<li>b) sentences containing symbols ‘!’ and ‘?’</li>
+</ul>
+<blockquote>
+<p>“Что? Где? Когда?” — популярная телевизионная интеллектуальная игра, в которой команда знатоков в течение минуты ищет ответы на вопросы телезрителей.</p>
+</blockquote>
+<p>(The question marks in the title can be considered as the end of the sentence.)</p>
+<ul>
+<li>c) sentences lacking separating punctuation</li>
+</ul>
+<blockquote>
+<p>завидую крутым девочкам в тви у которых не только своя компания но и большая аудитория которая сразу пишет комменты вам через 0.5 секунд когда вы пишете твит, я чувствую себя тем самым одиноким чуваком в школьной столовке который всегда ест один</p>
+</blockquote>
+<p>(Many examples from social media, e.g. Twitter or VK)</p>
+<ul>
+<li>d) sentences not separated by whitespace:</li>
+</ul>
+<blockquote>
+<p>This is a test.This is a test.</p>
+</blockquote>
+
+</body></html>
