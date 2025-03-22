@@ -1,0 +1,53 @@
+\documentclass{hitec}
+\author{Lorenzo Tosi}
+\title{HFST Practical}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{CJKutf8}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\section{Phonological Rules}
+	\textbf{I leave the rule for \%\{м\%\} as an exercise for the reader:} \\
+	"Non surface \{м\} if following \%\{Ă\%\}: followed by н" \\
+	\%\{м\%\}:0 \textless=\textgreater \_ \%\textgreater: \%\{Ă\%\}: н ; \\
+	\\
+	\textbf{What does minimisation do?} \\
+	Minimisation tries to reduce as much as possible the steps in the transducer diagram (epsilon removal, path reworking). The goal is to make it as deterministic as possible using .
+	\section{Productive derivation}
+	In order to produce the \textit{mor} file we need to invert our \textit{gen.hfst} transducer, otherwise we will not be able to see to weight parameter through the lookup command. 
+	\section{Numerals and abbreviations}
+	The \textit{.lexc} file given is incorrect as it marks \textit{саккӑр} and \textit{саккӑр} as having a front vowel when they have a back one \textit{\%\{$\epsilon$\%\} instead of \%\{л\%\}}, this has been corrected in my version. \\
+	To implement phonological rules I implemented the archiphoneme \%\{N\%\}:р \%\{N\%\}:т to deal with the variation and in the \textit{.lexc} file was added this class in CASES: (this to make it virtually working with all classes to augment coverage) \%\textless abl\%\textgreater:\%\{N\%\}\%\{A\%\}н \# . The back vowel harmony was added in the previously created rule in order to make it scalable for classes other than numerals and make the \textit{.twol} file smaller. \\
+	"Back vowel harmony for archiphoneme {A}"\\
+	\%\{A\%\}:а \textless=\textgreater BackVow: [ Cns: | \%\textgreater: | \%\{л\%\}: | \%- | \%\{N\%\}: ]+ \_ ; \\
+	I added the archiphoneme for back and front vowel in the related letter set and I created a new set for н,л and р, the letter involved in the ablative alternation. The set is called \textbf{NumCns}. The rule to implement it looks like this: \\
+	"Consonant agreement {N} for ablative" \\
+	\%\{N\%\}:т \textless=\textgreater [ NumCns | \%\{л\%\}: ] [ BackVow: | FrontVow: | \%- ]* \_ ; \\
+	Note that we need to add NumCns as both forms (without the :) as otherwise will break the rule. 		
+	\section{Coverage}
+	Coverage is only ~0.01939944035553883415 for the transducer without guesser, even if rules look all working as expected through testing, this can be due to a more recent and bigger Wikipedia Dump used in comparison to the one of the practical. With the guesser included it raises to ~9.38403837562019422955.
+	\section{Guesser}
+	\textbf{You will note how it will generate a guess analysis even if the stem is in the lexicon. How do you think you might be able to avoid this analysis?}\\
+	This can be achieved through weighting as the example in the first section, by giving guessed forms an arbitrary weight, higher than the other weights but lower than the "zero-form" weight.\\
+	Another option would be to move the guesser under the Nouns LEXICON section, making it separate to other nouns. Recompiling the transducer in this fashion works exactly as expected.
+	\section{Weighting}
+	The results are the following: \\
+	echo "область" | hfst-lookup -qp chv.surweights.hfst \\
+	область область	11.423800 \\
+	\\
+	echo "облаç" | hfst-lookup -qp chv.surweights.hfst \\
+	облаҫ	облаҫ	10.027500 \\
+	\section{Files Included in the Package}
+	The file included should be enough to reproduce all the cases of this report and the practical by recompiling them as needed. (Other file used are exactly the same as the ones given in the practical, or are produced from those one by compiling them as per the tutorial.)
+	\begin{itemize}
+	\item [ava.lexc]                           
+	\item [ava.twoc]         
+	\item [chv.freq]              
+	\item [chv.lexc]              
+	\item [chv.twol]
+	\item [fin.lexc]
+	\end{itemize}
+\end{document}

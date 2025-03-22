@@ -1,0 +1,136 @@
+\documentclass{hitec}
+\author{Lorenzo Tosi}
+\title{MaxMatch Tokenizer Implementation}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{CJKutf8}
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\section{Introduction}
+	This tokenizer is able, given a sentence list and a dictionary file, to divide sentences in words using the MaxMatch algorithm. This algorithm is well suited for languages which do not use word separators (e.g. Chinese, Taiwanese), and has been tested with Japanese. The tokenizer is written fully in Python3, the package \textit{re} needs to be installed to work properly. The program itself is composed of 3 scripts, that are able to prepare the files needed to make the program work properly, plus the MaxMatch algorithm implementation. The files are the following:
+	\begin{itemize}
+		\item [\textbf{dictionary\_extractor.py}] This file is able to extract and filter a list of words and to tokenize them, in order to fed them to the algorithm as the dictionary. The test file used to extract the dictionary is \textit{ja\_gsd-ud-train.conllu}, included in the package. The file returned by the script is a \textit{.txt} called \textit{dictionary.txt}
+		\item [\textbf{sentencelist\_extractor.py}] This file extracts a list of sentences that can be then tokenized in the algorithm. The file used to extract the sentence list is \textit{ja\_gsd-ud-test.conllu}, included in the package. The file returned by the script is a \textit{.txt} called \textit{sentencelist.txt}
+		\item [\textbf{testtokens\_extractor.py}] This file extracts an already tokenized list of sentences in the same format as the file produced by the \textit{maxmatch.py} program. This enables comparison and performance evaluation through algorithms like \textit{WER}. The file used to extract the sentence list is \textit{ja\_gsd-ud-test.conllu}, included in the package. The file returned by the script is a \textit{.txt} called \textit{testtokens.txt}
+		\item [\textbf{maxmatch.py}] This is the MaxMatch tokenizer program. Detailed explanation of its functioning is included in a specific section.
+	\end{itemize}
+	\section{How to Use the Text-Preparation Scripts}
+	The script can be launched via the terminal by writing \begin{lstlisting}[language=bash]
+	$ python3 scriptname.py
+	\end{lstlisting}
+	The program will ask in input the name of the file containing the sentence list and the name of the file containing the dictionary.
+	\begin{lstlisting}[language=bash]
+	Input filename here:
+	\end{lstlisting}
+	Test files produced by the scripts are included with the package.
+	\section{How to Use \textit{maxmatch.py}}
+	The script can be launched via the terminal by writing \begin{lstlisting}[language=bash]
+	$ python3 maxmatch.py
+	\end{lstlisting}
+	The program will ask in input the name of the file containing the sentence list and the name of the file containing the dictionary.
+	\begin{lstlisting}[language=bash]
+	Input sentence file here: 
+	Input dictionary name here: 
+	\end{lstlisting}
+	The program will produce in output a \textit{.txt} file named \textit{maxmatchtokens.txt}
+	\section{\textit{maxmatch.py} Algorithm Description}
+	\subsection{Functioning}
+	The program replicates the \textit{Viterbi Algorithm} through a decision tree approach. In the \textit{Main} section, the program creates a list where every sentence $($line$)$ is appended as a single element. The max\_match function then picks the first element of the list and starts analysing it.
+	\begin{lstlisting}[language=python]
+	senten = m.readlines()
+		for inp in senten:
+			while True:
+				if len(inp) > 0:
+					inp = max_match(inp, diction)
+				else:
+					break 
+	\end{lstlisting} 
+	The program reads the input letter-by-letter, appending them to a string that is checked through every iteration, to see if the word is in the dictionary.
+	\begin{lstlisting}[language=python]
+	for letter in text:
+		inword += letter
+		if inword in dictionary:
+			outword = inword
+	\end{lstlisting}
+	This bit of code lets the program pick the longest word in the dictionary, with starting letter being the first character of the input, in a separate variable. The full string $($\textit{inword}$)$ and longest dictionary word $($\textit{outword}$)$ are then checked against a decision tree structured as follows:
+	\begin{enumerate}
+		\item If beginning of \textit{inword} is enclosed in quotation marks $($\begin{CJK}{UTF8}{min}「」\end{CJK}$)$ and matches an ASCII printable \textit{regex} $($latin letters, digits, punctuation$)$, attach the quotation marks and the word enclosed to the list of segmented words deriving from the sentence.
+		\item If beginning of \textit{inword} is composed of matches an ASCII printable characters followed by an ASCII non-printable character, attach the printable string to the list of segmented words deriving from the sentence.
+		\item If \textit{outword} is in the dictionary, attach it to the list of segmented words deriving from the sentence.
+		\item Else attach the first character to the list of segmented words deriving from the sentence.
+	\end{enumerate}
+	The file then removes, through the \textit{.replace} method, the first iteration of the word attached to the list from the input, and the program keeps cycling through the input until no characters are left. \\
+	Reached this point, the program breaks from the \textit{While True} cycle included in Main, feed the next sentence to the input and repeats until the whole input file is processed. \\
+	In the end, the program joins the list of segmented letters $($that is already including line breaks to divide sentences$)$, cleans the redundand whitespaces through a regex and write the output file
+	\begin{lstlisting}[language=python]
+	final = " ".join(sentence)
+	final = re.sub("\s\\n\s", r"\n", final)
+	r.write(final)
+	\end{lstlisting}
+	\subsection{Bug Fixes}
+	The most important implementation that was made was to extend the decision tree in order to avoid segmenting digits and English words outside dictionary. \\
+	The first accuracy evaluation was made with a reduced decision tree, that was segmenting into single letters every word not included in the dictionary. This are the results obtained through the \textit{apertium-eval-translator} script:
+	\begin{lstlisting}[language=bash]
+	Number of words in reference: 12615
+	Number of words in test: 13657
+	Edit distance: 3042
+	Word error rate (WER): 24.11 %
+	Number of position-independent correct words: 11075
+	Position-independent word error rate (PER): 20.47 %
+	\end{lstlisting}
+	Including the first two steps of the decision tree made possible to improve both WER and PER scoring:
+	\begin{lstlisting}[language=bash]
+	Number of words in reference: 12615
+	Number of words in test: 13555
+	Edit distance: 2969
+	Word error rate (WER): 23.54 %
+	Number of position-independent correct words: 11067
+	Position-independent word error rate (PER): 19.72 %
+	\end{lstlisting}
+	\subsection{Possible Improvements}
+	The algorithm main problem is the computational time. The program processed 557 sentences in 133.6 seconds, making it slow on a big corpus. The CProfiler statistics with the related call graph are contained in the file \textit{maxmatch.pstat} available in the package. \\ 
+	The recursive analysis of the whole string against the dictionary could be identified as the main bottleneck. A possible improvement can be breaking the loop:
+	\begin{lstlisting}[language=python]
+	for letter in text:
+		inword += letter
+		if inword in dictionary:
+			outword = inword
+	\end{lstlisting}
+	As soon as the program does not find an inword for 2 times in a row the look should exit and enter the decision tree phase, reducing the computational time with a slight reduction in precision.
+	\subsection{Dictionary Scripting Choice}
+	The dictionary script was tested in two different environments: \textit{bash} with \textit{Perl} scripting and \textit{Python3}. The first script is shown hereunder:
+	\begin{lstlisting}[language=bash]
+	cat ja_gsd-ud-train.conllu | grep -P "^[0-9]\t" | 
+	cut -f2 | LC_ALL=C sort -u > dictionarybash.txt
+	\end{lstlisting}
+	and produces a dictionary of 13789 unique entries while the \textit{Python3} script produces 22313 unique entries. The cut from 22313 is made during the \textit{sort} command of \textit{bash}, as proved by sorting the Python dictionary through this command. \\
+	A quick lookup shows that words were cut regardless of their forms: Latin written words as \textbf{"FeelingHeart"} and \textbf{"Xainctes"} , numbers as \textbf{"20.7"}, Japanese words written in different alphabets as \textbf{"\begin{CJK}{UTF8}{min}ウェストファル\end{CJK}"} or \textbf{"\begin{CJK}{UTF8}{min}料理番組\end{CJK}"}.
+	The accuracy test shows that running the same sentence input files with the bash-sorted dictionary produces worse results as expected:
+	\begin{lstlisting}[language=bash]
+	Number of words in reference: 12615
+	Number of words in test: 14371
+	Edit distance: 4039
+	Word error rate (WER): 32.02 %
+	Number of position-independent correct words: 10781
+	Position-independent word error rate (PER): 28.46 %
+	\end{lstlisting}
+	\section{Files Included in the Package}
+	\begin{itemize}
+	\item [MaxMatch\_Documentation.pdf]                           
+	\item [MaxMatch\_Documentation.tex]         
+	\item [dictionary.txt] \textit{Python3} script dictionary                
+	\item [dictionary\_extractor.py]              
+	\item [dictionarybash.txt] \textit{bash} script dictionary
+	\item [ja\_gsd-ud-test.conllu]
+	\item [ja\_gsd-ud-train.conllu]
+	\item [maxmatch.pstat]
+	\item [maxmatch.py]
+	\item [maxmatchtokens\_bashdict.txt] maxmatch produced with the \textit{bash} script dictionary
+	\item [maxmatchtokens\_pythondict.txt] maxmatch produced with the \textit{Python3} script dictionary 
+	\item [sentencelist.txt]
+	\item [sentencelist\_extractor.py]
+	\item [testtokens.txt]
+	\item [testtokens\_extractor.py]
+	\end{itemize}
+\end{document}
